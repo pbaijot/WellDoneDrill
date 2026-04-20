@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "geothermie": "Geothermie",
+    "references": "Referenzen",
+    "secteurs": "Sektoren",
+    "about": "Über uns",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "devis": "Kostenloses Angebot",
+    "portal": "Mein Kundenbereich"
+  },
+  "hero": {
+    "eyebrow": "Geothermische Bohrungen — Luxemburg",
+    "title1": "Experte für",
+    "title2": "Geothermie",
+    "title3": "aus dem Untergrund",
+    "subtitle": "Wir installieren geschlossene und offene Geothermiesysteme zur effizienten Beheizung und Kühlung Ihres Gebäudes. Einsatz in ganz Luxemburg.",
+    "cta_primary": "Kostenloses Angebot anfordern",
+    "cta_secondary": "Unsere Dienstleistungen entdecken"
+  },
+  "footer": {
+    "baseline": "Die Energie der Erde",
+    "tagline": "Experte für geothermische Bohrungen in Belgien, Frankreich und Luxemburg."
+  }
+}

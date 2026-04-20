@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "geothermie": "Géothermie",
+    "references": "Références",
+    "secteurs": "Secteurs",
+    "about": "À propos",
+    "blog": "Blog",
+    "contact": "Contact",
+    "devis": "Devis gratuit",
+    "portal": "Mon espace client"
+  },
+  "hero": {
+    "eyebrow": "Forage géothermique — Luxembourg",
+    "title1": "Expert en",
+    "title2": "géothermie",
+    "title3": "depuis le sous-sol",
+    "subtitle": "Nous installons des systèmes géothermiques fermés et ouverts pour chauffer et climatiser votre bâtiment. Intervention au Luxembourg.",
+    "cta_primary": "Demandez un devis gratuit",
+    "cta_secondary": "Découvrir nos services"
+  },
+  "footer": {
+    "baseline": "L'énergie de la terre",
+    "tagline": "Expert en forage géothermique en Belgique, France et Luxembourg."
+  }
+}

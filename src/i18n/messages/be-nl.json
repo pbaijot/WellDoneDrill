@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "geothermie": "Geothermie",
+    "references": "Referenties",
+    "secteurs": "Sectoren",
+    "about": "Over ons",
+    "blog": "Blog",
+    "contact": "Contact",
+    "devis": "Gratis offerte",
+    "portal": "Mijn klantenzone"
+  },
+  "hero": {
+    "eyebrow": "Geothermische boringen — België",
+    "title1": "Expert in",
+    "title2": "geothermie",
+    "title3": "vanuit de ondergrond",
+    "subtitle": "Wij installeren gesloten en open geothermische systemen voor efficiënte verwarming en koeling van uw gebouw. 5 booratelier, overal in België.",
+    "cta_primary": "Vraag een gratis offerte aan",
+    "cta_secondary": "Ontdek onze diensten"
+  },
+  "footer": {
+    "baseline": "De energie van de aarde",
+    "tagline": "Expert in geothermische boringen in België, Frankrijk en Luxemburg."
+  }
+}
