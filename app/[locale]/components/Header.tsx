@@ -22,10 +22,10 @@ const FLAGS = {
 export default function Header() {
   const locale = useLocale()
   const t = useTranslations('nav')
-  const [openMenu, setOpenMenu] = useState(null)
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
   const [langOpen, setLangOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [mobileExpanded, setMobileExpanded] = useState(null)
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null)
   const ref = useRef<HTMLElement>(null)
 
   const MENUS = [
