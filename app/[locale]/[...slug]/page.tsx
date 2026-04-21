@@ -4,13 +4,13 @@ import { findRouteKeyBySlug, type AppLocale } from '@/src/i18n/routes'
 type PageProps = {
   params: Promise<{
     locale: AppLocale
-    slug?: string[]
+    slug: string[]
   }>
 }
 
 export default async function LocalizedCatchAllPage({ params }: PageProps) {
   const { locale, slug } = await params
-  const slugPath = slug?.join('/') ?? ''
+  const slugPath = slug.join('/')
 
   const routeKey = findRouteKeyBySlug(locale, slugPath)
 
