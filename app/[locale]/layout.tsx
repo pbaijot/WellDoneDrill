@@ -3,6 +3,7 @@ import { Lexend } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import '../globals.css'
 
 const lexend = Lexend({
@@ -35,6 +36,7 @@ export default async function LocaleLayout({
           <main className="pt-16">
             {children}
           </main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

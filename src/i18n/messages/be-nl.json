@@ -38,5 +38,27 @@
     "pro_soumission_sub": "Dien uw project in",
     "portal": "Mijn ruimte",
     "cta": "Directe offerte"
+  },
+  "footer": {
+    "tagline": "De energie van de aarde",
+    "desc": "Expert in geothermische boringen in Belgie. 5 boorateliers, 500+ gerealiseerde projecten.",
+    "nl_label": "Nieuwsbrief",
+    "nl_ph": "Uw e-mail...",
+    "nl_btn": "Inschrijven",
+    "services_title": "Onze diensten",
+    "regions_title": "Referenties per provincie",
+    "regions": "Namen,Luik,Henegouwen,Brussel,Waals-Brabant,Vlaams-Brabant,Luxemburg,Antwerpen,Oost-Vlaanderen,West-Vlaanderen,Limburg",
+    "contact_title": "Contacteer ons",
+    "address_label": "Adres",
+    "address": "Rue de Libut - 5310 Eghezee",
+    "tel_label": "Telefoon",
+    "tel": "+32 494 14 24 49",
+    "email_label": "E-mail",
+    "email": "info@welldonedrill.energy",
+    "cta": "Offerte in 5 minuten",
+    "portal": "Mijn klantenruimte",
+    "copy": "2025 WellDoneDrill. Alle rechten voorbehouden.",
+    "legal1": "Wettelijke vermeldingen",
+    "legal2": "Privacybeleid"
   }
 }

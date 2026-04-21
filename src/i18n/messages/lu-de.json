@@ -38,5 +38,27 @@
     "pro_soumission_sub": "Reichen Sie Ihr Projekt ein",
     "portal": "Mein Bereich",
     "cta": "Sofortangebot"
+  },
+  "footer": {
+    "tagline": "Die Energie der Erde",
+    "desc": "Experte fur geothermische Bohrungen in Luxemburg.",
+    "nl_label": "Newsletter",
+    "nl_ph": "Ihre E-Mail...",
+    "nl_btn": "Abonnieren",
+    "services_title": "Unsere Dienstleistungen",
+    "regions_title": "Referenzen in Luxemburg",
+    "regions": "Luxemburg-Stadt,Esch-sur-Alzette,Differdingen,Dudelingen,Ettelbruck,Diekirch,Wiltz,Echternach,Remich,Grevenmacher",
+    "contact_title": "Kontaktieren Sie uns",
+    "address_label": "Adresse LU",
+    "address": "Luxemburg - Buro in Vorbereitung",
+    "tel_label": "Telefon LU",
+    "tel": "+352 XX XX XX XX",
+    "email_label": "E-Mail",
+    "email": "luxemburg@welldonedrill.energy",
+    "cta": "Angebot in 5 Minuten",
+    "portal": "Mein Kundenbereich",
+    "copy": "2025 WellDoneDrill. Alle Rechte vorbehalten.",
+    "legal1": "Impressum",
+    "legal2": "Datenschutzrichtlinie"
   }
 }

@@ -38,5 +38,27 @@
     "pro_soumission_sub": "Deposez votre projet",
     "portal": "Mon espace",
     "cta": "Devis instantane"
+  },
+  "footer": {
+    "tagline": "L'energie de la terre",
+    "desc": "Expert en forage geothermique en France. Intervention dans toutes les regions.",
+    "nl_label": "Newsletter",
+    "nl_ph": "Votre email...",
+    "nl_btn": "M'abonner",
+    "services_title": "Nos services",
+    "regions_title": "References par region",
+    "regions": "Hauts-de-France,Grand Est,Ile-de-France,Normandie,Bretagne,Pays de la Loire,Auvergne-R-A,Nouvelle-Aquitaine,Occitanie,PACA",
+    "contact_title": "Contactez-nous",
+    "address_label": "Adresse",
+    "address": "France - bureau en cours",
+    "tel_label": "Telephone FR",
+    "tel": "+33 X XX XX XX XX",
+    "email_label": "Email",
+    "email": "france@welldonedrill.energy",
+    "cta": "Devis en 5 minutes",
+    "portal": "Mon espace client",
+    "copy": "2025 WellDoneDrill. Tous droits reserves.",
+    "legal1": "Mentions legales",
+    "legal2": "Politique de confidentialite"
   }
 }

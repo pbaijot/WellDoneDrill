@@ -38,5 +38,27 @@
     "pro_soumission_sub": "Deposez votre projet",
     "portal": "Mon espace",
     "cta": "Devis instantane"
+  },
+  "footer": {
+    "tagline": "L'energie de la terre",
+    "desc": "Expert en forage geothermique au Luxembourg. Solutions adaptees aux reglementations luxembourgeoises.",
+    "nl_label": "Newsletter",
+    "nl_ph": "Votre email...",
+    "nl_btn": "M'abonner",
+    "services_title": "Nos services",
+    "regions_title": "References au Luxembourg",
+    "regions": "Luxembourg-Ville,Esch-sur-Alzette,Differdange,Dudelange,Ettelbruck,Diekirch,Wiltz,Echternach,Remich,Grevenmacher",
+    "contact_title": "Contactez-nous",
+    "address_label": "Adresse LU",
+    "address": "Luxembourg - bureau en cours",
+    "tel_label": "Telephone LU",
+    "tel": "+352 XX XX XX XX",
+    "email_label": "Email",
+    "email": "luxembourg@welldonedrill.energy",
+    "cta": "Devis en 5 minutes",
+    "portal": "Mon espace client",
+    "copy": "2025 WellDoneDrill. Tous droits reserves.",
+    "legal1": "Mentions legales",
+    "legal2": "Politique de confidentialite"
   }
 }
