@@ -25,12 +25,12 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const messages = await getMessages()
+  const messages = await getMessages({ locale })
 
   return (
     <html lang={locale} className={`${lexend.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main className="pt-16">
             {children}
