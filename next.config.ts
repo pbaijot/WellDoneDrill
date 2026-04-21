@@ -6,6 +6,7 @@ export default withNextIntl({
   images: {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
+      { hostname: 'flagcdn.com' },
     ],
   },
 })
