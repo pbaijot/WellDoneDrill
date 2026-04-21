@@ -74,14 +74,15 @@ export default function Header() {
   const currentLocale = LOCALES.find(l => l.code === locale) || LOCALES[0]
 
   useEffect(() => {
-    function handleClick(e) {
-      if (ref.current && !ref.current.contains(e.target)) {
-        setOpenMenu(null)
-        setLangOpen(false)
-      }
+  function handleClick(e: MouseEvent) {
+    if (ref.current && !ref.current.contains(e.target as Node)) {
+      setOpenMenu(null)
+      setLangOpen(false)
     }
-    document.addEventListener('mousedown', handleClick)
-    return () => document.removeEventListener('mousedown', handleClick)
+  }
+
+  document.addEventListener('mousedown', handleClick)
+  return () => document.removeEventListener('mousedown', handleClick)
   }, [])
 
   return (
@@ -115,8 +116,7 @@ export default function Header() {
                       onClick={() => setOpenMenu(null)}
                       className={"flex flex-col px-4 py-3 border-b border-white/5 last:border-b-0 hover:bg-wdd-yellow/10 transition-colors group " + (item.highlight ? "border-t border-wdd-yellow/20" : "")}
                     >
-                      <span className={"text-sm font-light " + (item.highlight ? "text-wdd-yellow font-semibold" : "text-white/85 group-hover:text-wdd-yellow")}>{item.label}</span>
-                      {item.sub && <span className="text-xs text-white/35 mt-0.5">{item.sub}</span>}
+                      <span className={"text-sm font-light " + (item.highlight ? "text-wdd-yellow font-semibold" : "text-white/85 group-hover:text-wdd-yellow")}>{item.label}</span>{item.sub && <span className="text-xs text-white/35 mt-0.5">{item.sub}</span>}
                     </Link>
                   ))}
                 </div>
