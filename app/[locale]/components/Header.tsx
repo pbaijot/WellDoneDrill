@@ -6,12 +6,12 @@ import { useLocale, useTranslations } from 'next-intl'
 import { useState, useEffect, useRef } from 'react'
 
 const LOCALES = [
-  { code: 'be-fr', flag: 'BE', label: 'Belgique - Francais' },
-  { code: 'be-nl', flag: 'BE', label: 'Belgie - Nederlands' },
-  { code: 'fr-fr', flag: 'FR', label: 'France - Francais' },
-  { code: 'lu-fr', flag: 'LU', label: 'Luxembourg - Francais' },
+  { code: 'be-fr', flag: 'BE', label: 'Belgique - Français' },
+  { code: 'be-nl', flag: 'BE', label: 'België - Nederlands' },
+  { code: 'fr-fr', flag: 'FR', label: 'France - Français' },
+  { code: 'lu-fr', flag: 'LU', label: 'Luxembourg - Français' },
   { code: 'lu-de', flag: 'LU', label: 'Luxemburg - Deutsch' },
-]
+] as const
 
 const FLAGS = {
   BE: 'https://flagcdn.com/w40/be.png',
