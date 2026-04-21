@@ -172,3 +172,9 @@ export function findRouteKeyByPath(locale: AppLocale, pathname: string): RouteKe
 
   return match ? match[0] : null
 }
+
+export function findRouteKeyBySlug(locale: AppLocale, slug: string): RouteKey | null {
+  const entries = Object.entries(routeMap[locale]) as [RouteKey, string][]
+  const match = entries.find(([, value]) => value === slug)
+  return match ? match[0] : null
+}
