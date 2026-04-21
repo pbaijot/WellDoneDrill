@@ -26,7 +26,7 @@ export default function Header() {
   const [langOpen, setLangOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileExpanded, setMobileExpanded] = useState(null)
-  const ref = useRef(null)
+  const ref = useRef<HTMLElement>(null)
 
   const MENUS = [
   {
