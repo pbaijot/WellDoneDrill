@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
+import Header from './components/Header'
 import '../globals.css'
 
 const lexend = Lexend({
@@ -30,7 +31,10 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${lexend.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Header />
+          <main className="pt-16">
+            {children}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
