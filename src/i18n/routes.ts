@@ -21,6 +21,10 @@ export type RouteKey =
   | 'pro_architectes'
   | 'pro_entrepreneurs'
   | 'pro_soumission'
+  | 'blog'
+  | 'mentions_legales'
+  | 'politique_confidentialite'
+  | 'cookies'
 
 type RouteMap = Record<AppLocale, Record<RouteKey, string>>
 
@@ -30,6 +34,10 @@ export const routeMap: RouteMap = {
     devis: 'devis',
     references: 'references',
     calculateur: 'calculateur',
+    blog: 'blog',
+    mentions_legales: 'mentions-legales',
+    politique_confidentialite: 'politique-confidentialite',
+    cookies: 'cookies',
 
     pac_fonctionnement: 'pompes-a-chaleur/fonctionnement',
     pac_chauffage: 'pompes-a-chaleur/chauffage',
@@ -54,6 +62,10 @@ export const routeMap: RouteMap = {
     devis: 'devis',
     references: 'references',
     calculateur: 'calculateur',
+    blog: 'blog',
+    mentions_legales: 'mentions-legales',
+    politique_confidentialite: 'politique-confidentialite',
+    cookies: 'cookies',
 
     pac_fonctionnement: 'pompes-a-chaleur/fonctionnement',
     pac_chauffage: 'pompes-a-chaleur/chauffage',
@@ -78,6 +90,10 @@ export const routeMap: RouteMap = {
     devis: 'offerte',
     references: 'referenties',
     calculateur: 'calculator',
+    blog: 'blog',
+    mentions_legales: 'wettelijke-vermeldingen',
+    politique_confidentialite: 'privacybeleid',
+    cookies: 'cookies',
 
     pac_fonctionnement: 'warmtepompen/werking',
     pac_chauffage: 'warmtepompen/verwarming',
@@ -102,6 +118,10 @@ export const routeMap: RouteMap = {
     devis: 'devis',
     references: 'references',
     calculateur: 'calculateur',
+    blog: 'blog',
+    mentions_legales: 'mentions-legales',
+    politique_confidentialite: 'politique-confidentialite',
+    cookies: 'cookies',
 
     pac_fonctionnement: 'pompes-a-chaleur/fonctionnement',
     pac_chauffage: 'pompes-a-chaleur/chauffage',
@@ -126,6 +146,10 @@ export const routeMap: RouteMap = {
     devis: 'angebot',
     references: 'referenzen',
     calculateur: 'rechner',
+    blog: 'blog',
+    mentions_legales: 'impressum',
+    politique_confidentialite: 'datenschutz',
+    cookies: 'cookies',
 
     pac_fonctionnement: 'waermepumpen/funktionsweise',
     pac_chauffage: 'waermepumpen/heizung',
