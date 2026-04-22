@@ -1,0 +1,188 @@
+{
+  "_type": "homePage",
+  "locale": "lu-de",
+  "_id": "homePage-lu-de",
+  "hero": {
+    "tag": "Bohrung Innovation Expertise",
+    "title": "Experte für Geothermiebohrungen in Luxemburg",
+    "subtitle": "Wir realisieren geschlossene und offene Geothermiebohrungen für Wohngebäude, Bürogebäude, öffentliche Projekte und Immobilienentwicklungen. Mit WellDoneDrill wird Geothermie zu einer konkreten, zuverlässigen und wirtschaftlichen Lösung.",
+    "ctaLabel": "Kostenloses Angebot anfordern",
+    "secondaryLabel": "Unsere Leistungen entdecken"
+  },
+  "stats": [
+    {
+      "_key": "stat1",
+      "value": "5",
+      "label": "Bohrteams"
+    },
+    {
+      "_key": "stat2",
+      "value": "500+",
+      "label": "Realisierte Projekte"
+    },
+    {
+      "_key": "stat3",
+      "value": "3",
+      "label": "Abgedeckte Länder"
+    }
+  ],
+  "advantages": {
+    "eyebrow": "Warum Geothermie",
+    "title": "Setzen Sie auf",
+    "highlight": "Geothermie",
+    "items": [
+      {
+        "_key": "adv1",
+        "number": "01",
+        "icon": "EUR",
+        "title": "Senken Sie Ihre Energiekosten",
+        "description": "Geothermie nutzt die Energie im Boden, um Ihr Gebäude effizient zu heizen und zu kühlen. So senken Sie Ihre Betriebskosten dauerhaft."
+      },
+      {
+        "_key": "adv2",
+        "number": "02",
+        "icon": "CO2",
+        "title": "Reduzieren Sie Ihren CO2-Fußabdruck",
+        "description": "Geothermie ist eine lokale, erneuerbare und diskrete Lösung. Sie hilft dabei, Emissionen deutlich zu senken und fossile Energien schrittweise zu ersetzen."
+      },
+      {
+        "_key": "adv3",
+        "number": "03",
+        "icon": "C",
+        "title": "Steigern Sie Ihren Komfort",
+        "description": "Stabile Temperaturen, mögliche Kühlung und eine unsichtbare Lösung an der Oberfläche machen Geothermie zu einer nachhaltigen Komfortlösung."
+      }
+    ],
+    "calculatorTitle": "Berechnen Sie Ihren Vorteil",
+    "calculatorSubtitle": "Kostenloser Rechner"
+  },
+  "services": {
+    "eyebrow": "Unsere Bohrlösungen",
+    "title": "Zwei Technologien,",
+    "highlight": "eine Expertise",
+    "items": [
+      {
+        "_key": "svc1",
+        "badge": "Geschlossene Geothermie",
+        "title": "Bohrung vertikaler Erdwärmesonden",
+        "description": "Wir führen vertikale Bohrungen für Sondenanlagen aus, geeignet für Einfamilienhäuser ebenso wie für größere Wohn- und Tertiärprojekte.",
+        "routeKey": "geo_fermee"
+      },
+      {
+        "_key": "svc2",
+        "badge": "Offene Geothermie",
+        "title": "Bohrung für Geothermie über Grundwasser",
+        "description": "Wir realisieren Förder- und Reinjektionsbohrungen für offene Grundwassersysteme, wenn die hydrogeologischen Bedingungen geeignet sind.",
+        "routeKey": "geo_ouverte"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Unsere Baustellen in Bildern",
+    "title": "Unter der Erde,",
+    "highlight": "eine unerschöpfliche Energie",
+    "subtitle": "Entdecken Sie unsere Teams, Maschinen und Baustellen.",
+    "mainLabel": "Hauptvideo: Bohrmaschine im Einsatz",
+    "videoBadge": "Video",
+    "items": [
+      {
+        "_key": "gal1",
+        "label": "Teamfoto",
+        "city": "Luxemburg"
+      },
+      {
+        "_key": "gal2",
+        "label": "Sondenfoto",
+        "city": "Esch"
+      },
+      {
+        "_key": "gal3",
+        "label": "Baustellenfoto",
+        "city": "Kirchberg"
+      },
+      {
+        "_key": "gal4",
+        "label": "Maschinenfoto",
+        "city": "Belval"
+      }
+    ]
+  },
+  "audiences": {
+    "particular": {
+      "eyebrow": "Für Privatkunden",
+      "title": "Genießen Sie nachhaltigen Komfort",
+      "description": "Sie bauen oder renovieren? Geothermie ist eine zuverlässige Lösung, um Ihr Haus mit hohem Komfort effizient zu heizen und zu kühlen.",
+      "buttonLabel": "Ihr Angebot anfordern"
+    },
+    "professional": {
+      "eyebrow": "Für Unternehmen",
+      "title": "Maßgeschneiderte Lösungen für anspruchsvolle Projekte",
+      "description": "Projektentwickler, Architekten, Ingenieure, Installateure und öffentliche Auftraggeber: Wir begleiten Wohn-, Tertiär- und institutionelle Projekte.",
+      "buttonLabel": "Mein Projekt einreichen"
+    }
+  },
+  "machine": {
+    "eyebrow": "Unser Maschinenpark",
+    "title": "Eine strukturierte",
+    "highlight": "Einsatzkapazität",
+    "description": "Dank unserer Organisation und unseres Maschinenparks arbeiten wir mit hoher Sorgfalt, Sicherheit und Produktivität an Geothermieprojekten.",
+    "items": [
+      "Strukturierter Maschinenpark",
+      "Spezialisierte Geothermie-Methoden",
+      "Erfahrene Teams",
+      "Leistungsorientierte Organisation"
+    ],
+    "buttonLabel": "Mehr erfahren"
+  },
+  "clients": {
+    "eyebrow": "Sie vertrauen uns",
+    "title": "Unsere",
+    "highlight": "Referenzen",
+    "items": [
+      "Projektentwickler",
+      "Architekten",
+      "Ingenieurbüros",
+      "Öffentliche Akteure",
+      "Installateure",
+      "Unternehmen",
+      "Entwickler",
+      "Institutionen"
+    ]
+  },
+  "blog": {
+    "eyebrow": "Geothermie-News",
+    "title": "Unsere neuesten Beiträge",
+    "highlight": "zur Geothermie",
+    "readMoreLabel": "Mehr lesen",
+    "posts": [
+      {
+        "_key": "post1",
+        "title": "Warum eine präzise Dokumentation nach der Bohrung entscheidend ist",
+        "date": "März 2026",
+        "excerpt": "Die As-built-Dokumentation sichert die Weitergabe der wesentlichen technischen Informationen nach der Ausführung.",
+        "tone": "bg-wdd-ground/50"
+      },
+      {
+        "_key": "post2",
+        "title": "Maschine, Methode und Produktivität: die Schlüssel einer erfolgreichen Bohrung",
+        "date": "Januar 2026",
+        "excerpt": "Die Leistung einer Baustelle hängt von der Maschine ebenso ab wie von der Organisation und der Ausführungsqualität.",
+        "tone": "bg-wdd-grass/40"
+      },
+      {
+        "_key": "post3",
+        "title": "Geothermie früh einplanen, um Projekte besser zu dimensionieren",
+        "date": "Januar 2026",
+        "excerpt": "Je früher Geothermie berücksichtigt wird, desto besser lassen sich Technik, Budget und Integration optimieren.",
+        "tone": "bg-wdd-mud/50"
+      }
+    ]
+  },
+  "cta": {
+    "pretitle": "Sprechen wir über Ihr Projekt",
+    "title": "Ihr Projekt beginnt hier",
+    "buttonLabel": "Kostenloses Angebot anfordern",
+    "phone": "+32 478 75 36 79",
+    "email": "info@welldonedrill.energy"
+  }
+}

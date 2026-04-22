@@ -1,0 +1,190 @@
+{
+  "_type": "homePage",
+  "locale": "be-nl",
+  "_id": "homePage-be-nl",
+  "hero": {
+    "tag": "Boring Innovatie Expertise",
+    "title": "Expert in geothermische boringen in België",
+    "subtitle": "Wij realiseren gesloten en open geothermische boringen voor woningen, tertiaire gebouwen, publieke projecten en vastgoedprojecten. Met WellDoneDrill wordt geothermie een concrete, betrouwbare en rendabele oplossing.",
+    "ctaLabel": "Vraag een gratis offerte aan",
+    "secondaryLabel": "Ontdek onze diensten"
+  },
+  "stats": [
+    {
+      "_key": "stat1",
+      "value": "5",
+      "label": "Boorateliers"
+    },
+    {
+      "_key": "stat2",
+      "value": "500+",
+      "label": "Gerealiseerde projecten"
+    },
+    {
+      "_key": "stat3",
+      "value": "11",
+      "label": "Belgische provincies"
+    }
+  ],
+  "advantages": {
+    "eyebrow": "Waarom geothermie",
+    "title": "Kies voor",
+    "highlight": "geothermie",
+    "items": [
+      {
+        "_key": "adv1",
+        "number": "01",
+        "icon": "EUR",
+        "title": "Verlaag uw energiefacturen",
+        "description": "Geothermie benut de energie in de bodem om uw gebouw zeer efficiënt te verwarmen en te koelen. Zo verlaagt u uw energiekosten op lange termijn."
+      },
+      {
+        "_key": "adv2",
+        "number": "02",
+        "icon": "CO2",
+        "title": "Verklein uw ecologische voetafdruk",
+        "description": "Geothermie is een lokale, hernieuwbare en discrete oplossing. Ze helpt de uitstoot door verwarming sterk te verminderen en geleidelijk fossiele brandstoffen te vervangen."
+      },
+      {
+        "_key": "adv3",
+        "number": "03",
+        "icon": "C",
+        "title": "Verbeter uw comfort",
+        "description": "Stabiele temperaturen, mogelijkheid tot koeling, onzichtbaar aan de oppervlakte en duurzame prestaties: geothermie verhoogt het comfort in zomer en winter."
+      }
+    ],
+    "calculatorTitle": "Bereken uw voordeel",
+    "calculatorSubtitle": "Gratis simulator"
+  },
+  "services": {
+    "eyebrow": "Onze booroplossingen",
+    "title": "Twee technologieën,",
+    "highlight": "één expertise",
+    "items": [
+      {
+        "_key": "svc1",
+        "badge": "Gesloten geothermie",
+        "title": "Boring van verticale geothermische sondes",
+        "description": "Wij realiseren verticale boringen voor sonde-installaties, geschikt voor zowel woningen als grote projecten. Dit is de meest gebruikte oplossing voor verwarming en koeling.",
+        "routeKey": "geo_fermee"
+      },
+      {
+        "_key": "svc2",
+        "badge": "Open geothermie",
+        "title": "Boring voor geothermie op grondwater",
+        "description": "Wij realiseren de captatie- en injectieboringen die nodig zijn voor open systemen op grondwater, wanneer de hydrogeologische context dit toelaat en de oplossing relevant is.",
+        "routeKey": "geo_ouverte"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Onze werven in beeld",
+    "title": "Onder de grond,",
+    "highlight": "een onuitputtelijke energie",
+    "subtitle": "Ontdek onze teams, machines en werven overal in België.",
+    "mainLabel": "Hoofdvideo: boormachine in actie",
+    "videoBadge": "Video",
+    "items": [
+      {
+        "_key": "gal1",
+        "label": "Foto team",
+        "city": "Namen"
+      },
+      {
+        "_key": "gal2",
+        "label": "Foto sondes",
+        "city": "Waals-Brabant"
+      },
+      {
+        "_key": "gal3",
+        "label": "Foto werf",
+        "city": "Brussel"
+      },
+      {
+        "_key": "gal4",
+        "label": "Foto machine",
+        "city": "Luik"
+      }
+    ]
+  },
+  "audiences": {
+    "particular": {
+      "eyebrow": "Voor particulieren",
+      "title": "Geniet van optimaal comfort",
+      "description": "Bouwt of renoveert u? Geothermie is een duurzame oplossing om uw woning te verwarmen en te koelen met hoog comfort en stabiele energiekosten op lange termijn.",
+      "buttonLabel": "Vraag uw offerte aan"
+    },
+    "professional": {
+      "eyebrow": "Voor bedrijven",
+      "title": "Maatwerkoplossingen voor grote projecten",
+      "description": "Projectontwikkelaars, studiebureaus, architecten, installateurs en publieke actoren: wij werken aan residentiële, tertiaire, industriële en institutionele projecten.",
+      "buttonLabel": "Dien mijn project in"
+    }
+  },
+  "machine": {
+    "eyebrow": "Ons machinepark",
+    "title": "Wij boren overal in",
+    "highlight": "België",
+    "description": "Dankzij ons machinepark en onze werforganisatie kunnen wij snel en methodisch ingrijpen op het hele Belgische grondgebied.",
+    "items": [
+      "5 beschikbare boorateliers",
+      "11 Belgische provincies gedekt",
+      "Machines gespecialiseerd in geothermie",
+      "Gecertificeerde en ervaren teams"
+    ],
+    "buttonLabel": "Meer weten"
+  },
+  "clients": {
+    "eyebrow": "Zij vertrouwen ons",
+    "title": "Onze",
+    "highlight": "referenties",
+    "items": [
+      "Trafic",
+      "Belgische Defensie",
+      "BW Invest",
+      "Karno",
+      "Thomas & Piron",
+      "SOWAER",
+      "2lements",
+      "IGRETEC",
+      "RDB",
+      "Matexi"
+    ]
+  },
+  "blog": {
+    "eyebrow": "Geothermie nieuws",
+    "title": "Onze laatste updates",
+    "highlight": "over geothermie",
+    "readMoreLabel": "Lees meer",
+    "posts": [
+      {
+        "_key": "post1",
+        "title": "Na de boring: waarom het as-built dossier essentieel is",
+        "date": "Maart 2026",
+        "excerpt": "Na de boring zorgt het as-built dossier voor een duidelijke en bruikbare referentie voor de volgende projectfasen en de toekomstige exploitatie.",
+        "tone": "bg-wdd-ground/50"
+      },
+      {
+        "_key": "post2",
+        "title": "De Hütte 205 GT, ontworpen voor geothermische boringen",
+        "date": "Januari 2026",
+        "excerpt": "De keuze van de machine heeft een directe impact op de uitvoeringskwaliteit, de productiviteit van de werf en het vermogen om zich aan de ondergrond aan te passen.",
+        "tone": "bg-wdd-grass/40"
+      },
+      {
+        "_key": "post3",
+        "title": "Waarom geothermie al in de ontwerpfase meenemen",
+        "date": "Januari 2026",
+        "excerpt": "Hoe vroeger geothermie in een project wordt overwogen, hoe beter dimensionering, budget en technische integratie kunnen worden geoptimaliseerd.",
+        "tone": "bg-wdd-mud/50"
+      }
+    ]
+  },
+  "cta": {
+    "pretitle": "Rue du Libut 71, 5310 Éghezée",
+    "title": "Uw project begint hier",
+    "buttonLabel": "Vraag een gratis offerte aan",
+    "phone": "+32 478 75 36 79",
+    "email": "info@welldonedrill.energy"
+  }
+}

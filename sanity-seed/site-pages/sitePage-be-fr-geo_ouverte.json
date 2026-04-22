@@ -1,0 +1,63 @@
+{
+  "_id": "sitePage-be-fr-geo_ouverte",
+  "_type": "sitePage",
+  "locale": "be-fr",
+  "routeKey": "geo_ouverte",
+  "title": "Géothermie ouverte",
+  "heroEyebrow": "Géothermie",
+  "heroTitle": "Géothermie ouverte",
+  "heroSubtitle": "Cette page vous aide à comprendre géothermie ouverte et à voir comment WellDoneDrill peut vous accompagner concrètement sur votre projet en Belgique.",
+  "seoTitle": "Géothermie ouverte | WellDoneDrill",
+  "seoDescription": "Découvrez géothermie ouverte avec WellDoneDrill : explications, méthode de travail et accompagnement projet.",
+  "sections": [
+    {
+      "_key": "geo_ouverte-s1",
+      "eyebrow": "Comprendre",
+      "title": "Ce qu’il faut savoir sur géothermie ouverte",
+      "body": "Chez WellDoneDrill, nous considérons que la qualité d’un projet commence par une bonne compréhension du contexte technique, du terrain, des objectifs énergétiques et des contraintes de réalisation. Géothermie ouverte doit donc être abordé avec méthode, clarté et pragmatisme.",
+      "items": []
+    },
+    {
+      "_key": "geo_ouverte-s2",
+      "eyebrow": "Méthode",
+      "title": "Comment WellDoneDrill vous accompagne",
+      "body": "Nous intervenons avec une logique simple : cadrer le projet, vérifier sa pertinence, exécuter avec rigueur et garder une communication claire tout au long du chantier.",
+      "items": [
+        "Analyse technique et faisabilité du projet",
+        "Approche adaptée au terrain et au type de bâtiment",
+        "Exécution structurée du forage",
+        "Dialogue simple avec le client, l’installateur et les autres intervenants"
+      ]
+    },
+    {
+      "_key": "geo_ouverte-s3",
+      "eyebrow": "Résultat",
+      "title": "Une approche orientée performance et confiance",
+      "body": "L’objectif n’est pas seulement de forer. L’objectif est de contribuer à une solution énergétique durable, fiable et cohérente avec le projet global. C’est cette logique qui structure le positionnement de WellDoneDrill.",
+      "items": []
+    }
+  ],
+  "faqTitle": "Questions fréquentes",
+  "faqs": [
+    {
+      "_key": "geo_ouverte-f1",
+      "question": "Géothermie ouverte est-il adapté à tous les projets ?",
+      "answer": "Chaque projet doit être vérifié selon le contexte, le type de bâtiment, les contraintes du site et les objectifs énergétiques. Une bonne décision commence toujours par une analyse sérieuse."
+    },
+    {
+      "_key": "geo_ouverte-f2",
+      "question": "Quand faut-il aborder ce sujet dans le projet ?",
+      "answer": "Le plus tôt possible. Plus la réflexion démarre tôt, plus il est facile d’optimiser le dimensionnement, le budget et l’intégration technique."
+    },
+    {
+      "_key": "geo_ouverte-f3",
+      "question": "Quel est l’intérêt de travailler avec WellDoneDrill ?",
+      "answer": "WellDoneDrill apporte une approche de terrain, une vraie spécialisation forage géothermique et une volonté de rendre le sujet concret, lisible et exécutable."
+    }
+  ],
+  "ctaPretitle": "Parlons de votre projet",
+  "ctaTitle": "Vous avancez sur géothermie ouverte ?",
+  "ctaText": "Nous pouvons vous aider à cadrer votre projet, à confirmer la bonne approche technique et à avancer vers une exécution propre, claire et structurée.",
+  "ctaLabel": "Soumettre un projet",
+  "ctaRouteKey": "pro_soumission"
+}

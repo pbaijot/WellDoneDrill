@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-be-fr-mentions_legales",
+  "_type": "sitePage",
+  "locale": "be-fr",
+  "routeKey": "mentions_legales",
+  "title": "Mentions légales",
+  "heroEyebrow": "Informations légales",
+  "heroTitle": "Mentions légales",
+  "heroSubtitle": "Vous trouverez ici les informations utiles liées à mentions légales pour le site WellDoneDrill.",
+  "seoTitle": "Mentions légales | WellDoneDrill",
+  "seoDescription": "Consultez la page mentions légales du site WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "mentions_legales-s1",
+      "eyebrow": "Cadre",
+      "title": "Mentions légales",
+      "body": "Cette page constitue un premier cadre éditorial pour mentions légales. Elle doit être revue avec les informations juridiques définitives de l’entreprise avant mise en production.",
+      "items": []
+    },
+    {
+      "_key": "mentions_legales-s2",
+      "eyebrow": "À compléter",
+      "title": "Éléments à valider",
+      "body": "Avant publication finale, il convient de confirmer les coordonnées légales, le responsable de traitement, les bases légales, les durées de conservation, les sous-traitants éventuels et les mécanismes de consentement.",
+      "items": [
+        "Coordonnées de la société",
+        "Données collectées",
+        "Finalités du traitement",
+        "Durée de conservation",
+        "Droits des utilisateurs"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Besoin d’une précision ?",
+  "ctaTitle": "Contactez WellDoneDrill",
+  "ctaText": "Pour toute question liée à vos données, à vos consentements ou à l’utilisation du site, vous pouvez nous contacter directement.",
+  "ctaLabel": "Nous contacter",
+  "ctaRouteKey": "devis"
+}

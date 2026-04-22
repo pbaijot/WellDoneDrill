@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-lu-fr-cookies",
+  "_type": "sitePage",
+  "locale": "lu-fr",
+  "routeKey": "cookies",
+  "title": "Politique cookies",
+  "heroEyebrow": "Informations légales",
+  "heroTitle": "Politique cookies",
+  "heroSubtitle": "Vous trouverez ici les informations utiles liées à politique cookies pour le site WellDoneDrill.",
+  "seoTitle": "Politique cookies | WellDoneDrill",
+  "seoDescription": "Consultez la page politique cookies du site WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "cookies-s1",
+      "eyebrow": "Cadre",
+      "title": "Politique cookies",
+      "body": "Cette page constitue un premier cadre éditorial pour politique cookies. Elle doit être revue avec les informations juridiques définitives de l’entreprise avant mise en production.",
+      "items": []
+    },
+    {
+      "_key": "cookies-s2",
+      "eyebrow": "À compléter",
+      "title": "Éléments à valider",
+      "body": "Avant publication finale, il convient de confirmer les coordonnées légales, le responsable de traitement, les bases légales, les durées de conservation, les sous-traitants éventuels et les mécanismes de consentement.",
+      "items": [
+        "Coordonnées de la société",
+        "Données collectées",
+        "Finalités du traitement",
+        "Durée de conservation",
+        "Droits des utilisateurs"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Besoin d’une précision ?",
+  "ctaTitle": "Contactez WellDoneDrill",
+  "ctaText": "Pour toute question liée à vos données, à vos consentements ou à l’utilisation du site, vous pouvez nous contacter directement.",
+  "ctaLabel": "Nous contacter",
+  "ctaRouteKey": "devis"
+}

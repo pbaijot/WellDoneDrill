@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-fr-fr-geo_ouverte",
+  "_type": "geoPage",
+  "locale": "fr-fr",
+  "routeKey": "geo_ouverte",
+  "heroLine1": "Pomper.",
+  "heroLine2": "Capter.",
+  "heroLine3": "Réinjecter.",
+  "heroSubtitle": "Optez pour la géothermie ouverte avec WellDoneDrill et profitez d’un système de chauffage et de refroidissement à haute efficacité énergétique, adapté aux projets de moyenne à grande taille en France.",
+  "heroCtaLabel": "Contactez-nous",
+  "introTitle": "Géothermie ouverte : exploitez l’énergie thermique des nappes phréatiques",
+  "introBody1": "La géothermie ouverte utilise l’eau souterraine comme vecteur d’énergie. L’eau est pompée, passe par le système énergétique, puis est réinjectée dans la nappe dans le respect de son équilibre.",
+  "introBody2": "Cette solution est particulièrement pertinente quand les besoins thermiques sont importants et que le contexte hydrogéologique permet un projet robuste, bien dimensionné et bien encadré.",
+  "introCtaLabel": "Demandez un devis",
+  "howTitle": "Comment fonctionne la géothermie ouverte ?",
+  "howIntro": "La géothermie ouverte s’appuie sur la circulation réelle d’eau souterraine. Elle demande donc plus qu’un simple forage : elle suppose aussi une bonne lecture de la nappe, des débits et du contexte réglementaire.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Prélèvement de l’eau souterraine",
+      "body": "Un forage de captage permet de pomper l’eau présente dans la nappe et de l’amener vers le système énergétique."
+    },
+    {
+      "_key": "h2",
+      "title": "Valorisation thermique",
+      "body": "La chaleur ou le froid est récupéré via le système de pompe à chaleur pour répondre aux besoins du bâtiment."
+    },
+    {
+      "_key": "h3",
+      "title": "Réinjection maîtrisée",
+      "body": "Après échange thermique, l’eau est réinjectée dans la nappe selon une logique pensée pour la durabilité du système."
+    }
+  ],
+  "howCtaLabel": "Intéressé ? Contactez-nous",
+  "projectTitle": "Votre projet de géothermie ouverte en 5 étapes simples",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Étude hydrogéologique et devis",
+      "body": "Nous analysons la nappe, les débits potentiels, la qualité de l’eau et les contraintes du site."
+    },
+    {
+      "_key": "p2",
+      "title": "Coordination avec l’installateur",
+      "body": "Le dialogue avec l’installateur ou l’équipe projet permet de cadrer la bonne architecture technique."
+    },
+    {
+      "_key": "p3",
+      "title": "Validation et dimensionnement",
+      "body": "Le système est confirmé sur base des besoins réels, du contexte du bâtiment et des conditions de ressource."
+    },
+    {
+      "_key": "p4",
+      "title": "Forages de captage et de réinjection",
+      "body": "Les ouvrages sont réalisés et testés avec une logique d’exécution précise, adaptée au projet et au site."
+    },
+    {
+      "_key": "p5",
+      "title": "Mise en service",
+      "body": "Une fois l’installation finalisée, le bâtiment bénéficie d’une solution performante de chauffage et de refroidissement."
+    }
+  ],
+  "projectCtaLabel": "Parlez-nous de votre projet",
+  "faqIntroTitle": "L’eau souterraine, une ressource énergétique naturelle",
+  "faqIntroBody": "Lorsqu’elle est disponible dans de bonnes conditions, l’eau souterraine constitue un excellent vecteur d’énergie pour des projets exigeants, avec de forts besoins thermiques et une recherche de performance durable.",
+  "faqTitle": "Questions fréquentes sur la géothermie ouverte",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "Quelle est la différence avec la géothermie fermée ?",
+      "answer": "La géothermie ouverte utilise directement l’eau de la nappe, alors que la géothermie fermée fonctionne avec un circuit scellé dans des sondes verticales."
+    },
+    {
+      "_key": "f2",
+      "question": "Quels projets sont adaptés ?",
+      "answer": "Elle est particulièrement pertinente pour les bâtiments et ensembles ayant des besoins thermiques importants : tertiaire, public, industrie, résidentiel collectif ou réseaux."
+    },
+    {
+      "_key": "f3",
+      "question": "Quelles conditions de faisabilité faut-il vérifier ?",
+      "answer": "La présence d’une ressource accessible, un débit suffisant, des conditions de réinjection viables et un cadre réglementaire maîtrisable."
+    },
+    {
+      "_key": "f4",
+      "question": "Quels sont les avantages principaux ?",
+      "answer": "Un rendement élevé, une bonne capacité sur les projets ambitieux, et une solution bas carbone pour le chauffage comme pour le refroidissement."
+    }
+  ],
+  "finalCtaTitle": "Envie de décarboner votre chaleur avec la géothermie ouverte ?",
+  "finalCtaLabel": "Oui, je soumets mon projet",
+  "seoTitle": "Géothermie ouverte | WellDoneDrill France",
+  "seoDescription": "Découvrez la géothermie ouverte avec WellDoneDrill : principe, fonctionnement, faisabilité et étapes d’un projet sur nappe."
+}

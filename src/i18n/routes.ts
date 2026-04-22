@@ -22,6 +22,7 @@ export type RouteKey =
   | 'pro_entrepreneurs'
   | 'pro_soumission'
   | 'blog'
+  | 'a_propos'
   | 'mentions_legales'
   | 'politique_confidentialite'
   | 'cookies'
@@ -35,6 +36,7 @@ export const routeMap: RouteMap = {
     references: 'references',
     calculateur: 'calculateur',
     blog: 'blog',
+    a_propos: 'a-propos',
     mentions_legales: 'mentions-legales',
     politique_confidentialite: 'politique-confidentialite',
     cookies: 'cookies',
@@ -63,6 +65,7 @@ export const routeMap: RouteMap = {
     references: 'references',
     calculateur: 'calculateur',
     blog: 'blog',
+    a_propos: 'a-propos',
     mentions_legales: 'mentions-legales',
     politique_confidentialite: 'politique-confidentialite',
     cookies: 'cookies',
@@ -91,6 +94,7 @@ export const routeMap: RouteMap = {
     references: 'referenties',
     calculateur: 'calculator',
     blog: 'blog',
+    a_propos: 'over-ons',
     mentions_legales: 'wettelijke-vermeldingen',
     politique_confidentialite: 'privacybeleid',
     cookies: 'cookies',
@@ -119,6 +123,7 @@ export const routeMap: RouteMap = {
     references: 'references',
     calculateur: 'calculateur',
     blog: 'blog',
+    a_propos: 'a-propos',
     mentions_legales: 'mentions-legales',
     politique_confidentialite: 'politique-confidentialite',
     cookies: 'cookies',
@@ -147,6 +152,7 @@ export const routeMap: RouteMap = {
     references: 'referenzen',
     calculateur: 'rechner',
     blog: 'blog',
+    a_propos: 'uber-uns',
     mentions_legales: 'impressum',
     politique_confidentialite: 'datenschutz',
     cookies: 'cookies',

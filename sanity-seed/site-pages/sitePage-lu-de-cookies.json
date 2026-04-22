@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-lu-de-cookies",
+  "_type": "sitePage",
+  "locale": "lu-de",
+  "routeKey": "cookies",
+  "title": "Cookie-Richtlinie",
+  "heroEyebrow": "Rechtliche Informationen",
+  "heroTitle": "Cookie-Richtlinie",
+  "heroSubtitle": "Hier finden Sie nützliche Informationen zu cookie-richtlinie für die WellDoneDrill-Website.",
+  "seoTitle": "Cookie-Richtlinie | WellDoneDrill",
+  "seoDescription": "Lesen Sie die Seite cookie-richtlinie von WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "cookies-s1",
+      "eyebrow": "Rahmen",
+      "title": "Cookie-Richtlinie",
+      "body": "Diese Seite bildet einen ersten redaktionellen Rahmen für cookie-richtlinie. Vor der Veröffentlichung sollte sie mit den endgültigen rechtlichen Unternehmensinformationen geprüft werden.",
+      "items": []
+    },
+    {
+      "_key": "cookies-s2",
+      "eyebrow": "Zu bestätigen",
+      "title": "Noch zu prüfende Elemente",
+      "body": "Vor der finalen Veröffentlichung müssen Unternehmensdaten, Zwecke der Datenverarbeitung, Speicherdauern, beteiligte Dienstleister und Einwilligungsmechanismen bestätigt werden.",
+      "items": [
+        "Unternehmensdaten",
+        "Erhobene Daten",
+        "Zwecke der Verarbeitung",
+        "Speicherdauer",
+        "Rechte der Nutzer"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Noch Fragen?",
+  "ctaTitle": "Kontaktieren Sie WellDoneDrill",
+  "ctaText": "Bei Fragen zu Daten, Einwilligungen oder zur Nutzung der Website können Sie sich direkt an uns wenden.",
+  "ctaLabel": "Kontakt aufnehmen",
+  "ctaRouteKey": "devis"
+}

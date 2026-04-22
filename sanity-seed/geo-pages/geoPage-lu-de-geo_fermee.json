@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-lu-de-geo_fermee",
+  "_type": "geoPage",
+  "locale": "lu-de",
+  "routeKey": "geo_fermee",
+  "heroLine1": "Bohren.",
+  "heroLine2": "Übertragen.",
+  "heroLine3": "Verteilen.",
+  "heroSubtitle": "Setzen Sie mit WellDoneDrill auf geschlossene Geothermie und profitieren Sie das ganze Jahr über von thermischem Komfort dank stabiler und nachhaltiger Energie.",
+  "heroCtaLabel": "Kontaktieren Sie uns",
+  "introTitle": "Geschlossene Geothermie: Nutzen Sie die Energie unter Ihren Füßen",
+  "introBody1": "Geschlossene Geothermie arbeitet mit vertikalen Sonden im Untergrund. Sie entziehen dem Boden Wärme und übertragen sie an eine Wärmepumpe für Heizen im Winter und Kühlen im Sommer.",
+  "introBody2": "Es ist eine diskrete, robuste und langfristig relevante Lösung für Einfamilienhäuser ebenso wie für größere Gebäude.",
+  "introCtaLabel": "Angebot anfordern",
+  "howTitle": "Wie funktioniert geschlossene Geothermie mit Sonden?",
+  "howIntro": "Der Untergrund speichert über das Jahr eine relativ stabile Temperatur. Geschlossene Geothermie macht diese Energie über einen geschlossenen Kreislauf nutzbar, ohne Grundwasser zu entnehmen.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Bohrung der Erdsonden",
+      "body": "Vertikale Bohrungen werden ausgeführt, um Sonden mit zirkulierender Wärmeträgerflüssigkeit in einem geschlossenen Kreislauf einzubauen."
+    },
+    {
+      "_key": "h2",
+      "title": "Übertragung zur Wärmepumpe",
+      "body": "Die Flüssigkeit nimmt Energie aus dem Boden auf und überträgt sie an die Wärmepumpe des Gebäudes."
+    },
+    {
+      "_key": "h3",
+      "title": "Passive Kühlung im Sommer",
+      "body": "Im Sommer kann ein Teil der Innenwärme in den Boden abgeführt werden, um den Komfort zu verbessern."
+    }
+  ],
+  "howCtaLabel": "Interessiert? Kontaktieren Sie uns",
+  "projectTitle": "Ihr Projekt geschlossene Geothermie in 5 einfachen Schritten",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Studie und Angebot",
+      "body": "Wir analysieren Gelände, Projektkontext und Energiebedarf, um die Machbarkeit zu bestätigen."
+    },
+    {
+      "_key": "p2",
+      "title": "Abstimmung mit dem Installateur",
+      "body": "Wir arbeiten mit Ihrem Wärmepumpeninstallateur zusammen oder empfehlen einen geeigneten Partner."
+    },
+    {
+      "_key": "p3",
+      "title": "Technische Validierung",
+      "body": "Die Lösung wird bestätigt, die Auslegung festgelegt und die Ausführung sauber vorbereitet."
+    },
+    {
+      "_key": "p4",
+      "title": "Bohrung und Einbau der Sonden",
+      "body": "Die Bohrungen werden ausgeführt und die Sonden mit einer strukturierten Baustellenmethodik eingebaut."
+    },
+    {
+      "_key": "p5",
+      "title": "Inbetriebnahme",
+      "body": "Nach Abschluss profitiert das Gebäude von einer stabilen und nachhaltigen Energiequelle."
+    }
+  ],
+  "projectCtaLabel": "Erzählen Sie uns von Ihrem Projekt",
+  "faqIntroTitle": "Der Boden als nachhaltige Energiequelle",
+  "faqIntroBody": "Unter der Oberfläche bleibt die Bodentemperatur deutlich stabiler als die Außentemperatur. Genau das macht geschlossene Geothermie technisch interessant für Heizen und Kühlen.",
+  "faqTitle": "Häufige Fragen zur geschlossenen Geothermie",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "Was ist eine geschlossene Geothermiebohrung?",
+      "answer": "Es werden eine oder mehrere vertikale Bohrungen erstellt, um geschlossene Sonden einzubauen. Das System nutzt kein Grundwasser direkt."
+    },
+    {
+      "_key": "f2",
+      "question": "Welche Vorteile haben vertikale Sonden?",
+      "answer": "Sie benötigen wenig Fläche, passen zu vielen Projekten und liefern eine stabile Energiequelle."
+    },
+    {
+      "_key": "f3",
+      "question": "Kann geschlossene Geothermie auch kühlen?",
+      "answer": "Ja. In vielen Fällen ist passive oder natürliche Kühlung möglich."
+    },
+    {
+      "_key": "f4",
+      "question": "Wie tief muss gebohrt werden?",
+      "answer": "Das hängt von Auslegung, Geologie und Energiebedarf des Projekts ab."
+    }
+  ],
+  "finalCtaTitle": "Möchten Sie die Energie unter Ihren Füßen nutzen?",
+  "finalCtaLabel": "Ja, ich fordere ein Angebot an",
+  "seoTitle": "Geschlossene Geothermie | WellDoneDrill",
+  "seoDescription": "Entdecken Sie geschlossene Geothermie mit WellDoneDrill: Prinzip, Funktionsweise, Projektablauf und Vorteile."
+}

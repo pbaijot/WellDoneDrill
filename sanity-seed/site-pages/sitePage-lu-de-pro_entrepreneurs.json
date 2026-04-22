@@ -1,0 +1,63 @@
+{
+  "_id": "sitePage-lu-de-pro_entrepreneurs",
+  "_type": "sitePage",
+  "locale": "lu-de",
+  "routeKey": "pro_entrepreneurs",
+  "title": "Geothermie für Entwickler und Generalunternehmer",
+  "heroEyebrow": "Profis",
+  "heroTitle": "Geothermie für Entwickler und Generalunternehmer",
+  "heroSubtitle": "Diese Seite zeigt, wie WellDoneDrill bei geothermie für entwickler und generalunternehmer mit Projektpartnern strukturiert, reaktiv und technisch sauber zusammenarbeitet.",
+  "seoTitle": "Geothermie für Entwickler und Generalunternehmer | WellDoneDrill",
+  "seoDescription": "Entdecken Sie geothermie für entwickler und generalunternehmer mit WellDoneDrill: Erklärungen, Arbeitsweise und Projektbegleitung.",
+  "sections": [
+    {
+      "_key": "pro_entrepreneurs-s1",
+      "eyebrow": "Verstehen",
+      "title": "Was man über geothermie für entwickler und generalunternehmer wissen sollte",
+      "body": "Bei WellDoneDrill beginnt Qualität mit einem guten Verständnis des technischen Kontexts, des Untergrunds, der Energieziele und der Ausführungsbedingungen. Deshalb sollte geothermie für entwickler und generalunternehmer immer methodisch und klar behandelt werden.",
+      "items": []
+    },
+    {
+      "_key": "pro_entrepreneurs-s2",
+      "eyebrow": "Methode",
+      "title": "Wie WellDoneDrill Sie begleitet",
+      "body": "Wir arbeiten nach einer einfachen Logik: Projekt sauber einordnen, Relevanz prüfen, sorgfältig ausführen und während des gesamten Prozesses klar kommunizieren.",
+      "items": [
+        "Technische Analyse und Machbarkeit",
+        "Ansatz passend zu Untergrund und Gebäudetyp",
+        "Strukturierte Ausführung der Bohrarbeiten",
+        "Klare Kommunikation mit Kunde und Projektpartnern"
+      ]
+    },
+    {
+      "_key": "pro_entrepreneurs-s3",
+      "eyebrow": "Ergebnis",
+      "title": "Ein Ansatz für Leistung und Vertrauen",
+      "body": "Das Ziel ist nicht nur zu bohren. Das Ziel ist, zu einer nachhaltigen, zuverlässigen und stimmigen Energielösung beizutragen, die zum Gesamtprojekt passt.",
+      "items": []
+    }
+  ],
+  "faqTitle": "Häufige Fragen",
+  "faqs": [
+    {
+      "_key": "pro_entrepreneurs-f1",
+      "question": "Ist geothermie für entwickler und generalunternehmer für jedes Projekt geeignet?",
+      "answer": "Jedes Projekt muss je nach Kontext, Gebäudetyp, Standortbedingungen und Energiezielen geprüft werden."
+    },
+    {
+      "_key": "pro_entrepreneurs-f2",
+      "question": "Wann sollte dieses Thema im Projekt behandelt werden?",
+      "answer": "So früh wie möglich. Je früher das Thema berücksichtigt wird, desto besser lassen sich Auslegung, Budget und technische Integration optimieren."
+    },
+    {
+      "_key": "pro_entrepreneurs-f3",
+      "question": "Warum mit WellDoneDrill arbeiten?",
+      "answer": "WellDoneDrill verbindet Praxiserfahrung, echte Spezialisierung im Bereich Geothermiebohrung und den Willen, komplexe Themen konkret und umsetzbar zu machen."
+    }
+  ],
+  "ctaPretitle": "Sprechen wir über Ihr Projekt",
+  "ctaTitle": "Arbeiten Sie aktuell an geothermie für entwickler und generalunternehmer?",
+  "ctaText": "Wir helfen Ihnen dabei, Ihr Projekt sauber zu strukturieren, den richtigen technischen Ansatz zu bestätigen und zu einer klaren und gut organisierten Ausführung zu kommen.",
+  "ctaLabel": "Projekt einreichen",
+  "ctaRouteKey": "pro_soumission"
+}

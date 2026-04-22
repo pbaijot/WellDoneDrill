@@ -1,0 +1,188 @@
+{
+  "_type": "homePage",
+  "locale": "fr-fr",
+  "_id": "homePage-fr-fr",
+  "hero": {
+    "tag": "Forage Innovation Expertise",
+    "title": "Expert en forage géothermique en France",
+    "subtitle": "Nous réalisons vos forages géothermiques fermés et ouverts pour les maisons, les bâtiments tertiaires, les projets publics et les projets immobiliers. Avec WellDoneDrill, la géothermie devient une solution concrète, fiable et rentable.",
+    "ctaLabel": "Demandez un devis gratuit",
+    "secondaryLabel": "Découvrir nos services"
+  },
+  "stats": [
+    {
+      "_key": "stat1",
+      "value": "5",
+      "label": "Ateliers de forage"
+    },
+    {
+      "_key": "stat2",
+      "value": "500+",
+      "label": "Chantiers réalisés"
+    },
+    {
+      "_key": "stat3",
+      "value": "3",
+      "label": "Pays couverts"
+    }
+  ],
+  "advantages": {
+    "eyebrow": "Pourquoi la géothermie",
+    "title": "Passez à",
+    "highlight": "la géothermie",
+    "items": [
+      {
+        "_key": "adv1",
+        "number": "01",
+        "icon": "EUR",
+        "title": "Réduisez vos dépenses énergétiques",
+        "description": "La géothermie valorise l’énergie présente dans le sol pour chauffer et rafraîchir votre bâtiment avec une grande efficacité. Vous réduisez durablement vos coûts."
+      },
+      {
+        "_key": "adv2",
+        "number": "02",
+        "icon": "CO2",
+        "title": "Réduisez vos émissions",
+        "description": "Solution locale, renouvelable et discrète, la géothermie permet de diminuer fortement l’impact carbone lié au chauffage et d’anticiper la sortie des énergies fossiles."
+      },
+      {
+        "_key": "adv3",
+        "number": "03",
+        "icon": "C",
+        "title": "Améliorez votre confort",
+        "description": "Confort constant, possibilité de rafraîchissement et performance durable : la géothermie est une solution de long terme pour les bâtiments exigeants."
+      }
+    ],
+    "calculatorTitle": "Calculez votre avantage",
+    "calculatorSubtitle": "Simulateur gratuit"
+  },
+  "services": {
+    "eyebrow": "Nos solutions de forage",
+    "title": "Deux technologies,",
+    "highlight": "une expertise",
+    "items": [
+      {
+        "_key": "svc1",
+        "badge": "Géothermie fermée",
+        "title": "Forage de sondes géothermiques verticales",
+        "description": "Nous réalisons des forages verticaux pour systèmes sur sondes, aussi bien pour les maisons individuelles que pour les projets immobiliers et tertiaires.",
+        "routeKey": "geo_fermee"
+      },
+      {
+        "_key": "svc2",
+        "badge": "Géothermie ouverte",
+        "title": "Forage pour géothermie sur nappe",
+        "description": "Nous réalisons les forages nécessaires aux systèmes ouverts sur nappe, lorsque le contexte hydrogéologique le permet et que cette solution est pertinente.",
+        "routeKey": "geo_ouverte"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nos chantiers en images",
+    "title": "Sous terre,",
+    "highlight": "une énergie inépuisable",
+    "subtitle": "Découvrez nos équipes, nos machines et nos chantiers.",
+    "mainLabel": "Vidéo principale : machine de forage en action",
+    "videoBadge": "Vidéo",
+    "items": [
+      {
+        "_key": "gal1",
+        "label": "Photo équipe",
+        "city": "Lille"
+      },
+      {
+        "_key": "gal2",
+        "label": "Photo sondes",
+        "city": "Grand Est"
+      },
+      {
+        "_key": "gal3",
+        "label": "Photo chantier",
+        "city": "Paris"
+      },
+      {
+        "_key": "gal4",
+        "label": "Photo machine",
+        "city": "Nancy"
+      }
+    ]
+  },
+  "audiences": {
+    "particular": {
+      "eyebrow": "Pour les particuliers",
+      "title": "Profitez d’un confort durable",
+      "description": "Vous construisez ou rénovez ? La géothermie est une solution fiable pour chauffer et rafraîchir votre maison avec un haut niveau de confort.",
+      "buttonLabel": "Demandez votre devis"
+    },
+    "professional": {
+      "eyebrow": "Pour les professionnels",
+      "title": "Solutions sur mesure pour les projets ambitieux",
+      "description": "Promoteurs, bureaux d’études, architectes, installateurs et collectivités : nous accompagnons les projets résidentiels, tertiaires et publics.",
+      "buttonLabel": "Soumettre mon projet"
+    }
+  },
+  "machine": {
+    "eyebrow": "Notre parc matériel",
+    "title": "Une capacité d’intervention",
+    "highlight": "structurée",
+    "description": "Grâce à notre parc de machines et à notre méthode d’exécution, nous intervenons avec rigueur, sécurité et productivité.",
+    "items": [
+      "Parc de forage structuré",
+      "Méthodes dédiées à la géothermie",
+      "Équipes expérimentées",
+      "Organisation orientée performance"
+    ],
+    "buttonLabel": "En savoir plus"
+  },
+  "clients": {
+    "eyebrow": "Ils nous font confiance",
+    "title": "Nos",
+    "highlight": "références",
+    "items": [
+      "Promoteurs",
+      "Bureaux d’études",
+      "Architectes",
+      "Collectivités",
+      "Installateurs",
+      "Exploitants",
+      "Acteurs publics",
+      "Industries"
+    ]
+  },
+  "blog": {
+    "eyebrow": "Actualités géothermie",
+    "title": "Nos dernières actus",
+    "highlight": "sur la géothermie",
+    "readMoreLabel": "Lire plus",
+    "posts": [
+      {
+        "_key": "post1",
+        "title": "Pourquoi documenter précisément l’après-forage",
+        "date": "Mars 2026",
+        "excerpt": "Le dossier as-built permet de sécuriser la transmission des informations techniques essentielles après exécution.",
+        "tone": "bg-wdd-ground/50"
+      },
+      {
+        "_key": "post2",
+        "title": "Machine, méthode et productivité : les vraies clés d’un forage réussi",
+        "date": "Janvier 2026",
+        "excerpt": "La performance d’un chantier dépend autant de la machine que de l’organisation et de la qualité d’exécution.",
+        "tone": "bg-wdd-grass/40"
+      },
+      {
+        "_key": "post3",
+        "title": "Anticiper la géothermie pour mieux dimensionner le projet",
+        "date": "Janvier 2026",
+        "excerpt": "Plus la géothermie est envisagée tôt, plus le projet gagne en cohérence technique et économique.",
+        "tone": "bg-wdd-mud/50"
+      }
+    ]
+  },
+  "cta": {
+    "pretitle": "Parlons de votre projet",
+    "title": "Votre projet commence ici",
+    "buttonLabel": "Demandez un devis gratuit",
+    "phone": "+32 478 75 36 79",
+    "email": "info@welldonedrill.energy"
+  }
+}

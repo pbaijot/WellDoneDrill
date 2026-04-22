@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-be-nl-geo_fermee",
+  "_type": "geoPage",
+  "locale": "be-nl",
+  "routeKey": "geo_fermee",
+  "heroLine1": "Boren.",
+  "heroLine2": "Overdragen.",
+  "heroLine3": "Verdelen.",
+  "heroSubtitle": "Kies voor gesloten geothermie met WellDoneDrill en geniet het hele jaar door van thermisch comfort dankzij een stabiele en duurzame energiebron.",
+  "heroCtaLabel": "Contacteer ons",
+  "introTitle": "Gesloten geothermie: benut de energie onder uw voeten",
+  "introBody1": "Gesloten geothermie werkt met verticale sondes in de ondergrond. Ze nemen warmte op uit de bodem en geven die door aan een warmtepomp voor verwarming in de winter en koeling in de zomer.",
+  "introBody2": "Het is een sobere, discrete en robuuste oplossing, geschikt voor woningen én grotere gebouwen.",
+  "introCtaLabel": "Vraag een offerte aan",
+  "howTitle": "Hoe werkt gesloten geothermie met sondes?",
+  "howIntro": "De ondergrond houdt het hele jaar door een relatief stabiele temperatuur vast. Gesloten geothermie maakt die energie bruikbaar via een gesloten circuit, zonder grondwater te onttrekken.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Boren van geothermische sondes",
+      "body": "Verticale boringen worden uitgevoerd om sondes te plaatsen met een circulerende vloeistof in een gesloten lus."
+    },
+    {
+      "_key": "h2",
+      "title": "Overdracht naar de warmtepomp",
+      "body": "De vloeistof neemt energie op uit de bodem en geeft die door aan de warmtepomp van het gebouw."
+    },
+    {
+      "_key": "h3",
+      "title": "Passieve koeling in de zomer",
+      "body": "In de zomer kan een deel van de binnenwarmte opnieuw naar de bodem worden afgevoerd om het comfort te verbeteren."
+    }
+  ],
+  "howCtaLabel": "Geïnteresseerd? Contacteer ons",
+  "projectTitle": "Uw project gesloten geothermie in 5 eenvoudige stappen",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Studie en offerte",
+      "body": "We analyseren terrein, projectcontext en energiebehoeften om de haalbaarheid te bevestigen."
+    },
+    {
+      "_key": "p2",
+      "title": "Afstemming met de installateur",
+      "body": "We werken samen met uw warmtepompinstallateur of brengen u in contact met een geschikte partner."
+    },
+    {
+      "_key": "p3",
+      "title": "Technische validatie",
+      "body": "De oplossing wordt bevestigd, de dimensionering wordt vastgelegd en de uitvoering wordt gekaderd."
+    },
+    {
+      "_key": "p4",
+      "title": "Boren en plaatsen van sondes",
+      "body": "De boringen worden uitgevoerd en de sondes geplaatst met een gestructureerde werfaanpak."
+    },
+    {
+      "_key": "p5",
+      "title": "Opstart van het systeem",
+      "body": "Na afronding profiteert het gebouw van een stabiele en duurzame energiebron."
+    }
+  ],
+  "projectCtaLabel": "Vertel ons over uw project",
+  "faqIntroTitle": "De bodem, een duurzame energiebron",
+  "faqIntroBody": "Onder het oppervlak blijft de temperatuur van de bodem veel stabieler dan die van de buitenlucht. Dat maakt gesloten geothermie technisch interessant voor verwarming en koeling.",
+  "faqTitle": "Veelgestelde vragen over gesloten geothermie",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "Wat is een gesloten geothermische boring?",
+      "answer": "Een of meerdere verticale boringen worden gemaakt om gesloten sondes te plaatsen. Het systeem gebruikt geen grondwater."
+    },
+    {
+      "_key": "f2",
+      "question": "Wat zijn de voordelen van verticale sondes?",
+      "answer": "Ze vragen weinig ruimte, passen in veel projecten en leveren een stabiele energiebron."
+    },
+    {
+      "_key": "f3",
+      "question": "Kan gesloten geothermie ook koelen?",
+      "answer": "Ja. In veel gevallen is passieve of natuurlijke koeling mogelijk."
+    },
+    {
+      "_key": "f4",
+      "question": "Hoe diep moet er worden geboord?",
+      "answer": "Dat hangt af van de dimensionering, de geologie en de energiebehoeften van het project."
+    }
+  ],
+  "finalCtaTitle": "Wilt u de energie onder uw voeten benutten?",
+  "finalCtaLabel": "Ja, ik vraag een offerte aan",
+  "seoTitle": "Gesloten geothermie | WellDoneDrill",
+  "seoDescription": "Ontdek gesloten geothermie met WellDoneDrill: principe, werking, projectstappen en voordelen."
+}

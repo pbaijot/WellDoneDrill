@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-lu-de-mentions_legales",
+  "_type": "sitePage",
+  "locale": "lu-de",
+  "routeKey": "mentions_legales",
+  "title": "Impressum",
+  "heroEyebrow": "Rechtliche Informationen",
+  "heroTitle": "Impressum",
+  "heroSubtitle": "Hier finden Sie nützliche Informationen zu impressum für die WellDoneDrill-Website.",
+  "seoTitle": "Impressum | WellDoneDrill",
+  "seoDescription": "Lesen Sie die Seite impressum von WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "mentions_legales-s1",
+      "eyebrow": "Rahmen",
+      "title": "Impressum",
+      "body": "Diese Seite bildet einen ersten redaktionellen Rahmen für impressum. Vor der Veröffentlichung sollte sie mit den endgültigen rechtlichen Unternehmensinformationen geprüft werden.",
+      "items": []
+    },
+    {
+      "_key": "mentions_legales-s2",
+      "eyebrow": "Zu bestätigen",
+      "title": "Noch zu prüfende Elemente",
+      "body": "Vor der finalen Veröffentlichung müssen Unternehmensdaten, Zwecke der Datenverarbeitung, Speicherdauern, beteiligte Dienstleister und Einwilligungsmechanismen bestätigt werden.",
+      "items": [
+        "Unternehmensdaten",
+        "Erhobene Daten",
+        "Zwecke der Verarbeitung",
+        "Speicherdauer",
+        "Rechte der Nutzer"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Noch Fragen?",
+  "ctaTitle": "Kontaktieren Sie WellDoneDrill",
+  "ctaText": "Bei Fragen zu Daten, Einwilligungen oder zur Nutzung der Website können Sie sich direkt an uns wenden.",
+  "ctaLabel": "Kontakt aufnehmen",
+  "ctaRouteKey": "devis"
+}

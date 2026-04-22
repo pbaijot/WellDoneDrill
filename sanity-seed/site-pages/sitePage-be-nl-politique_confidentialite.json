@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-be-nl-politique_confidentialite",
+  "_type": "sitePage",
+  "locale": "be-nl",
+  "routeKey": "politique_confidentialite",
+  "title": "Privacybeleid",
+  "heroEyebrow": "Juridische informatie",
+  "heroTitle": "Privacybeleid",
+  "heroSubtitle": "Hier vindt u de nuttige informatie over privacybeleid voor de WellDoneDrill-website.",
+  "seoTitle": "Privacybeleid | WellDoneDrill",
+  "seoDescription": "Raadpleeg de pagina privacybeleid van WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "politique_confidentialite-s1",
+      "eyebrow": "Kader",
+      "title": "Privacybeleid",
+      "body": "Deze pagina vormt een eerste redactionele basis voor privacybeleid. Voor publicatie moet ze nog juridisch worden gevalideerd met de definitieve bedrijfsinformatie.",
+      "items": []
+    },
+    {
+      "_key": "politique_confidentialite-s2",
+      "eyebrow": "Te valideren",
+      "title": "Elementen die nog bevestigd moeten worden",
+      "body": "Voor de definitieve publicatie moeten de wettelijke gegevens, verwerkingsdoeleinden, bewaartermijnen, betrokken partijen en toestemmingsmechanismen worden bevestigd.",
+      "items": [
+        "Bedrijfsgegevens",
+        "Verzamelde gegevens",
+        "Doeleinden van de verwerking",
+        "Bewaartermijnen",
+        "Rechten van gebruikers"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Nog vragen?",
+  "ctaTitle": "Neem contact op met WellDoneDrill",
+  "ctaText": "Voor vragen over persoonsgegevens, toestemming of het gebruik van de website kunt u rechtstreeks contact opnemen.",
+  "ctaLabel": "Contact opnemen",
+  "ctaRouteKey": "devis"
+}

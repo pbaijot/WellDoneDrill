@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-lu-de-geo_ouverte",
+  "_type": "geoPage",
+  "locale": "lu-de",
+  "routeKey": "geo_ouverte",
+  "heroLine1": "Pumpen.",
+  "heroLine2": "Nutzen.",
+  "heroLine3": "Reinjizieren.",
+  "heroSubtitle": "Setzen Sie mit WellDoneDrill auf offene Geothermie und profitieren Sie von einem sehr effizienten System für Heizung und Kühlung bei mittleren und großen Projekten.",
+  "heroCtaLabel": "Kontaktieren Sie uns",
+  "introTitle": "Offene Geothermie: Nutzen Sie die thermische Energie des Grundwassers",
+  "introBody1": "Offene Geothermie verwendet Grundwasser als Energieträger. Das Wasser wird gefördert, durch das Energiesystem geführt und danach wieder in den Untergrund zurückgeführt.",
+  "introBody2": "Diese Lösung ist besonders interessant, wenn der thermische Bedarf hoch ist und die hydrogeologischen Bedingungen ein robustes Projekt zulassen.",
+  "introCtaLabel": "Angebot anfordern",
+  "howTitle": "Wie funktioniert offene Geothermie?",
+  "howIntro": "Offene Geothermie arbeitet mit realen Wasserströmen aus dem Untergrund. Deshalb braucht es mehr als nur eine Bohrung: auch ein gutes Verständnis der wasserführenden Schicht, der Fördermengen und des Regelwerks.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Förderung des Grundwassers",
+      "body": "Über eine Entnahmebohrung wird Wasser aus der wasserführenden Schicht an die Oberfläche gebracht."
+    },
+    {
+      "_key": "h2",
+      "title": "Thermische Nutzung",
+      "body": "Die Wärme oder Kälte wird über das Energiesystem genutzt, um die Anforderungen des Gebäudes zu decken."
+    },
+    {
+      "_key": "h3",
+      "title": "Kontrollierte Reinjektion",
+      "body": "Nach der thermischen Nutzung wird das Wasser wieder in den Untergrund eingebracht, mit Blick auf Nachhaltigkeit und Systemstabilität."
+    }
+  ],
+  "howCtaLabel": "Interessiert? Kontaktieren Sie uns",
+  "projectTitle": "Ihr Projekt offene Geothermie in 5 einfachen Schritten",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Hydrogeologische Studie und Angebot",
+      "body": "Wir analysieren Grundwasserleiter, mögliche Fördermengen, Wasserqualität und Randbedingungen des Standorts."
+    },
+    {
+      "_key": "p2",
+      "title": "Abstimmung mit dem Installateur",
+      "body": "Gemeinsam mit dem Installateur oder Projektteam definieren wir die passende technische Architektur."
+    },
+    {
+      "_key": "p3",
+      "title": "Validierung und Auslegung",
+      "body": "Das System wird anhand des realen Bedarfs und der verfügbaren Ressource bestätigt."
+    },
+    {
+      "_key": "p4",
+      "title": "Förder- und Reinjektionsbohrungen",
+      "body": "Die Bohrungen werden mit einer präzisen und projektgerechten Methodik ausgeführt."
+    },
+    {
+      "_key": "p5",
+      "title": "Inbetriebnahme",
+      "body": "Nach Abschluss profitiert das Gebäude von einer leistungsfähigen Lösung für Heizung und Kühlung."
+    }
+  ],
+  "projectCtaLabel": "Erzählen Sie uns von Ihrem Projekt",
+  "faqIntroTitle": "Grundwasser als natürliche Energiequelle",
+  "faqIntroBody": "Wenn es unter guten Bedingungen verfügbar ist, ist Grundwasser ein sehr starker Energieträger für Projekte mit hohem thermischem Bedarf.",
+  "faqTitle": "Häufige Fragen zur offenen Geothermie",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "Was ist der Unterschied zur geschlossenen Geothermie?",
+      "answer": "Offene Geothermie nutzt Grundwasser direkt, während geschlossene Geothermie mit einem geschlossenen Kreislauf in vertikalen Sonden arbeitet."
+    },
+    {
+      "_key": "f2",
+      "question": "Für welche Projekte ist sie geeignet?",
+      "answer": "Vor allem für Projekte mit höherem Wärme- oder Kältebedarf: tertiäre Gebäude, öffentliche Gebäude, Industrie, Wohnanlagen oder Netze."
+    },
+    {
+      "_key": "f3",
+      "question": "Welche Voraussetzungen müssen geprüft werden?",
+      "answer": "Eine zugängliche Ressource, ausreichende Fördermengen, eine tragfähige Reinjektion und ein beherrschbares regulatorisches Umfeld."
+    },
+    {
+      "_key": "f4",
+      "question": "Was sind die wichtigsten Vorteile?",
+      "answer": "Hohe Effizienz, starke Kapazität für ambitionierte Projekte und eine kohlenstoffarme Lösung für Heizen und Kühlen."
+    }
+  ],
+  "finalCtaTitle": "Möchten Sie Ihre Wärme mit offener Geothermie dekarbonisieren?",
+  "finalCtaLabel": "Ja, ich reiche mein Projekt ein",
+  "seoTitle": "Offene Geothermie | WellDoneDrill",
+  "seoDescription": "Entdecken Sie offene Geothermie mit WellDoneDrill: Prinzip, Funktionsweise, Machbarkeit und Projektablauf."
+}

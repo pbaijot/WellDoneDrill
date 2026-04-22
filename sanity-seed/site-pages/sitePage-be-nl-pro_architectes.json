@@ -1,0 +1,63 @@
+{
+  "_id": "sitePage-be-nl-pro_architectes",
+  "_type": "sitePage",
+  "locale": "be-nl",
+  "routeKey": "pro_architectes",
+  "title": "Geothermie voor architecten",
+  "heroEyebrow": "Professionals",
+  "heroTitle": "Geothermie voor architecten",
+  "heroSubtitle": "Deze pagina toont hoe WellDoneDrill samenwerkt met projectpartners voor geothermie voor architecten met structuur, snelheid en technische nauwkeurigheid.",
+  "seoTitle": "Geothermie voor architecten | WellDoneDrill",
+  "seoDescription": "Ontdek geothermie voor architecten met WellDoneDrill: uitleg, aanpak en projectbegeleiding.",
+  "sections": [
+    {
+      "_key": "pro_architectes-s1",
+      "eyebrow": "Inzicht",
+      "title": "Wat u moet weten over geothermie voor architecten",
+      "body": "Bij WellDoneDrill begint kwaliteit met een goed begrip van de technische context, de ondergrond, de energiedoelstellingen en de uitvoeringsbeperkingen. Daarom moet geothermie voor architecten altijd methodisch en helder worden benaderd.",
+      "items": []
+    },
+    {
+      "_key": "pro_architectes-s2",
+      "eyebrow": "Aanpak",
+      "title": "Hoe WellDoneDrill u begeleidt",
+      "body": "Wij werken volgens een eenvoudige logica: het project kaderen, de relevantie bevestigen, zorgvuldig uitvoeren en tijdens het hele traject helder communiceren.",
+      "items": [
+        "Technische analyse en haalbaarheid",
+        "Aanpak aangepast aan terrein en gebouwtype",
+        "Gestructureerde uitvoering van de boring",
+        "Duidelijke communicatie met klant en projectpartners"
+      ]
+    },
+    {
+      "_key": "pro_architectes-s3",
+      "eyebrow": "Resultaat",
+      "title": "Een aanpak gericht op prestaties en vertrouwen",
+      "body": "Het doel is niet alleen boren. Het doel is bijdragen aan een duurzame, betrouwbare en coherente energieoplossing die past binnen het volledige project.",
+      "items": []
+    }
+  ],
+  "faqTitle": "Veelgestelde vragen",
+  "faqs": [
+    {
+      "_key": "pro_architectes-f1",
+      "question": "Is geothermie voor architecten geschikt voor elk project?",
+      "answer": "Elk project moet worden beoordeeld in functie van de context, het gebouwtype, de terreinvoorwaarden en de energiedoelstellingen."
+    },
+    {
+      "_key": "pro_architectes-f2",
+      "question": "Wanneer moet dit onderwerp in het project worden behandeld?",
+      "answer": "Zo vroeg mogelijk. Hoe vroeger de reflectie start, hoe beter dimensionering, budget en technische integratie geoptimaliseerd kunnen worden."
+    },
+    {
+      "_key": "pro_architectes-f3",
+      "question": "Waarom werken met WellDoneDrill?",
+      "answer": "WellDoneDrill brengt terreinervaring, echte specialisatie in geothermische boringen en de wil om complexe onderwerpen concreet en uitvoerbaar te maken."
+    }
+  ],
+  "ctaPretitle": "Laten we over uw project praten",
+  "ctaTitle": "Bent u bezig met geothermie voor architecten?",
+  "ctaText": "Wij kunnen u helpen om uw project goed te kaderen, de juiste technische aanpak te bevestigen en naar een gestructureerde uitvoering toe te werken.",
+  "ctaLabel": "Project indienen",
+  "ctaRouteKey": "pro_soumission"
+}

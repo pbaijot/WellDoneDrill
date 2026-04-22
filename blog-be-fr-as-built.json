@@ -1,0 +1,108 @@
+{
+  "_id": "blog-be-fr-as-built",
+  "_type": "blogPost",
+  "title": "L’après-forage : pourquoi le dossier as-built est essentiel",
+  "slug": {
+    "_type": "slug",
+    "current": "apres-forage-dossier-as-built"
+  },
+  "publishedAt": "2026-03-15T09:00:00Z",
+  "excerpt": "Une fois le forage terminé, le dossier as-built permet de conserver une trace claire, exploitable et utile pour l’exploitation future.",
+  "category": "chantier",
+  "locale": "be-fr",
+  "author": "WellDoneDrill",
+  "readingTime": 4,
+  "featured": true,
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "i1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "i1s1",
+          "text": "Le chantier ne s’arrête pas quand la foreuse quitte le site. À ce moment-là commence une phase trop souvent sous-estimée : la transmission claire et fiable de ce qui a réellement été exécuté."
+        }
+      ]
+    }
+  ],
+  "body": [
+    {
+      "_type": "block",
+      "_key": "a1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a1s1",
+          "text": "Quand le forage est terminé, beaucoup de maîtres d’ouvrage pensent que le travail documentaire commence à peine. En réalité, la qualité du dossier as-built est un élément central de la valeur du chantier réalisé."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "a2",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a2s1",
+          "text": "Pourquoi ce dossier est indispensable"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "a3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a3s1",
+          "text": "Le dossier as-built rassemble les informations finales réellement exécutées sur chantier : profondeurs, nombre de forages, implantation, type de sondes, essais, observations et adaptations réalisées. Sans cela, la mémoire technique du projet se perd très vite."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "a4",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a4s1",
+          "text": "Un outil utile bien après le chantier"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "a5",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a5s1",
+          "text": "Ce dossier n’est pas seulement utile au moment de la réception. Il est précieux pour la maintenance, pour la compréhension du champ de sondes, pour une revente du bien ou pour toute future évolution de l’installation énergétique."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "a6",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "a6s1",
+          "text": "Chez WellDoneDrill, nous considérons que la qualité documentaire fait partie intégrante de la qualité d’exécution."
+        }
+      ]
+    }
+  ],
+  "ctaTitle": "Vous avez un projet géothermique ?",
+  "ctaText": "Nous vous aidons à cadrer votre projet, à comprendre les contraintes de forage et à avancer avec une méthode claire, du premier contact jusqu’au chantier.",
+  "seoTitle": "Pourquoi le dossier as-built est essentiel après un forage géothermique | WellDoneDrill",
+  "seoDescription": "Découvrez pourquoi le dossier as-built est indispensable après un forage géothermique : traçabilité, exploitation future, maintenance et qualité documentaire."
+}

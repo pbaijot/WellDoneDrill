@@ -1,4 +1,4 @@
-export default {
+const mediaItem = {
   name: 'mediaItem',
   title: 'Media galerie',
   type: 'document',
@@ -13,3 +13,5 @@ export default {
   ],
   preview: { select: { title: 'title', subtitle: 'location', media: 'photo' } }
 }
+
+export default mediaItem

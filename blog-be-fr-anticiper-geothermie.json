@@ -1,0 +1,108 @@
+{
+  "_id": "blog-be-fr-anticiper-geothermie",
+  "_type": "blogPost",
+  "title": "Pourquoi anticiper la géothermie dès la conception du projet",
+  "slug": {
+    "_type": "slug",
+    "current": "anticiper-geothermie-conception-projet"
+  },
+  "publishedAt": "2026-01-08T09:00:00Z",
+  "excerpt": "Plus la géothermie est envisagée tôt dans un projet, plus il est possible d’optimiser le dimensionnement, le budget et l’intégration technique.",
+  "category": "geothermie",
+  "locale": "be-fr",
+  "author": "WellDoneDrill",
+  "readingTime": 5,
+  "featured": false,
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "i3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "i3s1",
+          "text": "La géothermie donne les meilleurs résultats quand elle est pensée tôt. Lorsqu’elle est introduite dès la conception, elle peut être intégrée intelligemment à l’architecture, au budget et au système énergétique global."
+        }
+      ]
+    }
+  ],
+  "body": [
+    {
+      "_type": "block",
+      "_key": "c1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c1s1",
+          "text": "La géothermie fonctionne d’autant mieux qu’elle est pensée tôt. Lorsqu’elle est introduite dès la phase de conception, elle peut être intégrée de manière cohérente avec l’architecture, les besoins thermiques et les contraintes du site."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "c2",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c2s1",
+          "text": "Un meilleur dimensionnement"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "c3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c3s1",
+          "text": "Anticiper permet d’éviter les surcoûts liés aux adaptations tardives. Les emplacements, les puissances, le champ de sondes et l’intégration technique peuvent être étudiés plus calmement et plus intelligemment."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "c4",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c4s1",
+          "text": "Une meilleure cohérence de projet"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "c5",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c5s1",
+          "text": "Quand la géothermie arrive trop tard, elle devient souvent une option qu’on subit. Quand elle est envisagée tôt, elle devient un vrai choix de conception et un levier de performance globale."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "c6",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "c6s1",
+          "text": "Le bon moment pour parler géothermie est simple : le plus tôt possible."
+        }
+      ]
+    }
+  ],
+  "ctaTitle": "Vous voulez intégrer la géothermie dès maintenant ?",
+  "ctaText": "Nous pouvons vous aider à cadrer la faisabilité, les besoins de forage et les bonnes hypothèses techniques dès l’amont du projet.",
+  "seoTitle": "Pourquoi anticiper la géothermie dès la conception | WellDoneDrill",
+  "seoDescription": "Anticiper la géothermie dès la conception permet d’optimiser le dimensionnement, le budget et l’intégration technique du projet."
+}
