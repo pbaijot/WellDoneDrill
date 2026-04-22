@@ -273,7 +273,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </span>
           </div>
           {galleryItems.slice(0, 4).map((item, index) => (
-            <div key={item.label + index} className={"flex items-center justify-center relative group cursor-pointer " + ['bg-wdd-ground/20','bg-wdd-grass/10','bg-wdd-clay/10','bg-wdd-mud/20'][index]}>
+            <div key={`${item.label ?? "gallery"}-${index}`} className={"flex items-center justify-center relative group cursor-pointer " + ['bg-wdd-ground/20','bg-wdd-grass/10','bg-wdd-clay/10','bg-wdd-mud/20'][index]}>
               <span className="text-xs font-light text-white/20 uppercase tracking-wider text-center px-3">{item.label}</span>
               <div className="absolute inset-0 bg-wdd-black/50 opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="absolute bottom-3 left-3 text-xs font-light text-white/25">{item.city}</span>
