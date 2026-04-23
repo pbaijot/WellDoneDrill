@@ -388,7 +388,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </h2>
         <div className="grid grid-cols-3 gap-0.5">
           {blogPosts.map((post) => (
-            <div key={post._id ?? post.title} className="overflow-hidden group cursor-pointer">
+            <div key={post.slug ?? post.title} className="overflow-hidden group cursor-pointer">
               <Link href={post.slug ? `/${locale}/blog/${post.slug}` : getLocalizedPath(loc, 'blog')} className="block">
                 <div className={"h-48 flex items-center justify-center " + (post.tone ?? 'bg-wdd-ground/50')}>
                   <span className="text-xs font-light text-white/30 uppercase tracking-wider">Photo article</span>
