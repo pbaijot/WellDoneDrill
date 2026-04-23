@@ -1,4 +1,5 @@
-const mediaItem = {
+import {defineType} from 'sanity'
+const mediaItem = defineType({
   name: 'mediaItem',
   title: 'Media galerie',
   type: 'document',
@@ -14,4 +15,5 @@ const mediaItem = {
   preview: { select: { title: 'title', subtitle: 'location', media: 'photo' } }
 }
 
+)
 export default mediaItem

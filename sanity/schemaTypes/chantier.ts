@@ -1,4 +1,5 @@
-export default {
+import {defineType} from 'sanity'
+const chantier = defineType({
   name: 'chantier',
   title: 'Chantier reference',
   type: 'document',
@@ -16,4 +17,5 @@ export default {
     { name: 'featured', title: 'Mise en avant homepage', type: 'boolean' },
   ],
   preview: { select: { title: 'title', subtitle: 'location', media: 'photo' } }
-}
+})
+export default chantier

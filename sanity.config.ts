@@ -1,4 +1,4 @@
-import {defineConfig} from 'sanity'
+import {defineConfig, type SchemaTypeDefinition} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {schemaTypes} from './sanity/schemaTypes'
 
@@ -9,6 +9,6 @@ export default defineConfig({
   dataset: 'production',
   plugins: [structureTool()],
   schema: {
-    types: schemaTypes,
+    types: schemaTypes as SchemaTypeDefinition[],
   },
 })

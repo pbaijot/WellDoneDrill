@@ -1,4 +1,5 @@
-const homePage = {
+import {defineType} from 'sanity'
+const homePage = defineType({
   name: 'homePage',
   title: 'Homepage',
   type: 'document',
@@ -242,6 +243,8 @@ const homePage = {
       }
     }
   }
-}
+})
+
+
 
 export default homePage

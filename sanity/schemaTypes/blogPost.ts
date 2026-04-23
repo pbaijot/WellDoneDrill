@@ -1,4 +1,5 @@
-const blogPost = {
+import {defineType} from 'sanity'
+const blogPost = defineType({
   name: 'blogPost',
   title: 'Article de blog',
   type: 'document',
@@ -124,4 +125,5 @@ const blogPost = {
   }
 }
 
+)
 export default blogPost
