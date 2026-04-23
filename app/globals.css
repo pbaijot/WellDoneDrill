@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Couleurs WellDoneDrill */
+  --color-wdd-black:  #1A1A1A;
+  --color-wdd-yellow: #FFD94F;
+  --color-wdd-clay:   #E8E5DE;
+  --color-wdd-ground: #B0A18F;
+  --color-wdd-mud:    #AB572E;
+  --color-wdd-grass:  #42754F;
+  --color-wdd-white:  #FFFFFF;
+
+  /* Police */
+  --font-sans: var(--font-lexend), system-ui, sans-serif;
+}
+
+body {
+  background: #FFFFFF;
+  color: #1A1A1A;
+  font-family: var(--font-sans);
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

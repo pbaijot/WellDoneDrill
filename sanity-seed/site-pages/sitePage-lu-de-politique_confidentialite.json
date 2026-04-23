@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-lu-de-politique_confidentialite",
+  "_type": "sitePage",
+  "locale": "lu-de",
+  "routeKey": "politique_confidentialite",
+  "title": "Datenschutz",
+  "heroEyebrow": "Rechtliche Informationen",
+  "heroTitle": "Datenschutz",
+  "heroSubtitle": "Hier finden Sie nützliche Informationen zu datenschutz für die WellDoneDrill-Website.",
+  "seoTitle": "Datenschutz | WellDoneDrill",
+  "seoDescription": "Lesen Sie die Seite datenschutz von WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "politique_confidentialite-s1",
+      "eyebrow": "Rahmen",
+      "title": "Datenschutz",
+      "body": "Diese Seite bildet einen ersten redaktionellen Rahmen für datenschutz. Vor der Veröffentlichung sollte sie mit den endgültigen rechtlichen Unternehmensinformationen geprüft werden.",
+      "items": []
+    },
+    {
+      "_key": "politique_confidentialite-s2",
+      "eyebrow": "Zu bestätigen",
+      "title": "Noch zu prüfende Elemente",
+      "body": "Vor der finalen Veröffentlichung müssen Unternehmensdaten, Zwecke der Datenverarbeitung, Speicherdauern, beteiligte Dienstleister und Einwilligungsmechanismen bestätigt werden.",
+      "items": [
+        "Unternehmensdaten",
+        "Erhobene Daten",
+        "Zwecke der Verarbeitung",
+        "Speicherdauer",
+        "Rechte der Nutzer"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Noch Fragen?",
+  "ctaTitle": "Kontaktieren Sie WellDoneDrill",
+  "ctaText": "Bei Fragen zu Daten, Einwilligungen oder zur Nutzung der Website können Sie sich direkt an uns wenden.",
+  "ctaLabel": "Kontakt aufnehmen",
+  "ctaRouteKey": "devis"
+}

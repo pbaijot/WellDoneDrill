@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-be-nl-mentions_legales",
+  "_type": "sitePage",
+  "locale": "be-nl",
+  "routeKey": "mentions_legales",
+  "title": "Wettelijke vermeldingen",
+  "heroEyebrow": "Juridische informatie",
+  "heroTitle": "Wettelijke vermeldingen",
+  "heroSubtitle": "Hier vindt u de nuttige informatie over wettelijke vermeldingen voor de WellDoneDrill-website.",
+  "seoTitle": "Wettelijke vermeldingen | WellDoneDrill",
+  "seoDescription": "Raadpleeg de pagina wettelijke vermeldingen van WellDoneDrill.",
+  "sections": [
+    {
+      "_key": "mentions_legales-s1",
+      "eyebrow": "Kader",
+      "title": "Wettelijke vermeldingen",
+      "body": "Deze pagina vormt een eerste redactionele basis voor wettelijke vermeldingen. Voor publicatie moet ze nog juridisch worden gevalideerd met de definitieve bedrijfsinformatie.",
+      "items": []
+    },
+    {
+      "_key": "mentions_legales-s2",
+      "eyebrow": "Te valideren",
+      "title": "Elementen die nog bevestigd moeten worden",
+      "body": "Voor de definitieve publicatie moeten de wettelijke gegevens, verwerkingsdoeleinden, bewaartermijnen, betrokken partijen en toestemmingsmechanismen worden bevestigd.",
+      "items": [
+        "Bedrijfsgegevens",
+        "Verzamelde gegevens",
+        "Doeleinden van de verwerking",
+        "Bewaartermijnen",
+        "Rechten van gebruikers"
+      ]
+    }
+  ],
+  "faqTitle": "",
+  "faqs": [],
+  "ctaPretitle": "Nog vragen?",
+  "ctaTitle": "Neem contact op met WellDoneDrill",
+  "ctaText": "Voor vragen over persoonsgegevens, toestemming of het gebruik van de website kunt u rechtstreeks contact opnemen.",
+  "ctaLabel": "Contact opnemen",
+  "ctaRouteKey": "devis"
+}

@@ -1,0 +1,190 @@
+{
+  "_type": "homePage",
+  "locale": "be-fr",
+  "_id": "homePage-be-fr",
+  "hero": {
+    "tag": "Forage Innovation Expertise",
+    "title": "Expert en forage géothermique en Belgique",
+    "subtitle": "Nous réalisons vos forages géothermiques fermés et ouverts pour les maisons, les bâtiments tertiaires, les projets publics et les projets immobiliers. Avec WellDoneDrill, la géothermie devient une solution concrète, fiable et rentable.",
+    "ctaLabel": "Demandez un devis gratuit",
+    "secondaryLabel": "Découvrir nos services"
+  },
+  "stats": [
+    {
+      "_key": "stat1",
+      "value": "5",
+      "label": "Ateliers de forage"
+    },
+    {
+      "_key": "stat2",
+      "value": "500+",
+      "label": "Chantiers réalisés"
+    },
+    {
+      "_key": "stat3",
+      "value": "11",
+      "label": "Provinces belges"
+    }
+  ],
+  "advantages": {
+    "eyebrow": "Pourquoi la géothermie",
+    "title": "Passez à",
+    "highlight": "la géothermie",
+    "items": [
+      {
+        "_key": "adv1",
+        "number": "01",
+        "icon": "EUR",
+        "title": "Réduisez vos factures",
+        "description": "La géothermie capte l’énergie disponible dans le sol pour chauffer et rafraîchir votre bâtiment avec une très grande efficacité. Vous réduisez durablement vos coûts énergétiques."
+      },
+      {
+        "_key": "adv2",
+        "number": "02",
+        "icon": "CO2",
+        "title": "Diminuez votre empreinte carbone",
+        "description": "La géothermie est une solution locale, renouvelable et discrète. Elle permet de réduire fortement les émissions liées au chauffage et de sortir progressivement des énergies fossiles."
+      },
+      {
+        "_key": "adv3",
+        "number": "03",
+        "icon": "C",
+        "title": "Améliorez votre confort",
+        "description": "Température stable, possibilité de rafraîchissement, solution invisible en surface et performance durable : la géothermie améliore le confort été comme hiver."
+      }
+    ],
+    "calculatorTitle": "Calculez votre avantage",
+    "calculatorSubtitle": "Simulateur gratuit"
+  },
+  "services": {
+    "eyebrow": "Nos solutions de forage",
+    "title": "Deux technologies,",
+    "highlight": "une expertise",
+    "items": [
+      {
+        "_key": "svc1",
+        "badge": "Géothermie fermée",
+        "title": "Forage de sondes géothermiques verticales",
+        "description": "Nous réalisons des forages verticaux pour systèmes sur sondes, adaptés aux maisons individuelles comme aux grands projets. C’est la solution la plus fréquente pour les projets de chauffage et de rafraîchissement.",
+        "routeKey": "geo_fermee"
+      },
+      {
+        "_key": "svc2",
+        "badge": "Géothermie ouverte",
+        "title": "Forage pour géothermie sur nappe",
+        "description": "Nous réalisons les forages de captage et de réinjection nécessaires aux systèmes ouverts sur nappe, lorsque le contexte hydrogéologique le permet et que la solution est pertinente.",
+        "routeKey": "geo_ouverte"
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nos chantiers en images",
+    "title": "Sous terre,",
+    "highlight": "une énergie inépuisable",
+    "subtitle": "Découvrez nos équipes, nos machines et nos chantiers partout en Belgique.",
+    "mainLabel": "Vidéo principale : machine de forage en action",
+    "videoBadge": "Vidéo",
+    "items": [
+      {
+        "_key": "gal1",
+        "label": "Photo équipe",
+        "city": "Namur"
+      },
+      {
+        "_key": "gal2",
+        "label": "Photo sondes",
+        "city": "Brabant wallon"
+      },
+      {
+        "_key": "gal3",
+        "label": "Photo chantier",
+        "city": "Bruxelles"
+      },
+      {
+        "_key": "gal4",
+        "label": "Photo machine",
+        "city": "Liège"
+      }
+    ]
+  },
+  "audiences": {
+    "particular": {
+      "eyebrow": "Pour les particuliers",
+      "title": "Profitez d’un confort optimal",
+      "description": "Vous construisez ou rénovez ? La géothermie est une solution durable pour chauffer et rafraîchir votre maison avec un excellent niveau de confort et une forte stabilité de coût à long terme.",
+      "buttonLabel": "Demandez votre devis"
+    },
+    "professional": {
+      "eyebrow": "Pour les entreprises",
+      "title": "Solutions sur mesure pour les grands projets",
+      "description": "Promoteurs, bureaux d’études, architectes, installateurs, acteurs publics : nous intervenons sur des projets résidentiels collectifs, tertiaires, industriels et institutionnels.",
+      "buttonLabel": "Soumettre mon projet"
+    }
+  },
+  "machine": {
+    "eyebrow": "Notre parc matériel",
+    "title": "Nous forons partout en",
+    "highlight": "Belgique",
+    "description": "Grâce à notre parc de machines et à notre organisation de chantier, nous intervenons rapidement et avec méthode sur l’ensemble du territoire belge.",
+    "items": [
+      "5 ateliers de forage disponibles",
+      "11 provinces belges couvertes",
+      "Machines spécialisées géothermie",
+      "Équipes certifiées et expérimentées"
+    ],
+    "buttonLabel": "En savoir plus"
+  },
+  "clients": {
+    "eyebrow": "Ils nous font confiance",
+    "title": "Nos",
+    "highlight": "références",
+    "items": [
+      "Trafic",
+      "Défense belge",
+      "BW Invest",
+      "Karno",
+      "Thomas & Piron",
+      "SOWAER",
+      "2lements",
+      "IGRETEC",
+      "RDB",
+      "Matexi"
+    ]
+  },
+  "blog": {
+    "eyebrow": "Actualités géothermie",
+    "title": "Nos dernières actus",
+    "highlight": "sur la géothermie",
+    "readMoreLabel": "Lire plus",
+    "posts": [
+      {
+        "_key": "post1",
+        "title": "L’après-forage : pourquoi le dossier as-built est essentiel",
+        "date": "Mars 2026",
+        "excerpt": "Une fois le forage terminé, le dossier as-built permet de conserver une trace claire, exploitable et utile pour la suite du projet et pour l’exploitation future.",
+        "tone": "bg-wdd-ground/50"
+      },
+      {
+        "_key": "post2",
+        "title": "La Hütte 205 GT, un outil conçu pour le forage géothermique",
+        "date": "Janvier 2026",
+        "excerpt": "Le choix de la machine influence directement la qualité d’exécution, la productivité du chantier et la capacité à s’adapter aux conditions du sous-sol.",
+        "tone": "bg-wdd-grass/40"
+      },
+      {
+        "_key": "post3",
+        "title": "Pourquoi anticiper la géothermie dès la conception du projet",
+        "date": "Janvier 2026",
+        "excerpt": "Plus la géothermie est envisagée tôt dans le projet, plus il est possible d’optimiser le dimensionnement, le budget et l’intégration technique globale.",
+        "tone": "bg-wdd-mud/50"
+      }
+    ]
+  },
+  "cta": {
+    "pretitle": "Rue du Libut 71, 5310 Éghezée",
+    "title": "Votre projet commence ici",
+    "buttonLabel": "Demandez un devis gratuit",
+    "phone": "+32 478 75 36 79",
+    "email": "info@welldonedrill.energy"
+  }
+}

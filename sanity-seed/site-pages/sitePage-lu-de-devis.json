@@ -1,0 +1,63 @@
+{
+  "_id": "sitePage-lu-de-devis",
+  "_type": "sitePage",
+  "locale": "lu-de",
+  "routeKey": "devis",
+  "title": "Geothermisches Angebot anfordern",
+  "heroEyebrow": "WellDoneDrill",
+  "heroTitle": "Geothermisches Angebot anfordern",
+  "heroSubtitle": "Diese Seite stellt geothermisches angebot anfordern im Umfeld von WellDoneDrill mit einem klaren und konkreten Ansatz vor.",
+  "seoTitle": "Geothermisches Angebot anfordern | WellDoneDrill",
+  "seoDescription": "Entdecken Sie geothermisches angebot anfordern mit WellDoneDrill: Erklärungen, Arbeitsweise und Projektbegleitung.",
+  "sections": [
+    {
+      "_key": "devis-s1",
+      "eyebrow": "Verstehen",
+      "title": "Was man über geothermisches angebot anfordern wissen sollte",
+      "body": "Bei WellDoneDrill beginnt Qualität mit einem guten Verständnis des technischen Kontexts, des Untergrunds, der Energieziele und der Ausführungsbedingungen. Deshalb sollte geothermisches angebot anfordern immer methodisch und klar behandelt werden.",
+      "items": []
+    },
+    {
+      "_key": "devis-s2",
+      "eyebrow": "Methode",
+      "title": "Wie WellDoneDrill Sie begleitet",
+      "body": "Wir arbeiten nach einer einfachen Logik: Projekt sauber einordnen, Relevanz prüfen, sorgfältig ausführen und während des gesamten Prozesses klar kommunizieren.",
+      "items": [
+        "Technische Analyse und Machbarkeit",
+        "Ansatz passend zu Untergrund und Gebäudetyp",
+        "Strukturierte Ausführung der Bohrarbeiten",
+        "Klare Kommunikation mit Kunde und Projektpartnern"
+      ]
+    },
+    {
+      "_key": "devis-s3",
+      "eyebrow": "Ergebnis",
+      "title": "Ein Ansatz für Leistung und Vertrauen",
+      "body": "Das Ziel ist nicht nur zu bohren. Das Ziel ist, zu einer nachhaltigen, zuverlässigen und stimmigen Energielösung beizutragen, die zum Gesamtprojekt passt.",
+      "items": []
+    }
+  ],
+  "faqTitle": "Häufige Fragen",
+  "faqs": [
+    {
+      "_key": "devis-f1",
+      "question": "Ist geothermisches angebot anfordern für jedes Projekt geeignet?",
+      "answer": "Jedes Projekt muss je nach Kontext, Gebäudetyp, Standortbedingungen und Energiezielen geprüft werden."
+    },
+    {
+      "_key": "devis-f2",
+      "question": "Wann sollte dieses Thema im Projekt behandelt werden?",
+      "answer": "So früh wie möglich. Je früher das Thema berücksichtigt wird, desto besser lassen sich Auslegung, Budget und technische Integration optimieren."
+    },
+    {
+      "_key": "devis-f3",
+      "question": "Warum mit WellDoneDrill arbeiten?",
+      "answer": "WellDoneDrill verbindet Praxiserfahrung, echte Spezialisierung im Bereich Geothermiebohrung und den Willen, komplexe Themen konkret und umsetzbar zu machen."
+    }
+  ],
+  "ctaPretitle": "Sprechen wir über Ihr Projekt",
+  "ctaTitle": "Arbeiten Sie aktuell an geothermisches angebot anfordern?",
+  "ctaText": "Wir helfen Ihnen dabei, Ihr Projekt sauber zu strukturieren, den richtigen technischen Ansatz zu bestätigen und zu einer klaren und gut organisierten Ausführung zu kommen.",
+  "ctaLabel": "Angebot anfordern",
+  "ctaRouteKey": "devis"
+}

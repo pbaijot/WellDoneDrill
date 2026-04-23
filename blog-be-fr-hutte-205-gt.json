@@ -1,0 +1,108 @@
+{
+  "_id": "blog-be-fr-hutte-205-gt",
+  "_type": "blogPost",
+  "title": "La Hütte 205 GT : un outil conçu pour le forage géothermique",
+  "slug": {
+    "_type": "slug",
+    "current": "hutte-205-gt-forage-geothermique"
+  },
+  "publishedAt": "2026-01-20T09:00:00Z",
+  "excerpt": "Le choix de la machine influence directement la qualité d’exécution, la productivité du chantier et la capacité à s’adapter aux conditions du sous-sol.",
+  "category": "geothermie",
+  "locale": "be-fr",
+  "author": "WellDoneDrill",
+  "readingTime": 4,
+  "featured": false,
+  "intro": [
+    {
+      "_type": "block",
+      "_key": "i2",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "i2s1",
+          "text": "En forage géothermique, la machine n’est pas un simple détail technique. Elle influence la cadence, la régularité, la sécurité du chantier et la capacité de l’équipe à bien réagir aux conditions réelles du terrain."
+        }
+      ]
+    }
+  ],
+  "body": [
+    {
+      "_type": "block",
+      "_key": "b1",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b1s1",
+          "text": "Dans un chantier géothermique, la machine n’est pas un simple moyen d’exécution. Elle influence la cadence, la précision, la sécurité et la capacité à réagir aux conditions réelles rencontrées dans le sol."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b2",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b2s1",
+          "text": "La machine ne fait pas tout, mais elle compte énormément"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b3",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b3s1",
+          "text": "Une bonne machine permet de mieux contrôler l’avancement, de tenir un niveau d’exigence élevé sur le chantier et de limiter les pertes de temps inutiles. Elle donne aussi plus de marge pour s’adapter quand les conditions changent."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b4",
+      "style": "h2",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b4s1",
+          "text": "Pourquoi cet outil est pertinent pour la géothermie"
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b5",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b5s1",
+          "text": "Sur les projets géothermiques verticaux, la répétabilité, la stabilité et la productivité sont essentielles. Une machine bien dimensionnée et bien exploitée contribue directement à la qualité globale du résultat final."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "_key": "b6",
+      "style": "blockquote",
+      "children": [
+        {
+          "_type": "span",
+          "_key": "b6s1",
+          "text": "Chez WDD, le parc matériel est pensé pour exécuter avec constance, méthode et productivité."
+        }
+      ]
+    }
+  ],
+  "ctaTitle": "Vous cherchez un partenaire forage solide ?",
+  "ctaText": "Nous intervenons sur des projets résidentiels, tertiaires, publics et immobiliers avec une approche structurée du forage géothermique.",
+  "seoTitle": "La Hütte 205 GT pour le forage géothermique | WellDoneDrill",
+  "seoDescription": "Découvrez pourquoi le choix de la machine influence la qualité, la productivité et la sécurité d’un chantier de forage géothermique."
+}

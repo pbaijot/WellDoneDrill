@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-be-fr-geo_fermee",
+  "_type": "geoPage",
+  "locale": "be-fr",
+  "routeKey": "geo_fermee",
+  "heroLine1": "Forer.",
+  "heroLine2": "Transférer.",
+  "heroLine3": "Diffuser.",
+  "heroSubtitle": "Passez à la géothermie fermée avec WellDoneDrill et profitez d’un confort thermique toute l’année grâce à une énergie stable, locale et durable, adaptée à votre projet en Belgique.",
+  "heroCtaLabel": "Contactez-nous",
+  "introTitle": "Géothermie fermée : exploitez l’énergie sous vos pieds",
+  "introBody1": "La géothermie fermée repose sur des sondes verticales installées dans le sous-sol. Elles captent la chaleur naturellement stockée dans le terrain et la transmettent à une pompe à chaleur pour chauffer le bâtiment en hiver et le rafraîchir en été.",
+  "introBody2": "C’est une solution sobre, discrète et robuste, adaptée aux maisons individuelles comme aux bâtiments plus importants, avec peu d’emprise au sol et une très bonne stabilité de performance.",
+  "introCtaLabel": "Demandez un devis",
+  "howTitle": "Comment fonctionne la géothermie sur sonde fermée ?",
+  "howIntro": "Le principe est simple : le sous-sol stocke une chaleur relativement stable toute l’année. La géothermie fermée permet de la mobiliser via un circuit scellé, sans prélèvement d’eau souterraine.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Forage des sondes géothermiques",
+      "body": "Des forages verticaux sont réalisés pour y installer des sondes contenant un fluide caloporteur circulant en boucle fermée."
+    },
+    {
+      "_key": "h2",
+      "title": "Transfert vers la pompe à chaleur",
+      "body": "Le fluide récupère l’énergie du sol et la transmet à la pompe à chaleur du bâtiment, qui l’utilise pour le chauffage et l’eau chaude."
+    },
+    {
+      "_key": "h3",
+      "title": "Rafraîchissement passif en été",
+      "body": "En été, la logique peut être inversée pour rejeter une partie de la chaleur intérieure dans le sol et améliorer le confort avec peu d’énergie."
+    }
+  ],
+  "howCtaLabel": "Intéressé ? Contactez-nous",
+  "projectTitle": "Votre projet de géothermie fermée en 5 étapes simples",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Étude et devis",
+      "body": "Nous analysons le terrain, le contexte du projet et les besoins énergétiques pour confirmer la faisabilité."
+    },
+    {
+      "_key": "p2",
+      "title": "Coordination avec l’installateur",
+      "body": "Nous travaillons avec votre installateur de pompe à chaleur ou vous orientons vers un partenaire pertinent."
+    },
+    {
+      "_key": "p3",
+      "title": "Validation technique",
+      "body": "La solution est confirmée, le dimensionnement est stabilisé et les paramètres d’exécution sont cadrés."
+    },
+    {
+      "_key": "p4",
+      "title": "Forage et pose des sondes",
+      "body": "Les forages sont réalisés, les sondes installées et les opérations de chantier menées avec méthode et rigueur."
+    },
+    {
+      "_key": "p5",
+      "title": "Mise en route du système",
+      "body": "Une fois l’installation finalisée, le bâtiment profite d’une source de chaleur stable, performante et durable."
+    }
+  ],
+  "projectCtaLabel": "Parlez-nous de votre projet",
+  "faqIntroTitle": "Le sol, une source d’énergie durable",
+  "faqIntroBody": "Au-delà des saisons, la température du sous-sol reste bien plus stable que celle de l’air extérieur. C’est cette stabilité qui fait de la géothermie fermée une solution performante pour le chauffage et le rafraîchissement.",
+  "faqTitle": "Questions fréquentes sur la géothermie fermée",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "En quoi consiste un forage géothermique fermé ?",
+      "answer": "Il s’agit de réaliser un ou plusieurs forages verticaux pour y installer des sondes en circuit fermé. Le système n’exploite pas directement l’eau souterraine."
+    },
+    {
+      "_key": "f2",
+      "question": "Quels sont les avantages des sondes verticales ?",
+      "answer": "Elles demandent peu d’espace, s’intègrent à de nombreux projets et offrent une source d’énergie stable, peu sensible aux variations climatiques."
+    },
+    {
+      "_key": "f3",
+      "question": "La géothermie fermée peut-elle rafraîchir un bâtiment ?",
+      "answer": "Oui. Dans de nombreux cas, elle permet un rafraîchissement passif ou naturel, très intéressant pour le confort d’été."
+    },
+    {
+      "_key": "f4",
+      "question": "Quelle profondeur faut-il forer ?",
+      "answer": "La profondeur dépend du dimensionnement, de la géologie et des besoins énergétiques. Elle doit être définie projet par projet."
+    }
+  ],
+  "finalCtaTitle": "Vous souhaitez profiter de l’énergie située sous vos pieds ?",
+  "finalCtaLabel": "Oui, je demande un devis",
+  "seoTitle": "Géothermie fermée | WellDoneDrill Belgique",
+  "seoDescription": "Découvrez la géothermie fermée avec WellDoneDrill : principe, fonctionnement, étapes du projet et bénéfices pour votre bâtiment."
+}

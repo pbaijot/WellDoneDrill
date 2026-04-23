@@ -1,0 +1,93 @@
+{
+  "_id": "geoPage-be-nl-geo_ouverte",
+  "_type": "geoPage",
+  "locale": "be-nl",
+  "routeKey": "geo_ouverte",
+  "heroLine1": "Pompen.",
+  "heroLine2": "Onttrekken.",
+  "heroLine3": "Herinjecteren.",
+  "heroSubtitle": "Kies voor open geothermie met WellDoneDrill en profiteer van een zeer efficiënt systeem voor verwarming en koeling bij middelgrote en grote projecten.",
+  "heroCtaLabel": "Contacteer ons",
+  "introTitle": "Open geothermie: benut de thermische energie van grondwater",
+  "introBody1": "Open geothermie gebruikt grondwater als energiedrager. Het water wordt opgepompt, door het energiesysteem geleid en daarna opnieuw geïnjecteerd.",
+  "introBody2": "Deze oplossing is vooral interessant wanneer de thermische vraag hoog is en de hydrogeologische context een robuust project toelaat.",
+  "introCtaLabel": "Vraag een offerte aan",
+  "howTitle": "Hoe werkt open geothermie?",
+  "howIntro": "Open geothermie werkt met reële waterstromen uit de ondergrond. Daarom vraagt het meer dan alleen boren: ook een goed begrip van de watervoerende laag, de debieten en het regelgevend kader is nodig.",
+  "howSteps": [
+    {
+      "_key": "h1",
+      "title": "Onttrekking van grondwater",
+      "body": "Via een captatieput wordt water uit de watervoerende laag opgepompt."
+    },
+    {
+      "_key": "h2",
+      "title": "Thermische valorisatie",
+      "body": "De warmte of koude wordt via het energiesysteem benut om aan de behoeften van het gebouw te voldoen."
+    },
+    {
+      "_key": "h3",
+      "title": "Gecontroleerde herinjectie",
+      "body": "Na het thermisch gebruik wordt het water opnieuw in de ondergrond geïnjecteerd met oog voor duurzaamheid."
+    }
+  ],
+  "howCtaLabel": "Geïnteresseerd? Contacteer ons",
+  "projectTitle": "Uw project open geothermie in 5 eenvoudige stappen",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "title": "Hydrogeologische studie en offerte",
+      "body": "We analyseren de watervoerende laag, mogelijke debieten, waterkwaliteit en sitebeperkingen."
+    },
+    {
+      "_key": "p2",
+      "title": "Afstemming met de installateur",
+      "body": "Samen met de installateur of het projectteam bepalen we de juiste technische architectuur."
+    },
+    {
+      "_key": "p3",
+      "title": "Validatie en dimensionering",
+      "body": "Het systeem wordt bevestigd op basis van de reële behoeften en de beschikbare bron."
+    },
+    {
+      "_key": "p4",
+      "title": "Captatie- en injectieboringen",
+      "body": "De werken worden uitgevoerd met een precieze en projectgerichte aanpak."
+    },
+    {
+      "_key": "p5",
+      "title": "Inbedrijfstelling",
+      "body": "Na afronding geniet het gebouw van een performante oplossing voor verwarming en koeling."
+    }
+  ],
+  "projectCtaLabel": "Vertel ons over uw project",
+  "faqIntroTitle": "Grondwater, een natuurlijke energiebron",
+  "faqIntroBody": "Wanneer het in goede omstandigheden beschikbaar is, vormt grondwater een sterke energiedrager voor projecten met hoge thermische behoeften.",
+  "faqTitle": "Veelgestelde vragen over open geothermie",
+  "faqs": [
+    {
+      "_key": "f1",
+      "question": "Wat is het verschil met gesloten geothermie?",
+      "answer": "Open geothermie gebruikt rechtstreeks grondwater, terwijl gesloten geothermie met een gesloten circuit in sondes werkt."
+    },
+    {
+      "_key": "f2",
+      "question": "Voor welke projecten is dit geschikt?",
+      "answer": "Vooral voor projecten met grotere warmtevraag: tertiair, publiek, industrie, collectieve woningbouw of netten."
+    },
+    {
+      "_key": "f3",
+      "question": "Welke haalbaarheidsvoorwaarden moeten worden nagegaan?",
+      "answer": "Een toegankelijke bron, voldoende debiet, haalbare herinjectie en een beheersbaar regelgevend kader."
+    },
+    {
+      "_key": "f4",
+      "question": "Wat zijn de belangrijkste voordelen?",
+      "answer": "Hoge efficiëntie, sterke capaciteit voor ambitieuze projecten en een koolstofarme oplossing voor verwarming en koeling."
+    }
+  ],
+  "finalCtaTitle": "Wilt u uw warmte verduurzamen met open geothermie?",
+  "finalCtaLabel": "Ja, ik dien mijn project in",
+  "seoTitle": "Open geothermie | WellDoneDrill",
+  "seoDescription": "Ontdek open geothermie met WellDoneDrill: principe, werking, haalbaarheid en projectstappen."
+}
