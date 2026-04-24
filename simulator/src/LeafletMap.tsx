@@ -2,29 +2,29 @@
 import { useEffect, useRef } from 'react'
 
 const WMS_URL = 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer'
+const MAP_ID = 'wdd-leaflet-map'
 
 export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
-  const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
 
   useEffect(() => {
-    if (!containerRef.current) return
-    if (mapRef.current) {
-      mapRef.current.remove()
-      mapRef.current = null
-    }
-
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
-    document.head.appendChild(link)
+    let destroyed = false
 
     import('leaflet').then((Lmod) => {
-      if (!containerRef.current) return
+      if (destroyed) return
+
+      const container = document.getElementById(MAP_ID)
+      if (!container) return
+
       const L = Lmod.default
+
+      if ((container as any)._leaflet_id) {
+        return
+      }
+
       delete (L.Icon.Default.prototype as any)._getIconUrl
 
-      const map = L.map(containerRef.current, { zoomControl: true }).setView([lat, lng], 15)
+      const map = L.map(container, { zoomControl: true }).setView([lat, lng], 15)
 
       const wmsPane = map.createPane('wmsPane')
       wmsPane.style.zIndex = '350'
@@ -56,7 +56,15 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
       mapRef.current = map
     })
 
+    if (!document.querySelector('link[href*="leaflet.css"]')) {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+      document.head.appendChild(link)
+    }
+
     return () => {
+      destroyed = true
       if (mapRef.current) {
         mapRef.current.remove()
         mapRef.current = null
@@ -66,7 +74,7 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
 
   return (
     <div style={{ filter: 'grayscale(1) contrast(0.85) brightness(1.1)', height: '280px', width: '100%' }}>
-      <div ref={containerRef} style={{ height: '100%', width: '100%' }} />
+      <div id={MAP_ID} style={{ height: '100%', width: '100%' }} />
     </div>
   )
 }
