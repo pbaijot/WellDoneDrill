@@ -28,13 +28,16 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
 
       const map = L.map(container, { zoomControl: true }).setView([lat, lng], 15)
 
+      const tilePane = map.getPane('tilePane')
+      if (tilePane) tilePane.style.filter = 'grayscale(1) contrast(0.85) brightness(1.05)'
+
       const wmsPane = map.createPane('wmsPane')
       wmsPane.style.zIndex = '350'
       wmsPane.style.pointerEvents = 'none'
+      wmsPane.style.filter = 'none'
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '© OpenStreetMap © CartoDB',
-        subdomains: 'abcd',
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap',
         maxZoom: 19,
       }).addTo(map)
 
@@ -69,8 +72,8 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   }, [lat, lng])
 
   return (
-    <div style={{ height: '280px', width: '100%' }}>
-      <div id={MAP_ID} style={{ height: '100%', width: '100%' }} />
+    <div style={{ height: '280px', width: '100%', overflow: 'hidden', position: 'relative' }}>
+      <div id={MAP_ID} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }} />
     </div>
   )
 }
