@@ -3,6 +3,7 @@ import { useState } from 'react'
 import type { Profile, Step, AddressResult, SimulatorProps } from './types'
 import AddressStep from './AddressStep'
 import DiagnosticPanel from './DiagnosticPanel'
+import GeologyStep from './GeologyStep'
 
 const STEPS_PART = [
   { q: 'Quel est votre projet ?', opts: [
@@ -38,9 +39,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   const [MapComponent, setMapComponent] = useState<React.ComponentType<{ lat: number; lng: number }> | null>(null)
 
   const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
-  const totalSteps = steps.length + 1
   const currentStep = typeof step === 'number' && step > 0 ? steps[step - 1] : null
-  const progress = step === 0 ? 0 : step === 'result' ? totalSteps : step === 'map' ? totalSteps : step === 'address' ? steps.length : (step as number)
   const ctaUrl = profile === 'part' ? devisUrl : soumissionUrl
 
   function choose(p: Profile) { setProfile(p); setStep(1); setAnswers([]) }
@@ -58,26 +57,14 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     setStep('map')
   }
 
-  function handleMapConfirm() {
-    setStep('result')
-    onResult?.(profile, answers, address)
-  }
-
   function back() {
     if (step === 1) { setStep(0); setProfile(null); setAnswers([]) }
     else if (step === 2) { setStep(1); setAnswers(answers.slice(0, 1)) }
     else if (step === 'address') { setStep(2) }
     else if (step === 'map') { setStep('address'); setAddress(null) }
-    else if (step === 'result') { setStep('map') }
+    else if (step === 'geology') { setStep('map') }
+    else if (step === 'result') { setStep('geology') }
   }
-
-  const ProgressBar = ({ current }: { current: number }) => (
-    <div className="flex gap-1 mb-5">
-      {Array.from({ length: totalSteps }).map((_, i) => (
-        <div key={i} className={'h-0.5 flex-1 ' + (i < current ? 'bg-wdd-yellow' : 'bg-white/10')} />
-      ))}
-    </div>
-  )
 
   const BackBtn = () => (
     <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">
@@ -90,7 +77,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
         <p className="text-xs font-light text-white/40 leading-relaxed">
-          {totalSteps} etapes pour evaluer la faisabilite de votre projet en Wallonie.
+          Evaluation de faisabilite en Wallonie.
         </p>
       </div>
 
@@ -109,9 +96,8 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {typeof step === 'number' && step > 0 && currentStep && (
         <div>
           <BackBtn />
-          <ProgressBar current={progress} />
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
-            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {step} / {totalSteps}
+            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {step} / {steps.length + 1}
           </div>
           <div className="text-sm font-semibold text-white mb-4">{currentStep.q}</div>
           <div className="flex flex-col gap-0.5">
@@ -131,7 +117,6 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {step === 'address' && (
         <div>
           <BackBtn />
-          <ProgressBar current={steps.length} />
           <AddressStep onConfirm={handleAddressConfirm} />
         </div>
       )}
@@ -139,27 +124,34 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {step === 'map' && address && (
         <div>
           <BackBtn />
-          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Confirmation</div>
+          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Localisation</div>
           <div className="text-sm font-semibold text-white mb-1">Votre chantier se situe ici ?</div>
-          <div className="text-xs text-white/40 mb-3 leading-relaxed truncate">{address.label}</div>
+          <div className="text-xs text-white/40 mb-3 truncate">{address.label}</div>
           <div className="border border-white/10 overflow-hidden mb-1">
             {MapComponent ? (
               <MapComponent lat={address.lat} lng={address.lng} />
             ) : (
-              <div className="h-48 bg-white/5 flex items-center justify-center">
-                <span className="text-xs text-white/30">Chargement de la carte...</span>
+              <div className="h-64 bg-white/5 flex items-center justify-center">
+                <span className="text-xs text-white/30">Chargement...</span>
               </div>
             )}
           </div>
           <DiagnosticPanel lat={address.lat} lng={address.lng} />
-          <div className="mt-3">
-            <button onClick={handleMapConfirm} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
+          <div className="mt-4">
+            <button onClick={() => setStep('geology')} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
               Confirmer cette adresse
             </button>
             <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/60 transition-colors">
               Ce n est pas la bonne adresse
             </button>
           </div>
+        </div>
+      )}
+
+      {step === 'geology' && (
+        <div>
+          <BackBtn />
+          <GeologyStep onConfirm={() => { setStep('result'); onResult?.(profile, answers, address) }} />
         </div>
       )}
 

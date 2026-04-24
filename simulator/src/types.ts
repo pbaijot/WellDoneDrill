@@ -1,5 +1,5 @@
 export type Profile = 'part' | 'pro' | null
-export type Step = 0 | 1 | 2 | 'address' | 'map' | 'result'
+export type Step = 0 | 1 | 2 | 'address' | 'map' | 'geology' | 'result'
 
 export type SimulatorOption = {
   l: string
