@@ -50,7 +50,7 @@ const STEPS_PRO = [
     opts: [
       { l: 'Moins de 3 mois', s: '' },
       { l: '3 a 12 mois', s: '' },
-      { l: "Plus d'un an", s: '' },
+      { l: 'Plus d un an', s: '' },
     ],
   },
 ]
@@ -148,7 +148,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
             ))}
           </div>
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
-            {profile === 'part' ? 'Particulier' : 'Professionnel'} — Etape {progress} / 3
+            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {progress} / 3
           </div>
           <div className="text-sm font-semibold text-white mb-4">{currentStep.q}</div>
           <div className="flex flex-col gap-0.5">
