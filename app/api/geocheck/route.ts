@@ -2,13 +2,13 @@ import { NextRequest, NextResponse } from 'next/server'
 
 const WMS_LAYERS = {
   captage: {
-    url: 'https://geoservices.wallonie.be/arcgis/services/EAUX/PROT_CAPT/MapServer/WMSServer',
-    layer: '0',
+    url: 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer',
+    layer: '0,1,2,3',
     label: 'Zone de prevention de captage',
   },
   natura: {
-    url: 'https://geoservices.wallonie.be/arcgis/services/BIODIVERSITE/NATURA2000/MapServer/WMSServer',
-    layer: '0',
+    url: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer',
+    layer: '0,1,2',
     label: 'Zone Natura 2000',
   },
 }
@@ -24,22 +24,25 @@ export async function GET(req: NextRequest) {
   }
 
   const { url, layer: layerName } = WMS_LAYERS[layer]
-  const delta = 0.005
-  const bbox = lng - delta + ',' + (lat - delta) + ',' + (lng + delta) + ',' + (lat + delta)
+  const delta = 0.003
+  const minx = lng - delta
+  const miny = lat - delta
+  const maxx = lng + delta
+  const maxy = lat + delta
 
   const params = new URLSearchParams({
     SERVICE: 'WMS',
-    VERSION: '1.1.1',
+    VERSION: '1.3.0',
     REQUEST: 'GetFeatureInfo',
     LAYERS: layerName,
     QUERY_LAYERS: layerName,
-    BBOX: bbox,
+    BBOX: miny + ',' + minx + ',' + maxy + ',' + maxx,
     WIDTH: '101',
     HEIGHT: '101',
-    X: '50',
-    Y: '50',
+    I: '50',
+    J: '50',
     INFO_FORMAT: 'application/json',
-    SRS: 'EPSG:4326',
+    CRS: 'EPSG:4326',
   })
 
   try {
@@ -48,15 +51,15 @@ export async function GET(req: NextRequest) {
       signal: AbortSignal.timeout(8000),
     })
     const text = await res.text()
+    let hasFeatures = false
     try {
       const json = JSON.parse(text)
-      const hasFeatures = Array.isArray(json.features) && json.features.length > 0
-      return NextResponse.json({ hasFeatures })
+      hasFeatures = Array.isArray(json.features) && json.features.length > 0
     } catch {
-      const hasFeatures = text.includes('gml:featureMember') && !text.includes('no feature')
-      return NextResponse.json({ hasFeatures })
+      hasFeatures = text.includes('OBJECTID') || (text.includes('featureMember') && text.trim().length > 200)
     }
-  } catch {
+    return NextResponse.json({ hasFeatures })
+  } catch (e) {
     return NextResponse.json({ hasFeatures: null, error: 'WMS indisponible' })
   }
 }
