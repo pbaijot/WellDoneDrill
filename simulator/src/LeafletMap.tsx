@@ -1,6 +1,9 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
+const SPW_WMS_CAPTAGE = 'https://geoservices.wallonie.be/arcgis/services/EAUX/PROT_CAPT/MapServer/WMSServer'
+const SPW_WMS_NATURA = 'https://geoservices.wallonie.be/arcgis/services/BIODIVERSITE/NATURA2000/MapServer/WMSServer'
+
 export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   const containerRef = useRef<HTMLDivElement>(null)
   const mapRef = useRef<any>(null)
@@ -30,7 +33,30 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
         maxZoom: 19,
       }).addTo(map)
 
-      L.marker([lat, lng]).addTo(map)
+      L.tileLayer.wms(SPW_WMS_CAPTAGE, {
+        layers: '0',
+        format: 'image/png',
+        transparent: true,
+        opacity: 0.5,
+        attribution: '© SPW Wallonie',
+      }).addTo(map)
+
+      L.tileLayer.wms(SPW_WMS_NATURA, {
+        layers: '0',
+        format: 'image/png',
+        transparent: true,
+        opacity: 0.4,
+        attribution: '© SPW Wallonie',
+      }).addTo(map)
+
+      const yellowIcon = L.divIcon({
+        html: '<div style="width:14px;height:14px;background:#FFD94F;border:3px solid #1A1A1A;border-radius:50%;"></div>',
+        className: '',
+        iconSize: [14, 14],
+        iconAnchor: [7, 7],
+      })
+
+      L.marker([lat, lng], { icon: yellowIcon }).addTo(map)
 
       mapRef.current = map
     })

@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import type { Profile, Step, AddressResult, SimulatorProps } from './types'
 import AddressStep from './AddressStep'
+import DiagnosticPanel from './DiagnosticPanel'
 
 const STEPS_PART = [
   { q: 'Quel est votre projet ?', opts: [
@@ -29,8 +30,6 @@ const STEPS_PRO = [
   ]},
 ]
 
-let LeafletMap: React.ComponentType<{ lat: number; lng: number }> | null = null
-
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const [profile, setProfile] = useState<Profile>(null)
   const [step, setStep] = useState<Step>(0)
@@ -38,24 +37,24 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   const [address, setAddress] = useState<AddressResult | null>(null)
   const [MapComponent, setMapComponent] = useState<React.ComponentType<{ lat: number; lng: number }> | null>(null)
 
+  const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
+  const totalSteps = steps.length + 1
+  const currentStep = typeof step === 'number' && step > 0 ? steps[step - 1] : null
+  const progress = step === 0 ? 0 : step === 'result' ? totalSteps : step === 'map' ? totalSteps : step === 'address' ? steps.length : (step as number)
+  const ctaUrl = profile === 'part' ? devisUrl : soumissionUrl
+
   function choose(p: Profile) { setProfile(p); setStep(1); setAnswers([]) }
 
   function answer(val: string) {
     const newAnswers = [...answers, val]
     setAnswers(newAnswers)
-    const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
-    if (newAnswers.length >= steps.length) {
-      setStep('address')
-    } else {
-      setStep(newAnswers.length as Step)
-    }
+    if (newAnswers.length >= steps.length) setStep('address')
+    else setStep(newAnswers.length as Step)
   }
 
   function handleAddressConfirm(a: AddressResult) {
     setAddress(a)
-    import('./LeafletMap').then((mod) => {
-      setMapComponent(() => mod.default)
-    })
+    import('./LeafletMap').then((mod) => setMapComponent(() => mod.default))
     setStep('map')
   }
 
@@ -67,23 +66,31 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   function back() {
     if (step === 1) { setStep(0); setProfile(null); setAnswers([]) }
     else if (step === 2) { setStep(1); setAnswers(answers.slice(0, 1)) }
-    else if (step === 'address') { setStep(2); setAnswers(answers.slice(0, 2)) }
+    else if (step === 'address') { setStep(2) }
     else if (step === 'map') { setStep('address'); setAddress(null) }
     else if (step === 'result') { setStep('map') }
   }
 
-  const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
-  const totalSteps = steps.length + 1
-  const currentStep = typeof step === 'number' && step > 0 ? steps[step - 1] : null
-  const progress = step === 0 ? 0 : step === 'result' ? totalSteps : step === 'map' ? totalSteps : step === 'address' ? steps.length : (step as number)
-  const ctaUrl = profile === 'part' ? devisUrl : soumissionUrl
+  const ProgressBar = ({ current }: { current: number }) => (
+    <div className="flex gap-1 mb-5">
+      {Array.from({ length: totalSteps }).map((_, i) => (
+        <div key={i} className={'h-0.5 flex-1 ' + (i < current ? 'bg-wdd-yellow' : 'bg-white/10')} />
+      ))}
+    </div>
+  )
+
+  const BackBtn = () => (
+    <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">
+      Retour
+    </button>
+  )
 
   return (
     <div className="w-full max-w-md">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
         <p className="text-xs font-light text-white/40 leading-relaxed">
-          {totalSteps} questions pour evaluer votre projet en Wallonie.
+          {totalSteps} etapes pour evaluer la faisabilite de votre projet en Wallonie.
         </p>
       </div>
 
@@ -101,12 +108,8 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
 
       {typeof step === 'number' && step > 0 && currentStep && (
         <div>
-          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
-          <div className="flex gap-1 mb-5">
-            {Array.from({ length: totalSteps }).map((_, i) => (
-              <div key={i} className={'h-0.5 flex-1 ' + (i < progress ? 'bg-wdd-yellow' : 'bg-white/10')} />
-            ))}
-          </div>
+          <BackBtn />
+          <ProgressBar current={progress} />
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
             {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {step} / {totalSteps}
           </div>
@@ -127,23 +130,19 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
 
       {step === 'address' && (
         <div>
-          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
-          <div className="flex gap-1 mb-5">
-            {Array.from({ length: totalSteps }).map((_, i) => (
-              <div key={i} className={'h-0.5 flex-1 ' + (i < steps.length ? 'bg-wdd-yellow' : 'bg-white/10')} />
-            ))}
-          </div>
+          <BackBtn />
+          <ProgressBar current={steps.length} />
           <AddressStep onConfirm={handleAddressConfirm} />
         </div>
       )}
 
       {step === 'map' && address && (
         <div>
-          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
+          <BackBtn />
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Confirmation</div>
           <div className="text-sm font-semibold text-white mb-1">Votre chantier se situe ici ?</div>
-          <div className="text-xs text-white/40 mb-3 leading-relaxed">{address.label}</div>
-          <div className="border border-white/10 overflow-hidden mb-4">
+          <div className="text-xs text-white/40 mb-3 leading-relaxed truncate">{address.label}</div>
+          <div className="border border-white/10 overflow-hidden mb-1">
             {MapComponent ? (
               <MapComponent lat={address.lat} lng={address.lng} />
             ) : (
@@ -152,22 +151,23 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
               </div>
             )}
           </div>
-          <button onClick={handleMapConfirm} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
-            Confirmer cette adresse
-          </button>
-          <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/60 transition-colors">
-            Ce n est pas la bonne adresse
-          </button>
+          <DiagnosticPanel lat={address.lat} lng={address.lng} />
+          <div className="mt-3">
+            <button onClick={handleMapConfirm} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
+              Confirmer cette adresse
+            </button>
+            <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/60 transition-colors">
+              Ce n est pas la bonne adresse
+            </button>
+          </div>
         </div>
       )}
 
       {step === 'result' && (
         <div>
-          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
+          <BackBtn />
           <div className="border-t-2 border-wdd-yellow bg-white/5 p-6">
-            {address && (
-              <div className="text-xs text-white/30 mb-4 truncate">{address.label}</div>
-            )}
+            {address && <div className="text-xs text-white/30 mb-4 truncate">{address.label}</div>}
             {profile === 'part' ? (
               <div>
                 <div className="text-sm font-bold text-wdd-yellow mb-2">Votre projet est realisable !</div>
