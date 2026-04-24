@@ -10,18 +10,20 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   useEffect(() => {
     let destroyed = false
 
+    if (!document.querySelector('link[href*="leaflet.css"]')) {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+      document.head.appendChild(link)
+    }
+
     import('leaflet').then((Lmod) => {
       if (destroyed) return
-
       const container = document.getElementById(MAP_ID)
       if (!container) return
+      if ((container as any)._leaflet_id) return
 
       const L = Lmod.default
-
-      if ((container as any)._leaflet_id) {
-        return
-      }
-
       delete (L.Icon.Default.prototype as any)._getIconUrl
 
       const map = L.map(container, { zoomControl: true }).setView([lat, lng], 15)
@@ -29,6 +31,12 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
       const wmsPane = map.createPane('wmsPane')
       wmsPane.style.zIndex = '350'
       wmsPane.style.pointerEvents = 'none'
+
+      const markerPane = map.getPane('markerPane')
+      if (markerPane) {
+        markerPane.style.filter = 'none'
+        markerPane.style.zIndex = '600'
+      }
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap',
@@ -56,13 +64,6 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
       mapRef.current = map
     })
 
-    if (!document.querySelector('link[href*="leaflet.css"]')) {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
-      document.head.appendChild(link)
-    }
-
     return () => {
       destroyed = true
       if (mapRef.current) {
@@ -73,8 +74,12 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   }, [lat, lng])
 
   return (
-    <div style={{ filter: 'grayscale(1) contrast(0.85) brightness(1.1)', height: '280px', width: '100%' }}>
-      <div id={MAP_ID} style={{ height: '100%', width: '100%' }} />
+    <div style={{ position: 'relative', height: '280px', width: '100%' }}>
+      <div
+        id={MAP_ID}
+        style={{ height: '100%', width: '100%', filter: 'grayscale(1) contrast(0.85) brightness(1.1)' }}
+      />
+      <style>{'.leaflet-marker-pane { filter: none !important; }'}</style>
     </div>
   )
 }
