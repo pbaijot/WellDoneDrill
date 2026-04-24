@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
-const WMS_CAPTAGE = 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer'
+const WMS_URL = 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer'
 
 export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -20,32 +20,39 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
 
       delete (L.Icon.Default.prototype as any)._getIconUrl
 
-      const map = L.map(containerRef.current!).setView([lat, lng], 14)
+      const map = L.map(containerRef.current!, { zoomControl: true }).setView([lat, lng], 14)
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '© OpenStreetMap © CartoDB',
-        subdomains: 'abcd',
+      const basemapPane = map.createPane('basemapPane')
+      basemapPane.style.zIndex = '200'
+      basemapPane.style.filter = 'grayscale(1) contrast(0.8) brightness(1.1)'
+
+      const wmsPane = map.createPane('wmsPane')
+      wmsPane.style.zIndex = '300'
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap',
         maxZoom: 19,
-        className: 'grayscale-tiles',
+        pane: 'basemapPane',
       }).addTo(map)
 
-      L.tileLayer.wms(WMS_CAPTAGE, {
+      L.tileLayer.wms(WMS_URL, {
         layers: '0,1,2,3',
         format: 'image/png',
         transparent: true,
-        opacity: 0.7,
+        opacity: 0.75,
         version: '1.3.0',
+        pane: 'wmsPane',
         attribution: '© SPW Wallonie',
-      }).addTo(map)
+      } as any).addTo(map)
 
-      const yellowIcon = L.divIcon({
-        html: '<div style="width:16px;height:16px;background:#FFD94F;border:3px solid #1A1A1A;border-radius:50%;box-shadow:0 0 6px rgba(0,0,0,0.4);"></div>',
+      const icon = L.divIcon({
+        html: '<div style="width:14px;height:14px;background:#FFD94F;border:3px solid #1A1A1A;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.5);"></div>',
         className: '',
-        iconSize: [16, 16],
-        iconAnchor: [8, 8],
+        iconSize: [14, 14],
+        iconAnchor: [7, 7],
       })
 
-      L.marker([lat, lng], { icon: yellowIcon }).addTo(map)
+      L.marker([lat, lng], { icon }).addTo(map)
 
       mapRef.current = map
     })
@@ -55,10 +62,5 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
     }
   }, [lat, lng])
 
-  return (
-    <div style={{ position: 'relative' }}>
-      <style>{'.grayscale-tiles { filter: grayscale(100%) contrast(0.85) brightness(1.1); }'}</style>
-      <div ref={containerRef} style={{ height: '280px', width: '100%' }} />
-    </div>
-  )
+  return <div ref={containerRef} style={{ height: '280px', width: '100%' }} />
 }
