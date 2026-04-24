@@ -10,11 +10,13 @@ export default async function SimulateurDevPage({
 
   return (
     <div className="min-h-screen bg-wdd-black flex items-center justify-center p-8">
-      <Simulator
-        devisUrl={getLocalizedPath(locale as AppLocale, 'devis')}
-        soumissionUrl={getLocalizedPath(locale as AppLocale, 'pro_soumission')}
-        onResult={undefined}
-      />
+      <div className="w-full max-w-3xl">
+        <Simulator
+          devisUrl={getLocalizedPath(locale as AppLocale, 'devis')}
+          soumissionUrl={getLocalizedPath(locale as AppLocale, 'pro_soumission')}
+          onResult={undefined}
+        />
+      </div>
     </div>
   )
 }

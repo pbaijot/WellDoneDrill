@@ -86,7 +86,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   )
 
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
         <p className="text-xs font-light text-white/40 leading-relaxed">
