@@ -10,7 +10,8 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   const mapRef = useRef<any>(null)
 
   useEffect(() => {
-    if (!containerRef.current || mapRef.current) return
+    if (!containerRef.current) return
+    if (mapRef.current) { mapRef.current.remove(); mapRef.current = null }
 
     const link = document.createElement('link')
     link.rel = 'stylesheet'
