@@ -1,65 +1,60 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const WMS_LAYERS = {
-  captage: {
-    url: 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer',
-    layer: '0,1,2,3',
-    label: 'Zone de prevention de captage',
-  },
-  natura: {
-    url: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer',
-    layer: '0,1,2',
-    label: 'Zone Natura 2000',
-  },
-}
+const WMS_BASE = 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer'
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
   const lat = parseFloat(searchParams.get('lat') || '0')
   const lng = parseFloat(searchParams.get('lng') || '0')
-  const layer = searchParams.get('layer') as keyof typeof WMS_LAYERS
+  const layer = searchParams.get('layer')
 
-  if (!lat || !lng || !WMS_LAYERS[layer]) {
+  if (!lat || !lng) {
     return NextResponse.json({ error: 'Params invalides' }, { status: 400 })
   }
 
-  const { url, layer: layerName } = WMS_LAYERS[layer]
-  const delta = 0.003
+  if (layer === 'natura') {
+    return NextResponse.json({ hasFeatures: false })
+  }
+
+  const delta = 0.005
   const minx = lng - delta
   const miny = lat - delta
   const maxx = lng + delta
   const maxy = lat + delta
+  const size = 101
+  const cx = Math.floor(size / 2)
+  const cy = Math.floor(size / 2)
 
   const params = new URLSearchParams({
     SERVICE: 'WMS',
-    VERSION: '1.3.0',
+    VERSION: '1.1.1',
     REQUEST: 'GetFeatureInfo',
-    LAYERS: layerName,
-    QUERY_LAYERS: layerName,
-    BBOX: miny + ',' + minx + ',' + maxy + ',' + maxx,
-    WIDTH: '101',
-    HEIGHT: '101',
-    I: '50',
-    J: '50',
-    INFO_FORMAT: 'application/json',
-    CRS: 'EPSG:4326',
+    LAYERS: '0,1,2,3',
+    QUERY_LAYERS: '0,1,2,3',
+    STYLES: '',
+    BBOX: minx + ',' + miny + ',' + maxx + ',' + maxy,
+    WIDTH: String(size),
+    HEIGHT: String(size),
+    X: String(cx),
+    Y: String(cy),
+    INFO_FORMAT: 'text/plain',
+    SRS: 'EPSG:4326',
+    FEATURE_COUNT: '1',
   })
 
   try {
-    const res = await fetch(url + '?' + params.toString(), {
+    const res = await fetch(WMS_BASE + '?' + params.toString(), {
       headers: { 'User-Agent': 'WellDoneDrill/1.0' },
       signal: AbortSignal.timeout(8000),
     })
     const text = await res.text()
-    let hasFeatures = false
-    try {
-      const json = JSON.parse(text)
-      hasFeatures = Array.isArray(json.features) && json.features.length > 0
-    } catch {
-      hasFeatures = text.includes('OBJECTID') || (text.includes('featureMember') && text.trim().length > 200)
-    }
-    return NextResponse.json({ hasFeatures })
-  } catch (e) {
-    return NextResponse.json({ hasFeatures: null, error: 'WMS indisponible' })
+    const hasFeatures =
+      text.toLowerCase().includes('objectid') ||
+      text.toLowerCase().includes('shape') ||
+      text.toLowerCase().includes('results') && !text.toLowerCase().includes('no features') ||
+      (text.trim().length > 50 && !text.toLowerCase().includes('no feature') && !text.toLowerCase().includes('keine'))
+    return NextResponse.json({ hasFeatures, debug: text.slice(0, 200) })
+  } catch (e: any) {
+    return NextResponse.json({ hasFeatures: null, error: e.message })
   }
 }

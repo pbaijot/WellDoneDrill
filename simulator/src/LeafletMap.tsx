@@ -32,14 +32,9 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
       wmsPane.style.zIndex = '350'
       wmsPane.style.pointerEvents = 'none'
 
-      const markerPane = map.getPane('markerPane')
-      if (markerPane) {
-        markerPane.style.filter = 'none'
-        markerPane.style.zIndex = '600'
-      }
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap',
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap © CartoDB',
+        subdomains: 'abcd',
         maxZoom: 19,
       }).addTo(map)
 
@@ -74,12 +69,8 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
   }, [lat, lng])
 
   return (
-    <div style={{ position: 'relative', height: '280px', width: '100%' }}>
-      <div
-        id={MAP_ID}
-        style={{ height: '100%', width: '100%', filter: 'grayscale(1) contrast(0.85) brightness(1.1)' }}
-      />
-      <style>{'.leaflet-marker-pane { filter: none !important; }'}</style>
+    <div style={{ height: '280px', width: '100%' }}>
+      <div id={MAP_ID} style={{ height: '100%', width: '100%' }} />
     </div>
   )
 }
