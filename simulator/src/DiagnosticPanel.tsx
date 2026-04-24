@@ -32,21 +32,22 @@ export default function DiagnosticPanel({ lat, lng }: { lat: number; lng: number
 
   useEffect(() => {
     setLoading(true)
-    const updated = CHECKS.map((c) => ({ ...c, ok: null }))
-    setResults(updated)
+    const updated: CheckResult[] = CHECKS.map((c) => ({ ...c, ok: null }))
+    setResults([...updated])
 
-    const checks = CHECKS.map(async (check, i) => {
-      try {
-        const res = await fetch('/api/geocheck?lat=' + lat + '&lng=' + lng + '&layer=' + check.key)
-        const data = await res.json()
-        updated[i] = { ...check, ok: data.hasFeatures === null ? null : !data.hasFeatures }
-      } catch {
-        updated[i] = { ...check, ok: null }
-      }
-      setResults([...updated])
-    })
-
-    Promise.all(checks).then(() => setLoading(false))
+    Promise.all(
+      CHECKS.map(async (check, i) => {
+        try {
+          const res = await fetch('/api/geocheck?lat=' + lat + '&lng=' + lng + '&layer=' + check.key)
+          const data = await res.json()
+          const okValue: boolean | null = data.hasFeatures === null ? null : !data.hasFeatures
+          updated[i] = { ...check, ok: okValue }
+        } catch {
+          updated[i] = { ...check, ok: null }
+        }
+        setResults([...updated])
+      })
+    ).then(() => setLoading(false))
   }, [lat, lng])
 
   return (
@@ -56,14 +57,13 @@ export default function DiagnosticPanel({ lat, lng }: { lat: number; lng: number
       </div>
       {results.map((r) => (
         <div key={r.key} className="flex items-start gap-3 bg-white/5 px-4 py-3">
-          <div className="flex-shrink-0 mt-0.5">
-            {r.ok === null ? (
-              <span className="text-white/20 text-sm">...</span>
-            ) : r.ok ? (
-              <span className="text-green-400 font-bold text-sm">V</span>
-            ) : (
-              <span className="text-red-400 font-bold text-sm">X</span>
-            )}
+          <div className="flex-shrink-0 mt-0.5 w-4 text-center">
+            {r.ok === null
+              ? <span className="text-white/20 text-sm">...</span>
+              : r.ok
+              ? <span className="text-green-400 font-bold text-sm">V</span>
+              : <span className="text-red-400 font-bold text-sm">X</span>
+            }
           </div>
           <div>
             <div className="text-xs font-semibold text-white/70">{r.label}</div>
@@ -74,9 +74,7 @@ export default function DiagnosticPanel({ lat, lng }: { lat: number; lng: number
         </div>
       ))}
       {loading && (
-        <div className="text-xs text-white/20 px-1 mt-1">
-          Interrogation du geoportail wallon...
-        </div>
+        <div className="text-xs text-white/20 px-1 mt-1">Interrogation du geoportail wallon...</div>
       )}
     </div>
   )
