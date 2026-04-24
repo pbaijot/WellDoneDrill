@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
-import type { Profile, Step, SimulatorProps } from './types'
+import type { Profile, Step, AddressResult, SimulatorProps } from './types'
+import AddressStep from './AddressStep'
 
 const STEPS_PART = [
   { q: 'Quel est votre projet ?', opts: [
@@ -12,11 +13,6 @@ const STEPS_PART = [
     { l: 'Moins de 150 m2', s: '' },
     { l: '150 a 300 m2', s: '' },
     { l: 'Plus de 300 m2', s: '' },
-  ]},
-  { q: 'Ou se situe votre projet ?', opts: [
-    { l: 'Belgique', s: '' },
-    { l: 'France', s: '' },
-    { l: 'Luxembourg', s: '' },
   ]},
 ]
 
@@ -31,45 +27,64 @@ const STEPS_PRO = [
     { l: '50 a 500 kW', s: 'Batiment de taille moyenne' },
     { l: 'Plus de 500 kW', s: 'Grand projet ou reseau de chaleur' },
   ]},
-  { q: 'Delai souhaite ?', opts: [
-    { l: 'Moins de 3 mois', s: '' },
-    { l: '3 a 12 mois', s: '' },
-    { l: 'Plus d un an', s: '' },
-  ]},
 ]
+
+let LeafletMap: React.ComponentType<{ lat: number; lng: number }> | null = null
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const [profile, setProfile] = useState<Profile>(null)
   const [step, setStep] = useState<Step>(0)
   const [answers, setAnswers] = useState<string[]>([])
+  const [address, setAddress] = useState<AddressResult | null>(null)
+  const [MapComponent, setMapComponent] = useState<React.ComponentType<{ lat: number; lng: number }> | null>(null)
 
   function choose(p: Profile) { setProfile(p); setStep(1); setAnswers([]) }
 
   function answer(val: string) {
-    const next = answers.length + 1
     const newAnswers = [...answers, val]
     setAnswers(newAnswers)
-    if (next >= 3) { setStep('result'); onResult?.(profile, newAnswers) }
-    else setStep(next as Step)
+    const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
+    if (newAnswers.length >= steps.length) {
+      setStep('address')
+    } else {
+      setStep(newAnswers.length as Step)
+    }
+  }
+
+  function handleAddressConfirm(a: AddressResult) {
+    setAddress(a)
+    import('./LeafletMap').then((mod) => {
+      setMapComponent(() => mod.default)
+    })
+    setStep('map')
+  }
+
+  function handleMapConfirm() {
+    setStep('result')
+    onResult?.(profile, answers, address)
   }
 
   function back() {
     if (step === 1) { setStep(0); setProfile(null); setAnswers([]) }
-    else if (step === 'result') { setStep(2); setAnswers(answers.slice(0, 2)) }
-    else { setStep((step as number) - 1 as Step); setAnswers(answers.slice(0, -1)) }
+    else if (step === 2) { setStep(1); setAnswers(answers.slice(0, 1)) }
+    else if (step === 'address') { setStep(2); setAnswers(answers.slice(0, 2)) }
+    else if (step === 'map') { setStep('address'); setAddress(null) }
+    else if (step === 'result') { setStep('map') }
   }
 
-  const isOk = step === 'result'
-  const progress = step === 0 ? 0 : step === 'result' ? 3 : (step as number)
   const steps = profile === 'part' ? STEPS_PART : STEPS_PRO
+  const totalSteps = steps.length + 1
   const currentStep = typeof step === 'number' && step > 0 ? steps[step - 1] : null
+  const progress = step === 0 ? 0 : step === 'result' ? totalSteps : step === 'map' ? totalSteps : step === 'address' ? steps.length : (step as number)
   const ctaUrl = profile === 'part' ? devisUrl : soumissionUrl
 
   return (
     <div className="w-full max-w-md">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
-        <p className="text-xs font-light text-white/40 leading-relaxed">3 questions pour evaluer votre projet.</p>
+        <p className="text-xs font-light text-white/40 leading-relaxed">
+          {totalSteps} questions pour evaluer votre projet en Wallonie.
+        </p>
       </div>
 
       {step === 0 && (
@@ -78,22 +93,22 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
             <button key={p} onClick={() => choose(p)} className="bg-white/5 border-2 border-transparent hover:border-wdd-yellow p-6 text-left transition-all group">
               <div className="text-sm font-semibold text-white mb-1">{p === 'part' ? 'Particulier' : 'Professionnel'}</div>
               <div className="text-xs font-light text-white/35">{p === 'part' ? 'Maison ou appartement' : 'Entreprise ou institution'}</div>
-              <div className="text-wdd-yellow text-xs mt-3 opacity-0 group-hover:opacity-100">Commencer +</div>
+              <div className="text-wdd-yellow text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity">Commencer +</div>
             </button>
           ))}
         </div>
       )}
 
-      {step !== 0 && step !== 'result' && currentStep && (
+      {typeof step === 'number' && step > 0 && currentStep && (
         <div>
           <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
           <div className="flex gap-1 mb-5">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className={'h-0.5 flex-1 ' + (i <= progress ? 'bg-wdd-yellow' : 'bg-white/10')} />
+            {Array.from({ length: totalSteps }).map((_, i) => (
+              <div key={i} className={'h-0.5 flex-1 ' + (i < progress ? 'bg-wdd-yellow' : 'bg-white/10')} />
             ))}
           </div>
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
-            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {progress} / 3
+            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {step} / {totalSteps}
           </div>
           <div className="text-sm font-semibold text-white mb-4">{currentStep.q}</div>
           <div className="flex flex-col gap-0.5">
@@ -103,29 +118,68 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
                   <div className="text-sm font-light text-white/80">{opt.l}</div>
                   {opt.s && <div className="text-xs font-light text-white/30 mt-0.5">{opt.s}</div>}
                 </div>
-                <span className="text-wdd-yellow text-xs opacity-0 group-hover:opacity-100 ml-2">+</span>
+                <span className="text-wdd-yellow text-xs opacity-0 group-hover:opacity-100 transition-opacity ml-2">+</span>
               </button>
             ))}
           </div>
         </div>
       )}
 
-      {isOk && (
+      {step === 'address' && (
+        <div>
+          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
+          <div className="flex gap-1 mb-5">
+            {Array.from({ length: totalSteps }).map((_, i) => (
+              <div key={i} className={'h-0.5 flex-1 ' + (i < steps.length ? 'bg-wdd-yellow' : 'bg-white/10')} />
+            ))}
+          </div>
+          <AddressStep onConfirm={handleAddressConfirm} />
+        </div>
+      )}
+
+      {step === 'map' && address && (
+        <div>
+          <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
+          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Confirmation</div>
+          <div className="text-sm font-semibold text-white mb-1">Votre chantier se situe ici ?</div>
+          <div className="text-xs text-white/40 mb-3 leading-relaxed">{address.label}</div>
+          <div className="border border-white/10 overflow-hidden mb-4">
+            {MapComponent ? (
+              <MapComponent lat={address.lat} lng={address.lng} />
+            ) : (
+              <div className="h-48 bg-white/5 flex items-center justify-center">
+                <span className="text-xs text-white/30">Chargement de la carte...</span>
+              </div>
+            )}
+          </div>
+          <button onClick={handleMapConfirm} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
+            Confirmer cette adresse
+          </button>
+          <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/60 transition-colors">
+            Ce n est pas la bonne adresse
+          </button>
+        </div>
+      )}
+
+      {step === 'result' && (
         <div>
           <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">Retour</button>
           <div className="border-t-2 border-wdd-yellow bg-white/5 p-6">
+            {address && (
+              <div className="text-xs text-white/30 mb-4 truncate">{address.label}</div>
+            )}
             {profile === 'part' ? (
-              <>
+              <div>
                 <div className="text-sm font-bold text-wdd-yellow mb-2">Votre projet est realisable !</div>
                 <div className="text-xl font-bold text-white mb-1">15 000 - 25 000 EUR</div>
                 <div className="text-xs font-light text-white/30 mb-4">Estimation indicative forage seul, hors PAC</div>
                 <div className="text-xs font-light text-white/50 leading-relaxed mb-5">Systeme avec 2 a 4 sondes de 100m. Devis precis gratuit sous 48h.</div>
-              </>
+              </div>
             ) : (
-              <>
+              <div>
                 <div className="text-sm font-bold text-wdd-yellow mb-2">Nous pouvons intervenir !</div>
                 <div className="text-xs font-light text-white/50 leading-relaxed mb-5">Votre projet necessite une etude de faisabilite. Offre detaillee sous 48h.</div>
-              </>
+              </div>
             )}
             <a href={ctaUrl} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center">
               {profile === 'part' ? 'Obtenir mon devis precis +' : 'Soumettre mon projet +'}

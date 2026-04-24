@@ -1,5 +1,5 @@
 export type Profile = 'part' | 'pro' | null
-export type Step = 0 | 1 | 2 | 3 | 'result'
+export type Step = 0 | 1 | 2 | 'address' | 'map' | 'result'
 
 export type SimulatorOption = {
   l: string
@@ -11,11 +11,14 @@ export type SimulatorStep = {
   opts: SimulatorOption[]
 }
 
+export type AddressResult = {
+  label: string
+  lat: number
+  lng: number
+}
+
 export type SimulatorProps = {
-  /** URL vers la page devis particulier */
   devisUrl: string
-  /** URL vers la page soumission pro */
   soumissionUrl: string
-  /** Callback optionnel quand l'utilisateur arrive au resultat */
-  onResult?: (profile: Profile, answers: string[]) => void
+  onResult?: (profile: Profile, answers: string[], address: AddressResult | null) => void
 }
