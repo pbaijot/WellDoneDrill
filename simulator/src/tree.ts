@@ -1,5 +1,22 @@
 import type { TreeStep } from './types'
 
+
+export const TREE_COMMON_START: TreeStep[] = [
+  {
+    id: 'type_projet',
+    section: 2,
+    sectionLabel: 'Votre projet',
+    question: 'Quel est votre projet ?',
+    hint: 'Cela determine les questions pertinentes pour votre situation.',
+    options: [
+      { label: 'Nouvelle construction', sublabel: 'Maison ou appartement en cours de construction', value: 'neuf', next: 'a_type_logement' },
+      { label: 'Renovation ou remplacement', sublabel: 'Remplacement chaudiere gaz, mazout ou electrique', value: 'renovation', next: 'b_type_logement' },
+      { label: 'Extension d un batiment', sublabel: 'Agrandissement avec ou sans refonte du systeme', value: 'extension', next: 'c_surface_actuelle' },
+      { label: 'Je ne sais pas encore', value: 'inconnu', next: 'a_type_logement' },
+    ],
+  },
+]
+
 export const TREE_PART_RAPIDE: TreeStep[] = [
   {
     id: 'r_type_bien',
@@ -290,7 +307,8 @@ const ALL: TreeStep[] = [
 ]
 
 export function getStep(id: string): TreeStep | undefined {
-  return ALL.find((s) => s.id === id)
+  const all = [...TREE_COMMON_START, ...TREE_PART_RAPIDE, ...TREE_PART_PRECIS, ...TREE_PRO]
+  return all.find((s) => s.id === id)
 }
 
 export const SECTION_LABELS: Record<number, string> = {
@@ -298,4 +316,20 @@ export const SECTION_LABELS: Record<number, string> = {
   2: 'Dimensionnement',
   3: 'Faisabilite logistique',
   4: 'Installateur',
+}
+
+export function qualifyLead(answers: Record<string, any>): string {
+  const surface = parseFloat(String(answers['a_surface'] || answers['b_surface'] || answers['c_surface_actuelle'] || '0'))
+  const budget = String(answers['budget'] || '')
+  const timing = String(answers['b_timing'] || answers['a_timing'] || '')
+  const maturite = String(answers['maturite'] || '')
+
+  const budgetOk = ['20-35k', '35-50k', '>50k'].includes(budget)
+  const timingOk = ['asap', '<3m', '<6m', '<1an', 'permis', '6-12m'].includes(timing)
+  const surfaceOk = surface >= 120
+
+  if (surfaceOk && budgetOk && timingOk) return 'geothermie'
+  if (['10-20k', '<10k'].includes(budget)) return 'pac_air_eau'
+  if (maturite === 'reflexion' || budget === 'inconnu') return 'peu_mature'
+  return 'conseiller'
 }

@@ -88,8 +88,6 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     </div>
   ) : null
 
-  const totalSteps = STEPS.length
-  const currentIndex = STEPS.findIndex((s) => s.id === stepId)
 
   return (
     <div className="w-full">
