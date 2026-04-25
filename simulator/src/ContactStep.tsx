@@ -1,70 +1,76 @@
 'use client'
 import { useState } from 'react'
 
-type ContactData = {
-  prenom: string
-  nom: string
-  email: string
-  tel: string
-  cp: string
-  commune: string
-}
+type D = { prenom: string; nom: string; email: string; tel: string; cp: string; commune: string }
 
-export default function ContactStep({ onAnswer }: {
-  onAnswer: (value: string, next: string) => void
-}) {
-  const [data, setData] = useState<ContactData>({ prenom: '', nom: '', email: '', tel: '', cp: '', commune: '' })
-  const [errors, setErrors] = useState<Partial<ContactData>>({})
+export default function ContactStep({ onAnswer }: { onAnswer: (value: string, next: string) => void }) {
+  const [d, setD] = useState<D>({ prenom: '', nom: '', email: '', tel: '', cp: '', commune: '' })
+  const [errors, setErrors] = useState<Partial<D>>({})
 
-  function validate() {
-    const e: Partial<ContactData> = {}
-    if (!data.prenom.trim()) e.prenom = 'Requis'
-    if (!data.nom.trim()) e.nom = 'Requis'
-    if (!data.email.trim() || !data.email.includes('@')) e.email = 'Email invalide'
-    if (!data.tel.trim()) e.tel = 'Requis'
-    return e
+  function upd(k: keyof D, v: string) {
+    setD((p) => ({ ...p, [k]: v }))
+    setErrors((e) => ({ ...e, [k]: '' }))
   }
 
-  function handleSubmit() {
-    const e = validate()
+  function submit() {
+    const e: Partial<D> = {}
+    if (!d.prenom.trim()) e.prenom = 'Requis'
+    if (!d.nom.trim()) e.nom = 'Requis'
+    if (!d.email.includes('@')) e.email = 'Email invalide'
+    if (!d.tel.trim()) e.tel = 'Requis'
     if (Object.keys(e).length > 0) { setErrors(e); return }
-    onAnswer(JSON.stringify(data), 'result')
+    onAnswer(JSON.stringify(d), 'result')
   }
 
-  const Field = ({ k, label, type = 'text', placeholder = '' }: { k: keyof ContactData; label: string; type?: string; placeholder?: string }) => (
+  const inputStyle = (k: keyof D): React.CSSProperties => ({
+    width: '100%', border: '1.5px solid ' + (errors[k] ? '#C62828' : '#DDD8CF'),
+    background: '#FFFFFF', color: '#1C1C1C', fontSize: '14px',
+    padding: '10px 12px', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box',
+  })
+
+  const labelStyle: React.CSSProperties = {
+    fontSize: '12px', color: '#6B6057', marginBottom: '4px', display: 'block'
+  }
+
+  const Field = ({ k, label, type = 'text', ph = '' }: { k: keyof D; label: string; type?: string; ph?: string }) => (
     <div>
-      <label className="text-xs text-white/40 mb-1 block">{label}{!['cp','commune'].includes(k) ? ' *' : ''}</label>
+      <label style={labelStyle}>{label}{!['cp','commune'].includes(k) && ' *'}</label>
       <input
         type={type}
-        value={data[k]}
-        onChange={(e) => { setData((d) => ({ ...d, [k]: e.target.value })); setErrors((err) => ({ ...err, [k]: '' })) }}
-        placeholder={placeholder}
-        className="w-full bg-white/5 border text-white text-sm font-light px-3 py-2.5 outline-none focus:border-wdd-yellow placeholder-white/15 transition-colors"
-        style={{ borderColor: errors[k] ? '#ef4444' : 'rgba(255,255,255,0.15)' }}
+        value={d[k]}
+        onChange={(e) => upd(k, e.target.value)}
+        onFocus={(e) => (e.currentTarget.style.borderColor = '#E6C200')}
+        onBlur={(e) => (e.currentTarget.style.borderColor = errors[k] ? '#C62828' : '#DDD8CF')}
+        placeholder={ph}
+        style={inputStyle(k)}
       />
-      {errors[k] && <div className="text-xs text-red-400 mt-1">{errors[k]}</div>}
+      {errors[k] && <div style={{ fontSize: '11px', color: '#C62828', marginTop: '3px' }}>{errors[k]}</div>}
     </div>
   )
 
   return (
     <div>
-      <p className="text-xs font-light text-white/35 leading-relaxed mb-5 border-l border-wdd-yellow/30 pl-3">
+      <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6, padding: '10px 14px', borderLeft: '3px solid #FFD94F', background: '#F8F5EF', marginBottom: '16px' }}>
         Nous vous envoyons une synthese personnalisee avec les premieres recommandations. Aucun demarchage sans votre accord.
-      </p>
-      <div className="grid grid-cols-2 gap-2 mb-2">
+      </div>
+      <div style={{ fontSize: '15px', fontWeight: 600, color: '#1C1C1C', marginBottom: '16px' }}>
+        Vos coordonnees
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
         <Field k="prenom" label="Prenom" />
         <Field k="nom" label="Nom" />
       </div>
-      <div className="flex flex-col gap-2 mb-4">
-        <Field k="email" label="Email" type="email" placeholder="vous@exemple.be" />
-        <Field k="tel" label="Telephone" type="tel" placeholder="+32 4xx xx xx xx" />
-        <div className="grid grid-cols-2 gap-2">
-          <Field k="cp" label="Code postal" placeholder="5000" />
-          <Field k="commune" label="Commune" placeholder="Namur" />
-        </div>
+      <div style={{ marginBottom: '10px' }}><Field k="email" label="Email" type="email" ph="vous@exemple.be" /></div>
+      <div style={{ marginBottom: '10px' }}><Field k="tel" label="Telephone" type="tel" ph="+32 4xx xx xx xx" /></div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '10px', marginBottom: '20px' }}>
+        <Field k="cp" label="Code postal" ph="5000" />
+        <Field k="commune" label="Commune" ph="Namur" />
       </div>
-      <button onClick={handleSubmit} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
-        Recevoir mon analyse +
+      <button
+        onClick={submit}
+        style={{ display: 'block', width: '100%', padding: '14px', background: '#FFD94F', color: '#1A1A1A', fontSize: '14px', fontWeight: 700, textAlign: 'center', border: 'none', cursor: 'pointer' }}
+      >
+        Recevoir mon analyse →
       </button>
     </div>
   )

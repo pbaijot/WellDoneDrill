@@ -2,274 +2,187 @@
 import type { Answers, AddressResult } from './types'
 import LoadProfile from './LoadProfile'
 
-// ─── MOTEUR DE DIMENSIONNEMENT ────────────────────────────────────────────────
-
 const W_PAR_M2: Record<string, [number, number]> = {
-  maison_A:    [20, 30],
-  maison_B:    [30, 40],
-  maison_std:  [40, 55],
-  maison_inconnu: [45, 60],
-  maison_default: [45, 65],
-  appart_A:    [18, 25],
-  appart_B:    [25, 35],
-  appart_std:  [35, 50],
-  appart_default: [35, 50],
-  immeuble_default: [30, 45],
-  collectif_default: [30, 45],
+  maison_A: [20, 30], maison_B: [30, 40], maison_std: [40, 55], maison_inconnu: [45, 60], maison_default: [45, 65],
+  appart_A: [18, 25], appart_B: [25, 35], appart_std: [35, 50], appart_default: [35, 50],
+  immeuble_default: [30, 45], collectif_default: [30, 45],
 }
 
 const W_PAR_ANNEE: Record<string, number> = {
-  '<1950': 80, '1950-70': 70, '1970-90': 60, '1990-2010': 45, '>2010': 35, 'inconnu': 55,
+  '<1950': 80, '1950-70': 70, '1970-90': 60, '1990-2010': 45, '>2010': 35, inconnu: 55,
 }
 
-function getSurface(answers: Answers): number {
-  const s = answers['a_surface'] || answers['b_surface'] || answers['c_surface_actuelle'] || ''
-  const ext = answers['c_surface_extension'] || '0'
-  return parseFloat(String(s)) + parseFloat(String(ext)) || 0
+function getSurface(a: Answers): number {
+  return parseFloat(String(a['a_surface'] || a['b_surface'] || a['c_surface_actuelle'] || '0'))
+    + parseFloat(String(a['c_surface_extension'] || '0'))
 }
 
-function getTypeLogement(answers: Answers): string {
-  return String(answers['a_type_logement'] || answers['b_type_logement'] || 'maison')
-}
-
-function calcPuissance(answers: Answers): [number, number] {
-  const surface = getSurface(answers)
+function calcPuissance(a: Answers): [number, number] {
+  const surface = getSurface(a)
   if (!surface) return [8, 15]
-
-  const type = getTypeLogement(answers)
-  const peb = String(answers['a_peb'] || '')
-  const annee = String(answers['b_annee'] || '')
-  const chaudierePuissance = parseFloat(String(answers['b_puissance'] || '0'))
-
-  // Si on a la puissance de la chaudière, on part de là (surdimensionnée de ~25%)
-  if (chaudierePuissance > 0) {
-    const pac = chaudierePuissance * 0.75
-    return [Math.round(pac * 0.85), Math.round(pac * 1.05)]
-  }
-
-  // Sinon on calcule par surface
+  const type = String(a['a_type_logement'] || a['b_type_logement'] || 'maison')
+  const peb = String(a['a_peb'] || '')
+  const annee = String(a['b_annee'] || '')
+  const chaudiere = parseFloat(String(a['b_puissance'] || '0'))
+  if (chaudiere > 0) { const p = chaudiere * 0.75; return [Math.round(p * 0.85), Math.round(p * 1.05)] }
   let key = type + '_default'
-  if (peb && ['A', 'B', 'std', 'inconnu'].includes(peb)) key = type + '_' + peb
-
+  if (peb && ['A','B','std','inconnu'].includes(peb)) key = type + '_' + peb
   let range = W_PAR_M2[key] || W_PAR_M2['maison_default']
-
-  // Correction selon année construction
   if (annee && W_PAR_ANNEE[annee]) {
-    const wAnnee = W_PAR_ANNEE[annee]
-    range = [Math.round(surface * wAnnee * 0.85 / 1000), Math.round(surface * wAnnee * 1.15 / 1000)]
-    return [Math.max(3, range[0]), Math.max(5, range[1])]
+    const w = W_PAR_ANNEE[annee]
+    return [Math.max(3, Math.round(surface * w * 0.85 / 1000)), Math.max(5, Math.round(surface * w * 1.15 / 1000))]
   }
-
-  return [
-    Math.max(3, Math.round(surface * range[0] / 1000)),
-    Math.max(5, Math.round(surface * range[1] / 1000)),
-  ]
+  return [Math.max(3, Math.round(surface * range[0] / 1000)), Math.max(5, Math.round(surface * range[1] / 1000))]
 }
 
-function calcSondes(kWMin: number, kWMax: number): [number, number] {
-  // 1 sonde 100m = ~6 kW extraction
-  return [Math.max(1, Math.round(kWMin / 6.5)), Math.max(1, Math.round(kWMax / 5.5))]
+function calcCOP(a: Answers): string {
+  const e = String(a['a_emetteurs'] || a['b_emetteurs'] || '')
+  if (e === 'sol') return '4.5 a 5.5'
+  if (e === 'rbt') return '4.0 a 5.0'
+  if (['radiateurs','ventilos'].includes(e)) return '3.5 a 4.5'
+  return '4.0 a 5.0'
 }
 
-function calcPrix(sondesMin: number, sondesMax: number): [number, number] {
-  // Prix forage seul : ~8 000 à 12 000 EUR / sonde de 100m
-  return [sondesMin * 8000, sondesMax * 12000]
-}
-
-function calcCOP(answers: Answers): string {
-  const emetteurs = String(answers['a_emetteurs'] || answers['b_emetteurs'] || '')
-  if (emetteurs === 'sol') return '4.5 à 5.5'
-  if (emetteurs === 'rbt') return '4.0 à 5.0'
-  if (['radiateurs', 'ventilos'].includes(emetteurs)) return '3.5 à 4.5'
-  return '4.0 à 5.0'
-}
-
-function getEmetteurNote(answers: Answers): string | null {
-  const emetteurs = String(answers['a_emetteurs'] || answers['b_emetteurs'] || '')
-  const temp = String(answers['b_temp'] || '')
-  if (emetteurs === 'radiateurs' && ['>60', '50-60'].includes(temp)) {
-    return 'Vos radiateurs fonctionnent a haute temperature. Un remplacement partiel par des radiateurs basse temperature ou du chauffage sol pourrait ameliorer le rendement de la PAC.'
-  }
-  if (emetteurs === 'sol') return null
-  return null
-}
-
-// ─── COMPOSANT ────────────────────────────────────────────────────────────────
-
-const LEAD_COLORS: Record<string, string> = {
-  geothermie: '#FFD94F',
-  pac_air_eau: '#60a5fa',
-  conseiller:  '#a78bfa',
-  peu_mature:  '#94a3b8',
-}
-
-const LEAD_BADGES: Record<string, string> = {
-  geothermie:  'Projet geothermique — excellent candidat',
-  pac_air_eau: 'Solution PAC air/eau envisageable',
-  conseiller:  'Analyse personnalisee recommandee',
-  peu_mature:  'Premiere orientation',
-}
-
-const LEAD_TEXTS: Record<string, string> = {
-  geothermie:  'Sur base de votre configuration, la geothermie est la solution la plus adaptee. Voici un pre-dimensionnement indicatif de votre installation.',
-  pac_air_eau: 'Votre configuration pourrait convenir a une PAC air/eau. Nous incluons une estimation geothermique a titre comparatif.',
-  conseiller:  'Votre projet presente plusieurs options. Voici une premiere estimation pour orienter votre reflexion.',
-  peu_mature:  'Vous etes au debut de votre reflexion. Voici les ordres de grandeur pour une installation geothermique dans votre configuration.',
-}
-
-const RECOMMANDATIONS: Record<string, string[]> = {
-  geothermie: [
-    'La geothermie sur sondes verticales est la solution la plus performante pour votre configuration.',
-    'Avec un chauffage au sol, vous pouvez egalement beneficier du rafraichissement passif gratuit en ete.',
-    'Les primes wallonnes (Renolution) peuvent couvrir jusqu a 30% du cout du forage.',
-  ],
-  pac_air_eau: [
-    'Une PAC air/eau necessite moins d investissement initial mais des couts de fonctionnement plus eleves.',
-    'En fonction de la place disponible, la geothermie reste plus performante sur le long terme.',
-    'Nous pouvons vous etablir une comparaison detaillee des deux solutions.',
-  ],
-  conseiller: [
-    'Plusieurs inconnues subsistent — un audit energetique rapide permettrait d affiner ce pre-dimensionnement.',
-    'Nos ingenieurs peuvent vous conseiller sur le choix entre geothermie, PAC air/eau et solutions hybrides.',
-  ],
-  peu_mature: [
-    'Prenez le temps de definir votre budget et votre calendrier avant de vous engager.',
-    'Nous pouvons vous envoyer un guide comparatif des solutions de chauffage sans engagement.',
-  ],
+const LEAD_CONFIG: Record<string, { color: string; badge: string; title: string; text: string; recs: string[] }> = {
+  geothermie: {
+    color: '#E6C200',
+    badge: 'Projet geothermique — excellent candidat',
+    title: 'La geothermie est la solution la plus adaptee a votre configuration.',
+    text: 'Sur base de votre superficie, votre budget et votre calendrier, nos ingenieurs preparent une analyse detaillee. Delai de retour : 48h ouvrables.',
+    recs: [
+      'La geothermie sur sondes verticales offre le meilleur rendement pour votre configuration.',
+      'Avec un chauffage au sol, vous beneficiez aussi du rafraichissement passif gratuit en ete.',
+      'Les primes wallonnes (Renolution) peuvent couvrir jusqu a 30% du cout du forage.',
+    ],
+  },
+  pac_air_eau: {
+    color: '#1565C0',
+    badge: 'Solution PAC air/eau envisageable',
+    title: 'Une PAC air/eau pourrait convenir a votre projet.',
+    text: 'Selon votre configuration, la PAC air/eau est une option pertinente. Nous pouvons etablir une comparaison detaillee avec la solution geothermique.',
+    recs: [
+      'La PAC air/eau necessite moins d investissement initial mais des couts de fonctionnement plus eleves.',
+      'La geothermie reste plus performante sur le long terme — une comparaison chiffree peut vous aider.',
+    ],
+  },
+  conseiller: {
+    color: '#6B21A8',
+    badge: 'Analyse personnalisee recommandee',
+    title: 'Votre projet merite un conseil personnalise.',
+    text: 'Plusieurs options s offrent a vous. Un de nos ingenieurs vous contacte pour affiner le dimensionnement et vous orienter vers la meilleure solution.',
+    recs: [
+      'Un audit energetique rapide permettrait d affiner ce pre-dimensionnement.',
+      'Nos ingenieurs peuvent vous conseiller sur le choix entre geothermie, PAC air/eau et solutions hybrides.',
+    ],
+  },
+  peu_mature: {
+    color: '#6B6057',
+    badge: 'Premiere orientation',
+    title: 'Vous etes au debut de votre reflexion.',
+    text: 'Nous vous envoyons un guide comparatif des solutions de chauffage avec les ordres de grandeur de couts et d economies.',
+    recs: [
+      'Prenez le temps de definir votre budget et votre calendrier avant de vous engager.',
+      'Un diagnostic energetique de votre logement est un bon point de depart.',
+    ],
+  },
 }
 
 export default function LeadResult({ answers, address, lead, devisUrl, soumissionUrl }: {
-  answers: Answers
-  address: AddressResult | null
-  lead: string
-  devisUrl: string
-  soumissionUrl: string
+  answers: Answers; address: AddressResult | null; lead: string; devisUrl: string; soumissionUrl: string
 }) {
-  const color = LEAD_COLORS[lead] || LEAD_COLORS.conseiller
-  const badge = LEAD_BADGES[lead] || LEAD_BADGES.conseiller
-  const text = LEAD_TEXTS[lead] || LEAD_TEXTS.conseiller
-  const recommandations = RECOMMANDATIONS[lead] || RECOMMANDATIONS.conseiller
-
+  const cfg = LEAD_CONFIG[lead] || LEAD_CONFIG.conseiller
   const [kWMin, kWMax] = calcPuissance(answers)
-  const [sondesMin, sondesMax] = calcSondes(kWMin, kWMax)
-  const [prixMin, prixMax] = calcPrix(sondesMin, sondesMax)
+  const sondesMin = Math.max(1, Math.round(kWMin / 6.5))
+  const sondesMax = Math.max(1, Math.round(kWMax / 5.5))
+  const prixMin = sondesMin * 8000
+  const prixMax = sondesMax * 12000
   const cop = calcCOP(answers)
-  const emetteurNote = getEmetteurNote(answers)
   const surface = getSurface(answers)
+  const ctaUrl = lead === 'geothermie' ? devisUrl : soumissionUrl
+  const ctaLabel = lead === 'geothermie' ? 'Obtenir mon devis precis →' : 'Parler a un expert →'
 
   let contact: any = {}
   try { contact = JSON.parse(String(answers['contact'] || '{}')) } catch {}
 
-  const cta = lead === 'geothermie' ? devisUrl : soumissionUrl
-  const ctaLabel = lead === 'geothermie' ? 'Obtenir mon devis precis +' : 'Parler a un expert +'
+  const Cell = ({ label, value, sub }: { label: string; value: string; sub?: string }) => (
+    <div style={{ background: '#F8F5EF', border: '1px solid #DDD8CF', padding: '16px' }}>
+      <div style={{ fontSize: '11px', color: '#9A9088', marginBottom: '4px' }}>{label}</div>
+      <div style={{ fontSize: '20px', fontWeight: 700, color: '#1C1C1C' }}>{value}</div>
+      {sub && <div style={{ fontSize: '11px', color: '#9A9088', marginTop: '3px' }}>{sub}</div>}
+    </div>
+  )
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-5">
-        <div className="w-5 h-0.5" style={{ background: color }} />
-        <span className="text-xs font-light tracking-widest uppercase" style={{ color: color + 'bb' }}>
-          {badge}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+        <div style={{ width: '24px', height: '3px', background: cfg.color }} />
+        <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: cfg.color }}>
+          {cfg.badge}
         </span>
       </div>
 
       {contact.prenom && (
-        <div className="text-xs text-white/35 mb-3">
+        <div style={{ fontSize: '13px', color: '#6B6057', marginBottom: '8px' }}>
           Bonjour {contact.prenom}, voici votre analyse personnalisee.
         </div>
       )}
-
       {address && (
-        <div className="text-xs text-white/25 mb-4 truncate">{address.label}</div>
+        <div style={{ fontSize: '12px', color: '#9A9088', marginBottom: '16px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+          {address.label}
+        </div>
       )}
 
-      <p className="text-xs font-light text-white/45 leading-relaxed mb-5 border-l-2 pl-3" style={{ borderColor: color + '60' }}>
-        {text}
-      </p>
+      <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6, padding: '12px 16px', borderLeft: '3px solid ' + cfg.color, background: '#F8F5EF', marginBottom: '24px' }}>
+        {cfg.text}
+      </div>
 
-      {/* ── PRE-DIMENSIONNEMENT ── */}
-      <div className="mb-5">
-        <div className="text-xs font-semibold text-white/40 uppercase tracking-widest mb-3">
-          Pre-dimensionnement indicatif
+      <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#9A9088', marginBottom: '12px' }}>
+        Pre-dimensionnement indicatif
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginBottom: '6px' }}>
+        <Cell label="Puissance PAC estimee" value={kWMin + ' – ' + kWMax + ' kW'} sub={surface > 0 ? surface + ' m2 de surface chauffee' : undefined} />
+        <Cell label="COP estime (rendement)" value={cop} sub="kWh produit / kWh consomme" />
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginBottom: '6px' }}>
+        <Cell label="Nombre de sondes" value={sondesMin + ' – ' + sondesMax} sub="sondes de 100 m" />
+        <Cell label="Profondeur totale" value={sondesMin * 100 + ' – ' + sondesMax * 100 + ' m'} sub="forage vertical" />
+      </div>
+
+      <div style={{ background: '#FFFFFF', border: '2px solid ' + cfg.color, padding: '16px', marginBottom: '6px' }}>
+        <div style={{ fontSize: '11px', color: '#9A9088', marginBottom: '4px' }}>Fourchette de prix forage seul HTVA</div>
+        <div style={{ fontSize: '24px', fontWeight: 700, color: '#1C1C1C' }}>
+          {prixMin.toLocaleString('fr-BE')} – {prixMax.toLocaleString('fr-BE')} EUR
         </div>
+        <div style={{ fontSize: '11px', color: '#9A9088', marginTop: '4px' }}>Hors pompe a chaleur et installation interieure</div>
+      </div>
 
-        <div className="grid grid-cols-2 gap-1.5 mb-1.5">
-          <div className="bg-white/5 p-4">
-            <div className="text-xs text-white/30 mb-1">Puissance PAC estimee</div>
-            <div className="text-xl font-bold text-white">{kWMin} – {kWMax} kW</div>
-            {surface > 0 && (
-              <div className="text-xs text-white/20 mt-1">{surface} m2 de surface chauffee</div>
-            )}
-          </div>
-          <div className="bg-white/5 p-4">
-            <div className="text-xs text-white/30 mb-1">COP estim&eacute; (rendement)</div>
-            <div className="text-xl font-bold text-white">{cop}</div>
-            <div className="text-xs text-white/20 mt-1">kWh produit / kWh consomm&eacute;</div>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-1.5 mb-1.5">
-          <div className="bg-white/5 p-4">
-            <div className="text-xs text-white/30 mb-1">Nombre de sondes</div>
-            <div className="text-xl font-bold text-white">{sondesMin} – {sondesMax}</div>
-            <div className="text-xs text-white/20 mt-1">sondes de 100 m</div>
-          </div>
-          <div className="bg-white/5 p-4">
-            <div className="text-xs text-white/30 mb-1">Profondeur totale</div>
-            <div className="text-xl font-bold text-white">{sondesMin * 100} – {sondesMax * 100} m</div>
-            <div className="text-xs text-white/20 mt-1">forage vertical</div>
-          </div>
-        </div>
-
-        <div className="bg-white/5 p-4 border-t-2 mb-1.5" style={{ borderColor: color }}>
-          <div className="text-xs text-white/30 mb-1">Fourchette de prix forage seul HTVA</div>
-          <div className="text-2xl font-bold text-white">
-            {prixMin.toLocaleString('fr-BE')} – {prixMax.toLocaleString('fr-BE')} EUR
-          </div>
-          <div className="text-xs text-white/20 mt-1">Hors pompe a chaleur et installation interieure</div>
-        </div>
-
-        <div className="bg-white/5 p-3">
-          <div className="text-xs text-white/25 leading-relaxed">
-            Ces estimations sont indicatives et basees sur les donnees que vous avez fournies.
-            Un dimensionnement precis necessite une visite technique et une mesure in situ des proprietes thermiques du sol.
-          </div>
+      <div style={{ background: '#F8F5EF', padding: '12px 16px', marginBottom: '24px' }}>
+        <div style={{ fontSize: '11px', color: '#9A9088', lineHeight: 1.6 }}>
+          Ces estimations sont indicatives. Un dimensionnement precis necessite une visite technique et une mesure in situ des proprietes thermiques du sol.
         </div>
       </div>
 
-      {/* ── NOTE EMETTEURS ── */}
-      {emetteurNote && (
-        <div className="bg-wdd-yellow/8 border border-wdd-yellow/20 p-4 mb-5">
-          <div className="text-xs font-semibold text-wdd-yellow mb-1">Attention emetteurs</div>
-          <div className="text-xs font-light text-white/50 leading-relaxed">{emetteurNote}</div>
-        </div>
-      )}
-
       <LoadProfile answers={answers} />
 
-      <LoadProfile answers={answers} />
-
-      {/* ── RECOMMANDATIONS ── */}
-      <div className="mb-5">
-        <div className="text-xs font-semibold text-white/40 uppercase tracking-widest mb-3">
-          Recommandations
-        </div>
-        <div className="flex flex-col gap-1.5">
-          {recommandations.map((r, i) => (
-            <div key={i} className="flex gap-3 bg-white/3 p-3">
-              <div className="flex-shrink-0 w-4 h-4 mt-0.5 flex items-center justify-center" style={{ background: color + '25' }}>
-                <span className="text-xs font-bold" style={{ color }}>{i + 1}</span>
-              </div>
-              <div className="text-xs font-light text-white/55 leading-relaxed">{r}</div>
+      <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#9A9088', marginBottom: '12px', marginTop: '24px' }}>
+        Recommandations
+      </div>
+      <div style={{ marginBottom: '24px' }}>
+        {cfg.recs.map((r, i) => (
+          <div key={i} style={{ display: 'flex', gap: '12px', background: '#F8F5EF', border: '1px solid #DDD8CF', padding: '12px 14px', marginBottom: '4px' }}>
+            <div style={{ width: '20px', height: '20px', background: cfg.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', fontWeight: 700, color: '#1A1A1A', flexShrink: 0 }}>
+              {i + 1}
             </div>
-          ))}
-        </div>
+            <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6 }}>{r}</div>
+          </div>
+        ))}
       </div>
 
-      {/* ── CTA ── */}
-      <a href={cta} className="block w-full py-3 text-wdd-black text-sm font-bold text-center mb-1 hover:opacity-90 transition-opacity" style={{ background: color }}>
+      <a href={ctaUrl} style={{ display: 'block', width: '100%', padding: '14px', background: cfg.color, color: '#1A1A1A', fontSize: '14px', fontWeight: 700, textAlign: 'center', textDecoration: 'none', marginBottom: '6px', boxSizing: 'border-box' }}>
         {ctaLabel}
       </a>
-      <a href="tel:+32494142449" className="block w-full py-2.5 border border-white/10 text-white/40 text-xs text-center hover:border-white/30 hover:text-white transition-colors">
+      <a href="tel:+32494142449" style={{ display: 'block', width: '100%', padding: '12px', background: 'none', color: '#6B6057', fontSize: '13px', textAlign: 'center', border: '1px solid #DDD8CF', textDecoration: 'none', boxSizing: 'border-box' }}>
         Parler a un expert : +32 494 14 24 49
       </a>
     </div>

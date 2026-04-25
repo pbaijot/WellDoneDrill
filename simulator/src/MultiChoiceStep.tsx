@@ -9,10 +9,7 @@ export default function MultiChoiceStep({ step, onAnswer }: {
   const [selected, setSelected] = useState<string[]>([])
 
   function toggle(val: string) {
-    if (val === 'aucun' || val === 'inconnu') {
-      setSelected([val])
-      return
-    }
+    if (val === 'aucun' || val === 'inconnu') { setSelected([val]); return }
     setSelected((prev) =>
       prev.includes(val)
         ? prev.filter((v) => v !== val)
@@ -20,49 +17,55 @@ export default function MultiChoiceStep({ step, onAnswer }: {
     )
   }
 
-  function handleSubmit() {
-    if (selected.length === 0) return
-    onAnswer(selected.join(','), step.next || 'result')
-  }
-
   return (
     <div>
       {step.hint && (
-        <p className="text-xs font-light text-white/35 leading-relaxed mb-4 border-l border-wdd-yellow/30 pl-3">
+        <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6, padding: '10px 14px', borderLeft: '3px solid #FFD94F', background: '#F8F5EF', marginBottom: '16px' }}>
           {step.hint}
-        </p>
+        </div>
       )}
-      <div className="text-sm font-semibold text-white mb-4">{step.question}</div>
-      <div className="flex flex-col gap-0.5 mb-4">
+      <div style={{ fontSize: '15px', fontWeight: 600, color: '#1C1C1C', marginBottom: '16px' }}>
+        {step.question}
+      </div>
+      <div style={{ marginBottom: '16px' }}>
         {(step.multiOptions || []).map((opt) => {
           const active = selected.includes(opt.value)
           return (
             <button
               key={opt.value}
               onClick={() => toggle(opt.value)}
-              className="flex items-center gap-3 p-3 text-left transition-all"
               style={{
-                background: active ? 'rgba(255,217,79,0.08)' : 'rgba(255,255,255,0.03)',
-                borderLeft: active ? '2px solid #FFD94F' : '2px solid transparent',
+                display: 'flex', alignItems: 'center', gap: '12px',
+                padding: '11px 14px', width: '100%', textAlign: 'left',
+                background: active ? '#FFFDF0' : '#F8F5EF',
+                border: '1.5px solid ' + (active ? '#E6C200' : '#DDD8CF'),
+                marginBottom: '4px', cursor: 'pointer',
               }}
             >
-              <div
-                className="w-4 h-4 flex-shrink-0 border flex items-center justify-center"
-                style={{ borderColor: active ? '#FFD94F' : 'rgba(255,255,255,0.2)', background: active ? '#FFD94F' : 'transparent' }}
-              >
-                {active && <span className="text-wdd-black text-xs font-bold">v</span>}
+              <div style={{
+                width: '16px', height: '16px', flexShrink: 0,
+                border: '1.5px solid ' + (active ? '#E6C200' : '#B8B0A0'),
+                background: active ? '#FFD94F' : '#FFFFFF',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+              }}>
+                {active && <span style={{ fontSize: '10px', fontWeight: 700, color: '#1A1A1A' }}>✓</span>}
               </div>
-              <span className="text-sm font-light text-white/80">{opt.label}</span>
+              <span style={{ fontSize: '14px', color: '#1C1C1C', fontWeight: 400 }}>{opt.label}</span>
             </button>
           )
         })}
       </div>
       <button
-        onClick={handleSubmit}
-        disabled={selected.length === 0}
-        className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center disabled:opacity-30 transition-opacity"
+        onClick={() => selected.length > 0 && onAnswer(selected.join(','), step.next || 'result')}
+        style={{
+          display: 'block', width: '100%', padding: '14px',
+          background: selected.length > 0 ? '#FFD94F' : '#F2EFE9',
+          color: selected.length > 0 ? '#1A1A1A' : '#9A9088',
+          fontSize: '14px', fontWeight: 700, textAlign: 'center',
+          border: 'none', cursor: selected.length > 0 ? 'pointer' : 'default',
+        }}
       >
-        Continuer +
+        Continuer →
       </button>
     </div>
   )
