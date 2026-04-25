@@ -1,28 +1,25 @@
 export type Profile = 'part' | 'pro' | null
 
-export type StepId =
-  | 'profile'
-  | 'address'
-  | 'map'
-  | 'geology'
-  | 'dim_choice'
-  | 'result_simple'
-  | 'result_precis'
-  | 'pro_espace'
-  | string
+export type StepId = string
 
 export type TreeOption = {
   label: string
   sublabel?: string
-  next: StepId
   value: string
+  next: StepId
 }
 
 export type TreeStep = {
   id: string
+  type?: 'choice' | 'input'
+  section?: 1 | 2 | 3 | 4
   question: string
   hint?: string
-  options: TreeOption[]
+  inputLabel?: string
+  inputUnit?: string
+  inputType?: 'text' | 'number'
+  next?: StepId
+  options?: TreeOption[]
 }
 
 export type AddressResult = {
