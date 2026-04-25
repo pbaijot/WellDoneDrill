@@ -1,13 +1,7 @@
 'use client'
 import type { TreeStep } from './types'
 
-export default function QuestionStep({
-  step,
-  profile,
-  stepNum,
-  totalSteps,
-  onAnswer,
-}: {
+export default function QuestionStep({ step, onAnswer }: {
   step: TreeStep
   profile: string | null
   stepNum: number
@@ -17,27 +11,29 @@ export default function QuestionStep({
   return (
     <div>
       {step.hint && (
-        <p className="text-xs font-light text-white/35 leading-relaxed mb-4 border-l border-wdd-yellow/30 pl-3">
+        <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6, padding: '10px 14px', borderLeft: '3px solid #FFD94F', background: '#F8F5EF', marginBottom: '16px' }}>
           {step.hint}
-        </p>
+        </div>
       )}
-      <div className="text-sm font-semibold text-white mb-4">{step.question}</div>
-      <div className="flex flex-col gap-0.5">
-        {step.options.map((opt) => (
+      <div style={{ fontSize: '15px', fontWeight: 600, color: '#1C1C1C', marginBottom: '16px' }}>
+        {step.question}
+      </div>
+      <div>
+        {(step.options || []).map((opt) => (
           <button
             key={opt.value}
             onClick={() => onAnswer(opt.value, opt.next)}
-            className="bg-white/5 hover:bg-white/10 border-l-2 border-transparent hover:border-wdd-yellow p-3 text-left transition-all flex items-center justify-between group"
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', padding: '14px 16px', background: '#F8F5EF', border: '1.5px solid #DDD8CF', marginBottom: '4px', cursor: 'pointer', textAlign: 'left' }}
+            onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.borderColor = '#E6C200'; el.style.background = '#FFFDF0' }}
+            onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.borderColor = '#DDD8CF'; el.style.background = '#F8F5EF' }}
           >
             <div>
-              <div className="text-sm font-light text-white/80">{opt.label}</div>
+              <div style={{ fontSize: '14px', fontWeight: 500, color: '#1C1C1C' }}>{opt.label}</div>
               {opt.sublabel && (
-                <div className="text-xs font-light text-white/30 mt-0.5">{opt.sublabel}</div>
+                <div style={{ fontSize: '12px', color: '#9A9088', marginTop: '2px' }}>{opt.sublabel}</div>
               )}
             </div>
-            <span className="text-wdd-yellow text-xs opacity-0 group-hover:opacity-100 transition-opacity ml-3 flex-shrink-0">
-              +
-            </span>
+            <span style={{ fontSize: '18px', color: '#E6C200', marginLeft: '12px', flexShrink: 0 }}>›</span>
           </button>
         ))}
       </div>
