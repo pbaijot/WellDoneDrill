@@ -1,5 +1,7 @@
 'use client'
 import type { Answers, AddressResult } from './types'
+import LoadProfile from './LoadProfile'
+import LoadProfile from './LoadProfile'
 
 // ─── MOTEUR DE DIMENSIONNEMENT ────────────────────────────────────────────────
 
@@ -242,6 +244,10 @@ export default function LeadResult({ answers, address, lead, devisUrl, soumissio
           <div className="text-xs font-light text-white/50 leading-relaxed">{emetteurNote}</div>
         </div>
       )}
+
+      <LoadProfile answers={answers} />
+
+      <LoadProfile answers={answers} />
 
       {/* ── RECOMMANDATIONS ── */}
       <div className="mb-5">
