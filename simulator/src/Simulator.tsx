@@ -314,14 +314,12 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
             </div>
             
               href={soumissionUrl}
-              className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center"
-            >
+              className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center">
               Acceder a l espace soumission +
             </a>
             
               href="tel:+32494142449"
-              className="block w-full py-2.5 mt-1 border border-white/10 text-white/40 text-xs text-center"
-            >
+              className="block w-full py-2.5 mt-1 border border-white/10 text-white/40 text-xs text-center">
               Parler a un expert : +32 494 14 24 49
             </a>
           </div>
