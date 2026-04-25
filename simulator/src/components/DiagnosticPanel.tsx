@@ -1,94 +1,71 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { C, F } from '../theme'
-import { T } from '../i18n/fr'
 
-type CheckKey = keyof typeof T.checks
-type CheckResult = { key: CheckKey; ok: boolean | null }
+type CheckKey = 'captage' | 'pollution' | 'karst' | 'natura' | 'zi' | 'alea_inond' | 'zones_inondees'
 
-const CHECK_KEYS: CheckKey[] = ['captage', 'pollution', 'karst', 'natura', 'inondations']
-
-const CHECK_COLORS: Record<CheckKey, string> = {
-  captage:     '#C62828',
-  pollution:   '#E65100',
-  karst:       '#B8860B',
-  natura:      '#2E7D32',
-  inondations: '#1565C0',
-}
+const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; color: string }> = [
+  { key: 'captage',        color: '#C62828', label: 'Prevention de captage',          ok: 'Aucune restriction de captage',          ko: 'Zone de prevention — autorisation requise' },
+  { key: 'pollution',      color: '#E65100', label: 'Pollution des sols (BDES)',       ok: 'Aucune pollution recensee',              ko: 'Parcelle BDES — verification avant forage' },
+  { key: 'karst',          color: '#B8860B', label: 'Contraintes karstiques',          ok: 'Hors perimetre karstique',              ko: 'Zone karstique — etude geotechnique requise' },
+  { key: 'natura',         color: '#2E7D32', label: 'Natura 2000',                    ok: 'Hors perimetre Natura 2000',             ko: 'Zone Natura 2000 — evaluation requise' },
+  { key: 'zi',             color: '#1565C0', label: 'Zones inondables (Directive EU)', ok: 'Hors zone inondable reglementaire',     ko: 'Zone inondable — precautions specifiques' },
+  { key: 'alea_inond',     color: '#1976D2', label: 'Alea inondation officiel',        ok: 'Hors zone d alea inondation',           ko: 'Alea inondation — contrainte reglementaire' },
+  { key: 'zones_inondees', color: '#42A5F5', label: 'Zones inondees juillet 2021',    ok: 'Non affecte par les inondations 2021',  ko: 'Zone inondee en juillet 2021' },
+]
 
 export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer }: {
-  lat: number
-  lng: number
-  visibleLayers: string[]
-  onToggleLayer: (key: string) => void
+  lat: number; lng: number; visibleLayers: string[]; onToggleLayer: (key: string) => void
 }) {
-  const [checks, setChecks] = useState<CheckResult[]>(CHECK_KEYS.map((k) => ({ key: k, ok: null })))
+  const [results, setResults] = useState<Record<CheckKey, boolean | null>>({
+    captage: null, pollution: null, karst: null, natura: null,
+    zi: null, alea_inond: null, zones_inondees: null,
+  })
 
   useEffect(() => {
-    const updated: CheckResult[] = CHECK_KEYS.map((k) => ({ key: k, ok: null }))
-    setChecks([...updated])
-
-    Promise.all(CHECK_KEYS.map(async (key, i) => {
+    setResults({ captage: null, pollution: null, karst: null, natura: null, zi: null, alea_inond: null, zones_inondees: null })
+    CHECKS.forEach(async ({ key }) => {
       try {
         const res = await fetch('/api/geocheck?lat=' + lat + '&lng=' + lng + '&layer=' + key)
         const data = await res.json()
-        updated[i] = { key, ok: data.hasFeatures === null ? null : !data.hasFeatures }
+        setResults((prev) => ({ ...prev, [key]: data.hasFeatures === null ? null : !data.hasFeatures }))
       } catch {
-        updated[i] = { key, ok: null }
+        setResults((prev) => ({ ...prev, [key]: null }))
       }
-      setChecks([...updated])
-    }))
+    })
   }, [lat, lng])
 
   return (
     <div style={{ marginTop: '12px' }}>
       <div style={{ fontSize: F.xs, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.text4, marginBottom: '8px' }}>
-        {T.mapDiagTitle}
+        Diagnostic reglementaire — cliquez pour afficher sur la carte
       </div>
-      {checks.map((r) => {
-        const cfg = T.checks[r.key]
-        const color = CHECK_COLORS[r.key]
-        const isVisible = visibleLayers.includes(r.key)
-
+      {CHECKS.map((cfg) => {
+        const ok = results[cfg.key]
+        const isVisible = visibleLayers.includes(cfg.key)
         return (
-          <button
-            key={r.key}
-            onClick={() => onToggleLayer(r.key)}
-            style={{
-              display: 'flex', alignItems: 'center', gap: '12px',
-              padding: '11px 14px', width: '100%', textAlign: 'left',
-              background: isVisible ? '#FFFDF0' : C.bg,
-              border: '1px solid ' + C.border,
-              borderLeft: '3px solid ' + (isVisible ? color : C.border),
-              marginBottom: '4px', cursor: 'pointer', fontFamily: 'inherit',
-            }}
-          >
-            {/* Icone V / X / ... selon GetFeatureInfo */}
-            <div style={{ width: '20px', textAlign: 'center', flexShrink: 0, fontSize: '14px', fontWeight: 700 }}>
-              {r.ok === null
+          <button key={cfg.key} onClick={() => onToggleLayer(cfg.key)} style={{
+            display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 14px',
+            width: '100%', textAlign: 'left',
+            background: isVisible ? '#FFFDF0' : C.bg,
+            border: '1px solid ' + C.border,
+            borderLeft: '3px solid ' + (isVisible ? cfg.color : C.border),
+            marginBottom: '3px', cursor: 'pointer', fontFamily: 'inherit',
+          }}>
+            <div style={{ width: '18px', textAlign: 'center', flexShrink: 0, fontSize: '13px', fontWeight: 700 }}>
+              {ok === null
                 ? <span style={{ color: C.text4, fontSize: F.xs }}>···</span>
-                : r.ok
+                : ok
                 ? <span style={{ color: C.green }}>✓</span>
-                : <span style={{ color }}>✗</span>
-              }
+                : <span style={{ color: cfg.color }}>✗</span>}
             </div>
-
-            {/* Label + detail */}
             <div style={{ flex: 1 }}>
-              <div style={{ fontSize: F.base, fontWeight: 500, color: C.text }}>{cfg.label}</div>
-              <div style={{ fontSize: F.xs, color: C.text4, marginTop: '2px' }}>
-                {r.ok === null ? T.checkPending : r.ok ? cfg.ok : cfg.ko}
+              <div style={{ fontSize: F.sm, fontWeight: 500, color: C.text }}>{cfg.label}</div>
+              <div style={{ fontSize: '10px', color: C.text4, marginTop: '1px' }}>
+                {ok === null ? 'Verification...' : ok ? cfg.ok : cfg.ko}
               </div>
             </div>
-
-            {/* Toggle oeil — indique si le layer est affiché sur la carte */}
-            <div style={{
-              flexShrink: 0, fontSize: '11px', fontWeight: 600,
-              color: isVisible ? color : C.text4,
-              border: '1px solid ' + (isVisible ? color : C.border),
-              padding: '2px 6px',
-              lineHeight: 1.4,
-            }}>
+            <div style={{ flexShrink: 0, fontSize: '10px', fontWeight: 600, color: isVisible ? cfg.color : C.text4, border: '1px solid ' + (isVisible ? cfg.color : C.border), padding: '1px 5px', lineHeight: '1.5' }}>
               {isVisible ? 'ON' : 'OFF'}
             </div>
           </button>

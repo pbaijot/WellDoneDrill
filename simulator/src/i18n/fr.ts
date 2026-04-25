@@ -27,7 +27,7 @@ export const T = {
   mapConfirm: 'Confirmer — analyser le sous-sol →',
   mapWrongAddress: 'Ce n est pas la bonne adresse',
   mapLoading: 'Chargement de la carte...',
-  mapDiagTitle: 'Diagnostic reglementaire — cliquez pour visualiser',
+  mapDiagTitle: 'Diagnostic reglementaire — cliquez pour afficher sur la carte',
 
   // Diagnostic checks
   checks: {
