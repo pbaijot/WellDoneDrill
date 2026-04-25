@@ -82,7 +82,7 @@ export const sectionBadgeLabel = (): React.CSSProperties => ({
 
 export const regulatoryMapStyles = {
   mapFrame: (): React.CSSProperties => ({
-    height: '280px',
+    height: '320px',
     width: '100%',
     overflow: 'hidden',
     position: 'relative',
@@ -161,5 +161,281 @@ export const regulatoryMapStyles = {
     borderRadius: '999px',
     justifySelf: 'end',
     background: visible ? color : C.border,
+  }),
+} as const
+
+
+
+export const geologyLayerLegendStyles = {
+  wrapper: (): React.CSSProperties => ({
+    marginTop: '10px',
+    marginBottom: '16px',
+    display: 'grid',
+    gap: '6px',
+  }),
+
+  item: (): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: '22px 1fr auto',
+    alignItems: 'center',
+    gap: '8px',
+    padding: '8px 10px',
+    border: '1px solid ' + C.border,
+    background: C.bg,
+    fontSize: F.xs,
+    color: C.text2,
+  }),
+
+  number: (color: string): React.CSSProperties => ({
+    width: '18px',
+    height: '18px',
+    borderRadius: '999px',
+    background: color,
+    color: '#fff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '10px',
+    fontWeight: 700,
+    textShadow: '0 1px 1px rgba(0,0,0,0.25)',
+  }),
+
+  name: (): React.CSSProperties => ({
+    fontSize: F.sm,
+    color: C.text,
+    fontWeight: 600,
+    lineHeight: 1.25,
+  }),
+
+  meta: (): React.CSSProperties => ({
+    fontSize: F.xs,
+    color: C.text4,
+    lineHeight: 1.25,
+    textAlign: 'right',
+    whiteSpace: 'nowrap',
+  }),
+
+  hydroLegend: (): React.CSSProperties => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '14px',
+    flexWrap: 'wrap',
+    marginTop: '8px',
+    marginBottom: '16px',
+    fontSize: F.xs,
+    color: C.text4,
+  }),
+
+  hydroSample: (strong = true): React.CSSProperties => ({
+    width: '44px',
+    height: '14px',
+    border: '1px solid rgba(21,101,192,0.35)',
+    backgroundImage: strong
+      ? 'repeating-linear-gradient(135deg, rgba(21,101,192,0.7) 0px, rgba(21,101,192,0.7) 2px, transparent 2px, transparent 9px)'
+      : 'repeating-linear-gradient(135deg, rgba(21,101,192,0.55) 0px, rgba(21,101,192,0.55) 1px, transparent 1px, transparent 11px)',
+    backgroundColor: 'rgba(21,101,192,0.04)',
+  }),
+} as const
+
+
+export const geologySectionStyles = {
+  statusBox: (kind: 'loading' | 'error' | 'ok' = 'ok'): React.CSSProperties => ({
+    background: kind === 'error' ? '#FFF5F2' : C.bgSoft,
+    border: '1px solid ' + (kind === 'error' ? C.orange : C.border),
+    borderLeft: '3px solid ' + (kind === 'error' ? C.orange : C.accentDark),
+    padding: '12px 14px',
+    marginBottom: '16px',
+    fontSize: F.base,
+    color: C.text2,
+    lineHeight: 1.55,
+  }),
+
+  metaGrid: (): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '8px',
+    marginBottom: '16px',
+  }),
+
+  metaCard: (): React.CSSProperties => ({
+    background: C.bg,
+    border: '1px solid ' + C.border,
+    padding: '10px 12px',
+  }),
+
+  metaLabel: (): React.CSSProperties => ({
+    fontSize: F.xs,
+    color: C.text4,
+    textTransform: 'uppercase',
+    letterSpacing: '0.12em',
+    marginBottom: '4px',
+    fontWeight: 600,
+  }),
+
+  metaValue: (): React.CSSProperties => ({
+    fontSize: F.md,
+    color: C.text,
+    fontWeight: 700,
+  }),
+
+  sectionShell: (): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: '42px minmax(0, 1fr)',
+    gap: '14px',
+    marginBottom: '10px',
+  }),
+
+  depthAxis: (): React.CSSProperties => ({
+    width: '42px',
+    flexShrink: 0,
+    position: 'relative',
+    height: '320px',
+  }),
+
+  depthLabel: (depthM: number, maxDepthM: number): React.CSSProperties => ({
+    position: 'absolute',
+    top: (depthM / maxDepthM * 100) + '%',
+    right: '4px',
+    transform: 'translateY(-50%)',
+    fontSize: F.xs,
+    color: C.text4,
+    textAlign: 'right',
+    lineHeight: 1,
+  }),
+
+  sectionCanvas: (): React.CSSProperties => ({
+    height: '320px',
+    position: 'relative',
+    border: '1px solid ' + C.border,
+    overflow: 'hidden',
+    background: C.bgMuted,
+  }),
+
+  layerBlock: (topM: number, bottomM: number, maxDepthM: number, color: string): React.CSSProperties => ({
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: (topM / maxDepthM * 100) + '%',
+    height: ((bottomM - topM) / maxDepthM * 100) + '%',
+    background: color,
+    borderBottom: '1px solid rgba(0,0,0,0.14)',
+    display: 'flex',
+    alignItems: 'center',
+    padding: '8px 12px',
+    boxSizing: 'border-box',
+  }),
+
+  layerText: (): React.CSSProperties => ({
+    fontSize: F.xs,
+    color: 'rgba(255,255,255,0.96)',
+    fontWeight: 700,
+    textTransform: 'uppercase',
+    letterSpacing: '0.06em',
+    lineHeight: 1.3,
+    textShadow: '0 1px 1px rgba(0,0,0,0.3)',
+  }),
+
+  layerLegend: (): React.CSSProperties => ({
+    display: 'grid',
+    gap: '6px',
+    marginTop: '10px',
+    marginBottom: '16px',
+  }),
+
+  layerLegendItem: (): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: '22px 1fr auto',
+    alignItems: 'center',
+    gap: '8px',
+    padding: '8px 10px',
+    border: '1px solid ' + C.border,
+    background: C.bg,
+    fontSize: F.xs,
+    color: C.text2,
+  }),
+
+  layerLegendNumber: (color: string): React.CSSProperties => ({
+    width: '18px',
+    height: '18px',
+    borderRadius: '999px',
+    background: color,
+    color: '#fff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '10px',
+    fontWeight: 700,
+    textShadow: '0 1px 1px rgba(0,0,0,0.25)',
+  }),
+
+  layerLegendName: (): React.CSSProperties => ({
+    fontSize: F.sm,
+    color: C.text,
+    fontWeight: 600,
+    lineHeight: 1.25,
+  }),
+
+  layerLegendMeta: (): React.CSSProperties => ({
+    fontSize: F.xs,
+    color: C.text4,
+    lineHeight: 1.25,
+    textAlign: 'right',
+    whiteSpace: 'nowrap',
+  }),
+
+  hydroLegend: (): React.CSSProperties => ({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '14px',
+    flexWrap: 'wrap',
+    marginTop: '8px',
+    marginBottom: '16px',
+    fontSize: F.xs,
+    color: C.text4,
+  }),
+
+  hydroSample: (strong = true): React.CSSProperties => ({
+    width: '44px',
+    height: '14px',
+    border: '1px solid rgba(21,101,192,0.35)',
+    backgroundImage: strong
+      ? 'repeating-linear-gradient(135deg, rgba(21,101,192,0.7) 0px, rgba(21,101,192,0.7) 2px, transparent 2px, transparent 9px)'
+      : 'repeating-linear-gradient(135deg, rgba(21,101,192,0.55) 0px, rgba(21,101,192,0.55) 1px, transparent 1px, transparent 11px)',
+    backgroundColor: 'rgba(21,101,192,0.04)',
+  }),
+
+  evidenceList: (): React.CSSProperties => ({
+    display: 'grid',
+    gap: '6px',
+    marginBottom: '16px',
+  }),
+
+  evidenceItem: (): React.CSSProperties => ({
+    border: '1px solid ' + C.border,
+    background: C.bg,
+    padding: '9px 11px',
+    fontSize: F.sm,
+    color: C.text2,
+    lineHeight: 1.45,
+  }),
+
+  evidenceType: (): React.CSSProperties => ({
+    fontSize: F.xs,
+    color: C.text4,
+    textTransform: 'uppercase',
+    letterSpacing: '0.1em',
+    fontWeight: 700,
+    marginBottom: '2px',
+  }),
+
+  warning: (): React.CSSProperties => ({
+    background: '#FFFDF0',
+    border: '1px solid #F9C84E',
+    borderLeft: '3px solid ' + C.accentDark,
+    padding: '12px 14px',
+    marginBottom: '16px',
+    fontSize: F.sm,
+    color: C.text2,
+    lineHeight: 1.55,
   }),
 } as const
