@@ -1,4 +1,3 @@
-
 'use client'
 import { useState } from 'react'
 import type { Profile, Answers, AddressResult, LeadType } from '../types'
@@ -9,15 +8,15 @@ export type Phase = 'profile' | 'address' | 'map' | 'geology' | 'questions' | 'r
 type HistoryEntry = { phase: Phase; stepId: string; answers: Answers }
 
 export function useSimulator() {
-  const [profile, setProfile]       = useState<Profile>(null)
-  const [phase, setPhase]           = useState<Phase>('profile')
-  const [stepId, setStepId]         = useState<string>('type_projet')
-  const [answers, setAnswers]       = useState<Answers>({})
-  const [address, setAddress]       = useState<AddressResult | null>(null)
-  const [activeLayer, setActiveLayer] = useState<string>('captage')
-  const [MapComponent, setMapComponent] = useState<any>(null)
-  const [history, setHistory]       = useState<HistoryEntry[]>([])
-  const [lead, setLead]             = useState<LeadType>('conseiller')
+  const [profile, setProfile]             = useState<Profile>(null)
+  const [phase, setPhase]                 = useState<Phase>('profile')
+  const [stepId, setStepId]               = useState<string>('type_projet')
+  const [answers, setAnswers]             = useState<Answers>({})
+  const [address, setAddress]             = useState<AddressResult | null>(null)
+  const [visibleLayers, setVisibleLayers] = useState<string[]>(['captage'])
+  const [MapComponent, setMapComponent]   = useState<any>(null)
+  const [history, setHistory]             = useState<HistoryEntry[]>([])
+  const [lead, setLead]                   = useState<LeadType>('conseiller')
 
   function push(p: Phase, sid?: string) {
     setHistory((h) => [...h, { phase, stepId, answers: { ...answers } }])
@@ -59,8 +58,14 @@ export function useSimulator() {
     }
   }
 
+  function toggleLayer(key: string) {
+    setVisibleLayers((prev) =>
+      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
+    )
+  }
+
   return {
-    profile, phase, stepId, answers, address, activeLayer, MapComponent, lead,
-    setActiveLayer, push, back, chooseProfile, handleAddressConfirm, handleAnswer,
+    profile, phase, stepId, answers, address, visibleLayers, MapComponent, lead,
+    toggleLayer, push, back, chooseProfile, handleAddressConfirm, handleAnswer,
   }
 }

@@ -1,4 +1,3 @@
-
 'use client'
 import type { SimulatorProps } from './types'
 import { getStep, SECTION_LABELS } from './tree'
@@ -76,13 +75,18 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
           <div style={{ fontSize: F.sm, color: C.text4, marginBottom: '12px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{sim.address.label}</div>
           <div style={{ border: '1px solid ' + C.border, overflow: 'hidden', marginBottom: '4px' }}>
             {sim.MapComponent
-              ? <sim.MapComponent lat={sim.address.lat} lng={sim.address.lng} activeLayer={sim.activeLayer} />
-              : <div style={{ height: '240px', background: C.bgMuted, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              ? <sim.MapComponent lat={sim.address.lat} lng={sim.address.lng} visibleLayers={sim.visibleLayers} />
+              : <div style={{ height: '280px', background: C.bgMuted, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <span style={{ fontSize: F.base, color: C.text4 }}>{T.mapLoading}</span>
                 </div>
             }
           </div>
-          <DiagnosticPanel lat={sim.address.lat} lng={sim.address.lng} activeLayer={sim.activeLayer} onLayerClick={sim.setActiveLayer} />
+          <DiagnosticPanel
+            lat={sim.address.lat}
+            lng={sim.address.lng}
+            visibleLayers={sim.visibleLayers}
+            onToggleLayer={sim.toggleLayer}
+          />
           <div style={{ marginTop: '16px' }}>
             <PrimaryBtn onClick={() => sim.push('geology', '')}>{T.mapConfirm}</PrimaryBtn>
             <SecondaryBtn onClick={sim.back}>{T.mapWrongAddress}</SecondaryBtn>

@@ -1,210 +1,25 @@
 'use client'
+import { useEffect, useRef } from 'react'
 
-import { useEffect, useRef, useState } from 'react'
-import { C, regulatoryMapStyles } from './theme'
+const WMS_SOURCES: Record<string, { url: string; layers: string; color: string }> = {
+  captage:     { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer', layers: '0,1,2,3', color: '#C62828' },
+  pollution:   { url: 'https://geoservices.wallonie.be/arcgis/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer/WMSServer', layers: '0', color: '#E65100' },
+  karst:       { url: 'https://geoservices.wallonie.be/arcgis/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer/WMSServer', layers: '0,1', color: '#B8860B' },
+  natura:      { url: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer', layers: '0', color: '#2E7D32' },
+  inondations: { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/ZI/MapServer/WMSServer', layers: '0,1,2', color: '#1565C0' },
+}
 
 const MAP_ID = 'wdd-leaflet-map'
 
-type LayerStatus = 'loading' | 'inside' | 'outside' | 'error'
-
-type RegulatoryLayer = {
-  id: string
-  label: string
-  outsideLabel: string
-  insideLabel: string
-  errorLabel: string
-  wmsUrl: string
-  layers: string
-  opacity: number
-  defaultVisible: boolean
-}
-
-const REGULATORY_LAYERS: RegulatoryLayer[] = [
-  {
-    id: 'captage',
-    label: 'Zone de prévention de captage',
-    outsideLabel: 'Hors zone de prévention de captage',
-    insideLabel: 'Adresse située dans une zone de prévention de captage',
-    errorLabel: 'Vérification impossible pour la zone de prévention de captage',
-    wmsUrl: 'https://geoservices.wallonie.be/arcgis/services/EAU/PROTECT_CAPT/MapServer/WMSServer',
-    layers: '0,1,2,3',
-    opacity: 0.85,
-    defaultVisible: true,
-  },
-  {
-    id: 'bdes',
-    label: 'Pollution des sols (BDES)',
-    outsideLabel: 'Aucune parcelle BDES détectée à cette adresse',
-    insideLabel: 'Adresse située sur une parcelle reprise à la BDES',
-    errorLabel: 'Vérification impossible pour la BDES',
-    wmsUrl: 'https://geoservices.wallonie.be/arcgis/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer/WMSServer',
-    layers: '0,1',
-    opacity: 0.75,
-    defaultVisible: false,
-  },
-  {
-    id: 'karst',
-    label: 'Contraintes karstiques',
-    outsideLabel: 'Hors périmètre de contrainte karstique',
-    insideLabel: 'Adresse située dans un périmètre de contrainte karstique',
-    errorLabel: 'Vérification impossible pour les contraintes karstiques',
-    wmsUrl: 'https://geoservices.wallonie.be/arcgis/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer/WMSServer',
-    layers: '0',
-    opacity: 0.75,
-    defaultVisible: false,
-  },
-  {
-    id: 'natura',
-    label: 'Natura 2000',
-    outsideLabel: 'Hors périmètre Natura 2000',
-    insideLabel: 'Adresse située dans un périmètre Natura 2000',
-    errorLabel: 'Vérification impossible pour Natura 2000',
-    wmsUrl: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer',
-    layers: '1,2',
-    opacity: 0.65,
-    defaultVisible: false,
-  },
-  {
-    id: 'inondable',
-    label: 'Zone inondable',
-    outsideLabel: 'Hors zone inondable identifiée',
-    insideLabel: 'Adresse située dans une zone inondable',
-    errorLabel: 'Vérification impossible pour les zones inondables',
-    wmsUrl: 'https://geoservices.wallonie.be/arcgis/services/EAU/ZI/MapServer/WMSServer',
-    layers: '5,6,8',
-    opacity: 0.7,
-    defaultVisible: false,
-  },
-]
-
-function getStatusSymbol(status: LayerStatus) {
-  if (status === 'inside') return '×'
-  if (status === 'outside') return '✓'
-  if (status === 'error') return '!'
-  return '…'
-}
-
-function getStatusColor(status: LayerStatus) {
-  if (status === 'inside') return C.red
-  if (status === 'outside') return C.green
-  if (status === 'error') return C.orange
-  return C.text4
-}
-
-function getStatusText(layer: RegulatoryLayer, status: LayerStatus) {
-  if (status === 'inside') return layer.insideLabel
-  if (status === 'outside') return layer.outsideLabel
-  if (status === 'error') return layer.errorLabel
-  return 'Vérification en cours...'
-}
-
-function hasFeatureInfoResult(text: string) {
-  const raw = text.trim()
-  const normalized = raw.toLowerCase()
-
-  if (!normalized) return false
-  if (normalized === '{}') return false
-  if (normalized === '[]') return false
-
-  const emptyMarkers = [
-    'no features were found',
-    'no features found',
-    'feature count: 0',
-    'numberoffeatures="0"',
-    'numbermatched="0"',
-    'totalfeatures="0"',
-    'aucun résultat',
-    'aucun resultat',
-    'aucun élément',
-    'aucun element',
-    'aucune entité',
-    'aucune entite',
-  ]
-
-  if (emptyMarkers.some((marker) => normalized.includes(marker))) {
-    return false
-  }
-
-  try {
-    const json = JSON.parse(raw)
-    if (Array.isArray(json.features)) return json.features.length > 0
-    if (Array.isArray(json.results)) return json.results.length > 0
-    return false
-  } catch {
-    // Certains services WMS renvoient du HTML, XML ou texte.
-  }
-
-  const bodyMatch = raw.match(/<body[^>]*>([\s\S]*?)<\/body>/i)
-
-  if (bodyMatch) {
-    const bodyText = bodyMatch[1]
-      .replace(/<script[\s\S]*?<\/script>/gi, '')
-      .replace(/<style[\s\S]*?<\/style>/gi, '')
-      .replace(/<[^>]+>/g, '')
-      .replace(/&nbsp;/g, ' ')
-      .trim()
-      .toLowerCase()
-
-    if (!bodyText) return false
-    return !emptyMarkers.some((marker) => bodyText.includes(marker))
-  }
-
-  return (
-    /<gml:featuremember[\s>]/i.test(raw) ||
-    /<featuremember[\s>]/i.test(raw) ||
-    /<[^>]*(objectid|fid|shape|geom|geometry)[^>]*>/i.test(raw)
-  )
-}
-
-async function checkPointInLayer(
-  L: any,
-  map: any,
-  layer: RegulatoryLayer,
-  lat: number,
+export default function LeafletMap({ lat, lng, visibleLayers }: {
+  lat: number
   lng: number
-): Promise<LayerStatus> {
-  const bounds = map.getBounds()
-  const size = map.getSize()
-  const point = map.latLngToContainerPoint(L.latLng(lat, lng))
-
-  const params = new URLSearchParams({
-    service: 'WMS',
-    version: '1.1.1',
-    request: 'GetFeatureInfo',
-    layers: layer.layers,
-    query_layers: layer.layers,
-    styles: '',
-    bbox: `${bounds.getWest()},${bounds.getSouth()},${bounds.getEast()},${bounds.getNorth()}`,
-    srs: 'EPSG:4326',
-    width: String(Math.round(size.x)),
-    height: String(Math.round(size.y)),
-    x: String(Math.round(point.x)),
-    y: String(Math.round(point.y)),
-    info_format: 'application/json',
-    feature_count: '10',
-  })
-
-  try {
-    const response = await fetch(`${layer.wmsUrl}?${params.toString()}`)
-    const text = await response.text()
-    return hasFeatureInfoResult(text) ? 'inside' : 'outside'
-  } catch {
-    return 'error'
-  }
-}
-
-export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
+  visibleLayers: string[]
+}) {
   const mapRef = useRef<any>(null)
   const wmsLayersRef = useRef<Record<string, any>>({})
 
-  const [visibleLayers, setVisibleLayers] = useState<Record<string, boolean>>(() =>
-    Object.fromEntries(REGULATORY_LAYERS.map((layer) => [layer.id, layer.defaultVisible]))
-  )
-
-  const [statuses, setStatuses] = useState<Record<string, LayerStatus>>(() =>
-    Object.fromEntries(REGULATORY_LAYERS.map((layer) => [layer.id, 'loading']))
-  )
-
+  // Init map once
   useEffect(() => {
     let destroyed = false
 
@@ -217,7 +32,6 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
 
     import('leaflet').then((Lmod) => {
       if (destroyed) return
-
       const container = document.getElementById(MAP_ID)
       if (!container) return
       if ((container as any)._leaflet_id) return
@@ -228,35 +42,19 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
       const map = L.map(container, { zoomControl: true }).setView([lat, lng], 15)
 
       const tilePane = map.getPane('tilePane')
-      if (tilePane) {
-        tilePane.style.filter = 'grayscale(1) contrast(0.85) brightness(1.05)'
-      }
-
-      const wmsPane = map.createPane('wmsPane')
-      wmsPane.style.zIndex = '350'
-      wmsPane.style.pointerEvents = 'none'
-      wmsPane.style.filter = 'none'
+      if (tilePane) tilePane.style.filter = 'grayscale(1) contrast(0.85) brightness(1.05)'
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap, © SPW Wallonie',
+        attribution: '© OpenStreetMap',
         maxZoom: 19,
       }).addTo(map)
 
-      REGULATORY_LAYERS.forEach((layer) => {
-        const wmsLayer = L.tileLayer.wms(layer.wmsUrl, {
-          layers: layer.layers,
-          format: 'image/png',
-          transparent: true,
-          opacity: layer.opacity,
-          version: '1.1.1',
-          pane: 'wmsPane',
-        } as any)
-
-        wmsLayersRef.current[layer.id] = wmsLayer
-
-        if (layer.defaultVisible) {
-          wmsLayer.addTo(map)
-        }
+      // Créer un pane par layer WMS pour z-index indépendant
+      Object.keys(WMS_SOURCES).forEach((key, i) => {
+        const pane = map.createPane('wms_' + key)
+        pane.style.zIndex = String(350 + i)
+        pane.style.pointerEvents = 'none'
+        pane.style.filter = 'none'
       })
 
       const icon = L.icon({
@@ -264,106 +62,80 @@ export default function LeafletMap({ lat, lng }: { lat: number; lng: number }) {
         iconSize: [28, 74],
         iconAnchor: [14, 74],
       })
-
-      L.marker([lat, lng], { icon, zIndexOffset: 1000 }).addTo(map)
-
-      map.whenReady(() => {
-        setStatuses(
-          Object.fromEntries(REGULATORY_LAYERS.map((layer) => [layer.id, 'loading']))
-        )
-
-        Promise.all(
-          REGULATORY_LAYERS.map(async (layer) => {
-            const status = await checkPointInLayer(L, map, layer, lat, lng)
-            return [layer.id, status] as const
-          })
-        ).then((results) => {
-          if (!destroyed) {
-            setStatuses(Object.fromEntries(results))
-          }
-        })
-      })
+      L.marker([lat, lng], { icon }).addTo(map)
 
       mapRef.current = map
+
+      // Ajouter les layers initialement visibles
+      visibleLayers.forEach((key) => {
+        const src = WMS_SOURCES[key]
+        if (!src) return
+        const wms = (L.tileLayer as any).wms(src.url, {
+          layers: src.layers,
+          format: 'image/png',
+          transparent: true,
+          opacity: 0.75,
+          version: '1.1.1',
+          pane: 'wms_' + key,
+          attribution: '© SPW Wallonie',
+        })
+        wms.addTo(map)
+        wmsLayersRef.current[key] = wms
+      })
     })
 
     return () => {
       destroyed = true
-
       if (mapRef.current) {
         mapRef.current.remove()
         mapRef.current = null
+        wmsLayersRef.current = {}
       }
-
-      wmsLayersRef.current = {}
     }
   }, [lat, lng])
 
+  // Sync layers visibles quand visibleLayers change
   useEffect(() => {
-    const map = mapRef.current
-    if (!map) return
+    if (!mapRef.current) return
 
-    Object.entries(visibleLayers).forEach(([id, visible]) => {
-      const layer = wmsLayersRef.current[id]
-      if (!layer) return
+    import('leaflet').then((Lmod) => {
+      const L = Lmod.default
+      const map = mapRef.current
+      if (!map) return
 
-      const isOnMap = map.hasLayer(layer)
+      const currentKeys = Object.keys(wmsLayersRef.current)
 
-      if (visible && !isOnMap) layer.addTo(map)
-      if (!visible && isOnMap) map.removeLayer(layer)
+      // Supprimer les layers qui ne sont plus visibles
+      currentKeys.forEach((key) => {
+        if (!visibleLayers.includes(key)) {
+          map.removeLayer(wmsLayersRef.current[key])
+          delete wmsLayersRef.current[key]
+        }
+      })
+
+      // Ajouter les layers nouvellement visibles
+      visibleLayers.forEach((key) => {
+        if (wmsLayersRef.current[key]) return
+        const src = WMS_SOURCES[key]
+        if (!src) return
+        const wms = (L.tileLayer as any).wms(src.url, {
+          layers: src.layers,
+          format: 'image/png',
+          transparent: true,
+          opacity: 0.75,
+          version: '1.1.1',
+          pane: 'wms_' + key,
+          attribution: '© SPW Wallonie',
+        })
+        wms.addTo(map)
+        wmsLayersRef.current[key] = wms
+      })
     })
   }, [visibleLayers])
 
   return (
-    <div>
-      <div style={regulatoryMapStyles.mapFrame()}>
-        <div id={MAP_ID} style={regulatoryMapStyles.mapCanvas()} />
-      </div>
-
-      <div style={regulatoryMapStyles.legendWrapper()}>
-        <div style={regulatoryMapStyles.legendTitle()}>
-          Diagnostic réglementaire — cliquez pour visualiser
-        </div>
-
-        <div style={regulatoryMapStyles.legendList()}>
-          {REGULATORY_LAYERS.map((layer) => {
-            const status = statuses[layer.id] ?? 'loading'
-            const visible = visibleLayers[layer.id]
-            const color = getStatusColor(status)
-
-            return (
-              <button
-                key={layer.id}
-                type="button"
-                onClick={() =>
-                  setVisibleLayers((current) => ({
-                    ...current,
-                    [layer.id]: !current[layer.id],
-                  }))
-                }
-                style={regulatoryMapStyles.legendItem(visible, color)}
-                aria-pressed={visible}
-              >
-                <span style={regulatoryMapStyles.statusSymbol(color)}>
-                  {getStatusSymbol(status)}
-                </span>
-
-                <span>
-                  <span style={regulatoryMapStyles.itemTitle()}>{layer.label}</span>
-                  <span style={regulatoryMapStyles.itemSubtitle()}>
-                    {getStatusText(layer, status)}
-                  </span>
-                </span>
-
-                <span
-                  title={visible ? 'Couche visible' : 'Couche masquée'}
-                  style={regulatoryMapStyles.visibilityDot(visible, color)}
-                />
-              </button>
-            )
-          })}
-        </div>
-      </div>
+    <div style={{ height: '280px', width: '100%', overflow: 'hidden', position: 'relative' }}>
+      <div id={MAP_ID} style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }} />
     </div>
   )
 }
