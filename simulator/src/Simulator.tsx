@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import type { Profile, Answers, AddressResult, SimulatorProps, LeadType } from './types'
-import { STEPS, getStep, SECTION_LABELS, qualifyLead } from './tree'
+import { getStep, SECTION_LABELS, qualifyLead } from './tree'
 import AddressStep from './AddressStep'
 import DiagnosticPanel from './DiagnosticPanel'
 import GeologyStep from './GeologyStep'
