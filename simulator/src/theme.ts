@@ -77,3 +77,89 @@ export const sectionBadgeLabel = (): React.CSSProperties => ({
   fontSize: F.xs, fontWeight: 600, letterSpacing: '0.14em',
   textTransform: 'uppercase' as const, color: C.text4,
 })
+
+
+
+export const regulatoryMapStyles = {
+  mapFrame: (): React.CSSProperties => ({
+    height: '280px',
+    width: '100%',
+    overflow: 'hidden',
+    position: 'relative',
+    border: '1px solid ' + C.border,
+    boxSizing: 'border-box',
+  }),
+
+  mapCanvas: (): React.CSSProperties => ({
+    position: 'absolute',
+    inset: 0,
+  }),
+
+  legendWrapper: (): React.CSSProperties => ({
+    marginTop: '18px',
+  }),
+
+  legendTitle: (): React.CSSProperties => ({
+    color: C.text4,
+    fontSize: F.xs,
+    letterSpacing: '0.24em',
+    fontWeight: 700,
+    textTransform: 'uppercase',
+    marginBottom: '10px',
+    lineHeight: 1.4,
+  }),
+
+  legendList: (): React.CSSProperties => ({
+    display: 'grid',
+    gap: '6px',
+  }),
+
+  legendItem: (visible: boolean, color: string): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: '44px 1fr 18px',
+    alignItems: 'center',
+    gap: '8px',
+    width: '100%',
+    minHeight: '72px',
+    padding: '12px 16px',
+    border: '1px solid ' + C.border,
+    borderLeft: visible ? '4px solid ' + color : '1px solid ' + C.border,
+    background: visible ? C.bgSoft : C.bg,
+    cursor: 'pointer',
+    textAlign: 'left',
+    boxSizing: 'border-box',
+    fontFamily: 'inherit',
+  }),
+
+  statusSymbol: (color: string): React.CSSProperties => ({
+    color,
+    fontSize: F.h2,
+    fontWeight: 700,
+    lineHeight: 1,
+    textAlign: 'center',
+  }),
+
+  itemTitle: (): React.CSSProperties => ({
+    display: 'block',
+    color: C.text,
+    fontSize: F.lg,
+    fontWeight: 700,
+    lineHeight: 1.25,
+  }),
+
+  itemSubtitle: (): React.CSSProperties => ({
+    display: 'block',
+    color: C.text4,
+    fontSize: F.base,
+    lineHeight: 1.35,
+    marginTop: '4px',
+  }),
+
+  visibilityDot: (visible: boolean, color: string): React.CSSProperties => ({
+    width: '10px',
+    height: '10px',
+    borderRadius: '999px',
+    justifySelf: 'end',
+    background: visible ? color : C.border,
+  }),
+} as const

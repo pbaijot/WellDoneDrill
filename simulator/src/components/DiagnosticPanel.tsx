@@ -32,9 +32,8 @@ export default function DiagnosticPanel({ lat, lng, activeLayer, onLayerClick }:
 
   return (
     <div style={{ marginTop: '12px' }}>
-      <div style={{ fontSize: F.xs, fontWeight: 600, letterSpacing: '0.12em', textTransform: 'uppercase' as const, color: C.text4, marginBottom: '8px' }}>
-        {T.mapDiagTitle}
-      </div>
+      
+
       {results.map((r) => {
         const cfg = T.checks[r.key]
         const color = CHECK_COLORS[r.key]
@@ -55,9 +54,8 @@ export default function DiagnosticPanel({ lat, lng, activeLayer, onLayerClick }:
             </div>
             <div style={{ flex: 1 }}>
               <div style={{ fontSize: F.base, fontWeight: 500, color: C.text }}>{cfg.label}</div>
-              <div style={{ fontSize: F.xs, color: C.text4, marginTop: '2px' }}>
-                {r.ok === null ? T.checkPending : r.ok ? cfg.ok : cfg.ko}
-              </div>
+              
+
             </div>
             <div style={{ width: '8px', height: '8px', borderRadius: '50%', flexShrink: 0, background: isActive ? color : C.border }} />
           </button>
