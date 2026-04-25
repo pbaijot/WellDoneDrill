@@ -1,7 +1,6 @@
 'use client'
 import type { Answers, AddressResult } from './types'
 import LoadProfile from './LoadProfile'
-import LoadProfile from './LoadProfile'
 
 // ─── MOTEUR DE DIMENSIONNEMENT ────────────────────────────────────────────────
 
