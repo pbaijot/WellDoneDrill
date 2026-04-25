@@ -11,6 +11,53 @@ const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; colo
   { key: 'zi',             color: '#1565C0', label: 'Zones inondables (Directive EU)', ok: 'Hors zone inondable reglementaire',     ko: 'Zone inondable — precautions specifiques' },
 ]
 
+
+function DiagnosticSummary({ results }: { results: Record<string, boolean | null> }) {
+  const issues = Object.entries(results)
+    .filter(([_, ok]) => ok === false)
+    .map(([key]) => key)
+
+  const pending = Object.values(results).some((v) => v === null)
+  if (pending) return null
+
+  const ISSUE_LABELS: Record<string, string> = {
+    captage:    'zone de prevention de captage',
+    pollution:  'pollution des sols',
+    karst:      'contrainte karstique',
+    natura:     'perimetre Natura 2000',
+    zi:         'zone inondable',
+  }
+
+  if (issues.length === 0) {
+    return (
+      <div style={{ marginTop: '12px', padding: '14px 16px', background: '#F0FAF0', border: '1px solid #A5D6A7', borderLeft: '3px solid #2E7D32' }}>
+        <div style={{ fontSize: '13px', fontWeight: 600, color: '#1B5E20', marginBottom: '4px' }}>
+          Bonne nouvelle — aucune contrainte administrative
+        </div>
+        <div style={{ fontSize: '12px', color: '#2E7D32', lineHeight: 1.6 }}>
+          Votre terrain ne presente aucune contrainte reglementaire connue pour la realisation d un forage geothermique. Nous pouvons passer a l analyse du sous-sol.
+        </div>
+      </div>
+    )
+  }
+
+  const labels = issues.map((k) => ISSUE_LABELS[k] || k)
+  const listed = labels.length === 1
+    ? labels[0]
+    : labels.slice(0, -1).join(', ') + ' et ' + labels[labels.length - 1]
+
+  return (
+    <div style={{ marginTop: '12px', padding: '14px 16px', background: '#FFFDF0', border: '1px solid #F9C84E', borderLeft: '3px solid #E6C200' }}>
+      <div style={{ fontSize: '13px', fontWeight: 600, color: '#7A5800', marginBottom: '4px' }}>
+        Point d attention — projet toujours realisable
+      </div>
+      <div style={{ fontSize: '12px', color: '#8B6914', lineHeight: 1.6 }}>
+        Nous avons identifie {labels.length > 1 ? labels.length + ' points d attention' : 'un point d attention'} : <strong>{listed}</strong>. Ce{labels.length > 1 ? 's' : ''} element{labels.length > 1 ? 's' : ''} n est pas bloquant et notre equipe en tiendra compte pour la suite du projet.
+      </div>
+    </div>
+  )
+}
+
 export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer }: {
   lat: number; lng: number; visibleLayers: string[]; onToggleLayer: (key: string) => void
 }) {
@@ -66,6 +113,7 @@ export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer
           </button>
         )
       })}
+      <DiagnosticSummary results={results} />
     </div>
   )
 }

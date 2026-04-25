@@ -5,7 +5,7 @@ const SERVICES: Record<string, { url: string; tolerance: string; layers: string 
   pollution: { url: "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/BDES_INVENTAIRE/MapServer",       tolerance: "2", layers: "all" },
   karst:     { url: "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer", tolerance: "2", layers: "all" },
   natura:    { url: "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",             tolerance: "2", layers: "all" },
-  zi:        { url: "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ZI/MapServer",                            tolerance: "0", layers: "all" },
+  zi:        { url: "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ZI/MapServer",                            tolerance: "1", layers: "all:0,2,4,6" },
 }
 
 export async function GET(req: NextRequest) {
@@ -42,10 +42,8 @@ export async function GET(req: NextRequest) {
     })
     const data = await res.json()
     const results = Array.isArray(data.results) ? data.results : []
-    const hasFeatures = results.filter((r: any) => {
-      if (layer === "zi") return r.geometryType === "esriGeometryPolygon" || r.geometry === undefined
-      return true
-    }).length > 0
+    const isZI = layer === "zi"
+    const hasFeatures = results.some((r: any) => !isZI || r.geometryType === "esriGeometryPolygon" || r.geometry === undefined)
     return NextResponse.json({ hasFeatures, count: results.length })
   } catch (e: any) {
     return NextResponse.json({ hasFeatures: null, error: e.message })
