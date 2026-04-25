@@ -14,93 +14,72 @@ const DEPTHS = [0, 50, 100, 150, 200]
 export default function GeologyStep({ onConfirm }: { onConfirm: () => void }) {
   return (
     <div>
-      <div className="flex items-center gap-3 mb-5">
-        <div className="w-5 h-0.5 bg-wdd-yellow" />
-        <span className="text-xs font-light tracking-widest text-wdd-yellow/60 uppercase">Sous-sol</span>
+      <div style={{ fontSize: '13px', color: '#4A4540', lineHeight: 1.6, padding: '12px 16px', borderLeft: '3px solid #FFD94F', background: '#F8F5EF', marginBottom: '24px' }}>
+        Contraintes administratives verifiees. Analysons maintenant les capacites thermiques du sous-sol sur 200 m de profondeur.
       </div>
 
-      <h3 className="text-sm font-semibold text-white mb-1">
-        Contraintes administratives verifiees.
-      </h3>
-      <p className="text-xs font-light text-white/45 leading-relaxed mb-6">
-        Verifions maintenant les capacites thermiques du sous-sol sur 200 m de profondeur.
-      </p>
+      <div style={{ display: 'flex', gap: '12px', marginBottom: '20px', alignItems: 'stretch' }}>
 
-      <div className="flex gap-3 mb-5">
-        <div style={{ width: '32px', flexShrink: 0, position: 'relative', height: '280px' }}>
+        <div style={{ width: '40px', flexShrink: 0, position: 'relative', height: '260px' }}>
           {DEPTHS.map((d) => (
-            <div key={d} style={{
-              position: 'absolute',
-              top: (d / 200 * 100) + '%',
-              right: 0,
-              transform: 'translateY(-50%)',
-              fontSize: '9px',
-              color: 'rgba(255,255,255,0.3)',
-              whiteSpace: 'nowrap',
-              textAlign: 'right',
-            }}>
+            <div key={d} style={{ position: 'absolute', top: (d / 200 * 100) + '%', right: '4px', transform: 'translateY(-50%)', fontSize: '10px', color: '#9A9088', textAlign: 'right', lineHeight: 1 }}>
               {d} m
             </div>
           ))}
         </div>
 
-        <div style={{ flex: 1, height: '280px', position: 'relative', border: '1px solid rgba(255,255,255,0.08)' }}>
+        <div style={{ flex: 1, height: '260px', position: 'relative', border: '1px solid #DDD8CF', overflow: 'hidden' }}>
           {LAYERS.map((layer) => (
             <div key={layer.name} style={{
-              position: 'absolute',
-              left: 0, right: 0,
+              position: 'absolute', left: 0, right: 0,
               top: (layer.from / 200 * 100) + '%',
               height: ((layer.to - layer.from) / 200 * 100) + '%',
               background: layer.color,
-              borderBottom: '1px solid rgba(0,0,0,0.2)',
-              display: 'flex',
-              alignItems: 'center',
-              paddingLeft: '10px',
-              boxSizing: 'border-box',
+              borderBottom: '1px solid rgba(0,0,0,0.12)',
+              display: 'flex', alignItems: 'center', paddingLeft: '12px', boxSizing: 'border-box',
             }}>
-              <span style={{ fontSize: '9px', color: 'rgba(255,255,255,0.85)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.9)', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                 {layer.name}
               </span>
             </div>
           ))}
-          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '2px', background: '#FFD94F' }} />
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: '#FFD94F' }} />
         </div>
 
-        <div style={{ width: '80px', flexShrink: 0, height: '280px', position: 'relative' }}>
+        <div style={{ width: '88px', flexShrink: 0, height: '260px', position: 'relative' }}>
           {LAYERS.map((layer) => (
             <div key={layer.name} style={{
               position: 'absolute',
               top: ((layer.from + layer.to) / 2 / 200 * 100) + '%',
               transform: 'translateY(-50%)',
-              fontSize: '8px',
-              color: 'rgba(255,255,255,0.25)',
               lineHeight: 1.4,
             }}>
-              <div style={{ color: '#FFD94F', fontWeight: 600, fontSize: '9px' }}>
-                {layer.from === 0 ? '—' : layer.from < 35 ? '~3.5 W/mK' : layer.from < 70 ? '~2.0 W/mK' : '~2.8 W/mK'}
+              <div style={{ color: '#B8860B', fontWeight: 600, fontSize: '10px' }}>
+                {layer.from < 15 ? '~3.5 W/mK' : layer.from < 35 ? '~2.8 W/mK' : layer.from < 70 ? '~2.0 W/mK' : '~2.8 W/mK'}
               </div>
-              <div>conductivite</div>
+              <div style={{ fontSize: '9px', color: '#9A9088' }}>conductivite</div>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="bg-white/5 border border-white/10 p-4 mb-5">
-        <div className="text-xs font-semibold text-wdd-yellow mb-1">Potentiel geothermique</div>
-        <div className="text-xs font-light text-white/50 leading-relaxed">
-          Le sous-sol de cette zone presente un potentiel favorable. La conductivite thermique estimee permet d envisager un systeme de sondes verticales performant.
+      <div style={{ background: '#F8F5EF', border: '1px solid #DDD8CF', borderLeft: '3px solid #FFD94F', padding: '14px 16px', marginBottom: '20px' }}>
+        <div style={{ fontSize: '13px', fontWeight: 600, color: '#1C1C1C', marginBottom: '4px' }}>
+          Potentiel geothermique favorable
         </div>
-      </div>
-
-      <div className="text-xs text-white/20 mb-5 px-1">
-        Donnees indicatives basees sur la geologie regionale — a affiner par mesure in situ.
+        <div style={{ fontSize: '12px', color: '#6B6057', lineHeight: 1.6 }}>
+          Le sous-sol de cette zone presente un potentiel exploitable. La conductivite thermique estimee permet d envisager un systeme de sondes verticales performant.
+        </div>
+        <div style={{ fontSize: '11px', color: '#9A9088', marginTop: '6px' }}>
+          Donnees indicatives basees sur la geologie regionale. Un test de reponse thermique (TRT) affine ces valeurs.
+        </div>
       </div>
 
       <button
         onClick={onConfirm}
-        className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors"
+        style={{ display: 'block', width: '100%', padding: '14px', background: '#FFD94F', color: '#1A1A1A', fontSize: '14px', fontWeight: 700, textAlign: 'center', border: 'none', cursor: 'pointer' }}
       >
-        Voir mon estimation +
+        Continuer vers le dimensionnement →
       </button>
     </div>
   )
