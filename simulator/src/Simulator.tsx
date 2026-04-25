@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
-import type { Profile, Answers, AddressResult, SimulatorProps, LeadType } from './types'
-import { getStep, SECTION_LABELS, qualifyLead } from './tree'
+import type { Profile, Answers, AddressResult, SimulatorProps } from './types'
+import { TREE_COMMON_START, TREE_NEUF, TREE_RENOV, TREE_EXTENSION, TREE_COMMON_END, getStep, SECTION_LABELS } from './tree'
 import AddressStep from './AddressStep'
 import DiagnosticPanel from './DiagnosticPanel'
 import GeologyStep from './GeologyStep'
@@ -11,9 +11,28 @@ import MultiChoiceStep from './MultiChoiceStep'
 import ContactStep from './ContactStep'
 import LeadResult from './LeadResult'
 import SummaryPanel from './SummaryPanel'
+import { qualifyLead } from './tree'
+
+const T = {
+  bg: '#FFFFFF',
+  bgSoft: '#F8F5EF',
+  bgMuted: '#F2EFE9',
+  border: '#DDD8CF',
+  borderStrong: '#B8B0A0',
+  text: '#1C1C1C',
+  text2: '#4A4540',
+  text3: '#6B6057',
+  text4: '#9A9088',
+  accent: '#FFD94F',
+  accentDark: '#E6C200',
+  green: '#2E7D32',
+  red: '#C62828',
+}
 
 type Phase = 'profile' | 'address' | 'map' | 'geology' | 'questions' | 'result'
 type HistoryEntry = { phase: Phase; stepId: string; answers: Answers }
+
+const s = (styles: React.CSSProperties): React.CSSProperties => styles
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const [profile, setProfile] = useState<Profile>(null)
@@ -24,7 +43,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   const [activeLayer, setActiveLayer] = useState('captage')
   const [MapComponent, setMapComponent] = useState<any>(null)
   const [history, setHistory] = useState<HistoryEntry[]>([])
-  const [lead, setLead] = useState<LeadType>(null)
+  const [lead, setLead] = useState<string>('conseiller')
 
   function push(p: Phase, sid?: string) {
     setHistory((h) => [...h, { phase, stepId, answers: { ...answers } }])
@@ -58,9 +77,9 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     const newAnswers = { ...answers, [stepId]: value }
     setAnswers(newAnswers)
     if (next === 'result') {
-      const l = qualifyLead(newAnswers) as LeadType
+      const l = qualifyLead(newAnswers)
       setLead(l)
-      onResult?.(profile, newAnswers, address, l)
+      onResult?.(profile, newAnswers, address, l as any)
       push('result', '')
     } else {
       push('questions', next)
@@ -69,47 +88,48 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
 
   const currentStep = getStep(stepId)
 
+  const Divider = () => <div style={{ height: '1px', background: T.border, margin: '20px 0' }} />
+
   const BackBtn = () => (
-    <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">
-      Retour
+    <button onClick={back} style={s({ background: 'none', border: 'none', cursor: 'pointer', fontSize: '13px', color: T.text3, padding: 0, marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '6px' })}>
+      ← Retour
     </button>
   )
 
-  const SectionBadge = ({ n, label }: { n?: number; label?: string }) => (n || label) ? (
-    <div className="flex items-center gap-2 mb-4">
+  const SectionBadge = ({ label, n }: { label?: string; n?: number }) => (
+    <div style={s({ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' })}>
       {n && (
-        <div className="w-5 h-5 bg-wdd-yellow flex items-center justify-center flex-shrink-0">
-          <span className="text-wdd-black text-xs font-bold">{n}</span>
+        <div style={s({ width: '22px', height: '22px', background: T.accent, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontWeight: 700, color: '#1A1A1A', flexShrink: 0 })}>
+          {n}
         </div>
       )}
-      <span className="text-xs font-light tracking-widest uppercase text-white/40">
+      <span style={s({ fontSize: '11px', fontWeight: 600, letterSpacing: '0.14em', textTransform: 'uppercase', color: T.text4 })}>
         {label || (n ? SECTION_LABELS[n] : '')}
       </span>
     </div>
-  ) : null
-
+  )
 
   return (
-    <div className="w-full">
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
-        <p className="text-xs font-light text-white/40 leading-relaxed">
-          Evaluation de faisabilite et pre-dimensionnement PAC en Wallonie.
-        </p>
-      </div>
-
+    <div>
       {phase === 'profile' && (
         <div>
-          <div className="text-sm font-semibold text-white mb-2">Qui etes-vous ?</div>
-          <p className="text-xs font-light text-white/35 leading-relaxed mb-5 border-l border-wdd-yellow/30 pl-3">
-            Nous commen­çons par localiser votre projet et verifier automatiquement les contraintes reglementaires et le potentiel geothermique du sous-sol.
-          </p>
-          <div className="grid grid-cols-2 gap-1">
+          <div style={s({ fontSize: '16px', fontWeight: 600, color: T.text, marginBottom: '8px' })}>
+            Qui etes-vous ?
+          </div>
+          <div style={s({ fontSize: '13px', color: T.text3, lineHeight: 1.6, padding: '10px 14px', borderLeft: '3px solid ' + T.accent, background: T.bgSoft, marginBottom: '20px' })}>
+            Nous commençons par localiser votre projet et verifier automatiquement les contraintes reglementaires et le potentiel geothermique du sous-sol.
+          </div>
+          <div style={s({ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' })}>
             {(['part', 'pro'] as const).map((p) => (
-              <button key={p} onClick={() => chooseProfile(p)} className="bg-white/5 border-2 border-transparent hover:border-wdd-yellow p-6 text-left transition-all group">
-                <div className="text-sm font-semibold text-white mb-1">{p === 'part' ? 'Particulier' : 'Professionnel'}</div>
-                <div className="text-xs font-light text-white/35 mb-3">{p === 'part' ? 'Maison ou appartement' : 'Entreprise, bureau ou institution'}</div>
-                <div className="text-wdd-yellow text-xs opacity-0 group-hover:opacity-100 transition-opacity">Commencer +</div>
+              <button key={p} onClick={() => chooseProfile(p)} style={s({ background: T.bgSoft, border: '2px solid ' + T.border, padding: '24px 20px', textAlign: 'left', cursor: 'pointer', transition: 'all 0.15s' })}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = T.accentDark; (e.currentTarget as HTMLElement).style.background = '#FFFDF0' }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = T.border; (e.currentTarget as HTMLElement).style.background = T.bgSoft }}>
+                <div style={s({ fontSize: '15px', fontWeight: 600, color: T.text, marginBottom: '6px' })}>
+                  {p === 'part' ? 'Particulier' : 'Professionnel'}
+                </div>
+                <div style={s({ fontSize: '12px', color: T.text4 })}>
+                  {p === 'part' ? 'Maison ou appartement' : 'Entreprise, bureau ou institution'}
+                </div>
               </button>
             ))}
           </div>
@@ -119,11 +139,13 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'address' && (
         <div>
           <BackBtn />
-          <SectionBadge n={1} />
-          <div className="text-sm font-semibold text-white mb-1">Ou se situe votre projet ?</div>
-          <p className="text-xs font-light text-white/35 leading-relaxed mb-4">
+          <SectionBadge n={1} label="Localisation" />
+          <div style={s({ fontSize: '15px', fontWeight: 600, color: T.text, marginBottom: '8px' })}>
+            Ou se situe votre projet ?
+          </div>
+          <div style={s({ fontSize: '13px', color: T.text3, lineHeight: 1.6, padding: '10px 14px', borderLeft: '3px solid ' + T.accent, background: T.bgSoft, marginBottom: '16px' })}>
             Nous verifions automatiquement les contraintes reglementaires et analysons le potentiel geothermique.
-          </p>
+          </div>
           <AddressStep onConfirm={handleAddressConfirm} />
         </div>
       )}
@@ -131,21 +153,27 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'map' && address && (
         <div>
           <BackBtn />
-          <SectionBadge n={1} />
-          <div className="text-sm font-semibold text-white mb-1">Votre chantier se situe ici ?</div>
-          <div className="text-xs text-white/40 mb-3 truncate">{address.label}</div>
-          <div className="border border-white/10 overflow-hidden mb-1">
+          <SectionBadge n={1} label="Verification reglementaire" />
+          <div style={s({ fontSize: '15px', fontWeight: 600, color: T.text, marginBottom: '4px' })}>
+            Votre chantier se situe ici ?
+          </div>
+          <div style={s({ fontSize: '12px', color: T.text4, marginBottom: '12px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' })}>
+            {address.label}
+          </div>
+          <div style={s({ border: '1px solid ' + T.border, overflow: 'hidden', marginBottom: '4px' })}>
             {MapComponent
               ? <MapComponent lat={address.lat} lng={address.lng} activeLayer={activeLayer} />
-              : <div className="h-64 bg-white/5 flex items-center justify-center"><span className="text-xs text-white/30">Chargement...</span></div>
+              : <div style={s({ height: '240px', background: T.bgMuted, display: 'flex', alignItems: 'center', justifyContent: 'center' })}>
+                  <span style={s({ fontSize: '13px', color: T.text4 })}>Chargement de la carte...</span>
+                </div>
             }
           </div>
           <DiagnosticPanel lat={address.lat} lng={address.lng} activeLayer={activeLayer} onLayerClick={setActiveLayer} />
-          <div className="mt-4">
-            <button onClick={() => push('geology', '')} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
-              Confirmer — analyser le sous-sol
+          <div style={s({ marginTop: '16px' })}>
+            <button onClick={() => push('geology', '')} style={s({ display: 'block', width: '100%', padding: '14px', background: T.accent, color: '#1A1A1A', fontSize: '14px', fontWeight: 700, textAlign: 'center', border: 'none', cursor: 'pointer', marginBottom: '6px' })}>
+              Confirmer — analyser le sous-sol →
             </button>
-            <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/50 transition-colors">
+            <button onClick={back} style={s({ display: 'block', width: '100%', padding: '10px', background: 'none', color: T.text3, fontSize: '12px', textAlign: 'center', border: '1px solid ' + T.border, cursor: 'pointer' })}>
               Ce n est pas la bonne adresse
             </button>
           </div>
@@ -155,7 +183,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'geology' && (
         <div>
           <BackBtn />
-          <SectionBadge n={1} />
+          <SectionBadge n={1} label="Analyse du sous-sol" />
           <GeologyStep onConfirm={() => push('questions', 'type_projet')} />
         </div>
       )}
@@ -164,15 +192,9 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         <div>
           <BackBtn />
           <SectionBadge n={currentStep.section} label={currentStep.sectionLabel} />
-          {currentStep.type === 'input' && (
-            <InputStep step={currentStep} onAnswer={handleAnswer} />
-          )}
-          {currentStep.type === 'multichoice' && (
-            <MultiChoiceStep step={currentStep} onAnswer={handleAnswer} />
-          )}
-          {currentStep.type === 'contact' && (
-            <ContactStep onAnswer={handleAnswer} />
-          )}
+          {currentStep.type === 'input' && <InputStep step={currentStep} onAnswer={handleAnswer} />}
+          {currentStep.type === 'multichoice' && <MultiChoiceStep step={currentStep} onAnswer={handleAnswer} />}
+          {currentStep.type === 'contact' && <ContactStep onAnswer={handleAnswer} />}
           {(!currentStep.type || currentStep.type === 'choice') && (
             <QuestionStep step={currentStep} profile={profile} stepNum={1} totalSteps={1} onAnswer={handleAnswer} />
           )}
@@ -182,7 +204,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'result' && (
         <div>
           <BackBtn />
-          <LeadResult answers={answers} address={address} lead={lead || 'conseiller'} devisUrl={devisUrl} soumissionUrl={soumissionUrl} />
+          <LeadResult answers={answers} address={address} lead={lead} devisUrl={devisUrl} soumissionUrl={soumissionUrl} />
         </div>
       )}
 
