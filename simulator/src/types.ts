@@ -1,14 +1,28 @@
 export type Profile = 'part' | 'pro' | null
-export type Step = 0 | 1 | 2 | 'address' | 'map' | 'geology' | 'result'
 
-export type SimulatorOption = {
-  l: string
-  s: string
+export type StepId =
+  | 'profile'
+  | 'address'
+  | 'map'
+  | 'geology'
+  | 'dim_choice'
+  | 'result_simple'
+  | 'result_precis'
+  | 'pro_espace'
+  | string
+
+export type TreeOption = {
+  label: string
+  sublabel?: string
+  next: StepId
+  value: string
 }
 
-export type SimulatorStep = {
-  q: string
-  opts: SimulatorOption[]
+export type TreeStep = {
+  id: string
+  question: string
+  hint?: string
+  options: TreeOption[]
 }
 
 export type AddressResult = {
@@ -17,8 +31,10 @@ export type AddressResult = {
   lng: number
 }
 
+export type Answers = Record<string, string>
+
 export type SimulatorProps = {
   devisUrl: string
   soumissionUrl: string
-  onResult?: (profile: Profile, answers: string[], address: AddressResult | null) => void
+  onResult?: (profile: Profile, answers: Answers, address: AddressResult | null) => void
 }
