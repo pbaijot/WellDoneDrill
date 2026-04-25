@@ -1,6 +1,5 @@
 import type { TreeStep } from './types'
 
-
 export const TREE_COMMON_START: TreeStep[] = [
   {
     id: 'type_projet',
@@ -17,305 +16,374 @@ export const TREE_COMMON_START: TreeStep[] = [
   },
 ]
 
-export const TREE_PART_RAPIDE: TreeStep[] = [
+export const TREE_NEUF: TreeStep[] = [
   {
-    id: 'r_type_bien',
+    id: 'a_type_logement',
     section: 2,
-    question: 'Quel type de bien ?',
-    hint: 'La geometrie du batiment influe directement sur les deperditions thermiques.',
+    sectionLabel: 'Nouvelle construction',
+    question: 'Type de logement ?',
     options: [
-      { label: 'Maison 4 facades', sublabel: 'Non mitoyenne', value: '4f', next: 'r_superficie' },
-      { label: 'Maison 3 facades', sublabel: 'Mitoyenne d un cote', value: '3f', next: 'r_superficie' },
-      { label: 'Maison mitoyenne', sublabel: 'Mitoyenne des deux cotes', value: 'mito', next: 'r_superficie' },
-      { label: 'Appartement', sublabel: 'Le forage peut etre partage en copropriete', value: 'appart', next: 'r_superficie' },
+      { label: 'Maison individuelle', value: 'maison', next: 'a_surface' },
+      { label: 'Appartement', value: 'appart', next: 'a_surface' },
+      { label: 'Immeuble a appartements', value: 'immeuble', next: 'a_surface' },
+      { label: 'Petit collectif', value: 'collectif', next: 'a_surface' },
     ],
   },
   {
-    id: 'r_superficie',
+    id: 'a_surface',
     section: 2,
-    question: 'Superficie chauffee ?',
-    hint: 'Surface habitable totale, hors garage et caves non chauffes.',
-    options: [
-      { label: 'Moins de 100 m2', value: '<100', next: 'result_simple' },
-      { label: '100 a 200 m2', value: '100-200', next: 'result_simple' },
-      { label: '200 a 350 m2', value: '200-350', next: 'result_simple' },
-      { label: 'Plus de 350 m2', sublabel: 'Un dimensionnement detaille sera necessaire', value: '>350', next: 'result_simple' },
-    ],
-  },
-]
-
-export const TREE_PART_PRECIS: TreeStep[] = [
-  {
-    id: 'pp_type_projet',
-    section: 2,
-    question: 'Quel est votre projet ?',
-    hint: 'Cela oriente le choix de la pompe a chaleur et le dimensionnement du circuit.',
-    options: [
-      { label: 'Construction neuve', sublabel: 'Maison ou appartement en cours de construction', value: 'neuf', next: 'pp_type_bien' },
-      { label: 'Remplacement de chaudiere', sublabel: 'Passage depuis le gaz, le mazout ou l electrique', value: 'remplacement', next: 'pp_type_bien' },
-      { label: 'Renovation lourde', sublabel: 'Isolation renforcee, extension ou nouvelle affectation', value: 'renovation', next: 'pp_type_bien' },
-    ],
-  },
-  {
-    id: 'pp_type_bien',
-    section: 2,
-    question: 'Quel type de bien ?',
-    hint: 'La geometrie du batiment influe directement sur les deperditions thermiques.',
-    options: [
-      { label: 'Maison 4 facades', sublabel: 'Non mitoyenne', value: '4f', next: 'pp_superficie' },
-      { label: 'Maison 3 facades', sublabel: 'Mitoyenne d un cote', value: '3f', next: 'pp_superficie' },
-      { label: 'Maison mitoyenne', sublabel: 'Mitoyenne des deux cotes', value: 'mito', next: 'pp_superficie' },
-      { label: 'Appartement', sublabel: 'Le forage peut etre partage en copropriete — nous vous guidons', value: 'appart', next: 'pp_superficie' },
-    ],
-  },
-  {
-    id: 'pp_superficie',
-    section: 2,
-    question: 'Superficie chauffee ?',
-    hint: 'Surface habitable totale, hors garage et caves non chauffes.',
-    options: [
-      { label: 'Moins de 100 m2', value: '<100', next: 'pp_occupants' },
-      { label: '100 a 200 m2', value: '100-200', next: 'pp_occupants' },
-      { label: '200 a 350 m2', value: '200-350', next: 'pp_occupants' },
-      { label: 'Plus de 350 m2', value: '>350', next: 'pp_occupants' },
-    ],
-  },
-  {
-    id: 'pp_occupants',
-    section: 2,
-    question: 'Combien de personnes vivent sous votre toit ?',
-    hint: 'Le nombre d occupants influe sur le dimensionnement de l eau chaude sanitaire.',
-    options: [
-      { label: '1 ou 2 personnes', value: '1-2', next: 'pp_besoin' },
-      { label: '3 ou 4 personnes', value: '3-4', next: 'pp_besoin' },
-      { label: '5 personnes ou plus', value: '5+', next: 'pp_besoin' },
-    ],
-  },
-  {
-    id: 'pp_besoin',
-    section: 2,
-    question: 'Connaissez-vous votre besoin thermique ?',
-    hint: 'Ces donnees permettent de calculer la puissance exacte de votre pompe a chaleur. Plus la donnee est precise, plus le dimensionnement est fiable.',
-    options: [
-      { label: 'J ai un certificat PEB', sublabel: 'Nous utilisons votre score et la surface certifiee', value: 'peb', next: 'pp_peb_score' },
-      { label: 'Je connais la puissance de ma chaudiere', sublabel: 'Indiquee sur la plaque signalitique ou le contrat', value: 'chaudiere', next: 'pp_puissance_kw' },
-      { label: 'Je ne sais pas', sublabel: 'Estimation automatique sur base de la superficie et du type de bien', value: 'inconnu', next: 'pp_emetteurs' },
-    ],
-  },
-  {
-    id: 'pp_peb_score',
-    section: 2,
-    type: 'choice',
-    question: 'Quel est votre score PEB ?',
-    hint: 'Le score PEB figure sur votre certificat energetique. Plus le score est eleve, plus les deperditions sont importantes.',
-    options: [
-      { label: 'A++ ou A+', sublabel: 'Batiment tres basse energie ou passif', value: 'A+', next: 'pp_peb_surface' },
-      { label: 'A ou B', sublabel: 'Batiment basse energie ou bien isole', value: 'A', next: 'pp_peb_surface' },
-      { label: 'C ou D', sublabel: 'Isolation correcte mais ameliorable', value: 'C', next: 'pp_peb_surface' },
-      { label: 'E ou F', sublabel: 'Isolation insuffisante', value: 'E', next: 'pp_peb_surface' },
-      { label: 'G ou non certifie', sublabel: 'Ancien batiment peu ou pas isole', value: 'G', next: 'pp_peb_surface' },
-    ],
-  },
-  {
-    id: 'pp_peb_surface',
-    section: 2,
+    sectionLabel: 'Nouvelle construction',
     type: 'input',
-    question: 'Quelle est la surface certifiee PEB ?',
-    hint: 'Indiquee sur votre certificat PEB, generalement proche de la surface habitable.',
-    inputLabel: 'Surface PEB',
+    question: 'Surface chauffee prevue ?',
+    hint: 'Surface habitable totale, hors garage et caves non chauffees.',
+    inputLabel: 'Surface',
     inputUnit: 'm2',
     inputType: 'number',
-    next: 'pp_emetteurs',
+    next: 'a_peb',
   },
   {
-    id: 'pp_puissance_kw',
+    id: 'a_peb',
     section: 2,
+    sectionLabel: 'Nouvelle construction',
+    question: 'Niveau energetique vise ?',
+    hint: 'Le niveau energetique influence directement la puissance necessaire de la PAC.',
+    options: [
+      { label: 'PEB A ou tres performant', sublabel: 'Maison passive ou basse energie', value: 'A', next: 'a_emetteurs' },
+      { label: 'PEB B', sublabel: 'Bien isole, performance elevee', value: 'B', next: 'a_emetteurs' },
+      { label: 'Standard reglementaire', value: 'std', next: 'a_emetteurs' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'a_emetteurs' },
+    ],
+  },
+  {
+    id: 'a_emetteurs',
+    section: 2,
+    sectionLabel: 'Nouvelle construction',
+    question: 'Type d emetteurs de chaleur prevus ?',
+    hint: 'Le chauffage au sol est ideal pour la geothermie — basse temperature = rendement maximal.',
+    options: [
+      { label: 'Chauffage au sol', value: 'sol', next: 'a_occupants' },
+      { label: 'Radiateurs basse temperature', value: 'rbt', next: 'a_occupants' },
+      { label: 'Ventilo-convecteurs', value: 'ventilos', next: 'a_occupants' },
+      { label: 'Mixte', value: 'mixte', next: 'a_occupants' },
+      { label: 'Pas encore defini', value: 'inconnu', next: 'a_occupants' },
+    ],
+  },
+  {
+    id: 'a_occupants',
+    section: 2,
+    sectionLabel: 'Nouvelle construction',
+    question: 'Nombre d occupants prevus ?',
+    hint: 'Influe sur le dimensionnement de la production d eau chaude sanitaire.',
+    options: [
+      { label: '1 ou 2 personnes', value: '1-2', next: 'objectifs' },
+      { label: '3 ou 4 personnes', value: '3-4', next: 'objectifs' },
+      { label: '5 ou 6 personnes', value: '5-6', next: 'objectifs' },
+      { label: 'Plus de 6 personnes', value: '6+', next: 'objectifs' },
+    ],
+  },
+]
+
+export const TREE_RENOV: TreeStep[] = [
+  {
+    id: 'b_type_logement',
+    section: 2,
+    sectionLabel: 'Renovation',
+    question: 'Type de logement ?',
+    options: [
+      { label: 'Maison individuelle', value: 'maison', next: 'b_annee' },
+      { label: 'Appartement', value: 'appart', next: 'b_annee' },
+      { label: 'Immeuble a appartements', value: 'immeuble', next: 'b_annee' },
+      { label: 'Petit collectif', value: 'collectif', next: 'b_annee' },
+    ],
+  },
+  {
+    id: 'b_annee',
+    section: 2,
+    sectionLabel: 'Renovation',
+    question: 'Annee de construction ?',
+    options: [
+      { label: 'Avant 1950', value: '<1950', next: 'b_renovation' },
+      { label: '1950 a 1970', value: '1950-70', next: 'b_renovation' },
+      { label: '1970 a 1990', value: '1970-90', next: 'b_renovation' },
+      { label: '1990 a 2010', value: '1990-2010', next: 'b_renovation' },
+      { label: 'Apres 2010', value: '>2010', next: 'b_renovation' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'b_renovation' },
+    ],
+  },
+  {
+    id: 'b_renovation',
+    section: 2,
+    sectionLabel: 'Renovation',
+    question: 'Derniere renovation lourde ?',
+    options: [
+      { label: 'Jamais renove', value: 'jamais', next: 'b_surface' },
+      { label: 'Avant 2000', value: '<2000', next: 'b_surface' },
+      { label: '2000 a 2010', value: '2000-10', next: 'b_surface' },
+      { label: '2010 a 2020', value: '2010-20', next: 'b_surface' },
+      { label: 'Apres 2020', value: '>2020', next: 'b_surface' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'b_surface' },
+    ],
+  },
+  {
+    id: 'b_surface',
+    section: 2,
+    sectionLabel: 'Renovation',
     type: 'input',
-    question: 'Quelle est la puissance de votre chaudiere actuelle ?',
-    hint: 'Indiquee sur la plaque signaletique de la chaudiere ou sur votre contrat d entretien. Attention : la puissance nominale est souvent surdimensionnee de 20 a 30%.',
-    inputLabel: 'Puissance chaudiere',
+    question: 'Surface chauffee actuelle ?',
+    inputLabel: 'Surface',
+    inputUnit: 'm2',
+    inputType: 'number',
+    next: 'b_chaudiere',
+  },
+  {
+    id: 'b_chaudiere',
+    section: 2,
+    sectionLabel: 'Renovation',
+    question: 'Systeme de chauffage actuel ?',
+    options: [
+      { label: 'Chaudiere gaz', value: 'gaz', next: 'b_puissance' },
+      { label: 'Chaudiere mazout', value: 'mazout', next: 'b_puissance' },
+      { label: 'Chauffage electrique', value: 'elec', next: 'b_conso' },
+      { label: 'Pompe a chaleur existante', value: 'pac', next: 'b_emetteurs' },
+      { label: 'Poele, pellets ou bois', value: 'bois', next: 'b_conso' },
+      { label: 'Autre', value: 'autre', next: 'b_emetteurs' },
+    ],
+  },
+  {
+    id: 'b_puissance',
+    section: 2,
+    sectionLabel: 'Renovation',
+    type: 'input',
+    question: 'Puissance de votre chaudiere actuelle ?',
+    hint: 'Indiquee sur la plaque signaletique ou le contrat d entretien. Laissez vide si inconnu.',
+    inputLabel: 'Puissance',
     inputUnit: 'kW',
     inputType: 'number',
-    next: 'pp_emetteurs',
+    optional: true,
+    next: 'b_conso',
   },
   {
-    id: 'pp_emetteurs',
+    id: 'b_conso',
     section: 2,
-    question: 'Quel type d emetteurs de chaleur ?',
-    hint: 'Le type d emetteur determine la temperature de depart. Plus elle est basse, plus le rendement de la PAC est eleve.',
-    options: [
-      { label: 'Chauffage au sol', sublabel: 'Ideal — basse temperature = COP maximal', value: 'sol', next: 'pp_rafraichissement' },
-      { label: 'Radiateurs classiques', sublabel: 'Des ventiloconvecteurs peuvent etre ajoutes pour le froid', value: 'radiateurs', next: 'pp_ventilos' },
-      { label: 'Les deux', sublabel: 'Sol dans certaines pieces, radiateurs ailleurs', value: 'mixte', next: 'pp_rafraichissement' },
-      { label: 'Pas encore decide', value: 'inconnu', next: 'pp_rafraichissement' },
-    ],
-  },
-  {
-    id: 'pp_ventilos',
-    section: 2,
-    question: 'Souhaitez-vous ajouter des ventiloconvecteurs ?',
-    hint: 'Les ventiloconvecteurs permettent le rafraichissement estival dans les pieces equipees, en utilisant le meme circuit geothermique.',
-    options: [
-      { label: 'Oui, dans certaines pieces', sublabel: 'Salon, chambres ou bureau', value: 'oui', next: 'pp_rafraichissement' },
-      { label: 'Non, radiateurs uniquement', value: 'non', next: 'pp_rafraichissement' },
-    ],
-  },
-  {
-    id: 'pp_rafraichissement',
-    section: 2,
-    question: 'Souhaitez-vous rafraichir votre maison en ete ?',
-    hint: 'La geothermie permet un rafraichissement quasi-gratuit en ete par simple inversion du cycle — environ 5x moins cher qu une climatisation classique.',
-    options: [
-      { label: 'Oui, c est important pour moi', value: 'oui', next: 'pp_jardin' },
-      { label: 'Non, uniquement le chauffage', value: 'non', next: 'pp_jardin' },
-    ],
-  },
-  {
-    id: 'pp_jardin',
-    section: 3,
-    question: 'Disposez-vous d un espace exterieur ?',
-    hint: 'Un forage vertical n occupe qu environ 1 m2 en surface. La foreuse necessite un acces d au moins 2,5 m de large.',
-    options: [
-      { label: 'Jardin ou terrain disponible', sublabel: 'Superficie suffisante pour la foreuse', value: 'jardin', next: 'pp_acces' },
-      { label: 'Espace exterieur limite', sublabel: 'Cour, terrasse ou petit jardin', value: 'limite', next: 'pp_acces' },
-      { label: 'Pas d espace exterieur', sublabel: 'Forage depuis la voirie ou l interieur possible selon configuration', value: 'aucun', next: 'pp_acces' },
-    ],
-  },
-  {
-    id: 'pp_acces',
-    section: 3,
-    question: 'L acces pour la foreuse est-il possible ?',
-    hint: 'La foreuse est un engin de chantier de 2,5 m de large et 8 m de long. Un portail ou un passage suffisamment large est necessaire.',
-    options: [
-      { label: 'Acces facile', sublabel: 'Portail large, pas d obstacle majeur', value: 'facile', next: 'pp_abords' },
-      { label: 'Acces difficile', sublabel: 'Passage etroit, marches ou denivele', value: 'difficile', next: 'pp_abords' },
-      { label: 'A verifier', sublabel: 'Je ne suis pas certain', value: 'averifier', next: 'pp_abords' },
-    ],
-  },
-  {
-    id: 'pp_abords',
-    section: 3,
-    question: 'Les abords vont-ils etre refaits ?',
-    hint: 'Idealement, les forages sont realises avant la finition des abords. La remise en etat de surface est incluse dans notre prestation (trace d environ 30 cm).',
-    options: [
-      { label: 'Oui, les abords seront refaits', sublabel: 'Moment ideal pour integrer les forages', value: 'oui', next: 'pp_installateur' },
-      { label: 'Non, les abords sont termines', sublabel: 'Remise en etat soignee incluse', value: 'non', next: 'pp_installateur' },
-      { label: 'En cours de planification', value: 'encours', next: 'pp_installateur' },
-    ],
-  },
-  {
-    id: 'pp_installateur',
-    section: 4,
-    question: 'Avez-vous deja un installateur de pompe a chaleur ?',
-    hint: 'Nous coordonnons avec l installateur pour un projet cle en main. Une copie du dossier technique lui sera transmise.',
-    options: [
-      { label: 'Oui, j ai deja un installateur', sublabel: 'Nous lui enverrons le dossier de forage', value: 'oui', next: 'pp_install_nom' },
-      { label: 'Non, proposez-moi des partenaires', sublabel: 'Nous vous suggerons les installateurs certifies les plus proches', value: 'non', next: 'result_precis' },
-      { label: 'Je gere moi-meme', sublabel: 'Vous recevrez les plans et le dossier technique complet', value: 'self', next: 'result_precis' },
-    ],
-  },
-  {
-    id: 'pp_install_nom',
-    section: 4,
+    sectionLabel: 'Renovation',
     type: 'input',
-    question: 'Nom de votre installateur ?',
-    hint: 'Nous lui transmettrons le dossier de forage pour coordination.',
-    inputLabel: 'Nom ou entreprise',
+    question: 'Consommation ou facture annuelle ?',
+    hint: 'Gaz en kWh/an, mazout en litres/an, ou votre facture annuelle en euros. Laissez vide si inconnu.',
+    inputLabel: 'Consommation ou facture',
     inputType: 'text',
-    next: 'pp_install_contact',
+    optional: true,
+    next: 'b_temp',
   },
   {
-    id: 'pp_install_contact',
-    section: 4,
-    type: 'input',
-    question: 'Coordonnees de votre installateur ?',
-    hint: 'Email ou telephone. Nous le contacterons pour coordonner le planning.',
-    inputLabel: 'Email ou telephone',
-    inputType: 'text',
-    next: 'result_precis',
-  },
-]
-
-export const TREE_PRO: TreeStep[] = [
-  {
-    id: 'pro_role',
+    id: 'b_temp',
     section: 2,
-    question: 'Quel est votre role ?',
-    hint: 'Cela nous permet de vous proposer le bon type d accompagnement et les bons interlocuteurs.',
+    sectionLabel: 'Renovation',
+    question: 'Temperature de depart du chauffage actuel ?',
+    hint: 'Une temperature basse indique un systeme compatible avec une PAC sans travaux.',
     options: [
-      { label: 'Architecte', value: 'archi', next: 'pro_objectif' },
-      { label: 'Installateur', value: 'install', next: 'pro_objectif' },
-      { label: 'Bureau d etudes', value: 'be', next: 'pro_objectif' },
-      { label: 'Entreprise generale', value: 'eg', next: 'pro_objectif' },
-      { label: 'Maitre d ouvrage ou promoteur', value: 'moa', next: 'pro_objectif' },
+      { label: 'Moins de 40 C', sublabel: 'Compatible PAC sans modification', value: '<40', next: 'b_emetteurs' },
+      { label: '40 a 50 C', value: '40-50', next: 'b_emetteurs' },
+      { label: '50 a 60 C', sublabel: 'Adaptation possible selon les emetteurs', value: '50-60', next: 'b_emetteurs' },
+      { label: 'Plus de 60 C', sublabel: 'Remplacement des emetteurs probablement necessaire', value: '>60', next: 'b_emetteurs' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'b_emetteurs' },
     ],
   },
   {
-    id: 'pro_objectif',
+    id: 'b_emetteurs',
     section: 2,
-    question: 'Que recherchez-vous ?',
-    hint: 'L espace soumission vous permet de deposer un projet complet et de recevoir une offre detaillee sous 48h.',
+    sectionLabel: 'Renovation',
+    question: 'Type d emetteurs actuels ?',
     options: [
-      { label: 'Deposer un projet — espace soumission', sublabel: 'Plans, specs, timing — offre sous 48h', value: 'soumission', next: 'pro_espace' },
-      { label: 'Obtenir une etude de faisabilite', sublabel: 'Analyse geothermique et dimensionnement', value: 'etude', next: 'pro_type_bien' },
+      { label: 'Radiateurs classiques', value: 'radiateurs', next: 'b_confort' },
+      { label: 'Radiateurs basse temperature', value: 'rbt', next: 'b_confort' },
+      { label: 'Chauffage au sol', value: 'sol', next: 'b_confort' },
+      { label: 'Ventilo-convecteurs', value: 'ventilos', next: 'b_confort' },
+      { label: 'Mixte', value: 'mixte', next: 'b_confort' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'b_confort' },
     ],
   },
   {
-    id: 'pro_type_bien',
+    id: 'b_confort',
     section: 2,
-    question: 'Type de batiment ?',
+    sectionLabel: 'Renovation',
+    question: 'Le logement est-il bien chauffe aujourd hui ?',
+    hint: 'Important pour interpreter correctement votre consommation actuelle.',
     options: [
-      { label: 'Hopital ou clinique', value: 'hopital', next: 'pro_puissance' },
-      { label: 'Ecole ou institution publique', value: 'ecole', next: 'pro_puissance' },
-      { label: 'Bureau ou tertiaire', value: 'bureau', next: 'pro_puissance' },
-      { label: 'PME ou industrie legere', value: 'pme', next: 'pro_puissance' },
-      { label: 'Hotel ou horeca', value: 'hotel', next: 'pro_puissance' },
-      { label: 'Residentiel collectif', sublabel: 'Immeuble, logements sociaux', value: 'resid', next: 'pro_puissance' },
-      { label: 'Autre', value: 'autre', next: 'pro_puissance' },
+      { label: 'Oui, partout', value: 'oui', next: 'b_travaux' },
+      { label: 'Oui, mais certaines pieces sont limites', value: 'partiel', next: 'b_travaux' },
+      { label: 'Non, il fait souvent trop froid', value: 'non', next: 'b_travaux' },
+      { label: 'Je chauffe peu pour economiser', value: 'economie', next: 'b_travaux' },
     ],
   },
   {
-    id: 'pro_puissance',
+    id: 'b_travaux',
     section: 2,
-    question: 'Puissance thermique estimee ?',
-    hint: 'Ordre de grandeur — peut etre affine lors de l etude. Au-dela de 1 MW, un reseau de chaleur geothermique peut etre envisage.',
-    options: [
-      { label: 'Moins de 50 kW', sublabel: 'Petit batiment', value: '<50', next: 'pro_phase' },
-      { label: '50 a 200 kW', sublabel: 'Batiment de taille moyenne', value: '50-200', next: 'pro_phase' },
-      { label: '200 kW a 1 MW', sublabel: 'Grand batiment', value: '200-1000', next: 'pro_phase' },
-      { label: 'Plus de 1 MW', sublabel: 'Reseau de chaleur ou site industriel', value: '>1000', next: 'pro_phase' },
+    sectionLabel: 'Renovation',
+    type: 'multichoice',
+    question: 'Travaux d amelioration energetique prevus ?',
+    hint: 'Ces travaux influencent le dimensionnement — une meilleure isolation = PAC plus petite.',
+    multiOptions: [
+      { label: 'Isolation toiture', value: 'toiture' },
+      { label: 'Isolation murs', value: 'murs' },
+      { label: 'Remplacement chassis', value: 'chassis' },
+      { label: 'Isolation sol', value: 'sol' },
+      { label: 'Ventilation', value: 'ventilation' },
+      { label: 'Aucun travaux prevu', value: 'aucun' },
+      { label: 'Je ne sais pas', value: 'inconnu' },
     ],
+    next: 'b_occupants',
   },
   {
-    id: 'pro_phase',
+    id: 'b_occupants',
     section: 2,
-    question: 'Phase du projet ?',
-    hint: 'La maturite du projet determine le type d etude que nous pouvons produire.',
+    sectionLabel: 'Renovation',
+    question: 'Nombre d occupants ?',
     options: [
-      { label: 'Esquisse ou faisabilite', value: 'esquisse', next: 'result_precis' },
-      { label: 'Avant-projet', value: 'avp', next: 'result_precis' },
-      { label: 'Projet ou permis', value: 'projet', next: 'result_precis' },
-      { label: 'Chantier imminent', sublabel: 'Intervention possible en urgence — appelez-nous', value: 'urgence', next: 'result_precis' },
+      { label: '1 ou 2 personnes', value: '1-2', next: 'objectifs' },
+      { label: '3 ou 4 personnes', value: '3-4', next: 'objectifs' },
+      { label: '5 ou 6 personnes', value: '5-6', next: 'objectifs' },
+      { label: 'Plus de 6 personnes', value: '6+', next: 'objectifs' },
     ],
   },
 ]
 
-const ALL: TreeStep[] = [
-  ...TREE_PART_RAPIDE,
-  ...TREE_PART_PRECIS,
-  ...TREE_PRO,
+export const TREE_EXTENSION: TreeStep[] = [
+  {
+    id: 'c_surface_actuelle',
+    section: 2,
+    sectionLabel: 'Extension',
+    type: 'input',
+    question: 'Surface actuelle chauffee ?',
+    inputLabel: 'Surface actuelle',
+    inputUnit: 'm2',
+    inputType: 'number',
+    next: 'c_surface_extension',
+  },
+  {
+    id: 'c_surface_extension',
+    section: 2,
+    sectionLabel: 'Extension',
+    type: 'input',
+    question: 'Surface de l extension ?',
+    inputLabel: 'Surface extension',
+    inputUnit: 'm2',
+    inputType: 'number',
+    next: 'c_isolation',
+  },
+  {
+    id: 'c_isolation',
+    section: 2,
+    sectionLabel: 'Extension',
+    question: 'L extension sera-t-elle mieux isolee que le batiment existant ?',
+    options: [
+      { label: 'Oui', value: 'oui', next: 'c_systeme' },
+      { label: 'Non', value: 'non', next: 'c_systeme' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'c_systeme' },
+    ],
+  },
+  {
+    id: 'c_systeme',
+    section: 2,
+    sectionLabel: 'Extension',
+    question: 'Le systeme actuel chauffera-t-il aussi l extension ?',
+    options: [
+      { label: 'Oui, extension du systeme existant', value: 'extension', next: 'b_chaudiere' },
+      { label: 'Non, systeme separe pour l extension', value: 'separe', next: 'b_chaudiere' },
+      { label: 'Je veux remplacer tout le systeme', value: 'remplacement', next: 'b_chaudiere' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'b_chaudiere' },
+    ],
+  },
+]
+
+export const TREE_COMMON_END: TreeStep[] = [
+  {
+    id: 'objectifs',
+    section: 3,
+    sectionLabel: 'Vos objectifs',
+    type: 'multichoice',
+    question: 'Quels sont vos objectifs principaux ?',
+    hint: 'Plusieurs reponses possibles.',
+    multiOptions: [
+      { label: 'Reduire ma facture energetique', value: 'facture' },
+      { label: 'Remplacer une chaudiere vieillissante', value: 'chaudiere' },
+      { label: 'Sortir du gaz ou du mazout', value: 'fossile' },
+      { label: 'Reduire mes emissions de CO2', value: 'co2' },
+      { label: 'Ajouter du rafraichissement en ete', value: 'froid' },
+      { label: 'Valoriser mon bien immobilier', value: 'valorisation' },
+      { label: 'Respecter une obligation reglementaire', value: 'reglementation' },
+      { label: 'Comparer les options', value: 'comparer' },
+    ],
+    next: 'local_technique',
+  },
+  {
+    id: 'local_technique',
+    section: 3,
+    sectionLabel: 'Vos objectifs',
+    question: 'Disposez-vous d un local technique ?',
+    hint: 'La PAC geothermique necessite environ 2 a 5 m2 pour le module interieur et le ballon.',
+    options: [
+      { label: 'Oui, grand local plus de 5 m2', value: '>5', next: 'budget' },
+      { label: 'Oui, local de 2 a 5 m2', value: '2-5', next: 'budget' },
+      { label: 'Oui, petit local moins de 2 m2', value: '<2', next: 'budget' },
+      { label: 'Non', value: 'non', next: 'budget' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'budget' },
+    ],
+  },
+  {
+    id: 'budget',
+    section: 3,
+    sectionLabel: 'Vos objectifs',
+    question: 'Budget envisage pour l ensemble du projet ?',
+    hint: 'Forage + PAC + installation. Les primes regionales peuvent couvrir jusqu a 30% du cout total.',
+    options: [
+      { label: 'Moins de 10 000 EUR', value: '<10k', next: 'maturite' },
+      { label: '10 000 a 20 000 EUR', value: '10-20k', next: 'maturite' },
+      { label: '20 000 a 35 000 EUR', value: '20-35k', next: 'maturite' },
+      { label: '35 000 a 50 000 EUR', value: '35-50k', next: 'maturite' },
+      { label: 'Plus de 50 000 EUR', value: '>50k', next: 'maturite' },
+      { label: 'Je ne sais pas', value: 'inconnu', next: 'maturite' },
+    ],
+  },
+  {
+    id: 'maturite',
+    section: 3,
+    sectionLabel: 'Vos objectifs',
+    question: 'Ou en etes-vous dans votre reflexion ?',
+    options: [
+      { label: 'Simple reflexion', value: 'reflexion', next: 'contact' },
+      { label: 'Je compare les solutions', value: 'comparaison', next: 'contact' },
+      { label: 'J ai deja des offres', value: 'offres', next: 'contact' },
+      { label: 'J ai un architecte ou installateur', value: 'partenaire', next: 'contact' },
+      { label: 'Je suis pret a demander un devis', value: 'devis', next: 'contact' },
+    ],
+  },
+  {
+    id: 'contact',
+    section: 4,
+    sectionLabel: 'Vos coordonnees',
+    type: 'contact',
+    question: 'Vos coordonnees pour recevoir votre analyse',
+    hint: 'Nous vous envoyons une synthese personnalisee. Aucun demarchage sans votre accord.',
+    next: 'result',
+  },
 ]
 
 export function getStep(id: string): TreeStep | undefined {
-  const all = [...TREE_COMMON_START, ...TREE_PART_RAPIDE, ...TREE_PART_PRECIS, ...TREE_PRO]
+  const all = [
+    ...TREE_COMMON_START,
+    ...TREE_NEUF,
+    ...TREE_RENOV,
+    ...TREE_EXTENSION,
+    ...TREE_COMMON_END,
+  ]
   return all.find((s) => s.id === id)
 }
 
 export const SECTION_LABELS: Record<number, string> = {
-  1: 'Localisation et analyse',
-  2: 'Dimensionnement',
-  3: 'Faisabilite logistique',
-  4: 'Installateur',
+  1: 'Localisation et analyse du sous-sol',
+  2: 'Votre projet',
+  3: 'Vos objectifs',
+  4: 'Vos coordonnees',
 }
 
 export function qualifyLead(answers: Record<string, any>): string {
@@ -323,11 +391,9 @@ export function qualifyLead(answers: Record<string, any>): string {
   const budget = String(answers['budget'] || '')
   const timing = String(answers['b_timing'] || answers['a_timing'] || '')
   const maturite = String(answers['maturite'] || '')
-
   const budgetOk = ['20-35k', '35-50k', '>50k'].includes(budget)
   const timingOk = ['asap', '<3m', '<6m', '<1an', 'permis', '6-12m'].includes(timing)
   const surfaceOk = surface >= 120
-
   if (surfaceOk && budgetOk && timingOk) return 'geothermie'
   if (['10-20k', '<10k'].includes(budget)) return 'pac_air_eau'
   if (maturite === 'reflexion' || budget === 'inconnu') return 'peu_mature'

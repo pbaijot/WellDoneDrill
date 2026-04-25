@@ -174,7 +174,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
             <ContactStep onAnswer={handleAnswer} />
           )}
           {(!currentStep.type || currentStep.type === 'choice') && (
-            <QuestionStep step={currentStep} profile={profile} stepNum={currentIndex + 1} totalSteps={totalSteps} onAnswer={handleAnswer} />
+            <QuestionStep step={currentStep} profile={profile} stepNum={1} totalSteps={1} onAnswer={handleAnswer} />
           )}
         </div>
       )}
