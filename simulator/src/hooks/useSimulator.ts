@@ -13,7 +13,7 @@ export function useSimulator() {
   const [stepId, setStepId]               = useState<string>('type_projet')
   const [answers, setAnswers]             = useState<Answers>({})
   const [address, setAddress]             = useState<AddressResult | null>(null)
-  const [visibleLayers, setVisibleLayers] = useState<string[]>(['captage'])
+  const [visibleLayers, setVisibleLayers] = useState<string[]>(['captage','pollution','karst','natura','zi'])
   const [MapComponent, setMapComponent]   = useState<any>(null)
   const [history, setHistory]             = useState<HistoryEntry[]>([])
   const [lead, setLead]                   = useState<LeadType>('conseiller')

@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react'
 import { C, F } from '../theme'
 
-type CheckKey = 'captage' | 'pollution' | 'karst' | 'natura' | 'zi' | 'alea_inond' | 'zones_inondees'
 
 const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; color: string }> = [
   { key: 'captage',        color: '#C62828', label: 'Prevention de captage',          ok: 'Aucune restriction de captage',          ko: 'Zone de prevention — autorisation requise' },
@@ -10,8 +9,6 @@ const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; colo
   { key: 'karst',          color: '#B8860B', label: 'Contraintes karstiques',          ok: 'Hors perimetre karstique',              ko: 'Zone karstique — etude geotechnique requise' },
   { key: 'natura',         color: '#2E7D32', label: 'Natura 2000',                    ok: 'Hors perimetre Natura 2000',             ko: 'Zone Natura 2000 — evaluation requise' },
   { key: 'zi',             color: '#1565C0', label: 'Zones inondables (Directive EU)', ok: 'Hors zone inondable reglementaire',     ko: 'Zone inondable — precautions specifiques' },
-  { key: 'alea_inond',     color: '#1976D2', label: 'Alea inondation officiel',        ok: 'Hors zone d alea inondation',           ko: 'Alea inondation — contrainte reglementaire' },
-  { key: 'zones_inondees', color: '#42A5F5', label: 'Zones inondees juillet 2021',    ok: 'Non affecte par les inondations 2021',  ko: 'Zone inondee en juillet 2021' },
 ]
 
 export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer }: {
@@ -19,11 +16,9 @@ export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer
 }) {
   const [results, setResults] = useState<Record<CheckKey, boolean | null>>({
     captage: null, pollution: null, karst: null, natura: null,
-    zi: null, alea_inond: null, zones_inondees: null,
   })
 
   useEffect(() => {
-    setResults({ captage: null, pollution: null, karst: null, natura: null, zi: null, alea_inond: null, zones_inondees: null })
     CHECKS.forEach(async ({ key }) => {
       try {
         const res = await fetch('/api/geocheck?lat=' + lat + '&lng=' + lng + '&layer=' + key)

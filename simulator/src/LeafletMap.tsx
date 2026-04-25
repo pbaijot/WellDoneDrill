@@ -7,8 +7,6 @@ const WMS: Record<string, { url: string; layers: string }> = {
   karst:          { url: 'https://geoservices.wallonie.be/arcgis/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer/WMSServer', layers: '0,1,2,3' },
   natura:         { url: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer', layers: '0' },
   zi:             { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/ZI/MapServer/WMSServer', layers: '0,1,2,3,4,5' },
-  alea_inond:     { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/ALEA_INOND/MapServer/WMSServer', layers: '0,1,2' },
-  zones_inondees: { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/ZONES_INONDEES/MapServer/WMSServer', layers: '0' },
 }
 
 const MAP_ID = 'wdd-leaflet-map'
