@@ -10,6 +10,7 @@ import QuestionStep from './QuestionStep'
 import InputStep from './InputStep'
 import ResultSimple from './ResultSimple'
 import ResultPrecis from './ResultPrecis'
+import SummaryPanel from './SummaryPanel'
 
 type Phase =
   | 'profile'
@@ -225,6 +226,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
           </div>
         </div>
       )}
+      <SummaryPanel profile={profile} address={address} answers={answers} phase={phase} />
     </div>
   )
 }
