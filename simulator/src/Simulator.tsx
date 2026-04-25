@@ -10,7 +10,18 @@ import QuestionStep from './QuestionStep'
 import ResultSimple from './ResultSimple'
 import ResultPrecis from './ResultPrecis'
 
-type Phase = 'profile' | 'tree' | 'address' | 'map' | 'geology' | 'dim_choice' | 'tree_precis' | 'result_simple' | 'result_precis' | 'pro_espace'
+type Phase =
+  | 'profile'
+  | 'address'
+  | 'map'
+  | 'geology'
+  | 'dim_choice'
+  | 'tree'
+  | 'tree_precis'
+  | 'result_simple'
+  | 'result_precis'
+  | 'pro_espace'
+
 type HistoryEntry = { phase: Phase; stepId?: string; answers: Answers }
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
@@ -41,25 +52,41 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
   function chooseProfile(p: Profile) {
     setProfile(p)
     setHistory([])
-    if (p === 'part') push('tree', 'p_type_projet')
-    else push('tree', 'pro_role')
-  }
-
-  function handleAnswer(value: string, next: StepId) {
-    const newAnswers = { ...answers, [stepId]: value }
-    setAnswers(newAnswers)
-    if (next === 'address') push('address')
-    else if (next === 'dim_choice') push('dim_choice')
-    else if (next === 'result_simple') push('result_simple')
-    else if (next === 'result_precis') push('result_precis')
-    else if (next === 'pro_espace') push('pro_espace')
-    else push('tree', next)
+    push('address')
   }
 
   function handleAddressConfirm(a: AddressResult) {
     setAddress(a)
     import('./LeafletMap').then((mod) => setMapComponent(() => mod.default))
     push('map')
+  }
+
+  function handleMapConfirm() {
+    push('geology')
+  }
+
+  function handleGeologyConfirm() {
+    if (profile === 'pro') push('tree', 'pro_role')
+    else push('dim_choice')
+  }
+
+  function handleDimChoice(c: 'simple' | 'precis') {
+    if (c === 'simple') push('tree', 'p_type_projet')
+    else push('tree', 'p_type_projet')
+    setAnswers((prev) => ({ ...prev, _dim: c }))
+  }
+
+  function handleAnswer(value: string, next: StepId) {
+    const newAnswers = { ...answers, [stepId]: value }
+    setAnswers(newAnswers)
+    const dim = newAnswers['_dim']
+    if (next === 'dim_choice') {
+      if (dim === 'simple') push('result_simple')
+      else push('tree_precis', 'pp_besoin')
+    } else if (next === 'result_simple') push('result_simple')
+    else if (next === 'result_precis') push('result_precis')
+    else if (next === 'pro_espace') push('pro_espace')
+    else push('tree', next)
   }
 
   function handlePrecisAnswer(value: string, next: StepId) {
@@ -69,9 +96,13 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     else push('tree_precis', next)
   }
 
-  const allSteps = profile === 'pro' ? TREE_PRO : TREE_PART
+  const allStepsPart = TREE_PART
+  const allStepsPro = TREE_PRO
   const precisSteps = TREE_PART_PRECIS
   const currentStep = getStep(stepId)
+  const isPro = profile === 'pro'
+  const treeSteps = isPro ? allStepsPro : allStepsPart
+  const dim = answers['_dim']
 
   function progressBar(current: number, total: number) {
     return (
@@ -89,22 +120,21 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     </button>
   )
 
-  const PhoneLink = ({ cls }: { cls: string }) => (
-    <a href="tel:+32494142449" className={cls}>
-      Parler a un expert : +32 494 14 24 49
-    </a>
-  )
-
   return (
     <div className="w-full">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
-        <p className="text-xs font-light text-white/40 leading-relaxed">Evaluation de faisabilite geothermique en Wallonie.</p>
+        <p className="text-xs font-light text-white/40 leading-relaxed">
+          Evaluation de faisabilite geothermique en Wallonie.
+        </p>
       </div>
 
       {phase === 'profile' && (
         <div>
-          <div className="text-sm font-semibold text-white mb-4">Qui etes-vous ?</div>
+          <div className="text-sm font-semibold text-white mb-2">Qui etes-vous ?</div>
+          <p className="text-xs font-light text-white/35 leading-relaxed mb-4">
+            Commençons par localiser votre projet — les verifications reglementaires et l analyse du sous-sol se feront automatiquement.
+          </p>
           <div className="grid grid-cols-2 gap-1">
             {(['part', 'pro'] as const).map((p) => (
               <button key={p} onClick={() => chooseProfile(p)} className="bg-white/5 border-2 border-transparent hover:border-wdd-yellow p-6 text-left transition-all group">
@@ -117,21 +147,14 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         </div>
       )}
 
-      {phase === 'tree' && currentStep && (
-        <div>
-          <BackBtn />
-          {progressBar(allSteps.findIndex((s) => s.id === stepId) + 1, allSteps.length + 3)}
-          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
-            {profile === 'part' ? 'Particulier' : 'Professionnel'} - Etape {allSteps.findIndex((s) => s.id === stepId) + 1} / {allSteps.length + 3}
-          </div>
-          <QuestionStep step={currentStep} profile={profile} stepNum={allSteps.findIndex((s) => s.id === stepId) + 1} totalSteps={allSteps.length} onAnswer={handleAnswer} />
-        </div>
-      )}
-
       {phase === 'address' && (
         <div>
           <BackBtn />
-          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Localisation</div>
+          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Etape 1 — Localisation</div>
+          <div className="text-sm font-semibold text-white mb-1">Ou se situe votre projet ?</div>
+          <p className="text-xs font-light text-white/35 leading-relaxed mb-4">
+            Nous allons verifier les contraintes reglementaires et analyser le potentiel geothermique de votre zone.
+          </p>
           <AddressStep onConfirm={handleAddressConfirm} />
         </div>
       )}
@@ -139,7 +162,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'map' && address && (
         <div>
           <BackBtn />
-          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Verification reglementaire</div>
+          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">Etape 2 — Verification reglementaire</div>
           <div className="text-sm font-semibold text-white mb-1">Votre chantier se situe ici ?</div>
           <div className="text-xs text-white/40 mb-3 truncate">{address.label}</div>
           <div className="border border-white/10 overflow-hidden mb-1">
@@ -150,8 +173,8 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
           </div>
           <DiagnosticPanel lat={address.lat} lng={address.lng} activeLayer={activeLayer} onLayerClick={setActiveLayer} />
           <div className="mt-4">
-            <button onClick={() => push('geology')} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
-              Confirmer cette adresse
+            <button onClick={handleMapConfirm} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center hover:bg-wdd-yellow/90 transition-colors">
+              Confirmer et analyser le sous-sol
             </button>
             <button onClick={back} className="block w-full py-2 mt-0.5 text-xs text-white/30 text-center hover:text-white/60 transition-colors">
               Ce n est pas la bonne adresse
@@ -163,29 +186,40 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'geology' && (
         <div>
           <BackBtn />
-          <GeologyStep onConfirm={() => {
-            if (profile === 'pro') push('result_precis')
-            else push('dim_choice')
-          }} />
+          <GeologyStep onConfirm={handleGeologyConfirm} />
         </div>
       )}
 
       {phase === 'dim_choice' && (
         <div>
           <BackBtn />
-          <DimChoice onChoice={(c) => {
-            if (c === 'simple') push('result_simple')
-            else push('tree_precis', 'pp_besoin')
-          }} />
+          <DimChoice onChoice={handleDimChoice} />
+        </div>
+      )}
+
+      {phase === 'tree' && currentStep && (
+        <div>
+          <BackBtn />
+          {progressBar(
+            treeSteps.findIndex((s) => s.id === stepId) + 1,
+            treeSteps.length
+          )}
+          <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
+            {dim === 'precis' ? 'Dimensionnement — ' : ''} Etape {treeSteps.findIndex((s) => s.id === stepId) + 1} / {treeSteps.length}
+          </div>
+          <QuestionStep step={currentStep} profile={profile} stepNum={treeSteps.findIndex((s) => s.id === stepId) + 1} totalSteps={treeSteps.length} onAnswer={handleAnswer} />
         </div>
       )}
 
       {phase === 'tree_precis' && currentStep && (
         <div>
           <BackBtn />
-          {progressBar(precisSteps.findIndex((s) => s.id === stepId) + 1, precisSteps.length)}
+          {progressBar(
+            precisSteps.findIndex((s) => s.id === stepId) + 1,
+            precisSteps.length
+          )}
           <div className="text-xs font-light tracking-widest uppercase text-wdd-yellow mb-2">
-            Dimensionnement precis - Etape {precisSteps.findIndex((s) => s.id === stepId) + 1} / {precisSteps.length}
+            Dimensionnement precis — Etape {precisSteps.findIndex((s) => s.id === stepId) + 1} / {precisSteps.length}
           </div>
           <QuestionStep step={currentStep} profile={profile} stepNum={precisSteps.findIndex((s) => s.id === stepId) + 1} totalSteps={precisSteps.length} onAnswer={handlePrecisAnswer} />
         </div>
@@ -194,7 +228,10 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       {phase === 'result_simple' && (
         <div>
           <BackBtn />
-          <ResultSimple answers={answers} devisUrl={devisUrl} onPrecis={() => push('dim_choice')} />
+          <ResultSimple answers={answers} devisUrl={devisUrl} onPrecis={() => {
+            setAnswers((prev) => ({ ...prev, _dim: 'precis' }))
+            push('tree_precis', 'pp_besoin')
+          }} />
         </div>
       )}
 
@@ -216,7 +253,9 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
             <a href={soumissionUrl} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center mb-1">
               Acceder a l espace soumission +
             </a>
-            <PhoneLink cls="block w-full py-2.5 border border-white/10 text-white/40 text-xs text-center" />
+            <a href="tel:+32494142449" className="block w-full py-2.5 border border-white/10 text-white/40 text-xs text-center">
+              Parler a un expert : +32 494 14 24 49
+            </a>
           </div>
         </div>
       )}
