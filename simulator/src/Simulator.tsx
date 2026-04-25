@@ -1,40 +1,30 @@
 'use client'
 import { useState } from 'react'
-import type { Profile, StepId, Answers, AddressResult, SimulatorProps } from './types'
-import { TREE_PART_RAPIDE, TREE_PART_PRECIS, TREE_PRO, getStep, SECTION_LABELS } from './tree'
+import type { Profile, Answers, AddressResult, SimulatorProps, LeadType } from './types'
+import { STEPS, getStep, SECTION_LABELS, qualifyLead } from './tree'
 import AddressStep from './AddressStep'
 import DiagnosticPanel from './DiagnosticPanel'
 import GeologyStep from './GeologyStep'
-import DimChoice from './DimChoice'
 import QuestionStep from './QuestionStep'
 import InputStep from './InputStep'
-import ResultSimple from './ResultSimple'
-import ResultPrecis from './ResultPrecis'
+import MultiChoiceStep from './MultiChoiceStep'
+import ContactStep from './ContactStep'
+import LeadResult from './LeadResult'
 import SummaryPanel from './SummaryPanel'
 
-type Phase =
-  | 'profile'
-  | 'address'
-  | 'map'
-  | 'geology'
-  | 'dim_choice'
-  | 'questions'
-  | 'result_simple'
-  | 'result_precis'
-  | 'pro_espace'
-
+type Phase = 'profile' | 'address' | 'map' | 'geology' | 'questions' | 'result'
 type HistoryEntry = { phase: Phase; stepId: string; answers: Answers }
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const [profile, setProfile] = useState<Profile>(null)
   const [phase, setPhase] = useState<Phase>('profile')
-  const [stepId, setStepId] = useState<string>('')
+  const [stepId, setStepId] = useState<string>('type_projet')
   const [answers, setAnswers] = useState<Answers>({})
   const [address, setAddress] = useState<AddressResult | null>(null)
   const [activeLayer, setActiveLayer] = useState('captage')
   const [MapComponent, setMapComponent] = useState<any>(null)
   const [history, setHistory] = useState<HistoryEntry[]>([])
-  const [dim, setDim] = useState<'simple' | 'precis' | null>(null)
+  const [lead, setLead] = useState<LeadType>(null)
 
   function push(p: Phase, sid?: string) {
     setHistory((h) => [...h, { phase, stepId, answers: { ...answers } }])
@@ -64,23 +54,20 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     push('map', '')
   }
 
-  function handleDimChoice(c: 'simple' | 'precis') {
-    setDim(c)
-    if (c === 'simple') push('questions', 'r_type_bien')
-    else push('questions', 'pp_type_projet')
-  }
-
-  function handleAnswer(value: string, next: StepId) {
+  function handleAnswer(value: string, next: string) {
     const newAnswers = { ...answers, [stepId]: value }
     setAnswers(newAnswers)
-    if (next === 'result_simple') push('result_simple', '')
-    else if (next === 'result_precis') { onResult?.(profile, newAnswers, address); push('result_precis', '') }
-    else if (next === 'pro_espace') push('pro_espace', '')
-    else push('questions', next)
+    if (next === 'result') {
+      const l = qualifyLead(newAnswers) as LeadType
+      setLead(l)
+      onResult?.(profile, newAnswers, address, l)
+      push('result', '')
+    } else {
+      push('questions', next)
+    }
   }
 
   const currentStep = getStep(stepId)
-  const currentSection = currentStep?.section
 
   const BackBtn = () => (
     <button onClick={back} className="text-xs text-white/35 hover:text-wdd-yellow mb-4 transition-colors">
@@ -88,23 +75,28 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     </button>
   )
 
-  const SectionBadge = ({ n }: { n?: number }) => n ? (
+  const SectionBadge = ({ n, label }: { n?: number; label?: string }) => (n || label) ? (
     <div className="flex items-center gap-2 mb-4">
-      <div className="w-5 h-5 bg-wdd-yellow flex items-center justify-center flex-shrink-0">
-        <span className="text-wdd-black text-xs font-bold">{n}</span>
-      </div>
+      {n && (
+        <div className="w-5 h-5 bg-wdd-yellow flex items-center justify-center flex-shrink-0">
+          <span className="text-wdd-black text-xs font-bold">{n}</span>
+        </div>
+      )}
       <span className="text-xs font-light tracking-widest uppercase text-white/40">
-        {SECTION_LABELS[n]}
+        {label || (n ? SECTION_LABELS[n] : '')}
       </span>
     </div>
   ) : null
+
+  const totalSteps = STEPS.length
+  const currentIndex = STEPS.findIndex((s) => s.id === stepId)
 
   return (
     <div className="w-full">
       <div className="mb-6">
         <h2 className="text-lg font-bold text-white mb-1">Mon projet geothermique</h2>
         <p className="text-xs font-light text-white/40 leading-relaxed">
-          Evaluation de faisabilite geothermique en Wallonie.
+          Evaluation de faisabilite et pre-dimensionnement PAC en Wallonie.
         </p>
       </div>
 
@@ -112,7 +104,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         <div>
           <div className="text-sm font-semibold text-white mb-2">Qui etes-vous ?</div>
           <p className="text-xs font-light text-white/35 leading-relaxed mb-5 border-l border-wdd-yellow/30 pl-3">
-            Nous commençons par localiser votre projet et verifier automatiquement les contraintes reglementaires et le potentiel geothermique du sous-sol.
+            Nous commen­çons par localiser votre projet et verifier automatiquement les contraintes reglementaires et le potentiel geothermique du sous-sol.
           </p>
           <div className="grid grid-cols-2 gap-1">
             {(['part', 'pro'] as const).map((p) => (
@@ -132,7 +124,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
           <SectionBadge n={1} />
           <div className="text-sm font-semibold text-white mb-1">Ou se situe votre projet ?</div>
           <p className="text-xs font-light text-white/35 leading-relaxed mb-4">
-            Nous verifions automatiquement les contraintes reglementaires et analysons le potentiel geothermique de votre zone.
+            Nous verifions automatiquement les contraintes reglementaires et analysons le potentiel geothermique.
           </p>
           <AddressStep onConfirm={handleAddressConfirm} />
         </div>
@@ -166,66 +158,36 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         <div>
           <BackBtn />
           <SectionBadge n={1} />
-          <GeologyStep onConfirm={() => {
-            if (profile === 'pro') push('questions', 'pro_role')
-            else push('dim_choice', '')
-          }} />
-        </div>
-      )}
-
-      {phase === 'dim_choice' && (
-        <div>
-          <BackBtn />
-          <SectionBadge n={2} />
-          <DimChoice onChoice={handleDimChoice} />
+          <GeologyStep onConfirm={() => push('questions', 'type_projet')} />
         </div>
       )}
 
       {phase === 'questions' && currentStep && (
         <div>
           <BackBtn />
-          <SectionBadge n={currentSection} />
-          {currentStep.type === 'input'
-            ? <InputStep step={currentStep} onAnswer={handleAnswer} />
-            : <QuestionStep step={currentStep} profile={profile} stepNum={1} totalSteps={1} onAnswer={handleAnswer} />
-          }
+          <SectionBadge n={currentStep.section} label={currentStep.sectionLabel} />
+          {currentStep.type === 'input' && (
+            <InputStep step={currentStep} onAnswer={handleAnswer} />
+          )}
+          {currentStep.type === 'multichoice' && (
+            <MultiChoiceStep step={currentStep} onAnswer={handleAnswer} />
+          )}
+          {currentStep.type === 'contact' && (
+            <ContactStep onAnswer={handleAnswer} />
+          )}
+          {(!currentStep.type || currentStep.type === 'choice') && (
+            <QuestionStep step={currentStep} profile={profile} stepNum={currentIndex + 1} totalSteps={totalSteps} onAnswer={handleAnswer} />
+          )}
         </div>
       )}
 
-      {phase === 'result_simple' && (
+      {phase === 'result' && (
         <div>
           <BackBtn />
-          <ResultSimple answers={answers} devisUrl={devisUrl} onPrecis={() => {
-            setDim('precis')
-            push('questions', 'pp_type_projet')
-          }} />
+          <LeadResult answers={answers} address={address} lead={lead || 'conseiller'} devisUrl={devisUrl} soumissionUrl={soumissionUrl} />
         </div>
       )}
 
-      {phase === 'result_precis' && (
-        <div>
-          <BackBtn />
-          <ResultPrecis answers={answers} address={address} profile={profile} devisUrl={devisUrl} soumissionUrl={soumissionUrl} />
-        </div>
-      )}
-
-      {phase === 'pro_espace' && (
-        <div>
-          <BackBtn />
-          <div className="border-t-2 border-wdd-yellow bg-white/5 p-5">
-            <div className="text-sm font-bold text-wdd-yellow mb-2">Espace professionnel</div>
-            <div className="text-xs font-light text-white/50 leading-relaxed mb-5">
-              Deposez votre projet, vos plans et specifications. Notre equipe vous retourne une offre detaillee sous 48h ouvrables.
-            </div>
-            <a href={soumissionUrl} className="block w-full py-3 bg-wdd-yellow text-wdd-black text-sm font-bold text-center mb-1">
-              Acceder a l espace soumission +
-            </a>
-            <a href="tel:+32494142449" className="block w-full py-2.5 border border-white/10 text-white/40 text-xs text-center">
-              Parler a un expert : +32 494 14 24 49
-            </a>
-          </div>
-        </div>
-      )}
       <SummaryPanel profile={profile} address={address} answers={answers} phase={phase} />
     </div>
   )
