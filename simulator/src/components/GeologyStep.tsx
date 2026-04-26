@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import type { AddressResult } from '../types'
-import { C, F, geologySectionStyles } from '../theme'
+import { C, geologySectionStyles } from '../theme'
 import { T } from '../i18n/fr'
 import { Hint, PrimaryBtn } from './Shared'
 
@@ -17,17 +17,17 @@ type ApiLayer = {
   rationale: string
 }
 
-type EvidencePoint = {
-  source: 'affleurement' | 'sondage' | 'surface' | 'context' | 'soil'
-  distanceM: number | null
-  summary: string
-}
-
 type HydroOverlay = {
   topM: number
   bottomM: number
   mode: 'aquifer' | 'fractured-water-possible' | 'none'
   label: string | null
+}
+
+type EvidencePoint = {
+  source: 'affleurement' | 'sondage' | 'surface' | 'context' | 'soil'
+  distanceM: number | null
+  summary: string
 }
 
 type GeologyApiResponse = {
@@ -71,12 +71,23 @@ type GeologyApiResponse = {
 }
 
 function layerColor(layer: ApiLayer) {
+  const name = layer.name.toLowerCase()
+
+  if (name.includes('sol')) return '#947648'
+  if (name.includes('limon') || name.includes('argile') || name.includes('altérite')) return '#C9AD84'
+  if (name.includes('sable') || name.includes('gravier')) return '#D9C99D'
+  if (name.includes('calcaire') || name.includes('carbonat') || name.includes('dolomie')) return '#B9B1A0'
+  if (name.includes('schiste') || name.includes('phyllade')) return '#726D66'
+
   if (layer.type === 'cover') return '#B0A18F'
   if (layer.hydroClass === 'aquifer') return '#8FAE9A'
   if (layer.hydroClass === 'aquitard') return '#8A7A6B'
-  if (layer.hydroClass === 'aquiclude') return '#6B6560'
-  if (layer.type === 'bedrock') return '#9A9088'
-  return '#B8B0A0'
+  return '#9A9088'
+}
+
+function useDarkText(layer: ApiLayer) {
+  const name = layer.name.toLowerCase()
+  return name.includes('sable') || name.includes('calcaire') || name.includes('carbonat')
 }
 
 function confidenceLabel(value: 'low' | 'medium' | 'high') {
@@ -95,71 +106,105 @@ function hydroLabel(value: ApiLayer['hydroClass']) {
   if (value === 'aquifer') return 'aquifère'
   if (value === 'aquitard') return 'aquitard'
   if (value === 'aquiclude') return 'aquiclude'
-  return 'hydro à confirmer'
+  return 'hydrogéologie à confirmer'
 }
 
-function sourceLabel(value: EvidencePoint['source']) {
-  if (value === 'sondage') return 'Sondage proche'
-  if (value === 'affleurement') return 'Affleurement proche'
-  if (value === 'surface') return 'Carte géologique'
-  if (value === 'soil') return 'Carte des sols'
-  return 'Contexte régional'
+function stratigraphicLabel(layer: ApiLayer) {
+  const name = layer.name.toLowerCase()
+
+  if (name.includes('sol')) return 'Formations quaternaires'
+  if (name.includes('limon') || name.includes('argile') || name.includes('altérite')) return 'Couverture / altération'
+  if (name.includes('sable') || name.includes('gravier')) return 'Sables et graviers'
+  if (name.includes('calcaire') || name.includes('carbonat') || name.includes('dolomie')) return 'Niveaux carbonatés'
+  if (name.includes('schiste') || name.includes('phyllade') || name.includes('grès') || name.includes('gres')) return 'Socle paléozoïque'
+
+  return layer.type === 'cover' ? 'Couverture superficielle' : 'Substratum à confirmer'
 }
 
 function layerThickness(layer: ApiLayer) {
   return Math.max(0, layer.bottomM - layer.topM)
 }
 
-function shouldShowLayerNameInSection(layer: ApiLayer) {
-  return layerThickness(layer) >= 18
-}
-
 function layerDisplayName(layer: ApiLayer, index: number) {
-  return shouldShowLayerNameInSection(layer) ? layer.name : String(index + 1)
+  return layerThickness(layer) < 9 ? String(index + 1) : layer.name
 }
 
-function layerCompactMeta(layer: ApiLayer) {
-  const lambda = layer.thermalConductivityWmK
-    ? `~${layer.thermalConductivityWmK} W/mK`
-    : 'λ à confirmer'
+function weightedLambda(layers: ApiLayer[], maxDepth: number) {
+  let weighted = 0
+  let total = 0
 
-  return `${Math.round(layer.topM)}–${Math.round(layer.bottomM)} m · ${lambda} · ${hydroLabel(layer.hydroClass)}`
-}
+  for (const layer of layers) {
+    if (!layer.thermalConductivityWmK) continue
 
-function hydroOverlayStyle(
-  topM: number,
-  bottomM: number,
-  maxDepthM: number,
-  mode: 'aquifer' | 'fractured-water-possible' | 'none'
-): React.CSSProperties {
-  const isStrong = mode === 'aquifer'
+    const top = Math.max(0, layer.topM)
+    const bottom = Math.min(maxDepth, layer.bottomM)
+    const thickness = Math.max(0, bottom - top)
 
-  return {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: (topM / maxDepthM * 100) + '%',
-    height: ((bottomM - topM) / maxDepthM * 100) + '%',
-    pointerEvents: 'none',
-    opacity: isStrong ? 0.28 : 0.18,
-    backgroundImage: isStrong
-      ? 'repeating-linear-gradient(135deg, rgba(21,101,192,0.65) 0px, rgba(21,101,192,0.65) 2px, transparent 2px, transparent 12px)'
-      : 'repeating-linear-gradient(135deg, rgba(21,101,192,0.55) 0px, rgba(21,101,192,0.55) 1px, transparent 1px, transparent 14px)',
-    zIndex: 4,
+    weighted += thickness * layer.thermalConductivityWmK
+    total += thickness
   }
+
+  return total > 0 ? weighted / total : null
 }
 
-function waterLineStyle(depthM: number, maxDepthM: number): React.CSSProperties {
-  return {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: (depthM / maxDepthM * 100) + '%',
-    borderTop: '2px dashed #1565C0',
-    zIndex: 6,
-    pointerEvents: 'none',
-  }
+function initialGroundTemperature(maxDepth: number) {
+  return maxDepth >= 200 ? 13.5 : 12.5
 }
+
+function extractionEstimate(lambda: number | null) {
+  if (lambda === null) return null
+  if (lambda >= 2.6) return 6.5
+  if (lambda >= 2.2) return 6
+  if (lambda >= 1.8) return 5
+  return 4
+}
+
+function lambdaAtDepth(layers: ApiLayer[], depthM: number) {
+  const layer = layers.find((l) => depthM >= l.topM && depthM <= l.bottomM)
+  return layer?.thermalConductivityWmK || 2
+}
+
+function cumulativeLambdaAtDepth(layers: ApiLayer[], depthM: number) {
+  if (depthM <= 0) return lambdaAtDepth(layers, 0)
+
+  let weighted = 0
+  let total = 0
+
+  for (const layer of layers) {
+    if (!layer.thermalConductivityWmK) continue
+
+    const top = Math.max(0, layer.topM)
+    const bottom = Math.min(depthM, layer.bottomM)
+    const thickness = Math.max(0, bottom - top)
+
+    if (thickness <= 0) continue
+
+    weighted += thickness * layer.thermalConductivityWmK
+    total += thickness
+  }
+
+  return total > 0 ? weighted / total : lambdaAtDepth(layers, depthM)
+}
+
+function lambdaCurvePoints(layers: ApiLayer[], maxDepth: number) {
+  const sampleCount = 48
+  const points: Array<[number, number]> = []
+
+  for (let i = 0; i <= sampleCount; i++) {
+    const depth = (i / sampleCount) * maxDepth
+    const lambda = cumulativeLambdaAtDepth(layers, depth)
+
+    // Échelle visuelle : 1.2 à 3.6 W/mK
+    const normalized = Math.max(0, Math.min(1, (lambda - 1.2) / 2.4))
+    const x = 32 + normalized * 34
+    const y = (depth / maxDepth) * 100
+
+    points.push([x, y])
+  }
+
+  return points.map(([x, y]) => `${x},${y}`).join(' ')
+}
+
 
 export default function GeologyStep({
   address,
@@ -223,23 +268,11 @@ export default function GeologyStep({
 
   const maxDepth = data?.interpretedSection.depthM || 200
   const layers = data?.interpretedSection.layers || []
+  const depthTicks = [0, 50, 100, 150, maxDepth].filter((v, i, a) => a.indexOf(v) === i)
 
-  const evidence = useMemo(() => {
-    if (!data) return []
-    return [
-      ...data.evidence.surface,
-      ...(data.evidence.soils || []),
-      ...data.evidence.sondages,
-      ...data.evidence.affleurements,
-    ].slice(0, 5)
-  }, [data])
-
-  const depthTicks = useMemo(() => {
-    const values: number[] = []
-    for (let d = 0; d <= maxDepth; d += 50) values.push(d)
-    if (!values.includes(maxDepth)) values.push(maxDepth)
-    return values
-  }, [maxDepth])
+  const lambdaAvg = useMemo(() => weightedLambda(layers, maxDepth), [layers, maxDepth])
+  const extraction = extractionEstimate(lambdaAvg)
+  const temperature = initialGroundTemperature(maxDepth)
 
   if (!address) {
     return (
@@ -271,33 +304,17 @@ export default function GeologyStep({
 
       {data && (
         <>
-          <div style={geologySectionStyles.metaGrid()}>
-            <div style={geologySectionStyles.metaCard()}>
-              <div style={geologySectionStyles.metaLabel()}>Potentiel</div>
-              <div style={geologySectionStyles.metaValue()}>
-                {potentialLabel(data.geothermalInterpretation.preliminaryPotential)}
-              </div>
+          <div style={geologySectionStyles.sectionTable()}>
+            <div style={geologySectionStyles.depthHeader()}>
+              <div style={geologySectionStyles.verticalDepthLabel()}>Profondeur (m)</div>
             </div>
+            <div style={geologySectionStyles.tableHeader()} />
+            <div style={geologySectionStyles.tableHeader()}>λ et couches géologiques</div>
+            <div style={geologySectionStyles.tableHeader()}>Unité stratigraphique</div>
 
-            <div style={geologySectionStyles.metaCard()}>
-              <div style={geologySectionStyles.metaLabel()}>Confiance</div>
-              <div style={geologySectionStyles.metaValue()}>
-                {confidenceLabel(data.interpretedSection.confidence)}
-              </div>
-            </div>
-
-            <div style={geologySectionStyles.metaCard()}>
-              <div style={geologySectionStyles.metaLabel()}>Profondeur</div>
-              <div style={geologySectionStyles.metaValue()}>
-                {maxDepth} m
-              </div>
-            </div>
-          </div>
-
-          <div style={geologySectionStyles.sectionShell()}>
             <div style={geologySectionStyles.depthAxis()}>
               {depthTicks.map((d) => (
-                <div key={d} style={geologySectionStyles.depthLabel(d, maxDepth)}>
+                <div key={d} style={geologySectionStyles.depthTick(d, maxDepth)}>
                   {d} m
                 </div>
               ))}
@@ -314,8 +331,8 @@ export default function GeologyStep({
                     layerColor(layer)
                   )}
                 >
-                  <span style={geologySectionStyles.layerText()}>
-                    {layerDisplayName(layer, index)}
+                  <span style={geologySectionStyles.layerName(useDarkText(layer))}>
+                    {index + 1}
                   </span>
                 </div>
               ))}
@@ -325,68 +342,131 @@ export default function GeologyStep({
                 .map((overlay, index) => (
                   <div
                     key={'hydro-overlay-' + index}
-                    title={overlay.label || undefined}
-                    style={hydroOverlayStyle(overlay.topM, overlay.bottomM, maxDepth, overlay.mode)}
+                    style={geologySectionStyles.hydroOverlay(
+                      overlay.topM,
+                      overlay.bottomM,
+                      maxDepth,
+                      overlay.mode === 'aquifer'
+                    )}
                   />
                 ))}
 
               {data.hydrogeology?.likelyWaterTableDepthM !== null &&
                 data.hydrogeology?.likelyWaterTableDepthM !== undefined && (
-                  <div style={waterLineStyle(data.hydrogeology.likelyWaterTableDepthM, maxDepth)} />
+                  <div
+                    style={geologySectionStyles.waterLine(
+                      data.hydrogeology.likelyWaterTableDepthM,
+                      maxDepth
+                    )}
+                  />
                 )}
 
-              <div
-                style={{
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  height: '3px',
-                  background: C.accent,
-                  zIndex: 8,
-                }}
-              />
+              <svg
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                style={geologySectionStyles.lambdaCurveSvg()}
+              >
+                <polyline
+                  points={lambdaCurvePoints(layers, maxDepth)}
+                  fill="none"
+                  stroke="#D12B2B"
+                  strokeWidth="1.1"
+                  vectorEffect="non-scaling-stroke"
+                />
+              </svg>
+
+              <div style={geologySectionStyles.targetLine()} />
             </div>
-          </div>
 
-          <div style={geologySectionStyles.layerLegend()}>
-            {layers.map((layer, index) => {
-              const color = layerColor(layer)
-
-              return (
-                <div key={layer.name + index} style={geologySectionStyles.layerLegendItem()}>
-                  <div style={geologySectionStyles.layerLegendNumber(color)}>{index + 1}</div>
-                  <div>
-                    <div style={geologySectionStyles.layerLegendName()}>{layer.name}</div>
+            <div style={geologySectionStyles.lambdaColumn()}>
+              {layers.map((layer, index) => (
+                <div
+                  key={layer.name + index}
+                  style={geologySectionStyles.lambdaRow(layer.topM, layer.bottomM, maxDepth)}
+                >
+                  <div style={geologySectionStyles.lambdaValue()}>
+                    {layer.thermalConductivityWmK
+                      ? layer.thermalConductivityWmK.toFixed(2).replace('.00', '')
+                      : '—'}
                   </div>
-                  <div style={geologySectionStyles.layerLegendMeta()}>
-                    {layerCompactMeta(layer)}
+                  <div style={geologySectionStyles.lambdaLayerName()}>
+                    {index + 1}. {layer.name}
+                    <span style={geologySectionStyles.lambdaLayerDepth()}>
+                      {Math.round(layer.topM)}–{Math.round(layer.bottomM)} m · {hydroLabel(layer.hydroClass)}
+                    </span>
                   </div>
                 </div>
-              )
-            })}
+              ))}
+            </div>
+
+            <div style={geologySectionStyles.stratColumn()}>
+              {layers.map((layer, index) => (
+                <div
+                  key={layer.name + index}
+                  style={geologySectionStyles.stratRow(layer.topM, layer.bottomM, maxDepth)}
+                >
+                  {stratigraphicLabel(layer)}
+                </div>
+              ))}
+            </div>
           </div>
 
-          {data.hydrogeology && (
-            <div style={geologySectionStyles.hydroLegend()}>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                <span style={geologySectionStyles.hydroSample(true)} />
-                Eau souterraine probable
-              </span>
+          <div style={geologySectionStyles.legendRow()}>
+            <span style={geologySectionStyles.legendItem()}>
+              <span style={geologySectionStyles.redLineSample()} />
+              Courbe λ apparent
+            </span>
+            <span style={geologySectionStyles.legendItem()}>
+              <span style={geologySectionStyles.hydroSample(true)} />
+              Eau souterraine probable
+            </span>
+            <span style={geologySectionStyles.legendItem()}>
+              <span style={geologySectionStyles.hydroSample(false)} />
+              Eau possible en fractures
+            </span>
+            <span style={geologySectionStyles.legendItem()}>
+              <span style={geologySectionStyles.yellowLineSample()} />
+              {maxDepth} m — profondeur cible
+            </span>
+          </div>
 
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                <span style={geologySectionStyles.hydroSample(false)} />
-                Eau possible en fractures
-              </span>
-
-              {data.hydrogeology.likelyWaterTableDepthM !== null &&
-                data.hydrogeology.likelyWaterTableDepthM !== undefined && (
-                  <span style={{ color: '#1565C0', fontWeight: 700 }}>
-                    Niveau d’eau indicatif : ~{Math.round(data.hydrogeology.likelyWaterTableDepthM)} m
-                  </span>
-                )}
+          <div style={geologySectionStyles.summaryGrid()}>
+            <div style={geologySectionStyles.summaryCard()}>
+              <div style={geologySectionStyles.summaryLabel()}>Température initiale</div>
+              <div style={geologySectionStyles.summaryValue()}>
+                {temperature.toFixed(1)} °C
+              </div>
+              <div style={geologySectionStyles.summarySub()}>
+                à 100 m de profondeur
+              </div>
             </div>
-          )}
+
+            <div style={geologySectionStyles.summaryCard()}>
+              <div style={geologySectionStyles.summaryLabel()}>λ moyen pondéré</div>
+              <div style={geologySectionStyles.summaryValue()}>
+                {lambdaAvg ? lambdaAvg.toFixed(1) : '—'} W/m·K
+              </div>
+              <div style={geologySectionStyles.summarySub()}>
+                sur {maxDepth} m
+              </div>
+            </div>
+
+            <div style={geologySectionStyles.summaryCard()}>
+              <div style={geologySectionStyles.summaryLabel()}>Potentiel géothermique</div>
+              <div
+                style={geologySectionStyles.summaryValue(
+                  data.geothermalInterpretation.preliminaryPotential === 'favorable'
+                    ? 'green'
+                    : 'normal'
+                )}
+              >
+                {potentialLabel(data.geothermalInterpretation.preliminaryPotential)}
+              </div>
+              <div style={geologySectionStyles.summarySub()}>
+                {extraction ? `extraction ~${extraction} kW / sonde` : 'extraction à confirmer'}
+              </div>
+            </div>
+          </div>
 
           <div style={geologySectionStyles.warning()}>
             {data.geothermalInterpretation.message}
@@ -399,37 +479,8 @@ export default function GeologyStep({
             </div>
           )}
 
-          {evidence.length > 0 && (
-            <div style={{ marginBottom: '18px' }}>
-              <div
-                style={{
-                  fontSize: F.xs,
-                  color: C.text4,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.12em',
-                  fontWeight: 700,
-                  marginBottom: '8px',
-                }}
-              >
-                Données publiques utilisées
-              </div>
-
-              <div style={geologySectionStyles.evidenceList()}>
-                {evidence.map((item, index) => (
-                  <div key={index} style={geologySectionStyles.evidenceItem()}>
-                    <div style={geologySectionStyles.evidenceType()}>
-                      {sourceLabel(item.source)}
-                      {item.distanceM !== null ? ` — ${item.distanceM} m` : ''}
-                    </div>
-                    <div>{item.summary || 'Information géologique disponible, détail non structuré.'}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
           {data.warnings.length > 0 && (
-            <div style={{ fontSize: F.xs, color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
+            <div style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
               {data.warnings.slice(0, 2).map((warning) => (
                 <div key={warning}>• {warning}</div>
               ))}
