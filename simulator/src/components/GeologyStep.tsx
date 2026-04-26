@@ -14,36 +14,50 @@ const S = {
     borderLeft: '3px solid ' + (kind === 'error' ? '#E65100' : '#E6C200'),
     padding: '12px 14px', marginBottom: '16px', fontSize: '13px', color: '#4A4540', lineHeight: 1.55,
   }),
-  sectionTable: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: '52px 140px minmax(0,1fr) 180px', border: '1px solid #DDD8CF', background: '#FFFFFF', marginTop: '16px', marginBottom: '12px', overflow: 'hidden' }),
+  sectionTable: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: '52px minmax(280px,1.25fr) minmax(270px,1fr) 170px', border: '1px solid #DDD8CF', background: '#FFFFFF', marginTop: '16px', marginBottom: '12px', overflow: 'hidden' }),
   depthHeader: (): React.CSSProperties => ({ minHeight: '42px', borderRight: '1px solid #DDD8CF', borderBottom: '1px solid #DDD8CF', background: '#F2EFE9', position: 'relative' }),
   verticalDepthLabel: (): React.CSSProperties => ({ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%) rotate(-90deg)', fontSize: '9px', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#9A9088', whiteSpace: 'nowrap' }),
   tableHeader: (): React.CSSProperties => ({ minHeight: '42px', display: 'flex', alignItems: 'center', padding: '0 16px', borderRight: '1px solid #DDD8CF', borderBottom: '1px solid #DDD8CF', background: '#F2EFE9', fontSize: '13px', fontWeight: 700, color: '#4A4540' }),
-  depthAxis: (): React.CSSProperties => ({ position: 'relative', height: '360px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9' }),
+  depthAxis: (): React.CSSProperties => ({ position: 'relative', height: '400px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9' }),
   depthTick: (d: number, max: number): React.CSSProperties => ({ position: 'absolute', top: (d/max*100)+'%', right: '12px', transform: 'translateY(-50%)', fontSize: '11px', color: '#9A9088', fontWeight: 600 }),
-  sectionCanvas: (): React.CSSProperties => ({ position: 'relative', height: '360px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9', overflow: 'hidden' }),
+  sectionCanvas: (): React.CSSProperties => ({ position: 'relative', height: '400px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9', overflow: 'hidden' }),
   layerBlock: (t: number, b: number, max: number, color: string): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', background: color, borderBottom: '1px solid rgba(0,0,0,0.12)', display: 'flex', alignItems: 'center', padding: '0 18px', boxSizing: 'border-box' }),
-  layerName: (dark?: boolean): React.CSSProperties => ({ fontSize: '10px', color: dark ? '#4A4540' : '#fff', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', lineHeight: 1.2, textShadow: dark ? 'none' : '0 1px 1px rgba(0,0,0,0.28)' }),
-  hydroOverlay: (t: number, b: number, max: number, strong: boolean): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', pointerEvents: 'none', opacity: strong ? 0.62 : 0.42, zIndex: 5, backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.95) 0px,rgba(21,101,192,0.95) 3px,transparent 3px,transparent 11px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.8) 0px,rgba(21,101,192,0.8) 2px,transparent 2px,transparent 13px)' }),
+  layerName: (dark?: boolean): React.CSSProperties => ({ minWidth: '22px', height: '22px', borderRadius: '999px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px', color: dark ? '#4A4540' : '#fff', background: dark ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.22)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.02em', lineHeight: 1, textShadow: dark ? 'none' : '0 1px 1px rgba(0,0,0,0.28)' }),
+  hydroOverlay: (t: number, b: number, max: number, strong: boolean): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', pointerEvents: 'none', opacity: strong ? 0.56 : 0.32, zIndex: 5, backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.9) 0px,rgba(21,101,192,0.9) 3px,transparent 3px,transparent 13px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.58) 0px,rgba(21,101,192,0.58) 1px,transparent 1px,transparent 14px)' }),
   waterLine: (d: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (d/max*100)+'%', borderTop: '2px dashed #1565C0', zIndex: 8, pointerEvents: 'none' }),
+  waterLineLabel: (d: number, max: number): React.CSSProperties => ({ position: 'absolute', right: '8px', top: (d/max*100)+'%', transform: 'translateY(-110%)', zIndex: 12, pointerEvents: 'none', background: 'rgba(255,255,255,0.92)', border: '1px solid rgba(21,101,192,0.35)', color: '#1565C0', fontSize: '9px', fontWeight: 800, padding: '2px 5px', whiteSpace: 'nowrap' }),
+  hydroBadge: (tone: 'aquifer' | 'fractured' | 'unknown'): React.CSSProperties => ({ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '4px 8px', border: '1px solid ' + (tone === 'aquifer' ? 'rgba(21,101,192,0.38)' : tone === 'fractured' ? 'rgba(21,101,192,0.25)' : '#DDD8CF'), background: tone === 'aquifer' ? 'rgba(21,101,192,0.08)' : tone === 'fractured' ? 'rgba(21,101,192,0.04)' : '#F8F5EF', color: tone === 'unknown' ? '#6B6057' : '#1565C0', fontWeight: 700 }),
   lambdaCurveSvg: (): React.CSSProperties => ({ position: 'absolute', inset: 0, zIndex: 9, pointerEvents: 'none' }),
+  lambdaScale: (): React.CSSProperties => ({ position: 'absolute', left: '28%', right: '28%', top: '8px', height: '18px', zIndex: 11, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', pointerEvents: 'none' }),
+  lambdaScaleTick: (): React.CSSProperties => ({ width: '1px', height: '7px', background: 'rgba(209,43,43,0.7)' }),
+  lambdaScaleLabel: (): React.CSSProperties => ({ position: 'absolute', top: '8px', transform: 'translateX(-50%)', fontSize: '9px', color: '#A33', fontWeight: 700, whiteSpace: 'nowrap' }),
   targetLine: (): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, bottom: 0, height: '4px', background: '#FFD94F', zIndex: 10 }),
-  lambdaColumn: (): React.CSSProperties => ({ position: 'relative', height: '360px', borderRight: '1px solid #DDD8CF', background: '#FFFFFF' }),
-  lambdaRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', minHeight: '28px', height: ((b-t)/max*100)+'%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '2px 10px', boxSizing: 'border-box', borderBottom: '1px solid #DDD8CF', overflow: 'visible', zIndex: 1 }),
-  lambdaValue: (): React.CSSProperties => ({ fontSize: '12px', fontWeight: 700, color: '#1C1C1C', lineHeight: 1.2 }),
-  lambdaLayerName: (): React.CSSProperties => ({ fontSize: '10px', color: '#4A4540', lineHeight: 1.25, fontWeight: 600, marginTop: '1px' }),
+  lambdaColumn: (): React.CSSProperties => ({ position: 'relative', height: '400px', borderRight: '1px solid #DDD8CF', background: '#FFFFFF' }),
+  lambdaRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', minHeight: '30px', height: ((b-t)/max*100)+'%', display: 'grid', gridTemplateColumns: '42px 1fr', alignItems: 'center', gap: '8px', padding: '2px 10px', boxSizing: 'border-box', borderBottom: '1px solid #DDD8CF', overflow: 'hidden', zIndex: 1 }),
+  lambdaValue: (): React.CSSProperties => ({ fontSize: '12px', fontWeight: 800, color: '#1C1C1C', lineHeight: 1.2, textAlign: 'right' }),
+  lambdaLayerName: (): React.CSSProperties => ({ fontSize: '10px', color: '#4A4540', lineHeight: 1.22, fontWeight: 650, marginTop: 0 }),
   lambdaLayerDepth: (): React.CSSProperties => ({ display: 'block', fontSize: '9px', color: '#9A9088', fontWeight: 400, marginTop: '1px' }),
-  stratColumn: (): React.CSSProperties => ({ position: 'relative', height: '360px', background: '#FFFFFF' }),
-  stratRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', minHeight: '28px', display: 'flex', alignItems: 'center', padding: '0 10px', boxSizing: 'border-box', fontSize: '10px', color: '#4A4540', lineHeight: 1.3, borderBottom: '1px solid #DDD8CF', overflow: 'hidden' }),
-  legendRow: (): React.CSSProperties => ({ display: 'flex', gap: '20px', flexWrap: 'wrap', fontSize: '11px', color: '#6B6057', margin: '8px 0 14px', alignItems: 'center' }),
+  stratColumn: (): React.CSSProperties => ({ position: 'relative', height: '400px', background: '#FFFFFF' }),
+  stratRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', minHeight: '30px', display: 'flex', alignItems: 'center', padding: '0 10px', boxSizing: 'border-box', fontSize: '10px', color: '#6B6057', lineHeight: 1.25, borderBottom: '1px solid #DDD8CF', overflow: 'hidden' }),
+  legendRow: (): React.CSSProperties => ({ display: 'flex', gap: '18px', flexWrap: 'wrap', fontSize: '11px', color: '#6B6057', margin: '10px 0 16px', alignItems: 'center' }),
   legendItem: (): React.CSSProperties => ({ display: 'flex', alignItems: 'center', gap: '6px' }),
   redLineSample: (): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '2px', background: '#D12B2B', verticalAlign: 'middle' }),
   yellowLineSample: (): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '3px', background: '#FFD94F', verticalAlign: 'middle' }),
-  hydroSample: (strong: boolean): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '12px', verticalAlign: 'middle', backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.95) 0,rgba(21,101,192,0.95) 3px,transparent 3px,transparent 9px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.7) 0,rgba(21,101,192,0.7) 2px,transparent 2px,transparent 9px)' }),
+  hydroSample: (strong: boolean): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '12px', verticalAlign: 'middle', backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.9) 0,rgba(21,101,192,0.9) 3px,transparent 3px,transparent 10px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.58) 0,rgba(21,101,192,0.58) 1px,transparent 1px,transparent 11px)' }),
   summaryGrid: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '8px', marginBottom: '16px' }),
   summaryCard: (): React.CSSProperties => ({ background: '#F8F5EF', border: '1px solid #DDD8CF', padding: '16px 18px' }),
   summaryLabel: (): React.CSSProperties => ({ fontSize: '11px', color: '#9A9088', marginBottom: '4px' }),
   summaryValue: (color?: string): React.CSSProperties => ({ fontSize: '22px', fontWeight: 700, color: color === 'green' ? '#2E7D32' : '#1C1C1C', marginBottom: '2px' }),
   summarySub: (): React.CSSProperties => ({ fontSize: '10px', color: '#9A9088', marginTop: '2px' }),
+  assumptionsBox: (): React.CSSProperties => ({ marginBottom: '14px', border: '1px solid #DDD8CF', background: '#FFFFFF' }),
+  assumptionsSummary: (): React.CSSProperties => ({ cursor: 'pointer', padding: '11px 14px', fontSize: '12px', color: '#4A4540', fontWeight: 700, background: '#F8F5EF', borderBottom: '1px solid #DDD8CF' }),
+  assumptionsBody: (): React.CSSProperties => ({ padding: '12px 14px' }),
+  assumptionsGrid: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '8px', marginBottom: '12px' }),
+  assumptionsCard: (): React.CSSProperties => ({ border: '1px solid #DDD8CF', background: '#F8F5EF', padding: '10px 11px' }),
+  assumptionsLabel: (): React.CSSProperties => ({ fontSize: '9px', color: '#9A9088', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: 700, marginBottom: '4px' }),
+  assumptionsValue: (): React.CSSProperties => ({ fontSize: '12px', color: '#1C1C1C', fontWeight: 700, lineHeight: 1.25 }),
+  assumptionsText: (): React.CSSProperties => ({ fontSize: '11px', color: '#6B6057', lineHeight: 1.55, marginTop: '8px' }),
+  assumptionsList: (): React.CSSProperties => ({ margin: '8px 0 0', paddingLeft: '16px', fontSize: '11px', color: '#6B6057', lineHeight: 1.5 }),
   warning: (): React.CSSProperties => ({ fontSize: '11px', color: '#6B6057', lineHeight: 1.6, padding: '10px 14px', background: '#F8F5EF', border: '1px solid #DDD8CF', borderLeft: '3px solid #DDD8CF', marginBottom: '10px' }),
 }
 
@@ -301,6 +315,71 @@ function lambdaCurvePoints(layers: ApiLayer[], maxDepth: number) {
 }
 
 
+
+function shouldShowWaterLine(data: GeologyApiResponse) {
+  const hydro = data.hydrogeology
+  if (!hydro) return false
+  if (hydro.likelyWaterTableDepthM === null || hydro.likelyWaterTableDepthM === undefined) return false
+
+  // On affiche une ligne uniquement si le modèle suppose un niveau d'eau
+  // relativement continu ou perché. En socle fracturé, la ligne serait trompeuse.
+  return hydro.waterMode === 'continuous' || hydro.waterMode === 'perched'
+}
+
+function hydroLegendLabel(mode: 'aquifer' | 'fractured-water-possible') {
+  if (mode === 'aquifer') return 'Aquifère probable'
+  return 'Eau possible en fractures'
+}
+
+function hydroSummaryTitle(mode: GeologyApiResponse['hydrogeology'] extends infer H ? H extends { waterMode: infer M } ? M : never : never) {
+  if (mode === 'continuous') return 'Aquifère probable'
+  if (mode === 'perched') return 'Niveau d’eau perché possible'
+  if (mode === 'fractured') return 'Eau possible en fractures'
+  return 'Présence d’eau à confirmer'
+}
+
+function hydroLineLabel(data: GeologyApiResponse) {
+  const hydro = data.hydrogeology
+  if (!hydro || hydro.likelyWaterTableDepthM === null || hydro.likelyWaterTableDepthM === undefined) {
+    return null
+  }
+
+  if (!shouldShowWaterLine(data)) return null
+
+  return `niveau indicatif ~${Math.round(hydro.likelyWaterTableDepthM)} m`
+}
+
+
+function evidenceTotal(data: GeologyApiResponse) {
+  return (
+    (data.evidence.surface?.length || 0) +
+    (data.evidence.soils?.length || 0) +
+    (data.evidence.affleurements?.length || 0) +
+    (data.evidence.sondages?.length || 0)
+  )
+}
+
+function evidenceSourcesLabel(data: GeologyApiResponse) {
+  const parts: string[] = []
+
+  if (data.evidence.surface?.length) parts.push('carte géologique')
+  if (data.evidence.soils?.length) parts.push('carte des sols')
+  if (data.evidence.sondages?.length) parts.push('sondages')
+  if (data.evidence.affleurements?.length) parts.push('affleurements')
+
+  return parts.length ? parts.join(' · ') : 'données publiques limitées'
+}
+
+function confidencePercent(data: GeologyApiResponse) {
+  const score = data.interpretedSection.confidenceDetails?.score
+  if (typeof score === 'number') return Math.round(score * 100) + '%'
+  return confidenceLabel(data.interpretedSection.confidence)
+}
+
+function regionalContextLabel(data: GeologyApiResponse) {
+  return data.regionalContext?.label || 'Contexte régional à confirmer'
+}
+
 export default function GeologyStep({
   address,
   onConfirm,
@@ -403,7 +482,7 @@ export default function GeologyStep({
             <div style={S.depthHeader()}>
               <div style={S.verticalDepthLabel()}>Profondeur (m)</div>
             </div>
-            <div style={S.tableHeader()} />
+            <div style={S.tableHeader()}>Coupe géologique</div>
             <div style={S.tableHeader()}>λ et couches géologiques</div>
             <div style={S.tableHeader()}>Unité stratigraphique</div>
 
@@ -446,15 +525,35 @@ export default function GeologyStep({
                   />
                 ))}
 
-              {data.hydrogeology?.likelyWaterTableDepthM !== null &&
+              {shouldShowWaterLine(data) &&
+                data.hydrogeology?.likelyWaterTableDepthM !== null &&
                 data.hydrogeology?.likelyWaterTableDepthM !== undefined && (
-                  <div
-                    style={S.waterLine(
-                      data.hydrogeology.likelyWaterTableDepthM,
-                      maxDepth
-                    )}
-                  />
+                  <>
+                    <div
+                      style={S.waterLine(
+                        data.hydrogeology.likelyWaterTableDepthM,
+                        maxDepth
+                      )}
+                    />
+                    <div
+                      style={S.waterLineLabel(
+                        data.hydrogeology.likelyWaterTableDepthM,
+                        maxDepth
+                      )}
+                    >
+                      {hydroLineLabel(data)}
+                    </div>
+                  </>
                 )}
+
+              <div style={S.lambdaScale()}>
+                <span style={S.lambdaScaleTick()} />
+                <span style={S.lambdaScaleTick()} />
+                <span style={S.lambdaScaleTick()} />
+                <span style={{ ...S.lambdaScaleLabel(), left: '0%' }}>λ 1.2</span>
+                <span style={{ ...S.lambdaScaleLabel(), left: '50%' }}>2.4</span>
+                <span style={{ ...S.lambdaScaleLabel(), left: '100%' }}>3.6</span>
+              </div>
 
               <svg
                 viewBox="0 0 100 100"
@@ -465,7 +564,7 @@ export default function GeologyStep({
                   points={lambdaCurvePoints(layers, maxDepth)}
                   fill="none"
                   stroke="#D12B2B"
-                  strokeWidth="1.1"
+                  strokeWidth="1.7"
                   vectorEffect="non-scaling-stroke"
                 />
               </svg>
@@ -509,13 +608,13 @@ export default function GeologyStep({
           <div style={S.legendRow()}>
             <span style={S.legendItem()}>
               <span style={S.redLineSample()} />
-              Courbe λ apparent
+              λ moyen cumulé
             </span>
-            <span style={S.legendItem()}>
+            <span style={S.hydroBadge('aquifer')}>
               <span style={S.hydroSample(true)} />
-              Eau souterraine probable
+              Aquifère probable
             </span>
-            <span style={S.legendItem()}>
+            <span style={S.hydroBadge('fractured')}>
               <span style={S.hydroSample(false)} />
               Eau possible en fractures
             </span>
@@ -571,31 +670,67 @@ export default function GeologyStep({
 
           {data.hydrogeology && (
             <div style={S.warning()}>
-              <strong>Lecture hydrogéologique indicative.</strong>{' '}
+              <strong>{hydroSummaryTitle(data.hydrogeology.waterMode)}.</strong>{' '}
               {data.hydrogeology.summary}
+              {data.hydrogeology.waterMode === 'fractured' ? (
+                <>
+                  {' '}Aucune nappe continue n’est positionnée automatiquement dans ce contexte : les hachures indiquent plutôt des horizons où l’eau est possible dans les fractures.
+                </>
+              ) : null}
             </div>
           )}
 
+          <details style={S.assumptionsBox()}>
+            <summary style={S.assumptionsSummary()}>
+              Hypothèses et données utilisées
+            </summary>
+
+            <div style={S.assumptionsBody()}>
+              <div style={S.assumptionsGrid()}>
+                <div style={S.assumptionsCard()}>
+                  <div style={S.assumptionsLabel()}>Contexte</div>
+                  <div style={S.assumptionsValue()}>{regionalContextLabel(data)}</div>
+                </div>
+
+                <div style={S.assumptionsCard()}>
+                  <div style={S.assumptionsLabel()}>Données</div>
+                  <div style={S.assumptionsValue()}>{evidenceTotal(data)} éléments</div>
+                </div>
+
+                <div style={S.assumptionsCard()}>
+                  <div style={S.assumptionsLabel()}>Sources</div>
+                  <div style={S.assumptionsValue()}>{evidenceSourcesLabel(data)}</div>
+                </div>
+
+                <div style={S.assumptionsCard()}>
+                  <div style={S.assumptionsLabel()}>Confiance</div>
+                  <div style={S.assumptionsValue()}>{confidencePercent(data)}</div>
+                </div>
+              </div>
+
+              <div style={S.assumptionsText()}>
+                La coupe est générée automatiquement à partir des données publiques disponibles :
+                carte géologique, contexte régional, carte des sols, affleurements et sondages publics proches.
+                Les profondeurs de couches restent interprétatives.
+              </div>
+
+              {data.interpretedSection.confidenceDetails?.reasons?.length ? (
+                <ul style={S.assumptionsList()}>
+                  {data.interpretedSection.confidenceDetails.reasons.slice(0, 6).map((reason) => (
+                    <li key={reason}>{reason}</li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          </details>
+
           {data.warnings.length > 0 && (
-            <div style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '10px' }}>
+            <div style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
               {data.warnings.slice(0, 2).map((warning) => (
                 <div key={warning}>• {warning}</div>
               ))}
             </div>
           )}
-
-          {data.interpretedSection.confidenceDetails?.reasons?.length ? (
-            <details style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
-              <summary style={{ cursor: 'pointer', color: C.text3, fontWeight: 600 }}>
-                Hypothèses de confiance
-              </summary>
-              <div style={{ marginTop: '6px' }}>
-                {data.interpretedSection.confidenceDetails.reasons.slice(0, 5).map((reason) => (
-                  <div key={reason}>• {reason}</div>
-                ))}
-              </div>
-            </details>
-          ) : null}
         </>
       )}
 
