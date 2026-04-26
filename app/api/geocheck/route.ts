@@ -6,6 +6,7 @@ const SERVICES: Record<string, { url: string; tolerance: string; layers: string 
   karst:     { url: "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer", tolerance: "2", layers: "all" },
   natura:    { url: "https://geoservices.wallonie.be/arcgis/rest/services/FAUNE_FLORE/NATURA2000/MapServer",             tolerance: "2", layers: "all" },
   zi:        { url: "https://geoservices.wallonie.be/arcgis/rest/services/EAU/ZI/MapServer",                            tolerance: "1", layers: "all:0,2,4,6" },
+  drigm:     { url: "https://geoservices.wallonie.be/arcgis/rest/services/SOL_SOUS_SOL/CONSULT_SSOL/MapServer",                     tolerance: "2", layers: "all" },
 }
 
 export async function GET(req: NextRequest) {

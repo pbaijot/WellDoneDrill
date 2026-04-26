@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react'
 import { C, F } from '../theme'
 
+type CheckKey = 'captage' | 'pollution' | 'karst' | 'natura' | 'zi' | 'drigm'
+
 
 const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; color: string }> = [
   { key: 'captage',        color: '#C62828', label: 'Prevention de captage',          ok: 'Aucune restriction de captage',          ko: 'Zone de prevention — autorisation requise' },
@@ -9,6 +11,7 @@ const CHECKS: Array<{ key: CheckKey; label: string; ok: string; ko: string; colo
   { key: 'karst',          color: '#B8860B', label: 'Contraintes karstiques',          ok: 'Hors perimetre karstique',              ko: 'Zone karstique — etude geotechnique requise' },
   { key: 'natura',         color: '#2E7D32', label: 'Natura 2000',                    ok: 'Hors perimetre Natura 2000',             ko: 'Zone Natura 2000 — evaluation requise' },
   { key: 'zi',             color: '#1565C0', label: 'Zones inondables (Directive EU)', ok: 'Hors zone inondable reglementaire',     ko: 'Zone inondable — precautions specifiques' },
+  { key: 'drigm',          color: '#6A1B9A', label: 'Risques miniers / DRIGM',       ok: 'Hors zone de consultation DRIGM',       ko: 'Zone DRIGM — consultation requise avant forage' },
 ]
 
 
@@ -62,7 +65,12 @@ export default function DiagnosticPanel({ lat, lng, visibleLayers, onToggleLayer
   lat: number; lng: number; visibleLayers: string[]; onToggleLayer: (key: string) => void
 }) {
   const [results, setResults] = useState<Record<CheckKey, boolean | null>>({
-    captage: null, pollution: null, karst: null, natura: null,
+    captage: null,
+    pollution: null,
+    karst: null,
+    natura: null,
+    zi: null,
+    drigm: null,
   })
 
   useEffect(() => {

@@ -7,9 +7,12 @@ const WMS: Record<string, { url: string; layers: string }> = {
   karst:          { url: 'https://geoservices.wallonie.be/arcgis/services/AMENAGEMENT_TERRITOIRE/CONTR_KARST/MapServer/WMSServer', layers: '0,1,2,3' },
   natura:         { url: 'https://geoservices.wallonie.be/arcgis/services/FAUNE_FLORE/NATURA2000/MapServer/WMSServer', layers: '0' },
   zi:             { url: 'https://geoservices.wallonie.be/arcgis/services/EAU/ZI/MapServer/WMSServer', layers: '0,1,2,3,4,5' },
+  drigm:          { url: 'https://geoservices.wallonie.be/arcgis/services/SOL_SOUS_SOL/CONSULT_SSOL/MapServer/WMSServer', layers: '0,1,2,3,4' },
 }
 
 const MAP_ID = 'wdd-leaflet-map'
+
+
 
 export default function LeafletMap({ lat, lng, visibleLayers }: {
   lat: number
@@ -89,6 +92,8 @@ export default function LeafletMap({ lat, lng, visibleLayers }: {
       })
     })
   }, [visibleLayers])
+
+
 
   return (
     <div style={{ height: '280px', width: '100%', overflow: 'hidden', position: 'relative' }}>
