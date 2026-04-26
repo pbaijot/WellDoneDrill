@@ -52,8 +52,22 @@ type ApiLayer = {
   name: string
   topM: number
   bottomM: number
+
+  // Legacy fields kept for compatibility
   type: 'cover' | 'bedrock' | 'aquifer' | 'aquitard' | 'unknown'
   hydroClass: 'aquifer' | 'aquitard' | 'aquiclude' | 'unknown'
+
+  // Structured fields from the geology API
+  lithology?: 'soil' | 'loam' | 'clay' | 'sand' | 'limestone' | 'schist' | 'sandstone' | 'mixed' | 'unknown'
+  layerType?: 'surface' | 'cover' | 'weathered-zone' | 'bedrock' | 'deep-bedrock' | 'unknown'
+  display?: {
+    color: string
+    textColor: 'light' | 'dark'
+    shortLabel: string
+    longLabel: string
+    hatch: 'none' | 'aquifer' | 'fractured'
+  }
+
   thermalConductivityWmK: number | null
   confidence: 'low' | 'medium' | 'high'
   rationale: string
@@ -95,6 +109,11 @@ type GeologyApiResponse = {
   interpretedSection: {
     depthM: number
     confidence: 'low' | 'medium' | 'high'
+    confidenceDetails?: {
+      level: 'low' | 'medium' | 'high'
+      score: number
+      reasons: string[]
+    }
     layers: ApiLayer[]
   }
   geothermalInterpretation: {
@@ -112,7 +131,7 @@ type GeologyApiResponse = {
   diagnostics?: string[]
 }
 
-function layerColor(layer: ApiLayer) {
+function legacyLayerColor(layer: ApiLayer) {
   const name = layer.name.toLowerCase()
 
   if (name.includes('sol')) return '#947648'
@@ -127,9 +146,27 @@ function layerColor(layer: ApiLayer) {
   return '#9A9088'
 }
 
+function layerColor(layer: ApiLayer) {
+  return layer.display?.color || legacyLayerColor(layer)
+}
+
 function useDarkText(layer: ApiLayer) {
+  if (layer.display?.textColor) return layer.display.textColor === 'dark'
+
   const name = layer.name.toLowerCase()
   return name.includes('sable') || name.includes('calcaire') || name.includes('carbonat')
+}
+
+function layerShortLabel(layer: ApiLayer) {
+  return layer.display?.shortLabel || layer.name
+}
+
+function layerLongLabel(layer: ApiLayer) {
+  return layer.display?.longLabel || layer.name
+}
+
+function layerHatch(layer: ApiLayer) {
+  return layer.display?.hatch || 'none'
 }
 
 function confidenceLabel(value: 'low' | 'medium' | 'high') {
@@ -152,15 +189,31 @@ function hydroLabel(value: ApiLayer['hydroClass']) {
 }
 
 function stratigraphicLabel(layer: ApiLayer) {
-  const name = layer.name.toLowerCase()
+  if (layer.layerType === 'surface') return 'Horizon de surface'
+  if (layer.layerType === 'cover') return 'Couverture superficielle'
+  if (layer.layerType === 'weathered-zone') return 'Zone altérée / fissurée'
+  if (layer.layerType === 'deep-bedrock') return 'Substratum profond'
 
-  if (name.includes('sol')) return 'Formations quaternaires'
-  if (name.includes('limon') || name.includes('argile') || name.includes('altérite')) return 'Couverture / altération'
-  if (name.includes('sable') || name.includes('gravier')) return 'Sables et graviers'
-  if (name.includes('calcaire') || name.includes('carbonat') || name.includes('dolomie')) return 'Niveaux carbonatés'
-  if (name.includes('schiste') || name.includes('phyllade') || name.includes('grès') || name.includes('gres')) return 'Socle paléozoïque'
-
-  return layer.type === 'cover' ? 'Couverture superficielle' : 'Substratum à confirmer'
+  switch (layer.lithology) {
+    case 'soil':
+      return 'Formations quaternaires'
+    case 'loam':
+      return 'Limons / lœss'
+    case 'clay':
+      return 'Argiles / marnes'
+    case 'sand':
+      return 'Sables et graviers'
+    case 'limestone':
+      return 'Niveaux carbonatés'
+    case 'schist':
+      return 'Socle schisteux'
+    case 'sandstone':
+      return 'Socle gréseux'
+    case 'mixed':
+      return 'Alternances lithologiques'
+    default:
+      return layer.type === 'cover' ? 'Couverture superficielle' : 'Substratum à confirmer'
+  }
 }
 
 function layerThickness(layer: ApiLayer) {
@@ -168,7 +221,7 @@ function layerThickness(layer: ApiLayer) {
 }
 
 function layerDisplayName(layer: ApiLayer, index: number) {
-  return layerThickness(layer) < 9 ? String(index + 1) : layer.name
+  return layerThickness(layer) < 9 ? String(index + 1) : layerShortLabel(layer)
 }
 
 function weightedLambda(layers: ApiLayer[], maxDepth: number) {
@@ -432,7 +485,7 @@ export default function GeologyStep({
                       : '—'}
                   </div>
                   <div style={S.lambdaLayerName()}>
-                    {index + 1}. {layer.name}
+                    {index + 1}. {layerLongLabel(layer)}
                     <span style={S.lambdaLayerDepth()}>
                       {Math.round(layer.topM)}–{Math.round(layer.bottomM)} m · {hydroLabel(layer.hydroClass)}
                     </span>
@@ -489,7 +542,9 @@ export default function GeologyStep({
                 {lambdaAvg ? lambdaAvg.toFixed(1) : '—'} W/m·K
               </div>
               <div style={S.summarySub()}>
-                sur {maxDepth} m
+                sur {maxDepth} m · confiance {data.interpretedSection.confidenceDetails?.score
+                  ? Math.round(data.interpretedSection.confidenceDetails.score * 100) + '%'
+                  : confidenceLabel(data.interpretedSection.confidence)}
               </div>
             </div>
 
@@ -522,12 +577,25 @@ export default function GeologyStep({
           )}
 
           {data.warnings.length > 0 && (
-            <div style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
+            <div style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '10px' }}>
               {data.warnings.slice(0, 2).map((warning) => (
                 <div key={warning}>• {warning}</div>
               ))}
             </div>
           )}
+
+          {data.interpretedSection.confidenceDetails?.reasons?.length ? (
+            <details style={{ fontSize: '11px', color: C.text4, lineHeight: 1.5, marginBottom: '18px' }}>
+              <summary style={{ cursor: 'pointer', color: C.text3, fontWeight: 600 }}>
+                Hypothèses de confiance
+              </summary>
+              <div style={{ marginTop: '6px' }}>
+                {data.interpretedSection.confidenceDetails.reasons.slice(0, 5).map((reason) => (
+                  <div key={reason}>• {reason}</div>
+                ))}
+              </div>
+            </details>
+          ) : null}
         </>
       )}
 

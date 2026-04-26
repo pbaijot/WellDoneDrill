@@ -1,5 +1,39 @@
 export type ConfidenceLevel = "low" | "medium" | "high"
 
+export type Lithology =
+  | "soil"
+  | "loam"
+  | "clay"
+  | "sand"
+  | "limestone"
+  | "schist"
+  | "sandstone"
+  | "mixed"
+  | "unknown"
+
+export type GeologicalLayerType =
+  | "surface"
+  | "cover"
+  | "weathered-zone"
+  | "bedrock"
+  | "deep-bedrock"
+  | "unknown"
+
+export type LayerDisplay = {
+  color: string
+  textColor: "light" | "dark"
+  shortLabel: string
+  longLabel: string
+  hatch: "none" | "aquifer" | "fractured"
+}
+
+export type ConfidenceDetails = {
+  level: ConfidenceLevel
+  score: number
+  reasons: string[]
+}
+
+
 export type ArcFeature = {
   attributes?: Record<string, any>
   geometry?: any
@@ -18,8 +52,16 @@ export type InterpretedLayer = {
   name: string
   topM: number
   bottomM: number
+
+  // Legacy fields kept for current frontend compatibility
   type: "cover" | "bedrock" | "aquifer" | "aquitard" | "unknown"
   hydroClass: "aquifer" | "aquitard" | "aquiclude" | "unknown"
+
+  // Structured fields for next iterations
+  lithology: Lithology
+  layerType: GeologicalLayerType
+  display: LayerDisplay
+
   thermalConductivityWmK: number | null
   confidence: ConfidenceLevel
   rationale: string

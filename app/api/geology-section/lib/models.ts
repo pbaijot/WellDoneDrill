@@ -1,5 +1,108 @@
 import type { InterpretedLayer, RegionalModel } from "./types"
 
+
+function inferLithology(name: string): InterpretedLayer["lithology"] {
+  const n = name.toLowerCase()
+
+  if (n.includes("sol")) return "soil"
+  if (n.includes("limon") || n.includes("loess") || n.includes("lœss")) return "loam"
+  if (n.includes("argile") || n.includes("marne")) return "clay"
+  if (n.includes("sable") || n.includes("gravier") || n.includes("alluvion")) return "sand"
+  if (n.includes("calcaire") || n.includes("dolomie") || n.includes("carbonat") || n.includes("calcschiste")) return "limestone"
+  if (n.includes("schiste") || n.includes("phyllade") || n.includes("ardoise")) return "schist"
+  if (n.includes("grès") || n.includes("gres") || n.includes("psammite") || n.includes("quartzite")) return "sandstone"
+  if (n.includes("alternance") || n.includes("/")) return "mixed"
+
+  return "unknown"
+}
+
+function inferLayerType(
+  name: string,
+  type: InterpretedLayer["type"],
+  topM: number
+): InterpretedLayer["layerType"] {
+  const n = name.toLowerCase()
+
+  if (topM === 0 && n.includes("sol")) return "surface"
+  if (type === "cover") return topM <= 3 ? "cover" : "weathered-zone"
+  if (n.includes("altéré") || n.includes("altere") || n.includes("fissur") || n.includes("fractur")) return "weathered-zone"
+  if (topM >= 100) return "deep-bedrock"
+  if (type === "bedrock" || type === "aquifer" || type === "aquitard") return "bedrock"
+
+  return "unknown"
+}
+
+function layerColorForLithology(lithology: InterpretedLayer["lithology"]) {
+  switch (lithology) {
+    case "soil":
+      return "#947648"
+    case "loam":
+      return "#C9AD84"
+    case "clay":
+      return "#A97D5D"
+    case "sand":
+      return "#D9C99D"
+    case "limestone":
+      return "#B9B1A0"
+    case "schist":
+      return "#726D66"
+    case "sandstone":
+      return "#9C8F78"
+    case "mixed":
+      return "#8A7A6B"
+    default:
+      return "#9A9088"
+  }
+}
+
+function shortLabelForLithology(lithology: InterpretedLayer["lithology"]) {
+  switch (lithology) {
+    case "soil":
+      return "Sol"
+    case "loam":
+      return "Limons"
+    case "clay":
+      return "Argiles"
+    case "sand":
+      return "Sables"
+    case "limestone":
+      return "Calcaires"
+    case "schist":
+      return "Schistes"
+    case "sandstone":
+      return "Grès"
+    case "mixed":
+      return "Alternances"
+    default:
+      return "À confirmer"
+  }
+}
+
+function buildLayerDisplay(
+  name: string,
+  lithology: InterpretedLayer["lithology"],
+  hydroClass: InterpretedLayer["hydroClass"]
+): InterpretedLayer["display"] {
+  const textColor =
+    lithology === "sand" || lithology === "limestone" || lithology === "loam"
+      ? "dark"
+      : "light"
+
+  return {
+    color: layerColorForLithology(lithology),
+    textColor,
+    shortLabel: shortLabelForLithology(lithology),
+    longLabel: name,
+    hatch:
+      hydroClass === "aquifer"
+        ? "aquifer"
+        : hydroClass === "aquitard"
+        ? "fractured"
+        : "none",
+  }
+}
+
+
 function layer(
   name: string,
   topM: number,
@@ -10,12 +113,18 @@ function layer(
   confidence: InterpretedLayer["confidence"],
   rationale: string
 ): InterpretedLayer {
+  const lithology = inferLithology(name)
+  const layerType = inferLayerType(name, type, topM)
+
   return {
     name,
     topM,
     bottomM,
     type,
     hydroClass,
+    lithology,
+    layerType,
+    display: buildLayerDisplay(name, lithology, hydroClass),
     thermalConductivityWmK: lambda,
     confidence,
     rationale,

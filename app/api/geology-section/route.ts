@@ -111,6 +111,74 @@ async function buildSurfaceSamples(input: GeologyInput): Promise<SurfaceSample[]
   )
 }
 
+
+function buildConfidenceDetails(
+  level: "low" | "medium" | "high",
+  evidence: EvidencePoint[],
+  sondageRadius: number,
+  affleurementRadius: number
+) {
+  let score = level === "high" ? 0.82 : level === "medium" ? 0.58 : 0.32
+  const reasons: string[] = []
+
+  const surface = evidence.filter((e) => e.source === "surface")
+  const context = evidence.filter((e) => e.source === "context")
+  const soils = evidence.filter((e) => e.source === "soil")
+  const sondages = evidence.filter((e) => e.source === "sondage")
+  const affleurements = evidence.filter((e) => e.source === "affleurement")
+
+  if (surface.length > 0) {
+    score += 0.05
+    reasons.push("Carte géologique disponible au point analysé.")
+  } else {
+    score -= 0.06
+    reasons.push("Carte géologique non récupérée directement au point analysé.")
+  }
+
+  if (context.length > 0) {
+    score += 0.05
+    reasons.push("Contexte régional UER disponible.")
+  }
+
+  if (soils.length > 0) {
+    score += 0.04
+    reasons.push("Carte des sols disponible au point analysé.")
+  }
+
+  if (sondages.length >= 2) {
+    score += 0.12
+    reasons.push("Plusieurs sondages publics proches ont été récupérés.")
+  } else if (sondages.length === 1) {
+    score += 0.06
+    reasons.push("Un sondage public proche a été récupéré.")
+  } else {
+    score -= 0.08
+    reasons.push(`Aucun sondage public proche récupéré dans le rayon analysé (${sondageRadius} m).`)
+  }
+
+  if (affleurements.length >= 3) {
+    score += 0.08
+    reasons.push("Plusieurs affleurements proches ont été récupérés.")
+  } else if (affleurements.length > 0) {
+    score += 0.04
+    reasons.push("Au moins un affleurement proche a été récupéré.")
+  }
+
+  if (affleurementRadius > 1500) {
+    score -= 0.04
+    reasons.push(`Rayon élargi nécessaire pour trouver des observations (${affleurementRadius} m).`)
+  }
+
+  const normalizedScore = Math.max(0.05, Math.min(0.95, score))
+
+  return {
+    level,
+    score: Number(normalizedScore.toFixed(2)),
+    reasons,
+  }
+}
+
+
 function buildWarnings(evidence: EvidencePoint[], confidence: string, sondageRadius: number, affleurementRadius: number) {
   const warnings = [
     "Coupe indicative générée automatiquement à partir des services publics disponibles.",
@@ -207,7 +275,7 @@ export async function GET(req: NextRequest) {
     : null
 
   return NextResponse.json({
-    version: "v1.4",
+    version: "v1.5",
     status: "ok",
     input,
     sources: SERVICES,
@@ -235,6 +303,12 @@ export async function GET(req: NextRequest) {
     interpretedSection: {
       depthM: input.depthM,
       confidence: finalConfidence,
+      confidenceDetails: buildConfidenceDetails(
+        finalConfidence,
+        evidence,
+        sondagesResult.radiusM,
+        affleurementsResult.radiusM
+      ),
       layers: model.layers.map((l) => ({ ...l, confidence: finalConfidence })),
     },
     geothermalInterpretation: {
@@ -247,7 +321,7 @@ export async function GET(req: NextRequest) {
           ? "moderate"
           : "unknown",
       message:
-        `${model.message} Interprétation automatique V1.4 : potentiel géothermique ` +
+        `${model.message} Interprétation automatique V1.5 : potentiel géothermique ` +
         `${avg === null ? "à confirmer" : avg >= 2.3 ? "favorable" : "modéré"} ` +
         `sur base des données publiques disponibles. Cette analyse doit être consolidée par les données de forage WDD ou une reconnaissance locale.`,
     },
