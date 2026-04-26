@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server"
 import type { EvidencePoint, GeologyInput, SurfaceSample } from "./lib/types"
 import { allEvidenceText, buildTransect, clampNumber, featureSummary } from "./lib/helpers"
 import { GEOLOGIE_LAYERS, SERVICES, identifyPoint, queryProgressive } from "./lib/services"
-import { inferRegionalModel, refineWithLocalTerms } from "./lib/models"
+import { inferRegionalModel, refineWithLocalTerms, makeVariableLayerModel, applyOfficialSpwStratigraphy } from "./lib/models"
 import { buildHydrogeologyInterpretation } from "./lib/hydrogeology"
 
 function parseInput(req: NextRequest): GeologyInput | null {
@@ -179,6 +179,28 @@ function buildConfidenceDetails(
 }
 
 
+
+function weightedThermalConductivity(layers: { topM: number; bottomM: number; thermalConductivityWmK: number | null }[], depthM: number) {
+  let weightedSum = 0
+  let accountedDepth = 0
+
+  for (const layer of layers) {
+    if (!layer.thermalConductivityWmK) continue
+
+    const top = Math.max(0, layer.topM)
+    const bottom = Math.min(depthM, layer.bottomM)
+    const thickness = Math.max(0, bottom - top)
+
+    if (thickness <= 0) continue
+
+    weightedSum += thickness * layer.thermalConductivityWmK
+    accountedDepth += thickness
+  }
+
+  return accountedDepth > 0 ? weightedSum / accountedDepth : null
+}
+
+
 function buildWarnings(evidence: EvidencePoint[], confidence: string, sondageRadius: number, affleurementRadius: number) {
   const warnings = [
     "Coupe indicative générée automatiquement à partir des services publics disponibles.",
@@ -252,10 +274,17 @@ export async function GET(req: NextRequest) {
     .slice(0, 80)
 
   const evidenceText = allEvidenceText(evidence)
-  const baseModel = inferRegionalModel(evidenceText, input.lat, input.lng, input.depthM)
-  const model = refineWithLocalTerms(baseModel, evidenceText)
-  const hydrogeology = buildHydrogeologyInterpretation(model.layers, model.key)
   const surfaceSamples = await buildSurfaceSamples(input)
+
+  const baseModel = inferRegionalModel(evidenceText, input.lat, input.lng, input.depthM)
+  const refinedModel = refineWithLocalTerms(baseModel, evidenceText)
+  const variableModel = makeVariableLayerModel(refinedModel, evidenceText, input.depthM)
+  const model = applyOfficialSpwStratigraphy(
+    variableModel,
+    surfaceSamples,
+    surfaceEvidence
+  )
+  const hydrogeology = buildHydrogeologyInterpretation(model.layers, model.key)
 
   const finalConfidence =
     sondagesResult.items.length >= 2
@@ -266,16 +295,10 @@ export async function GET(req: NextRequest) {
       ? "medium"
       : "low"
 
-  const lambdas = model.layers
-    .map((l) => l.thermalConductivityWmK)
-    .filter((v): v is number => typeof v === "number")
-
-  const avg = lambdas.length
-    ? lambdas.reduce((a, b) => a + b, 0) / lambdas.length
-    : null
+  const avg = weightedThermalConductivity(model.layers, input.depthM)
 
   return NextResponse.json({
-    version: "v1.5",
+    version: "v1.6-spw",
     status: "ok",
     input,
     sources: SERVICES,
@@ -321,7 +344,7 @@ export async function GET(req: NextRequest) {
           ? "moderate"
           : "unknown",
       message:
-        `${model.message} Interprétation automatique V1.5 : potentiel géothermique ` +
+        `${model.message} Interprétation automatique V1.6 SPW : potentiel géothermique ` +
         `${avg === null ? "à confirmer" : avg >= 2.3 ? "favorable" : "modéré"} ` +
         `sur base des données publiques disponibles. Cette analyse doit être consolidée par les données de forage WDD ou une reconnaissance locale.`,
     },

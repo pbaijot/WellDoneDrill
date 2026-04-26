@@ -19,6 +19,16 @@ export type GeologicalLayerType =
   | "deep-bedrock"
   | "unknown"
 
+export type LithologyCategory =
+  | "argile"
+  | "argile_silt"
+  | "silt_sable_argile"
+  | "sable"
+  | "sable_gravier"
+  | "craie"
+  | "schiste_gres_socle"
+  | "unknown"
+
 export type LayerDisplay = {
   color: string
   textColor: "light" | "dark"
@@ -50,6 +60,13 @@ export type EvidencePoint = {
 
 export type InterpretedLayer = {
   name: string
+  stratigraphicName: string
+  officialSource?: {
+    provider: "SPW" | "interpreted"
+    layer: string
+    field: string | null
+    rawValue: string | null
+  }
   topM: number
   bottomM: number
 
@@ -59,6 +76,7 @@ export type InterpretedLayer = {
 
   // Structured fields for next iterations
   lithology: Lithology
+  lithologyCategory: LithologyCategory
   layerType: GeologicalLayerType
   display: LayerDisplay
 

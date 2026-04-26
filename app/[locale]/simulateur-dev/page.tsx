@@ -9,7 +9,7 @@ export default async function SimulateurDevPage({
   const { locale } = await params
   return (
     <div style={{ minHeight: '100vh', background: '#F2EFE9' }}>
-      <div style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 24px 80px' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '48px clamp(16px, 3vw, 40px) 80px' }}>
         <div style={{ marginBottom: '32px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
             <div style={{ width: '28px', height: '3px', background: '#E6C200' }} />
@@ -25,7 +25,7 @@ export default async function SimulateurDevPage({
           </p>
         </div>
 
-        <div style={{ background: '#FFFFFF', border: '1px solid #DDD8CF', padding: '32px' }}>
+        <div style={{ background: '#FFFFFF', border: '1px solid #DDD8CF', padding: 'clamp(20px, 3vw, 32px)' }}>
           <Simulator
             devisUrl={getLocalizedPath(locale as AppLocale, 'devis')}
             soumissionUrl={getLocalizedPath(locale as AppLocale, 'pro_soumission')}

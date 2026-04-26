@@ -84,9 +84,9 @@ export function buildHydrogeologyInterpretation(
         bottomM: layer.bottomM,
         mode: isAquifer ? "aquifer" : isFracturedCandidate ? "fractured-water-possible" : "none",
         label: isAquifer
-          ? "Eau souterraine probable"
+          ? `Aquifère probable : ${layer.name}`
           : isFracturedCandidate
-          ? "Eau possible en fractures"
+          ? `Eau possible en fractures : ${layer.name}`
           : null,
       }
     }),
