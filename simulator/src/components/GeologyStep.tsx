@@ -150,7 +150,7 @@ export default function GeologyStep({
         <>
           <div style={S.sectionTable()}>
             <div style={S.depthHeader()}>
-              <div style={S.verticalDepthLabel()}>Profondeur</div>
+              <div style={S.verticalDepthLabel()}>Prof.</div>
             </div>
             <div style={S.tableHeader()}>Coupe géologique</div>
             <div style={S.tableHeader()} />
