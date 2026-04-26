@@ -2,9 +2,50 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import type { AddressResult } from '../types'
-import { C, geologySectionStyles } from '../theme'
+import { C } from '../theme'
 import { T } from '../i18n/fr'
 import { Hint, PrimaryBtn } from './Shared'
+
+const S = {
+  statusBox: (kind: 'loading' | 'error' | 'ok'): React.CSSProperties => ({
+    background: kind === 'error' ? '#FFF5F2' : '#F8F5EF',
+    border: '1px solid ' + (kind === 'error' ? '#E65100' : '#DDD8CF'),
+    borderLeft: '3px solid ' + (kind === 'error' ? '#E65100' : '#E6C200'),
+    padding: '12px 14px', marginBottom: '16px', fontSize: '13px', color: '#4A4540', lineHeight: 1.55,
+  }),
+  sectionTable: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: '78px minmax(0,1fr) 300px 220px', border: '1px solid #DDD8CF', background: '#FFFFFF', marginTop: '16px', marginBottom: '12px', overflow: 'hidden' }),
+  depthHeader: (): React.CSSProperties => ({ minHeight: '42px', borderRight: '1px solid #DDD8CF', borderBottom: '1px solid #DDD8CF', background: '#F2EFE9', position: 'relative' }),
+  verticalDepthLabel: (): React.CSSProperties => ({ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%) rotate(-90deg)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#9A9088', whiteSpace: 'nowrap' }),
+  tableHeader: (): React.CSSProperties => ({ minHeight: '42px', display: 'flex', alignItems: 'center', padding: '0 16px', borderRight: '1px solid #DDD8CF', borderBottom: '1px solid #DDD8CF', background: '#F2EFE9', fontSize: '13px', fontWeight: 700, color: '#4A4540' }),
+  depthAxis: (): React.CSSProperties => ({ position: 'relative', height: '420px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9' }),
+  depthTick: (d: number, max: number): React.CSSProperties => ({ position: 'absolute', top: (d/max*100)+'%', right: '12px', transform: 'translateY(-50%)', fontSize: '11px', color: '#9A9088', fontWeight: 600 }),
+  sectionCanvas: (): React.CSSProperties => ({ position: 'relative', height: '420px', borderRight: '1px solid #DDD8CF', background: '#F2EFE9', overflow: 'hidden' }),
+  layerBlock: (t: number, b: number, max: number, color: string): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', background: color, borderBottom: '1px solid rgba(0,0,0,0.12)', display: 'flex', alignItems: 'center', padding: '0 18px', boxSizing: 'border-box' }),
+  layerName: (dark?: boolean): React.CSSProperties => ({ fontSize: '10px', color: dark ? '#4A4540' : '#fff', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', lineHeight: 1.2, textShadow: dark ? 'none' : '0 1px 1px rgba(0,0,0,0.28)' }),
+  hydroOverlay: (t: number, b: number, max: number, strong: boolean): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', pointerEvents: 'none', opacity: strong ? 0.62 : 0.42, zIndex: 5, backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.95) 0px,rgba(21,101,192,0.95) 3px,transparent 3px,transparent 11px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.8) 0px,rgba(21,101,192,0.8) 2px,transparent 2px,transparent 13px)' }),
+  waterLine: (d: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (d/max*100)+'%', borderTop: '2px dashed #1565C0', zIndex: 8, pointerEvents: 'none' }),
+  lambdaCurveSvg: (): React.CSSProperties => ({ position: 'absolute', inset: 0, zIndex: 9, pointerEvents: 'none' }),
+  targetLine: (): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, bottom: 0, height: '4px', background: '#FFD94F', zIndex: 10 }),
+  lambdaColumn: (): React.CSSProperties => ({ position: 'relative', height: '420px', borderRight: '1px solid #DDD8CF', background: '#FFFFFF' }),
+  lambdaRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', display: 'grid', gridTemplateColumns: '58px 1fr', alignItems: 'center', gap: '10px', padding: '0 14px', boxSizing: 'border-box' }),
+  lambdaValue: (): React.CSSProperties => ({ fontSize: '12px', fontWeight: 700, color: '#4A4540', textAlign: 'right' }),
+  lambdaLayerName: (): React.CSSProperties => ({ fontSize: '11px', color: '#4A4540', lineHeight: 1.25, fontWeight: 600 }),
+  lambdaLayerDepth: (): React.CSSProperties => ({ display: 'block', fontSize: '10px', color: '#9A9088', fontWeight: 500, marginTop: '2px' }),
+  stratColumn: (): React.CSSProperties => ({ position: 'relative', height: '420px', background: '#FFFFFF' }),
+  stratRow: (t: number, b: number, max: number): React.CSSProperties => ({ position: 'absolute', left: 0, right: 0, top: (t/max*100)+'%', height: ((b-t)/max*100)+'%', display: 'flex', alignItems: 'center', padding: '0 12px', boxSizing: 'border-box', fontSize: '11px', color: '#4A4540', lineHeight: 1.3 }),
+  legendRow: (): React.CSSProperties => ({ display: 'flex', gap: '20px', flexWrap: 'wrap', fontSize: '11px', color: '#6B6057', margin: '8px 0 14px', alignItems: 'center' }),
+  legendItem: (): React.CSSProperties => ({ display: 'flex', alignItems: 'center', gap: '6px' }),
+  redLineSample: (): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '2px', background: '#D12B2B', verticalAlign: 'middle' }),
+  yellowLineSample: (): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '3px', background: '#FFD94F', verticalAlign: 'middle' }),
+  hydroSample: (strong: boolean): React.CSSProperties => ({ display: 'inline-block', width: '20px', height: '12px', verticalAlign: 'middle', backgroundImage: strong ? 'repeating-linear-gradient(135deg,rgba(21,101,192,0.95) 0,rgba(21,101,192,0.95) 3px,transparent 3px,transparent 9px)' : 'repeating-linear-gradient(135deg,rgba(21,101,192,0.7) 0,rgba(21,101,192,0.7) 2px,transparent 2px,transparent 9px)' }),
+  summaryGrid: (): React.CSSProperties => ({ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '8px', marginBottom: '16px' }),
+  summaryCard: (): React.CSSProperties => ({ background: '#F8F5EF', border: '1px solid #DDD8CF', padding: '14px' }),
+  summaryLabel: (): React.CSSProperties => ({ fontSize: '11px', color: '#9A9088', marginBottom: '4px' }),
+  summaryValue: (color?: string): React.CSSProperties => ({ fontSize: '20px', fontWeight: 700, color: color === 'green' ? '#2E7D32' : '#1C1C1C' }),
+  summarySub: (): React.CSSProperties => ({ fontSize: '10px', color: '#9A9088', marginTop: '2px' }),
+  warning: (): React.CSSProperties => ({ fontSize: '11px', color: '#6B6057', lineHeight: 1.6, padding: '10px 14px', background: '#F8F5EF', border: '1px solid #DDD8CF', borderLeft: '3px solid #DDD8CF', marginBottom: '10px' }),
+}
+
 
 type ApiLayer = {
   name: string
@@ -278,7 +319,7 @@ export default function GeologyStep({
     return (
       <div>
         <Hint>{T.geologyIntro}</Hint>
-        <div style={geologySectionStyles.statusBox('error')}>
+        <div style={S.statusBox('error')}>
           Aucune adresse n’est disponible pour générer la coupe géologique.
         </div>
         <PrimaryBtn onClick={onConfirm}>{T.geologyConfirm}</PrimaryBtn>
@@ -291,47 +332,47 @@ export default function GeologyStep({
       <Hint>{T.geologyIntro}</Hint>
 
       {loading && (
-        <div style={geologySectionStyles.statusBox('loading')}>
+        <div style={S.statusBox('loading')}>
           Génération de la coupe géologique et hydrogéologique indicative...
         </div>
       )}
 
       {error && (
-        <div style={geologySectionStyles.statusBox('error')}>
+        <div style={S.statusBox('error')}>
           {error}
         </div>
       )}
 
       {data && (
         <>
-          <div style={geologySectionStyles.sectionTable()}>
-            <div style={geologySectionStyles.depthHeader()}>
-              <div style={geologySectionStyles.verticalDepthLabel()}>Profondeur (m)</div>
+          <div style={S.sectionTable()}>
+            <div style={S.depthHeader()}>
+              <div style={S.verticalDepthLabel()}>Profondeur (m)</div>
             </div>
-            <div style={geologySectionStyles.tableHeader()} />
-            <div style={geologySectionStyles.tableHeader()}>λ et couches géologiques</div>
-            <div style={geologySectionStyles.tableHeader()}>Unité stratigraphique</div>
+            <div style={S.tableHeader()} />
+            <div style={S.tableHeader()}>λ et couches géologiques</div>
+            <div style={S.tableHeader()}>Unité stratigraphique</div>
 
-            <div style={geologySectionStyles.depthAxis()}>
+            <div style={S.depthAxis()}>
               {depthTicks.map((d) => (
-                <div key={d} style={geologySectionStyles.depthTick(d, maxDepth)}>
+                <div key={d} style={S.depthTick(d, maxDepth)}>
                   {d} m
                 </div>
               ))}
             </div>
 
-            <div style={geologySectionStyles.sectionCanvas()}>
+            <div style={S.sectionCanvas()}>
               {layers.map((layer, index) => (
                 <div
                   key={layer.name + index}
-                  style={geologySectionStyles.layerBlock(
+                  style={S.layerBlock(
                     layer.topM,
                     layer.bottomM,
                     maxDepth,
                     layerColor(layer)
                   )}
                 >
-                  <span style={geologySectionStyles.layerName(useDarkText(layer))}>
+                  <span style={S.layerName(useDarkText(layer))}>
                     {index + 1}
                   </span>
                 </div>
@@ -342,7 +383,7 @@ export default function GeologyStep({
                 .map((overlay, index) => (
                   <div
                     key={'hydro-overlay-' + index}
-                    style={geologySectionStyles.hydroOverlay(
+                    style={S.hydroOverlay(
                       overlay.topM,
                       overlay.bottomM,
                       maxDepth,
@@ -354,7 +395,7 @@ export default function GeologyStep({
               {data.hydrogeology?.likelyWaterTableDepthM !== null &&
                 data.hydrogeology?.likelyWaterTableDepthM !== undefined && (
                   <div
-                    style={geologySectionStyles.waterLine(
+                    style={S.waterLine(
                       data.hydrogeology.likelyWaterTableDepthM,
                       maxDepth
                     )}
@@ -364,7 +405,7 @@ export default function GeologyStep({
               <svg
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
-                style={geologySectionStyles.lambdaCurveSvg()}
+                style={S.lambdaCurveSvg()}
               >
                 <polyline
                   points={lambdaCurvePoints(layers, maxDepth)}
@@ -375,23 +416,23 @@ export default function GeologyStep({
                 />
               </svg>
 
-              <div style={geologySectionStyles.targetLine()} />
+              <div style={S.targetLine()} />
             </div>
 
-            <div style={geologySectionStyles.lambdaColumn()}>
+            <div style={S.lambdaColumn()}>
               {layers.map((layer, index) => (
                 <div
                   key={layer.name + index}
-                  style={geologySectionStyles.lambdaRow(layer.topM, layer.bottomM, maxDepth)}
+                  style={S.lambdaRow(layer.topM, layer.bottomM, maxDepth)}
                 >
-                  <div style={geologySectionStyles.lambdaValue()}>
+                  <div style={S.lambdaValue()}>
                     {layer.thermalConductivityWmK
                       ? layer.thermalConductivityWmK.toFixed(2).replace('.00', '')
                       : '—'}
                   </div>
-                  <div style={geologySectionStyles.lambdaLayerName()}>
+                  <div style={S.lambdaLayerName()}>
                     {index + 1}. {layer.name}
-                    <span style={geologySectionStyles.lambdaLayerDepth()}>
+                    <span style={S.lambdaLayerDepth()}>
                       {Math.round(layer.topM)}–{Math.round(layer.bottomM)} m · {hydroLabel(layer.hydroClass)}
                     </span>
                   </div>
@@ -399,11 +440,11 @@ export default function GeologyStep({
               ))}
             </div>
 
-            <div style={geologySectionStyles.stratColumn()}>
+            <div style={S.stratColumn()}>
               {layers.map((layer, index) => (
                 <div
                   key={layer.name + index}
-                  style={geologySectionStyles.stratRow(layer.topM, layer.bottomM, maxDepth)}
+                  style={S.stratRow(layer.topM, layer.bottomM, maxDepth)}
                 >
                   {stratigraphicLabel(layer)}
                 </div>
@@ -411,50 +452,50 @@ export default function GeologyStep({
             </div>
           </div>
 
-          <div style={geologySectionStyles.legendRow()}>
-            <span style={geologySectionStyles.legendItem()}>
-              <span style={geologySectionStyles.redLineSample()} />
+          <div style={S.legendRow()}>
+            <span style={S.legendItem()}>
+              <span style={S.redLineSample()} />
               Courbe λ apparent
             </span>
-            <span style={geologySectionStyles.legendItem()}>
-              <span style={geologySectionStyles.hydroSample(true)} />
+            <span style={S.legendItem()}>
+              <span style={S.hydroSample(true)} />
               Eau souterraine probable
             </span>
-            <span style={geologySectionStyles.legendItem()}>
-              <span style={geologySectionStyles.hydroSample(false)} />
+            <span style={S.legendItem()}>
+              <span style={S.hydroSample(false)} />
               Eau possible en fractures
             </span>
-            <span style={geologySectionStyles.legendItem()}>
-              <span style={geologySectionStyles.yellowLineSample()} />
+            <span style={S.legendItem()}>
+              <span style={S.yellowLineSample()} />
               {maxDepth} m — profondeur cible
             </span>
           </div>
 
-          <div style={geologySectionStyles.summaryGrid()}>
-            <div style={geologySectionStyles.summaryCard()}>
-              <div style={geologySectionStyles.summaryLabel()}>Température initiale</div>
-              <div style={geologySectionStyles.summaryValue()}>
+          <div style={S.summaryGrid()}>
+            <div style={S.summaryCard()}>
+              <div style={S.summaryLabel()}>Température initiale</div>
+              <div style={S.summaryValue()}>
                 {temperature.toFixed(1)} °C
               </div>
-              <div style={geologySectionStyles.summarySub()}>
+              <div style={S.summarySub()}>
                 à 100 m de profondeur
               </div>
             </div>
 
-            <div style={geologySectionStyles.summaryCard()}>
-              <div style={geologySectionStyles.summaryLabel()}>λ moyen pondéré</div>
-              <div style={geologySectionStyles.summaryValue()}>
+            <div style={S.summaryCard()}>
+              <div style={S.summaryLabel()}>λ moyen pondéré</div>
+              <div style={S.summaryValue()}>
                 {lambdaAvg ? lambdaAvg.toFixed(1) : '—'} W/m·K
               </div>
-              <div style={geologySectionStyles.summarySub()}>
+              <div style={S.summarySub()}>
                 sur {maxDepth} m
               </div>
             </div>
 
-            <div style={geologySectionStyles.summaryCard()}>
-              <div style={geologySectionStyles.summaryLabel()}>Potentiel géothermique</div>
+            <div style={S.summaryCard()}>
+              <div style={S.summaryLabel()}>Potentiel géothermique</div>
               <div
-                style={geologySectionStyles.summaryValue(
+                style={S.summaryValue(
                   data.geothermalInterpretation.preliminaryPotential === 'favorable'
                     ? 'green'
                     : 'normal'
@@ -462,18 +503,18 @@ export default function GeologyStep({
               >
                 {potentialLabel(data.geothermalInterpretation.preliminaryPotential)}
               </div>
-              <div style={geologySectionStyles.summarySub()}>
+              <div style={S.summarySub()}>
                 {extraction ? `extraction ~${extraction} kW / sonde` : 'extraction à confirmer'}
               </div>
             </div>
           </div>
 
-          <div style={geologySectionStyles.warning()}>
+          <div style={S.warning()}>
             {data.geothermalInterpretation.message}
           </div>
 
           {data.hydrogeology && (
-            <div style={geologySectionStyles.warning()}>
+            <div style={S.warning()}>
               <strong>Lecture hydrogéologique indicative.</strong>{' '}
               {data.hydrogeology.summary}
             </div>
@@ -490,7 +531,7 @@ export default function GeologyStep({
       )}
 
       {!loading && !data && !error && (
-        <div style={geologySectionStyles.statusBox('loading')}>
+        <div style={S.statusBox('loading')}>
           Préparation de l’analyse du sous-sol...
         </div>
       )}
