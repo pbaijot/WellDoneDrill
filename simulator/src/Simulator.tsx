@@ -98,7 +98,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         <div>
           <BackBtn onBack={sim.back} />
           <SectionBadge n={1} label="Analyse du sous-sol" />
-          <GeologyStep onConfirm={() => sim.push('questions', 'type_projet')} />
+          <GeologyStep address={sim.address} onConfirm={() => sim.push('questions', 'type_projet')} />
         </div>
       )}
 
