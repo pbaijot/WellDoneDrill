@@ -7,7 +7,6 @@ import { C, F } from './theme'
 import { T } from './i18n/fr'
 import { BackBtn, SectionBadge, PrimaryBtn, SecondaryBtn } from './components/Shared'
 import AddressStep from './components/AddressStep'
-import GeologyStep from './components/GeologyStep'
 import QuestionStep from './components/QuestionStep'
 import InputStep from './components/InputStep'
 import MultiChoiceStep from './components/MultiChoiceStep'
@@ -16,6 +15,7 @@ import LeadResult from './components/LeadResult'
 import SummaryPanel from './components/SummaryPanel'
 import RegulatoryMapScreen from './screens/RegulatoryMapScreen'
 import DrillingAreaScreen from './screens/DrillingAreaScreen'
+import GeologyScreen from './screens/GeologyScreen'
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const sim = useSimulator()
@@ -35,7 +35,6 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
     padding: '32px clamp(16px, 2vw, 32px) 72px',
     boxSizing: 'border-box',
   }
-
 
   return (
     <div style={{ width: '100%', minWidth: 0 }}>
@@ -97,13 +96,12 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       )}
 
       {sim.phase === 'geology' && (
-        <div>
-          <BackBtn onBack={sim.back} />
-          <SectionBadge n={1} label="Analyse du sous-sol" />
-          <GeologyStep address={sim.address} onConfirm={() => sim.push('drilling-area', '')} />
-        </div>
+        <GeologyScreen
+          address={sim.address}
+          onBack={sim.back}
+          onConfirm={() => sim.push('drilling-area', '')}
+        />
       )}
-
 
       {sim.phase === 'drilling-area' && (
         <DrillingAreaScreen
