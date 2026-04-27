@@ -8,7 +8,6 @@ import { T } from './i18n/fr'
 import { BackBtn, SectionBadge, PrimaryBtn, SecondaryBtn } from './components/Shared'
 import AddressStep from './components/AddressStep'
 import GeologyStep from './components/GeologyStep'
-import DrillingAreaStep from './components/DrillingAreaStep'
 import QuestionStep from './components/QuestionStep'
 import InputStep from './components/InputStep'
 import MultiChoiceStep from './components/MultiChoiceStep'
@@ -16,6 +15,7 @@ import ContactStep from './components/ContactStep'
 import LeadResult from './components/LeadResult'
 import SummaryPanel from './components/SummaryPanel'
 import RegulatoryMapScreen from './screens/RegulatoryMapScreen'
+import DrillingAreaScreen from './screens/DrillingAreaScreen'
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const sim = useSimulator()
@@ -106,16 +106,11 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
 
 
       {sim.phase === 'drilling-area' && (
-        <div style={{ position: 'relative', width: '100vw', height: '100dvh', minHeight: '100dvh', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', left: '18px', top: '18px', zIndex: 720, background: 'rgba(255,255,255,0.94)', border: '1px solid ' + C.border, padding: '10px 12px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-            <BackBtn onBack={sim.back} />
-            <SectionBadge n={1} label="Zone de forage disponible" />
-          </div>
-          <DrillingAreaStep
-            address={sim.address}
-            onConfirm={() => sim.push('questions', 'type_projet')}
-          />
-        </div>
+        <DrillingAreaScreen
+          address={sim.address}
+          onBack={sim.back}
+          onConfirm={() => sim.push('questions', 'type_projet')}
+        />
       )}
 
       {sim.phase === 'questions' && currentStep && (
