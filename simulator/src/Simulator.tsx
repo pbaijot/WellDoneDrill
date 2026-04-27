@@ -7,15 +7,12 @@ import { C, F } from './theme'
 import { T } from './i18n/fr'
 import { BackBtn, SectionBadge, PrimaryBtn, SecondaryBtn } from './components/Shared'
 import AddressStep from './components/AddressStep'
-import QuestionStep from './components/QuestionStep'
-import InputStep from './components/InputStep'
-import MultiChoiceStep from './components/MultiChoiceStep'
-import ContactStep from './components/ContactStep'
 import LeadResult from './components/LeadResult'
 import SummaryPanel from './components/SummaryPanel'
 import RegulatoryMapScreen from './screens/RegulatoryMapScreen'
 import DrillingAreaScreen from './screens/DrillingAreaScreen'
 import GeologyScreen from './screens/GeologyScreen'
+import QuestionsScreen from './screens/QuestionsScreen'
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const sim = useSimulator()
@@ -112,16 +109,12 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       )}
 
       {sim.phase === 'questions' && currentStep && (
-        <div>
-          <BackBtn onBack={sim.back} />
-          <SectionBadge n={currentStep.section} label={currentStep.sectionLabel} />
-          {currentStep.type === 'input' && <InputStep step={currentStep} onAnswer={sim.handleAnswer} />}
-          {currentStep.type === 'multichoice' && <MultiChoiceStep step={currentStep} onAnswer={sim.handleAnswer} />}
-          {currentStep.type === 'contact' && <ContactStep onAnswer={sim.handleAnswer} />}
-          {(!currentStep.type || currentStep.type === 'choice') && (
-            <QuestionStep step={currentStep} profile={sim.profile} stepNum={1} totalSteps={1} onAnswer={sim.handleAnswer} />
-          )}
-        </div>
+        <QuestionsScreen
+          step={currentStep}
+          profile={sim.profile}
+          onBack={sim.back}
+          onAnswer={sim.handleAnswer}
+        />
       )}
 
       {sim.phase === 'result' && (
