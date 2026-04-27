@@ -4,9 +4,15 @@ import type { Profile, Answers, AddressResult, LeadType } from '../types'
 import type { DrillingAreaResult } from '../components/drilling-area/types'
 import { qualifyLead } from '../engine'
 
+const DEFAULT_MAP_ADDRESS: AddressResult = {
+  label: 'Namur, Wallonie, Belgique',
+  lat: 50.4674,
+  lng: 4.8718,
+}
+
 export type Phase = 'profile' | 'address' | 'map' | 'geology' | 'drilling-area' | 'questions' | 'result'
 
-type HistoryEntry = { phase: Phase; stepId: string; answers: Answers; drillingArea: DrillingAreaResult | null }
+type HistoryEntry = { phase: Phase; stepId: string; answers: Answers; address: AddressResult | null; drillingArea: DrillingAreaResult | null }
 
 export function useSimulator() {
   const [profile, setProfile]             = useState<Profile>(null)
@@ -21,7 +27,7 @@ export function useSimulator() {
   const [lead, setLead]                   = useState<LeadType>('conseiller')
 
   function push(p: Phase, sid?: string) {
-    setHistory((h) => [...h, { phase, stepId, answers: { ...answers }, drillingArea }])
+    setHistory((h) => [...h, { phase, stepId, answers: { ...answers }, address, drillingArea }])
     setPhase(p)
     if (sid !== undefined) setStepId(sid)
   }
@@ -33,6 +39,7 @@ export function useSimulator() {
     setPhase(prev.phase)
     setStepId(prev.stepId)
     setAnswers(prev.answers)
+    setAddress(prev.address)
     setDrillingArea(prev.drillingArea)
   }
 
@@ -40,14 +47,23 @@ export function useSimulator() {
     setProfile(p)
     setHistory([])
     setAnswers({})
+    setAddress(DEFAULT_MAP_ADDRESS)
     setDrillingArea(null)
-    push('address', '')
+    import('../components/maps/RegulatoryMap').then((mod) => setMapComponent(() => mod.default))
+    push('map', '')
   }
 
   function handleAddressConfirm(a: AddressResult) {
     setAddress(a)
     import('../components/maps/RegulatoryMap').then((mod) => setMapComponent(() => mod.default))
     push('map', '')
+  }
+
+  function confirmMapAddress(a: AddressResult) {
+    setHistory((h) => [...h, { phase, stepId, answers: { ...answers }, address: a, drillingArea }])
+    setAddress(a)
+    setPhase('geology')
+    setStepId('')
   }
 
   function handleAnswer(value: string, next: string) {
@@ -70,6 +86,6 @@ export function useSimulator() {
 
   return {
     profile, phase, stepId, answers, address, drillingArea, visibleLayers, MapComponent, lead,
-    toggleLayer, push, back, chooseProfile, handleAddressConfirm, handleAnswer, setDrillingArea,
+    toggleLayer, push, back, chooseProfile, handleAddressConfirm, confirmMapAddress, handleAnswer, setDrillingArea,
   }
 }

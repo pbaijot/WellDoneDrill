@@ -1,7 +1,7 @@
 'use client'
 
 import type React from 'react'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 
 import type { AddressResult } from '../types'
 import { C, F } from '../theme'
@@ -9,6 +9,13 @@ import { T } from '../i18n/fr'
 import { BackBtn, SectionBadge, PrimaryBtn, SecondaryBtn } from '../components/Shared'
 import DiagnosticPanel from '../components/DiagnosticPanel'
 import FullscreenMapLayout from '../components/layout/FullscreenMapLayout'
+
+type NominatimResult = {
+  place_id: number
+  display_name: string
+  lat: string
+  lon: string
+}
 
 export type RegulatoryMapScreenProps = {
   address: AddressResult
@@ -33,11 +40,20 @@ export default function RegulatoryMapScreen({
   onConfirm,
 }: RegulatoryMapScreenProps) {
   const [target, setTarget] = useState<AddressResult>(address)
+  const [mapCenter, setMapCenter] = useState<AddressResult>(address)
+  const [addressQuery, setAddressQuery] = useState(address.label)
+  const [results, setResults] = useState<NominatimResult[]>([])
+  const [isSearching, setIsSearching] = useState(false)
   const [isResolvingAddress, setIsResolvingAddress] = useState(false)
+  const [isEditingAddress, setIsEditingAddress] = useState(false)
+  const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     setTarget(address)
-    setIsResolvingAddress(false)
+    setMapCenter(address)
+    setAddressQuery(address.label)
+    setResults([])
+    setIsEditingAddress(false)
   }, [address])
 
   const hasMovedTarget = useMemo(() => {
@@ -56,6 +72,8 @@ export default function RegulatoryMapScreen({
   }
 
   useEffect(() => {
+    if (isEditingAddress) return
+
     const controller = new AbortController()
 
     const timer = window.setTimeout(async () => {
@@ -64,7 +82,7 @@ export default function RegulatoryMapScreen({
         Math.abs(target.lng - address.lng) > 0.000001
 
       if (!moved) {
-        setTarget(address)
+        setAddressQuery(address.label)
         setIsResolvingAddress(false)
         return
       }
@@ -82,32 +100,89 @@ export default function RegulatoryMapScreen({
         })
 
         const data = await response.json()
+        const nextLabel = data.label || `Position ajustée (${target.lat.toFixed(6)}, ${target.lng.toFixed(6)})`
 
         if (!controller.signal.aborted) {
           setTarget((prev) => ({
             ...prev,
-            label: data.label || `Position ajustée (${prev.lat.toFixed(6)}, ${prev.lng.toFixed(6)})`,
+            label: nextLabel,
           }))
+          setAddressQuery(nextLabel)
         }
       } catch {
         if (!controller.signal.aborted) {
+          const fallback = `Position ajustée (${target.lat.toFixed(6)}, ${target.lng.toFixed(6)})`
           setTarget((prev) => ({
             ...prev,
-            label: `Position ajustée (${prev.lat.toFixed(6)}, ${prev.lng.toFixed(6)})`,
+            label: fallback,
           }))
+          setAddressQuery(fallback)
         }
       } finally {
         if (!controller.signal.aborted) {
           setIsResolvingAddress(false)
         }
       }
-    }, 650)
+    }, 300)
 
     return () => {
       window.clearTimeout(timer)
       controller.abort()
     }
-  }, [target.lat, target.lng, address])
+  }, [target.lat, target.lng, address, isEditingAddress])
+
+  useEffect(() => {
+    if (!isEditingAddress) return
+
+    if (addressQuery.trim().length < 4) {
+      setResults([])
+      return
+    }
+
+    if (searchTimer.current) {
+      window.clearTimeout(searchTimer.current)
+    }
+
+    searchTimer.current = window.setTimeout(async () => {
+      setIsSearching(true)
+
+      try {
+        const url =
+          'https://nominatim.openstreetmap.org/search?format=json&countrycodes=be&viewbox=2.85,50.85,6.5,49.45&bounded=1&limit=5&accept-language=fr&q=' +
+          encodeURIComponent(addressQuery)
+
+        const response = await fetch(url, {
+          headers: { 'User-Agent': 'WellDoneDrill-Simulator/1.0' },
+        })
+
+        setResults(await response.json())
+      } catch {
+        setResults([])
+      } finally {
+        setIsSearching(false)
+      }
+    }, 450)
+
+    return () => {
+      if (searchTimer.current) {
+        window.clearTimeout(searchTimer.current)
+      }
+    }
+  }, [addressQuery, isEditingAddress])
+
+  function chooseAddress(result: NominatimResult) {
+    const nextAddress = {
+      label: result.display_name,
+      lat: parseFloat(result.lat),
+      lng: parseFloat(result.lon),
+    }
+
+    setTarget(nextAddress)
+    setMapCenter(nextAddress)
+    setAddressQuery(nextAddress.label)
+    setResults([])
+    setIsEditingAddress(false)
+  }
 
   return (
     <FullscreenMapLayout
@@ -115,8 +190,8 @@ export default function RegulatoryMapScreen({
         MapComponent
           ? (
             <MapComponent
-              lat={address.lat}
-              lng={address.lng}
+              lat={mapCenter.lat}
+              lng={mapCenter.lng}
               visibleLayers={visibleLayers}
               onTargetChange={handleTargetChange}
             />
@@ -142,10 +217,12 @@ export default function RegulatoryMapScreen({
             border: '1px solid ' + C.border,
             padding: '10px 12px',
             boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
+            width: '420px',
+            maxWidth: 'calc(100vw - 440px)',
           }}
         >
           <BackBtn onBack={onBack} />
-          <SectionBadge n={1} label="Verification reglementaire" />
+          <SectionBadge n={1} label="Localisation" />
 
           <div
             style={{
@@ -153,28 +230,88 @@ export default function RegulatoryMapScreen({
               fontWeight: 600,
               color: C.text,
               marginTop: '8px',
-              marginBottom: '4px',
+              marginBottom: '8px',
             }}
           >
-            {T.mapTitle}
+            Où se situe votre projet ?
           </div>
+
+          <div style={{ position: 'relative' }}>
+            <input
+              value={addressQuery}
+              onChange={(event) => {
+                setAddressQuery(event.target.value)
+                setIsEditingAddress(true)
+              }}
+              onFocus={() => setIsEditingAddress(true)}
+              placeholder="Ex : Rue de la Loi 16, Namur"
+              style={{
+                width: '100%',
+                boxSizing: 'border-box',
+                border: '1px solid ' + C.border,
+                padding: '10px 12px',
+                fontFamily: 'inherit',
+                fontSize: F.sm,
+                color: C.text,
+                background: '#FFFFFF',
+              }}
+            />
+
+            {(isSearching || isResolvingAddress) && (
+              <span
+                style={{
+                  position: 'absolute',
+                  right: '10px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  fontSize: F.xs,
+                  color: C.text4,
+                }}
+              >
+                ...
+              </span>
+            )}
+          </div>
+
+          {isEditingAddress && results.length > 0 && (
+            <div
+              style={{
+                border: '1px solid ' + C.border,
+                borderTop: 'none',
+                background: '#FFFFFF',
+                maxHeight: '220px',
+                overflowY: 'auto',
+              }}
+            >
+              {results.map((result) => (
+                <button
+                  key={result.place_id}
+                  type="button"
+                  onClick={() => chooseAddress(result)}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    textAlign: 'left',
+                    background: '#FFFFFF',
+                    border: 'none',
+                    borderBottom: '1px solid ' + C.border,
+                    padding: '9px 11px',
+                    cursor: 'pointer',
+                    fontFamily: 'inherit',
+                    fontSize: '12px',
+                    color: C.text2,
+                    lineHeight: 1.35,
+                  }}
+                >
+                  {result.display_name}
+                </button>
+              ))}
+            </div>
+          )}
 
           <div
             style={{
-              fontSize: F.sm,
-              color: C.text4,
-              maxWidth: '520px',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {isResolvingAddress ? 'Recherche de l’adresse...' : target.label}
-          </div>
-
-          <div
-            style={{
-              marginTop: '6px',
+              marginTop: '8px',
               display: 'grid',
               gap: '2px',
               fontSize: '11px',
@@ -204,8 +341,12 @@ export default function RegulatoryMapScreen({
           />
 
           <div style={{ marginTop: '16px', display: 'grid', gap: '8px' }}>
-            <PrimaryBtn onClick={() => onConfirm(target)}>{T.mapConfirm}</PrimaryBtn>
-            <SecondaryBtn onClick={onBack}>{T.mapWrongAddress}</SecondaryBtn>
+            <PrimaryBtn onClick={() => onConfirm(target)}>
+              Confirmer — analyser le sous-sol →
+            </PrimaryBtn>
+            <SecondaryBtn onClick={onBack}>
+              Retour
+            </SecondaryBtn>
           </div>
         </>
       }

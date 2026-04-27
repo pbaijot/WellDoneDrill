@@ -37,7 +37,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
           visibleLayers={sim.visibleLayers}
           onToggleLayer={sim.toggleLayer}
           onBack={sim.back}
-          onConfirm={() => sim.push('geology', '')}
+          onConfirm={sim.confirmMapAddress}
         />
       )}
 

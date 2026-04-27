@@ -8,18 +8,32 @@ import {
   isRegulatoryLayerKey,
 } from '../../data/spwLayers'
 
+const REGULATORY_WMS_MAX_ZOOM = 15
+
+export type RegulatoryMapTarget = {
+  lat: number
+  lng: number
+}
+
 export default function RegulatoryMap({
   lat,
   lng,
   visibleLayers,
+  onTargetChange,
 }: {
   lat: number
   lng: number
   visibleLayers: string[]
+  onTargetChange?: (target: RegulatoryMapTarget) => void
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<any>(null)
   const wmsRef = useRef<Record<string, any>>({})
+  const onTargetChangeRef = useRef<typeof onTargetChange>(onTargetChange)
+
+  useEffect(() => {
+    onTargetChangeRef.current = onTargetChange
+  }, [onTargetChange])
 
   useEffect(() => {
     let destroyed = false
@@ -73,15 +87,18 @@ export default function RegulatoryMap({
         pane.style.filter = 'none'
       })
 
-      const icon = L.icon({
-        iconUrl: '/images/wdd_logo_icon_jaune.svg',
-        iconSize: [28, 74],
-        iconAnchor: [14, 74],
-      })
-
-      L.marker([lat, lng], { icon }).addTo(map)
-
       mapRef.current = map
+
+      const notifyTargetChange = () => {
+        const center = map.getCenter()
+        onTargetChangeRef.current?.({
+          lat: center.lat,
+          lng: center.lng,
+        })
+      }
+
+      map.on('moveend', notifyTargetChange)
+      notifyTargetChange()
 
       const addLayer = (key: string) => {
         if (!isRegulatoryLayerKey(key)) return
@@ -97,13 +114,30 @@ export default function RegulatoryMap({
           version: '1.1.1',
           pane: 'wms_' + key,
           attribution: '© SPW Wallonie',
+          maxZoom: REGULATORY_WMS_MAX_ZOOM,
         })
 
         wms.addTo(map)
         wmsRef.current[key] = wms
       }
 
-      visibleLayers.forEach(addLayer)
+      function syncVisibleWmsLayers() {
+        const isTooZoomedIn = map.getZoom() > REGULATORY_WMS_MAX_ZOOM
+
+        Object.keys(wmsRef.current).forEach((key) => {
+          if (isTooZoomedIn || !visibleLayers.includes(key)) {
+            map.removeLayer(wmsRef.current[key])
+            delete wmsRef.current[key]
+          }
+        })
+
+        if (!isTooZoomedIn) {
+          visibleLayers.forEach(addLayer)
+        }
+      }
+
+      syncVisibleWmsLayers()
+      map.on('zoomend', syncVisibleWmsLayers)
 
       const invalidate = () => {
         if (!mapRef.current) return
@@ -130,10 +164,25 @@ export default function RegulatoryMap({
       }
 
       if (mapRef.current) {
+        mapRef.current.off('moveend')
         mapRef.current.remove()
         mapRef.current = null
         wmsRef.current = {}
       }
+    }
+  }, [lat, lng])
+
+  useEffect(() => {
+    if (!mapRef.current) return
+
+    const map = mapRef.current
+    const current = map.getCenter()
+    const hasMoved =
+      Math.abs(current.lat - lat) > 0.000001 ||
+      Math.abs(current.lng - lng) > 0.000001
+
+    if (hasMoved) {
+      map.setView([lat, lng], Math.max(map.getZoom(), 17), { animate: true })
     }
   }, [lat, lng])
 
@@ -152,6 +201,10 @@ export default function RegulatoryMap({
         }
       })
 
+      if (map.getZoom() > REGULATORY_WMS_MAX_ZOOM) {
+        return
+      }
+
       visibleLayers.forEach((key) => {
         if (!isRegulatoryLayerKey(key)) return
         if (wmsRef.current[key]) return
@@ -166,6 +219,7 @@ export default function RegulatoryMap({
           version: '1.1.1',
           pane: 'wms_' + key,
           attribution: '© SPW Wallonie',
+          maxZoom: REGULATORY_WMS_MAX_ZOOM,
         })
 
         wms.addTo(map)
@@ -177,17 +231,35 @@ export default function RegulatoryMap({
   }, [visibleLayers])
 
   return (
-    <div
-      ref={containerRef}
-      style={{
-        position: 'absolute',
-        inset: 0,
-        width: '100%',
-        height: '100%',
-        minHeight: '100%',
-        background: '#D8D8D8',
-        overflow: 'hidden',
-      }}
-    />
+    <>
+      <div
+        ref={containerRef}
+        style={{
+          position: 'absolute',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          minHeight: '100%',
+          background: '#D8D8D8',
+          overflow: 'hidden',
+        }}
+      />
+
+      <img
+        src="/images/wdd_logo_icon_jaune.svg"
+        alt="Position ciblée"
+        style={{
+          position: 'absolute',
+          left: '50%',
+          top: '50%',
+          width: '28px',
+          height: '74px',
+          transform: 'translate(-50%, -100%)',
+          zIndex: 650,
+          pointerEvents: 'none',
+          filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.35))',
+        }}
+      />
+    </>
   )
 }
