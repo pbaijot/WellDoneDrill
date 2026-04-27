@@ -7,61 +7,18 @@ import { PrimaryBtn } from './Shared'
 import type { DrillingAreaResult, GeneratedBoreholeLayout, LatLngPoint } from './drilling-area/types'
 import {
   estimateBoreholeCapacity,
-  formatArea,
   generateBoreholeLayout,
   polygonAreaM2,
 } from './drilling-area/calculations'
 import { S } from './drilling-area/styles'
 import FullscreenMapLayout from './layout/FullscreenMapLayout'
+import DrillingAreaPanel from './drilling-area/DrillingAreaPanel'
+import { useCadastreLayer } from './drilling-area/useCadastreLayer'
+import { useBoreholeLayoutLayer } from './drilling-area/useBoreholeLayoutLayer'
+import { useDrillingDrawingLayer } from './drilling-area/useDrillingDrawingLayer'
 
 const MAP_ID = 'wdd-drilling-area-map'
 const DEFAULT_SPACING_M = 8
-
-const CADASTRE_REST_BASE =
-  'https://geoservices.wallonie.be/arcgis/rest/services/PLAN_REGLEMENT/CADMAP_2024_PARCELLES/MapServer'
-
-const CADASTRE_SEARCH_DELTA_DEG = 0.004
-
-function cadastreQueryUrl(layerId: 0 | 1, lat: number, lng: number) {
-  const params = new URLSearchParams({
-    f: 'geojson',
-    where: '1=1',
-    outFields: '*',
-    returnGeometry: 'true',
-    geometryType: 'esriGeometryEnvelope',
-    inSR: '4326',
-    outSR: '4326',
-    spatialRel: 'esriSpatialRelIntersects',
-    geometry: JSON.stringify({
-      xmin: lng - CADASTRE_SEARCH_DELTA_DEG,
-      ymin: lat - CADASTRE_SEARCH_DELTA_DEG,
-      xmax: lng + CADASTRE_SEARCH_DELTA_DEG,
-      ymax: lat + CADASTRE_SEARCH_DELTA_DEG,
-      spatialReference: { wkid: 4326 },
-    }),
-  })
-
-  return `${CADASTRE_REST_BASE}/${layerId}/query?${params.toString()}`
-}
-
-function cadastreParcelStyle() {
-  return {
-    color: '#FFFFFF',
-    weight: 1.6,
-    opacity: 0.95,
-    fillOpacity: 0,
-  }
-}
-
-function cadastreBuildingStyle() {
-  return {
-    color: '#FFD94F',
-    weight: 1.5,
-    opacity: 0.95,
-    fillColor: '#FFD94F',
-    fillOpacity: 0.18,
-  }
-}
 
 type DrawingMode = 'area' | 'entry'
 
@@ -77,6 +34,7 @@ export default function DrillingAreaStep({
   const polygonLayerRef = useRef<any>(null)
   const layoutLayerRef = useRef<any>(null)
   const cadastreLayerRef = useRef<any>(null)
+  const drawingModeRef = useRef<DrawingMode>('area')
 
   const [points, setPoints] = useState<LatLngPoint[]>([])
   const [buildingEntry, setBuildingEntry] = useState<LatLngPoint | null>(null)
@@ -164,7 +122,7 @@ export default function DrillingAreaStep({
         }
 
         setPoints((prevPoints) => {
-          const mode = (window as any).__wddDrillingDrawingMode || 'area'
+          const mode = drawingModeRef.current
 
           if (mode === 'entry') {
             setBuildingEntry(nextPoint)
@@ -212,93 +170,23 @@ export default function DrillingAreaStep({
   }, [address])
 
   useEffect(() => {
-    ;(window as any).__wddDrillingDrawingMode = drawingMode
+    drawingModeRef.current = drawingMode
   }, [drawingMode])
 
-  useEffect(() => {
-    const map = mapRef.current
-    const cadastreLayer = cadastreLayerRef.current
+  useCadastreLayer({
+    mapRef,
+    cadastreLayerRef,
+    center: address,
+    showCadastre,
+    mapReady,
+  })
 
-    if (!map || !cadastreLayer || !address) return
-
-    if (!showCadastre) {
-      if (map.hasLayer(cadastreLayer)) {
-        map.removeLayer(cadastreLayer)
-      }
-      return
-    }
-
-    if (!map.hasLayer(cadastreLayer)) {
-      cadastreLayer.addTo(map)
-    }
-
-    import('leaflet').then(async (Lmod) => {
-      const L = Lmod.default
-
-      try {
-        cadastreLayer.clearLayers()
-
-        const [parcelsRes, buildingsRes] = await Promise.all([
-          fetch(cadastreQueryUrl(0, address.lat, address.lng)),
-          fetch(cadastreQueryUrl(1, address.lat, address.lng)),
-        ])
-
-        const [parcels, buildings] = await Promise.all([
-          parcelsRes.json(),
-          buildingsRes.json(),
-        ])
-
-        L.geoJSON(parcels, { style: cadastreParcelStyle, pane: 'cadastre_overlay' } as any).addTo(cadastreLayer)
-        L.geoJSON(buildings, { style: cadastreBuildingStyle, pane: 'cadastre_overlay' } as any).addTo(cadastreLayer)
-
-        map.invalidateSize()
-      } catch (error) {
-        console.warn('Impossible de charger le cadastre CADGIS', error)
-      }
-    })
-  }, [showCadastre, address, mapReady])
-
-  useEffect(() => {
-    const markers = markerLayerRef.current
-    const polygons = polygonLayerRef.current
-
-    if (!markers || !polygons) return
-
-    import('leaflet').then((Lmod) => {
-      const L = Lmod.default
-
-      markers.clearLayers()
-      polygons.clearLayers()
-
-      if (points.length >= 2) {
-        L.polyline(points.map((point) => [point.lat, point.lng]), {
-          color: '#FFD94F',
-          weight: 3,
-          opacity: 0.95,
-        }).addTo(polygons)
-      }
-
-      if (points.length >= 3) {
-        L.polygon(points.map((point) => [point.lat, point.lng]), {
-          color: '#1A1A1A',
-          weight: 2,
-          fillColor: '#FFD94F',
-          fillOpacity: 0.28,
-        }).addTo(polygons)
-      }
-
-      if (buildingEntry) {
-        L.circleMarker([buildingEntry.lat, buildingEntry.lng], {
-          radius: 8,
-          color: '#FFFFFF',
-          weight: 2,
-          fillColor: '#D12B2B',
-          fillOpacity: 1,
-        })
-          .addTo(markers)
-      }
-    })
-  }, [points, buildingEntry])
+  useDrillingDrawingLayer({
+    markerLayerRef,
+    polygonLayerRef,
+    points,
+    buildingEntry,
+  })
 
   useEffect(() => {
     const layoutLayer = layoutLayerRef.current
