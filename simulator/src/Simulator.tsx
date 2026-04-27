@@ -7,7 +7,6 @@ import { C, F } from './theme'
 import { T } from './i18n/fr'
 import { BackBtn, SectionBadge, PrimaryBtn, SecondaryBtn } from './components/Shared'
 import AddressStep from './components/AddressStep'
-import DiagnosticPanel from './components/DiagnosticPanel'
 import GeologyStep from './components/GeologyStep'
 import DrillingAreaStep from './components/DrillingAreaStep'
 import QuestionStep from './components/QuestionStep'
@@ -16,7 +15,7 @@ import MultiChoiceStep from './components/MultiChoiceStep'
 import ContactStep from './components/ContactStep'
 import LeadResult from './components/LeadResult'
 import SummaryPanel from './components/SummaryPanel'
-import FullscreenMapLayout from './components/layout/FullscreenMapLayout'
+import RegulatoryMapScreen from './screens/RegulatoryMapScreen'
 
 export default function Simulator({ devisUrl, soumissionUrl, onResult }: SimulatorProps) {
   const sim = useSimulator()
@@ -87,73 +86,13 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
       )}
 
       {sim.phase === 'map' && sim.address && (
-        <FullscreenMapLayout
-          map={
-            sim.MapComponent
-              ? (
-                <sim.MapComponent
-                  lat={sim.address.lat}
-                  lng={sim.address.lng}
-                  visibleLayers={sim.visibleLayers}
-                />
-              )
-              : (
-                <div
-                  style={{
-                    height: '100%',
-                    background: C.bgMuted,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <span style={{ fontSize: F.base, color: C.text4 }}>{T.mapLoading}</span>
-                </div>
-              )
-          }
-          leftOverlay={
-            <div
-              style={{
-                background: 'rgba(255,255,255,0.94)',
-                border: '1px solid ' + C.border,
-                padding: '10px 12px',
-                boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-              }}
-            >
-              <BackBtn onBack={sim.back} />
-              <SectionBadge n={1} label="Verification reglementaire" />
-              <div style={{ fontSize: F.lg, fontWeight: 600, color: C.text, marginTop: '8px', marginBottom: '4px' }}>
-                {T.mapTitle}
-              </div>
-              <div
-                style={{
-                  fontSize: F.sm,
-                  color: C.text4,
-                  maxWidth: '520px',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                {sim.address.label}
-              </div>
-            </div>
-          }
-          rightPanel={
-            <>
-              <DiagnosticPanel
-                lat={sim.address.lat}
-                lng={sim.address.lng}
-                visibleLayers={sim.visibleLayers}
-                onToggleLayer={sim.toggleLayer}
-              />
-
-              <div style={{ marginTop: '16px', display: 'grid', gap: '8px' }}>
-                <PrimaryBtn onClick={() => sim.push('geology', '')}>{T.mapConfirm}</PrimaryBtn>
-                <SecondaryBtn onClick={sim.back}>{T.mapWrongAddress}</SecondaryBtn>
-              </div>
-            </>
-          }
+        <RegulatoryMapScreen
+          address={sim.address}
+          MapComponent={sim.MapComponent}
+          visibleLayers={sim.visibleLayers}
+          onToggleLayer={sim.toggleLayer}
+          onBack={sim.back}
+          onConfirm={() => sim.push('geology', '')}
         />
       )}
 
