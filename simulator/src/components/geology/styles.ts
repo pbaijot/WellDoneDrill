@@ -16,10 +16,10 @@ export const S = {
 
   sectionTable: (): React.CSSProperties => ({
     display: 'grid',
-    gridTemplateColumns: '64px 320px 150px minmax(560px, 1fr)',
+    gridTemplateColumns: '64px minmax(360px, 520px) 170px minmax(720px, 1fr)',
     border: '1px solid #DDD8CF',
     background: '#FFFFFF',
-    marginTop: '16px',
+    marginTop: '18px',
     marginBottom: '12px',
     overflow: 'hidden',
   }),

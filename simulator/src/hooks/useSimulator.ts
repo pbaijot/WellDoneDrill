@@ -3,7 +3,7 @@ import { useState } from 'react'
 import type { Profile, Answers, AddressResult, LeadType } from '../types'
 import { qualifyLead } from '../engine'
 
-export type Phase = 'profile' | 'address' | 'map' | 'geology' | 'questions' | 'result'
+export type Phase = 'profile' | 'address' | 'map' | 'geology' | 'drilling-area' | 'questions' | 'result'
 
 type HistoryEntry = { phase: Phase; stepId: string; answers: Answers }
 
