@@ -53,7 +53,10 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         <DrillingAreaScreen
           address={sim.address}
           onBack={sim.back}
-          onConfirm={() => sim.push('questions', 'type_projet')}
+          onConfirm={(result) => {
+            sim.setDrillingArea(result)
+            sim.push('questions', 'type_projet')
+          }}
         />
       )}
 
@@ -77,7 +80,7 @@ export default function Simulator({ devisUrl, soumissionUrl, onResult }: Simulat
         />
       )}
 
-      {!isFullscreenPhase && <SummaryPanel profile={sim.profile} address={sim.address} answers={sim.answers} phase={sim.phase} />}
+      {!isFullscreenPhase && <SummaryPanel profile={sim.profile} address={sim.address} answers={sim.answers} phase={sim.phase} drillingArea={sim.drillingArea} />}
     </div>
   )
 }

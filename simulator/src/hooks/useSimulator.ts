@@ -1,11 +1,12 @@
 'use client'
 import { useState } from 'react'
 import type { Profile, Answers, AddressResult, LeadType } from '../types'
+import type { DrillingAreaResult } from '../components/drilling-area/types'
 import { qualifyLead } from '../engine'
 
 export type Phase = 'profile' | 'address' | 'map' | 'geology' | 'drilling-area' | 'questions' | 'result'
 
-type HistoryEntry = { phase: Phase; stepId: string; answers: Answers }
+type HistoryEntry = { phase: Phase; stepId: string; answers: Answers; drillingArea: DrillingAreaResult | null }
 
 export function useSimulator() {
   const [profile, setProfile]             = useState<Profile>(null)
@@ -13,13 +14,14 @@ export function useSimulator() {
   const [stepId, setStepId]               = useState<string>('type_projet')
   const [answers, setAnswers]             = useState<Answers>({})
   const [address, setAddress]             = useState<AddressResult | null>(null)
+  const [drillingArea, setDrillingArea] = useState<DrillingAreaResult | null>(null)
   const [visibleLayers, setVisibleLayers] = useState<string[]>(['captage','pollution','karst','natura','zi','drigm'])
   const [MapComponent, setMapComponent]   = useState<any>(null)
   const [history, setHistory]             = useState<HistoryEntry[]>([])
   const [lead, setLead]                   = useState<LeadType>('conseiller')
 
   function push(p: Phase, sid?: string) {
-    setHistory((h) => [...h, { phase, stepId, answers: { ...answers } }])
+    setHistory((h) => [...h, { phase, stepId, answers: { ...answers }, drillingArea }])
     setPhase(p)
     if (sid !== undefined) setStepId(sid)
   }
@@ -31,18 +33,20 @@ export function useSimulator() {
     setPhase(prev.phase)
     setStepId(prev.stepId)
     setAnswers(prev.answers)
+    setDrillingArea(prev.drillingArea)
   }
 
   function chooseProfile(p: Profile) {
     setProfile(p)
     setHistory([])
     setAnswers({})
+    setDrillingArea(null)
     push('address', '')
   }
 
   function handleAddressConfirm(a: AddressResult) {
     setAddress(a)
-    import('../LeafletMap').then((mod) => setMapComponent(() => mod.default))
+    import('../components/maps/RegulatoryMap').then((mod) => setMapComponent(() => mod.default))
     push('map', '')
   }
 
@@ -65,7 +69,7 @@ export function useSimulator() {
   }
 
   return {
-    profile, phase, stepId, answers, address, visibleLayers, MapComponent, lead,
-    toggleLayer, push, back, chooseProfile, handleAddressConfirm, handleAnswer,
+    profile, phase, stepId, answers, address, drillingArea, visibleLayers, MapComponent, lead,
+    toggleLayer, push, back, chooseProfile, handleAddressConfirm, handleAnswer, setDrillingArea,
   }
 }

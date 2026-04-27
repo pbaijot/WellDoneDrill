@@ -1,6 +1,7 @@
 
 'use client'
 import type { Profile, Answers, AddressResult } from '../types'
+import type { DrillingAreaResult } from './drilling-area/types'
 import { C, F } from '../theme'
 import { T } from '../i18n/fr'
 import type { Phase } from '../hooks/useSimulator'
@@ -54,8 +55,8 @@ function Section({ n, label, children }: { n: number; label: string; children: R
   )
 }
 
-export default function SummaryPanel({ profile, address, answers, phase }: {
-  profile: Profile; address: AddressResult | null; answers: Answers; phase: Phase
+export default function SummaryPanel({ profile, address, answers, phase, drillingArea }: {
+  profile: Profile; address: AddressResult | null; answers: Answers; phase: Phase; drillingArea?: DrillingAreaResult | null
 }) {
   const sec2 = SEC2.filter((k) => answers[k])
   const sec3 = SEC3.filter((k) => answers[k])
@@ -83,6 +84,14 @@ export default function SummaryPanel({ profile, address, answers, phase }: {
       {sec3.length > 0 && (
         <Section n={3} label={T.summaryS3}>
           {sec3.map((k) => <Row key={k} label={LABELS[k] || k} value={fmt(k, answers[k])} />)}
+        </Section>
+      )}
+      {drillingArea && (
+        <Section n={4} label="Implantation">
+          <Row label="Surface disponible" value={Math.round(drillingArea.areaM2) + ' m2'} />
+          <Row label="Sondes demandées" value={String(drillingArea.requestedBoreholes)} />
+          <Row label="Interdistance" value={drillingArea.spacingM + ' m'} />
+          <Row label="Collecteurs" value={String(drillingArea.collectorCount)} />
         </Section>
       )}
       {contact.prenom && (
