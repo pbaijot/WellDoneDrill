@@ -12,6 +12,7 @@ import {
   polygonAreaM2,
 } from './drilling-area/calculations'
 import { S } from './drilling-area/styles'
+import FullscreenMapLayout from './layout/FullscreenMapLayout'
 
 const MAP_ID = 'wdd-drilling-area-map'
 const DEFAULT_SPACING_M = 8
@@ -417,17 +418,23 @@ export default function DrillingAreaStep({
   const isCapacityTooLow = requestedBoreholes > estimatedBoreholes
 
   return (
-    <div>
-      <div style={S.intro()}>
-        Tracez d’abord la zone disponible pour le forage, puis placez le point d’entrée dans le bâtiment. Le simulateur propose ensuite automatiquement l’implantation des sondes et les liaisons horizontales.
-      </div>
-
-      <div style={S.layout()}>
+    <FullscreenMapLayout
+      navOffsetPx={96}
+      leftOffsetPx={56}
+      topOffsetPx={30}
+      rightPanelWidthPx={320}
+      map={
         <div style={S.mapShell()}>
           <div id={MAP_ID} style={S.map()} />
         </div>
-
-        <div style={S.panel()}>
+      }
+      leftOverlay={
+        <div style={S.intro()}>
+          Tracez d’abord la zone disponible pour le forage, puis placez le point d’entrée dans le bâtiment. Le simulateur propose ensuite automatiquement l’implantation des sondes et les liaisons horizontales.
+        </div>
+      }
+      rightPanel={
+        <>
           <div style={S.panelTitle()}>Implantation des sondes</div>
 
           <div style={S.metric()}>
@@ -602,8 +609,8 @@ export default function DrillingAreaStep({
               Continuer
             </PrimaryBtn>
           </div>
-        </div>
-      </div>
-    </div>
+        </>
+      }
+    />
   )
 }

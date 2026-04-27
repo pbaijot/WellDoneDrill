@@ -4,11 +4,7 @@ export const DRILLING_MAP_HEIGHT = '100%'
 
 export const S = {
   intro: (): React.CSSProperties => ({
-    position: 'absolute',
-    left: '18px',
-    top: '18px',
     maxWidth: '760px',
-    zIndex: 700,
     fontSize: '13px',
     color: '#4A4540',
     lineHeight: 1.6,
@@ -20,16 +16,9 @@ export const S = {
   }),
 
   layout: (): React.CSSProperties => ({
-    position: 'fixed',
-    left: 0,
-    right: 0,
-    top: '42px',
-    bottom: 0,
-    width: '100vw',
-    height: `calc(100dvh - 42px)`,
-    overflow: 'hidden',
-    background: '#E7E0D6',
-    zIndex: 20,
+    width: '100%',
+    height: '100%',
+    position: 'relative',
   }),
 
   mapShell: (): React.CSSProperties => ({
@@ -48,17 +37,7 @@ export const S = {
   }),
 
   panel: (): React.CSSProperties => ({
-    position: 'absolute',
-    right: '18px',
-    top: '18px',
-    bottom: '18px',
-    width: '320px',
-    overflowY: 'auto',
-    border: '1px solid #DDD8CF',
-    background: 'rgba(255, 255, 255, 0.96)',
-    padding: '14px',
-    boxShadow: '0 12px 36px rgba(0,0,0,0.16)',
-    zIndex: 710,
+    width: '100%',
   }),
 
   panelTitle: (): React.CSSProperties => ({
