@@ -31,6 +31,11 @@ type WddSequenceLayer = {
   confidence: 'low' | 'medium' | 'high' | string
 }
 
+type WddSurfaceSample = {
+  unit?: string | null
+  attributes?: Record<string, any> | null
+}
+
 type WddModel = {
   sheetId: string
   sheetCode: string
@@ -247,6 +252,98 @@ function classifySurfaceUnit(surfaceText: string) {
   return 'unknown'
 }
 
+function textFromSurfaceSamples(surfaceSamples: WddSurfaceSample[] = []) {
+  const parts: string[] = []
+
+  for (const sample of surfaceSamples) {
+    if (sample.unit) parts.push(sample.unit)
+
+    const attrs = sample.attributes || {}
+    for (const value of Object.values(attrs)) {
+      if (typeof value === 'string' && value.length < 250) {
+        parts.push(value)
+      }
+    }
+  }
+
+  return parts.join(' | ')
+}
+
+function classPriority(surfaceClass: string) {
+  if (surfaceClass === 'carbonate') return 5
+  if (surfaceClass === 'sandstone') return 4
+  if (surfaceClass === 'schist') return 3
+  if (surfaceClass === 'breccia') return 3
+  if (surfaceClass === 'cover') return 1
+  return 0
+}
+
+function dominantClassFromSamples(surfaceSamples: WddSurfaceSample[] = []) {
+  const counts: Record<string, number> = {}
+
+  for (const sample of surfaceSamples) {
+    const sampleText = [
+      sample.unit || '',
+      ...Object.values(sample.attributes || {}).filter((value) => typeof value === 'string'),
+    ].join(' | ')
+
+    const klass = classifySurfaceUnit(sampleText)
+    if (klass === 'unknown') continue
+
+    counts[klass] = (counts[klass] || 0) + 1
+  }
+
+  const candidates = Object.entries(counts)
+    .filter(([klass]) => klass !== 'cover')
+    .sort((a, b) => {
+      const countDiff = b[1] - a[1]
+      if (countDiff !== 0) return countDiff
+      return classPriority(b[0]) - classPriority(a[0])
+    })
+
+  return {
+    counts,
+    dominantSubstratumClass: candidates[0]?.[0] || null,
+  }
+}
+
+function resolveEffectiveSurfaceClass({
+  surfaceEvidence,
+  surfaceSamples,
+}: {
+  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }>
+  surfaceSamples?: WddSurfaceSample[]
+}) {
+  const pointText = firstSurfaceText(surfaceEvidence)
+  const pointClass = classifySurfaceUnit(pointText)
+
+  const sampleResult = dominantClassFromSamples(surfaceSamples || [])
+  const sampleText = textFromSurfaceSamples(surfaceSamples || [])
+
+  // Si le point tombe sur une couverture, on utilise le transect
+  // pour estimer le substratum probable autour du point.
+  if (pointClass === 'cover' && sampleResult.dominantSubstratumClass) {
+    return {
+      pointClass,
+      effectiveClass: sampleResult.dominantSubstratumClass,
+      method: 'transect_substratum_from_cover',
+      pointText,
+      sampleText,
+      sampleClassCounts: sampleResult.counts,
+    }
+  }
+
+  return {
+    pointClass,
+    effectiveClass: pointClass,
+    method: 'point_surface_class',
+    pointText,
+    sampleText,
+    sampleClassCounts: sampleResult.counts,
+  }
+}
+
+
 function firstSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }>) {
   const parts: string[] = []
 
@@ -320,10 +417,16 @@ function sequenceForSurfaceClass(surfaceClass: string, targetDepthM: number): Wd
 export function buildLayersFromWddModel(
   model: WddModel,
   targetDepthM: number,
-  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []
+  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = [],
+  surfaceSamples: WddSurfaceSample[] = []
 ): InterpretedLayer[] | null {
-  const surfaceText = firstSurfaceText(surfaceEvidence)
-  const surfaceClass = classifySurfaceUnit(surfaceText)
+  const surfaceResolution = resolveEffectiveSurfaceClass({
+    surfaceEvidence,
+    surfaceSamples,
+  })
+
+  const surfaceText = surfaceResolution.pointText
+  const surfaceClass = surfaceResolution.effectiveClass
 
   const sequence =
     surfaceClass === 'unknown'
@@ -356,12 +459,13 @@ export function buildLayersFromWddModel(
         thermalConductivityWmK: unit.defaultLambdaWmK,
         confidence: item.confidence === 'high' || item.confidence === 'medium' ? item.confidence : 'low',
         rationale:
-          `${unit.interpretation} Séquence choisie selon l'unité de surface SPW détectée : ${surfaceClass}.`,
+          `${unit.interpretation} Séquence choisie selon l'unité SPW effective : ${surfaceClass} ` +
+          `(méthode : ${surfaceResolution.method}, classe au point : ${surfaceResolution.pointClass}).`,
         stratigraphicName: `${model.sheetCode} ${model.name} · unité WDD ${index + 1}`,
         display: displayForUnit(unit),
         officialSource: {
           provider: 'interpreted',
-          layer: `WDD geology knowledge · surface class ${surfaceClass}`,
+          layer: `WDD geology knowledge · effective surface class ${surfaceClass}`,
           field: 'surfaceEvidence',
           rawValue: surfaceText.slice(0, 500) || null,
         },
@@ -370,8 +474,37 @@ export function buildLayersFromWddModel(
     .filter(Boolean) as InterpretedLayer[]
 }
 
-export function getWddSurfaceClass(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
-  return classifySurfaceUnit(firstSurfaceText(surfaceEvidence))
+export function getWddSurfaceClass(
+  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = [],
+  surfaceSamples: WddSurfaceSample[] = []
+) {
+  return resolveEffectiveSurfaceClass({
+    surfaceEvidence,
+    surfaceSamples,
+  }).effectiveClass
+}
+
+export function getWddSurfaceDiagnosis(
+  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = [],
+  surfaceSamples: WddSurfaceSample[] = []
+) {
+  const diagnosis = resolveEffectiveSurfaceClass({
+    surfaceEvidence,
+    surfaceSamples,
+  })
+
+  return {
+    pointClass: diagnosis.pointClass,
+    effectiveClass: diagnosis.effectiveClass,
+    method: diagnosis.method,
+    sampleClassCounts: diagnosis.sampleClassCounts,
+    pointText: diagnosis.pointText,
+    sampleText: diagnosis.sampleText,
+  }
+}
+
+export function getWddSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
+  return firstSurfaceText(surfaceEvidence)
 }
 
 export function buildWddKnowledgeWarnings(model: WddModel) {

@@ -10,6 +10,7 @@ import {
   buildWddKnowledgeWarnings,
   findWddGeologyModel,
   getWddSurfaceClass,
+  getWddSurfaceDiagnosis,
   getWddSurfaceText,
 } from "./lib/geologyKnowledge"
 
@@ -294,10 +295,15 @@ export async function GET(req: NextRequest) {
   )
 
   const wddKnowledge = findWddGeologyModel(input.lat, input.lng)
-  const wddSurfaceClass = wddKnowledge ? getWddSurfaceClass(surfaceEvidence) : null
+  const wddSurfaceDiagnosis = wddKnowledge
+    ? getWddSurfaceDiagnosis(surfaceEvidence, surfaceSamples)
+    : null
+  const wddSurfaceClass = wddKnowledge
+    ? getWddSurfaceClass(surfaceEvidence, surfaceSamples)
+    : null
   const wddSurfaceText = wddKnowledge ? getWddSurfaceText(surfaceEvidence) : null
   const wddLayers = wddKnowledge
-    ? buildLayersFromWddModel(wddKnowledge.model, input.depthM, surfaceEvidence)
+    ? buildLayersFromWddModel(wddKnowledge.model, input.depthM, surfaceEvidence, surfaceSamples)
     : null
 
   const model = wddKnowledge && wddLayers && wddLayers.length > 0
@@ -334,6 +340,7 @@ export async function GET(req: NextRequest) {
       ? {
           ...buildWddKnowledgePayload(wddKnowledge.model),
           surfaceClass: wddSurfaceClass,
+          surfaceDiagnosis: wddSurfaceDiagnosis,
           surfaceEvidenceText: wddSurfaceText?.slice(0, 1000) || null,
         }
       : null,
