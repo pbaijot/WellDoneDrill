@@ -41,6 +41,7 @@ export type GeologyApiResponse = {
     modelVersion: string
     status: string
     surfaceClass?: string | null
+    surfaceEvidenceText?: string | null
     quality?: {
       globalScore?: number
       documentCoverage?: number

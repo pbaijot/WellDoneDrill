@@ -10,6 +10,7 @@ import {
   buildWddKnowledgeWarnings,
   findWddGeologyModel,
   getWddSurfaceClass,
+  getWddSurfaceText,
 } from "./lib/geologyKnowledge"
 
 function parseInput(req: NextRequest): GeologyInput | null {
@@ -294,6 +295,7 @@ export async function GET(req: NextRequest) {
 
   const wddKnowledge = findWddGeologyModel(input.lat, input.lng)
   const wddSurfaceClass = wddKnowledge ? getWddSurfaceClass(surfaceEvidence) : null
+  const wddSurfaceText = wddKnowledge ? getWddSurfaceText(surfaceEvidence) : null
   const wddLayers = wddKnowledge
     ? buildLayersFromWddModel(wddKnowledge.model, input.depthM, surfaceEvidence)
     : null
@@ -332,6 +334,7 @@ export async function GET(req: NextRequest) {
       ? {
           ...buildWddKnowledgePayload(wddKnowledge.model),
           surfaceClass: wddSurfaceClass,
+          surfaceEvidenceText: wddSurfaceText?.slice(0, 1000) || null,
         }
       : null,
     regionalContext: {

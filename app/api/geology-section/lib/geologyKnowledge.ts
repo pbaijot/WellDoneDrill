@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-import type { ApiLayer } from './types'
+import type { InterpretedLayer } from './types'
 
 type BBox = {
   west: number
@@ -101,14 +101,69 @@ export function findWddGeologyModel(lat: number, lng: number) {
   }
 }
 
-function unitType(unit: WddUnit): ApiLayer['type'] {
+function unitType(unit: WddUnit): InterpretedLayer['type'] {
   if (unit.role === 'cover') return 'cover'
   if (unit.hydroClass === 'aquifer') return 'aquifer'
   if (unit.hydroClass === 'aquitard') return 'aquitard'
   return 'bedrock'
 }
 
-function normalizeHydroClass(unit: WddUnit): ApiLayer['hydroClass'] {
+
+function lithologyForUnit(unit: WddUnit): InterpretedLayer['lithology'] {
+  if (unit.id.includes('cover')) return 'loam'
+  if (unit.id.includes('calcaires')) return 'limestone'
+  if (unit.id.includes('schistes')) return 'schist'
+  if (unit.id.includes('gres')) return 'sandstone'
+  if (unit.id.includes('breches')) return 'mixed'
+  return 'unknown'
+}
+
+function lithologyCategoryForUnit(unit: WddUnit): InterpretedLayer['lithologyCategory'] {
+  if (unit.id.includes('cover')) return 'silt_sable_argile'
+  if (unit.id.includes('schistes')) return 'schiste_gres_socle'
+  if (unit.id.includes('gres')) return 'schiste_gres_socle'
+  if (unit.id.includes('calcaires')) return 'unknown'
+  if (unit.id.includes('breches')) return 'unknown'
+  return 'unknown'
+}
+
+function layerTypeForUnit(unit: WddUnit): InterpretedLayer['layerType'] {
+  if (unit.role === 'cover') return 'cover'
+  return 'bedrock'
+}
+
+function displayForUnit(unit: WddUnit): InterpretedLayer['display'] {
+  const color =
+    unit.id.includes('cover') ? '#C9AD84' :
+    unit.id.includes('calcaires') ? '#B9B1A0' :
+    unit.id.includes('schistes') ? '#8A5E2F' :
+    unit.id.includes('gres') ? '#D6C18A' :
+    unit.id.includes('breches') ? '#AFA08B' :
+    '#9A9088'
+
+  const textColor =
+    unit.id.includes('calcaires') || unit.id.includes('gres') || unit.id.includes('cover')
+      ? 'dark'
+      : 'light'
+
+  const hatch =
+    unit.hydroClass === 'aquifer'
+      ? 'aquifer'
+      : unit.hydroClass === 'aquitard'
+        ? 'fractured'
+        : 'none'
+
+  return {
+    color,
+    textColor,
+    shortLabel: unit.label,
+    longLabel: unit.interpretation,
+    hatch,
+  }
+}
+
+
+function normalizeHydroClass(unit: WddUnit): InterpretedLayer['hydroClass'] {
   if (unit.hydroClass === 'aquifer') return 'aquifer'
   if (unit.hydroClass === 'aquitard') return 'aquitard'
   if (unit.hydroClass === 'aquiclude') return 'aquiclude'
@@ -125,58 +180,69 @@ function normalizeSurfaceText(surfaceText: string) {
 function classifySurfaceUnit(surfaceText: string) {
   const text = normalizeSurfaceText(surfaceText)
 
-  if (
+  const hasCarbonate =
     text.includes('calcaire') ||
     text.includes('dolomie') ||
     text.includes('carbonat') ||
+    text.includes('calcschiste') ||
     text.includes('lustin') ||
     text.includes('neuville') ||
     text.includes('terwagne') ||
     text.includes('waulsort') ||
-    text.includes('vise')
-  ) {
-    return 'carbonate'
-  }
+    text.includes('vise') ||
+    text.includes('visé') ||
+    text.includes('tournaisien') ||
+    text.includes('frasnien') ||
+    text.includes('givétien') ||
+    text.includes('givetien')
 
-  if (
+  const hasSandstone =
     text.includes('gres') ||
+    text.includes('grès') ||
     text.includes('psammite') ||
     text.includes('quartzite') ||
     text.includes('pepinster') ||
     text.includes('esneux') ||
     text.includes('montfort') ||
-    text.includes('evieux')
-  ) {
-    return 'sandstone'
-  }
+    text.includes('evieux') ||
+    text.includes('évi') ||
+    text.includes('famenne arenacee') ||
+    text.includes('arénacé') ||
+    text.includes('arenace')
 
-  if (
+  const hasSchist =
     text.includes('schiste') ||
     text.includes('phyllade') ||
     text.includes('famenne') ||
     text.includes('siltite') ||
-    text.includes('argile')
-  ) {
-    return 'schist'
-  }
+    text.includes('argileux') ||
+    text.includes('argileuse')
 
-  if (
+  const hasBreccia =
     text.includes('breche') ||
+    text.includes('brèche') ||
     text.includes('conglomerat') ||
+    text.includes('conglomérat') ||
     text.includes('poudingue')
-  ) {
-    return 'breccia'
-  }
 
-  if (
+  const hasCover =
     text.includes('limon') ||
     text.includes('alluvion') ||
     text.includes('colluvion') ||
     text.includes('remblai') ||
-    text.includes('couverture')
-  ) {
-    return 'cover'
-  }
+    text.includes('couverture') ||
+    text.includes('quaternaire') ||
+    text.includes('terrasse')
+
+  // Priorité importante :
+  // si une lithologie de substratum est détectée, elle prime sur les mots de couverture.
+  // Les cartes SPW peuvent mentionner des limons/alluvions dans certains champs,
+  // mais pour le modèle géothermique, c’est le substratum qui doit piloter la coupe.
+  if (hasCarbonate) return 'carbonate'
+  if (hasSandstone) return 'sandstone'
+  if (hasSchist) return 'schist'
+  if (hasBreccia) return 'breccia'
+  if (hasCover) return 'cover'
 
   return 'unknown'
 }
@@ -255,7 +321,7 @@ export function buildLayersFromWddModel(
   model: WddModel,
   targetDepthM: number,
   surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []
-): ApiLayer[] | null {
+): InterpretedLayer[] | null {
   const surfaceText = firstSurfaceText(surfaceEvidence)
   const surfaceClass = classifySurfaceUnit(surfaceText)
 
@@ -284,33 +350,24 @@ export function buildLayersFromWddModel(
         bottomM,
         type: unitType(unit),
         hydroClass: normalizeHydroClass(unit),
+        lithology: lithologyForUnit(unit),
+        lithologyCategory: lithologyCategoryForUnit(unit),
+        layerType: layerTypeForUnit(unit),
         thermalConductivityWmK: unit.defaultLambdaWmK,
         confidence: item.confidence === 'high' || item.confidence === 'medium' ? item.confidence : 'low',
         rationale:
           `${unit.interpretation} Séquence choisie selon l'unité de surface SPW détectée : ${surfaceClass}.`,
         stratigraphicName: `${model.sheetCode} ${model.name} · unité WDD ${index + 1}`,
-        display: {
-          color:
-            unit.id.includes('cover') ? '#C9AD84' :
-            unit.id.includes('calcaires') ? '#B9B1A0' :
-            unit.id.includes('schistes') ? '#8A5E2F' :
-            unit.id.includes('gres') ? '#D6C18A' :
-            unit.id.includes('breches') ? '#AFA08B' :
-            '#9A9088',
-          textColor:
-            unit.id.includes('calcaires') || unit.id.includes('gres') || unit.id.includes('cover')
-              ? 'dark'
-              : 'light',
-        },
+        display: displayForUnit(unit),
         officialSource: {
           provider: 'interpreted',
           layer: `WDD geology knowledge · surface class ${surfaceClass}`,
           field: 'surfaceEvidence',
           rawValue: surfaceText.slice(0, 500) || null,
         },
-      } satisfies ApiLayer
+      } satisfies InterpretedLayer
     })
-    .filter(Boolean) as ApiLayer[]
+    .filter(Boolean) as InterpretedLayer[]
 }
 
 export function getWddSurfaceClass(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
@@ -359,4 +416,9 @@ export function buildWddKnowledgePayload(model: WddModel) {
       confidence: unit.confidence,
     })),
   }
+}
+
+
+export function getWddSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
+  return firstSurfaceText(surfaceEvidence)
 }

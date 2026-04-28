@@ -427,9 +427,9 @@ function layer(
   }
 }
 
-function makeLayers(specs: Array<Parameters<typeof layer>>) {
+function makeLayers(specs: Array<Parameters<typeof layer> | unknown[]>) {
   return specs
-    .map((args) => layer(...args))
+    .map((args) => layer(...(args as Parameters<typeof layer>)))
     .filter((l) => l.bottomM > l.topM)
 }
 
