@@ -1,10 +1,10 @@
 import imageUrlBuilder from '@sanity/image-url'
-import type { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import {sanity} from './sanity'
 
-const builder = sanity ? imageUrlBuilder(sanity) : null
-
-export function urlFor(source: SanityImageSource) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function urlFor(source: any) {
   if (!builder) return null
   return builder.image(source)
 }
+
+const builder = sanity ? imageUrlBuilder(sanity) : null
