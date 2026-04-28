@@ -3,91 +3,99 @@
   "_type": "geoPage",
   "locale": "be-fr",
   "routeKey": "geo_fermee",
+
   "heroLine1": "Forer.",
-  "heroLine2": "Transférer.",
-  "heroLine3": "Diffuser.",
-  "heroSubtitle": "Passez à la géothermie fermée avec WellDoneDrill et profitez d’un confort thermique toute l’année grâce à une énergie stable, locale et durable, adaptée à votre projet en Belgique.",
-  "heroCtaLabel": "Contactez-nous",
-  "introTitle": "Géothermie fermée : exploitez l’énergie sous vos pieds",
-  "introBody1": "La géothermie fermée repose sur des sondes verticales installées dans le sous-sol. Elles captent la chaleur naturellement stockée dans le terrain et la transmettent à une pompe à chaleur pour chauffer le bâtiment en hiver et le rafraîchir en été.",
-  "introBody2": "C’est une solution sobre, discrète et robuste, adaptée aux maisons individuelles comme aux bâtiments plus importants, avec peu d’emprise au sol et une très bonne stabilité de performance.",
-  "introCtaLabel": "Demandez un devis",
+  "heroLine2": "Jusqu'à 250 m.",
+  "heroLine3": "Partout en Wallonie.",
+  "heroSubtitle": "WellDoneDrill est le spécialiste du forage de sondes géothermiques verticales pour installateurs PAC, architectes et promoteurs. Plusieurs ateliers disponibles, délais tenus, dossier As-Built livré.",
+  "heroCtaLabel": "Soumettre un projet",
+
+  "introTitle": "Le forage géothermique fermé, c'est notre cœur de métier",
+  "introBody1": "La géothermie fermée repose sur des sondes verticales PEHD double U forées entre 80 et 250 m de profondeur. Un fluide caloporteur circule en circuit fermé, capte les calories du sous-sol — stable entre 10 et 14°C toute l'année — et les transfère à une pompe à chaleur sol/eau. Le résultat : une source d'énergie constante, indépendante de la météo, utilisable en chauffage et en rafraîchissement passif.",
+  "introBody2": "WellDoneDrill intervient exclusivement sur la partie forage et installation des sondes. Nous travaillons en sous-traitance pour les installateurs PAC, en co-traitance pour les bureaux d'études, et en direct pour les promoteurs sur appel d'offres. Notre plus grand chantier à ce jour : 150 sondes sur un seul site.",
+  "introCtaLabel": "Nous soumettre votre projet",
+
   "howTitle": "Comment fonctionne la géothermie sur sonde fermée ?",
-  "howIntro": "Le principe est simple : le sous-sol stocke une chaleur relativement stable toute l’année. La géothermie fermée permet de la mobiliser via un circuit scellé, sans prélèvement d’eau souterraine.",
+  "howIntro": "Le sous-sol belge stocke une chaleur stable toute l'année. La géothermie fermée permet de la mobiliser via un circuit étanche, sans aucun prélèvement d'eau souterraine. Voici les 3 principes techniques fondamentaux :",
   "howSteps": [
     {
       "_key": "h1",
-      "title": "Forage des sondes géothermiques",
-      "body": "Des forages verticaux sont réalisés pour y installer des sondes contenant un fluide caloporteur circulant en boucle fermée."
+      "title": "Captage de l'énergie du sous-sol",
+      "body": "Les sondes PEHD double U descendent entre 80 et 250 m dans le sol. Le fluide caloporteur qui y circule absorbe les calories naturellement stockées dans le terrain, à une température stable de 10 à 14°C quelle que soit la saison."
     },
     {
       "_key": "h2",
       "title": "Transfert vers la pompe à chaleur",
-      "body": "Le fluide récupère l’énergie du sol et la transmet à la pompe à chaleur du bâtiment, qui l’utilise pour le chauffage et l’eau chaude."
+      "body": "Le fluide remonte vers la PAC sol/eau et lui cède son énergie. La pompe à chaleur l'élève à la température souhaitée pour le chauffage, le plancher chauffant ou l'eau chaude sanitaire. COP moyen constaté : 4 à 5."
     },
     {
       "_key": "h3",
       "title": "Rafraîchissement passif en été",
-      "body": "En été, la logique peut être inversée pour rejeter une partie de la chaleur intérieure dans le sol et améliorer le confort avec peu d’énergie."
+      "body": "En été, la logique peut être inversée : la chaleur intérieure est rejetée dans le sol via les sondes, sans compresseur. C'est le free cooling — une climatisation naturelle quasi gratuite en énergie, particulièrement efficace pour les bâtiments tertiaires."
     }
   ],
-  "howCtaLabel": "Intéressé ? Contactez-nous",
-  "projectTitle": "Votre projet de géothermie fermée en 5 étapes simples",
+  "howCtaLabel": "Évaluer mon projet de forage",
+
+  "projectTitle": "Votre chantier de géothermie fermée en 5 étapes",
   "projectSteps": [
     {
       "_key": "p1",
-      "title": "Étude et devis",
-      "body": "Nous analysons le terrain, le contexte du projet et les besoins énergétiques pour confirmer la faisabilité."
+      "title": "Réception du dossier",
+      "body": "Vous nous transmettez le dimensionnement de l'installateur PAC ou du bureau d'études : nombre de sondes, profondeur, localisation. Réponse et chiffrage sous 48h."
     },
     {
       "_key": "p2",
-      "title": "Coordination avec l’installateur",
-      "body": "Nous travaillons avec votre installateur de pompe à chaleur ou vous orientons vers un partenaire pertinent."
+      "title": "Démarches administratives",
+      "body": "Selon la profondeur et la zone, un permis d'environnement ou une déclaration est nécessaire en Wallonie. WellDoneDrill accompagne cette démarche selon les projets et fournit les éléments techniques au dossier."
     },
     {
       "_key": "p3",
-      "title": "Validation technique",
-      "body": "La solution est confirmée, le dimensionnement est stabilisé et les paramètres d’exécution sont cadrés."
+      "title": "Planification & mobilisation",
+      "body": "Nous planifions l'intervention selon le calendrier du chantier. Plusieurs ateliers de forage disponibles simultanément pour les projets multi-sondes ou à délais contraints."
     },
     {
       "_key": "p4",
-      "title": "Forage et pose des sondes",
-      "body": "Les forages sont réalisés, les sondes installées et les opérations de chantier menées avec méthode et rigueur."
+      "title": "Forage et installation des sondes",
+      "body": "Nos équipes réalisent les forages (rotatif ou rotopercussion selon la géologie), installent et soudent les sondes PEHD double U, cimentent les forages à la bénite thermique et raccordent le collecteur horizontal jusqu'à la PAC."
     },
     {
       "_key": "p5",
-      "title": "Mise en route du système",
-      "body": "Une fois l’installation finalisée, le bâtiment profite d’une source de chaleur stable, performante et durable."
+      "title": "Livraison du dossier As-Built",
+      "body": "À réception du chantier, vous recevez le dossier As-Built complet : profondeurs réelles, logs géologiques, plans de récolement, certificats de cimentation. Ce dossier protège la garantie constructeur de la PAC."
     }
   ],
-  "projectCtaLabel": "Parlez-nous de votre projet",
-  "faqIntroTitle": "Le sol, une source d’énergie durable",
-  "faqIntroBody": "Au-delà des saisons, la température du sous-sol reste bien plus stable que celle de l’air extérieur. C’est cette stabilité qui fait de la géothermie fermée une solution performante pour le chauffage et le rafraîchissement.",
-  "faqTitle": "Questions fréquentes sur la géothermie fermée",
+  "projectCtaLabel": "Déposer un projet",
+
+  "faqIntroTitle": "Le sous-sol belge : une ressource thermique stable et accessible",
+  "faqIntroBody": "La Belgique présente une géologie favorable à la géothermie fermée sur l'ensemble de son territoire. Les formations argileuses de Wallonie et les calcaires du Brabant offrent des conductivités thermiques suffisantes pour des sondes de 100 à 250 m. WellDoneDrill connaît les spécificités géologiques de chaque province et adapte la technique de forage en conséquence.",
+
+  "faqTitle": "Questions fréquentes — Géothermie fermée",
   "faqs": [
     {
       "_key": "f1",
-      "question": "En quoi consiste un forage géothermique fermé ?",
-      "answer": "Il s’agit de réaliser un ou plusieurs forages verticaux pour y installer des sondes en circuit fermé. Le système n’exploite pas directement l’eau souterraine."
+      "question": "Quelle profondeur pour une maison individuelle ?",
+      "answer": "Pour une maison bien isolée avec un besoin inférieur à 10 kW, une sonde de 100 à 150 m suffit généralement. Le dimensionnement précis est établi par l'installateur PAC ou le bureau d'études thermiques. WellDoneDrill exécute selon leurs spécifications et peut aller jusqu'à 250 m si nécessaire."
     },
     {
       "_key": "f2",
-      "question": "Quels sont les avantages des sondes verticales ?",
-      "answer": "Elles demandent peu d’espace, s’intègrent à de nombreux projets et offrent une source d’énergie stable, peu sensible aux variations climatiques."
+      "question": "Faut-il un permis pour forer en Wallonie ?",
+      "answer": "En Wallonie, un forage géothermique fermé est soumis à déclaration ou permis d'environnement selon la profondeur et le contexte hydrogéologique. WellDoneDrill accompagne certains projets dans ces démarches et fournit systématiquement les pièces techniques nécessaires au dossier administratif."
     },
     {
       "_key": "f3",
-      "question": "La géothermie fermée peut-elle rafraîchir un bâtiment ?",
-      "answer": "Oui. Dans de nombreux cas, elle permet un rafraîchissement passif ou naturel, très intéressant pour le confort d’été."
+      "question": "Combien de sondes peut-on installer sur un chantier ?",
+      "answer": "Il n'y a pas de limite théorique. Notre record à ce jour est de 150 sondes sur un seul site. Pour les grands projets, nous déployons plusieurs ateliers simultanément pour tenir les délais. La logistique d'un chantier multi-sondes est notre spécialité."
     },
     {
       "_key": "f4",
-      "question": "Quelle profondeur faut-il forer ?",
-      "answer": "La profondeur dépend du dimensionnement, de la géologie et des besoins énergétiques. Elle doit être définie projet par projet."
+      "question": "Quelle est la durée de vie des sondes ?",
+      "answer": "Les sondes PEHD double U correctement installées et cimentées ont une durée de vie estimée entre 30 et 50 ans, sans maintenance. C'est pourquoi la qualité d'exécution du forage — et notamment la cimentation — est déterminante pour les performances long terme de la PAC."
     }
   ],
-  "finalCtaTitle": "Vous souhaitez profiter de l’énergie située sous vos pieds ?",
-  "finalCtaLabel": "Oui, je demande un devis",
-  "seoTitle": "Géothermie fermée | WellDoneDrill Belgique",
-  "seoDescription": "Découvrez la géothermie fermée avec WellDoneDrill : principe, fonctionnement, étapes du projet et bénéfices pour votre bâtiment."
+
+  "finalCtaTitle": "Un projet de forage géothermique en Wallonie ou à Bruxelles ?",
+  "finalCtaLabel": "Soumettre mon projet",
+
+  "seoTitle": "Forage géothermique fermé Belgique — Sondes verticales jusqu'à 250m | WellDoneDrill",
+  "seoDescription": "Spécialiste du forage de sondes géothermiques verticales en Wallonie et à Bruxelles. Jusqu'à 250m de profondeur, 150 sondes sur un même chantier. Agréé Qualit'EnR. Réponse sous 48h."
 }
