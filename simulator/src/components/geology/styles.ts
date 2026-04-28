@@ -598,6 +598,66 @@ export const S = {
     marginBottom: '12px',
   }),
 
+
+  knowledgeBox: (): React.CSSProperties => ({
+    borderTop: '1px solid #DDD8CF',
+    padding: '14px 0',
+  }),
+
+  knowledgeBadge: (): React.CSSProperties => ({
+    display: 'inline-block',
+    background: '#FFFDF0',
+    border: '1px solid #F9C84E',
+    color: '#4A4540',
+    fontSize: '10px',
+    fontWeight: 800,
+    textTransform: 'uppercase',
+    letterSpacing: '0.08em',
+    padding: '4px 7px',
+    marginBottom: '8px',
+  }),
+
+  knowledgeTitle: (): React.CSSProperties => ({
+    fontSize: '14px',
+    fontWeight: 800,
+    color: '#1C1C1C',
+    marginBottom: '6px',
+    lineHeight: 1.3,
+  }),
+
+  knowledgeText: (): React.CSSProperties => ({
+    fontSize: '11px',
+    color: '#6B6057',
+    lineHeight: 1.5,
+    marginTop: '4px',
+  }),
+
+  knowledgeMiniGrid: (): React.CSSProperties => ({
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '6px',
+    marginTop: '10px',
+  }),
+
+  knowledgeMiniCard: (): React.CSSProperties => ({
+    background: '#F8F5EF',
+    border: '1px solid #DDD8CF',
+    padding: '8px',
+  }),
+
+  knowledgeMiniLabel: (): React.CSSProperties => ({
+    fontSize: '9px',
+    color: '#9A9088',
+    marginBottom: '3px',
+  }),
+
+  knowledgeMiniValue: (): React.CSSProperties => ({
+    fontSize: '12px',
+    fontWeight: 800,
+    color: '#1C1C1C',
+    lineHeight: 1.25,
+  }),
+
   sideMetric: (): React.CSSProperties => ({
     borderTop: '1px solid #DDD8CF',
     padding: '14px 0',

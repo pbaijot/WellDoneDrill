@@ -34,6 +34,36 @@ export type EvidencePoint = {
 }
 
 export type GeologyApiResponse = {
+  geologyKnowledge?: {
+    sheetId: string
+    sheetCode: string
+    name: string
+    modelVersion: string
+    status: string
+    quality?: {
+      globalScore?: number
+      documentCoverage?: number
+      scientificInterpretation?: string
+      reviewStatus?: string
+    } | null
+    regionalContext?: {
+      structuralStyle?: string
+      expectedVariability?: string
+      mainHydroRisks?: string[]
+      summary?: string
+    } | null
+    units?: Array<{
+      id: string
+      label: string
+      lithologies: string[]
+      hydroClass: string
+      lambda: number
+      closedLoopPotential?: string
+      openLoopPotential?: string
+      drillingRisk?: string
+      confidence: string
+    }>
+  } | null
   status: 'ok'
   input: {
     depthM: number

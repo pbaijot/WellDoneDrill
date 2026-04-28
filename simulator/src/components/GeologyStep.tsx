@@ -7,6 +7,7 @@ import { T } from '../i18n/fr'
 import { Hint, PrimaryBtn } from './Shared'
 
 import { S } from './geology/styles'
+import HydroGeoBoreholesMap from './geology/HydroGeoBoreholesMap'
 import type { ApiLayer, GeologyApiResponse } from './geology/types'
 import { hydroLabel, layerLongLabel, lithologyTextLabel, potentialLabel } from './geology/labels'
 import {
@@ -59,6 +60,8 @@ export default function GeologyStep({
   const [data, setData] = useState<GeologyApiResponse | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [geothermalMode, setGeothermalMode] = useState<'closed' | 'open'>('closed')
+  const [probeDepthM, setProbeDepthM] = useState(150)
 
   useEffect(() => {
     if (!address) return
@@ -111,12 +114,20 @@ export default function GeologyStep({
 
   const maxDepth = data?.interpretedSection.depthM || 200
   const layers = data?.interpretedSection.layers || []
+
+  useEffect(() => {
+    setProbeDepthM((depth) => Math.max(20, Math.min(maxDepth, depth || 150)))
+  }, [maxDepth])
   const depthTicks = [0, 50, 100, 150, maxDepth].filter((v, i, a) => a.indexOf(v) === i)
 
-  const lambdaAvg = useMemo(() => weightedLambda(layers, maxDepth), [layers, maxDepth])
+  const effectiveProbeDepthM = Math.max(20, Math.min(maxDepth, probeDepthM || maxDepth))
+  const lambdaAvg = useMemo(
+    () => weightedLambda(layers, effectiveProbeDepthM),
+    [layers, effectiveProbeDepthM]
+  )
   const legendBands = useMemo(() => computeLegendBands(layers, maxDepth), [layers, maxDepth])
   const extraction = extractionEstimate(lambdaAvg)
-  const temperature = initialGroundTemperature(maxDepth)
+  const temperature = initialGroundTemperature(effectiveProbeDepthM)
 
   if (!address) {
     return (
@@ -148,11 +159,61 @@ export default function GeologyStep({
 
       {data && (
         <>
+        
+          <div
+            style={{
+              display: 'flex',
+              gap: '8px',
+              margin: '0 0 18px',
+              padding: '4px',
+              width: 'fit-content',
+              background: '#F2EFE9',
+              border: '1px solid #DDD8CF',
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => setGeothermalMode('closed')}
+              style={{
+                border: '1px solid ' + (geothermalMode === 'closed' ? '#1A1A1A' : 'transparent'),
+                background: geothermalMode === 'closed' ? '#FFFFFF' : 'transparent',
+                padding: '10px 16px',
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '13px',
+                fontWeight: geothermalMode === 'closed' ? 800 : 600,
+                color: '#1A1A1A',
+              }}
+            >
+              Géothermie fermée
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setGeothermalMode('open')}
+              style={{
+                border: '1px solid ' + (geothermalMode === 'open' ? '#1A1A1A' : 'transparent'),
+                background: geothermalMode === 'open' ? '#FFFFFF' : 'transparent',
+                padding: '10px 16px',
+                cursor: 'pointer',
+                fontFamily: 'inherit',
+                fontSize: '13px',
+                fontWeight: geothermalMode === 'open' ? 800 : 600,
+                color: '#1A1A1A',
+              }}
+            >
+              Géothermie ouverte
+            </button>
+          </div>
+
+          <div style={S.geologyLayout()}>
+          <div style={S.geologyMain()}>
           <div style={S.sectionTable()}>
             <div style={S.depthHeader()}>
               <div style={S.verticalDepthLabel()}>Prof.</div>
             </div>
             <div style={S.tableHeader()}>Coupe géologique</div>
+            <div style={S.tableHeader()}>Hydrogéologie</div>
             <div style={S.tableHeader()} />
             <div style={S.tableHeader()}>λ et couches</div>
 
@@ -176,41 +237,6 @@ export default function GeologyStep({
                 </div>
               ))}
 
-              {data.hydrogeology?.overlays
-                ?.filter((overlay) => overlay.mode !== 'none')
-                .map((overlay, index) => (
-                  <div
-                    key={'hydro-overlay-' + index}
-                    style={S.hydroOverlay(
-                      overlay.topM,
-                      overlay.bottomM,
-                      maxDepth,
-                      overlay.mode === 'aquifer'
-                    )}
-                  />
-                ))}
-
-              {shouldShowWaterLine(data) &&
-                data.hydrogeology?.likelyWaterTableDepthM !== null &&
-                data.hydrogeology?.likelyWaterTableDepthM !== undefined && (
-                  <>
-                    <div
-                      style={S.waterLine(
-                        data.hydrogeology.likelyWaterTableDepthM,
-                        maxDepth
-                      )}
-                    />
-                    <div
-                      style={S.waterLineLabel(
-                        data.hydrogeology.likelyWaterTableDepthM,
-                        maxDepth
-                      )}
-                    >
-                      {hydroLineLabel(data)}
-                    </div>
-                  </>
-                )}
-
               <div style={S.lambdaScale()}>
                 <span style={S.lambdaScaleTick()} />
                 <span style={S.lambdaScaleTick()} />
@@ -232,7 +258,74 @@ export default function GeologyStep({
                 />
               ))}
 
+              {geothermalMode === 'closed' && (
+                <>
+                  <div style={S.probeDepthLine(effectiveProbeDepthM, maxDepth)} />
+                  <div style={S.probeHead()} />
+                  <div style={S.probeDepthLabel(effectiveProbeDepthM, maxDepth)}>
+                    sonde {Math.round(effectiveProbeDepthM)} m
+                  </div>
+                </>
+              )}
+
               <div style={S.targetLine()} />
+            </div>
+
+            <div style={S.hydroColumnCanvas()}>
+              {data.hydrogeology?.overlays?.some((overlay) => overlay.mode !== 'none') ? (
+                data.hydrogeology.overlays
+                  .filter((overlay) => overlay.mode !== 'none')
+                  .map((overlay, index) => (
+                    <div key={'hydro-column-band-' + index}>
+                      <div
+                        style={S.hydroColumnBand(
+                          overlay.topM,
+                          overlay.bottomM,
+                          maxDepth,
+                          overlay.mode
+                        )}
+                      />
+
+                      <div
+                        style={S.hydroColumnText(
+                          overlay.topM,
+                          overlay.bottomM,
+                          maxDepth,
+                          overlay.mode === 'aquifer'
+                        )}
+                      >
+                        {overlay.mode === 'aquifer'
+                          ? 'Aquifère probable'
+                          : 'Eau possible en fractures'}
+                      </div>
+                    </div>
+                  ))
+              ) : (
+                <div style={S.hydroColumnEmpty()}>
+                  Aucune information hydrogéologique spécifique identifiée.
+                </div>
+              )}
+
+              {shouldShowWaterLine(data) &&
+                data.hydrogeology?.likelyWaterTableDepthM !== null &&
+                data.hydrogeology?.likelyWaterTableDepthM !== undefined && (
+                  <>
+                    <div
+                      style={S.hydroColumnWaterLine(
+                        data.hydrogeology.likelyWaterTableDepthM,
+                        maxDepth
+                      )}
+                    />
+                    <div
+                      style={S.hydroColumnWaterLabel(
+                        data.hydrogeology.likelyWaterTableDepthM,
+                        maxDepth
+                      )}
+                    >
+                      {hydroLineLabel(data)}
+                    </div>
+                  </>
+                )}
             </div>
 
             <div style={S.connectorColumn()}>
@@ -304,11 +397,11 @@ export default function GeologyStep({
             </span>
             <span style={S.legendItem()}>
               <span style={S.hydroSample(true)} />
-              Aquifère probable
+              Hydrogéologie : aquifère probable
             </span>
             <span style={S.legendItem()}>
               <span style={S.hydroSample(false)} />
-              Eau possible en fractures
+              Hydrogéologie : eau possible en fractures
             </span>
             <span style={S.legendItem()}>
               <span style={S.yellowLineSample()} />
@@ -316,43 +409,135 @@ export default function GeologyStep({
             </span>
           </div>
 
-          <div style={S.summaryGrid()}>
-            <div style={S.summaryCard()}>
-              <div style={S.summaryLabel()}>Température initiale</div>
-              <div style={S.summaryValue()}>{temperature.toFixed(1)} °C</div>
-              <div style={S.summarySub()}>à 100 m de profondeur</div>
+          {geothermalMode === 'open' && (
+            <HydroGeoBoreholesMap address={address} />
+          )}
+          </div>
+<aside style={S.geologySidePanel()}>
+            <div style={S.sidePanelTitle()}>
+              {geothermalMode === 'closed'
+                ? 'Synthèse géothermie fermée'
+                : 'Synthèse géothermie ouverte'}
             </div>
 
-            <div style={S.summaryCard()}>
-              <div style={S.summaryLabel()}>λ moyen pondéré</div>
-              <div style={S.summaryValue()}>
+            {data.geologyKnowledge && (
+              <div style={S.knowledgeBox()}>
+                <div style={S.knowledgeBadge()}>Source géologique enrichie</div>
+
+                <div style={S.knowledgeTitle()}>
+                  Carte {data.geologyKnowledge.sheetCode} · {data.geologyKnowledge.name}
+                </div>
+
+                <div style={S.knowledgeText()}>
+                  Coupe enrichie par le modèle WDD issu de la notice géologique et de la carte hydrogéologique locale.
+                </div>
+
+                <div style={S.knowledgeMiniGrid()}>
+                  <div style={S.knowledgeMiniCard()}>
+                    <div style={S.knowledgeMiniLabel()}>Modèle</div>
+                    <div style={S.knowledgeMiniValue()}>
+                      v{data.geologyKnowledge.modelVersion}
+                    </div>
+                  </div>
+
+                  <div style={S.knowledgeMiniCard()}>
+                    <div style={S.knowledgeMiniLabel()}>Qualité</div>
+                    <div style={S.knowledgeMiniValue()}>
+                      {data.geologyKnowledge.quality?.globalScore
+                        ? `${data.geologyKnowledge.quality.globalScore}/100`
+                        : 'à valider'}
+                    </div>
+                  </div>
+
+                  <div style={S.knowledgeMiniCard()}>
+                    <div style={S.knowledgeMiniLabel()}>Structure</div>
+                    <div style={S.knowledgeMiniValue()}>
+                      {data.geologyKnowledge.regionalContext?.structuralStyle || 'inconnue'}
+                    </div>
+                  </div>
+
+                  <div style={S.knowledgeMiniCard()}>
+                    <div style={S.knowledgeMiniLabel()}>Statut</div>
+                    <div style={S.knowledgeMiniValue()}>
+                      {data.geologyKnowledge.quality?.reviewStatus || data.geologyKnowledge.status}
+                    </div>
+                  </div>
+                </div>
+
+                {data.geologyKnowledge.regionalContext?.mainHydroRisks?.length ? (
+                  <div style={S.knowledgeText()}>
+                    Risques hydro identifiés : {data.geologyKnowledge.regionalContext.mainHydroRisks.join(', ')}.
+                  </div>
+                ) : null}
+              </div>
+            )}
+
+            {geothermalMode === 'closed' && (
+              <div style={S.sideMetric()}>
+                <div style={S.sideMetricLabel()}>Profondeur de sonde</div>
+              <input
+                type="number"
+                min={20}
+                max={maxDepth}
+                step={5}
+                value={Math.round(effectiveProbeDepthM)}
+                onChange={(event) => {
+                  const value = Number(event.target.value || maxDepth)
+                  setProbeDepthM(Math.max(20, Math.min(maxDepth, value)))
+                }}
+                style={S.sideInput()}
+              />
+                <div style={S.sideMetricSub()}>
+                  Profondeur cible utilisée pour recalculer le λ moyen et le potentiel.
+                </div>
+              </div>
+            )}
+
+            <div style={S.sideMetric()}>
+              <div style={S.sideMetricLabel()}>Température initiale</div>
+              <div style={S.sideMetricValue()}>{temperature.toFixed(1)} °C</div>
+              <div style={S.sideMetricSub()}>
+                {geothermalMode === 'closed'
+                  ? 'à la profondeur de sonde retenue'
+                  : 'température indicative du sous-sol'}
+              </div>
+            </div>
+
+            <div style={S.sideMetric()}>
+              <div style={S.sideMetricLabel()}>λ moyen pondéré</div>
+              <div style={S.sideMetricValue()}>
                 {lambdaAvg ? lambdaAvg.toFixed(1) : '—'} W/m·K
               </div>
-              <div style={S.summarySub()}>sur {maxDepth} m</div>
+              <div style={S.sideMetricSub()}>sur {Math.round(effectiveProbeDepthM)} m</div>
             </div>
 
-            <div style={S.summaryCard()}>
-              <div style={S.summaryLabel()}>Potentiel géothermique</div>
-              <div style={S.summaryValue(
-                data.geothermalInterpretation.preliminaryPotential === 'favorable'
-                  ? 'green'
-                  : undefined
-              )}>
+            <div style={S.sideMetric()}>
+              <div style={S.sideMetricLabel()}>Potentiel géothermique</div>
+              <div
+                style={S.sideMetricValue(
+                  data.geothermalInterpretation.preliminaryPotential === 'favorable'
+                    ? 'green'
+                    : undefined
+                )}
+              >
                 {potentialLabel(data.geothermalInterpretation.preliminaryPotential)}
               </div>
-              <div style={S.summarySub()}>
+              <div style={S.sideMetricSub()}>
                 {extraction ? `extraction ~${extraction} kW / sonde` : 'à confirmer'}
               </div>
             </div>
-          </div>
 
-          {data.warnings?.map((warning, index) => (
-            <div key={index} style={S.warning()}>
-              {warning}
+            <div style={{ marginTop: '10px' }}>
+              {data.warnings?.map((warning, index) => (
+                <div key={index} style={S.warning()}>
+                  {warning}
+                </div>
+              ))}
             </div>
-          ))}
 
-          <PrimaryBtn onClick={onConfirm}>{T.geologyConfirm}</PrimaryBtn>
+            <PrimaryBtn onClick={onConfirm}>{T.geologyConfirm}</PrimaryBtn>
+          </aside>
+        </div>
         </>
       )}
 
