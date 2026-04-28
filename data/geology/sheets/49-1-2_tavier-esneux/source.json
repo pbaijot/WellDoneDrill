@@ -44,12 +44,14 @@
     ]
   },
   "processing": {
-    "status": "raw_text_extracted",
-    "nextStep": "interpret_notice_text",
+    "status": "wdd_model_generated_unreviewed",
+    "nextStep": "integrate_wdd_model_in_api",
     "reviewStatus": "not_started",
-    "modelVersion": "0.1.0",
+    "modelVersion": "0.3.0",
     "rawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/notice_raw.txt",
     "hydroRawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/hydrogeo_raw.txt",
-    "qualityReportPath": "data/geology/sheets/49-1-2_tavier-esneux/quality_report.json"
+    "qualityReportPath": "data/geology/sheets/49-1-2_tavier-esneux/quality_report.json",
+    "interpretedPath": "data/geology/sheets/49-1-2_tavier-esneux/notice_interpreted.json",
+    "wddModelPath": "data/geology/sheets/49-1-2_tavier-esneux/wdd_model.json"
   }
 }

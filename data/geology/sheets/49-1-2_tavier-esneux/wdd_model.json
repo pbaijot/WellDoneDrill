@@ -1,8 +1,279 @@
 {
   "sheetId": "49-1-2_tavier-esneux",
-  "status": "not_generated",
-  "modelVersion": "0.1.0",
-  "formations": [],
-  "rules": [],
-  "warnings": []
+  "sheetCode": "49/1-2",
+  "name": "Tavier–Esneux",
+  "status": "wdd_model_generated_unreviewed",
+  "modelVersion": "0.3.0",
+  "sourceFiles": {
+    "noticeRaw": "data/geology/sheets/49-1-2_tavier-esneux/notice_raw.txt",
+    "hydroRaw": "data/geology/sheets/49-1-2_tavier-esneux/hydrogeo_raw.txt",
+    "interpreted": "data/geology/sheets/49-1-2_tavier-esneux/notice_interpreted.json"
+  },
+  "quality": {
+    "globalScore": 63,
+    "documentCoverage": 100,
+    "scientificInterpretation": "medium_low",
+    "reviewStatus": "machine_generated_needs_review"
+  },
+  "regionalContext": {
+    "structuralStyle": "folded_and_faulted",
+    "expectedVariability": "high",
+    "mainHydroRisks": [
+      "karst",
+      "fractured_bedrock",
+      "aquifer_or_groundwater",
+      "springs_or_resurgences"
+    ],
+    "summary": "Carte pilote située dans un contexte paléozoïque plissé et faillé du Synclinorium de Dinant. Présence importante de calcaires, dolomies, grès, quartzites, schistes et unités bréchiques. Le modèle WDD est opérationnel mais doit rester indicatif tant que les formations officielles et les coupes n'ont pas été validées manuellement."
+  },
+  "wddUnits": [
+    {
+      "id": "cover_altérites_limons",
+      "label": "Couverture superficielle, limons et altérites",
+      "role": "cover",
+      "lithologies": [
+        "limon",
+        "argile",
+        "sable",
+        "altérites"
+      ],
+      "defaultThicknessM": [
+        2,
+        12
+      ],
+      "lambdaRangeWmK": [
+        1.2,
+        1.8
+      ],
+      "defaultLambdaWmK": 1.5,
+      "hydroClass": "aquitard",
+      "closedLoopPotential": "moderate",
+      "openLoopPotential": "low",
+      "drillingRisk": "low_to_medium",
+      "interpretation": "Horizon de couverture et d'altération. Intérêt thermique limité mais important pour les conditions de forage de surface.",
+      "evidence": [
+        "Cet ensemble peut localement renfermer un banc de \ncalcaire argileux, affecté de schistosité.",
+        "Cette roche montre \ndes parties calcaires en forme d'éléments lenticulaires allongés \nparallèles à la schistosité de la partie argileuse qui les enrobe.",
+        "La base de la formation peut être occupée par quelques \nmètres de calcaire noir à grain fin (micrite) éventuellement \nargileux  en bancs minces pluricentimétriques.",
+        "Les calcaires argileux et les siltites à blocaux calcaires \nde la Formation de Souverain Pré, ensemble carbonaté épais \nde quelques mètres à une trentaine de mètres, interstratifié \ndans les dépôts famenniens essentiellement arénacés, jouent \nun rôle particulier.",
+        "On notera cependant que cette \nvaleur ne représente pas l'épaisseur d'origine, \ncelle-ci ayant été modifiée d'abord par le tassement \ndu sédiment argileux, ensuite par la déformation \ntectonique.",
+        "De plus, la formation intermédiaire de Pont \nd'Arcole,  de nature argileuse, est peu épaisse (une dizaine de \nmètres) et n'affleure pratiquement jamais."
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "calcaires_dolomies_karstifies",
+      "label": "Calcaires et dolomies localement karstifiés",
+      "role": "bedrock",
+      "lithologies": [
+        "calcaire",
+        "dolomie"
+      ],
+      "defaultThicknessM": [
+        30,
+        160
+      ],
+      "lambdaRangeWmK": [
+        1.89,
+        3.22
+      ],
+      "defaultLambdaWmK": 2.8,
+      "hydroClass": "aquifer",
+      "closedLoopPotential": "favorable",
+      "openLoopPotential": "potentially_favorable",
+      "drillingRisk": "medium_to_high",
+      "interpretation": "Unités carbonatées thermiquement favorables, mais avec risque de fracturation, karstification, venues d'eau ou pertes de circulation.",
+      "evidence": [
+        "Le synclinorium y comporte deux synclinaux \nmajeur (de Chanxhe et de Comblain) dont le coeur est occupé \npar les formations calcaires dinantiennes.",
+        "Lorsqu'on s'éloigne de \ncette partie centrale, les flancs du synclinorium sont formés : au \nsud par les formations calcaires d'âge dévonien et au nord par \nces mêmes formations surmontant les terrains terrigènes d'âge \ndévonien inférieur.",
+        "Le reste de la formation consiste en calcaires, gris \nclair ou foncé, à grain fin (micritiques), montrant souvent \nune fine stratification laminaire.",
+        "Cette formation, de nature calcaire, comporte deux \nmembres superposés qui, assez curieusement, n'ont jamais reçu \nde dénomination.",
+        "Membre inférieur  : bancs épais, d'épaisseur métrique \nà plurimétrique, de calcaire corallien construit (biostromes) \nmontrant souvent des coraux en position de vie ainsi que des \nstromatopores.",
+        "Ce niveau peut comporter également un banc de \npoudingue clair et/ou de calcaire à dragées de quartz."
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "schistes_phyllades",
+      "label": "Schistes, phyllades et roches fines",
+      "role": "bedrock",
+      "lithologies": [
+        "schiste",
+        "phyllade"
+      ],
+      "defaultThicknessM": [
+        30,
+        140
+      ],
+      "lambdaRangeWmK": [
+        1.95,
+        3.13
+      ],
+      "defaultLambdaWmK": 2.4,
+      "hydroClass": "aquitard",
+      "closedLoopPotential": "moderate_to_favorable",
+      "openLoopPotential": "low_to_moderate",
+      "drillingRisk": "medium",
+      "interpretation": "Roches de socle ou formations fines, généralement exploitables en géothermie fermée, avec circulation d'eau surtout liée aux fractures.",
+      "evidence": [
+        "Coupe du « Rocher Ste Anne » à Tilff. a : un buisson de Disphyllum \ntrès déformé dans le cœur du pli anticlinal. b : un banc de schiste \ncalcareux affecté de schistosité (description dans le texte). c : du \ncalcaire affecté d'une schistosité de dissolution dans le coeur du \npli synclinal.",
+        "Dans la partie sud de la carte (bord sud de la planchette \nd'Esneux), les calcaires francs de la partie supérieure font \nplace à des calcschistes et à des calcaires à structure noduleuse.",
+        "Ce faciès annonce celui de la Formation de Neuville constituée \nde schistes à nodules calcaires, formation à laquelle la Formation \nd'Aisemont passe latéralement vers le sud (carte adjacente de \nHamoir - Ferrières).",
+        "Pour en savoir plus :\t Coen-Aubert et Coen (1975)\nFormation de la Famenne (FAM)\nOrigine du nom :\t «  schistes de la Famenne  » (d'Omalius \nd'Halloy, 1835)\nSchistes, de teinte vert-olive à vert-brun, parfois rouges, \npouvant renfermer des nodules calcaires de tailles diverses \n(jusqu'à une dizaine de centimètres).",
+        "Affleurements représentatifs :\n-\t\nla tranchée de la route qui va de Hony au hameau de \nFèchereux  , près du bord nord de la planchette d'Esneux \n(fig. 2), permet une très bonne observation des schistes avec \net sans nodules calcaires, d'un petit pli et des relations entre \nla stratification et la schistosité ;\n-\t\nla tranchée de la gare de Hony (même endroit) ;\n-\t\nla transition vers la Formation d'Esneux sus-jacente peut être \nobservée derrière la gare d'Esneux (fig. 8).",
+        "Alternance de schistes et siltites généralement rouges et \nde quartzites rouges ou verts en bancs décimériques à métriques."
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "gres_psammites_quartzites",
+      "label": "Grès, psammites et quartzites",
+      "role": "bedrock",
+      "lithologies": [
+        "grès",
+        "psammite",
+        "quartzite"
+      ],
+      "defaultThicknessM": [
+        20,
+        120
+      ],
+      "lambdaRangeWmK": [
+        1.88,
+        3.25
+      ],
+      "defaultLambdaWmK": 2.7,
+      "hydroClass": "aquitard",
+      "closedLoopPotential": "favorable",
+      "openLoopPotential": "low_to_moderate",
+      "drillingRisk": "medium",
+      "interpretation": "Roches siliceuses généralement favorables thermiquement. Perméabilité surtout dépendante de la fracturation.",
+      "evidence": [
+        "Quartzites \nde \nteinte \ngrise \nà \nverte, \nen \nbancs \npluridécimétriques ; ces roches possèdent un grain grossier et \nsont parfois graveleuses, principalement dans le partie supérieure \nde la formation.",
+        "Partie supérieure de la formation : siltites et grès silteux \nde couleur rouge.",
+        "Partie inférieure de la formation : grès et quartzites verts \net gris, comportant des niveaux à débris de plantes et des niveaux \nà crinoïdes.",
+        "Formation de Pepinster (barres \nrocheuses de grès verts étagées dans le versant, dans le coeur \nde l'anticlinal) ; Regroupement des formations de Névremont et \ndu Roux (partiellement exposé le long de la route) et Formation \nde Lustin (bien exposée le long de la route).",
+        "La base de la formation comporte quelques bancs \nde quartzites blancs ou roses, à grain grossier et localement \ngraveleux.",
+        "La base de la formation est constituée d'une épaisseur de \nquelques mètres de roches terrigènes : quartzites et siltites plus \nou moins carbonatés."
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "breches_conglomerats",
+      "label": "Brèches calcaires, poudingues et conglomérats",
+      "role": "bedrock",
+      "lithologies": [
+        "brèche",
+        "conglomérat",
+        "poudingue"
+      ],
+      "defaultThicknessM": [
+        5,
+        60
+      ],
+      "lambdaRangeWmK": [
+        1.76,
+        3.13
+      ],
+      "defaultLambdaWmK": 2.45,
+      "hydroClass": "unknown",
+      "closedLoopPotential": "moderate_to_favorable",
+      "openLoopPotential": "uncertain",
+      "drillingRisk": "medium_to_high",
+      "interpretation": "Unités hétérogènes pouvant présenter une variabilité latérale forte et des comportements de forage plus imprévisibles.",
+      "evidence": [
+        "Ce niveau peut comporter également un banc de \npoudingue clair et/ou de calcaire à dragées de quartz.",
+        "Masse de brèche calcaire dans laquelle la stratification est \ntantôt absente, tantôt indistincte, tantôt plus ou moins exprimée.",
+        "Cette brèche est souvent monogénique : presque tous les blocaux \nsont constitués de calcaire foncé, généralement noir à grain très \nfin, du type de celui de la Formation de Terwagne.",
+        "Cette brèche est généralement interprétée aujourd'hui \ncomme une brèche de collapse résultant de l'effondrement et de \nla fracturation des calcaires sus-jacents, effondrement provoqué \npar la dissolution de produits évaporitiques vraisemblablement \ninclus dans la Formation de Terwagne et aujourd'hui \ncomplètement disparus.",
+        "Vers l'ouest, \nen se rapprochant de Comblain-au-Pont, la brèche est mêlée à \ndes passées  de calcaire stratifié toujours plus ou moins disloqué \net plus ou moins bréchifié.",
+        "Dans la vallée du Hoyoux, à laquelle s'applique la présente \ndescription, les poudingues sont particulièrement développés \net affleurent  à de multiples niveaux de la formation en bancs \nd'épaisseur parfois plurimétrique."
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "defaultClosedLoopSection": {
+    "depthM": 200,
+    "sequence": [
+      {
+        "unitId": "cover_altérites_limons",
+        "topM": 0,
+        "bottomM": 8,
+        "confidence": "medium"
+      },
+      {
+        "unitId": "schistes_phyllades",
+        "topM": 8,
+        "bottomM": 35,
+        "confidence": "low"
+      },
+      {
+        "unitId": "calcaires_dolomies_karstifies",
+        "topM": 35,
+        "bottomM": 130,
+        "confidence": "medium"
+      },
+      {
+        "unitId": "gres_psammites_quartzites",
+        "topM": 130,
+        "bottomM": 200,
+        "confidence": "low"
+      }
+    ],
+    "warning": "Séquence indicative à adapter selon l'unité de surface SPW et les sondages proches."
+  },
+  "openLoopScreening": {
+    "status": "requires_hydrogeological_confirmation",
+    "potential": "localement favorable dans les unités carbonatées fracturées ou karstifiées",
+    "mainPositiveIndicators": [
+      "mentions d'aquifères",
+      "présence de calcaires et dolomies",
+      "mentions de karst, sources ou résurgences"
+    ],
+    "mainRisks": [
+      "variabilité structurale forte",
+      "karstification hétérogène",
+      "incertitude sur débit réellement exploitable",
+      "nécessité d'analyser captage/rejet et contraintes réglementaires"
+    ],
+    "minimumNextData": [
+      "sondages proches",
+      "niveau piézométrique",
+      "essais de pompage éventuels",
+      "distance captage/rejet",
+      "sens d'écoulement local"
+    ]
+  },
+  "rules": [
+    {
+      "id": "carbonate_karst_warning",
+      "if": [
+        "unit contains calcaire or dolomie",
+        "hydro risk contains karst"
+      ],
+      "then": "Afficher un risque de karst/venues d'eau/pertes de circulation."
+    },
+    {
+      "id": "fractured_bedrock_open_loop_uncertainty",
+      "if": [
+        "open loop",
+        "bedrock fractured"
+      ],
+      "then": "Afficher que le potentiel ouvert dépend fortement des fractures et doit être confirmé par données locales."
+    },
+    {
+      "id": "closed_loop_favorable_carbonate_or_siliceous",
+      "if": [
+        "closed loop",
+        "calcaire or grès/quartzite"
+      ],
+      "then": "Potentiel thermique généralement favorable pour sondes fermées."
+    }
+  ],
+  "warnings": [
+    "Modèle généré automatiquement à partir de la notice et du poster hydrogéologique.",
+    "Les noms officiels de formations doivent encore être consolidés.",
+    "Les coupes géologiques sont utilisées qualitativement, pas comme géométrie exacte au droit du projet.",
+    "La présence de karst ou de fractures peut fortement influencer les conditions de forage."
+  ]
 }
