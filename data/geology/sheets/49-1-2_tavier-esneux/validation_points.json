@@ -1,0 +1,62 @@
+{
+  "sheetId": "49-1-2_tavier-esneux",
+  "sheetCode": "49/1-2",
+  "name": "Tavier–Esneux",
+  "purpose": "Points de contrôle pour vérifier l’activation du modèle WDD et la classification surfaceClass.",
+  "points": [
+    {
+      "id": "esneux_centre",
+      "label": "Esneux centre",
+      "lat": 50.535,
+      "lng": 5.567,
+      "expectedKnowledge": true,
+      "expectedSurfaceClass": null,
+      "comment": "Point de test initial déjà utilisé."
+    },
+    {
+      "id": "comblain_au_pont",
+      "label": "Comblain-au-Pont",
+      "lat": 50.474,
+      "lng": 5.577,
+      "expectedKnowledge": true,
+      "expectedSurfaceClass": null,
+      "comment": "Zone calcaire / vallée / contexte potentiellement karstique."
+    },
+    {
+      "id": "tilff",
+      "label": "Tilff",
+      "lat": 50.568,
+      "lng": 5.579,
+      "expectedKnowledge": false,
+      "expectedSurfaceClass": null,
+      "comment": "Point volontairement proche mais probablement hors bbox Tavier–Esneux."
+    },
+    {
+      "id": "tavier",
+      "label": "Tavier",
+      "lat": 50.496,
+      "lng": 5.472,
+      "expectedKnowledge": true,
+      "expectedSurfaceClass": null,
+      "comment": "Ouest de la planche."
+    },
+    {
+      "id": "hony",
+      "label": "Hony",
+      "lat": 50.548,
+      "lng": 5.572,
+      "expectedKnowledge": true,
+      "expectedSurfaceClass": null,
+      "comment": "Nord-est de la planche, utile pour tester les variations lithologiques."
+    },
+    {
+      "id": "bruxelles_control",
+      "label": "Bruxelles contrôle hors zone",
+      "lat": 50.8503,
+      "lng": 4.3517,
+      "expectedKnowledge": false,
+      "expectedSurfaceClass": null,
+      "comment": "Contrôle négatif hors carte pilote."
+    }
+  ]
+}
