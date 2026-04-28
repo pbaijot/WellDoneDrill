@@ -1,0 +1,2956 @@
+===== PAGE 1 =====
+
+49/1-2
+Tavier
+Esneux
+CARTE GéOLOGIQUE DE WALLONIE
+éCHELLE : 1/25 000
+NOTICE EXPLICATIVE
+Q
+/
+/
+
+
+===== PAGE 2 =====
+
+SPW | Éditions, CARTES 
+N° vert : 1718 (informations générales) - 1719 (germanophones)  
+Site : www.wallonie.be
+Plus d'infos concernant la carte géologique de Wallonie : 
+http://geologie.wallonie.be 
+cartegeologique@spw.wallonie.be
+Un document édité par le Service public de Wallonie,
+Direction générale de l’Agriculture,  
+des Ressources naturelles et de l’Environnement.
+Dépôt légal : D/2015/11802/87 
+ 
+Éditeur responsable : Brieuc Quévy, Directeur général,  
+DGARNE - Avenue Prince de Liège, 15 - B-5100 Namur.
+Reproduction interdite.
+
+
+===== PAGE 3 =====
+
+TAVIER
+-
+ESNEUX
+Jacques BELLIÈRE (1) 
+ 
+avec la collaboration de Jean-Marc MARION (2)  
+pour les levés dans le Dévonien inférieur et moyen.
+Université de Liège 
+(1)Département de géologie, Professeur honoraire 
+(2)Service de paléontologie animale et humaine 
+Sart-Tilman, B18, B-4000 Liège 
+http://www.ulg.ac.be/paleont/ 
+Photographie de couverture : 
+Les tartines de Comblain (photo J. Bellière)
+NOTICE EXPLICATIVE
+2015
+Dossier complet déposé : décembre 2009 
+Accepté pour publication : décembre 2013
+
+
+===== PAGE 4 =====
+
+
+
+
+===== PAGE 5 =====
+
+3
+Carte Tavier - Esneux n° 49/1-2
+Résumé
+Le territoire couvert par la carte de Tavier – Esneux est 
+situé dans le Condroz. Sa morphologie est celle d’un plateau 
+fortement  disséqué par l’Ourthe, l’Amblève et leurs affluents. 
+La carte couvre le synclinorium de Dinant dans sa partie orientale 
+et expose une gamme étendue de formations qui appartiennent à 
+la série sédimentaire dévono – carbonifère et que la structure 
+plissée fait se répéter en affleurement un assez grand nombre 
+de fois.
+La constitution lithologique de cette série est très variée 
+et fait alterner les faciès terrigènes et les faciès calcaires de la 
+manière qui se résume comme suit, de haut en bas :
+-	
+formations viséennes et tournaisiennes : calcaires de types 
+divers et dolomies ;
+-	
+formations famenniennes : grès, siltites et pélites argileuses ;
+-	
+formations 
+frasniennes 
+et 
+givetiennes 
+: 
+calcaires 
+prédominants ;
+-	
+formations eifeliennes et plus anciennes (Dévonien 
+inférieur) : grès, poudingues subordonnés, siltites et pélites 
+argileuses.
+Cette variété lithologique se traduit dans la morphologie 
+typique du Condroz ainsi que dans la diversité des biotopes.
+Dans cet ensemble certaines lithologies retiennent 
+particulièrement l’attention. Il s’agit :
+-	
+de la Formation de Montfort (Famennien supérieur) 
+constituée de microquartzites  arkosiques micacés (muscovite 
+et biotite détritiques) : sédiment bien classé, bien lavé, mais 
+immature ;
+-	
+des calcaires coralliens construits (biostromes) de la 
+Formation de Lustin (Frasnien) ;
+-	
+de deux unités d’encrinite tournaisiennes : respectivement 
+les formations de l’Ourthe (dite « petit granit ») d’un grand 
+intérêt économique et de Longpré, cette dernière entièrement 
+dolomitisée ;
+-	
+de la Formation de la Belle Roche (Viséen)  : masse 
+volumineuse de brèche calcaire de collapse, renfermant des 
+mega-blocs de calcaires stratifiés.
+Dans la plus grande portion de la carte, qui comprend 
+la partie centrale du Synclinorium de Dinant, les plis sont
+
+
+===== PAGE 6 =====
+
+4
+ouverts (zones de charnières étalées) et possèdent une vergence 
+nord, avec flancs sud des synclinaux verticaux, voire renversés. 
+Les roches pélitiques y sont affectées d’une schistosité plan-axiale 
+parfois accompagnée d’une linéation d’intersection. Le flanc nord 
+du synclinorium par contre, dans la portion nord-ouest de la 
+carte, montre des plis nettement plus serrés, à charnières aiguës 
+souvent faillées et à vergence apparemment sud. La schistosité, 
+toujours présente dans les roches pélitiques, peut y affecter en 
+outre les calcaires à l’endroit des charnières des plis.
+D’autre part, le plissement montre une virgation : la 
+direction générale des plis est E - W dans la partie orientale de 
+la carte et  N 60° E dans sa partie occidentale. Cette virgation 
+s’opère dans une zone assez étroite orientée du NNE au SSW, 
+voisine du cours de l’Ourthe, et s’accompagne de dispositions 
+en relais des plis.
+Le socle paléozoïque a été recouvert d’une couverture 
+discordante d’âge cénozoïque, constituée surtout de sables. 
+De cette couverture, entièrement érodée, il ne subsiste que 
+des témoins répartis çà et là sous la forme de remplissages de 
+poches de dissolution dans les calcaires du socle.
+Les formations quaternaires comportent :
+-	
+d’une part les sédiments fluviatiles qui occupent les plaines 
+alluviales et les terrasses ;
+-	
+d’autre part un dépôt de loess qui a recouvert toute la région 
+et subsiste avec des épaisseurs variables (jusqu’à plusieurs 
+mètres) sur les portions sub-horizontales du relief : plateau 
+et terrasses fluviatiles. Conformément à la règle adoptée 
+pour la carte géologique de la Wallonie, cette formation n’a 
+pas été figurée sur la carte.
+
+
+===== PAGE 7 =====
+
+5
+1. Introduction
+1.1. Établissement de la carte
+Le levé de la carte Tavier-Esneux (feuille n° 49/1-2) a été 
+réalisé par l’Université de Liège, dans le cadre du Programme de 
+Révision de la Carte géologique de Wallonie.
+Ce programme a été commandité et financé par le Service 
+public de Wallonie (Direction générale opérationnelle de 
+l’Agriculture, des Ressources naturelles et de l’Environnement), 
+en application d’une décision du Gouvernement wallon du 9 
+avril 1992, faisant suite à un programme pilote, qui avait débuté 
+en 1990. 
+Collaborent, ou ont collaboré, à ce programme 
+l’Université de Liège, l’Université catholique de Louvain, 
+l’Université Libre de Bruxelles, l’Université de Namur, l’Institut 
+royal des Sciences naturelles de Belgique (Service géologique 
+de Belgique) et l’Université de Mons.
+La Carte géologique de Wallonie comprend 142 feuilles 
+à 1/25 000, le découpage étant celui des anciennes éditions des 
+cartes topographiques de l’Institut géographique national (IGN). 
+Chaque carte publiée couvre normalement une feuille; toutefois, 
+pour des raisons de cohérence, il arrive qu’une ou deux feuilles 
+partielles contiguës soient publiées avec la feuille principale. 
+La présente carte Tavier-Esneux à l’échelle du 1/25 000, 
+succède à la feuille n°147 de la Carte géologique à 1/40 000 
+due à M. Lohest (1898). Plus d’un siècle sépare donc les deux 
+parutions. 
+Le dossier relatif à cette nouvelle carte comprend 
+notamment les documents suivants :
+-	
+deux cartes géologiques détaillées à l’échelle du 1/10 000 ;
+-	
+deux cartes à l’échelle du 1/10 000 localisant les affleurements 
+et sondages décrits ;
+-	
+les fiches descriptives des affleurements et sondages décrits, 
+réactualisant et complétant les données figurant dans le 
+dossier «Minutes de la Carte géologique de Belgique», 
+archivées au Service géologique de Belgique.
+La totalité de ces documents peut être consultée 
+sur rendez-vous à la Direction générale opérationnelle de 
+l’Agriculture, des Ressources naturelles et de l’Environnement, 
+avenue Prince de Liège 15, B-5100 Jambes (Service géologique 
+de Wallonie).
+
+
+===== PAGE 8 =====
+
+6
+Un accord de collaboration permet la consultation des 
+fiches descriptives des points d’affleurements et sondages décrits 
+à l’Institut royal des Sciences naturelles de Belgique (Service 
+géologique de Belgique), rue Jenner 13, B-1000 Bruxelles. 
+La Carte géologique de Wallonie, avec l’intégralité des 
+notices, peut être consultée de manière interactive sur le site 
+Internet du programme, à l’adresse suivante : 
+http://geologie.wallonie.be
+ou via le Géoportail de la Wallonie :
+http://geoportail.wallonie.be
+1.2. Méthodologies et avertissements
+Méthodologie de levé
+La nouvelle Carte géologique de Wallonie a été levée 
+et élaborée sur base lithostratigraphique, en suivant les règles 
+du Code stratigraphique international (Hedberg, 1976). Priorité 
+est donc donnée aux caractères lithologiques des ensembles 
+cartographiés, afin de répondre aux besoins du plus grand 
+nombre d’utilisateurs.
+Le levé de cette feuille a été réalisé, à l’échelle du 
+1/10 000, par J. Bellière, professeur émérite à l’Université de 
+Liège et avec la collaboration de  J.-M. Marion pour le Dévonien 
+inférieur et moyen.
+Cette planche succède à la planche n° 147 de la 
+Carte géologique à 1/40  000 établie par M. Lohest (1898). 
+Ultérieurement, au cours des années 1947 et suivantes de 
+nombreuses observations ont été effectuées par M. Legraye 
+ainsi que par P. Michot. La présente publication fait suite à :
+-	
+une révision complète du terrain complétée par l’étude des 
+photographies aériennes et de la carte pédologique ;
+-	
+la consultation de la banque de données du Service 
+géologique de Belgique ;
+-	
+la consultation de la littérature, y compris  des  travaux inédits 
+d’étudiants, ainsi  que  des levés inédits de G. Vandenven 
+(vallée de  l’Ourthe au nord d’Esneux).  
+Méthodologie de tracé de la carte
+Cette carte est couverte par une épaisseur de limon, dont 
+les cartes pédologiques donnent les principales caractéristiques.
+
+
+===== PAGE 9 =====
+
+7
+La carte géologique ne tient pas compte de cette couche 
+superficielle. Elle représente un écorché des formations méso-
+cénozoïques sous la couverture limoneuse volontairement 
+ignorée.
+Les tracés géologiques sont donc corrects à une altitude 
+qui correspond à celles des courbes de niveau à laquelle il 
+faut soustraire l’épaisseur des limons en ce lieu estimée par 
+interpolation à partir de points où celle-ci est connue (sondages, 
+puits).
+Par contre, les limites des alluvions (AMO) encadrant les 
+rivières figurent à leur altitude réelle telle que représentée sur la 
+carte.
+Avertissement
+Cet avertissement s’adresse aux utilisateurs de la carte 
+qui, n’étant pas géologues professionnels, peuvent être peu 
+familiarisés avec la problématique des matières minérales et, 
+plus généralement, des Sciences de la Terre. Leur attention est 
+attirée sur les points suivants.
+La présente notice a été rédigée en évitant autant que 
+possible l’usage d’un langage trop technique, dans le souci d’être 
+compréhensible au plus grand nombre possible de lecteurs. 
+Toutefois, cette présentation a des limites, la notice n’étant pas 
+un ouvrage de vulgarisation, mais une publication scientifique. 
+Il est donc recommandé aux lecteurs susdits de consulter 
+le «  Guide de lecture des cartes géologiques de Wallonie  » 
+(Dejonghe, 2001), brochure gratuite diffusée par la Direction 
+générale opérationnelle de l’Agriculture, des Ressources 
+naturelles et de l’Environnement.
+Les roches qui font l’objet de la cartographie ne 
+sont visibles qu’en un nombre limité de points, dénommés 
+«  affleurements  ». Sur la plus grande partie de la surface du 
+territoire, en effet, elles sont cachées sous une couverture 
+superficielle de produits meubles. L’établissement de la carte 
+géologique ne peut donc s’effectuer que par interpolation à 
+partir d’observations parfois très discontinues. En conséquence, 
+la carte comporte presque toujours une part plus ou moins 
+grande d’interprétation. Aux endroits où la représentation 
+devient particulièrement incertaine, cette situation a été traduite 
+par un tracé approprié. Il en résulte que, dans les cas où une 
+connaissance locale quelque peu précise de la constitution 
+géologique s’avère nécessaire, il s’impose, sauf exception, 
+de recourir à des opérations d’expertise adéquates (tranchées, 
+prospections géophysiques, etc.).
+
+
+===== PAGE 10 =====
+
+8
+L’épaisseur d’une unité sédimentaire (formation ou 
+membre) est souvent loin d’être constante. Elle varie en effet 
+d’un endroit à l’autre pour diverses raisons  : irrégularité du 
+dépôt des sédiments, irrégularité du tassement ultérieur au dépôt, 
+actions tectoniques (étirements, aplatissements, duplications, etc.). 
+Les épaisseurs mentionnées dans les descriptions des 
+formations sont donc, d’une manière générale, des ordres de 
+grandeur.
+Les phénomènes qui sont en relation avec la dissolution 
+des carbonates (phénomènes karstiques) peuvent affecter toutes 
+les roches calcaires. Les risques d’accidents  liés à ces processus 
+existent donc partout où se trouve du calcaire et pas seulement 
+aux endroits réputés tels sur les cartes des risques karstiques 
+établies par la Région Wallonne.
+Certaines données reportées sur la carte ne le sont qu’à 
+titre indicatif, et pas exhaustif. C’est en particulier le cas pour 
+les captages, les carrières, les puits de mines, les phénomènes 
+karstiques, etc. Il s’agit en général d’ouvrages ou de phénomènes 
+remarquables ou utiles à connaître. Des renseignements plus 
+complets sur ces différentes informations peuvent être obtenus 
+auprès de l’Administration régionale ainsi que sur son site 
+Internet.
+La Carte géologique de Wallonie est un document 
+scientifique sans valeur légale. C’est une interprétation à un 
+moment donné susceptible d’évoluer en fonction de nouvelles 
+données.
+1.3. Cadre géologique et géographique
+L’aire couverte par la présente carte fait partie de la 
+portion de la Wallonie occupée par des terrains paléozoïques 
+plissés (Ardenne sensu lato), portion qui appartient elle-même 
+à la zone rhéno-hercynienne du tectogène varisque en Europe 
+occidentale (Aretz et al. 2006).
+Son histoire géologique peut se résumer de la manière 
+suivante :
+-	
+dépôt, sur un socle calédonien pénéplané d’une série 
+sédimentaire d’âge dévonien et carbonifère ;
+-	
+plissement varisque, suivi d’érosion et de pénéplanation 
+(pénéplaine épi-varisque) ;
+-	
+sur ce socle pénéplané, dépôt discontinu dans le temps et 
+dans l’espace de sédiments mésozoïques et cénozoïques 
+restés non plissés et, pour la plupart, à l’état meuble ;
+-	
+soulèvement général et érosion de cette couverture  ; dans 
+la région qui nous concerne, celle-ci a été entièrement
+
+
+===== PAGE 11 =====
+
+9
+éliminée  : il n’en subsiste que quelques reliques piégées 
+dans des cavités karstiques des calcaires paléozoïques sous-
+jacents.
+La structuration par la tectogenèse varisque à la fin du 
+Westphalien a consisté en un raccourcissement, selon une 
+direction générale SE-NW, avec plissement des formations 
+dévono-carbonifères ordonnées de la sorte en une série de 
+synclinoria et anticlinoria successifs, coupés de nombreuses 
+failles longitudinales.
+Carbonifère
+Dévonien
+Silurien
+Ordovicien
+Cambrien
+Tavier - Esneux
+N
+50 Km
+Arlon
+Liège
+Gent
+Bruxelles
+Antwerpen
+Tournai
+Namur
+BASSIN DE CAMPINE
+Synclinorium de
+Neufchâteau
+Faille du Midi
+Pays-Bas
+Allemagne
+Grand - Duché 
+de 
+Luxembourg
+France
+Mer  du  Nord
+MASSIF
+ DE ROCROI
+Anticlinorium de l’Ardenne
+      MASSIF
+ DE
+Aachen
+CO
+U
+VE
+RTU
+RE M
+ÉS
+OZO
+ÏQU
+E
+MASSIF
+ DE GIVONNE
+BASSIN
+DE PARIS
+Faille Eifelienne
+STAVELOT
+Synclinorium de Dinant
+MASSIF DU     SERPONT
+MASSIF DU BRABANT
+(sous le Crétacé et Tertiaire)
+SYNCLINORIUM 
+DE NAMUR 
+BAND
+E DE S
+AMBR
+E E
+T ME
+U
+SE
+Fig. 1.	La carte de Tavier – Esneux dans le contexte paléozoïque 
+régional.
+Comme le montre la fig. 1, la planche Tavier-Esneux  se 
+situe dans la zone axiale du Synclinorium de Dinant, dans sa 
+partie orientale. Le synclinorium y comporte deux synclinaux 
+majeur (de Chanxhe et de Comblain) dont le coeur est occupé 
+par les formations calcaires dinantiennes. Ces synclinaux sont 
+encadrés par des aires anticlinales qui mettent en affleurement 
+les formations terrigènes fameniennes. Lorsqu’on s’éloigne de 
+cette partie centrale, les flancs du synclinorium sont formés : au 
+sud par les formations calcaires d’âge dévonien et au nord par 
+ces mêmes formations surmontant les terrains terrigènes d’âge 
+dévonien inférieur. Cette disposition d’ensemble est illustrée par 
+les coupes qui accompagnent la carte.
+La morphologie de la région est régie à la fois par la 
+distribution des lithologies et par les processus d’érosion post-
+cénozoïques, toujours en cours actuellement. C’est ainsi que 
+le réseau hydrographique, établi d’abord sur la couverture 
+horizontale post-varisque, s’est incisé ensuite dans le socle 
+paléozoïque plissé, aboutissant à des cours en grande partie
+
+
+===== PAGE 12 =====
+
+10
+surimposés. Ce réseau comporte deux rivières majeures, 
+l’Ourthe et l’Amblève, ainsi que divers affluents d’importance 
+secondaire.
+Pendant que les vallées s’approfondissaient de la 
+sorte, la couverture de terrains meubles a été aisément érodée. 
+La pénéplaine épi-varisque, ainsi exhumée, a été à son tour 
+soumise à l’érosion, mais d’une manière plus lente et différenciée 
+selon la nature des roches. Ainsi s’explique le relief typique du 
+Condroz caractérisé par  la succession de crêtes (« tiges ») et de 
+dépressions (« xhavées ») parallèles qui correspondent aux aires 
+d’affleurement des roches respectivement arénacées et calcaires. 
+Ainsi s’explique aussi le fait qu’ici, comme ailleurs en Ardenne 
+sensu lato, le paysage vu d’un point élevé montre toujours un 
+horizon plat, témoin de l’ancienne pénéplaine. Le relief général 
+est donc celui d’un plateau plus ou moins disséqué par l’érosion.
+Les régions naturelles couvertes par la carte sont, du nord 
+au sud :
+-	
+l’Ardenne condruzienne : zone d’affleurement du Dévonien 
+inférieur, entièrement terrigène (coin nord-ouest de la carte) ;
+-	
+le Condroz marqué par l’alternance des crêtes gréseuses et 
+des dépressions calcaires (la plus grande partie de la carte) ;
+-	
+le début de la Calestienne, zone d’affleurement des calcaires 
+dévoniens, séparant ici le Condroz de l’Ardenne sensu stricto 
+(bord sud-est de la carte).
+Au point de vue administratif, la carte intéresse les 
+territoires des communes de : Esneux, Sprimont, Comblain-au-
+Pont, Anthisnes, Neupré et, dans une moindre mesure, Aywaille, 
+Nandrin et Ouffet.
+
+
+===== PAGE 13 =====
+
+11
+2. Description des unités cartographiées
+Regroupement des formations d’Acoz, de Wépion et de Burnot 
+(AWBU)
+Sur la carte de Tavier  – Esneux, les formations d’âge 
+dévonien inférieur couvrent la partie nord-ouest de la planchette 
+de Tavier, ainsi qu’une aire plus réduite dans le coin nord-est 
+de celle d’Esneux. Ces deux aires appartiennent à la bande 
+continue de terrains éodévoniens qui jalonne le flanc nord du 
+Synclinorium de Dinant et se poursuit vers l’est au flanc sud 
+du Synclinorium de la Vesdre. Sur la carte de Tavier – Esneux, 
+ces deux aires sont pratiquement dépourvues d’affleurements, 
+de sorte qu’il n’est pas possible d’y tracer des contours ni même 
+d’identifier les roches.
+Or, on se trouve ici entre deux régions où l’Eodévonien 
+affleure dans de bonnes conditions, mais avec des compositions 
+différentes. En effet :
+-	
+à l’ouest (carte de Huy – Nandrin) plusieurs vallées 
+transverses à la direction générale des couches fournissent 
+des  coupes qui exposent la succession, de bas en haut, des 
+formations d’Acoz, de Wépion et de Burnot ;
+-	
+à l’est, par contre, la série est affectée d’une lacune qui fait 
+disparaître les formations de Wépion et de Burnot (Hance 
+et al. 1992) de sorte que seule la Formation d’Acoz est 
+représentée, comme le figure la carte de Fléron – Verviers 
+(Laloux et al. 1996).
+Il est possible que sur la carte de Seraing – Chênée qui 
+jouxte au nord la présente carte, mais n’est pas encore levée, les 
+conditions d’affleurement permettront d’expliciter la transition 
+entre les deux régions en question, chose impossible ici en 
+raison du manque d’affleurements.
+Dans ces conditions, sur la présente carte, l’Eodévonien 
+a été représenté en regroupement des formations d’Acoz, de 
+Wépion et de Burnot. Nous donnons ci-dessous une description 
+sommaire de ces formations, description qui se rapporte à la 
+région située à l’ouest, en particulier à l’excellente coupe de la 
+vallée du Hoyoux au sud de Huy. 
+Pour en savoir plus :	 Bultynck & Dejonghe, 2001
+
+
+===== PAGE 14 =====
+
+12
+Formation d’Acoz (dans la vallée du Hoyoux) (ACO)
+Origine du nom  : la localité d’Acoz, au sud de Charleroi 
+(Asselberghs, 1946).
+Alternance de schistes et siltites généralement rouges et 
+de quartzites rouges ou verts en bancs décimériques à métriques. 
+Dans les schistes, la schistosité est plan-axiale par rapport aux 
+plis secondaires.
+Épaisseur :	 environ 400 m.
+Âge :	 Praguien.
+Utilisation :	 aucune.
+Affleurement représentatif :
+Dans la vallée du Hoyoux, la tranchée de l’ancienne ligne 
+de chemin de fer de Huy à Ciney (aujourd’hui partiellement 
+convertie en Ravel).
+Formation de Wépion (dans la vallée du Hoyoux) (WEP)
+Origine du nom :	 la localité de Wépion, sur la Meuse, au sud 
+de Namur (Gosselet 1888).
+Quartzites 
+de 
+teinte 
+grise 
+à 
+verte, 
+en 
+bancs 
+pluridécimétriques ; ces roches possèdent un grain grossier et 
+sont parfois graveleuses, principalement dans le partie supérieure 
+de la formation. Certains bancs renferment des galets mous 
+(«pastilles » de shale). Cet ensemble arénacé est entrecoupé de 
+niveaux formés de schistes et de siltites de teinte grise, verte ou 
+rouge.
+Épaisseur :	 400 m.
+Âge :	 Praguien supérieur.
+Utilisation :	 carrières, aujourd’hui désaffectées, à usage de 
+moellons et pavés.
+Affleurements représentatifs :
+Les anciennes carrières dans le flanc droit de la vallée du 
+Hoyoux.
+
+
+===== PAGE 15 =====
+
+13
+Formation de Burnot (dans la vallée du Hoyoux) (BUR)
+Origine du nom :	 la vallée du Burnot et le hameau du même 
+nom, sur la rive gauche de la Meuse, au sud 
+de Namur (d’Omalius d’Halloy, 1835).
+Alternance de quartzites rouges et de poudingues rouges. 
+Dans la vallée du Hoyoux, à laquelle s’applique la présente 
+description, les poudingues sont particulièrement développés 
+et affleurent  à de multiples niveaux de la formation en bancs 
+d’épaisseur parfois plurimétrique.
+Les cailloux du poudingue, dont la taille peut être 
+décimétrique, sont constitués de quartzites de teintes diverses 
+auxquels se mêlent çà et là des cailloux de tourmalinite noire à 
+grain fin. La forme des cailloux est typiquement celle de galets 
+fluviatiles mal arrondis, ce qui permet d’attribuer à la formation 
+un faciès deltaïque. L’origine, nécessairement septentrionale, de 
+ces matériaux pose un problème, le socle calédonien du Brabant 
+ne comportant pas de quartzites de ce genre, ni de tourmalinite. 
+Épaisseur :	 plus de 400m.
+Âge :	 Emsien supérieur.
+Utilisation :	 aucune. On relève cependant la présence locale de 
+moellons de poudingue dans d’anciens bâtiments.
+Affleurements représentatifs :
+Série de rochers et d’affleurements spectaculaires dans le flanc 
+droit de la vallée du Hoyoux.
+Formation de Pepinster (PER)
+Origine du nom :	 La localité de Pepinster, sur la Vesdre 
+(Dejonghe et al. in Dejonghe et Bultyncks, 
+1991).
+Cette formation est constituée entièrement de roches 
+terrigènes, distribuées de la manière suivante.
+Partie supérieure de la formation : siltites et grès silteux 
+de couleur rouge. Cette unité inclut, dans sa partie supérieure, 
+un niveau de poudingue rouge à  éléments pluricentimétriques, 
+d’aspect semblable au poudingue de Burnot. Dans la coupe 
+décrite ci-dessous au titre d’affleurement représentatif (fig.  2 
+et 3), il apparaît en dressant sous la forme de rochers verticaux
+
+
+===== PAGE 16 =====
+
+14
+d’une épaisseur d’environ 2 mètres ; toutefois, il n’est pas visible 
+partout sur la carte et pourrait donc être discontinu.
+Partie inférieure de la formation : grès et quartzites verts 
+et gris, comportant des niveaux à débris de plantes et des niveaux 
+à crinoïdes. Cette unité peut contenir des bancs de poudingue 
+de teinte claire (gris-vert) ; ceux-ci, lorsqu’on les suit sur les 
+affleurements, se montrent discontinus, par passage latéral au 
+grès.
+Épaisseur :	 une centaine de mètres, dont environ les deux tiers 
+pour la partie gréseuse, à l’endroit décrit ci-dessous 
+comme affleurement typique.
+Âge :	 Eifelien.
+PER
+LUS
+138 000
+235 000
+NR
+AIS
+FAM
+b
+a
+Lamb. 72 :
+N
+100 m
+Fig. 2.	Route de Hony à Fèchereux (rive gauche de l’Ourthe): a : coupe 
+de la figure 3 ; b : affleurements des schistes de la Formation de 
+la Famenne.
+
+
+===== PAGE 17 =====
+
+15
+Utilisation :	 aucune.
+Affleurements représentatifs :
+Le versant gauche (est) de la vallée de l’Ourthe, dominant la 
+route de Hony à Fèchereux (bord nord de la planchette d’Esneux ; 
+situation : fig. 2. ; coupe : fig. 3.) ; la formation est bien exposée 
+sans une série de ressauts rocheux échelonnés sur la hauteur du 
+versant dans le cœur de l’anticlinal.
+0
+50 m
+N
+S
+PER : siltite rouge, poudingue rouge
+PER : grès vert
+Dévonien inférieur
+LUS : calcaire à grain fin
+LUS : calcaire construit (coraux)
+roches diverses: calcaire,
+dolomie, siltite, grès, ...
+ NR :
+Fig. 3.	Coupe du point a de la figure 2. Formation de Pepinster (barres 
+rocheuses de grès verts étagées dans le versant, dans le coeur 
+de l’anticlinal) ; Regroupement des formations de Névremont et 
+du Roux (partiellement exposé le long de la route) et Formation 
+de Lustin (bien exposée le long de la route).
+Pour en savoir plus :	 Bultynck et al.,1991 
+de La Vallée Poussin, 1889 
+Bultynck et Dejonghe, 2001
+Regroupement des formations de Névremont et du Roux (NR)
+À propos de ces formations, il convient de distinguer 
+deux aires d’affleurement, qui correspondent aux deux flancs du 
+Synclinorium de Dinant :
+-	
+dans la partie nord de la carte (flanc nord du synclinorium), 
+les formations de Névremont et du Roux ont été regroupées 
+parce que leurs épaisseurs sont faibles (elles se réduisent 
+d’ailleurs à zéro un peu plus au nord) et parce qu’il est 
+souvent impossible de tracer les contours qui les séparent ;
+-	
+dans la partie sud-est de la carte (flanc sud du synclinorium), 
+la Formation de Névremont est plus épaisse et bien 
+identifiée, et la Formation du Roux est remplacée par celle 
+de Fromelennes.
+Pour en savoir plus :	 Bultynck, Dejonghe, 2001
+
+
+===== PAGE 18 =====
+
+16
+Formation de Névremont (NEV)
+Origine du nom :	 le hameau de Névremont, à l’ouest 
+d’Aisemont (commune de Fosses-la-Ville) 
+(Lacroix, 1974).
+La base de la formation comporte quelques bancs 
+de quartzites blancs ou roses, à grain grossier et localement 
+graveleux. À ces roches sont souvent associées des croûtes 
+de limonite. Ce niveau peut comporter également un banc de 
+poudingue clair et/ou de calcaire à dragées de quartz.
+Ces roches sont surmontées de calcaires, généralement 
+à grain fin, tantôt gris, tantôt bleu-noir, parfois quartziques, en 
+bancs pluridécimétriques. Ces calcaires peuvent renfermer des 
+stringocéphales et des coraux.
+Épaisseur :	 dans 
+l’aire 
+septentrionale 
+(flanc 
+nord 
+du 
+synclinorium)  : une vingtaine de mètres  ; dans 
+l’aire méridionale (flanc sud du synclinorium)  : 
+une centaine de mètres sur la planchette voisine 
+de Louveigné (seule la partie supérieure de la 
+formation figure sur la présente carte).
+Âge :	 Givetien.
+Utilisation :	 les encroûtements de limonite ont été autrefois 
+exploités comme minerai de fer (cf. chapitre 6).
+Affleurement représentatif :
+Aucun sur la présente carte. Sur la carte voisine de Louveigné – 
+Spa ; la tranchée du chemin de fer sous le viaduc de l’autoroute 
+A25 Liège – Bastogne.
+Formation du Roux (ROU)
+Origine du nom :	 le village de «  Le Roux  » (commune de 
+Fosses-la-Ville) (de Dorlodot, 1893).
+Alternances de roches diverses : dolomies, calcaires et 
+calcschistes quartzeux, siltites, grès carbonatés.
+Épaisseur :	 variable, généralement une vingtaine de mètres.
+Âge :	 Givetien.
+Affleurement représentatif : aucun sur la présente carte.
+
+
+===== PAGE 19 =====
+
+17
+Pour en savoir plus :	 Coen-Aubert et Coen, 1975
+Formation de Fromelennes (FRO)
+Origine du nom :	 la localité de Fromelennes en France, près 
+de Givet (Mailleux, 1922).
+Cette description est empruntée aux cartes voisines de 
+Louveigné – Spa et de Hamoir – Ferrière.
+La base de la formation est constituée d’une épaisseur de 
+quelques mètres de roches terrigènes : quartzites et siltites plus 
+ou moins carbonatés.
+Le reste de la formation consiste en calcaires, gris 
+clair ou foncé, à grain fin (micritiques), montrant souvent 
+une fine stratification laminaire. L’épaisseur des bancs est 
+pluridécimétrique.
+Épaisseur : environ 80 m.
+Âge : Givetien.
+Utilisation : aucune sur la présente carte.
+Affleurement représentatif :
+Aucun sur la présente carte. Sur la planchette voisine de 
+Louveigné  : la tranchée du chemin de fer, juste à l’ouest du 
+viaduc de l’autoroute A25 Liège – Bastogne.
+Pour en savoir plus :	 Coen et Coen-Aubert, 1971
+Formation de Lustin (LUS)
+Origine du nom :	 les rochers de Fresnes à Lustin (rive 
+droite de la Meuse, au sud de Namur) 
+(Coen-Aubert et Coen, 1975).
+Cette formation, de nature calcaire, comporte deux 
+membres superposés qui, assez curieusement, n’ont jamais reçu 
+de dénomination.
+Membre inférieur  : bancs épais, d’épaisseur métrique 
+à plurimétrique, de calcaire corallien construit (biostromes) 
+montrant souvent des coraux en position de vie ainsi que des 
+stromatopores. Entre ces bancs sont intercalées des couches,
+
+
+===== PAGE 20 =====
+
+18
+d’épaisseur décimétrique à pluridécimétrique, de calcaire à 
+grain fin (micrite) souvent laminaire de teinte gris clair.
+Cet ensemble peut localement renfermer un banc de 
+calcaire argileux, affecté de schistosité. Cette roche montre 
+des parties calcaires en forme d’éléments lenticulaires allongés 
+parallèles à la schistosité de la partie argileuse qui les enrobe. 
+Ces éléments lenticulaires sont donc transverses à la stratification 
+et doivent leur disposition à la déformation tectonique.
+Sur le terrain, en l’absence d’affleurements caractérisés, 
+ce membre est souvent révélé, en particulier dans les versants 
+boisés, par la présence de blocs épars de calcaire corallien allant 
+jusqu’à la dimension  métrique.
+La base de la formation comporte parfois un niveau 
+remarquable formé de « buissons » de Disphyllum en position 
+de vie (Presles).
+Dans la partie sud-est de la planchette d’Esneux, la 
+formation comporte à sa base quelques mètres de schiste vert, 
+prélude à la Formation  de Nismes qui se développe plus au sud.
+Membre supérieur  : calcaires à grain fin (micrites) de 
+teintes diverses, gris clair à gris plus ou moins foncé, parfois 
+laminaires, disposés en bancs décimétriques à pluridécimétriques. 
+Cet ensemble comprend des bancs à stromatopores.
+Épaisseur :	 Environ 90 m.
+Âge :	 Frasnien
+Utilisation :	 les calcaires de la Formation de Lustin ont été 
+autrefois exploités en divers endroits à usage de 
+pierre de taille ou de pierre à chaux.
+Affleurements représentatifs :
+-	
+le meilleur affleurement se trouve sur la carte voisine de 
+Seraing – Chènée, au lieu-dit « Rocher Sainte Anne », sur 
+la rive droite de l’Ourthe, à la sortie sud de Tilff le long 
+de la route vers Esneux (situation : fig. 4 ; coupe : fig. 5). 
+Cet endroit fait partie d’un site classé et le prélèvement 
+d’échantillons de roches en place est interdit ;
+-	
+un autre bon affleurement est représenté par les rochers qui 
+bordent la route qui va de Hony à Fèchereux (bord nord de la 
+planchette d’Esneux) (situation : fig. 2 ; coupe : fig.3.).
+
+
+===== PAGE 21 =====
+
+19
+139 000
+235 000
+Lamb. 72 :
+N
+100 m
+Fig. 4.	Situation du « Rocher Ste Anne », affleurement typique de la 
+Formation de Lustin et du regroupement des formations de 
+Névremont et du Roux sur la carte de Seraing – Chênée (voir la 
+coupe à la fig.5).
+0
+20 m
+ROU: siltites et grès divers
+LUS : calcaire à grain fin. Stromatopores
+LUS : calcaire construit (coraux en position de vie)
+ NEV : calcaire
+      quartzite blanc graveleux
+NNW
+SSE
+Grotte
+a
+c
+b
+Chapelle
+Faille
+Fig. 5.	Coupe du « Rocher Ste Anne » à Tilff. a : un buisson de Disphyllum 
+très déformé dans le cœur du pli anticlinal. b : un banc de schiste 
+calcareux affecté de schistosité (description dans le texte). c : du 
+calcaire affecté d’une schistosité de dissolution dans le coeur du 
+pli synclinal.
+Pour en savoir plus :	 Coen, 1974 
+Coen-Aubert et Coen, 1975
+Formation d’Aisemont (AIS) et la zone de transition entre les 
+formations d’Aisemont et de Neuville (AN)
+Origine du nom :	 la carrière d’Aisemont (Basse Sambre,  flanc 
+sud du Synclinorium de Namur) (Lacroix, 
+1974).
+Cette formation présente sur la carte deux zones 
+d’affleurements assez éloignées l’une de l’autre : d’une part dans 
+la partie nord (flanc nord du Synclinorium de Dinant), d’autre
+
+
+===== PAGE 22 =====
+
+20
+part au bord sud (flanc sud du synclinorium). Les faciès de ces 
+deux zones sont différents.
+Dans la zone nord, la formation comporte deux parties, 
+épaisses chacune d’une quinzaine de mètres. La partie inférieure 
+est composée de schistes verts, parfois un peu calcareux et de 
+quelques bancs de calcaire argileux à la base. La partie supérieure 
+est composée de calcaires, toujours foncés, souvent fossilifères 
+(coraux) en bancs pluridécimétriques, parfois noduleux.
+Les contacts, tant avec les roches sus-jacentes de la 
+Formation de la Famenne qu’avec celles de la Formation de 
+Lustin sous-jacente, sont très nets. 
+Dans la partie sud de la carte (bord sud de la planchette 
+d’Esneux), les calcaires francs de la partie supérieure font 
+place à des calcschistes et à des calcaires à structure noduleuse. 
+Ce faciès annonce celui de la Formation de Neuville constituée 
+de schistes à nodules calcaires, formation à laquelle la Formation 
+d’Aisemont passe latéralement vers le sud (carte adjacente de 
+Hamoir – Ferrières). Dans ces conditions une zone de transition 
+entre les formations d’Aisemont et de Neuville (AN) a été 
+figurée pour ladite zone d’affleurement du bord sud de la carte.
+LUS
+134 000
+FAM
+229 000
+AIS
+Lamb. 72 : 
+N
+100 m
+Fig. 6.	Affleurement de la Formation d’Aisemont, entre Tavier et Berleur.
+
+
+===== PAGE 23 =====
+
+21
+Épaisseur :	 environ 30 m.
+Âge :	 Frasnien
+Utilisation :	 aucune.
+Affleurements représentatifs :
+-	
+faciès nord : les tranchées de part et d’autre de la route de 
+Tavier à Berleur : fig. 6 (Poty et Chevalier, 2007) ;
+-	
+faciès sud  : sur la carte voisine de Louveigné  – Spa  : la 
+tranchée de la gare d’Aywaille.
+Pour en savoir plus :	 Coen-Aubert et Coen (1975)
+Formation de la Famenne (FAM)
+Origine du nom :	 «  schistes de la Famenne  » (d’Omalius 
+d’Halloy, 1835)
+Schistes, de teinte vert-olive à vert-brun, parfois rouges, 
+pouvant renfermer des nodules calcaires de tailles diverses 
+(jusqu’à une dizaine de centimètres). Ces nodules sont alignés 
+selon la stratification et allongés selon la schistosité transverse 
+à la stratification. En l’absence de tels nodules, la stratification 
+est souvent peu visible, laissant le doute sur la structure de la 
+roche : schiste ou shale. Dans la partie supérieure de l’unité, 
+toutefois, les choses sont plus claires (cf. ci-dessous). D’autre 
+part, il n’est pas rare d’observer un débit en baguettes, structure 
+linéaire due à l’intersection de la stratification et de la schistosité 
+(cf. chapitre 3).
+Ces schistes peuvent être assez riches en fossiles 
+(brachiopodes).
+À la base de l’unité, le contact avec les calcaires de la 
+Formation d’Aisemont est très net. Au sommet, par contre, 
+le passage à la formation sus-jacente d’Esneux est assez 
+progressif  : le matériau pélitique devient progressivement 
+silteux, la schistosité s’efface et on voit apparaître de minces lits 
+millimétriques de grès à grain très fin.
+Épaisseur :	 environ 150 m. On notera cependant que cette 
+valeur ne représente pas l’épaisseur d’origine, 
+celle-ci ayant été modifiée d’abord par le tassement 
+du sédiment argileux, ensuite par la déformation 
+tectonique.
+Âge :	 Frasnien supérieur et Famennien inférieur.
+
+
+===== PAGE 24 =====
+
+22
+Utilisation :	 aucune.
+Affleurements représentatifs :
+-	
+la tranchée de la route qui va de Hony au hameau de 
+Fèchereux  , près du bord nord de la planchette d’Esneux 
+(fig. 2), permet une très bonne observation des schistes avec 
+et sans nodules calcaires, d’un petit pli et des relations entre 
+la stratification et la schistosité ;
+-	
+la tranchée de la gare de Hony (même endroit) ;
+-	
+la transition vers la Formation d’Esneux sus-jacente peut être 
+observée derrière la gare d’Esneux (fig. 8).
+Pour en savoir plus :	 Sartenaer, 1957 
+Bouckaert et al., 1968
+Formations d’Esneux (ESN), de Souverain-Pré (SVP), de 
+Montfort (MFT) et d’Evieux (EVX)
+L’ensemble de ces formations était désigné autrefois par 
+l’expression « les psammites du Condroz ».
+Formation d’Esneux (ESN)
+Origine du nom :	 la localité d’Esneux (Mourlon, 1886). 
+La présente carte comporte donc le locus 
+typicus de la formation.
+Ensemble de grès à grain très fin et de siltites plus ou 
+moins arénacées, micacés, de teinte gris verdâtre  disposés en 
+bancs minces épais de quelques centimètres, d’où le nom de 
+« psammites stratoïdes » appliqué autrefois à ces roches.
+Comme on l’a vu ci-dessus, la base de la formation n’est 
+pas nette, le passage à la Formation de la Famenne sous-jacente 
+s’opérant par une modification progressive de la lithologie. 
+Il est donc souvent difficile, sur le terrain, de situer la limite des 
+deux formations, même en présence d’affleurements continus. 
+Par contre, le contact avec la formation sus-jacente de Souverain-
+Pré est très net.
+Le long du bord sud de la carte, notamment le long de 
+la route qui suit la rive gauche de l’Ourthe, la formation prend 
+un caractère plus silteux (évolution vers la Formation d’Aye ?).
+La Formation d’Esneux donne lieu parfois à des 
+déformations disharmoniques. Elles consistent en petits plis 
+secondaires qui ne se poursuivent pas dans les formations de
+
+
+===== PAGE 25 =====
+
+23
+Souverain-Pré et de de Montfort sus-jacentes. Cette disposition 
+a été observée à divers endroits dans les cœurs de grands 
+anticlinaux (fig. 7). Elle est probablement à mettre en relation 
+avec la faible épaisseur des bancs de la Formation d’Esneux ; on 
+sait en effet que l’épaisseur des bancs contribue à déterminer la 
+longueur d’onde du plissement (Ramsay et Huber, 1997).
+S
+MFT
+SVP
+ESN
+ESN
+SVP
+0
+50 m
+N
+MFT
+Fig.7.	 Exemple de petits plis disharmoniques dans la Formation 
+d’Esneux. (rive gauche de l’Ourthe à 2 km au sud du pont 
+d’Esneux).
+Épaisseur :	 125 m.
+Âge :	 Famennien moyen.
+Utilisation : aucune.
+136 000
+235 000
+FAM
+MFT
+SVP
+N
+100 m
+Lamb. 72 :
+ESN
+Fig. 8.	La tranchée du chemin de fer au sud de la gare d’Esneux : locus 
+typicus de la Formation d’Esneux ; passage de cette formation, 
+vers le bas, à celle de la Famenne.
+
+
+===== PAGE 26 =====
+
+24
+Affleurements représentatifs :
+-	
+la tranchée du chemin de fer immédiatement au sud de la 
+gare d’Esneux (fig. 8) ; c’est le locus typicus de la formation 
+qui expose de plus le passage progressif vers la Formation de 
+la Famenne sous-jacent ; toutefois la circulation en bordure 
+du chemin de fer est soumise à autorisation ;
+-	
+à défaut : la tranchée de la partie inférieure de la route qui va 
+de Poulseur au lieu-dit « En Sart » (fig. 9). 
+134 000
+MFT
+236 000
+ESN
+SVP
+N
+100 m
+Lamb. 72 :
+Fig. 9.	La Formation d’Esneux à Poulseur.
+Pour en savoir plus :	 Thorez et al., 1977 
+Thorez et al., 2006
+Formation de Souverain-Pré (SVP)
+Origine du nom :	 Commune d’Esneux, lieu-dit « Souverain-
+Pré » (ancienne halte du chemin de fer, au 
+sud de la gare d’Esneux (Mourlon, 1886).
+Cette formation est constituée d’une roche hétérogène 
+formée d’une masse silteuse renfermant une grande quantité de 
+« nodules » calcaires, d’où le nom  de « macigno noduleux de 
+Souverain-Pré » qui lui a été appliqué autrefois. Ces « nodules » 
+sont des blocaux de quelques centimètres, de formes assez 
+irrégulière constitués de calcaire crinoïdique. Ils sont alignés 
+selon la stratification, cet alignement pouvant, à certains endroits,
+
+
+===== PAGE 27 =====
+
+25
+passer latéralement à des couches de calcaire crinoïdique plus ou 
+moins continues, d’épaisseur pluricentimétrique.
+La pâte silteuse de ces roches est souvent affectée 
+de schistosité. Dans ce cas les blocaux prennent des formes 
+plus régulières de nodules ovoïdes, toujours alignés selon la 
+stratification, mais allongés suivant la schistosité.
+Bien qu’il ne s’agisse pas à proprement parler de calcaires, 
+ces roches peuvent être le siège de phénomènes karstiques 
+(effondrement d’une surface de plusieurs mètres carrés observé 
+dans un pré à Fontin, à l’est d’Esneux).
+Il faut noter qu’en dehors des tranchées de routes ou 
+de chemin de fer, les affleurements naturels de cette formation 
+sont pratiquement inexistants ; sa présence peut néanmoins  être 
+révélée par des sources, traduisant la singularité d’un niveau 
+carbonaté au sein d’une série épaisse terrigène. C’est ainsi que  la 
+Formation de Souverain Pré n’a été observée qu’en un seul point 
+dans la partie sud-est de la carte, au sud du synclinal de Comblain-
+au-Pont. Elle y a néanmoins été figurée en considération de son 
+développement dans les régions plus méridionales. Il en est de 
+même dans les parties nord-ouest et sud-ouest de la planchette 
+de Tavier.
+Remarque  : eu égard d’une part à ces mauvaises 
+conditions d’affleurement, d’autre part à la faible épaisseur de 
+cette formation, il eut été logique de l’inclure par regroupement 
+dans la partie supérieure de la Formation d’Esneux. Cette démarche 
+n’a pas été suivie parce que le locus typicus se trouve précisément 
+sur la présente carte et que la formation a été représentée comme 
+telle sur un certain nombre d’autres cartes déjà parues ou en voie 
+de parution.
+Épaisseur :	 variable : d’une dizaine de mètres à une trentaine 
+de mètres.
+Âge :	 Famennien moyen.
+Utilisation :	 aucune.
+Affleurements représentatifs :
+-	
+la tranchée du chemin de fer de l’ancienne halte de 
+Souverain-Pré (locus typicus) montre les bancs de la base de 
+la Formation de Montfort surmontant vers le sud les roches 
+de Souverain-Pré, ces dernières toutefois dans des conditions 
+d’affleurement  aujourd’hui assez médiocres (fig.10) ;
+
+
+===== PAGE 28 =====
+
+26
+N
+100 m
+138 000
+235 000
+MFT
+EVX
+a
+b
+MFT
+ESN
+SVP
+Lamb. 72 :
+Fig. 10.	La tranchée du chemin de fer au sud d’Esneux. a  : structure 
+de ravinement dans la Formation d’Evieux ; b : Formation de 
+Montfort (partie inférieure) et locus typicus de la Formation de 
+Souverain-Pré.
+-	
+un autre endroit plus favorable est la tranchée de la route 
+d’Esneux à Poulseur (rive gauche de l’Ourthe) à 1 km au 
+nord du centre de Poulseur (fig. 11). Cette tranchée expose 
+dans de bonnes conditions la succession, du sud au nord, des 
+formations d’Esneux, de Souverain-Pré et de Montfort.
+Pour en savoir  plus :	Thorez et al., 1977 
+Thorez et al., 2006 
+Bellière, 1951
+
+
+===== PAGE 29 =====
+
+27
+c
+a
+b
+MFT
+MFT
+SVP
+ESN
+134 000
+235 000
+Lamb. 72 :
+N
+100 m
+Fig.11.	 Au nord de Poulseur. a  : le long de la route  : Formation de 
+Montfort  ; b  : carrière Thomas  : Formation de Montfort  ; 
+c : tranchée de la route : formations d’Esneux, de Souverain-Pré 
+et de Montfort.
+Formation de Montfort (MFT)
+Origine du nom :	 Le hameau de Montfort, dans la partie sud 
+de la commune d’Esneux (Mourlon, 1886). 
+La présente carte comporte donc le locus 
+typicus de la formation.
+Microquartzites arkosiques micacés, souvent calcarifères, 
+se présentant en bancs plaquetés pluricentimétriques et en 
+bancs massifs pluridécimétriques et parfois plurimétriques 
+(«  grès  » dans le langage courant). Les grains sont bien 
+classés ; leur dimension n’excède pas 200 µ. La proportion de 
+feldspath détritique (plagioclase et feldspath potassique) peut 
+excéder 30  %. Les micas, également détritiques, comportent 
+de la muscovite et, en moins grande proportion, de la biotite. 
+Le carbonate (calcite ou dolomite) se présente en grains ou 
+en fragments de fossiles mêlé aux autres constituants (la 
+roche n’est donc  pas un grès à ciment calcaire). Il s’agit du
+
+
+===== PAGE 30 =====
+
+28
+cas assez singulier d’un sédiment bien lavé, mais immature. 
+Cet ensemble arénacé contient des intercalations, généralement 
+minces, de niveaux silteux ou pélitiques et parfois de dolomie. 
+Les « grès » sont de teinte gris-bleu ou gris-vert, avec patine ocre. 
+La partie supérieure de la formation comporte des bancs rouges 
+(« grès amarantes » de la littérature rangés autrefois, pour des 
+raisons paléontologiques, dans l’« assise » d’Evieux). Dans la 
+région sud-est de la carte, la partie inférieure de la formation est 
+constituée de bancs relativement minces, pouvant faire penser 
+parfois à la Formation d’Esneux (Comblain-la-Tour (CLT)).
+La Formation de Montfort montre de nombreuses 
+structures 
+sédimentaires 
+: 
+ripple-marks, 
+stratifications 
+entrecroisées, pseudo-nodules, « gouttes de pluie », galets mous, 
+etc.
+Lorsque les grès de Montfort ont subi de manière 
+pénétrative les effets de l’altération atmosphérique (dans les 
+régions des plateaux), ils deviennent relativement poreux et sont 
+colorés en ocre dans leur masse (« pierre d’avoine »).
+La Formation de Montfort, encadrée dans la stratigraphie 
+par des roches d’érosion plus aisée (pélites et siltites sous-
+jacentes, siltites et calcaires sus-jacents) est responsable de la 
+plupart des crêtes allongées parallèles dites « tiges du Condroz » 
+qui caractérisent la morphologie de la région (cf. chapitre 
+1.3). Toutefois, eu égard sans doute à la présence de minéraux 
+altérables (carbonates et feldspaths), elle donne rarement lieu à 
+des escarpements rocheux naturels, de sorte que la plupart des 
+affleurements sont artificiels : carrières, tranchées de routes, de 
+chemin de fer, …
+Épaisseur :	 250 m.
+Âge :	 Famennien.
+Utilisation :	 Les roches de cette formation, sous l’appellation 
+« grès de l’Ourthe »,ont fait l’objet de nombreuses 
+exploitations en carrières, dont plusieurs sont 
+encore actives aujourd’hui (cf. chapitre 6).
+Affleurements représentatifs :
+L’affleurement le plus représentatif est le locus typicus : grande 
+carrière désaffectée qui domine le versant droit de l’Ourthe 
+au nord de Poulseur, sous le hameau de Montfort. Toutefois 
+l’accès en est soumis à autorisation (propriété d’une association 
+locale). Mais il existe dans la région de nombreuses carrières, 
+désaffectées ou non, et de nombreuses tranchées qui exposent 
+les roches dans de bonnes conditions. Citons, à titre d’exemple :
+
+
+===== PAGE 31 =====
+
+29
+-	
+partie supérieure de la formation : la carrière Thomas, au 
+nord de Poulseur (taille artisanale de moellons) (fig. 11) ;
+-	
+le bord de la route d’Esneux à Poulseur, au nord du carrefour 
+avec la route vers Villers-aux-Tours (fig. 11) ;
+-	
+partie inférieure de la formation  : la tranchée le long du 
+quai de l’ancienne halte du chemin de fer de Souverain-Pré 
+(fig. 10).
+Pour en savoir plus :	 Thorez et al., 1977 
+Thorez et al., 2006
+Formation d’Evieux (EVX)
+Origine du nom :	 Le lieu-dit «  Evieux  », sur la rive droite 
+de l’Ourthe, au sud de la gare d’Esneux 
+(Mourlon, 1886).
+Au point de vue lithologique, il s’agit d’une formation 
+de transition entre les arénites de la Formation de Montfort 
+et les calcaires dinantiens (Legraye, 1925). Le contact avec 
+la Formation de Montfort n’est pas net : il se marque par 
+l’apparition dans les grès de cette formation d’intercalations 
+silteuses ou pélitiques de plus en plus abondantes. La partie 
+inférieure de la formation d‘Evieux est ainsi constituée d’une 
+alternance de couches de grès identiques à ceux de Montfort et 
+de couches silteuses de teinte verte à vert brunâtre. En montant 
+dans la formation, le constituant carbonaté des roches devient 
+plus abondant, faisant apparaître  des bancs de grès calcareux 
+puis de calcaire quartzeux et même de calcaire pur alternant avec 
+des schistes ; ce faciès correspond à la Formation de Comblain-
+au-Pont (CLP) utilisée par certains auteurs. Le passage à la 
+formation supérieure d’Hastière correspond à la disparition des 
+constituants terrigènes.
+La Formation d’Evieux, comme celle de Montfort, 
+montre diverses structures sédimentaires, en particulier des 
+ravinements (cf. affleurements représentatifs).
+Épaisseur :	 une centaine de mètres environ.
+Âge :	 Famennien supérieur.
+Utilisation :	 rare, en raison de l’abondance des couches silto-
+pélitiques ; quelques petites carrières anciennes.
+
+
+===== PAGE 32 =====
+
+30
+Affleurements représentatifs :
+-	
+il existe une coupe continue d’excellente qualité sur la rive 
+droite de l’Ourthe, au nord du pont de Chanxhe, le long du 
+chemin d’accès à l’ancienne carrière de Richopré (fig. 12). 
+Le contact supérieur avec la Formation d’Hastière y est 
+cependant escamoté par une faille, visible sur l’affleurement 
+(faille de Hody) ;
+133 000
+Lamb. 72 :
+237 000
+MFT
+EVX
+HPLA
+N
+100 m
+Fig. 12.	Chanxhe : affleurement typique de la Formation d’Evieux.
+-	
+la tranchée du chemin de fer, au sud de la gare d’Esneux, 
+au locus typicus, (fig. 10) montre dans le flanc nord d’un 
+synclinal un très bel exemple de structure de ravinement, 
+observable de loin sans devoir pénétrer sur le domaine du 
+chemin de fer.
+Pour en savoir plus :	 Thorez et al., 1977 
+Thorez et al., 2006 
+Legraye, 1925 
+Bouckaert et al., 1968
+
+
+===== PAGE 33 =====
+
+31
+Regroupement des formations d’Hastière (HAS), de Pont 
+d’Arcole (PDA) et de Landelies (LAN) - (HPLA)
+Origine des noms :	- la localité d’Hastière sur la Meuse, au 
+sud de Dinant (de Dorlodot, 1895)  ; 
+- le 
+lieu-dit 
+« 
+Pont 
+d’Arcole 
+» 
+à 
+Hastière 
+(Groessens, 
+1975) 
+; 
+- la localité de Landelies, sur la Sambre, en 
+amont de Charleroi (de Dorlodot, 1895).
+Le regroupement se justifie pour les raisons suivantes. 
+Les formations d’Hastière et de Landelies sont constituées de 
+calcaires souvent difficiles à distinguer les uns des autres sur 
+les affleurements. De plus, la formation intermédiaire de Pont 
+d’Arcole,  de nature argileuse, est peu épaisse (une dizaine de 
+mètres) et n’affleure pratiquement jamais.
+Les calcaires d’Hastière et de Landelies, sont disposés en 
+bancs d’épaisseur pluridécimétrique à métrique. Ils sont de teinte 
+gris-bleu ; leur grain est fin à moyen et ils renferment toujours 
+des articles de crinoïdes, en proportions variables : tantôt 
+assez abondants, tantôt plus sporadiques. Dans la Formation 
+d’Hastière, les joints de stratification sont relativement plans 
+et réguliers ; ils le sont moins et de caractère plus onduleux 
+dans la Formation de Landelies. Cette dernière, d’autre part, 
+est caractérisée par la présence, dans certains bancs, de coraux 
+solitaires (Syphonophyllia) de grande taille (10 à 20 cm).
+Quant à la Formation de Pont d’Arcole, constituée de 
+schiste (shale) calcareux, elle n’est visible qu’en un seul endroit 
+(tranchée de la route au sud de la gare de Rivage, voir ci-
+dessous). Partout ailleurs, sa présence est parfois suggérée par 
+une interruption des affleurements éventuellement accompagnée 
+de quelques débris argileux. 
+Épaisseur :	 environ 90 m.
+Âge :	 Tournaisien inférieur (Hastarien).
+Utilisation :	 autrefois  : quelques carrières exploitées pour 
+divers usages (fours à chaux, moellons).
+Affleurements représentatifs :
+-	
+la tranchée de la route qui monte vers Fraiture, au sud de 
+la gare de Rivage (fig. 13), seul point d’affleurement de la 
+Formation de Pont d’Arcole.
+-	
+la tranchée et les rochers qui bordent la route sur la rive 
+gauche de l’Ourthe au nord de Pont de Scay (fig. 13). Cette
+
+
+===== PAGE 34 =====
+
+32
+coupe expose dans de très bonnes conditions l’ensemble des 
+formations tournaisiennes.
+Lamb. 72 :
+236 000
+131 000
+c
+a
+b
+HPLA
+YVO
+OUR
+LPR
+MRT
+LPR
+BBR
+d
+N
+100 m
+Fig.13.	 Environs de Comblain-au-Pont. a  : «  Rocher du Vignoble  »  : 
+Brèche de la Belle Roche contenant un méga-bloc visible 
+dans la paroi (flanc sud vertical du synclinal de Comblain)  ; 
+b :« les Tartines de Comblain » : même disposition ; c : le seul 
+affleurement observé de la Formation de Pont d’Arcole  ; d  : 
+coupe continue dans les formations dinantiennes.
+-	
+la coupe exposée le long de la route sur la rive gauche de 
+l’Amblève, au sud et au nord du pont de Martinrive sur cette 
+rivière (fig. 14).
+Pour en savoir plus :	 Hance et al., 2001 
+Poty et al. in Bultynck, Dejonghe, 
+2001 
+Aretz et al., 2006 
+Devuyst et al., 2005 
+Mc Cann et al., 2008
+
+
+===== PAGE 35 =====
+
+33
+131 000
+a
+b
+HPLA
+YVO
+LPR
+BBR
+MRT
+OUR
+LPR
+240 000
+Lamb. 72 :
+N
+100 m
+Fig. 14.	Environs de Martinrive. a : coupe sur la rive gauche de l’Amblève 
+dans les formations tournaisiennes ; b : tranchée du chemin de 
+fer : Formation de Longpré (dolomie encrinitique).
+Formation d’Yvoir (YVO)
+Origine du nom :	 la localité d’Yvoir, sur la Meuse au nord de 
+Dinant (Conil, 1960).
+Calcaires gris-bleu, de grain moyen à fin, en bancs 
+pluridécimétriques à métriques. Ils renferment toujours 
+des articles de crinoïdes dans des proportions variables  : 
+tantôt abondants, tantôt plus sporadiques. Ces calcaires sont 
+caractérisés par la présence de cherts noirs, irrégulièrement 
+distribués selon les couches : certains bancs en contiennent une 
+grande quantité ; d’autres en sont dépourvus. La dimension de 
+ces cherts varie depuis celle de sphérules centimétriques jusqu’à 
+celle de plaques épaisses de quelques centimètres et longues de 
+quelques décimètres, toujours allongées selon la stratification et 
+de formes très contournées (« rognons »).
+La formation, dans sa partie supérieure, soit à une dizaine 
+de mètres sous son sommet, peut comporter une épaisseur de 
+quelques mètres de dolomie.
+Épaisseur :	 80 m.
+
+
+===== PAGE 36 =====
+
+34
+Âge :	 Tournaisien (Yvorien).
+Utilisation :	 à 
+Chanxhe, 
+une 
+grande 
+carrière 
+exploite 
+actuellement cette formation, en même temps que 
+les formations voisines (petit granit excepté) à 
+usage de granulat.
+Affleurements représentatifs  : les coupes mentionnées plus 
+haut (fig. 13 et 14).
+Pour en savoir plus :	 Hance et al., 2001 
+Poty et al. in Bultynck, Dejonghe, 
+2001 
+Aretz et al., 2006 
+Mc Cann et al., 2008
+Formation de l’Ourthe (OUR)
+Origine du nom :	 la vallée de l’Ourthe, dans son tronçon 
+couvert par la présente carte (Fourmarier, 
+1922).
+Il s’agit d’une encrinite, c’est-à-dire d’un calcaire constitué 
+entièrement de débris de crinoïdes, auxquels peuvent s’ajouter 
+d’autres fossiles en quantité subordonnée (brachiopodes, 
+coraux…). La roche présente une teinte gris-bleu à bleu-noir et 
+une patine gris clair par exposition prolongée à l’atmosphère. 
+Les bancs sont toujours épais (métriques à plurimétriques) 
+avec diaclases espacées. Il en résulte que cette formation donne 
+souvent lieu à des rochers massifs dans les paysages des flancs 
+des vallées, dans la mesure où elle n’a pas été exploitée (voir 
+ci-dessous). Par opposition aux deux formations qui l’encadrent 
+(d’Yvoir et de Martinrive), la Formation de l’Ourthe ne contient 
+jamais de cherts. La roche dégage, lorsqu’elle est cassée, une 
+odeur fétide prononcée  caractéristique. Les joints stylolithiques 
+n’y sont pas rares.
+Cette roche est connue sous le nom commercial de « petit 
+granit ». Cette appellation provient apparemment du fait que, les 
+articles de crinoïdes étant formés chacun d’un monocristal de 
+calcite, la cassure de la roche fait apparaître une multitude de 
+facettes de clivage qui brillent à la lumière à l’instar des clivages 
+des feldspaths dans un granite.
+Épaisseur :	 30 à 35 m.
+Âge :	 Tournaisien (Yvorien).
+
+
+===== PAGE 37 =====
+
+35
+Utilisation :	 le «  petit granit  », tant ici qu’ailleurs dans le 
+Condroz, a été et est toujours extrait en de 
+nombreux endroits (cf. chapitre 6).
+Affleurements représentatifs :
+-	
+la formation de l’Ourthe affleure dans les coupes déjà 
+mentionnées et situées par les fig. 13 et 14. Elle y forme des 
+rochers massifs bien visibles dans le paysage ;
+-	
+les meilleures conditions d’observation sont cependant les 
+carrières, anciennes ou actuelles. Signalons notamment 
+la carrière de la Préalle, en activité le long de la route de 
+Chanxhe à Sprimont (fig. 15) ; l’accès y est, bien entendu, 
+soumis à une autorisation, laquelle s’obtient d’ordinaire sans 
+difficulté.
+Lamb. 72 :
+133 000
+OUR
+LPR
+238 000
+MRT
+N
+100 m
+Fig. 15.	La carrière de la Préalle (route de Chanxhe à Sprimont) : « petit 
+granit ».
+Pour en savoir plus :	 Hance et al., 2001 
+Poty et al. in Bultynck, Dejonghe, 
+2001 
+Aretz et al., 2006 
+Devuyst et al., 2005 
+Mc Cann et al., 2008
+Formation de Martinrive (MRT)
+Origine du nom :	 la localité de Martinrive, sur l’Amblève, 
+en aval d’Aywaille (coin sud-est de la 
+planchette d’Esneux) (Groessens, 1975).
+
+
+===== PAGE 38 =====
+
+36
+Calcaires gris-bleu à noirs, à grain fin, en bancs 
+pluridécimétriques, contenant des cherts noirs souvent 
+abondants. Ces calcaires renferment toujours des articles de 
+crinoïdes, parfois de grande taille (10 à 15 mm) éventuellement 
+groupés en traînées parallèles à la stratification. Ces roches 
+sont donc assez  semblables à celles de la Formation d’Yvoir 
+dont elles sont séparées par la Formation de l’Ourthe (« petit 
+granit  »)  ; cette dernière, sur le terrain, est souvent aisément 
+repérable, ce qui permet d’identifier les deux formations à 
+cherts qui l’encadrent. De plus, la Formation de Martinrive se 
+distingue de celle d’Yvoir par son grain plus fin et une teneur 
+moins grande en crinoïdes.
+La base de la formation peut être occupée par quelques 
+mètres de calcaire noir à grain fin (micrite) éventuellement 
+argileux  en bancs minces pluricentimétriques.
+Épaisseur :	 environ 30 m.
+Âge :	 Tournaisien (Yvorien).
+Utilisation :	 deux grandes carrières exploitent actuellement 
+cette formation, en même temps que les formations 
+voisines («  petit granit  » excepté) à usage de 
+granulat.
+Affleurements représentatifs :
+-	
+la coupe déjà mentionnée au nord de Comblain-au-Pont 
+(fig. 13) ;
+-	
+la coupe déjà mentionnée, en face de Martinrive (fig. 14).
+Pour en savoir plus :	 Hance et al., 2001 
+Poty et al. In Bultynck, Dejonghe, 
+2001 
+Aretz et al., 2006 
+Mc Cann et al., 2008
+Formation de Longpré (LPR)
+Origine du nom :	 la carrière de Longpré, à 7 km au nord-
+ouest de Huy (flanc nord du Synclinorium 
+de Namur) (Hance, Poty in Bultynck, 
+Dejonghe, 2001).
+Il s’agit essentiellement de la partie inférieure de 
+la Formation de Longpré (Membre de Flémalle)  ; la partie 
+supérieure (Membre des Avins) est ici très mince (quelques 
+mètres).
+
+
+===== PAGE 39 =====
+
+37
+La roche est une encrinite : calcaire entièrement constitué 
+de débris de crinoïdes, en bancs épais (pluridécimétriques 
+à métriques), ici complètement transformé en une dolomie 
+saccharoïde brunâtre. Des parties calcaires non dolomitisées 
+n’ont été observées qu’en de  rares endroits.
+Épaisseur :	 une centaine de mètres.
+Âge :	 Viséen inférieur (Moliniacien).
+Utilisation :	 deux grandes carrières exploitent actuellement 
+cette formation en même temps que les formations 
+voisines à usage de granulat.
+Affleurements représentatifs :
+-	
+la formation affleure dans la coupe de la  fig. 13 (nord de 
+Comblain) ;
+-	
+à Martinrive, la tranchée du chemin de fer à 350 m au nord-
+ouest du pont sur le chemin de fer (fig. 14).
+Pour en savoir plus :	 Hance et al., 2001 
+Poty et al. In Bultynck, Dejonghe, 
+2001 
+Aretz et al., 2006 
+Mc Cann et al., 2008
+Regroupement de la Brèche de la Belle Roche et des formations 
+de Terwagne, de Neffe et de Lives - (BTNL)
+À partir de Comblain-au-Pont, vers l’ouest, la 
+partie centrale du synclinal occupe une aire complètement 
+dépourvue d’affleurements sur une distance d’environ 3,5 km. 
+Les observations effectuées plus à l’ouest montrent que le faciès 
+bréchique y est très réduit et qu’il est possible d’y individualiser 
+les formations de Terwagne, de Neffe et de Lives (fig 17). 
+La zone sans affleurement correspond donc à une transition 
+à la fois faciétale et tectonique (changement de direction du 
+plissement : cf. chapitre 3). Cette zone a été, faute de mieux, 
+affectée sur la carte sous la dénomination « regroupement de 
+la Brèche de la Belle Roche et des formations de Terwagne, de 
+Neffe et de Lives (BTNL) ».
+
+
+===== PAGE 40 =====
+
+38
+La Brèche de la Belle Roche (BBR)
+Origine du nom :	 la carrière de la Belle Roche, sur la rive nord 
+de l’Amblève, immédiatement en amont de 
+Comblain-au-Pont (planchette d‘Esneux).
+Masse de brèche calcaire dans laquelle la stratification est 
+tantôt absente, tantôt indistincte, tantôt plus ou moins exprimée. 
+Cette brèche est souvent monogénique : presque tous les blocaux 
+sont constitués de calcaire foncé, généralement noir à grain très 
+fin, du type de celui de la Formation de Terwagne. Le ciment qui 
+relie les blocaux est tantôt formé de cristaux de calcite (ciment 
+sparitique), tantôt formé d’une mouture de fragments calcaires 
+non classés. Ces blocaux sont anguleux et de toutes tailles ; la 
+brèche ne montre donc pas de classement. Une particularité très 
+remarquable est la présence au sein de la brèche de « mega-blocs 
+» très volumineux : il s’agit de sortes de « radeaux » à structure 
+stratifiée dont la longueur va de quelques dizaines à quelques 
+centaines de mètres et  l’épaisseur de quelques mètres à plusieurs 
+dizaines de mètres. Ces radeaux sont disposés parallèlement à la 
+stratification générale (cf. affleurements représentatifs).
+Cette brèche est généralement interprétée aujourd’hui 
+comme une brèche de collapse résultant de l’effondrement et de 
+la fracturation des calcaires sus-jacents, effondrement provoqué 
+par la dissolution de produits évaporitiques vraisemblablement 
+inclus dans la Formation de Terwagne et aujourd’hui 
+complètement disparus. Ce processus s’est produit avant le 
+plissement, à un moment où les couches étaient toujours en 
+position sub-horizontale ; il permet de comprendre la présence 
+des «  radeaux  » mentionnés ci-dessus, ainsi que le caractère 
+irrégulier de la formation.
+Cette unité occupe le cœur du synclinal de Chanxhe à 
+l’est de l’Ourthe. Dans le synclinal de Comblain, elle occupe le 
+cœur de ce pli dans sa partie est (région de Martinrive). Vers l’ouest, 
+en se rapprochant de Comblain-au-Pont, la brèche est mêlée à 
+des passées  de calcaire stratifié toujours plus ou moins disloqué 
+et plus ou moins bréchifié. Ces paquets stratifiés peuvent 
+être attribués à plusieurs formations sus-jacentes (Terwagne, 
+Neffe,…). Quoique bien exposés en divers endroits (notamment 
+dans la carrière de la Belle Roche), ils sont discontinus et ne 
+se raccordent pas les uns aux autres pour former des unités 
+cartogaphiables. En fait, tous les calcaires qui surmontent la 
+brèche sont disloqués à des degrés divers. Cet ensemble n’est pas 
+sans rappeler, mutatis mutandis, les volumes de terrains affectés 
+surmontant les anciennes exploitations  souterraines des couches 
+de houille. Dans ces conditions, cet ensemble a été représenté 
+sur la carte comme « la Brèche de la Belle Roche (BBR) ».
+
+
+===== PAGE 41 =====
+
+39
+Épaisseur :	 Impossible à préciser, probablement irrégulière, 
+sans doute de l’ordre de 200 m.
+Âge :	 l’âge des roches est Viséen (Moliniacien). L’âge du 
+processus de bréchification : inconnu mais antérieur au 
+plissement, probablement post-viséen.
+Utilisation :	 la formation est exploitée, en même temps que 
+les formations sous-jacentes, à usage de granulat, 
+dans la carrière de la Belle Roche.
+Affleurements représentatifs :
+-	
+la route qui monte de Comblain («  Pont-de-Scay  ») vers 
+Oneux (fig. 16 ) ;
+237 000 
+131 000
+N
+100 m
+Lamb. 72 :
+Fig. 16.	Tranchée de la route de Pont de Scay vers Oneux : Brèche de la 
+Belle Roche.
+-	
+le rocher dit « du Vignoble » à Comblain-au-Pont (fig. 13) 
+est une falaise verticale haute d’une trentaine de mètres. 
+Cette falaise est constituée d’une masse de brèche dépourvue 
+de joints, observable à ses deux extrémités le long de la route. 
+Dans cette masse, qui appartient au flanc sud en dressant 
+du synclinal de Comblain, est inclus un « radeau » d’une 
+vingtaine de mètres disposé verticalement et fort bien exposé 
+en hauteur dans la paroi ;
+-	
+à « Pont-de-Scay », sur le flanc droit de la vallée de l’Ourthe, 
+près de l’ancienne gare de chemin de fer de Comblain-au-
+Pont, le versant rocheux montre la disposition connue dans 
+la région sous le nom touristique de « Tartines de Comblain » 
+(fig.  13). Il s’agit, dans le même flanc sud vertical du 
+synclinal d’une série de « radeaux » noyés dans la brèche
+
+
+===== PAGE 42 =====
+
+40
+et mis en évidence par l’effet de l’érosion différentielle (cf. 
+photographie de la couverture de cette notice).
+Pour en savoir plus :	 Devuyst et al., 2005
+Formation de Terwagne (TER)
+Origine du nom :	 La localité de Terwagne, dans le Condroz 
+(Conil, 1967).
+En raison de la rareté des affleurements et de leur 
+mauvaise qualité, la description suivante est empruntée à la 
+notice de la carte voisine de Modave – Clavier.
+Calcaires à grain fin (micrites) gris foncé à noirs, 
+comportant des intraclastes, de rares bioclastes, des ooïdes 
+et structures cryptalgaires  ; calcaires finement crinoïdiques. 
+Cet ensemble, ordonné en séquences, est constitué de bancs 
+décimétriques à pluridécimétriques.
+Le passage à la formation sus-jacente de Neffe est 
+progressif et marqué par l’apparition de couches de calcaire gris 
+clair qui s’intercalent entre les calcaires foncés.
+Épaisseur :	 100 à 110 m.
+Âge :	 Viséen  inférieur (Moliniacien).
+Utilisation :	 aucune
+Affleurement représentatif  : aucun sur la carte de Tavier – 
+Esneux.
+Formation de Neffe (NEF)
+Origine du nom :	 la localité de Neffe, près de Dinant (de 
+Dorlodot, 1895).
+En raison de la rareté des affleurements et de leur 
+mauvaise qualité, la description suivante est empruntée à la 
+notice de la carte voisine de Modave – Clavier.
+Calcaires à grains grossiers, de teinte grise généralement 
+claire, en bancs métriques à plurimétriques d’aspect massif : 
+calcaires bioclastiques, crinoïdiques, oolithiques, avec clastes 
+abondants et pouvant contenir des oncoïdes et une macrofaune 
+abondante.
+
+
+===== PAGE 43 =====
+
+41
+La dolomitisation est parfois présente dans la partie 
+inférieure de la formation.
+Épaisseur : 20 à 30 m.
+Âge : Viséen inférieur (Moliniacien)
+Utilisation :	 aucune ici.
+Affleurement représentatif  : aucun sur la carte de Tavier – 
+Esneux.
+Formation de Lives (LIV)
+Origine du nom :	 la localité de Lives, sur la rive droite de la 
+Meuse, en aval de Namur (Demanet, 1923).
+Calcaires de granularités diverses (fine à grossière), gris 
+foncé à noirs, en bancs décimétriques à pluridécimétriques. 
+Ces calcaires sont habituellement ordonnés en une succession de 
+séquences sédimentaires (Gerards, Michot, 1963).
+Épaisseur :	 environ 100 m.
+Âge :	 Viséen moyen (Livien).
+Utilisation :	 aucune sur cette carte, mais abondantes ailleurs 
+(« calcaire de Meuse »).
+Affleurements représentatifs :
+La coupe de l’ancien vicinal entre Vien et La Rock (partie sud 
+de la planchette de Tavier) (situation : fig. 17; coupe : fig. 18).
+
+
+===== PAGE 44 =====
+
+42
+129 000
+TER
+231 000
+Faille
+NEF
+LIV
+NEF
+TER
+LPR
+YVO
+MRT
+OUR
+N
+100 m
+Lamb. 72 :
+Fig. 17.	Situation du tracé de l’ancien vicinal exposant le cœur du 
+synclinal de Comblain entre Vien et La Rock (cf. coupe fig.18).
+100 m
+HPLA
+YVO
+OUR
+MRT
+LPR
+TER
+LIV
+NEF
+NEF
+TER
+LPR
+MRT
+OUR
+S
+La Rock
+N
+Vien
+Fig. 18.	Coupe le long du tracé de la fig.17.
+Dépôts sableux (SBL)
+Au cours du Cénozoïque, la région a été recouverte 
+de sédiments marins. Ceux-ci ont été partout enlevés par 
+l’érosion et ne subsistent que de manière locale sous la forme 
+de remplissages de cavités karstiques dans les calcaires du socle 
+paléozoïque. Il s’agit de sables blancs ou ocres, de granularités 
+diverses, habituellement non fossilifères, éventuellement 
+associés à des graviers à éléments centimétriques. Ces produits, 
+hors des endroits où ils ont été exploités sont souvent cachés 
+sous la couverture de loess. Il est donc possible que la carte
+
+
+===== PAGE 45 =====
+
+43
+n’en représente pas tous les gisements. Ces gisements, en raison 
+de leur genèse (descente dans des cavités karstiques) ont des 
+dimensions très variables et montrent d’ordinaire une structure 
+assez confuse.
+À noter que la plupart des gisements repérés se trouvent 
+sur les calcaires carbonifères.
+Épaisseurs : très diverses.
+Âge :	 Cénozoïque, probablement Oligocène à Mio-Pliocène 
+par analogie avec les sables de Boncelles, au nord de la 
+présente carte.
+Utilisation :	 ces sables ont été extraits en de nombreux endroits.
+Affleurement représentatif :
+Du sable blanc est encore exposé dans d’assez bonnes conditions 
+dans une ancienne exploitation en bordure d’une route, au bord 
+sud-est de la planchette de Tavier (fig. 19).
+233 000
+129 000
+Lamb. 72 
+N
+100 m
+Fig. 19.	Carrière désaffectée (coin sud-est de la planchette de Tavier) : 
+sable cénozoïque.
+
+
+===== PAGE 46 =====
+
+44
+Blocs quartzitiques épars
+Un autre témoin de cette couverture cénozoïque est 
+représenté par des blocs épars isolés, constitués de quartzite de 
+teinte claire, rose à ocre et pouvant atteindre des dimensions 
+métriques. Ces blocs ont été observés aux environs d’Ellemelle 
+(coin sud-ouest de la planchette de Tavier) (Lamb. 72 : 226 696, 
+129 548 et 226 767, 129 517) où ils reposent sur les formations 
+famenniennes. M. Lohest (1894) les a signalés dans la même 
+région.
+Il faut voir l’origine de ces blocs dans les produits de 
+la lapidification locale des sables cénozoïques, phénomène bien 
+connu dans les régions de Wallonie occupées par ces formations 
+sableuses.
+Formations quaternaires
+Alluvions anciennes (ALA)
+Il s’agit des dépôts fluviatiles qui forment les terrasses 
+de l’Ourthe et de l’Amblève, étagées à plusieurs niveaux. 
+Pour autant qu’on puisse en juger, ils sont constitués 
+essentiellement de graviers. Leurs contours du côté de la vallée 
+se marque généralement par une rupture de pente et la présence 
+de cailloux roulés. Par contre leur extension du côté du versant 
+est d’ordinaire cachée par le loess, ainsi que par les produits 
+éluviaux et colluviaux, de sorte que le tracé de leurs contours en 
+ces endroits est nécessairement entaché d’incertitude.
+Alluvions modernes (AMO)
+Elles consistent surtout en graviers, mais affleurent 
+rarement. Le tracé de leurs contours sur la carte a été basé le plus 
+souvent sur la morphologie des fonds plats des vallées.
+Les limons
+Sous les climats périglaciaires quaternaires, la région a 
+été le siège d’un apport éolien de loess : limon fin, brun, assez 
+homogène et à stratification souvent peu visible. Sur les surfaces 
+sub-horizontales (plateau sur la pénéplaine épivarisque et 
+terrasses fluviatiles) ce loess a pu échapper en partie à l’érosion 
+et forme aujourd’hui une couche d’épaisseur très variable
+
+
+===== PAGE 47 =====
+
+45
+pouvant atteindre localement plusieurs mètres Sur les surfaces 
+en pente, il a été emporté par le creep et le ruissellement, s’est 
+mêlé aux produits de l’eluvium et n’est donc plus identifiable.
+Conformément à la règle adoptée pour l’ensemble de la 
+carte géologique de Wallonie, le loess n’a pas été représenté, 
+en raison de l’impossibilité d’en tracer les contours, même de 
+manière approximative et en raison de son extension qui, en 
+dépit de sa faible épaisseur, cache les roches du substratum et 
+rendrait la carte illisible.
+Quant aux limons d’éluvion (limons de pente), ils ne 
+doivent pas être figurés, n’étant pas indépendants des roches 
+sous-jacentes.
+
+
+===== PAGE 48 =====
+
+46
+3. Géologie structurale
+Au point de vue structural, la région couverte par la carte de 
+Tavier – Esneux appartient à la partie orientale du Synclinorium 
+de Dinant. Il s’agit donc d’un ensemble plissé coupé de failles 
+longitudinales et transversales et dont l’allure générale apparaît 
+sur les coupes AA’, BB’ et CC’ qui accompagnent la carte.
+Les plis
+Les axes des plis sont, dans l’ensemble, proches de 
+l’horizontale ; ils montrent  ça et là des ennoyages peu marqués, 
+en particulier aux endroits des dispositions en relais. Toutefois, 
+la partie orientale de la carte est marquée par un relèvement 
+général des axes vers l’est.
+Les plis présentent plusieurs particularités qui appellent 
+les commentaires suivants. Il s’agit :
+a.	 d’une part d’une virgation, c’est-à-dire d’un changement de 
+direction entre les régions est et ouest de la carte,
+b.	 d’autre part d’une différence de style entre le centre du 
+synclinorium et son flanc nord.
+a. La virgation
+Le changement dans la direction des plis s’opère le long 
+d’une bande NNE – SSW voisine du cours de l’Ourthe (cf. 
+fig. 20 et schéma structural). Les axes des plis qui, à l’est de cette 
+bande, sont orientés E – W  passent dans la partie occidentale à 
+une orientation d’environ N 60° E. Ce changement s’effectue 
+sur une distance assez courte, tantôt de manière progressive 
+(cas du synclinal majeur de Comblain), tantôt, le plus souvent, 
+par l’intermédiaire de dispositions en relais plus ou moins 
+compliquées de plis secondaires et de failles (cas du synclinal 
+de Chanxhe). Il en résulte une certaine discontinuité, les plis ne 
+se poursuivant pas de la région orientale à la région occidentale 
+de la carte.
+
+
+===== PAGE 49 =====
+
+47
+Synclinal  de  Chanxhe 
+Faille de Pépinster
+Faille de Hody
+Faille de Villers-aux-Tours
+    Synclinal 
+L'Ourthe
+FLANC   SUD
+FLANC   NORD
+DU
+SYNCLINORIUM DE DINANT
+ve
+La Magré
+blè
+L'A
+       Comblain 
+     de 
+m
+ZONE  
+ 
+ DE  
+   VIRG
+ATION
+N
+2 Km
+Fig. 20.	Schéma structural et la zone de virgation (zone de changement 
+d’orientation d’axes des plis).
+Une mention particulière doit être faite du synclinal 
+de Comblain. Ses deux flancs exposent les formations 
+tournaisiennes dont la direction se modifie de manière continue 
+et progressive ; en témoignent notamment les alignements des 
+anciennes carrières de « petit granit ». Il en va autrement du 
+cœur du synclinal. Ce cœur, en effet, sur la planchette d’Esneux, 
+est occupé par la Brèche de la Belle Roche dont la constitution 
+singulière est exposée par de nombreux affleurements dans la 
+localité de Comblain-au-Pont et ses environs. Mais à partir de là 
+vers l’ouest, sur une distance de 3,5 km, le cœur du synclinal ne 
+donne lieu à aucun affleurement. Il est à nouveau exposé dans 
+la coupe d’un ancien vicinal, au sud du village de Vien, coupe 
+représentée par la fig.18. On voit ainsi que :
+-	
+le faciès bréchique a, à peu près, complètement disparu ;
+-	
+le cœur du synclinal expose les formations de Terwagne, de 
+Neffe et de Lives et comporte plusieurs plis secondaires ainsi 
+qu’une faille longitudinale ;
+-	
+le cœur du pli, à partir de l’endroit de sa virgation, est 
+fortement élargi, jusqu’à une valeur presque double.
+Dans ces conditions aucune représentation, même 
+hypothétique n’est possible de la constitution géologique de 
+cette zone sans affleurement. Pour cette raison ces formaions 
+ont été regroupées.
+b. Le Synclinorium de Dinant : différents styles
+Dans la plus grande partie de la carte (Condroz), le terrain 
+est occupé par les formations famenniennes et dinantiennes 
+qui forment le cœur du Synclinorium de Dinant. Cet ensemble 
+présente une vergence générale vers le nord  : les flancs sud
+
+
+===== PAGE 50 =====
+
+48
+des synclinaux sont verticaux, voire renversés, tandis que les 
+flancs nord pendent de 45° à 50° vers le sud. Les plis, chaque 
+fois qu‘on peut en juger, ont des formes simples : les zones de 
+charnières y sont  arrondies et exposent des couches plates ; 
+il n’y a guère de plis secondaires. En particulier, dans le cœur 
+des anticlinaux, les couches de la Formation de Montfort sont 
+disposées en larges plateures  dans lesquelles la localisation des 
+charnières devient imprécise. La longueur d’onde du plissement 
+est d’ordre kilométrique (1 à 2 kilomètres).
+Il en va autrement dans la partie nord et nord-ouest 
+de la carte (transition Condroz – Ardenne condruzienne) où 
+affleurent les formations eiféliennes, givetiennes et frasniennes 
+du flanc nord du Synclinorium de Dinant. En effet, les plis y 
+sont très serrés ; leur longueur d’onde est de l’ordre de 1 à 3 
+hectomètres ; les couches sur les flancs des plis sont presque 
+partout redressées  ; dans les charnières, aiguës et souvent 
+faillées, il n’est pas rare d’observer localement une schistosité 
+de dissolution, plan-axiale, qui affecte les roches calcaires. 
+La vergence s’exprime vers le sud, pour autant qu’on puisse en 
+juger dans des plis à flancs très redressés. Ce style structural 
+très particulier a pour conséquence que, même dans des aires 
+à très grande densité d’affleurements (vallée de la Magrée, 
+par exemple, à l’ouest d’Esneux) il est difficile de corréler les 
+observations entre elles et le tracé de la carte est, au moins en 
+partie, entaché d’incertitude.
+Aucune observation n’a permis de déceler ni même de 
+soupçonner la cause de cette différence de style structural entre 
+les deux zones mentionnées ci-dessus. Elles ne sont séparées 
+l’une de l’autre ni par une surface discordante ni par un accident 
+tectonique (chevauchement, charriage, décollement,…). Il faut 
+souligner de plus que les roches de ces deux zones (famenno-
+dinantienne d’une part, eifélo-giveto-frasnienne de l’autre) 
+ont des compétences mécaniques comparables et que par 
+conséquent, la différence de style déformatif ne semble pas 
+pouvoir être imputée à une différence de lithologie. Peut-être 
+s’agit-il d’une illustration de ce que, dans une série plissée, le 
+taux de raccourcissement n’est pas réparti de manière homogène.
+Il semble que les mêmes particularités structurales 
+caractérisent le flanc sud du Synclinorium de Dinant, mais ce 
+flanc sud n’intéresse qu’une surface limitée dans le coin SE de 
+la carte
+Dans la partie plus externe du synclinorium (coin nord-
+ouest de la carte  : Ardenne condruzienne), occupée par les 
+roches d’âge dévonien inférieur, il n’est pas possible de préciser 
+le style de la déformation, en raison de l’absence presque totale 
+d’affleurements.
+
+
+===== PAGE 51 =====
+
+49
+La schistosité
+La 
+schistosité, 
+d’attitude 
+plan-axiale, 
+affecte 
+essentiellement les roches pélitiques de la Formation de la 
+Famenne. Toutefois, elle n’y est pas uniformément distribuée : 
+tantôt très marquée, tantôt moins bien exprimée. La stratification 
+est souvent peu visible, laissant le doute sur la structure de la 
+roche:  shale ou schiste Dans la partie supérieure de l’unité, 
+qui montre une transition lithologique vers les siltites de la 
+Formation d’Esneux la schistosité disparaît progressivement.
+D’autre part, il n’est pas rare d’observer un débit en 
+baguettes dû à l’intersection de la stratification et de la schistosité. 
+Cette linéation d’intersection, lorsqu’elle est présente, fournit 
+une indication précieuse de l’attitude, généralement horizontale, 
+des axes des plis auxquels elle est parallèle.
+Enfin, comme on l’a vu au début de ce chapitre, 
+une schistosité de dissolution peut affecter localement les 
+calcaires dévoniens dans les zones de charnière des plis aigus 
+qui caractérisent le flanc nord du Synclinorium de Dinant. 
+Cette disposition est bien observable dans la coupe représentée à 
+la fig. 5 (calcaires de la Formation de Lustin).
+Les failles
+La carte de Tavier – Esneux comporte un nombre 
+relativement important de failles. Celles-ci sont de trois types ;
+Premier type
+Il s’agit de failles inverses d’attitude longitudinale, 
+parallèles à la direction des plis. Leur extension en direction 
+est limitée. Elles sont particulièrement fréquentes dans les 
+régions à plis serrés des deux flancs du Synclinorium de Dinant 
+et apparaissent le plus souvent comme une accentuation de 
+la déformation dans les zones de charnière des anticlinaux. 
+Elles sont donc d’âge varisque et plus ou moins contemporaines 
+du plissement. Elles n’ont pas reçu de noms.
+Deuxième type
+Il s’agit de trois failles longitudinales de chevauchement 
+d’importance majeure, qui se suivent en direction sur une 
+grande distance. Ce sont  : d’une part la faille de Pepinster 
+dont le compartiment sud chevauche le compartiment nord,
+
+
+===== PAGE 52 =====
+
+50
+d’autre part les failles de Villers-aux-Tours et de Hody dont le 
+chevauchement s’opère en sens inverse du nord vers le sud.
+La faille de Pepinster, accident de grande extension, a été 
+identifiée sur la carte de Fléron – Verviers (Laloux et al, 1996) ; 
+elle traverse toute la présente carte où elle a été signalée par 
+Sartenaer (1958). Elle coupe en biseau la série plissée  et doit 
+se prolonger vers l’ouest sur la carte voisine de Huy – Nandrin, 
+non encore levée. Dans la partie nord-orientale de la planchette 
+d’Esneux, les conditions d’affleurement n’autorisent qu’un 
+tracé relativement hypothétique qui a été adopté de manière à se 
+raccorder à celui de la carte de Fléron – Verviers.
+La faille de Villers-aux-Tours a été identifiée autrefois 
+(de Rauw, 1911) grâce  surtout à la coupe fournie par une galerie 
+de captage d’eau  ; cette galerie est aujourd’hui inaccessible 
+(murée et noyée), mais les observations de de Rauw paraissent 
+incontestables et la carte qui accompagne sa note est en accord 
+avec nos levés. Vers l’ouest, dans une zone malheureusement 
+pauvre en affleurements, elle est coupée par la faille de 
+Pepinster, à laquelle elle est donc antérieure. Il est possible 
+qu’elle s’amortisse vers l’est (coin nord-est de la planchette 
+d’Esneux), mais les conditions d’affleurement ne permettent pas 
+d’en décider.
+Quant à la faille de Hody, elle traverse aussi la plus 
+grande partie de la carte et s’amortit vers l’est, au-delà de la 
+vallée de  l‘Ourthe.
+D’une manière générale, les conditions d’affleurement 
+ne permettent pas d’apprécier la valeur de la pente de ces 
+chevauchements majeurs. La faille de Pepinster a été figurée 
+sur la carte de Fléron – Verviers comme un charriage listrique 
+d’allure plate. La faille de Villers-aux-Tours a été dessinée 
+par de Rauw (1911) avec une pente nord de l’ordre de 45°. 
+Quant à la faille de Hody, elle est visible en position redressée en 
+un point situé sur le versant droit de l’Ourthe, à l’extrémité sud 
+de l’affleurement représenté à la fig. 12. Dans ces conditions,  sur 
+les coupes qui accompagnent la carte, les pentes de ces failles 
+doivent être comprises comme une représentation probable.
+Ces trois failles longitudinales de chevauchement 
+coupent les surfaces axiales des plis et sont donc d’âge tardi-
+varisque, postérieur au plissement.
+Troisième type
+Il existe enfin, en divers endroits, des failles transverses, 
+dont la direction est sub-perpendiculaire à celle des plis et dont 
+la pente est apparemment proche de la verticale. Leur extension 
+est toujours limitée. Quant à leurs rejets, il n’est guère possible
+
+
+===== PAGE 53 =====
+
+51
+de se faire une idée de leur composantes verticale et décrochante. 
+Il n’a été observé aucun remplissage de type filonien qui puisse 
+faire penser à des failles d’extension. Elles sont manifestement 
+postérieures au plissement varisque ; on peut penser qu’elles 
+sont en relation avec les grabens d’âge cénozoïque d’Europe 
+occidentale.
+
+
+===== PAGE 54 =====
+
+52
+4. Hydrogéologie
+Si les eaux souterraines sont présentes dans presque 
+toutes les formations géologiques  de la carte, leur comportement 
+dépend fortement de la nature des roches.
+En effet, le processus normal d’altération des calcaires, 
+à savoir leur dissolution par les eaux d’infiltration chargées de 
+CO2, a pour effet l’élargissement des joints et par conséquent la 
+création de volumes souterrains capables à la fois de renfermer 
+de grandes quantités d’eau et d’en permettre une circulation 
+souterraine aisée et rapide. Les calcaires sont particulièrement 
+bien représentés dans l’aire couverte par la carte de Tavier – 
+Esneux et s’y répartissent en deux ensembles. Il s’agit d’une part 
+des calcaires dinantiens qui occupent les cœurs des synclinaux 
+condruziens. Leurs surfaces d’affleurement très étendues jointes 
+à leur grande épaisseur (quelque 500  m de stampe) en font 
+des réservoirs particulièrement importants d’un grand intérêt 
+économique. Il s’agit d’autre part des calcaires dévoniens, moins 
+épais (environ 90m) et dont l’affleurement, d’extension plus 
+réduite, intéresse  la partie septentrionale de la carte ainsi qu’une 
+surface réduite à son bord sud. Le volume d’eau drainé y est donc 
+beaucoup moins important que celui des calcaires carbonifères. 
+Il convient de signaler que les aquifères en milieu calcaire sont 
+particulièrement sensibles à la pollution car ils doivent une partie 
+notable de leur alimentation aux pertes diffuses et chantoirs de 
+cours d’eau souvent pollués (cf. chapitre 5).
+Les formations gréseuses, généralement bien diaclasées, 
+renferment normalement des nappes de fissures, dans la mesure 
+où les roches ne contiennent pas trop de minéraux argileux 
+susceptibles d’en  colmater les joints (cas des siltites). Le volume 
+des joints étant évidemment plus réduit que dans les calcaires, 
+ces nappes ont forcément, toutes choses égales d’ailleurs, un 
+rendement inférieur à celui des nappes des calcaires ; elles 
+présentent néanmoins un intérêt économique certain et ont fait 
+l’objet de divers captages. Elles sont d’ailleurs moins sensibles 
+à la pollution, l’eau d’infiltration étant en général filtrée par 
+la couche superficielle de loess. Les roches concernées sont 
+surtout celles de la Formation de Montfort qui, avec ses 250 m de 
+puissance, affleure sur de très vastes surfaces dans les coeurs en 
+larges plateures des anticlinaux condruziens. Ces surfaces, qui 
+correspondent à des aires d’altitude élevée (« tiges » du Condroz : 
+cf 1.3) sont souvent marquées à leur pourtour par des sources, 
+exutoires des nappes au contact des roches imperméables ou peu 
+perméables de la Formation d’Evieux. Ces sources contribuent 
+ainsi à l’alimentation des volumes calcaires localisés dans les 
+dépressions morphologiques (« xhavées », cf 1.3).
+
+
+===== PAGE 55 =====
+
+53
+Quant aux schistes (shales) et aux siltites, dont les 
+produits d’altération colmatent les fissures, ce sont des milieux 
+imperméables, sans intérêt hydrogéologique. On notera 
+cependant que certains niveaux de ce type, même peu épais, 
+peuvent jouer le rôle de barrière imperméable entre les aquifères.
+Les calcaires argileux et les siltites à blocaux calcaires 
+de la Formation de Souverain Pré, ensemble carbonaté épais 
+de quelques mètres à une trentaine de mètres, interstratifié 
+dans les dépôts famenniens essentiellement arénacés, jouent 
+un rôle particulier. En effet, des lignes de sources jalonnent 
+généralement cette formation franchement carbonatée qui sert 
+de drain naturel à l’aquifère des grès de Montfort, la formation 
+sous-jacente d’Esneux étant relativement imperméable.
+Enfin, il faut mentionner parmi les aquifères les dépôts 
+meubles sableux ou graveleux. Il s’agit :
+-	
+des produits cénozoïques descendus dans des cavités 
+karstiques des calcaires  ; ils peuvent parfois constituer 
+des aquifères locaux d’importance réduite dans le cas où 
+les calcaires sous-jacents sont colmatés par des résidus de 
+dissolution argileux (ex. : le fond de la carrière mentionnée à 
+la fig. 19 est occupé par un étang) ;
+-	
+des terrasses fluviatiles (ALA) dans la mesure où elles 
+reposent sur un substrat imperméable, ce qui est rarement le 
+cas ;
+-	
+des graviers d’alluvion (AMO) dont la nappe est en relation 
+directe avec les cours d’eau.
+
+
+===== PAGE 56 =====
+
+54
+5. Phénomènes karstiques
+Ils caractérisent toutes les roches calcaires et sont donc 
+très développés sur le territoire de la carte, particulièrement riche 
+en formations de cette nature. Ils affectent aussi bien les calcaires 
+dévoniens que les calcaires carbonifères et même, localement, la 
+Formation de Souverain Pré (cas observé à Fontin).
+Ils consistent classiquement :
+-	
+en surface  : en dolines, effondrements, chantoirs, pertes 
+diffuses de cours d’eau, vallées ou vallons secs, cours d’eau 
+temporaires, entrées de grottes ou de cavités ;
+-	
+sous la surface : en conduits souterrains de circulation d’eau 
+et en grottes dont certaines sont spectaculaires et d’intérêt 
+touristique.
+Il faut signaler particulièrement la grande vallée sèche qui 
+descend de Sprimont à Chanxhe, établie sur le calcaire dinantien 
+du synclinal de Chanxhe, ainsi que la  Magrée (affluent de gauche 
+de l’Ourthe, juste en aval d’Esneux), cours d’eau temporaire, 
+tantôt sec, tantôt actif, établi sur les calcaires dévoniens. 
+D’autre part, il doit exister un certain nombre de grottes qui sont 
+toujours inconnues, soit parce que leurs entrées sont cachées 
+sous des produits éluviaux, soit parce qu’elles ne communiquent 
+avec la surface que par des conduits trop étroits.
+Il convient de remarquer :
+-	
+que des phénomènes karstiques peuvent se manifester 
+en tous points d’une aire occupée par des calcaires et pas 
+seulement aux endroits que mentionnent les cartes de risques 
+karstiques ; en particulier, des accidents (effondrements par 
+exemple) peuvent parfois se manifester brusquement à des 
+endroits jusque là exempts de telles manifestations ; deux cas 
+ont été observés par les auteurs soussignés sur le territoire de 
+la carte ;
+-	
+que dans leur circulation souterraine les eaux suivent, bien 
+entendu, les couches calcaires selon un trajet qui peut être 
+sans aucun rapport avec la topographie de la surface ; en 
+d’autres termes, l’eau qui tombe dans un chantoir situé dans 
+une vallée ne suit pas ensuite nécessairement le tracé de cette 
+vallée, contrairement à ce que croient certains spéléologues ;
+-	
+que l’observation en surface des phénomènes et structures 
+karstiques est susceptible, en l’absence d’affleurements, de 
+fournir des indications précieuses à l’établissement de la 
+carte géologique : voir, par exemple, à ce sujet : de Radzitsky 
+(1947, 1948, 1949, 1950).
+Pour plus de renseignements à propos des phénomènes 
+karstiques, voir : Vandenbroeck et al. 1910.
+
+
+===== PAGE 57 =====
+
+55
+6. Matières utiles (Poty, Chevalier, 2004)
+Les grès
+Les grès et quartzites des formations d’Acoz, de Wépion, 
+de Burnot et de Pepinster n’ont donné lieu à aucune extraction 
+sur la présente carte.
+Par contre les microquartzites arkosiques micacés de la 
+Formation de Montfort, sous l’appellation « grès de l’Ourthe », 
+ont fait l’objet de très nombreuses exploitations en carrières, 
+dont plusieurs carrières souterraines au sud de Comblain-
+au-Pont. Ces grès présentent en effet plusieurs qualités  : les 
+bancs minces (pluricentimétriques) séparés par des joints de 
+stratification tapissés de micas, se débitent aisément en plaques 
+directement utilisables en dallages rustiques. Les bancs plus 
+épais ont la propriété de s’épincer de façon aisée et ont été de 
+ce fait abondamment utilisés pour la production de moellons et 
+de pavés. Aujourd’hui la taille de moellons est encore pratiquée 
+à plusieurs endroits ; l’essentiel de l’activité extractive actuelle 
+concerne toutefois la production de granulats qui, en raison de la 
+nature quartzitique de la roche, sont de très bonne qualité, tout au 
+moins lorsqu’ils ne sont pas mêlés aux fragments provenant des 
+bancs silteux par suite de la pratique du tir en masse. A certains 
+endroits, les anciens terrils formés des déchets d’épinçage ont 
+même été repris pour être transformés en granulats.
+Les calcaires
+La plupart des formations calcaires, tant dévoniennes que 
+dinantiennes, ont fait l’objet autrefois de multiples exploitations 
+locales, soit pour l’alimentation de fours à chaux, soit pour la 
+taille de moellons et pavés, pour le façonnage de pierres de taille 
+ou encore pour la transformation en marbre par polissage.
+Une mention spéciale doit être faite de l’encrinite de la 
+Formation de l’Ourthe qui, sous l’appellation de « petit granit », 
+a fait l’objet, tant ici qu’ailleurs dans le Condroz, de très 
+nombreuses exploitations à l’usage de pierre de taille, de pierre 
+d’ornement, de pierre polie (marbre) et aussi de moellons et 
+pavés (Libert 1911). Il s’agit en effet d’une pierre de très grande 
+qualité, probablement la meilleure pierre de taille de la région 
+wallonne. La présence de bancs d’épaisseur plurimétrique et à 
+diaclases espacées permet l’obtention de blocs très volumineux 
+(statuaire, monuments) ainsi que le débitage en plaques de
+
+
+===== PAGE 58 =====
+
+56
+grande surface à l’usage de marbre. Plusieurs carrières sont 
+encore aujourd’hui en pleine activité.
+Deux carrières de grande taille exploitent aujourd’hui 
+à l’usage de granulats un ensemble de plusieurs formations 
+dinantiennes, à l’exclusion du « petit granit » réservé aux usages 
+« nobles » mentionnés ci-dessus.
+Les sables
+Les sables cénozoïques, piégés dans les cavités 
+karstiques des calcaires paléozoïques, ont été extraits en de 
+multiples endroits. Ils étaient principalement destinés à la 
+construction. Eu égard à leur mode de formation, ces gisements 
+avaient nécessairement une extension limitée et par conséquent 
+un caractère local. Toutes ces exploitations sont aujourd’hui 
+abandonnées.
+Les minerais de fer
+La base de la Formation de Névremont (Givetien) 
+comporte quelques bancs de quartzite blanc ou rose auxquels 
+sont associés des encroûtements de limonite, parfois en quantité 
+notable. Ces produits ont été exploités autrefois comme minerais 
+de fer. Il convient de signaler en particulier les gisements des 
+environs de Hayen (bord nord de la planchette d’Esneux) qui 
+ont fait l’objet de travaux souterrains jusqu’à une profondeur 
+de plusieurs dizaines de mètres, ainsi que ceux des environs de 
+Plainevaux (coin nord-est de la planchette de Tavier) (dimanche, 
+toussaint, 1977).
+
+
+===== PAGE 59 =====
+
+57
+BIBLIOGRAPHIE
+Aretz M., Poty E., Herbig H.-G., 2006. Pre-conference field trip. 
+From palaeokarst to calciturbidites – a carbonate platform-slope-
+transect from the Mississipian Limestone in eastern Belgium 
+to the Kulm Basin in western Germany. Kölner Forum Geol. 
+Paläont., 16, pp 1 – 41.
+Asselberghs E., 1946. L’Eodévonien de l’Ardenne et des régions 
+voisines. Mém. Inst . Geol. Univ. Louvain, 14, pp 1-598.
+Bellière J., 1951. Contribution à l’étude des facies calcareux 
+des psammites du Condroz (Famennien belge). Proc. 3d Intern. 
+Congress of Sedimentology (Wageningen) pp 57-65.
+Bouckaert J., Thorez J., 1965. Contribution à l’étude du 
+Dévonien supérieur dans la région d’Esneux. Bull. Soc. Belge 
+Geol., 74, pp 1-7.
+Bouckaert 
+J., 
+Streel 
+M., 
+Thorez 
+J., 
+1968. 
+Schéma 
+biostratigraphique et coupes de référence du Famennien belge. 
+Ann. Soc. Géol. Belg. 91, pp 317-336.
+Bultynck P., Dejonghe L., 2001. Lithostratigraphic scale of 
+Belgium. Geol. Belg., 4, 1-2, 168 pp.
+Bultynck P., Coen-Aubert M., Dejonghe L., Godefroid J., Hance 
+L., Lacroix D., Preat A., Stainier P., Steemans P., Streel M., 
+Tourneur F., 1991. Les formations du Dévonien moyen de la 
+Belgique. Mém. explic. Carte géol. et minière de la Belgique, 
+30, 106 pp.
+Coen M., 1974. Le Frasnien de la bordure orientale du bassin de 
+Dinant. Ann. Soc. Géol. Belg., 97, pp 67-103.
+Coen M. & Coen-Aubert M., 1971. L’assise de Fromelennes 
+aux bords sud et est du bassin de Dinant et dans le massif de la 
+Vesdre. Ann. Soc. Géol. Belg., 94 / 1, pp 5-20.
+Coen-Aubert M., 1973. Le Givetien et le Frasnien de la vallée du 
+Hoyoux. Service Géol. de Belg. ; Profess. paper 1973-6, 1-12.
+Coen-Aubert M., Coen M., 1975. Le Givetien et le Frasnien dans 
+la vallée de la Meuse de Tailfer à Yvoir (bord nord du bassin de 
+Dinant). Ann. Soc. Géol. Belg., 97, pp 499-524.
+Conil R., 1960. Le Tournaisien de la gare d’Yvoir. Bull. Soc. 
+Belg. Géol., 69, pp 277-294.
+Conil R., 1967. Problèmes du Viséen inférieur dans le Condroz, 
+Ann. Soc. Géol. Belg., 90 / 4, pp B413-429.
+
+
+===== PAGE 60 =====
+
+58
+de Dorlodot H., 1893. Recherches sur le prolongement oriental 
+du Silurien de l’Entre-Sambre-et-Meuse et sur la terminaison 
+orientale de la faille du Midi. Ann. Soc. Belg. Géol. , 20, pp 
+287-427.
+de Dorlodot H., 1895. Le Calcaire carbonifère de la Belgique 
+et ses relations avec celui du Hainaut français. Ann. Soc. Géol. 
+Nord, 23, pp 201-213.
+de Dorlodot H., 1901. Compte-rendu des excursions sur les 
+deux flancs de la crête du Condroz, faites par la Société belge 
+de géologie, de paléontologie et d’hydrologie le 19 mars et les 
+avril 1899. Bull. Soc. Belge Géol. 14, M113-192.
+Dejonghe L., 2001. Guide de lecture des cartes géologiques de 
+Wallonie. Ministère de la Région Wallonne, DGRNE ;
+Dejonghe L., Hance L., Steemans P., 1991. Formation de Pepinster, 
+in : Les formations du Dévonien moyen de la Belgique. Mém. 
+explic. Carte géol. et Minière de la Belgique, 30, p 93.
+de La Vallée-Poussin C., 1889. Observations sur la série de Bure 
+aux environs d’Esneux. Ann. Soc. Géol. Belg., 25, Mém.
+Demanet F., 1923. Le Waulsortien de Sosoye et ses rapports 
+fauniques avec le Waulsortien d’âge tournaisien supérieur. Mém. 
+Inst. Géol. Univ. Louvain. 2, pp 37 – 285.
+de Radzitzky I., 1947. Quelques observations sur la planchette 
+de Tavier – Esneux (première note). Ann. Soc. Géol. Belg., 70, 
+pp B326 – 335.
+de Radzitzky I., 1948. Quelques observations sur la planchette 
+de Tavier – Esneux (deuxième note). Ann. Soc. Géol. Belg., 71, 
+pp B271-283.
+de Radzitzky I., 1949. Quelques observations sur la planchette 
+de Tavier – Esneux (troisième note). Ann. Soc. Géol. Belg., 72, 
+pp B335-347.
+de Radzitzky I., 1950. Quelques observations sur la planchette 
+de Tavier – Esneux (quatrième note). Ann. Soc. Géol. Belg., 73, 
+pp B231-240.
+de Radzitzky I., 1955. Quelques mots sur la tectonique des 
+environs d’Esneux (cinquième note). Ann. Soc. Géol. Belg., 78, 
+pp B469-476.
+de Rauw H., 1911. La faille de Villers-aux-Tours. Ann. Soc. Géol. 
+Belg., 39, pp M131-141.
+Devuyst F.-X., Hance L., Poty E., 2005. The Dinantian of southern 
+Belgium revisited  : sedimentary history and biostratigraphy. 
+A guidebook of key sectons. I.U.G.S. Subcommission on 
+carboniferous stratigraphy field trip, May 2005 ; pp 1-79.
+
+
+===== PAGE 61 =====
+
+59
+Dimanche F., Toussaint G., 1977. Gisement de fer au contact 
+Givetien – Couvinien (Esneux). Ann. Mines de Belg., 5e livr., 
+pp 533-540.
+d’Omalius d’Halloy H., 1835. Eléments de géologie ou seconde 
+partie des éléments d’histoire naturelle inorganique. Edit. 
+Levrault, 742 pp.
+Fourmarier P., 1907. Les calcaires dévoniens de l’Ardenne 
+belge. Ann. Soc. Géol.  Belg., 34, pp M157-180.
+Fourmarier P., 1900. Etude du Givetien et de la partie inférieure 
+de Frasnien du bord oriental du bassin de Dinant. Ann. Soc. 
+Géol. Belg., 27, pp 49-110.
+Fourmarier P., 1922. Tectonique générale des terrains 
+paléozoïques de la Belgique. Congrès Géol. Intern. (Bruxelles). 
+Livret-guide excursion C2.
+Fourmarier P., 1940. Les variations de facies et de puissance 
+du Dévonien moyen entre Liège et l’Amblève. Ann. Soc. Géol. 
+Belg., 63, pp B344-354. 
+Fourmarier P. (édit.), 1954. Prodrôme d’une description 
+géologique de la Belgique. Soc. Géol. de Belgique, hors série.
+Gerards J., Michot P., 1963. Le Viséen moyen, partie supérieure : 
+V2b in : Excursion G, 1e partie, sédimentologie des formations 
+viséennes du Synclinorium de Namur dans la vallée de la 
+Meuse. 6e Congrès Internat. de Sédimentologie, Belgique et 
+Pays-Bas ;10 – 12.
+Gosselet J., 1888. L’Ardenne. Mém. pour servir à l’explication 
+détaillée de la carte géologique de France. Paris.
+Groessens E., 1975. Distribution des conodontes dans le 
+Dinantien de la Belgique. Intern. Symposium Geol. Survey of 
+Belgium, publ. N° 17.
+Hance L., Dejonghe L., Steemans P., 1992. Stratigraphie du 
+Dévonien inférieur dans le massif de la Vesdre (Belgique). 
+Ann. Soc. Géol. Belg., 115 / 1.
+Hance L., Poty E., Devuyst F-X., 2001. Stratigraphie séquentielle 
+du Dinantien type (Belgique) et corrélation avec le Nord de la 
+France (Boulonnais, Avesnois). Bull. Soc. Géol. de France, 172 
+/ 4, pp 411-426.
+Hedberg H., 1976. Guide stratigraphique international. 
+Classification, terminologie et règles de procédure. Doin, Paris, 
+233pp.
+Lacroix D., 1974. Sur la stratigraphie du Mésodévonien et du 
+Frasnien au bord sud du synclinorium de Namur. Ann. Soc. 
+Géol. Belg. 97, pp 11-21
+
+
+===== PAGE 62 =====
+
+60
+Laloux M., Dejonghe L., Ghysel P., Hance L., 1996. Carte 
+géologique de Wallonie au 25.000e ; Fléron – Verviers 42 / 7 – 
+8. Ministère de la Région wallonne.
+Legraye M., 1925. Le passage du Famennien au Calcaire 
+carbonifère entre Chanxhe et Rivage. Ann. Soc. Géol. Belg. 48, 
+pp.
+Legraye M., 1929. La tectonique du Dévonien moyen entre 
+Esneux et Plainevaux. Ann. Soc. Géol. Belg. 82, pp B283-289.
+Libert J., 1911. Le petit granit en province de Liège. Annales 
+des Mines.
+Lohest M., 1894. Sur les blocs landeniens d’Ellemelle. Ann. Soc. 
+Géol. Belg. 21, pp 78-80.
+Lohest M., 1898. Carte géologique de Belgique à 1/40.000. 
+N°147 Tavier – Esneux. Commission géologique de Belgique.
+Lohest M., Forir H., 1895. Compte-rendu de la session 
+extraordinaire de la Société Géologique de Belgique (vallée de 
+l’Ourthe) du 3 au 6 septembre 1892. Ann. Soc. Géol. Belg., 22, 
+pp 87-140.
+Mc Cann T., Skompski S., Poty E., Dusar M., Vozarova A., 
+Schneider J., Wetzel A., Krainer K., Kornpihl K., Schäfer A., 
+Krings M., Oplustil S., Tait J., 2008. Carboniferous, in : Mc Cann 
+T. (ed.) :The Geology of Central Europe, vol.1 : Precambrian 
+and Palaeozoïc. Geological Society, London ; pp 411 – 529.
+Mailleux E., 1922. Le Dévonien du bord méridional du synclinal 
+de Dinant. Congrès géologique internat. Bruxelles. Excursion 
+A2.
+Mourlon M., 1886. Monographie du Famennien, comprenant les 
+psammites du Condroz et les schistes de la Famenne proprement 
+dits (Dévonien supérieur). Bruxelles
+Poty E., Chevalier E., 2004. L’activité extractive en Wallonie. 
+Situation actuelle et perspectives. Ministère de la Région 
+wallonne, 85 p.
+Poty E., Chevalier E., 2007. Late frasnian phillipsastreid 
+biostromes in Belgium. in : Alvaro J .J. et al. eds – Palaeozoïc 
+reefs and bioaccumulations : climatic and evolutionary controls. 
+Geological Society of London, Special Publication 275 ; pp 143-
+161.
+Ramsay J., Huber M., 1997. Modern Structural Geology. 
+Academic Press.
+Sartenaer P., 1957. Esquisse d’une division stratigraphique 
+nouvelle des dépôts du Famennien inférieur du Bassin de Dinant. 
+Bull. Soc. Belge Géol. 65 / 3 ; pp 421-446.
+
+
+===== PAGE 63 =====
+
+61
+Sartenaer P., 1958. A propos de certaines couches à inclusions 
+calcareuses du Famennien inférieur. Ann. Soc. Géol. Belg.  81, 
+pp 295-309.
+Thorez J., Bless M., Bouckaert J., Conil R., Dreesen R., Groessens 
+E. & Streel M., 1974. Excursion D in : Bouckaert J., Streel M., 
+éds  : Guidebook of the International Symposium on belgian 
+micropaleontological limits from Emsian to Visean, september 
+1st to 10th.      Serv. Géol. Belgique, Bruxelles  40pp.
+Thorez J., Streel M., Bouckaert J., Bless M., 1977. Stratigraphie 
+et paléogéographie de la partie orientale du synclinorium de 
+Dinant (Belgique) au Famennien supérieur : un modèle de bassin 
+sédimentaire reconstitué par une analyse  pluridisciplinaire 
+sédimentologique et micropaléontologique. Mededelingen Rijks 
+Geologische Dienst, vol 28, pp17-32.
+Thorez J., Dreesen R., Streel M., 2006. Famennian in : Current 
+status of chronostratigraphic units named from Belgium and 
+adjacent areas. Geologica Belgica 9/1-2 pp 27-45.
+Van Den Broeck E., Martel E.A., Rahir E., 1910. Les cavernes et 
+les rivières souterraines de Belgique. 2 volumes  1841pp.
+Vandenven G., 1984. Description des sondages implantés le long 
+de l’autoroute E9 entre Tilff (Cortil) et Remouchamps. Service 
+Géol. de Belg. ;  Profess. paper 1984/7 n° 211.
+
+
+===== PAGE 64 =====
+
+62
+ANNEXES
+Liste des captages
+Prises d’eau situées sur la feuille 49/1-2 (X et Y = coordonnées 
+Lambert 72)
+X
+Y
+Commune
+Nature d’ouvrage
+231.328
+132.962
+Anthisnes
+à déterminer
+228.420
+132.316
+Anthisnes
+puits foré
+228.495
+134.549
+Anthisnes
+puits foré
+231.087
+128.724
+Anthisnes
+puits foré
+228.482
+129.454
+Anthisnes
+puits traditionnel
+233.078
+131.451
+Anthisnes
+source à l'émergence
+228.555
+129.819
+Anthisnes
+source à l'émergence
+227.691
+130.255
+Anthisnes
+galerie à flanc de coteau
+230.725
+132.173
+Anthisnes
+puits foré
+230.973
+133.984
+Anthisnes
+puits traditionnel
+239.860
+129.417
+Aywaille
+à déterminer
+240.811
+130.613
+Aywaille
+puits traditionnel
+239.027
+129.238
+Comblain-au-Pont
+puits foré
+237.283
+135.384
+Esneux
+puits foré
+236.187
+137.584
+Esneux
+à déterminer
+236.209
+137.565
+Esneux
+puits foré
+236.228
+137.572
+Esneux
+puits foré
+236.670
+135.532
+Esneux
+puits foré
+235.831
+137.527
+Esneux
+puits foré
+236.211
+137.587
+Esneux
+puits foré
+236.308
+135.660
+Esneux
+puits foré
+236.488
+137.990
+Esneux
+puits foré
+236.511
+138.011
+Esneux
+puits foré
+235.460
+128.578
+Hamoir
+puits foré
+235.614
+128.374
+Hamoir
+puits foré
+235.535
+128.626
+Hamoir
+source à l'émergence
+230.197
+135.484
+Neupré
+puits foré
+227.397
+137.170
+Neupré
+puits foré
+227.633
+137.667
+Neupré
+puits foré
+229.605
+137.693
+Neupré
+puits foré
+226.268
+128.856
+Ouffet
+puits foré
+226.168
+129.042
+ouffet
+source à l'émergence
+228.697
+128.929
+ouffet
+source à l'émergence
+227.099
+130.490
+Ouffet
+Puits traditionnel
+238.053
+131.171
+Sprimont
+Puits foré
+
+
+===== PAGE 65 =====
+
+63
+239.620
+132.760
+Sprimont
+Puits foré
+237.513
+134.596
+Sprimont
+puits foré
+238.404
+132.388
+Sprimont
+puits foré
+241.395
+132.192
+Sprimont
+puits foré
+241.607
+135.210
+Sprimont
+puits foré
+240.987
+136.912
+Sprimont
+puits foré
+237.789
+132.627
+Sprimont
+puits foré
+240.510
+131.434
+Sprimont
+puits foré
+238.544
+136.831
+Sprimont
+drain
+240.289
+134.363
+Sprimont
+galerie a flanc de coteau
+238.561
+134.518
+Sprimont
+puits foré
+238.869
+136.339
+Sprimont
+puits foré
+240.698
+132.340
+Sprimont
+puits foré
+Source :	 SPW, Département de l’Environnement et de l’Eau, Direction 
+des Eaux souterraines - Situation au 01/02/2011.
+
+
+===== PAGE 66 =====
+
+64
+FARBEN - UND ZEICHENERKLÄRUNG – 
+LEGENDE – LEGEND
+Gesteinsgrenze – Formatiegrens – Geological boundary
+Mögliche Gesteingrenze - Vermoedelijke formatiegrens – 
+Hypothetical geological contact
+Gesteinsgrenze verdeckt - Formatiegrens onder bedekking – 
+Geological boundary under covering
+Verwerfung - Breuk – Fault
+Mögliche Verwerfung - Vermoedelijke breuk - Hypothetical 
+fault 
+Verwerfung verdeckt - Breuk onder deklagen – Covered fault
+Überschiebung – Overschuiving - Thrust fault
+Hypothetische Uberschiebung - Hypothetische Overschuiving - 
+Hypothetical Overthrust
+Uberschiebung unter Bedeckung - Overschuiving onder 
+bedekking - Overthrust under covering
+Formation verdeckt – Formatie onder deklagen – Concealed 
+formation
+Untereinheit als Anhaltspunkt – Subunit, for information only - 
+Ondergeschikte eenheid, ter informatie
+Schichtung : Streichen und Fallen (a) der normal gelagerten 
+Schichten - Gelaagdheid: strekking en helling (a) van normaal 
+hellende lagen - Stratification: strike and dip (a) of inclined strata
+Schichtung: Streichen und Fallen (a) der überkippten Schichten 
+- Gelaagdheid : Strekking en helling (a) van overhellende lagen 
+- Stratification : Strike and dip (a) of overturned strata
+Schichtung: Streichen der vertikal gelagerten Schichten - 
+Gelaagdheid : strekking  van verticale lagen - Stratification : 
+strike of vertical strata
+Schichtung : horizontale Schichtung 	
+– 
+Gelaagdheid 
+: 
+horizontale gelaagheid	
+– Stratification : horizontal strata
+Schieferung: Streichen und Fallen (a) - Strekking en helling (a): 
+druksplijting – Cleavage: strike and dip(a) 
+Vertikale Schieferung - Verticale druksplijting : strekking – 
+Strike of vertical cleavage
+Steinbruch im Betrieb - Steengroeve in uitbating – Active quarry
+Steinbruch außer Betrieb - Verlaten steengroeve – Disused 
+quarry
+Aufgeschütteter Steinbruch - Opgevulde steengroeve –Filled 
+quarry 
+Unterirdischer Steinbruch außer Betrieb – Verlaten ondergrondse 
+steengroeve – underground quarry disued
+Eisenschüssige Verkleidung - Ijzeren hoed - Iron deposits
+Wassergewinnung - Waterwinning – groundwater pumping 
+station
+
+
+===== PAGE 67 =====
+
+65
+Strukturgeologisches Schema - Structureel schema – 
+Structural scheme
+Verlauf der Antiklinalachse - Spoor van anticlinaal assenvlak - 
+Synclinal axial surface trace
+Verlauf der Synklinalachse - Spoor van synclinaal assenvlak - 
+Anticline axial surface trace
+
+
+===== PAGE 68 =====
+
+66
+Table des matières
+Résumé..................................................................................	
+3
+1.	Introduction.......................................................................	
+5
+1.1.	 Établissement de la carte...........................................	
+5
+1.2.	 Méthodologies et avertissements...............................	
+6
+Méthodologie de levé................................................	
+6
+Méthodologie de tracé de la carte..............................	
+6
+Avertissement ...........................................................	
+7
+1.3. Cadre géologique et géographique.............................	
+8
+2.	Description des formations................................................	 11
+Regroupement des formations d’Acoz, de Wépion 
+et de Burnot (AWBU)................................................	 11
+Formation d’Acoz (dans la vallée du Hoyoux) (ACO).	 12
+Formation de Wépion (dans la vallée du Hoyoux) (WEP).	 12
+Formation de Burnot (BUR)......................................	 13
+Formation de Pepinster (PER)...................................	 13
+Regroupement des formations de Névremont et 
+du Roux (NR)............................................................	 15
+Formation de Névremont (NEV)...............................	 16
+Formation du Roux (ROU)........................................	 16
+Formation de Fromelennes (FRO).............................	 17
+Formation de Lustin (LUS).......................................	 17
+Formation d’Aisemont (AIS) et la zone de 
+transition entre les formations d’Aisemont et de 
+Neuville (AN)............................................................	 19
+Formation de la Famenne (FAM)..............................	 21
+Formations d’Esneux (ESN), de Souverain-Pré 
+(SVP), de Montfort (MFT) et d’Evieux (EVX).........	 22
+Formation d’Esneux (ESN).......................................	 22
+Formation de Souverain-Pré (SVP)...........................	 24
+Formation de Montfort (MFT)..................................	 27
+Formation d’Evieux (EVX).......................................	 29
+Regroupement des formations d’Hastière (HAS), 
+de Pont d’Arcole (PDA) et de Landelies (LAN)-
+(HPLA)......................................................................	 31
+Formation d’Yvoir (YVO).........................................	 33
+Formation de l’Ourthe (OUR)...................................	 34
+Formation de Martinrive (MRT)................................	 35
+Formation de Longpré (LPR)....................................	 36
+Regroupement de la Brèche de la Belle Roche 
+(BBR) et des formations de Terwagne, de Neffe 
+et de Lives..................................................................	 37
+La Brèche de la Belle Roche (BBR)..........................	 38
+Formation de Terwagne (TER)..................................	 40
+Formation de Neffe (NEF).........................................	 40
+Formation de Lives (LIV)..........................................	 41
+Dépôts sableux (SBL)................................................	 42
+Blocs quartzitiques épars...........................................	 44
+	
+Formations quaternaires............................................	 44
+Alluvions anciennes (ALA).......................................	 44
+
+
+===== PAGE 69 =====
+
+67
+Alluvions modernes (AMO)......................................	 44
+Les limons..................................................................	 44
+3.	Géologie structurale...........................................................	 46
+Les plis...............................................................................	 46
+a. La virgation............................................................	 46
+b. Le Synclinorium de Dinant : différents styles.......	 47
+La schistosité.....................................................................	 49
+Les failles...........................................................................	 49
+4.	Hydrogéologie...................................................................	 52
+5.	Phénomènes karstiques......................................................	 54
+6.	Matières utiles (Poty, Chevalier, 2004).............................	 55
+Les grès..............................................................................	 55
+Les calcaires......................................................................	 55
+Les sables...........................................................................	 56
+Les minerais de fer............................................................	 56
+BIBLIOGRAPHIE................................................................	 57
+ANNEXES............................................................................	 62
+FARBEN 
+- 
+UND 
+ZEICHENERKLÄRUNG 
+– 
+LEGENDE – LEGEND....................................................	 64
+
+
+===== PAGE 70 =====
+
+68
+
+
+===== PAGE 71 =====
+
+DIRECTION GÉNÉRALE OPÉRATIONNELLE
+DE L’AGRICULTURE, DES RESSOURCES 
+NATURELLES ET DE L’ENVIRONNEMENT
+notice explicative 
+CARTE GÉOLOGIQUE DE WALLONIE : 1/25 000
+tavier - esneux 49/1-2

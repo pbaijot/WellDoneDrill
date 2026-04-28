@@ -1,0 +1,55 @@
+{
+  "id": "49-1-2_tavier-esneux",
+  "sheetCode": "49/1-2",
+  "name": "Tavier–Esneux",
+  "sourceType": "Carte géologique de Wallonie",
+  "scale": "1:25000",
+  "publicationYear": 2015,
+  "authors": [
+    "Jacques Bellière",
+    "Jean-Marc Marion"
+  ],
+  "publisher": "SPW Éditions, Cartes",
+  "geographicalCoordinates": {
+    "raw": "E 5°26'33\"–5°40'06\" / N 50°27'29\"–50°33'01\"",
+    "bbox": {
+      "west": 5.4425,
+      "south": 50.458056,
+      "east": 5.668333,
+      "north": 50.550278
+    }
+  },
+  "sourceUrls": {
+    "noticePdf": "http://geologie.wallonie.be/files/ressources/geologie/notices/49-1-2_Tavier_Esneux.pdf",
+    "orbiNotice": "https://orbi.uliege.be/handle/2268/86538",
+    "orbiMap": "https://orbi.uliege.be/handle/2268/86683",
+    "hydrogeologicalPosterPdf": "https://environnement.wallonie.be/files/eDocs%20Environnement/Milieux/Eau/Hydrogeologie/cartosig/Posters/4912.pdf"
+  },
+  "knownContent": {
+    "noticePages": 67,
+    "hasGeologicalMap": true,
+    "hasGeologicalSections": true,
+    "geologicalSectionsCount": 3,
+    "hasStructuralScheme": true,
+    "mainKeywords": [
+      "Paléozoïque",
+      "Synclinorium de Dinant",
+      "Ourthe",
+      "Amblève",
+      "calcaires",
+      "schistes",
+      "grès",
+      "karst",
+      "fracturation"
+    ]
+  },
+  "processing": {
+    "status": "raw_text_extracted",
+    "nextStep": "interpret_notice_text",
+    "reviewStatus": "not_started",
+    "modelVersion": "0.1.0",
+    "rawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/notice_raw.txt",
+    "hydroRawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/hydrogeo_raw.txt",
+    "qualityReportPath": "data/geology/sheets/49-1-2_tavier-esneux/quality_report.json"
+  }
+}
