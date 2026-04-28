@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 import urllib.parse
 import urllib.request
@@ -6,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-BASE_URL = "http://localhost:3000"
+BASE_URL = os.environ.get("BASE_URL", "http://localhost:3000")
 SHEET_DIR = Path("data/geology/sheets/49-1-2_tavier-esneux")
 POINTS_PATH = SHEET_DIR / "validation_points.json"
 RESULTS_PATH = SHEET_DIR / "validation_results.json"

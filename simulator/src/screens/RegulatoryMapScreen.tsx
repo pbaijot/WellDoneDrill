@@ -46,7 +46,7 @@ export default function RegulatoryMapScreen({
   const [isSearching, setIsSearching] = useState(false)
   const [isResolvingAddress, setIsResolvingAddress] = useState(false)
   const [isEditingAddress, setIsEditingAddress] = useState(false)
-  const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const searchTimer = useRef<number | null>(null)
 
   useEffect(() => {
     setTarget(address)

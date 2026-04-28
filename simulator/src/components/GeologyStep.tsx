@@ -66,6 +66,8 @@ export default function GeologyStep({
   useEffect(() => {
     if (!address) return
 
+    const lat = address.lat
+    const lng = address.lng
     let cancelled = false
 
     async function load() {
@@ -74,8 +76,8 @@ export default function GeologyStep({
 
       try {
         const params = new URLSearchParams({
-          lat: String(address.lat),
-          lng: String(address.lng),
+          lat: String(lat),
+          lng: String(lng),
           depth: '200',
           length: '1000',
           orientation: '90',
@@ -282,7 +284,7 @@ export default function GeologyStep({
                           overlay.topM,
                           overlay.bottomM,
                           maxDepth,
-                          overlay.mode
+                          overlay.mode === 'fractured-water-possible' ? 'fracture' : overlay.mode
                         )}
                       />
 
@@ -470,6 +472,22 @@ export default function GeologyStep({
                     </div>
                   </div>
                 </div>
+
+                {data.geologyKnowledge.surfaceDiagnosis && (
+                  <div style={S.knowledgeText()}>
+                    <strong>Diagnostic surface :</strong><br />
+                    Classe au point : {data.geologyKnowledge.surfaceDiagnosis.pointClass || 'inconnue'}<br />
+                    Classe utilisée : {data.geologyKnowledge.surfaceDiagnosis.effectiveClass || 'inconnue'}<br />
+                    Méthode : {data.geologyKnowledge.surfaceDiagnosis.method || '—'}<br />
+                    {data.geologyKnowledge.surfaceDiagnosis.sampleClassCounts && (
+                      <>
+                        Échantillons autour : {Object.entries(data.geologyKnowledge.surfaceDiagnosis.sampleClassCounts)
+                          .map(([key, value]) => `${key} ${value}`)
+                          .join(', ')}
+                      </>
+                    )}
+                  </div>
+                )}
 
                 {data.geologyKnowledge.regionalContext?.mainHydroRisks?.length ? (
                   <div style={S.knowledgeText()}>

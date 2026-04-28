@@ -113,7 +113,6 @@ function unitType(unit: WddUnit): InterpretedLayer['type'] {
   return 'bedrock'
 }
 
-
 function lithologyForUnit(unit: WddUnit): InterpretedLayer['lithology'] {
   if (unit.id.includes('cover')) return 'loam'
   if (unit.id.includes('calcaires')) return 'limestone'
@@ -166,7 +165,6 @@ function displayForUnit(unit: WddUnit): InterpretedLayer['display'] {
     hatch,
   }
 }
-
 
 function normalizeHydroClass(unit: WddUnit): InterpretedLayer['hydroClass'] {
   if (unit.hydroClass === 'aquifer') return 'aquifer'
@@ -342,7 +340,6 @@ function resolveEffectiveSurfaceClass({
     sampleClassCounts: sampleResult.counts,
   }
 }
-
 
 function firstSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }>) {
   const parts: string[] = []
@@ -551,7 +548,3 @@ export function buildWddKnowledgePayload(model: WddModel) {
   }
 }
 
-
-export function getWddSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
-  return firstSurfaceText(surfaceEvidence)
-}

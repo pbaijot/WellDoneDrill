@@ -1,62 +1,345 @@
 {
   "sheetId": "49-1-2_tavier-esneux",
   "sheetCode": "49/1-2",
-  "generatedAt": "2026-04-28T17:02:38.328858+00:00",
+  "generatedAt": "2026-04-28T21:29:24.578991+00:00",
   "results": [
     {
       "id": "esneux_centre",
       "label": "Esneux centre",
       "lat": 50.535,
       "lng": 5.567,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": true,
+      "hasKnowledge": true,
+      "expectedSurfaceClass": null,
+      "surfaceClass": "cover",
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Domaine ardennais probable · 49/1-2 Tavier–Esneux",
+      "knowledgeSheet": "49/1-2",
+      "knowledgeName": "Tavier–Esneux",
+      "layers": [
+        {
+          "name": "Couverture superficielle, limons et altérites",
+          "topM": 0,
+          "bottomM": 15,
+          "lambda": 1.5,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Schistes, phyllades et roches fines",
+          "topM": 15,
+          "bottomM": 60,
+          "lambda": 2.4,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Calcaires et dolomies localement karstifiés",
+          "topM": 60,
+          "bottomM": 150,
+          "lambda": 2.8,
+          "hydroClass": "aquifer",
+          "confidence": "medium"
+        },
+        {
+          "name": "Grès, psammites et quartzites",
+          "topM": 150,
+          "bottomM": 200,
+          "lambda": 2.7,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage.",
+        "Aucun sondage public proche n’a été récupéré dans le rayon analysé (1500 m).",
+        "Modèle enrichi par la carte géologique 49/1-2 Tavier–Esneux.",
+        "Modèle WDD 0.3.0 · statut : wdd_model_generated_unreviewed.",
+        "Revue qualité : machine_generated_needs_review.",
+        "Séquence indicative à adapter selon l'unité de surface SPW et les sondages proches."
+      ],
+      "diagnostics": []
     },
     {
       "id": "comblain_au_pont",
       "label": "Comblain-au-Pont",
       "lat": 50.474,
       "lng": 5.577,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": true,
+      "hasKnowledge": true,
+      "expectedSurfaceClass": null,
+      "surfaceClass": "cover",
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Domaine ardennais probable · 49/1-2 Tavier–Esneux",
+      "knowledgeSheet": "49/1-2",
+      "knowledgeName": "Tavier–Esneux",
+      "layers": [
+        {
+          "name": "Couverture superficielle, limons et altérites",
+          "topM": 0,
+          "bottomM": 15,
+          "lambda": 1.5,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Schistes, phyllades et roches fines",
+          "topM": 15,
+          "bottomM": 60,
+          "lambda": 2.4,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Calcaires et dolomies localement karstifiés",
+          "topM": 60,
+          "bottomM": 150,
+          "lambda": 2.8,
+          "hydroClass": "aquifer",
+          "confidence": "medium"
+        },
+        {
+          "name": "Grès, psammites et quartzites",
+          "topM": 150,
+          "bottomM": 200,
+          "lambda": 2.7,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage.",
+        "Aucun sondage public proche n’a été récupéré dans le rayon analysé (1500 m).",
+        "Modèle enrichi par la carte géologique 49/1-2 Tavier–Esneux.",
+        "Modèle WDD 0.3.0 · statut : wdd_model_generated_unreviewed.",
+        "Revue qualité : machine_generated_needs_review.",
+        "Séquence indicative à adapter selon l'unité de surface SPW et les sondages proches."
+      ],
+      "diagnostics": []
     },
     {
       "id": "tilff",
       "label": "Tilff",
       "lat": 50.568,
       "lng": 5.579,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": false,
+      "hasKnowledge": false,
+      "expectedSurfaceClass": null,
+      "surfaceClass": null,
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Domaine ardennais probable",
+      "knowledgeSheet": null,
+      "knowledgeName": null,
+      "layers": [
+        {
+          "name": "Sol et couverture superficielle",
+          "topM": 0,
+          "bottomM": 2,
+          "lambda": 1.3,
+          "hydroClass": "aquitard",
+          "confidence": "high"
+        },
+        {
+          "name": "Couverture altérée",
+          "topM": 2,
+          "bottomM": 12,
+          "lambda": 1.6,
+          "hydroClass": "aquitard",
+          "confidence": "high"
+        },
+        {
+          "name": "Socle altéré / fissuré",
+          "topM": 12,
+          "bottomM": 40,
+          "lambda": 2.1,
+          "hydroClass": "aquitard",
+          "confidence": "high"
+        },
+        {
+          "name": "Socle paléozoïque consolidé",
+          "topM": 40,
+          "bottomM": 200,
+          "lambda": 2.45,
+          "hydroClass": "aquitard",
+          "confidence": "high"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage."
+      ],
+      "diagnostics": []
     },
     {
       "id": "tavier",
       "label": "Tavier",
       "lat": 50.496,
       "lng": 5.472,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": true,
+      "hasKnowledge": true,
+      "expectedSurfaceClass": null,
+      "surfaceClass": "cover",
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Domaine ardennais probable · 49/1-2 Tavier–Esneux",
+      "knowledgeSheet": "49/1-2",
+      "knowledgeName": "Tavier–Esneux",
+      "layers": [
+        {
+          "name": "Couverture superficielle, limons et altérites",
+          "topM": 0,
+          "bottomM": 15,
+          "lambda": 1.5,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Schistes, phyllades et roches fines",
+          "topM": 15,
+          "bottomM": 60,
+          "lambda": 2.4,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Calcaires et dolomies localement karstifiés",
+          "topM": 60,
+          "bottomM": 150,
+          "lambda": 2.8,
+          "hydroClass": "aquifer",
+          "confidence": "medium"
+        },
+        {
+          "name": "Grès, psammites et quartzites",
+          "topM": 150,
+          "bottomM": 200,
+          "lambda": 2.7,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage.",
+        "Aucun sondage public proche n’a été récupéré dans le rayon analysé (1500 m).",
+        "Modèle enrichi par la carte géologique 49/1-2 Tavier–Esneux.",
+        "Modèle WDD 0.3.0 · statut : wdd_model_generated_unreviewed.",
+        "Revue qualité : machine_generated_needs_review.",
+        "Séquence indicative à adapter selon l'unité de surface SPW et les sondages proches."
+      ],
+      "diagnostics": []
     },
     {
       "id": "hony",
       "label": "Hony",
       "lat": 50.548,
       "lng": 5.572,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": true,
+      "hasKnowledge": true,
+      "expectedSurfaceClass": null,
+      "surfaceClass": "carbonate",
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Domaine ardennais probable · 49/1-2 Tavier–Esneux",
+      "knowledgeSheet": "49/1-2",
+      "knowledgeName": "Tavier–Esneux",
+      "layers": [
+        {
+          "name": "Couverture superficielle, limons et altérites",
+          "topM": 0,
+          "bottomM": 6,
+          "lambda": 1.5,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        },
+        {
+          "name": "Calcaires et dolomies localement karstifiés",
+          "topM": 6,
+          "bottomM": 150,
+          "lambda": 2.8,
+          "hydroClass": "aquifer",
+          "confidence": "medium"
+        },
+        {
+          "name": "Schistes, phyllades et roches fines",
+          "topM": 150,
+          "bottomM": 200,
+          "lambda": 2.4,
+          "hydroClass": "aquitard",
+          "confidence": "medium"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage.",
+        "Modèle enrichi par la carte géologique 49/1-2 Tavier–Esneux.",
+        "Modèle WDD 0.3.0 · statut : wdd_model_generated_unreviewed.",
+        "Revue qualité : machine_generated_needs_review.",
+        "Séquence indicative à adapter selon l'unité de surface SPW et les sondages proches.",
+        "Modèle généré automatiquement à partir de la notice et du poster hydrogéologique."
+      ],
+      "diagnostics": []
     },
     {
       "id": "bruxelles_control",
       "label": "Bruxelles contrôle hors zone",
       "lat": 50.8503,
       "lng": 4.3517,
-      "status": "error",
-      "error": "HTTP Error 500: Internal Server Error"
+      "status": "ok",
+      "expectedKnowledge": false,
+      "hasKnowledge": false,
+      "expectedSurfaceClass": null,
+      "surfaceClass": null,
+      "apiVersion": "v1.7-spw-wdd-geology-knowledge",
+      "regionalLabel": "Contexte régional à confirmer",
+      "knowledgeSheet": null,
+      "knowledgeName": null,
+      "layers": [
+        {
+          "name": "Couverture superficielle",
+          "topM": 0,
+          "bottomM": 10,
+          "lambda": 1.4,
+          "hydroClass": "unknown",
+          "confidence": "low"
+        },
+        {
+          "name": "Substratum à caractériser",
+          "topM": 10,
+          "bottomM": 200,
+          "lambda": null,
+          "hydroClass": "unknown",
+          "confidence": "low"
+        }
+      ],
+      "warnings": [
+        "Coupe indicative générée automatiquement à partir des services publics disponibles.",
+        "Cette analyse ne remplace pas une étude géologique, une visite de site ou un rapport de forage.",
+        "Les profondeurs de couches sont interprétatives : elles servent à préqualifier un projet, pas à prescrire un forage.",
+        "Aucun sondage public proche n’a été récupéré dans le rayon analysé (1500 m).",
+        "Confiance faible : peu de données publiques exploitables automatiquement autour du point."
+      ],
+      "diagnostics": []
     }
   ],
   "summary": {
     "count": 6,
-    "ok": 0,
+    "ok": 6,
     "review": 0,
-    "error": 6,
-    "surfaceClasses": []
+    "error": 0,
+    "surfaceClasses": [
+      "carbonate",
+      "cover"
+    ]
   }
 }
