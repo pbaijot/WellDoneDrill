@@ -19,7 +19,7 @@
     "crossSectionsDetected": true,
     "hydrogeologyDetected": true,
     "wddModelGenerated": true,
-    "apiIntegrationDone": false
+    "apiIntegrationDone": true
   },
   "notes": [
     "Étape 1 : carte pilote indexée.",
@@ -27,13 +27,14 @@
     "Étape 2 : texte brut extrait depuis la notice géologique et le poster hydrogéologique. Score couverture documentaire : 100/100.",
     "Étape 3 : première interprétation automatique. Formations candidates : 27, coupes détectées : 10, style structural : folded_and_faulted.",
     "Étape 3b : recalibrage qualité. Le score global est abaissé car l'interprétation est encore automatique et non validée.",
-    "Étape 4 : premier wdd_model.json généré. Il regroupe les formations extraites en unités opérationnelles WDD."
+    "Étape 4 : premier wdd_model.json généré. Il regroupe les formations extraites en unités opérationnelles WDD.",
+    "Étape 5 : modèle WDD branché dans /api/geology-section avec fallback vers le modèle régional SPW."
   ],
   "openIssues": [
-    "Brancher le modèle WDD dans l’API /api/geology-section.",
-    "Comparer la coupe générée avec le modèle régional actuel.",
-    "Valider manuellement les unités et la séquence stratigraphique.",
-    "Ajouter des tests de points géographiques dans l’emprise de la carte."
+    "Tester plusieurs points dans et hors de l’emprise de la carte.",
+    "Afficher geologyKnowledge dans le panneau de synthèse du simulateur.",
+    "Créer des tests de non-régression sur la coupe générée.",
+    "Valider manuellement la séquence stratigraphique WDD."
   ],
   "metrics": {
     "notice": {

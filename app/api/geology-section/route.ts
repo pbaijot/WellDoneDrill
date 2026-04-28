@@ -4,6 +4,12 @@ import { allEvidenceText, buildTransect, clampNumber, featureSummary } from "./l
 import { GEOLOGIE_LAYERS, SERVICES, identifyPoint, queryProgressive } from "./lib/services"
 import { inferRegionalModel, refineWithLocalTerms, makeVariableLayerModel, applyOfficialSpwStratigraphy } from "./lib/models"
 import { buildHydrogeologyInterpretation } from "./lib/hydrogeology"
+import {
+  buildLayersFromWddModel,
+  buildWddKnowledgePayload,
+  buildWddKnowledgeWarnings,
+  findWddGeologyModel,
+} from "./lib/geologyKnowledge"
 
 function parseInput(req: NextRequest): GeologyInput | null {
   const { searchParams } = req.nextUrl
@@ -279,11 +285,29 @@ export async function GET(req: NextRequest) {
   const baseModel = inferRegionalModel(evidenceText, input.lat, input.lng, input.depthM)
   const refinedModel = refineWithLocalTerms(baseModel, evidenceText)
   const variableModel = makeVariableLayerModel(refinedModel, evidenceText, input.depthM)
-  const model = applyOfficialSpwStratigraphy(
+  const spwModel = applyOfficialSpwStratigraphy(
     variableModel,
     surfaceSamples,
     surfaceEvidence
   )
+
+  const wddKnowledge = findWddGeologyModel(input.lat, input.lng)
+  const wddLayers = wddKnowledge
+    ? buildLayersFromWddModel(wddKnowledge.model, input.depthM)
+    : null
+
+  const model = wddKnowledge && wddLayers && wddLayers.length > 0
+    ? {
+        ...spwModel,
+        key: `${spwModel.key}+wdd_sheet_${wddKnowledge.model.sheetCode}`,
+        label: `${spwModel.label} · ${wddKnowledge.model.sheetCode} ${wddKnowledge.model.name}`,
+        message:
+          `${spwModel.message} Modèle enrichi par la carte géologique ${wddKnowledge.model.sheetCode} ${wddKnowledge.model.name}.`,
+        layers: wddLayers,
+        confidence: spwModel.confidence === "low" ? "medium" : spwModel.confidence,
+      }
+    : spwModel
+
   const hydrogeology = buildHydrogeologyInterpretation(model.layers, model.key)
 
   const finalConfidence =
@@ -298,10 +322,11 @@ export async function GET(req: NextRequest) {
   const avg = weightedThermalConductivity(model.layers, input.depthM)
 
   return NextResponse.json({
-    version: "v1.6-spw",
+    version: "v1.7-spw-wdd-geology-knowledge",
     status: "ok",
     input,
     sources: SERVICES,
+    geologyKnowledge: wddKnowledge ? buildWddKnowledgePayload(wddKnowledge.model) : null,
     regionalContext: {
       key: model.key,
       label: model.label,
@@ -349,7 +374,10 @@ export async function GET(req: NextRequest) {
         `sur base des données publiques disponibles. Cette analyse doit être consolidée par les données de forage WDD ou une reconnaissance locale.`,
     },
     hydrogeology,
-    warnings: buildWarnings(evidence, finalConfidence, sondagesResult.radiusM, affleurementsResult.radiusM),
+    warnings: [
+      ...buildWarnings(evidence, finalConfidence, sondagesResult.radiusM, affleurementsResult.radiusM),
+      ...(wddKnowledge ? buildWddKnowledgeWarnings(wddKnowledge.model) : []),
+    ],
     diagnostics,
   })
 }
