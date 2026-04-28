@@ -115,8 +115,155 @@ function normalizeHydroClass(unit: WddUnit): ApiLayer['hydroClass'] {
   return 'unknown'
 }
 
-export function buildLayersFromWddModel(model: WddModel, targetDepthM: number): ApiLayer[] | null {
-  const sequence = model.defaultClosedLoopSection?.sequence || []
+function normalizeSurfaceText(surfaceText: string) {
+  return surfaceText
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+}
+
+function classifySurfaceUnit(surfaceText: string) {
+  const text = normalizeSurfaceText(surfaceText)
+
+  if (
+    text.includes('calcaire') ||
+    text.includes('dolomie') ||
+    text.includes('carbonat') ||
+    text.includes('lustin') ||
+    text.includes('neuville') ||
+    text.includes('terwagne') ||
+    text.includes('waulsort') ||
+    text.includes('vise')
+  ) {
+    return 'carbonate'
+  }
+
+  if (
+    text.includes('gres') ||
+    text.includes('psammite') ||
+    text.includes('quartzite') ||
+    text.includes('pepinster') ||
+    text.includes('esneux') ||
+    text.includes('montfort') ||
+    text.includes('evieux')
+  ) {
+    return 'sandstone'
+  }
+
+  if (
+    text.includes('schiste') ||
+    text.includes('phyllade') ||
+    text.includes('famenne') ||
+    text.includes('siltite') ||
+    text.includes('argile')
+  ) {
+    return 'schist'
+  }
+
+  if (
+    text.includes('breche') ||
+    text.includes('conglomerat') ||
+    text.includes('poudingue')
+  ) {
+    return 'breccia'
+  }
+
+  if (
+    text.includes('limon') ||
+    text.includes('alluvion') ||
+    text.includes('colluvion') ||
+    text.includes('remblai') ||
+    text.includes('couverture')
+  ) {
+    return 'cover'
+  }
+
+  return 'unknown'
+}
+
+function firstSurfaceText(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }>) {
+  const parts: string[] = []
+
+  for (const evidence of surfaceEvidence || []) {
+    if (evidence.summary) parts.push(evidence.summary)
+
+    const attrs = evidence.attributes || {}
+    for (const value of Object.values(attrs)) {
+      if (typeof value === 'string' && value.length < 250) {
+        parts.push(value)
+      }
+    }
+  }
+
+  return parts.join(' | ')
+}
+
+function sequenceForSurfaceClass(surfaceClass: string, targetDepthM: number): WddSequenceLayer[] {
+  const depth = Math.max(50, targetDepthM)
+
+  if (surfaceClass === 'carbonate') {
+    return [
+      { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(6, depth), confidence: 'medium' },
+      { unitId: 'calcaires_dolomies_karstifies', topM: 6, bottomM: Math.min(150, depth), confidence: 'high' },
+      { unitId: 'schistes_phyllades', topM: 150, bottomM: depth, confidence: 'low' },
+    ]
+  }
+
+  if (surfaceClass === 'sandstone') {
+    return [
+      { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(8, depth), confidence: 'medium' },
+      { unitId: 'gres_psammites_quartzites', topM: 8, bottomM: Math.min(130, depth), confidence: 'high' },
+      { unitId: 'schistes_phyllades', topM: 130, bottomM: depth, confidence: 'medium' },
+    ]
+  }
+
+  if (surfaceClass === 'schist') {
+    return [
+      { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(10, depth), confidence: 'medium' },
+      { unitId: 'schistes_phyllades', topM: 10, bottomM: Math.min(160, depth), confidence: 'high' },
+      { unitId: 'gres_psammites_quartzites', topM: 160, bottomM: depth, confidence: 'low' },
+    ]
+  }
+
+  if (surfaceClass === 'breccia') {
+    return [
+      { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(6, depth), confidence: 'medium' },
+      { unitId: 'breches_conglomerats', topM: 6, bottomM: Math.min(70, depth), confidence: 'medium' },
+      { unitId: 'calcaires_dolomies_karstifies', topM: 70, bottomM: Math.min(170, depth), confidence: 'medium' },
+      { unitId: 'schistes_phyllades', topM: 170, bottomM: depth, confidence: 'low' },
+    ]
+  }
+
+  if (surfaceClass === 'cover') {
+    return [
+      { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(15, depth), confidence: 'high' },
+      { unitId: 'schistes_phyllades', topM: 15, bottomM: Math.min(60, depth), confidence: 'low' },
+      { unitId: 'calcaires_dolomies_karstifies', topM: 60, bottomM: Math.min(150, depth), confidence: 'low' },
+      { unitId: 'gres_psammites_quartzites', topM: 150, bottomM: depth, confidence: 'low' },
+    ]
+  }
+
+  return [
+    { unitId: 'cover_altérites_limons', topM: 0, bottomM: Math.min(8, depth), confidence: 'medium' },
+    { unitId: 'schistes_phyllades', topM: 8, bottomM: Math.min(35, depth), confidence: 'low' },
+    { unitId: 'calcaires_dolomies_karstifies', topM: 35, bottomM: Math.min(130, depth), confidence: 'medium' },
+    { unitId: 'gres_psammites_quartzites', topM: 130, bottomM: depth, confidence: 'low' },
+  ]
+}
+
+export function buildLayersFromWddModel(
+  model: WddModel,
+  targetDepthM: number,
+  surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []
+): ApiLayer[] | null {
+  const surfaceText = firstSurfaceText(surfaceEvidence)
+  const surfaceClass = classifySurfaceUnit(surfaceText)
+
+  const sequence =
+    surfaceClass === 'unknown'
+      ? model.defaultClosedLoopSection?.sequence || []
+      : sequenceForSurfaceClass(surfaceClass, targetDepthM)
+
   if (sequence.length === 0) return null
 
   const unitById = new Map(model.wddUnits.map((unit) => [unit.id, unit]))
@@ -139,7 +286,8 @@ export function buildLayersFromWddModel(model: WddModel, targetDepthM: number): 
         hydroClass: normalizeHydroClass(unit),
         thermalConductivityWmK: unit.defaultLambdaWmK,
         confidence: item.confidence === 'high' || item.confidence === 'medium' ? item.confidence : 'low',
-        rationale: unit.interpretation,
+        rationale:
+          `${unit.interpretation} Séquence choisie selon l'unité de surface SPW détectée : ${surfaceClass}.`,
         stratigraphicName: `${model.sheetCode} ${model.name} · unité WDD ${index + 1}`,
         display: {
           color:
@@ -154,9 +302,19 @@ export function buildLayersFromWddModel(model: WddModel, targetDepthM: number): 
               ? 'dark'
               : 'light',
         },
+        officialSource: {
+          provider: 'interpreted',
+          layer: `WDD geology knowledge · surface class ${surfaceClass}`,
+          field: 'surfaceEvidence',
+          rawValue: surfaceText.slice(0, 500) || null,
+        },
       } satisfies ApiLayer
     })
     .filter(Boolean) as ApiLayer[]
+}
+
+export function getWddSurfaceClass(surfaceEvidence: Array<{ summary?: string; attributes?: Record<string, any> }> = []) {
+  return classifySurfaceUnit(firstSurfaceText(surfaceEvidence))
 }
 
 export function buildWddKnowledgeWarnings(model: WddModel) {

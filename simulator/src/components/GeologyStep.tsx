@@ -450,6 +450,13 @@ export default function GeologyStep({
                   </div>
 
                   <div style={S.knowledgeMiniCard()}>
+                    <div style={S.knowledgeMiniLabel()}>Surface</div>
+                    <div style={S.knowledgeMiniValue()}>
+                      {data.geologyKnowledge.surfaceClass || 'inconnue'}
+                    </div>
+                  </div>
+
+                  <div style={S.knowledgeMiniCard()}>
                     <div style={S.knowledgeMiniLabel()}>Structure</div>
                     <div style={S.knowledgeMiniValue()}>
                       {data.geologyKnowledge.regionalContext?.structuralStyle || 'inconnue'}
