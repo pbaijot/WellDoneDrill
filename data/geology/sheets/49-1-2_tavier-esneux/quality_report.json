@@ -1,0 +1,85 @@
+{
+  "sheetId": "49-1-2_tavier-esneux",
+  "modelVersion": "0.1.0",
+  "status": "wdd_model_generated_unreviewed",
+  "scores": {
+    "documentCoverage": 100,
+    "stratigraphicCoherence": 45,
+    "lithologicalCoherence": 68,
+    "hydrogeologicalCoherence": 63,
+    "thermalCoherence": 55,
+    "localUncertainty": 45,
+    "globalScore": 63
+  },
+  "checks": {
+    "noticePdfDownloaded": true,
+    "rawTextExtracted": true,
+    "formationsDetected": true,
+    "formationsManuallyReviewed": false,
+    "crossSectionsDetected": true,
+    "hydrogeologyDetected": true,
+    "wddModelGenerated": true,
+    "apiIntegrationDone": true
+  },
+  "notes": [
+    "Étape 1 : carte pilote indexée.",
+    "La qualité sera évaluée après extraction du texte PDF et structuration des formations.",
+    "Étape 2 : texte brut extrait depuis la notice géologique et le poster hydrogéologique. Score couverture documentaire : 100/100.",
+    "Étape 3 : première interprétation automatique. Formations candidates : 27, coupes détectées : 10, style structural : folded_and_faulted.",
+    "Étape 3b : recalibrage qualité. Le score global est abaissé car l'interprétation est encore automatique et non validée.",
+    "Étape 4 : premier wdd_model.json généré. Il regroupe les formations extraites en unités opérationnelles WDD.",
+    "Étape 5 : modèle WDD branché dans /api/geology-section avec fallback vers le modèle régional SPW."
+  ],
+  "openIssues": [
+    "Tester plusieurs points dans et hors de l’emprise de la carte.",
+    "Afficher geologyKnowledge dans le panneau de synthèse du simulateur.",
+    "Créer des tests de non-régression sur la coupe générée.",
+    "Valider manuellement la séquence stratigraphique WDD."
+  ],
+  "metrics": {
+    "notice": {
+      "pageCount": 71,
+      "charCount": 111967,
+      "wordCount": 17272,
+      "rawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/notice_raw.txt"
+    },
+    "hydrogeologicalPoster": {
+      "pageCount": 1,
+      "charCount": 12779,
+      "wordCount": 2566,
+      "rawTextPath": "data/geology/sheets/49-1-2_tavier-esneux/hydrogeo_raw.txt"
+    },
+    "keywordOccurrences": {
+      "formation": 242,
+      "membre": 7,
+      "calcaire": 110,
+      "schiste": 18,
+      "grès": 30,
+      "dolomie": 7,
+      "aquifere": 26,
+      "karst": 16,
+      "faille": 34,
+      "coupe": 35,
+      "sondage": 5,
+      "nappe": 7,
+      "piézom": 1
+    },
+    "interpretedExtraction": {
+      "formationCount": 27,
+      "mediumOrHighConfidenceFormations": 11,
+      "hydroRisks": [
+        "karst",
+        "fractured_bedrock",
+        "aquifer_or_groundwater",
+        "springs_or_resurgences"
+      ],
+      "structuralStyle": "folded_and_faulted",
+      "crossSectionCount": 10
+    }
+  },
+  "confidenceInterpretation": {
+    "documentCoverage": "high",
+    "scientificInterpretation": "medium_low",
+    "reason": "La notice et le poster hydrogéologique sont bien extraits, mais les formations sont encore regroupées automatiquement par mots-clés. Les noms officiels, l'ordre stratigraphique et les coupes doivent être validés avant intégration forte."
+  }
+}

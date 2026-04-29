@@ -1,0 +1,1999 @@
+===== PAGE 1 =====
+
+Ca rte hyd ro gé o lo gique tra c é e d '
+a près la  c a rte gé o lo gique d e Bellière J. et Ma rio n J-M. (Ca rte gé o lo gique d e W a llo nie, 2015) 
+PIEZOMETRIE 
+115,7 m  20/05/2014
+!
+Co te po nc tuelle (en m ) d e l'
+Aquifère a lluvia l et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquifère d es c a lc a ires d u Ca rb o nifère et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquifère-Aquita rd -Aquic lud e d e l'
+Ha sta rien et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquifère d es grès d u Fa m ennien et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquic lud e d u Fa m ennien et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquifère d es c a lc a ires d u Fra snien et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquita rd  d e l'
+Eifelien et d a te 
+!
+Co te po nc tuelle (en m ) d e l'
+Aquita rd  à nivea ux a quifères d u Dé vo nien infé rieur et d a te 
+POINTS HYDROGEOLOGIQUES
+")
+Puits po ur la  d istrib utio n pub lique d '
+ea u po ta b le
+")
+Puits sur ga lerie pa r gra vité
+")
+Autre puits
+#*
+Dra in
+#*
+Pié zo m ètre
+!(
+So urc e (explo ité e o u no n)
+XY
+So nd e gé o therm ique
+STATIONS
+")
+Sta tio n lim nim é trique
+LIGNES HYDROGEOLOGIQUES
+Ga lerie
+Dra in
+PHENOMENES KARSTIQUES
+$1
+Perte
+$1
+Ré surgenc e
+Ec o ulem ent ka rstique rec o nnu pa r tra ça ge
+ZONES DE PREVENTION
+*
+Zo ne d e pré ventio n à d é finir a uto ur d u c a pta ge
+TRAIT DE COUPE et FAILLES
+Tra it d e c o upe
+Fa ille
+Fa ille so us c o uverture
+Fa ille hypo thé tique
++
+Fa ille d e c heva uc hem ent
++
+Fa ille d e c heva uc hem ent hypo thé tique
++
+Fa ille d e c heva uc hem ent so us c o uverture
+LIMITES GEOLOGIQUES
+Lim ites d es fo rm a tio ns gé o lo giques
+UNITES HYDROGEOLOGIQUES
+N a ppe d e rem b la is
+Aquifère a lluvia l
+Aquifère d es terra sses fluvia tiles
+Aquifère d es sa b les d e rem plissa ge
+Aquifère d es c a lc a ires d u Ca rb o nifère
+Aquifère - Aquita rd  - Aquic lud e d e l'
+Ha sta rien
+Aquifère d es grès d u Fa m ennien
+Aquita rd  d u Fa m ennien
+Aquic lud e d u Fa m ennien
+Aquita rd  d u Fra snien
+Aquifère d es c a lc a ires d u Fra snien
+Aquifère d es c a lc a ires d u Givetien
+Aquita rd  d e l'
+Eifelien
+Aquita rd  à nivea ux a quifères d u Dé vo nien infé rieur
+HYDROGRAPHIE
+Ré sea u hyd ro gra phique
+Berges d es rivières à la rge lit
+Princ ipa ux la c s
+Sera ing - Chêné e
+Ha m o ir - Ferrières
+Lo uveigné  - Spa
+Huy - N a nd rin
+Extra it d e la  c a rte to po gra phique 49/1-2 d e l’Institut Gé o gra phique na tio na l
+Co o rd o nné es La m b ert b elge, 1972, exprim é es en m ètres
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+(
+")
+")
+.
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+.
+.
+")
+")
+")
+")
+")
+")
+")
+#*
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+.
+.
+")
+")
+.
+.
+")
+")
+.
+")
+")
+")
+")
+")
+.
+..
+")
+.
+.
+")
+")
+.
+.
+.
+.
+#*
+.
+.
+.
+.
+.
+")
+.
+.
+.
+")
+.
+.
+.
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+$+
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")") ")")
+")")
+")")")")
+")
+")")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")")
+")
+")
+")
+")
+")
+")") ")")
+")
+")
+")
+")
+")
+")
+")
+")")
+")")
+")
+")
+")
+")
+")
+")")
+")")
+") ")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")")
+")
+")
+")")
+")
+")
+")")
+")")")
+")
+") ")
+.
+Ho d y
+Ehein
+Ta vier
+ESN EUX
+N EUPRE
+Po ulseur
+Ro uvreux
+SPRIMON T
+Ellem elle
+AN THISN ES
+Do lem b reux
+Pla ineva ux
+Ro theux-Rim ière
+COMBLAIN -AU-PON T
+V illers-a ux-To urs
+A
+M
+B
+L
+E
+V
+E
+O
+UR
+T
+H
+E
+R
+uiss
+ea
+ud
+e
+TAV IER
+R
+Y
+D
+'
+ON
+EU
+X
+Ruissea u
+d
+u
+FO
+N DD
+E
+MARTIN
+Rui
+s
+s
+e
+a u
+d e
+la
+H
+A
+Z
+E
+R
+uisse
+a
+u
+d
+e
+BOE
+Ruissea u
+d e
+l
+a FO
+N TAIN E
+DELIZIN
+Ruiss
+e
+a u
+d e
+l
+a PI
+SS
+E
+ROTTE
+R
+uisse
+a ud
+e
+W
+ACHIBO
+U
+X
+R
+uissea
+u
+d u
+F
+ON DDUSART
+Ru
+isse
+a
+u
+d
+u
+BOIS
+DE
+SOHEIT
+Ruiss
+ea
+ud e G
+O
+B
+R
+Y
+Ruiss
+e
+a u
+d
+uT
+RO
+UBOTTIN
+Ru
+is
+s
+e
+a
+u
+d esBOISD
+ESMOGES
+O
+UR
+T
+H
+E
+AMBLEV E
+AMBLEV E
+AMBLEV E
+OURTHE
+O
+U
+R
+TH
+E
+AMBLEV E
+227000
+227000
+228000
+228000
+229000
+229000
+230000
+230000
+231000
+231000
+232000
+232000
+233000
+233000
+234000
+234000
+235000
+235000
+236000
+236000
+237000
+237000
+238000
+238000
+239000
+239000
+240000
+240000
+241000
+241000
+242000
+242000
+129000
+129000
+130000
+130000
+131000
+131000
+132000
+132000
+133000
+133000
+134000
+134000
+135000
+135000
+136000
+136000
+137000
+137000
+138000
+138000
+AQUIFERES CAPTES OU SOLLICITES PAR L'OUVRAGE
+.
+Aquifère a lluvia l
+#*
+Aquifère d es terra sses fluvia tiles
+")
+Aquifère d es c a lc a ires d u Ca rb o nifère
+")
+Aquifère - Aquita rd  - Aquic lud e d e l'Ha sta rien
+")
+Aquifère d es grès d u Fa m ennien
+")
+Aquita rd  d u Fa m ennien
+")
+Aquic lud e d u Fa m ennien
+")
+Aquita rd  d u Fra snien
+")
+Aquifère d es c a lc a ires d u Fra snien
+")
+Aquifère d es c a lc a ires d u Givetien
+")
+Aquita rd  d e l'
+Eifelien
+")
+Aquita rd  à nivea ux a quifères d u Dé vo nien infé rieur
+$+
+Unité  hyd ro gé o lo gique ind é term iné e
+VOLUMES MOYENS PRELEVES
+en m³/an pour les années 2008 à 2012
+(
+1 - 1000
+( 1001 - 10 000
+( 10 001 - 50 000
+( 50 001 - 100 000
+VOLUME PRELEVE POUR LA DISTRIBUTION PUBLIQUE
+d'eau potable en m³/an (Déclaration pour l'année 2014)
+! 1001 - 10 000
+! 10 001 - 50 000
+! 50 001 - 100 000
+AUTRES VOLUMES PRELEVES
+d'eau en m³/an (Déclaration pour l'année 2012)
+!
+1 - 1000
+! 1001 - 10 000
+HYDROGRAPHIE et INFRASTRUCTURE
+Ré sea u hyd ro gra phique
+Berges d es rivières à la rge lit
+Princ ipa ux la c s
+Auto ro ute
+Ro ute princ ipa le d '
+im po rta nc e m a jeure
+E
+Ta vier : no m  d e la  lo c a lité
+TESTS et ANALYSES
+/
+Essa i d e po m pa ge
+$+
+Ana lyses c him iques d ispo nib les
+")
+Essa i d e tra ça ge
+")
+Dia gra phie
+Zo ne d e pro spec tio n gé o physique
+ZONE VULNERABLE
+Zo ne vulné ra b le a ux nitra tes
+TYPE DE NAPPE
+N a ppe lib re
+LIMITES GEOLOGIQUES
+Lim ites d es fo rm a tio ns gé o lo giques
+HYDROGRAPHIE et INFRASTRUCTURE
+Ré sea u hyd ro gra phique
+Berges d es rivières à la rge lit
+Princ ipa ux la c s
+Auto ro ute
+Ro ute princ ipa le d '
+im po rta nc e m a jeure
+E
+Ta vier : no m  d e la  lo c a lité
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+E
+")
+")
+")
+")
+")
+")
+")")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+
+$+$+
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+Ho d y
+Ehein
+Ta vier
+ESN EUX
+N EUPRE
+Po ulseur
+Ro uvreux
+SPRIMON T
+Ellem elle
+AN THISN ES
+Do lem b reux
+Pla ineva ux
+Ro theux-Rim ière
+COMBLAIN -AU-PON T
+V illers-a ux-To urs
+A
+M
+B
+L
+E
+V
+E
+O
+UR
+T
+H
+E
+R
+uiss
+ea
+ud
+e
+TAV IER
+R
+Y
+D
+'
+ON
+EU
+X
+Ruissea u
+d
+u
+FO
+N DD
+E
+MARTIN
+Rui
+s
+s
+e
+a u
+d e
+la
+H
+A
+Z
+E
+R
+uissea
+u
+d e BOE
+R
+uissea ud
+e
+l
+a
+FO
+N
+TAIN E
+DELIZIN
+Ruiss
+e
+a u
+d e
+l
+a PI
+SS
+E
+ROTTE
+R
+uisse
+a ud
+e
+W
+ACHIBO
+U
+X
+R
+uissea
+u
+d u
+F
+ON DDUSART
+Ru
+isse
+a
+u
+d
+u
+BOIS
+DE
+SOHEIT
+Ruiss
+ea
+ud e G
+O
+B
+RY
+Ruiss
+e
+a u
+d
+uT
+RO
+UBOTTIN
+Ru
+is
+s
+e
+a
+u
+d esBOISD
+ESMOGES
+O
+UR
+T
+H
+E
+AMBLEV E
+AMBLEV E
+AMBLEV E
+OURTHE
+O
+U
+R
+TH
+E
+AMBLEV E
+227000
+227000
+228000
+228000
+229000
+229000
+230000
+230000
+231000
+231000
+232000
+232000
+233000
+233000
+234000
+234000
+235000
+235000
+236000
+236000
+237000
+237000
+238000
+238000
+239000
+239000
+240000
+240000
+241000
+241000
+242000
+242000
+129000
+129000
+130000
+130000
+131000
+131000
+132000
+132000
+133000
+133000
+134000
+134000
+135000
+135000
+136000
+136000
+137000
+137000
+138000
+138000
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++ +
++
++
++
++
++
++
++
++
++
++ +
++
++
++
++
++
++
++
++
+++
++ +
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+++
++
++
++
++
++
+++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+++
++
++
++
++
++
++
++
++
++ +
++
+*
+*
+*
+*
+$1
+$1 $1
+$1$1
+$1$1
+$1$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1 $1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1 $1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1
+$1$1
+$1
+$1
+$1$1
+$1
+$1
+$1
+$1
+")
+")
+")
+")
+")
+")
+XY
+XY
+XY
+XY
+XY
+")
+#*
+")
+")
+")
+")
+")
+#*
+#*
+#*
+")
+")
+")
+")
+")
+XY
+XY
+")
+")
+XY
+")
+XY
+XY
+XY
+XY
+")
+")
+#*
+")
+XY
+#*
+XY
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+")
+")
+#*
+#*
+#*
+#*
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+#*
+")
+")
+")
+")
+")
+")
+#*
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+")
+")
+")
+")
+")")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+")
+#*
+#*
+")
+")
+#*
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+")
+#*
+#*
+#*
+#*
+#*
+#*
+#*
+#*
+!(
+!(
+!(
+!(
+!(
+!(
+!(
+!(
+#*
+#*#*
+#*#*
+#*
+#*
+#*#*
+#*
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+225.1 m
+10/06/2013
+226 m
+30/09/2011
+210.9 m
+10/06/2013
+191 m
+17/04/2013
+176 m
+5/08/2013
+248 m
+5/08/2013
+215.8 m
+10/06/2013
+135.8 m
+10/04/2008
+189.3 m
+15/11/2011
+258.7 m
+26/08/2003
+255.5 m
+20/08/2003
+165 m
+19/08/2003
+184.34 m
+15/05/2008
+262 m
+8/09/2003
+155.48 m
+30/05/2008
+217.85 m
+15/05/2008
+164.21 m
+15/05/2008
+187.23 m
+22/11/2015
+180 m
+13/10/2003
+173 m
+13/10/2003
+261 m
+20/08/2003
+279.3 m
+14/09/2006
+172.5 m
+13/10/2003
+117 m
+15/09/2003
+94 m
+28/10/2003
+273.39 m
+22/11/2015
+95 m
+7/10/2003
+86 m
+15/09/2003
+202.1 m
+8/03/2007
+212.62 m
+5/03/2007
+162.9 m
+8/03/2007
+232 m
+13/10/2003
+147 m
+20/08/2003
+256 m
+6/03/2007
+204.6 m
+2/04/2007
+99.5 m
+14/09/2006
+242 m
+28/10/2003
+206.5 m
+8/02/2008
+250.2 m
+15/11/2011
+121.1 m
+13/09/2006
+214.5 m
+6/03/2007
+245.4 m
+5/03/2007
+214.72 m
+6/03/2007
+253.6 m
+15/05/2008
+259.7 m
+14/09/2006
+133 m
+28/10/2003
+73 m
+15/09/2003
+230 m
+3/02/2004
+228 m
+2/02/2004
+182 m
+3/02/2004
+102 m
+3/02/2004
+165 m
+9/02/2004
+161 m
+9/02/2004
+241.5 m
+9/02/2004
+193 m
+3/02/2004
+211.3 m
+11/04/2008
+140 m
+11/04/2008
+167.9 m
+10/05/2007
+129.41 m
+7/04/2008
+175 m
+24/10/2013
+138.86 m
+12/03/2013
+253.83 m
+20/11/2015
+187 m
+24/10/2013
+208 m
+23/10/2013
+115.7 m
+20/05/2014
+129.64 m
+20/05/2014
+119.25 m
+20/05/2014
+AA'
+227000
+227000
+228000
+228000
+229000
+229000
+230000
+230000
+231000
+231000
+232000
+232000
+233000
+233000
+234000
+234000
+235000
+235000
+236000
+236000
+237000
+237000
+238000
+238000
+239000
+239000
+240000
+240000
+241000
+241000
+242000
+242000
+129000
+129000
+130000
+130000
+131000
+131000
+132000
+132000
+133000
+133000
+134000
+134000
+135000
+135000
+136000
+136000
+137000
+137000
+138000
+138000
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+EV X
+HPLA
+FAM
+BBR
+EV X
+SV P
+MFT
+MFT
+SV P
+ESN
+EV X
+EV X
+MFT
+MRT
+OUR
+LPR
+YV O
+HPLA
+BBR
+FAM
+HPLA
+YV O
+SV P
+ESN
+AN
+EV X
+LUS
+HPLA
+SV P
+LUS
+FAM
+AIS
+OUR
+YV O
+AIS
+FAM
+LUS
+MRT
+LUS
+LPR
+LUS
+OUR
+MRT
+LUS
+N R
+LPR
+MRT
+MFT
+EV X
+OUR
+YV O
+HPLA
+A'
+A
+Fa ille d e Pepinster
+Fa ille
+d e V illers-a ux-To urs
+Fa ille d e Ho d y
+Mé ry
+Do lem b reux
+Fla go tier
+Cha nxhe
+Fra iture
+Ôneux
+N
+S
+0 m
+300
+100
+200
+300
+0 m
+100
+200
+100
+200
+100
+200
+50 m
+150
+250
+300
+250
+50 m
+150
+A'
+A
+N
+S
+Ec helle vertic a le : 1/5.000
+Ec helle ho rizo nta le : 1/25.000
+Exa gé ra tio n d es ha uteurs : X 5
+Co upe hyd ro gé o lo gique sur fo nd  gé o lo gique tiré  et m o d ifié  d e la  c o upe CC'
+ d e J. Bellière et JM. Ma rio n (2015, Ca rte gé o lo gique d e W a llo nie)
+Go b ry
+Ha ze
+Ourthe
+Am b lève
+Ec helle vertic a le : 1/25.000
+Ec helle ho rizo nta le : 1/25.000
+Co upe hyd ro gé o lo gique sur fo nd  gé o lo gique tiré  d e la  c o upe CC' d e J. Bellière et JM. Ma rio n (2015, Ca rte gé o lo gique d e W a llo nie)
+1
+N ivea u pié zo m é trique po nc tuel
+Editée par le SERVICE PUBLIC DE WALLONIE
+Direction Générale opérationnelle, Agriculture, 
+Ressources Naturelles et Environnement
+Avenue Prince de Liège 15         B-5100 Namur (Belgique)
+Réalisée par Ingrid Ruthy 
+Actualisation partielle : Ingrid Ruthy
+Hydrogéologie et Géologie de l'Environnement
+Université de Liège
+Sart-Tilman - Bâtiment B52         B-4000 LIEGE
+Dépôt légal : D/2016/12.796/5
+ISBN : 978-2-8056-0219-1 
+________________________
+CARTE HYDROGÉOLOGIQUE DE WALLONIE
+±
+49/1-2
+Tavier - Esneux
+BRUX ELLES
+W ALLON IE
+FLAN DRE
+Tavier - Esneux   |  49/1-2
+Première version : mai 2004 - Actualisation partielle : mars 2016
+CARTE HYDROGÉOLOGIQUE DE WALLONIE
+Coupes hydrogéologiques
+Carte des informations complémentaires et des caractères des nappes 
+Carte des volumes d'eau prélevés
+REPRODUCTION   IN TERDITE
+Echelle: 1/25 000
+0
+1000
+2000
+3000
+4000
+5000
+500
+Mètres
+Echelle: 1/50 000
+0
+1000
+2000
+3000
+4000
+500
+Mètres
+Echelle: 1/50 000
+0
+1000
+2000
+3000
+4000
+500
+Mètres
+Tableau de correspondance : Géologie - Hydrogéologie

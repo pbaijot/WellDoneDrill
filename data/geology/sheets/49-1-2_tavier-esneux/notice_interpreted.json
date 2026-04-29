@@ -1,0 +1,1021 @@
+{
+  "sheetId": "49-1-2_tavier-esneux",
+  "sheetCode": "49/1-2",
+  "name": "Tavier–Esneux",
+  "status": "machine_interpreted_unreviewed",
+  "modelVersion": "0.2.0",
+  "method": {
+    "type": "keyword_and_context_extraction",
+    "description": "Première extraction automatique depuis notice_raw.txt et hydrogeo_raw.txt. Les résultats doivent être relus avant utilisation comme vérité géologique."
+  },
+  "formations": [
+    {
+      "id": "calcaire",
+      "interpretedName": "Calcaire",
+      "lithologies": [
+        "calcaire"
+      ],
+      "hydroClass": "aquifer",
+      "hydroTerms": [
+        "karst",
+        "source"
+      ],
+      "structuralTerms": [
+        "fold",
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.4,
+        3.1
+      ],
+      "mentions": 19,
+      "confidence": "high",
+      "evidence": [
+        "Le synclinorium y comporte deux synclinaux \nmajeur (de Chanxhe et de Comblain) dont le coeur est occupé \npar les formations calcaires dinantiennes.",
+        "Lorsqu'on s'éloigne de \ncette partie centrale, les flancs du synclinorium sont formés : au \nsud par les formations calcaires d'âge dévonien et au nord par \nces mêmes formations surmontant les terrains terrigènes d'âge \ndévonien inférieur.",
+        "Le reste de la formation consiste en calcaires, gris \nclair ou foncé, à grain fin (micritiques), montrant souvent \nune fine stratification laminaire.",
+        "Cette formation, de nature calcaire, comporte deux \nmembres superposés qui, assez curieusement, n'ont jamais reçu \nde dénomination.",
+        "Membre inférieur  : bancs épais, d'épaisseur métrique \nà plurimétrique, de calcaire corallien construit (biostromes) \nmontrant souvent des coraux en position de vie ainsi que des \nstromatopores."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "gres",
+      "interpretedName": "Gres",
+      "lithologies": [
+        "gres"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [
+        "dip",
+        "fold"
+      ],
+      "lambdaRangeWmK": [
+        2.4,
+        3.2
+      ],
+      "mentions": 17,
+      "confidence": "high",
+      "evidence": [
+        "Quartzites \nde \nteinte \ngrise \nà \nverte, \nen \nbancs \npluridécimétriques ; ces roches possèdent un grain grossier et \nsont parfois graveleuses, principalement dans le partie supérieure \nde la formation.",
+        "Partie supérieure de la formation : siltites et grès silteux \nde couleur rouge.",
+        "Partie inférieure de la formation : grès et quartzites verts \net gris, comportant des niveaux à débris de plantes et des niveaux \nà crinoïdes.",
+        "Formation de Pepinster (barres \nrocheuses de grès verts étagées dans le versant, dans le coeur \nde l'anticlinal) ; Regroupement des formations de Névremont et \ndu Roux (partiellement exposé le long de la route) et Formation \nde Lustin (bien exposée le long de la route).",
+        "La base de la formation comporte quelques bancs \nde quartzites blancs ou roses, à grain grossier et localement \ngraveleux."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+conglomerat",
+      "interpretedName": "Calcaire / conglomerat",
+      "lithologies": [
+        "calcaire",
+        "conglomerat"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.0,
+        3.1
+      ],
+      "mentions": 6,
+      "confidence": "medium",
+      "evidence": [
+        "Ce niveau peut comporter également un banc de \npoudingue clair et/ou de calcaire à dragées de quartz.",
+        "Masse de brèche calcaire dans laquelle la stratification est \ntantôt absente, tantôt indistincte, tantôt plus ou moins exprimée.",
+        "Cette brèche est souvent monogénique : presque tous les blocaux \nsont constitués de calcaire foncé, généralement noir à grain très \nfin, du type de celui de la Formation de Terwagne.",
+        "Cette brèche est généralement interprétée aujourd'hui \ncomme une brèche de collapse résultant de l'effondrement et de \nla fracturation des calcaires sus-jacents, effondrement provoqué \npar la dissolution de produits évaporitiques vraisemblablement \ninclus dans la Formation de Terwagne et aujourd'hui \ncomplètement disparus.",
+        "Vers l'ouest, \nen se rapprochant de Comblain-au-Pont, la brèche est mêlée à \ndes passées  de calcaire stratifié toujours plus ou moins disloqué \net plus ou moins bréchifié."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+gres",
+      "interpretedName": "Calcaire / gres",
+      "lithologies": [
+        "calcaire",
+        "gres"
+      ],
+      "hydroClass": "aquifer",
+      "hydroTerms": [
+        "aquifer",
+        "aquitard",
+        "source"
+      ],
+      "structuralTerms": [
+        "fault",
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.4,
+        3.2
+      ],
+      "mentions": 6,
+      "confidence": "medium",
+      "evidence": [
+        "La base de la formation est constituée d'une épaisseur de \nquelques mètres de roches terrigènes : quartzites et siltites plus \nou moins carbonatés.",
+        "Situation du « Rocher Ste Anne », affleurement typique de la \nFormation de Lustin et du regroupement des formations de \nNévremont et du Roux sur la carte de Seraing - Chênée (voir la \ncoupe à la fig.5).\n0\n20 m\nROU: siltites et grès divers\nLUS : calcaire à grain fin.",
+        "Stromatopores\nLUS : calcaire construit (coraux en position de vie)\n NEV : calcaire\n      quartzite blanc graveleux\nNNW\nSSE\nGrotte\na\nc\nb\nChapelle\nFaille\nFig. 5.",
+        "Le carbonate (calcite ou dolomite) se présente en grains ou \nen fragments de fossiles mêlé aux autres constituants (la \nroche n'est donc  pas un grès à ciment calcaire).",
+        "Le passage à la formation sus-jacente de Neffe est \nprogressif et marqué par l'apparition de couches de calcaire gris \nclair qui s'intercalent entre les calcaires foncés."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+schiste",
+      "interpretedName": "Calcaire / schiste",
+      "lithologies": [
+        "calcaire",
+        "schiste"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [
+        "aquitard",
+        "fracture",
+        "source"
+      ],
+      "structuralTerms": [
+        "fold",
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.1,
+        3.1
+      ],
+      "mentions": 6,
+      "confidence": "medium",
+      "evidence": [
+        "Coupe du « Rocher Ste Anne » à Tilff. a : un buisson de Disphyllum \ntrès déformé dans le cœur du pli anticlinal. b : un banc de schiste \ncalcareux affecté de schistosité (description dans le texte). c : du \ncalcaire affecté d'une schistosité de dissolution dans le coeur du \npli synclinal.",
+        "Dans la partie sud de la carte (bord sud de la planchette \nd'Esneux), les calcaires francs de la partie supérieure font \nplace à des calcschistes et à des calcaires à structure noduleuse.",
+        "Ce faciès annonce celui de la Formation de Neuville constituée \nde schistes à nodules calcaires, formation à laquelle la Formation \nd'Aisemont passe latéralement vers le sud (carte adjacente de \nHamoir - Ferrières).",
+        "Pour en savoir plus :\t Coen-Aubert et Coen (1975)\nFormation de la Famenne (FAM)\nOrigine du nom :\t «  schistes de la Famenne  » (d'Omalius \nd'Halloy, 1835)\nSchistes, de teinte vert-olive à vert-brun, parfois rouges, \npouvant renfermer des nodules calcaires de tailles diverses \n(jusqu'à une dizaine de centimètres).",
+        "Affleurements représentatifs :\n-\t\nla tranchée de la route qui va de Hony au hameau de \nFèchereux  , près du bord nord de la planchette d'Esneux \n(fig. 2), permet une très bonne observation des schistes avec \net sans nodules calcaires, d'un petit pli et des relations entre \nla stratification et la schistosité ;\n-\t\nla tranchée de la gare de Hony (même endroit) ;\n-\t\nla transition vers la Formation d'Esneux sus-jacente peut être \nobservée derrière la gare d'Esneux (fig. 8)."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "conglomerat",
+      "interpretedName": "Conglomerat",
+      "lithologies": [
+        "conglomerat"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [
+        "fold",
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.0,
+        2.8
+      ],
+      "mentions": 4,
+      "confidence": "medium",
+      "evidence": [
+        "Dans la vallée du Hoyoux, à laquelle s'applique la présente \ndescription, les poudingues sont particulièrement développés \net affleurent  à de multiples niveaux de la formation en bancs \nd'épaisseur parfois plurimétrique.",
+        "Environs de Comblain-au-Pont. a  : «  Rocher du Vignoble  »  : \nBrèche de la Belle Roche contenant un méga-bloc visible \ndans la paroi (flanc sud vertical du synclinal de Comblain)  ; \nb :« les Tartines de Comblain » : même disposition ; c : le seul \naffleurement observé de la Formation de Pont d'Arcole  ; d  : \ncoupe continue dans les formations dinantiennes.\n-\t\nla coupe exposée le long de la route sur la rive gauche de \nl'Amblève, au sud et au nord du pont de Martinrive sur cette \nrivière (fig. 14).",
+        "In Bultynck, Dejonghe, \n2001 \nAretz et al., 2006 \nMc Cann et al., 2008\nRegroupement de la Brèche de la Belle Roche et des formations \nde Terwagne, de Neffe et de Lives - (BTNL)\nÀ partir de Comblain-au-Pont, vers l'ouest, la \npartie centrale du synclinal occupe une aire complètement \ndépourvue d'affleurements sur une distance d'environ 3,5 km.",
+        "Cette zone a été, faute de mieux, \naffectée sur la carte sous la dénomination « regroupement de \nla Brèche de la Belle Roche et des formations de Terwagne, de \nNeffe et de Lives (BTNL) ».\n\n\n===== PAGE 40 =====\n\n38\nLa Brèche de la Belle Roche (BBR)\nOrigine du nom :\t la carrière de la Belle Roche, sur la rive nord \nde l'Amblève, immédiatement en amont de \nComblain-au-Pont (planchette d‘Esneux)."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "argile+calcaire",
+      "interpretedName": "Argile / calcaire",
+      "lithologies": [
+        "argile",
+        "calcaire"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.2,
+        3.1
+      ],
+      "mentions": 4,
+      "confidence": "medium",
+      "evidence": [
+        "Cet ensemble peut localement renfermer un banc de \ncalcaire argileux, affecté de schistosité.",
+        "Cette roche montre \ndes parties calcaires en forme d'éléments lenticulaires allongés \nparallèles à la schistosité de la partie argileuse qui les enrobe.",
+        "La base de la formation peut être occupée par quelques \nmètres de calcaire noir à grain fin (micrite) éventuellement \nargileux  en bancs minces pluricentimétriques.",
+        "Les calcaires argileux et les siltites à blocaux calcaires \nde la Formation de Souverain Pré, ensemble carbonaté épais \nde quelques mètres à une trentaine de mètres, interstratifié \ndans les dépôts famenniens essentiellement arénacés, jouent \nun rôle particulier."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "gres+schiste",
+      "interpretedName": "Gres / schiste",
+      "lithologies": [
+        "gres",
+        "schiste"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.1,
+        3.2
+      ],
+      "mentions": 3,
+      "confidence": "medium",
+      "evidence": [
+        "Alternance de schistes et siltites généralement rouges et \nde quartzites rouges ou verts en bancs décimériques à métriques.",
+        "La stratification \nest souvent peu visible, laissant le doute sur la structure de la \nroche:  shale ou schiste Dans la partie supérieure de l'unité, \nqui montre une transition lithologique vers les siltites de la \nFormation d'Esneux la schistosité disparaît progressivement.",
+        "Monographie du Famennien, comprenant les \npsammites du Condroz et les schistes de la Famenne proprement \ndits (Dévonien supérieur)."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "conglomerat+gres",
+      "interpretedName": "Conglomerat / gres",
+      "lithologies": [
+        "conglomerat",
+        "gres"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.0,
+        3.2
+      ],
+      "mentions": 3,
+      "confidence": "medium",
+      "evidence": [
+        "Alternance de quartzites rouges et de poudingues rouges.",
+        "Les cailloux du poudingue, dont la taille peut être \ndécimétrique, sont constitués de quartzites de teintes diverses \nauxquels se mêlent çà et là des cailloux de tourmalinite noire à \ngrain fin.",
+        "Cette unité peut contenir des bancs de poudingue \nde teinte claire (gris-vert) ; ceux-ci, lorsqu'on les suit sur les \naffleurements, se montrent discontinus, par passage latéral au \ngrès."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "schiste",
+      "interpretedName": "Schiste",
+      "lithologies": [
+        "schiste"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.1,
+        2.8
+      ],
+      "mentions": 3,
+      "confidence": "medium",
+      "evidence": [
+        "Route de Hony à Fèchereux (rive gauche de l'Ourthe): a : coupe \nde la figure 3 ; b : affleurements des schistes de la Formation de \nla Famenne.\n\n\n===== PAGE 17 =====\n\n15\nUtilisation :\t aucune.",
+        "Dans la partie sud-est de la planchette d'Esneux, la \nformation comporte à sa base quelques mètres de schiste vert, \nprélude à la Formation  de Nismes qui se développe plus au sud.",
+        "Quant à la Formation de Pont d'Arcole, constituée de \nschiste (shale) calcareux, elle n'est visible qu'en un seul endroit \n(tranchée de la route au sud de la gare de Rivage, voir ci-\ndessous)."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "argile",
+      "interpretedName": "Argile",
+      "lithologies": [
+        "argile"
+      ],
+      "hydroClass": "aquifer",
+      "hydroTerms": [
+        "aquifer",
+        "fracture"
+      ],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.2,
+        1.9
+      ],
+      "mentions": 3,
+      "confidence": "medium",
+      "evidence": [
+        "On notera cependant que cette \nvaleur ne représente pas l'épaisseur d'origine, \ncelle-ci ayant été modifiée d'abord par le tassement \ndu sédiment argileux, ensuite par la déformation \ntectonique.",
+        "De plus, la formation intermédiaire de Pont \nd'Arcole,  de nature argileuse, est peu épaisse (une dizaine de \nmètres) et n'affleure pratiquement jamais.",
+        "Les formations gréseuses, généralement bien diaclasées, \nrenferment normalement des nappes de fissures, dans la mesure \noù les roches ne contiennent pas trop de minéraux argileux \nsusceptibles d'en  colmater les joints (cas des siltites)."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "limon",
+      "interpretedName": "Limon",
+      "lithologies": [
+        "limon"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.1,
+        1.7
+      ],
+      "mentions": 2,
+      "confidence": "low",
+      "evidence": [
+        "Les formations quaternaires comportent :\n-\t\nd'une part les sédiments fluviatiles qui occupent les plaines \nalluviales et les terrasses ;\n-\t\nd'autre part un dépôt de loess qui a recouvert toute la région \net subsiste avec des épaisseurs variables (jusqu'à plusieurs \nmètres) sur les portions sub-horizontales du relief : plateau \net terrasses fluviatiles.",
+        "Elle représente un écorché des formations méso-\ncénozoïques sous la couverture limoneuse volontairement \nignorée."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+sable",
+      "interpretedName": "Calcaire / sable",
+      "lithologies": [
+        "calcaire",
+        "sable"
+      ],
+      "hydroClass": "aquifer",
+      "hydroTerms": [
+        "karst"
+      ],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.6,
+        3.1
+      ],
+      "mentions": 2,
+      "confidence": "low",
+      "evidence": [
+        "La Formation de Montfort, encadrée dans la stratigraphie \npar des roches d'érosion plus aisée (pélites et siltites sous-\njacentes, siltites et calcaires sus-jacents) est responsable de la \nplupart des crêtes allongées parallèles dites « tiges du Condroz » \nqui caractérisent la morphologie de la région (cf. chapitre \n1.3).",
+        "Les sables\nLes sables cénozoïques, piégés dans les cavités \nkarstiques des calcaires paléozoïques, ont été extraits en de \nmultiples endroits."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "dolomie",
+      "interpretedName": "Dolomie",
+      "lithologies": [
+        "dolomie"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.7,
+        3.4
+      ],
+      "mentions": 2,
+      "confidence": "low",
+      "evidence": [
+        "Environs de Martinrive. a : coupe sur la rive gauche de l'Amblève \ndans les formations tournaisiennes ; b : tranchée du chemin de \nfer : Formation de Longpré (dolomie encrinitique).",
+        "La formation, dans sa partie supérieure, soit à une dizaine \nde mètres sous son sommet, peut comporter une épaisseur de \nquelques mètres de dolomie."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "gres+sable",
+      "interpretedName": "Gres / sable",
+      "lithologies": [
+        "gres",
+        "sable"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.6,
+        3.2
+      ],
+      "mentions": 2,
+      "confidence": "low",
+      "evidence": [
+        "Carrière désaffectée (coin sud-est de la planchette de Tavier) : \nsable cénozoïque.\n\n\n===== PAGE 46 =====\n\n44\nBlocs quartzitiques épars\nUn autre témoin de cette couverture cénozoïque est \nreprésenté par des blocs épars isolés, constitués de quartzite de \nteinte claire, rose à ocre et pouvant atteindre des dimensions \nmétriques.",
+        "Ces grès présentent en effet plusieurs qualités  : les \nbancs minces (pluricentimétriques) séparés par des joints de \nstratification tapissés de micas, se débitent aisément en plaques \ndirectement utilisables en dallages rustiques."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "sable",
+      "interpretedName": "Sable",
+      "lithologies": [
+        "sable"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.6,
+        2.4
+      ],
+      "mentions": 2,
+      "confidence": "low",
+      "evidence": [
+        "Il faut voir l'origine de ces blocs dans les produits de \nla lapidification locale des sables cénozoïques, phénomène bien \nconnu dans les régions de Wallonie occupées par ces formations \nsableuses.",
+        "Formations quaternaires\nAlluvions anciennes (ALA)\nIl s'agit des dépôts fluviatiles qui forment les terrasses \nde l'Ourthe et de l'Amblève, étagées à plusieurs niveaux."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "argile+calcaire+conglomerat+dolomie+gres",
+      "interpretedName": "Argile / calcaire / conglomerat / dolomie / gres",
+      "lithologies": [
+        "argile",
+        "calcaire",
+        "conglomerat",
+        "dolomie",
+        "gres"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.2,
+        3.4
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "La constitution lithologique de cette série est très variée \net fait alterner les faciès terrigènes et les faciès calcaires de la \nmanière qui se résume comme suit, de haut en bas :\n-\t\nformations viséennes et tournaisiennes : calcaires de types \ndivers et dolomies ;\n-\t\nformations famenniennes : grès, siltites et pélites argileuses ;\n-\t\nformations \nfrasniennes \net \ngivetiennes \n: \ncalcaires \nprédominants ;\n-\t\nformations eifeliennes et plus anciennes (Dévonien \ninférieur) : grès, poudingues subordonnés, siltites et pélites \nargileuses."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+conglomerat+gres",
+      "interpretedName": "Calcaire / conglomerat / gres",
+      "lithologies": [
+        "calcaire",
+        "conglomerat",
+        "gres"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.0,
+        3.2
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Il s'agit :\n-\t\nde la Formation de Montfort (Famennien supérieur) \nconstituée de microquartzites  arkosiques micacés (muscovite \net biotite détritiques) : sédiment bien classé, bien lavé, mais \nimmature ;\n-\t\ndes calcaires coralliens construits (biostromes) de la \nFormation de Lustin (Frasnien) ;\n-\t\nde deux unités d'encrinite tournaisiennes : respectivement \nles formations de l'Ourthe (dite « petit granit ») d'un grand \nintérêt économique et de Longpré, cette dernière entièrement \ndolomitisée ;\n-\t\nde la Formation de la Belle Roche (Viséen)  : masse \nvolumineuse de brèche calcaire de collapse, renfermant des \nmega-blocs de calcaires stratifiés."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+conglomerat+dolomie+gres",
+      "interpretedName": "Calcaire / conglomerat / dolomie / gres",
+      "lithologies": [
+        "calcaire",
+        "conglomerat",
+        "dolomie",
+        "gres"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [
+        "fold",
+        "section"
+      ],
+      "lambdaRangeWmK": [
+        2.0,
+        3.4
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Affleurements représentatifs :\nLe versant gauche (est) de la vallée de l'Ourthe, dominant la \nroute de Hony à Fèchereux (bord nord de la planchette d'Esneux ; \nsituation : fig. 2. ; coupe : fig. 3.) ; la formation est bien exposée \nsans une série de ressauts rocheux échelonnés sur la hauteur du \nversant dans le cœur de l'anticlinal.\n0\n50 m\nN\nS\nPER : siltite rouge, poudingue rouge\nPER : grès vert\nDévonien inférieur\nLUS : calcaire à grain fin\nLUS : calcaire construit (coraux)\nroches diverses: calcaire,\ndolomie, siltite, grès, ..."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+dolomie+gres+schiste",
+      "interpretedName": "Calcaire / dolomie / gres / schiste",
+      "lithologies": [
+        "calcaire",
+        "dolomie",
+        "gres",
+        "schiste"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.1,
+        3.4
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Alternances de roches diverses : dolomies, calcaires et \ncalcschistes quartzeux, siltites, grès carbonatés."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "argile+calcaire+schiste",
+      "interpretedName": "Argile / calcaire / schiste",
+      "lithologies": [
+        "argile",
+        "calcaire",
+        "schiste"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.2,
+        3.1
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "La partie inférieure \nest composée de schistes verts, parfois un peu calcareux et de \nquelques bancs de calcaire argileux à la base."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+gres+schiste",
+      "interpretedName": "Calcaire / gres / schiste",
+      "lithologies": [
+        "calcaire",
+        "gres",
+        "schiste"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.1,
+        3.2
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "En montant \ndans la formation, le constituant carbonaté des roches devient \nplus abondant, faisant apparaître  des bancs de grès calcareux \npuis de calcaire quartzeux et même de calcaire pur alternant avec \ndes schistes ; ce faciès correspond à la Formation de Comblain-\nau-Pont (CLP) utilisée par certains auteurs."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+dolomie",
+      "interpretedName": "Calcaire / dolomie",
+      "lithologies": [
+        "calcaire",
+        "dolomie"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        2.4,
+        3.4
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Il s'agit essentiellement de la partie inférieure de \nla Formation de Longpré (Membre de Flémalle)  ; la partie \nsupérieure (Membre des Avins) est ici très mince (quelques \nmètres).\n\n\n===== PAGE 39 =====\n\n37\nLa roche est une encrinite : calcaire entièrement constitué \nde débris de crinoïdes, en bancs épais (pluridécimétriques \nà métriques), ici complètement transformé en une dolomie \nsaccharoïde brunâtre."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "argile+calcaire+sable",
+      "interpretedName": "Argile / calcaire / sable",
+      "lithologies": [
+        "argile",
+        "calcaire",
+        "sable"
+      ],
+      "hydroClass": "aquifer",
+      "hydroTerms": [
+        "aquifer",
+        "aquitard",
+        "karst"
+      ],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.2,
+        3.1
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Il s'agit :\n-\t\ndes produits cénozoïques descendus dans des cavités \nkarstiques des calcaires  ; ils peuvent parfois constituer \ndes aquifères locaux d'importance réduite dans le cas où \nles calcaires sous-jacents sont colmatés par des résidus de \ndissolution argileux (ex. : le fond de la carrière mentionnée à \nla fig. 19 est occupé par un étang) ;\n-\t\ndes terrasses fluviatiles (ALA) dans la mesure où elles \nreposent sur un substrat imperméable, ce qui est rarement le \ncas ;\n-\t\ndes graviers d'alluvion (AMO) dont la nappe est en relation \ndirecte avec les cours d'eau.\n\n\n===== PAGE 56 =====\n\n54\n5."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "gres+limon",
+      "interpretedName": "Gres / limon",
+      "lithologies": [
+        "gres",
+        "limon"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.1,
+        3.2
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Les minerais de fer\nLa base de la Formation de Névremont (Givetien) \ncomporte quelques bancs de quartzite blanc ou rose auxquels \nsont associés des encroûtements de limonite, parfois en quantité \nnotable."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "conglomerat+limon+sable",
+      "interpretedName": "Conglomerat / limon / sable",
+      "lithologies": [
+        "conglomerat",
+        "limon",
+        "sable"
+      ],
+      "hydroClass": "aquitard",
+      "hydroTerms": [],
+      "structuralTerms": [],
+      "lambdaRangeWmK": [
+        1.1,
+        2.8
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Description des formations................................................\t 11\nRegroupement des formations d'Acoz, de Wépion \net de Burnot (AWBU)................................................\t 11\nFormation d'Acoz (dans la vallée du Hoyoux) (ACO).\t 12\nFormation de Wépion (dans la vallée du Hoyoux) (WEP).\t 12\nFormation de Burnot (BUR)......................................\t 13\nFormation de Pepinster (PER)...................................\t 13\nRegroupement des formations de Névremont et \ndu Roux (NR)............................................................\t 15\nFormation de Névremont (NEV)...............................\t 16\nFormation du Roux (ROU)........................................\t 16\nFormation de Fromelennes (FRO).............................\t 17\nFormation de Lustin (LUS).......................................\t 17\nFormation d'Aisemont (AIS) et la zone de \ntransition entre les formations d'Aisemont et de \nNeuville (AN)............................................................\t 19\nFormation de la Famenne (FAM)..............................\t 21\nFormations d'Esneux (ESN), de Souverain-Pré \n(SVP), de Montfort (MFT) et d'Evieux (EVX).........\t 22\nFormation d'Esneux (ESN).......................................\t 22\nFormation de Souverain-Pré (SVP)...........................\t 24\nFormation de Montfort (MFT)..................................\t 27\nFormation d'Evieux (EVX).......................................\t 29\nRegroupement des formations d'Hastière (HAS), \nde Pont d'Arcole (PDA) et de Landelies (LAN)-\n(HPLA)......................................................................\t 31\nFormation d'Yvoir (YVO).........................................\t 33\nFormation de l'Ourthe (OUR)...................................\t 34\nFormation de Martinrive (MRT)................................\t 35\nFormation de Longpré (LPR)....................................\t 36\nRegroupement de la Brèche de la Belle Roche \n(BBR) et des formations de Terwagne, de Neffe \net de Lives..................................................................\t 37\nLa Brèche de la Belle Roche (BBR)..........................\t 38\nFormation de Terwagne (TER)..................................\t 40\nFormation de Neffe (NEF).........................................\t 40\nFormation de Lives (LIV)..........................................\t 41\nDépôts sableux (SBL)................................................\t 42\nBlocs quartzitiques épars...........................................\t 44\n\t\nFormations quaternaires............................................\t 44\nAlluvions anciennes (ALA).......................................\t 44\n\n\n===== PAGE 69 =====\n\n67\nAlluvions modernes (AMO)......................................\t 44\nLes limons..................................................................\t 44\n3."
+      ],
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "calcaire+gres+sable",
+      "interpretedName": "Calcaire / gres / sable",
+      "lithologies": [
+        "calcaire",
+        "gres",
+        "sable"
+      ],
+      "hydroClass": "unknown",
+      "hydroTerms": [
+        "piezometry",
+        "source"
+      ],
+      "structuralTerms": [
+        "dip",
+        "fold"
+      ],
+      "lambdaRangeWmK": [
+        1.6,
+        3.2
+      ],
+      "mentions": 1,
+      "confidence": "low",
+      "evidence": [
+        "Matières utiles (Poty, Chevalier, 2004).............................\t 55\nLes grès..............................................................................\t 55\nLes calcaires......................................................................\t 55\nLes sables...........................................................................\t 56\nLes minerais de fer............................................................\t 56\nBIBLIOGRAPHIE................................................................\t 57\nANNEXES............................................................................\t 62\nFARBEN \n- \nUND \nZEICHENERKLÄRUNG \n- \nLEGENDE - LEGEND....................................................\t 64\n\n\n===== PAGE 70 =====\n\n68\n\n\n===== PAGE 71 =====\n\nDIRECTION GÉNÉRALE OPÉRATIONNELLE\nDE L'AGRICULTURE, DES RESSOURCES \nNATURELLES ET DE L'ENVIRONNEMENT\nnotice explicative \nCARTE GÉOLOGIQUE DE WALLONIE : 1/25 000\ntavier - esneux 49/1-2\n\n===== PAGE 1 =====\n\nCa rte hyd ro gé o lo gique tra c é e d '\na près la  c a rte gé o lo gique d e Bellière J. et Ma rio n J-M. (Ca rte gé o lo gique d e W a llo nie, 2015) \nPIEZOMETRIE \n115,7 m  20/05/2014\n!"
+      ],
+      "reviewStatus": "machine_extracted"
+    }
+  ],
+  "hydrogeology": {
+    "summary": {
+      "aquiferMentions": 17,
+      "karstMentions": 17,
+      "fractureMentions": 2,
+      "sourceMentions": 11,
+      "piezometryMentions": 1
+    },
+    "mainRisks": [
+      "karst",
+      "fractured_bedrock",
+      "aquifer_or_groundwater",
+      "springs_or_resurgences"
+    ],
+    "evidence": [
+      {
+        "sentence": "===== PAGE 1 =====\n\n49/1-2\nTavier\nEsneux\nCARTE GéOLOGIQUE DE WALLONIE\néCHELLE : 1/25 000\nNOTICE EXPLICATIVE\nQ\n/\n/\n\n\n===== PAGE 2 =====\n\nSPW | Éditions, CARTES \nN° vert : 1718 (informations générales) - 1719 (germanophones)  \nSite : www.wallonie.be\nPlus d'infos concernant la carte géologique de Wallonie : \nhttp://geologie.wallonie.be \ncartegeologique@spw.wallonie.be\nUn document édité par le Service public de Wallonie,\nDirection générale de l'Agriculture,  \ndes Ressources naturelles et de l'Environnement.",
+        "terms": [
+          "source"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Ce programme a été commandité et financé par le Service \npublic de Wallonie (Direction générale opérationnelle de \nl'Agriculture, des Ressources naturelles et de l'Environnement), \nen application d'une décision du Gouvernement wallon du 9 \navril 1992, faisant suite à un programme pilote, qui avait débuté \nen 1990.",
+        "terms": [
+          "source"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "La totalité de ces documents peut être consultée \nsur rendez-vous à la Direction générale opérationnelle de \nl'Agriculture, des Ressources naturelles et de l'Environnement, \navenue Prince de Liège 15, B-5100 Jambes (Service géologique \nde Wallonie).\n\n\n===== PAGE 8 =====\n\n6\nUn accord de collaboration permet la consultation des \nfiches descriptives des points d'affleurements et sondages décrits \nà l'Institut royal des Sciences naturelles de Belgique (Service \ngéologique de Belgique), rue Jenner 13, B-1000 Bruxelles.",
+        "terms": [
+          "source"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Il est donc recommandé aux lecteurs susdits de consulter \nle «  Guide de lecture des cartes géologiques de Wallonie  » \n(Dejonghe, 2001), brochure gratuite diffusée par la Direction \ngénérale opérationnelle de l'Agriculture, des Ressources \nnaturelles et de l'Environnement.",
+        "terms": [
+          "source"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Les phénomènes qui sont en relation avec la dissolution \ndes carbonates (phénomènes karstiques) peuvent affecter toutes \nles roches calcaires.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Les risques d'accidents  liés à ces processus \nexistent donc partout où se trouve du calcaire et pas seulement \naux endroits réputés tels sur les cartes des risques karstiques \nétablies par la Région Wallonne.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "C'est en particulier le cas pour \nles captages, les carrières, les puits de mines, les phénomènes \nkarstiques, etc.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Son histoire géologique peut se résumer de la manière \nsuivante :\n-\t\ndépôt, sur un socle calédonien pénéplané d'une série \nsédimentaire d'âge dévonien et carbonifère ;\n-\t\nplissement varisque, suivi d'érosion et de pénéplanation \n(pénéplaine épi-varisque) ;\n-\t\nsur ce socle pénéplané, dépôt discontinu dans le temps et \ndans l'espace de sédiments mésozoïques et cénozoïques \nrestés non plissés et, pour la plupart, à l'état meuble ;\n-\t\nsoulèvement général et érosion de cette couverture  ; dans \nla région qui nous concerne, celle-ci a été entièrement\n\n\n===== PAGE 11 =====\n\n9\néliminée  : il n'en subsiste que quelques reliques piégées \ndans des cavités karstiques des calcaires paléozoïques sous-\njacents.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Bien qu'il ne s'agisse pas à proprement parler de calcaires, \nces roches peuvent être le siège de phénomènes karstiques \n(effondrement d'une surface de plusieurs mètres carrés observé \ndans un pré à Fontin, à l'est d'Esneux).",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Il faut noter qu'en dehors des tranchées de routes ou \nde chemin de fer, les affleurements naturels de cette formation \nsont pratiquement inexistants ; sa présence peut néanmoins  être \nrévélée par des sources, traduisant la singularité d'un niveau \ncarbonaté au sein d'une série épaisse terrigène.",
+        "terms": [
+          "source"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Ceux-ci ont été partout enlevés par \nl'érosion et ne subsistent que de manière locale sous la forme \nde remplissages de cavités karstiques dans les calcaires du socle \npaléozoïque.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Ces gisements, en raison \nde leur genèse (descente dans des cavités karstiques) ont des \ndimensions très variables et montrent d'ordinaire une structure \nassez confuse.",
+        "terms": [
+          "karst"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Il convient de signaler que les aquifères en milieu calcaire sont \nparticulièrement sensibles à la pollution car ils doivent une partie \nnotable de leur alimentation aux pertes diffuses et chantoirs de \ncours d'eau souvent pollués (cf. chapitre 5).",
+        "terms": [
+          "aquifer",
+          "karst"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Les formations gréseuses, généralement bien diaclasées, \nrenferment normalement des nappes de fissures, dans la mesure \noù les roches ne contiennent pas trop de minéraux argileux \nsusceptibles d'en  colmater les joints (cas des siltites).",
+        "terms": [
+          "aquifer",
+          "fracture"
+        ],
+        "lithologies": [
+          "argile"
+        ]
+      },
+      {
+        "sentence": "Le volume \ndes joints étant évidemment plus réduit que dans les calcaires, \nces nappes ont forcément, toutes choses égales d'ailleurs, un \nrendement inférieur à celui des nappes des calcaires ; elles \nprésentent néanmoins un intérêt économique certain et ont fait \nl'objet de divers captages.",
+        "terms": [
+          "aquifer"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      }
+    ],
+    "reviewStatus": "machine_extracted"
+  },
+  "structural": {
+    "summary": {
+      "faultMentions": 31,
+      "foldMentions": 79,
+      "dipMentions": 18,
+      "sectionMentions": 32
+    },
+    "style": "folded_and_faulted",
+    "expectedVariability": "high",
+    "evidence": [
+      {
+        "sentence": "===== PAGE 1 =====\n\n49/1-2\nTavier\nEsneux\nCARTE GéOLOGIQUE DE WALLONIE\néCHELLE : 1/25 000\nNOTICE EXPLICATIVE\nQ\n/\n/\n\n\n===== PAGE 2 =====\n\nSPW | Éditions, CARTES \nN° vert : 1718 (informations générales) - 1719 (germanophones)  \nSite : www.wallonie.be\nPlus d'infos concernant la carte géologique de Wallonie : \nhttp://geologie.wallonie.be \ncartegeologique@spw.wallonie.be\nUn document édité par le Service public de Wallonie,\nDirection générale de l'Agriculture,  \ndes Ressources naturelles et de l'Environnement.",
+        "terms": [
+          "fold",
+          "dip"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Bellière)\nNOTICE EXPLICATIVE\n2015\nDossier complet déposé : décembre 2009 \nAccepté pour publication : décembre 2013\n\n\n===== PAGE 4 =====\n\n\n\n\n===== PAGE 5 =====\n\n3\nCarte Tavier - Esneux n° 49/1-2\nRésumé\nLe territoire couvert par la carte de Tavier - Esneux est \nsitué dans le Condroz.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "La carte couvre le synclinorium de Dinant dans sa partie orientale \net expose une gamme étendue de formations qui appartiennent à \nla série sédimentaire dévono - carbonifère et que la structure \nplissée fait se répéter en affleurement un assez grand nombre \nde fois.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Dans la plus grande portion de la carte, qui comprend \nla partie centrale du Synclinorium de Dinant, les plis sont\n\n\n===== PAGE 6 =====\n\n4\nouverts (zones de charnières étalées) et possèdent une vergence \nnord, avec flancs sud des synclinaux verticaux, voire renversés.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Le flanc nord \ndu synclinorium par contre, dans la portion nord-ouest de la \ncarte, montre des plis nettement plus serrés, à charnières aiguës \nsouvent faillées et à vergence apparemment sud.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "La schistosité, \ntoujours présente dans les roches pélitiques, peut y affecter en \noutre les calcaires à l'endroit des charnières des plis.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "D'autre part, le plissement montre une virgation : la \ndirection générale des plis est E - W dans la partie orientale de \nla carte et  N 60° E dans sa partie occidentale.",
+        "terms": [
+          "fold",
+          "dip"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Cette virgation \ns'opère dans une zone assez étroite orientée du NNE au SSW, \nvoisine du cours de l'Ourthe, et s'accompagne de dispositions \nen relais des plis.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "De cette couverture, entièrement érodée, il ne subsiste que \ndes témoins répartis çà et là sous la forme de remplissages de \npoches de dissolution dans les calcaires du socle.",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Ce programme a été commandité et financé par le Service \npublic de Wallonie (Direction générale opérationnelle de \nl'Agriculture, des Ressources naturelles et de l'Environnement), \nen application d'une décision du Gouvernement wallon du 9 \navril 1992, faisant suite à un programme pilote, qui avait débuté \nen 1990.",
+        "terms": [
+          "fold",
+          "dip"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "La totalité de ces documents peut être consultée \nsur rendez-vous à la Direction générale opérationnelle de \nl'Agriculture, des Ressources naturelles et de l'Environnement, \navenue Prince de Liège 15, B-5100 Jambes (Service géologique \nde Wallonie).\n\n\n===== PAGE 8 =====\n\n6\nUn accord de collaboration permet la consultation des \nfiches descriptives des points d'affleurements et sondages décrits \nà l'Institut royal des Sciences naturelles de Belgique (Service \ngéologique de Belgique), rue Jenner 13, B-1000 Bruxelles.",
+        "terms": [
+          "dip"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Il est donc recommandé aux lecteurs susdits de consulter \nle «  Guide de lecture des cartes géologiques de Wallonie  » \n(Dejonghe, 2001), brochure gratuite diffusée par la Direction \ngénérale opérationnelle de l'Agriculture, des Ressources \nnaturelles et de l'Environnement.",
+        "terms": [
+          "dip"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Elle varie en effet \nd'un endroit à l'autre pour diverses raisons  : irrégularité du \ndépôt des sédiments, irrégularité du tassement ultérieur au dépôt, \nactions tectoniques (étirements, aplatissements, duplications, etc.).",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      },
+      {
+        "sentence": "Les risques d'accidents  liés à ces processus \nexistent donc partout où se trouve du calcaire et pas seulement \naux endroits réputés tels sur les cartes des risques karstiques \nétablies par la Région Wallonne.",
+        "terms": [
+          "fault"
+        ],
+        "lithologies": [
+          "calcaire"
+        ]
+      },
+      {
+        "sentence": "Cadre géologique et géographique\nL'aire couverte par la présente carte fait partie de la \nportion de la Wallonie occupée par des terrains paléozoïques \nplissés (Ardenne sensu lato), portion qui appartient elle-même \nà la zone rhéno-hercynienne du tectogène varisque en Europe \noccidentale (Aretz et al. 2006).",
+        "terms": [
+          "fold"
+        ],
+        "lithologies": []
+      }
+    ],
+    "reviewStatus": "machine_extracted"
+  },
+  "crossSections": [
+    {
+      "id": "section_1",
+      "rawEvidence": "Cette disposition d'ensemble est illustrée par \nles coupes qui accompagnent la carte.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_2",
+      "rawEvidence": "En effet :\n-\t\nà l'ouest (carte de Huy - Nandrin) plusieurs vallées \ntransverses à la direction générale des couches fournissent \ndes  coupes qui exposent la succession, de bas en haut, des \nformations d'Acoz, de Wépion et de Burnot ;\n-\t\nà l'est, par contre, la série est affectée d'une lacune qui fait \ndisparaître les formations de Wépion et de Burnot (Hance \net al. 1992) de sorte que seule la Formation d'Acoz est \nreprésentée, comme le figure la carte de Fléron - Verviers \n(Laloux et al. 1996).",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_3",
+      "rawEvidence": "Nous donnons ci-dessous une description \nsommaire de ces formations, description qui se rapporte à la \nrégion située à l'ouest, en particulier à l'excellente coupe de la \nvallée du Hoyoux au sud de Huy.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_4",
+      "rawEvidence": "Dans la coupe \ndécrite ci-dessous au titre d'affleurement représentatif (fig.  2 \net 3), il apparaît en dressant sous la forme de rochers verticaux\n\n\n===== PAGE 16 =====\n\n14\nd'une épaisseur d'environ 2 mètres ; toutefois, il n'est pas visible \npartout sur la carte et pourrait donc être discontinu.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_5",
+      "rawEvidence": "Route de Hony à Fèchereux (rive gauche de l'Ourthe): a : coupe \nde la figure 3 ; b : affleurements des schistes de la Formation de \nla Famenne.\n\n\n===== PAGE 17 =====\n\n15\nUtilisation :\t aucune.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_6",
+      "rawEvidence": "Affleurements représentatifs :\nLe versant gauche (est) de la vallée de l'Ourthe, dominant la \nroute de Hony à Fèchereux (bord nord de la planchette d'Esneux ; \nsituation : fig. 2. ; coupe : fig. 3.) ; la formation est bien exposée \nsans une série de ressauts rocheux échelonnés sur la hauteur du \nversant dans le cœur de l'anticlinal.\n0\n50 m\nN\nS\nPER : siltite rouge, poudingue rouge\nPER : grès vert\nDévonien inférieur\nLUS : calcaire à grain fin\nLUS : calcaire construit (coraux)\nroches diverses: calcaire,\ndolomie, siltite, grès, ...",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_7",
+      "rawEvidence": "Coupe du point a de la figure 2.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_8",
+      "rawEvidence": "Affleurements représentatifs :\n-\t\nle meilleur affleurement se trouve sur la carte voisine de \nSeraing - Chènée, au lieu-dit « Rocher Sainte Anne », sur \nla rive droite de l'Ourthe, à la sortie sud de Tilff le long \nde la route vers Esneux (situation : fig. 4 ; coupe : fig. 5).",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_9",
+      "rawEvidence": "Cet endroit fait partie d'un site classé et le prélèvement \nd'échantillons de roches en place est interdit ;\n-\t\nun autre bon affleurement est représenté par les rochers qui \nbordent la route qui va de Hony à Fèchereux (bord nord de la \nplanchette d'Esneux) (situation : fig. 2 ; coupe : fig.3.).\n\n\n===== PAGE 21 =====\n\n19\n139 000\n235 000\nLamb. 72 :\nN\n100 m\nFig. 4.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    },
+    {
+      "id": "section_10",
+      "rawEvidence": "Situation du « Rocher Ste Anne », affleurement typique de la \nFormation de Lustin et du regroupement des formations de \nNévremont et du Roux sur la carte de Seraing - Chênée (voir la \ncoupe à la fig.5).\n0\n20 m\nROU: siltites et grès divers\nLUS : calcaire à grain fin.",
+      "interpretation": "Mention de coupe géologique à interpréter manuellement.",
+      "reviewStatus": "machine_extracted"
+    }
+  ],
+  "rawStats": {
+    "sentenceCount": 621,
+    "formationCandidateCount": 95,
+    "hydroSentenceCount": 39,
+    "structuralSentenceCount": 126,
+    "crossSectionSentenceCount": 32
+  },
+  "review": {
+    "status": "needs_human_review",
+    "priorityIssues": [
+      "Valider les formations réellement présentes dans la légende officielle.",
+      "Associer les noms de formations officiels aux groupes lithologiques détectés.",
+      "Interpréter manuellement les coupes géologiques.",
+      "Distinguer aquifères productifs et simples circulations en fractures."
+    ]
+  },
+  "qualityWarning": "Extraction automatique utile pour l'analyse, mais non suffisante comme modèle opérationnel. Les formations officielles doivent être consolidées dans wdd_model.json."
+}
