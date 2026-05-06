@@ -29,7 +29,8 @@ const FLAGS: Record<'BE' | 'FR' | 'LU', string> = {
 type MenuItem = {
   label: string
   sub?: string
-  routeKey: RouteKey
+  routeKey?: RouteKey
+  href?: string
   highlight?: boolean
 }
 
@@ -50,15 +51,16 @@ export default function Header() {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null)
   const ref = useRef<HTMLElement>(null)
 
+  const pacBase = getLocalizedPath(locale, 'pac')
   const MENUS: Menu[] = [
     {
       key: 'pac',
       label: t('pac'),
       items: [
-        { label: t('pac_fonctionnement'), sub: t('pac_fonctionnement_sub'), routeKey: 'pac_fonctionnement' },
-        { label: t('pac_chauffage'), sub: t('pac_chauffage_sub'), routeKey: 'pac_chauffage' },
-        { label: t('pac_climatisation'), sub: t('pac_climatisation_sub'), routeKey: 'pac_climatisation' },
-        { label: t('pac_avantages'), sub: t('pac_avantages_sub'), routeKey: 'pac_avantages' },
+        { label: t('pac_fonctionnement'), sub: t('pac_fonctionnement_sub'), href: `${pacBase}#fonctionnement` },
+        { label: t('pac_chauffage'), sub: t('pac_chauffage_sub'), href: `${pacBase}#chauffage` },
+        { label: t('pac_climatisation'), sub: t('pac_climatisation_sub'), href: `${pacBase}#climatisation` },
+        { label: t('pac_avantages'), sub: t('pac_avantages_sub'), href: `${pacBase}#avantages` },
       ],
     },
     {
@@ -67,7 +69,6 @@ export default function Header() {
       items: [
         { label: t('geo_fermee'), sub: t('geo_fermee_sub'), routeKey: 'geo_fermee' },
         { label: t('geo_ouverte'), sub: t('geo_ouverte_sub'), routeKey: 'geo_ouverte' },
-        { label: t('geo_fonctionnement'), sub: t('geo_fonctionnement_sub'), routeKey: 'geo_fonctionnement' },
         { label: t('geo_references'), sub: t('geo_references_sub'), routeKey: 'references' },
       ],
     },
@@ -75,9 +76,8 @@ export default function Header() {
       key: 'particuliers',
       label: t('particuliers'),
       items: [
-        { label: t('part_calculateur'), sub: t('part_calculateur_sub'), routeKey: 'calculateur' },
-        { label: t('part_etapes'), sub: t('part_etapes_sub'), routeKey: 'particuliers_etapes' },
-        { label: t('part_installateurs'), sub: t('part_installateurs_sub'), routeKey: 'particuliers_installateurs' },
+        { label: t('part_etapes'), sub: t('part_etapes_sub'), routeKey: 'particuliers' },
+        { label: t('part_calculateur'), sub: t('part_calculateur_sub'), href: `${getLocalizedPath(locale, 'particuliers')}#calculateur` },
         { label: t('part_devis'), sub: t('part_devis_sub'), routeKey: 'devis', highlight: true },
       ],
     },
@@ -88,7 +88,6 @@ export default function Header() {
         { label: t('pro_chauffagistes'), sub: t('pro_chauffagistes_sub'), routeKey: 'pro_chauffagistes' },
         { label: t('pro_architectes'), sub: t('pro_architectes_sub'), routeKey: 'pro_architectes' },
         { label: t('pro_entrepreneurs'), sub: t('pro_entrepreneurs_sub'), routeKey: 'pro_entrepreneurs' },
-        { label: t('pro_soumission'), sub: t('pro_soumission_sub'), routeKey: 'pro_soumission', highlight: true },
       ],
     },
   ]
@@ -154,8 +153,8 @@ export default function Header() {
                 <div className="absolute top-full left-0 bg-wdd-black border-t-2 border-wdd-yellow min-w-56 shadow-2xl z-50">
                   {menu.items.map((item) => (
                     <Link
-                      key={item.routeKey}
-                      href={getLocalizedPath(locale, item.routeKey)}
+                      key={item.href ?? item.routeKey}
+                      href={item.href ?? (item.routeKey ? getLocalizedPath(locale, item.routeKey) : '#')}
                       onClick={() => setOpenMenu(null)}
                       className={
                         'flex flex-col px-4 py-3 border-b border-white/5 last:border-b-0 hover:bg-wdd-yellow/10 transition-colors group ' +
@@ -290,8 +289,8 @@ export default function Header() {
                 <div className="pb-2">
                   {menu.items.map((item) => (
                     <Link
-                      key={item.routeKey}
-                      href={getLocalizedPath(locale, item.routeKey)}
+                      key={item.href ?? item.routeKey}
+                      href={item.href ?? (item.routeKey ? getLocalizedPath(locale, item.routeKey) : '#')}
                       onClick={() => setMobileOpen(false)}
                       className={
                         'block px-8 py-3 text-sm ' +

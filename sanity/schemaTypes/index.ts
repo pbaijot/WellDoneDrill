@@ -4,4 +4,7 @@ import homePage from './homePage'
 import blogPost from './blogPost'
 import chantier from './chantier'
 import mediaItem from './mediaItem'
-export const schemaTypes = [geoPage, sitePage, homePage, blogPost, chantier, mediaItem]
+import pacPage from './pacPage'
+import particuliersPage from './particuliersPage'
+import proPage from './proPage'
+export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, sitePage, blogPost, chantier, mediaItem]

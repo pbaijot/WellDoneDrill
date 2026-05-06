@@ -3,20 +3,6 @@ import {defineField, defineType} from 'sanity'
 const routeKeys = [
   'devis',
   'references',
-  'calculateur',
-  'pac_fonctionnement',
-  'pac_chauffage',
-  'pac_climatisation',
-  'pac_avantages',
-  'geo_fermee',
-  'geo_ouverte',
-  'geo_fonctionnement',
-  'particuliers_etapes',
-  'particuliers_installateurs',
-  'pro_chauffagistes',
-  'pro_architectes',
-  'pro_entrepreneurs',
-  'pro_soumission',
   'a_propos',
   'mentions_legales',
   'politique_confidentialite',
@@ -103,6 +89,7 @@ const sitePage = defineType({
       options: {
         list: routeKeys.filter((key) => !['mentions_legales', 'politique_confidentialite', 'cookies'].includes(key)),
       },
+
     }),
   ],
   preview: {

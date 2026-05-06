@@ -201,7 +201,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <p className="text-xs font-light leading-relaxed text-black/55 group-hover:text-white/45 transition-colors">{advantageItems[2]?.description}</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-wdd-yellow scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
             </div>
-            <Link href={getLocalizedPath(loc, 'calculateur')} className="bg-wdd-yellow p-9 flex flex-col justify-between group hover:bg-wdd-black transition-colors duration-200 cursor-pointer flex-1">
+            <Link href={getLocalizedPath(loc, 'particuliers') + '#calculateur'} className="bg-wdd-yellow p-9 flex flex-col justify-between group hover:bg-wdd-black transition-colors duration-200 cursor-pointer flex-1">
               <div className="text-3xl font-bold text-wdd-black group-hover:text-white transition-colors leading-tight">
                 {home?.advantages?.calculatorTitle ?? t('av_calc')}
               </div>
@@ -320,7 +320,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {home?.audiences?.professional?.description ?? 'Batiments tertiaires, industries, institutions. Offre detaillee sous 48h.'}
               </p>
             </div>
-            <Link href={getLocalizedPath(loc,'pro_soumission')} className="inline-block bg-wdd-yellow text-wdd-black px-5 py-3 text-xs font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors self-start mt-6">
+            <Link href={getLocalizedPath(loc,'pro_chauffagistes') + '#soumission'} className="inline-block bg-wdd-yellow text-wdd-black px-5 py-3 text-xs font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors self-start mt-6">
               {home?.audiences?.professional?.buttonLabel ?? 'Soumettre mon projet'} +
             </Link>
           </div>

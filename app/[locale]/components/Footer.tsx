@@ -18,12 +18,11 @@ export default function Footer() {
   const regions = t('regions').split(',')
 
   const services: ServiceLink[] = [
-    { label: nav('pac'), routeKey: 'pac_fonctionnement' },
+    { label: nav('pac'), routeKey: 'pac' },
     { label: nav('geo_fermee'), routeKey: 'geo_fermee' },
     { label: nav('geo_ouverte'), routeKey: 'geo_ouverte' },
-    { label: nav('particuliers'), routeKey: 'particuliers_etapes' },
+    { label: nav('particuliers'), routeKey: 'particuliers' },
     { label: nav('pro'), routeKey: 'pro_chauffagistes' },
-    { label: nav('part_calculateur'), routeKey: 'calculateur' },
     { label: nav('geo_references'), routeKey: 'references' },
     { label: 'Blog', routeKey: 'blog' },
   ]
