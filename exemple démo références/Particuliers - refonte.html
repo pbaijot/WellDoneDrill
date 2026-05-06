@@ -1,0 +1,1701 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Particuliers — WellDoneDrill (refonte)</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ──────────────────────────────────────────────────────────────
+     WellDoneDrill — Particuliers, refonte éditoriale
+     Tokens directement issus du brandbook
+  ─────────────────────────────────────────────────────────────── */
+  :root {
+    --black:   #1A1A1A;
+    --yellow:  #FFD94F;
+    --clay:    #E8E5DE;
+    --ground:  #B0A18F;
+    --mud:     #AB572E;
+    --grass:   #42754F;
+    --white:   #FFFFFF;
+    --paper:   #F5F2EB;     /* off-white plus chaud que clay, plus clair */
+    --ink-60:  rgba(26,26,26,0.62);
+    --ink-40:  rgba(26,26,26,0.42);
+    --ink-20:  rgba(26,26,26,0.20);
+    --ink-10:  rgba(26,26,26,0.10);
+    --ink-06:  rgba(26,26,26,0.06);
+    --paper-60: rgba(245,242,235,0.62);
+
+    --gutter: clamp(20px, 4vw, 56px);
+    --col-max: 1440px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Lexend', system-ui, sans-serif;
+    background: var(--paper);
+    color: var(--black);
+    font-feature-settings: "ss01", "ss02";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+
+  /* Pure typography hierarchy — no decorative crutches */
+  .display {
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 0.94;
+    font-size: clamp(48px, 8.5vw, 132px);
+  }
+  .display-2 {
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    font-size: clamp(40px, 6vw, 88px);
+  }
+  .h2 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.04;
+    font-size: clamp(32px, 4vw, 56px);
+  }
+  .h3 {
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.18;
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
+  .lede {
+    font-weight: 300;
+    line-height: 1.45;
+    font-size: clamp(18px, 1.6vw, 22px);
+    color: var(--ink-60);
+    text-wrap: pretty;
+  }
+  .body {
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 15px;
+    color: var(--ink-60);
+    text-wrap: pretty;
+  }
+  .micro {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--ink-40);
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "ss01";
+  }
+
+  /* Section index — subtle marginalia, never the standard "label with line"  */
+  .marginalia {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ink-40);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .marginalia .num-tag {
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: -0.01em;
+  }
+
+  .container {
+    max-width: var(--col-max);
+    margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  /* ──────────────────────────────────
+     HEADER — kept faithful to existing
+     site so the page reads as part of it
+  ─────────────────────────────────── */
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--yellow);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  header.site .row {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  header.site nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  header.site nav a {
+    text-decoration: none;
+    font-size: 13.5px;
+    padding: 6px 12px;
+    color: var(--black);
+    opacity: 0.7;
+  }
+  header.site nav a.active { opacity: 1; font-weight: 500; }
+  header.site .right { display: flex; align-items: center; gap: 8px; }
+  header.site .lang {
+    font-size: 12px;
+    border: 1px solid rgba(0,0,0,0.18);
+    background: rgba(255,255,255,0.25);
+    padding: 6px 10px;
+  }
+  header.site .cta {
+    background: var(--black);
+    color: var(--yellow);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 18px;
+    text-decoration: none;
+    border: 2px solid var(--black);
+  }
+  header.site .logo { font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
+
+  /* ──────────────────────────────────
+     SECTION 1 — HERO
+     Editorial: oversized type breaks
+     across two columns, photo as
+     plate inset with a printed-card
+     of stats, eyebrow as a SLUG line,
+     no centered split.
+  ─────────────────────────────────── */
+  .hero {
+    background: var(--paper);
+    color: var(--black);
+    padding-top: clamp(40px, 7vw, 96px);
+    padding-bottom: clamp(48px, 6vw, 80px);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero .slug {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid var(--black);
+    padding-top: 16px;
+    margin-bottom: clamp(48px, 6vw, 88px);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
+  .hero .slug .left { display: inline-flex; gap: 18px; align-items: baseline; }
+  .hero .slug .left b { font-weight: 600; }
+  .hero .slug .right { color: var(--ink-60); font-weight: 300; }
+  .hero .slug .right span.sep { padding: 0 10px; opacity: 0.4; }
+
+  .hero h1.display {
+    margin: 0 0 56px 0;
+    max-width: 16ch;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--mud);
+  }
+  .hero h1 .yhi {
+    background: linear-gradient(transparent 64%, var(--yellow) 64% 92%, transparent 92%);
+    padding: 0 0.05em;
+  }
+
+  .hero .grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(24px, 4vw, 64px);
+    align-items: end;
+  }
+  .hero .colA .lede { max-width: 40ch; margin: 0 0 28px 0; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+  .btn {
+    --bg: var(--black);
+    --fg: var(--yellow);
+    --bd: var(--black);
+    background: var(--bg);
+    color: var(--fg);
+    border: 1.5px solid var(--bd);
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 14px 22px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 200ms ease, color 200ms ease;
+  }
+  .btn:hover { background: transparent; color: var(--black); }
+  .btn.ghost { --bg: transparent; --fg: var(--black); --bd: var(--black); }
+  .btn.ghost:hover { --bg: var(--black); --fg: var(--paper); }
+  .btn .arrow { font-size: 16px; line-height: 1; transition: transform 200ms; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  .hero .colB {
+    position: relative;
+    aspect-ratio: 4 / 3.4;
+    background: var(--clay);
+    overflow: hidden;
+  }
+  .hero .colB img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.04) saturate(0.78);
+  }
+  .hero .colB .plate {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: var(--paper);
+    color: var(--black);
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .hero .colB .plate .cell { display: flex; flex-direction: column; gap: 4px; }
+  .hero .colB .plate .v { font-size: clamp(22px, 2.4vw, 30px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+  .hero .colB .plate .l { font-size: 10.5px; color: var(--ink-60); font-weight: 300; line-height: 1.3; }
+  .hero .colB .plate .cell + .cell { padding-left: 16px; border-left: 1px solid var(--ink-10); }
+
+  .hero .footstrip {
+    margin-top: clamp(40px, 6vw, 72px);
+    padding-top: 16px;
+    border-top: 1px solid var(--ink-10);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12px;
+    color: var(--ink-60);
+    font-weight: 300;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  /* ──────────────────────────────────
+     SECTION 2 — Contexte + Schéma
+  ─────────────────────────────────── */
+  .ctx {
+    background: var(--paper);
+    padding: clamp(72px, 10vw, 144px) 0;
+    border-top: 1px solid var(--black);
+  }
+  .ctx .head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: baseline;
+    gap: 32px;
+    margin-bottom: clamp(48px, 7vw, 88px);
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--ink-10);
+  }
+  .ctx .head h2 { margin: 0; max-width: 22ch; }
+  .ctx .body-grid {
+    display: grid;
+    grid-template-columns: 220px 1.1fr 1fr;
+    gap: clamp(28px, 4vw, 56px);
+    align-items: start;
+  }
+  .ctx .marginalia.list { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .ctx .lede-block { max-width: 40ch; }
+  .ctx .lede-block .lede + .lede { margin-top: 18px; }
+
+  .ctx .data-list { list-style: none; margin: 0; padding: 0; }
+  .ctx .data-list li {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: baseline;
+    padding: 18px 0;
+    border-top: 1px solid var(--ink-10);
+    gap: 24px;
+  }
+  .ctx .data-list li:last-child { border-bottom: 1px solid var(--ink-10); }
+  .ctx .data-list .marker {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--black);
+  }
+  .ctx .data-list .text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-60);
+  }
+  .ctx .data-list li .marker.mud { color: var(--mud); }
+
+  /* Animated scheme — soil → PAC → house, vertical, spare */
+  .scheme {
+    margin-top: clamp(48px, 6vw, 80px);
+    padding: clamp(32px, 4vw, 56px) 0 0 0;
+    border-top: 1px solid var(--black);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: clamp(28px, 4vw, 56px);
+    align-items: start;
+  }
+  .scheme .legend { font-size: 12px; color: var(--ink-60); font-weight: 300; line-height: 1.55; max-width: 30ch; }
+  .scheme .legend strong { color: var(--black); font-weight: 600; }
+  .scheme-stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    align-items: stretch;
+    border: 1px solid var(--ink-10);
+    background: var(--white);
+  }
+  .scheme-stage .node {
+    padding: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    transition: background 600ms ease;
+  }
+  .scheme-stage .node + .node { border-left: 1px solid var(--ink-10); }
+  .scheme-stage .node[data-lit="true"] { background: var(--yellow); }
+  .scheme-stage .node .depth { font-size: 11px; color: var(--ink-40); font-weight: 400; letter-spacing: 0.02em; }
+  .scheme-stage .node .name { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
+  .scheme-stage .node .desc { font-size: 13px; font-weight: 300; line-height: 1.55; color: var(--ink-60); max-width: 24ch; }
+  .scheme-stage .node[data-lit="true"] .depth,
+  .scheme-stage .node[data-lit="true"] .desc { color: rgba(26,26,26,0.65); }
+  .scheme-stage .node .glyph {
+    width: 64px; height: 64px;
+    margin-bottom: 4px;
+  }
+  .scheme-stage .node .glyph svg { width: 100%; height: 100%; stroke: var(--black); }
+  .scheme-stage .node[data-lit="false"] .glyph svg { stroke: rgba(26,26,26,0.18); }
+
+  /* Flow indicator that runs across nodes */
+  .scheme-stage .arrow-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--ink-10);
+    height: 30px;
+    position: relative;
+  }
+  .scheme-stage .arrow-row .cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: var(--ink-40);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .scheme-stage .arrow-row .cell + .cell { border-left: 1px solid var(--ink-10); }
+
+  .scheme .links {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .scheme .links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 13.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+    width: max-content;
+    border-bottom: 1px solid transparent;
+    transition: border-color 150ms;
+  }
+  .scheme .links a:hover { border-color: var(--black); }
+  .scheme .links a .arr { color: var(--mud); font-weight: 600; }
+
+  /* ──────────────────────────────────
+     SECTION 3 — Votre projet de A à Z
+  ─────────────────────────────────── */
+  .projet {
+    background: var(--black);
+    color: var(--paper);
+    padding: clamp(80px, 10vw, 144px) 0;
+    overflow: hidden;
+  }
+  .projet .head { display: grid; grid-template-columns: 220px 1fr; gap: 32px; margin-bottom: clamp(48px, 6vw, 88px); align-items: end; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.18); }
+  .projet h2 { margin: 0; max-width: 18ch; }
+  .projet .head .marginalia { color: rgba(255,255,255,0.5); }
+  .projet .head .marginalia .num-tag { color: var(--paper); }
+
+  .projet-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .etapes {
+    counter-reset: et;
+  }
+  .etape {
+    display: grid;
+    grid-template-columns: 96px 1fr auto;
+    gap: 32px;
+    padding: 28px 0;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    align-items: baseline;
+    cursor: pointer;
+    transition: padding 250ms ease, background 250ms ease;
+    position: relative;
+  }
+  .etape:last-child { border-bottom: 1px solid rgba(255,255,255,0.18); }
+  .etape::before {
+    content: counter(et, decimal-leading-zero);
+    counter-increment: et;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.4);
+    font-variant-numeric: tabular-nums;
+  }
+  .etape h3 { margin: 0; font-weight: 500; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2; }
+  .etape .body-text { margin: 6px 0 0 0; font-size: 13.5px; font-weight: 300; line-height: 1.6; color: rgba(255,255,255,0.55); max-width: 38ch; max-height: 0; opacity: 0; overflow: hidden; transition: max-height 350ms ease, opacity 250ms ease, margin-top 350ms ease; }
+  .etape .duration { font-size: 12px; color: rgba(255,255,255,0.35); font-weight: 300; letter-spacing: 0.02em; }
+  .etape:hover h3, .etape.active h3 { color: var(--yellow); }
+  .etape.active .body-text { max-height: 200px; opacity: 1; margin-top: 14px; }
+  .etape.active::before { color: var(--yellow); }
+
+  .projet-side {
+    position: relative;
+    aspect-ratio: 3 / 4.2;
+    background: rgba(255,255,255,0.04);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .projet-side img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(0.15) contrast(1.05);
+  }
+  .projet-side .badge {
+    position: absolute;
+    top: 24px; left: 24px;
+    background: var(--yellow);
+    color: var(--black);
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .projet-side .quote {
+    position: absolute;
+    left: 24px; right: 24px; bottom: 24px;
+    background: rgba(26,26,26,0.7);
+    backdrop-filter: blur(8px);
+    color: var(--paper);
+    padding: 20px 22px;
+    border-left: 2px solid var(--yellow);
+  }
+  .projet-side .quote p { margin: 0 0 8px 0; font-size: 14px; font-weight: 300; line-height: 1.5; font-style: italic; }
+  .projet-side .quote .author { font-size: 11px; color: rgba(255,255,255,0.6); font-weight: 400; }
+
+  .projet .cta-row {
+    margin-top: clamp(48px, 6vw, 80px);
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .projet .cta-row .ledger { font-size: 13px; color: rgba(255,255,255,0.55); font-weight: 300; }
+  .projet .cta-row .btn { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+  .projet .cta-row .btn:hover { background: transparent; color: var(--yellow); }
+
+  /* ──────────────────────────────────
+     SECTION 4 — Pourquoi (anti-pattern: pas une grille de cards uniformes)
+     Layout en SPREAD éditorial : un argument cardinal en plein hauteur,
+     les autres listés en index typographique avec préviews au hover.
+  ─────────────────────────────────── */
+  .pourquoi {
+    background: var(--paper);
+    padding: clamp(80px, 10vw, 144px) 0;
+  }
+  .pourquoi .head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    padding-bottom: 24px;
+    margin-bottom: clamp(48px, 6vw, 80px);
+    border-bottom: 1px solid var(--black);
+  }
+  .pourquoi .head h2 { margin: 0; max-width: 16ch; }
+  .pourquoi .head .lede { max-width: 40ch; margin: 0; }
+  .pourquoi .head .right { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+
+  .why-spread {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: clamp(28px, 4vw, 64px);
+    align-items: stretch;
+  }
+
+  /* Index list */
+  .why-index { display: flex; flex-direction: column; }
+  .why-row {
+    display: grid;
+    grid-template-columns: 36px 1fr 24px;
+    align-items: baseline;
+    padding: 22px 0;
+    border-top: 1px solid var(--ink-10);
+    gap: 20px;
+    cursor: pointer;
+    transition: background 200ms ease, padding 200ms ease;
+  }
+  .why-row:last-child { border-bottom: 1px solid var(--ink-10); }
+  .why-row .idx { font-size: 12px; color: var(--ink-40); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .why-row .ttl { font-size: clamp(20px, 1.7vw, 24px); font-weight: 500; letter-spacing: -0.012em; line-height: 1.18; transition: color 200ms ease, transform 250ms ease; }
+  .why-row .arr { color: var(--ink-40); transform: translateX(-4px); opacity: 0; transition: transform 200ms ease, opacity 200ms ease, color 200ms ease; font-size: 18px; line-height: 1; }
+  .why-row:hover .ttl, .why-row.active .ttl { color: var(--mud); }
+  .why-row:hover .arr, .why-row.active .arr { transform: translateX(0); opacity: 1; color: var(--mud); }
+  .why-row.active { padding-left: 8px; }
+
+  /* Cardinal (full panel that swaps based on hover) */
+  .why-cardinal {
+    background: var(--black);
+    color: var(--paper);
+    padding: clamp(28px, 3.5vw, 48px);
+    position: sticky;
+    top: 88px;
+    align-self: start;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .why-cardinal .num {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .why-cardinal .figure {
+    font-size: clamp(64px, 9vw, 144px);
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    color: var(--yellow);
+    margin: 0;
+  }
+  .why-cardinal .figure-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 300;
+    margin-top: 12px;
+    max-width: 28ch;
+    line-height: 1.5;
+  }
+  .why-cardinal .body-cardinal {
+    border-top: 1px solid rgba(255,255,255,0.18);
+    padding-top: 24px;
+    margin-top: 32px;
+  }
+  .why-cardinal .body-cardinal h3 {
+    margin: 0 0 12px 0;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+  }
+  .why-cardinal .body-cardinal p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.7);
+    max-width: 38ch;
+  }
+
+  /* ──────────────────────────────────
+     SECTION 5 — Calculateur
+  ─────────────────────────────────── */
+  .calc {
+    background: var(--clay);
+    padding: clamp(80px, 10vw, 144px) 0;
+    border-top: 1px solid var(--black);
+  }
+  .calc .head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    padding-bottom: 24px;
+    margin-bottom: clamp(40px, 5vw, 64px);
+    border-bottom: 1px solid var(--black);
+  }
+  .calc h2 { margin: 0; max-width: 16ch; }
+  .calc .head .lede { max-width: 42ch; margin: 0; }
+
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: clamp(24px, 3vw, 48px);
+    align-items: start;
+  }
+  .calc-form { display: flex; flex-direction: column; gap: 36px; }
+  .calc-form .group { display: flex; flex-direction: column; gap: 12px; }
+  .calc-form .group label {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: var(--ink-40);
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .calc-form .group label .val {
+    text-transform: none;
+    letter-spacing: -0.01em;
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .seg {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--ink-20);
+    background: transparent;
+    width: max-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .seg button {
+    background: transparent;
+    border: 0;
+    border-right: 1px solid var(--ink-20);
+    padding: 12px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-60);
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease;
+  }
+  .seg button:last-child { border-right: 0; }
+  .seg button.on { background: var(--black); color: var(--yellow); }
+  .seg button:hover:not(.on) { background: var(--ink-06); color: var(--black); }
+
+  /* Custom range */
+  .range-wrap { padding: 6px 0 0 0; }
+  input[type="range"].range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 1px;
+    background: var(--ink-20);
+    outline: none;
+  }
+  input[type="range"].range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px; height: 14px;
+    background: var(--black);
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+  }
+  input[type="range"].range::-moz-range-thumb {
+    width: 14px; height: 14px;
+    background: var(--black);
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+  }
+  .range-marks { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--ink-40); margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .range-hint { font-size: 11.5px; color: var(--ink-40); margin-top: 10px; font-weight: 300; }
+
+  /* Result panel — like a printed receipt */
+  .calc-receipt {
+    background: var(--paper);
+    border: 1px solid var(--black);
+    padding: clamp(28px, 3.5vw, 44px);
+    position: relative;
+  }
+  .calc-receipt::before, .calc-receipt::after {
+    content: ""; position: absolute; left: 0; right: 0; height: 12px;
+    background: repeating-linear-gradient(45deg, var(--paper) 0 6px, var(--black) 6px 7px, var(--paper) 7px 14px);
+  }
+  .calc-receipt::before { top: -12px; transform: scaleY(-1); }
+  .calc-receipt::after  { bottom: -12px; }
+  .calc-receipt .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+    color: var(--ink-40);
+    text-transform: uppercase;
+    border-bottom: 1px dashed var(--ink-20);
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+  }
+  .calc-receipt .total-label { font-size: 11px; letter-spacing: 0.05em; color: var(--ink-60); text-transform: uppercase; margin-bottom: 6px; font-weight: 500; }
+  .calc-receipt .total-figure {
+    font-size: clamp(36px, 4.6vw, 56px);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 0.95;
+    font-variant-numeric: tabular-nums;
+  }
+  .calc-receipt .total-unit {
+    font-size: 12px;
+    color: var(--ink-60);
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  .calc-receipt .lines {
+    margin-top: 28px;
+    border-top: 1px dashed var(--ink-20);
+    padding-top: 8px;
+  }
+  .calc-receipt .lines .line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--ink-20);
+    align-items: baseline;
+  }
+  .calc-receipt .lines .line:last-child { border-bottom: 0; }
+  .calc-receipt .lines .line.off { opacity: 0.32; }
+  .calc-receipt .lines .label-main { font-size: 14px; font-weight: 500; }
+  .calc-receipt .lines .label-sub { font-size: 11px; color: var(--ink-40); margin-top: 2px; font-weight: 300; }
+  .calc-receipt .lines .v { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .calc-receipt .lines .v small { font-weight: 300; color: var(--ink-40); margin-left: 6px; }
+  .calc-receipt .footer {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--ink-20);
+    font-size: 11px;
+    color: var(--ink-40);
+    line-height: 1.55;
+    font-weight: 300;
+  }
+
+  /* ──────────────────────────────────
+     SECTION 6 — Devis (formulaire)
+  ─────────────────────────────────── */
+  .devis {
+    background: var(--black);
+    color: var(--paper);
+    padding: clamp(80px, 10vw, 144px) 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .devis .head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    padding-bottom: 24px;
+    margin-bottom: clamp(40px, 5vw, 72px);
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+  }
+  .devis .head h2 { margin: 0; max-width: 14ch; }
+  .devis .head h2 em { font-style: normal; color: var(--yellow); }
+  .devis .head .lede { color: rgba(255,255,255,0.62); margin: 0; max-width: 38ch; }
+  .devis .head .marginalia { color: rgba(255,255,255,0.5); }
+  .devis .head .marginalia .num-tag { color: var(--paper); }
+
+  .devis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: clamp(40px, 5vw, 96px);
+    align-items: start;
+  }
+  .devis-side .ledger { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.18); margin-bottom: 32px; }
+  .devis-side .ledger .cell { padding: 20px 16px 20px 0; border-right: 1px solid rgba(255,255,255,0.12); }
+  .devis-side .ledger .cell:last-child { border-right: 0; padding-right: 0; }
+  .devis-side .ledger .cell:not(:first-child) { padding-left: 16px; }
+  .devis-side .ledger .v { font-size: 22px; font-weight: 600; color: var(--yellow); letter-spacing: -0.015em; line-height: 1; }
+  .devis-side .ledger .l { font-size: 11px; color: rgba(255,255,255,0.48); margin-top: 6px; font-weight: 300; line-height: 1.45; }
+  .devis-side p { font-weight: 300; font-size: 14px; line-height: 1.65; color: rgba(255,255,255,0.62); max-width: 38ch; margin: 0 0 14px 0; }
+  .devis-side .signoff {
+    margin-top: 32px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 300;
+  }
+
+  .form-card { display: flex; flex-direction: column; gap: 0; }
+  .form-card .field {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 16px;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+  }
+  .form-card .field:first-child { border-top: 1px solid rgba(255,255,255,0.18); }
+  .form-card .field label {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    font-weight: 500;
+  }
+  .form-card .field input,
+  .form-card .field textarea,
+  .form-card .field select {
+    background: transparent;
+    border: 0;
+    color: var(--paper);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    padding: 6px 0;
+    outline: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 200ms;
+  }
+  .form-card .field input::placeholder,
+  .form-card .field textarea::placeholder { color: rgba(255,255,255,0.32); font-weight: 300; }
+  .form-card .field input:focus,
+  .form-card .field textarea:focus { border-bottom-color: var(--yellow); }
+  .form-card .field.split { display: grid; grid-template-columns: 130px 1fr 1fr; gap: 16px; }
+  .form-card .field.split input + input { border-left: 1px solid rgba(255,255,255,0.12); padding-left: 14px; }
+  .form-card .field textarea { resize: none; min-height: 72px; }
+  .form-card .submit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .form-card .submit-row .btn-yellow { background: var(--yellow); color: var(--black); border-color: var(--yellow); }
+  .form-card .submit-row .btn-yellow:hover { background: transparent; color: var(--yellow); }
+  .form-card .legal { font-size: 11px; color: rgba(255,255,255,0.4); font-weight: 300; max-width: 32ch; line-height: 1.5; }
+
+  /* ──────────────────────────────────
+     SECTION 7 — FAQ
+  ─────────────────────────────────── */
+  .faq {
+    background: var(--paper);
+    padding: clamp(80px, 10vw, 144px) 0;
+  }
+  .faq .head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    padding-bottom: 24px;
+    margin-bottom: clamp(40px, 5vw, 72px);
+    border-bottom: 1px solid var(--black);
+  }
+  .faq h2 { margin: 0; max-width: 18ch; }
+  .faq .head .lede { max-width: 38ch; margin: 0; }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: clamp(32px, 5vw, 80px);
+    align-items: start;
+  }
+  .faq-side p { margin: 0 0 22px 0; max-width: 32ch; }
+  .faq-side .btn { background: var(--black); color: var(--yellow); border-color: var(--black); }
+
+  .faq-list { display: flex; flex-direction: column; }
+  .faq-item { border-top: 1px solid var(--ink-20); }
+  .faq-item:last-child { border-bottom: 1px solid var(--ink-20); }
+  .faq-q {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    text-align: left;
+    cursor: pointer;
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 36px 1fr 24px;
+    gap: 16px;
+    align-items: baseline;
+    font-family: inherit;
+  }
+  .faq-q .num { font-size: 12px; color: var(--ink-40); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .faq-q .q { font-size: clamp(17px, 1.4vw, 21px); font-weight: 500; letter-spacing: -0.01em; line-height: 1.3; }
+  .faq-q .icon {
+    width: 18px; height: 18px;
+    position: relative;
+    align-self: center;
+  }
+  .faq-q .icon::before, .faq-q .icon::after {
+    content: ""; position: absolute; background: var(--black); transition: transform 250ms ease, opacity 200ms;
+  }
+  .faq-q .icon::before { left: 0; right: 0; top: 50%; height: 1px; transform: translateY(-50%); }
+  .faq-q .icon::after { top: 0; bottom: 0; left: 50%; width: 1px; transform: translateX(-50%); }
+  .faq-item.open .faq-q .icon::after { transform: translateX(-50%) scaleY(0); }
+  .faq-a {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 350ms ease, padding 350ms ease;
+    padding: 0 0 0 52px;
+  }
+  .faq-item.open .faq-a {
+    max-height: 480px;
+    padding: 0 0 28px 52px;
+  }
+  .faq-a p { margin: 0; font-size: 14px; line-height: 1.7; color: var(--ink-60); font-weight: 300; max-width: 60ch; }
+
+  /* ──────────────────────────────────
+     FOOTER strip
+  ─────────────────────────────────── */
+  footer.colophon {
+    background: var(--black);
+    color: var(--paper);
+    padding: 48px 0 28px 0;
+  }
+  footer.colophon .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+    align-items: end;
+    border-bottom: 1px solid rgba(255,255,255,0.18);
+    padding-bottom: 28px;
+  }
+  footer.colophon .lockup { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+  footer.colophon .meta { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.7; }
+  footer.colophon .meta a { color: rgba(255,255,255,0.85); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+  footer.colophon .credits { display: flex; justify-content: space-between; padding-top: 18px; font-size: 11px; color: rgba(255,255,255,0.4); flex-wrap: wrap; gap: 12px; }
+
+  /* Sticky mobile CTA */
+  .mobile-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--black);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 12px 16px;
+    display: none;
+    gap: 8px;
+    z-index: 40;
+  }
+  .mobile-cta a { flex: 1; text-align: center; padding: 12px; font-size: 13px; font-weight: 600; text-decoration: none; }
+  .mobile-cta a.primary { background: var(--yellow); color: var(--black); }
+  .mobile-cta a.ghost { color: var(--yellow); border: 1.5px solid var(--yellow); }
+
+  /* ──────────────────────────────────
+     RESPONSIVE
+  ─────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .hero .grid { grid-template-columns: 1fr; }
+    .ctx .head, .ctx .body-grid, .scheme,
+    .projet .head, .projet-grid,
+    .pourquoi .head, .why-spread,
+    .calc .head, .calc-grid,
+    .devis .head, .devis-grid,
+    .faq .head, .faq-grid { grid-template-columns: 1fr; }
+    .why-cardinal { position: static; min-height: 360px; order: -1; }
+    .scheme-stage { grid-template-columns: 1fr; }
+    .scheme-stage .node + .node { border-left: 0; border-top: 1px solid var(--ink-10); }
+    .form-card .field { grid-template-columns: 1fr; }
+    .form-card .field.split { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 720px) {
+    header.site nav, header.site .right { display: none; }
+    .hero .slug .right { display: none; }
+    .mobile-cta { display: flex; }
+    body { padding-bottom: 76px; }
+    .form-card .field.split { grid-template-columns: 1fr; }
+    .form-card .field.split input + input { border-left: 0; padding-left: 0; }
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Tweaks panel mount point -->
+<div id="tweaks-root"></div>
+
+<!-- Editor-style fake header so the page reads like the real site -->
+<header class="site">
+  <div class="container row">
+    <div class="logo">WellDoneDrill</div>
+    <nav>
+      <a href="#">Pompe à chaleur</a>
+      <a href="#">Géothermie</a>
+      <a href="#" class="active">Particuliers</a>
+      <a href="#">Pro</a>
+    </nav>
+    <div class="right">
+      <span class="lang">FR · BE</span>
+      <a href="#devis" class="cta">Demander un devis</a>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════
+     1. HERO
+════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+
+    <div class="slug">
+      <div class="left">
+        <span><b>WDD</b> · Particuliers</span>
+        <span>Édition 2026</span>
+      </div>
+      <div class="right">
+        Belgique &amp; Luxembourg
+        <span class="sep">·</span>
+        500+ familles déjà chauffées par le sol
+      </div>
+    </div>
+
+    <h1 class="display">
+      Chauffez et climatisez<br />
+      sans gaz,<br>
+      <span class="yhi">sans mazout.</span>
+    </h1>
+
+    <div class="grid">
+      <div class="colA">
+        <p class="lede">
+          WellDoneDrill fore vos sondes géothermiques. Votre maison se chauffe et se rafraîchit avec l'énergie du sol — jusqu'à 70 % d'économies sur vos factures.
+        </p>
+        <div class="actions">
+          <a href="#calculateur" class="btn">Calculer mes économies <span class="arrow">→</span></a>
+          <a href="#devis" class="btn ghost">Devis instantané</a>
+        </div>
+      </div>
+
+      <div class="colB">
+        <img src="images/drillgreen.jpg" alt="Foreuse WellDoneDrill sur chantier" />
+        <div class="plate">
+          <div class="cell">
+            <div class="v num">~1 200 €</div>
+            <div class="l">Économies annuelles moyennes par foyer</div>
+          </div>
+          <div class="cell">
+            <div class="v num">COP 4–5</div>
+            <div class="l">4× plus efficace qu'une chaudière gaz</div>
+          </div>
+          <div class="cell">
+            <div class="v num">−70 %</div>
+            <div class="l">sur vos coûts de chauffage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footstrip">
+      <span><span class="num">500+</span> projets · <span class="num">20 ans</span> d'expertise · <span class="num">3 pays</span> · BE · LU · FR</span>
+      <span>↓ &nbsp;Faire défiler</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     2. CONTEXTE + SCHÉMA
+════════════════════════════════════════ -->
+<section class="ctx" id="contexte">
+  <div class="container">
+
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">01 ―</span> Contexte énergétique</span>
+      <h2 class="h2">Optez pour l'efficacité et l'indépendance énergétique.</h2>
+    </div>
+
+    <div class="body-grid">
+      <div class="marginalia list">
+        <span><span class="num-tag">a.</span> Marché</span>
+        <span><span class="num-tag">b.</span> Réglementation</span>
+        <span><span class="num-tag">c.</span> Patrimoine</span>
+      </div>
+      <div class="lede-block">
+        <p class="lede">Le prix du gaz a bondi de 180 % depuis 2021. L'Union européenne interdit les chaudières fossiles neuves dès 2026.</p>
+        <p class="lede">Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue.</p>
+      </div>
+      <ul class="data-list">
+        <li><span class="marker mud num">+180 %</span><span class="text">prix du gaz naturel depuis 2021</span></li>
+        <li><span class="marker num">2026</span><span class="text">fin des chaudières gaz neuves — directive UE</span></li>
+        <li><span class="marker">PEB</span><span class="text">pénalisé sans rénovation énergétique</span></li>
+      </ul>
+    </div>
+
+    <div class="scheme">
+      <div>
+        <div class="legend">
+          <strong>Comment ça fonctionne.</strong><br>
+          La géothermie capte la chaleur du sol — constante, gratuite — et l'amplifie via une pompe à chaleur pour chauffer ou rafraîchir votre maison.
+        </div>
+        <div class="links">
+          <a href="#"><span class="arr">→</span> Géothermie fermée</a>
+          <a href="#"><span class="arr">→</span> Pompe à chaleur géothermique</a>
+        </div>
+      </div>
+      <div class="scheme-stage" id="scheme-stage">
+        <div class="node" data-step="1" data-lit="false">
+          <div class="depth">— 80 à 200 m</div>
+          <div class="glyph">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="1.25"><path d="M8 22h48M8 32h48M8 42h48M8 52h48"/><path d="M32 8v44"/><circle cx="32" cy="14" r="3"/></svg>
+          </div>
+          <div class="name">Le sol</div>
+          <div class="desc">Énergie constante, disponible toute l'année.</div>
+        </div>
+        <div class="node" data-step="2" data-lit="false">
+          <div class="depth">COP 4 — 5</div>
+          <div class="glyph">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="1.25"><rect x="14" y="14" width="36" height="36"/><path d="M22 32h20M32 22v20"/><path d="M14 14l36 36M50 14L14 50"/></svg>
+          </div>
+          <div class="name">Pompe à chaleur</div>
+          <div class="desc">Amplifie l'énergie captée. 4× plus efficace.</div>
+        </div>
+        <div class="node" data-step="3" data-lit="false">
+          <div class="depth">Hiver / Été</div>
+          <div class="glyph">
+            <svg viewBox="0 0 64 64" fill="none" stroke-width="1.25"><path d="M10 32L32 12l22 20"/><path d="M16 28v24h32V28"/><path d="M27 52V38h10v14"/></svg>
+          </div>
+          <div class="name">Votre maison</div>
+          <div class="desc">Chauffage, eau chaude, rafraîchissement.</div>
+        </div>
+        <div class="arrow-row">
+          <div class="cell">extraction</div>
+          <div class="cell">amplification</div>
+          <div class="cell">restitution</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     3. VOTRE PROJET DE A À Z
+════════════════════════════════════════ -->
+<section class="projet">
+  <div class="container">
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">02 ―</span> Votre projet</span>
+      <h2 class="h2">De la première visite<br>à la mise en service.</h2>
+    </div>
+
+    <div class="projet-grid">
+      <div class="etapes" id="etapes">
+        <div class="etape active" data-i="0">
+          <h3>Devis gratuit</h3>
+          <span class="duration">48 h</span>
+          <div></div>
+          <p class="body-text">Premier contact, analyse de vos besoins. Réponse sous 48 h, sans engagement de votre part.</p>
+        </div>
+        <div class="etape" data-i="1">
+          <h3>Étude de faisabilité</h3>
+          <span class="duration">2 semaines</span>
+          <div></div>
+          <p class="body-text">Analyse géologique de votre terrain. Gratuite. Sans engagement.</p>
+        </div>
+        <div class="etape" data-i="2">
+          <h3>Permis &amp; démarches</h3>
+          <span class="duration">4–8 sem.</span>
+          <div></div>
+          <p class="body-text">WellDoneDrill s'occupe de toutes les autorisations à votre place.</p>
+        </div>
+        <div class="etape" data-i="3">
+          <h3>Forage</h3>
+          <span class="duration">1–3 jours</span>
+          <div></div>
+          <p class="body-text">1 à 3 jours d'intervention. Impact minimal, terrain remis en état.</p>
+        </div>
+        <div class="etape" data-i="4">
+          <h3>Mise en service</h3>
+          <span class="duration">1 jour</span>
+          <div></div>
+          <p class="body-text">Votre chauffagiste connecte la PAC. Vous basculez sur la géothermie.</p>
+        </div>
+      </div>
+
+      <div class="projet-side">
+        <span class="badge">Sur le terrain</span>
+        <img src="images/clean-drill.jpg" alt="Foreuse WellDoneDrill" />
+        <div class="quote">
+          <p>« Trois jours de chantier, jardin remis en état, on est passés du mazout à la géothermie sans coupure. »</p>
+          <div class="author">— Famille H., Genappe (BE)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <span class="ledger">Un seul interlocuteur, du devis à la mise en service.</span>
+      <a href="#devis" class="btn">Demander un devis gratuit <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     4. POURQUOI LA GÉOTHERMIE
+════════════════════════════════════════ -->
+<section class="pourquoi" id="pourquoi">
+  <div class="container">
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">03 ―</span> Pourquoi la géothermie</span>
+      <div class="right">
+        <h2 class="h2">Six raisons de passer<br>à la géothermie cette année.</h2>
+        <p class="lede">Survolez chaque argument — l'évidence à droite se met à jour.</p>
+      </div>
+    </div>
+
+    <div class="why-spread">
+      <div class="why-index" id="why-index">
+        <div class="why-row active" data-i="0"><span class="idx num">i.</span><span class="ttl">Jusqu'à 70 % d'économies</span><span class="arr">→</span></div>
+        <div class="why-row" data-i="1"><span class="idx num">ii.</span><span class="ttl">Zéro combustible fossile</span><span class="arr">→</span></div>
+        <div class="why-row" data-i="2"><span class="idx num">iii.</span><span class="ttl">Chaud l'hiver, frais l'été</span><span class="arr">→</span></div>
+        <div class="why-row" data-i="3"><span class="idx num">iv.</span><span class="ttl">Patrimoine valorisé</span><span class="arr">→</span></div>
+        <div class="why-row" data-i="4"><span class="idx num">v.</span><span class="ttl">Indépendance énergétique</span><span class="arr">→</span></div>
+        <div class="why-row" data-i="5"><span class="idx num">vi.</span><span class="ttl">Durabilité prouvée</span><span class="arr">→</span></div>
+      </div>
+
+      <div class="why-cardinal" id="why-cardinal">
+        <div>
+          <div class="num" id="cardinal-num">i. Économies</div>
+          <p class="figure num" id="cardinal-figure">−70 %</p>
+          <p class="figure-sub" id="cardinal-figsub">de réduction sur la facture chauffage. ~1 200 €/an pour un foyer moyen.</p>
+        </div>
+        <div class="body-cardinal">
+          <h3 id="cardinal-title">Jusqu'à 70 % d'économies</h3>
+          <p id="cardinal-body">En passant du gaz à la géothermie, nos clients économisent en moyenne 1 200 € par an sur leur facture énergétique.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     5. CALCULATEUR
+════════════════════════════════════════ -->
+<section class="calc" id="calculateur">
+  <div class="container">
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">04 ―</span> Calculateur</span>
+      <div>
+        <h2 class="h2">Combien pourriez-vous économiser ?</h2>
+        <p class="lede" style="margin-top:18px">Entrez votre surface ou votre consommation actuelle. Cochez les postes qui vous concernent — les économies se calculent en temps réel.</p>
+      </div>
+    </div>
+
+    <div class="calc-grid">
+      <div class="calc-form">
+        <div class="group">
+          <label>J'entre</label>
+          <div class="seg" id="seg-mode">
+            <button data-v="surface" class="on">Ma surface (m²)</button>
+            <button data-v="conso">Ma consommation (MWh/an)</button>
+          </div>
+        </div>
+
+        <div class="group" data-show="surface">
+          <label>Surface habitable <span class="val num"><span id="v-surf">150</span> m²</span></label>
+          <div class="range-wrap">
+            <input id="r-surf" class="range" type="range" min="60" max="400" step="5" value="150" />
+            <div class="range-marks"><span>60 m²</span><span>400 m²</span></div>
+            <div class="range-hint">≈ <span id="hint-surf-mwh">13,5</span> MWh/an de chauffage estimés</div>
+          </div>
+        </div>
+
+        <div class="group" data-show="conso" style="display:none">
+          <label>Consommation chauffage <span class="val num"><span id="v-conso">18</span> MWh/an</span></label>
+          <div class="range-wrap">
+            <input id="r-conso" class="range" type="range" min="5" max="80" step="1" value="18" />
+            <div class="range-marks"><span>5 MWh</span><span>80 MWh</span></div>
+            <div class="range-hint">≈ <span id="hint-conso-m2">200</span> m² de surface estimée</div>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Énergie de chauffage actuelle</label>
+          <div class="seg" id="seg-energie">
+            <button data-v="gaz" class="on">Gaz naturel</button>
+            <button data-v="mazout">Mazout</button>
+            <button data-v="elec">Électrique</button>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Postes concernés</label>
+          <div class="seg" id="seg-postes" style="flex-wrap:wrap">
+            <button data-v="chauf" class="on">Chauffage</button>
+            <button data-v="raf">Rafraîchissement</button>
+            <button data-v="pisc">Piscine</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-receipt">
+        <div class="meta">
+          <span>WDD · Estimation</span>
+          <span class="num" id="receipt-date">2026 · BE</span>
+        </div>
+        <div class="total-label">Économies estimées · par an</div>
+        <div class="total-figure num" id="t-total">1 800 – 2 600 €</div>
+        <div class="total-unit">soit <span class="num" id="t-mwh">15,2</span> MWh économisés · <span class="num" id="t-co2">3 070</span> kg CO₂ évités</div>
+
+        <div class="lines" id="lines">
+          <div class="line" data-poste="chauf">
+            <div>
+              <div class="label-main">Chauffage</div>
+              <div class="label-sub" id="sub-chauf">12,7 MWh économisés sur 13,5 MWh</div>
+            </div>
+            <div class="v"><span id="eur-chauf">1 600 – 2 300</span> <small>€/an</small></div>
+          </div>
+          <div class="line off" data-poste="raf">
+            <div>
+              <div class="label-main">Rafraîchissement</div>
+              <div class="label-sub" id="sub-raf">non sélectionné</div>
+            </div>
+            <div class="v"><span id="eur-raf">—</span></div>
+          </div>
+          <div class="line off" data-poste="pisc">
+            <div>
+              <div class="label-main">Piscine</div>
+              <div class="label-sub" id="sub-pisc">non sélectionné</div>
+            </div>
+            <div class="v"><span id="eur-pisc">—</span></div>
+          </div>
+        </div>
+
+        <div class="footer">
+          Basé sur les prix de l'énergie belges 2024–2025 et un COP géothermique de 4,5. Résultat indicatif, à confirmer par notre étude de faisabilité.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     6. DEVIS
+════════════════════════════════════════ -->
+<section class="devis" id="devis">
+  <div class="container">
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">05 ―</span> Devis personnalisé</span>
+      <div>
+        <h2 class="h2">Ces chiffres vous parlent ?<br>Obtenez votre <em>devis précis</em>.</h2>
+      </div>
+    </div>
+
+    <div class="devis-grid">
+      <div class="devis-side">
+        <div class="ledger">
+          <div class="cell"><div class="v">Gratuit</div><div class="l">Étude de faisabilité</div></div>
+          <div class="cell"><div class="v">48 h</div><div class="l">Délai de réponse</div></div>
+          <div class="cell"><div class="v">0 €</div><div class="l">Sans engagement</div></div>
+        </div>
+        <p>Nos experts analysent la géologie de votre terrain, votre installation actuelle et vos besoins énergétiques.</p>
+        <p>Devis complet sous 48 h, gratuit et sans engagement.</p>
+        <div class="signoff">
+          Blandine De Becker · Sales &amp; Communication<br>
+          info@welldonedrill.energy · +32 478 75 36 79
+        </div>
+      </div>
+
+      <form class="form-card" onsubmit="event.preventDefault(); alert('Demande envoyée — démo')">
+        <div class="field"><label>Vous</label><input type="text" placeholder="Prénom Nom" /></div>
+        <div class="field split"><label>Contact</label><input type="email" placeholder="email@exemple.be" /><input type="tel" placeholder="+32 …" /></div>
+        <div class="field"><label>Adresse</label><input type="text" placeholder="Rue, numéro" /></div>
+        <div class="field split"><label>Localité</label><input type="text" placeholder="Code postal" /><input type="text" placeholder="Ville" /></div>
+        <div class="field"><label>Projet</label><textarea placeholder="Type de chauffage actuel, superficie, état du terrain…"></textarea></div>
+        <div class="submit-row">
+          <span class="legal">Vos données sont utilisées uniquement pour répondre à votre demande.</span>
+          <button type="submit" class="btn btn-yellow">Recevoir mon devis précis <span class="arrow">→</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     7. FAQ
+════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="head">
+      <span class="marginalia"><span class="num-tag">06 ―</span> FAQ</span>
+      <div>
+        <h2 class="h2">Vos questions,<br>nos réponses.</h2>
+        <p class="lede" style="margin-top:18px">Une question ne figure pas ici ? Contactez directement notre équipe.</p>
+      </div>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-side">
+        <p class="body" style="font-size:14px">Notre équipe est disponible du lundi au vendredi pour répondre à vos questions, en français, néerlandais ou allemand.</p>
+        <a href="#devis" class="btn">Poser ma question <span class="arrow">→</span></a>
+      </div>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q"><span class="num">01</span><span class="q">Combien coûte une installation géothermique au total ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>Le budget complet — forage + pompe à chaleur + installation — se situe généralement entre 20 000 et 30 000 €. Après déduction des primes régionales (qui peuvent atteindre 8 000 à 12 000 €), le reste à charge net descend souvent sous les 18 000 €. Votre retour sur investissement intervient en 8 à 12 ans sur une installation qui dure 50 ans.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="num">02</span><span class="q">Mon terrain est-il compatible avec la géothermie ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>Plus de 90 % des propriétés résidentielles en Belgique et au Luxembourg sont géologiquement compatibles. WellDoneDrill réalise une étude préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="num">03</span><span class="q">Quels travaux sont réalisés chez moi et combien de temps cela prend-il ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>Le forage occupe typiquement 1 à 3 jours sur votre terrain. Notre équipe intervient avec une machine spécialisée : l'impact sur votre jardin est minimal et le terrain est remis en état à la fin du chantier. L'installation complète (forage + PAC) prend généralement 1 à 2 semaines.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="num">04</span><span class="q">Qui installe la pompe à chaleur ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>WellDoneDrill est le spécialiste du forage géothermique. Nous travaillons avec un réseau sélectionné de chauffagistes certifiés qui prennent en charge l'installation de la PAC. Nous coordonnons les deux équipes pour vous — un seul interlocuteur de bout en bout.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="num">05</span><span class="q">La géothermie fonctionne-t-elle aussi comme climatisation ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>Oui. La géothermie fermée permet une climatisation géothermique passive (free-cooling) très efficace en été, avec une consommation électrique marginale. Contrairement aux climatiseurs classiques, elle n'émet pas de chaleur à l'extérieur.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="num">06</span><span class="q">Faut-il un permis pour forer ?</span><span class="icon"></span></button>
+          <div class="faq-a"><p>Dans la plupart des régions, un permis de forage est requis. WellDoneDrill gère intégralement les démarches administratives pour vous — y compris les déclarations obligatoires auprès des organismes compétents.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="colophon">
+  <div class="container">
+    <div class="row">
+      <div class="lockup">WellDoneDrill</div>
+      <div class="meta">
+        Forage géothermique en Belgique, France et Grand-Duché de Luxembourg.<br>
+        <a href="mailto:info@welldonedrill.energy">info@welldonedrill.energy</a> · +32 478 75 36 79 · <a href="https://welldonedrill.energy">welldonedrill.energy</a>
+      </div>
+    </div>
+    <div class="credits">
+      <span>2026 © All Rights Reserved · WELLDONEDRILL</span>
+      <span>Direction artistique — refonte page Particuliers</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a href="#calculateur" class="primary">Calculer mes économies</a>
+  <a href="#devis" class="ghost">Devis gratuit</a>
+</div>
+
+<!-- React + tweaks -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks.jsx"></script>
+
+<script>
+  // ──────────────────────────────────────────────
+  // Animated scheme: soil → PAC → house
+  // ──────────────────────────────────────────────
+  (function () {
+    var nodes = document.querySelectorAll('#scheme-stage .node');
+    var phase = 0;
+    function tick() {
+      nodes.forEach(function (n, i) {
+        n.dataset.lit = (phase > i) ? 'true' : 'false';
+      });
+      phase++;
+      if (phase > nodes.length + 1) phase = 0;
+      setTimeout(tick, phase === 0 ? 700 : 1100);
+    }
+    tick();
+  })();
+
+  // ──────────────────────────────────────────────
+  // Étapes accordion (single open)
+  // ──────────────────────────────────────────────
+  (function () {
+    var rows = document.querySelectorAll('#etapes .etape');
+    rows.forEach(function (r) {
+      r.addEventListener('click', function () {
+        rows.forEach(function (x) { x.classList.remove('active'); });
+        r.classList.add('active');
+      });
+    });
+  })();
+
+  // ──────────────────────────────────────────────
+  // Pourquoi — cardinal swap
+  // ──────────────────────────────────────────────
+  (function () {
+    var WHY = [
+      { num: 'i. Économies',        figure: '−70 %',     sub: 'sur la facture chauffage. ~1 200 €/an pour un foyer moyen.', title: "Jusqu'à 70 % d'économies",
+        body: "En passant du gaz à la géothermie, nos clients économisent en moyenne 1 200 € par an sur leur facture énergétique." },
+      { num: 'ii. Émissions',       figure: '0 t',       sub: "de CO₂ direct émis chez vous. Aucune flamme, aucune combustion.", title: "Zéro combustible fossile",
+        body: "La géothermie puise une énergie renouvelable dans le sol de votre propriété. Aucune émission directe, aucune dépendance au marché." },
+      { num: 'iii. 4 saisons',      figure: '1 sys.',    sub: "qui chauffe l'hiver, rafraîchit l'été. Sans climatiseur secondaire.", title: "Chaud l'hiver, frais l'été",
+        body: "La même installation assure le chauffage et la climatisation naturelle. Pas de système secondaire." },
+      { num: 'iv. Valeur',          figure: '+ PEB',     sub: "Un meilleur certificat PEB, une revente facilitée à un meilleur prix.", title: "Patrimoine valorisé",
+        body: "Un logement géothermique affiche un meilleur certificat PEB et se revend plus vite à un meilleur prix." },
+      { num: 'v. Indépendance',     figure: '50 ans',    sub: "de coût de chauffage prévisible, à l'abri des hausses du gaz.", title: "Indépendance énergétique",
+        body: "Vous n'êtes plus exposé aux hausses du prix du gaz. Votre coût de chauffage devient prévisible pour 50 ans." },
+      { num: 'vi. Durabilité',      figure: '50 ans+',   sub: "de durée de vie des sondes géothermiques, sans entretien.", title: "Durabilité prouvée",
+        body: "Les sondes géothermiques ont une durée de vie de 50 ans et plus. Aucun entretien après installation." },
+    ];
+    var rows = document.querySelectorAll('#why-index .why-row');
+    function set(i) {
+      var d = WHY[i];
+      document.getElementById('cardinal-num').textContent = d.num;
+      document.getElementById('cardinal-figure').textContent = d.figure;
+      document.getElementById('cardinal-figsub').textContent = d.sub;
+      document.getElementById('cardinal-title').textContent = d.title;
+      document.getElementById('cardinal-body').textContent = d.body;
+      rows.forEach(function (r) { r.classList.remove('active'); });
+      rows[i].classList.add('active');
+    }
+    rows.forEach(function (r) {
+      r.addEventListener('mouseenter', function () { set(parseInt(r.dataset.i, 10)); });
+      r.addEventListener('click', function () { set(parseInt(r.dataset.i, 10)); });
+    });
+  })();
+
+  // ──────────────────────────────────────────────
+  // FAQ accordion
+  // ──────────────────────────────────────────────
+  (function () {
+    var items = document.querySelectorAll('#faq-list .faq-item');
+    items.forEach(function (it) {
+      it.querySelector('.faq-q').addEventListener('click', function () {
+        var open = it.classList.contains('open');
+        items.forEach(function (x) { x.classList.remove('open'); });
+        if (!open) it.classList.add('open');
+      });
+    });
+  })();
+
+  // ──────────────────────────────────────────────
+  // Calculateur — same maths as ParticuliersPage.tsx
+  // ──────────────────────────────────────────────
+  (function () {
+    var state = {
+      mode: 'surface',
+      surface: 150,
+      conso: 18,
+      energie: 'gaz',
+      postes: { chauf: true, raf: false, pisc: false }
+    };
+
+    var fmt = function (n) { return Math.round(n).toLocaleString('fr-BE'); };
+
+    function compute() {
+      var chauf = state.mode === 'surface' ? state.surface * 0.090 : state.conso;
+      var raf = chauf * 0.28;
+      var pisc = 8;
+      var prix = { gaz: [115, 140], mazout: [125, 155], elec: [270, 320] };
+      var p = prix[state.energie];
+      var pGeo = [55, 70];
+      var pRaf = [85, 100], pRafGeo = [12, 18];
+      var pPiscAct = [115, 140], pPiscGeo = [55, 70];
+
+      var R = {
+        chauf: state.postes.chauf ? {
+          mwh: Math.round(chauf * (1 - pGeo[1] / p[0]) * 10) / 10,
+          eurLow: Math.round(chauf * (p[0] - pGeo[1]) / 100) * 100,
+          eurHigh: Math.round(chauf * (p[1] - pGeo[0]) / 100) * 100,
+          base: Math.round(chauf * 10) / 10,
+        } : null,
+        raf: state.postes.raf ? {
+          mwh: Math.round(raf * (1 - pRafGeo[1] / pRaf[0]) * 10) / 10,
+          eurLow: Math.round(raf * (pRaf[0] - pRafGeo[1]) / 100) * 100,
+          eurHigh: Math.round(raf * (pRaf[1] - pRafGeo[0]) / 100) * 100,
+          base: Math.round(raf * 10) / 10,
+        } : null,
+        pisc: state.postes.pisc ? {
+          mwh: Math.round(pisc * (1 - pPiscGeo[1] / pPiscAct[0]) * 10) / 10,
+          eurLow: Math.round(pisc * (pPiscAct[0] - pPiscGeo[1]) / 100) * 100,
+          eurHigh: Math.round(pisc * (pPiscAct[1] - pPiscGeo[0]) / 100) * 100,
+          base: pisc,
+        } : null
+      };
+      R.totalMwh = Math.round(((R.chauf && R.chauf.mwh || 0) + (R.raf && R.raf.mwh || 0) + (R.pisc && R.pisc.mwh || 0)) * 10) / 10;
+      R.totalLow = (R.chauf && R.chauf.eurLow || 0) + (R.raf && R.raf.eurLow || 0) + (R.pisc && R.pisc.eurLow || 0);
+      R.totalHigh = (R.chauf && R.chauf.eurHigh || 0) + (R.raf && R.raf.eurHigh || 0) + (R.pisc && R.pisc.eurHigh || 0);
+      R.co2 = Math.round(R.totalMwh * 202);
+      R.chaufBase = Math.round(chauf * 10) / 10;
+      return R;
+    }
+
+    function render() {
+      // Mode toggle visibility
+      document.querySelectorAll('[data-show="surface"]').forEach(function (el) { el.style.display = state.mode === 'surface' ? '' : 'none'; });
+      document.querySelectorAll('[data-show="conso"]').forEach(function (el) { el.style.display = state.mode === 'conso' ? '' : 'none'; });
+
+      document.getElementById('v-surf').textContent = state.surface;
+      document.getElementById('v-conso').textContent = state.conso;
+      document.getElementById('hint-surf-mwh').textContent = (Math.round(state.surface * 0.090 * 10) / 10).toString().replace('.', ',');
+      document.getElementById('hint-conso-m2').textContent = Math.round(state.conso / 0.090);
+
+      var R = compute();
+      document.getElementById('t-total').textContent = fmt(R.totalLow) + ' – ' + fmt(R.totalHigh) + ' €';
+      document.getElementById('t-mwh').textContent = R.totalMwh.toString().replace('.', ',');
+      document.getElementById('t-co2').textContent = fmt(R.co2);
+
+      // Lines
+      var lines = document.querySelectorAll('#lines .line');
+      lines.forEach(function (l) {
+        var k = l.dataset.poste;
+        var data = R[k];
+        if (data) {
+          l.classList.remove('off');
+          var subEl = l.querySelector('.label-sub');
+          if (k === 'chauf') subEl.textContent = data.mwh.toString().replace('.', ',') + ' MWh économisés sur ' + data.base.toString().replace('.', ',') + ' MWh';
+          if (k === 'raf')  subEl.textContent = data.mwh.toString().replace('.', ',') + ' MWh économisés sur ' + data.base.toString().replace('.', ',') + ' MWh';
+          if (k === 'pisc') subEl.textContent = data.mwh.toString().replace('.', ',') + ' MWh économisés sur ' + data.base + ' MWh';
+          l.querySelector('.v').innerHTML = '<span>' + fmt(data.eurLow) + ' – ' + fmt(data.eurHigh) + '</span> <small>€/an</small>';
+        } else {
+          l.classList.add('off');
+          l.querySelector('.label-sub').textContent = 'non sélectionné';
+          l.querySelector('.v').innerHTML = '<span>—</span>';
+        }
+      });
+    }
+
+    function bindSeg(id, key, multi) {
+      var els = document.querySelectorAll('#' + id + ' button');
+      els.forEach(function (b) {
+        b.addEventListener('click', function () {
+          if (multi) {
+            state.postes[b.dataset.v] = !state.postes[b.dataset.v];
+            b.classList.toggle('on', state.postes[b.dataset.v]);
+          } else {
+            els.forEach(function (x) { x.classList.remove('on'); });
+            b.classList.add('on');
+            state[key] = b.dataset.v;
+          }
+          render();
+        });
+      });
+    }
+    bindSeg('seg-mode', 'mode', false);
+    bindSeg('seg-energie', 'energie', false);
+    bindSeg('seg-postes', null, true);
+
+    document.getElementById('r-surf').addEventListener('input', function (e) { state.surface = +e.target.value; render(); });
+    document.getElementById('r-conso').addEventListener('input', function (e) { state.conso = +e.target.value; render(); });
+
+    render();
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Réalisations en Belgique — WellDoneDrill</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ──────────────────────────────────────────────────────────
+     Tokens — alignés sur la refonte Particuliers
+  ─────────────────────────────────────────────────────────── */
+  :root {
+    --black:   #1A1A1A;
+    --yellow:  #FFD94F;
+    --clay:    #E8E5DE;
+    --ground:  #B0A18F;
+    --mud:     #AB572E;
+    --grass:   #42754F;
+    --white:   #FFFFFF;
+    --paper:   #F5F2EB;
+    --ink-60:  rgba(26,26,26,0.62);
+    --ink-40:  rgba(26,26,26,0.42);
+    --ink-20:  rgba(26,26,26,0.20);
+    --ink-10:  rgba(26,26,26,0.10);
+    --ink-06:  rgba(26,26,26,0.06);
+
+    --gutter: clamp(20px, 4vw, 56px);
+    --col-max: 1440px;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Lexend', system-ui, sans-serif;
+    background: var(--paper);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  button { font-family: inherit; }
+
+  .display { font-weight: 600; letter-spacing: -0.035em; line-height: 0.94; font-size: clamp(48px, 7.5vw, 112px); margin: 0; }
+  .h2 { font-weight: 600; letter-spacing: -0.025em; line-height: 1.04; font-size: clamp(32px, 4vw, 56px); margin: 0; }
+  .lede { font-weight: 300; line-height: 1.45; font-size: clamp(17px, 1.5vw, 21px); color: var(--ink-60); text-wrap: pretty; }
+  .num { font-variant-numeric: tabular-nums; }
+  .marginalia { font-weight: 400; font-size: 12px; letter-spacing: 0.04em; color: var(--ink-40); display: inline-flex; align-items: baseline; gap: 10px; }
+  .marginalia .num-tag { font-weight: 600; color: var(--black); letter-spacing: -0.01em; }
+
+  .container { max-width: var(--col-max); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+
+  /* ──────── Header (consistent with refonte) ──────── */
+  header.site {
+    position: relative;
+    z-index: 50;
+    background: var(--yellow);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  header.site .row { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  header.site nav { display: flex; align-items: center; gap: 4px; }
+  header.site nav a { text-decoration: none; font-size: 13.5px; padding: 6px 12px; color: var(--black); opacity: 0.7; }
+  header.site nav a.active { opacity: 1; font-weight: 500; }
+  header.site .right { display: flex; align-items: center; gap: 8px; }
+  header.site .lang { font-size: 12px; border: 1px solid rgba(0,0,0,0.18); background: rgba(255,255,255,0.25); padding: 6px 10px; }
+  header.site .cta { background: var(--black); color: var(--yellow); font-size: 13px; font-weight: 600; padding: 9px 18px; text-decoration: none; border: 2px solid var(--black); }
+  header.site .logo { font-weight: 700; letter-spacing: -0.02em; font-size: 16px; }
+
+  /* ──────────────────────────────────────────────────────────
+     SHELL — full-viewport stage that contains BOTH views.
+     The map SVG is the persistent background; we only animate
+     its transform between index and region modes. The text/UI
+     layers cross-fade on top of it.
+  ─────────────────────────────────────────────────────────── */
+  .stage {
+    position: relative;
+    min-height: calc(100vh - 64px);
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  /* Map layer — fixed background of the stage */
+  .map-layer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .map-svg-wrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 50% 50%;
+    transition: transform 900ms cubic-bezier(0.7, 0, 0.2, 1);
+    will-change: transform;
+  }
+  .map-svg-wrap svg {
+    width: min(100%, 1100px);
+    height: auto;
+    max-height: 80vh;
+    overflow: visible;
+  }
+  /* Province rendering */
+  .map-svg-wrap path.prov {
+    fill: var(--clay);
+    stroke: rgba(26,26,26,0.55);
+    stroke-width: 0.7;
+    stroke-linejoin: round;
+    transition: fill 250ms ease, stroke 250ms ease, opacity 600ms ease;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .map-svg-wrap path.prov[data-region="wallonia"] { fill: #D6CDB9; }
+  .map-svg-wrap path.prov[data-region="flanders"] { fill: #E8E5DE; }
+  .map-svg-wrap path.prov[data-region="brussels"] { fill: var(--black); stroke: var(--black); stroke-width: 1; }
+  .map-svg-wrap path.prov:hover { fill: var(--yellow); }
+  .map-svg-wrap path.prov.active { fill: var(--yellow); stroke: var(--black); stroke-width: 1; }
+  .map-svg-wrap path.prov.dim { opacity: 0.18; }
+
+  .map-svg-wrap text.prov-label {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    fill: rgba(26,26,26,0.72);
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.005em;
+    transition: opacity 250ms ease, fill 250ms ease;
+  }
+  .map-svg-wrap text.prov-label[data-region="brussels"] { fill: var(--yellow); font-size: 11px; }
+  .map-svg-wrap text.prov-label.dim { opacity: 0; }
+
+  /* ──────── INDEX VIEW (default) ──────── */
+  .view-index {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(320px, 1fr) 1.4fr;
+    gap: clamp(24px, 4vw, 64px);
+    align-items: stretch;
+    padding: clamp(40px, 6vw, 80px) var(--gutter);
+    max-width: var(--col-max);
+    margin: 0 auto;
+    min-height: calc(100vh - 64px);
+    transition: opacity 500ms ease, transform 500ms ease;
+  }
+  .index-text { display: flex; flex-direction: column; }
+  .index-slug {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-top: 1px solid var(--black);
+    padding-top: 16px;
+    margin-bottom: clamp(40px, 6vw, 72px);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+  }
+  .index-slug b { font-weight: 600; }
+  .index-slug .right { color: var(--ink-60); font-weight: 300; }
+
+  .index-text h1.display { max-width: 12ch; margin-bottom: 32px; }
+  .index-text h1 em { font-style: normal; color: var(--mud); }
+  .index-text .lede { max-width: 38ch; margin: 0 0 32px 0; }
+
+  .ledger {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--black);
+    margin-bottom: 40px;
+  }
+  .ledger .cell { padding: 18px 16px 0 0; border-right: 1px solid var(--ink-10); }
+  .ledger .cell:last-child { border-right: 0; }
+  .ledger .cell:not(:first-child) { padding-left: 16px; }
+  .ledger .v { font-size: clamp(24px, 2.4vw, 32px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+  .ledger .l { font-size: 11px; color: var(--ink-60); margin-top: 8px; font-weight: 300; line-height: 1.45; }
+
+  /* Province directory — typographic index, not a card grid */
+  .prov-directory {
+    margin-top: auto;
+    border-top: 1px solid var(--ink-10);
+  }
+  .prov-directory .group {
+    border-bottom: 1px solid var(--ink-10);
+    padding: 18px 0 14px;
+  }
+  .prov-directory .group-label {
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-40);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .prov-directory .group-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+  .prov-directory button {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: var(--black);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 10px 4px 0;
+    cursor: pointer;
+    text-align: left;
+    border-bottom: 1px solid transparent;
+    transition: color 150ms ease, border-color 150ms ease;
+    line-height: 1.3;
+  }
+  .prov-directory button + button { border-left: 1px solid var(--ink-10); padding-left: 10px; }
+  .prov-directory button:hover { color: var(--mud); }
+  .prov-directory button[data-active="true"] { color: var(--mud); border-bottom-color: var(--mud); }
+
+  /* Map container on the right — but the actual SVG is in .map-layer */
+  .map-frame {
+    position: relative;
+    min-height: 540px;
+    z-index: 0;
+  }
+
+  /* ──────── REGION VIEW ──────── */
+  .view-region {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease 100ms;
+    display: flex;
+    flex-direction: column;
+  }
+  .stage.is-region .view-index { opacity: 0; transform: translateY(-12px); pointer-events: none; }
+  .stage.is-region .view-region { opacity: 1; pointer-events: auto; }
+
+  .region-bar {
+    position: relative;
+    z-index: 4;
+    background: rgba(245,242,235,0.82);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid var(--ink-10);
+  }
+  .region-bar .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px var(--gutter);
+    max-width: var(--col-max);
+    margin: 0 auto;
+  }
+  .region-bar .left { display: flex; align-items: baseline; gap: 18px; min-width: 0; flex-wrap: wrap; }
+  .region-bar .crumb-back {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: var(--black);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 6px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 150ms ease;
+  }
+  .region-bar .crumb-back:hover { border-bottom-color: var(--black); }
+  .region-bar .crumb-back .arr { color: var(--mud); font-weight: 600; }
+  .region-bar .crumb-sep { color: var(--ink-20); font-weight: 300; font-size: 13px; }
+  .region-bar .crumb-current { font-size: 13px; font-weight: 500; }
+  .region-bar .ledger-mini {
+    display: flex;
+    gap: 24px;
+    font-size: 12px;
+    color: var(--ink-60);
+  }
+  .region-bar .ledger-mini b { color: var(--black); font-weight: 600; margin-right: 4px; }
+
+  .region-content {
+    position: relative;
+    z-index: 3;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, transparent 0, transparent 220px, var(--paper) 360px);
+  }
+  .region-hero {
+    padding: clamp(60px, 9vw, 140px) var(--gutter) clamp(40px, 6vw, 72px);
+    max-width: var(--col-max);
+    margin: 0 auto;
+  }
+  .region-hero .marginalia { color: var(--ink-60); }
+  .region-hero h1 {
+    margin: 14px 0 0 0;
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 0.94;
+    font-size: clamp(48px, 7.5vw, 96px);
+    max-width: 14ch;
+  }
+  .region-hero h1 em { font-style: normal; color: var(--mud); }
+  .region-hero .meta-row {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(28px, 4vw, 64px);
+    align-items: end;
+    padding-top: 28px;
+    border-top: 1px solid var(--ink-10);
+  }
+  .region-hero .meta-row p { margin: 0; }
+  .region-hero .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--black);
+  }
+  .region-hero .stats .cell { padding: 16px 12px 0 0; border-right: 1px solid var(--ink-10); }
+  .region-hero .stats .cell:last-child { border-right: 0; }
+  .region-hero .stats .cell:not(:first-child) { padding-left: 12px; }
+  .region-hero .stats .v { font-size: clamp(22px, 2vw, 28px); font-weight: 600; letter-spacing: -0.015em; line-height: 1; }
+  .region-hero .stats .l { font-size: 10.5px; color: var(--ink-60); margin-top: 6px; font-weight: 300; line-height: 1.4; }
+
+  /* Project list */
+  .region-projects {
+    padding: clamp(40px, 6vw, 88px) var(--gutter) clamp(80px, 10vw, 144px);
+    max-width: var(--col-max);
+    margin: 0 auto;
+    background: var(--paper);
+  }
+  .projects-head {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 32px;
+    align-items: baseline;
+    padding-bottom: 24px;
+    margin-bottom: clamp(32px, 4vw, 56px);
+    border-bottom: 1px solid var(--black);
+  }
+  .projects-head h2 { margin: 0; max-width: 18ch; }
+  .projects-head .count { font-size: 13px; color: var(--ink-60); font-weight: 300; }
+
+  .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--ink-10); border: 1px solid var(--ink-10); }
+  .project-card {
+    background: var(--paper);
+    padding: 28px 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 320px;
+    cursor: pointer;
+    transition: background 250ms ease;
+  }
+  .project-card:hover { background: var(--white); }
+  .project-card .card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .project-card .year { font-size: 12px; color: var(--ink-40); font-weight: 400; font-variant-numeric: tabular-nums; letter-spacing: -0.005em; }
+  .project-card .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .project-card .tag { font-size: 10px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 8px; border: 1px solid var(--ink-20); color: var(--ink-60); }
+  .project-card .tag.fermee { background: var(--yellow); border-color: var(--yellow); color: var(--black); }
+  .project-card .tag.ouverte { background: var(--black); border-color: var(--black); color: var(--yellow); }
+  .project-card h3 { margin: 4px 0 0 0; font-size: 21px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; }
+  .project-card .loc { font-size: 13px; color: var(--ink-60); font-weight: 300; margin: 0; }
+  .project-card .footer-row {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--ink-10);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .project-card .depth { font-size: 12px; color: var(--ink-60); font-weight: 300; }
+  .project-card .depth b { font-weight: 600; color: var(--black); font-size: 14px; letter-spacing: -0.005em; }
+  .project-card .arr { color: var(--ink-40); font-size: 14px; transition: color 200ms, transform 250ms; }
+  .project-card:hover .arr { color: var(--mud); transform: translateX(4px); }
+
+  .empty-state {
+    border: 1px dashed var(--ink-20);
+    padding: 56px 32px;
+    text-align: center;
+    color: var(--ink-60);
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  /* Tooltip on map hover */
+  .map-tooltip {
+    position: absolute;
+    z-index: 5;
+    background: var(--black);
+    color: var(--paper);
+    padding: 10px 14px;
+    pointer-events: none;
+    transform: translate(-50%, calc(-100% - 14px));
+    opacity: 0;
+    transition: opacity 150ms ease;
+    white-space: nowrap;
+  }
+  .map-tooltip.visible { opacity: 1; }
+  .map-tooltip .ttl-name { font-size: 13px; font-weight: 500; line-height: 1; }
+  .map-tooltip .ttl-sub { font-size: 10.5px; color: var(--yellow); margin-top: 4px; font-weight: 400; }
+  .map-tooltip::after {
+    content: ""; position: absolute;
+    left: 50%; bottom: -6px;
+    width: 0; height: 0;
+    border: 6px solid transparent;
+    border-top-color: var(--black);
+    border-bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  /* Footer */
+  footer.colophon { background: var(--black); color: var(--paper); padding: 40px 0 24px; position: relative; z-index: 10; }
+  footer.colophon .row { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; align-items: end; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 24px; }
+  footer.colophon .lockup { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+  footer.colophon .meta { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.7; }
+  footer.colophon .credits { display: flex; justify-content: space-between; padding-top: 16px; font-size: 11px; color: rgba(255,255,255,0.4); flex-wrap: wrap; gap: 10px; }
+
+  /* ──────── Responsive ──────── */
+  @media (max-width: 960px) {
+    .view-index { grid-template-columns: 1fr; }
+    .map-frame { min-height: 460px; order: -1; }
+    .index-text h1.display { max-width: none; }
+    .project-grid { grid-template-columns: repeat(2, 1fr); }
+    .region-hero .meta-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    header.site nav, header.site .right { display: none; }
+    .project-grid { grid-template-columns: 1fr; }
+    .region-bar .ledger-mini { display: none; }
+    .ledger { grid-template-columns: 1fr 1fr; }
+    .ledger .cell:nth-child(3) { grid-column: 1 / -1; border-top: 1px solid var(--ink-10); margin-top: 12px; padding-top: 12px; padding-left: 0; border-right: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="container row">
+    <div class="logo">WellDoneDrill</div>
+    <nav>
+      <a href="#">Pompe à chaleur</a>
+      <a href="#">Géothermie</a>
+      <a href="#">Particuliers</a>
+      <a href="#" class="active">Réalisations</a>
+      <a href="#">Pro</a>
+    </nav>
+    <div class="right">
+      <span class="lang">FR · BE</span>
+      <a href="#" class="cta">Demander un devis</a>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════════════════════════════
+     STAGE — holds map layer (persistent) + the two views
+═════════════════════════════════════════════════════════════════ -->
+<div class="stage" id="stage">
+
+  <!-- Persistent map layer — never unmounts -->
+  <div class="map-layer" id="map-layer">
+    <div class="map-svg-wrap" id="map-svg-wrap">
+      <!-- SVG injected by JS once be-map.json is loaded -->
+    </div>
+    <div class="map-tooltip" id="map-tooltip">
+      <div class="ttl-name">—</div>
+      <div class="ttl-sub">Cliquer pour explorer →</div>
+    </div>
+  </div>
+
+  <!-- ── INDEX VIEW ── -->
+  <section class="view-index" id="view-index">
+    <div class="index-text">
+      <div class="index-slug">
+        <span><b>WDD</b> · Réalisations · Belgique</span>
+        <span class="right">2009 — 2026</span>
+      </div>
+
+      <h1 class="display">Géothermie<br />partout en<br /><em>Belgique</em>.</h1>
+      <p class="lede">Depuis 2009, WellDoneDrill fore des champs géothermiques sur l'ensemble du territoire belge. Sélectionnez une province sur la carte — ou directement dans la liste — pour découvrir nos chantiers.</p>
+
+      <div class="ledger">
+        <div class="cell">
+          <div class="v num">500+</div>
+          <div class="l">Chantiers réalisés</div>
+        </div>
+        <div class="cell">
+          <div class="v num">11</div>
+          <div class="l">Provinces actives</div>
+        </div>
+        <div class="cell">
+          <div class="v num">15 <span style="font-size:0.55em;font-weight:400;color:var(--ink-60);">ans</span></div>
+          <div class="l">d'expertise</div>
+        </div>
+      </div>
+
+      <div class="prov-directory" id="prov-directory">
+        <!-- injected by JS -->
+      </div>
+    </div>
+
+    <div class="map-frame" id="map-frame">
+      <!-- empty — the actual map SVG lives in .map-layer above this -->
+    </div>
+  </section>
+
+  <!-- ── REGION VIEW ── -->
+  <section class="view-region" id="view-region">
+    <div class="region-bar">
+      <div class="row">
+        <div class="left">
+          <button class="crumb-back" id="back-btn"><span class="arr">←</span> Retour à la carte</button>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current" id="crumb-current">—</span>
+        </div>
+        <div class="ledger-mini">
+          <span><b id="lm-count" class="num">—</b> chantiers</span>
+          <span><b id="lm-since" class="num">—</b> depuis</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="region-content" id="region-content">
+      <section class="region-hero">
+        <span class="marginalia"><span class="num-tag" id="rh-num">01 ―</span> <span id="rh-region">Région —</span></span>
+        <h1>Réalisations en<br /><em id="rh-name">—</em>.</h1>
+
+        <div class="meta-row">
+          <p class="lede" id="rh-blurb">—</p>
+          <div class="stats">
+            <div class="cell">
+              <div class="v num" id="st-count">0</div>
+              <div class="l">Chantiers réalisés</div>
+            </div>
+            <div class="cell">
+              <div class="v num" id="st-depth">0 m</div>
+              <div class="l">Profondeur moyenne</div>
+            </div>
+            <div class="cell">
+              <div class="v num" id="st-since">2009</div>
+              <div class="l">Premier chantier</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="region-projects">
+        <div class="projects-head">
+          <span class="marginalia"><span class="num-tag">A.</span> Portefeuille</span>
+          <div>
+            <h2 class="h2">Tous nos chantiers<br />dans cette province.</h2>
+            <p class="count" id="proj-count">— réalisations</p>
+          </div>
+        </div>
+        <div id="project-list">
+          <!-- injected -->
+        </div>
+      </section>
+
+      <footer class="colophon">
+        <div class="container">
+          <div class="row">
+            <div class="lockup">WellDoneDrill</div>
+            <div class="meta">
+              Forage géothermique en Belgique, France et Grand-Duché de Luxembourg.<br>
+              info@welldonedrill.energy · +32 478 75 36 79
+            </div>
+          </div>
+          <div class="credits">
+            <span>2026 © All Rights Reserved · WELLDONEDRILL</span>
+            <span>Réalisations — page références</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(async function () {
+  /* ──────────────────────────────────────────────────────────
+     Load the map data and demo chantier dataset
+  ─────────────────────────────────────────────────────────── */
+  const mapResp = await fetch('be-map.json');
+  const MAP = await mapResp.json();
+
+  // Demo chantiers — in production, comes from Sanity. Distributed across provinces.
+  const RAW_CHANTIERS = [
+    // Liège
+    { id: 'l1', province: 'liege', title: 'Maison passive Sart-Tilman', location: 'Liège', type: 'fermee', sector: 'residentiel', depth: 110, year: 2024 },
+    { id: 'l2', province: 'liege', title: 'Hôtel des Tanneurs', location: 'Verviers', type: 'ouverte', sector: 'tertiaire', depth: 180, year: 2023 },
+    { id: 'l3', province: 'liege', title: 'École communale', location: 'Spa', type: 'fermee', sector: 'public', depth: 95, year: 2022 },
+    { id: 'l4', province: 'liege', title: 'Atelier industriel Eupen', location: 'Eupen', type: 'fermee', sector: 'industrie', depth: 140, year: 2021 },
+
+    // Namur
+    { id: 'n1', province: 'namur', title: 'Domaine viticole', location: 'Dinant', type: 'fermee', sector: 'tertiaire', depth: 130, year: 2024 },
+    { id: 'n2', province: 'namur', title: 'Logements collectifs', location: 'Namur', type: 'fermee', sector: 'residentiel', depth: 105, year: 2023 },
+    { id: 'n3', province: 'namur', title: 'Centre de loisirs', location: 'Andenne', type: 'ouverte', sector: 'public', depth: 165, year: 2022 },
+
+    // Hainaut
+    { id: 'h1', province: 'hainaut', title: 'Villa contemporaine', location: 'Mons', type: 'fermee', sector: 'residentiel', depth: 100, year: 2025 },
+    { id: 'h2', province: 'hainaut', title: 'Centre médical', location: 'Charleroi', type: 'fermee', sector: 'tertiaire', depth: 150, year: 2024 },
+    { id: 'h3', province: 'hainaut', title: 'Maison de repos', location: 'Tournai', type: 'ouverte', sector: 'public', depth: 175, year: 2023 },
+    { id: 'h4', province: 'hainaut', title: 'Lotissement géothermique', location: 'La Louvière', type: 'fermee', sector: 'residentiel', depth: 90, year: 2022 },
+
+    // Brabant wallon
+    { id: 'bw1', province: 'brabant-wallon', title: 'Maison familiale', location: 'Wavre', type: 'fermee', sector: 'residentiel', depth: 105, year: 2025 },
+    { id: 'bw2', province: 'brabant-wallon', title: 'Bureaux corporatifs', location: 'Louvain-la-Neuve', type: 'fermee', sector: 'tertiaire', depth: 145, year: 2024 },
+    { id: 'bw3', province: 'brabant-wallon', title: 'Architecte (rénovation)', location: 'Genappe', type: 'fermee', sector: 'residentiel', depth: 95, year: 2023 },
+
+    // Luxembourg (BE)
+    { id: 'lx1', province: 'luxembourg', title: 'Résidence en forêt', location: 'Bastogne', type: 'fermee', sector: 'residentiel', depth: 110, year: 2024 },
+    { id: 'lx2', province: 'luxembourg', title: 'Centre d\'accueil', location: 'Arlon', type: 'fermee', sector: 'public', depth: 120, year: 2023 },
+
+    // Flandre orientale
+    { id: 'ov1', province: 'flandre-orientale', title: 'Maison passive', location: 'Gent', type: 'fermee', sector: 'residentiel', depth: 100, year: 2025 },
+    { id: 'ov2', province: 'flandre-orientale', title: 'Bureaux durables', location: 'Aalst', type: 'fermee', sector: 'tertiaire', depth: 140, year: 2024 },
+    { id: 'ov3', province: 'flandre-orientale', title: 'École primaire', location: 'Sint-Niklaas', type: 'ouverte', sector: 'public', depth: 170, year: 2023 },
+
+    // Anvers
+    { id: 'an1', province: 'anvers', title: 'Tour résidentielle', location: 'Antwerpen', type: 'ouverte', sector: 'residentiel', depth: 200, year: 2025 },
+    { id: 'an2', province: 'anvers', title: 'Showroom architecture', location: 'Mechelen', type: 'fermee', sector: 'tertiaire', depth: 130, year: 2024 },
+    { id: 'an3', province: 'anvers', title: 'Maison familiale', location: 'Turnhout', type: 'fermee', sector: 'residentiel', depth: 95, year: 2023 },
+
+    // Brabant flamand
+    { id: 'vb1', province: 'brabant-flamand', title: 'Maison passive', location: 'Leuven', type: 'fermee', sector: 'residentiel', depth: 105, year: 2024 },
+    { id: 'vb2', province: 'brabant-flamand', title: 'Centre logistique', location: 'Vilvoorde', type: 'fermee', sector: 'industrie', depth: 155, year: 2023 },
+
+    // Limbourg
+    { id: 'li1', province: 'limbourg', title: 'Domaine résidentiel', location: 'Hasselt', type: 'fermee', sector: 'residentiel', depth: 110, year: 2024 },
+    { id: 'li2', province: 'limbourg', title: 'Salle communale', location: 'Genk', type: 'ouverte', sector: 'public', depth: 165, year: 2022 },
+
+    // Flandre occidentale
+    { id: 'wv1', province: 'flandre-occidentale', title: 'Hôtel de la côte', location: 'Knokke', type: 'fermee', sector: 'tertiaire', depth: 135, year: 2024 },
+    { id: 'wv2', province: 'flandre-occidentale', title: 'Villa familiale', location: 'Brugge', type: 'fermee', sector: 'residentiel', depth: 100, year: 2023 },
+
+    // Bruxelles
+    { id: 'bx1', province: 'bruxelles', title: 'Bureaux Quartier Européen', location: 'Bruxelles', type: 'ouverte', sector: 'tertiaire', depth: 220, year: 2025 },
+    { id: 'bx2', province: 'bruxelles', title: 'Logements sociaux', location: 'Anderlecht', type: 'fermee', sector: 'residentiel', depth: 100, year: 2024 },
+    { id: 'bx3', province: 'bruxelles', title: 'Centre culturel', location: 'Schaerbeek', type: 'ouverte', sector: 'public', depth: 195, year: 2023 },
+  ];
+
+  const REGION_BLURBS = {
+    'liege': "Géologie variée — schistes, calcaires, alluvions de la Meuse — qui se prête à des forages de 90 à 200 m. Une vingtaine de chantiers depuis 2014.",
+    'namur': "Sols calcaires et grès du Condroz, idéaux pour la géothermie fermée. WellDoneDrill y opère depuis ses ateliers d'Eghezée.",
+    'hainaut': "Couches sédimentaires profondes du bassin houiller, particulièrement adaptées à la géothermie ouverte sur nappe.",
+    'brabant-wallon': "Cœur du marché résidentiel premium wallon — la majorité de nos chantiers BW sont des maisons familiales et bureaux d'architectes.",
+    'luxembourg': "Massif schisteux de l'Ardenne — terrain plus exigeant, mais excellents rendements thermiques sur les sondes profondes.",
+    'flandre-orientale': "Sables et argiles de la plaine flamande, propices aux forages rapides à profondeur intermédiaire.",
+    'anvers': "Sous-sol sablonneux profond. Plusieurs chantiers tertiaires et industriels d'envergure portuaire.",
+    'brabant-flamand': "Bruxelles élargi — un mix de logements collectifs, bureaux et installations logistiques.",
+    'limbourg': "Région minière reconvertie. Forages adaptés aux contraintes de l'ancien bassin charbonnier.",
+    'flandre-occidentale': "Côte et polders — vigilance sur les nappes phréatiques superficielles, expertise locale indispensable.",
+    'bruxelles': "Forage en milieu urbain dense : machines compactes, autorisations spécifiques. Notre savoir-faire BXL depuis 2017.",
+  };
+
+  /* ──────────────────────────────────────────────────────────
+     Build the SVG once, append to map-svg-wrap
+  ─────────────────────────────────────────────────────────── */
+  const wrap = document.getElementById('map-svg-wrap');
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', MAP.viewBox);
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+  // Soft drop shadow
+  const defs = document.createElementNS(ns, 'defs');
+  defs.innerHTML = `
+    <filter id="map-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5"/>
+      <feOffset dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  `;
+  svg.appendChild(defs);
+
+  // Group so we can apply filter to provinces
+  const g = document.createElementNS(ns, 'g');
+  g.setAttribute('filter', 'url(#map-shadow)');
+  svg.appendChild(g);
+
+  for (const p of MAP.provinces) {
+    const path = document.createElementNS(ns, 'path');
+    path.setAttribute('d', p.path);
+    path.setAttribute('class', 'prov');
+    path.dataset.slug = p.slug;
+    path.dataset.region = p.region;
+    path.dataset.id = p.id;
+    path.dataset.name = p.nameFr;
+    g.appendChild(path);
+  }
+
+  // Labels (drawn after paths, no filter)
+  for (const p of MAP.provinces) {
+    const txt = document.createElementNS(ns, 'text');
+    txt.setAttribute('x', p.centroid[0]);
+    txt.setAttribute('y', p.centroid[1]);
+    txt.setAttribute('text-anchor', 'middle');
+    txt.setAttribute('dominant-baseline', 'middle');
+    txt.setAttribute('class', 'prov-label');
+    txt.dataset.slug = p.slug;
+    txt.dataset.region = p.region;
+    txt.textContent = p.id;
+    svg.appendChild(txt);
+  }
+
+  wrap.appendChild(svg);
+
+  /* ──────────────────────────────────────────────────────────
+     Province directory (typographic index in the index view)
+  ─────────────────────────────────────────────────────────── */
+  const dir = document.getElementById('prov-directory');
+  const groups = [
+    { key: 'flanders',  label: 'Région flamande' },
+    { key: 'brussels',  label: 'Région Bruxelles-Capitale' },
+    { key: 'wallonia',  label: 'Région wallonne' },
+  ];
+  for (const grp of groups) {
+    const list = MAP.provinces.filter(p => p.region === grp.key);
+    if (!list.length) continue;
+    const wrap = document.createElement('div');
+    wrap.className = 'group';
+    wrap.innerHTML = `<div class="group-label">${grp.label}</div>`;
+    const ul = document.createElement('div');
+    ul.className = 'group-list';
+    for (const p of list) {
+      const b = document.createElement('button');
+      b.textContent = p.nameFr;
+      b.dataset.slug = p.slug;
+      ul.appendChild(b);
+    }
+    wrap.appendChild(ul);
+    dir.appendChild(wrap);
+  }
+
+  /* ──────────────────────────────────────────────────────────
+     Tooltip (follows cursor over the map)
+  ─────────────────────────────────────────────────────────── */
+  const tip = document.getElementById('map-tooltip');
+  const tipName = tip.querySelector('.ttl-name');
+  function showTooltip(name, x, y) {
+    tipName.textContent = name;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+    tip.classList.add('visible');
+  }
+  function hideTooltip() {
+    tip.classList.remove('visible');
+  }
+
+  svg.addEventListener('mousemove', (e) => {
+    const target = e.target.closest('.prov');
+    if (!target || target.classList.contains('active')) return hideTooltip();
+    const layer = document.getElementById('map-layer');
+    const r = layer.getBoundingClientRect();
+    showTooltip(target.dataset.name, e.clientX - r.left, e.clientY - r.top);
+  });
+  svg.addEventListener('mouseleave', hideTooltip);
+
+  /* ──────────────────────────────────────────────────────────
+     Navigation — pushState + transform animation
+  ─────────────────────────────────────────────────────────── */
+  const stage = document.getElementById('stage');
+  const wrapEl = document.getElementById('map-svg-wrap');
+
+  // Compute transform values to zoom into a province's bbox.
+  function zoomToProvince(slug) {
+    const p = MAP.provinces.find(x => x.slug === slug);
+    if (!p) return;
+
+    // Where is the province in viewBox coordinates?
+    const [bx0, by0, bx1, by1] = p.bbox;
+    const cx = (bx0 + bx1) / 2;
+    const cy = (by0 + by1) / 2;
+    const bw = bx1 - bx0;
+    const bh = by1 - by0;
+
+    // Province in viewBox (1000×700) terms: scale so that the bbox occupies
+    // roughly 70% of the rendered svg size — but cap it.
+    const targetFraction = 0.55;
+    const scaleX = (MAP.width  * targetFraction) / bw;
+    const scaleY = (MAP.height * targetFraction) / bh;
+    let scale = Math.min(scaleX, scaleY);
+    scale = Math.min(scale, 6);   // cap zoom-in
+    scale = Math.max(scale, 1.8); // ensure visible zoom
+
+    // After scaling around (50%, 50%) of the wrapper, translate so the
+    // province centroid (cx, cy) appears centered. The SVG fills the wrap;
+    // translate in viewBox % terms via the wrap pixel size.
+    // We use the SVG's getBoundingClientRect to convert.
+    const svgRect = svg.getBoundingClientRect();
+    const wrapRect = wrapEl.getBoundingClientRect();
+    // svg viewBox px-per-unit:
+    const svgPxPerVbX = svgRect.width  / MAP.width;
+    const svgPxPerVbY = svgRect.height / MAP.height;
+    // pixel offset of the centroid from svg center, in CSS px
+    const dxPx = (cx - MAP.width  / 2) * svgPxPerVbX;
+    const dyPx = (cy - MAP.height / 2) * svgPxPerVbY;
+    // We want, after scaling, this offset to land at center:
+    // translate by -dx*scale, -dy*scale
+    const tx = -dxPx * scale;
+    const ty = -dyPx * scale;
+
+    wrapEl.style.transform = `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px) scale(${scale.toFixed(3)})`;
+  }
+  function resetZoom() {
+    wrapEl.style.transform = 'translate(0px, 0px) scale(1)';
+  }
+
+  function setActiveProvince(slug) {
+    svg.querySelectorAll('.prov').forEach(el => {
+      el.classList.toggle('active', el.dataset.slug === slug);
+      el.classList.toggle('dim',   slug && el.dataset.slug !== slug);
+    });
+    svg.querySelectorAll('.prov-label').forEach(el => {
+      el.classList.toggle('dim', slug && el.dataset.slug !== slug);
+    });
+    document.querySelectorAll('#prov-directory button').forEach(b => {
+      b.dataset.active = (b.dataset.slug === slug) ? 'true' : 'false';
+    });
+  }
+
+  function fillRegionContent(slug) {
+    const p = MAP.provinces.find(x => x.slug === slug);
+    if (!p) return;
+    const projects = RAW_CHANTIERS.filter(c => c.province === slug);
+
+    // Header
+    document.getElementById('crumb-current').textContent = p.nameFr;
+    document.getElementById('lm-count').textContent = projects.length || '—';
+    const minYear = projects.length ? Math.min(...projects.map(c => c.year)) : '—';
+    document.getElementById('lm-since').textContent = minYear;
+
+    // Hero
+    const idx = String(MAP.provinces.findIndex(x => x.slug === slug) + 1).padStart(2, '0');
+    document.getElementById('rh-num').textContent = idx + ' ―';
+    const regionLabel = p.region === 'flanders' ? 'Région flamande' : p.region === 'wallonia' ? 'Région wallonne' : 'Région Bruxelles-Capitale';
+    document.getElementById('rh-region').textContent = regionLabel;
+    document.getElementById('rh-name').textContent = p.nameFr;
+    document.getElementById('rh-blurb').textContent = REGION_BLURBS[slug] || "Province couverte par les ateliers WellDoneDrill — forages adaptés aux conditions géologiques locales.";
+    document.getElementById('st-count').textContent = projects.length || '0';
+    const avgDepth = projects.length ? Math.round(projects.reduce((s, c) => s + c.depth, 0) / projects.length) : 0;
+    document.getElementById('st-depth').textContent = avgDepth ? avgDepth + ' m' : '—';
+    document.getElementById('st-since').textContent = minYear;
+
+    // Project list
+    const list = document.getElementById('project-list');
+    document.getElementById('proj-count').textContent = projects.length
+      ? `${projects.length} réalisation${projects.length > 1 ? 's' : ''}`
+      : 'Aucune réalisation à afficher';
+    if (!projects.length) {
+      list.innerHTML = '<div class="empty-state">Cette province sera bientôt enrichie de chantiers complétés.<br>Contactez-nous pour discuter d\'un nouveau projet.</div>';
+      return;
+    }
+    list.className = 'project-grid';
+    list.innerHTML = projects.map(c => `
+      <article class="project-card">
+        <div class="card-head">
+          <div class="tags">
+            <span class="tag ${c.type}">${c.type === 'fermee' ? 'Fermée' : 'Ouverte'}</span>
+            <span class="tag">${labelSector(c.sector)}</span>
+          </div>
+          <span class="year num">${c.year}</span>
+        </div>
+        <h3>${c.title}</h3>
+        <p class="loc">${c.location}</p>
+        <div class="footer-row">
+          <span class="depth">Profondeur · <b>${c.depth} m</b></span>
+          <span class="arr">→</span>
+        </div>
+      </article>
+    `).join('');
+    // Reset scroll
+    document.getElementById('region-content').scrollTop = 0;
+  }
+
+  function labelSector(s) {
+    return ({ residentiel: 'Résidentiel', tertiaire: 'Tertiaire', public: 'Public', industrie: 'Industrie' })[s] || s;
+  }
+
+  function navigateTo(slug, push) {
+    if (slug) {
+      setActiveProvince(slug);
+      hideTooltip();
+      fillRegionContent(slug);
+      // wait one frame so content is ready, then start zoom
+      requestAnimationFrame(() => {
+        zoomToProvince(slug);
+        stage.classList.add('is-region');
+      });
+      if (push) {
+        const url = new URL(window.location);
+        url.searchParams.set('province', slug);
+        history.pushState({ slug }, '', url);
+      }
+    } else {
+      setActiveProvince(null);
+      resetZoom();
+      stage.classList.remove('is-region');
+      if (push) {
+        const url = new URL(window.location);
+        url.searchParams.delete('province');
+        history.pushState({ slug: null }, '', url);
+      }
+    }
+  }
+
+  /* ── Wire up clicks ── */
+  svg.addEventListener('click', (e) => {
+    const t = e.target.closest('.prov');
+    if (!t) return;
+    navigateTo(t.dataset.slug, true);
+  });
+  document.getElementById('prov-directory').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-slug]');
+    if (!b) return;
+    navigateTo(b.dataset.slug, true);
+  });
+  document.getElementById('back-btn').addEventListener('click', () => {
+    navigateTo(null, true);
+  });
+
+  // browser back / forward
+  window.addEventListener('popstate', (e) => {
+    const slug = (e.state && e.state.slug) || new URL(window.location).searchParams.get('province');
+    navigateTo(slug || null, false);
+  });
+
+  // ESC to go back
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && stage.classList.contains('is-region')) {
+      navigateTo(null, true);
+    }
+  });
+
+  // Re-compute zoom on resize so it stays centered on the bbox
+  let resizeTimer = null;
+  window.addEventListener('resize', () => {
+    if (!stage.classList.contains('is-region')) return;
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const slug = new URL(window.location).searchParams.get('province');
+      if (slug) zoomToProvince(slug);
+    }, 120);
+  });
+
+  /* ──────── Initial state from URL ──────── */
+  const initialSlug = new URL(window.location).searchParams.get('province');
+  if (initialSlug && MAP.provinces.some(p => p.slug === initialSlug)) {
+    // Skip transition on first load
+    wrapEl.style.transition = 'none';
+    navigateTo(initialSlug, false);
+    requestAnimationFrame(() => { wrapEl.style.transition = ''; });
+  }
+})();
+</script>
+</body>
+</html>
