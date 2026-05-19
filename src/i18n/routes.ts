@@ -6,11 +6,13 @@ export const defaultLocale: AppLocale = 'be-fr'
 export type RouteKey =
   | 'home'
   | 'devis'
+  | 'demarrer'
   | 'references'
   | 'pac'
   | 'geo_fermee'
   | 'geo_ouverte'
   | 'particuliers'
+  | 'pro'
   | 'pro_chauffagistes'
   | 'pro_architectes'
   | 'pro_entrepreneurs'
@@ -26,7 +28,8 @@ export const routeMap: RouteMap = {
   'be-fr': {
     home: '',
     devis: 'devis',
-    references: 'references',
+    demarrer: 'demarrer',
+    references: 'realisations-geothermie-belgique',
     blog: 'blog',
     a_propos: 'a-propos',
     mentions_legales: 'mentions-legales',
@@ -35,11 +38,12 @@ export const routeMap: RouteMap = {
 
     pac: 'pompes-a-chaleur',
 
-    geo_fermee: 'geothermie/fermee',
-    geo_ouverte: 'geothermie/ouverte',
+    geo_fermee: 'geothermie/geothermie-fermee',
+    geo_ouverte: 'geothermie/geothermie-ouverte',
 
     particuliers: 'particuliers',
 
+    pro: 'pour-les-professionnels',
     pro_chauffagistes: 'pro/chauffagistes',
     pro_architectes: 'pro/architectes',
     pro_entrepreneurs: 'pro/entrepreneurs',
@@ -48,6 +52,7 @@ export const routeMap: RouteMap = {
   'fr-fr': {
     home: '',
     devis: 'devis',
+    demarrer: 'demarrer',
     references: 'references',
     blog: 'blog',
     a_propos: 'a-propos',
@@ -57,11 +62,12 @@ export const routeMap: RouteMap = {
 
     pac: 'pompes-a-chaleur',
 
-    geo_fermee: 'geothermie/fermee',
-    geo_ouverte: 'geothermie/ouverte',
+    geo_fermee: 'geothermie/geothermie-fermee',
+    geo_ouverte: 'geothermie/geothermie-ouverte',
 
     particuliers: 'particuliers',
 
+    pro: 'pour-les-professionnels',
     pro_chauffagistes: 'pro/chauffagistes',
     pro_architectes: 'pro/architectes',
     pro_entrepreneurs: 'pro/entrepreneurs',
@@ -70,20 +76,22 @@ export const routeMap: RouteMap = {
   'be-nl': {
     home: '',
     devis: 'offerte',
+    demarrer: 'starten',
     references: 'referenties',
     blog: 'blog',
     a_propos: 'over-ons',
-    mentions_legales: 'wettelijke-vermeldingen',
+    mentions_legales: 'juridische-informatie',
     politique_confidentialite: 'privacybeleid',
     cookies: 'cookies',
 
     pac: 'warmtepompen',
 
-    geo_fermee: 'geothermie/gesloten',
-    geo_ouverte: 'geothermie/open',
+    geo_fermee: 'geothermische-energie/gesloten-geothermie',
+    geo_ouverte: 'geothermische-energie/open-geothermische-energie',
 
     particuliers: 'particulieren',
 
+    pro: 'sectoren',
     pro_chauffagistes: 'professionals/installateurs',
     pro_architectes: 'professionals/architecten',
     pro_entrepreneurs: 'professionals/aannemers',
@@ -92,6 +100,7 @@ export const routeMap: RouteMap = {
   'lu-fr': {
     home: '',
     devis: 'devis',
+    demarrer: 'demarrer',
     references: 'references',
     blog: 'blog',
     a_propos: 'a-propos',
@@ -106,6 +115,7 @@ export const routeMap: RouteMap = {
 
     particuliers: 'particuliers',
 
+    pro: 'pour-les-professionnels',
     pro_chauffagistes: 'pro/chauffagistes',
     pro_architectes: 'pro/architectes',
     pro_entrepreneurs: 'pro/entrepreneurs',
@@ -114,6 +124,7 @@ export const routeMap: RouteMap = {
   'lu-de': {
     home: '',
     devis: 'angebot',
+    demarrer: 'starten',
     references: 'referenzen',
     blog: 'blog',
     a_propos: 'uber-uns',
@@ -128,6 +139,7 @@ export const routeMap: RouteMap = {
 
     particuliers: 'privatkunden',
 
+    pro: 'fur-profis',
     pro_chauffagistes: 'profis/heizungsbauer',
     pro_architectes: 'profis/architekten',
     pro_entrepreneurs: 'profis/unternehmer',

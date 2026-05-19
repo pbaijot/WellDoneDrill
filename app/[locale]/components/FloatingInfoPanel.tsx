@@ -8,7 +8,7 @@ type PanelItem = {
   sub?: string
 }
 
-export function FloatingInfoPanel({items}: {items: [PanelItem, PanelItem, PanelItem]}) {
+export function FloatingInfoPanel({items}: {items: PanelItem[]}) {
   const DURATION = 4
   const GAP = 6        // durée entre chaque apparition
   const REPEAT_DELAY = GAP * (items.length - 1)

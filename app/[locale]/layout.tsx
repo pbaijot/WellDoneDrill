@@ -30,7 +30,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${lexend.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main className="pt-16">

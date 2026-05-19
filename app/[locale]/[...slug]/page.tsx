@@ -11,9 +11,15 @@ import {getParticuliersPage} from '@/src/lib/particuliersPage'
 import ParticuliersPage from '../components/ParticuliersPage'
 import {getProPage} from '@/src/lib/proPage'
 import ProPage from '../components/ProPage'
+import ProLandingPage from '../components/ProLandingPage'
 import ReferencesPage from '../components/ReferencesPage'
 import ProvinceReferencesPage from '../components/ProvinceReferencesPage'
-import {getChantiers, findProvinceBySlug} from '@/src/lib/referencesPage'
+import ChantierPage from '../components/ChantierPage'
+import AProposPage from '../components/AProposPage'
+import DemarrerPage from '../components/DemarrerPage'
+import {getChantiers, getChantierBySlug, findProvinceBySlug} from '@/src/lib/referencesPage'
+import {getAProposPage} from '@/src/lib/aProposPage'
+import {getDemarrerPage} from '@/src/lib/demarrerPage'
 import {routeMap} from '@/src/i18n/routes'
 
 type PageProps = {
@@ -66,16 +72,26 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   // Must run before the notFound guard since slugPath won't match any routeKey
   const referencesBase = routeMap[locale].references
   if (slugPath.startsWith(referencesBase + '/')) {
-    const provinceSlug = slugPath.slice(referencesBase.length + 1)
-    const province = findProvinceBySlug(provinceSlug)
+    const subSlug = slugPath.slice(referencesBase.length + 1)
+    // Province page first
+    const province = findProvinceBySlug(subSlug)
     if (province) {
       const chantiers = await getChantiers()
       return <ProvinceReferencesPage locale={locale} province={province} chantiers={chantiers} />
+    }
+    // Individual project page
+    const chantier = await getChantierBySlug(subSlug)
+    if (chantier) {
+      return <ChantierPage locale={locale} chantier={chantier} />
     }
   }
 
   if (!routeKey || routeKey === 'home' || routeKey === 'blog') {
     notFound()
+  }
+
+  if (routeKey === 'pro') {
+    return <ProLandingPage locale={locale} />
   }
 
   if (routeKey === 'references') {
@@ -115,11 +131,24 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     routeKey === 'pro_architectes' ||
     routeKey === 'pro_entrepreneurs'
   ) {
+    const chantiers = await getChantiers()
     try {
       const page = await getProPage(locale, routeKey)
-      if (page) return <ProPage page={page} locale={locale} />
-    } catch {}
-    return <ComingSoon locale={locale} routeKey={routeKey} />
+      const data = page ?? {_id: 'default', locale, routeKey}
+      return <ProPage page={data} locale={locale} chantiers={chantiers} />
+    } catch {
+      return <ProPage page={{_id: 'default', locale, routeKey}} locale={locale} chantiers={chantiers} />
+    }
+  }
+
+  if (routeKey === 'demarrer') {
+    const demarrerData = await getDemarrerPage(locale).catch(() => null)
+    return <DemarrerPage locale={locale} page={demarrerData} />
+  }
+
+  if (routeKey === 'a_propos') {
+    const aProposData = await getAProposPage(locale).catch(() => null)
+    return <AProposPage locale={locale} page={aProposData} />
   }
 
   try {

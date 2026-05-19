@@ -244,7 +244,7 @@ export default function ProvinceReferencesPage({
             <span className="text-wdd-yellow">chantier géothermique ?</span>
           </h2>
           <Link
-            href={getLocalizedPath(locale, 'devis')}
+            href={getLocalizedPath(locale, 'demarrer')}
             className="inline-block bg-wdd-yellow text-wdd-black px-8 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
           >
             Demandez un devis gratuit
@@ -335,7 +335,7 @@ function EmptyState({locale}: {locale: AppLocale}) {
         Aucun projet référencé dans cette province pour le moment.
       </div>
       <Link
-        href={getLocalizedPath(locale, 'devis')}
+        href={getLocalizedPath(locale, 'demarrer')}
         className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
       >
         Lancez votre projet

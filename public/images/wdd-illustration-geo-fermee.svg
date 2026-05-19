@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 523.1 384">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
+  <defs>
+    <style>
+      .st0 {
+        stroke: #ab572e;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .st0, .st2, .st5, .st6 {
+        stroke-width: 7px;
+      }
+
+      .st1 {
+        stroke-width: 10px;
+      }
+
+      .st1, .st3 {
+        stroke: #fff;
+      }
+
+      .st2 {
+        stroke: #ffd94f;
+      }
+
+      .st3 {
+        stroke-width: 14px;
+      }
+
+      .st9 {
+        font-family: Lexend-Regular, Lexend;
+        font-size: 10.8px;
+      }
+
+      .st4, .st5, .st8 {
+        stroke: #45cfdd;
+      }
+
+      .st4, .st8 {
+        stroke-width: 2px;
+      }
+
+      .st6 {
+        stroke: #42754f;
+      }
+
+      .st7 {
+        stroke: #000;
+      }
+
+      .st10 {
+        fill: #ffda00;
+      }
+
+      .st8 {
+        stroke-dasharray: 8.7 2.9;
+      }
+
+      .st11 {
+        display: none;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1" class="st11">
+    <image width="690" height="690" transform="translate(5.7 -58) scale(.8)" xlink:href="wdd-Illustration-Géothermie-fermée-1.png"/>
+  </g>
+  <g id="Calque_3" class="st11">
+    <rect class="st10" x="-168" y="-105.8" width="876.5" height="621.6"/>
+  </g>
+  <g id="Calque_2">
+    <polyline class="st3" points="282 246.4 185.9 246.4 185.9 106 282 9.9 378.1 106 378.1 246.4 282 246.4"/>
+    <line class="st1" x1="243.9" y1="23.6" x2="194.9" y2="72.6"/>
+    <line class="st1" x1="189.6" y1="161.2" x2="374.2" y2="161.2"/>
+    <line class="st0" x1="245.8" y1="228.4" x2="363.1" y2="228.4"/>
+    <line class="st0" x1="358.8" y1="114.8" x2="358.8" y2="149.3"/>
+    <rect class="st6" x="205.9" y="193.3" width="26.4" height="35.1"/>
+    <g>
+      <line class="st5" x1="239.8" y1="108" x2="219.3" y2="108"/>
+      <g>
+        <g>
+          <line class="st4" x1="234.6" y1="114.2" x2="234.6" y2="118.7"/>
+          <line class="st8" x1="234.6" y1="121.6" x2="234.6" y2="143.4"/>
+          <line class="st4" x1="234.6" y1="144.8" x2="234.6" y2="149.3"/>
+        </g>
+        <g>
+          <line class="st4" x1="229.6" y1="114.2" x2="229.6" y2="118.7"/>
+          <line class="st8" x1="229.6" y1="121.6" x2="229.6" y2="143.4"/>
+          <line class="st4" x1="229.6" y1="144.8" x2="229.6" y2="149.3"/>
+        </g>
+        <g>
+          <line class="st4" x1="224.5" y1="114.2" x2="224.5" y2="118.7"/>
+          <line class="st8" x1="224.5" y1="121.6" x2="224.5" y2="143.4"/>
+          <line class="st4" x1="224.5" y1="144.8" x2="224.5" y2="149.3"/>
+        </g>
+      </g>
+    </g>
+    <line class="st2" x1="218.5" y1="264.4" x2="100.1" y2="264.4"/>
+    <line class="st2" x1="103.9" y1="273.5" x2="103.9" y2="384"/>
+    <line class="st2" x1="142.2" y1="273.5" x2="142.2" y2="384"/>
+    <g>
+      <path class="st7" d="M523.1,144.8h-164"/>
+      <circle cx="359.3" cy="144.8" r="2.6"/>
+    </g>
+    <g>
+      <path class="st7" d="M1.1,131.5h228.1"/>
+      <path d="M229.1,134.1c1.5,0,2.6-1.2,2.6-2.6s-1.2-2.6-2.6-2.6-2.6,1.2-2.6,2.6,1.2,2.6,2.6,2.6Z"/>
+    </g>
+    <g>
+      <path class="st7" d="M1.1,211.1h217.1"/>
+      <path d="M218.1,213.8c1.5,0,2.6-1.2,2.6-2.6s-1.2-2.6-2.6-2.6-2.6,1.2-2.6,2.6,1.2,2.6,2.6,2.6Z"/>
+    </g>
+    <g>
+      <path class="st7" d="M1.1,264.5h102.2"/>
+      <circle cx="103.2" cy="264.5" r="2.6" transform="translate(-172 334.6) rotate(-83)"/>
+    </g>
+    <g>
+      <path class="st7" d="M1.1,328.4h102.2"/>
+      <circle cx="103.2" cy="328.4" r="2.6"/>
+    </g>
+    <g>
+      <path class="st7" d="M523.1,228.2h-164"/>
+      <circle cx="359.3" cy="228.2" r="2.6"/>
+    </g>
+    <text class="st9" transform="translate(0 124.6)"><tspan x="0" y="0">Eau chaude sanitaire</tspan></text>
+    <text class="st9" transform="translate(472.9 138.8)"><tspan x="0" y="0">Radiateur</tspan></text>
+    <text class="st9" transform="translate(426 222.7)"><tspan x="0" y="0">Plancher chauffant</tspan></text>
+    <text class="st9" transform="translate(0 203.9)"><tspan x="0" y="0">Pompe à chaleur</tspan></text>
+    <text class="st9" transform="translate(0 257.8)"><tspan x="0" y="0">Liaison</tspan></text>
+    <text class="st9" transform="translate(0 310.3)"><tspan x="0" y="0">Sondes </tspan><tspan x="0" y="12">géothermiques</tspan></text>
+  </g>
+</svg>

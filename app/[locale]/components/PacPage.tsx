@@ -85,7 +85,7 @@ export default function PacPage({page, locale}: {page: PacPageData; locale: AppL
             </p>
           )}
           <Link
-            href={getLocalizedPath(locale, 'devis')}
+            href={getLocalizedPath(locale, 'demarrer')}
             className="inline-block bg-wdd-black text-wdd-yellow px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors mb-16"
           >
             {page.heroCtaLabel || 'Demander un devis'}
@@ -223,7 +223,7 @@ export default function PacPage({page, locale}: {page: PacPageData; locale: AppL
             {page.ctaTitle || 'Prêt à passer à la géothermie ?'}
           </h2>
           <Link
-            href={getLocalizedPath(locale, 'devis')}
+            href={getLocalizedPath(locale, 'demarrer')}
             className="inline-block bg-wdd-black text-wdd-yellow px-8 py-4 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
             {page.ctaLabel || 'Demander un devis gratuit'}

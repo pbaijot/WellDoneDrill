@@ -7,6 +7,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ParticuliersPageData} from '@/src/lib/particuliersPage'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
+import DemarrerCTA from './DemarrerCTA'
 import {
   BELGIUM_PROVINCES,
   SVG_W,
@@ -90,13 +91,6 @@ const DEFAULT_PRIMES = [
   {region: "Flandre", title: "Premie warmtepomp — variable", body: "Steun voor de installatie van een geothermische warmtepomp in woningen."},
 ]
 
-const DEFAULT_ETAPES = [
-  {title: "Devis gratuit", body: "Premier contact, analyse de vos besoins. Réponse sous 48h."},
-  {title: "Étude de faisabilité", body: "Analyse géologique de votre terrain. Gratuite. Sans engagement."},
-  {title: "Permis & démarches", body: "WellDoneDrill s'occupe de toutes les autorisations à votre place."},
-  {title: "Forage", body: "1 à 3 jours d'intervention. Impact minimal, terrain remis en état."},
-  {title: "Mise en service", body: "Votre chauffagiste connecte la PAC. Vous basculez sur la géothermie."},
-]
 
 /* ─────────────────────────────────────────────
    SUB-COMPONENTS
@@ -153,10 +147,10 @@ function RoiLine({label, value, highlight}: {label: string; value: string; highl
 
 function GeoScheme() {
   const [phase, setPhase] = useState(0)
-  // 0=all off (reset) | 1=sol | 2=pipe1 | 3=pac | 4=pipe2 | 5=maison | 6=hold all
-  const durations = [700, 1400, 800, 1400, 800, 1600, 1600]
+  // 0=off | 1=sol | 2=pipe1 | 3=pac | 4=pipe2 | 5=maison | 6=hold → restart
+  const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
   useEffect(() => {
-    const t = setTimeout(() => setPhase(p => (p + 1) % 7), durations[phase] ?? 1200)
+    const t = setTimeout(() => setPhase(p => (p + 1) % 7), durations[phase] ?? 1400)
     return () => clearTimeout(t)
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase])
@@ -167,62 +161,59 @@ function GeoScheme() {
   const pipe2Lit  = phase >= 4
   const maisonLit = phase >= 5
 
-  const TRANS_NODE = 'transition-all duration-[600ms] ease-in-out'
-  const TRANS_TEXT = 'transition-colors duration-[600ms] ease-in-out'
+  const NODE_DUR = 'duration-[1100ms]'
 
-  const Node = ({lit, icon, label, sub}: {lit: boolean; icon: React.ReactNode; label: string; sub: string}) => (
-    <div className="flex items-center gap-5">
-      <div className={`w-14 h-14 flex-shrink-0 flex items-center justify-center ${TRANS_NODE} ${lit ? 'bg-wdd-yellow' : 'bg-black/5'}`}>
-        <div className={`${TRANS_TEXT} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{icon}</div>
+  const SchemeNode = ({lit, icon, label, sub, stat}: {lit: boolean; icon: React.ReactNode; label: string; sub: string; stat: string}) => (
+    <div className="flex-1 flex flex-col items-center text-center gap-3">
+      <div className={`w-14 h-14 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out ${lit ? 'bg-wdd-yellow' : 'bg-black/6'} rounded-sm`}>
+        <div className={`transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{icon}</div>
       </div>
       <div>
-        <div className={`text-sm font-bold leading-snug ${TRANS_TEXT} ${lit ? 'text-wdd-black' : 'text-black/25'}`}>{label}</div>
-        <div className={`text-xs font-light mt-0.5 ${TRANS_TEXT} ${lit ? 'text-black/50' : 'text-black/12'}`}>{sub}</div>
+        <div className={`text-sm font-bold leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{label}</div>
+        <div className={`text-xs font-light mt-0.5 leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-black/50' : 'text-black/10'}`}>{sub}</div>
+        <div className={`text-xs font-black mt-1.5 tabular-nums transition-colors ${NODE_DUR} ${lit ? 'text-wdd-mud' : 'text-black/10'}`}>{stat}</div>
       </div>
     </div>
   )
 
-  const Pipe = ({lit}: {lit: boolean}) => (
-    <div className="ml-7 flex flex-col items-center" style={{width: 2, height: 48}}>
-      <div className="w-full flex-1 bg-black/8 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-wdd-yellow"
-          style={{
-            transformOrigin: 'bottom',
-            transform: lit ? 'scaleY(1)' : 'scaleY(0)',
-            transition: lit ? 'transform 750ms cubic-bezier(0.4,0,0.2,1)' : 'transform 600ms cubic-bezier(0.4,0,0.2,1)',
-          }}
-        />
+  const SchemePipe = ({lit}: {lit: boolean}) => (
+    <div className="flex flex-col items-center pt-7 w-14 shrink-0">
+      <div className="flex items-center w-full">
+        <div className="flex-1 h-px bg-black/8 relative overflow-hidden">
+          <div
+            className="absolute inset-0 bg-wdd-yellow origin-left"
+            style={{
+              transform: lit ? 'scaleX(1)' : 'scaleX(0)',
+              transition: lit ? 'transform 1000ms cubic-bezier(0.4,0,0.2,1)' : 'transform 500ms ease-in-out',
+            }}
+          />
+        </div>
+        <div style={{fontSize: 7, lineHeight: 1, color: lit ? '#FFD94F' : 'rgba(0,0,0,0.08)', transition: 'color 900ms ease-in-out'}}>▶</div>
       </div>
-      <div
-        style={{
-          fontSize: 7,
-          lineHeight: 1,
-          color: lit ? '#FFD94F' : 'rgba(0,0,0,0.08)',
-          transition: 'color 600ms ease-in-out',
-        }}
-      >▲</div>
     </div>
   )
 
   return (
-    <div className="flex flex-col">
-      <Node lit={maisonLit}
-        label="Votre maison"
-        sub="Chauffage, eau chaude, rafraîchissement"
-        icon={<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>}
-      />
-      <Pipe lit={pipe2Lit} />
-      <Node lit={pacLit}
-        label="Pompe à chaleur"
-        sub="COP 4–5 · amplifie l'énergie captée"
-        icon={<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>}
-      />
-      <Pipe lit={pipe1Lit} />
-      <Node lit={solLit}
+    <div className="flex items-start">
+      <SchemeNode lit={solLit}
         label="Le sol"
-        sub="Énergie constante disponible à 80–200 m"
-        icon={<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>}
+        sub="Énergie constante à 80–200 m"
+        stat="15 °C"
+        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>}
+      />
+      <SchemePipe lit={pipe1Lit} />
+      <SchemeNode lit={pacLit}
+        label="Pompe à chaleur"
+        sub="Amplifie l'énergie captée"
+        stat="COP 4–5"
+        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>}
+      />
+      <SchemePipe lit={pipe2Lit} />
+      <SchemeNode lit={maisonLit}
+        label="Votre maison"
+        sub="Chauffage · Eau · Froid"
+        stat="−70 %"
+        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>}
       />
     </div>
   )
@@ -253,24 +244,6 @@ export default function ParticuliersPage({
     page.primesItems && page.primesItems.length > 0
       ? page.primesItems.map((p) => ({region: p.region ?? '', title: p.title ?? '', body: p.body ?? '', _key: p._key}))
       : DEFAULT_PRIMES
-
-  const etapes =
-    page.etapes && page.etapes.length > 0 ? page.etapes : DEFAULT_ETAPES
-
-  // Image rotation for section "Votre projet"
-  const PROJECT_IMAGES = [
-    '/images/foreuse-wide.jpg',
-    '/images/drillgreen.jpg',
-    '/images/foreuse-close-up.jpg',
-    '/images/drill-close.jpg',
-    '/images/petite-foreuse.jpg',
-  ]
-  const [activeImg, setActiveImg] = useState(0)
-  useEffect(() => {
-    const t = setInterval(() => setActiveImg(i => (i + 1) % PROJECT_IMAGES.length), 3500)
-    return () => clearInterval(t)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
 
   // Calculateur d'économies d'énergie
   const [ecoMode, setEcoMode] = useState<'surface' | 'conso'>('surface')
@@ -358,13 +331,14 @@ export default function ParticuliersPage({
         {/* Couche 1 : fond-terre-2 sur la moitié gauche */}
         <div className="absolute left-0 top-0 bottom-0 w-1/2 hidden lg:block">
           <Image
-            src="/images/fond-terre-2.jpg"
+            src="/images/wdd-geothermie_fermee-terre.webp"
             alt=""
             fill
-            className="object-cover object-center"
+            className="object-cover object-center scale-[1.04]"
+            style={{filter: 'saturate(1.5) blur(0.8px)'}}
             priority
           />
-          <div className="absolute inset-0 bg-wdd-black/60" />
+          <div className="absolute inset-0 bg-wdd-black/30" />
         </div>
         {/* Couche 1b : fallback fond sombre sur mobile */}
         <div className="absolute inset-0 bg-wdd-black lg:hidden" />
@@ -372,7 +346,7 @@ export default function ParticuliersPage({
         {/* Couche 3 : photo foreuse sur la moitié droite */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
           <Image
-            src="/images/drillgreen.jpg"
+            src="/images/WDD-particuliers.webp"
             alt="Foreuse WellDoneDrill sur chantier"
             fill
             className="object-cover object-center"
@@ -405,13 +379,6 @@ export default function ParticuliersPage({
         <div className="relative z-[3] max-w-screen-2xl mx-auto h-[90vh] flex items-center">
           <div className="w-full lg:w-1/2 lg:pr-12 py-24">
 
-            {/* Social proof micro-line */}
-            <div className="flex items-center gap-3 mb-7">
-              <span className="text-xs font-light text-white/55">
-                500+ familles chauffées en Belgique &amp; Luxembourg
-              </span>
-            </div>
-
             <h1 className="text-4xl md:text-5xl font-bold text-white leading-[1.08] mb-6">
               {page.heroTitle ?? (
                 <>
@@ -421,103 +388,65 @@ export default function ParticuliersPage({
               )}
             </h1>
 
-            <p className="text-base font-light text-white/65 leading-relaxed max-w-lg mb-10">
+            <p className="text-base font-normal text-white leading-relaxed max-w-lg mb-10">
               {page.heroSubtitle ??
                 "WellDoneDrill fore vos sondes géothermiques. Votre maison se chauffe et se rafraîchit avec l'énergie du sol — jusqu'à 70 % d'économies sur vos factures."}
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-3 mb-10">
+              <Link
+                href={getLocalizedPath(locale, 'demarrer')}
+                className="bg-white text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-white hover:bg-transparent hover:text-white transition-colors rounded-sm"
+              >
+                {page.heroCtaDevisLabel ?? "Recevoir un devis immédiatement"}
+              </Link>
               <a
                 href="#calculateur"
-                className="bg-white text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-white hover:bg-transparent hover:text-white transition-colors"
+                className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors rounded-sm"
               >
                 {page.heroCtaCalculLabel ?? "Calculer mes économies"}
               </a>
-              <Link
-                href={getLocalizedPath(locale, 'devis')}
-                className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors"
-              >
-                {page.heroCtaDevisLabel ?? "Devis instantané"}
-              </Link>
             </div>
 
-            {/* Stats strip */}
-            <div className="grid grid-cols-3 gap-0 border-t border-white/15 pt-8 max-w-sm">
-              {stats.slice(0, 3).map((stat, i) => (
-                <div
-                  key={stat._key ?? i}
-                  className={'pr-6 ' + (i > 0 ? 'pl-6 border-l border-white/10' : '')}
-                >
-                  <div className="text-3xl font-bold text-white leading-none">{stat.value}</div>
-                  <div className="text-xs font-light text-white/40 uppercase tracking-wider mt-1 leading-snug">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          3. MARCHÉ + TECHNOLOGIE (fusionnés)
-          Gauche : contexte / pourquoi changer
-          Droite : comment ça marche + liens
+          2. CONTEXTE + VIDÉO
       ══════════════════════════════════════ */}
-      <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
+      <section className="bg-white py-[7.5rem] px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="grid lg:grid-cols-[1fr_1px_1fr]">
+          <div className="flex flex-col lg:flex-row lg:gap-12">
 
-            {/* GAUCHE — Contexte marché */}
-            <div className="flex flex-col justify-center pr-16 py-4">
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-5 h-0.5 bg-wdd-yellow" />
-                <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-                  Contexte énergétique
-                </span>
-              </div>
+            {/* Left — text + schematic */}
+            <div className="w-full lg:w-1/2 flex flex-col">
               <h2 className="text-4xl font-bold leading-tight mb-6">
                 {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
               </h2>
-              <p className="text-base font-light text-black/60 leading-8 mb-8">
+              <p className="text-base font-light text-black/60 leading-8 mb-12">
                 {page.problemBody ??
                   "Le prix du gaz a bondi de 180 % depuis 2021. L'Union européenne interdit les chaudières fossiles neuves dès 2026. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
-              <ul className="grid gap-3">
-                {[
-                  {marker: '+180 %', text: "prix du gaz naturel depuis 2021"},
-                  {marker: '2026',   text: "fin des chaudières gaz neuves — directive UE"},
-                  {marker: 'PEB',    text: "pénalisé sans rénovation énergétique"},
-                ].map((item) => (
-                  <li key={item.text} className="flex items-baseline gap-4">
-                    <span className="text-sm font-bold text-wdd-black w-16 flex-shrink-0 tabular-nums">{item.marker}</span>
-                    <span className="text-sm font-light text-black/65 leading-snug">{item.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* SÉPARATEUR CENTRÉ */}
-            <div className="hidden lg:block bg-black/8" />
-
-            {/* DROITE — Schéma animé */}
-            <div className="pl-16 flex flex-col justify-center py-4">
-
-              {/* Schéma animé sol → PAC → maison */}
-              <div className="mb-10">
+              <div className="border-t border-black/8 pt-10 mt-auto">
                 <GeoScheme />
               </div>
+            </div>
 
-              {/* Liens discrets */}
-              <div className="flex flex-col gap-2 border-t border-black/8 pt-6">
-                <Link href={getLocalizedPath(locale, 'geo_fermee')} className="text-sm font-light text-black/45 hover:text-wdd-black transition-colors flex items-center gap-2">
-                  <span className="text-wdd-yellow">→</span> Géothermie fermée — en savoir plus
-                </Link>
-                <Link href={getLocalizedPath(locale, 'pac')} className="text-sm font-light text-black/45 hover:text-wdd-black transition-colors flex items-center gap-2">
-                  <span className="text-wdd-yellow">→</span> Pompe à chaleur géothermique — en savoir plus
-                </Link>
-              </div>
+            {/* Right — video, stretches to full column height */}
+            <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm">
+              <Image
+                src="/images/foreuse-wide.jpg"
+                alt=""
+                fill
+                className="object-cover object-center"
+              />
+              <video
+                src="/videos/mrly-comp.mov"
+                autoPlay loop muted playsInline
+                className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
+              />
             </div>
 
           </div>
@@ -527,131 +456,56 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           3. POURQUOI LA GÉOTHERMIE
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-clay min-h-screen flex flex-col justify-center px-8 md:px-16">
+      <section className="bg-wdd-clay py-[7.5rem] px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-5 h-0.5 bg-wdd-yellow" />
-            <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-              Pourquoi la géothermie
-            </span>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
-            <h2 className="text-4xl font-bold leading-tight">
-              {page.whyTitle ?? "Six raisons de passer à la géothermie cette année."}
-            </h2>
-            {page.whyIntro && (
-              <p className="text-base font-light text-black/70 leading-8 self-end whitespace-pre-line">
-                {page.whyIntro}
-              </p>
-            )}
-          </div>
+          <h2 className="text-4xl font-bold leading-tight mb-10">
+            {page.whyTitle ?? "Six raisons de passer à la géothermie cette année."}
+          </h2>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3">
-            {whyItems.map((item, i) => {
-              const icons = [
-                /* économies */
-                <svg key="eco" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
-                /* zéro fossile */
-                <svg key="leaf" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
-                /* chaud/frais */
-                <svg key="temp" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
-                /* patrimoine */
-                <svg key="house" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M15 21V12H9v9"/><path d="M16 5l3 3"/></svg>,
-                /* indépendance */
-                <svg key="shield" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
-                /* durabilité */
-                <svg key="clock" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
-              ]
-              const icon = icons[i] ?? icons[0]
-              return (
-                <div
-                  key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
-                  className="group relative px-8 py-10 border-t border-black/8 overflow-hidden cursor-default"
-                >
-                  {/* Numéro watermark décoratif */}
-                  <span className="absolute top-5 right-7 text-8xl font-black leading-none select-none pointer-events-none text-black/[0.035]">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-
-                  {/* Icône dans carré jaune */}
-                  <div className="w-10 h-10 bg-wdd-yellow flex items-center justify-center text-wdd-black mb-6 flex-shrink-0">
-                    {icon}
-                  </div>
-
-                  {/* Titre — glisse légèrement au hover */}
-                  <h3 className="text-base font-bold mb-3 leading-snug group-hover:translate-x-1.5 transition-transform duration-200">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm font-light text-black/55 leading-7">
-                    {item.body}
-                  </p>
-
-                  {/* Barre jaune gauche au hover */}
-                  <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-wdd-yellow scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-bottom" />
+          {(() => {
+            const ICONS = [
+              <svg key="eco" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
+              <svg key="leaf" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
+              <svg key="temp" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
+              <svg key="house" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M15 21V12H9v9"/><path d="M16 5l3 3"/></svg>,
+              <svg key="shield" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
+              <svg key="clock" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
+            ]
+            const ICON_BGS = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud', 'bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'] as const
+            return (
+              <>
+                <div className="grid lg:grid-cols-2 gap-2">
+                  {whyItems.map((item, i) => (
+                    <div
+                      key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
+                      className="grid grid-cols-[5rem_1fr_2fr] bg-white rounded-sm overflow-hidden"
+                    >
+                      <div className={`flex items-center justify-center self-stretch ${ICON_BGS[i % 3]}`}>
+                        <div className="text-wdd-black">{ICONS[i] ?? ICONS[0]}</div>
+                      </div>
+                      <h3 className="text-sm font-bold leading-snug py-7 pl-5 self-start">{item.title}</h3>
+                      <p className="text-sm font-light text-black/50 leading-relaxed py-7 pr-5 self-start">{item.body}</p>
+                    </div>
+                  ))}
                 </div>
-              )
-            })}
-          </div>
+                <div className="mt-10">
+                  <Link
+                    href={getLocalizedPath(locale, 'demarrer')}
+                    className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
+                  >
+                    Démarrer mon projet <span>→</span>
+                  </Link>
+                </div>
+              </>
+            )
+          })()}
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          4. VOTRE PROJET DE A À Z
+          4. NOS PROJETS EN BELGIQUE
       ══════════════════════════════════════ */}
-      <section className="bg-white min-h-screen relative overflow-hidden">
-
-        {/* RIGHT — clean drill, pleine moitié droite */}
-        <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-1/2">
-          <Image src="/images/clean-drill.jpg" alt="Foreuse WellDoneDrill" fill className="object-cover object-center" />
-        </div>
-
-        {/* LEFT — fond beige, texte sombre, aligné comme le reste */}
-        <div className="py-24 px-8 md:px-16">
-          <div className="max-w-screen-2xl mx-auto w-full">
-            <div className="lg:w-1/2 lg:pr-16">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-5 h-0.5 bg-wdd-yellow" />
-                <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-                  Votre projet, de A à Z
-                </span>
-              </div>
-              <h2 className="text-4xl font-bold leading-tight mb-10">
-                Votre projet de A à Z<br />avec WellDoneDrill.
-              </h2>
-              <div>
-                {etapes.map((etape, i) => (
-                  <div
-                    key={('_key' in etape ? (etape._key as string | undefined) : undefined) ?? i}
-                    className="flex gap-8 py-7 border-b border-black/8 last:border-b-0"
-                  >
-                    <span className="text-4xl font-black text-black/[0.07] tabular-nums leading-none flex-shrink-0 w-12 pt-0.5">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <div>
-                      <h3 className="text-base font-bold mb-2 leading-snug">{etape.title}</h3>
-                      <p className="text-sm font-light text-black/55 leading-7">{etape.body}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-10">
-                <Link
-                  href={getLocalizedPath(locale, 'devis')}
-                  className="bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
-                >
-                  Demander un devis gratuit
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Image mobile */}
-        <div className="lg:hidden relative h-72">
-          <Image src="/images/clean-drill.jpg" alt="Foreuse WellDoneDrill" fill className="object-cover object-center" />
-        </div>
-
-      </section>
+      <ProjetsSection locale={locale} chantiers={chantiers} />
 
       {/* ══════════════════════════════════════
           5. CALCULATEUR D'ÉCONOMIES
@@ -659,13 +513,6 @@ export default function ParticuliersPage({
       <section id="calculateur" className="bg-wdd-clay min-h-screen flex flex-col justify-center px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
 
-          {/* Header */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-5 h-0.5 bg-wdd-yellow" />
-            <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-              Calculateur d&apos;économies
-            </span>
-          </div>
           <div className="grid lg:grid-cols-2 gap-12 mb-14">
             <h2 className="text-4xl font-bold leading-tight">
               Combien pourriez-vous économiser ?
@@ -687,7 +534,7 @@ export default function ParticuliersPage({
                 <div className="flex gap-1.5">
                   {([['surface','Ma surface (m²)'],['conso','Ma consommation (MWh/an)']] as const).map(([v, l]) => (
                     <button key={v} onClick={() => setEcoMode(v)}
-                      className={`px-4 py-2.5 text-sm font-bold transition-colors ${ecoMode === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
+                      className={`px-4 py-2.5 text-sm font-bold transition-colors rounded-sm ${ecoMode === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
                       {l}
                     </button>
                   ))}
@@ -733,7 +580,7 @@ export default function ParticuliersPage({
                 <div className="flex gap-1.5">
                   {([['gaz','Gaz naturel'],['mazout','Mazout'],['elec','Électrique']] as const).map(([v, l]) => (
                     <button key={v} onClick={() => setEcoEnergie(v)}
-                      className={`px-4 py-2.5 text-sm font-bold transition-colors ${ecoEnergie === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
+                      className={`px-4 py-2.5 text-sm font-bold transition-colors rounded-sm ${ecoEnergie === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
                       {l}
                     </button>
                   ))}
@@ -753,7 +600,7 @@ export default function ParticuliersPage({
                       icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><circle cx="12" cy="6" r="2"/></svg> },
                   ].map(p => (
                     <button key={p.label} onClick={p.toggle}
-                      className={`flex items-center gap-2 px-4 py-2.5 text-sm font-bold transition-colors ${p.active ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
+                      className={`flex items-center gap-2 px-4 py-2.5 text-sm font-bold transition-colors rounded-sm ${p.active ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
                       {p.icon}{p.label}
                     </button>
                   ))}
@@ -762,7 +609,7 @@ export default function ParticuliersPage({
             </div>
 
             {/* ── Résultats ── */}
-            <div className="bg-white border border-black/8 p-8 flex flex-col">
+            <div className="bg-white border border-black/8 p-8 flex flex-col rounded-sm">
               <div className="text-[10px] font-bold uppercase tracking-widest text-black/35 mb-6">
                 Économies estimées / an
               </div>
@@ -824,104 +671,18 @@ export default function ParticuliersPage({
       </section>
 
       {/* ══════════════════════════════════════
-          6. PASSEZ À L'ÉTAPE SUIVANTE — devis
+          6. CTA DÉMARRER
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-black min-h-screen flex flex-col justify-center px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* Gauche — accroche */}
-          <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-5 h-0.5 bg-wdd-yellow" />
-              <span className="text-xs font-light tracking-widest text-wdd-yellow/40 uppercase">
-                Passez à l&apos;étape suivante
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-              Ces chiffres vous parlent ?<br />Obtenez votre devis précis.
-            </h2>
-            <p className="text-base font-light text-white/55 leading-8 mb-10">
-              Nos experts analysent la géologie de votre terrain, votre installation actuelle et vos besoins énergétiques. Devis complet sous 48h, gratuit et sans engagement.
-            </p>
-            <div className="grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
-              {[
-                {value: 'Gratuit', label: 'Étude de faisabilité'},
-                {value: '48h', label: 'Délai de réponse'},
-                {value: '0€', label: "Sans engagement"},
-              ].map(s => (
-                <div key={s.label}>
-                  <div className="text-2xl font-bold text-wdd-yellow">{s.value}</div>
-                  <div className="text-xs font-light text-white/40 mt-1 leading-snug">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Droite — formulaire */}
-          <div className="bg-white/5 border border-white/10 p-8 lg:p-10">
-            <div className="text-xs font-bold uppercase tracking-widest text-white/30 mb-6">
-              Votre projet en quelques lignes
-            </div>
-            <div className="flex flex-col gap-3">
-              <div className="grid grid-cols-2 gap-3">
-                <input type="text" placeholder="Prénom"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-                <input type="text" placeholder="Nom"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <input type="email" placeholder="Email"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-                <input type="tel" placeholder="Téléphone"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-              </div>
-              <input type="text" placeholder="Adresse du bien"
-                className="w-full bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-              />
-              <div className="grid grid-cols-[120px_1fr] gap-3">
-                <input type="text" placeholder="Code postal"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-                <input type="text" placeholder="Ville"
-                  className="bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors"
-                />
-              </div>
-              <textarea placeholder="Informations complémentaires (type de chauffage actuel, superficie…)" rows={3}
-                className="w-full bg-white/8 border border-white/12 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-wdd-yellow/50 transition-colors resize-none"
-              />
-              <Link
-                href={getLocalizedPath(locale, 'devis')}
-                className="w-full text-center bg-wdd-yellow text-wdd-black px-6 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors mt-1"
-              >
-                Recevoir mon devis précis →
-              </Link>
-            </div>
-          </div>
-
-        </div>
-      </section>
+      <DemarrerCTA locale={locale} />
 
       {/* ══════════════════════════════════════
-          7. NOS PROJETS EN BELGIQUE
-      ══════════════════════════════════════ */}
-      <ProjetsSection locale={locale} chantiers={chantiers} />
-
-      {/* ══════════════════════════════════════
-          8. FAQ
+          7. FAQ
           Objectif : lever les derniers freins
           avant la conversion finale
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-clay min-h-screen flex flex-col justify-center px-8 md:px-16">
+      <section className="bg-wdd-clay py-24 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-3 gap-16">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-5 h-0.5 bg-wdd-yellow" />
-              <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">FAQ</span>
-            </div>
             <h2 className="text-3xl font-bold mb-4 leading-tight">
               {page.faqTitle ?? "Vos questions, nos réponses."}
             </h2>
@@ -929,8 +690,8 @@ export default function ParticuliersPage({
               Une question ne figure pas ici ? Contactez directement notre équipe.
             </p>
             <Link
-              href={getLocalizedPath(locale, 'devis')}
-              className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
+              href={getLocalizedPath(locale, 'demarrer')}
+              className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
               Poser ma question
             </Link>
@@ -952,13 +713,13 @@ export default function ParticuliersPage({
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-wdd-black border-t border-white/10 px-4 py-3 flex items-center gap-3 shadow-2xl">
         <a
           href="#calculateur"
-          className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow"
+          className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow rounded-sm"
         >
           Calculer mes économies
         </a>
         <Link
-          href={getLocalizedPath(locale, 'devis')}
-          className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors"
+          href={getLocalizedPath(locale, 'demarrer')}
+          className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors rounded-sm"
         >
           Devis gratuit
         </Link>
@@ -1015,13 +776,6 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
     <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
       <div className="max-w-screen-2xl mx-auto w-full">
 
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-5 h-0.5 bg-wdd-yellow" />
-          <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-            Nos réalisations
-          </span>
-        </div>
-
         <div className="flex items-end justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold leading-tight">
             Nos projets en <span className="text-wdd-mud">Belgique</span>
@@ -1072,33 +826,35 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
             </div>
           </div>
 
-          {/* ── Cards ── */}
+          {/* ── Cards — fixed height prevents layout shift on province change ── */}
           <div className="flex flex-col">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`${selectedId ?? '__all__'}-${safePage}`}
-                initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                exit={{opacity: 0}}
-                transition={{duration: 0.18}}
-                className="grid grid-cols-2 gap-3"
-              >
-                {displayed.length === 0 ? (
-                  <div className="col-span-2 py-16 text-center text-sm font-light text-black/35">
-                    Aucun projet répertorié dans cette province pour le moment.
-                  </div>
-                ) : (
-                  <>
-                    {displayed.map((c) => (
-                      <ProjetCard key={c._id} chantier={c} />
-                    ))}
-                    {Array.from({length: PER_PAGE - displayed.length}).map((_, i) => (
-                      <div key={`ph-${i}`} className="bg-wdd-clay/30 aspect-[3/4]" />
-                    ))}
-                  </>
-                )}
-              </motion.div>
-            </AnimatePresence>
+            <div className="min-h-[520px] grid grid-cols-2 gap-3 content-start relative">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={`${selectedId ?? '__all__'}-${safePage}`}
+                  initial={{opacity: 0}}
+                  animate={{opacity: 1}}
+                  exit={{opacity: 0}}
+                  transition={{duration: 0.18}}
+                  className="contents"
+                >
+                  {displayed.length === 0 ? (
+                    <div className="col-span-2 h-[520px] flex items-center justify-center text-sm font-light text-black/35">
+                      Aucun projet répertorié dans cette province pour le moment.
+                    </div>
+                  ) : (
+                    <>
+                      {displayed.map((c) => (
+                        <ProjetCard key={c._id} chantier={c} />
+                      ))}
+                      {Array.from({length: PER_PAGE - displayed.length}).map((_, i) => (
+                        <div key={`ph-${i}`} className="bg-wdd-clay/30 h-[248px] rounded-sm" />
+                      ))}
+                    </>
+                  )}
+                </motion.div>
+              </AnimatePresence>
+            </div>
 
             {/* Dots + CTA */}
             <div className="mt-6 flex items-center justify-between gap-4">
@@ -1136,9 +892,9 @@ function ProjetCard({chantier: c}: {chantier: Chantier}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
 
   return (
-    <div className="group bg-wdd-clay overflow-hidden flex flex-col hover:bg-wdd-black transition-colors duration-200">
+    <div className="group bg-wdd-clay overflow-hidden flex flex-col h-[248px] rounded-sm">
       {imgUrl ? (
-        <div className="relative h-40 overflow-hidden">
+        <div className="relative h-32 overflow-hidden shrink-0">
           <Image
             src={imgUrl}
             alt={c.title ?? 'Projet WellDoneDrill'}
@@ -1148,47 +904,37 @@ function ProjetCard({chantier: c}: {chantier: Chantier}) {
           />
         </div>
       ) : (
-        <div className="h-40 bg-black/6 group-hover:bg-white/5 flex items-center justify-center transition-colors">
-          <span className="text-xl font-bold text-black/8 group-hover:text-white/8 select-none">WDD</span>
+        <div className="h-32 bg-black/4 flex items-center justify-center shrink-0">
+          <span className="text-xl font-bold text-black/8 select-none">WDD</span>
         </div>
       )}
 
-      <div className="p-4 flex flex-col gap-2 flex-1 relative overflow-hidden">
-        <span className="absolute top-3 right-3 text-3xl font-bold text-black/[0.04] group-hover:text-white/[0.04] transition-colors select-none">
-          {c.year ?? '—'}
-        </span>
-
+      <div className="p-4 flex flex-col gap-2 flex-1 overflow-hidden">
         <div className="flex flex-wrap gap-1">
           {c.type && (
-            <span
-              className={`text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 ${
-                c.type === 'fermee'
-                  ? 'bg-wdd-yellow text-wdd-black'
-                  : 'bg-wdd-black text-wdd-yellow group-hover:bg-wdd-yellow group-hover:text-wdd-black'
-              } transition-colors`}
-            >
+            <span className={`text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 ${
+              c.type === 'fermee'
+                ? 'bg-wdd-yellow text-wdd-black'
+                : 'border border-black/20 text-black/50'
+            }`}>
               {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
             </span>
           )}
           {c.sector && (
-            <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 bg-black/6 text-black/45 group-hover:bg-white/10 group-hover:text-white/45 transition-colors">
+            <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 border border-black/12 text-black/40">
               {sectorLabel(c.sector)}
             </span>
           )}
         </div>
-
-        <h3 className="text-sm font-bold leading-snug group-hover:text-white transition-colors line-clamp-2">
+        <h3 className="text-sm font-bold leading-snug line-clamp-3">
           {c.title ?? 'Projet géothermique'}
         </h3>
-
         {(c.location || c.province) && (
-          <p className="text-xs font-light text-black/45 group-hover:text-white/40 transition-colors truncate mt-auto">
+          <p className="text-xs font-light text-black/40 truncate mt-auto">
             {[c.location, c.province].filter(Boolean).join(' · ')}
           </p>
         )}
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-wdd-yellow scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
     </div>
   )
 }

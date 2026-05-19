@@ -13,16 +13,11 @@ export type ProPageData = {
   heroCtaLabel?: string
   valueTitle?: string
   valueIntro?: string
+  whyTitle?: string
   valueItems?: ProItem[]
   partnershipTitle?: string
   partnershipIntro?: string
   partnershipSteps?: ProItem[]
-  offerTitle?: string
-  offerIntro?: string
-  offerItems?: ProItem[]
-  submissionTitle?: string
-  submissionIntro?: string
-  submissionCtaLabel?: string
   faqTitle?: string
   faqs?: ProFaq[]
   seoTitle?: string
@@ -33,10 +28,8 @@ const query = `
 *[_type == "proPage" && locale == $locale && routeKey == $routeKey][0]{
   _id, locale, routeKey,
   heroEyebrow, heroTitle, heroSubtitle, heroCtaLabel,
-  valueTitle, valueIntro, valueItems,
+  valueTitle, valueIntro, whyTitle, valueItems,
   partnershipTitle, partnershipIntro, partnershipSteps,
-  offerTitle, offerIntro, offerItems,
-  submissionTitle, submissionIntro, submissionCtaLabel,
   faqTitle, faqs,
   seoTitle, seoDescription
 }

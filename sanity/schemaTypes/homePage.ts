@@ -221,6 +221,27 @@ const homePage = defineType({
     },
 
     {
+      name: 'faqs',
+      title: 'FAQ',
+      type: 'object',
+      fields: [
+        {name: 'title', title: 'Titre', type: 'string'},
+        {
+          name: 'items',
+          title: 'Questions',
+          type: 'array',
+          of: [{
+            type: 'object',
+            fields: [
+              {name: 'question', title: 'Question', type: 'string'},
+              {name: 'answer', title: 'Réponse', type: 'text', rows: 4},
+            ],
+          }],
+        },
+      ],
+    },
+
+    {
       name: 'cta',
       title: 'CTA final',
       type: 'object',

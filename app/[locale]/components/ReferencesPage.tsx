@@ -202,7 +202,7 @@ export default function ReferencesPage({
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0.5">
               {chantiers.map((c) => (
-                <ChantierCard key={c._id} chantier={c} />
+                <ChantierCard key={c._id} chantier={c} locale={locale} />
               ))}
             </div>
           )}
@@ -221,7 +221,7 @@ export default function ReferencesPage({
             <span className="text-wdd-yellow">chantier géothermique ?</span>
           </h2>
           <Link
-            href={getLocalizedPath(locale, 'devis')}
+            href={getLocalizedPath(locale, 'demarrer')}
             className="inline-block bg-wdd-yellow text-wdd-black px-8 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
           >
             Demandez un devis gratuit
@@ -234,11 +234,12 @@ export default function ReferencesPage({
 
 /* ─── Project card ─────────────────────────────────────────── */
 
-function ChantierCard({chantier: c}: {chantier: Chantier}) {
+function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocale}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
+  const href = c.slug ? getProvincePageUrl(locale, c.slug) : undefined
 
-  return (
-    <div className="group bg-wdd-clay relative overflow-hidden flex flex-col hover:bg-wdd-black transition-colors duration-200">
+  const inner = (
+    <div className="group bg-wdd-clay relative overflow-hidden flex flex-col hover:bg-wdd-black transition-colors duration-200 h-full">
       {imgUrl ? (
         <div className="relative h-48 overflow-hidden">
           <Image
@@ -301,6 +302,10 @@ function ChantierCard({chantier: c}: {chantier: Chantier}) {
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-wdd-yellow scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
     </div>
   )
+
+  return href ? (
+    <Link href={href} className="flex flex-col">{inner}</Link>
+  ) : inner
 }
 
 /* ─── Empty state ──────────────────────────────────────────── */

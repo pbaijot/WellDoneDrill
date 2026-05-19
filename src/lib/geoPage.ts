@@ -12,6 +12,9 @@ export type GeoFaq = {
   answer?: string
 }
 
+export type GeoStat = {_key?: string; value?: string; label?: string}
+export type GeoPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
+
 export type GeoPageData = {
   _id: string
   locale: string
@@ -21,56 +24,38 @@ export type GeoPageData = {
   heroLine3?: string
   heroSubtitle?: string
   heroCtaLabel?: string
+  heroStats?: GeoStat[]
+  heroPanelItems?: GeoPanelItem[]
   introTitle?: string
   introBody1?: string
   introBody2?: string
-  introCtaLabel?: string
   howTitle?: string
-  howIntro?: string
   howSteps?: GeoStep[]
-  howCtaLabel?: string
-  projectTitle?: string
-  projectSteps?: GeoStep[]
-  projectCtaLabel?: string
-  faqIntroTitle?: string
-  faqIntroBody?: string
   faqTitle?: string
   faqs?: GeoFaq[]
-  finalCtaTitle?: string
-  finalCtaLabel?: string
+  particularEyebrow?: string
+  particularTitle?: string
+  particularBody?: string
+  particularCta?: string
+  proEyebrow?: string
+  proTitle?: string
+  proBody?: string
+  proCta?: string
   seoTitle?: string
   seoDescription?: string
 }
 
 const query = `
 *[_type == "geoPage" && locale == $locale && routeKey == $routeKey][0]{
-  _id,
-  locale,
-  routeKey,
-  heroLine1,
-  heroLine2,
-  heroLine3,
-  heroSubtitle,
-  heroCtaLabel,
-  introTitle,
-  introBody1,
-  introBody2,
-  introCtaLabel,
-  howTitle,
-  howIntro,
-  howSteps,
-  howCtaLabel,
-  projectTitle,
-  projectSteps,
-  projectCtaLabel,
-  faqIntroTitle,
-  faqIntroBody,
-  faqTitle,
-  faqs,
-  finalCtaTitle,
-  finalCtaLabel,
-  seoTitle,
-  seoDescription
+  _id, locale, routeKey,
+  heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel,
+  heroStats, heroPanelItems,
+  introTitle, introBody1, introBody2,
+  howTitle, howSteps,
+  faqTitle, faqs,
+  particularEyebrow, particularTitle, particularBody, particularCta,
+  proEyebrow, proTitle, proBody, proCta,
+  seoTitle, seoDescription
 }
 `
 

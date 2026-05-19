@@ -60,6 +60,10 @@ export type HomePageData = {
     highlight?: string
     items?: string[]
   }
+  faqs?: {
+    title?: string
+    items?: {question?: string; answer?: string}[]
+  }
   blog?: {
     eyebrow?: string
     title?: string
@@ -85,6 +89,7 @@ const homePageQuery = `
   audiences,
   machine,
   clients,
+  faqs,
   blog,
   cta
 }

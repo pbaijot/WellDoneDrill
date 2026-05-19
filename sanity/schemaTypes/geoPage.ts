@@ -25,14 +25,37 @@ const geoPage = defineType({
     defineField({name: 'heroLine3', title: 'Hero ligne 3', type: 'string'}),
     defineField({name: 'heroSubtitle', title: 'Hero sous-titre', type: 'text', rows: 4}),
     defineField({name: 'heroCtaLabel', title: 'Hero CTA', type: 'string'}),
+    defineField({
+      name: 'heroStats',
+      title: 'Hero — statistiques (3 items)',
+      type: 'array',
+      of: [defineField({
+        name: 'stat', type: 'object',
+        fields: [
+          defineField({name: 'value', title: 'Valeur', type: 'string'}),
+          defineField({name: 'label', title: 'Label', type: 'string'}),
+        ],
+      })],
+    }),
+    defineField({
+      name: 'heroPanelItems',
+      title: 'Hero — panneau flottant (3 items)',
+      type: 'array',
+      of: [defineField({
+        name: 'panel', type: 'object',
+        fields: [
+          defineField({name: 'label', title: 'Label', type: 'string'}),
+          defineField({name: 'value', title: 'Valeur', type: 'string'}),
+          defineField({name: 'sub', title: 'Sous-texte', type: 'string'}),
+        ],
+      })],
+    }),
 
     defineField({name: 'introTitle', title: 'Titre intro', type: 'string'}),
     defineField({name: 'introBody1', title: 'Texte intro 1', type: 'text', rows: 5}),
     defineField({name: 'introBody2', title: 'Texte intro 2', type: 'text', rows: 5}),
-    defineField({name: 'introCtaLabel', title: 'CTA intro', type: 'string'}),
 
     defineField({name: 'howTitle', title: 'Titre fonctionnement', type: 'string'}),
-    defineField({name: 'howIntro', title: 'Intro fonctionnement', type: 'text', rows: 4}),
     defineField({
       name: 'howSteps',
       title: 'Étapes de fonctionnement',
@@ -49,30 +72,17 @@ const geoPage = defineType({
         }),
       ],
     }),
-    defineField({name: 'howCtaLabel', title: 'CTA fonctionnement', type: 'string'}),
-
-    defineField({name: 'projectTitle', title: 'Titre projet', type: 'string'}),
-    defineField({
-      name: 'projectSteps',
-      title: 'Étapes projet',
-      type: 'array',
-      of: [
-        defineField({
-          name: 'projectStep',
-          title: 'Étape projet',
-          type: 'object',
-          fields: [
-            defineField({name: 'title', title: 'Titre', type: 'string'}),
-            defineField({name: 'body', title: 'Texte', type: 'text', rows: 5}),
-          ],
-        }),
-      ],
-    }),
-    defineField({name: 'projectCtaLabel', title: 'CTA projet', type: 'string'}),
-
-    defineField({name: 'faqIntroTitle', title: 'Titre bloc pédagogique', type: 'string'}),
-    defineField({name: 'faqIntroBody', title: 'Texte bloc pédagogique', type: 'text', rows: 5}),
     defineField({name: 'faqTitle', title: 'Titre FAQ', type: 'string'}),
+
+    defineField({name: 'particularEyebrow', title: 'Audience particuliers — eyebrow', type: 'string'}),
+    defineField({name: 'particularTitle',   title: 'Audience particuliers — titre',   type: 'string'}),
+    defineField({name: 'particularBody',    title: 'Audience particuliers — texte',   type: 'text', rows: 3}),
+    defineField({name: 'particularCta',     title: 'Audience particuliers — CTA',     type: 'string'}),
+
+    defineField({name: 'proEyebrow', title: 'Audience pro — eyebrow', type: 'string'}),
+    defineField({name: 'proTitle',   title: 'Audience pro — titre',   type: 'string'}),
+    defineField({name: 'proBody',    title: 'Audience pro — texte',   type: 'text', rows: 3}),
+    defineField({name: 'proCta',     title: 'Audience pro — CTA',     type: 'string'}),
     defineField({
       name: 'faqs',
       title: 'FAQ',
@@ -89,9 +99,6 @@ const geoPage = defineType({
         }),
       ],
     }),
-
-    defineField({name: 'finalCtaTitle', title: 'Titre CTA final', type: 'string'}),
-    defineField({name: 'finalCtaLabel', title: 'Label CTA final', type: 'string'}),
 
     defineField({name: 'seoTitle', title: 'SEO title', type: 'string'}),
     defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3}),

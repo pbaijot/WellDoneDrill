@@ -140,7 +140,7 @@ export function findProvinceBySlug(slug: string): Province | null {
 
 export function getProvincePageUrl(locale: AppLocale, provinceSlug: string): string {
   const baseSlug: Record<AppLocale, string> = {
-    'be-fr': 'references',
+    'be-fr': 'realisations-geothermie-belgique',
     'be-nl': 'referenties',
     'fr-fr': 'references',
     'lu-fr': 'references',
@@ -154,6 +154,8 @@ export function getProvincePageUrl(locale: AppLocale, provinceSlug: string): str
 export type Chantier = {
   _id: string
   title?: string
+  slug?: string
+  client?: string
   location?: string
   province?: string
   country?: 'BE' | 'FR' | 'LU'
@@ -162,16 +164,19 @@ export type Chantier = {
   depth?: number
   year?: number
   photo?: unknown
+  videoUrl?: string
   description?: string
   featured?: boolean
 }
 
-const CHANTIERS_QUERY = `
-*[_type == "chantier"] | order(year desc) {
-  _id, title, location, province, country,
-  type, sector, depth, year, photo, description, featured
-}
+const CHANTIER_FIELDS = `
+  _id, title, "slug": slug.current, client, location, province, country,
+  type, sector, depth, year, photo, videoUrl, description, featured
 `
+
+const CHANTIERS_QUERY = `*[_type == "chantier"] | order(year desc) { ${CHANTIER_FIELDS} }`
+
+const CHANTIER_BY_SLUG_QUERY = `*[_type == "chantier" && slug.current == $slug][0] { ${CHANTIER_FIELDS} }`
 
 export async function getChantiers(): Promise<Chantier[]> {
   if (!sanity) return []
@@ -179,6 +184,15 @@ export async function getChantiers(): Promise<Chantier[]> {
     return await sanity.fetch(CHANTIERS_QUERY)
   } catch {
     return []
+  }
+}
+
+export async function getChantierBySlug(slug: string): Promise<Chantier | null> {
+  if (!sanity) return null
+  try {
+    return await sanity.fetch(CHANTIER_BY_SLUG_QUERY, {slug})
+  } catch {
+    return null
   }
 }
 

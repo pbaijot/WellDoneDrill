@@ -7,4 +7,6 @@ import mediaItem from './mediaItem'
 import pacPage from './pacPage'
 import particuliersPage from './particuliersPage'
 import proPage from './proPage'
-export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, sitePage, blogPost, chantier, mediaItem]
+import aProposPage from './aProposPage'
+import demarrerPage from './demarrerPage'
+export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, aProposPage, demarrerPage, sitePage, blogPost, chantier, mediaItem]

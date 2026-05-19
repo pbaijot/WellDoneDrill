@@ -36,36 +36,25 @@ const proPage = defineType({
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
     defineField({name: 'heroCtaLabel', title: 'Hero — CTA', type: 'string'}),
 
-    defineField({name: 'valueTitle', title: 'Valeur — titre', type: 'string'}),
-    defineField({name: 'valueIntro', title: 'Valeur — intro', type: 'text', rows: 4}),
+    defineField({name: 'valueTitle', title: 'Contexte — titre', type: 'string'}),
+    defineField({name: 'valueIntro', title: 'Contexte — texte', type: 'text', rows: 4}),
+
+    defineField({name: 'whyTitle', title: 'Six raisons — titre', type: 'string'}),
     defineField({
       name: 'valueItems',
-      title: 'Valeur — points',
+      title: 'Six raisons — items',
       type: 'array',
       of: [defineField({name: 'item', type: 'object', fields: itemFields})],
     }),
 
-    defineField({name: 'partnershipTitle', title: 'Partenariat — titre', type: 'string'}),
-    defineField({name: 'partnershipIntro', title: 'Partenariat — intro', type: 'text', rows: 3}),
+    defineField({name: 'partnershipTitle', title: 'Étapes — titre', type: 'string'}),
+    defineField({name: 'partnershipIntro', title: 'Étapes — intro', type: 'text', rows: 3}),
     defineField({
       name: 'partnershipSteps',
-      title: 'Partenariat — étapes',
+      title: 'Étapes — items',
       type: 'array',
       of: [defineField({name: 'step', type: 'object', fields: itemFields})],
     }),
-
-    defineField({name: 'offerTitle', title: 'Offre technique — titre', type: 'string'}),
-    defineField({name: 'offerIntro', title: 'Offre technique — intro', type: 'text', rows: 3}),
-    defineField({
-      name: 'offerItems',
-      title: 'Offre technique — livrables',
-      type: 'array',
-      of: [defineField({name: 'item', type: 'object', fields: itemFields})],
-    }),
-
-    defineField({name: 'submissionTitle', title: 'Soumission — titre', type: 'string'}),
-    defineField({name: 'submissionIntro', title: 'Soumission — intro', type: 'text', rows: 3}),
-    defineField({name: 'submissionCtaLabel', title: 'Soumission — CTA label', type: 'string'}),
 
     defineField({name: 'faqTitle', title: 'FAQ — titre', type: 'string'}),
     defineField({
