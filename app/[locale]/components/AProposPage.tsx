@@ -2,7 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {AProposPageData} from '@/src/lib/aProposPage'
+import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import DemarrerCTA from './DemarrerCTA'
+import {urlFor} from '@/src/lib/sanityImage'
 
 function IconInnovation() {
   return (
@@ -62,7 +64,7 @@ const DEFAULT_WHY_ITEMS = [
   {title: 'Solutions flexibles', body: "Que vous soyez particulier, promoteur, entreprise, architecte ou institution publique, nous développons des solutions sur mesure."},
 ]
 
-export default function AProposPage({locale, page}: {locale: AppLocale; page?: AProposPageData | null}) {
+export default function AProposPage({locale, page, settings}: {locale: AppLocale; page?: AProposPageData | null; settings?: GlobalSettingsData | null}) {
   const values = page?.values?.length
     ? page.values.map(v => ({title: v.title ?? '', body: v.body ?? ''}))
     : DEFAULT_VALUES
@@ -76,7 +78,13 @@ export default function AProposPage({locale, page}: {locale: AppLocale; page?: A
 
       {/* ── HERO ───────────────────────────────────────────────── */}
       <section className="relative min-h-[75vh] flex items-center px-8 md:px-16 overflow-hidden">
-        <Image src="/images/abricotiers-2.jpg" alt="WellDoneDrill forage géothermique" fill priority className="object-cover object-center" />
+        <Image
+          src={page?.heroImage ? urlFor(page.heroImage)?.url() ?? '/images/abricotiers-2.jpg' : '/images/abricotiers-2.jpg'}
+          alt="WellDoneDrill forage géothermique"
+          fill
+          priority
+          className="object-cover object-center"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-wdd-black/85 via-wdd-black/55 to-transparent" />
         <div className="relative z-10 max-w-screen-2xl mx-auto w-full">
           <div className="lg:w-1/2">
@@ -115,7 +123,12 @@ export default function AProposPage({locale, page}: {locale: AppLocale; page?: A
             )}
           </div>
           <div className="lg:flex-1 relative overflow-hidden rounded-sm min-h-[420px]">
-            <Image src="/images/DSC_2263.jpg" alt="WellDoneDrill chantier" fill className="object-cover object-center" />
+            <Image
+              src={page?.missionImage ? urlFor(page.missionImage)?.url() ?? '/images/DSC_2263.jpg' : '/images/DSC_2263.jpg'}
+              alt="WellDoneDrill chantier"
+              fill
+              className="object-cover object-center"
+            />
             <video
               className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
               autoPlay
@@ -123,7 +136,7 @@ export default function AProposPage({locale, page}: {locale: AppLocale; page?: A
               loop
               playsInline
             >
-              <source src="/videos/mrly-comp.mov" type="video/mp4" />
+              <source src={page?.missionVideoUrl ?? '/videos/mrly-comp.mov'} type="video/mp4" />
             </video>
           </div>
         </div>
@@ -131,26 +144,37 @@ export default function AProposPage({locale, page}: {locale: AppLocale; page?: A
 
       {/* ── IMAGE MATRIX ───────────────────────────────────────── */}
       <section className="bg-white p-2">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
-          <div className="col-span-2 min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/wdd-forage-expert.webp" alt="WellDoneDrill expertise" fill className="object-cover object-center" />
-          </div>
-          <div className="min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/team.jpg" alt="Équipe WellDoneDrill" fill className="object-cover object-top" />
-          </div>
-          <div className="min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/clean-drill.jpg" alt="Foreuse WellDoneDrill" fill className="object-cover object-center" />
-          </div>
-          <div className="min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/abricotiers-2.jpg" alt="Chantier géothermique" fill className="object-cover object-center" />
-          </div>
-          <div className="min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/foreuse-close-up.jpg" alt="Détail foreuse" fill className="object-cover object-center" />
-          </div>
-          <div className="col-span-2 min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm">
-            <Image src="/images/foreuse-wide.jpg" alt="Chantier de forage géothermique" fill className="object-cover object-center" />
-          </div>
-        </div>
+        {(() => {
+          const FALLBACK_GALLERY = [
+            {src: '/images/wdd-forage-expert.webp', alt: 'WellDoneDrill expertise', colSpan: 2, objectPos: 'object-center'},
+            {src: '/images/team.jpg', alt: 'Équipe WellDoneDrill', colSpan: 1, objectPos: 'object-top'},
+            {src: '/images/clean-drill.jpg', alt: 'Foreuse WellDoneDrill', colSpan: 1, objectPos: 'object-center'},
+            {src: '/images/abricotiers-2.jpg', alt: 'Chantier géothermique', colSpan: 1, objectPos: 'object-center'},
+            {src: '/images/foreuse-close-up.jpg', alt: 'Détail foreuse', colSpan: 1, objectPos: 'object-center'},
+            {src: '/images/foreuse-wide.jpg', alt: 'Chantier de forage géothermique', colSpan: 2, objectPos: 'object-center'},
+          ]
+          const hasGallery = page?.galleryImages && page.galleryImages.length > 0
+          const galleryItems = hasGallery
+            ? page!.galleryImages!.map((img, i) => ({
+                src: urlFor(img)?.url() ?? FALLBACK_GALLERY[i % FALLBACK_GALLERY.length]?.src ?? '/images/wdd-forage-expert.webp',
+                alt: `WellDoneDrill photo ${i + 1}`,
+                colSpan: i === 0 || i === page!.galleryImages!.length - 1 ? 2 : 1,
+                objectPos: 'object-center',
+              }))
+            : FALLBACK_GALLERY
+          return (
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+              {galleryItems.map((item, i) => (
+                <div
+                  key={i}
+                  className={`${item.colSpan === 2 ? 'col-span-2' : ''} min-h-[200px] lg:min-h-[300px] relative overflow-hidden rounded-sm`}
+                >
+                  <Image src={item.src} alt={item.alt} fill className={`object-cover ${item.objectPos}`} />
+                </div>
+              ))}
+            </div>
+          )
+        })()}
       </section>
 
       {/* ── VALUES ─────────────────────────────────────────────── */}
@@ -199,7 +223,7 @@ export default function AProposPage({locale, page}: {locale: AppLocale; page?: A
 
 
       {/* ── CTA ────────────────────────────────────────────────── */}
-      <DemarrerCTA locale={locale} variant="clay" />
+      <DemarrerCTA locale={locale} variant="clay" settings={settings} />
 
     </div>
   )

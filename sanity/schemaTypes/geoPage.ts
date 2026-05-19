@@ -100,6 +100,29 @@ const geoPage = defineType({
       ],
     }),
 
+    defineField({name: 'heroLeftBgImage', title: 'Hero — image fond gauche', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'introImage', title: 'Intro — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'howIllustration', title: 'Fonctionnement — illustration', type: 'image', options: {hotspot: true}}),
+    defineField({
+      name: 'advantages',
+      title: 'Avantages (8 max)',
+      type: 'array',
+      of: [
+        defineField({
+          name: 'advantage',
+          type: 'object',
+          fields: [
+            defineField({name: 'title', title: 'Titre', type: 'string'}),
+            defineField({name: 'body', title: 'Texte', type: 'text', rows: 3}),
+          ],
+        }),
+      ],
+      validation: (rule) => rule.max(8),
+    }),
+    defineField({name: 'particularImage', title: 'Audience particuliers — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'proImage', title: 'Audience pro — image', type: 'image', options: {hotspot: true}}),
+
     defineField({name: 'seoTitle', title: 'SEO title', type: 'string'}),
     defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3}),
   ],

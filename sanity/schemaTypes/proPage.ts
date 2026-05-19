@@ -35,6 +35,24 @@ const proPage = defineType({
     defineField({name: 'heroTitle', title: 'Hero — titre', type: 'string'}),
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
     defineField({name: 'heroCtaLabel', title: 'Hero — CTA', type: 'string'}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
+    defineField({
+      name: 'heroPanelItems',
+      title: 'Hero — panneau flottant (3 items)',
+      type: 'array',
+      of: [defineField({
+        name: 'panel', type: 'object',
+        fields: [
+          defineField({name: 'label', title: 'Label', type: 'string'}),
+          defineField({name: 'value', title: 'Valeur', type: 'string'}),
+          defineField({name: 'sub', title: 'Sous-texte', type: 'string'}),
+        ],
+      })],
+      validation: (r) => r.max(3),
+    }),
+
+    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'contextVideoUrl', title: 'Contexte — URL vidéo', type: 'string'}),
 
     defineField({name: 'valueTitle', title: 'Contexte — titre', type: 'string'}),
     defineField({name: 'valueIntro', title: 'Contexte — texte', type: 'text', rows: 4}),

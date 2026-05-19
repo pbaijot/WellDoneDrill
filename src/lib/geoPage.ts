@@ -15,6 +15,8 @@ export type GeoFaq = {
 export type GeoStat = {_key?: string; value?: string; label?: string}
 export type GeoPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
 
+export type GeoAdvantage = {_key?: string; title?: string; body?: string}
+
 export type GeoPageData = {
   _id: string
   locale: string
@@ -26,21 +28,28 @@ export type GeoPageData = {
   heroCtaLabel?: string
   heroStats?: GeoStat[]
   heroPanelItems?: GeoPanelItem[]
+  heroLeftBgImage?: unknown
+  heroRightImage?: unknown
   introTitle?: string
   introBody1?: string
   introBody2?: string
+  introImage?: unknown
   howTitle?: string
   howSteps?: GeoStep[]
+  howIllustration?: unknown
+  advantages?: GeoAdvantage[]
   faqTitle?: string
   faqs?: GeoFaq[]
   particularEyebrow?: string
   particularTitle?: string
   particularBody?: string
   particularCta?: string
+  particularImage?: unknown
   proEyebrow?: string
   proTitle?: string
   proBody?: string
   proCta?: string
+  proImage?: unknown
   seoTitle?: string
   seoDescription?: string
 }
@@ -50,11 +59,17 @@ const query = `
   _id, locale, routeKey,
   heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel,
   heroStats, heroPanelItems,
+  heroLeftBgImage, heroRightImage,
   introTitle, introBody1, introBody2,
+  introImage,
   howTitle, howSteps,
+  howIllustration,
+  advantages,
   faqTitle, faqs,
   particularEyebrow, particularTitle, particularBody, particularCta,
+  particularImage,
   proEyebrow, proTitle, proBody, proCta,
+  proImage,
   seoTitle, seoDescription
 }
 `

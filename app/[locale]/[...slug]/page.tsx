@@ -20,6 +20,7 @@ import DemarrerPage from '../components/DemarrerPage'
 import {getChantiers, getChantierBySlug, findProvinceBySlug} from '@/src/lib/referencesPage'
 import {getAProposPage} from '@/src/lib/aProposPage'
 import {getDemarrerPage} from '@/src/lib/demarrerPage'
+import {getGlobalSettings} from '@/src/lib/globalSettings'
 import {routeMap} from '@/src/i18n/routes'
 
 type PageProps = {
@@ -116,13 +117,13 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'particuliers') {
-    const chantiers = await getChantiers()
+    const [chantiers, globalSettings] = await Promise.all([getChantiers(), getGlobalSettings().catch(() => null)])
     try {
       const page = await getParticuliersPage(locale)
       const data = page ?? {_id: 'default', locale}
-      return <ParticuliersPage page={data} locale={locale} chantiers={chantiers} />
+      return <ParticuliersPage page={data} locale={locale} chantiers={chantiers} settings={globalSettings} />
     } catch {
-      return <ParticuliersPage page={{_id: 'default', locale}} locale={locale} chantiers={chantiers} />
+      return <ParticuliersPage page={{_id: 'default', locale}} locale={locale} chantiers={chantiers} settings={globalSettings} />
     }
   }
 
@@ -131,13 +132,13 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     routeKey === 'pro_architectes' ||
     routeKey === 'pro_entrepreneurs'
   ) {
-    const chantiers = await getChantiers()
+    const [chantiers, globalSettings] = await Promise.all([getChantiers(), getGlobalSettings().catch(() => null)])
     try {
       const page = await getProPage(locale, routeKey)
       const data = page ?? {_id: 'default', locale, routeKey}
-      return <ProPage page={data} locale={locale} chantiers={chantiers} />
+      return <ProPage page={data} locale={locale} chantiers={chantiers} settings={globalSettings} />
     } catch {
-      return <ProPage page={{_id: 'default', locale, routeKey}} locale={locale} chantiers={chantiers} />
+      return <ProPage page={{_id: 'default', locale, routeKey}} locale={locale} chantiers={chantiers} settings={globalSettings} />
     }
   }
 
@@ -147,8 +148,11 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'a_propos') {
-    const aProposData = await getAProposPage(locale).catch(() => null)
-    return <AProposPage locale={locale} page={aProposData} />
+    const [aProposData, globalSettings] = await Promise.all([
+      getAProposPage(locale).catch(() => null),
+      getGlobalSettings().catch(() => null),
+    ])
+    return <AProposPage locale={locale} page={aProposData} settings={globalSettings} />
   }
 
   try {

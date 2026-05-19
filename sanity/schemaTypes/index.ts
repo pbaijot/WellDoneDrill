@@ -9,4 +9,5 @@ import particuliersPage from './particuliersPage'
 import proPage from './proPage'
 import aProposPage from './aProposPage'
 import demarrerPage from './demarrerPage'
-export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, aProposPage, demarrerPage, sitePage, blogPost, chantier, mediaItem]
+import globalSettings from './globalSettings'
+export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, aProposPage, demarrerPage, globalSettings, sitePage, blogPost, chantier, mediaItem]

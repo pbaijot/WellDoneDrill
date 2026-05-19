@@ -22,6 +22,24 @@ const particuliersPage = defineType({
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
     defineField({name: 'heroCtaDevisLabel', title: 'Hero — CTA devis', type: 'string'}),
     defineField({name: 'heroCtaCalculLabel', title: 'Hero — CTA calculateur', type: 'string'}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
+    defineField({
+      name: 'heroPanelItems',
+      title: 'Hero — panneau flottant (3 items)',
+      type: 'array',
+      of: [defineField({
+        name: 'panel', type: 'object',
+        fields: [
+          defineField({name: 'label', title: 'Label', type: 'string'}),
+          defineField({name: 'value', title: 'Valeur', type: 'string'}),
+          defineField({name: 'sub', title: 'Sous-texte', type: 'string'}),
+        ],
+      })],
+      validation: (r) => r.max(3),
+    }),
+
+    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'contextVideoUrl', title: 'Contexte — URL vidéo', type: 'string'}),
 
     defineField({
       name: 'stats',
@@ -52,40 +70,6 @@ const particuliersPage = defineType({
     defineField({name: 'problemTitle', title: 'Problème — titre', type: 'string'}),
     defineField({name: 'problemBody', title: 'Problème — texte (framing du problème énergétique)', type: 'text', rows: 4}),
 
-    defineField({name: 'primesTitle', title: 'Primes — titre', type: 'string'}),
-    defineField({name: 'primesIntro', title: 'Primes — intro', type: 'text', rows: 3}),
-    defineField({
-      name: 'primesItems',
-      title: 'Primes — par région',
-      type: 'array',
-      of: [
-        defineField({
-          name: 'prime',
-          type: 'object',
-          fields: [
-            defineField({name: 'region', title: 'Région / Programme', type: 'string'}),
-            defineField({name: 'title', title: 'Montant / titre', type: 'string'}),
-            defineField({name: 'body', title: 'Description', type: 'text', rows: 2}),
-          ],
-        }),
-      ],
-    }),
-
-    defineField({name: 'calculTitle', title: 'Calculateur — titre', type: 'string'}),
-    defineField({name: 'calculIntro', title: 'Calculateur — intro', type: 'text', rows: 3}),
-
-    defineField({name: 'etapesTitle', title: 'Étapes — titre', type: 'string'}),
-    defineField({name: 'etapesIntro', title: 'Étapes — intro', type: 'text', rows: 3}),
-    defineField({
-      name: 'etapes',
-      title: 'Étapes projet',
-      type: 'array',
-      of: [defineField({name: 'etape', type: 'object', fields: itemFields})],
-    }),
-
-    defineField({name: 'installateurTitle', title: 'Installateurs — titre', type: 'string'}),
-    defineField({name: 'installateurBody', title: 'Installateurs — texte', type: 'text', rows: 4}),
-
     defineField({name: 'faqTitle', title: 'FAQ — titre', type: 'string'}),
     defineField({
       name: 'faqs',
@@ -102,9 +86,6 @@ const particuliersPage = defineType({
         }),
       ],
     }),
-
-    defineField({name: 'ctaTitle', title: 'CTA final — titre', type: 'string'}),
-    defineField({name: 'ctaLabel', title: 'CTA final — label', type: 'string'}),
 
     defineField({name: 'seoTitle', title: 'SEO title', type: 'string'}),
     defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3}),

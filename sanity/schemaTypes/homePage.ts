@@ -23,22 +23,8 @@ const homePage = defineType({
         { name: 'title', title: 'Titre', type: 'string' },
         { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
         { name: 'ctaLabel', title: 'CTA principal', type: 'string' },
-        { name: 'secondaryLabel', title: 'CTA secondaire', type: 'string' }
-      ]
-    },
-
-    {
-      name: 'stats',
-      title: 'Statistiques',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            { name: 'value', title: 'Valeur', type: 'string' },
-            { name: 'label', title: 'Label', type: 'string' }
-          ]
-        }
+        { name: 'secondaryLabel', title: 'CTA secondaire', type: 'string' },
+        { name: 'image', title: 'Image hero', type: 'image', options: { hotspot: true } }
       ]
     },
 
@@ -50,6 +36,8 @@ const homePage = defineType({
         { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
         { name: 'title', title: 'Titre principal', type: 'string' },
         { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
+        { name: 'introText', title: 'Texte intro', type: 'text', rows: 3 },
+        { name: 'videoUrl', title: 'URL vidéo', type: 'string' },
         {
           name: 'items',
           title: 'Cartes',
@@ -72,61 +60,6 @@ const homePage = defineType({
     },
 
     {
-      name: 'services',
-      title: 'Services',
-      type: 'object',
-      fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
-        { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
-        {
-          name: 'items',
-          title: 'Services',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                { name: 'badge', title: 'Badge', type: 'string' },
-                { name: 'title', title: 'Titre', type: 'string' },
-                { name: 'description', title: 'Description', type: 'text', rows: 3 },
-                { name: 'routeKey', title: 'Route key', type: 'string' }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      name: 'gallery',
-      title: 'Galerie',
-      type: 'object',
-      fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
-        { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
-        { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
-        { name: 'mainLabel', title: 'Texte vidéo principale', type: 'string' },
-        { name: 'videoBadge', title: 'Badge vidéo', type: 'string' },
-        {
-          name: 'items',
-          title: 'Vignettes',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                { name: 'label', title: 'Label', type: 'string' },
-                { name: 'city', title: 'Ville', type: 'string' }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-
-    {
       name: 'audiences',
       title: 'Particuliers / professionnels',
       type: 'object',
@@ -139,7 +72,8 @@ const homePage = defineType({
             { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
             { name: 'title', title: 'Titre', type: 'string' },
             { name: 'description', title: 'Description', type: 'text', rows: 3 },
-            { name: 'buttonLabel', title: 'Bouton', type: 'string' }
+            { name: 'buttonLabel', title: 'Bouton', type: 'string' },
+            { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } }
           ]
         },
         {
@@ -150,46 +84,77 @@ const homePage = defineType({
             { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
             { name: 'title', title: 'Titre', type: 'string' },
             { name: 'description', title: 'Description', type: 'text', rows: 3 },
-            { name: 'buttonLabel', title: 'Bouton', type: 'string' }
+            { name: 'buttonLabel', title: 'Bouton', type: 'string' },
+            { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } }
           ]
         }
       ]
     },
 
     {
-      name: 'machine',
-      title: 'Bloc machine',
+      name: 'services',
+      title: 'Services (Géothermie)',
       type: 'object',
       fields: [
         { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
         { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
-        { name: 'description', title: 'Description', type: 'text', rows: 3 },
+        { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
         {
           name: 'items',
-          title: 'Liste',
+          title: 'Services',
           type: 'array',
-          of: [{ type: 'string' }]
-        },
-        { name: 'buttonLabel', title: 'Bouton', type: 'string' }
+          of: [
+            {
+              type: 'object',
+              fields: [
+                { name: 'badge', title: 'Badge', type: 'string' },
+                { name: 'title', title: 'Titre', type: 'string' },
+                { name: 'description', title: 'Description', type: 'text', rows: 3 },
+                { name: 'routeKey', title: 'Route key', type: 'string' },
+                { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } }
+              ]
+            }
+          ]
+        }
       ]
     },
 
     {
-      name: 'clients',
-      title: 'Clients',
+      name: 'contactCta',
+      title: 'Section Contact CTA',
       type: 'object',
       fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
-        { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
+        { name: 'title', title: 'Titre', type: 'string' },
+        { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
+        { name: 'buttonLabel', title: 'Bouton', type: 'string' },
+        { name: 'phone', title: 'Téléphone', type: 'string' },
+        { name: 'image', title: 'Image équipe', type: 'image', options: { hotspot: true } },
+        { name: 'stat1Value', title: 'Stat 1 — valeur', type: 'string' },
+        { name: 'stat1Label', title: 'Stat 1 — label', type: 'string' },
+        { name: 'stat2Value', title: 'Stat 2 — valeur', type: 'string' },
+        { name: 'stat2Label', title: 'Stat 2 — label', type: 'string' }
+      ]
+    },
+
+    {
+      name: 'faqs',
+      title: 'FAQ',
+      type: 'object',
+      fields: [
+        {name: 'title', title: 'Titre', type: 'string'},
         {
           name: 'items',
-          title: 'Clients',
+          title: 'Questions',
           type: 'array',
-          of: [{ type: 'string' }]
-        }
-      ]
+          of: [{
+            type: 'object',
+            fields: [
+              {name: 'question', title: 'Question', type: 'string'},
+              {name: 'answer', title: 'Réponse', type: 'text', rows: 4},
+            ],
+          }],
+        },
+      ],
     },
 
     {
@@ -217,40 +182,6 @@ const homePage = defineType({
             }
           ]
         }
-      ]
-    },
-
-    {
-      name: 'faqs',
-      title: 'FAQ',
-      type: 'object',
-      fields: [
-        {name: 'title', title: 'Titre', type: 'string'},
-        {
-          name: 'items',
-          title: 'Questions',
-          type: 'array',
-          of: [{
-            type: 'object',
-            fields: [
-              {name: 'question', title: 'Question', type: 'string'},
-              {name: 'answer', title: 'Réponse', type: 'text', rows: 4},
-            ],
-          }],
-        },
-      ],
-    },
-
-    {
-      name: 'cta',
-      title: 'CTA final',
-      type: 'object',
-      fields: [
-        { name: 'pretitle', title: 'Pretitle', type: 'string' },
-        { name: 'title', title: 'Titre', type: 'string' },
-        { name: 'buttonLabel', title: 'Bouton', type: 'string' },
-        { name: 'phone', title: 'Téléphone', type: 'string' },
-        { name: 'email', title: 'Email', type: 'string' }
       ]
     }
   ],

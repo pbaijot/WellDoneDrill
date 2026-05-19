@@ -7,12 +7,14 @@ export type HomePageData = {
     subtitle?: string
     ctaLabel?: string
     secondaryLabel?: string
+    image?: unknown
   }
-  stats?: {value?: string; label?: string}[]
   advantages?: {
     eyebrow?: string
     title?: string
     highlight?: string
+    introText?: string
+    videoUrl?: string
     items?: {number?: string; icon?: string; title?: string; description?: string}[]
     calculatorTitle?: string
     calculatorSubtitle?: string
@@ -20,17 +22,8 @@ export type HomePageData = {
   services?: {
     eyebrow?: string
     title?: string
-    highlight?: string
-    items?: {badge?: string; title?: string; description?: string; routeKey?: string}[]
-  }
-  gallery?: {
-    eyebrow?: string
-    title?: string
-    highlight?: string
     subtitle?: string
-    mainLabel?: string
-    videoBadge?: string
-    items?: {label?: string; city?: string}[]
+    items?: {badge?: string; title?: string; description?: string; routeKey?: string; image?: unknown}[]
   }
   audiences?: {
     particular?: {
@@ -38,27 +31,26 @@ export type HomePageData = {
       title?: string
       description?: string
       buttonLabel?: string
+      image?: unknown
     }
     professional?: {
       eyebrow?: string
       title?: string
       description?: string
       buttonLabel?: string
+      image?: unknown
     }
   }
-  machine?: {
-    eyebrow?: string
+  contactCta?: {
     title?: string
-    highlight?: string
-    description?: string
-    items?: string[]
+    subtitle?: string
     buttonLabel?: string
-  }
-  clients?: {
-    eyebrow?: string
-    title?: string
-    highlight?: string
-    items?: string[]
+    phone?: string
+    image?: unknown
+    stat1Value?: string
+    stat1Label?: string
+    stat2Value?: string
+    stat2Label?: string
   }
   faqs?: {
     title?: string
@@ -70,28 +62,17 @@ export type HomePageData = {
     highlight?: string
     readMoreLabel?: string
   }
-  cta?: {
-    pretitle?: string
-    title?: string
-    buttonLabel?: string
-    phone?: string
-    email?: string
-  }
 }
 
 const homePageQuery = `
 *[_type == "homePage" && locale == $locale][0]{
   hero,
-  stats,
   advantages,
   services,
-  gallery,
   audiences,
-  machine,
-  clients,
+  contactCta,
   faqs,
-  blog,
-  cta
+  blog
 }
 `
 

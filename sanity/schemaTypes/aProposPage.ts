@@ -21,11 +21,21 @@ const aProposPage = defineType({
     defineField({name: 'heroTitle', title: 'Hero — titre', type: 'string'}),
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
     defineField({name: 'heroCtaLabel', title: 'Hero — CTA', type: 'string'}),
+    defineField({name: 'heroImage', title: 'Hero — image', type: 'image', options: {hotspot: true}}),
 
     defineField({name: 'missionTitle', title: 'Mission — titre', type: 'string'}),
     defineField({name: 'missionBody1', title: 'Mission — §1', type: 'text', rows: 4}),
     defineField({name: 'missionBody2', title: 'Mission — §2', type: 'text', rows: 4}),
     defineField({name: 'missionBody3', title: 'Mission — §3', type: 'text', rows: 4}),
+    defineField({name: 'missionImage', title: 'Mission — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'missionVideoUrl', title: 'Mission — URL vidéo', type: 'string'}),
+    defineField({
+      name: 'galleryImages',
+      title: 'Galerie — images (8 max)',
+      type: 'array',
+      of: [defineField({name: 'galleryImage', type: 'image', options: {hotspot: true}})],
+      validation: (r) => r.max(8),
+    }),
 
     defineField({name: 'valuesTitle', title: 'Valeurs — titre section', type: 'string'}),
     defineField({

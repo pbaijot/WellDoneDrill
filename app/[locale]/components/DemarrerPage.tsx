@@ -4,6 +4,7 @@ import {useState} from 'react'
 import Image from 'next/image'
 import type {AppLocale} from '@/src/i18n/routes'
 import type {DemarrerPageData} from '@/src/lib/demarrerPage'
+import {urlFor} from '@/src/lib/sanityImage'
 
 type Segment = 'particulier' | 'chauffagiste' | 'architecte' | 'entrepreneur' | null
 
@@ -81,7 +82,13 @@ export default function DemarrerPage({locale: _locale, page}: {locale: AppLocale
 
       {/* ── Hero ───────────────────────────────────────── */}
       <section className="relative h-[45vh] overflow-hidden px-8 md:px-16">
-        <Image src="/images/wdd-geothermie_fermee-terre.webp" alt="" fill className="object-cover object-center" priority />
+        <Image
+          src={page?.heroImage ? urlFor(page.heroImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp' : '/images/wdd-geothermie_fermee-terre.webp'}
+          alt=""
+          fill
+          className="object-cover object-center"
+          priority
+        />
         <div className="absolute inset-0 bg-wdd-black/70" />
         <div className="relative z-10 max-w-screen-2xl mx-auto h-full flex items-center">
           <div className="max-w-2xl">
@@ -228,12 +235,21 @@ export default function DemarrerPage({locale: _locale, page}: {locale: AppLocale
 
       {/* ── Team photo ─────────────────────────────────── */}
       <section className="relative h-64 overflow-hidden">
-        <Image src="/images/team.jpg" alt="Équipe WellDoneDrill" fill className="object-cover object-center" />
+        <Image
+          src={page?.teamImage ? urlFor(page.teamImage)?.url() ?? '/images/team.jpg' : '/images/team.jpg'}
+          alt="Équipe WellDoneDrill"
+          fill
+          className="object-cover object-center"
+        />
         <div className="absolute inset-0 bg-wdd-black/50" />
         <div className="absolute inset-0 flex items-end px-8 md:px-16 pb-10">
           <div className="max-w-screen-2xl mx-auto w-full">
-            <p className="text-white/50 text-xs uppercase tracking-widest mb-1">L'équipe WellDoneDrill</p>
-            <p className="text-white text-xl font-bold">Experts en géothermie depuis 2009</p>
+            <p className="text-white/50 text-xs uppercase tracking-widest mb-1">
+              {page?.teamCaption ?? "L'équipe WellDoneDrill"}
+            </p>
+            <p className="text-white text-xl font-bold">
+              {page?.teamLabel ?? "Experts en géothermie depuis 2009"}
+            </p>
           </div>
         </div>
       </section>

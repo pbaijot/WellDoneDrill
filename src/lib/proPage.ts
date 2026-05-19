@@ -2,6 +2,7 @@ import {sanity} from './sanity'
 
 export type ProItem = {_key?: string; title?: string; body?: string}
 export type ProFaq = {_key?: string; question?: string; answer?: string}
+export type ProPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
 
 export type ProPageData = {
   _id: string
@@ -11,6 +12,10 @@ export type ProPageData = {
   heroTitle?: string
   heroSubtitle?: string
   heroCtaLabel?: string
+  heroRightImage?: unknown
+  heroPanelItems?: ProPanelItem[]
+  contextImage?: unknown
+  contextVideoUrl?: string
   valueTitle?: string
   valueIntro?: string
   whyTitle?: string
@@ -28,6 +33,8 @@ const query = `
 *[_type == "proPage" && locale == $locale && routeKey == $routeKey][0]{
   _id, locale, routeKey,
   heroEyebrow, heroTitle, heroSubtitle, heroCtaLabel,
+  heroRightImage, heroPanelItems,
+  contextImage, contextVideoUrl,
   valueTitle, valueIntro, whyTitle, valueItems,
   partnershipTitle, partnershipIntro, partnershipSteps,
   faqTitle, faqs,

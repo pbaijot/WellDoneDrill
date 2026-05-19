@@ -6,7 +6,9 @@ import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ProPageData} from '@/src/lib/proPage'
+import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
+import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
 import {
   BELGIUM_PROVINCES,
@@ -566,7 +568,7 @@ function FaqItem({question, answer}: {question: string; answer: string}) {
    PAGE COMPONENT
 ───────────────────────────────────────────── */
 
-export default function ProPage({page, locale, chantiers = []}: {page: ProPageData; locale: AppLocale; chantiers?: Chantier[]}) {
+export default function ProPage({page, locale, chantiers = [], settings}: {page: ProPageData; locale: AppLocale; chantiers?: Chantier[]; settings?: GlobalSettingsData | null}) {
   const segment = (page.routeKey ?? 'pro_chauffagistes') as SegmentKey
   const d = SEGMENT_DEFAULTS[segment]
 
@@ -601,9 +603,22 @@ export default function ProPage({page, locale, chantiers = []}: {page: ProPageDa
 
         {/* Right — segment image */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
-          <Image src={d.heroImage} alt="WellDoneDrill" fill sizes="50vw" className="object-cover object-center" priority />
+          <Image
+            src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? d.heroImage : d.heroImage}
+            alt="WellDoneDrill"
+            fill
+            sizes="50vw"
+            className="object-cover object-center"
+            priority
+          />
           <div className="absolute bottom-8 right-8 z-10">
-            <FloatingInfoPanel items={d.heroPanelItems} />
+            <FloatingInfoPanel
+              items={
+                page.heroPanelItems && page.heroPanelItems.length > 0
+                  ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
+                  : d.heroPanelItems
+              }
+            />
           </div>
         </div>
 
@@ -664,16 +679,24 @@ export default function ProPage({page, locale, chantiers = []}: {page: ProPageDa
             </div>
 
             {/* Right — video if available, image otherwise */}
-            <div className={`hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'aspect-video' : 'min-h-[320px]'}`}>
-              <Image src={d.contextImage} alt="" fill sizes="50vw" className="object-cover object-center" />
-              {(d.contextVideo ?? (segment === 'pro_chauffagistes' ? '/videos/mrly-comp.mov' : null)) && (
-                <video
-                  src={d.contextVideo ?? '/videos/mrly-comp.mov'}
-                  autoPlay loop muted playsInline
-                  className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
-                />
-              )}
-            </div>
+            {(() => {
+              const ctxImage = page.contextImage
+                ? urlFor(page.contextImage)?.url() ?? d.contextImage
+                : d.contextImage
+              const ctxVideo = page.contextVideoUrl ?? d.contextVideo ?? (segment === 'pro_chauffagistes' ? '/videos/mrly-comp.mov' : null)
+              return (
+                <div className={`hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'aspect-video' : 'min-h-[320px]'}`}>
+                  <Image src={ctxImage} alt="" fill sizes="50vw" className="object-cover object-center" />
+                  {ctxVideo && (
+                    <video
+                      src={ctxVideo}
+                      autoPlay loop muted playsInline
+                      className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
+                    />
+                  )}
+                </div>
+              )
+            })()}
 
           </div>
         </div>
@@ -725,7 +748,7 @@ export default function ProPage({page, locale, chantiers = []}: {page: ProPageDa
       ══════════════════════════════════════ */}
       <ProProjetsSection locale={locale} chantiers={chantiers} />
 
-      <DemarrerCTA locale={locale} />
+      <DemarrerCTA locale={locale} settings={settings} />
 
       {/* ══════════════════════════════════════
           6. FAQ

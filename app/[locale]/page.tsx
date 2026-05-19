@@ -5,6 +5,8 @@ import { getTranslations } from 'next-intl/server'
 import { getHomePage } from '@/src/lib/homePage'
 import { getLatestBlogPosts } from '@/src/lib/blog'
 import { getChantiers } from '@/src/lib/referencesPage'
+import { getGlobalSettings } from '@/src/lib/globalSettings'
+import { urlFor } from '@/src/lib/sanityImage'
 import DemarrerCTA from './components/DemarrerCTA'
 import HomeMapSection from './components/HomeMapSection'
 import HomeFaqSection from './components/HomeFaqSection'
@@ -72,9 +74,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = locale as AppLocale
   const t = await getTranslations({ locale, namespace: 'home' })
-  const home = await getHomePage(locale)
-  const latestPosts = await getLatestBlogPosts(locale, 3)
-  const chantiers = await getChantiers()
+  const [home, globalSettings, latestPosts, chantiers] = await Promise.all([
+    getHomePage(locale),
+    getGlobalSettings(),
+    getLatestBlogPosts(locale, 3),
+    getChantiers(),
+  ])
 
   /* ── Advantages — always 4 items (pad with fallback if CMS has fewer) ── */
   const fallbackAdvantages = [
@@ -96,25 +101,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   ]
 
   /* ── Services ────────────────────────────────────────────────── */
-  const serviceItems =
-    home?.services?.items?.length
-      ? home.services.items
-      : [
-          {
-            badge: t('svc_1_badge'),
-            title: t('svc_1_title'),
-            description: "Des sondes verticales descendent à 80–150 m de profondeur pour capter la chaleur constante du sol. Cette énergie alimente votre pompe à chaleur été comme hiver — sans fossile, sans émission directe.",
-            routeKey: 'geo_fermee',
-            image: '/images/foreuse-wide.jpg',
-          },
-          {
-            badge: t('svc_2_badge'),
-            title: t('svc_2_title'),
-            description: "La nappe phréatique, à température stable toute l'année, devient votre source d'énergie. Technique idéale pour les grands projets, elle offre des rendements parmi les plus élevés du secteur.",
-            routeKey: 'geo_ouverte',
-            image: '/images/fond-terre-2.jpg',
-          },
-        ]
+  const fallbackServiceImages = ['/images/foreuse-wide.jpg', '/images/fond-terre-2.jpg']
+  const cmsServiceItems = home?.services?.items ?? []
+  const serviceItems = cmsServiceItems.length
+    ? cmsServiceItems.map((item, i) => ({
+        ...item,
+        resolvedImage: item.image
+          ? urlFor(item.image)?.url() ?? fallbackServiceImages[i] ?? '/images/foreuse-wide.jpg'
+          : fallbackServiceImages[i] ?? '/images/foreuse-wide.jpg',
+      }))
+    : [
+        {
+          badge: t('svc_1_badge'),
+          title: t('svc_1_title'),
+          description: "Des sondes verticales descendent à 80–150 m de profondeur pour capter la chaleur constante du sol. Cette énergie alimente votre pompe à chaleur été comme hiver — sans fossile, sans émission directe.",
+          routeKey: 'geo_fermee',
+          image: undefined,
+          resolvedImage: '/images/foreuse-wide.jpg',
+        },
+        {
+          badge: t('svc_2_badge'),
+          title: t('svc_2_title'),
+          description: "La nappe phréatique, à température stable toute l'année, devient votre source d'énergie. Technique idéale pour les grands projets, elle offre des rendements parmi les plus élevés du secteur.",
+          routeKey: 'geo_ouverte',
+          image: undefined,
+          resolvedImage: '/images/fond-terre-2.jpg',
+        },
+      ]
 
   /* ── Blog posts ──────────────────────────────────────────────── */
   const blogPosts =
@@ -150,7 +163,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       ═══════════════════════════════════════════════════════════ */}
       <section className="relative h-[90vh] overflow-hidden px-8 md:px-16">
         <Image
-          src="/images/wdd-forage-expert.webp"
+          src={home?.hero?.image ? urlFor(home.hero.image)?.url() ?? '/images/wdd-forage-expert.webp' : '/images/wdd-forage-expert.webp'}
           alt="WellDoneDrill forage expert"
           fill
           priority
@@ -196,7 +209,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               : 'Passez à la géothermie'}
           </h2>
           <p className="text-sm font-light text-black/50 leading-relaxed max-w-xl mb-10">
-            La géothermie est la solution de premier choix pour un confort thermique privilégié. Elle s&apos;adapte des petits projets unifamiliaux aux grands réseaux de chaleur.
+            {home?.advantages?.introText ?? "La géothermie est la solution de premier choix pour un confort thermique privilégié. Elle s'adapte des petits projets unifamiliaux aux grands réseaux de chaleur."}
           </p>
 
           {/* Flex row: box left, video right with gap */}
@@ -229,7 +242,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 className="object-cover object-center"
               />
               <video
-                src="/videos/mrly-comp.mov"
+                src={home?.advantages?.videoUrl ?? '/videos/mrly-comp.mov'}
                 autoPlay loop muted playsInline
                 className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
               />
@@ -246,7 +259,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         {/* Top-left — photo particuliers */}
         <div className="relative overflow-hidden min-h-[45vh]">
-          <Image src="/images/WDD-particuliers.webp" alt="Solutions géothermiques pour particuliers" fill className="object-cover object-center" />
+          <Image
+            src={home?.audiences?.particular?.image ? urlFor(home.audiences.particular.image)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
+            alt="Solutions géothermiques pour particuliers"
+            fill
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-wdd-black/25" />
         </div>
 
@@ -290,7 +308,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
         {/* Bottom-right — photo entreprises */}
         <div className="relative overflow-hidden min-h-[45vh]">
-          <Image src="/images/wdd-entreprises.webp" alt="Solutions géothermiques pour entreprises" fill className="object-cover object-center" />
+          <Image
+            src={home?.audiences?.professional?.image ? urlFor(home.audiences.professional.image)?.url() ?? '/images/wdd-entreprises.webp' : '/images/wdd-entreprises.webp'}
+            alt="Solutions géothermiques pour entreprises"
+            fill
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-wdd-black/25" />
         </div>
 
@@ -335,7 +358,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="flex flex-col group bg-white rounded-sm overflow-hidden">
               <div className="relative h-72 overflow-hidden shrink-0">
                 <Image
-                  src="/images/wdd-forage-expert.webp"
+                  src={serviceItems[0].resolvedImage}
                   alt="Géothermie fermée — sondes verticales"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -362,7 +385,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             <div className="flex flex-col group bg-white rounded-sm overflow-hidden">
               <div className="relative h-72 overflow-hidden shrink-0">
                 <Image
-                  src="/images/pexels-peter-holmelin.jpg"
+                  src={serviceItems[1]?.resolvedImage ?? '/images/pexels-peter-holmelin.jpg'}
                   alt="Géothermie ouverte — nappe phréatique"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -394,58 +417,74 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           Row 1: CTA left + image right (image scoped to this row)
           Row 2: stats bar full-width on black, image cut above it
       ═══════════════════════════════════════════════════════════ */}
-      <section className="bg-wdd-black overflow-hidden">
+      {(() => {
+        const ctaTitle = home?.contactCta?.title ?? globalSettings?.ctaTitle ?? 'Votre projet commence ici.'
+        const ctaSubtitle = home?.contactCta?.subtitle ?? globalSettings?.ctaBody ?? "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement."
+        const ctaButtonLabel = home?.contactCta?.buttonLabel ?? globalSettings?.ctaButtonLabel ?? 'Démarrer votre projet →'
+        const ctaPhone = home?.contactCta?.phone ?? globalSettings?.phone ?? '+32 478 75 36 79'
+        const ctaImageSrc = home?.contactCta?.image
+          ? urlFor(home.contactCta.image)?.url() ?? '/images/team.jpg'
+          : globalSettings?.ctaImage
+            ? urlFor(globalSettings.ctaImage)?.url() ?? '/images/team.jpg'
+            : '/images/team.jpg'
+        const stat1Value = home?.contactCta?.stat1Value ?? globalSettings?.stat1Value ?? 'Gratuit'
+        const stat1Label = home?.contactCta?.stat1Label ?? globalSettings?.stat1Label ?? 'Étude de faisabilité'
+        const stat2Value = home?.contactCta?.stat2Value ?? globalSettings?.stat2Value ?? '48h'
+        const stat2Label = home?.contactCta?.stat2Label ?? globalSettings?.stat2Label ?? 'Délai de réponse'
+        return (
+          <section className="bg-wdd-black overflow-hidden">
 
-        {/* Row 1 — flex split at exactly 50 % viewport */}
-        <div className="flex flex-col lg:flex-row">
-          {/* Left — content, left edge tracks page margin */}
-          <div className="w-full lg:w-1/2 pl-8 md:pl-[max(4rem,calc(50vw-48rem))] pr-8 lg:pr-20 pt-24 pb-16 flex flex-col relative z-10">
-            <h2 className="text-3xl font-bold leading-tight mb-5 text-white">
-              Votre projet commence ici.
-            </h2>
-            <p className="text-base font-light leading-8 mb-10 text-white/55">
-              Étude géologique gratuite, permis, forage — une seule équipe de A à Z.
-              Réponse sous 48h, sans engagement.
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                href={getLocalizedPath(loc, 'demarrer')}
-                className="self-start px-6 py-3.5 text-sm font-bold border-2 bg-wdd-yellow text-wdd-black border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
-              >
-                Démarrer votre projet →
-              </Link>
-              <div className="flex items-center gap-4">
-                <span className="text-sm font-light text-white/40">ou appelez-nous</span>
-                <a href="tel:+32478753679" className="text-sm font-bold text-white hover:text-wdd-yellow transition-colors">
-                  +32 478 75 36 79
-                </a>
+            {/* Row 1 — flex split at exactly 50 % viewport */}
+            <div className="flex flex-col lg:flex-row">
+              {/* Left — content, left edge tracks page margin */}
+              <div className="w-full lg:w-1/2 pl-8 md:pl-[max(4rem,calc(50vw-48rem))] pr-8 lg:pr-20 pt-24 pb-16 flex flex-col relative z-10">
+                <h2 className="text-3xl font-bold leading-tight mb-5 text-white">
+                  {ctaTitle}
+                </h2>
+                <p className="text-base font-light leading-8 mb-10 text-white/55 whitespace-pre-line">
+                  {ctaSubtitle}
+                </p>
+                <div className="flex flex-wrap items-center gap-4">
+                  <Link
+                    href={getLocalizedPath(loc, 'demarrer')}
+                    className="self-start px-6 py-3.5 text-sm font-bold border-2 bg-wdd-yellow text-wdd-black border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
+                  >
+                    {ctaButtonLabel}
+                  </Link>
+                  <div className="flex items-center gap-4">
+                    <span className="text-sm font-light text-white/40">ou appelez-nous</span>
+                    <a href={`tel:${ctaPhone.replace(/\s/g, '')}`} className="text-sm font-bold text-white hover:text-wdd-yellow transition-colors">
+                      {ctaPhone}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* Right — image fills the other 50 % */}
+              <div className="hidden lg:block lg:w-1/2 relative overflow-hidden rounded-sm min-h-[400px]">
+                <Image
+                  src={ctaImageSrc}
+                  alt="Équipe WellDoneDrill"
+                  fill
+                  className="object-cover object-center scale-[1.08]"
+                />
               </div>
             </div>
-          </div>
-          {/* Right — image fills the other 50 % */}
-          <div className="hidden lg:block lg:w-1/2 relative overflow-hidden rounded-sm min-h-[400px]">
-            <Image
-              src="/images/team.jpg"
-              alt="Équipe WellDoneDrill"
-              fill
-              className="object-cover object-center scale-[1.08]"
-            />
-          </div>
-        </div>
 
-        {/* Row 2 — stats, same 50/50 split so second stat starts at midpoint */}
-        <div className="flex flex-col lg:flex-row border-t border-white/10">
-          <div className="w-full lg:w-1/2 pl-8 md:pl-[max(4rem,calc(50vw-48rem))] pr-8 py-10">
-            <div className="text-3xl font-bold text-wdd-yellow">Gratuit</div>
-            <div className="text-xs font-light mt-1 text-white/40">Étude de faisabilité</div>
-          </div>
-          <div className="w-full lg:w-1/2 pl-8 py-10 border-t lg:border-t-0 lg:border-l border-white/10">
-            <div className="text-3xl font-bold text-wdd-yellow">48h</div>
-            <div className="text-xs font-light mt-1 text-white/40">Délai de réponse</div>
-          </div>
-        </div>
+            {/* Row 2 — stats, same 50/50 split so second stat starts at midpoint */}
+            <div className="flex flex-col lg:flex-row border-t border-white/10">
+              <div className="w-full lg:w-1/2 pl-8 md:pl-[max(4rem,calc(50vw-48rem))] pr-8 py-10">
+                <div className="text-3xl font-bold text-wdd-yellow">{stat1Value}</div>
+                <div className="text-xs font-light mt-1 text-white/40">{stat1Label}</div>
+              </div>
+              <div className="w-full lg:w-1/2 pl-8 py-10 border-t lg:border-t-0 lg:border-l border-white/10">
+                <div className="text-3xl font-bold text-wdd-yellow">{stat2Value}</div>
+                <div className="text-xs font-light mt-1 text-white/40">{stat2Label}</div>
+              </div>
+            </div>
 
-      </section>
+          </section>
+        )
+      })()}
 
       {/* ═══════════════════════════════════════════════════════════
           SECTION 6 — FAQ

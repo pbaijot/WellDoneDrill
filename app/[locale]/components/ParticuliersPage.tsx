@@ -6,7 +6,9 @@ import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ParticuliersPageData} from '@/src/lib/particuliersPage'
+import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
+import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
 import {
   BELGIUM_PROVINCES,
@@ -227,10 +229,12 @@ export default function ParticuliersPage({
   page,
   locale,
   chantiers = [],
+  settings,
 }: {
   page: ParticuliersPageData
   locale: AppLocale
   chantiers?: Chantier[]
+  settings?: GlobalSettingsData | null
 }) {
   const whyItems =
     page.whyItems && page.whyItems.length > 0 ? page.whyItems : DEFAULT_WHY_ITEMS
@@ -240,10 +244,7 @@ export default function ParticuliersPage({
       ? page.faqs.map((f) => ({question: f.question ?? '', answer: f.answer ?? ''}))
       : DEFAULT_FAQS
 
-  const primes =
-    page.primesItems && page.primesItems.length > 0
-      ? page.primesItems.map((p) => ({region: p.region ?? '', title: p.title ?? '', body: p.body ?? '', _key: p._key}))
-      : DEFAULT_PRIMES
+  const primes = DEFAULT_PRIMES
 
   // Calculateur d'économies d'énergie
   const [ecoMode, setEcoMode] = useState<'surface' | 'conso'>('surface')
@@ -346,7 +347,7 @@ export default function ParticuliersPage({
         {/* Couche 3 : photo foreuse sur la moitié droite */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
           <Image
-            src="/images/WDD-particuliers.webp"
+            src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
             alt="Foreuse WellDoneDrill sur chantier"
             fill
             className="object-cover object-center"
@@ -355,11 +356,15 @@ export default function ParticuliersPage({
           {/* Floating info panels — 3 arguments en cycle */}
           <div className="absolute bottom-8 right-8 z-10">
             <FloatingInfoPanel
-              items={[
-                {label: 'Économies annuelles moyennes', value: '~1 200 €', sub: 'par foyer converti'},
-                {label: 'Coefficient de performance',  value: 'COP 4–5',   sub: '4× plus efficace que le gaz'},
-                {label: 'Réduction de facture',        value: '–70 %',     sub: 'sur vos coûts de chauffage'},
-              ]}
+              items={
+                page.heroPanelItems && page.heroPanelItems.length > 0
+                  ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
+                  : [
+                      {label: 'Économies annuelles moyennes', value: '~1 200 €', sub: 'par foyer converti'},
+                      {label: 'Coefficient de performance',  value: 'COP 4–5',   sub: '4× plus efficace que le gaz'},
+                      {label: 'Réduction de facture',        value: '–70 %',     sub: 'sur vos coûts de chauffage'},
+                    ]
+              }
             />
           </div>
         </div>
@@ -437,13 +442,13 @@ export default function ParticuliersPage({
             {/* Right — video, stretches to full column height */}
             <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm">
               <Image
-                src="/images/foreuse-wide.jpg"
+                src={page.contextImage ? urlFor(page.contextImage)?.url() ?? '/images/foreuse-wide.jpg' : '/images/foreuse-wide.jpg'}
                 alt=""
                 fill
                 className="object-cover object-center"
               />
               <video
-                src="/videos/mrly-comp.mov"
+                src={page.contextVideoUrl ?? '/videos/mrly-comp.mov'}
                 autoPlay loop muted playsInline
                 className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
               />
@@ -673,7 +678,7 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           6. CTA DÉMARRER
       ══════════════════════════════════════ */}
-      <DemarrerCTA locale={locale} />
+      <DemarrerCTA locale={locale} settings={settings} />
 
       {/* ══════════════════════════════════════
           7. FAQ

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import {getLocalizedPath, type AppLocale, type RouteKey} from '@/src/i18n/routes'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import type {GeoPageData} from '@/src/lib/geoPage'
+import {urlFor} from '@/src/lib/sanityImage'
 
 /* ── Defaults ───────────────────────────────────────────────── */
 
@@ -241,8 +242,12 @@ export default function GeoPage({
   const isOpen = page.routeKey === 'geo_ouverte'
   const ctaRoute: RouteKey = isOpen ? 'pro_chauffagistes' : 'demarrer'
 
-  const heroLeftBg   = '/images/wdd-geothermie_fermee-terre.webp'
-  const heroRightImg = isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png'
+  const heroLeftBg = page.heroLeftBgImage
+    ? urlFor(page.heroLeftBgImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp'
+    : '/images/wdd-geothermie_fermee-terre.webp'
+  const heroRightImg = page.heroRightImage
+    ? urlFor(page.heroRightImage)?.url() ?? (isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png')
+    : isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png'
 
   const defaultHeroStats = [
     {value: '500+',   label: 'Projets réalisés'},
@@ -358,7 +363,7 @@ export default function GeoPage({
 
           <div className="relative min-h-[420px] overflow-hidden">
             <Image
-              src="/images/wdd-expert-forage.webp"
+              src={page.introImage ? urlFor(page.introImage)?.url() ?? '/images/wdd-expert-forage.webp' : '/images/wdd-expert-forage.webp'}
               alt="Expert WellDoneDrill sur chantier"
               fill
               className="object-cover object-center"
@@ -396,7 +401,11 @@ export default function GeoPage({
             {/* Right: SVG illustration */}
             <div className="bg-wdd-clay flex items-center justify-center p-8">
               <Image
-                src={isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg'}
+                src={
+                  page.howIllustration
+                    ? urlFor(page.howIllustration)?.url() ?? (isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg')
+                    : isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg'
+                }
                 alt={isOpen ? 'Illustration géothermie sur nappe' : 'Illustration géothermie fermée'}
                 width={380}
                 height={520}
@@ -414,61 +423,69 @@ export default function GeoPage({
           <h2 className="text-4xl font-bold leading-tight mb-14">
             Les avantages de la géothermie
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-            {[
+          {(() => {
+            const FALLBACK_ADVANTAGES = [
               {
                 title: 'Investissement rentable',
                 body: "Une facture énergétique en baisse grâce à une source de chaleur gratuite et renouvelable.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
+                icon: <svg key="icon0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
               },
               {
                 title: 'Installation responsable',
                 body: "Une solution respectueuse de l'environnement qui réduit votre empreinte carbone.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
+                icon: <svg key="icon1" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
               },
               {
                 title: 'Faible encombrement',
                 body: "Fini les citernes de fioul, les stockages de granulés ou les groupes extérieurs, la géothermie fonctionne sans vous encombrer.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>,
+                icon: <svg key="icon2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>,
               },
               {
                 title: 'Système silencieux',
                 body: "Pas de bruit de combustion ni de ventilation intense, pour un confort acoustique optimal.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>,
+                icon: <svg key="icon3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>,
               },
               {
                 title: 'Équipements durables',
                 body: "Des composants inaltérables conçus pour durer des décennies sans perte d'efficacité.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/></svg>,
+                icon: <svg key="icon4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/></svg>,
               },
               {
                 title: 'Entretien minimal',
                 body: "Une solution clé en main pour le chauffage et la climatisation qui nécessite très peu de maintenance.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>,
+                icon: <svg key="icon5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>,
               },
               {
                 title: 'Rendement imbattable',
                 body: "Avec un COP deux fois plus élevé que celui d'une PAC aérothermique, votre système produit jusqu'à 5× plus d'énergie qu'il n'en consomme.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
+                icon: <svg key="icon6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
               },
               {
                 title: 'Du chaud, et aussi du froid',
                 body: "La chaleur extraite du sol en hiver refroidit le sol. Ce froid naturel est réutilisé en été pour rafraîchir votre bâtiment, sans frais de climatisation.",
-                icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M19.07 4.93L4.93 19.07"/></svg>,
+                icon: <svg key="icon7" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M19.07 4.93L4.93 19.07"/></svg>,
               },
-            ].map(({title, body, icon}, i) => {
-              const BG = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'][i % 3]
-              return (
-                <div key={title} className="flex flex-col gap-4">
-                  <div className={`w-12 h-12 flex items-center justify-center rounded-sm text-wdd-black shrink-0 ${BG}`}>
-                    {icon}
-                  </div>
-                  <h3 className="text-base font-bold leading-snug">{title}</h3>
-                  <p className="text-sm font-light text-black/55 leading-relaxed">{body}</p>
-                </div>
-              )
-            })}
-          </div>
+            ]
+            const advantageItems = page.advantages && page.advantages.length > 0
+              ? page.advantages.map((a, i) => ({title: a.title ?? '', body: a.body ?? '', icon: FALLBACK_ADVANTAGES[i % FALLBACK_ADVANTAGES.length]?.icon}))
+              : FALLBACK_ADVANTAGES
+            return (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                {advantageItems.map(({title, body, icon}, i) => {
+                  const BG = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'][i % 3]
+                  return (
+                    <div key={title || i} className="flex flex-col gap-4">
+                      <div className={`w-12 h-12 flex items-center justify-center rounded-sm text-wdd-black shrink-0 ${BG}`}>
+                        {icon}
+                      </div>
+                      <h3 className="text-base font-bold leading-snug">{title}</h3>
+                      <p className="text-sm font-light text-black/55 leading-relaxed">{body}</p>
+                    </div>
+                  )
+                })}
+              </div>
+            )
+          })()}
         </div>
       </section>
 
@@ -502,7 +519,12 @@ export default function GeoPage({
 
         {/* Top-left — photo particuliers */}
         <div className="relative overflow-hidden min-h-[45vh]">
-          <Image src="/images/WDD-particuliers.webp" alt="Solutions géothermiques pour particuliers" fill className="object-cover object-center" />
+          <Image
+            src={page.particularImage ? urlFor(page.particularImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
+            alt="Solutions géothermiques pour particuliers"
+            fill
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-wdd-black/25" />
         </div>
 
@@ -546,7 +568,12 @@ export default function GeoPage({
 
         {/* Bottom-right — photo entreprises */}
         <div className="relative overflow-hidden min-h-[45vh]">
-          <Image src="/images/wdd-entreprises.webp" alt="Solutions géothermiques pour entreprises" fill className="object-cover object-center" />
+          <Image
+            src={page.proImage ? urlFor(page.proImage)?.url() ?? '/images/wdd-entreprises.webp' : '/images/wdd-entreprises.webp'}
+            alt="Solutions géothermiques pour entreprises"
+            fill
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-wdd-black/25" />
         </div>
 
