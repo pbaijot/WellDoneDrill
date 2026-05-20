@@ -310,14 +310,7 @@ export default function ParticuliersPage({
 
   const fmt = (n: number) => Math.round(n).toLocaleString('fr-BE')
 
-  const stats =
-    page.stats && page.stats.length > 0
-      ? page.stats
-      : [
-          {value: '500+', label: 'Projets réalisés'},
-          {value: '20 ans', label: "d'expertise"},
-          {value: '3 pays', label: 'BE · LU · FR'},
-        ]
+  const stats = page.stats && page.stats.length > 0 ? page.stats : []
 
   return (
     <div className="flex flex-col bg-white">
