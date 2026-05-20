@@ -402,8 +402,17 @@ export default function ParticuliersPage({
           />
           <div className="absolute inset-0 bg-wdd-black/30" />
         </div>
-        {/* Couche 1b : fallback fond sombre sur mobile */}
-        <div className="absolute inset-0 bg-wdd-black lg:hidden" />
+        {/* Couche 1b : image de fond plein écran sur mobile */}
+        <div className="absolute inset-0 lg:hidden">
+          <Image
+            src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
+            alt=""
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-wdd-black/60" />
+        </div>
 
         {/* Couche 3 : photo foreuse sur la moitié droite */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
