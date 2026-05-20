@@ -229,7 +229,14 @@ function extractYouTubeId(url: string): string | null {
 function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
   const [muted, setMuted] = useState(true)
   const [playing, setPlaying] = useState(true)
+  const [ready, setReady] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement>(null)
+
+  useEffect(() => {
+    if (!videoUrl) return
+    const t = setTimeout(() => setReady(true), 1800)
+    return () => clearTimeout(t)
+  }, [videoUrl])
 
   if (videoUrl) {
     const ytId = extractYouTubeId(videoUrl)
@@ -249,8 +256,10 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
             className="absolute inset-0 w-full h-full pointer-events-none"
             style={{border: 'none'}}
           />
-          {/* Transparent overlay — prevents hover events so YouTube title/play overlays never appear */}
-          <div className="absolute inset-0" />
+          {/* Cover that hides the YouTube thumbnail/play button until autoplay has started */}
+          <div className={`absolute inset-0 bg-wdd-black z-[1] transition-opacity duration-700 pointer-events-none ${ready ? 'opacity-0' : 'opacity-100'}`} />
+          {/* Transparent overlay above cover — blocks hover events so YouTube overlays never appear */}
+          <div className="absolute inset-0 z-[2]" />
           <div className="absolute bottom-4 right-4 z-10 flex gap-2">
             <button
               onClick={togglePlay}
