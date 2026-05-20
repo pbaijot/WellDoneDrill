@@ -221,6 +221,42 @@ function GeoScheme() {
   )
 }
 
+function extractYouTubeId(url: string): string | null {
+  const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([^&\n?#]+)/)
+  return m ? m[1] : null
+}
+
+function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
+  if (videoUrl) {
+    const ytId = extractYouTubeId(videoUrl)
+    if (ytId) {
+      return (
+        <iframe
+          src={`https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&loop=1&playlist=${ytId}&controls=0&rel=0&modestbranding=1`}
+          allow="autoplay; encrypted-media"
+          className="absolute inset-0 w-full h-full"
+          style={{border: 'none'}}
+        />
+      )
+    }
+    return (
+      <video
+        src={videoUrl}
+        autoPlay loop muted playsInline
+        className="absolute inset-0 w-full h-full object-cover scale-125"
+      />
+    )
+  }
+  return (
+    <Image
+      src={imageUrl ?? '/images/foreuse-wide.jpg'}
+      alt=""
+      fill
+      className="object-cover object-center"
+    />
+  )
+}
+
 /* ─────────────────────────────────────────────
    PAGE COMPONENT
 ───────────────────────────────────────────── */
@@ -443,21 +479,11 @@ export default function ParticuliersPage({
             </div>
 
             {/* Right — video or image */}
-            <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm">
-              {page.contextVideoUrl ? (
-                <video
-                  src={page.contextVideoUrl}
-                  autoPlay loop muted playsInline
-                  className="absolute inset-0 w-full h-full object-cover scale-125"
-                />
-              ) : (
-                <Image
-                  src={page.contextImage ? urlFor(page.contextImage)?.url() ?? '/images/foreuse-wide.jpg' : '/images/foreuse-wide.jpg'}
-                  alt=""
-                  fill
-                  className="object-cover object-center"
-                />
-              )}
+            <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm min-h-[400px]">
+              <ContextMedia
+                videoUrl={page.contextVideoUrl}
+                imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
+              />
             </div>
 
           </div>
