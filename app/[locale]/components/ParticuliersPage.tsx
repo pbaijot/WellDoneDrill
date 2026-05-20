@@ -1,6 +1,6 @@
 'use client'
 
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
@@ -227,16 +227,46 @@ function extractYouTubeId(url: string): string | null {
 }
 
 function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
+  const [muted, setMuted] = useState(true)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
+
   if (videoUrl) {
     const ytId = extractYouTubeId(videoUrl)
     if (ytId) {
+      const toggleMute = () => {
+        iframeRef.current?.contentWindow?.postMessage(
+          JSON.stringify({event: 'command', func: muted ? 'unMute' : 'mute', args: ''}),
+          '*'
+        )
+        setMuted(m => !m)
+      }
       return (
-        <iframe
-          src={`https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&loop=1&playlist=${ytId}&controls=0&rel=0&modestbranding=1`}
-          allow="autoplay; encrypted-media"
-          className="absolute inset-0 w-full h-full"
-          style={{border: 'none'}}
-        />
+        <>
+          <iframe
+            ref={iframeRef}
+            src={`https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&loop=1&playlist=${ytId}&controls=0&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&enablejsapi=1`}
+            allow="autoplay; encrypted-media"
+            className="absolute inset-0 w-full h-full"
+            style={{border: 'none'}}
+          />
+          <button
+            onClick={toggleMute}
+            className="absolute bottom-4 right-4 z-10 bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+            aria-label={muted ? 'Activer le son' : 'Couper le son'}
+          >
+            {muted ? (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+              </svg>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              </svg>
+            )}
+          </button>
+        </>
       )
     }
     return (
