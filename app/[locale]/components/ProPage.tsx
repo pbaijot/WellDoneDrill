@@ -469,7 +469,7 @@ function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: C
                   stroke="#B0A89E"
                   strokeWidth={0.4}
                   strokeLinejoin="round"
-                  style={{cursor: 'pointer', transition: 'fill 0.15s'}}
+                  style={{cursor: 'pointer', transition: 'fill 0.15s', pointerEvents: 'all'}}
                   onMouseEnter={() => setHovered(p.id)}
                   onMouseLeave={() => setHovered(null)}
                   onClick={() => handleProvinceClick(p.id)}

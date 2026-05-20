@@ -73,7 +73,7 @@ export default function ProvinceReferencesPage({
                 stroke="#B0A89E"
                 strokeWidth={0.3}
                 strokeLinejoin="round"
-                style={{cursor: 'pointer', transition: 'fill 0.15s'}}
+                style={{cursor: 'pointer', transition: 'fill 0.15s', pointerEvents: 'all'}}
                 onMouseEnter={() => setHovered(p.id)}
                 onMouseLeave={() => setHovered(null)}
                 onClick={() => {
@@ -202,7 +202,7 @@ export default function ProvinceReferencesPage({
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0.5">
               {displayChantiers.map((c) => (
-                <ChantierCard key={c._id} chantier={c} />
+                <ChantierCard key={c._id} chantier={c} locale={locale} />
               ))}
             </div>
           )}
@@ -257,11 +257,12 @@ export default function ProvinceReferencesPage({
 
 /* ─── Project card ─────────────────────────────────────────── */
 
-function ChantierCard({chantier: c}: {chantier: Chantier}) {
+function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocale}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
+  const href = c.slug ? getProvincePageUrl(locale, c.slug) : undefined
 
-  return (
-    <div className="group bg-wdd-clay relative overflow-hidden flex flex-col hover:bg-wdd-black transition-colors duration-200">
+  const inner = (
+    <div className="group bg-wdd-clay relative overflow-hidden flex flex-col hover:bg-wdd-black transition-colors duration-200 h-full">
       {imgUrl ? (
         <div className="relative h-48 overflow-hidden">
           <Image
@@ -324,6 +325,10 @@ function ChantierCard({chantier: c}: {chantier: Chantier}) {
       <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-wdd-yellow scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
     </div>
   )
+
+  return href ? (
+    <Link href={href} className="flex flex-col">{inner}</Link>
+  ) : inner
 }
 
 /* ─── Empty state ──────────────────────────────────────────── */

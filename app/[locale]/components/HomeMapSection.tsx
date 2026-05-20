@@ -106,7 +106,7 @@ export default function HomeMapSection({
                     stroke="#B0A89E"
                     strokeWidth={0.4}
                     strokeLinejoin="round"
-                    style={{cursor: 'pointer', transition: 'fill 0.15s'}}
+                    style={{cursor: 'pointer', transition: 'fill 0.15s', pointerEvents: 'all'}}
                     onMouseEnter={() => setHovered(p.id)}
                     onMouseLeave={() => setHovered(null)}
                     onClick={() => handleProvinceClick(p.id)}
@@ -147,7 +147,7 @@ export default function HomeMapSection({
                     </div>
                   ) : (
                     <>
-                      {displayed.map((c) => <ProjetCard key={c._id} chantier={c} />)}
+                      {displayed.map((c) => <ProjetCard key={c._id} chantier={c} locale={locale} />)}
                       {Array.from({length: PER_PAGE - displayed.length}).map((_, i) => (
                         <div key={`ph-${i}`} className="bg-wdd-clay/30 h-[248px] rounded-sm" />
                       ))}
@@ -189,10 +189,11 @@ export default function HomeMapSection({
 
 /* ── Project card — clay bg, hover to black ──────────────────── */
 
-function ProjetCard({chantier: c}: {chantier: Chantier}) {
+function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocale}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
+  const href = c.slug ? getProvincePageUrl(locale, c.slug) : undefined
 
-  return (
+  const inner = (
     <div className="group bg-wdd-clay overflow-hidden flex flex-col h-[248px] rounded-sm">
       {imgUrl ? (
         <div className="relative h-32 overflow-hidden shrink-0">
@@ -238,4 +239,8 @@ function ProjetCard({chantier: c}: {chantier: Chantier}) {
       </div>
     </div>
   )
+
+  return href ? (
+    <Link href={href} className="flex flex-col h-[248px]">{inner}</Link>
+  ) : inner
 }

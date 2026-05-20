@@ -88,7 +88,7 @@ export default function ReferencesPage({
                 stroke="#B0A89E"
                 strokeWidth={0.3}
                 strokeLinejoin="round"
-                style={{cursor: !zooming ? 'pointer' : 'default', transition: 'fill 0.15s'}}
+                style={{cursor: !zooming ? 'pointer' : 'default', transition: 'fill 0.15s', pointerEvents: 'all'}}
                 onMouseEnter={() => !zooming && setHovered(p.id)}
                 onMouseLeave={() => !zooming && setHovered(null)}
                 onClick={() => !zooming && handleClick(p)}
