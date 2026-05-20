@@ -228,18 +228,18 @@ function extractYouTubeId(url: string): string | null {
 
 function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
   const [muted, setMuted] = useState(true)
+  const [playing, setPlaying] = useState(true)
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
   if (videoUrl) {
     const ytId = extractYouTubeId(videoUrl)
     if (ytId) {
-      const toggleMute = () => {
+      const send = (func: string) =>
         iframeRef.current?.contentWindow?.postMessage(
-          JSON.stringify({event: 'command', func: muted ? 'unMute' : 'mute', args: ''}),
-          '*'
+          JSON.stringify({event: 'command', func, args: ''}), '*'
         )
-        setMuted(m => !m)
-      }
+      const toggleMute = () => { send(muted ? 'unMute' : 'mute'); setMuted(m => !m) }
+      const togglePlay = () => { send(playing ? 'pauseVideo' : 'playVideo'); setPlaying(p => !p) }
       return (
         <>
           <iframe
@@ -249,25 +249,42 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
             className="absolute inset-0 w-full h-full pointer-events-none"
             style={{border: 'none'}}
           />
-          {/* Transparent overlay — prevents hover events reaching the iframe so YouTube overlays never appear */}
+          {/* Transparent overlay — prevents hover events so YouTube title/play overlays never appear */}
           <div className="absolute inset-0" />
-          <button
-            onClick={toggleMute}
-            className="absolute bottom-4 right-4 z-10 bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
-            aria-label={muted ? 'Activer le son' : 'Couper le son'}
-          >
-            {muted ? (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
-              </svg>
-            ) : (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
-              </svg>
-            )}
-          </button>
+          <div className="absolute bottom-4 right-4 z-10 flex gap-2">
+            <button
+              onClick={togglePlay}
+              className="bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+              aria-label={playing ? 'Pause' : 'Lecture'}
+            >
+              {playing ? (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+                </svg>
+              ) : (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              )}
+            </button>
+            <button
+              onClick={toggleMute}
+              className="bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+              aria-label={muted ? 'Activer le son' : 'Couper le son'}
+            >
+              {muted ? (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+                </svg>
+              ) : (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+              )}
+            </button>
+          </div>
         </>
       )
     }
