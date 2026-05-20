@@ -246,9 +246,11 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
             ref={iframeRef}
             src={`https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&loop=1&playlist=${ytId}&controls=0&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&enablejsapi=1`}
             allow="autoplay; encrypted-media"
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-full pointer-events-none"
             style={{border: 'none'}}
           />
+          {/* Transparent overlay — prevents hover events reaching the iframe so YouTube overlays never appear */}
+          <div className="absolute inset-0" />
           <button
             onClick={toggleMute}
             className="absolute bottom-4 right-4 z-10 bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
