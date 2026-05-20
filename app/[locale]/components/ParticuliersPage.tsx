@@ -511,7 +511,7 @@ export default function ParticuliersPage({
             </div>
 
             {/* Right — video or image */}
-            <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm min-h-[400px]">
+            <div className="w-full h-64 sm:h-80 lg:h-auto lg:flex-1 relative overflow-hidden rounded-sm lg:min-h-[400px]">
               <ContextMedia
                 videoUrl={page.contextVideoUrl}
                 imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
