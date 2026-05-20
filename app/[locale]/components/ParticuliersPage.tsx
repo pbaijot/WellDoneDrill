@@ -332,7 +332,7 @@ export default function ParticuliersPage({
         {/* Couche 1 : fond-terre-2 sur la moitié gauche */}
         <div className="absolute left-0 top-0 bottom-0 w-1/2 hidden lg:block">
           <Image
-            src="/images/wdd-geothermie_fermee-terre.webp"
+            src={page.heroLeftBgImage ? urlFor(page.heroLeftBgImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp' : '/images/wdd-geothermie_fermee-terre.webp'}
             alt=""
             fill
             className="object-cover object-center scale-[1.04]"
@@ -434,24 +434,37 @@ export default function ParticuliersPage({
                 {page.problemBody ??
                   "Le prix du gaz a bondi de 180 % depuis 2021. L'Union européenne interdit les chaudières fossiles neuves dès 2026. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
+              {stats.length > 0 && (
+                <div className="flex gap-8 mb-10">
+                  {stats.map((s, i) => (
+                    <div key={('_key' in s ? s._key as string : undefined) ?? i}>
+                      <div className="text-2xl font-bold text-wdd-mud tabular-nums">{s.value}</div>
+                      <div className="text-xs font-light text-black/50 mt-1 leading-snug max-w-[140px]">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
               <div className="border-t border-black/8 pt-10 mt-auto">
                 <GeoScheme />
               </div>
             </div>
 
-            {/* Right — video, stretches to full column height */}
+            {/* Right — video or image */}
             <div className="hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm">
-              <Image
-                src={page.contextImage ? urlFor(page.contextImage)?.url() ?? '/images/foreuse-wide.jpg' : '/images/foreuse-wide.jpg'}
-                alt=""
-                fill
-                className="object-cover object-center"
-              />
-              <video
-                src={page.contextVideoUrl ?? '/videos/mrly-comp.mov'}
-                autoPlay loop muted playsInline
-                className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
-              />
+              {page.contextVideoUrl ? (
+                <video
+                  src={page.contextVideoUrl}
+                  autoPlay loop muted playsInline
+                  className="absolute inset-0 w-full h-full object-cover scale-125"
+                />
+              ) : (
+                <Image
+                  src={page.contextImage ? urlFor(page.contextImage)?.url() ?? '/images/foreuse-wide.jpg' : '/images/foreuse-wide.jpg'}
+                  alt=""
+                  fill
+                  className="object-cover object-center"
+                />
+              )}
             </div>
 
           </div>

@@ -22,6 +22,7 @@ const particuliersPage = defineType({
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
     defineField({name: 'heroCtaDevisLabel', title: 'Hero — CTA devis', type: 'string'}),
     defineField({name: 'heroCtaCalculLabel', title: 'Hero — CTA calculateur', type: 'string'}),
+    defineField({name: 'heroLeftBgImage', title: 'Hero — image fond gauche', type: 'image', options: {hotspot: true}}),
     defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
     defineField({
       name: 'heroPanelItems',

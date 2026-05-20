@@ -12,6 +12,7 @@ export type ParticuliersPageData = {
   heroSubtitle?: string
   heroCtaDevisLabel?: string
   heroCtaCalculLabel?: string
+  heroLeftBgImage?: unknown
   heroRightImage?: unknown
   heroPanelItems?: ParticuliersPanelItem[]
   contextImage?: unknown
@@ -32,7 +33,7 @@ const query = `
 *[_type == "particuliersPage" && locale == $locale][0]{
   _id, locale,
   heroTitle, heroSubtitle, heroCtaDevisLabel, heroCtaCalculLabel,
-  heroRightImage, heroPanelItems,
+  heroLeftBgImage, heroRightImage, heroPanelItems,
   contextImage, contextVideoUrl,
   stats,
   whyTitle, whyIntro, whyItems,
