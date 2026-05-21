@@ -626,12 +626,6 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
 
   const whyItems = page.valueItems && page.valueItems.length > 0 ? page.valueItems : d.whyItems
 
-  const partnershipSteps = page.partnershipSteps && page.partnershipSteps.length > 0
-    ? page.partnershipSteps
-    : d.etapes
-  const partnershipTitle = page.partnershipTitle ?? d.etapesTitle
-  const partnershipIntro = page.partnershipIntro ?? d.etapesIntro
-
   const contextVideoUrl = page.contextVideo?.asset?.url ?? d.contextVideo ?? null
 
   return (
@@ -803,33 +797,6 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           4. RÉALISATIONS
       ══════════════════════════════════════ */}
       <ProProjetsSection locale={locale} chantiers={chantiers} d={d} />
-
-      {/* ══════════════════════════════════════
-          5. PARTENARIAT / ÉTAPES
-      ══════════════════════════════════════ */}
-      <section className="bg-wdd-black py-[7.5rem] px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full">
-          <h2 className="text-4xl font-bold text-white leading-tight mb-4">
-            {partnershipTitle}
-          </h2>
-          {partnershipIntro && (
-            <p className="text-base font-light text-white/60 leading-8 max-w-3xl mb-16">
-              {partnershipIntro}
-            </p>
-          )}
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-px bg-white/10">
-            {partnershipSteps.map((step, i) => (
-              <div key={('_key' in step ? (step._key as string | undefined) : undefined) ?? i} className="bg-wdd-black p-8">
-                <div className="text-4xl font-black text-wdd-yellow/20 mb-4 tabular-nums leading-none">
-                  {String(i + 1).padStart(2, '0')}
-                </div>
-                <h3 className="text-base font-bold text-white mb-3 leading-snug">{step.title}</h3>
-                <p className="text-sm font-light text-white/50 leading-7">{step.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <DemarrerCTA locale={locale} settings={settings} />
 
