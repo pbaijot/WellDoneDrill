@@ -229,23 +229,27 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
                   </p>
                 </div>
               ) : (
-                // Crop Odoo page chrome (header + bottom padding).
-                // Adjust cropTop / cropBottom if more or less needs trimming.
+                // Crop Odoo page chrome on all sides via negative absolute positioning.
+                // Adjust these four constants to fine-tune what gets trimmed.
                 (() => {
-                  const cropTop = 56
-                  const cropBottom = 40
+                  const cropTop    = 56  // Odoo navbar
+                  const cropSide   = 24  // white padding left & right
+                  const cropBottom = 48  // white padding below form
                   const visibleHeight = 680
                   return (
-                    <div style={{height: visibleHeight, overflow: 'hidden', position: 'relative'}}>
+                    <div style={{position: 'relative', height: visibleHeight, overflow: 'hidden'}}>
                       <iframe
                         src={ODOO_FORM_URL}
                         title="Formulaire de contact WellDoneDrill"
-                        width="100%"
                         style={{
+                          position: 'absolute',
+                          top: -cropTop,
+                          left: -cropSide,
+                          right: -cropSide,
+                          bottom: -cropBottom,
+                          width: `calc(100% + ${cropSide * 2}px)`,
                           height: visibleHeight + cropTop + cropBottom,
-                          marginTop: -cropTop,
                           border: 'none',
-                          display: 'block',
                         }}
                         loading="lazy"
                         allow="fullscreen"
