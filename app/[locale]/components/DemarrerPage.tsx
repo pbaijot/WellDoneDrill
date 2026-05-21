@@ -221,7 +221,7 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
       </section>
 
       {/* ── Odoo iframe ────────────────────────────────── */}
-      <section className="bg-white px-8 md:px-16 py-16">
+      <section className="bg-wdd-black px-8 md:px-16 py-16">
         <div className="max-w-screen-2xl mx-auto w-full">
           {!segment ? (
             <div className="flex flex-col items-center justify-center min-h-[320px] text-center bg-wdd-clay">
