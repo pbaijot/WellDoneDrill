@@ -235,15 +235,18 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
               </p>
             </div>
           ) : (
-            <iframe
-              src={ODOO_FORM_URL[locale]}
-              title="Formulaire de contact WellDoneDrill"
-              width="100%"
-              scrolling="no"
-              style={{height: '1100px', border: 'none', display: 'block'}}
-              loading="lazy"
-              allow="fullscreen"
-            />
+            <div className="h-[900px] lg:h-[700px]">
+              <iframe
+                src={ODOO_FORM_URL[locale]}
+                title="Formulaire de contact WellDoneDrill"
+                width="100%"
+                height="100%"
+                scrolling="no"
+                style={{border: 'none', display: 'block'}}
+                loading="lazy"
+                allow="fullscreen"
+              />
+            </div>
           )}
         </div>
       </section>
