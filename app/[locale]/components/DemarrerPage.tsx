@@ -170,83 +170,80 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
         </div>
       </section>
 
-      {/* ── Form section ───────────────────────────────── */}
-      <section className="bg-wdd-clay py-20 px-8 md:px-16">
+      {/* ── Segment selector ───────────────────────────── */}
+      <section className="bg-wdd-clay py-16 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <h2 className="text-2xl font-bold mb-8 leading-snug">{page?.formHeading ?? c.formHeading}</h2>
 
-            {/* LEFT — segment selector + stats + contact */}
-            <div>
-              <h2 className="text-2xl font-bold mb-8 leading-snug">{page?.formHeading ?? c.formHeading}</h2>
-              <div className="grid grid-cols-2 gap-3 mb-12">
-                {SEGMENT_KEYS.map((key, i) => {
-                  const seg = c.segments[i]
-                  return (
-                    <button
-                      key={key}
-                      onClick={() => setSegment(key)}
-                      className={
-                        'flex flex-col gap-3 p-5 text-left border-2 transition-all duration-200 ' +
-                        (segment === key
-                          ? 'border-wdd-black bg-wdd-black text-white'
-                          : 'border-black/12 bg-white hover:border-wdd-black/40 text-wdd-black')
-                      }
-                    >
-                      <div className={segment === key ? 'text-wdd-yellow' : 'text-wdd-black/50'}>{SEGMENT_ICONS[i]}</div>
-                      <div>
-                        <div className="text-sm font-bold">{seg.label}</div>
-                        <div className={`text-xs font-light mt-0.5 ${segment === key ? 'text-white/55' : 'text-black/40'}`}>{seg.sub}</div>
-                      </div>
-                    </button>
-                  )
-                })}
-              </div>
-
-              <div className="grid grid-cols-3 gap-6 border-t border-black/10 pt-8 mb-10">
-                {[
-                  {value: c.statFree,  label: c.statFreeLabel},
-                  {value: c.statDelay, label: c.statDelayLabel},
-                  {value: c.statFee,   label: c.statFeeLabel},
-                ].map((s) => (
-                  <div key={s.label}>
-                    <div className="text-2xl font-bold text-wdd-black">{s.value}</div>
-                    <div className="text-xs font-light text-black/40 mt-1 leading-snug">{s.label}</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+            {SEGMENT_KEYS.map((key, i) => {
+              const seg = c.segments[i]
+              return (
+                <button
+                  key={key}
+                  onClick={() => setSegment(key)}
+                  className={
+                    'flex flex-col gap-3 p-5 text-left border-2 transition-all duration-200 ' +
+                    (segment === key
+                      ? 'border-wdd-black bg-wdd-black text-white'
+                      : 'border-black/12 bg-white hover:border-wdd-black/40 text-wdd-black')
+                  }
+                >
+                  <div className={segment === key ? 'text-wdd-yellow' : 'text-wdd-black/50'}>{SEGMENT_ICONS[i]}</div>
+                  <div>
+                    <div className="text-sm font-bold">{seg.label}</div>
+                    <div className={`text-xs font-light mt-0.5 ${segment === key ? 'text-white/55' : 'text-black/40'}`}>{seg.sub}</div>
                   </div>
-                ))}
-              </div>
-
-              <div className="flex flex-col gap-1">
-                <span className="text-base font-bold text-wdd-black">{page?.phone ?? '+32 478 75 36 79'}</span>
-                <span className="text-xs font-light text-black/45">{page?.email ?? 'info@welldonedrill.energy'}</span>
-              </div>
-            </div>
-
-            {/* RIGHT — Odoo iframe (or select prompt) */}
-            <div className="bg-white shadow-sm">
-              {!segment ? (
-                <div className="flex flex-col items-center justify-center min-h-[320px] text-center p-10">
-                  <div className="w-12 h-12 bg-wdd-clay flex items-center justify-center mb-4">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-black/40">
-                      <path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/>
-                    </svg>
-                  </div>
-                  <p className="text-sm font-light text-black/40 leading-relaxed max-w-xs">
-                    {c.selectPrompt}
-                  </p>
-                </div>
-              ) : (
-                <iframe
-                  src={ODOO_FORM_URL[locale]}
-                  title="Formulaire de contact WellDoneDrill"
-                  width="100%"
-                  style={{minHeight: '680px', border: 'none', display: 'block'}}
-                  loading="lazy"
-                  allow="fullscreen"
-                />
-              )}
-            </div>
-
+                </button>
+              )
+            })}
           </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-8 border-t border-black/10 pt-8">
+            <div className="flex flex-wrap gap-8 md:gap-16">
+              {[
+                {value: c.statFree,  label: c.statFreeLabel},
+                {value: c.statDelay, label: c.statDelayLabel},
+                {value: c.statFee,   label: c.statFeeLabel},
+              ].map((s) => (
+                <div key={s.label}>
+                  <div className="text-2xl font-bold text-wdd-black">{s.value}</div>
+                  <div className="text-xs font-light text-black/40 mt-1 leading-snug">{s.label}</div>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-base font-bold text-wdd-black">{page?.phone ?? '+32 478 75 36 79'}</span>
+              <span className="text-xs font-light text-black/45">{page?.email ?? 'info@welldonedrill.energy'}</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Odoo iframe ────────────────────────────────── */}
+      <section className="bg-white px-8 md:px-16 py-16">
+        <div className="max-w-screen-2xl mx-auto w-full">
+          {!segment ? (
+            <div className="flex flex-col items-center justify-center min-h-[320px] text-center bg-wdd-clay">
+              <div className="w-12 h-12 bg-white flex items-center justify-center mb-4">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-black/40">
+                  <path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/>
+                </svg>
+              </div>
+              <p className="text-sm font-light text-black/40 leading-relaxed max-w-xs">
+                {c.selectPrompt}
+              </p>
+            </div>
+          ) : (
+            <iframe
+              src={ODOO_FORM_URL[locale]}
+              title="Formulaire de contact WellDoneDrill"
+              width="100%"
+              style={{minHeight: '680px', border: 'none', display: 'block'}}
+              loading="lazy"
+              allow="fullscreen"
+            />
+          )}
         </div>
       </section>
 
