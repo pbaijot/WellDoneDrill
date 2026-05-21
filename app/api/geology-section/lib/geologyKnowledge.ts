@@ -86,7 +86,7 @@ function isInBbox(lat: number, lng: number, bbox: BBox) {
 
 function loadJson<T>(relativePath: string): T | null {
   try {
-    const fullPath = path.join(process.cwd(), relativePath)
+    const fullPath = path.join(/*turbopackIgnore: true*/ process.cwd(), relativePath)
     return JSON.parse(fs.readFileSync(fullPath, 'utf-8')) as T
   } catch {
     return null
