@@ -60,6 +60,7 @@ type SegmentDefaults = {
   mapEmpty: string
   mapCtaAll: string
   mapCtaProvince: (name: string) => string
+  mapCountry: string
   // mobile sticky CTA
   stickyStart: string
   stickyCall: string
@@ -125,6 +126,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
     mapCtaAll: "Voir toutes nos réalisations",
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    mapCountry: "Belgique",
     stickyStart: "Démarrer mon projet",
     stickyCall: "Appeler WDD",
   },
@@ -188,6 +190,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
     mapCtaAll: "Voir toutes nos réalisations",
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    mapCountry: "Belgique",
     stickyStart: "Démarrer mon projet",
     stickyCall: "Appeler WDD",
   },
@@ -251,6 +254,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
     mapCtaAll: "Voir toutes nos réalisations",
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    mapCountry: "Belgique",
     stickyStart: "Démarrer mon projet",
     stickyCall: "Appeler WDD",
   },
@@ -263,12 +267,12 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
 type LocaleOverrides = Pick<SegmentDefaults,
   'heroCtaSecondary' | 'mapTitle' | 'mapSelectProvince' | 'mapAllProvinces' |
   'mapEmpty' | 'mapCtaAll' | 'mapCtaProvince' | 'stickyStart' | 'stickyCall'
->
+> & {mapCountry: string}
 
 const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
   'be-fr': {
     heroCtaSecondary: 'Voir nos réalisations',
-    mapTitle: 'Nos projets en',
+    mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une province',
     mapAllProvinces: 'Toutes les provinces',
     mapEmpty: 'Aucun projet répertorié dans cette province pour le moment.',
@@ -279,7 +283,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
   },
   'be-nl': {
     heroCtaSecondary: 'Onze realisaties bekijken',
-    mapTitle: 'Onze projecten in',
+    mapTitle: 'Onze projecten in', mapCountry: 'België',
     mapSelectProvince: 'Selecteer een provincie',
     mapAllProvinces: 'Alle provincies',
     mapEmpty: 'Geen projecten geregistreerd in deze provincie.',
@@ -290,7 +294,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
   },
   'fr-fr': {
     heroCtaSecondary: 'Voir nos réalisations',
-    mapTitle: 'Nos projets en',
+    mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une région',
     mapAllProvinces: 'Toutes les régions',
     mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
@@ -301,7 +305,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
   },
   'lu-fr': {
     heroCtaSecondary: 'Voir nos réalisations',
-    mapTitle: 'Nos projets en',
+    mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une région',
     mapAllProvinces: 'Toutes les régions',
     mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
@@ -312,7 +316,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
   },
   'lu-de': {
     heroCtaSecondary: 'Unsere Realisierungen ansehen',
-    mapTitle: 'Unsere Projekte in',
+    mapTitle: 'Unsere Projekte in', mapCountry: 'Belgien',
     mapSelectProvince: 'Region auswählen',
     mapAllProvinces: 'Alle Regionen',
     mapEmpty: 'Derzeit keine Projekte in dieser Region erfasst.',
@@ -561,7 +565,7 @@ function ProProjetsSection({locale, chantiers, d}: {locale: AppLocale; chantiers
 
         <div className="flex items-end justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold leading-tight">
-            {d.mapTitle} <span className="text-wdd-mud">Belgique</span>
+            {d.mapTitle} <span className="text-wdd-mud">{d.mapCountry}</span>
           </h2>
           {selectedId && (
             <button
