@@ -229,14 +229,30 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
                   </p>
                 </div>
               ) : (
-                <iframe
-                  src={ODOO_FORM_URL}
-                  title="Formulaire de contact WellDoneDrill"
-                  width="100%"
-                  style={{minHeight: '680px', border: 'none', display: 'block'}}
-                  loading="lazy"
-                  allow="fullscreen"
-                />
+                // Crop Odoo page chrome (header + bottom padding).
+                // Adjust cropTop / cropBottom if more or less needs trimming.
+                (() => {
+                  const cropTop = 56
+                  const cropBottom = 40
+                  const visibleHeight = 680
+                  return (
+                    <div style={{height: visibleHeight, overflow: 'hidden', position: 'relative'}}>
+                      <iframe
+                        src={ODOO_FORM_URL}
+                        title="Formulaire de contact WellDoneDrill"
+                        width="100%"
+                        style={{
+                          height: visibleHeight + cropTop + cropBottom,
+                          marginTop: -cropTop,
+                          border: 'none',
+                          display: 'block',
+                        }}
+                        loading="lazy"
+                        allow="fullscreen"
+                      />
+                    </div>
+                  )
+                })()
               )}
             </div>
 
