@@ -1,6 +1,6 @@
 'use client'
 
-import {useState} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
 import type {AppLocale} from '@/src/i18n/routes'
 import type {DemarrerPageData} from '@/src/lib/demarrerPage'
@@ -138,6 +138,18 @@ const SEGMENT_KEYS: Exclude<Segment, null>[] = ['particulier', 'chauffagiste', '
 export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: DemarrerPageData | null}) {
   const c = COPY[locale]
   const [segment, setSegment] = useState<Segment>(null)
+  const [iframeHeight, setIframeHeight] = useState(700)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
+
+  useEffect(() => {
+    const handler = (e: MessageEvent) => {
+      if (e.origin !== 'https://welldonedrill.odoo.com') return
+      const h = typeof e.data === 'number' ? e.data : e.data?.height
+      if (h && typeof h === 'number' && h > 100) setIframeHeight(h)
+    }
+    window.addEventListener('message', handler)
+    return () => window.removeEventListener('message', handler)
+  }, [])
 
   return (
     <div className="flex flex-col bg-white">
@@ -235,18 +247,16 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
               </p>
             </div>
           ) : (
-            <div className="h-[900px] lg:h-[700px]">
-              <iframe
-                src={ODOO_FORM_URL[locale]}
-                title="Formulaire de contact WellDoneDrill"
-                width="100%"
-                height="100%"
-                scrolling="no"
-                style={{border: 'none', display: 'block'}}
-                loading="lazy"
-                allow="fullscreen"
-              />
-            </div>
+            <iframe
+              ref={iframeRef}
+              src={ODOO_FORM_URL[locale]}
+              title="Formulaire de contact WellDoneDrill"
+              width="100%"
+              scrolling="no"
+              style={{height: iframeHeight, border: 'none', display: 'block', transition: 'height 0.2s ease'}}
+              loading="lazy"
+              allow="fullscreen"
+            />
           )}
         </div>
       </section>
