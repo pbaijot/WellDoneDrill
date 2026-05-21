@@ -2,7 +2,6 @@ import {sanity} from './sanity'
 
 export type HomePageData = {
   hero?: {
-    tag?: string
     title?: string
     subtitle?: string
     ctaLabel?: string
@@ -10,20 +9,17 @@ export type HomePageData = {
     image?: unknown
   }
   advantages?: {
-    eyebrow?: string
     title?: string
     highlight?: string
     introText?: string
-    videoUrl?: string
-    items?: {number?: string; icon?: string; title?: string; description?: string}[]
-    calculatorTitle?: string
-    calculatorSubtitle?: string
+    videoUrl?: string  // resolved from file asset by GROQ
+    items?: {number?: string; title?: string; description?: string}[]
   }
   services?: {
-    eyebrow?: string
     title?: string
+    highlight?: string
     subtitle?: string
-    items?: {badge?: string; title?: string; description?: string; routeKey?: string; image?: unknown}[]
+    items?: {title?: string; description?: string; ctaLabel?: string; routeKey?: string; image?: unknown}[]
   }
   audiences?: {
     particular?: {
@@ -57,7 +53,6 @@ export type HomePageData = {
     items?: {question?: string; answer?: string}[]
   }
   blog?: {
-    eyebrow?: string
     title?: string
     highlight?: string
     readMoreLabel?: string
@@ -67,7 +62,10 @@ export type HomePageData = {
 const homePageQuery = `
 *[_type == "homePage" && locale == $locale][0]{
   hero,
-  advantages,
+  "advantages": advantages {
+    ...,
+    "videoUrl": video.asset->url
+  },
   services,
   audiences,
   contactCta,

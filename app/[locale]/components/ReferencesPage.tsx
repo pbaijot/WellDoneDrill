@@ -13,11 +13,66 @@ import {
   SVG_H,
   getProvinceName,
   getProvincePageUrl,
+  getProvinceSlug,
   chantierImageUrl,
-  sectorLabel,
+  TYPE_LABEL,
+  SECTOR_LABEL,
+  DEPTH_LABEL,
+  localizedProvince,
   type Province,
   type Chantier,
 } from '@/src/lib/referencesPage'
+
+const COPY: Record<AppLocale, {
+  h1Line1: string; h1Line2: string; h1Line3: string
+  desc: string
+  portfolioEyebrow: string; allProjects: string
+  projectCount: (n: number) => string
+  ctaEyebrow: string; ctaTitle1: string; ctaTitle2: string; ctaButton: string
+  tooltipLabel: string; tooltipClick: string
+} | null> = {
+  'be-fr': {
+    h1Line1: 'Géothermie', h1Line2: 'partout en', h1Line3: 'Belgique',
+    desc: "Depuis 2009, WellDoneDrill fore des champs géothermiques sur l'ensemble du territoire belge. Sélectionnez votre province pour découvrir nos réalisations.",
+    portfolioEyebrow: 'Portfolio', allProjects: 'Tous nos projets',
+    projectCount: (n) => `${n} réalisation${n > 1 ? 's' : ''}`,
+    ctaEyebrow: 'Votre projet', ctaTitle1: 'Prêt à lancer votre', ctaTitle2: 'chantier géothermique ?',
+    ctaButton: 'Demandez un devis gratuit',
+    tooltipLabel: 'Province', tooltipClick: 'Cliquer pour explorer →',
+  },
+  'be-nl': {
+    h1Line1: 'Geothermie', h1Line2: 'overal in', h1Line3: 'België',
+    desc: "Sinds 2009 boort WellDoneDrill geothermische velden op het volledige Belgische grondgebied. Selecteer uw provincie om onze realisaties te ontdekken.",
+    portfolioEyebrow: 'Portfolio', allProjects: 'Alle projecten',
+    projectCount: (n) => `${n} realisatie${n > 1 ? 's' : ''}`,
+    ctaEyebrow: 'Uw project', ctaTitle1: 'Klaar om uw', ctaTitle2: 'geothermisch project te starten?',
+    ctaButton: 'Vraag een gratis offerte aan',
+    tooltipLabel: 'Provincie', tooltipClick: 'Klikken om te verkennen →',
+  },
+  'fr-fr': null,
+  'lu-fr': null,
+  'lu-de': null,
+}
+
+const COMING_SOON: Record<AppLocale, {title: string; sub: string; cta: string} | null> = {
+  'be-fr': null,
+  'be-nl': null,
+  'fr-fr': {
+    title: 'Nos références en France arrivent bientôt.',
+    sub: "Nous développons activement nos activités en France. Contactez-nous pour discuter de votre projet géothermique.",
+    cta: 'Contactez-nous',
+  },
+  'lu-fr': {
+    title: 'Nos références au Luxembourg arrivent bientôt.',
+    sub: "Nous développons activement nos activités au Luxembourg. Contactez-nous pour discuter de votre projet géothermique.",
+    cta: 'Contactez-nous',
+  },
+  'lu-de': {
+    title: 'Unsere Referenzen in Luxemburg kommen bald.',
+    sub: "Wir bauen unsere Aktivitäten in Luxemburg aktiv aus. Kontaktieren Sie uns, um Ihr Geothermieprojekt zu besprechen.",
+    cta: 'Kontaktieren Sie uns',
+  },
+}
 
 const CLAY = '#E8E5DE'
 const ZOOM = 1.2
@@ -30,12 +85,19 @@ function provinceFill(p: Province, hovered: string | null, selected: string | nu
 
 /* ─── Main page ──────────────────────────────────────────────── */
 
-export default function ReferencesPage({
-  locale,
-  chantiers,
-}: {
+export default function ReferencesPage({locale, chantiers}: {locale: AppLocale; chantiers: Chantier[]}) {
+  const copy = COPY[locale]
+  const comingSoon = COMING_SOON[locale]
+  if (!copy || comingSoon) return <ComingSoonPage locale={locale} cs={comingSoon!} />
+  return <BelgiumPage locale={locale} chantiers={chantiers} copy={copy} />
+}
+
+/* ── Belgium full page ────────────────────────────────────────── */
+
+function BelgiumPage({locale, chantiers, copy}: {
   locale: AppLocale
   chantiers: Chantier[]
+  copy: NonNullable<(typeof COPY)[AppLocale]>
 }) {
   const [hovered, setHovered] = useState<string | null>(null)
   const [selected, setSelected] = useState<string | null>(null)
@@ -47,14 +109,13 @@ export default function ReferencesPage({
       if (zooming) return
       setSelected(province.id)
       setZooming(true)
-      setTimeout(() => router.push(getProvincePageUrl(locale, province.slug)), 700)
+      setTimeout(() => router.push(getProvincePageUrl(locale, getProvinceSlug(province, locale))), 700)
     },
     [zooming, locale, router],
   )
 
   const sel = BELGIUM_PROVINCES.find((p) => p.id === selected)
   const [cx, cy] = sel?.centroid ?? [SVG_W / 2, SVG_H / 2]
-  // Centre the province in the right-half container (same formula as ProvinceReferencesPage)
   const tx = selected ? `${(0.5 - cx / SVG_W) * ZOOM * 100}%` : '0%'
   const ty = selected ? `${(0.5 - cy / SVG_H) * ZOOM * 100}%` : '0%'
 
@@ -62,22 +123,16 @@ export default function ReferencesPage({
     <div className="flex flex-col bg-white">
 
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section className="h-[72vh] relative overflow-hidden" style={{backgroundColor: CLAY}}>
+      <section className="h-[44vh] relative overflow-hidden" style={{backgroundColor: CLAY}}>
 
-        {/* Right — map zooms in-place inside this container (same as province page) */}
-        <div
-          className="hidden lg:block absolute right-0 bottom-0 w-1/2"
-          style={{top: '-25%'}}
-        >
+        {/* Map: fixed height keeps scale; negative top moves it up into the strip */}
+        <div className="hidden lg:block absolute right-[18%] w-[38%]" style={{top: '-24vh', height: '72vh'}}>
           <motion.svg
             viewBox={`0 0 ${SVG_W} ${SVG_H}`}
             preserveAspectRatio="xMidYMid slice"
             className="w-full h-full"
             style={{transformOrigin: '50% 50%'}}
-            animate={zooming && sel
-              ? {scale: ZOOM, x: tx, y: ty}
-              : {scale: 1, x: '0%', y: '0%'}
-            }
+            animate={zooming && sel ? {scale: ZOOM, x: tx, y: ty} : {scale: 1, x: '0%', y: '0%'}}
             transition={MAP_TRANSITION}
           >
             {BELGIUM_PROVINCES.map((p) => (
@@ -97,61 +152,26 @@ export default function ReferencesPage({
           </motion.svg>
         </div>
 
-        {/* Left — fades out on click, province page fades its own content in */}
         <motion.div
-          className="relative h-full flex flex-col justify-start px-8 md:px-16 pointer-events-none"
-          style={{paddingTop: 'clamp(5rem, 10vh, 7rem)', zIndex: 10000}}
+          className="relative h-full flex flex-col justify-center px-8 md:px-16 pointer-events-none"
+          style={{zIndex: 10000}}
           animate={{opacity: zooming ? 0 : 1}}
           transition={{duration: 0.3, ease: [0.32, 0, 0.24, 1]}}
         >
           <div className="max-w-screen-2xl mx-auto w-full">
             <div className="lg:w-1/2 lg:pr-16 pointer-events-auto">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-7 h-0.5 bg-wdd-black" />
-                <span className="text-xs font-light tracking-widest text-wdd-black/50 uppercase">
-                  Nos réalisations
-                </span>
-              </div>
-
               <h1 className="text-4xl md:text-5xl font-bold text-wdd-black leading-none mb-4">
-                <span className="block">Géothermie</span>
-                <span className="block">partout en</span>
-                <span className="block text-wdd-mud">Belgique</span>
+                <span className="block">{copy.h1Line1}</span>
+                <span className="block">{copy.h1Line2}</span>
+                <span className="block text-wdd-mud">{copy.h1Line3}</span>
               </h1>
-
-              <p className="text-sm font-light text-wdd-black/65 leading-relaxed mb-6">
-                Depuis 2009, WellDoneDrill fore des champs géothermiques sur l&apos;ensemble
-                du territoire belge. Sélectionnez votre province pour découvrir nos
-                réalisations.
+              <p className="text-sm font-light text-wdd-black/65 leading-relaxed">
+                {copy.desc}
               </p>
-
-              <div className="grid grid-cols-3 gap-4 pt-5 border-t border-wdd-black/12">
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">
-                    {chantiers.length > 0 ? `${chantiers.length}+` : '500+'}
-                  </div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    Projets réalisés
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">10</div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    Provinces actives
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">15 ans</div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    d&apos;expertise
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Hover tooltip */}
         <AnimatePresence>
           {hovered && !zooming && (
             <motion.div
@@ -164,13 +184,13 @@ export default function ReferencesPage({
               style={{zIndex: 10000}}
             >
               <div className="text-[9px] font-bold uppercase tracking-widest text-white/40 mb-0.5">
-                Province
+                {copy.tooltipLabel}
               </div>
               <div className="text-sm font-bold leading-none">
                 {getProvinceName(BELGIUM_PROVINCES.find((p) => p.id === hovered)!, locale)}
               </div>
               <div className="text-[10px] font-light text-wdd-yellow mt-1">
-                Cliquer pour explorer →
+                {copy.tooltipClick}
               </div>
             </motion.div>
           )}
@@ -184,15 +204,15 @@ export default function ReferencesPage({
           <div className="flex items-center gap-3 mb-4">
             <div className="w-5 h-0.5 bg-wdd-yellow" />
             <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-              Portfolio
+              {copy.portfolioEyebrow}
             </span>
           </div>
 
           <div className="flex items-end justify-between mb-12 gap-4">
-            <h2 className="text-4xl font-bold leading-tight">Tous nos projets</h2>
+            <h2 className="text-4xl font-bold leading-tight">{copy.allProjects}</h2>
             {chantiers.length > 0 && (
               <span className="text-sm font-light text-black/40 shrink-0">
-                {chantiers.length} réalisation{chantiers.length > 1 ? 's' : ''}
+                {copy.projectCount(chantiers.length)}
               </span>
             )}
           </div>
@@ -210,22 +230,50 @@ export default function ReferencesPage({
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────── */}
-      <section className="bg-wdd-black py-20 px-8 md:px-16">
+      <section className="bg-wdd-clay py-20 px-8 md:px-16">
         <div className="max-w-screen-xl mx-auto text-center">
-          <div className="text-xs font-light tracking-widest text-white/30 uppercase mb-4">
-            Votre projet
+          <div className="text-xs font-light tracking-widest text-wdd-black/30 uppercase mb-4">
+            {copy.ctaEyebrow}
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-            Prêt à lancer votre
+          <h2 className="text-4xl md:text-5xl font-bold text-wdd-black mb-8 leading-tight">
+            {copy.ctaTitle1}
             <br />
-            <span className="text-wdd-yellow">chantier géothermique ?</span>
+            <span className="text-wdd-mud">{copy.ctaTitle2}</span>
           </h2>
           <Link
             href={getLocalizedPath(locale, 'demarrer')}
-            className="inline-block bg-wdd-yellow text-wdd-black px-8 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
+            className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
-            Demandez un devis gratuit
+            {copy.ctaButton}
           </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+/* ── Coming soon page ─────────────────────────────────────────── */
+
+function ComingSoonPage({locale, cs}: {locale: AppLocale; cs: NonNullable<(typeof COMING_SOON)[AppLocale]>}) {
+  return (
+    <div className="flex flex-col bg-white min-h-screen">
+      <section className="flex-1 flex flex-col justify-center px-8 md:px-16 py-32" style={{backgroundColor: CLAY}}>
+        <div className="max-w-screen-2xl mx-auto w-full">
+          <div className="max-w-2xl">
+            <div className="w-10 h-0.5 bg-wdd-black/30 mb-8" />
+            <h1 className="text-4xl md:text-5xl font-bold text-wdd-black leading-tight mb-6">
+              {cs.title}
+            </h1>
+            <p className="text-base font-light text-wdd-black/60 leading-relaxed mb-10">
+              {cs.sub}
+            </p>
+            <Link
+              href={getLocalizedPath(locale, 'demarrer')}
+              className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold hover:bg-wdd-mud transition-colors"
+            >
+              {cs.cta} →
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -272,12 +320,12 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
                   : 'bg-wdd-black text-wdd-yellow group-hover:bg-wdd-yellow group-hover:text-wdd-black'
               } transition-colors`}
             >
-              {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
+              {TYPE_LABEL[locale][c.type as 'fermee' | 'ouverte'] ?? c.type}
             </span>
           )}
           {c.sector && (
             <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 bg-black/8 text-black/50 group-hover:bg-white/10 group-hover:text-white/50 transition-colors">
-              {sectorLabel(c.sector)}
+              {SECTOR_LABEL[locale][c.sector] ?? c.sector}
             </span>
           )}
         </div>
@@ -288,13 +336,13 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
 
         {(c.location || c.province) && (
           <p className="text-xs font-light text-black/50 group-hover:text-white/45 transition-colors">
-            {[c.location, c.province].filter(Boolean).join(' · ')}
+            {[c.location, localizedProvince(c.province, locale)].filter(Boolean).join(' · ')}
           </p>
         )}
 
         {c.depth && (
           <p className="text-xs font-light text-black/40 group-hover:text-white/35 transition-colors mt-auto pt-2 border-t border-black/8 group-hover:border-white/8">
-            Profondeur : <span className="font-bold">{c.depth} m</span>
+            {DEPTH_LABEL[locale]} : <span className="font-bold">{c.depth} m</span>
           </p>
         )}
       </div>
@@ -313,11 +361,8 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
 function EmptyState() {
   return (
     <div className="border border-dashed border-black/15 p-16 text-center">
-      <div className="text-sm font-light text-black/35 mb-2">
-        Les projets apparaîtront ici une fois ajoutés dans le CMS Sanity.
-      </div>
-      <div className="text-xs font-light text-black/20">
-        Type de document : <code className="font-mono">chantier</code>
+      <div className="text-sm font-light text-black/35">
+        —
       </div>
     </div>
   )

@@ -1,11 +1,5 @@
 import {sanity} from './sanity'
 
-export type GeoStep = {
-  _key?: string
-  title?: string
-  body?: string
-}
-
 export type GeoFaq = {
   _key?: string
   question?: string
@@ -26,6 +20,7 @@ export type GeoPageData = {
   heroLine3?: string
   heroSubtitle?: string
   heroCtaLabel?: string
+  heroSecondaryLabel?: string
   heroStats?: GeoStat[]
   heroPanelItems?: GeoPanelItem[]
   heroLeftBgImage?: unknown
@@ -35,10 +30,13 @@ export type GeoPageData = {
   introBody2?: string
   introImage?: unknown
   howTitle?: string
-  howSteps?: GeoStep[]
+  howCtaLabel?: string
   howIllustration?: unknown
+  advantagesTitle?: string
   advantages?: GeoAdvantage[]
   faqTitle?: string
+  faqSubtitle?: string
+  faqCtaLabel?: string
   faqs?: GeoFaq[]
   particularEyebrow?: string
   particularTitle?: string
@@ -57,15 +55,16 @@ export type GeoPageData = {
 const query = `
 *[_type == "geoPage" && locale == $locale && routeKey == $routeKey][0]{
   _id, locale, routeKey,
-  heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel,
+  heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel, heroSecondaryLabel,
   heroStats, heroPanelItems,
   heroLeftBgImage, heroRightImage,
   introTitle, introBody1, introBody2,
   introImage,
-  howTitle, howSteps,
+  howTitle, howCtaLabel,
   howIllustration,
+  advantagesTitle,
   advantages,
-  faqTitle, faqs,
+  faqTitle, faqSubtitle, faqCtaLabel, faqs,
   particularEyebrow, particularTitle, particularBody, particularCta,
   particularImage,
   proEyebrow, proTitle, proBody, proCta,

@@ -16,8 +16,11 @@ import {
   SVG_H,
   getProvinceName,
   getProvincePageUrl,
+  getProvinceSlug,
   chantierImageUrl,
-  sectorLabel,
+  TYPE_LABEL,
+  SECTOR_LABEL,
+  localizedProvince,
   type Province,
   type Chantier,
 } from '@/src/lib/referencesPage'
@@ -93,6 +96,143 @@ const DEFAULT_PRIMES = [
   {region: "Flandre", title: "Premie warmtepomp — variable", body: "Steun voor de installatie van een geothermische warmtepomp in woningen."},
 ]
 
+/* ─────────────────────────────────────────────
+   UI TRANSLATIONS (chrome strings not in CMS)
+───────────────────────────────────────────── */
+
+const UI = {
+  'be-fr': {
+    fmtLocale: 'fr-BE',
+    geoSol: 'Le sol', geoSolSub: 'Énergie constante à 80–200 m',
+    geoPac: 'Pompe à chaleur', geoPacSub: "Amplifie l'énergie captée",
+    geoMaison: 'Votre maison', geoMaisonSub: 'Chauffage · Eau · Froid',
+    startProject: 'Démarrer mon projet →',
+    calcTitle: 'Combien pourriez-vous économiser ?',
+    calcIntro: "Entrez votre surface ou votre consommation actuelle. Cochez les postes qui vous concernent — les économies se calculent en temps réel.",
+    inputModeLabel: "J'entre",
+    surfaceMode: 'Ma surface (m²)', consoMode: 'Ma consommation (MWh/an)',
+    surfaceLabel: 'Surface habitable', consoLabel: 'Consommation chauffage', consoUnit: 'MWh/an',
+    consoFromSurface: '≈ {n} MWh/an de chauffage estimés', surfaceFromConso: '≈ {n} m² de surface estimée',
+    energyLabel: 'Énergie de chauffage actuelle',
+    gasOption: 'Gaz naturel', oilOption: 'Mazout', elecOption: 'Électrique',
+    postesLabel: 'Postes concernés', posteHeating: 'Chauffage', posteCooling: 'Rafraîchissement', postePool: 'Piscine',
+    savingsTitle: 'Économies estimées / an', totalLabel: 'Total toutes énergies',
+    totalSub: 'soit {mwh} MWh économisés · {co2} kg CO₂ évités',
+    notSelected: 'non sélectionné',
+    disclaimer: "Basé sur les prix de l'énergie belges 2024–2025 et un COP géothermique de 4,5. Résultat indicatif.",
+    faqSub: "Une question ne figure pas ici ? Contactez directement notre équipe.", faqCta: 'Poser ma question',
+    showMap: true,
+    mapTitle: 'Nos projets en', mapCountry: 'Belgique', mapHint: 'Sélectionnez une province',
+    mapAll: 'Toutes les provinces', mapEmpty: 'Aucun projet répertorié dans cette province pour le moment.',
+    mapAllRealisations: 'Voir toutes nos réalisations', mapAllInProvince: 'Tous les projets en {name}',
+    calcBg: 'bg-wdd-clay',
+    orCall: 'ou appelez-nous', mobileCta1: 'Calculer mes économies', mobileCta2: 'Devis gratuit',
+  },
+  'be-nl': {
+    fmtLocale: 'nl-BE',
+    geoSol: 'De bodem', geoSolSub: 'Constante energie op 80–200 m',
+    geoPac: 'Warmtepomp', geoPacSub: 'Versterkt de opgenomen energie',
+    geoMaison: 'Uw woning', geoMaisonSub: 'Verwarming · Water · Koeling',
+    startProject: 'Mijn project starten →',
+    calcTitle: 'Hoeveel kunt u besparen?',
+    calcIntro: 'Voer uw oppervlakte of uw huidig verbruik in. Vink de posten aan die op u van toepassing zijn — de besparingen worden in realtime berekend.',
+    inputModeLabel: 'Ik voer in',
+    surfaceMode: 'Mijn oppervlakte (m²)', consoMode: 'Mijn verbruik (MWh/jaar)',
+    surfaceLabel: 'Bewoonbare oppervlakte', consoLabel: 'Verwarmingsverbruik', consoUnit: 'MWh/jaar',
+    consoFromSurface: '≈ {n} MWh/jaar geschatte verwarming', surfaceFromConso: '≈ {n} m² geschatte oppervlakte',
+    energyLabel: 'Huidige verwarmingsenergie',
+    gasOption: 'Aardgas', oilOption: 'Stookolie', elecOption: 'Elektrisch',
+    postesLabel: 'Betrokken posten', posteHeating: 'Verwarming', posteCooling: 'Koeling', postePool: 'Zwembad',
+    savingsTitle: 'Geschatte besparing / jaar', totalLabel: 'Totaal alle energiesoorten',
+    totalSub: 'ofwel {mwh} MWh bespaard · {co2} kg CO₂ vermeden',
+    notSelected: 'niet geselecteerd',
+    disclaimer: 'Gebaseerd op Belgische energieprijzen 2024–2025 en een geothermische COP van 4,5. Indicatief resultaat.',
+    faqSub: 'Staat uw vraag er niet bij? Contacteer ons rechtstreeks.', faqCta: 'Mijn vraag stellen',
+    showMap: true,
+    mapTitle: 'Onze projecten in', mapCountry: 'België', mapHint: 'Selecteer een provincie',
+    mapAll: 'Alle provincies', mapEmpty: 'Momenteel geen projecten geregistreerd in deze provincie.',
+    mapAllRealisations: 'Bekijk al onze realisaties', mapAllInProvince: 'Alle projecten in {name}',
+    calcBg: 'bg-wdd-clay',
+    orCall: 'of bel ons', mobileCta1: 'Mijn besparing berekenen', mobileCta2: 'Gratis offerte',
+  },
+  'fr-fr': {
+    fmtLocale: 'fr-FR',
+    geoSol: 'Le sol', geoSolSub: 'Énergie constante à 80–200 m',
+    geoPac: 'Pompe à chaleur', geoPacSub: "Amplifie l'énergie captée",
+    geoMaison: 'Votre maison', geoMaisonSub: 'Chauffage · Eau · Froid',
+    startProject: 'Démarrer mon projet →',
+    calcTitle: 'Combien pourriez-vous économiser ?',
+    calcIntro: "Entrez votre surface ou votre consommation actuelle. Cochez les postes qui vous concernent — les économies se calculent en temps réel.",
+    inputModeLabel: "J'entre",
+    surfaceMode: 'Ma surface (m²)', consoMode: 'Ma consommation (MWh/an)',
+    surfaceLabel: 'Surface habitable', consoLabel: 'Consommation chauffage', consoUnit: 'MWh/an',
+    consoFromSurface: '≈ {n} MWh/an de chauffage estimés', surfaceFromConso: '≈ {n} m² de surface estimée',
+    energyLabel: 'Énergie de chauffage actuelle',
+    gasOption: 'Gaz naturel', oilOption: 'Fioul', elecOption: 'Électrique',
+    postesLabel: 'Postes concernés', posteHeating: 'Chauffage', posteCooling: 'Rafraîchissement', postePool: 'Piscine',
+    savingsTitle: 'Économies estimées / an', totalLabel: 'Total toutes énergies',
+    totalSub: 'soit {mwh} MWh économisés · {co2} kg CO₂ évités',
+    notSelected: 'non sélectionné',
+    disclaimer: "Basé sur les prix de l'énergie français 2024–2025 et un COP géothermique de 4,5. Résultat indicatif.",
+    faqSub: "Une question ne figure pas ici ? Contactez directement notre équipe.", faqCta: 'Poser ma question',
+    showMap: false,
+    mapTitle: '', mapCountry: '', mapHint: '', mapAll: '', mapEmpty: '', mapAllRealisations: '', mapAllInProvince: '',
+    calcBg: 'bg-white',
+    orCall: 'ou appelez-nous', mobileCta1: 'Calculer mes économies', mobileCta2: 'Devis gratuit',
+  },
+  'lu-fr': {
+    fmtLocale: 'fr-LU',
+    geoSol: 'Le sol', geoSolSub: 'Énergie constante à 80–200 m',
+    geoPac: 'Pompe à chaleur', geoPacSub: "Amplifie l'énergie captée",
+    geoMaison: 'Votre maison', geoMaisonSub: 'Chauffage · Eau · Froid',
+    startProject: 'Démarrer mon projet →',
+    calcTitle: 'Combien pourriez-vous économiser ?',
+    calcIntro: "Entrez votre surface ou votre consommation actuelle. Cochez les postes qui vous concernent — les économies se calculent en temps réel.",
+    inputModeLabel: "J'entre",
+    surfaceMode: 'Ma surface (m²)', consoMode: 'Ma consommation (MWh/an)',
+    surfaceLabel: 'Surface habitable', consoLabel: 'Consommation chauffage', consoUnit: 'MWh/an',
+    consoFromSurface: '≈ {n} MWh/an de chauffage estimés', surfaceFromConso: '≈ {n} m² de surface estimée',
+    energyLabel: 'Énergie de chauffage actuelle',
+    gasOption: 'Gaz naturel', oilOption: 'Mazout', elecOption: 'Électrique',
+    postesLabel: 'Postes concernés', posteHeating: 'Chauffage', posteCooling: 'Rafraîchissement', postePool: 'Piscine',
+    savingsTitle: 'Économies estimées / an', totalLabel: 'Total toutes énergies',
+    totalSub: 'soit {mwh} MWh économisés · {co2} kg CO₂ évités',
+    notSelected: 'non sélectionné',
+    disclaimer: "Basé sur les prix de l'énergie luxembourgeois 2024–2025 et un COP géothermique de 4,5. Résultat indicatif.",
+    faqSub: "Une question ne figure pas ici ? Contactez directement notre équipe.", faqCta: 'Poser ma question',
+    showMap: false,
+    mapTitle: '', mapCountry: '', mapHint: '', mapAll: '', mapEmpty: '', mapAllRealisations: '', mapAllInProvince: '',
+    calcBg: 'bg-white',
+    orCall: 'ou appelez-nous', mobileCta1: 'Calculer mes économies', mobileCta2: 'Devis gratuit',
+  },
+  'lu-de': {
+    fmtLocale: 'de-LU',
+    geoSol: 'Der Boden', geoSolSub: 'Konstante Energie bei 80–200 m',
+    geoPac: 'Wärmepumpe', geoPacSub: 'Verstärkt die entnommene Energie',
+    geoMaison: 'Ihr Zuhause', geoMaisonSub: 'Heizung · Wasser · Kühlung',
+    startProject: 'Mein Projekt starten →',
+    calcTitle: 'Wie viel könnten Sie sparen?',
+    calcIntro: 'Geben Sie Ihre Wohnfläche oder Ihren aktuellen Verbrauch ein. Wählen Sie die zutreffenden Posten — die Ersparnisse werden in Echtzeit berechnet.',
+    inputModeLabel: 'Ich gebe ein',
+    surfaceMode: 'Meine Fläche (m²)', consoMode: 'Mein Verbrauch (MWh/Jahr)',
+    surfaceLabel: 'Wohnfläche', consoLabel: 'Heizungsverbrauch', consoUnit: 'MWh/Jahr',
+    consoFromSurface: '≈ {n} MWh/Jahr geschätzter Heizungsverbrauch', surfaceFromConso: '≈ {n} m² geschätzte Fläche',
+    energyLabel: 'Aktuelle Heizungsenergie',
+    gasOption: 'Erdgas', oilOption: 'Heizöl', elecOption: 'Elektrisch',
+    postesLabel: 'Betroffene Posten', posteHeating: 'Heizung', posteCooling: 'Kühlung', postePool: 'Schwimmbad',
+    savingsTitle: 'Geschätzte Ersparnis / Jahr', totalLabel: 'Gesamt alle Energiearten',
+    totalSub: 'd. h. {mwh} MWh eingespart · {co2} kg CO₂ vermieden',
+    notSelected: 'nicht ausgewählt',
+    disclaimer: 'Basiert auf luxemburgischen Energiepreisen 2024–2025 und einem geothermischen COP von 4,5. Indikativer Richtwert.',
+    faqSub: 'Haben Sie eine weitere Frage? Kontaktieren Sie unser Team direkt.', faqCta: 'Meine Frage stellen',
+    showMap: false,
+    mapTitle: '', mapCountry: '', mapHint: '', mapAll: '', mapEmpty: '', mapAllRealisations: '', mapAllInProvince: '',
+    calcBg: 'bg-white',
+    orCall: 'oder rufen Sie uns an', mobileCta1: 'Meine Ersparnis berechnen', mobileCta2: 'Kostenlose Offerte',
+  },
+} as const
+
+type UiT = typeof UI[keyof typeof UI]
 
 /* ─────────────────────────────────────────────
    SUB-COMPONENTS
@@ -147,7 +287,7 @@ function RoiLine({label, value, highlight}: {label: string; value: string; highl
   )
 }
 
-function GeoScheme() {
+function GeoScheme({t}: {t: UiT}) {
   const [phase, setPhase] = useState(0)
   // 0=off | 1=sol | 2=pipe1 | 3=pac | 4=pipe2 | 5=maison | 6=hold → restart
   const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
@@ -198,22 +338,22 @@ function GeoScheme() {
   return (
     <div className="flex items-start">
       <SchemeNode lit={solLit}
-        label="Le sol"
-        sub="Énergie constante à 80–200 m"
+        label={t.geoSol}
+        sub={t.geoSolSub}
         stat="15 °C"
         icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>}
       />
       <SchemePipe lit={pipe1Lit} />
       <SchemeNode lit={pacLit}
-        label="Pompe à chaleur"
-        sub="Amplifie l'énergie captée"
+        label={t.geoPac}
+        sub={t.geoPacSub}
         stat="COP 4–5"
         icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>}
       />
       <SchemePipe lit={pipe2Lit} />
       <SchemeNode lit={maisonLit}
-        label="Votre maison"
-        sub="Chauffage · Eau · Froid"
+        label={t.geoMaison}
+        sub={t.geoMaisonSub}
         stat="−70 %"
         icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>}
       />
@@ -330,6 +470,8 @@ export default function ParticuliersPage({
   chantiers?: Chantier[]
   settings?: GlobalSettingsData | null
 }) {
+  const t = UI[locale]
+
   const whyItems =
     page.whyItems && page.whyItems.length > 0 ? page.whyItems : DEFAULT_WHY_ITEMS
 
@@ -402,7 +544,7 @@ export default function ParticuliersPage({
     return { chaufMWh, rafraichMWh, piscMWh, chauffage, rafraich, piscine, totalMWh, totalEurLow, totalEurHigh, co2 }
   })()
 
-  const fmt = (n: number) => Math.round(n).toLocaleString('fr-BE')
+  const fmt = (n: number) => Math.round(n).toLocaleString(t.fmtLocale)
 
   const stats = page.stats && page.stats.length > 0 ? page.stats : []
 
@@ -531,17 +673,25 @@ export default function ParticuliersPage({
                   "Le prix du gaz a bondi de 180 % depuis 2021. L'Union européenne interdit les chaudières fossiles neuves dès 2026. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
               {stats.length > 0 && (
-                <div className="flex gap-8 mb-10">
-                  {stats.map((s, i) => (
-                    <div key={('_key' in s ? s._key as string : undefined) ?? i}>
-                      <div className="text-2xl font-bold text-wdd-mud tabular-nums">{s.value}</div>
-                      <div className="text-xs font-light text-black/50 mt-1 leading-snug max-w-[140px]">{s.label}</div>
-                    </div>
-                  ))}
+                <div className="flex items-start mt-auto mb-6">
+                  <div className="flex-1 flex flex-col items-center text-center">
+                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[0]?.value}</div>
+                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[0]?.label}</div>
+                  </div>
+                  <div className="w-14 shrink-0" />
+                  <div className="flex-1 flex flex-col items-center text-center">
+                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[1]?.value}</div>
+                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[1]?.label}</div>
+                  </div>
+                  <div className="w-14 shrink-0" />
+                  <div className="flex-1 flex flex-col items-center text-center">
+                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[2]?.value}</div>
+                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[2]?.label}</div>
+                  </div>
                 </div>
               )}
-              <div className="border-t border-black/8 pt-10 mt-auto">
-                <GeoScheme />
+              <div className="border-t border-black/8 pt-10">
+                <GeoScheme t={t} />
               </div>
             </div>
 
@@ -597,7 +747,7 @@ export default function ParticuliersPage({
                     href={getLocalizedPath(locale, 'demarrer')}
                     className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
                   >
-                    Démarrer mon projet <span>→</span>
+                    {t.startProject}
                   </Link>
                 </div>
               </>
@@ -609,20 +759,20 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           4. NOS PROJETS EN BELGIQUE
       ══════════════════════════════════════ */}
-      <ProjetsSection locale={locale} chantiers={chantiers} />
+      {t.showMap && <ProjetsSection locale={locale} chantiers={chantiers} t={t} />}
 
       {/* ══════════════════════════════════════
           5. CALCULATEUR D'ÉCONOMIES
       ══════════════════════════════════════ */}
-      <section id="calculateur" className="bg-wdd-clay min-h-screen flex flex-col justify-center px-8 md:px-16">
+      <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16`}>
         <div className="max-w-screen-2xl mx-auto w-full">
 
           <div className="grid lg:grid-cols-2 gap-12 mb-14">
             <h2 className="text-4xl font-bold leading-tight">
-              Combien pourriez-vous économiser ?
+              {t.calcTitle}
             </h2>
             <p className="text-base font-light text-black/55 leading-8 self-end">
-              Entrez votre surface ou votre consommation actuelle. Cochez les postes qui vous concernent — les économies se calculent en temps réel.
+              {t.calcIntro}
             </p>
           </div>
 
@@ -634,9 +784,9 @@ export default function ParticuliersPage({
 
               {/* Mode d'entrée */}
               <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">J&apos;entre</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">{t.inputModeLabel}</div>
                 <div className="flex gap-1.5">
-                  {([['surface','Ma surface (m²)'],['conso','Ma consommation (MWh/an)']] as const).map(([v, l]) => (
+                  {([['surface', t.surfaceMode],['conso', t.consoMode]] as const).map(([v, l]) => (
                     <button key={v} onClick={() => setEcoMode(v)}
                       className={`px-4 py-2.5 text-sm font-bold transition-colors rounded-sm ${ecoMode === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
                       {l}
@@ -649,7 +799,7 @@ export default function ParticuliersPage({
               {ecoMode === 'surface' ? (
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
-                    <div className="text-xs font-bold uppercase tracking-widest text-black/40">Surface habitable</div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-black/40">{t.surfaceLabel}</div>
                     <div className="text-2xl font-bold text-wdd-black tabular-nums">{ecoSurface} m²</div>
                   </div>
                   <input type="range" min={60} max={400} step={5} value={ecoSurface}
@@ -658,14 +808,14 @@ export default function ParticuliersPage({
                   />
                   <div className="flex justify-between text-xs text-black/30 mt-2"><span>60 m²</span><span>400 m²</span></div>
                   <div className="text-xs text-black/40 mt-3">
-                    ≈ {Math.round(ecoSurface * 0.090 * 10) / 10} MWh/an de chauffage estimés
+                    {t.consoFromSurface.replace('{n}', String(Math.round(ecoSurface * 0.090 * 10) / 10))}
                   </div>
                 </div>
               ) : (
                 <div>
                   <div className="flex justify-between items-baseline mb-3">
-                    <div className="text-xs font-bold uppercase tracking-widest text-black/40">Consommation chauffage</div>
-                    <div className="text-2xl font-bold text-wdd-black tabular-nums">{ecoConso} MWh/an</div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-black/40">{t.consoLabel}</div>
+                    <div className="text-2xl font-bold text-wdd-black tabular-nums">{ecoConso} {t.consoUnit}</div>
                   </div>
                   <input type="range" min={5} max={80} step={1} value={ecoConso}
                     onChange={e => setEcoConso(Number(e.target.value))}
@@ -673,16 +823,16 @@ export default function ParticuliersPage({
                   />
                   <div className="flex justify-between text-xs text-black/30 mt-2"><span>5 MWh</span><span>80 MWh</span></div>
                   <div className="text-xs text-black/40 mt-3">
-                    ≈ {Math.round(ecoConso / 0.090)} m² de surface estimée
+                    {t.surfaceFromConso.replace('{n}', String(Math.round(ecoConso / 0.090)))}
                   </div>
                 </div>
               )}
 
               {/* Énergie actuelle */}
               <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">Énergie de chauffage actuelle</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">{t.energyLabel}</div>
                 <div className="flex gap-1.5">
-                  {([['gaz','Gaz naturel'],['mazout','Mazout'],['elec','Électrique']] as const).map(([v, l]) => (
+                  {([['gaz', t.gasOption],['mazout', t.oilOption],['elec', t.elecOption]] as const).map(([v, l]) => (
                     <button key={v} onClick={() => setEcoEnergie(v)}
                       className={`px-4 py-2.5 text-sm font-bold transition-colors rounded-sm ${ecoEnergie === v ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/45 hover:bg-black/12 hover:text-black/70'}`}>
                       {l}
@@ -693,14 +843,14 @@ export default function ParticuliersPage({
 
               {/* Postes concernés */}
               <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">Postes concernés</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-black/40 mb-3">{t.postesLabel}</div>
                 <div className="flex gap-2 flex-wrap">
                   {[
-                    { label: 'Chauffage', active: posteChauffage, toggle: () => setPosteChauffage(p => !p),
+                    { label: t.posteHeating, active: posteChauffage, toggle: () => setPosteChauffage(p => !p),
                       icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg> },
-                    { label: 'Rafraîchissement', active: posteRafraich, toggle: () => setPosteRafraich(p => !p),
+                    { label: t.posteCooling, active: posteRafraich, toggle: () => setPosteRafraich(p => !p),
                       icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"/></svg> },
-                    { label: 'Piscine', active: postePiscine, toggle: () => setPostePiscine(p => !p),
+                    { label: t.postePool, active: postePiscine, toggle: () => setPostePiscine(p => !p),
                       icon: <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><circle cx="12" cy="6" r="2"/></svg> },
                   ].map(p => (
                     <button key={p.label} onClick={p.toggle}
@@ -715,28 +865,28 @@ export default function ParticuliersPage({
             {/* ── Résultats ── */}
             <div className="bg-white border border-black/8 p-8 flex flex-col rounded-sm">
               <div className="text-[10px] font-bold uppercase tracking-widest text-black/35 mb-6">
-                Économies estimées / an
+                {t.savingsTitle}
               </div>
 
               {/* Total mis en avant */}
               <div className="mb-6 pb-6 border-b border-black/8">
-                <div className="text-[10px] uppercase tracking-widest text-black/35 mb-2">Total toutes énergies</div>
+                <div className="text-[10px] uppercase tracking-widest text-black/35 mb-2">{t.totalLabel}</div>
                 <div className="text-4xl font-bold text-wdd-black tabular-nums leading-none">
                   {fmt(ecoCalc.totalEurLow)} – {fmt(ecoCalc.totalEurHigh)} €
                 </div>
                 <div className="text-sm font-light text-black/45 mt-2">
-                  soit {ecoCalc.totalMWh} MWh économisés · {fmt(ecoCalc.co2)} kg CO₂ évités
+                  {t.totalSub.replace('{mwh}', String(ecoCalc.totalMWh)).replace('{co2}', fmt(ecoCalc.co2))}
                 </div>
               </div>
 
               {/* Détail par poste */}
               <div className="flex flex-col gap-0 flex-1">
                 {[
-                  { data: ecoCalc.chauffage, label: 'Chauffage', active: posteChauffage,
+                  { data: ecoCalc.chauffage, label: t.posteHeating, active: posteChauffage,
                     mwhBase: Math.round(ecoCalc.chaufMWh * 10)/10 },
-                  { data: ecoCalc.rafraich, label: 'Rafraîchissement', active: posteRafraich,
+                  { data: ecoCalc.rafraich, label: t.posteCooling, active: posteRafraich,
                     mwhBase: Math.round(ecoCalc.rafraichMWh * 10)/10 },
-                  { data: ecoCalc.piscine, label: 'Piscine', active: postePiscine,
+                  { data: ecoCalc.piscine, label: t.postePool, active: postePiscine,
                     mwhBase: ecoCalc.piscMWh },
                 ].map(p => (
                   <div key={p.label}
@@ -744,7 +894,7 @@ export default function ParticuliersPage({
                     <div>
                       <div className="text-sm font-bold">{p.label}</div>
                       <div className="text-xs text-black/40 mt-0.5">
-                        {p.active ? `${p.data?.mwh ?? 0} MWh économisés sur ${p.mwhBase} MWh` : 'non sélectionné'}
+                        {p.active ? `${p.data?.mwh ?? 0} MWh / ${p.mwhBase} MWh` : t.notSelected}
                       </div>
                     </div>
                     <div className="text-right">
@@ -765,7 +915,7 @@ export default function ParticuliersPage({
 
               <div className="mt-5 pt-5 border-t border-black/8">
                 <div className="text-xs font-light text-black/35 leading-5">
-                  Basé sur les prix de l&apos;énergie belges 2024–2025 et un COP géothermique de 4,5. Résultat indicatif.
+                  {t.disclaimer}
                 </div>
               </div>
             </div>
@@ -791,13 +941,13 @@ export default function ParticuliersPage({
               {page.faqTitle ?? "Vos questions, nos réponses."}
             </h2>
             <p className="text-sm font-light text-black/50 leading-7 mb-8">
-              Une question ne figure pas ici ? Contactez directement notre équipe.
+              {t.faqSub}
             </p>
             <Link
               href={getLocalizedPath(locale, 'demarrer')}
               className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
-              Poser ma question
+              {t.faqCta}
             </Link>
           </div>
           <div className="lg:col-span-2">
@@ -819,13 +969,13 @@ export default function ParticuliersPage({
           href="#calculateur"
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow rounded-sm"
         >
-          Calculer mes économies
+          {t.mobileCta1}
         </a>
         <Link
           href={getLocalizedPath(locale, 'demarrer')}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors rounded-sm"
         >
-          Devis gratuit
+          {t.mobileCta2}
         </Link>
       </div>
 
@@ -841,15 +991,12 @@ const PER_PAGE = 4
 
 function matchesProvince(c: Chantier, p: Province): boolean {
   if (!c.province) return false
+  if (c.province === p.slug) return true
   const cp = c.province.toLowerCase()
-  return (
-    cp.includes(p.nameFr.toLowerCase()) ||
-    cp.includes(p.nameNl.toLowerCase()) ||
-    cp.includes(p.slug.replace(/-/g, ' '))
-  )
+  return cp.includes(p.nameFr.toLowerCase()) || cp.includes(p.nameNl.toLowerCase())
 }
 
-function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chantier[]}) {
+function ProjetsSection({locale, chantiers, t}: {locale: AppLocale; chantiers: Chantier[]; t: UiT}) {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [hovered, setHovered] = useState<string | null>(null)
   const [page, setPage] = useState(0)
@@ -870,26 +1017,28 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
   }
 
   const ctaHref = selectedProvince
-    ? getProvincePageUrl(locale, selectedProvince.slug)
+    ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale))
     : getLocalizedPath(locale, 'references')
   const ctaLabel = selectedProvince
-    ? `Tous les projets en ${getProvinceName(selectedProvince, locale)}`
-    : 'Voir toutes nos réalisations'
+    ? t.mapAllInProvince.replace('{name}', getProvinceName(selectedProvince, locale))
+    : t.mapAllRealisations
 
   return (
     <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
       <div className="max-w-screen-2xl mx-auto w-full">
 
         <div className="flex items-end justify-between mb-8 gap-4">
-          <h2 className="text-3xl font-bold leading-tight">
-            Nos projets en <span className="text-wdd-mud">Belgique</span>
-          </h2>
+          <div>
+            <h2 className="text-3xl font-bold leading-tight">
+              {t.mapTitle} <span className="text-wdd-mud">{t.mapCountry}</span>
+            </h2>
+          </div>
           {selectedId && (
             <button
               onClick={() => { setSelectedId(null); setPage(0) }}
               className="text-xs font-light text-black/35 hover:text-black/70 transition-colors underline underline-offset-2 shrink-0"
             >
-              Toutes les provinces
+              {t.mapAll}
             </button>
           )}
         </div>
@@ -925,7 +1074,7 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
                   ? getProvinceName(BELGIUM_PROVINCES.find((p) => p.id === hovered)!, locale)
                   : selectedProvince
                     ? getProvinceName(selectedProvince, locale)
-                    : 'Sélectionnez une province'}
+                    : t.mapHint}
               </span>
             </div>
           </div>
@@ -944,7 +1093,7 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
                 >
                   {displayed.length === 0 ? (
                     <div className="col-span-2 h-[520px] flex items-center justify-center text-sm font-light text-black/35">
-                      Aucun projet répertorié dans cette province pour le moment.
+                      {t.mapEmpty}
                     </div>
                   ) : (
                     <>
@@ -995,6 +1144,7 @@ function ProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chan
 function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocale}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
   const href = c.slug ? getProvincePageUrl(locale, c.slug) : undefined
+  const provinceDisplay = localizedProvince(c.province, locale)
 
   const inner = (
     <div className="group bg-wdd-clay overflow-hidden flex flex-col h-[248px] rounded-sm">
@@ -1022,21 +1172,21 @@ function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocal
                 ? 'bg-wdd-yellow text-wdd-black'
                 : 'border border-black/20 text-black/50'
             }`}>
-              {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
+              {TYPE_LABEL[locale][c.type as 'fermee' | 'ouverte'] ?? c.type}
             </span>
           )}
           {c.sector && (
             <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 border border-black/12 text-black/40">
-              {sectorLabel(c.sector)}
+              {SECTOR_LABEL[locale][c.sector] ?? c.sector}
             </span>
           )}
         </div>
         <h3 className="text-sm font-bold leading-snug line-clamp-3">
           {c.title ?? 'Projet géothermique'}
         </h3>
-        {(c.location || c.province) && (
+        {(c.location || provinceDisplay) && (
           <p className="text-xs font-light text-black/40 truncate mt-auto">
-            {[c.location, c.province].filter(Boolean).join(' · ')}
+            {[c.location, provinceDisplay].filter(Boolean).join(' · ')}
           </p>
         )}
       </div>

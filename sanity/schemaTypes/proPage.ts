@@ -9,13 +9,24 @@ const proPage = defineType({
   name: 'proPage',
   title: 'Page Professionnels',
   type: 'document',
+  groups: [
+    {name: 'meta', title: 'Identification'},
+    {name: 'hero', title: 'Hero'},
+    {name: 'context', title: 'Contexte'},
+    {name: 'why', title: 'Six raisons'},
+    {name: 'partnership', title: 'Partenariat / Étapes'},
+    {name: 'faq', title: 'FAQ'},
+    {name: 'seo', title: 'SEO'},
+  ],
   fields: [
+    // ── IDENTIFICATION ────────────────────────────────────────
     defineField({
       name: 'locale',
       title: 'Locale',
       type: 'string',
       options: {list: ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de']},
       validation: (r) => r.required(),
+      group: 'meta',
     }),
     defineField({
       name: 'routeKey',
@@ -25,74 +36,107 @@ const proPage = defineType({
         list: [
           {title: 'Chauffagistes', value: 'pro_chauffagistes'},
           {title: 'Architectes', value: 'pro_architectes'},
-          {title: 'Entrepreneurs', value: 'pro_entrepreneurs'},
+          {title: 'Entrepreneurs / Promoteurs', value: 'pro_entrepreneurs'},
         ],
       },
       validation: (r) => r.required(),
+      group: 'meta',
     }),
 
-    defineField({name: 'heroEyebrow', title: 'Hero — eyebrow', type: 'string'}),
-    defineField({name: 'heroTitle', title: 'Hero — titre', type: 'string'}),
-    defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3}),
-    defineField({name: 'heroCtaLabel', title: 'Hero — CTA', type: 'string'}),
-    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
+    // ── HERO ──────────────────────────────────────────────────
+    defineField({name: 'heroEyebrow', title: 'Hero — eyebrow', type: 'string', group: 'hero'}),
+    defineField({name: 'heroTitle', title: 'Hero — titre', type: 'string', group: 'hero'}),
+    defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3, group: 'hero'}),
+    defineField({name: 'heroCtaLabel', title: 'Hero — CTA principal', type: 'string', group: 'hero'}),
+    defineField({name: 'heroCtaSecondary', title: 'Hero — CTA secondaire', type: 'string', group: 'hero'}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}, group: 'hero'}),
     defineField({
       name: 'heroPanelItems',
-      title: 'Hero — panneau flottant (3 items)',
+      title: 'Hero — panneau flottant (3 stats)',
       type: 'array',
-      of: [defineField({
-        name: 'panel', type: 'object',
+      of: [{
+        type: 'object',
         fields: [
-          defineField({name: 'label', title: 'Label', type: 'string'}),
-          defineField({name: 'value', title: 'Valeur', type: 'string'}),
-          defineField({name: 'sub', title: 'Sous-texte', type: 'string'}),
+          {name: 'label', title: 'Label', type: 'string'},
+          {name: 'value', title: 'Valeur', type: 'string'},
+          {name: 'sub', title: 'Sous-texte', type: 'string'},
         ],
-      })],
+      }],
       validation: (r) => r.max(3),
+      group: 'hero',
     }),
 
-    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'contextVideoUrl', title: 'Contexte — URL vidéo', type: 'string'}),
+    // ── CONTEXTE ──────────────────────────────────────────────
+    defineField({name: 'valueTitle', title: 'Contexte — titre', type: 'string', group: 'context'}),
+    defineField({name: 'valueIntro', title: 'Contexte — texte', type: 'text', rows: 4, group: 'context'}),
+    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}, group: 'context'}),
+    defineField({
+      name: 'contextVideo',
+      title: 'Contexte — vidéo (remplace l\'image si présente)',
+      type: 'file',
+      options: {accept: 'video/*'},
+      group: 'context',
+    }),
+    defineField({
+      name: 'schemeNodes',
+      title: 'Contexte — schéma animé (3 étapes)',
+      type: 'array',
+      of: [{
+        type: 'object',
+        fields: [
+          {name: 'label', title: 'Titre', type: 'string'},
+          {name: 'sub', title: 'Sous-titre', type: 'string'},
+          {name: 'stat', title: 'Statistique', type: 'string'},
+        ],
+      }],
+      validation: (r) => r.max(3),
+      group: 'context',
+    }),
 
-    defineField({name: 'valueTitle', title: 'Contexte — titre', type: 'string'}),
-    defineField({name: 'valueIntro', title: 'Contexte — texte', type: 'text', rows: 4}),
-
-    defineField({name: 'whyTitle', title: 'Six raisons — titre', type: 'string'}),
+    // ── SIX RAISONS ───────────────────────────────────────────
+    defineField({name: 'whyTitle', title: 'Six raisons — titre', type: 'string', group: 'why'}),
     defineField({
       name: 'valueItems',
-      title: 'Six raisons — items',
+      title: 'Six raisons — items (6 max)',
       type: 'array',
-      of: [defineField({name: 'item', type: 'object', fields: itemFields})],
+      of: [{type: 'object', fields: itemFields}],
+      validation: (r) => r.max(6),
+      group: 'why',
     }),
+    defineField({name: 'whyCtaLabel', title: 'Six raisons — CTA', type: 'string', group: 'why'}),
 
-    defineField({name: 'partnershipTitle', title: 'Étapes — titre', type: 'string'}),
-    defineField({name: 'partnershipIntro', title: 'Étapes — intro', type: 'text', rows: 3}),
+    // ── PARTENARIAT / ÉTAPES ──────────────────────────────────
+    defineField({name: 'partnershipTitle', title: 'Partenariat — titre', type: 'string', group: 'partnership'}),
+    defineField({name: 'partnershipIntro', title: 'Partenariat — intro', type: 'text', rows: 3, group: 'partnership'}),
     defineField({
       name: 'partnershipSteps',
-      title: 'Étapes — items',
+      title: 'Partenariat — étapes',
       type: 'array',
-      of: [defineField({name: 'step', type: 'object', fields: itemFields})],
+      of: [{type: 'object', fields: itemFields}],
+      group: 'partnership',
     }),
 
-    defineField({name: 'faqTitle', title: 'FAQ — titre', type: 'string'}),
+    // ── FAQ ───────────────────────────────────────────────────
+    defineField({name: 'faqTitle', title: 'FAQ — titre', type: 'string', group: 'faq'}),
+    defineField({name: 'faqSubtitle', title: 'FAQ — sous-titre', type: 'string', group: 'faq'}),
+    defineField({name: 'faqCtaLabel', title: 'FAQ — CTA', type: 'string', group: 'faq'}),
     defineField({
       name: 'faqs',
-      title: 'FAQ',
+      title: 'FAQ — questions/réponses',
       type: 'array',
-      of: [
-        defineField({
-          name: 'faq',
-          type: 'object',
-          fields: [
-            defineField({name: 'question', title: 'Question', type: 'string'}),
-            defineField({name: 'answer', title: 'Réponse', type: 'text', rows: 4}),
-          ],
-        }),
-      ],
+      of: [{
+        type: 'object',
+        fields: [
+          {name: 'question', title: 'Question', type: 'string'},
+          {name: 'answer', title: 'Réponse', type: 'text', rows: 4},
+        ],
+      }],
+      group: 'faq',
     }),
 
-    defineField({name: 'seoTitle', title: 'SEO title', type: 'string'}),
-    defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3}),
+    // ── SEO ───────────────────────────────────────────────────
+    defineField({name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'}),
+    defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3, group: 'seo'}),
   ],
   preview: {
     select: {routeKey: 'routeKey', locale: 'locale'},

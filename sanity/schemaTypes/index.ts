@@ -11,3 +11,4 @@ import aProposPage from './aProposPage'
 import demarrerPage from './demarrerPage'
 import globalSettings from './globalSettings'
 export const schemaTypes = [homePage, geoPage, pacPage, particuliersPage, proPage, aProposPage, demarrerPage, globalSettings, sitePage, blogPost, chantier, mediaItem]
+// proPageChauffagistes, proPageArchitectes, proPageEntrepreneurs removed — content is managed via proPage (routeKey field)

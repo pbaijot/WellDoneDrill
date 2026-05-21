@@ -8,8 +8,11 @@ import {
   BELGIUM_PROVINCES,
   getProvinceName,
   getProvincePageUrl,
+  getProvinceSlug,
   chantierImageUrl,
-  sectorLabel,
+  TYPE_LABEL,
+  SECTOR_LABEL,
+  localizedProvince,
   type Province,
   type Chantier,
 } from '@/src/lib/referencesPage'
@@ -19,12 +22,9 @@ const PER_PAGE = 4
 
 function matchesProvince(c: Chantier, p: Province): boolean {
   if (!c.province) return false
+  if (c.province === p.slug) return true
   const cp = c.province.toLowerCase()
-  return (
-    cp.includes(p.nameFr.toLowerCase()) ||
-    cp.includes(p.nameNl.toLowerCase()) ||
-    cp.includes(p.slug.replace(/-/g, ' '))
-  )
+  return cp.includes(p.nameFr.toLowerCase()) || cp.includes(p.nameNl.toLowerCase())
 }
 
 export default function HomeMapSection({
@@ -49,8 +49,15 @@ export default function HomeMapSection({
 
   const handleProvinceClick = (id: string) => { setSelectedId((p) => (p === id ? null : id)); setPage(0) }
 
-  const ctaHref  = selectedProvince ? getProvincePageUrl(locale, selectedProvince.slug) : getLocalizedPath(locale, 'references')
-  const ctaLabel = selectedProvince ? `Tous les projets en ${getProvinceName(selectedProvince, locale)}` : 'Voir toutes nos réalisations'
+  const ctaHref  = selectedProvince ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale)) : getLocalizedPath(locale, 'references')
+  const ALL_PROJECTS: Record<string, string> = {'be-nl': 'Alle realisaties bekijken', 'lu-de': 'Alle Projekte ansehen'}
+  const ALL_IN: Record<string, string>      = {'be-nl': 'Alle projecten in', 'lu-de': 'Alle Projekte in'}
+  const SELECT_PROVINCE: Record<string, string> = {'be-nl': 'Selecteer een provincie', 'lu-de': 'Wählen Sie eine Provinz'}
+  const ALL_PROVINCES: Record<string, string>   = {'be-nl': 'Alle provincies', 'lu-de': 'Alle Provinzen'}
+  const NO_PROJECTS: Record<string, string>     = {'be-nl': 'Momenteel geen projecten in deze provincie.', 'lu-de': 'Derzeit keine Projekte in dieser Provinz.'}
+  const ctaLabel = selectedProvince
+    ? `${ALL_IN[locale] ?? 'Tous les projets en'} ${getProvinceName(selectedProvince, locale)}`
+    : (ALL_PROJECTS[locale] ?? 'Voir toutes nos réalisations')
 
   return (
     <section className="bg-white min-h-[90vh] flex flex-col justify-center py-20 px-8 md:px-16">
@@ -75,7 +82,7 @@ export default function HomeMapSection({
                   onClick={() => { setSelectedId(null); setPage(0) }}
                   className="text-xs font-light text-black/35 hover:text-black/70 transition-colors underline underline-offset-2"
                 >
-                  Toutes les provinces
+                  {ALL_PROVINCES[locale] ?? 'Toutes les provinces'}
                 </button>
               </>
             ) : (
@@ -122,7 +129,7 @@ export default function HomeMapSection({
                   ? getProvinceName(BELGIUM_PROVINCES.find((p) => p.id === hovered)!, locale)
                   : selectedProvince
                     ? getProvinceName(selectedProvince, locale)
-                    : 'Sélectionnez une province'}
+                    : (SELECT_PROVINCE[locale] ?? 'Sélectionnez une province')}
               </span>
             </div>
           </div>
@@ -143,7 +150,7 @@ export default function HomeMapSection({
                 >
                   {displayed.length === 0 ? (
                     <div className="col-span-2 h-[520px] flex items-center justify-center text-sm font-light text-black/35">
-                      Aucun projet répertorié dans cette province pour le moment.
+                      {NO_PROJECTS[locale] ?? 'Aucun projet répertorié dans cette province pour le moment.'}
                     </div>
                   ) : (
                     <>
@@ -219,12 +226,12 @@ function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocal
                 ? 'bg-wdd-yellow text-wdd-black'
                 : 'border border-black/20 text-black/50'
             }`}>
-              {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
+              {TYPE_LABEL[locale][c.type as 'fermee' | 'ouverte'] ?? c.type}
             </span>
           )}
           {c.sector && (
             <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 border border-black/12 text-black/40">
-              {sectorLabel(c.sector)}
+              {SECTOR_LABEL[locale][c.sector] ?? c.sector}
             </span>
           )}
         </div>
@@ -233,7 +240,7 @@ function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocal
         </h3>
         {(c.location || c.province) && (
           <p className="text-xs font-light text-black/40 truncate mt-auto">
-            {[c.location, c.province].filter(Boolean).join(' · ')}
+            {[c.location, localizedProvince(c.province, locale)].filter(Boolean).join(' · ')}
           </p>
         )}
       </div>

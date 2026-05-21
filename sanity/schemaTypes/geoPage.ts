@@ -24,7 +24,8 @@ const geoPage = defineType({
     defineField({name: 'heroLine2', title: 'Hero ligne 2', type: 'string'}),
     defineField({name: 'heroLine3', title: 'Hero ligne 3', type: 'string'}),
     defineField({name: 'heroSubtitle', title: 'Hero sous-titre', type: 'text', rows: 4}),
-    defineField({name: 'heroCtaLabel', title: 'Hero CTA', type: 'string'}),
+    defineField({name: 'heroCtaLabel', title: 'Hero CTA (bouton jaune)', type: 'string'}),
+    defineField({name: 'heroSecondaryLabel', title: 'Hero CTA secondaire (lien blanc)', type: 'string'}),
     defineField({
       name: 'heroStats',
       title: 'Hero — statistiques (3 items)',
@@ -56,23 +57,11 @@ const geoPage = defineType({
     defineField({name: 'introBody2', title: 'Texte intro 2', type: 'text', rows: 5}),
 
     defineField({name: 'howTitle', title: 'Titre fonctionnement', type: 'string'}),
-    defineField({
-      name: 'howSteps',
-      title: 'Étapes de fonctionnement',
-      type: 'array',
-      of: [
-        defineField({
-          name: 'step',
-          title: 'Étape',
-          type: 'object',
-          fields: [
-            defineField({name: 'title', title: 'Titre', type: 'string'}),
-            defineField({name: 'body', title: 'Texte', type: 'text', rows: 4}),
-          ],
-        }),
-      ],
-    }),
+    defineField({name: 'howCtaLabel', title: 'Fonctionnement — texte bouton CTA', type: 'string'}),
+    defineField({name: 'advantagesTitle', title: 'Titre section avantages', type: 'string'}),
     defineField({name: 'faqTitle', title: 'Titre FAQ', type: 'string'}),
+    defineField({name: 'faqSubtitle', title: 'FAQ — sous-titre (question complémentaire)', type: 'string'}),
+    defineField({name: 'faqCtaLabel', title: 'FAQ — bouton contact', type: 'string'}),
 
     defineField({name: 'particularEyebrow', title: 'Audience particuliers — eyebrow', type: 'string'}),
     defineField({name: 'particularTitle',   title: 'Audience particuliers — titre',   type: 'string'}),

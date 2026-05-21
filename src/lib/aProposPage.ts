@@ -2,6 +2,13 @@ import {sanity} from './sanity'
 
 export type AProposItem = {_key?: string; title?: string; body?: string}
 
+export type PartnerLogo = {
+  _key?: string
+  asset?: unknown
+  alt?: string
+  url?: string
+}
+
 export type AProposPageData = {
   _id: string
   locale: string
@@ -14,8 +21,8 @@ export type AProposPageData = {
   missionBody2?: string
   missionBody3?: string
   missionImage?: unknown
-  missionVideoUrl?: string
-  galleryImages?: unknown[]
+  missionVideo?: {asset?: {url?: string}}
+  galleryImages?: {asset?: unknown; alt?: string}[]
   valuesTitle?: string
   values?: AProposItem[]
   whyTitle?: string
@@ -24,6 +31,7 @@ export type AProposPageData = {
   partnershipBody?: string
   partnershipCta1?: string
   partnershipCta2?: string
+  partnerLogos?: PartnerLogo[]
   phone?: string
   email?: string
   address?: string
@@ -38,11 +46,13 @@ const query = `
   heroTitle, heroSubtitle, heroCtaLabel,
   heroImage,
   missionTitle, missionBody1, missionBody2, missionBody3,
-  missionImage, missionVideoUrl,
-  galleryImages,
+  missionImage,
+  missionVideo { asset-> { url } },
+  galleryImages[]{ ..., asset-> },
   valuesTitle, values,
   whyTitle, whyItems,
   partnershipTitle, partnershipBody, partnershipCta1, partnershipCta2,
+  partnerLogos[]{ ..., asset-> },
   phone, email, address, contactCtaLabel,
   seoTitle, seoDescription
 }

@@ -6,6 +6,49 @@ import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 
 type Variant = 'dark' | 'clay'
 
+const COPY = {
+  'be-fr': {
+    title: 'Votre projet commence ici.',
+    body: "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.",
+    buttonLabel: 'Démarrer votre projet →',
+    orCall: 'ou appelez-nous',
+    stat1Value: 'Gratuit', stat1Label: 'Étude de faisabilité',
+    stat2Value: '48h', stat2Label: 'Délai de réponse',
+  },
+  'be-nl': {
+    title: 'Uw project begint hier.',
+    body: "Gratis geologische studie, vergunning, boren — één team van A tot Z.\nAntwoord binnen 48u, zonder engagement.",
+    buttonLabel: 'Mijn project starten →',
+    orCall: 'of bel ons',
+    stat1Value: 'Gratis', stat1Label: 'Haalbaarheidsstudie',
+    stat2Value: '48u', stat2Label: 'Reactietijd',
+  },
+  'fr-fr': {
+    title: 'Votre projet commence ici.',
+    body: "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.",
+    buttonLabel: 'Démarrer votre projet →',
+    orCall: 'ou appelez-nous',
+    stat1Value: 'Gratuit', stat1Label: 'Étude de faisabilité',
+    stat2Value: '48h', stat2Label: 'Délai de réponse',
+  },
+  'lu-fr': {
+    title: 'Votre projet commence ici.',
+    body: "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.",
+    buttonLabel: 'Démarrer votre projet →',
+    orCall: 'ou appelez-nous',
+    stat1Value: 'Gratuit', stat1Label: 'Étude de faisabilité',
+    stat2Value: '48h', stat2Label: 'Délai de réponse',
+  },
+  'lu-de': {
+    title: 'Ihr Projekt beginnt hier.',
+    body: "Kostenlose geologische Studie, Genehmigung, Bohrung — ein Team von A bis Z.\nAntwort innerhalb von 48h, unverbindlich.",
+    buttonLabel: 'Mein Projekt starten →',
+    orCall: 'oder rufen Sie uns an',
+    stat1Value: 'Kostenlos', stat1Label: 'Machbarkeitsstudie',
+    stat2Value: '48h', stat2Label: 'Antwortzeit',
+  },
+} as const
+
 export default function DemarrerCTA({
   locale,
   variant = 'dark',
@@ -16,16 +59,17 @@ export default function DemarrerCTA({
   settings?: GlobalSettingsData | null
 }) {
   const dark = variant === 'dark'
+  const copy = COPY[locale] ?? COPY['be-fr']
 
-  const title = settings?.ctaTitle ?? 'Votre projet commence ici.'
-  const body = settings?.ctaBody ?? "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement."
-  const buttonLabel = settings?.ctaButtonLabel ?? 'Démarrer votre projet →'
+  const title = copy.title
+  const body = copy.body
+  const buttonLabel = copy.buttonLabel
   const phone = settings?.phone ?? '+32 478 75 36 79'
   const teamImageUrl = settings?.ctaImage ? urlFor(settings.ctaImage)?.url() ?? '/images/team.jpg' : '/images/team.jpg'
-  const stat1Value = settings?.stat1Value ?? 'Gratuit'
-  const stat1Label = settings?.stat1Label ?? 'Étude de faisabilité'
-  const stat2Value = settings?.stat2Value ?? '48h'
-  const stat2Label = settings?.stat2Label ?? 'Délai de réponse'
+  const stat1Value = copy.stat1Value
+  const stat1Label = copy.stat1Label
+  const stat2Value = copy.stat2Value
+  const stat2Label = copy.stat2Label
 
   return (
     <section className={`${dark ? 'bg-wdd-black' : 'bg-wdd-clay'} overflow-hidden`}>
@@ -51,7 +95,7 @@ export default function DemarrerCTA({
               {buttonLabel}
             </Link>
             <div className="flex items-center gap-4">
-              <span className={`text-sm font-light ${dark ? 'text-white/40' : 'text-black/40'}`}>ou appelez-nous</span>
+              <span className={`text-sm font-light ${dark ? 'text-white/40' : 'text-black/40'}`}>{copy.orCall}</span>
               <a
                 href={`tel:${phone.replace(/\s/g, '')}`}
                 className={`text-sm font-bold transition-colors ${dark ? 'text-white hover:text-wdd-yellow' : 'text-wdd-black hover:text-wdd-mud'}`}

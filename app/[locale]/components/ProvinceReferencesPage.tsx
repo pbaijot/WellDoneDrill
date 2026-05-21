@@ -13,14 +13,63 @@ import {
   SVG_H,
   getProvinceName,
   getProvincePageUrl,
+  getProvinceSlug,
   chantierImageUrl,
-  sectorLabel,
+  TYPE_LABEL,
+  SECTOR_LABEL,
+  DEPTH_LABEL,
+  localizedProvince,
   type Province,
   type Chantier,
 } from '@/src/lib/referencesPage'
 
 const CLAY = '#E8E5DE'
 const ZOOM = 1.2
+
+const COPY: Record<AppLocale, {
+  backLink: string
+  h1Line1: string
+  desc: (provinceName: string) => string
+  portfolioEyebrow: string
+  projectsIn: (provinceName: string) => string
+  projectCount: (n: number) => string
+  otherProvinces: string
+  ctaEyebrow: string; ctaTitle1: string; ctaTitle2: string; ctaButton: string
+  tooltipLabel: string; tooltipClick: string
+  emptyText: string; emptyButton: string
+} | null> = {
+  'be-fr': {
+    backLink: 'Toutes les provinces',
+    h1Line1: 'Géothermie',
+    desc: (p) => `Découvrez nos chantiers géothermiques réalisés en ${p}.`,
+    portfolioEyebrow: 'Portfolio',
+    projectsIn: (p) => `Nos projets en`,
+    projectCount: (n) => `${n} réalisation${n > 1 ? 's' : ''}`,
+    otherProvinces: 'Autres provinces',
+    ctaEyebrow: 'Votre projet', ctaTitle1: 'Prêt à lancer votre', ctaTitle2: 'chantier géothermique ?',
+    ctaButton: 'Demandez un devis gratuit',
+    tooltipLabel: 'Province', tooltipClick: 'Cliquer pour explorer →',
+    emptyText: 'Aucun projet référencé dans cette province pour le moment.',
+    emptyButton: 'Lancez votre projet',
+  },
+  'be-nl': {
+    backLink: 'Alle provincies',
+    h1Line1: 'Geothermie',
+    desc: (p) => `Ontdek onze geothermische werven uitgevoerd in ${p}.`,
+    portfolioEyebrow: 'Portfolio',
+    projectsIn: (p) => `Onze projecten in`,
+    projectCount: (n) => `${n} realisatie${n > 1 ? 's' : ''}`,
+    otherProvinces: 'Andere provincies',
+    ctaEyebrow: 'Uw project', ctaTitle1: 'Klaar om uw', ctaTitle2: 'geothermisch project te starten?',
+    ctaButton: 'Vraag een gratis offerte aan',
+    tooltipLabel: 'Provincie', tooltipClick: 'Klikken om te verkennen →',
+    emptyText: 'Momenteel geen projecten in deze provincie.',
+    emptyButton: 'Start uw project',
+  },
+  'fr-fr': null,
+  'lu-fr': null,
+  'lu-de': null,
+}
 
 export default function ProvinceReferencesPage({
   locale,
@@ -31,34 +80,57 @@ export default function ProvinceReferencesPage({
   province: Province
   chantiers: Chantier[]
 }) {
+  const copy = COPY[locale]
+  if (!copy) {
+    return (
+      <div className="flex flex-col min-h-screen bg-wdd-clay items-center justify-center px-8 py-32">
+        <Link
+          href={getLocalizedPath(locale, 'references')}
+          className="text-sm font-light text-wdd-black/50 hover:text-wdd-black transition-colors"
+        >
+          ← Retour
+        </Link>
+      </div>
+    )
+  }
+
+  return <ProvincePage locale={locale} province={province} chantiers={chantiers} copy={copy} />
+}
+
+/* ── Full province page ───────────────────────────────────────── */
+
+function ProvincePage({locale, province, chantiers, copy}: {
+  locale: AppLocale
+  province: Province
+  chantiers: Chantier[]
+  copy: NonNullable<(typeof COPY)[AppLocale]>
+}) {
   const [hovered, setHovered] = useState<string | null>(null)
   const router = useRouter()
 
   const referencesHref = `/${locale}/${routeMap[locale].references}`
 
   const [cx, cy] = province.centroid
-  // Identical formula to ReferencesPage — centres province in the right-half container
   const tx = `${(0.5 - cx / SVG_W) * ZOOM * 100}%`
   const ty = `${(0.5 - cy / SVG_H) * ZOOM * 100}%`
 
   const provinceChantiers = chantiers.filter(
     (c) =>
+      c.province === province.slug ||
       c.province?.toLowerCase().includes(province.nameFr.toLowerCase()) ||
       c.province?.toLowerCase().includes(province.nameNl.toLowerCase()),
   )
   const displayChantiers = provinceChantiers.length > 0 ? provinceChantiers : chantiers
 
+  const provinceName = getProvinceName(province, locale)
+
   return (
     <div className="flex flex-col bg-white">
 
-      {/* ── HERO — mirror of ReferencesPage, map enters from full-width ── */}
-      <section className="h-[72vh] relative overflow-hidden" style={{backgroundColor: CLAY}}>
+      {/* ── HERO ─────────────────────────────────────────────── */}
+      <section className="h-[44vh] relative overflow-hidden" style={{backgroundColor: CLAY}}>
 
-        {/* Map: static, already zoomed on province, stays that way */}
-        <div
-          className="hidden lg:block absolute right-0 bottom-0 w-1/2"
-          style={{top: '-25%'}}
-        >
+        <div className="hidden lg:block absolute right-[18%] w-[38%]" style={{top: '-24vh', height: '72vh'}}>
           <motion.svg
             viewBox={`0 0 ${SVG_W} ${SVG_H}`}
             preserveAspectRatio="xMidYMid slice"
@@ -77,19 +149,16 @@ export default function ProvinceReferencesPage({
                 onMouseEnter={() => setHovered(p.id)}
                 onMouseLeave={() => setHovered(null)}
                 onClick={() => {
-                  if (p.id !== province.id) {
-                    router.push(getProvincePageUrl(locale, p.slug))
-                  }
+                  if (p.id !== province.id) router.push(getProvincePageUrl(locale, getProvinceSlug(p, locale)))
                 }}
               />
             ))}
           </motion.svg>
         </div>
 
-        {/* Text: fades in on arrival */}
         <motion.div
-          className="relative h-full flex flex-col justify-start px-8 md:px-16 pointer-events-none"
-          style={{paddingTop: 'clamp(5rem, 10vh, 7rem)', zIndex: 10000}}
+          className="relative h-full flex flex-col justify-center px-8 md:px-16 pointer-events-none"
+          style={{zIndex: 10000}}
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration: 0.35, ease: [0.32, 0, 0.24, 1]}}
@@ -102,54 +171,24 @@ export default function ProvinceReferencesPage({
                 className="inline-flex items-center gap-2 text-xs font-light text-wdd-black/40 hover:text-wdd-black transition-colors mb-6"
               >
                 <span>←</span>
-                <span>Toutes les provinces</span>
+                <span>{copy.backLink}</span>
               </Link>
 
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-7 h-0.5 bg-wdd-black" />
-                <span className="text-xs font-light tracking-widest text-wdd-black/50 uppercase">
-                  Nos réalisations
-                </span>
-              </div>
-
               <h1 className="text-4xl md:text-5xl font-bold text-wdd-black leading-none mb-4">
-                <span className="block">Géothermie</span>
-                <span className="block">en</span>
-                <span className="block text-wdd-mud">{getProvinceName(province, locale)}</span>
+                <span className="block">{copy.h1Line1}</span>
+                <span className="block">
+                  {locale === 'be-nl' ? 'in' : province.prepFr}{' '}
+                  <span className="text-wdd-mud">{provinceName}</span>
+                </span>
               </h1>
 
-              <p className="text-sm font-light text-wdd-black/65 leading-relaxed mb-6">
-                Découvrez nos chantiers géothermiques réalisés en{' '}
-                {getProvinceName(province, locale)}.
+              <p className="text-sm font-light text-wdd-black/65 leading-relaxed">
+                {copy.desc(provinceName)}
               </p>
-
-              <div className="grid grid-cols-3 gap-4 pt-5 border-t border-wdd-black/12">
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">
-                    {displayChantiers.length > 0 ? `${displayChantiers.length}+` : '—'}
-                  </div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    Projets
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">15 ans</div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    d&apos;expertise
-                  </div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-wdd-black">BE · LU</div>
-                  <div className="text-xs font-light text-wdd-black/45 uppercase tracking-wider mt-1">
-                    Zones couvertes
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Hover tooltip */}
         <AnimatePresence>
           {hovered && hovered !== province.id && (
             <motion.div
@@ -162,13 +201,13 @@ export default function ProvinceReferencesPage({
               style={{zIndex: 10000}}
             >
               <div className="text-[9px] font-bold uppercase tracking-widest text-white/40 mb-0.5">
-                Province
+                {copy.tooltipLabel}
               </div>
               <div className="text-sm font-bold leading-none">
                 {getProvinceName(BELGIUM_PROVINCES.find((p) => p.id === hovered)!, locale)}
               </div>
               <div className="text-[10px] font-light text-wdd-yellow mt-1">
-                Cliquer pour explorer →
+                {copy.tooltipClick}
               </div>
             </motion.div>
           )}
@@ -181,24 +220,24 @@ export default function ProvinceReferencesPage({
           <div className="flex items-center gap-3 mb-4">
             <div className="w-5 h-0.5 bg-wdd-yellow" />
             <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-              Portfolio
+              {copy.portfolioEyebrow}
             </span>
           </div>
 
           <div className="flex items-end justify-between mb-12 gap-4">
             <h2 className="text-4xl font-bold leading-tight">
-              Nos projets en{' '}
-              <span className="text-wdd-mud">{getProvinceName(province, locale)}</span>
+              {copy.projectsIn(provinceName)}{' '}
+              <span className="text-wdd-mud">{provinceName}</span>
             </h2>
             {displayChantiers.length > 0 && (
               <span className="text-sm font-light text-black/40 shrink-0">
-                {displayChantiers.length} réalisation{displayChantiers.length > 1 ? 's' : ''}
+                {copy.projectCount(displayChantiers.length)}
               </span>
             )}
           </div>
 
           {displayChantiers.length === 0 ? (
-            <EmptyState locale={locale} />
+            <EmptyState copy={copy} locale={locale} />
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0.5">
               {displayChantiers.map((c) => (
@@ -215,14 +254,14 @@ export default function ProvinceReferencesPage({
           <div className="flex items-center gap-3 mb-8">
             <div className="w-5 h-0.5 bg-wdd-yellow" />
             <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">
-              Autres provinces
+              {copy.otherProvinces}
             </span>
           </div>
           <div className="flex flex-wrap gap-2">
             {BELGIUM_PROVINCES.filter((p) => p.id !== province.id).map((p) => (
               <Link
                 key={p.id}
-                href={getProvincePageUrl(locale, p.slug)}
+                href={getProvincePageUrl(locale, getProvinceSlug(p, locale))}
                 className="px-4 py-2 text-sm font-light text-wdd-black/60 border border-wdd-black/15 hover:bg-wdd-black hover:text-wdd-yellow hover:border-wdd-black transition-colors"
               >
                 {getProvinceName(p, locale)}
@@ -233,21 +272,21 @@ export default function ProvinceReferencesPage({
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────── */}
-      <section className="bg-wdd-black py-20 px-8 md:px-16">
+      <section className="bg-wdd-clay py-20 px-8 md:px-16">
         <div className="max-w-screen-xl mx-auto text-center">
-          <div className="text-xs font-light tracking-widest text-white/30 uppercase mb-4">
-            Votre projet
+          <div className="text-xs font-light tracking-widest text-wdd-black/30 uppercase mb-4">
+            {copy.ctaEyebrow}
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-            Prêt à lancer votre
+          <h2 className="text-4xl md:text-5xl font-bold text-wdd-black mb-8 leading-tight">
+            {copy.ctaTitle1}
             <br />
-            <span className="text-wdd-yellow">chantier géothermique ?</span>
+            <span className="text-wdd-mud">{copy.ctaTitle2}</span>
           </h2>
           <Link
             href={getLocalizedPath(locale, 'demarrer')}
-            className="inline-block bg-wdd-yellow text-wdd-black px-8 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
+            className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
-            Demandez un devis gratuit
+            {copy.ctaButton}
           </Link>
         </div>
       </section>
@@ -295,12 +334,12 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
                   : 'bg-wdd-black text-wdd-yellow group-hover:bg-wdd-yellow group-hover:text-wdd-black'
               } transition-colors`}
             >
-              {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
+              {TYPE_LABEL[locale][c.type as 'fermee' | 'ouverte'] ?? c.type}
             </span>
           )}
           {c.sector && (
             <span className="text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 bg-black/8 text-black/50 group-hover:bg-white/10 group-hover:text-white/50 transition-colors">
-              {sectorLabel(c.sector)}
+              {SECTOR_LABEL[locale][c.sector] ?? c.sector}
             </span>
           )}
         </div>
@@ -311,13 +350,13 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
 
         {(c.location || c.province) && (
           <p className="text-xs font-light text-black/50 group-hover:text-white/45 transition-colors">
-            {[c.location, c.province].filter(Boolean).join(' · ')}
+            {[c.location, localizedProvince(c.province, locale)].filter(Boolean).join(' · ')}
           </p>
         )}
 
         {c.depth && (
           <p className="text-xs font-light text-black/40 group-hover:text-white/35 transition-colors mt-auto pt-2 border-t border-black/8 group-hover:border-white/8">
-            Profondeur : <span className="font-bold">{c.depth} m</span>
+            {DEPTH_LABEL[locale]} : <span className="font-bold">{c.depth} m</span>
           </p>
         )}
       </div>
@@ -333,17 +372,17 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
 
 /* ─── Empty state ──────────────────────────────────────────── */
 
-function EmptyState({locale}: {locale: AppLocale}) {
+function EmptyState({copy, locale}: {copy: NonNullable<(typeof COPY)[AppLocale]>; locale: AppLocale}) {
   return (
     <div className="border border-dashed border-black/15 p-16 text-center">
       <div className="text-sm font-light text-black/35 mb-4">
-        Aucun projet référencé dans cette province pour le moment.
+        {copy.emptyText}
       </div>
       <Link
         href={getLocalizedPath(locale, 'demarrer')}
         className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
       >
-        Lancez votre projet
+        {copy.emptyButton}
       </Link>
     </div>
   )

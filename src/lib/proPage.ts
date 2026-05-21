@@ -3,6 +3,7 @@ import {sanity} from './sanity'
 export type ProItem = {_key?: string; title?: string; body?: string}
 export type ProFaq = {_key?: string; question?: string; answer?: string}
 export type ProPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
+export type ProSchemeNode = {_key?: string; label?: string; sub?: string; stat?: string}
 
 export type ProPageData = {
   _id: string
@@ -12,18 +13,23 @@ export type ProPageData = {
   heroTitle?: string
   heroSubtitle?: string
   heroCtaLabel?: string
+  heroCtaSecondary?: string
   heroRightImage?: unknown
   heroPanelItems?: ProPanelItem[]
-  contextImage?: unknown
-  contextVideoUrl?: string
   valueTitle?: string
   valueIntro?: string
+  contextImage?: unknown
+  contextVideo?: {asset?: {url?: string}}
+  schemeNodes?: ProSchemeNode[]
   whyTitle?: string
   valueItems?: ProItem[]
+  whyCtaLabel?: string
   partnershipTitle?: string
   partnershipIntro?: string
   partnershipSteps?: ProItem[]
   faqTitle?: string
+  faqSubtitle?: string
+  faqCtaLabel?: string
   faqs?: ProFaq[]
   seoTitle?: string
   seoDescription?: string
@@ -32,12 +38,15 @@ export type ProPageData = {
 const query = `
 *[_type == "proPage" && locale == $locale && routeKey == $routeKey][0]{
   _id, locale, routeKey,
-  heroEyebrow, heroTitle, heroSubtitle, heroCtaLabel,
+  heroEyebrow, heroTitle, heroSubtitle, heroCtaLabel, heroCtaSecondary,
   heroRightImage, heroPanelItems,
-  contextImage, contextVideoUrl,
-  valueTitle, valueIntro, whyTitle, valueItems,
+  valueTitle, valueIntro,
+  contextImage,
+  contextVideo { asset-> { url } },
+  schemeNodes,
+  whyTitle, valueItems, whyCtaLabel,
   partnershipTitle, partnershipIntro, partnershipSteps,
-  faqTitle, faqs,
+  faqTitle, faqSubtitle, faqCtaLabel, faqs,
   seoTitle, seoDescription
 }
 `

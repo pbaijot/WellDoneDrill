@@ -78,7 +78,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     getHomePage(locale),
     getGlobalSettings(),
     getLatestBlogPosts(locale, 3),
-    getChantiers(),
+    getChantiers(locale),
   ])
 
   /* ── Advantages — always 4 items (pad with fallback if CMS has fewer) ── */
@@ -112,17 +112,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       }))
     : [
         {
-          badge: t('svc_1_badge'),
-          title: t('svc_1_title'),
+          title: 'Géothermie fermée',
           description: "Des sondes verticales descendent à 80–150 m de profondeur pour capter la chaleur constante du sol. Cette énergie alimente votre pompe à chaleur été comme hiver — sans fossile, sans émission directe.",
+          ctaLabel: 'Découvrir la géothermie fermée',
           routeKey: 'geo_fermee',
           image: undefined,
           resolvedImage: '/images/foreuse-wide.jpg',
         },
         {
-          badge: t('svc_2_badge'),
-          title: t('svc_2_title'),
+          title: 'Géothermie ouverte',
           description: "La nappe phréatique, à température stable toute l'année, devient votre source d'énergie. Technique idéale pour les grands projets, elle offre des rendements parmi les plus élevés du secteur.",
+          ctaLabel: 'Découvrir la géothermie ouverte',
           routeKey: 'geo_ouverte',
           image: undefined,
           resolvedImage: '/images/fond-terre-2.jpg',
@@ -148,6 +148,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               ).format(new Date(post.publishedAt))
             : '',
           excerpt: post.excerpt ?? '',
+          imageUrl: post.mainImage?.asset?.url ?? null,
         }))
       : [
           { tone: 'bg-wdd-ground/50', title: "L'après-forage : Pourquoi le dossier As-Built est essentiel ?",    date: 'Mars 2026',    excerpt: "Une fois que les machines ont quitté votre propriété, le travail n'est pas terminé…" },
@@ -184,18 +185,38 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 href={getLocalizedPath(loc, 'demarrer')}
                 className="inline-block bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
               >
-                Démarrer votre projet →
+                {home?.hero?.ctaLabel ?? 'Démarrer votre projet →'}
               </Link>
               <Link
                 href={getLocalizedPath(loc, 'references')}
                 className="inline-block px-7 py-3.5 text-sm font-semibold border-2 border-white/40 text-white hover:border-white transition-colors rounded-sm"
               >
-                Voir nos réalisations
+                {home?.hero?.secondaryLabel ?? 'Voir nos réalisations'}
               </Link>
             </div>
           </div>
         </div>
+
+        {/* Z-outline — bottom of hero, aligns with the icon below */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
+          <Image
+            src="/images/Z-outline-white.svg"
+            alt=""
+            width={90}
+            height={112}
+          />
+        </div>
       </section>
+
+      {/* Icon transition between hero and avantages */}
+      <div className="relative flex justify-center -mb-24 mt-4 z-10">
+        <Image
+          src="/images/wdd-geothermie_fermee-hearo-after.png"
+          alt=""
+          width={90}
+          height={110}
+        />
+      </div>
 
       {/* ═══════════════════════════════════════════════════════════
           SECTION 1 — AVANTAGES  (3 outlined rows left, video right)
@@ -242,7 +263,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 className="object-cover object-center"
               />
               <video
-                src={home?.advantages?.videoUrl ?? '/videos/mrly-comp.mov'}
+                src={home?.advantages?.videoUrl ?? '/videos/mrly-comp.mp4'}
                 autoPlay loop muted playsInline
                 className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
               />
@@ -330,9 +351,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          SECTION 3 — MAP + RÉALISATIONS (interactive)
+          SECTION 3 — MAP + RÉALISATIONS (BE only)
       ═══════════════════════════════════════════════════════════ */}
-      <HomeMapSection locale={loc} chantiers={chantiers} />
+      {(loc === 'be-fr' || loc === 'be-nl') && (
+        <HomeMapSection locale={loc} chantiers={chantiers} />
+      )}
 
       {/* ═══════════════════════════════════════════════════════════
           SECTION 4 — GÉOTHERMIE  (clay background, two framed cards)
@@ -343,11 +366,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           {/* Intro — stacked */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold leading-tight mb-5">
-              La géothermie,{' '}<span className="text-wdd-mud">l&apos;énergie du sol</span>
+              {home?.services?.title ?? 'La géothermie,'}{' '}
+              <span className="text-wdd-mud">{home?.services?.highlight ?? "l'énergie du sol"}</span>
             </h2>
             <p className="text-sm font-light text-wdd-black/55 leading-relaxed max-w-2xl">
-              La géothermie exploite la chaleur naturelle et stable de la terre pour chauffer et rafraîchir vos bâtiments.
-              Deux techniques complémentaires s&apos;adaptent à chaque projet — selon la géologie, la surface disponible et l&apos;échelle des besoins.
+              {home?.services?.subtitle ?? "La géothermie exploite la chaleur naturelle et stable de la terre pour chauffer et rafraîchir vos bâtiments. Deux techniques complémentaires s'adaptent à chaque projet — selon la géologie, la surface disponible et l'échelle des besoins."}
             </p>
           </div>
 
@@ -367,7 +390,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <div className="p-8 flex flex-col flex-1">
                 <IconFermee className="mb-6" />
                 <h3 className="text-xl font-bold mb-3 leading-snug">
-                  Géothermie fermée
+                  {serviceItems[0].title ?? 'Géothermie fermée'}
                 </h3>
                 <p className="text-sm font-light text-black/55 leading-relaxed mb-8 flex-1">
                   {serviceItems[0].description ?? "Des sondes descendent à 80–150 m de profondeur pour capter la chaleur constante du sol. Idéal pour les maisons et bâtiments sans nappe phréatique requise."}
@@ -376,7 +399,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   href={getLocalizedPath(loc, (serviceItems[0].routeKey ?? 'geo_fermee') as RouteKey)}
                   className="inline-flex items-center gap-2 text-sm font-bold bg-wdd-black text-white px-5 py-2.5 self-start hover:bg-wdd-black/80 transition-colors rounded-sm"
                 >
-                  Découvrir la géothermie fermée <span>→</span>
+                  {serviceItems[0].ctaLabel ?? 'Découvrir la géothermie fermée'} <span>→</span>
                 </Link>
               </div>
             </div>
@@ -394,16 +417,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               <div className="p-8 flex flex-col flex-1">
                 <IconOuverte className="mb-6" />
                 <h3 className="text-xl font-bold mb-3 leading-snug">
-                  Géothermie ouverte
+                  {serviceItems[1]?.title ?? 'Géothermie ouverte'}
                 </h3>
                 <p className="text-sm font-light text-black/55 leading-relaxed mb-8 flex-1">
-                  {serviceItems[1].description ?? "La nappe phréatique, à température stable toute l'année, devient votre source d'énergie. Technique idéale pour les grands projets, avec les meilleurs rendements du secteur."}
+                  {serviceItems[1]?.description ?? "La nappe phréatique, à température stable toute l'année, devient votre source d'énergie. Technique idéale pour les grands projets, avec les meilleurs rendements du secteur."}
                 </p>
                 <Link
-                  href={getLocalizedPath(loc, (serviceItems[1].routeKey ?? 'geo_ouverte') as RouteKey)}
+                  href={getLocalizedPath(loc, (serviceItems[1]?.routeKey ?? 'geo_ouverte') as RouteKey)}
                   className="inline-flex items-center gap-2 text-sm font-bold bg-wdd-black text-white px-5 py-2.5 self-start hover:bg-wdd-black/80 transition-colors rounded-sm"
                 >
-                  Découvrir la géothermie ouverte <span>→</span>
+                  {serviceItems[1]?.ctaLabel ?? 'Découvrir la géothermie ouverte'} <span>→</span>
                 </Link>
               </div>
             </div>
@@ -512,8 +535,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {blogPosts.map((post) => (
               <div key={'_id' in post ? post._id : post.title} className="group">
                 <Link href={'slug' in post && post.slug ? `/${locale}/blog/${post.slug}` : getLocalizedPath(loc, 'blog')} className="block">
-                  <div className={'h-48 flex items-center justify-center rounded-sm ' + (post.tone ?? 'bg-wdd-ground/50')}>
-                    <span className="text-xs font-light text-white/30 uppercase tracking-wider">Photo article</span>
+                  <div className={'relative h-48 overflow-hidden rounded-sm ' + ('imageUrl' in post && post.imageUrl ? '' : post.tone ?? 'bg-wdd-ground/50')}>
+                    {'imageUrl' in post && post.imageUrl
+                      ? <Image src={post.imageUrl} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                      : null}
                   </div>
                   <div className="pt-5 pb-6">
                     <div className="text-xs font-light text-wdd-ground tracking-wider uppercase mb-2">{post.date}</div>

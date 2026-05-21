@@ -77,7 +77,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     // Province page first
     const province = findProvinceBySlug(subSlug)
     if (province) {
-      const chantiers = await getChantiers()
+      const chantiers = await getChantiers(locale)
       return <ProvinceReferencesPage locale={locale} province={province} chantiers={chantiers} />
     }
     // Individual project page
@@ -96,7 +96,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'references') {
-    const chantiers = await getChantiers()
+    const chantiers = await getChantiers(locale)
     return <ReferencesPage locale={locale} chantiers={chantiers} />
   }
 
@@ -117,7 +117,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'particuliers') {
-    const [chantiers, globalSettings] = await Promise.all([getChantiers(), getGlobalSettings().catch(() => null)])
+    const [chantiers, globalSettings] = await Promise.all([getChantiers(locale), getGlobalSettings().catch(() => null)])
     try {
       const page = await getParticuliersPage(locale)
       const data = page ?? {_id: 'default', locale}
@@ -132,7 +132,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     routeKey === 'pro_architectes' ||
     routeKey === 'pro_entrepreneurs'
   ) {
-    const [chantiers, globalSettings] = await Promise.all([getChantiers(), getGlobalSettings().catch(() => null)])
+    const [chantiers, globalSettings] = await Promise.all([getChantiers(locale), getGlobalSettings().catch(() => null)])
     try {
       const page = await getProPage(locale, routeKey)
       const data = page ?? {_id: 'default', locale, routeKey}

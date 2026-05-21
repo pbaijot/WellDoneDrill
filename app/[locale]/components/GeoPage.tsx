@@ -271,7 +271,6 @@ export default function GeoPage({
     ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
     : defaultPanelItems
 
-  const howSteps = page.howSteps ?? []
   const faqs = page.faqs?.length
     ? page.faqs.map((f) => ({question: f.question ?? '', answer: f.answer ?? ''}))
     : isOpen ? DEFAULT_FAQS_OUVERTE : DEFAULT_FAQS_FERMEE
@@ -322,16 +321,16 @@ export default function GeoPage({
               {page.heroCtaLabel && (
                 <Link
                   href={getLocalizedPath(locale, ctaRoute)}
-                  className="bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
+                  className="bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
                 >
                   {page.heroCtaLabel}
                 </Link>
               )}
               <Link
                 href={getLocalizedPath(locale, 'references')}
-                className="text-sm font-light text-white/55 border-b border-white/25 hover:text-white transition-colors pb-0.5"
+                className="px-7 py-3.5 text-sm font-semibold border-2 border-white/40 text-white hover:border-white transition-colors rounded-sm"
               >
-                Voir nos réalisations
+                {page.heroSecondaryLabel ?? 'Voir nos réalisations'}
               </Link>
             </div>
 
@@ -361,7 +360,7 @@ export default function GeoPage({
             )}
           </div>
 
-          <div className="relative min-h-[420px] overflow-hidden">
+          <div className="relative min-h-[420px] overflow-hidden rounded-sm">
             <Image
               src={page.introImage ? urlFor(page.introImage)?.url() ?? '/images/wdd-expert-forage.webp' : '/images/wdd-expert-forage.webp'}
               alt="Expert WellDoneDrill sur chantier"
@@ -391,9 +390,9 @@ export default function GeoPage({
               <div className="px-12 py-8">
                 <Link
                   href={getLocalizedPath(locale, 'demarrer')}
-                  className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
+                  className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
                 >
-                  Démarrer mon projet <span>→</span>
+                  {page.howCtaLabel ?? 'Démarrer mon projet →'}
                 </Link>
               </div>
             </div>
@@ -421,7 +420,7 @@ export default function GeoPage({
       <section className="bg-white py-24 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
           <h2 className="text-4xl font-bold leading-tight mb-14">
-            Les avantages de la géothermie
+            {page.advantagesTitle ?? 'Les avantages de la géothermie'}
           </h2>
           {(() => {
             const FALLBACK_ADVANTAGES = [
@@ -497,13 +496,13 @@ export default function GeoPage({
               {page.faqTitle ?? 'Vos questions,\nnos réponses.'}
             </h2>
             <p className="text-sm font-light text-white/45 leading-7 mb-8">
-              Une question ne figure pas ici ? Contactez directement notre équipe.
+              {page.faqSubtitle ?? 'Une question ne figure pas ici ? Contactez directement notre équipe.'}
             </p>
             <a
               href="#contact"
-              className="inline-block bg-wdd-yellow text-wdd-black px-5 py-2.5 text-sm font-bold hover:bg-wdd-yellow/80 transition-colors rounded-sm"
+              className="inline-block bg-wdd-yellow text-wdd-black px-6 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
             >
-              Nous contacter
+              {page.faqCtaLabel ?? 'Nous contacter'}
             </a>
           </div>
           <div className="lg:col-span-2">
@@ -541,7 +540,7 @@ export default function GeoPage({
           </p>
           <Link
             href={getLocalizedPath(locale, 'particuliers')}
-            className="inline-block bg-white text-wdd-black px-6 py-3.5 text-sm font-bold hover:bg-wdd-yellow transition-colors self-start"
+            className="inline-block bg-white text-wdd-black px-6 py-3.5 text-sm font-bold hover:bg-wdd-yellow transition-colors self-start rounded-sm"
           >
             {page.particularCta ?? 'Découvrir l\'offre →'}
           </Link>
@@ -560,7 +559,7 @@ export default function GeoPage({
           </p>
           <Link
             href={getLocalizedPath(locale, 'pro')}
-            className="inline-block bg-wdd-yellow text-wdd-black px-6 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors self-start"
+            className="inline-block bg-wdd-yellow text-wdd-black px-6 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors self-start rounded-sm"
           >
             {page.proCta ?? 'Découvrir l\'offre →'}
           </Link>

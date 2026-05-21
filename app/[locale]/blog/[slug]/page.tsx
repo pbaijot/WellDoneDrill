@@ -2,47 +2,61 @@ import {notFound} from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import {getBlogPostBySlug} from '@/src/lib/blog'
+import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 
-function formatDate(value?: string, locale = 'fr-BE') {
+const COPY: Record<AppLocale, {
+  back: string
+  minRead: string
+  ctaButton: string
+  categories: Record<string, string>
+}> = {
+  'be-fr': {
+    back: '← Retour aux actualités',
+    minRead: 'min de lecture',
+    ctaButton: 'Demander un devis +',
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+  },
+  'be-nl': {
+    back: '← Terug naar het nieuws',
+    minRead: 'min lezen',
+    ctaButton: 'Vraag een offerte +',
+    categories: {geothermie: 'Geothermie', pac: 'Warmtepompen', reglementation: 'Regelgeving', chantier: 'Werf'},
+  },
+  'fr-fr': {
+    back: '← Retour aux actualités',
+    minRead: 'min de lecture',
+    ctaButton: 'Demander un devis +',
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+  },
+  'lu-fr': {
+    back: '← Retour aux actualités',
+    minRead: 'min de lecture',
+    ctaButton: 'Demander un devis +',
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+  },
+  'lu-de': {
+    back: '← Zurück zu den Neuigkeiten',
+    minRead: 'Min Lesezeit',
+    ctaButton: 'Angebot anfragen +',
+    categories: {geothermie: 'Geothermie', pac: 'Wärmepumpen', reglementation: 'Vorschriften', chantier: 'Baustelle'},
+  },
+}
+
+const INTL_LOCALE: Record<AppLocale, string> = {
+  'be-fr': 'fr-BE', 'be-nl': 'nl-BE',
+  'fr-fr': 'fr-FR', 'lu-fr': 'fr-LU', 'lu-de': 'de-LU',
+}
+
+function formatDate(value?: string, intlLocale = 'fr-BE') {
   if (!value) return ''
   try {
-    return new Intl.DateTimeFormat(locale, {
+    return new Intl.DateTimeFormat(intlLocale, {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
     }).format(new Date(value))
   } catch {
     return value
-  }
-}
-
-function getIntlLocale(locale: string) {
-  switch (locale) {
-    case 'be-nl':
-      return 'nl-BE'
-    case 'fr-fr':
-      return 'fr-FR'
-    case 'lu-fr':
-      return 'fr-LU'
-    case 'lu-de':
-      return 'de-LU'
-    default:
-      return 'fr-BE'
-  }
-}
-
-function getCategoryLabel(category?: string) {
-  switch (category) {
-    case 'geothermie':
-      return 'Géothermie'
-    case 'pac':
-      return 'Pompes à chaleur'
-    case 'reglementation':
-      return 'Réglementation'
-    case 'chantier':
-      return 'Chantier'
-    default:
-      return 'Article'
   }
 }
 
@@ -74,21 +88,22 @@ export default async function BlogPostPage({
     notFound()
   }
 
-  const intlLocale = getIntlLocale(locale)
+  const copy = COPY[locale as AppLocale] ?? COPY['be-fr']
+  const intlLocale = INTL_LOCALE[locale as AppLocale] ?? 'fr-BE'
 
   return (
     <article className="bg-white min-h-screen">
       <header className="bg-wdd-clay px-8 py-14 border-b border-black/10">
         <div className="max-w-4xl mx-auto">
           <Link href={`/${locale}/blog`} className="text-sm text-black/50 hover:text-wdd-mud transition-colors">
-            ← Retour aux actualités
+            {copy.back}
           </Link>
 
           <div className="flex flex-wrap gap-3 text-xs uppercase tracking-wider mt-8 mb-4">
-            <span className="text-wdd-mud">{getCategoryLabel(post.category)}</span>
+            {post.category && <span className="text-wdd-mud">{copy.categories[post.category] ?? post.category}</span>}
             {post.publishedAt && <span className="text-black/45">{formatDate(post.publishedAt, intlLocale)}</span>}
             {post.author && <span className="text-black/45">{post.author}</span>}
-            {post.readingTime && <span className="text-black/45">{post.readingTime} min de lecture</span>}
+            {post.readingTime && <span className="text-black/45">{post.readingTime} {copy.minRead}</span>}
           </div>
 
           <h1 className="text-5xl font-bold leading-tight mb-6">{post.title}</h1>
@@ -128,10 +143,10 @@ export default async function BlogPostPage({
               {post.ctaTitle && <h2 className="text-2xl font-bold mb-3">{post.ctaTitle}</h2>}
               {post.ctaText && <p className="text-base leading-7 text-black/75 mb-5">{post.ctaText}</p>}
               <Link
-                href={`/${locale}/devis`}
+                href={getLocalizedPath(locale as AppLocale, 'devis')}
                 className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
               >
-                Demander un devis +
+                {copy.ctaButton}
               </Link>
             </div>
           )}

@@ -1,79 +1,103 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import {getBlogPosts} from '@/src/lib/blog'
+import type {AppLocale} from '@/src/i18n/routes'
 
-function formatDate(value?: string, locale = 'fr-BE') {
+const COPY: Record<AppLocale, {
+  eyebrow: string
+  title: string
+  desc: string
+  empty: string
+  readMore: string
+  categories: Record<string, string>
+  minRead: string
+}> = {
+  'be-fr': {
+    eyebrow: 'Actualités',
+    title: 'Le blog WellDoneDrill',
+    desc: "Articles, retours de chantier, pédagogie géothermie et points d'attention techniques pour mieux comprendre le forage géothermique.",
+    empty: 'Aucun article publié pour cette version du site.',
+    readMore: "Lire l'article →",
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+    minRead: 'min',
+  },
+  'be-nl': {
+    eyebrow: 'Nieuws',
+    title: 'De blog van WellDoneDrill',
+    desc: 'Artikelen, werfverslagen, geothermische educatie en technische aandachtspunten om geothermisch boren beter te begrijpen.',
+    empty: 'Nog geen artikelen gepubliceerd voor deze taalversie.',
+    readMore: 'Lees het artikel →',
+    categories: {geothermie: 'Geothermie', pac: 'Warmtepompen', reglementation: 'Regelgeving', chantier: 'Werf'},
+    minRead: 'min',
+  },
+  'fr-fr': {
+    eyebrow: 'Actualités',
+    title: 'Le blog WellDoneDrill',
+    desc: "Articles, retours de chantier, pédagogie géothermie et points d'attention techniques pour mieux comprendre le forage géothermique.",
+    empty: 'Aucun article publié pour cette version du site.',
+    readMore: "Lire l'article →",
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+    minRead: 'min',
+  },
+  'lu-fr': {
+    eyebrow: 'Actualités',
+    title: 'Le blog WellDoneDrill',
+    desc: "Articles, retours de chantier, pédagogie géothermie et points d'attention techniques pour mieux comprendre le forage géothermique.",
+    empty: 'Aucun article publié pour cette version du site.',
+    readMore: "Lire l'article →",
+    categories: {geothermie: 'Géothermie', pac: 'Pompes à chaleur', reglementation: 'Réglementation', chantier: 'Chantier'},
+    minRead: 'min',
+  },
+  'lu-de': {
+    eyebrow: 'Aktuelles',
+    title: 'Der Blog von WellDoneDrill',
+    desc: 'Artikel, Baustellenberichte, Geothermie-Grundlagen und technische Hinweise für ein besseres Verständnis der Erdwärme-Bohrung.',
+    empty: 'Noch keine Artikel für diese Sprachversion veröffentlicht.',
+    readMore: 'Artikel lesen →',
+    categories: {geothermie: 'Geothermie', pac: 'Wärmepumpen', reglementation: 'Vorschriften', chantier: 'Baustelle'},
+    minRead: 'Min',
+  },
+}
+
+const INTL_LOCALE: Record<AppLocale, string> = {
+  'be-fr': 'fr-BE', 'be-nl': 'nl-BE',
+  'fr-fr': 'fr-FR', 'lu-fr': 'fr-LU', 'lu-de': 'de-LU',
+}
+
+function formatDate(value?: string, intlLocale = 'fr-BE') {
   if (!value) return ''
   try {
-    return new Intl.DateTimeFormat(locale, {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    }).format(new Date(value))
+    return new Intl.DateTimeFormat(intlLocale, {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(value))
   } catch {
     return value
   }
 }
 
-function getIntlLocale(locale: string) {
-  switch (locale) {
-    case 'be-nl':
-      return 'nl-BE'
-    case 'fr-fr':
-      return 'fr-FR'
-    case 'lu-fr':
-      return 'fr-LU'
-    case 'lu-de':
-      return 'de-LU'
-    default:
-      return 'fr-BE'
-  }
-}
-
-function getCategoryLabel(category?: string) {
-  switch (category) {
-    case 'geothermie':
-      return 'Géothermie'
-    case 'pac':
-      return 'Pompes à chaleur'
-    case 'reglementation':
-      return 'Réglementation'
-    case 'chantier':
-      return 'Chantier'
-    default:
-      return 'Article'
-  }
-}
-
-export default async function BlogPage({
-  params,
-}: {
-  params: Promise<{locale: string}>
-}) {
+export default async function BlogPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params
+  const copy = COPY[locale as AppLocale] ?? COPY['be-fr']
+  const intlLocale = INTL_LOCALE[locale as AppLocale] ?? 'fr-BE'
+
   const posts = await getBlogPosts(locale)
-  const intlLocale = getIntlLocale(locale)
-  const featured = posts.find((post) => post.featured) ?? posts[0]
-  const rest = featured ? posts.filter((post) => post._id !== featured._id) : []
+  const featured = posts.find((p) => p.featured) ?? posts[0]
+  const rest = featured ? posts.filter((p) => p._id !== featured._id) : []
 
   return (
     <div className="bg-white min-h-screen">
       <section className="bg-wdd-black text-white px-8 py-20">
         <div className="max-w-screen-xl mx-auto">
           <div className="text-xs uppercase tracking-[0.2em] text-wdd-yellow/60 mb-4">
-            Actualités
+            {copy.eyebrow}
           </div>
-          <h1 className="text-5xl font-bold mb-4">Le blog WellDoneDrill</h1>
-          <p className="text-sm text-white/60 max-w-2xl leading-relaxed">
-            Articles, retours de chantier, pédagogie géothermie et points d’attention techniques pour mieux comprendre le forage géothermique.
-          </p>
+          <h1 className="text-5xl font-bold mb-4">{copy.title}</h1>
+          <p className="text-sm text-white/60 max-w-2xl leading-relaxed">{copy.desc}</p>
         </div>
       </section>
 
       <section className="px-8 py-14">
         <div className="max-w-screen-xl mx-auto">
           {!featured ? (
-            <div className="text-sm text-black/60">Aucun article publié pour cette langue.</div>
+            <div className="text-sm text-black/60">{copy.empty}</div>
           ) : (
             <>
               <Link href={`/${locale}/blog/${featured.slug}`} className="block border border-black/10 hover:border-wdd-yellow transition-colors mb-14">
@@ -88,20 +112,20 @@ export default async function BlogPage({
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <span className="text-xs uppercase tracking-wider text-black/30">Image article</span>
+                      <span className="text-xs uppercase tracking-wider text-black/30">WellDoneDrill</span>
                     )}
                   </div>
                   <div className="p-10 flex flex-col justify-center">
                     <div className="flex flex-wrap gap-3 text-xs uppercase tracking-wider mb-4">
-                      <span className="text-wdd-mud">{getCategoryLabel(featured.category)}</span>
+                      {featured.category && <span className="text-wdd-mud">{copy.categories[featured.category] ?? featured.category}</span>}
                       {featured.publishedAt && <span className="text-black/45">{formatDate(featured.publishedAt, intlLocale)}</span>}
-                      {featured.readingTime && <span className="text-black/45">{featured.readingTime} min</span>}
+                      {featured.readingTime && <span className="text-black/45">{featured.readingTime} {copy.minRead}</span>}
                     </div>
                     <h2 className="text-4xl font-bold leading-tight mb-4">{featured.title}</h2>
                     {featured.excerpt && (
                       <p className="text-base text-black/65 leading-relaxed mb-6">{featured.excerpt}</p>
                     )}
-                    <span className="text-sm font-semibold text-wdd-black">Lire l’article +</span>
+                    <span className="text-sm font-semibold text-wdd-black">{copy.readMore}</span>
                   </div>
                 </div>
               </Link>
@@ -120,20 +144,20 @@ export default async function BlogPage({
                             className="w-full h-full object-cover"
                           />
                         ) : (
-                          <span className="text-xs uppercase tracking-wider text-black/30">Image article</span>
+                          <span className="text-xs uppercase tracking-wider text-black/30">WellDoneDrill</span>
                         )}
                       </div>
                       <div className="p-6">
                         <div className="flex flex-wrap gap-3 text-[11px] uppercase tracking-wider mb-3">
-                          <span className="text-wdd-mud">{getCategoryLabel(post.category)}</span>
+                          {post.category && <span className="text-wdd-mud">{copy.categories[post.category] ?? post.category}</span>}
                           {post.publishedAt && <span className="text-black/45">{formatDate(post.publishedAt, intlLocale)}</span>}
-                          {post.readingTime && <span className="text-black/45">{post.readingTime} min</span>}
+                          {post.readingTime && <span className="text-black/45">{post.readingTime} {copy.minRead}</span>}
                         </div>
                         <h3 className="text-xl font-bold leading-snug mb-3">{post.title}</h3>
                         {post.excerpt && (
                           <p className="text-sm text-black/60 leading-relaxed mb-4">{post.excerpt}</p>
                         )}
-                        <span className="text-sm font-semibold text-wdd-black">Lire l’article +</span>
+                        <span className="text-sm font-semibold text-wdd-black">{copy.readMore}</span>
                       </div>
                     </Link>
                   </article>

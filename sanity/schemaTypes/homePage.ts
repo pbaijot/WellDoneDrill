@@ -19,11 +19,10 @@ const homePage = defineType({
       title: 'Hero',
       type: 'object',
       fields: [
-        { name: 'tag', title: 'Tag', type: 'string' },
         { name: 'title', title: 'Titre', type: 'string' },
         { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
-        { name: 'ctaLabel', title: 'CTA principal', type: 'string' },
-        { name: 'secondaryLabel', title: 'CTA secondaire', type: 'string' },
+        { name: 'ctaLabel', title: 'CTA principal (bouton jaune)', type: 'string' },
+        { name: 'secondaryLabel', title: 'CTA secondaire (lien blanc)', type: 'string' },
         { name: 'image', title: 'Image hero', type: 'image', options: { hotspot: true } }
       ]
     },
@@ -33,35 +32,31 @@ const homePage = defineType({
       title: 'Avantages',
       type: 'object',
       fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
         { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
+        { name: 'highlight', title: 'Mot en évidence (accroche)', type: 'string' },
         { name: 'introText', title: 'Texte intro', type: 'text', rows: 3 },
-        { name: 'videoUrl', title: 'URL vidéo', type: 'string' },
+        { name: 'video', title: 'Vidéo de fond (MP4)', type: 'file', options: { accept: 'video/mp4,video/webm' } },
         {
           name: 'items',
-          title: 'Cartes',
+          title: 'Cartes (3 avantages)',
           type: 'array',
           of: [
             {
               type: 'object',
               fields: [
                 { name: 'number', title: 'Numéro', type: 'string' },
-                { name: 'icon', title: 'Icône texte', type: 'string' },
                 { name: 'title', title: 'Titre', type: 'string' },
                 { name: 'description', title: 'Description', type: 'text', rows: 3 }
               ]
             }
           ]
-        },
-        { name: 'calculatorTitle', title: 'Titre calculateur', type: 'string' },
-        { name: 'calculatorSubtitle', title: 'Sous-titre calculateur', type: 'string' }
+        }
       ]
     },
 
     {
       name: 'audiences',
-      title: 'Particuliers / professionnels',
+      title: 'Particuliers / Professionnels',
       type: 'object',
       fields: [
         {
@@ -93,24 +88,24 @@ const homePage = defineType({
 
     {
       name: 'services',
-      title: 'Services (Géothermie)',
+      title: 'Section "La géothermie"',
       type: 'object',
       fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
-        { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'subtitle', title: 'Sous-titre', type: 'text', rows: 3 },
+        { name: 'title', title: 'Titre (partie normale)', type: 'string' },
+        { name: 'highlight', title: 'Titre (partie colorée)', type: 'string' },
+        { name: 'subtitle', title: 'Sous-titre / intro', type: 'text', rows: 3 },
         {
           name: 'items',
-          title: 'Services',
+          title: 'Cartes (géothermie fermée / ouverte)',
           type: 'array',
           of: [
             {
               type: 'object',
               fields: [
-                { name: 'badge', title: 'Badge', type: 'string' },
-                { name: 'title', title: 'Titre', type: 'string' },
+                { name: 'title', title: 'Titre de la carte', type: 'string' },
                 { name: 'description', title: 'Description', type: 'text', rows: 3 },
-                { name: 'routeKey', title: 'Route key', type: 'string' },
+                { name: 'ctaLabel', title: 'Texte du bouton', type: 'string' },
+                { name: 'routeKey', title: 'Route key (ex: geo_fermee)', type: 'string' },
                 { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } }
               ]
             }
@@ -162,26 +157,9 @@ const homePage = defineType({
       title: 'Bloc blog',
       type: 'object',
       fields: [
-        { name: 'eyebrow', title: 'Eyebrow', type: 'string' },
         { name: 'title', title: 'Titre principal', type: 'string' },
-        { name: 'highlight', title: 'Mot ou partie en évidence', type: 'string' },
-        { name: 'readMoreLabel', title: 'Label lire plus', type: 'string' },
-        {
-          name: 'posts',
-          title: 'Posts affichés',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                { name: 'title', title: 'Titre', type: 'string' },
-                { name: 'date', title: 'Date', type: 'string' },
-                { name: 'excerpt', title: 'Extrait', type: 'text', rows: 3 },
-                { name: 'tone', title: 'Classe couleur', type: 'string' }
-              ]
-            }
-          ]
-        }
+        { name: 'highlight', title: 'Mot en évidence', type: 'string' },
+        { name: 'readMoreLabel', title: 'Label "lire plus"', type: 'string' }
       ]
     }
   ],
@@ -196,7 +174,5 @@ const homePage = defineType({
     }
   }
 })
-
-
 
 export default homePage

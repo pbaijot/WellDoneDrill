@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
-import type {ProPageData} from '@/src/lib/proPage'
+import type {ProPageData, ProSchemeNode} from '@/src/lib/proPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
@@ -14,8 +14,11 @@ import {
   BELGIUM_PROVINCES,
   getProvinceName,
   getProvincePageUrl,
+  getProvinceSlug,
   chantierImageUrl,
-  sectorLabel,
+  TYPE_LABEL,
+  SECTOR_LABEL,
+  localizedProvince,
   type Province,
   type Chantier,
 } from '@/src/lib/referencesPage'
@@ -41,12 +44,25 @@ type SegmentDefaults = {
   contextImage: string
   contextVideo?: string
   whyTitle: string
+  whyCtaLabel: string
   whyItems: {title: string; body: string}[]
   etapesTitle: string
   etapesIntro: string
   etapes: {title: string; body: string}[]
   faqTitle: string
+  faqSubtitle: string
+  faqCtaLabel: string
   faqs: {question: string; answer: string}[]
+  // map section
+  mapTitle: string
+  mapSelectProvince: string
+  mapAllProvinces: string
+  mapEmpty: string
+  mapCtaAll: string
+  mapCtaProvince: (name: string) => string
+  // mobile sticky CTA
+  stickyStart: string
+  stickyCall: string
 }
 
 const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
@@ -76,6 +92,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     ],
     contextImage: '/images/foreuse-wide.jpg',
     whyTitle: "Six raisons de proposer la géothermie à vos clients.",
+    whyCtaLabel: "Démarrer mon projet",
     whyItems: [
       {title: "Revenu par projet multiplié", body: "Un chantier géothermique génère en moyenne 2 à 3 fois plus qu'une installation PAC air-air. Même client, même surface — plus de valeur créée, plus de marge pour vous."},
       {title: "Zéro friction administrative", body: "WellDoneDrill gère les permis de forage, les études de sol et les déclarations officielles. Vous restez concentré sur votre cœur de métier."},
@@ -93,6 +110,8 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {title: "Votre client, votre contrat", body: "Vous êtes et restez l'unique interlocuteur de votre client. WDD intervient en sous-traitance invisible."},
     ],
     faqTitle: "Questions fréquentes des installateurs.",
+    faqSubtitle: "Une question ne figure pas ici ? Contactez directement notre équipe.",
+    faqCtaLabel: "Poser ma question",
     faqs: [
       {question: "Je ne suis pas encore certifié PAC géothermique — puis-je devenir partenaire ?", answer: "Oui. Si vous êtes certifié pour les PAC en général (Qualipac ou équivalent), vous pouvez candidater. WDD peut vous orienter vers les formations de certification géothermique reconnues en Belgique et au Luxembourg."},
       {question: "Quel est le tarif WDD pour les partenaires ?", answer: "Nous ne publions pas de tarif public. Après validation de votre candidature, vous recevez une grille tarifaire partenaire confidentielle, basée sur votre volume annuel et votre zone géographique."},
@@ -100,6 +119,14 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {question: "WDD peut-il contacter directement mes clients ?", answer: "Non. Votre relation client est intacte. WDD intervient en tant que sous-traitant ; vos clients ne connaissent notre implication que si vous le souhaitez."},
       {question: "Quelle est la zone géographique couverte ?", answer: "Belgique et Grand-Duché de Luxembourg, toutes provinces. Extension en France du Nord et de l'Est à l'étude pour 2025–2026."},
     ],
+    mapTitle: "Nos projets en",
+    mapSelectProvince: "Sélectionnez une province",
+    mapAllProvinces: "Toutes les provinces",
+    mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
+    mapCtaAll: "Voir toutes nos réalisations",
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: "Démarrer mon projet",
+    stickyCall: "Appeler WDD",
   },
 
   /* ── ARCHITECTES ── */
@@ -128,6 +155,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     contextImage: '/images/abricotiers-2.jpg',
     contextVideo: '/videos/abricotiers.mp4',
     whyTitle: "Six bonnes raisons d'intégrer la géothermie dans vos projets.",
+    whyCtaLabel: "Demander une étude",
     whyItems: [
       {title: "PEB A sans compromis architecturaux", body: "La géothermie fermée ne génère aucune contrainte visuelle. Pas de groupe extérieur, pas d'impact thermique en façade. Vos partis pris architecturaux restent intacts."},
       {title: "Étude préliminaire gratuite à l'esquisse", body: "WDD réalise l'analyse du sous-sol de vos projets dès l'esquisse. Vous savez si c'est faisable avant de l'intégrer dans votre programme."},
@@ -145,6 +173,8 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {title: "Permis & réalisation", body: "WDD dépose et suit les demandes de permis de forage. Réalisation dans le calendrier de chantier, coordination directe avec votre maître d'œuvre."},
     ],
     faqTitle: "Vos questions d'architecte.",
+    faqSubtitle: "Une question ne figure pas ici ? Contactez directement notre équipe.",
+    faqCtaLabel: "Poser ma question",
     faqs: [
       {question: "À quelle phase du projet dois-je contacter WDD ?", answer: "Dès l'esquisse, idéalement. Plus tôt vous intégrez la géothermie dans le programme, plus les solutions de dimensionnement sont optimales et les contraintes de chantier prévisibles."},
       {question: "Quelle est l'empreinte au sol des forages ?", answer: "Chaque sonde occupe environ 0,1 m² au niveau du sol. L'engin de forage nécessite une zone d'accès de 3 × 6 m pendant les travaux. Aucune infrastructure permanente n'est visible après réalisation."},
@@ -152,6 +182,14 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {question: "Le rapport préliminaire est-il utilisable dans un dossier de permis ?", answer: "Oui. Il est rédigé dans ce but et comprend les références réglementaires belges et luxembourgeoises, les données de profondeur et de débit estimé, et les coordonnées GPS pour l'implantation des forages."},
       {question: "WDD peut-il collaborer avec mon bureau d'études fluides ?", answer: "Absolument. WDD fournit les données géologiques et le dimensionnement du champ de sondes ; le BE fluides intègre la PAC et le réseau de distribution. Cette coordination est notre mode de travail habituel."},
     ],
+    mapTitle: "Nos projets en",
+    mapSelectProvince: "Sélectionnez une province",
+    mapAllProvinces: "Toutes les provinces",
+    mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
+    mapCtaAll: "Voir toutes nos réalisations",
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: "Démarrer mon projet",
+    stickyCall: "Appeler WDD",
   },
 
   /* ── ENTREPRENEURS ── */
@@ -179,6 +217,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     ],
     contextImage: '/images/foreuse-close-up.jpg',
     whyTitle: "Six raisons d'intégrer la géothermie dans votre prochain projet.",
+    whyCtaLabel: "Démarrer un projet géothermique",
     whyItems: [
       {title: "Premium de valeur mesurable", body: "En Belgique, un logement géothermique se revend en moyenne 8 à 12 % plus cher qu'un équivalent PAC air-air. Le surcoût de forage est généralement amorti dès la première transaction."},
       {title: "PEB A — l'argument qui ferme", body: "Un certificat PEB A est devenu un critère de décision pour les acheteurs et locataires premium. La géothermie y conduit systématiquement, sans exception ni aléa."},
@@ -197,6 +236,8 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {title: "Dossier as-built complet", body: "Documentation de réception, certificats de garantie, dossier notarié et documents pour l'acquéreur."},
     ],
     faqTitle: "Questions fréquentes des promoteurs.",
+    faqSubtitle: "Une question ne figure pas ici ? Contactez directement notre équipe.",
+    faqCtaLabel: "Poser ma question",
     faqs: [
       {question: "La géothermie est-elle adaptée aux projets résidentiels collectifs ?", answer: "Oui, et c'est même là qu'elle est la plus efficiente. Un champ de sondes partagé pour un immeuble à appartements ou un lotissement réduit significativement le coût par unité. WDD dimensionne le champ en fonction du programme complet."},
       {question: "Comment WDD s'intègre-t-il à mon planning général de chantier ?", answer: "Nous planifions l'intervention de forage avec votre conducteur de travaux dès la signature du contrat. L'intervention se fait généralement avant les dallages — en phase gros œuvre — sans interférer avec les autres corps de métier."},
@@ -204,6 +245,14 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
       {question: "Qui est responsable en cas de dommage pendant le forage ?", answer: "WDD est entièrement responsable de ses travaux de forage. Notre responsabilité civile couvre les dommages éventuels aux tiers, aux réseaux et aux ouvrages adjacents."},
       {question: "Peut-on prévoir la géothermie pour seulement une partie des unités ?", answer: "Oui. Nous dimensionnons le champ de sondes selon le programme que vous définissez — que ce soit pour l'ensemble du projet ou pour une tranche spécifique."},
     ],
+    mapTitle: "Nos projets en",
+    mapSelectProvince: "Sélectionnez une province",
+    mapAllProvinces: "Toutes les provinces",
+    mapEmpty: "Aucun projet répertorié dans cette province pour le moment.",
+    mapCtaAll: "Voir toutes nos réalisations",
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: "Démarrer mon projet",
+    stickyCall: "Appeler WDD",
   },
 }
 
@@ -291,7 +340,7 @@ const SCHEME_NODES: Record<SegmentKey, [SchemeNode, SchemeNode, SchemeNode]> = {
   ],
 }
 
-function ProScheme({segment}: {segment: SegmentKey}) {
+function ProScheme({segment, cmsNodes}: {segment: SegmentKey; cmsNodes?: {label?: string; sub?: string; stat?: string}[]}) {
   const [phase, setPhase] = useState(0)
   const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
   useEffect(() => {
@@ -306,7 +355,13 @@ function ProScheme({segment}: {segment: SegmentKey}) {
   const pipe2Lit = phase >= 4
   const n2Lit    = phase >= 5
 
-  const nodes = SCHEME_NODES[segment]
+  const defaults = SCHEME_NODES[segment]
+  const nodes: [SchemeNode, SchemeNode, SchemeNode] = [0, 1, 2].map((i) => ({
+    ...defaults[i],
+    label: cmsNodes?.[i]?.label ?? defaults[i].label,
+    sub:   cmsNodes?.[i]?.sub   ?? defaults[i].sub,
+    stat:  cmsNodes?.[i]?.stat  ?? defaults[i].stat,
+  })) as [SchemeNode, SchemeNode, SchemeNode]
   const NODE_DUR = 'duration-[1100ms]'
 
   const SchemeNode = ({lit, node}: {lit: boolean; node: SchemeNode}) => (
@@ -351,10 +406,6 @@ function ProScheme({segment}: {segment: SegmentKey}) {
 }
 
 /* ─────────────────────────────────────────────
-   FAQ ITEM
-───────────────────────────────────────────── */
-
-/* ─────────────────────────────────────────────
    MAP SECTION
 ───────────────────────────────────────────── */
 
@@ -362,15 +413,12 @@ const PER_PAGE = 4
 
 function matchesProvince(c: Chantier, p: Province): boolean {
   if (!c.province) return false
+  if (c.province === p.slug) return true
   const cp = c.province.toLowerCase()
-  return (
-    cp.includes(p.nameFr.toLowerCase()) ||
-    cp.includes(p.nameNl.toLowerCase()) ||
-    cp.includes(p.slug.replace(/-/g, ' '))
-  )
+  return cp.includes(p.nameFr.toLowerCase()) || cp.includes(p.nameNl.toLowerCase())
 }
 
-function ProjetCard({chantier: c}: {chantier: Chantier}) {
+function ProjetCard({chantier: c, locale}: {chantier: Chantier; locale: AppLocale}) {
   const imgUrl = chantierImageUrl(c.photo, 600)
   return (
     <div className="group bg-wdd-clay overflow-hidden flex flex-col h-[248px] rounded-sm">
@@ -393,19 +441,19 @@ function ProjetCard({chantier: c}: {chantier: Chantier}) {
         <div className="flex flex-wrap gap-1">
           {c.type && (
             <span className={`text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 ${c.type === 'fermee' ? 'bg-wdd-yellow text-wdd-black' : 'border border-black/20 text-black/50'}`}>
-              {c.type === 'fermee' ? 'Fermée' : 'Ouverte'}
+              {TYPE_LABEL[locale][c.type as 'fermee' | 'ouverte'] ?? c.type}
             </span>
           )}
           {c.sector && (
             <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 border border-black/12 text-black/40">
-              {sectorLabel(c.sector)}
+              {SECTOR_LABEL[locale][c.sector] ?? c.sector}
             </span>
           )}
         </div>
         <h3 className="text-sm font-bold leading-snug line-clamp-3">{c.title ?? 'Projet géothermique'}</h3>
         {(c.location || c.province) && (
           <p className="text-xs font-light text-black/40 truncate mt-auto">
-            {[c.location, c.province].filter(Boolean).join(' · ')}
+            {[c.location, localizedProvince(c.province, locale)].filter(Boolean).join(' · ')}
           </p>
         )}
       </div>
@@ -413,7 +461,7 @@ function ProjetCard({chantier: c}: {chantier: Chantier}) {
   )
 }
 
-function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: Chantier[]}) {
+function ProProjetsSection({locale, chantiers, d}: {locale: AppLocale; chantiers: Chantier[]; d: SegmentDefaults}) {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [hovered, setHovered] = useState<string | null>(null)
   const [page, setPage] = useState(0)
@@ -434,11 +482,11 @@ function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: C
   }
 
   const ctaHref = selectedProvince
-    ? getProvincePageUrl(locale, selectedProvince.slug)
+    ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale))
     : getLocalizedPath(locale, 'references')
   const ctaLabel = selectedProvince
-    ? `Tous les projets en ${getProvinceName(selectedProvince, locale)}`
-    : 'Voir toutes nos réalisations'
+    ? d.mapCtaProvince(getProvinceName(selectedProvince, locale))
+    : d.mapCtaAll
 
   return (
     <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
@@ -446,14 +494,14 @@ function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: C
 
         <div className="flex items-end justify-between mb-8 gap-4">
           <h2 className="text-3xl font-bold leading-tight">
-            Nos projets en <span className="text-wdd-mud">Belgique</span>
+            {d.mapTitle} <span className="text-wdd-mud">Belgique</span>
           </h2>
           {selectedId && (
             <button
               onClick={() => { setSelectedId(null); setPage(0) }}
               className="text-xs font-light text-black/35 hover:text-black/70 transition-colors underline underline-offset-2 shrink-0"
             >
-              Toutes les provinces
+              {d.mapAllProvinces}
             </button>
           )}
         </div>
@@ -482,7 +530,7 @@ function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: C
                   ? getProvinceName(BELGIUM_PROVINCES.find((p) => p.id === hovered)!, locale)
                   : selectedProvince
                     ? getProvinceName(selectedProvince, locale)
-                    : 'Sélectionnez une province'}
+                    : d.mapSelectProvince}
               </span>
             </div>
           </div>
@@ -500,12 +548,12 @@ function ProProjetsSection({locale, chantiers}: {locale: AppLocale; chantiers: C
                 >
                   {displayed.length === 0 ? (
                     <div className="col-span-2 h-[520px] flex items-center justify-center text-sm font-light text-black/35">
-                      Aucun projet répertorié dans cette province pour le moment.
+                      {d.mapEmpty}
                     </div>
                   ) : (
                     <>
                       {displayed.map((c) => (
-                        <ProjetCard key={c._id} chantier={c} />
+                        <ProjetCard key={c._id} chantier={c} locale={locale} />
                       ))}
                       {Array.from({length: PER_PAGE - displayed.length}).map((_, i) => (
                         <div key={`ph-${i}`} className="bg-wdd-clay/30 h-[248px] rounded-sm" />
@@ -577,6 +625,14 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
     : d.faqs
 
   const whyItems = page.valueItems && page.valueItems.length > 0 ? page.valueItems : d.whyItems
+
+  const partnershipSteps = page.partnershipSteps && page.partnershipSteps.length > 0
+    ? page.partnershipSteps
+    : d.etapes
+  const partnershipTitle = page.partnershipTitle ?? d.etapesTitle
+  const partnershipIntro = page.partnershipIntro ?? d.etapesIntro
+
+  const contextVideoUrl = page.contextVideo?.asset?.url ?? d.contextVideo ?? null
 
   return (
     <div className="flex flex-col bg-white">
@@ -650,7 +706,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 href={getLocalizedPath(locale, 'references')}
                 className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors rounded-sm"
               >
-                {d.heroCtaSecondary}
+                {page.heroCtaSecondary ?? d.heroCtaSecondary}
               </Link>
             </div>
 
@@ -674,7 +730,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 {page.valueIntro ?? d.contextBody}
               </p>
               <div className="border-t border-black/8 pt-10 mt-auto">
-                <ProScheme segment={segment} />
+                <ProScheme segment={segment} cmsNodes={page.schemeNodes as ProSchemeNode[] | undefined} />
               </div>
             </div>
 
@@ -683,7 +739,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
               const ctxImage = page.contextImage
                 ? urlFor(page.contextImage)?.url() ?? d.contextImage
                 : d.contextImage
-              const ctxVideo = page.contextVideoUrl ?? d.contextVideo ?? (segment === 'pro_chauffagistes' ? '/videos/mrly-comp.mov' : null)
+              const ctxVideo = contextVideoUrl
               return (
                 <div className={`hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'aspect-video' : 'min-h-[320px]'}`}>
                   <Image src={ctxImage} alt="" fill sizes="50vw" className="object-cover object-center" />
@@ -734,7 +790,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                     href={getLocalizedPath(locale, 'demarrer')}
                     className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
                   >
-                    Démarrer mon projet <span>→</span>
+                    {page.whyCtaLabel ?? d.whyCtaLabel} <span>→</span>
                   </Link>
                 </div>
               </>
@@ -746,7 +802,34 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       {/* ══════════════════════════════════════
           4. RÉALISATIONS
       ══════════════════════════════════════ */}
-      <ProProjetsSection locale={locale} chantiers={chantiers} />
+      <ProProjetsSection locale={locale} chantiers={chantiers} d={d} />
+
+      {/* ══════════════════════════════════════
+          5. PARTENARIAT / ÉTAPES
+      ══════════════════════════════════════ */}
+      <section className="bg-wdd-black py-[7.5rem] px-8 md:px-16">
+        <div className="max-w-screen-2xl mx-auto w-full">
+          <h2 className="text-4xl font-bold text-white leading-tight mb-4">
+            {partnershipTitle}
+          </h2>
+          {partnershipIntro && (
+            <p className="text-base font-light text-white/60 leading-8 max-w-3xl mb-16">
+              {partnershipIntro}
+            </p>
+          )}
+          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-px bg-white/10">
+            {partnershipSteps.map((step, i) => (
+              <div key={('_key' in step ? (step._key as string | undefined) : undefined) ?? i} className="bg-wdd-black p-8">
+                <div className="text-4xl font-black text-wdd-yellow/20 mb-4 tabular-nums leading-none">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
+                <h3 className="text-base font-bold text-white mb-3 leading-snug">{step.title}</h3>
+                <p className="text-sm font-light text-white/50 leading-7">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <DemarrerCTA locale={locale} settings={settings} />
 
@@ -760,13 +843,13 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
               {page.faqTitle ?? d.faqTitle}
             </h2>
             <p className="text-sm font-light text-black/50 leading-7 mb-8">
-              Une question ne figure pas ici ? Contactez directement notre équipe.
+              {page.faqSubtitle ?? d.faqSubtitle}
             </p>
             <Link
               href={getLocalizedPath(locale, 'demarrer')}
               className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
-              Poser ma question
+              {page.faqCtaLabel ?? d.faqCtaLabel}
             </Link>
           </div>
           <div className="lg:col-span-2">
@@ -785,13 +868,13 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           href={getLocalizedPath(locale, 'demarrer')}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow rounded-sm"
         >
-          Démarrer mon projet
+          {d.stickyStart}
         </Link>
         <a
           href="tel:+32478753679"
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors rounded-sm"
         >
-          Appeler WDD
+          {d.stickyCall}
         </a>
       </div>
 
