@@ -6,7 +6,13 @@ import type {AppLocale} from '@/src/i18n/routes'
 import type {DemarrerPageData} from '@/src/lib/demarrerPage'
 import {urlFor} from '@/src/lib/sanityImage'
 
-const ODOO_FORM_URL = 'https://welldonedrill.odoo.com/formulaire'
+const ODOO_FORM_URL: Record<AppLocale, string> = {
+  'be-fr': 'https://welldonedrill.odoo.com/formulaire',
+  'be-nl': 'https://welldonedrill.odoo.com/nl/formulaire',
+  'fr-fr': 'https://welldonedrill.odoo.com/formulaire',
+  'lu-fr': 'https://welldonedrill.odoo.com/formulaire',
+  'lu-de': 'https://welldonedrill.odoo.com/formulaire',
+}
 
 type Segment = 'particulier' | 'chauffagiste' | 'architecte' | 'entrepreneur' | null
 
@@ -230,7 +236,7 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
                 </div>
               ) : (
                 <iframe
-                  src={ODOO_FORM_URL}
+                  src={ODOO_FORM_URL[locale]}
                   title="Formulaire de contact WellDoneDrill"
                   width="100%"
                   style={{minHeight: '680px', border: 'none', display: 'block'}}
