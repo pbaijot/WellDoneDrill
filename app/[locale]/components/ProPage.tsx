@@ -257,6 +257,73 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
 }
 
 /* ─────────────────────────────────────────────
+   LOCALE-SPECIFIC OVERRIDES (map + sticky CTA)
+───────────────────────────────────────────── */
+
+type LocaleOverrides = Pick<SegmentDefaults,
+  'heroCtaSecondary' | 'mapTitle' | 'mapSelectProvince' | 'mapAllProvinces' |
+  'mapEmpty' | 'mapCtaAll' | 'mapCtaProvince' | 'stickyStart' | 'stickyCall'
+>
+
+const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
+  'be-fr': {
+    heroCtaSecondary: 'Voir nos réalisations',
+    mapTitle: 'Nos projets en',
+    mapSelectProvince: 'Sélectionnez une province',
+    mapAllProvinces: 'Toutes les provinces',
+    mapEmpty: 'Aucun projet répertorié dans cette province pour le moment.',
+    mapCtaAll: 'Voir toutes nos réalisations',
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: 'Démarrer mon projet',
+    stickyCall: 'Appeler WDD',
+  },
+  'be-nl': {
+    heroCtaSecondary: 'Onze realisaties bekijken',
+    mapTitle: 'Onze projecten in',
+    mapSelectProvince: 'Selecteer een provincie',
+    mapAllProvinces: 'Alle provincies',
+    mapEmpty: 'Geen projecten geregistreerd in deze provincie.',
+    mapCtaAll: 'Alle realisaties bekijken',
+    mapCtaProvince: (name) => `Alle projecten in ${name}`,
+    stickyStart: 'Mijn project starten',
+    stickyCall: 'WDD bellen',
+  },
+  'fr-fr': {
+    heroCtaSecondary: 'Voir nos réalisations',
+    mapTitle: 'Nos projets en',
+    mapSelectProvince: 'Sélectionnez une région',
+    mapAllProvinces: 'Toutes les régions',
+    mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
+    mapCtaAll: 'Voir toutes nos réalisations',
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: 'Démarrer mon projet',
+    stickyCall: 'Appeler WDD',
+  },
+  'lu-fr': {
+    heroCtaSecondary: 'Voir nos réalisations',
+    mapTitle: 'Nos projets en',
+    mapSelectProvince: 'Sélectionnez une région',
+    mapAllProvinces: 'Toutes les régions',
+    mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
+    mapCtaAll: 'Voir toutes nos réalisations',
+    mapCtaProvince: (name) => `Tous les projets en ${name}`,
+    stickyStart: 'Démarrer mon projet',
+    stickyCall: 'Appeler WDD',
+  },
+  'lu-de': {
+    heroCtaSecondary: 'Unsere Realisierungen ansehen',
+    mapTitle: 'Unsere Projekte in',
+    mapSelectProvince: 'Region auswählen',
+    mapAllProvinces: 'Alle Regionen',
+    mapEmpty: 'Derzeit keine Projekte in dieser Region erfasst.',
+    mapCtaAll: 'Alle Realisierungen ansehen',
+    mapCtaProvince: (name) => `Alle Projekte in ${name}`,
+    stickyStart: 'Mein Projekt starten',
+    stickyCall: 'WDD anrufen',
+  },
+}
+
+/* ─────────────────────────────────────────────
    WHY ICONS
 ───────────────────────────────────────────── */
 
@@ -618,7 +685,7 @@ function FaqItem({question, answer}: {question: string; answer: string}) {
 
 export default function ProPage({page, locale, chantiers = [], settings}: {page: ProPageData; locale: AppLocale; chantiers?: Chantier[]; settings?: GlobalSettingsData | null}) {
   const segment = (page.routeKey ?? 'pro_chauffagistes') as SegmentKey
-  const d = SEGMENT_DEFAULTS[segment]
+  const d = {...SEGMENT_DEFAULTS[segment], ...LOCALE_OVERRIDES[locale]}
 
   const faqs = page.faqs && page.faqs.length > 0
     ? page.faqs.map(f => ({question: f.question ?? '', answer: f.answer ?? ''}))
