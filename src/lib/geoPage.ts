@@ -23,12 +23,14 @@ export type GeoPageData = {
   introTitle?: string
   introBody1?: string
   introBody2?: string
+  introCtaLabel?: string
   introImage?: unknown
   howTitle?: string
   howBody?: string
   howCtaLabel?: string
   howIllustration?: unknown
   advantagesTitle?: string
+  advantagesCtaLabel?: string
   advantages?: GeoAdvantage[]
   faqTitle?: string
   faqSubtitle?: string
@@ -53,11 +55,11 @@ const query = `
   _id, locale, routeKey,
   heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel, heroSecondaryLabel,
   heroLeftBgImage, heroRightImage,
-  introTitle, introBody1, introBody2,
+  introTitle, introBody1, introBody2, introCtaLabel,
   introImage,
   howTitle, howBody, howCtaLabel,
   howIllustration,
-  advantagesTitle,
+  advantagesTitle, advantagesCtaLabel,
   advantages,
   faqTitle, faqSubtitle, faqCtaLabel, faqs,
   particularEyebrow, particularTitle, particularBody, particularCta,

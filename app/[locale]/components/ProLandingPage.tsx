@@ -29,19 +29,19 @@ function IconBuilding({className}: {className?: string}) {
 const SEGMENTS = [
   {
     routeKey: 'pro_chauffagistes' as const,
-    title: 'Chauffagistes',
+    title: 'Installateurs HVAC',
     description: "Sous-traitez le forage géothermique clé en main. Vous posez la pompe à chaleur, WellDoneDrill fore. Multipliez vos chantiers sans investissement matériel supplémentaire.",
     image: '/images/clean-drill.jpg',
     icon: IconWrench,
-    cta: 'Découvrir le partenariat chauffagiste',
+    cta: 'Découvrir le partenariat installateur',
   },
   {
     routeKey: 'pro_architectes' as const,
-    title: 'Architectes',
+    title: "Architectes & Bureaux d'études",
     description: "Intégrez la géothermie dès l'esquisse. Étude géologique préliminaire en 72h, rapport technique livré clé en main pour vos dossiers PEB et permis.",
     image: '/images/abricotiers-2.jpg',
     icon: IconCompass,
-    cta: 'Découvrir le partenariat architecte',
+    cta: "Découvrir le partenariat architecte",
   },
   {
     routeKey: 'pro_entrepreneurs' as const,

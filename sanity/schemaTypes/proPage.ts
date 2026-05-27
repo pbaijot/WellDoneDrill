@@ -34,8 +34,8 @@ const proPage = defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'Chauffagistes', value: 'pro_chauffagistes'},
-          {title: 'Architectes', value: 'pro_architectes'},
+          {title: 'Installateurs HVAC', value: 'pro_chauffagistes'},
+          {title: "Architectes & Bureaux d'études", value: 'pro_architectes'},
           {title: 'Entrepreneurs / Promoteurs', value: 'pro_entrepreneurs'},
         ],
       },
@@ -142,8 +142,8 @@ const proPage = defineType({
     select: {routeKey: 'routeKey', locale: 'locale'},
     prepare({routeKey, locale}) {
       const labels: Record<string, string> = {
-        pro_chauffagistes: 'Chauffagistes',
-        pro_architectes: 'Architectes',
+        pro_chauffagistes: 'Installateurs HVAC',
+        pro_architectes: "Architectes & Bureaux d'études",
         pro_entrepreneurs: 'Entrepreneurs',
       }
       return {title: labels[routeKey] || routeKey, subtitle: locale}

@@ -59,7 +59,7 @@ export default function HomeFaqSection({locale, faqs}: {locale: AppLocale; faqs?
     : DEFAULT_FAQS
 
   return (
-    <section className="bg-white min-h-[80vh] flex flex-col justify-center py-20 px-8 md:px-16">
+    <section className="bg-white min-h-[80vh] flex flex-col justify-center pt-20 pb-0 px-8 md:px-16">
       <div className="max-w-screen-2xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
           <div>

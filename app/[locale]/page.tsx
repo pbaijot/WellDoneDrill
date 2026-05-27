@@ -10,6 +10,7 @@ import { urlFor } from '@/src/lib/sanityImage'
 import DemarrerCTA from './components/DemarrerCTA'
 import HomeMapSection from './components/HomeMapSection'
 import HomeFaqSection from './components/HomeFaqSection'
+import PartnersCarousel from './components/PartnersCarousel'
 
 /* ── Advantage icons (40 × 40) ───────────────────────────────── */
 
@@ -520,6 +521,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           SECTION 6 — FAQ
       ═══════════════════════════════════════════════════════════ */}
       <HomeFaqSection locale={loc} faqs={home?.faqs} />
+
+      {/* ═══════════════════════════════════════════════════════════
+          SECTION 7 — PARTENAIRES
+      ═══════════════════════════════════════════════════════════ */}
+      {home?.partners?.logos && home.partners.logos.length > 0 && (
+        <PartnersCarousel
+          logos={home.partners.logos}
+          title={home.partners.title}
+        />
+      )}
 
       {/* ═══════════════════════════════════════════════════════════
           SECTION 8 — BLOG

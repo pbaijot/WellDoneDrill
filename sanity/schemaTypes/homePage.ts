@@ -153,6 +153,37 @@ const homePage = defineType({
     },
 
     {
+      name: 'partners',
+      title: 'Partenaires (logos défilants)',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Titre de section (ex. "Ils nous font confiance")',
+          type: 'string',
+          description: 'Optionnel — laisser vide pour ne pas afficher de titre'
+        },
+        {
+          name: 'logos',
+          title: 'Logos',
+          type: 'array',
+          of: [{
+            type: 'object',
+            fields: [
+              { name: 'name', title: 'Nom du partenaire', type: 'string' },
+              { name: 'logo', title: 'Logo (PNG ou SVG transparent recommandé)', type: 'image', options: { hotspot: false } },
+              { name: 'url', title: 'Lien vers le site (optionnel)', type: 'url' }
+            ],
+            preview: {
+              select: { title: 'name', media: 'logo' },
+              prepare: ({ title, media }: {title?: string; media?: unknown}) => ({ title: title ?? 'Partenaire', media: media as any })
+            }
+          }]
+        }
+      ]
+    },
+
+    {
       name: 'blog',
       title: 'Bloc blog',
       type: 'object',

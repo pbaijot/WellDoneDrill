@@ -52,6 +52,10 @@ export type HomePageData = {
     title?: string
     items?: {question?: string; answer?: string}[]
   }
+  partners?: {
+    title?: string
+    logos?: {_key: string; name?: string; url?: string; logo?: {asset?: {url?: string}}}[]
+  }
   blog?: {
     title?: string
     highlight?: string
@@ -70,6 +74,15 @@ const homePageQuery = `
   audiences,
   contactCta,
   faqs,
+  "partners": partners {
+    title,
+    "logos": logos[] {
+      _key,
+      name,
+      url,
+      "logo": logo { "asset": asset -> { url } }
+    }
+  },
   blog
 }
 `

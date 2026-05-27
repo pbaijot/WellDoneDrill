@@ -104,9 +104,54 @@ const STEP_ICONS = [
   </svg>,
 ]
 
+/* ── Animated scheme locale labels ─────────────────────────── */
+
+const SCHEME_TEXT: Record<string, {
+  fermee: {label: string; sub: string}[]
+  ouverte: {label: string; sub: string}[]
+}> = {
+  'be-nl': {
+    fermee: [
+      {label: 'De bodem',     sub: 'Constante energie op 80–200 m'},
+      {label: 'Warmtepomp',   sub: 'Versterkt de gewonnen energie'},
+      {label: 'Uw woning',    sub: 'Verwarming · Water · Koeling'},
+    ],
+    ouverte: [
+      {label: 'De waterlaag', sub: 'Warmtebron op 10–14 °C'},
+      {label: 'Warmtepomp',   sub: 'Versterkt de gewonnen energie'},
+      {label: 'Uw gebouw',    sub: 'Verwarming · Water · Koeling'},
+    ],
+  },
+  'lu-de': {
+    fermee: [
+      {label: 'Der Boden',       sub: 'Konstante Energie bei 80–200 m'},
+      {label: 'Wärmepumpe',      sub: 'Verstärkt die gewonnene Energie'},
+      {label: 'Ihr Zuhause',     sub: 'Heizung · Wasser · Kühlung'},
+    ],
+    ouverte: [
+      {label: 'Das Grundwasser', sub: 'Wärmequelle bei 10–14 °C'},
+      {label: 'Wärmepumpe',      sub: 'Verstärkt die gewonnene Energie'},
+      {label: 'Ihr Gebäude',     sub: 'Heizung · Wasser · Kühlung'},
+    ],
+  },
+}
+
+const FR_SCHEME = {
+  fermee: [
+    {label: 'Le sol',           sub: 'Énergie constante à 80–200 m'},
+    {label: 'Pompe à chaleur',  sub: "Amplifie l'énergie captée"},
+    {label: 'Votre maison',     sub: 'Chauffage · Eau · Froid'},
+  ],
+  ouverte: [
+    {label: 'La nappe',         sub: 'Source thermique à 10–14 °C'},
+    {label: 'Pompe à chaleur',  sub: "Amplifie l'énergie captée"},
+    {label: 'Votre bâtiment',   sub: 'Chauffage · Eau · Froid'},
+  ],
+}
+
 /* ── Vertical animated scheme ───────────────────────────────── */
 
-function GeoSchemeVertical({isOpen}: {isOpen: boolean}) {
+function GeoSchemeVertical({isOpen, locale}: {isOpen: boolean; locale: AppLocale}) {
   const [phase, setPhase] = useState(0)
   const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
   useEffect(() => {
@@ -122,41 +167,38 @@ function GeoSchemeVertical({isOpen}: {isOpen: boolean}) {
   const maisonLit = phase >= 5
   const NODE_DUR  = 'duration-[1100ms]'
 
+  const schemeText = (SCHEME_TEXT[locale] ?? FR_SCHEME) as typeof FR_SCHEME
+  const labels = isOpen ? schemeText.ouverte : schemeText.fermee
+
   const NODES = isOpen ? [
     {
-      label: 'La nappe',
-      sub: 'Source thermique à 10–14 °C',
+      ...labels[0],
       stat: 'COP 5–7',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7c3-2 6-2 9 0s6 2 9 0M3 12c3-2 6-2 9 0s6 2 9 0M3 17c3-2 6-2 9 0s6 2 9 0"/></svg>,
     },
     {
-      label: 'Pompe à chaleur',
-      sub: "Amplifie l'énergie captée",
+      ...labels[1],
       stat: 'COP 5–7',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
     },
     {
-      label: 'Votre bâtiment',
-      sub: 'Chauffage · Eau · Froid',
+      ...labels[2],
       stat: '−70 %',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>,
     },
   ] : [
     {
-      label: 'Le sol',
-      sub: 'Énergie constante à 80–200 m',
+      ...labels[0],
       stat: '15 °C',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>,
     },
     {
-      label: 'Pompe à chaleur',
-      sub: "Amplifie l'énergie captée",
+      ...labels[1],
       stat: 'COP 4–5',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
     },
     {
-      label: 'Votre maison',
-      sub: 'Chauffage · Eau · Froid',
+      ...labels[2],
       stat: '−70 %',
       icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>,
     },
@@ -168,13 +210,13 @@ function GeoSchemeVertical({isOpen}: {isOpen: boolean}) {
   // Render top → bottom: index 2 (Maison/top), pipe, index 1 (PAC), pipe, index 0 (Sol/bottom)
   // Each pipe sits between the node above it and the node below, animates origin-bottom (from lower node upward)
   return (
-    <div className="flex flex-col w-full py-8 lg:px-12">
+    <div className="flex flex-col w-full py-8 lg:pr-12">
       {([2, 1, 0] as const).map((i) => (
         <div key={NODES[i].label}>
           {/* Node */}
           <div className="flex items-center gap-6">
-            <div className={`w-20 h-20 flex-shrink-0 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out rounded-sm ${lits[i] ? 'bg-wdd-yellow' : 'bg-black/6'}`}>
-              <div className={`transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-black' : 'text-black/20'} scale-150`}>{NODES[i].icon}</div>
+            <div className={`w-12 h-12 flex-shrink-0 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out rounded-sm ${lits[i] ? 'bg-wdd-yellow' : 'bg-black/6'}`}>
+              <div className={`transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-black' : 'text-black/20'}`}>{NODES[i].icon}</div>
             </div>
             <div>
               <div className={`text-base font-bold leading-snug transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-black' : 'text-black/20'}`}>{NODES[i].label}</div>
@@ -185,7 +227,7 @@ function GeoSchemeVertical({isOpen}: {isOpen: boolean}) {
           {/* Pipe below this node (omitted for bottom node) */}
           {i > 0 && (
             <div className="flex items-start h-16">
-              <div className="w-20 flex flex-col items-center h-full">
+              <div className="w-12 flex flex-col items-center h-full">
                 {/* Arrow at top, pointing toward current (upper) node */}
                 <div style={{fontSize: 8, lineHeight: 1, color: pipeLits[i - 1] ? '#FFD94F' : 'rgba(0,0,0,0.08)', transition: 'color 900ms ease-in-out'}}>▲</div>
                 {/* Line fills from bottom (lower node) upward */}
@@ -322,6 +364,14 @@ export default function GeoPage({
             {page.introBody2 && (
               <p className="text-base font-light text-black/70 leading-8 whitespace-pre-line">{page.introBody2}</p>
             )}
+            {page.introCtaLabel && (
+              <Link
+                href={getLocalizedPath(locale, ctaRoute)}
+                className="mt-8 self-start inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+              >
+                {page.introCtaLabel}
+              </Link>
+            )}
           </div>
 
           <div className="relative min-h-[420px] overflow-hidden rounded-sm">
@@ -343,18 +393,19 @@ export default function GeoPage({
           {/* Scheme (left) + SVG frame (right) */}
           <div className="grid lg:grid-cols-2 gap-0 items-stretch">
 
-            {/* Left: title + vertical animated scheme */}
-            <div className="flex flex-col">
-              <div className="mb-12 lg:pr-12">
+            {/* Left: title (desktop) + vertical animated scheme + CTA */}
+            <div className="flex flex-col order-last lg:order-first">
+              {/* Title visible on desktop only — mobile version is below */}
+              <div className="hidden lg:block mb-12 lg:pr-24">
                 <h2 className="text-4xl font-bold leading-tight">{page.howTitle}</h2>
               </div>
               <div className="bg-wdd-clay flex items-center flex-1">
-                <GeoSchemeVertical isOpen={isOpen} />
+                <GeoSchemeVertical isOpen={isOpen} locale={locale} />
               </div>
               <div className="py-8">
                 <Link
                   href={getLocalizedPath(locale, 'demarrer')}
-                  className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+                  className="flex justify-between w-full lg:w-auto lg:inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
                 >
                   {page.howCtaLabel ?? 'Démarrer mon projet →'}
                 </Link>
@@ -362,7 +413,9 @@ export default function GeoPage({
             </div>
 
             {/* Right: SVG illustration + technical body */}
-            <div className="bg-wdd-clay flex flex-col items-center justify-center p-8 gap-8">
+            <div className="bg-wdd-clay flex flex-col py-8 lg:px-8 lg:pb-8 gap-8 order-first lg:order-last">
+              {/* Title visible on mobile only — desktop version is in left column */}
+              <h2 className="lg:hidden text-4xl font-bold leading-tight">{page.howTitle}</h2>
               <Image
                 src={
                   page.howIllustration
@@ -372,10 +425,10 @@ export default function GeoPage({
                 alt={isOpen ? 'Illustration géothermie sur nappe' : 'Illustration géothermie fermée'}
                 width={380}
                 height={520}
-                className="w-full lg:w-4/5 h-auto mx-auto"
+                className="w-full lg:w-3/5 h-auto mx-auto"
               />
               {page.howBody && (
-                <p className="w-full text-sm font-light text-black/60 leading-7 whitespace-pre-line">
+                <p className="w-full text-base font-light text-black/70 leading-8 whitespace-pre-line">
                   {page.howBody}
                 </p>
               )}
@@ -454,6 +507,16 @@ export default function GeoPage({
               </div>
             )
           })()}
+          {page.advantagesCtaLabel && (
+            <div className="mt-14">
+              <Link
+                href={getLocalizedPath(locale, ctaRoute)}
+                className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+              >
+                {page.advantagesCtaLabel}
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 

@@ -732,13 +732,15 @@ export default function ParticuliersPage({
                   {whyItems.map((item, i) => (
                     <div
                       key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
-                      className="grid grid-cols-[5rem_1fr_2fr] bg-white rounded-sm overflow-hidden"
+                      className="grid grid-cols-[5rem_1fr] bg-white rounded-sm overflow-hidden"
                     >
                       <div className={`flex items-center justify-center self-stretch ${ICON_BGS[i % 3]}`}>
                         <div className="text-wdd-black">{ICONS[i] ?? ICONS[0]}</div>
                       </div>
-                      <h3 className="text-sm font-bold leading-snug py-7 pl-5 self-start">{item.title}</h3>
-                      <p className="text-sm font-light text-black/50 leading-relaxed py-7 pr-5 self-start">{item.body}</p>
+                      <div className="grid sm:grid-cols-[1fr_2fr]">
+                        <h3 className="text-sm font-bold leading-snug px-5 pt-6 pb-1 sm:py-7 sm:pr-3 self-start">{item.title}</h3>
+                        <p className="text-sm font-light text-black/50 leading-relaxed px-5 pb-6 sm:py-7 sm:pl-0 sm:pr-5 self-start">{item.body}</p>
+                      </div>
                     </div>
                   ))}
                 </div>

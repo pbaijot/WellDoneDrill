@@ -707,7 +707,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       ══════════════════════════════════════ */}
       <section className="h-[90vh] relative overflow-hidden px-8 md:px-16">
 
-        {/* Left — dark earth image */}
+        {/* Left — dark earth image (desktop only) */}
         <div className="absolute left-0 top-0 bottom-0 w-1/2 hidden lg:block">
           <Image
             src="/images/wdd-geothermie_fermee-terre.webp"
@@ -720,19 +720,19 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           />
           <div className="absolute inset-0 bg-wdd-black/30" />
         </div>
-        <div className="absolute inset-0 bg-wdd-black lg:hidden" />
 
-        {/* Right — segment image */}
-        <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
+        {/* Right — segment image: full-width on mobile, right-half on desktop */}
+        <div className="absolute inset-0 lg:left-auto lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 z-[2]">
           <Image
             src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? d.heroImage : d.heroImage}
             alt="WellDoneDrill"
             fill
-            sizes="50vw"
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover object-center"
             priority
           />
-          <div className="absolute bottom-8 right-8 z-10">
+          <div className="absolute inset-0 bg-wdd-black/55 lg:bg-transparent" />
+          <div className="hidden lg:block absolute bottom-8 right-8 z-10">
             <FloatingInfoPanel
               items={
                 page.heroPanelItems && page.heroPanelItems.length > 0
@@ -840,13 +840,15 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                   {whyItems.map((item, i) => (
                     <div
                       key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
-                      className="grid grid-cols-[5rem_1fr_2fr] bg-white rounded-sm overflow-hidden"
+                      className="grid grid-cols-[5rem_1fr] bg-white rounded-sm overflow-hidden"
                     >
                       <div className={`flex items-center justify-center self-stretch ${ICON_BGS[i % 3]}`}>
                         <div className="text-wdd-black">{WHY_ICONS[i] ?? WHY_ICONS[0]}</div>
                       </div>
-                      <h3 className="text-sm font-bold leading-snug py-7 pl-5 self-start">{item.title}</h3>
-                      <p className="text-sm font-light text-black/50 leading-relaxed py-7 pr-5 self-start">{item.body}</p>
+                      <div className="grid sm:grid-cols-[1fr_2fr]">
+                        <h3 className="text-sm font-bold leading-snug px-5 pt-6 pb-1 sm:py-7 sm:pr-3 self-start">{item.title}</h3>
+                        <p className="text-sm font-light text-black/50 leading-relaxed px-5 pb-6 sm:py-7 sm:pl-0 sm:pr-5 self-start">{item.body}</p>
+                      </div>
                     </div>
                   ))}
                 </div>

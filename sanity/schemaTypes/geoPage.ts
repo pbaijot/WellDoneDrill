@@ -29,11 +29,13 @@ const geoPage = defineType({
     defineField({name: 'introTitle', title: 'Titre intro', type: 'string'}),
     defineField({name: 'introBody1', title: 'Texte intro 1', type: 'text', rows: 5}),
     defineField({name: 'introBody2', title: 'Texte intro 2', type: 'text', rows: 5}),
+    defineField({name: 'introCtaLabel', title: 'Intro — bouton CTA', type: 'string'}),
 
     defineField({name: 'howTitle', title: 'Titre fonctionnement', type: 'string'}),
     defineField({name: 'howBody', title: 'Fonctionnement — explication technique (sous le schéma SVG)', type: 'text', rows: 6}),
     defineField({name: 'howCtaLabel', title: 'Fonctionnement — texte bouton CTA', type: 'string'}),
     defineField({name: 'advantagesTitle', title: 'Titre section avantages', type: 'string'}),
+    defineField({name: 'advantagesCtaLabel', title: 'Avantages — bouton CTA', type: 'string'}),
     defineField({name: 'faqTitle', title: 'Titre FAQ', type: 'string'}),
     defineField({name: 'faqSubtitle', title: 'FAQ — sous-titre (question complémentaire)', type: 'string'}),
     defineField({name: 'faqCtaLabel', title: 'FAQ — bouton contact', type: 'string'}),

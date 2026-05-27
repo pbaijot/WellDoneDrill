@@ -42,8 +42,8 @@ export const routeMap: RouteMap = {
     particuliers: 'particuliers',
 
     pro: 'pour-les-professionnels',
-    pro_chauffagistes: 'pro/chauffagistes',
-    pro_architectes: 'pro/architectes',
+    pro_chauffagistes: 'pro/installateurs-hvac',
+    pro_architectes: 'pro/architectes-bureaux-etudes',
     pro_entrepreneurs: 'pro/entrepreneurs',
   },
 
@@ -65,8 +65,8 @@ export const routeMap: RouteMap = {
     particuliers: 'particuliers',
 
     pro: 'pour-les-professionnels',
-    pro_chauffagistes: 'pro/chauffagistes',
-    pro_architectes: 'pro/architectes',
+    pro_chauffagistes: 'pro/installateurs-hvac',
+    pro_architectes: 'pro/architectes-bureaux-etudes',
     pro_entrepreneurs: 'pro/entrepreneurs',
   },
 
@@ -88,8 +88,8 @@ export const routeMap: RouteMap = {
     particuliers: 'particulieren',
 
     pro: 'sectoren',
-    pro_chauffagistes: 'professionals/installateurs',
-    pro_architectes: 'professionals/architecten',
+    pro_chauffagistes: 'professionals/hvac-installateurs',
+    pro_architectes: 'professionals/architecten-studiebureaus',
     pro_entrepreneurs: 'professionals/aannemers',
   },
 
@@ -111,8 +111,8 @@ export const routeMap: RouteMap = {
     particuliers: 'particuliers',
 
     pro: 'pour-les-professionnels',
-    pro_chauffagistes: 'pro/chauffagistes',
-    pro_architectes: 'pro/architectes',
+    pro_chauffagistes: 'pro/installateurs-hvac',
+    pro_architectes: 'pro/architectes-bureaux-etudes',
     pro_entrepreneurs: 'pro/entrepreneurs',
   },
 
@@ -134,8 +134,8 @@ export const routeMap: RouteMap = {
     particuliers: 'privatkunden',
 
     pro: 'fur-profis',
-    pro_chauffagistes: 'profis/heizungsbauer',
-    pro_architectes: 'profis/architekten',
+    pro_chauffagistes: 'profis/hvac-installateure',
+    pro_architectes: 'profis/architekten-planungsbueros',
     pro_entrepreneurs: 'profis/unternehmer',
   },
 }
