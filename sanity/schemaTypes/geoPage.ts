@@ -26,37 +26,12 @@ const geoPage = defineType({
     defineField({name: 'heroSubtitle', title: 'Hero sous-titre', type: 'text', rows: 4}),
     defineField({name: 'heroCtaLabel', title: 'Hero CTA (bouton jaune)', type: 'string'}),
     defineField({name: 'heroSecondaryLabel', title: 'Hero CTA secondaire (lien blanc)', type: 'string'}),
-    defineField({
-      name: 'heroStats',
-      title: 'Hero — statistiques (3 items)',
-      type: 'array',
-      of: [defineField({
-        name: 'stat', type: 'object',
-        fields: [
-          defineField({name: 'value', title: 'Valeur', type: 'string'}),
-          defineField({name: 'label', title: 'Label', type: 'string'}),
-        ],
-      })],
-    }),
-    defineField({
-      name: 'heroPanelItems',
-      title: 'Hero — panneau flottant (3 items)',
-      type: 'array',
-      of: [defineField({
-        name: 'panel', type: 'object',
-        fields: [
-          defineField({name: 'label', title: 'Label', type: 'string'}),
-          defineField({name: 'value', title: 'Valeur', type: 'string'}),
-          defineField({name: 'sub', title: 'Sous-texte', type: 'string'}),
-        ],
-      })],
-    }),
-
     defineField({name: 'introTitle', title: 'Titre intro', type: 'string'}),
     defineField({name: 'introBody1', title: 'Texte intro 1', type: 'text', rows: 5}),
     defineField({name: 'introBody2', title: 'Texte intro 2', type: 'text', rows: 5}),
 
     defineField({name: 'howTitle', title: 'Titre fonctionnement', type: 'string'}),
+    defineField({name: 'howBody', title: 'Fonctionnement — explication technique (sous le schéma SVG)', type: 'text', rows: 6}),
     defineField({name: 'howCtaLabel', title: 'Fonctionnement — texte bouton CTA', type: 'string'}),
     defineField({name: 'advantagesTitle', title: 'Titre section avantages', type: 'string'}),
     defineField({name: 'faqTitle', title: 'Titre FAQ', type: 'string'}),

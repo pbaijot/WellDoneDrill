@@ -5,7 +5,6 @@ export const defaultLocale: AppLocale = 'be-fr'
 
 export type RouteKey =
   | 'home'
-  | 'devis'
   | 'demarrer'
   | 'references'
   | 'pac'
@@ -27,7 +26,6 @@ type RouteMap = Record<AppLocale, Record<RouteKey, string>>
 export const routeMap: RouteMap = {
   'be-fr': {
     home: '',
-    devis: 'devis',
     demarrer: 'demarrer',
     references: 'realisations-geothermie-belgique',
     blog: 'blog',
@@ -51,7 +49,6 @@ export const routeMap: RouteMap = {
 
   'fr-fr': {
     home: '',
-    devis: 'devis',
     demarrer: 'demarrer',
     references: 'references',
     blog: 'blog',
@@ -75,7 +72,6 @@ export const routeMap: RouteMap = {
 
   'be-nl': {
     home: '',
-    devis: 'offerte',
     demarrer: 'starten',
     references: 'referenties',
     blog: 'blog',
@@ -99,7 +95,6 @@ export const routeMap: RouteMap = {
 
   'lu-fr': {
     home: '',
-    devis: 'devis',
     demarrer: 'demarrer',
     references: 'references',
     blog: 'blog',
@@ -123,7 +118,6 @@ export const routeMap: RouteMap = {
 
   'lu-de': {
     home: '',
-    devis: 'angebot',
     demarrer: 'starten',
     references: 'referenzen',
     blog: 'blog',

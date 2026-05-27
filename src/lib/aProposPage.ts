@@ -2,13 +2,6 @@ import {sanity} from './sanity'
 
 export type AProposItem = {_key?: string; title?: string; body?: string}
 
-export type PartnerLogo = {
-  _key?: string
-  asset?: unknown
-  alt?: string
-  url?: string
-}
-
 export type AProposPageData = {
   _id: string
   locale: string
@@ -27,15 +20,6 @@ export type AProposPageData = {
   values?: AProposItem[]
   whyTitle?: string
   whyItems?: AProposItem[]
-  partnershipTitle?: string
-  partnershipBody?: string
-  partnershipCta1?: string
-  partnershipCta2?: string
-  partnerLogos?: PartnerLogo[]
-  phone?: string
-  email?: string
-  address?: string
-  contactCtaLabel?: string
   seoTitle?: string
   seoDescription?: string
 }
@@ -51,9 +35,6 @@ const query = `
   galleryImages[]{ ..., asset-> },
   valuesTitle, values,
   whyTitle, whyItems,
-  partnershipTitle, partnershipBody, partnershipCta1, partnershipCta2,
-  partnerLogos[]{ ..., asset-> },
-  phone, email, address, contactCtaLabel,
   seoTitle, seoDescription
 }
 `

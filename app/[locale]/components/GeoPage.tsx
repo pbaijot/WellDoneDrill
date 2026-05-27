@@ -4,7 +4,6 @@ import {useState, useEffect} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {getLocalizedPath, type AppLocale, type RouteKey} from '@/src/i18n/routes'
-import {FloatingInfoPanel} from './FloatingInfoPanel'
 import type {GeoPageData} from '@/src/lib/geoPage'
 import {urlFor} from '@/src/lib/sanityImage'
 
@@ -169,7 +168,7 @@ function GeoSchemeVertical({isOpen}: {isOpen: boolean}) {
   // Render top → bottom: index 2 (Maison/top), pipe, index 1 (PAC), pipe, index 0 (Sol/bottom)
   // Each pipe sits between the node above it and the node below, animates origin-bottom (from lower node upward)
   return (
-    <div className="flex flex-col w-full py-8 px-12">
+    <div className="flex flex-col w-full py-8 lg:px-12">
       {([2, 1, 0] as const).map((i) => (
         <div key={NODES[i].label}>
           {/* Node */}
@@ -249,28 +248,6 @@ export default function GeoPage({
     ? urlFor(page.heroRightImage)?.url() ?? (isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png')
     : isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png'
 
-  const defaultHeroStats = [
-    {value: '500+',   label: 'Projets réalisés'},
-    {value: '20 ans', label: "D'expertise"},
-    {value: 'COP 4–5', label: 'Performance'},
-  ]
-  const heroStats = page.heroStats?.length ? page.heroStats : defaultHeroStats
-
-  const defaultPanelItems = isOpen
-    ? [
-        {label: 'Coefficient de performance', value: 'COP 5–7', sub: '5× plus efficace que le gaz'},
-        {label: 'Économies annuelles',         value: '~1 500 €', sub: 'par foyer converti'},
-        {label: 'Durée de vie',                value: '50 ans',   sub: 'sans maintenance majeure'},
-      ]
-    : [
-        {label: 'Coefficient de performance', value: 'COP 4–5', sub: '4× plus efficace que le gaz'},
-        {label: 'Économies annuelles',         value: '~1 200 €', sub: 'par foyer converti'},
-        {label: 'Durée de vie',                value: '50 ans',   sub: 'sans maintenance majeure'},
-      ]
-  const panelItems = page.heroPanelItems?.length
-    ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
-    : defaultPanelItems
-
   const faqs = page.faqs?.length
     ? page.faqs.map((f) => ({question: f.question ?? '', answer: f.answer ?? ''}))
     : isOpen ? DEFAULT_FAQS_OUVERTE : DEFAULT_FAQS_FERMEE
@@ -281,20 +258,15 @@ export default function GeoPage({
       {/* ══ 1. HERO ══════════════════════════════════════════════ */}
       <section className="h-[90vh] relative overflow-hidden px-8 md:px-16">
 
-        {/* Left bg image */}
-        <div className="absolute left-0 top-0 bottom-0 w-1/2 hidden lg:block">
+        {/* Left bg image — full width on mobile, half on desktop */}
+        <div className="absolute left-0 top-0 bottom-0 w-full lg:w-1/2">
           <Image src={heroLeftBg} alt="" fill className="object-cover object-center scale-[1.04]" style={{filter: 'saturate(1.5) blur(0.8px)'}} priority />
-          <div className="absolute inset-0 bg-wdd-black/30" />
+          <div className="absolute inset-0 bg-wdd-black/50 lg:bg-wdd-black/30" />
         </div>
-        {/* Mobile fallback */}
-        <div className="absolute inset-0 bg-wdd-black lg:hidden" />
 
         {/* Right photo */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
           <Image src={heroRightImg} alt={isOpen ? 'Géothermie ouverte' : 'Géothermie fermée WellDoneDrill'} fill className="object-cover object-center" priority />
-          <div className="absolute bottom-8 right-8 z-10">
-            <FloatingInfoPanel items={panelItems} />
-          </div>
         </div>
 
         {/* WDD logo divider */}
@@ -334,14 +306,6 @@ export default function GeoPage({
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/15 max-w-xl">
-              {heroStats.map((s) => (
-                <div key={s.label}>
-                  <div className="text-3xl font-bold text-white leading-none">{s.value}</div>
-                  <div className="text-xs font-light text-white/40 uppercase tracking-wider mt-1 leading-snug">{s.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -381,13 +345,13 @@ export default function GeoPage({
 
             {/* Left: title + vertical animated scheme */}
             <div className="flex flex-col">
-              <div className="mb-12 pr-12">
+              <div className="mb-12 lg:pr-12">
                 <h2 className="text-4xl font-bold leading-tight">{page.howTitle}</h2>
               </div>
-              <div className="bg-wdd-clay flex items-center justify-center flex-1">
+              <div className="bg-wdd-clay flex items-center flex-1">
                 <GeoSchemeVertical isOpen={isOpen} />
               </div>
-              <div className="px-12 py-8">
+              <div className="py-8">
                 <Link
                   href={getLocalizedPath(locale, 'demarrer')}
                   className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
@@ -397,8 +361,8 @@ export default function GeoPage({
               </div>
             </div>
 
-            {/* Right: SVG illustration */}
-            <div className="bg-wdd-clay flex items-center justify-center p-8">
+            {/* Right: SVG illustration + technical body */}
+            <div className="bg-wdd-clay flex flex-col items-center justify-center p-8 gap-8">
               <Image
                 src={
                   page.howIllustration
@@ -408,8 +372,13 @@ export default function GeoPage({
                 alt={isOpen ? 'Illustration géothermie sur nappe' : 'Illustration géothermie fermée'}
                 width={380}
                 height={520}
-                className="w-4/5 h-auto mx-auto"
+                className="w-full lg:w-4/5 h-auto mx-auto"
               />
+              {page.howBody && (
+                <p className="w-full text-sm font-light text-black/60 leading-7 whitespace-pre-line">
+                  {page.howBody}
+                </p>
+              )}
             </div>
           </div>
 
@@ -528,40 +497,40 @@ export default function GeoPage({
         </div>
 
         {/* Top-right — particuliers text */}
-        <div className="bg-wdd-grass p-10 md:p-14 flex flex-col justify-center">
+        <div className="bg-wdd-grass py-10 md:py-14 pl-8 md:pl-16 pr-10 md:pr-14 flex flex-col justify-center">
           <div className="text-xs font-light tracking-widest text-white/55 uppercase mb-3">
             {page.particularEyebrow ?? 'Pour les particuliers'}
           </div>
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
-            {page.particularTitle ?? 'Profitez d\'un confort optimal'}
+            {page.particularTitle ?? "Géothermie pour votre domicile"}
           </h3>
           <p className="text-sm font-light text-white/65 leading-relaxed mb-8">
-            {page.particularBody ?? 'Géothermie fermée pour votre maison. Confort constant, investissement rentabilisé en 7 à 10 ans.'}
+            {page.particularBody ?? "Vous construisez ou rénovez ? La géothermie est une solution durable pour chauffer et rafraîchir votre maison avec un excellent niveau de confort et une forte stabilité de coût à long terme."}
           </p>
           <Link
             href={getLocalizedPath(locale, 'particuliers')}
             className="inline-block bg-white text-wdd-black px-6 py-3.5 text-sm font-bold hover:bg-wdd-yellow transition-colors self-start rounded-sm"
           >
-            {page.particularCta ?? 'Découvrir l\'offre →'}
+            {page.particularCta ?? 'Demandez votre devis'} →
           </Link>
         </div>
 
         {/* Bottom-left — pro text */}
-        <div className="bg-wdd-black p-10 md:p-14 flex flex-col justify-center">
+        <div className="bg-wdd-black py-10 md:py-14 pl-8 md:pl-[max(4rem,calc(50vw_-_48rem))] pr-10 md:pr-14 flex flex-col justify-center">
           <div className="text-xs font-light tracking-widest text-wdd-yellow/40 uppercase mb-3">
-            {page.proEyebrow ?? 'Pour les professionnels'}
+            {page.proEyebrow ?? 'Pour les entreprises'}
           </div>
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
-            {page.proTitle ?? 'Solutions sur mesure grandes installations'}
+            {page.proTitle ?? 'Géothermie pour les grands projets'}
           </h3>
           <p className="text-sm font-light text-white/50 leading-relaxed mb-8">
-            {page.proBody ?? 'Bâtiments tertiaires, industries, institutions. Offre détaillée sous 48h.'}
+            {page.proBody ?? "Promoteurs, bureaux d'études, architectes, installateurs, acteurs publics : nous intervenons sur des projets résidentiels collectifs, tertiaires, industriels et institutionnels."}
           </p>
           <Link
             href={getLocalizedPath(locale, 'pro')}
             className="inline-block bg-wdd-yellow text-wdd-black px-6 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors self-start rounded-sm"
           >
-            {page.proCta ?? 'Découvrir l\'offre →'}
+            {page.proCta ?? 'Soumettre mon projet'} →
           </Link>
         </div>
 

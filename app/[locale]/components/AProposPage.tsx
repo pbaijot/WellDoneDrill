@@ -65,10 +65,6 @@ type LocaleCopy = {
   defaultValues: {title: string; body: string}[]
   whyTitle: string
   defaultWhyItems: {title: string; body: string}[]
-  phone: string
-  email: string
-  address: string
-  partnerLabel: string
 }
 
 const COPY: Record<AppLocale, LocaleCopy> = {
@@ -95,10 +91,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {title: 'Acteur local & réactif', body: "Nos clients bénéficient d'un contact direct avec une équipe de proximité, investie à chaque étape du projet."},
       {title: 'Solutions flexibles', body: "Que vous soyez particulier, promoteur, entreprise, architecte ou institution publique, nous développons des solutions sur mesure."},
     ],
-    phone: 'Téléphone',
-    email: 'Email',
-    address: 'Adresse',
-    partnerLabel: 'Partenaire',
   },
 
   'be-nl': {
@@ -124,10 +116,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {title: 'Lokale & reactieve speler', body: "Onze klanten profiteren van direct contact met een nabijheidsteam dat betrokken is bij elke fase van het project."},
       {title: 'Flexibele oplossingen', body: "Of u nu een particulier, promotor, bedrijf, architect of publieke instelling bent, we ontwikkelen oplossingen op maat."},
     ],
-    phone: 'Telefoon',
-    email: 'E-mail',
-    address: 'Adres',
-    partnerLabel: 'Partner',
   },
 
   'fr-fr': {
@@ -153,10 +141,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {title: 'Acteur local & réactif', body: "Nos clients bénéficient d'un contact direct avec une équipe de proximité, investie à chaque étape du projet."},
       {title: 'Solutions flexibles', body: "Que vous soyez particulier, promoteur, entreprise, architecte ou institution publique, nous développons des solutions sur mesure."},
     ],
-    phone: 'Téléphone',
-    email: 'Email',
-    address: 'Adresse',
-    partnerLabel: 'Partenaire',
   },
 
   'lu-fr': {
@@ -182,10 +166,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {title: 'Acteur local & réactif', body: "Nos clients bénéficient d'un contact direct avec une équipe de proximité, investie à chaque étape du projet."},
       {title: 'Solutions flexibles', body: "Que vous soyez particulier, promoteur, entreprise, architecte ou institution publique, nous développons des solutions sur mesure."},
     ],
-    phone: 'Téléphone',
-    email: 'Email',
-    address: 'Adresse',
-    partnerLabel: 'Partenaire',
   },
 
   'lu-de': {
@@ -211,10 +191,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {title: 'Lokaler & reaktionsschneller Akteur', body: "Unsere Kunden profitieren von direktem Kontakt mit einem nahegelegenen Team, das in jeder Projektphase engagiert ist."},
       {title: 'Flexible Lösungen', body: "Ob Privatperson, Bauträger, Unternehmen, Architekt oder öffentliche Einrichtung – wir entwickeln maßgeschneiderte Lösungen."},
     ],
-    phone: 'Telefon',
-    email: 'E-Mail',
-    address: 'Adresse',
-    partnerLabel: 'Partner',
   },
 }
 
@@ -234,9 +210,6 @@ export default function AProposPage({locale, page, settings}: {locale: AppLocale
   const heroImageUrl = page?.heroImage ? urlFor(page.heroImage)?.width(1920).url() ?? '/images/abricotiers-2.jpg' : '/images/abricotiers-2.jpg'
   const missionImageUrl = page?.missionImage ? urlFor(page.missionImage)?.width(1200).url() ?? '/images/DSC_2263.jpg' : '/images/DSC_2263.jpg'
   const missionVideoUrl = page?.missionVideo?.asset?.url ?? null
-
-  const hasPartnership = !!(page?.partnershipTitle || page?.partnershipBody || page?.partnerLogos?.length)
-  const hasContact = !!(page?.phone || page?.email || page?.address)
 
   return (
     <div className="flex flex-col">
@@ -387,109 +360,6 @@ export default function AProposPage({locale, page, settings}: {locale: AppLocale
           </div>
         </div>
       </section>
-
-      {/* ── PARTNERSHIP ────────────────────────────────────────── */}
-      {hasPartnership && (
-        <section className="bg-wdd-clay py-24 px-8 md:px-16">
-          <div className="max-w-screen-2xl mx-auto w-full">
-            {page?.partnershipTitle && (
-              <h2 className="text-3xl font-bold text-wdd-black mb-6 leading-tight">
-                {page.partnershipTitle}
-              </h2>
-            )}
-            {page?.partnershipBody && (
-              <p className="text-base font-light text-black/65 leading-8 max-w-3xl mb-12">
-                {page.partnershipBody}
-              </p>
-            )}
-
-            {page?.partnerLogos && page.partnerLogos.length > 0 && (
-              <div className="flex flex-wrap items-center gap-8 mb-12">
-                {page.partnerLogos.map((logo, i) => {
-                  const imgUrl = urlFor(logo)?.height(60).url()
-                  if (!imgUrl) return null
-                  const inner = (
-                    <Image
-                      key={i}
-                      src={imgUrl}
-                      alt={logo.alt ?? `${copy.partnerLabel} ${i + 1}`}
-                      width={160}
-                      height={60}
-                      className="object-contain grayscale hover:grayscale-0 transition-all duration-300 max-h-[60px] w-auto"
-                    />
-                  )
-                  return logo.url ? (
-                    <a key={i} href={logo.url} target="_blank" rel="noopener noreferrer">
-                      {inner}
-                    </a>
-                  ) : inner
-                })}
-              </div>
-            )}
-
-            {(page?.partnershipCta1 || page?.partnershipCta2) && (
-              <div className="flex flex-wrap gap-4">
-                {page?.partnershipCta1 && (
-                  <Link
-                    href={getLocalizedPath(locale, 'demarrer')}
-                    className="inline-block bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
-                  >
-                    {page.partnershipCta1}
-                  </Link>
-                )}
-                {page?.partnershipCta2 && (
-                  <Link
-                    href={getLocalizedPath(locale, 'demarrer')}
-                    className="inline-block bg-transparent text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-black/30 hover:border-wdd-black transition-colors"
-                  >
-                    {page.partnershipCta2}
-                  </Link>
-                )}
-              </div>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* ── CONTACT ────────────────────────────────────────────── */}
-      {hasContact && (
-        <section className="bg-wdd-black py-24 px-8 md:px-16">
-          <div className="max-w-screen-2xl mx-auto w-full grid md:grid-cols-3 gap-8">
-            {page?.phone && (
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-2">{copy.phone}</div>
-                <a href={`tel:${page.phone}`} className="text-xl font-bold text-white hover:text-wdd-yellow transition-colors">
-                  {page.phone}
-                </a>
-              </div>
-            )}
-            {page?.email && (
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-2">{copy.email}</div>
-                <a href={`mailto:${page.email}`} className="text-xl font-bold text-white hover:text-wdd-yellow transition-colors">
-                  {page.email}
-                </a>
-              </div>
-            )}
-            {page?.address && (
-              <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-2">{copy.address}</div>
-                <p className="text-xl font-bold text-white whitespace-pre-line">{page.address}</p>
-              </div>
-            )}
-          </div>
-          {page?.contactCtaLabel && (
-            <div className="max-w-screen-2xl mx-auto w-full mt-12">
-              <Link
-                href={getLocalizedPath(locale, 'demarrer')}
-                className="inline-block bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors"
-              >
-                {page.contactCtaLabel}
-              </Link>
-            </div>
-          )}
-        </section>
-      )}
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <DemarrerCTA locale={locale} variant="clay" settings={settings} />

@@ -6,9 +6,6 @@ export type GeoFaq = {
   answer?: string
 }
 
-export type GeoStat = {_key?: string; value?: string; label?: string}
-export type GeoPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
-
 export type GeoAdvantage = {_key?: string; title?: string; body?: string}
 
 export type GeoPageData = {
@@ -21,8 +18,6 @@ export type GeoPageData = {
   heroSubtitle?: string
   heroCtaLabel?: string
   heroSecondaryLabel?: string
-  heroStats?: GeoStat[]
-  heroPanelItems?: GeoPanelItem[]
   heroLeftBgImage?: unknown
   heroRightImage?: unknown
   introTitle?: string
@@ -30,6 +25,7 @@ export type GeoPageData = {
   introBody2?: string
   introImage?: unknown
   howTitle?: string
+  howBody?: string
   howCtaLabel?: string
   howIllustration?: unknown
   advantagesTitle?: string
@@ -56,11 +52,10 @@ const query = `
 *[_type == "geoPage" && locale == $locale && routeKey == $routeKey][0]{
   _id, locale, routeKey,
   heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel, heroSecondaryLabel,
-  heroStats, heroPanelItems,
   heroLeftBgImage, heroRightImage,
   introTitle, introBody1, introBody2,
   introImage,
-  howTitle, howCtaLabel,
+  howTitle, howBody, howCtaLabel,
   howIllustration,
   advantagesTitle,
   advantages,

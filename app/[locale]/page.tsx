@@ -188,7 +188,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 {home?.hero?.ctaLabel ?? 'Démarrer votre projet →'}
               </Link>
               <Link
-                href={getLocalizedPath(loc, 'references')}
+                href={getLocalizedPath(loc, 'a_propos')}
                 className="inline-block px-7 py-3.5 text-sm font-semibold border-2 border-white/40 text-white hover:border-white transition-colors rounded-sm"
               >
                 {home?.hero?.secondaryLabel ?? 'Voir nos réalisations'}
@@ -243,13 +243,20 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 'bg-wdd-grass',
                 'bg-wdd-mud',
               ] as const).map((iconBg, i) => (
-                <div key={advantageItems[i].number ?? i} className="grid grid-cols-[6.5rem_1fr_2fr] bg-wdd-clay rounded-sm overflow-hidden">
-                  {/* Icon column — coloured bg per row */}
+                <div key={advantageItems[i].number ?? i} className="grid grid-cols-[6.5rem_1fr] lg:grid-cols-[6.5rem_1fr_2fr] bg-wdd-clay rounded-sm overflow-hidden">
+                  {/* Icon column */}
                   <div className={`relative self-stretch ${iconBg}`}>
                     <Image src={advantageIcons[i]} alt="" fill className="object-contain p-1" />
                   </div>
-                  <h3 className="text-sm font-bold leading-snug py-9 pl-5 self-start">{advantageItems[i].title}</h3>
-                  <p className="text-sm font-light text-black/45 leading-relaxed py-7 pr-6 self-center">{advantageItems[i].description}</p>
+                  {/* Mobile: title + description stacked / Desktop: two separate columns */}
+                  <div className="lg:contents">
+                    <div className="lg:hidden flex flex-col justify-center px-5 py-5 gap-2">
+                      <h3 className="text-sm font-bold leading-snug">{advantageItems[i].title}</h3>
+                      <p className="text-sm font-light text-black/45 leading-relaxed">{advantageItems[i].description}</p>
+                    </div>
+                    <h3 className="hidden lg:block text-sm font-bold leading-snug py-9 pl-5 self-start">{advantageItems[i].title}</h3>
+                    <p className="hidden lg:block text-sm font-light text-black/45 leading-relaxed py-7 pr-6 self-center">{advantageItems[i].description}</p>
+                  </div>
                 </div>
               ))}
             </div>

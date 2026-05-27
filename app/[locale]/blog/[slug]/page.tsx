@@ -143,7 +143,7 @@ export default async function BlogPostPage({
               {post.ctaTitle && <h2 className="text-2xl font-bold mb-3">{post.ctaTitle}</h2>}
               {post.ctaText && <p className="text-base leading-7 text-black/75 mb-5">{post.ctaText}</p>}
               <Link
-                href={getLocalizedPath(locale as AppLocale, 'devis')}
+                href={getLocalizedPath(locale as AppLocale, 'demarrer')}
                 className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
               >
                 {copy.ctaButton}

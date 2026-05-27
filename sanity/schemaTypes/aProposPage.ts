@@ -15,8 +15,6 @@ const aProposPage = defineType({
     {name: 'gallery', title: 'Galerie'},
     {name: 'values', title: 'Valeurs'},
     {name: 'why', title: 'Pourquoi nous'},
-    {name: 'partnership', title: 'Partenariats'},
-    {name: 'contact', title: 'Contact'},
     {name: 'seo', title: 'SEO'},
   ],
   fields: [
@@ -82,32 +80,6 @@ const aProposPage = defineType({
       of: [{type: 'object', fields: itemFields}],
       group: 'why',
     }),
-
-    // ── PARTNERSHIP ───────────────────────────────────────────
-    defineField({name: 'partnershipTitle', title: 'Partenariats — titre', type: 'string', group: 'partnership'}),
-    defineField({name: 'partnershipBody', title: 'Partenariats — texte', type: 'text', rows: 4, group: 'partnership'}),
-    defineField({name: 'partnershipCta1', title: 'Partenariats — CTA principal', type: 'string', group: 'partnership'}),
-    defineField({name: 'partnershipCta2', title: 'Partenariats — CTA secondaire', type: 'string', group: 'partnership'}),
-    defineField({
-      name: 'partnerLogos',
-      title: 'Partenariats — logos partenaires',
-      type: 'array',
-      of: [{
-        type: 'image',
-        options: {hotspot: false},
-        fields: [
-          {name: 'alt', title: 'Nom du partenaire', type: 'string'},
-          {name: 'url', title: 'Lien (optionnel)', type: 'url'},
-        ],
-      }],
-      group: 'partnership',
-    }),
-
-    // ── CONTACT ───────────────────────────────────────────────
-    defineField({name: 'phone', title: 'Téléphone', type: 'string', group: 'contact'}),
-    defineField({name: 'email', title: 'Email', type: 'string', group: 'contact'}),
-    defineField({name: 'address', title: 'Adresse', type: 'string', group: 'contact'}),
-    defineField({name: 'contactCtaLabel', title: 'Contact — CTA', type: 'string', group: 'contact'}),
 
     // ── SEO ───────────────────────────────────────────────────
     defineField({name: 'seoTitle', title: 'SEO title', type: 'string', group: 'seo'}),

@@ -47,7 +47,7 @@ function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {
         </p>
         <div className="flex items-center gap-4">
           <Link
-            href={getLocalizedPath(locale, 'devis')}
+            href={getLocalizedPath(locale, 'demarrer')}
             className="bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
             Demandez un devis

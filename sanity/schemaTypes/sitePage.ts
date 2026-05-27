@@ -1,7 +1,6 @@
 import {defineField, defineType} from 'sanity'
 
 const routeKeys = [
-  'devis',
   'references',
   'a_propos',
   'mentions_legales',

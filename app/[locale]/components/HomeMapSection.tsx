@@ -49,16 +49,15 @@ export default function HomeMapSection({
 
   const handleProvinceClick = (id: string) => { setSelectedId((p) => (p === id ? null : id)); setPage(0) }
 
-  const ctaHref  = selectedProvince ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale)) : getLocalizedPath(locale, 'references')
-  const ALL_PROJECTS: Record<string, string> = {'be-nl': 'Alle realisaties bekijken', 'lu-de': 'Alle Projekte ansehen'}
-  const ALL_IN: Record<string, string>      = {'be-nl': 'Alle projecten in', 'lu-de': 'Alle Projekte in'}
   const SELECT_PROVINCE: Record<string, string> = {'be-nl': 'Selecteer een provincie', 'lu-de': 'Wählen Sie eine Provinz'}
   const ALL_PROVINCES: Record<string, string>   = {'be-nl': 'Alle provincies', 'lu-de': 'Alle Provinzen'}
   const NO_PROJECTS: Record<string, string>     = {'be-nl': 'Momenteel geen projecten in deze provincie.', 'lu-de': 'Derzeit keine Projekte in dieser Provinz.'}
+  const ALL_IN: Record<string, string>          = {'be-nl': 'Alle projecten in', 'lu-de': 'Alle Projekte in'}
+  const ALL_PROJECTS: Record<string, string>    = {'be-nl': 'Alle realisaties bekijken', 'lu-de': 'Alle Projekte ansehen'}
+  const ctaHref  = selectedProvince ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale)) : getLocalizedPath(locale, 'references')
   const ctaLabel = selectedProvince
     ? `${ALL_IN[locale] ?? 'Tous les projets en'} ${getProvinceName(selectedProvince, locale)}`
     : (ALL_PROJECTS[locale] ?? 'Voir toutes nos réalisations')
-
   return (
     <section className="bg-white min-h-[90vh] flex flex-col justify-center py-20 px-8 md:px-16">
       <div className="max-w-screen-2xl mx-auto w-full">
@@ -68,7 +67,7 @@ export default function HomeMapSection({
             Géothermie partout <span className="text-wdd-mud">en Belgique</span>
           </h2>
           <div className="flex items-center gap-4 shrink-0">
-            {selectedProvince ? (
+            {selectedProvince && (
               <>
                 <span className="text-xs font-bold text-wdd-black uppercase tracking-widest">
                   {getProvinceName(selectedProvince, locale)}
@@ -85,10 +84,6 @@ export default function HomeMapSection({
                   {ALL_PROVINCES[locale] ?? 'Toutes les provinces'}
                 </button>
               </>
-            ) : (
-              <span className="text-xs font-light text-black/30 uppercase tracking-widest">
-                {chantiers.length > 0 ? `${chantiers.length} projets au total` : 'Tous les projets'}
-              </span>
             )}
           </div>
         </div>
