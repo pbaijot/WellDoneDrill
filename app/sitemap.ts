@@ -7,6 +7,7 @@ const PRIORITY: Record<RouteKey, number> = {
   home: 1.0,
   particuliers: 0.8,
   pro: 0.8,
+  geo: 0.8,
   geo_fermee: 0.8,
   geo_ouverte: 0.8,
   pac: 0.8,

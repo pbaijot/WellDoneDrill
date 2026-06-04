@@ -14,6 +14,7 @@ import ParticuliersPage from '../components/ParticuliersPage'
 import {getProPage} from '@/src/lib/proPage'
 import ProPage from '../components/ProPage'
 import ProLandingPage from '../components/ProLandingPage'
+import GeoLandingPage from '../components/GeoLandingPage'
 import ReferencesPage from '../components/ReferencesPage'
 import ProvinceReferencesPage from '../components/ProvinceReferencesPage'
 import ChantierPage from '../components/ChantierPage'
@@ -145,6 +146,11 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
 
   if (!routeKey || routeKey === 'home' || routeKey === 'blog') {
     notFound()
+  }
+
+  if (routeKey === 'geo') {
+    const globalSettings = await getGlobalSettings().catch(() => null)
+    return <GeoLandingPage locale={locale} settings={globalSettings} />
   }
 
   if (routeKey === 'pro') {

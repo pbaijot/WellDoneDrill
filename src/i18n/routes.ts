@@ -16,6 +16,7 @@ export type RouteKey =
   | 'demarrer'
   | 'references'
   | 'pac'
+  | 'geo'
   | 'geo_fermee'
   | 'geo_ouverte'
   | 'particuliers'
@@ -44,6 +45,7 @@ export const routeMap: RouteMap = {
 
     pac: 'pompes-a-chaleur',
 
+    geo: 'geothermie',
     geo_fermee: 'geothermie/geothermie-fermee',
     geo_ouverte: 'geothermie/geothermie-ouverte',
 
@@ -67,6 +69,7 @@ export const routeMap: RouteMap = {
 
     pac: 'pompes-a-chaleur',
 
+    geo: 'geothermie',
     geo_fermee: 'geothermie/geothermie-fermee',
     geo_ouverte: 'geothermie/geothermie-ouverte',
 
@@ -90,6 +93,7 @@ export const routeMap: RouteMap = {
 
     pac: 'warmtepompen',
 
+    geo: 'geothermische-energie',
     geo_fermee: 'geothermische-energie/gesloten-geothermie',
     geo_ouverte: 'geothermische-energie/open-geothermische-energie',
 
@@ -113,6 +117,7 @@ export const routeMap: RouteMap = {
 
     pac: 'pompes-a-chaleur',
 
+    geo: 'geothermie',
     geo_fermee: 'geothermie/fermee',
     geo_ouverte: 'geothermie/ouverte',
 
@@ -136,6 +141,7 @@ export const routeMap: RouteMap = {
 
     pac: 'waermepumpen',
 
+    geo: 'geothermie',
     geo_fermee: 'geothermie/geschlossen',
     geo_ouverte: 'geothermie/offen',
 
