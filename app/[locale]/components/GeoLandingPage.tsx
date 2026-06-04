@@ -39,7 +39,6 @@ type LocaleCopy = {
   subtitle: string
   fermee: {title: string; description: string; cta: string; image: string; altText: string}
   ouverte: {title: string; description: string; cta: string; image: string; altText: string}
-  compare: {label: string; fermeeKey: string; ouverteKey: string}[]
 }
 
 const COPY: Record<AppLocale, LocaleCopy> = {
@@ -62,12 +61,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       image: '/images/fond-terre-2.jpg',
       altText: 'Géothermie ouverte — nappe phréatique WellDoneDrill',
     },
-    compare: [
-      {label: 'Profondeur de forage', fermeeKey: '80–150 m', ouverteKey: '15–40 m'},
-      {label: 'Condition requise', fermeeKey: 'Aucune', ouverteKey: 'Nappe phréatique accessible'},
-      {label: 'Rendement (COP)', fermeeKey: '4–5', ouverteKey: '5–7'},
-      {label: 'Idéal pour', fermeeKey: 'Résidentiel & tertiaire', ouverteKey: 'Grands bâtiments & industrie'},
-    ],
   },
   'be-nl': {
     eyebrow: 'Onze technieken',
@@ -88,12 +81,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       image: '/images/fond-terre-2.jpg',
       altText: 'Open geothermie — grondwater WellDoneDrill',
     },
-    compare: [
-      {label: 'Boordiepte', fermeeKey: '80–150 m', ouverteKey: '15–40 m'},
-      {label: 'Vereiste voorwaarde', fermeeKey: 'Geen', ouverteKey: 'Toegankelijk grondwater'},
-      {label: 'Rendement (COP)', fermeeKey: '4–5', ouverteKey: '5–7'},
-      {label: 'Ideaal voor', fermeeKey: 'Woning & kantoor', ouverteKey: 'Grote gebouwen & industrie'},
-    ],
   },
   'fr-fr': {
     eyebrow: 'Nos techniques',
@@ -114,12 +101,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       image: '/images/fond-terre-2.jpg',
       altText: 'Géothermie ouverte — nappe phréatique WellDoneDrill',
     },
-    compare: [
-      {label: 'Profondeur de forage', fermeeKey: '80–150 m', ouverteKey: '15–40 m'},
-      {label: 'Condition requise', fermeeKey: 'Aucune', ouverteKey: 'Nappe phréatique accessible'},
-      {label: 'Rendement (COP)', fermeeKey: '4–5', ouverteKey: '5–7'},
-      {label: 'Idéal pour', fermeeKey: 'Résidentiel & tertiaire', ouverteKey: 'Grands bâtiments & industrie'},
-    ],
   },
   'lu-fr': {
     eyebrow: 'Nos techniques',
@@ -140,12 +121,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       image: '/images/fond-terre-2.jpg',
       altText: 'Géothermie ouverte — nappe phréatique WellDoneDrill',
     },
-    compare: [
-      {label: 'Profondeur de forage', fermeeKey: '80–150 m', ouverteKey: '15–40 m'},
-      {label: 'Condition requise', fermeeKey: 'Aucune', ouverteKey: 'Nappe phréatique accessible'},
-      {label: 'Rendement (COP)', fermeeKey: '4–5', ouverteKey: '5–7'},
-      {label: 'Idéal pour', fermeeKey: 'Résidentiel & tertiaire', ouverteKey: 'Grands bâtiments & industrie'},
-    ],
   },
   'lu-de': {
     eyebrow: 'Unsere Techniken',
@@ -166,12 +141,6 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       image: '/images/fond-terre-2.jpg',
       altText: 'Offene Geothermie — Grundwasser WellDoneDrill',
     },
-    compare: [
-      {label: 'Bohrtiefe', fermeeKey: '80–150 m', ouverteKey: '15–40 m'},
-      {label: 'Voraussetzung', fermeeKey: 'Keine', ouverteKey: 'Zugängliches Grundwasser'},
-      {label: 'Effizienz (COP)', fermeeKey: '4–5', ouverteKey: '5–7'},
-      {label: 'Ideal für', fermeeKey: 'Wohnen & Gewerbe', ouverteKey: 'Großgebäude & Industrie'},
-    ],
   },
 }
 
@@ -259,68 +228,7 @@ export default function GeoLandingPage({locale, settings}: {locale: AppLocale; s
         </div>
       </section>
 
-      {/* ── TABLEAU COMPARATIF ────────────────────────────────── */}
-      <section className="bg-white py-[7.5rem] px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-
-            {/* Left — context text */}
-            <div>
-              <h2 className="text-3xl font-bold leading-tight mb-6">
-                {locale === 'be-nl'
-                  ? <>Welke techniek past bij <span className="text-wdd-mud">uw project?</span></>
-                  : locale === 'lu-de'
-                  ? <>Welche Technik passt zu <span className="text-wdd-mud">Ihrem Projekt?</span></>
-                  : <>Quelle technique convient à <span className="text-wdd-mud">votre projet&nbsp;?</span></>
-                }
-              </h2>
-              <p className="text-sm font-light text-black/55 leading-relaxed mb-8">
-                {locale === 'be-nl'
-                  ? "De geologie van uw terrein en de schaal van uw project bepalen de beste oplossing. WellDoneDrill voert een gratis vooronderzoek uit om de haalbaarheid te bevestigen voordat u enige verbintenis aangaat."
-                  : locale === 'lu-de'
-                  ? "Die Geologie Ihres Geländes und die Größe Ihres Projekts bestimmen die beste Lösung. WellDoneDrill führt eine kostenlose Voruntersuchung durch, um die Machbarkeit vor jeder Verpflichtung zu bestätigen."
-                  : "La géologie de votre terrain et l'échelle de votre projet déterminent la meilleure solution. WellDoneDrill réalise une étude préliminaire gratuite pour confirmer la faisabilité avant tout engagement de votre part."
-                }
-              </p>
-              <Link
-                href={getLocalizedPath(locale, 'demarrer')}
-                className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
-              >
-                {locale === 'be-nl'
-                  ? <>Gratis studie aanvragen <span>→</span></>
-                  : locale === 'lu-de'
-                  ? <>Kostenlose Studie anfragen <span>→</span></>
-                  : <>Demander une étude gratuite <span>→</span></>
-                }
-              </Link>
-            </div>
-
-            {/* Right — comparison table */}
-            <div className="bg-wdd-clay rounded-sm overflow-hidden">
-              {/* Header */}
-              <div className="grid grid-cols-3 text-xs font-bold uppercase tracking-widest px-6 py-4 border-b border-black/8">
-                <div />
-                <div className="text-center text-wdd-black/60">{c.fermee.title}</div>
-                <div className="text-center text-wdd-black/60">{c.ouverte.title}</div>
-              </div>
-              {/* Rows */}
-              {c.compare.map((row, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-3 px-6 py-4 border-b border-black/8 last:border-b-0 items-center"
-                >
-                  <div className="text-xs font-light text-black/50">{row.label}</div>
-                  <div className="text-sm font-bold text-center text-wdd-black">{row.fermeeKey}</div>
-                  <div className="text-sm font-bold text-center text-wdd-black">{row.ouverteKey}</div>
-                </div>
-              ))}
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ───────────────────────────────────────────────── */}
+{/* ── CTA ───────────────────────────────────────────────── */}
       <DemarrerCTA locale={locale} settings={settings} />
 
     </div>
