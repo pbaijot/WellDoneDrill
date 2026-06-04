@@ -2,7 +2,7 @@
 
 import {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
-import type {AppLocale} from '@/src/i18n/routes'
+import {type AppLocale, PHONE_BY_LOCALE} from '@/src/i18n/routes'
 import type {DemarrerPageData} from '@/src/lib/demarrerPage'
 import {urlFor} from '@/src/lib/sanityImage'
 
@@ -225,7 +225,7 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
               ))}
             </div>
             <div className="flex flex-col gap-1">
-              <span className="text-base font-bold text-wdd-black">{page?.phone ?? '+32 478 75 36 79'}</span>
+              <span className="text-base font-bold text-wdd-black">{page?.phone ?? PHONE_BY_LOCALE[locale]}</span>
               <span className="text-xs font-light text-black/45">{page?.email ?? 'info@welldonedrill.energy'}</span>
             </div>
           </div>

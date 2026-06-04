@@ -192,7 +192,10 @@ const homePage = defineType({
         { name: 'highlight', title: 'Mot en évidence', type: 'string' },
         { name: 'readMoreLabel', title: 'Label "lire plus"', type: 'string' }
       ]
-    }
+    },
+
+    { name: 'seoTitle', title: 'SEO — titre (balise <title>)', type: 'string' },
+    { name: 'seoDescription', title: 'SEO — description (meta description)', type: 'text', rows: 3 },
   ],
   preview: {
     select: {

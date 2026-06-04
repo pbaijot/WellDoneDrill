@@ -1,3 +1,4 @@
+import type {Metadata} from 'next'
 import {notFound} from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -73,6 +74,26 @@ function renderBlock(block: any) {
       return <blockquote key={block._key} className="border-l-4 border-wdd-yellow pl-5 italic my-8 text-black/70">{text}</blockquote>
     default:
       return <p key={block._key} className="text-lg leading-8 text-black/75 mb-6">{text}</p>
+  }
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{locale: string; slug: string}>
+}): Promise<Metadata> {
+  const {locale, slug} = await params
+  const post = await getBlogPostBySlug(locale, slug).catch(() => null)
+  const title = post?.seoTitle || post?.title || 'Blog — WellDoneDrill'
+  const description = post?.seoDescription || post?.excerpt || ''
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      ...(post?.mainImage?.asset?.url ? { images: [post.mainImage.asset.url] } : {}),
+    },
   }
 }
 

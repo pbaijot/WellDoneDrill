@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 import '../globals.css'
 
 const lexend = Lexend({
@@ -37,6 +38,7 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <CookieBanner locale={locale} />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -40,7 +40,12 @@ const particuliersPage = defineType({
     }),
 
     defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'contextVideoUrl', title: 'Contexte — URL vidéo', type: 'string'}),
+    defineField({
+      name: 'contextVideo',
+      title: 'Contexte — vidéo (remplace l\'image si présente)',
+      type: 'file',
+      options: {accept: 'video/*'},
+    }),
 
     defineField({
       name: 'stats',

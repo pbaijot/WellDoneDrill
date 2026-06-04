@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { getLocalizedPath, type RouteKey, type AppLocale } from '@/src/i18n/routes'
+import type { Metadata } from 'next'
+import { getLocalizedPath, type RouteKey, type AppLocale, PHONE_BY_LOCALE } from '@/src/i18n/routes'
+import { getSeoDefaults } from '@/src/i18n/seo'
 import { getTranslations } from 'next-intl/server'
 import { getHomePage } from '@/src/lib/homePage'
 import { getLatestBlogPosts } from '@/src/lib/blog'
@@ -69,6 +71,15 @@ function IconOuverte({ className }: { className?: string }) {
       <path d="M3 19 Q7.5 16.5 12 19 Q16.5 21.5 21 19"/>
     </svg>
   )
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params
+  const home = await getHomePage(locale).catch(() => null)
+  const defaults = getSeoDefaults(locale as AppLocale, 'home')
+  const title = home?.seoTitle || defaults.title
+  const description = home?.seoDescription || defaults.description
+  return { title, description, openGraph: { title, description } }
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
@@ -452,7 +463,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         const ctaTitle = home?.contactCta?.title ?? globalSettings?.ctaTitle ?? 'Votre projet commence ici.'
         const ctaSubtitle = home?.contactCta?.subtitle ?? globalSettings?.ctaBody ?? "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement."
         const ctaButtonLabel = home?.contactCta?.buttonLabel ?? globalSettings?.ctaButtonLabel ?? 'Démarrer votre projet →'
-        const ctaPhone = home?.contactCta?.phone ?? globalSettings?.phone ?? '+32 478 75 36 79'
+        const ctaPhone = PHONE_BY_LOCALE[locale as AppLocale] ?? home?.contactCta?.phone ?? globalSettings?.phone
         const ctaImageSrc = home?.contactCta?.image
           ? urlFor(home.contactCta.image)?.url() ?? '/images/team.jpg'
           : globalSettings?.ctaImage

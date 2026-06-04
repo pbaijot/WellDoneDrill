@@ -99,6 +99,8 @@ const chantier = defineType({
     { name: 'videoUrl', title: 'Vidéo (URL directe mp4)', type: 'url' },
     { name: 'description', title: 'Description / Beschrijving', type: 'text', rows: 5 },
     { name: 'featured', title: 'Mise en avant homepage / Uitgelicht op homepage', type: 'boolean' },
+    { name: 'seoTitle', title: 'SEO — titre (balise <title>)', type: 'string' },
+    { name: 'seoDescription', title: 'SEO — description (meta description)', type: 'text', rows: 3 },
   ],
   preview: { select: { title: 'title', subtitle: 'location', media: 'photo' } }
 })

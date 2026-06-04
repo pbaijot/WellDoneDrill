@@ -1,6 +1,8 @@
+import type {Metadata} from 'next'
 import {notFound} from 'next/navigation'
 import Link from 'next/link'
 import {findRouteKeyBySlug, getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
+import {getSeoDefaults} from '@/src/i18n/seo'
 import {getSitePage} from '@/src/lib/sitePage'
 import EditorialPage from '../components/EditorialPage'
 import {getGeoPage} from '@/src/lib/geoPage'
@@ -28,6 +30,60 @@ type PageProps = {
     locale: AppLocale
     slug: string[]
   }>
+}
+
+export async function generateMetadata({params}: PageProps): Promise<Metadata> {
+  const {locale, slug} = await params
+  const slugPath = slug.join('/')
+  const routeKey = findRouteKeyBySlug(locale, slugPath) ?? ''
+  const defaults = getSeoDefaults(locale, routeKey)
+
+  let cmsTitle: string | undefined
+  let cmsDesc: string | undefined
+
+  try {
+    if (routeKey === 'geo_fermee' || routeKey === 'geo_ouverte') {
+      const p = await getGeoPage(locale, routeKey)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'pac') {
+      const p = await getPacPage(locale)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'particuliers') {
+      const p = await getParticuliersPage(locale)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'pro_chauffagistes' || routeKey === 'pro_architectes' || routeKey === 'pro_entrepreneurs') {
+      const p = await getProPage(locale, routeKey)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'a_propos') {
+      const p = await getAProposPage(locale)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'demarrer') {
+      const p = await getDemarrerPage(locale)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    } else if (routeKey === 'references') {
+      // no CMS doc for the list page — use defaults
+    } else {
+      // sitePage (mentions_legales, politique_confidentialite, etc.)
+      const p = await getSitePage(locale, routeKey)
+      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+    }
+
+    // Individual chantier pages: /references/[slug]
+    const referencesBase = routeMap[locale]?.references
+    if (referencesBase && slugPath.startsWith(referencesBase + '/')) {
+      const subSlug = slugPath.slice(referencesBase.length + 1)
+      const {getChantierBySlug} = await import('@/src/lib/referencesPage')
+      const chantier = await getChantierBySlug(subSlug)
+      if (chantier) {
+        cmsTitle = chantier.seoTitle || chantier.title || undefined
+        cmsDesc = chantier.seoDescription || chantier.description || undefined
+      }
+    }
+  } catch {}
+
+  const title = cmsTitle ?? defaults.title
+  const description = cmsDesc ?? defaults.description
+  return { title, description, openGraph: { title, description } }
 }
 
 function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {

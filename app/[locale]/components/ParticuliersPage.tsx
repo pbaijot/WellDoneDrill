@@ -123,7 +123,7 @@ const UI = {
     faqSub: "Une question ne figure pas ici ? Contactez directement notre équipe.", faqCta: 'Poser ma question',
     showMap: true,
     mapTitle: 'Nos projets en', mapCountry: 'Belgique', mapHint: 'Sélectionnez une province',
-    mapAll: 'Toutes les provinces', mapEmpty: 'Aucun projet répertorié dans cette province pour le moment.',
+    mapAll: 'Toutes les provinces', mapEmpty: 'Nous sommes en train de mettre à jour nos références pour cette province.',
     mapAllRealisations: 'Voir toutes nos réalisations', mapAllInProvince: 'Tous les projets en {name}',
     calcBg: 'bg-wdd-clay',
     orCall: 'ou appelez-nous', mobileCta1: 'Calculer mes économies', mobileCta2: 'Devis gratuit',
@@ -150,7 +150,7 @@ const UI = {
     faqSub: 'Staat uw vraag er niet bij? Contacteer ons rechtstreeks.', faqCta: 'Mijn vraag stellen',
     showMap: true,
     mapTitle: 'Onze projecten in', mapCountry: 'België', mapHint: 'Selecteer een provincie',
-    mapAll: 'Alle provincies', mapEmpty: 'Momenteel geen projecten geregistreerd in deze provincie.',
+    mapAll: 'Alle provincies', mapEmpty: 'We werken momenteel onze referenties voor deze provincie bij.',
     mapAllRealisations: 'Bekijk al onze realisaties', mapAllInProvince: 'Alle projecten in {name}',
     calcBg: 'bg-wdd-clay',
     orCall: 'of bel ons', mobileCta1: 'Mijn besparing berekenen', mobileCta2: 'Gratis offerte',
@@ -361,88 +361,42 @@ function GeoScheme({t}: {t: UiT}) {
   )
 }
 
-function extractYouTubeId(url: string): string | null {
-  const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([^&\n?#]+)/)
-  return m ? m[1] : null
-}
-
 function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
   const [muted, setMuted] = useState(true)
-  const [playing, setPlaying] = useState(true)
-  const [ready, setReady] = useState(false)
-  const iframeRef = useRef<HTMLIFrameElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
-  useEffect(() => {
-    if (!videoUrl) return
-    const t = setTimeout(() => setReady(true), 1800)
-    return () => clearTimeout(t)
-  }, [videoUrl])
+  const toggleMute = () => {
+    if (videoRef.current) videoRef.current.muted = !muted
+    setMuted(m => !m)
+  }
 
   if (videoUrl) {
-    const ytId = extractYouTubeId(videoUrl)
-    if (ytId) {
-      const send = (func: string) =>
-        iframeRef.current?.contentWindow?.postMessage(
-          JSON.stringify({event: 'command', func, args: ''}), '*'
-        )
-      const toggleMute = () => { send(muted ? 'unMute' : 'mute'); setMuted(m => !m) }
-      const togglePlay = () => { send(playing ? 'pauseVideo' : 'playVideo'); setPlaying(p => !p) }
-      return (
-        <>
-          <iframe
-            ref={iframeRef}
-            src={`https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&loop=1&playlist=${ytId}&controls=0&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&enablejsapi=1`}
-            allow="autoplay; encrypted-media"
-            className="absolute inset-0 w-full h-full pointer-events-none"
-            style={{border: 'none'}}
-          />
-          {/* Cover that hides the YouTube thumbnail/play button until autoplay has started */}
-          <div className={`absolute inset-0 bg-wdd-black z-[1] transition-opacity duration-700 pointer-events-none ${ready ? 'opacity-0' : 'opacity-100'}`} />
-          {/* Transparent overlay above cover — blocks hover events so YouTube overlays never appear */}
-          <div className="absolute inset-0 z-[2]" />
-          <div className="absolute bottom-4 right-4 z-10 flex gap-2">
-            <button
-              onClick={togglePlay}
-              className="bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
-              aria-label={playing ? 'Pause' : 'Lecture'}
-            >
-              {playing ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
-                </svg>
-              ) : (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-              )}
-            </button>
-            <button
-              onClick={toggleMute}
-              className="bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
-              aria-label={muted ? 'Activer le son' : 'Couper le son'}
-            >
-              {muted ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                  <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
-                </svg>
-              ) : (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                </svg>
-              )}
-            </button>
-          </div>
-        </>
-      )
-    }
     return (
-      <video
-        src={videoUrl}
-        autoPlay loop muted playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-125"
-      />
+      <>
+        <video
+          ref={videoRef}
+          src={videoUrl}
+          autoPlay loop muted playsInline
+          className="absolute inset-0 w-full h-full object-cover scale-125"
+        />
+        <button
+          onClick={toggleMute}
+          className="absolute bottom-4 right-4 z-10 bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
+          aria-label={muted ? 'Activer le son' : 'Couper le son'}
+        >
+          {muted ? (
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+          ) : (
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+          )}
+        </button>
+      </>
     )
   }
   return (
@@ -696,9 +650,9 @@ export default function ParticuliersPage({
             </div>
 
             {/* Right — video or image */}
-            <div className="w-full h-64 sm:h-80 lg:h-auto lg:flex-1 relative overflow-hidden rounded-sm lg:min-h-[400px]">
+            <div className="w-full h-64 sm:h-80 mt-8 lg:mt-0 lg:h-auto lg:flex-1 relative overflow-hidden rounded-sm lg:min-h-[400px]">
               <ContextMedia
-                videoUrl={page.contextVideoUrl}
+                videoUrl={page.contextVideo?.asset?.url ?? null}
                 imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
               />
             </div>
@@ -766,7 +720,7 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           5. CALCULATEUR D'ÉCONOMIES
       ══════════════════════════════════════ */}
-      <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16`}>
+      <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0`}>
         <div className="max-w-screen-2xl mx-auto w-full">
 
           <div className="grid lg:grid-cols-2 gap-12 mb-14">
@@ -1026,7 +980,7 @@ function ProjetsSection({locale, chantiers, t}: {locale: AppLocale; chantiers: C
     : t.mapAllRealisations
 
   return (
-    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
+    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0">
       <div className="max-w-screen-2xl mx-auto w-full">
 
         <div className="flex items-end justify-between mb-8 gap-4">

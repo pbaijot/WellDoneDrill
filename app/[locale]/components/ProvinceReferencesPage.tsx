@@ -49,7 +49,7 @@ const COPY: Record<AppLocale, {
     ctaEyebrow: 'Votre projet', ctaTitle1: 'Prêt à lancer votre', ctaTitle2: 'chantier géothermique ?',
     ctaButton: 'Demandez un devis gratuit',
     tooltipLabel: 'Province', tooltipClick: 'Cliquer pour explorer →',
-    emptyText: 'Aucun projet référencé dans cette province pour le moment.',
+    emptyText: 'Nous sommes en train de mettre à jour nos références pour cette province.',
     emptyButton: 'Lancez votre projet',
   },
   'be-nl': {
@@ -63,7 +63,7 @@ const COPY: Record<AppLocale, {
     ctaEyebrow: 'Uw project', ctaTitle1: 'Klaar om uw', ctaTitle2: 'geothermisch project te starten?',
     ctaButton: 'Vraag een gratis offerte aan',
     tooltipLabel: 'Provincie', tooltipClick: 'Klikken om te verkennen →',
-    emptyText: 'Momenteel geen projecten in deze provincie.',
+    emptyText: 'We werken momenteel onze referenties voor deze provincie bij.',
     emptyButton: 'Start uw project',
   },
   'fr-fr': null,
@@ -158,7 +158,7 @@ function ProvincePage({locale, province, chantiers, copy}: {
 
         <motion.div
           className="relative h-full flex flex-col justify-center px-8 md:px-16 pointer-events-none"
-          style={{zIndex: 10000}}
+          style={{zIndex: 2}}
           initial={{opacity: 0}}
           animate={{opacity: 1}}
           transition={{duration: 0.35, ease: [0.32, 0, 0.24, 1]}}
@@ -177,7 +177,7 @@ function ProvincePage({locale, province, chantiers, copy}: {
               <h1 className="text-4xl md:text-5xl font-bold text-wdd-black leading-none mb-4">
                 <span className="block">{copy.h1Line1}</span>
                 <span className="block">
-                  {locale === 'be-nl' ? 'in' : province.prepFr}{' '}
+                  {locale === 'be-nl' ? 'in ' : (province.prepFr.endsWith("'") ? province.prepFr : province.prepFr + ' ')}
                   <span className="text-wdd-mud">{provinceName}</span>
                 </span>
               </h1>
@@ -198,7 +198,7 @@ function ProvincePage({locale, province, chantiers, copy}: {
               exit={{opacity: 0, y: 4}}
               transition={{duration: 0.12}}
               className="absolute bottom-8 right-8 bg-wdd-black text-white px-4 py-3 pointer-events-none"
-              style={{zIndex: 10000}}
+              style={{zIndex: 2}}
             >
               <div className="text-[9px] font-bold uppercase tracking-widest text-white/40 mb-0.5">
                 {copy.tooltipLabel}

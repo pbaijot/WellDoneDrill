@@ -35,7 +35,7 @@ export type SitePage = {
 }
 
 const pageByRouteQuery = `
-*[_type == "sitePage" && locale == $locale && routeKey == $routeKey][0]{
+*[_type == "sitePage" && locale == $locale && routeKey == $routeKey] | order(_updatedAt desc)[0]{
   _id,
   locale,
   routeKey,

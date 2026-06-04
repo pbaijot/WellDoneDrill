@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
+import {getLocalizedPath, type AppLocale, PHONE_BY_LOCALE} from '@/src/i18n/routes'
 import {urlFor} from '@/src/lib/sanityImage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 
@@ -64,7 +64,7 @@ export default function DemarrerCTA({
   const title = copy.title
   const body = copy.body
   const buttonLabel = copy.buttonLabel
-  const phone = settings?.phone ?? '+32 478 75 36 79'
+  const phone = PHONE_BY_LOCALE[locale] ?? settings?.phone
   const teamImageUrl = settings?.ctaImage ? urlFor(settings.ctaImage)?.url() ?? '/images/team.jpg' : '/images/team.jpg'
   const stat1Value = copy.stat1Value
   const stat1Label = copy.stat1Label

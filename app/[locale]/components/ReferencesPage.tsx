@@ -28,6 +28,7 @@ const COPY: Record<AppLocale, {
   desc: string
   portfolioEyebrow: string; allProjects: string
   projectCount: (n: number) => string
+  emptyGlobal: string; emptyProvince: string
   ctaEyebrow: string; ctaTitle1: string; ctaTitle2: string; ctaButton: string
   tooltipLabel: string; tooltipClick: string
 } | null> = {
@@ -36,6 +37,8 @@ const COPY: Record<AppLocale, {
     desc: "Depuis 2009, WellDoneDrill fore des champs géothermiques sur l'ensemble du territoire belge. Sélectionnez votre province pour découvrir nos réalisations.",
     portfolioEyebrow: 'Portfolio', allProjects: 'Tous nos projets',
     projectCount: (n) => `${n} réalisation${n > 1 ? 's' : ''}`,
+    emptyGlobal: 'Nous sommes en train de mettre à jour nos références. Revenez bientôt.',
+    emptyProvince: 'Nous sommes en train de mettre à jour nos références pour cette province.',
     ctaEyebrow: 'Votre projet', ctaTitle1: 'Prêt à lancer votre', ctaTitle2: 'chantier géothermique ?',
     ctaButton: 'Demandez un devis gratuit',
     tooltipLabel: 'Province', tooltipClick: 'Cliquer pour explorer →',
@@ -45,6 +48,8 @@ const COPY: Record<AppLocale, {
     desc: "Sinds 2009 boort WellDoneDrill geothermische velden op het volledige Belgische grondgebied. Selecteer uw provincie om onze realisaties te ontdekken.",
     portfolioEyebrow: 'Portfolio', allProjects: 'Alle projecten',
     projectCount: (n) => `${n} realisatie${n > 1 ? 's' : ''}`,
+    emptyGlobal: 'We werken momenteel onze referenties bij. Kom binnenkort terug.',
+    emptyProvince: 'We werken momenteel onze referenties voor deze provincie bij.',
     ctaEyebrow: 'Uw project', ctaTitle1: 'Klaar om uw', ctaTitle2: 'geothermisch project te starten?',
     ctaButton: 'Vraag een gratis offerte aan',
     tooltipLabel: 'Provincie', tooltipClick: 'Klikken om te verkennen →',
@@ -58,18 +63,18 @@ const COMING_SOON: Record<AppLocale, {title: string; sub: string; cta: string} |
   'be-fr': null,
   'be-nl': null,
   'fr-fr': {
-    title: 'Nos références en France arrivent bientôt.',
-    sub: "Nous développons activement nos activités en France. Contactez-nous pour discuter de votre projet géothermique.",
+    title: 'Nous mettons à jour notre page de références.',
+    sub: "Contactez-nous pour en savoir plus sur nos projets en France et lancer le vôtre.",
     cta: 'Contactez-nous',
   },
   'lu-fr': {
-    title: 'Nos références au Luxembourg arrivent bientôt.',
-    sub: "Nous développons activement nos activités au Luxembourg. Contactez-nous pour discuter de votre projet géothermique.",
+    title: 'Nous mettons à jour notre page de références.',
+    sub: "Contactez-nous pour en savoir plus sur nos projets au Luxembourg et démarrer le vôtre.",
     cta: 'Contactez-nous',
   },
   'lu-de': {
-    title: 'Unsere Referenzen in Luxemburg kommen bald.',
-    sub: "Wir bauen unsere Aktivitäten in Luxemburg aktiv aus. Kontaktieren Sie uns, um Ihr Geothermieprojekt zu besprechen.",
+    title: 'Wir aktualisieren unsere Referenzseite.',
+    sub: "Kontaktieren Sie uns, um mehr über unsere Projekte in Luxemburg zu erfahren und Ihr Projekt zu starten.",
     cta: 'Kontaktieren Sie uns',
   },
 }
@@ -154,7 +159,7 @@ function BelgiumPage({locale, chantiers, copy}: {
 
         <motion.div
           className="relative h-full flex flex-col justify-center px-8 md:px-16 pointer-events-none"
-          style={{zIndex: 10000}}
+          style={{zIndex: 2}}
           animate={{opacity: zooming ? 0 : 1}}
           transition={{duration: 0.3, ease: [0.32, 0, 0.24, 1]}}
         >
@@ -181,7 +186,7 @@ function BelgiumPage({locale, chantiers, copy}: {
               exit={{opacity: 0, y: 4}}
               transition={{duration: 0.12}}
               className="absolute bottom-8 right-8 bg-wdd-black text-white px-4 py-3 pointer-events-none"
-              style={{zIndex: 10000}}
+              style={{zIndex: 2}}
             >
               <div className="text-[9px] font-bold uppercase tracking-widest text-white/40 mb-0.5">
                 {copy.tooltipLabel}
@@ -218,7 +223,7 @@ function BelgiumPage({locale, chantiers, copy}: {
           </div>
 
           {chantiers.length === 0 ? (
-            <EmptyState />
+            <EmptyState text={copy.emptyGlobal} />
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-0.5">
               {chantiers.map((c) => (
@@ -358,11 +363,11 @@ function ChantierCard({chantier: c, locale}: {chantier: Chantier; locale: AppLoc
 
 /* ─── Empty state ──────────────────────────────────────────── */
 
-function EmptyState() {
+function EmptyState({text}: {text: string}) {
   return (
     <div className="border border-dashed border-black/15 p-16 text-center">
-      <div className="text-sm font-light text-black/35">
-        —
+      <div className="text-sm font-light text-black/45 italic">
+        {text}
       </div>
     </div>
   )

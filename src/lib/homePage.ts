@@ -61,6 +61,8 @@ export type HomePageData = {
     highlight?: string
     readMoreLabel?: string
   }
+  seoTitle?: string
+  seoDescription?: string
 }
 
 const homePageQuery = `
@@ -83,7 +85,8 @@ const homePageQuery = `
       "logo": logo { "asset": asset -> { url } }
     }
   },
-  blog
+  blog,
+  seoTitle, seoDescription
 }
 `
 

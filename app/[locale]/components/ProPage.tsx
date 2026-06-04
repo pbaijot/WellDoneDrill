@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
-import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
+import {getLocalizedPath, type AppLocale, PHONE_BY_LOCALE} from '@/src/i18n/routes'
 import type {ProPageData, ProSchemeNode} from '@/src/lib/proPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
@@ -275,7 +275,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
     mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une province',
     mapAllProvinces: 'Toutes les provinces',
-    mapEmpty: 'Aucun projet répertorié dans cette province pour le moment.',
+    mapEmpty: 'Nous sommes en train de mettre à jour nos références pour cette province.',
     mapCtaAll: 'Voir toutes nos réalisations',
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
     stickyStart: 'Démarrer mon projet',
@@ -286,7 +286,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
     mapTitle: 'Onze projecten in', mapCountry: 'België',
     mapSelectProvince: 'Selecteer een provincie',
     mapAllProvinces: 'Alle provincies',
-    mapEmpty: 'Geen projecten geregistreerd in deze provincie.',
+    mapEmpty: 'We werken momenteel onze referenties voor deze provincie bij.',
     mapCtaAll: 'Alle realisaties bekijken',
     mapCtaProvince: (name) => `Alle projecten in ${name}`,
     stickyStart: 'Mijn project starten',
@@ -297,7 +297,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
     mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une région',
     mapAllProvinces: 'Toutes les régions',
-    mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
+    mapEmpty: 'Nous sommes en train de mettre à jour nos références pour cette région.',
     mapCtaAll: 'Voir toutes nos réalisations',
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
     stickyStart: 'Démarrer mon projet',
@@ -308,7 +308,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
     mapTitle: 'Nos projets en', mapCountry: 'Belgique',
     mapSelectProvince: 'Sélectionnez une région',
     mapAllProvinces: 'Toutes les régions',
-    mapEmpty: 'Aucun projet répertorié dans cette région pour le moment.',
+    mapEmpty: 'Nous sommes en train de mettre à jour nos références pour cette région.',
     mapCtaAll: 'Voir toutes nos réalisations',
     mapCtaProvince: (name) => `Tous les projets en ${name}`,
     stickyStart: 'Démarrer mon projet',
@@ -319,7 +319,7 @@ const LOCALE_OVERRIDES: Record<AppLocale, LocaleOverrides> = {
     mapTitle: 'Unsere Projekte in', mapCountry: 'Belgien',
     mapSelectProvince: 'Region auswählen',
     mapAllProvinces: 'Alle Regionen',
-    mapEmpty: 'Derzeit keine Projekte in dieser Region erfasst.',
+    mapEmpty: 'Wir aktualisieren derzeit unsere Referenzen für diese Region.',
     mapCtaAll: 'Alle Realisierungen ansehen',
     mapCtaProvince: (name) => `Alle Projekte in ${name}`,
     stickyStart: 'Mein Projekt starten',
@@ -560,7 +560,7 @@ function ProProjetsSection({locale, chantiers, d}: {locale: AppLocale; chantiers
     : d.mapCtaAll
 
   return (
-    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16">
+    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0">
       <div className="max-w-screen-2xl mx-auto w-full">
 
         <div className="flex items-end justify-between mb-8 gap-4">
@@ -806,7 +806,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 : d.contextImage
               const ctxVideo = contextVideoUrl
               return (
-                <div className={`hidden lg:block lg:flex-1 relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'aspect-video' : 'min-h-[320px]'}`}>
+                <div className={`w-full h-64 sm:h-80 mt-8 lg:mt-0 lg:flex-1 lg:h-auto relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'lg:aspect-video' : 'lg:min-h-[320px]'}`}>
                   <Image src={ctxImage} alt="" fill sizes="50vw" className="object-cover object-center" />
                   {ctxVideo && (
                     <video
@@ -911,7 +911,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           {d.stickyStart}
         </Link>
         <a
-          href="tel:+32478753679"
+          href={`tel:${PHONE_BY_LOCALE[locale].replace(/\s/g, '')}`}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors rounded-sm"
         >
           {d.stickyCall}

@@ -16,7 +16,7 @@ export type ParticuliersPageData = {
   heroRightImage?: unknown
   heroPanelItems?: ParticuliersPanelItem[]
   contextImage?: unknown
-  contextVideoUrl?: string
+  contextVideo?: {asset?: {url?: string}}
   stats?: ParticuliersStat[]
   whyTitle?: string
   whyIntro?: string
@@ -34,7 +34,7 @@ const query = `
   _id, locale,
   heroTitle, heroSubtitle, heroCtaDevisLabel, heroCtaCalculLabel,
   heroLeftBgImage, heroRightImage, heroPanelItems,
-  contextImage, contextVideoUrl,
+  contextImage, contextVideo { asset-> { url } },
   stats,
   whyTitle, whyIntro, whyItems,
   problemTitle, problemBody,

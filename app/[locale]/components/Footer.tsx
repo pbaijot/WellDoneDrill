@@ -184,6 +184,12 @@ export default function Footer() {
             <Link href={getLocalizedPath(locale, 'cookies')} className="text-xs font-extralight text-white/20 hover:text-white/50 transition-colors">
               Cookies
             </Link>
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent('wdd:cookie-settings'))}
+              className="text-xs font-extralight text-white/20 hover:text-white/50 transition-colors"
+            >
+              {locale === 'be-nl' ? 'Cookies beheren' : locale === 'lu-de' ? 'Cookies verwalten' : 'Gérer les cookies'}
+            </button>
           </div>
         </div>
       </div>
