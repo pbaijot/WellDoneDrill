@@ -57,6 +57,7 @@ export default function Header() {
     {
       key: 'geo',
       label: t('geo'),
+      routeKey: 'geo',
       items: [
         { label: t('geo_fermee'), sub: t('geo_fermee_sub'), routeKey: 'geo_fermee' },
         { label: t('geo_ouverte'), sub: t('geo_ouverte_sub'), routeKey: 'geo_ouverte' },
