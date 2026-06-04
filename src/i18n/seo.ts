@@ -44,7 +44,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
       title: 'À propos de WellDoneDrill — Experts en forage géothermique en Belgique',
       description: "Découvrez l'équipe WellDoneDrill, experts belges du forage géothermique. Notre mission : rendre l'énergie géothermique accessible à tous, de A à Z.",
     },
-    demarrer: {
+    contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill Belgique',
       description: "Obtenez votre étude de faisabilité gratuite et sans engagement. Forage géothermique en Belgique — réponse sous 48h. WellDoneDrill, de l'étude au raccordement.",
     },
@@ -95,7 +95,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
       title: 'Over WellDoneDrill — Experts in geothermische boringen in België',
       description: "Ontdek het WellDoneDrill-team, Belgische experts in geothermische boringen. Onze missie: geothermische energie voor iedereen toegankelijk maken, van A tot Z.",
     },
-    demarrer: {
+    contact: {
       title: 'Start uw geothermisch project — Gratis offerte | WellDoneDrill België',
       description: "Ontvang uw gratis en vrijblijvende haalbaarheidstudie. Geothermische boring in België — antwoord binnen 48u. WellDoneDrill, van studie tot aansluiting.",
     },
@@ -146,7 +146,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
       title: 'À propos de WellDoneDrill — Experts en forage géothermique en France',
       description: "Découvrez l'équipe WellDoneDrill, experts du forage géothermique en France. Notre mission : rendre l'énergie géothermique accessible à tous.",
     },
-    demarrer: {
+    contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill France',
       description: "Obtenez votre étude de faisabilité gratuite et sans engagement en France. Réponse sous 48h. WellDoneDrill, de l'étude au raccordement.",
     },
@@ -197,7 +197,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
       title: 'À propos de WellDoneDrill — Experts en forage géothermique au Luxembourg',
       description: "Découvrez WellDoneDrill, spécialistes du forage géothermique au Luxembourg. Notre mission : rendre l'énergie géothermique accessible à tous.",
     },
-    demarrer: {
+    contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill Luxembourg',
       description: "Obtenez votre étude de faisabilité gratuite au Luxembourg. Réponse sous 48h, sans engagement. WellDoneDrill, votre spécialiste géothermie.",
     },
@@ -248,7 +248,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
       title: 'Über WellDoneDrill — Experten für Erdwärmebohrungen in Luxemburg',
       description: "Entdecken Sie das WellDoneDrill-Team, Experten für geothermische Bohrungen in Luxemburg. Unsere Mission: Erdwärme für alle zugänglich zu machen.",
     },
-    demarrer: {
+    contact: {
       title: 'Ihr Geothermieprojekt starten — Kostenloses Angebot | WellDoneDrill Luxemburg',
       description: "Kostenlose und unverbindliche Machbarkeitsstudie in Luxemburg. Antwort innerhalb von 48 Stunden. WellDoneDrill, Ihr Geothermie-Spezialist.",
     },

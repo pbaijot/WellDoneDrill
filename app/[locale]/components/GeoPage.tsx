@@ -281,7 +281,7 @@ export default function GeoPage({
   locale: AppLocale
 }) {
   const isOpen = page.routeKey === 'geo_ouverte'
-  const ctaRoute: RouteKey = isOpen ? 'pro_chauffagistes' : 'demarrer'
+  const ctaRoute: RouteKey = isOpen ? 'pro_chauffagistes' : 'contact'
 
   const heroLeftBg = page.heroLeftBgImage
     ? urlFor(page.heroLeftBgImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp'
@@ -404,7 +404,7 @@ export default function GeoPage({
               </div>
               <div className="py-8">
                 <Link
-                  href={getLocalizedPath(locale, 'demarrer')}
+                  href={getLocalizedPath(locale, 'contact')}
                   className="flex justify-between w-full lg:w-auto lg:inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
                 >
                   {page.howCtaLabel ?? 'Démarrer mon projet →'}

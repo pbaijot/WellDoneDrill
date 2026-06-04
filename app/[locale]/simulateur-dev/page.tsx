@@ -10,7 +10,7 @@ export default async function SimulateurDevPage({
   return (
     <div style={{ width: '100vw', minHeight: '100vh', background: '#F2EFE9', overflowX: 'hidden' }}>
       <Simulator
-        devisUrl={getLocalizedPath(locale as AppLocale, 'demarrer')}
+        devisUrl={getLocalizedPath(locale as AppLocale, 'contact')}
         soumissionUrl={getLocalizedPath(locale as AppLocale, 'pro_chauffagistes') + '#soumission'}
         onResult={undefined}
       />

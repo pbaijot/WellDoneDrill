@@ -58,7 +58,7 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
     } else if (routeKey === 'a_propos') {
       const p = await getAProposPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
-    } else if (routeKey === 'demarrer') {
+    } else if (routeKey === 'contact') {
       const p = await getDemarrerPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
     } else if (routeKey === 'references') {
@@ -104,7 +104,7 @@ function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {
         </p>
         <div className="flex items-center gap-4">
           <Link
-            href={getLocalizedPath(locale, 'demarrer')}
+            href={getLocalizedPath(locale, 'contact')}
             className="bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
             Demandez un devis
@@ -207,11 +207,6 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     } catch {
       return <ProPage page={{_id: 'default', locale, routeKey}} locale={locale} chantiers={chantiers} settings={globalSettings} />
     }
-  }
-
-  if (routeKey === 'demarrer') {
-    const demarrerData = await getDemarrerPage(locale).catch(() => null)
-    return <DemarrerPage locale={locale} page={demarrerData} />
   }
 
   if (routeKey === 'a_propos') {

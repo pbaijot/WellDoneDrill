@@ -283,7 +283,7 @@ function ProvincePage({locale, province, chantiers, copy}: {
             <span className="text-wdd-mud">{copy.ctaTitle2}</span>
           </h2>
           <Link
-            href={getLocalizedPath(locale, 'demarrer')}
+            href={getLocalizedPath(locale, 'contact')}
             className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
             {copy.ctaButton}
@@ -379,7 +379,7 @@ function EmptyState({copy, locale}: {copy: NonNullable<(typeof COPY)[AppLocale]>
         {copy.emptyText}
       </div>
       <Link
-        href={getLocalizedPath(locale, 'demarrer')}
+        href={getLocalizedPath(locale, 'contact')}
         className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
       >
         {copy.emptyButton}

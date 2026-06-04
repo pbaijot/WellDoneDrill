@@ -8,7 +8,7 @@ export default function HomeTunnel() {
   const locale = useLocale() as AppLocale
   return (
     <Simulator
-      devisUrl={getLocalizedPath(locale, 'demarrer')}
+      devisUrl={getLocalizedPath(locale, 'contact')}
       soumissionUrl={getLocalizedPath(locale, 'pro_chauffagistes') + '#soumission'}
     />
   )

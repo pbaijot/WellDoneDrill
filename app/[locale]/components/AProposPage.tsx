@@ -232,7 +232,7 @@ export default function AProposPage({locale, page, settings}: {locale: AppLocale
             <p className="text-base font-light text-white/70 leading-relaxed max-w-lg mb-10">
               {page?.heroSubtitle ?? copy.heroSubtitle}
             </p>
-            <Link href={getLocalizedPath(locale, 'demarrer')} className="inline-block bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm">
+            <Link href={getLocalizedPath(locale, 'contact')} className="inline-block bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm">
               {page?.heroCtaLabel ?? copy.heroCtaLabel}
             </Link>
           </div>

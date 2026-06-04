@@ -85,7 +85,7 @@ export default function DemarrerCTA({
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <Link
-              href={getLocalizedPath(locale, 'demarrer')}
+              href={getLocalizedPath(locale, 'contact')}
               className={`px-6 py-3.5 text-sm font-bold border-2 rounded-sm transition-colors ${
                 dark
                   ? 'bg-wdd-yellow text-wdd-black border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow'

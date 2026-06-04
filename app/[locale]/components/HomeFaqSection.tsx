@@ -69,7 +69,7 @@ export default function HomeFaqSection({locale, faqs}: {locale: AppLocale; faqs?
             </p>
           </div>
           <Link
-            href={getLocalizedPath(locale, 'demarrer')}
+            href={getLocalizedPath(locale, 'contact')}
             className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors self-start lg:self-end shrink-0 rounded-sm"
           >
             Démarrer mon projet

@@ -762,7 +762,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
 
             <div className="flex flex-wrap items-center gap-3">
               <Link
-                href={getLocalizedPath(locale, 'demarrer')}
+                href={getLocalizedPath(locale, 'contact')}
                 className="bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
               >
                 {page.heroCtaLabel ?? d.heroCtaPrimary}
@@ -854,7 +854,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 </div>
                 <div className="mt-10">
                   <Link
-                    href={getLocalizedPath(locale, 'demarrer')}
+                    href={getLocalizedPath(locale, 'contact')}
                     className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
                   >
                     {page.whyCtaLabel ?? d.whyCtaLabel} <span>→</span>
@@ -886,7 +886,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
               {page.faqSubtitle ?? d.faqSubtitle}
             </p>
             <Link
-              href={getLocalizedPath(locale, 'demarrer')}
+              href={getLocalizedPath(locale, 'contact')}
               className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
               {page.faqCtaLabel ?? d.faqCtaLabel}
@@ -905,7 +905,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       ══════════════════════════════════════ */}
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-wdd-black border-t border-white/10 px-4 py-3 flex items-center gap-3 shadow-2xl">
         <Link
-          href={getLocalizedPath(locale, 'demarrer')}
+          href={getLocalizedPath(locale, 'contact')}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow rounded-sm"
         >
           {d.stickyStart}

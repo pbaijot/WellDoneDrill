@@ -194,7 +194,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href={getLocalizedPath(loc, 'demarrer')}
+                href={getLocalizedPath(loc, 'contact')}
                 className="inline-block bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
               >
                 {home?.hero?.ctaLabel ?? 'Démarrer votre projet →'}
@@ -488,7 +488,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 </p>
                 <div className="flex flex-wrap items-center gap-4">
                   <Link
-                    href={getLocalizedPath(loc, 'demarrer')}
+                    href={getLocalizedPath(loc, 'contact')}
                     className="self-start px-6 py-3.5 text-sm font-bold border-2 bg-wdd-yellow text-wdd-black border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
                   >
                     {ctaButtonLabel}

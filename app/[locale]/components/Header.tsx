@@ -97,9 +97,9 @@ export default function Header() {
 
   const CTA_MENUS: Menu[] = [
     {
-      key: 'demarrer',
-      label: 'Démarrer',
-      routeKey: 'demarrer',
+      key: 'contact',
+      label: 'Contact',
+      routeKey: 'contact',
     },
   ]
 

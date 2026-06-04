@@ -246,7 +246,7 @@ function BelgiumPage({locale, chantiers, copy}: {
             <span className="text-wdd-mud">{copy.ctaTitle2}</span>
           </h2>
           <Link
-            href={getLocalizedPath(locale, 'demarrer')}
+            href={getLocalizedPath(locale, 'contact')}
             className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
             {copy.ctaButton}
@@ -273,7 +273,7 @@ function ComingSoonPage({locale, cs}: {locale: AppLocale; cs: NonNullable<(typeo
               {cs.sub}
             </p>
             <Link
-              href={getLocalizedPath(locale, 'demarrer')}
+              href={getLocalizedPath(locale, 'contact')}
               className="inline-block bg-wdd-black text-white px-8 py-4 text-sm font-bold hover:bg-wdd-mud transition-colors"
             >
               {cs.cta} →

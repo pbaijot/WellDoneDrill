@@ -593,7 +593,7 @@ export default function ParticuliersPage({
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-3 mb-10">
               <Link
-                href={getLocalizedPath(locale, 'demarrer')}
+                href={getLocalizedPath(locale, 'contact')}
                 className="bg-white text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-white hover:bg-transparent hover:text-white transition-colors rounded-sm"
               >
                 {page.heroCtaDevisLabel ?? "Recevoir un devis immédiatement"}
@@ -700,7 +700,7 @@ export default function ParticuliersPage({
                 </div>
                 <div className="mt-10">
                   <Link
-                    href={getLocalizedPath(locale, 'demarrer')}
+                    href={getLocalizedPath(locale, 'contact')}
                     className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
                   >
                     {t.startProject}
@@ -900,7 +900,7 @@ export default function ParticuliersPage({
               {t.faqSub}
             </p>
             <Link
-              href={getLocalizedPath(locale, 'demarrer')}
+              href={getLocalizedPath(locale, 'contact')}
               className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
               {t.faqCta}
@@ -928,7 +928,7 @@ export default function ParticuliersPage({
           {t.mobileCta1}
         </a>
         <Link
-          href={getLocalizedPath(locale, 'demarrer')}
+          href={getLocalizedPath(locale, 'contact')}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-yellow border-2 border-wdd-yellow hover:bg-wdd-yellow hover:text-wdd-black transition-colors rounded-sm"
         >
           {t.mobileCta2}
