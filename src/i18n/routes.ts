@@ -4,9 +4,9 @@ export type AppLocale = (typeof locales)[number]
 export const defaultLocale: AppLocale = 'be-fr'
 
 export const PHONE_BY_LOCALE: Record<AppLocale, string> = {
-  'be-fr': '+32 478 75 36 79',
+  'be-fr': '+32 494 14 24 49',
   'be-nl': '+32 476 82 50 17',
-  'fr-fr': '+32 478 75 36 79',
+  'fr-fr': '+32 494 14 24 49',
   'lu-fr': '+352 621 771 246',
   'lu-de': '+352 621 771 246',
 }
