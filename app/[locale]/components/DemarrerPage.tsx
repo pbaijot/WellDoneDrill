@@ -226,7 +226,7 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-base font-bold text-wdd-black">{PHONE_BY_LOCALE[locale]}</span>
-              <span className="text-xs font-light text-black/45">{page?.email ?? 'info@welldonedrill.energy'}</span>
+              <span className="text-xs font-light text-black/45">info@welldonedrill.energy</span>
             </div>
           </div>
         </div>
