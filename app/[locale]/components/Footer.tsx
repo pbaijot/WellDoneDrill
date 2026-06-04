@@ -82,7 +82,7 @@ export default function Footer() {
               {t('desc')}
             </p>
             <Link
-              href={getLocalizedPath(locale, 'demarrer')}
+              href={getLocalizedPath(locale, 'contact')}
               className="block py-3 bg-wdd-yellow text-wdd-black text-xs font-bold text-center rounded-sm hover:bg-white transition-colors mb-4"
             >
               {t('cta')}
