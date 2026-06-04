@@ -5,6 +5,7 @@ const BASE_URL = 'https://welldonedrill.energy'
 
 const PRIORITY: Record<RouteKey, number> = {
   home: 1.0,
+  contact: 0.7,
   particuliers: 0.8,
   pro: 0.8,
   geo: 0.8,

@@ -14,6 +14,7 @@ export const PHONE_BY_LOCALE: Record<AppLocale, string> = {
 export type RouteKey =
   | 'home'
   | 'demarrer'
+  | 'contact'
   | 'references'
   | 'pac'
   | 'geo'
@@ -36,6 +37,7 @@ export const routeMap: RouteMap = {
   'be-fr': {
     home: '',
     demarrer: 'demarrer',
+    contact: 'contact',
     references: 'realisations-geothermie-belgique',
     blog: 'blog',
     a_propos: 'a-propos',
@@ -60,6 +62,7 @@ export const routeMap: RouteMap = {
   'fr-fr': {
     home: '',
     demarrer: 'demarrer',
+    contact: 'contact',
     references: 'references',
     blog: 'blog',
     a_propos: 'a-propos',
@@ -84,6 +87,7 @@ export const routeMap: RouteMap = {
   'be-nl': {
     home: '',
     demarrer: 'starten',
+    contact: 'contact',
     references: 'referenties',
     blog: 'blog',
     a_propos: 'over-ons',
@@ -108,6 +112,7 @@ export const routeMap: RouteMap = {
   'lu-fr': {
     home: '',
     demarrer: 'demarrer',
+    contact: 'contact',
     references: 'references',
     blog: 'blog',
     a_propos: 'a-propos',
@@ -132,6 +137,7 @@ export const routeMap: RouteMap = {
   'lu-de': {
     home: '',
     demarrer: 'starten',
+    contact: 'kontakt',
     references: 'referenzen',
     blog: 'blog',
     a_propos: 'uber-uns',
