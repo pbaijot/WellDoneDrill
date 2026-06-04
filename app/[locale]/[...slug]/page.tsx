@@ -15,7 +15,6 @@ import {getProPage} from '@/src/lib/proPage'
 import ProPage from '../components/ProPage'
 import ProLandingPage from '../components/ProLandingPage'
 import GeoLandingPage from '../components/GeoLandingPage'
-import ContactPage from '../components/ContactPage'
 import ReferencesPage from '../components/ReferencesPage'
 import ProvinceReferencesPage from '../components/ProvinceReferencesPage'
 import ChantierPage from '../components/ChantierPage'
@@ -150,7 +149,8 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'contact') {
-    return <ContactPage locale={locale} />
+    const demarrerData = await getDemarrerPage(locale).catch(() => null)
+    return <DemarrerPage locale={locale} page={demarrerData} />
   }
 
   if (routeKey === 'geo') {
