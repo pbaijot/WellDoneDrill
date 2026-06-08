@@ -1,6 +1,6 @@
 import { locales, routeMap, type AppLocale, type RouteKey } from '@/src/i18n/routes'
 
-export const BASE_URL = 'https://welldonedrill.energy'
+export const BASE_URL = 'https://www.welldonedrill.energy'
 
 // Internal locale → BCP 47 hreflang tag
 export const HREFLANG: Record<AppLocale, string> = {
@@ -24,12 +24,6 @@ export function buildAlternates(locale: AppLocale, routeKey: RouteKey) {
     languages[HREFLANG[loc]] = url
   }
 
-  // x-default always points to the be-fr version
-  const defaultSlug = routeMap['be-fr'][routeKey]
-  languages['x-default'] = defaultSlug
-    ? `${BASE_URL}/be-fr/${defaultSlug}`
-    : `${BASE_URL}/be-fr`
-
   const currentSlug = routeMap[locale][routeKey]
   const canonical = currentSlug
     ? `${BASE_URL}/${locale}/${currentSlug}`
@@ -39,26 +33,13 @@ export function buildAlternates(locale: AppLocale, routeKey: RouteKey) {
 }
 
 /**
- * Build canonical + hreflang for a blog article.
- * Blog articles use the same slug across locales under each locale's blog path.
+ * Build canonical for a blog article.
+ * Blog posts don't exist in all locales, so we only set a self-canonical.
  */
 export function buildBlogAlternates(locale: AppLocale, slug: string) {
-  const languages: Record<string, string> = {}
-
-  for (const loc of locales) {
-    const blogSlug = routeMap[loc]['blog']
-    if (blogSlug) {
-      languages[HREFLANG[loc]] = `${BASE_URL}/${loc}/${blogSlug}/${slug}`
-    }
-  }
-
-  const defaultBlogSlug = routeMap['be-fr']['blog']
-  languages['x-default'] = `${BASE_URL}/be-fr/${defaultBlogSlug}/${slug}`
-
   const localeBlogSlug = routeMap[locale]['blog']
   const canonical = `${BASE_URL}/${locale}/${localeBlogSlug}/${slug}`
-
-  return { canonical, languages }
+  return { canonical, languages: {} as Record<string, string> }
 }
 
 /**

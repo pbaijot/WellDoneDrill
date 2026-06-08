@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { locales, routeMap, type RouteKey } from '@/src/i18n/routes'
 
-const BASE_URL = 'https://welldonedrill.energy'
+const BASE_URL = 'https://www.welldonedrill.energy'
 
 const PRIORITY: Record<RouteKey, number> = {
   home: 1.0,
