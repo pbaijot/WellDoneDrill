@@ -11,6 +11,12 @@ const SECURITY_HEADERS = [
 ]
 
 export default withNextIntl({
+  // Disable streaming metadata so <title>, <meta>, canonical and hreflang
+  // always render inside <head> for every crawler — not just JS-executing
+  // bots. Without this, async generateMetadata (Sanity-backed pages) appends
+  // these tags to <body>, which non-JS crawlers (e.g. Screaming Frog) flag
+  // as "outside the <head>". See Next.js docs: htmlLimitedBots.
+  htmlLimitedBots: /.*/,
   images: {
     remotePatterns: [
       { hostname: 'cdn.sanity.io' },
