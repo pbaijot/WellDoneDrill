@@ -70,15 +70,32 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
     }
 
-    // Individual chantier pages: /references/[slug]
+    // Province reference pages + individual chantier pages: /references/[slug]
     const referencesBase = routeMap[locale]?.references
     if (referencesBase && slugPath.startsWith(referencesBase + '/')) {
       const subSlug = slugPath.slice(referencesBase.length + 1)
-      const {getChantierBySlug} = await import('@/src/lib/referencesPage')
-      const chantier = await getChantierBySlug(subSlug)
-      if (chantier) {
-        cmsTitle = chantier.seoTitle || chantier.title || undefined
-        cmsDesc = chantier.seoDescription || chantier.description || undefined
+      const {getChantierBySlug, findProvinceBySlug, getProvinceName} = await import('@/src/lib/referencesPage')
+      const province = findProvinceBySlug(subSlug)
+      if (province) {
+        // Province landing pages — target "géothermie <province>" / "forage géothermique <province>"
+        const name = getProvinceName(province, locale)
+        if (locale === 'be-nl') {
+          cmsTitle = `Geothermie ${name} — Geothermische boring | WellDoneDrill`
+          cmsDesc = `Geothermische boorprojecten in ${name}. WellDoneDrill boort uw sondes: gratis studie, vergunning en installatie. Ontdek onze realisaties in ${name}.`
+        } else if (locale === 'lu-de') {
+          cmsTitle = `Geothermie ${name} — Erdwärmebohrung | WellDoneDrill`
+          cmsDesc = `Geothermische Bohrprojekte in ${name}. WellDoneDrill bohrt Ihre Sonden: kostenlose Studie, Genehmigung und Installation. Entdecken Sie unsere Projekte.`
+        } else {
+          const prep = province.prepFr.endsWith("'") ? province.prepFr + name : `${province.prepFr} ${name}`
+          cmsTitle = `Géothermie ${name} — Forage géothermique | WellDoneDrill`
+          cmsDesc = `Réalisations de forage géothermique ${prep}. WellDoneDrill fore vos sondes géothermiques : étude gratuite, permis et installation. Découvrez nos chantiers.`
+        }
+      } else {
+        const chantier = await getChantierBySlug(subSlug)
+        if (chantier) {
+          cmsTitle = chantier.seoTitle || chantier.title || undefined
+          cmsDesc = chantier.seoDescription || chantier.description || undefined
+        }
       }
     }
   } catch {}
