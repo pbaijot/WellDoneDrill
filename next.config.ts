@@ -28,6 +28,10 @@ export default withNextIntl({
   },
   async redirects() {
     return [
+      // English version not built yet — Google still surfaces /:locale/en links.
+      // Temporary (307) so browsers/Google don't cache it once /en ships.
+      { source: '/:locale(be-fr|be-nl|fr-fr|lu-fr|lu-de)/en/:path*', destination: '/be-fr', permanent: false },
+      { source: '/:locale(be-fr|be-nl|fr-fr|lu-fr|lu-de)/en', destination: '/be-fr', permanent: false },
       // be-fr / fr-fr / lu-fr — old chauffagistes slug
       { source: '/:locale(be-fr|fr-fr|lu-fr)/pro/chauffagistes', destination: '/:locale/pro/installateurs-hvac', permanent: true },
       // be-fr / fr-fr / lu-fr — old architectes slug
