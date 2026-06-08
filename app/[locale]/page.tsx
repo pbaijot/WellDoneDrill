@@ -427,7 +427,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   href={getLocalizedPath(loc, (serviceItems[0].routeKey ?? 'geo_fermee') as RouteKey)}
                   className="inline-flex items-center gap-2 text-sm font-bold bg-wdd-black text-white px-5 py-2.5 self-start hover:bg-wdd-black/80 transition-colors rounded-sm"
                 >
-                  {serviceItems[0].ctaLabel ?? 'Découvrir la géothermie fermée'} <span>→</span>
+                  {serviceItems[0].ctaLabel ?? (loc.endsWith('-en') ? 'Discover closed-loop geothermal' : 'Découvrir la géothermie fermée')} <span>→</span>
                 </Link>
               </div>
             </div>
@@ -454,7 +454,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   href={getLocalizedPath(loc, (serviceItems[1]?.routeKey ?? 'geo_ouverte') as RouteKey)}
                   className="inline-flex items-center gap-2 text-sm font-bold bg-wdd-black text-white px-5 py-2.5 self-start hover:bg-wdd-black/80 transition-colors rounded-sm"
                 >
-                  {serviceItems[1]?.ctaLabel ?? 'Découvrir la géothermie ouverte'} <span>→</span>
+                  {serviceItems[1]?.ctaLabel ?? (loc.endsWith('-en') ? 'Discover open-loop geothermal' : 'Découvrir la géothermie ouverte')} <span>→</span>
                 </Link>
               </div>
             </div>
@@ -469,19 +469,25 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           Row 2: stats bar full-width on black, image cut above it
       ═══════════════════════════════════════════════════════════ */}
       {(() => {
-        const ctaTitle = home?.contactCta?.title ?? globalSettings?.ctaTitle ?? 'Votre projet commence ici.'
-        const ctaSubtitle = home?.contactCta?.subtitle ?? globalSettings?.ctaBody ?? "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement."
-        const ctaButtonLabel = home?.contactCta?.buttonLabel ?? globalSettings?.ctaButtonLabel ?? 'Démarrer votre projet →'
+        // globalSettings is a single shared (non-localized) doc holding French
+        // text, so for EN locales fall back to English literals instead of it.
+        const isEn = locale.endsWith('-en')
+        // globalSettings holds French-only text; for EN ignore it and use the
+        // English literal, otherwise use the shared value then the FR literal.
+        const gs = <T,>(v: T | undefined, en: T, fr: T): T => (isEn ? en : (v ?? fr))
+        const ctaTitle = home?.contactCta?.title ?? gs(globalSettings?.ctaTitle, 'Your project starts here.', 'Votre projet commence ici.')
+        const ctaSubtitle = home?.contactCta?.subtitle ?? gs(globalSettings?.ctaBody, "Free geological study, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.", "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.")
+        const ctaButtonLabel = home?.contactCta?.buttonLabel ?? gs(globalSettings?.ctaButtonLabel, 'Start your project →', 'Démarrer votre projet →')
         const ctaPhone = PHONE_BY_LOCALE[locale as AppLocale] ?? home?.contactCta?.phone ?? globalSettings?.phone
         const ctaImageSrc = home?.contactCta?.image
           ? urlFor(home.contactCta.image)?.url() ?? '/images/team.jpg'
           : globalSettings?.ctaImage
             ? urlFor(globalSettings.ctaImage)?.url() ?? '/images/team.jpg'
             : '/images/team.jpg'
-        const stat1Value = home?.contactCta?.stat1Value ?? globalSettings?.stat1Value ?? 'Gratuit'
-        const stat1Label = home?.contactCta?.stat1Label ?? globalSettings?.stat1Label ?? 'Étude de faisabilité'
+        const stat1Value = home?.contactCta?.stat1Value ?? gs(globalSettings?.stat1Value, 'Free', 'Gratuit')
+        const stat1Label = home?.contactCta?.stat1Label ?? gs(globalSettings?.stat1Label, 'Feasibility study', 'Étude de faisabilité')
         const stat2Value = home?.contactCta?.stat2Value ?? globalSettings?.stat2Value ?? '48h'
-        const stat2Label = home?.contactCta?.stat2Label ?? globalSettings?.stat2Label ?? 'Délai de réponse'
+        const stat2Label = home?.contactCta?.stat2Label ?? gs(globalSettings?.stat2Label, 'Response time', 'Délai de réponse')
         return (
           <section className="bg-wdd-black overflow-hidden">
 
@@ -503,7 +509,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                     {ctaButtonLabel}
                   </Link>
                   <div className="flex items-center gap-4">
-                    <span className="text-sm font-light text-white/40">ou appelez-nous</span>
+                    <span className="text-sm font-light text-white/40">{isEn ? 'or call us' : 'ou appelez-nous'}</span>
                     <a href={`tel:${ctaPhone.replace(/\s/g, '')}`} className="text-sm font-bold text-white hover:text-wdd-yellow transition-colors">
                       {ctaPhone}
                     </a>

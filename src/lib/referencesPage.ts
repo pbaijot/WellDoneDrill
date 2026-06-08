@@ -152,9 +152,24 @@ export const BELGIUM_PROVINCES: Province[] = [
   },
 ]
 
+const PROVINCE_NAME_EN: Record<string, string> = {
+  'Flandre occidentale': 'West Flanders',
+  'Flandre orientale': 'East Flanders',
+  'Anvers': 'Antwerp',
+  'Limbourg': 'Limburg',
+  'Brabant flamand': 'Flemish Brabant',
+  'Bruxelles': 'Brussels',
+  'Brabant wallon': 'Walloon Brabant',
+  'Hainaut': 'Hainaut',
+  'Namur': 'Namur',
+  'Liège': 'Liège',
+  'Luxembourg': 'Luxembourg',
+}
+
 export function getProvinceName(province: Province, locale: AppLocale): string {
   if (locale === 'be-nl') return province.nameNl
   if (locale === 'lu-de') return province.nameDe
+  if (locale.endsWith('-en')) return PROVINCE_NAME_EN[province.nameFr] ?? province.nameFr
   return province.nameFr
 }
 

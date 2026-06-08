@@ -65,7 +65,9 @@ export default function HomeMapSection({
 
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <h2 className="text-4xl font-bold leading-tight">
-            Géothermie partout <span className="text-wdd-mud">en Belgique</span>
+            {locale.endsWith('-en')
+              ? <>Geothermal energy <span className="text-wdd-mud">across Belgium</span></>
+              : <>Géothermie partout <span className="text-wdd-mud">en Belgique</span></>}
           </h2>
           <div className="flex items-center gap-4 shrink-0">
             {selectedProvince && (
@@ -74,7 +76,7 @@ export default function HomeMapSection({
                   {getProvinceName(selectedProvince, locale)}
                   {filtered.length > 0 && (
                     <span className="ml-2 text-black/30 font-light normal-case tracking-normal">
-                      — {filtered.length} projet{filtered.length > 1 ? 's' : ''}
+                      — {filtered.length} {locale.endsWith('-en') ? `project${filtered.length > 1 ? 's' : ''}` : `projet${filtered.length > 1 ? 's' : ''}`}
                     </span>
                   )}
                 </span>
