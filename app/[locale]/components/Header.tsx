@@ -68,12 +68,12 @@ export default function Header() {
     },
     {
       key: 'particuliers',
-      label: 'Particuliers',
+      label: t('menu_particuliers'),
       routeKey: 'particuliers',
     },
     {
       key: 'pro',
-      label: 'Professionnels',
+      label: t('menu_pro'),
       routeKey: 'pro',
       items: [
         { label: t('pro_chauffagistes'), sub: t('pro_chauffagistes_sub'), routeKey: 'pro_chauffagistes' },
@@ -83,17 +83,17 @@ export default function Header() {
     },
     {
       key: 'references',
-      label: 'Références',
+      label: t('menu_references'),
       routeKey: 'references',
     },
     {
       key: 'blog',
-      label: 'Articles',
+      label: t('menu_blog'),
       routeKey: 'blog',
     },
     {
       key: 'a_propos',
-      label: 'À propos',
+      label: t('menu_apropos'),
       routeKey: 'a_propos',
     },
   ]
@@ -101,7 +101,7 @@ export default function Header() {
   const CTA_MENUS: Menu[] = [
     {
       key: 'contact',
-      label: 'Contact',
+      label: t('menu_contact'),
       routeKey: 'contact',
     },
   ]

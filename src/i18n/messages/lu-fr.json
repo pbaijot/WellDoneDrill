@@ -37,7 +37,13 @@
     "pro_soumission": "Espace soumission",
     "pro_soumission_sub": "Deposez votre projet",
     "portal": "Mon espace",
-    "cta": "Devis instantane"
+    "cta": "Devis instantane",
+    "menu_particuliers": "Particuliers",
+    "menu_pro": "Professionnels",
+    "menu_references": "Références",
+    "menu_blog": "Articles",
+    "menu_apropos": "À propos",
+    "menu_contact": "Contact"
   },
   "footer": {
     "tagline": "L energie de la terre",

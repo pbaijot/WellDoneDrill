@@ -37,7 +37,13 @@
     "pro_soumission": "Indiening ruimte",
     "pro_soumission_sub": "Dien uw project in",
     "portal": "Mijn ruimte",
-    "cta": "Directe offerte"
+    "cta": "Directe offerte",
+    "menu_particuliers": "Particulieren",
+    "menu_pro": "Professionals",
+    "menu_references": "Referenties",
+    "menu_blog": "Artikelen",
+    "menu_apropos": "Over ons",
+    "menu_contact": "Contact"
   },
   "footer": {
     "tagline": "De energie van de aarde",
