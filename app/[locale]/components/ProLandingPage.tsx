@@ -26,7 +26,7 @@ function IconBuilding({className}: {className?: string}) {
   )
 }
 
-const SEGMENTS = [
+const SEGMENTS_FR = [
   {
     routeKey: 'pro_chauffagistes' as const,
     title: 'Installateurs HVAC',
@@ -53,7 +53,36 @@ const SEGMENTS = [
   },
 ]
 
+const SEGMENTS_EN = [
+  {
+    routeKey: 'pro_chauffagistes' as const,
+    title: 'HVAC installers',
+    description: "Subcontract turnkey geothermal drilling. You install the heat pump, WellDoneDrill drills. Take on more projects with no extra equipment investment.",
+    image: '/images/clean-drill.jpg',
+    icon: IconWrench,
+    cta: 'Discover the installer partnership',
+  },
+  {
+    routeKey: 'pro_architectes' as const,
+    title: 'Architects & engineering firms',
+    description: "Integrate geothermal energy from the first sketch. Preliminary geological study in 72h, turnkey technical report for your energy-performance and permit files.",
+    image: '/images/abricotiers-2.jpg',
+    icon: IconCompass,
+    cta: 'Discover the architect partnership',
+  },
+  {
+    routeKey: 'pro_entrepreneurs' as const,
+    title: 'Developers',
+    description: "A single contract covers permits, drilling and as-built documentation. Add value to your residential and commercial programmes with an A energy label.",
+    image: '/images/foreuse-wide.jpg',
+    icon: IconBuilding,
+    cta: 'Discover the developer offer',
+  },
+]
+
 export default function ProLandingPage({locale}: {locale: AppLocale}) {
+  const isEn = locale.endsWith('-en')
+  const SEGMENTS = isEn ? SEGMENTS_EN : SEGMENTS_FR
   return (
     <div className="flex flex-col">
       <section className="bg-wdd-clay py-24 px-8 md:px-16">
@@ -61,10 +90,12 @@ export default function ProLandingPage({locale}: {locale: AppLocale}) {
 
           <div className="mb-16">
             <h1 className="text-4xl font-bold leading-tight mb-5">
-              Pour les <span className="text-wdd-mud">professionnels</span>
+              {isEn ? <>For <span className="text-wdd-mud">professionals</span></> : <>Pour les <span className="text-wdd-mud">professionnels</span></>}
             </h1>
             <p className="text-sm font-light text-wdd-black/55 leading-relaxed max-w-2xl">
-              WellDoneDrill s'adapte à votre métier. Permis, forage, documentation as-built — une seule équipe pour vos chantiers géothermiques. Sélectionnez votre profil.
+              {isEn
+                ? "WellDoneDrill adapts to your trade. Permits, drilling, as-built documentation — one team for your geothermal projects. Select your profile."
+                : "WellDoneDrill s'adapte à votre métier. Permis, forage, documentation as-built — une seule équipe pour vos chantiers géothermiques. Sélectionnez votre profil."}
             </p>
           </div>
 

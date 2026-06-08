@@ -1,6 +1,6 @@
 import {sanity} from './sanity'
 import {urlFor} from './sanityImage'
-import type {AppLocale} from '@/src/i18n/routes'
+import {routeMap, type AppLocale} from '@/src/i18n/routes'
 
 /*
  * Province SVG paths extracted from interactive-belgium-map.svg (Adobe Illustrator)
@@ -167,14 +167,7 @@ export function getProvinceSlug(province: Province, locale: AppLocale): string {
 }
 
 export function getProvincePageUrl(locale: AppLocale, slug: string): string {
-  const baseSlug: Record<AppLocale, string> = {
-    'be-fr': 'realisations-geothermie-belgique',
-    'be-nl': 'referenties',
-    'fr-fr': 'references',
-    'lu-fr': 'references',
-    'lu-de': 'referenzen',
-  }
-  return `/${locale}/${baseSlug[locale]}/${slug}`
+  return `/${locale}/${routeMap[locale].references}/${slug}`
 }
 
 /* ─── Chantier data ─────────────────────────────────────────── */
@@ -208,7 +201,9 @@ const CHANTIER_FIELDS = `
 
 const CHANTIERS_QUERY = `*[_type == "chantier" && locale == $locale] | order(year desc) { ${CHANTIER_FIELDS} }`
 
-const CHANTIER_BY_SLUG_QUERY = `*[_type == "chantier" && slug.current == $slug][0] { ${CHANTIER_FIELDS} }`
+// Slugs can repeat across locales (e.g. the same project in fr/nl/en), so the
+// by-slug lookup MUST be scoped to the current locale to return the right doc.
+const CHANTIER_BY_SLUG_QUERY = `*[_type == "chantier" && slug.current == $slug && locale == $locale][0] { ${CHANTIER_FIELDS} }`
 
 export async function getChantiers(locale: string): Promise<Chantier[]> {
   if (!sanity) return []
@@ -219,10 +214,10 @@ export async function getChantiers(locale: string): Promise<Chantier[]> {
   }
 }
 
-export async function getChantierBySlug(slug: string): Promise<Chantier | null> {
+export async function getChantierBySlug(slug: string, locale: string): Promise<Chantier | null> {
   if (!sanity) return null
   try {
-    return await sanity.fetch(CHANTIER_BY_SLUG_QUERY, {slug})
+    return await sanity.fetch(CHANTIER_BY_SLUG_QUERY, {slug, locale})
   } catch {
     return null
   }
@@ -237,22 +232,29 @@ export function chantierImageUrl(photo: unknown, w = 600): string | null {
 export const TYPE_LABEL: Record<AppLocale, {fermee: string; ouverte: string}> = {
   'be-fr': {fermee: 'Fermée',      ouverte: 'Ouverte'},
   'be-nl': {fermee: 'Gesloten',    ouverte: 'Open'},
+  'be-en': {fermee: 'Closed-loop', ouverte: 'Open-loop'},
   'fr-fr': {fermee: 'Fermée',      ouverte: 'Ouverte'},
+  'fr-en': {fermee: 'Closed-loop', ouverte: 'Open-loop'},
   'lu-fr': {fermee: 'Fermée',      ouverte: 'Ouverte'},
   'lu-de': {fermee: 'Geschlossen', ouverte: 'Offen'},
+  'lu-en': {fermee: 'Closed-loop', ouverte: 'Open-loop'},
 }
 
 export const SECTOR_LABEL: Record<AppLocale, Record<string, string>> = {
   'be-fr': {residentiel: 'Résidentiel', tertiaire: 'Tertiaire', public: 'Public',  industrie: 'Industrie'},
   'be-nl': {residentiel: 'Residentieel',tertiaire: 'Tertiair',  public: 'Publiek', industrie: 'Industrie'},
+  'be-en': {residentiel: 'Residential', tertiaire: 'Commercial', public: 'Public', industrie: 'Industrial'},
   'fr-fr': {residentiel: 'Résidentiel', tertiaire: 'Tertiaire', public: 'Public',  industrie: 'Industrie'},
+  'fr-en': {residentiel: 'Residential', tertiaire: 'Commercial', public: 'Public', industrie: 'Industrial'},
   'lu-fr': {residentiel: 'Résidentiel', tertiaire: 'Tertiaire', public: 'Public',  industrie: 'Industrie'},
   'lu-de': {residentiel: 'Wohngebäude', tertiaire: 'Tertiär',   public: 'Öffentlich', industrie: 'Industrie'},
+  'lu-en': {residentiel: 'Residential', tertiaire: 'Commercial', public: 'Public', industrie: 'Industrial'},
 }
 
 export const DEPTH_LABEL: Record<AppLocale, string> = {
-  'be-fr': 'Profondeur', 'be-nl': 'Diepte',
-  'fr-fr': 'Profondeur', 'lu-fr': 'Profondeur', 'lu-de': 'Tiefe',
+  'be-fr': 'Profondeur', 'be-nl': 'Diepte', 'be-en': 'Depth',
+  'fr-fr': 'Profondeur', 'fr-en': 'Depth',
+  'lu-fr': 'Profondeur', 'lu-de': 'Tiefe', 'lu-en': 'Depth',
 }
 
 export function localizedProvince(slug: string | undefined, locale: AppLocale): string | undefined {

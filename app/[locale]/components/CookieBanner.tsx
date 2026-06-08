@@ -60,6 +60,33 @@ const COPY: Record<string, {
     advertising: 'Werbe-Cookies', advertisingDesc: 'Meta Pixel und LinkedIn Insight Tag — personalisierte Werbung auf anderen Plattformen.',
     manage: 'Cookies verwalten',
   },
+  'be-en': {
+    title: 'We use cookies',
+    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
+    essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
+    analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
+    advertising: 'Advertising cookies', advertisingDesc: 'Meta Pixel and LinkedIn Insight Tag — personalised ads on other platforms.',
+    manage: 'Manage cookies',
+  },
+  'fr-en': {
+    title: 'We use cookies',
+    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
+    essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
+    analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
+    advertising: 'Advertising cookies', advertisingDesc: 'Meta Pixel and LinkedIn Insight Tag — personalised ads on other platforms.',
+    manage: 'Manage cookies',
+  },
+  'lu-en': {
+    title: 'We use cookies',
+    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
+    essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
+    analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
+    advertising: 'Advertising cookies', advertisingDesc: 'Meta Pixel and LinkedIn Insight Tag — personalised ads on other platforms.',
+    manage: 'Manage cookies',
+  },
 }
 
 function readConsent(): Consent | null {

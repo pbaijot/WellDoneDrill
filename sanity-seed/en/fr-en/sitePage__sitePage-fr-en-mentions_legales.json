@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-fr-en-mentions_legales",
+  "_type": "sitePage",
+  "ctaLabel": "Contact us",
+  "ctaPretitle": "Need a clarification?",
+  "ctaRouteKey": "devis",
+  "ctaText": "For any question about your data, your consents or your use of the site, you can contact us directly.",
+  "ctaTitle": "Contact WellDoneDrill",
+  "faqTitle": "",
+  "faqs": [],
+  "heroEyebrow": "Legal information",
+  "heroSubtitle": "Here you will find useful information related to the legal notice for the WellDoneDrill website.",
+  "heroTitle": "Legal notice",
+  "locale": "fr-en",
+  "routeKey": "mentions_legales",
+  "sections": [
+    {
+      "_key": "mentions_legales-s1",
+      "body": "This page is a first editorial framework for the legal notice. It must be reviewed with the company's final legal information before going live.",
+      "eyebrow": "Framework",
+      "items": [],
+      "title": "Legal notice"
+    },
+    {
+      "_key": "mentions_legales-s2",
+      "body": "Before final publication, the legal contact details, the data controller, the legal bases, the retention periods, any processors and the consent mechanisms should be confirmed.",
+      "eyebrow": "To be completed",
+      "items": [
+        "Company contact details",
+        "Data collected",
+        "Purposes of the processing",
+        "Retention period",
+        "User rights"
+      ],
+      "title": "Items to confirm"
+    }
+  ],
+  "seoDescription": "View the legal notice page of the WellDoneDrill website.",
+  "seoTitle": "Legal notice | WellDoneDrill",
+  "title": "Legal notice"
+}

@@ -6,9 +6,12 @@ export const BASE_URL = 'https://www.welldonedrill.energy'
 export const HREFLANG: Record<AppLocale, string> = {
   'be-fr': 'fr-BE',
   'be-nl': 'nl-BE',
+  'be-en': 'en-BE',
   'fr-fr': 'fr-FR',
+  'fr-en': 'en-FR',
   'lu-fr': 'fr-LU',
   'lu-de': 'de-LU',
+  'lu-en': 'en-LU',
 }
 
 /**

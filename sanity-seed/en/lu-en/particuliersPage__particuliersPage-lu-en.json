@@ -1,0 +1,107 @@
+{
+  "_id": "particuliersPage-lu-en",
+  "_type": "particuliersPage",
+  "contextVideoUrl": "https://www.youtube.com/watch?v=9lDoSbhm3uo",
+  "faqTitle": "Your questions, our answers.",
+  "faqs": [
+    {
+      "_key": "f1",
+      "answer": "For a standard single-family home (150 m²), expect between €18,000 and €28,000 for the drilling and the complete installation (heat pump included). The Luxembourg government's Klimabonus grant can cover up to €10,000 of the amount.",
+      "question": "How much does a geothermal installation cost in total in Luxembourg?"
+    },
+    {
+      "_key": "f2",
+      "answer": "Closed-loop geothermal can be used on almost any Luxembourg plot. Access for the drilling rig (min. 2.5 m wide) is the only practical constraint. WDD carries out a free feasibility study to confirm.",
+      "question": "Is my property suitable for geothermal energy?"
+    },
+    {
+      "_key": "f3",
+      "answer": "The Klimabonus, the Luxembourg State grant for certified residential geothermal installations, can be up to €10,000. Additional tax deductions may also apply. WDD helps you prepare the files.",
+      "question": "What grants can I get in Luxembourg?"
+    },
+    {
+      "_key": "f4",
+      "answer": "Drilling takes 1 to 2 days for a single-family home. Installation of the heat pump by your heating installer takes a further 1 to 2 days. Total: less than a week.",
+      "question": "How long does the project take?"
+    }
+  ],
+  "heroCtaCalculLabel": "Calculate my savings",
+  "heroCtaDevisLabel": "Request a free study",
+  "heroPanelItems": [
+    {
+      "_key": "p1",
+      "label": "Average annual savings",
+      "sub": "vs gas heating — 150 m² home",
+      "value": "1 200 €"
+    },
+    {
+      "_key": "p2",
+      "label": "Return on investment",
+      "sub": "complete geothermal installation",
+      "value": "7–10 years"
+    },
+    {
+      "_key": "p3",
+      "label": "Klimabonus grant",
+      "sub": "direct grant from the Luxembourg State",
+      "value": "up to €10,000"
+    }
+  ],
+  "heroSubtitle": "WellDoneDrill drills beneath your property and installs a turnkey geothermal system in Luxembourg. Free study, permits, execution — one team, one quote.",
+  "heroTitle": "Heat your home\nwithout gas, without oil.",
+  "locale": "lu-en",
+  "problemBody": "Since 2021, the price of gas has risen sharply in Luxembourg, as everywhere in Europe. Geothermal energy, by contrast, draws on a free and stable energy source: the ground beneath your property. Your heating cost becomes predictable for 50 years.",
+  "problemTitle": "Gas costs more.\nGeothermal energy doesn't.",
+  "seoDescription": "Geothermal drilling for homes in Luxembourg. Free study, Klimabonus grant up to €10,000. Save up to 70% on your heating.",
+  "seoTitle": "Geothermal energy for homeowners in Luxembourg | WellDoneDrill",
+  "stats": [
+    {
+      "_key": "s1",
+      "label": "Rise in the price of gas in Luxembourg since 2021",
+      "value": "+140 %"
+    },
+    {
+      "_key": "s2",
+      "label": "Average savings on the heating bill",
+      "value": "70 %"
+    },
+    {
+      "_key": "s3",
+      "label": "Klimabonus grant from the Luxembourg State",
+      "value": "10 000 €"
+    }
+  ],
+  "whyItems": [
+    {
+      "_key": "w1",
+      "body": "By switching from gas to geothermal energy, our clients save on average €1,200 per year on their energy bill.",
+      "title": "Up to 70% savings"
+    },
+    {
+      "_key": "w2",
+      "body": "Geothermal energy draws renewable energy from the ground of your property. No direct emissions, no dependence on the market.",
+      "title": "Zero fossil fuel"
+    },
+    {
+      "_key": "w3",
+      "body": "The same installation provides heating and natural cooling. No secondary system.",
+      "title": "Warm in winter, cool in summer"
+    },
+    {
+      "_key": "w4",
+      "body": "A geothermal home shows a better energy rating and resells faster at a higher price.",
+      "title": "Enhanced property value"
+    },
+    {
+      "_key": "w5",
+      "body": "You are no longer exposed to rises in the price of gas. Your heating cost becomes predictable for 50 years.",
+      "title": "Energy independence"
+    },
+    {
+      "_key": "w6",
+      "body": "Geothermal boreholes have a lifespan of 50 years and more. No maintenance after installation.",
+      "title": "Proven durability"
+    }
+  ],
+  "whyTitle": "Six reasons to switch to geothermal energy this year."
+}

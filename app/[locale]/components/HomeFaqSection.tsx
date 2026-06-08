@@ -27,6 +27,29 @@ const DEFAULT_FAQS = [
   },
 ]
 
+const DEFAULT_FAQS_EN = [
+  {
+    question: "How much does a geothermal installation cost in total?",
+    answer: "The complete budget — drilling + heat pump + installation — ranges between €20,000 and €30,000. After regional grants (up to €12,000), the remaining cost often drops below €18,000. Return on investment in 8 to 12 years on a system that lasts 50 years.",
+  },
+  {
+    question: "Is my property suitable for geothermal energy?",
+    answer: "More than 90% of properties in Belgium are geologically suitable. WellDoneDrill carries out a free preliminary study to confirm feasibility on your plot, before any commitment on your part.",
+  },
+  {
+    question: "What work is done at my home and how long does it take?",
+    answer: "Drilling takes 1 to 3 days on your property. Minimal impact on your garden, restored at the end. The complete installation (drilling + heat pump) usually takes 1 to 2 weeks.",
+  },
+  {
+    question: "Does geothermal energy also work as air conditioning?",
+    answer: "Yes. Closed-loop geothermal enables highly efficient passive cooling (free-cooling) in summer, with marginal electricity use — without releasing heat outdoors.",
+  },
+  {
+    question: "Do I need a permit to drill?",
+    answer: "In most regions a drilling permit is required. WellDoneDrill fully handles the administrative steps for you — declarations, technical files and liaison with the relevant authorities.",
+  },
+]
+
 type FaqsData = {
   title?: string
   items?: {question?: string; answer?: string}[]
@@ -53,10 +76,11 @@ function FaqItem({q, a}: {q: string; a: string}) {
 }
 
 export default function HomeFaqSection({locale, faqs}: {locale: AppLocale; faqs?: FaqsData | null}) {
-  const title = faqs?.title ?? 'Vos questions,\nnos réponses.'
+  const isEn = locale.endsWith('-en')
+  const title = faqs?.title ?? (isEn ? 'Your questions,\nour answers.' : 'Vos questions,\nnos réponses.')
   const items = faqs?.items && faqs.items.length > 0
     ? faqs.items.map(i => ({question: i.question ?? '', answer: i.answer ?? ''}))
-    : DEFAULT_FAQS
+    : (isEn ? DEFAULT_FAQS_EN : DEFAULT_FAQS)
 
   return (
     <section className="bg-white min-h-[80vh] flex flex-col justify-center pt-20 pb-0 px-8 md:px-16">
@@ -65,14 +89,14 @@ export default function HomeFaqSection({locale, faqs}: {locale: AppLocale; faqs?
           <div>
             <h2 className="text-3xl font-bold text-wdd-black mb-4 leading-tight whitespace-pre-line">{title}</h2>
             <p className="text-sm font-light text-black/50 leading-7">
-              Une question ne figure pas ici ? Contactez directement notre équipe.
+              {isEn ? "Don't see your question here? Contact our team directly." : 'Une question ne figure pas ici ? Contactez directement notre équipe.'}
             </p>
           </div>
           <Link
             href={getLocalizedPath(locale, 'contact')}
             className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors self-start lg:self-end shrink-0 rounded-sm"
           >
-            Démarrer mon projet
+            {isEn ? 'Start my project' : 'Démarrer mon projet'}
           </Link>
         </div>
         <div>

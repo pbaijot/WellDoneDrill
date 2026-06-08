@@ -54,18 +54,37 @@ const COPY: Record<AppLocale, {
     ctaButton: 'Vraag een gratis offerte aan',
     tooltipLabel: 'Provincie', tooltipClick: 'Klikken om te verkennen →',
   },
+  'be-en': {
+    h1Line1: 'Geothermal energy', h1Line2: 'all across', h1Line3: 'Belgium',
+    desc: "Since 2009, WellDoneDrill has been drilling geothermal fields across the whole of Belgium. Select your province to discover our projects.",
+    portfolioEyebrow: 'Portfolio', allProjects: 'All our projects',
+    projectCount: (n) => `${n} project${n > 1 ? 's' : ''}`,
+    emptyGlobal: 'We are currently updating our projects. Please check back soon.',
+    emptyProvince: 'We are currently updating our projects for this province.',
+    ctaEyebrow: 'Your project', ctaTitle1: 'Ready to launch your', ctaTitle2: 'geothermal project?',
+    ctaButton: 'Request a free quote',
+    tooltipLabel: 'Province', tooltipClick: 'Click to explore →',
+  },
   'fr-fr': null,
+  'fr-en': null,
   'lu-fr': null,
   'lu-de': null,
+  'lu-en': null,
 }
 
 const COMING_SOON: Record<AppLocale, {title: string; sub: string; cta: string} | null> = {
   'be-fr': null,
   'be-nl': null,
+  'be-en': null,
   'fr-fr': {
     title: 'Nous mettons à jour notre page de références.',
     sub: "Contactez-nous pour en savoir plus sur nos projets en France et lancer le vôtre.",
     cta: 'Contactez-nous',
+  },
+  'fr-en': {
+    title: 'We are updating our projects page.',
+    sub: "Contact us to learn more about our projects in France and to start yours.",
+    cta: 'Contact us',
   },
   'lu-fr': {
     title: 'Nous mettons à jour notre page de références.',
@@ -76,6 +95,11 @@ const COMING_SOON: Record<AppLocale, {title: string; sub: string; cta: string} |
     title: 'Wir aktualisieren unsere Referenzseite.',
     sub: "Kontaktieren Sie uns, um mehr über unsere Projekte in Luxemburg zu erfahren und Ihr Projekt zu starten.",
     cta: 'Kontaktieren Sie uns',
+  },
+  'lu-en': {
+    title: 'We are updating our projects page.',
+    sub: "Contact us to learn more about our projects in Luxembourg and to start yours.",
+    cta: 'Contact us',
   },
 }
 

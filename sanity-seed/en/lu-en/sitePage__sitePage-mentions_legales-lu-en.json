@@ -1,0 +1,44 @@
+{
+  "_id": "sitePage-mentions_legales-lu-en",
+  "_type": "sitePage",
+  "heroEyebrow": "Legal information",
+  "heroSubtitle": "Information about the publisher, hosting and terms of use of the welldonedrill.energy site.",
+  "heroTitle": "Legal notice",
+  "locale": "lu-en",
+  "routeKey": "mentions_legales",
+  "sections": [
+    {
+      "_key": "editeur",
+      "_type": "section",
+      "body": "The welldonedrill.energy site is published by:\n\nWellDoneDrill SRL\nRegistered office: Rue des Anciens Étangs 40, 1190 Forest, Belgium\nCompany number (BCE): 0801.727.368\nVAT number: BE 0801.727.368\n\nLegal representative: Arnaud Latiers, manager\nContact: info@welldonedrill.energy",
+      "title": "Site publisher"
+    },
+    {
+      "_key": "hebergement",
+      "_type": "section",
+      "body": "The site is hosted by:\n\nVercel Inc.\n340 Pine Street, Suite 701\nSan Francisco, CA 94104, United States\nWebsite: vercel.com",
+      "title": "Hosting"
+    },
+    {
+      "_key": "propriete",
+      "_type": "section",
+      "body": "All content published on welldonedrill.energy is protected by copyright and is the exclusive property of WellDoneDrill SRL or its partners. Any reproduction or use without prior written authorisation is prohibited.",
+      "title": "Intellectual property"
+    },
+    {
+      "_key": "responsabilite",
+      "_type": "section",
+      "body": "WellDoneDrill SRL strives to keep the published information up to date and accurate, but accepts no liability for errors, omissions or technical interruptions, nor for any damage resulting from the use of the site.",
+      "title": "Liability"
+    },
+    {
+      "_key": "droit",
+      "_type": "section",
+      "body": "These legal notices are governed by Belgian law, WellDoneDrill SRL being established in Belgium. Users in Luxembourg benefit from the protections provided by the applicable Luxembourg law.",
+      "title": "Applicable law"
+    }
+  ],
+  "seoDescription": "Legal information for WellDoneDrill SRL, publisher of the welldonedrill.energy site: contact details, host, intellectual property.",
+  "seoTitle": "Legal notice — WellDoneDrill Luxembourg",
+  "title": "Legal notice"
+}

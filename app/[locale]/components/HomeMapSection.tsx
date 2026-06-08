@@ -49,11 +49,12 @@ export default function HomeMapSection({
 
   const handleProvinceClick = (id: string) => { setSelectedId((p) => (p === id ? null : id)); setPage(0) }
 
-  const SELECT_PROVINCE: Record<string, string> = {'be-nl': 'Selecteer een provincie', 'lu-de': 'Wählen Sie eine Provinz'}
-  const ALL_PROVINCES: Record<string, string>   = {'be-nl': 'Alle provincies', 'lu-de': 'Alle Provinzen'}
-  const NO_PROJECTS: Record<string, string>     = {'be-nl': 'Momenteel geen projecten in deze provincie.', 'lu-de': 'Derzeit keine Projekte in dieser Provinz.'}
-  const ALL_IN: Record<string, string>          = {'be-nl': 'Alle projecten in', 'lu-de': 'Alle Projekte in'}
-  const ALL_PROJECTS: Record<string, string>    = {'be-nl': 'Alle realisaties bekijken', 'lu-de': 'Alle Projekte ansehen'}
+  const EN = 'be-en', FREN = 'fr-en', LUEN = 'lu-en'
+  const SELECT_PROVINCE: Record<string, string> = {'be-nl': 'Selecteer een provincie', 'lu-de': 'Wählen Sie eine Provinz', [EN]: 'Select a province', [FREN]: 'Select a province', [LUEN]: 'Select a province'}
+  const ALL_PROVINCES: Record<string, string>   = {'be-nl': 'Alle provincies', 'lu-de': 'Alle Provinzen', [EN]: 'All provinces', [FREN]: 'All provinces', [LUEN]: 'All provinces'}
+  const NO_PROJECTS: Record<string, string>     = {'be-nl': 'Momenteel geen projecten in deze provincie.', 'lu-de': 'Derzeit keine Projekte in dieser Provinz.', [EN]: 'Currently no projects in this province.', [FREN]: 'Currently no projects in this province.', [LUEN]: 'Currently no projects in this province.'}
+  const ALL_IN: Record<string, string>          = {'be-nl': 'Alle projecten in', 'lu-de': 'Alle Projekte in', [EN]: 'All projects in', [FREN]: 'All projects in', [LUEN]: 'All projects in'}
+  const ALL_PROJECTS: Record<string, string>    = {'be-nl': 'Alle realisaties bekijken', 'lu-de': 'Alle Projekte ansehen', [EN]: 'See all our projects', [FREN]: 'See all our projects', [LUEN]: 'See all our projects'}
   const ctaHref  = selectedProvince ? getProvincePageUrl(locale, getProvinceSlug(selectedProvince, locale)) : getLocalizedPath(locale, 'references')
   const ctaLabel = selectedProvince
     ? `${ALL_IN[locale] ?? 'Tous les projets en'} ${getProvinceName(selectedProvince, locale)}`

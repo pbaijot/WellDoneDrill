@@ -1,0 +1,129 @@
+{
+  "_id": "aProposPage-fr-en",
+  "_type": "aProposPage",
+  "galleryImages": [
+    {
+      "_key": "0cd3f34efac3",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-550948132e44ae132fdc20b02b0ba80ee76f2b38-3840x2160-jpg",
+        "_type": "reference"
+      }
+    },
+    {
+      "_key": "3fc71c0fbe2b",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-6696bbc56539a99d66afc5f585f51684cbbcfed4-3840x2160-jpg",
+        "_type": "reference"
+      }
+    },
+    {
+      "_key": "f8c62162b745",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-21037480ddaef62f934a2ad49b0dfd56bff7f241-1536x2048-jpg",
+        "_type": "reference"
+      }
+    },
+    {
+      "_key": "94810ca0d063",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-e3b954b69f27924a0f85c0145bba66d0d0644e2d-2000x1500-jpg",
+        "_type": "reference"
+      }
+    },
+    {
+      "_key": "2fa5942966be",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ce538a46d591d7d19043bce2a523bcfea5e0bb7d-3836x2154-png",
+        "_type": "reference"
+      }
+    },
+    {
+      "_key": "bd84e2dc00ff",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-ccb8a55f66660063b698698522a8e35c64527ea7-2506x1664-jpg",
+        "_type": "reference"
+      }
+    }
+  ],
+  "heroCtaLabel": "Request a free quote",
+  "heroImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-ccb8a55f66660063b698698522a8e35c64527ea7-2506x1664-jpg",
+      "_type": "reference"
+    }
+  },
+  "heroSubtitle": "WellDoneDrill, a geothermal drilling specialist, is building the energy foundations of tomorrow today. An expert in closed-loop and open-loop geothermal energy, our company offers sustainable, tailor-made solutions for all types of buildings.",
+  "heroTitle": "Let's give clean and sustainable energy to future generations",
+  "locale": "fr-en",
+  "missionBody1": "We help reduce the carbon footprint of regions by making geothermal energy accessible to everyone, for all types of projects, and on a large scale.",
+  "missionBody2": "Faced with the climate emergency and the need to move away from fossil fuels, geothermal energy stands out as a solution for the future: clean, renewable and stable. France has strong, still largely untapped potential. It is in this context that WellDoneDrill operates, with a strong conviction: to make geothermal energy accessible and high-performing to meet a fast-growing demand.",
+  "missionBody3": "Since our founding, we have completed hundreds of boreholes, for homeowners, property developers, public institutions and companies.",
+  "missionTitle": "Our mission goes beyond energy savings.",
+  "missionVideo": {
+    "_type": "file",
+    "asset": {
+      "_ref": "file-55a1ccb8ad2628167a29937f4fb07011e1da76c3-mov",
+      "_type": "reference"
+    }
+  },
+  "seoDescription": "WellDoneDrill, a geothermal drilling specialist. Discover our mission, our values and our expertise in closed-loop and open-loop geothermal energy.",
+  "seoTitle": "About WellDoneDrill | Geothermal drilling in France",
+  "values": [
+    {
+      "_key": "v1",
+      "body": "We are committed to staying at the forefront of innovation in geothermal drilling. We invest in research and development to harness new technologies and improve our processes.",
+      "title": "Innovation"
+    },
+    {
+      "_key": "v2",
+      "body": "We are convinced that geothermal energy is a powerful lever for a clean and sustainable energy future. Every borehole drilled is a direct contribution to reducing CO₂ emissions and decarbonising buildings.",
+      "title": "Sustainability"
+    },
+    {
+      "_key": "v3",
+      "body": "We believe in the power of collaboration. It is by working hand in hand with our partners, clients and employees that we can reach our goals.",
+      "title": "Collaboration"
+    },
+    {
+      "_key": "v4",
+      "body": "We act with rigour, ethics and transparency in all our work. Our commitments are clear, our methods controlled and our client relationships built on trust and accountability.",
+      "title": "Integrity"
+    },
+    {
+      "_key": "v5",
+      "body": "We aim for the highest quality standards in every project. Our technical demands and attention to detail make WellDoneDrill a benchmark in its field.",
+      "title": "Excellence"
+    }
+  ],
+  "valuesTitle": "Our values",
+  "whyItems": [
+    {
+      "_key": "w1",
+      "body": "We offer state-of-the-art geothermal drilling technologies while keeping operating costs under control.",
+      "title": "Accessible technologies"
+    },
+    {
+      "_key": "w2",
+      "body": "Our detailed knowledge of the subsurface and our years of field experience ensure precise, safe drilling tailored to local conditions.",
+      "title": "Local geological expertise"
+    },
+    {
+      "_key": "w3",
+      "body": "Our clients benefit from direct contact with a local team, involved at every stage of the project.",
+      "title": "Local & responsive"
+    },
+    {
+      "_key": "w4",
+      "body": "Whether you are a homeowner, developer, company, architect or public institution, we develop tailor-made solutions.",
+      "title": "Flexible solutions"
+    }
+  ],
+  "whyTitle": "Why WellDoneDrill?"
+}

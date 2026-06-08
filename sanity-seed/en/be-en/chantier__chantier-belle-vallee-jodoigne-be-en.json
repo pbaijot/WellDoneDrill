@@ -1,0 +1,27 @@
+{
+  "_id": "chantier-belle-vallee-jodoigne-be-en",
+  "_type": "chantier",
+  "client": "Matexi / Karno",
+  "country": "BE",
+  "depth": 140,
+  "description": "The first residential geothermal heat network in Wallonia. 39 geothermal boreholes of 140 m drilled for Matexi, supplying 140 homes via a one-kilometre underground network. Inaugurated in November 2024 in the presence of ministers Philippe Henry and Willy Borsus, this pioneering project was carried out in partnership with Karno, an expert in decarbonised networks.",
+  "featured": true,
+  "locale": "be-en",
+  "location": "Jodoigne",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-0ba830ebafb4b860654a39f9b337734a40ad3553-1600x1039-webp",
+      "_type": "reference"
+    }
+  },
+  "province": "brabant-wallon",
+  "sector": "residentiel",
+  "slug": {
+    "_type": "slug",
+    "current": "belle-vallee-jodoigne"
+  },
+  "title": "Belle Vallée — Jodoigne",
+  "type": "fermee",
+  "year": 2024
+}

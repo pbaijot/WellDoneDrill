@@ -1,0 +1,27 @@
+{
+  "_id": "chantier-megafactory-aerospacelab-charleroi-be-en",
+  "_type": "chantier",
+  "client": "Aerospacelab",
+  "country": "BE",
+  "depth": 140,
+  "description": "One of the largest geothermal borehole fields in Wallonia: 93 vertical boreholes of 140 m for the Aerospacelab Megafactory in Charleroi. On site from February 2023 to the end of 2025. This major project confirms WellDoneDrill's expertise in large-scale industrial works.",
+  "featured": true,
+  "locale": "be-en",
+  "location": "Charleroi",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-00bee5d61a5334fe23c855a30c884669db0283f1-5168x3443-jpg",
+      "_type": "reference"
+    }
+  },
+  "province": "hainaut",
+  "sector": "industrie",
+  "slug": {
+    "_type": "slug",
+    "current": "megafactory-aerospacelab-charleroi"
+  },
+  "title": "Aerospacelab Megafactory — Charleroi",
+  "type": "fermee",
+  "year": 2023
+}

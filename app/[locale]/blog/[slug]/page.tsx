@@ -42,11 +42,30 @@ const COPY: Record<AppLocale, {
     ctaButton: 'Angebot anfragen +',
     categories: {geothermie: 'Geothermie', pac: 'Wärmepumpen', reglementation: 'Vorschriften', chantier: 'Baustelle'},
   },
+  'be-en': {
+    back: '← Back to the news',
+    minRead: 'min read',
+    ctaButton: 'Request a quote +',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+  },
+  'fr-en': {
+    back: '← Back to the news',
+    minRead: 'min read',
+    ctaButton: 'Request a quote +',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+  },
+  'lu-en': {
+    back: '← Back to the news',
+    minRead: 'min read',
+    ctaButton: 'Request a quote +',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+  },
 }
 
 const INTL_LOCALE: Record<AppLocale, string> = {
-  'be-fr': 'fr-BE', 'be-nl': 'nl-BE',
-  'fr-fr': 'fr-FR', 'lu-fr': 'fr-LU', 'lu-de': 'de-LU',
+  'be-fr': 'fr-BE', 'be-nl': 'nl-BE', 'be-en': 'en-BE',
+  'fr-fr': 'fr-FR', 'fr-en': 'en-FR',
+  'lu-fr': 'fr-LU', 'lu-de': 'de-LU', 'lu-en': 'en-LU',
 }
 
 function formatDate(value?: string, intlLocale = 'fr-BE') {

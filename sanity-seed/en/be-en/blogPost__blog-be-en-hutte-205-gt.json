@@ -1,0 +1,115 @@
+{
+  "_id": "blog-be-en-hutte-205-gt",
+  "_type": "blogPost",
+  "author": "WellDoneDrill",
+  "body": [
+    {
+      "_key": "b1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b1s1",
+          "_type": "span",
+          "text": "On a geothermal project, the rig is not just a means of execution. It influences the pace, precision, safety and the ability to react to the real conditions encountered in the ground."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "b2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b2s1",
+          "_type": "span",
+          "text": "The rig isn't everything, but it matters enormously"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "b3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b3s1",
+          "_type": "span",
+          "text": "A good rig makes it possible to better control progress, maintain a high standard on site and limit unnecessary lost time. It also gives more room to adapt when conditions change."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "b4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b4s1",
+          "_type": "span",
+          "text": "Why this tool is relevant for geothermal energy"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "b5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b5s1",
+          "_type": "span",
+          "text": "On vertical geothermal projects, repeatability, stability and productivity are essential. A well-sized, well-operated rig contributes directly to the overall quality of the final result."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "b6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "b6s1",
+          "_type": "span",
+          "text": "At WDD, the equipment fleet is designed to deliver with consistency, method and productivity."
+        }
+      ],
+      "style": "blockquote"
+    }
+  ],
+  "category": "geothermie",
+  "ctaText": "We work on residential, commercial, public and real-estate projects with a structured approach to geothermal drilling.",
+  "ctaTitle": "Looking for a solid drilling partner?",
+  "excerpt": "The choice of rig directly influences the quality of execution, the productivity of the project and the ability to adapt to ground conditions.",
+  "featured": false,
+  "intro": [
+    {
+      "_key": "i2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "i2s1",
+          "_type": "span",
+          "text": "In geothermal drilling, the rig is not just a technical detail. It influences the pace, consistency and safety of the project and the team's ability to react well to the real ground conditions."
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "locale": "be-en",
+  "mainImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-e13f87b0d8a34b611f495bfc5c752658f306eb21-3840x2160-jpg",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2026-01-20T09:00:00Z",
+  "readingTime": 4,
+  "seoDescription": "Discover why the choice of rig influences the quality, productivity and safety of a geothermal drilling project.",
+  "seoTitle": "The Hütte 205 GT for geothermal drilling | WellDoneDrill",
+  "slug": {
+    "_type": "slug",
+    "current": "hutte-205-gt-forage-geothermique"
+  },
+  "title": "The Hütte 205 GT: a rig designed for geothermal drilling"
+}

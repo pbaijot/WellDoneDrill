@@ -60,11 +60,39 @@ const COPY: Record<AppLocale, {
     categories: {geothermie: 'Geothermie', pac: 'Wärmepumpen', reglementation: 'Vorschriften', chantier: 'Baustelle'},
     minRead: 'Min',
   },
+  'be-en': {
+    eyebrow: 'News',
+    title: 'The WellDoneDrill blog',
+    desc: "Articles, project insights, geothermal education and technical points to better understand geothermal drilling.",
+    empty: 'No articles published for this version of the site yet.',
+    readMore: 'Read the article →',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+    minRead: 'min',
+  },
+  'fr-en': {
+    eyebrow: 'News',
+    title: 'The WellDoneDrill blog',
+    desc: "Articles, project insights, geothermal education and technical points to better understand geothermal drilling.",
+    empty: 'No articles published for this version of the site yet.',
+    readMore: 'Read the article →',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+    minRead: 'min',
+  },
+  'lu-en': {
+    eyebrow: 'News',
+    title: 'The WellDoneDrill blog',
+    desc: "Articles, project insights, geothermal education and technical points to better understand geothermal drilling.",
+    empty: 'No articles published for this version of the site yet.',
+    readMore: 'Read the article →',
+    categories: {geothermie: 'Geothermal energy', pac: 'Heat pumps', reglementation: 'Regulations', chantier: 'Project'},
+    minRead: 'min',
+  },
 }
 
 const INTL_LOCALE: Record<AppLocale, string> = {
-  'be-fr': 'fr-BE', 'be-nl': 'nl-BE',
-  'fr-fr': 'fr-FR', 'lu-fr': 'fr-LU', 'lu-de': 'de-LU',
+  'be-fr': 'fr-BE', 'be-nl': 'nl-BE', 'be-en': 'en-BE',
+  'fr-fr': 'fr-FR', 'fr-en': 'en-FR',
+  'lu-fr': 'fr-LU', 'lu-de': 'de-LU', 'lu-en': 'en-LU',
 }
 
 function formatDate(value?: string, intlLocale = 'fr-BE') {

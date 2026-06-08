@@ -1,0 +1,17 @@
+{
+  "_id": "demarrerPage-be-en",
+  "_type": "demarrerPage",
+  "email": "info@welldonedrill.be",
+  "formHeading": "Tell us about your project",
+  "heroEyebrow": "Start your project",
+  "heroSubtitle": "Fill in the form below. Our team analyses your request and replies within 48h with a free initial assessment.",
+  "heroTitle": "Your geothermal project\nstarts here.",
+  "locale": "be-en",
+  "phone": "+32 478 75 36 79",
+  "seoDescription": "Launch your geothermal project with WellDoneDrill. Free feasibility study, reply within 48h.",
+  "seoTitle": "Start your geothermal project | WellDoneDrill",
+  "successBody": "Our team will get back to you within 48h with an initial feasibility analysis. In the meantime, feel free to call us directly.",
+  "successTitle": "Thank you, we have received your message!",
+  "teamCaption": "The WellDoneDrill team — here to help",
+  "teamLabel": "Our team"
+}

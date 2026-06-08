@@ -134,6 +134,42 @@ const SCHEME_TEXT: Record<string, {
       {label: 'Ihr Gebäude',     sub: 'Heizung · Wasser · Kühlung'},
     ],
   },
+  'be-en': {
+    fermee: [
+      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
+    ],
+    ouverte: [
+      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your building', sub: 'Heating · Water · Cooling'},
+    ],
+  },
+  'fr-en': {
+    fermee: [
+      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
+    ],
+    ouverte: [
+      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your building', sub: 'Heating · Water · Cooling'},
+    ],
+  },
+  'lu-en': {
+    fermee: [
+      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
+    ],
+    ouverte: [
+      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
+      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
+      {label: 'Your building', sub: 'Heating · Water · Cooling'},
+    ],
+  },
 }
 
 const FR_SCHEME = {

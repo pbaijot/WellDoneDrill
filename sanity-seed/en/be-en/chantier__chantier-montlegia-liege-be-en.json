@@ -1,0 +1,26 @@
+{
+  "_id": "chantier-montlegia-liege-be-en",
+  "_type": "chantier",
+  "country": "BE",
+  "depth": 140,
+  "description": "Three residential buildings on the former Patience et Beaujonc mining site in Liège, heated solely by geothermal energy, with no gas connection. 9 boreholes at 140 m and a thermal response test (TRT) completed.",
+  "featured": true,
+  "locale": "be-en",
+  "location": "Liège",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-272f36710514a30a0a1f849465e1ba81e602897d-1800x1200-jpg",
+      "_type": "reference"
+    }
+  },
+  "province": "liege",
+  "sector": "residentiel",
+  "slug": {
+    "_type": "slug",
+    "current": "montlegia-liege"
+  },
+  "title": "MontLégia — Liège",
+  "type": "fermee",
+  "year": 2024
+}

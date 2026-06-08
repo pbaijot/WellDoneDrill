@@ -9,9 +9,12 @@ import {urlFor} from '@/src/lib/sanityImage'
 const ODOO_FORM_URL: Record<AppLocale, string> = {
   'be-fr': 'https://welldonedrill.odoo.com/formulaire',
   'be-nl': 'https://welldonedrill.odoo.com/nl/formulaire',
+  'be-en': 'https://welldonedrill.odoo.com/formulaire',
   'fr-fr': 'https://welldonedrill.odoo.com/formulaire',
+  'fr-en': 'https://welldonedrill.odoo.com/formulaire',
   'lu-fr': 'https://welldonedrill.odoo.com/formulaire',
   'lu-de': 'https://welldonedrill.odoo.com/formulaire',
+  'lu-en': 'https://welldonedrill.odoo.com/formulaire',
 }
 
 type Segment = 'particulier' | 'chauffagiste' | 'architecte' | 'entrepreneur' | null
@@ -111,6 +114,54 @@ const COPY: Record<AppLocale, LocaleCopy> = {
     statDelay: '48 Std.',  statDelayLabel: 'Antwortzeit',
     statFee: '0 €',        statFeeLabel: 'Unverbindlich',
     selectPrompt: 'Wählen Sie links Ihr Profil aus, um das Formular zu öffnen.',
+  },
+  'be-en': {
+    heroEyebrow: 'Start your project',
+    heroTitle: 'Your geothermal project starts here.',
+    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    formHeading: 'You are…',
+    segments: [
+      {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
+      {label: 'HVAC installer',         sub: 'Installer · WDD partner'},
+      {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
+      {label: 'Developer',              sub: 'Property developer, investor'},
+    ],
+    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statDelay: '48h', statDelayLabel: 'Response time',
+    statFee: '€0',    statFeeLabel: 'No obligation',
+    selectPrompt: 'Select your profile on the left to open the form.',
+  },
+  'fr-en': {
+    heroEyebrow: 'Start your project',
+    heroTitle: 'Your geothermal project starts here.',
+    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    formHeading: 'You are…',
+    segments: [
+      {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
+      {label: 'HVAC installer',         sub: 'Installer · WDD partner'},
+      {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
+      {label: 'Developer',              sub: 'Property developer, investor'},
+    ],
+    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statDelay: '48h', statDelayLabel: 'Response time',
+    statFee: '€0',    statFeeLabel: 'No obligation',
+    selectPrompt: 'Select your profile on the left to open the form.',
+  },
+  'lu-en': {
+    heroEyebrow: 'Start your project',
+    heroTitle: 'Your geothermal project starts here.',
+    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    formHeading: 'You are…',
+    segments: [
+      {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
+      {label: 'HVAC installer',         sub: 'Installer · WDD partner'},
+      {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
+      {label: 'Developer',              sub: 'Property developer, investor'},
+    ],
+    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statDelay: '48h', statDelayLabel: 'Response time',
+    statFee: '€0',    statFeeLabel: 'No obligation',
+    selectPrompt: 'Select your profile on the left to open the form.',
   },
 }
 

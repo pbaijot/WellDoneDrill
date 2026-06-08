@@ -1,0 +1,57 @@
+{
+  "_id": "sitePage-cookies-lu-en",
+  "_type": "sitePage",
+  "heroEyebrow": "Cookies & Tracking",
+  "heroSubtitle": "Which cookies we use, why, and how to manage your preferences.",
+  "heroTitle": "Cookie policy",
+  "locale": "lu-en",
+  "routeKey": "cookies",
+  "sections": [
+    {
+      "_key": "definition",
+      "_type": "section",
+      "body": "A cookie is a small text file placed on your device when you visit our site. In accordance with the GDPR and the recommendations of the Luxembourg CNPD, no non-essential cookie is set without your prior, explicit consent.",
+      "title": "What is a cookie?"
+    },
+    {
+      "_key": "essentiels",
+      "_type": "section",
+      "body": "These cookies are essential for the site to function and cannot be disabled.",
+      "items": [
+        "Management of your session and language preferences",
+        "Storage of your cookie consent choices (duration: 12 months)",
+        "Security and fraud prevention"
+      ],
+      "title": "Strictly necessary cookies"
+    },
+    {
+      "_key": "analytiques",
+      "_type": "section",
+      "body": "These cookies allow the site's traffic to be measured. They are only set with your prior consent.",
+      "items": [
+        "Google Analytics 4 (Google LLC, United States): audience measurement — duration: 13 months",
+        "Google Tag Manager (Google LLC, United States): management of measurement tags"
+      ],
+      "title": "Analytics cookies — consent required"
+    },
+    {
+      "_key": "publicitaires",
+      "_type": "section",
+      "body": "These cookies allow personalised ads to be shown. They are only set with your prior consent.",
+      "items": [
+        "Meta Pixel (Meta Platforms Ireland Ltd): retargeting on Facebook and Instagram",
+        "LinkedIn Insight Tag (LinkedIn Ireland Unlimited Company): retargeting on LinkedIn"
+      ],
+      "title": "Advertising cookies — consent required"
+    },
+    {
+      "_key": "gestion",
+      "_type": "section",
+      "body": "You can change your cookie preferences at any time using the cookie management button available at the bottom of every page.\n\nTo learn more about your rights: www.cnpd.lu",
+      "title": "Manage your preferences"
+    }
+  ],
+  "seoDescription": "WellDoneDrill's cookie management policy: essential, analytics (GA4) and advertising (Meta, LinkedIn) cookies. Strict opt-in consent.",
+  "seoTitle": "Cookie policy — WellDoneDrill",
+  "title": "Cookie policy"
+}

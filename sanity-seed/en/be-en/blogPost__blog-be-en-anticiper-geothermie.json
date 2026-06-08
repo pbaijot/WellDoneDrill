@@ -1,0 +1,115 @@
+{
+  "_id": "blog-be-en-anticiper-geothermie",
+  "_type": "blogPost",
+  "author": "WellDoneDrill",
+  "body": [
+    {
+      "_key": "c1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c1s1",
+          "_type": "span",
+          "text": "Geothermal energy works all the better when it is planned early. When introduced at the design phase, it can be integrated coherently with the architecture, the thermal needs and the site constraints."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "c2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c2s1",
+          "_type": "span",
+          "text": "Better sizing"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "c3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c3s1",
+          "_type": "span",
+          "text": "Planning ahead avoids the extra costs of late adjustments. Locations, capacities, the borehole field and technical integration can be studied more calmly and more intelligently."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "c4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c4s1",
+          "_type": "span",
+          "text": "Better project consistency"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "c5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c5s1",
+          "_type": "span",
+          "text": "When geothermal energy comes too late, it often becomes an option that is endured. When it is considered early, it becomes a genuine design choice and a lever for overall performance."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "c6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "c6s1",
+          "_type": "span",
+          "text": "The right time to talk about geothermal energy is simple: as early as possible."
+        }
+      ],
+      "style": "blockquote"
+    }
+  ],
+  "category": "geothermie",
+  "ctaText": "We can help you frame the feasibility, the drilling needs and the right technical assumptions from the very start of the project.",
+  "ctaTitle": "Want to integrate geothermal energy right now?",
+  "excerpt": "The earlier geothermal energy is considered in a project, the more it is possible to optimise the sizing, the budget and the technical integration.",
+  "featured": false,
+  "intro": [
+    {
+      "_key": "i3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "i3s1",
+          "_type": "span",
+          "text": "Geothermal energy delivers the best results when it is planned early. When introduced at the design stage, it can be intelligently integrated into the architecture, the budget and the overall energy system."
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "locale": "be-en",
+  "mainImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-b3eb844582416586d52c741151e74d5b24b2d428-6495x4335-jpg",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2026-01-08T09:00:00Z",
+  "readingTime": 5,
+  "seoDescription": "Planning for geothermal energy from the design stage makes it possible to optimise the sizing, budget and technical integration of the project.",
+  "seoTitle": "Why plan for geothermal energy from the design stage | WellDoneDrill",
+  "slug": {
+    "_type": "slug",
+    "current": "anticiper-geothermie-conception-projet"
+  },
+  "title": "Why plan for geothermal energy from the design stage of the project"
+}

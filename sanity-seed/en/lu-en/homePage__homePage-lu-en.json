@@ -1,0 +1,265 @@
+{
+  "_id": "homePage-lu-en",
+  "_type": "homePage",
+  "advantages": {
+    "highlight": "geothermal energy",
+    "introText": "Geothermal energy is the reference solution for sustainable, high-performance thermal comfort. Suited to small projects as well as large heat networks, it offers reliable, local and efficient energy.",
+    "items": [
+      {
+        "_key": "adv1",
+        "description": "Geothermal energy captures the energy available in the ground to heat and cool your building with very high efficiency. You reduce your energy costs for the long term.",
+        "icon": "EUR",
+        "number": "01",
+        "title": "Reduce your bills"
+      },
+      {
+        "_key": "adv2",
+        "description": "Geothermal energy is a local, renewable and discreet solution. It sharply reduces heating-related emissions and gradually phases out fossil fuels.",
+        "icon": "CO2",
+        "number": "02",
+        "title": "Lower your carbon footprint"
+      },
+      {
+        "_key": "adv3",
+        "description": "Stable temperature through heating and cooling, an invisible solution at the surface and lasting performance: geothermal energy improves comfort in summer and winter alike.",
+        "icon": "C",
+        "number": "03",
+        "title": "Improve your comfort"
+      }
+    ],
+    "title": "Switch to",
+    "video": {
+      "_type": "file",
+      "asset": {
+        "_ref": "file-0605e4d22374eb0faf81f545b4ce6c118f990871-mp4",
+        "_type": "reference"
+      }
+    }
+  },
+  "audiences": {
+    "particular": {
+      "buttonLabel": "Request your quote",
+      "description": "Building or renovating? Geothermal energy is a sustainable solution to heat and cool your home with excellent comfort and strong long-term cost stability.",
+      "eyebrow": "For homeowners",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-d6cc3a8bccc5822cd3fe31a0f3279cb2242d3828-1400x935-webp",
+          "_type": "reference"
+        }
+      },
+      "title": "Geothermal energy for your home"
+    },
+    "professional": {
+      "buttonLabel": "Submit my project",
+      "description": "Developers, engineering firms, architects, installers, public bodies: we work on multi-unit residential, commercial, industrial and institutional projects.",
+      "eyebrow": "For businesses",
+      "image": {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-74263dcea090e81323faef24a331ab78ddfd33e8-1400x869-webp",
+          "_type": "reference"
+        }
+      },
+      "title": "Geothermal energy for large projects"
+    }
+  },
+  "blog": {
+    "highlight": "about geothermal energy",
+    "readMoreLabel": "Read more",
+    "title": "Our latest news"
+  },
+  "contactCta": {
+    "stat1Label": "Estimate your project costs",
+    "stat1Value": "Instant quote",
+    "stat2Label": "Integrate geothermal energy into your development",
+    "stat2Value": "Become a partner",
+    "subtitle": "We handle every stage, from permit to drilling. One team from A to Z.\nGet your quote immediately, with no obligation.",
+    "title": "Your project starts here."
+  },
+  "faqs": {
+    "items": [
+      {
+        "_key": "d1e94e210f11",
+        "answer": "Geothermal drilling consists of drilling vertical boreholes to install closed-loop geothermal probes. These probes, made from durable synthetic materials, contain a heat-transfer fluid (water or a mixture of water and monopropylene glycol) that circulates in a closed loop. This fluid extracts heat from the ground and transfers it to your heat pump system. The length and depth of the boreholes are calculated when sizing the system, in order to optimise energy efficiency.",
+        "question": "What does closed-loop geothermal drilling involve?"
+      },
+      {
+        "_key": "68a460ab225e",
+        "answer": "Vertical geothermal boreholes require little space and are not affected by weather conditions. Indeed, beyond a certain depth the ground temperature stays constant. The extracted heat therefore remains stable in every season, even in severe cold. Moreover, because they use a renewable energy source, these systems are economical and environmentally friendly.",
+        "question": "What are the benefits of vertical geothermal boreholes?"
+      },
+      {
+        "_key": "a6dc05fdce96",
+        "answer": "In addition to heating your home, geothermal energy can also cool your spaces during the summer months, thanks to the principle of natural or passive cooling. This process uses the constant temperature of the ground to lower your building's temperature without intensive use of your heat pump. The indoor heat of your home is captured and transferred to the cooler ground, cooling your rooms.",
+        "question": "How does closed-loop geothermal cooling of a home work?"
+      },
+      {
+        "_key": "ccbdecd6e3e8",
+        "answer": "A traditional air conditioning system consumes a lot of electricity and uses chemical refrigerants. Geothermal cooling, by contrast, is a natural and silent solution that reduces your energy consumption while ensuring optimal thermal comfort. This environmentally friendly approach lets you keep a pleasant temperature at home even during heatwaves.",
+        "question": "What are the benefits of closed-loop geothermal cooling?"
+      },
+      {
+        "_key": "1f45999d667d",
+        "answer": "The depth of the geothermal borehole is defined when sizing your installation. The closed-loop geothermal boreholes drilled by WellDoneDrill typically reach a depth between 100 and 200 metres, depending on your building's energy needs and the local geology.",
+        "question": "What is the depth of a closed-loop geothermal borehole?"
+      },
+      {
+        "_key": "85211f74bc9b",
+        "answer": "A geothermal heat pump offers excellent energy efficiency: for 1 kWh of electricity consumed, it can produce on average 4 to 6 kWh of heat. This means that up to 80% of the energy used to heat your home comes for free from the ground, while only 20% comes from the electricity needed to run the system.",
+        "question": "What is the efficiency of a geothermal heat pump?"
+      }
+    ],
+    "title": "The ground, an inexhaustible source of energy"
+  },
+  "hero": {
+    "ctaLabel": "Request a free quote.",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1757c4251c2134bebf0d311598fcfea48cbd1770-1920x1076-webp",
+        "_type": "reference"
+      }
+    },
+    "secondaryLabel": "Discover our services",
+    "subtitle": "We carry out your closed-loop and open-loop geothermal drilling for homes, commercial buildings, public projects and real-estate projects in Luxembourg and the Greater Region. With WellDoneDrill, geothermal energy becomes a concrete, reliable and profitable solution.",
+    "title": "Geothermal drilling expert in Luxembourg"
+  },
+  "locale": "lu-en",
+  "partners": {
+    "logos": [
+      {
+        "_key": "f2ac3e344171",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-fb0ef43344b3b5532ea7dacd9632479e1777c55d-325x217-webp",
+            "_type": "reference"
+          }
+        },
+        "name": "Matexi"
+      },
+      {
+        "_key": "193f53f61d86",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-3d96504a25aee5973dd586653bc76c09c72dc2aa-350x300-png",
+            "_type": "reference"
+          }
+        },
+        "name": "Armstrong International"
+      },
+      {
+        "_key": "51ad4ce98d27",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-b785bf238fff3f409a787c51bb3682be29a4c48b-2000x874-png",
+            "_type": "reference"
+          }
+        },
+        "name": "Aerospacelab"
+      },
+      {
+        "_key": "9f3c6735cdba",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-a46c28f73efa3d00266effbe63a52169c844d4ba-791x791-jpg",
+            "_type": "reference"
+          }
+        },
+        "name": "Karno"
+      },
+      {
+        "_key": "d5e4b0cd0051",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-01ea633fe5c7dc405ce818da30d880094437b739-312x207-svg",
+            "_type": "reference"
+          }
+        },
+        "name": "BW invest"
+      },
+      {
+        "_key": "52de5b8a358f",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-73c318cbdc4a9aceaf6a05cd3b7b6a8dfe1fa050-280x370-png",
+            "_type": "reference"
+          }
+        },
+        "name": "La Défense"
+      },
+      {
+        "_key": "9e4e374f9e2c",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-26ff47ce486359714fde1e2d89d087d703f7432f-225x225-png",
+            "_type": "reference"
+          }
+        },
+        "name": "Thomas & Piron"
+      },
+      {
+        "_key": "c1a31c99f135",
+        "_type": "object",
+        "logo": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-08e15b717c6675dbba33c64adfb9fba5ec7528f7-960x503-webp",
+            "_type": "reference"
+          }
+        },
+        "name": "Léonidas"
+      }
+    ],
+    "title": "They trust us"
+  },
+  "services": {
+    "highlight": "to your advantage.",
+    "items": [
+      {
+        "_key": "svc1",
+        "badge": "Closed-loop geothermal",
+        "description": "We drill vertical boreholes for probe-based systems, suited to single homes as well as large projects. It is the most common solution for heating and cooling projects.",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-1757c4251c2134bebf0d311598fcfea48cbd1770-1920x1076-webp",
+            "_type": "reference"
+          }
+        },
+        "routeKey": "geo_fermee",
+        "title": "Drilling of vertical geothermal boreholes"
+      },
+      {
+        "_key": "svc2",
+        "badge": "Open-loop geothermal",
+        "description": "We drill the abstraction and reinjection boreholes needed for open groundwater systems, when the hydrogeological context allows and the solution is relevant.",
+        "image": {
+          "_type": "image",
+          "asset": {
+            "_ref": "image-a44977a450745c905a0aa8853c06abba4352671b-3024x4032-jpg",
+            "_type": "reference"
+          }
+        },
+        "routeKey": "geo_ouverte",
+        "title": "Drilling for groundwater geothermal energy"
+      }
+    ],
+    "subtitle": "Geothermal energy harnesses the natural, stable heat of the earth to heat and cool your buildings. Two complementary techniques adapt to every project.",
+    "title": "The energy of the earth"
+  }
+}

@@ -15,9 +15,12 @@ import {
 const LOCALES = [
   { code: 'be-fr', flag: 'BE', label: 'Belgique - Français' },
   { code: 'be-nl', flag: 'BE', label: 'België - Nederlands' },
+  { code: 'be-en', flag: 'BE', label: 'Belgium - English' },
   { code: 'fr-fr', flag: 'FR', label: 'France - Français' },
+  { code: 'fr-en', flag: 'FR', label: 'France - English' },
   { code: 'lu-fr', flag: 'LU', label: 'Luxembourg - Français' },
   { code: 'lu-de', flag: 'LU', label: 'Luxemburg - Deutsch' },
+  { code: 'lu-en', flag: 'LU', label: 'Luxembourg - English' },
 ] as const
 
 const FLAGS: Record<'BE' | 'FR' | 'LU', string> = {

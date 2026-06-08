@@ -1,0 +1,183 @@
+{
+  "_id": "geoPage-lu-en-geo_ouverte",
+  "_type": "geoPage",
+  "advantages": [
+    {
+      "_key": "a0",
+      "body": "A lower energy bill thanks to a free and renewable heat source.",
+      "title": "Profitable investment"
+    },
+    {
+      "_key": "a1",
+      "body": "An environmentally friendly solution that reduces your carbon footprint.",
+      "title": "Responsible installation"
+    },
+    {
+      "_key": "a2",
+      "body": "No more oil tanks or pellet storage — geothermal energy works without cluttering your home.",
+      "title": "Small footprint"
+    },
+    {
+      "_key": "a3",
+      "body": "No combustion noise or intense ventilation, for optimal acoustic comfort.",
+      "title": "Silent system"
+    },
+    {
+      "_key": "a4",
+      "body": "Components designed to last for decades without loss of efficiency.",
+      "title": "Durable equipment"
+    },
+    {
+      "_key": "a5",
+      "body": "A turnkey solution for heating and cooling that requires very little maintenance.",
+      "title": "Minimal maintenance"
+    },
+    {
+      "_key": "a6",
+      "body": "With a COP far higher than that of an air-source heat pump, your system produces several times more energy than it consumes.",
+      "title": "Unbeatable efficiency"
+    },
+    {
+      "_key": "a7",
+      "body": "The heat extracted from the ground in winter is reused in summer to cool your building, with no air conditioning costs.",
+      "title": "Heating and cooling"
+    }
+  ],
+  "advantagesCtaLabel": "Start my project",
+  "advantagesTitle": "The benefits of geothermal energy",
+  "faqCtaLabel": "Contact us",
+  "faqIntroBody": "When available under good conditions, groundwater is an excellent energy carrier for demanding projects with high thermal needs and a focus on sustainable performance.",
+  "faqIntroTitle": "Groundwater, a natural energy resource",
+  "faqSubtitle": "Don't see your question here? Contact our team directly.",
+  "faqTitle": "Frequently asked questions about open-loop geothermal",
+  "faqs": [
+    {
+      "_key": "f1",
+      "answer": "Open-loop geothermal uses groundwater directly, whereas closed-loop geothermal operates with a sealed circuit in vertical boreholes.",
+      "question": "What is the difference with closed-loop geothermal?"
+    },
+    {
+      "_key": "f2",
+      "answer": "It is particularly relevant for buildings and complexes with high thermal needs: commercial, public, industrial, multi-unit residential or networks.",
+      "question": "Which projects are suitable?"
+    },
+    {
+      "_key": "f3",
+      "answer": "An accessible resource, sufficient flow, viable reinjection conditions and a manageable regulatory framework.",
+      "question": "What feasibility conditions need to be checked?"
+    },
+    {
+      "_key": "f4",
+      "answer": "High efficiency, strong capacity on ambitious projects, and a low-carbon solution for both heating and cooling.",
+      "question": "What are the main benefits?"
+    }
+  ],
+  "finalCtaLabel": "Yes, I'll submit my project",
+  "finalCtaTitle": "Want to decarbonise your heat with open-loop geothermal energy?",
+  "heroCtaLabel": "Contact us",
+  "heroLine1": "Groundwater, a source of energy.",
+  "heroLine2": "Capture.",
+  "heroLine3": "Reinject.",
+  "heroPanelItems": [
+    {
+      "_key": "p0",
+      "label": "Coefficient of performance",
+      "sub": "5× more efficient than gas",
+      "value": "COP 5–7"
+    },
+    {
+      "_key": "p1",
+      "label": "Annual savings",
+      "sub": "per converted household",
+      "value": "~1 500 €"
+    },
+    {
+      "_key": "p2",
+      "label": "Lifespan",
+      "sub": "no major maintenance",
+      "value": "50 years"
+    }
+  ],
+  "heroSecondaryLabel": "See our projects",
+  "heroStats": [
+    {
+      "_key": "s0",
+      "label": "Completed projects",
+      "value": "500+"
+    },
+    {
+      "_key": "s1",
+      "label": "Of expertise",
+      "value": "20 years"
+    },
+    {
+      "_key": "s2",
+      "label": "Performance",
+      "value": "COP 5–7"
+    }
+  ],
+  "heroSubtitle": "Choose open-loop geothermal energy with WellDoneDrill and enjoy a highly energy-efficient heating and cooling system, suited to medium and large projects in Luxembourg and the Greater Region.",
+  "howBody": "Groundwater geothermal works with two separate structures: an abstraction well and a reinjection well. Groundwater is pumped from the aquifer — naturally at 10–14 °C — and its thermal energy is extracted through heat exchange before being reinjected into the same aquifer, far enough away to avoid any thermal short-circuit.\n\nThe heat pump boosts the captured energy to produce hot water at 35–70 °C depending on the system, with COPs often above 5. The water undergoes no chemical alteration: only thermal energy is taken, preserving the aquifer's hydrogeological balance over the long term.",
+  "howCtaLabel": "Start my project →",
+  "howIntro": "Open-loop geothermal relies on the actual circulation of groundwater. It therefore requires more than just drilling: it also requires a good reading of the aquifer, the flow rates and the regulatory context.",
+  "howTitle": "How does open-loop geothermal energy work?",
+  "introBody1": "Open-loop geothermal uses groundwater as an energy carrier. The water is pumped, passes through the energy system, then is reinjected into the aquifer while preserving its balance.",
+  "introBody2": "This solution is particularly relevant when thermal needs are high and the hydrogeological context allows a robust, well-designed and well-managed project.",
+  "introCtaLabel": "Request a quote",
+  "introTitle": "Open-loop geothermal: harness the thermal energy of groundwater",
+  "locale": "lu-en",
+  "particularBody": "Building or renovating? Geothermal energy is a sustainable solution to heat and cool your home with excellent comfort and strong long-term cost stability.",
+  "particularCta": "Request your quote",
+  "particularEyebrow": "For homeowners",
+  "particularImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-d6cc3a8bccc5822cd3fe31a0f3279cb2242d3828-1400x935-webp",
+      "_type": "reference"
+    }
+  },
+  "particularTitle": "Geothermal energy for your home",
+  "proBody": "Developers, engineering firms, architects, installers, public bodies: we work on multi-unit residential, commercial, industrial and institutional projects.",
+  "proCta": "Submit my project",
+  "proEyebrow": "For businesses",
+  "proImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-74263dcea090e81323faef24a331ab78ddfd33e8-1400x869-webp",
+      "_type": "reference"
+    }
+  },
+  "proTitle": "Geothermal energy for large projects",
+  "projectCtaLabel": "Tell us about your project",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "body": "We analyse the aquifer, the potential flow rates, the water quality and the site constraints.",
+      "title": "Hydrogeological study and quote"
+    },
+    {
+      "_key": "p2",
+      "body": "Dialogue with the installer or project team helps define the right technical architecture.",
+      "title": "Coordination with the installer"
+    },
+    {
+      "_key": "p3",
+      "body": "The system is confirmed based on the actual needs, the building context and the resource conditions.",
+      "title": "Validation and sizing"
+    },
+    {
+      "_key": "p4",
+      "body": "The structures are built and tested with a precise execution logic, tailored to the project and the site.",
+      "title": "Abstraction and reinjection boreholes"
+    },
+    {
+      "_key": "p5",
+      "body": "Once the installation is complete, the building benefits from a high-performance heating and cooling solution.",
+      "title": "Commissioning"
+    }
+  ],
+  "projectTitle": "Your open-loop geothermal project in 5 simple steps",
+  "routeKey": "geo_ouverte",
+  "seoDescription": "Discover open-loop geothermal energy with WellDoneDrill: principle, operation, feasibility and the stages of a groundwater project.",
+  "seoTitle": "Open-loop geothermal | WellDoneDrill Luxembourg"
+}

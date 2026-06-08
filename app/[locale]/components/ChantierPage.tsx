@@ -51,6 +51,30 @@ const LABELS: Record<AppLocale, {
     geo_fermee: 'Geschlossene Geothermie', geo_ouverte: 'Offene Geothermie',
     BE: 'Belgien', FR: 'Frankreich', LU: 'Luxemburg',
   },
+  'be-en': {
+    client: 'Client', sector: 'Sector', type: 'Drilling type',
+    depth: 'Depth', year: 'Year', province: 'Province / Region', country: 'Country',
+    about: 'About this project', noDesc: 'No description available.',
+    video: 'Project video', backLink: '← All projects', references: 'Projects',
+    geo_fermee: 'Closed-loop geothermal', geo_ouverte: 'Open-loop geothermal',
+    BE: 'Belgium', FR: 'France', LU: 'Luxembourg',
+  },
+  'fr-en': {
+    client: 'Client', sector: 'Sector', type: 'Drilling type',
+    depth: 'Depth', year: 'Year', province: 'Region', country: 'Country',
+    about: 'About this project', noDesc: 'No description available.',
+    video: 'Project video', backLink: '← All projects', references: 'Projects',
+    geo_fermee: 'Closed-loop geothermal', geo_ouverte: 'Open-loop geothermal',
+    BE: 'Belgium', FR: 'France', LU: 'Luxembourg',
+  },
+  'lu-en': {
+    client: 'Client', sector: 'Sector', type: 'Drilling type',
+    depth: 'Depth', year: 'Year', province: 'Region', country: 'Country',
+    about: 'About this project', noDesc: 'No description available.',
+    video: 'Project video', backLink: '← All projects', references: 'Projects',
+    geo_fermee: 'Closed-loop geothermal', geo_ouverte: 'Open-loop geothermal',
+    BE: 'Belgium', FR: 'France', LU: 'Luxembourg',
+  },
 }
 
 export default function ChantierPage({locale, chantier}: {locale: AppLocale; chantier: Chantier}) {

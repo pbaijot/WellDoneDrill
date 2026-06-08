@@ -163,6 +163,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 : locale === 'fr-fr' ? 'fr-FR'
                 : locale === 'lu-fr' ? 'fr-LU'
                 : locale === 'lu-de' ? 'de-LU'
+                : locale.endsWith('-en') ? 'en-GB'
                 : 'fr-BE',
                 { year: 'numeric', month: 'long' }
               ).format(new Date(post.publishedAt))
@@ -380,7 +381,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       {/* ═══════════════════════════════════════════════════════════
           SECTION 3 — MAP + RÉALISATIONS (BE only)
       ═══════════════════════════════════════════════════════════ */}
-      {(loc === 'be-fr' || loc === 'be-nl') && (
+      {(loc === 'be-fr' || loc === 'be-nl' || loc === 'be-en') && (
         <HomeMapSection locale={loc} chantiers={chantiers} />
       )}
 

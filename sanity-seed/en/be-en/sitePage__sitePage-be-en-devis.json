@@ -1,0 +1,63 @@
+{
+  "_id": "sitePage-be-en-devis",
+  "_type": "sitePage",
+  "ctaLabel": "Request a quote",
+  "ctaPretitle": "Let's talk about your project",
+  "ctaRouteKey": "devis",
+  "ctaText": "We can help you frame your project, confirm the right technical approach and move towards a clean, clear and structured execution.",
+  "ctaTitle": "Making progress on requesting a geothermal quote?",
+  "faqTitle": "Frequently asked questions",
+  "faqs": [
+    {
+      "_key": "devis-f1",
+      "answer": "Every project must be assessed according to the context, the building type, the site constraints and the energy goals. A good decision always starts with serious analysis.",
+      "question": "Is requesting a geothermal quote suitable for every project?"
+    },
+    {
+      "_key": "devis-f2",
+      "answer": "As early as possible. The earlier the thinking starts, the easier it is to optimise the sizing, the budget and the technical integration.",
+      "question": "When should this topic be addressed in the project?"
+    },
+    {
+      "_key": "devis-f3",
+      "answer": "WellDoneDrill brings a hands-on approach, genuine specialisation in geothermal drilling and a commitment to making the subject concrete, clear and actionable.",
+      "question": "What is the benefit of working with WellDoneDrill?"
+    }
+  ],
+  "heroEyebrow": "WellDoneDrill",
+  "heroSubtitle": "This page presents requesting a geothermal quote within the WellDoneDrill world, with a clear, concrete and results-oriented approach.",
+  "heroTitle": "Request a geothermal quote",
+  "locale": "be-en",
+  "routeKey": "devis",
+  "sections": [
+    {
+      "_key": "devis-s1",
+      "body": "At WellDoneDrill, we believe that the quality of a project starts with a good understanding of the technical context, the site, the energy goals and the constraints of execution. Requesting a geothermal quote must therefore be approached with method, clarity and pragmatism.",
+      "eyebrow": "Understand",
+      "items": [],
+      "title": "What you need to know about requesting a geothermal quote"
+    },
+    {
+      "_key": "devis-s2",
+      "body": "We work with a simple logic: frame the project, check its relevance, execute with rigour and keep clear communication throughout the project.",
+      "eyebrow": "Method",
+      "items": [
+        "Technical analysis and project feasibility",
+        "Approach tailored to the site and building type",
+        "Structured execution of the drilling",
+        "Simple dialogue with the client, the installer and the other stakeholders"
+      ],
+      "title": "How WellDoneDrill supports you"
+    },
+    {
+      "_key": "devis-s3",
+      "body": "The goal is not just to drill. The goal is to contribute to a sustainable, reliable energy solution that is consistent with the overall project. This logic shapes WellDoneDrill's positioning.",
+      "eyebrow": "Result",
+      "items": [],
+      "title": "A performance- and trust-driven approach"
+    }
+  ],
+  "seoDescription": "Discover requesting a geothermal quote with WellDoneDrill: explanations, working method and project support.",
+  "seoTitle": "Request a geothermal quote | WellDoneDrill",
+  "title": "Request a geothermal quote"
+}

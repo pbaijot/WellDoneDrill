@@ -142,6 +142,66 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       altText: 'Offene Geothermie — Grundwasser WellDoneDrill',
     },
   },
+  'be-en': {
+    eyebrow: 'Our techniques',
+    title: 'Geothermal energy,',
+    highlight: 'the energy of the ground',
+    subtitle: "Geothermal energy harnesses the natural, stable heat of the earth to heat and cool your buildings. Two complementary techniques adapt to every project — depending on the geology, available surface area and scale of the needs. WellDoneDrill masters both.",
+    fermee: {
+      title: 'Closed-loop geothermal',
+      description: "Vertical boreholes go down 80–150 m to capture the constant heat of the ground. The captured energy powers your heat pump in summer and winter — no fossil fuels, no direct emissions. The universal solution: suitable for 90% of residential and commercial properties.",
+      cta: 'Discover closed-loop geothermal',
+      image: '/images/foreuse-wide.jpg',
+      altText: 'Closed-loop geothermal drilling — vertical boreholes WellDoneDrill',
+    },
+    ouverte: {
+      title: 'Open-loop geothermal',
+      description: "The groundwater, at a stable temperature all year round, becomes your energy source. One borehole pumps the water, a second reinjects it after heat exchange — a closed circuit, an inexhaustible resource. The ideal technique for large projects, with the highest yields in the sector.",
+      cta: 'Discover open-loop geothermal',
+      image: '/images/fond-terre-2.jpg',
+      altText: 'Open-loop geothermal — groundwater WellDoneDrill',
+    },
+  },
+  'fr-en': {
+    eyebrow: 'Our techniques',
+    title: 'Geothermal energy,',
+    highlight: 'the energy of the ground',
+    subtitle: "Geothermal energy harnesses the natural, stable heat of the earth to heat and cool your buildings. Two complementary techniques adapt to every project — depending on the geology, available surface area and scale of the needs. WellDoneDrill masters both.",
+    fermee: {
+      title: 'Closed-loop geothermal',
+      description: "Vertical boreholes go down 80–150 m to capture the constant heat of the ground. The captured energy powers your heat pump in summer and winter — no fossil fuels, no direct emissions. The universal solution: suitable for 90% of residential and commercial properties.",
+      cta: 'Discover closed-loop geothermal',
+      image: '/images/foreuse-wide.jpg',
+      altText: 'Closed-loop geothermal drilling — vertical boreholes WellDoneDrill',
+    },
+    ouverte: {
+      title: 'Open-loop geothermal',
+      description: "The groundwater, at a stable temperature all year round, becomes your energy source. One borehole pumps the water, a second reinjects it after heat exchange — a closed circuit, an inexhaustible resource. The ideal technique for large projects, with the highest yields in the sector.",
+      cta: 'Discover open-loop geothermal',
+      image: '/images/fond-terre-2.jpg',
+      altText: 'Open-loop geothermal — groundwater WellDoneDrill',
+    },
+  },
+  'lu-en': {
+    eyebrow: 'Our techniques',
+    title: 'Geothermal energy,',
+    highlight: 'the energy of the ground',
+    subtitle: "Geothermal energy harnesses the natural, stable heat of the earth to heat and cool your buildings. Two complementary techniques adapt to every project — depending on the geology, available surface area and scale of the needs. WellDoneDrill masters both.",
+    fermee: {
+      title: 'Closed-loop geothermal',
+      description: "Vertical boreholes go down 80–150 m to capture the constant heat of the ground. The captured energy powers your heat pump in summer and winter — no fossil fuels, no direct emissions. The universal solution: suitable for 90% of residential and commercial properties.",
+      cta: 'Discover closed-loop geothermal',
+      image: '/images/foreuse-wide.jpg',
+      altText: 'Closed-loop geothermal drilling — vertical boreholes WellDoneDrill',
+    },
+    ouverte: {
+      title: 'Open-loop geothermal',
+      description: "The groundwater, at a stable temperature all year round, becomes your energy source. One borehole pumps the water, a second reinjects it after heat exchange — a closed circuit, an inexhaustible resource. The ideal technique for large projects, with the highest yields in the sector.",
+      cta: 'Discover open-loop geothermal',
+      image: '/images/fond-terre-2.jpg',
+      altText: 'Open-loop geothermal — groundwater WellDoneDrill',
+    },
+  },
 }
 
 /* ── Page ───────────────────────────────────────────────────── */

@@ -188,7 +188,7 @@ export default function Footer() {
               onClick={() => window.dispatchEvent(new CustomEvent('wdd:cookie-settings'))}
               className="text-xs font-extralight text-white/20 hover:text-white/50 transition-colors"
             >
-              {locale === 'be-nl' ? 'Cookies beheren' : locale === 'lu-de' ? 'Cookies verwalten' : 'Gérer les cookies'}
+              {locale === 'be-nl' ? 'Cookies beheren' : locale === 'lu-de' ? 'Cookies verwalten' : locale.endsWith('-en') ? 'Manage cookies' : 'Gérer les cookies'}
             </button>
           </div>
         </div>

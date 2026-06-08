@@ -1,0 +1,112 @@
+{
+  "_id": "proPage-be-en-architectes-v2",
+  "_type": "proPage",
+  "faqTitle": "Your questions as an architect.",
+  "faqs": [
+    {
+      "_key": "f1",
+      "answer": "Ideally at the concept stage. The earlier you integrate geothermal energy into the brief, the more optimal the sizing and the more predictable the site constraints.",
+      "question": "At what stage of the project should I contact WDD?"
+    },
+    {
+      "_key": "f2",
+      "answer": "Each borehole occupies about 0.1 m² at ground level. The drilling rig requires a 3 × 6 m access area during the works. No permanent infrastructure is visible once completed.",
+      "question": "What is the ground footprint of the boreholes?"
+    },
+    {
+      "_key": "f3",
+      "answer": "Yes. It is written for that purpose and includes the Belgian and Luxembourg regulatory references, the estimated depth and flow data, and the GPS coordinates for the borehole layout.",
+      "question": "Can the preliminary report be used in a permit application?"
+    },
+    {
+      "_key": "f4",
+      "answer": "Absolutely. WDD provides the geological data and the sizing of the borehole field; the MEP engineering office integrates the heat pump and the distribution network. This coordination is our usual way of working.",
+      "question": "Can WDD work with my MEP engineering office?"
+    }
+  ],
+  "heroCtaLabel": "Request a preliminary study",
+  "heroEyebrow": "Architects & engineering firms",
+  "heroPanelItems": [
+    {
+      "_key": "p1",
+      "label": "Standard EPC result",
+      "sub": "closed-loop geothermal, all projects",
+      "value": "EPC A"
+    },
+    {
+      "_key": "p2",
+      "label": "Preliminary study lead time",
+      "sub": "PDF report delivered by email",
+      "value": "72h"
+    },
+    {
+      "_key": "p3",
+      "label": "External visual impact",
+      "sub": "no outdoor unit, no constraint",
+      "value": "Zero"
+    }
+  ],
+  "heroSubtitle": "WellDoneDrill provides the preliminary geological study you need to integrate geothermal energy into your projects from the concept stage — with no risk of unkept promises, and with the technical documents for your permit application.",
+  "heroTitle": "Size geothermal energy\nfrom the design stage.",
+  "locale": "be-en",
+  "partnershipIntro": "Four clear steps to integrate geothermal energy into your project, architecturally and administratively.",
+  "partnershipSteps": [
+    {
+      "_key": "e1",
+      "body": "Send the address and the basic data: project type, area, number of units, phase. Feasibility feedback within 72h.",
+      "title": "Project submission"
+    },
+    {
+      "_key": "e2",
+      "body": "Analysis of Belgian and Luxembourg geological data. Preliminary report delivered in PDF format, written to be integrated into your file.",
+      "title": "Preliminary geological study"
+    },
+    {
+      "_key": "e3",
+      "body": "WDD sizes the borehole field according to the architectural project. Calculation note integrated into your EPC file and your site plan.",
+      "title": "Integrated sizing"
+    },
+    {
+      "_key": "e4",
+      "body": "WDD files and follows up the drilling permit applications. Execution within the construction schedule, direct coordination with your project manager.",
+      "title": "Permits & execution"
+    }
+  ],
+  "partnershipTitle": "From concept design to handover.",
+  "routeKey": "pro_architectes",
+  "valueIntro": "NZEB regulations require ever stricter energy-performance levels for every new permit in Belgium and Luxembourg. Closed-loop geothermal is the only solution that systematically reaches EPC A — with no visible outdoor unit, no thermal constraint on the façade and no noise.",
+  "valueItems": [
+    {
+      "_key": "w1",
+      "body": "Closed-loop geothermal creates no visual constraint. No outdoor unit, no thermal impact on the façade. Your architectural choices remain intact.",
+      "title": "EPC A with no architectural compromise"
+    },
+    {
+      "_key": "w2",
+      "body": "WDD carries out the subsurface analysis of your projects from the concept stage. You know whether it is feasible before integrating it into your brief.",
+      "title": "Free preliminary study at concept stage"
+    },
+    {
+      "_key": "w3",
+      "body": "We provide the technical documents in the format expected by Belgian and Luxembourg planning authorities — ready to integrate directly into your EPC calculation note.",
+      "title": "Documentation for permits and EPC"
+    },
+    {
+      "_key": "w4",
+      "body": "Our geological modelling determines exactly the depth and number of boreholes needed. Minimised ground footprint, controlled schedule.",
+      "title": "Precise sizing, no surprises"
+    },
+    {
+      "_key": "w5",
+      "body": "A WDD engineer follows your project from concept design to handover. Available for your questions, your safety coordinators and your MEP engineers.",
+      "title": "Dedicated technical contact"
+    },
+    {
+      "_key": "w6",
+      "body": "WDD works regularly with thermal and MEP engineering offices. We provide the geological data and the sizing; the engineering office integrates the heat pump and the network.",
+      "title": "Native MEP engineering coordination"
+    }
+  ],
+  "valueTitle": "EPC A with no architectural compromise.",
+  "whyTitle": "Six good reasons to integrate geothermal energy into your projects."
+}

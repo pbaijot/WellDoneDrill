@@ -1,0 +1,27 @@
+{
+  "_id": "chantier-la-foresterie-boitsfort-be-en",
+  "_type": "chantier",
+  "client": "Thomas & Piron",
+  "country": "BE",
+  "depth": 120,
+  "description": "Two apartment blocks in Watermael-Boitsfort led by Thomas & Piron. Test borehole at 120 m and thermal response test (TRT) completed. A geothermal field of 3 vertical boreholes of 120 m planned to supply the homes via heat pumps.",
+  "featured": false,
+  "locale": "be-en",
+  "location": "Watermael-Boitsfort",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-bf2e86c48d4034e2743f037a722a7ac0d2246fe4-4935x3210-webp",
+      "_type": "reference"
+    }
+  },
+  "province": "bruxelles",
+  "sector": "residentiel",
+  "slug": {
+    "_type": "slug",
+    "current": "la-foresterie-watermael-boitsfort"
+  },
+  "title": "La Foresterie — Watermael-Boitsfort",
+  "type": "fermee",
+  "year": 2025
+}

@@ -1,0 +1,117 @@
+{
+  "_id": "proPage-be-en-entrepreneurs-v2",
+  "_type": "proPage",
+  "faqTitle": "Frequently asked questions from developers.",
+  "faqs": [
+    {
+      "_key": "f1",
+      "answer": "Yes, and that is precisely where it is most efficient. A shared borehole field for an apartment block or a development significantly reduces the cost per unit. WDD sizes the field according to the complete programme.",
+      "question": "Is geothermal energy suitable for multi-unit residential projects?"
+    },
+    {
+      "_key": "f2",
+      "answer": "We plan the drilling work with your site manager as soon as the contract is signed. The work is usually done before the slabs — during the structural phase — without interfering with the other trades.",
+      "question": "How does WDD fit into my overall construction schedule?"
+    },
+    {
+      "_key": "f3",
+      "answer": "Usually 4 to 8 weeks, the time needed to process the drilling permits. We plan for this lead time in advance so it causes no delay to your schedule.",
+      "question": "What is the lead time between the order and the start of drilling?"
+    },
+    {
+      "_key": "f4",
+      "answer": "WDD is fully responsible for its drilling works. Our public liability insurance covers any damage to third parties, networks and adjacent structures.",
+      "question": "Who is liable in the event of damage during drilling?"
+    }
+  ],
+  "heroCtaLabel": "Start a geothermal project",
+  "heroEyebrow": "Developers & general contractors",
+  "heroPanelItems": [
+    {
+      "_key": "p1",
+      "label": "Sale value with geothermal energy",
+      "sub": "vs air-to-air heat pump home",
+      "value": "+8–12 %"
+    },
+    {
+      "_key": "p2",
+      "label": "Standard energy certification",
+      "sub": "a decisive argument for buyers",
+      "value": "EPC A"
+    },
+    {
+      "_key": "p3",
+      "label": "Liability for the drilling",
+      "sub": "permits, geology, execution",
+      "value": "1 contract"
+    }
+  ],
+  "heroSubtitle": "WellDoneDrill handles the geothermal drilling for your residential and commercial projects — permits, geology, execution, as-built documentation. You build, we drill.",
+  "heroTitle": "Geothermal energy as\nturnkey subcontracting.",
+  "locale": "be-en",
+  "partnershipIntro": "Five stages fully managed by WDD. Your only task: send us the address and the brief.",
+  "partnershipSteps": [
+    {
+      "_key": "e1",
+      "body": "Send the address and the brief. WDD analyses the geology and delivers a study with a forecast budget within 5 days.",
+      "title": "Feasibility study"
+    },
+    {
+      "_key": "e2",
+      "body": "Turnkey offer (drilling + permits + coordination). Schedule integrated into your construction calendar.",
+      "title": "Quote & schedule"
+    },
+    {
+      "_key": "e3",
+      "body": "WDD files and follows up all permit applications. Zero administrative work on your side.",
+      "title": "Drilling permit"
+    },
+    {
+      "_key": "e4",
+      "body": "Intervention during the structural works phase. Immediate site restoration. Boreholes delivered tested and ready to connect.",
+      "title": "Drilling & commissioning"
+    },
+    {
+      "_key": "e5",
+      "body": "Handover documentation, warranty certificates, notarial file and documents for the buyer.",
+      "title": "Complete as-built file"
+    }
+  ],
+  "partnershipTitle": "From feasibility to handover of the keys.",
+  "routeKey": "pro_entrepreneurs",
+  "valueIntro": "Buyers compare energy costs before signing. A geothermal home shows an EPC A and predictable costs for 50 years. Developers who integrate it from the design stage close faster and on better terms.",
+  "valueItems": [
+    {
+      "_key": "w1",
+      "body": "In Belgium, a geothermal home resells on average 8 to 12% higher than an equivalent air-to-air heat pump home. The extra drilling cost is usually recouped at the first transaction.",
+      "title": "Measurable value premium"
+    },
+    {
+      "_key": "w2",
+      "body": "An EPC A certificate has become a decisive criterion for premium buyers and tenants. Geothermal energy reaches it systematically, without exception or uncertainty.",
+      "title": "EPC A — the argument that closes the deal"
+    },
+    {
+      "_key": "w3",
+      "body": "WDD handles the permits, studies, drilling and site restoration. One contract, one warranty, one point of contact for the entire geothermal scope.",
+      "title": "Accountable subcontractor, one contract"
+    },
+    {
+      "_key": "w4",
+      "body": "We work during the structural phase, before the slabs, without disrupting the other trades. The timelines are contractually committed.",
+      "title": "Schedule integrated into your project"
+    },
+    {
+      "_key": "w5",
+      "body": "For multi-unit projects, WDD optimises a shared borehole field: same capacity, fewer metres drilled. The cost per unit drops significantly with volume.",
+      "title": "Economies of scale for developments"
+    },
+    {
+      "_key": "w6",
+      "body": "WDD provides the figures, certifications and labels to integrate geothermal energy into your promotional communication. A documented and credible selling point.",
+      "title": "Marketing material included"
+    }
+  ],
+  "valueTitle": "Geothermal energy as a selling point — and an obligation.",
+  "whyTitle": "Six reasons to integrate geothermal energy into your next project."
+}

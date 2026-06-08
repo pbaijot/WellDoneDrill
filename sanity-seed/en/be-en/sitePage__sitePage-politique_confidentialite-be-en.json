@@ -1,0 +1,90 @@
+{
+  "_id": "sitePage-politique_confidentialite-be-en",
+  "_type": "sitePage",
+  "heroEyebrow": "GDPR & Data protection",
+  "heroSubtitle": "How WellDoneDrill collects, uses and protects your personal data.",
+  "heroTitle": "Privacy policy",
+  "locale": "be-en",
+  "routeKey": "politique_confidentialite",
+  "sections": [
+    {
+      "_key": "responsable",
+      "_type": "section",
+      "body": "WellDoneDrill SRL (BCE 0801.727.368), Rue des Anciens Étangs 40, 1190 Forest, Belgium is the controller of the personal data collected via the welldonedrill.energy site.\n\nContact: info@welldonedrill.energy",
+      "title": "Data controller"
+    },
+    {
+      "_key": "donnees",
+      "_type": "section",
+      "body": "As part of your use of the site, we collect the following data:",
+      "items": [
+        "Contact / quote form: first name, last name, email address, phone number, project address, message",
+        "Newsletter: email address and communication preferences",
+        "User account: first name, last name, email address, password (stored hashed)",
+        "Browsing data: IP address, browser type, pages visited, session duration (analytics cookies, only with your consent)"
+      ],
+      "title": "Personal data collected"
+    },
+    {
+      "_key": "finalites",
+      "_type": "section",
+      "body": "We process your data for the following purposes and on the following legal bases (GDPR, art. 6):",
+      "items": [
+        "Processing of your quote or contact request — legal basis: legitimate interest / performance of a contract",
+        "Sending the newsletter — legal basis: explicit consent (art. 6.1.a GDPR)",
+        "Management of your user account — legal basis: performance of a contract",
+        "Audience measurement and site improvement (GA4, GTM) — legal basis: consent",
+        "Personalised ads (Meta Pixel, LinkedIn Insight Tag) — legal basis: consent"
+      ],
+      "title": "Purposes and legal bases of the processing"
+    },
+    {
+      "_key": "conservation",
+      "_type": "section",
+      "body": "Your data is kept for the following periods:",
+      "items": [
+        "Contact data and quote requests: 3 years after the last contact",
+        "Newsletter: until unsubscription, then deletion within 30 days",
+        "User account: until account deletion + 1 year (legal obligations)",
+        "Browsing data via analytics cookies: 13 months maximum (in line with the APD's recommendations)"
+      ],
+      "title": "Retention period"
+    },
+    {
+      "_key": "destinataires",
+      "_type": "section",
+      "body": "Your data may be passed to the following processors, strictly within the scope of providing the service:",
+      "items": [
+        "Vercel Inc. (web hosting) — United States — transfer governed by the European Commission's Standard Contractual Clauses (SCCs)",
+        "Google LLC (Analytics 4, Tag Manager) — United States — transfer governed by SCCs; IP anonymisation setting enabled",
+        "Meta Platforms Ireland Ltd (Meta Pixel) — Ireland / United States — only with your prior consent",
+        "LinkedIn Ireland Unlimited Company (LinkedIn Insight Tag) — Ireland / United States — only with your prior consent"
+      ],
+      "title": "Recipients and international transfers"
+    },
+    {
+      "_key": "droits",
+      "_type": "section",
+      "body": "In accordance with the GDPR and the Belgian law of 30 July 2018, you have the following rights over your personal data:",
+      "items": [
+        "Right of access: obtain a copy of your data",
+        "Right to rectification: correct inaccurate data",
+        "Right to erasure (\"right to be forgotten\")",
+        "Right to restriction of processing",
+        "Right to data portability",
+        "Right to object to processing",
+        "Right to withdraw your consent at any time, without retroactive effect"
+      ],
+      "title": "Your rights"
+    },
+    {
+      "_key": "exercice",
+      "_type": "section",
+      "body": "To exercise your rights, send your request to: info@welldonedrill.energy\n\nWe will respond within a maximum of 30 days. If you believe your rights are not being respected, you can lodge a complaint with the Data Protection Authority (APD):\nRue de la Presse 35, 1000 Brussels — www.autoriteprotectiondonnees.be",
+      "title": "How to exercise your rights"
+    }
+  ],
+  "seoDescription": "Privacy policy of WellDoneDrill SRL: data collected, purposes, retention period, GDPR rights, cookies.",
+  "seoTitle": "Privacy policy — WellDoneDrill",
+  "title": "Privacy policy"
+}

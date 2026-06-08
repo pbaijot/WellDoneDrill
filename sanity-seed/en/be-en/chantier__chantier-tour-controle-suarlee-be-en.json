@@ -1,0 +1,26 @@
+{
+  "_id": "chantier-tour-controle-suarlee-be-en",
+  "_type": "chantier",
+  "country": "BE",
+  "depth": 60,
+  "description": "Geothermal drilling for Belgium's first digital control tower in Suarlée. 19 vertical boreholes of 60 m suited to particularly challenging geology. This project illustrates WellDoneDrill's ability to operate on technically demanding sites.",
+  "featured": false,
+  "locale": "be-en",
+  "location": "Suarlée",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-52cfab266044b64b02a0480da21138220fdb18b9-2048x1536-webp",
+      "_type": "reference"
+    }
+  },
+  "province": "namur",
+  "sector": "tertiaire",
+  "slug": {
+    "_type": "slug",
+    "current": "tour-controle-numerique-suarlee"
+  },
+  "title": "Belgium's first digital control tower — Suarlée",
+  "type": "fermee",
+  "year": 2024
+}

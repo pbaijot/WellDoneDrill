@@ -1,0 +1,26 @@
+{
+  "_id": "f2bb16a9-aaed-469d-9cbf-48975f6cef16",
+  "_type": "chantier",
+  "client": "Jacques Delens",
+  "country": "BE",
+  "depth": 100,
+  "description": "For the public welfare centres (CPAS) of Brussels, we completed 8 boreholes at 100 m. ",
+  "locale": "be-en",
+  "location": "Brussels",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-e3b954b69f27924a0f85c0145bba66d0d0644e2d-2000x1500-jpg",
+      "_type": "reference"
+    }
+  },
+  "province": "bruxelles",
+  "sector": "public",
+  "slug": {
+    "_type": "slug",
+    "current": "cpas-bruxelles"
+  },
+  "title": "CPAS Brussels",
+  "type": "fermee",
+  "year": 2026
+}

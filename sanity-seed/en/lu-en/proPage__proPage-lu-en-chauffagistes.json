@@ -1,0 +1,175 @@
+{
+  "_id": "proPage-lu-en-chauffagistes",
+  "_type": "proPage",
+  "contextVideo": {
+    "_type": "file",
+    "asset": {
+      "_ref": "file-55a1ccb8ad2628167a29937f4fb07011e1da76c3-mov",
+      "_type": "reference"
+    }
+  },
+  "faqCtaLabel": "Ask my question",
+  "faqSubtitle": "Don't see your question here? Contact our team directly.",
+  "faqTitle": "Frequently asked questions from installers.",
+  "faqs": [
+    {
+      "_key": "faq0",
+      "_type": "object",
+      "answer": "Yes. If you are certified for heat pumps in general (Qualipac or equivalent), you can apply. WDD can point you to the recognised geothermal certification courses in Luxembourg and Belgium.",
+      "question": "I am not yet certified for geothermal heat pumps — can I become a partner?"
+    },
+    {
+      "_key": "faq1",
+      "_type": "object",
+      "answer": "We do not publish public pricing. Once your application is approved, you receive a confidential partner price list, based on your annual volume and your geographic area.",
+      "question": "What is WDD's pricing for partners?"
+    },
+    {
+      "_key": "faq2",
+      "_type": "object",
+      "answer": "WDD works first (drilling: 1 to 3 days). You schedule the heat pump installation in the following days. Our schedule is communicated as soon as your client signs.",
+      "question": "How is the project schedule coordinated?"
+    },
+    {
+      "_key": "faq3",
+      "_type": "object",
+      "answer": "No. Your client relationship is intact. WDD works as a subcontractor; your clients are only aware of our involvement if you want them to be.",
+      "question": "Can WDD contact my clients directly?"
+    },
+    {
+      "_key": "faq4",
+      "_type": "object",
+      "answer": "Grand Duchy of Luxembourg and Belgium, all regions.",
+      "question": "What geographic area is covered?"
+    }
+  ],
+  "heroCtaLabel": "Become a WDD partner",
+  "heroCtaSecondary": "See our projects",
+  "heroEyebrow": "Installer partners",
+  "heroPanelItems": [
+    {
+      "_key": "p0",
+      "_type": "object",
+      "label": "Revenue per geothermal project",
+      "sub": "vs standard air-to-air heat pump",
+      "value": "×2–3"
+    },
+    {
+      "_key": "p1",
+      "_type": "object",
+      "label": "WDD partner client referrals",
+      "sub": "listing on our network",
+      "value": "Included"
+    },
+    {
+      "_key": "p2",
+      "_type": "object",
+      "label": "Response time to your requests",
+      "sub": "guaranteed drilling scheduling",
+      "value": "48h"
+    }
+  ],
+  "heroRightImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-550948132e44ae132fdc20b02b0ba80ee76f2b38-3840x2160-jpg",
+      "_type": "reference"
+    }
+  },
+  "heroSubtitle": "Add geothermal energy to your offer to stand out. A clear partnership that opens up a fast-growing market in Luxembourg and Belgium. No extra administrative burden, no investment of your own.",
+  "heroTitle": "WellDoneDrill drills, you install the heat pump. A new market opens up to you.",
+  "locale": "lu-en",
+  "partnershipIntro": "A process designed so that you keep full control over your client relationship while accessing our drilling expertise and our network in the Grand Duchy.",
+  "partnershipSteps": [
+    {
+      "_key": "e1",
+      "_type": "object",
+      "body": "Submit your profile: heat pump certification, geographic area, estimated annual volume. Reply within 5 days.",
+      "title": "Partner application"
+    },
+    {
+      "_key": "e2",
+      "_type": "object",
+      "body": "Access to the WDD partner portal, preferential pricing, commercial and technical documentation.",
+      "title": "Onboarding & kit"
+    },
+    {
+      "_key": "e3",
+      "_type": "object",
+      "body": "WDD handles the drilling according to your schedule. You install the heat pump straight after.",
+      "title": "First joint project"
+    },
+    {
+      "_key": "e4",
+      "_type": "object",
+      "body": "You are and remain your client's sole point of contact. WDD works as an invisible subcontractor.",
+      "title": "Your client, your contract"
+    }
+  ],
+  "partnershipTitle": "How does the partnership work?",
+  "routeKey": "pro_chauffagistes",
+  "schemeNodes": [
+    {
+      "_key": "sn1",
+      "label": "Your client",
+      "stat": "×2–3 projects",
+      "sub": "Requests a geothermal solution"
+    },
+    {
+      "_key": "sn2",
+      "label": "WDD drills",
+      "stat": "0 admin",
+      "sub": "Turnkey geothermal drilling"
+    },
+    {
+      "_key": "sn3",
+      "label": "You install",
+      "stat": "48h",
+      "sub": "Heat pump & commissioning"
+    }
+  ],
+  "seoDescription": "WellDoneDrill partners with HVAC installers in Luxembourg and Belgium. Turnkey geothermal drilling, zero admin, priority scheduling for partners.",
+  "seoTitle": "HVAC installers — Geothermal energy | WellDoneDrill Luxembourg",
+  "valueIntro": "The ban on gas boilers for new buildings in Luxembourg and Belgium, combined with soaring energy prices, is creating structural demand for geothermal solutions. Your clients are turning to installers able to offer a complete alternative. Those who cannot respond lose projects.",
+  "valueItems": [
+    {
+      "_key": "w1",
+      "_type": "object",
+      "body": "Geothermal energy is taking off in 2026. Adapting means staying competitive in the Luxembourg and Belgian market.",
+      "title": "Number of projects multiplied"
+    },
+    {
+      "_key": "w2",
+      "_type": "object",
+      "body": "WellDoneDrill manages the drilling permits, the soil studies and the declarations with Luxembourg's Environment Administration. You stay focused on your core business.",
+      "title": "Zero administrative friction"
+    },
+    {
+      "_key": "w3",
+      "_type": "object",
+      "body": "Our installer partners are given priority in our project schedule. The drilling lead time is communicated and contractually honoured from the moment your client signs.",
+      "title": "Guaranteed priority scheduling"
+    },
+    {
+      "_key": "w4",
+      "_type": "object",
+      "body": "Brochures, technical sheets, savings calculators tailored to your clients: everything you need to present and sell geothermal energy with confidence.",
+      "title": "Turnkey sales kit"
+    },
+    {
+      "_key": "w5",
+      "_type": "object",
+      "body": "NZEB obligations and the gas ban are creating demand that your competitors without a drilling partner cannot meet. Get ahead now.",
+      "title": "The legislation on your side"
+    },
+    {
+      "_key": "w6",
+      "_type": "object",
+      "body": "WellDoneDrill clients look for a certified heat pump installer in their area. Network partners are listed first in our recommendations.",
+      "title": "WDD client referrals"
+    }
+  ],
+  "valueTitle": "The market is changing. Your offer must change with it.",
+  "whyCtaLabel": "Start my project",
+  "whyTitle": "Six reasons to offer geothermal energy to your clients."
+}

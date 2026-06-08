@@ -28,10 +28,15 @@ export default withNextIntl({
   },
   async redirects() {
     return [
-      // English version not built yet — Google still surfaces /:locale/en links.
-      // Temporary (307) so browsers/Google don't cache it once /en ships.
-      { source: '/:locale(be-fr|be-nl|fr-fr|lu-fr|lu-de)/en/:path*', destination: '/be-fr', permanent: false },
-      { source: '/:locale(be-fr|be-nl|fr-fr|lu-fr|lu-de)/en', destination: '/be-fr', permanent: false },
+      // Legacy /:locale/en links (surfaced by Google) → the proper English
+      // home for that country. Temporary (307) — the English slugs are real
+      // routes now (be-en/fr-en/lu-en), this only catches the old "/en" shape.
+      { source: '/:locale(be-fr|be-nl)/en/:path*', destination: '/be-en', permanent: false },
+      { source: '/:locale(be-fr|be-nl)/en', destination: '/be-en', permanent: false },
+      { source: '/fr-fr/en/:path*', destination: '/fr-en', permanent: false },
+      { source: '/fr-fr/en', destination: '/fr-en', permanent: false },
+      { source: '/:locale(lu-fr|lu-de)/en/:path*', destination: '/lu-en', permanent: false },
+      { source: '/:locale(lu-fr|lu-de)/en', destination: '/lu-en', permanent: false },
       // be-fr / fr-fr / lu-fr — old chauffagistes slug
       { source: '/:locale(be-fr|fr-fr|lu-fr)/pro/chauffagistes', destination: '/:locale/pro/installateurs-hvac', permanent: true },
       // be-fr / fr-fr / lu-fr — old architectes slug

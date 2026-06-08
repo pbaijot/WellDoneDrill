@@ -1,0 +1,190 @@
+{
+  "_id": "geoPage-fr-en-geo_fermee",
+  "_type": "geoPage",
+  "advantages": [
+    {
+      "_key": "a0",
+      "body": "A lower energy bill thanks to a free and renewable heat source.",
+      "title": "Profitable investment"
+    },
+    {
+      "_key": "a1",
+      "body": "An environmentally friendly solution that reduces your carbon footprint.",
+      "title": "Responsible installation"
+    },
+    {
+      "_key": "a2",
+      "body": "No more oil tanks or pellet storage. Geothermal energy works without cluttering your home.",
+      "title": "Small footprint"
+    },
+    {
+      "_key": "a3",
+      "body": "No combustion noise or intense ventilation, for optimal acoustic comfort.",
+      "title": "Silent system"
+    },
+    {
+      "_key": "a4",
+      "body": "Components designed to last for decades without loss of efficiency.",
+      "title": "Durable equipment"
+    },
+    {
+      "_key": "a5",
+      "body": "A turnkey solution for heating and cooling that requires very little maintenance.",
+      "title": "Minimal maintenance"
+    },
+    {
+      "_key": "a6",
+      "body": "With a COP far higher than that of an air-source heat pump, your system produces several times more energy than it consumes.",
+      "title": "Unbeatable efficiency"
+    },
+    {
+      "_key": "a7",
+      "body": "The heat extracted from the ground in winter is reused in summer to cool your building, with no air conditioning costs.",
+      "title": "Heating and cooling"
+    }
+  ],
+  "advantagesCtaLabel": "Start my project",
+  "advantagesTitle": "The benefits of geothermal energy",
+  "faqCtaLabel": "Contact us",
+  "faqIntroBody": "Beyond the seasons, the temperature of the subsurface remains far more stable than that of the outside air. It is this stability that makes closed-loop geothermal a high-performance solution for heating and cooling.",
+  "faqIntroTitle": "The ground, a sustainable source of energy",
+  "faqSubtitle": "Don't see your question here? Contact our team directly.",
+  "faqTitle": "Frequently asked questions about closed-loop geothermal",
+  "faqs": [
+    {
+      "_key": "f1",
+      "answer": "It involves drilling one or more vertical boreholes to install closed-circuit probes. The system does not use groundwater directly.",
+      "question": "What does a closed-loop geothermal borehole involve?"
+    },
+    {
+      "_key": "f2",
+      "answer": "They require little space, fit into many projects and provide a stable energy source that is largely unaffected by weather variations.",
+      "question": "What are the benefits of vertical boreholes?"
+    },
+    {
+      "_key": "f3",
+      "answer": "Yes. In many cases it allows passive or natural cooling, very useful for summer comfort.",
+      "question": "Can closed-loop geothermal cool a building?"
+    },
+    {
+      "_key": "f4",
+      "answer": "The depth depends on the sizing, the geology and the energy needs. It must be defined project by project.",
+      "question": "How deep do you need to drill?"
+    }
+  ],
+  "finalCtaLabel": "Yes, I'll request a quote",
+  "finalCtaTitle": "Want to make the most of the energy beneath your feet?",
+  "heroCtaLabel": "Contact us",
+  "heroLine1": "Underground, a stable, free and inexhaustible energy",
+  "heroLine2": "Transfer.",
+  "heroLine3": "Distribute.",
+  "heroPanelItems": [
+    {
+      "_key": "p0",
+      "label": "Coefficient of performance",
+      "sub": "4× more efficient than gas",
+      "value": "COP 4–5"
+    },
+    {
+      "_key": "p1",
+      "label": "Annual savings",
+      "sub": "per converted household",
+      "value": "~1 200 €"
+    },
+    {
+      "_key": "p2",
+      "label": "Lifespan",
+      "sub": "no major maintenance",
+      "value": "50 years"
+    }
+  ],
+  "heroRightImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-ccb8a55f66660063b698698522a8e35c64527ea7-2506x1664-jpg",
+      "_type": "reference"
+    }
+  },
+  "heroSecondaryLabel": "See our projects",
+  "heroStats": [
+    {
+      "_key": "s0",
+      "label": "Completed projects",
+      "value": "500+"
+    },
+    {
+      "_key": "s1",
+      "label": "Of expertise",
+      "value": "20 years"
+    },
+    {
+      "_key": "s2",
+      "label": "Performance",
+      "value": "COP 4–5"
+    }
+  ],
+  "heroSubtitle": "Switch to closed-loop geothermal energy with WellDoneDrill and enjoy year-round thermal comfort thanks to stable, local and sustainable energy, tailored to your project in France.",
+  "howBody": "The geothermal probe is a U-shaped tube (high-density polyethylene) inserted into a vertical borehole 80 to 200 m deep. A heat-transfer fluid — glycol water — circulates in a closed loop, never coming into contact with the rock or the groundwater. It captures the thermal energy of the ground, stable at around 10–14 °C all year round, and transfers it to the heat pump.\n\nThe heat pump boosts this energy to produce hot water at 35–55 °C, supplying the heating (underfloor heating or low-temperature radiators) and domestic hot water. In summer the cycle reverses: the building's heat is dissipated into the ground, providing natural cooling with no significant extra consumption.",
+  "howCtaLabel": "Start my project →",
+  "howIntro": "The principle is simple: the subsurface stores relatively stable heat all year round. Closed-loop geothermal makes it possible to tap into it via a sealed circuit, with no groundwater abstraction.",
+  "howTitle": "How does closed-loop borehole geothermal energy work?",
+  "introBody1": "Closed-loop geothermal relies on vertical boreholes installed underground. They capture the heat naturally stored in the ground and transfer it to a heat pump to heat the building in winter and cool it in summer.",
+  "introBody2": "It is a lean, discreet and robust solution, suited to single homes as well as larger buildings, with a small ground footprint and very stable performance.",
+  "introCtaLabel": "Start my project",
+  "introTitle": "Closed-loop geothermal: harness the energy beneath your feet",
+  "locale": "fr-en",
+  "particularBody": "Building or renovating? Geothermal energy is a sustainable solution to heat and cool your home with excellent comfort and strong long-term cost stability.",
+  "particularCta": "Request your quote",
+  "particularEyebrow": "For homeowners",
+  "particularImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-d6cc3a8bccc5822cd3fe31a0f3279cb2242d3828-1400x935-webp",
+      "_type": "reference"
+    }
+  },
+  "particularTitle": "Geothermal energy for your home",
+  "proBody": "Developers, engineering firms, architects, installers, public bodies: we work on multi-unit residential, commercial, industrial and institutional projects.",
+  "proCta": "Submit my project",
+  "proEyebrow": "For businesses",
+  "proImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-74263dcea090e81323faef24a331ab78ddfd33e8-1400x869-webp",
+      "_type": "reference"
+    }
+  },
+  "proTitle": "Geothermal energy for large projects",
+  "projectCtaLabel": "Tell us about your project",
+  "projectSteps": [
+    {
+      "_key": "p1",
+      "body": "We analyse the site, the project context and the energy needs to confirm feasibility.",
+      "title": "Study and quote"
+    },
+    {
+      "_key": "p2",
+      "body": "We work with your heat pump installer or point you to a suitable partner.",
+      "title": "Coordination with the installer"
+    },
+    {
+      "_key": "p3",
+      "body": "The solution is confirmed, the sizing is finalised and the execution parameters are set.",
+      "title": "Technical validation"
+    },
+    {
+      "_key": "p4",
+      "body": "The boreholes are drilled, the probes installed and the site operations carried out with method and rigour.",
+      "title": "Drilling and probe installation"
+    },
+    {
+      "_key": "p5",
+      "body": "Once the installation is complete, the building benefits from a stable, high-performance and sustainable heat source.",
+      "title": "System start-up"
+    }
+  ],
+  "projectTitle": "Your closed-loop geothermal project in 5 simple steps",
+  "routeKey": "geo_fermee",
+  "seoDescription": "Discover closed-loop geothermal energy with WellDoneDrill: principle, operation, project stages and benefits for your building.",
+  "seoTitle": "Closed-loop geothermal | WellDoneDrill France"
+}

@@ -1,0 +1,44 @@
+{
+  "_id": "sitePage-mentions_legales-be-en",
+  "_type": "sitePage",
+  "heroEyebrow": "Legal information",
+  "heroSubtitle": "Information about the publisher, hosting and terms of use of the welldonedrill.energy site.",
+  "heroTitle": "Legal notice",
+  "locale": "be-en",
+  "routeKey": "mentions_legales",
+  "sections": [
+    {
+      "_key": "editeur",
+      "_type": "section",
+      "body": "The welldonedrill.energy site is published by:\n\nWellDoneDrill SRL\nRegistered office: Rue des Anciens Étangs 40, 1190 Forest, Belgium\nCompany number (BCE): 0801.727.368\nVAT number: BE 0801.727.368\n\nLegal representative: Arnaud Latiers, manager\nContact: info@welldonedrill.energy",
+      "title": "Site publisher"
+    },
+    {
+      "_key": "hebergement",
+      "_type": "section",
+      "body": "The site is hosted by:\n\nVercel Inc.\n340 Pine Street, Suite 701\nSan Francisco, CA 94104, United States\nWebsite: vercel.com",
+      "title": "Hosting"
+    },
+    {
+      "_key": "propriete",
+      "_type": "section",
+      "body": "All content published on welldonedrill.energy (text, images, videos, logos, graphics) is protected by copyright and is the exclusive property of WellDoneDrill SRL or its partners. Any reproduction, representation or use without prior written authorisation is prohibited and constitutes an infringement punishable under Belgian law.",
+      "title": "Intellectual property"
+    },
+    {
+      "_key": "responsabilite",
+      "_type": "section",
+      "body": "WellDoneDrill SRL strives to keep the published information up to date and accurate, but cannot be held liable for errors, omissions or technical interruptions beyond its control, nor for any damage resulting from the use of the site or of third-party sites it links to.",
+      "title": "Liability"
+    },
+    {
+      "_key": "droit",
+      "_type": "section",
+      "body": "These legal notices are governed by Belgian law. Any dispute relating to the use of the site falls within the exclusive jurisdiction of the courts of the judicial district of Brussels, notwithstanding multiple defendants or third-party proceedings.",
+      "title": "Applicable law and jurisdiction"
+    }
+  ],
+  "seoDescription": "Legal information for WellDoneDrill SRL, publisher of the welldonedrill.energy site: contact details, host, intellectual property.",
+  "seoTitle": "Legal notice — WellDoneDrill",
+  "title": "Legal notice"
+}

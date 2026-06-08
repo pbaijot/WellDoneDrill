@@ -1,0 +1,115 @@
+{
+  "_id": "blog-be-en-as-built",
+  "_type": "blogPost",
+  "author": "WellDoneDrill",
+  "body": [
+    {
+      "_key": "a1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a1s1",
+          "_type": "span",
+          "text": "When the drilling is finished, many clients think the documentation work is only just beginning. In reality, the quality of the as-built file is central to the value of the completed project."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a2",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a2s1",
+          "_type": "span",
+          "text": "Why this file is essential"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "a3",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a3s1",
+          "_type": "span",
+          "text": "The as-built file gathers the final information actually executed on site: depths, number of boreholes, layout, probe type, tests, observations and adjustments made. Without it, the technical memory of the project is lost very quickly."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a4",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a4s1",
+          "_type": "span",
+          "text": "A tool useful long after the works"
+        }
+      ],
+      "style": "h2"
+    },
+    {
+      "_key": "a5",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a5s1",
+          "_type": "span",
+          "text": "This file is not only useful at handover. It is valuable for maintenance, for understanding the borehole field, for reselling the property or for any future change to the energy system."
+        }
+      ],
+      "style": "normal"
+    },
+    {
+      "_key": "a6",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "a6s1",
+          "_type": "span",
+          "text": "At WellDoneDrill, we consider documentation quality to be an integral part of execution quality."
+        }
+      ],
+      "style": "blockquote"
+    }
+  ],
+  "category": "chantier",
+  "ctaText": "We help you frame your project, understand the drilling constraints and move forward with a clear method, from the first contact to the works.",
+  "ctaTitle": "Do you have a geothermal project?",
+  "excerpt": "Once the drilling is finished, the as-built file keeps a clear, usable record that is valuable for future operation.",
+  "featured": true,
+  "intro": [
+    {
+      "_key": "i1",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "i1s1",
+          "_type": "span",
+          "text": "The project doesn't end when the rig leaves the site. That is when an often underestimated phase begins: the clear and reliable handover of what was actually executed."
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "locale": "be-en",
+  "mainImage": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-cef9545ce6b37da3ea47e5ca0b00bf51063bd447-4032x3024-jpg",
+      "_type": "reference"
+    }
+  },
+  "publishedAt": "2026-03-15T09:00:00Z",
+  "readingTime": 4,
+  "seoDescription": "Discover why the as-built file is essential after geothermal drilling: traceability, future operation, maintenance and documentation quality.",
+  "seoTitle": "Why the as-built file is essential after geothermal drilling | WellDoneDrill",
+  "slug": {
+    "_type": "slug",
+    "current": "apres-forage-dossier-as-built"
+  },
+  "title": "After drilling: why the as-built file is essential"
+}

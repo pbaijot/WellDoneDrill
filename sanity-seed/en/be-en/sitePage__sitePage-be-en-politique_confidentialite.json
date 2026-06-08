@@ -1,0 +1,41 @@
+{
+  "_id": "sitePage-be-en-politique_confidentialite",
+  "_type": "sitePage",
+  "ctaLabel": "Contact us",
+  "ctaPretitle": "Need a clarification?",
+  "ctaRouteKey": "devis",
+  "ctaText": "For any question about your data, your consents or your use of the site, you can contact us directly.",
+  "ctaTitle": "Contact WellDoneDrill",
+  "faqTitle": "",
+  "faqs": [],
+  "heroEyebrow": "Legal information",
+  "heroSubtitle": "Here you will find useful information related to the privacy policy for the WellDoneDrill website.",
+  "heroTitle": "Privacy policy",
+  "locale": "be-en",
+  "routeKey": "politique_confidentialite",
+  "sections": [
+    {
+      "_key": "politique_confidentialite-s1",
+      "body": "This page is a first editorial framework for the privacy policy. It must be reviewed with the company's final legal information before going live.",
+      "eyebrow": "Framework",
+      "items": [],
+      "title": "Privacy policy"
+    },
+    {
+      "_key": "politique_confidentialite-s2",
+      "body": "Before final publication, the legal contact details, the data controller, the legal bases, the retention periods, any processors and the consent mechanisms should be confirmed.",
+      "eyebrow": "To be completed",
+      "items": [
+        "Company contact details",
+        "Data collected",
+        "Purposes of the processing",
+        "Retention period",
+        "User rights"
+      ],
+      "title": "Items to confirm"
+    }
+  ],
+  "seoDescription": "View the privacy policy page of the WellDoneDrill website.",
+  "seoTitle": "Privacy policy | WellDoneDrill",
+  "title": "Privacy policy"
+}

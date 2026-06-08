@@ -1,0 +1,27 @@
+{
+  "_id": "chantier-novacity-anderlecht-be-en",
+  "_type": "chantier",
+  "client": "citydev.brussels / Eiffage Development",
+  "country": "BE",
+  "depth": 140,
+  "description": "118 zero-carbon public housing units in Anderlecht, led by citydev.brussels and Eiffage Development. Test borehole at 140 m and thermal response test (TRT) completed. Deployment planned for late 2025: 40 vertical boreholes of 140 m feeding a 100% renewable heat network coupled with heat pumps.",
+  "featured": false,
+  "locale": "be-en",
+  "location": "Anderlecht",
+  "photo": {
+    "_type": "image",
+    "asset": {
+      "_ref": "image-4b23b45d0895497e5ac4252a81aa39c88f0121e6-2048x1536-webp",
+      "_type": "reference"
+    }
+  },
+  "province": "bruxelles",
+  "sector": "residentiel",
+  "slug": {
+    "_type": "slug",
+    "current": "novacity-ii-anderlecht"
+  },
+  "title": "NovaCity II — Anderlecht",
+  "type": "fermee",
+  "year": 2025
+}

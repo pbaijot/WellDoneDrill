@@ -85,13 +85,16 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
         } else if (locale === 'lu-de') {
           cmsTitle = `Geothermie ${name} — Erdwärmebohrung | WellDoneDrill`
           cmsDesc = `Geothermische Bohrprojekte in ${name}. WellDoneDrill bohrt Ihre Sonden: kostenlose Studie, Genehmigung und Installation. Entdecken Sie unsere Projekte.`
+        } else if (locale.endsWith('-en')) {
+          cmsTitle = `Geothermal energy ${name} — Geothermal drilling | WellDoneDrill`
+          cmsDesc = `Geothermal drilling projects in ${name}. WellDoneDrill drills your boreholes: free study, permit and installation. Discover our projects in ${name}.`
         } else {
           const prep = province.prepFr.endsWith("'") ? province.prepFr + name : `${province.prepFr} ${name}`
           cmsTitle = `Géothermie ${name} — Forage géothermique | WellDoneDrill`
           cmsDesc = `Réalisations de forage géothermique ${prep}. WellDoneDrill fore vos sondes géothermiques : étude gratuite, permis et installation. Découvrez nos chantiers.`
         }
       } else {
-        const chantier = await getChantierBySlug(subSlug)
+        const chantier = await getChantierBySlug(subSlug, locale)
         if (chantier) {
           cmsTitle = chantier.seoTitle || chantier.title || undefined
           cmsDesc = chantier.seoDescription || chantier.description || undefined
@@ -120,32 +123,49 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
 }
 
 function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {
+  const isEn = locale.endsWith('-en')
+  const t = isEn
+    ? {
+        eyebrow: 'Page in progress',
+        titlePre: 'This page is coming ',
+        titleHi: 'soon',
+        body: 'The content of this page is being prepared in our CMS. Check back soon or contact us directly.',
+        cta: 'Request a quote',
+        back: 'Back to home',
+      }
+    : {
+        eyebrow: 'Page en cours',
+        titlePre: 'Cette page arrive ',
+        titleHi: 'bientôt',
+        body: 'Le contenu de cette page est en cours de préparation dans notre CMS. Revenez bientôt ou contactez-nous directement.',
+        cta: 'Demandez un devis',
+        back: "Retour à l'accueil",
+      }
   return (
     <div className="bg-wdd-clay min-h-screen pt-32 px-16 flex flex-col justify-center">
       <div className="max-w-xl">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-5 h-0.5 bg-wdd-yellow" />
-          <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">Page en cours</span>
+          <span className="text-xs font-light tracking-widest text-wdd-ground uppercase">{t.eyebrow}</span>
         </div>
         <h1 className="text-4xl font-bold mb-4 text-wdd-black">
-          Cette page arrive <span className="text-wdd-mud">bientôt</span>
+          {t.titlePre}<span className="text-wdd-mud">{t.titleHi}</span>
         </h1>
         <p className="text-sm font-light text-wdd-black/60 leading-relaxed mb-8">
-          Le contenu de cette page est en cours de préparation dans notre CMS.
-          Revenez bientôt ou contactez-nous directement.
+          {t.body}
         </p>
         <div className="flex items-center gap-4">
           <Link
             href={getLocalizedPath(locale, 'contact')}
             className="bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors"
           >
-            Demandez un devis
+            {t.cta}
           </Link>
           <Link
             href={`/${locale}`}
             className="text-sm font-light text-wdd-black/55 border-b border-wdd-black/25 hover:text-wdd-black transition-colors pb-0.5"
           >
-            Retour à l'accueil
+            {t.back}
           </Link>
         </div>
       </div>
@@ -170,7 +190,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
       return <ProvinceReferencesPage locale={locale} province={province} chantiers={chantiers} />
     }
     // Individual project page
-    const chantier = await getChantierBySlug(subSlug)
+    const chantier = await getChantierBySlug(subSlug, locale)
     if (chantier) {
       return <ChantierPage locale={locale} chantier={chantier} />
     }

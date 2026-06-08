@@ -1,4 +1,4 @@
-export const locales = ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de'] as const
+export const locales = ['be-fr', 'be-nl', 'be-en', 'fr-fr', 'fr-en', 'lu-fr', 'lu-de', 'lu-en'] as const
 export type AppLocale = (typeof locales)[number]
 
 export const defaultLocale: AppLocale = 'be-fr'
@@ -6,9 +6,12 @@ export const defaultLocale: AppLocale = 'be-fr'
 export const PHONE_BY_LOCALE: Record<AppLocale, string> = {
   'be-fr': '+32 494 14 24 49',
   'be-nl': '+32 476 82 50 17',
+  'be-en': '+32 494 14 24 49',
   'fr-fr': '+32 494 14 24 49',
+  'fr-en': '+32 494 14 24 49',
   'lu-fr': '+352 621 771 246',
   'lu-de': '+352 621 771 246',
+  'lu-en': '+352 621 771 246',
 }
 
 export type RouteKey =
@@ -151,6 +154,78 @@ export const routeMap: RouteMap = {
     pro_chauffagistes: 'profis/hvac-installateure',
     pro_architectes: 'profis/architekten-planungsbueros',
     pro_entrepreneurs: 'profis/unternehmer',
+  },
+
+  'be-en': {
+    home: '',
+    contact: 'contact',
+    references: 'geothermal-projects-belgium',
+    blog: 'blog',
+    a_propos: 'about',
+    mentions_legales: 'legal-notice',
+    politique_confidentialite: 'privacy-policy',
+    cookies: 'cookies',
+
+    pac: 'heat-pumps',
+
+    geo: 'geothermal-energy',
+    geo_fermee: 'geothermal-energy/closed-loop',
+    geo_ouverte: 'geothermal-energy/open-loop',
+
+    particuliers: 'homeowners',
+
+    pro: 'for-professionals',
+    pro_chauffagistes: 'pro/hvac-installers',
+    pro_architectes: 'pro/architects-engineers',
+    pro_entrepreneurs: 'pro/developers',
+  },
+
+  'fr-en': {
+    home: '',
+    contact: 'contact',
+    references: 'geothermal-projects',
+    blog: 'blog',
+    a_propos: 'about',
+    mentions_legales: 'legal-notice',
+    politique_confidentialite: 'privacy-policy',
+    cookies: 'cookies',
+
+    pac: 'heat-pumps',
+
+    geo: 'geothermal-energy',
+    geo_fermee: 'geothermal-energy/closed-loop',
+    geo_ouverte: 'geothermal-energy/open-loop',
+
+    particuliers: 'homeowners',
+
+    pro: 'for-professionals',
+    pro_chauffagistes: 'pro/hvac-installers',
+    pro_architectes: 'pro/architects-engineers',
+    pro_entrepreneurs: 'pro/developers',
+  },
+
+  'lu-en': {
+    home: '',
+    contact: 'contact',
+    references: 'geothermal-projects',
+    blog: 'blog',
+    a_propos: 'about',
+    mentions_legales: 'legal-notice',
+    politique_confidentialite: 'privacy-policy',
+    cookies: 'cookies',
+
+    pac: 'heat-pumps',
+
+    geo: 'geothermal-energy',
+    geo_fermee: 'geothermal-energy/closed-loop',
+    geo_ouverte: 'geothermal-energy/open-loop',
+
+    particuliers: 'homeowners',
+
+    pro: 'for-professionals',
+    pro_chauffagistes: 'pro/hvac-installers',
+    pro_architectes: 'pro/architects-engineers',
+    pro_entrepreneurs: 'pro/developers',
   },
 }
 

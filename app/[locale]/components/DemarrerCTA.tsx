@@ -47,6 +47,30 @@ const COPY = {
     stat1Value: 'Kostenlos', stat1Label: 'Machbarkeitsstudie',
     stat2Value: '48h', stat2Label: 'Antwortzeit',
   },
+  'be-en': {
+    title: 'Your project starts here.',
+    body: "Free geological study, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.",
+    buttonLabel: 'Start your project →',
+    orCall: 'or call us',
+    stat1Value: 'Free', stat1Label: 'Feasibility study',
+    stat2Value: '48h', stat2Label: 'Response time',
+  },
+  'fr-en': {
+    title: 'Your project starts here.',
+    body: "Free geological study, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.",
+    buttonLabel: 'Start your project →',
+    orCall: 'or call us',
+    stat1Value: 'Free', stat1Label: 'Feasibility study',
+    stat2Value: '48h', stat2Label: 'Response time',
+  },
+  'lu-en': {
+    title: 'Your project starts here.',
+    body: "Free geological study, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.",
+    buttonLabel: 'Start your project →',
+    orCall: 'or call us',
+    stat1Value: 'Free', stat1Label: 'Feasibility study',
+    stat2Value: '48h', stat2Label: 'Response time',
+  },
 } as const
 
 export default function DemarrerCTA({

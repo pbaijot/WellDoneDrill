@@ -1,0 +1,57 @@
+{
+  "_id": "sitePage-cookies-be-en",
+  "_type": "sitePage",
+  "heroEyebrow": "Cookies & Tracking",
+  "heroSubtitle": "Which cookies we use, why, and how to manage your preferences.",
+  "heroTitle": "Cookie policy",
+  "locale": "be-en",
+  "routeKey": "cookies",
+  "sections": [
+    {
+      "_key": "definition",
+      "_type": "section",
+      "body": "A cookie is a small text file placed on your device (computer, smartphone, tablet) when you visit our site. It stores information about your browsing and improves your experience. In accordance with the GDPR and the recommendations of the Belgian Data Protection Authority (APD), no non-essential cookie is set without your prior, explicit consent.",
+      "title": "What is a cookie?"
+    },
+    {
+      "_key": "essentiels",
+      "_type": "section",
+      "body": "These cookies are essential for the site to function. They cannot be disabled. They do not collect any personally identifiable information for marketing purposes.",
+      "items": [
+        "Management of your session and language preferences",
+        "Storage of your cookie consent choices (duration: 12 months)",
+        "Security and fraud prevention"
+      ],
+      "title": "Strictly necessary cookies"
+    },
+    {
+      "_key": "analytiques",
+      "_type": "section",
+      "body": "These cookies allow us to measure our site's traffic and to improve its content and performance. They are only set with your prior consent.",
+      "items": [
+        "Google Analytics 4 (Google LLC, United States): audience measurement, browsing behaviour, traffic sources — retention period: 13 months",
+        "Google Tag Manager (Google LLC, United States): tag manager used to deploy and manage measurement scripts"
+      ],
+      "title": "Analytics cookies — consent required"
+    },
+    {
+      "_key": "publicitaires",
+      "_type": "section",
+      "body": "These cookies allow personalised ads to be shown on other sites based on your browsing on welldonedrill.energy. They are only set with your prior consent.",
+      "items": [
+        "Meta Pixel (Meta Platforms Ireland Ltd): conversion tracking and retargeting on Facebook and Instagram",
+        "LinkedIn Insight Tag (LinkedIn Ireland Unlimited Company): conversion tracking and retargeting on LinkedIn"
+      ],
+      "title": "Advertising cookies — consent required"
+    },
+    {
+      "_key": "gestion",
+      "_type": "section",
+      "body": "You can change your cookie preferences at any time using the cookie management button available at the bottom of every page.\n\nYou can also refuse cookies via your browser settings. Note that blocking certain cookies may affect your browsing experience.\n\nTo learn more about your rights regarding cookies, see: www.autoriteprotectiondonnees.be",
+      "title": "Manage your preferences"
+    }
+  ],
+  "seoDescription": "WellDoneDrill's cookie management policy: essential, analytics (GA4) and advertising (Meta, LinkedIn) cookies. Strict opt-in consent.",
+  "seoTitle": "Cookie policy — WellDoneDrill",
+  "title": "Cookie policy"
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "chantier-leonidas-nivelles-be-en",
+  "_type": "chantier",
+  "client": "Léonidas",
+  "country": "BE",
+  "depth": 150,
+  "description": "17 boreholes at 150 m to provide heating and cooling for the new factory of the famous Belgian praline maker Léonidas in Nivelles. Thermal response test (TRT) at 140 m completed to optimise the design. Factory opening planned for 2026.",
+  "featured": false,
+  "locale": "be-en",
+  "location": "Nivelles",
+  "province": "brabant-wallon",
+  "sector": "industrie",
+  "slug": {
+    "_type": "slug",
+    "current": "usine-leonidas-nivelles"
+  },
+  "title": "New Léonidas factory — Nivelles",
+  "type": "fermee",
+  "year": 2026
+}

@@ -66,9 +66,25 @@ const COPY: Record<AppLocale, {
     emptyText: 'We werken momenteel onze referenties voor deze provincie bij.',
     emptyButton: 'Start uw project',
   },
+  'be-en': {
+    backLink: 'All provinces',
+    h1Line1: 'Geothermal energy',
+    desc: (p) => `Discover our geothermal projects completed in ${p}.`,
+    portfolioEyebrow: 'Portfolio',
+    projectsIn: () => `Our projects in`,
+    projectCount: (n) => `${n} project${n > 1 ? 's' : ''}`,
+    otherProvinces: 'Other provinces',
+    ctaEyebrow: 'Your project', ctaTitle1: 'Ready to launch your', ctaTitle2: 'geothermal project?',
+    ctaButton: 'Request a free quote',
+    tooltipLabel: 'Province', tooltipClick: 'Click to explore →',
+    emptyText: 'We are currently updating our projects for this province.',
+    emptyButton: 'Start your project',
+  },
   'fr-fr': null,
+  'fr-en': null,
   'lu-fr': null,
   'lu-de': null,
+  'lu-en': null,
 }
 
 export default function ProvinceReferencesPage({
