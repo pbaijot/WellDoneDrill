@@ -3,6 +3,7 @@ import {notFound} from 'next/navigation'
 import Link from 'next/link'
 import {findRouteKeyBySlug, getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import {getSeoDefaults} from '@/src/i18n/seo'
+import {buildAlternates, buildCanonical, BASE_URL} from '@/src/lib/seoAlternates'
 import {getSitePage} from '@/src/lib/sitePage'
 import EditorialPage from '../components/EditorialPage'
 import {getGeoPage} from '@/src/lib/geoPage'
@@ -84,7 +85,21 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
 
   const title = cmsTitle ?? defaults.title
   const description = cmsDesc ?? defaults.description
-  return { title, description, openGraph: { title, description } }
+
+  // Canonical + hreflang
+  let alternates: Record<string, unknown> = {}
+  const rk = routeKey as import('@/src/i18n/routes').RouteKey | null
+  if (rk && rk !== 'home' && rk !== 'blog') {
+    try {
+      const alt = buildAlternates(locale, rk)
+      alternates = { canonical: alt.canonical, languages: alt.languages }
+    } catch {}
+  } else {
+    // Province, chantier, or other sub-pages — canonical only
+    alternates = buildCanonical(locale, slugPath)
+  }
+
+  return { title, description, alternates, openGraph: { title, description } }
 }
 
 function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {

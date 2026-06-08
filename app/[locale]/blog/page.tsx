@@ -1,7 +1,10 @@
+import type {Metadata} from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import {getBlogPosts} from '@/src/lib/blog'
 import type {AppLocale} from '@/src/i18n/routes'
+import {getSeoDefaults} from '@/src/i18n/seo'
+import {buildAlternates} from '@/src/lib/seoAlternates'
 
 const COPY: Record<AppLocale, {
   eyebrow: string
@@ -70,6 +73,19 @@ function formatDate(value?: string, intlLocale = 'fr-BE') {
     return new Intl.DateTimeFormat(intlLocale, {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date(value))
   } catch {
     return value
+  }
+}
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}): Promise<Metadata> {
+  const {locale} = await params
+  const loc = locale as AppLocale
+  const defaults = getSeoDefaults(loc, 'blog')
+  const {canonical, languages} = buildAlternates(loc, 'blog')
+  return {
+    title: defaults.title,
+    description: defaults.description,
+    alternates: {canonical, languages},
+    openGraph: {title: defaults.title, description: defaults.description, url: canonical},
   }
 }
 

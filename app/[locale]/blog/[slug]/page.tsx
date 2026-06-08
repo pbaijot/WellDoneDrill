@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {getBlogPostBySlug} from '@/src/lib/blog'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
+import {buildBlogAlternates} from '@/src/lib/seoAlternates'
 
 const COPY: Record<AppLocale, {
   back: string
@@ -86,12 +87,15 @@ export async function generateMetadata({
   const post = await getBlogPostBySlug(locale, slug).catch(() => null)
   const title = post?.seoTitle || post?.title || 'Blog — WellDoneDrill'
   const description = post?.seoDescription || post?.excerpt || ''
+  const {canonical, languages} = buildBlogAlternates(locale as AppLocale, slug)
   return {
     title,
     description,
+    alternates: {canonical, languages},
     openGraph: {
       title,
       description,
+      url: canonical,
       ...(post?.mainImage?.asset?.url ? { images: [post.mainImage.asset.url] } : {}),
     },
   }

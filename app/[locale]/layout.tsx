@@ -1,4 +1,3 @@
-import type { Metadata } from 'next'
 import { Lexend } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
@@ -25,11 +24,6 @@ const lexend = Lexend({
   weight: ['200', '300', '400', '600', '700'],
   display: 'swap',
 })
-
-export const metadata: Metadata = {
-  title: "WellDoneDrill — L'énergie de la terre",
-  description: 'Expert en forage géothermique en Belgique, France et Luxembourg.',
-}
 
 export default async function LocaleLayout({
   children,

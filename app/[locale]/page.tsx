@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getLocalizedPath, type RouteKey, type AppLocale, PHONE_BY_LOCALE } from '@/src/i18n/routes'
 import { getSeoDefaults } from '@/src/i18n/seo'
+import { buildAlternates } from '@/src/lib/seoAlternates'
 import { getTranslations } from 'next-intl/server'
 import { getHomePage } from '@/src/lib/homePage'
 import { getLatestBlogPosts } from '@/src/lib/blog'
@@ -75,11 +76,18 @@ function IconOuverte({ className }: { className?: string }) {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
+  const loc = locale as AppLocale
   const home = await getHomePage(locale).catch(() => null)
-  const defaults = getSeoDefaults(locale as AppLocale, 'home')
+  const defaults = getSeoDefaults(loc, 'home')
   const title = home?.seoTitle || defaults.title
   const description = home?.seoDescription || defaults.description
-  return { title, description, openGraph: { title, description } }
+  const { canonical, languages } = buildAlternates(loc, 'home')
+  return {
+    title,
+    description,
+    alternates: { canonical, languages },
+    openGraph: { title, description, url: canonical },
+  }
 }
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
