@@ -37,7 +37,13 @@
     "pro_soumission": "Einreichungsbereich",
     "pro_soumission_sub": "Reichen Sie Ihr Projekt ein",
     "portal": "Mein Bereich",
-    "cta": "Sofortangebot"
+    "cta": "Sofortangebot",
+    "menu_particuliers": "Privatkunden",
+    "menu_pro": "Profis",
+    "menu_references": "Referenzen",
+    "menu_blog": "Artikel",
+    "menu_apropos": "Über uns",
+    "menu_contact": "Kontakt"
   },
   "footer": {
     "tagline": "Die Energie der Erde",

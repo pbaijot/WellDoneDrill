@@ -37,7 +37,13 @@
     "pro_soumission": "Submission area",
     "pro_soumission_sub": "Submit your project",
     "portal": "My account",
-    "cta": "Instant quote"
+    "cta": "Instant quote",
+    "menu_particuliers": "Homeowners",
+    "menu_pro": "Professionals",
+    "menu_references": "Projects",
+    "menu_blog": "Articles",
+    "menu_apropos": "About",
+    "menu_contact": "Contact"
   },
   "footer": {
     "tagline": "The energy of the earth",
