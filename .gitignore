@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local-only original assets (served via Sanity CMS, not committed)
+/_local-assets/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
