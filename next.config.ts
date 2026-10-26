@@ -1,4 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin'
+import { LEGACY_REDIRECTS } from './src/seo/legacyRedirects'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -47,6 +48,8 @@ export default withNextIntl({
       // lu-de
       { source: '/lu-de/profis/heizungsbauer', destination: '/lu-de/profis/hvac-installateure', permanent: true },
       { source: '/lu-de/profis/architekten',   destination: '/lu-de/profis/architekten-planungsbueros', permanent: true },
+      // Old WordPress URLs (articles, projects, references, language prefixes)
+      ...LEGACY_REDIRECTS,
     ]
   },
 })

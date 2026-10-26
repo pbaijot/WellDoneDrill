@@ -1,6 +1,9 @@
 import Simulator from '@/simulator/src/Simulator'
 import { getLocalizedPath, type AppLocale } from '@/src/i18n/routes'
 
+// Internal test page — keep it out of search results
+export const metadata = { robots: { index: false, follow: false } }
+
 export default async function SimulateurDevPage({
   params,
 }: {

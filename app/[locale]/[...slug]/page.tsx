@@ -42,14 +42,19 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
 
   let cmsTitle: string | undefined
   let cmsDesc: string | undefined
+  // false when the page will render the <ComingSoon> placeholder — keep those
+  // thin pages out of Google's index until the CMS content exists.
+  let hasContent = true
 
   try {
     if (routeKey === 'geo_fermee' || routeKey === 'geo_ouverte') {
       const p = await getGeoPage(locale, routeKey)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+      hasContent = !!p
     } else if (routeKey === 'pac') {
       const p = await getPacPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+      hasContent = !!p
     } else if (routeKey === 'particuliers') {
       const p = await getParticuliersPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
@@ -68,11 +73,14 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
       // sitePage (mentions_legales, politique_confidentialite, etc.)
       const p = await getSitePage(locale, routeKey)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
+      // geo / pro are hardcoded landing pages, not sitePage docs
+      if (routeKey !== 'geo' && routeKey !== 'pro') hasContent = !!p
     }
 
     // Province reference pages + individual chantier pages: /references/[slug]
     const referencesBase = routeMap[locale]?.references
     if (referencesBase && slugPath.startsWith(referencesBase + '/')) {
+      hasContent = true
       const subSlug = slugPath.slice(referencesBase.length + 1)
       const {getChantierBySlug, findProvinceBySlug, getProvinceName} = await import('@/src/lib/referencesPage')
       const province = findProvinceBySlug(subSlug)
@@ -119,7 +127,13 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
     alternates = buildCanonical(locale, slugPath)
   }
 
-  return { title, description, alternates, openGraph: { title, description } }
+  return {
+    title,
+    description,
+    alternates,
+    openGraph: { title, description },
+    ...(hasContent ? {} : { robots: { index: false, follow: true } }),
+  }
 }
 
 function ComingSoon({locale, routeKey}: {locale: AppLocale; routeKey: string}) {

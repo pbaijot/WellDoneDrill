@@ -67,7 +67,11 @@ export default function HomeMapSection({
           <h2 className="text-4xl font-bold leading-tight">
             {locale.endsWith('-en')
               ? <>Geothermal energy <span className="text-wdd-mud">across Belgium</span></>
-              : <>Géothermie partout <span className="text-wdd-mud">en Belgique</span></>}
+              : locale === 'be-nl'
+                ? <>Geothermie <span className="text-wdd-mud">overal in België</span></>
+                : locale === 'lu-de'
+                  ? <>Geothermie <span className="text-wdd-mud">in ganz Belgien</span></>
+                  : <>Géothermie partout <span className="text-wdd-mud">en Belgique</span></>}
           </h2>
           <div className="flex items-center gap-4 shrink-0">
             {selectedProvince && (
