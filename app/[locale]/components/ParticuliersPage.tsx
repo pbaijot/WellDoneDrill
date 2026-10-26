@@ -5,12 +5,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {
   motion,
-  animate,
   AnimatePresence,
   useInView,
-  useMotionValue,
   useReducedMotion,
-  useTransform,
 } from 'framer-motion'
 import {Hourglass, PiggyBank, TrendingUp} from 'lucide-react'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
@@ -338,7 +335,6 @@ const V2: Record<Lang, {
   eyebrow: string
   ctaStudy: string; ctaSoil: string; ctaQuote: string
   principleTitle: string; principleIntro: string
-  depthLabel: string; tempLabel: string
   principleSteps: Step[]
   siteTitle: string; siteIntro: string
   siteSteps: Step[]
@@ -349,7 +345,6 @@ const V2: Record<Lang, {
     ctaStudy: 'Demander mon analyse gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
     principleTitle: "L'énergie est déjà sous votre jardin.",
     principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
-    depthLabel: 'Profondeur', tempLabel: 'Température du sol',
     principleSteps: [
       {title: 'WellDoneDrill fore', body: 'Nous forons entre 80 et 200 m et y plaçons une boucle fermée de sondes.'},
       {title: 'Le sol fournit 15 °C', body: 'Été comme hiver, le sous-sol reste à température constante. Cette énergie est gratuite.'},
@@ -372,7 +367,6 @@ const V2: Record<Lang, {
     ctaStudy: 'Mijn gratis analyse aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
     principleTitle: 'De energie zit al onder uw tuin.',
     principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
-    depthLabel: 'Diepte', tempLabel: 'Bodemtemperatuur',
     principleSteps: [
       {title: 'WellDoneDrill boort', body: 'We boren tussen 80 en 200 m en plaatsen er een gesloten lus van sondes.'},
       {title: 'De bodem levert 15 °C', body: 'Zomer en winter blijft de ondergrond op constante temperatuur. Die energie is gratis.'},
@@ -395,7 +389,6 @@ const V2: Record<Lang, {
     ctaStudy: 'Request my free analysis', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
     principleTitle: 'The energy is already under your garden.',
     principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
-    depthLabel: 'Depth', tempLabel: 'Ground temperature',
     principleSteps: [
       {title: 'WellDoneDrill drills', body: 'We drill between 80 and 200 m and install a closed loop of probes.'},
       {title: 'The ground supplies 15 °C', body: 'Summer and winter, the subsoil stays at a constant temperature. That energy is free.'},
@@ -418,7 +411,6 @@ const V2: Record<Lang, {
     ctaStudy: 'Kostenlose Analyse anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
     principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
     principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
-    depthLabel: 'Tiefe', tempLabel: 'Bodentemperatur',
     principleSteps: [
       {title: 'WellDoneDrill bohrt', body: 'Wir bohren zwischen 80 und 200 m und setzen einen geschlossenen Sondenkreislauf ein.'},
       {title: 'Der Boden liefert 15 °C', body: 'Sommer wie Winter bleibt der Untergrund konstant temperiert. Diese Energie ist kostenlos.'},
@@ -660,22 +652,13 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
   const reduce = useReducedMotion()
   const [rawPhase, setPhase] = useState(0)
   const phase = reduce ? (inView ? 4 : 0) : rawPhase
-  const depth = useMotionValue(0)
-  const depthText = useTransform(depth, d => `${Math.round(d)} m`)
 
   useEffect(() => {
     if (!inView) return
-    if (reduce) {
-      depth.set(150)
-      return
-    }
+    if (reduce) return
     const timers = PHASE_AT.slice(1).map((ms, i) => setTimeout(() => setPhase(i + 1), ms))
-    const run = animate(depth, 150, {delay: PHASE_AT[1] / 1000, duration: 2.4, ease: 'easeInOut'})
-    return () => {
-      timers.forEach(clearTimeout)
-      run.stop()
-    }
-  }, [inView, reduce, depth])
+    return () => timers.forEach(clearTimeout)
+  }, [inView, reduce])
 
   const steps = v.principleSteps
   const draw = (on: boolean, duration: number) => ({
@@ -714,20 +697,8 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
           <ContactCta href={contactHref} label={v.ctaSoil} className="mt-8" />
         </div>
 
-        <div className="relative max-w-md w-full mx-auto">
-          {/* Readout */}
-          <div className="flex justify-end gap-8 mb-4 text-right">
-            <div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-black/40">{v.depthLabel}</div>
-              <motion.div className="text-lg font-bold tabular-nums">{depthText}</motion.div>
-            </div>
-            <motion.div initial={{opacity: 0}} animate={{opacity: phase >= 2 ? 1 : 0}} transition={{duration: 0.6}}>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-black/40">{v.tempLabel}</div>
-              <div className="text-lg font-bold tabular-nums">15 °C</div>
-            </motion.div>
-          </div>
-
-          <svg viewBox="0 0 400 540" className="w-full max-h-[64svh]" role="img" aria-label={v.principleTitle}>
+        <div className="relative w-full">
+          <svg viewBox="0 0 400 540" className="block w-full h-auto" role="img" aria-label={v.principleTitle}>
             <defs>
               <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0" stopColor="#D3CBBC" />
