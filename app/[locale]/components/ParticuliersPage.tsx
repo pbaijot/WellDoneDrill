@@ -3,11 +3,19 @@
 import {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import {motion, AnimatePresence} from 'framer-motion'
+import {
+  motion,
+  AnimatePresence,
+  useInView,
+  useMotionValueEvent,
+  useReducedMotion,
+  useScroll,
+  useSpring,
+  useTransform,
+} from 'framer-motion'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ParticuliersPageData} from '@/src/lib/particuliersPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
-import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
 import {
@@ -312,128 +320,242 @@ const UI = {
 type UiT = typeof UI[keyof typeof UI]
 
 /* ─────────────────────────────────────────────
+   V2 COPY (new chrome strings, per language)
+───────────────────────────────────────────── */
+
+type Lang = 'fr' | 'nl' | 'en' | 'de'
+
+const LANG: Record<AppLocale, Lang> = {
+  'be-fr': 'fr', 'fr-fr': 'fr', 'lu-fr': 'fr',
+  'be-nl': 'nl', 'lu-de': 'de',
+  'be-en': 'en', 'fr-en': 'en', 'lu-en': 'en',
+}
+
+type Step = {title: string; body: string}
+
+const V2: Record<Lang, {
+  eyebrow: string
+  trustStudy: string; trustReply: string; trustHomes: string
+  secProblem: string; secPrinciple: string; secSite: string; secBenefits: string
+  secProjects: string; secCalc: string; secFaq: string
+  principleTitle: string; principleIntro: string
+  depthLabel: string; tempLabel: string
+  principleSteps: Step[]
+  siteTitle: string; siteIntro: string
+  siteSteps: Step[]
+  videoCaption: string
+}> = {
+  fr: {
+    eyebrow: 'Géothermie pour particuliers',
+    trustStudy: 'Étude de faisabilité gratuite', trustReply: 'Réponse sous 48 h', trustHomes: '{n} projets résidentiels réalisés',
+    secProblem: 'Le problème', secPrinciple: 'Le principe', secSite: 'Le chantier', secBenefits: 'Vos bénéfices',
+    secProjects: 'Nos réalisations', secCalc: 'Vos économies', secFaq: 'Questions fréquentes',
+    principleTitle: "L'énergie est déjà sous votre jardin.",
+    principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
+    depthLabel: 'Profondeur', tempLabel: 'Température du sol',
+    principleSteps: [
+      {title: 'La sonde descend', body: 'Nous forons entre 80 et 200 m et y plaçons une boucle fermée de sondes.'},
+      {title: 'Le sol fournit 15 °C', body: 'Été comme hiver, le sous-sol reste à température constante. Cette énergie est gratuite.'},
+      {title: 'La pompe à chaleur amplifie', body: "Pour 1 kWh d'électricité, elle restitue 4 à 5 kWh de chaleur."},
+      {title: 'Votre maison en profite', body: 'Chauffage, eau chaude et fraîcheur en été, avec une seule installation.'},
+    ],
+    siteTitle: 'Comment se passe le chantier chez vous.',
+    siteIntro: "Moins d'une semaine de travaux, une seule équipe pour tout coordonner.",
+    siteSteps: [
+      {title: 'Étude gratuite', body: "Nous vérifions la faisabilité géologique de votre terrain et dimensionnons l'installation, sans engagement."},
+      {title: 'Permis et primes', body: 'Nous gérons les démarches administratives et vous aidons à monter vos dossiers de primes.'},
+      {title: 'Forage', body: "1 à 2 jours chez vous. La machine a besoin d'un accès de 2,5 m de large, et le terrain est remis en état."},
+      {title: 'Pompe à chaleur', body: 'Un chauffagiste partenaire installe la PAC en 1 à 2 jours. Nous coordonnons les deux équipes.'},
+      {title: 'Mise en service', body: "Moins d'une semaine après le début des travaux, votre maison se chauffe avec l'énergie du sol."},
+    ],
+    videoCaption: 'Forage de sondes géothermiques dans un jardin',
+  },
+  nl: {
+    eyebrow: 'Geothermie voor particulieren',
+    trustStudy: 'Gratis haalbaarheidsstudie', trustReply: 'Antwoord binnen 48u', trustHomes: '{n} residentiële projecten gerealiseerd',
+    secProblem: 'Het probleem', secPrinciple: 'Het principe', secSite: 'De werf', secBenefits: 'Uw voordelen',
+    secProjects: 'Onze realisaties', secCalc: 'Uw besparing', secFaq: 'Veelgestelde vragen',
+    principleTitle: 'De energie zit al onder uw tuin.',
+    principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
+    depthLabel: 'Diepte', tempLabel: 'Bodemtemperatuur',
+    principleSteps: [
+      {title: 'De sonde gaat de diepte in', body: 'We boren tussen 80 en 200 m en plaatsen er een gesloten lus van sondes.'},
+      {title: 'De bodem levert 15 °C', body: 'Zomer en winter blijft de ondergrond op constante temperatuur. Die energie is gratis.'},
+      {title: 'De warmtepomp versterkt', body: 'Voor 1 kWh elektriciteit levert ze 4 tot 5 kWh warmte.'},
+      {title: 'Uw woning geniet ervan', body: 'Verwarming, warm water en koeling in de zomer, met één installatie.'},
+    ],
+    siteTitle: 'Zo verloopt de werf bij u thuis.',
+    siteIntro: 'Minder dan een week werken, één team dat alles coördineert.',
+    siteSteps: [
+      {title: 'Gratis studie', body: 'We controleren de geologische haalbaarheid van uw terrein en dimensioneren de installatie, zonder verbintenis.'},
+      {title: 'Vergunning en premies', body: 'We regelen de administratieve stappen en helpen u met uw premiedossiers.'},
+      {title: 'Boring', body: '1 à 2 dagen bij u thuis. De machine heeft een toegang van 2,5 m breed nodig en het terrein wordt hersteld.'},
+      {title: 'Warmtepomp', body: 'Een partner-installateur plaatst de warmtepomp in 1 à 2 dagen. Wij coördineren beide teams.'},
+      {title: 'Ingebruikname', body: 'Minder dan een week na de start van de werken verwarmt uw woning zich met energie uit de bodem.'},
+    ],
+    videoCaption: 'Boring van geothermische sondes in een tuin',
+  },
+  en: {
+    eyebrow: 'Geothermal for homeowners',
+    trustStudy: 'Free feasibility study', trustReply: 'Reply within 48h', trustHomes: '{n} residential projects completed',
+    secProblem: 'The problem', secPrinciple: 'The principle', secSite: 'The works', secBenefits: 'Your benefits',
+    secProjects: 'Our projects', secCalc: 'Your savings', secFaq: 'FAQ',
+    principleTitle: 'The energy is already under your garden.',
+    principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
+    depthLabel: 'Depth', tempLabel: 'Ground temperature',
+    principleSteps: [
+      {title: 'The probe goes down', body: 'We drill between 80 and 200 m and install a closed loop of probes.'},
+      {title: 'The ground supplies 15 °C', body: 'Summer and winter, the subsoil stays at a constant temperature. That energy is free.'},
+      {title: 'The heat pump boosts it', body: 'For 1 kWh of electricity, it delivers 4 to 5 kWh of heat.'},
+      {title: 'Your home benefits', body: 'Heating, hot water and cooling in summer, with a single system.'},
+    ],
+    siteTitle: 'How the works go at your home.',
+    siteIntro: 'Less than a week of works, one team coordinating everything.',
+    siteSteps: [
+      {title: 'Free study', body: 'We check the geological feasibility of your plot and size the system, with no obligation.'},
+      {title: 'Permits and grants', body: 'We handle the paperwork and help you put together your grant applications.'},
+      {title: 'Drilling', body: '1 to 2 days at your home. The rig needs 2.5 m wide access, and the ground is restored afterwards.'},
+      {title: 'Heat pump', body: 'A partner installer fits the heat pump in 1 to 2 days. We coordinate both teams.'},
+      {title: 'Commissioning', body: 'Less than a week after works begin, your home is heated by energy from the ground.'},
+    ],
+    videoCaption: 'Drilling geothermal probes in a garden',
+  },
+  de: {
+    eyebrow: 'Geothermie für Privatkunden',
+    trustStudy: 'Kostenlose Machbarkeitsstudie', trustReply: 'Antwort innerhalb von 48h', trustHomes: '{n} Wohnprojekte realisiert',
+    secProblem: 'Das Problem', secPrinciple: 'Das Prinzip', secSite: 'Die Baustelle', secBenefits: 'Ihre Vorteile',
+    secProjects: 'Unsere Projekte', secCalc: 'Ihre Ersparnis', secFaq: 'Häufige Fragen',
+    principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
+    principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
+    depthLabel: 'Tiefe', tempLabel: 'Bodentemperatur',
+    principleSteps: [
+      {title: 'Die Sonde geht in die Tiefe', body: 'Wir bohren zwischen 80 und 200 m und setzen einen geschlossenen Sondenkreislauf ein.'},
+      {title: 'Der Boden liefert 15 °C', body: 'Sommer wie Winter bleibt der Untergrund konstant temperiert. Diese Energie ist kostenlos.'},
+      {title: 'Die Wärmepumpe verstärkt', body: 'Aus 1 kWh Strom macht sie 4 bis 5 kWh Wärme.'},
+      {title: 'Ihr Zuhause profitiert', body: 'Heizung, Warmwasser und Kühlung im Sommer, mit einer einzigen Anlage.'},
+    ],
+    siteTitle: 'So läuft die Baustelle bei Ihnen ab.',
+    siteIntro: 'Weniger als eine Woche Arbeiten, ein Team, das alles koordiniert.',
+    siteSteps: [
+      {title: 'Kostenlose Studie', body: 'Wir prüfen die geologische Machbarkeit Ihres Grundstücks und dimensionieren die Anlage, unverbindlich.'},
+      {title: 'Genehmigung und Förderung', body: 'Wir erledigen die Formalitäten und helfen Ihnen bei den Förderanträgen.'},
+      {title: 'Bohrung', body: '1 bis 2 Tage bei Ihnen. Die Maschine braucht eine 2,5 m breite Zufahrt, und das Gelände wird wiederhergestellt.'},
+      {title: 'Wärmepumpe', body: 'Ein Partner-Installateur setzt die Wärmepumpe in 1 bis 2 Tagen. Wir koordinieren beide Teams.'},
+      {title: 'Inbetriebnahme', body: 'Weniger als eine Woche nach Baubeginn heizt sich Ihr Zuhause mit Energie aus dem Boden.'},
+    ],
+    videoCaption: 'Bohrung von Erdwärmesonden in einem Garten',
+  },
+}
+
+type V2T = typeof V2[Lang]
+
+const WHY_ICONS = [
+  <svg key="eco" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
+  <svg key="leaf" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
+  <svg key="temp" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
+  <svg key="house" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M15 21V12H9v9"/><path d="M16 5l3 3"/></svg>,
+  <svg key="shield" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
+  <svg key="clock" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
+]
+
+/* ─────────────────────────────────────────────
    SUB-COMPONENTS
 ───────────────────────────────────────────── */
 
-function FaqItem({question, answer}: {question: string; answer: string}) {
-  const [open, setOpen] = useState(false)
+const EASE = [0.22, 1, 0.36, 1] as const
+
+function Reveal({children, delay = 0, className}: {children: React.ReactNode; delay?: number; className?: string}) {
+  const reduce = useReducedMotion()
+  return (
+    <motion.div
+      className={className}
+      initial={reduce ? false : {opacity: 0, y: 24}}
+      whileInView={{opacity: 1, y: 0}}
+      viewport={{once: true, margin: '-80px'}}
+      transition={{duration: 0.7, delay, ease: EASE}}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
+function SectionLabel({n, label, dark}: {n: string; label: string; dark?: boolean}) {
+  return (
+    <div className="flex items-center gap-3 mb-8 text-xs font-bold uppercase tracking-[0.2em]">
+      <span className={dark ? 'text-wdd-yellow' : 'text-wdd-mud'}>{n}</span>
+      <span className={`w-10 h-px ${dark ? 'bg-white/30' : 'bg-black/20'}`} />
+      <span className={dark ? 'text-white/60' : 'text-black/50'}>{label}</span>
+    </div>
+  )
+}
+
+// Counts up to the number in a CMS stat ("+180 %", "1 200 €", "50 ans") when it scrolls into view.
+// Server render and ranges ("7–10 ans") keep the literal value.
+function CountUp({value}: {value: string}) {
+  const ref = useRef<HTMLSpanElement>(null)
+  const inView = useInView(ref, {once: true, margin: '-60px'})
+  const reduce = useReducedMotion()
+  const m = value.match(/^([^\d]*)(\d(?:[\d\s  ]*\d)?)(.*)$/)
+  const target = m && !/^\s*[–-]\s*\d/.test(m[3]) ? Number(m[2].replace(/\D/g, '')) : null
+  const [n, setN] = useState<number | null>(null)
+
+  useEffect(() => {
+    if (!inView || target === null || reduce) return
+    let raf = 0
+    const start = performance.now()
+    const tick = (now: number) => {
+      const p = Math.min(1, (now - start) / 1400)
+      setN(Math.round(target * (1 - Math.pow(1 - p, 3))))
+      if (p < 1) raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [inView, target, reduce])
+
+  if (!m || n === null) return <span ref={ref}>{value}</span>
+  const sep = m[2].match(/[\s  ]/)?.[0]
+  const shown = sep ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep) : String(n)
+  return <span ref={ref}>{m[1]}{shown}{m[3]}</span>
+}
+
+function FaqItem({question, answer, defaultOpen}: {question: string; answer: string; defaultOpen?: boolean}) {
+  const [open, setOpen] = useState(!!defaultOpen)
   return (
     <div className="border-b border-black/10 last:border-b-0">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-start justify-between gap-6 py-5 text-left group"
+        aria-expanded={open}
+        className="w-full flex items-start justify-between gap-6 py-6 text-left group"
       >
-        <span className="text-base font-bold leading-snug group-hover:text-wdd-mud transition-colors">
+        <span className="text-lg font-bold leading-snug group-hover:text-wdd-mud transition-colors">
           {question}
         </span>
         <span
           className={
-            'flex-shrink-0 w-6 h-6 border flex items-center justify-center text-sm font-bold transition-all duration-200 mt-0.5 ' +
+            'flex-shrink-0 w-8 h-8 rounded-full border flex items-center justify-center text-base font-bold transition-all duration-300 ' +
             (open
               ? 'bg-wdd-yellow border-wdd-yellow text-wdd-black rotate-45'
-              : 'border-black/20 text-black/40')
+              : 'border-black/20 text-black/40 group-hover:border-black/40')
           }
         >
           +
         </span>
       </button>
-      {open && (
-        <p className="text-sm font-light text-black/70 leading-7 pb-6 pr-12 whitespace-pre-line">
-          {answer}
-        </p>
-      )}
-    </div>
-  )
-}
-
-function RoiLine({label, value, highlight}: {label: string; value: string; highlight?: boolean}) {
-  return (
-    <div
-      className={
-        'flex items-center justify-between py-3 border-b border-white/8 last:border-b-0 ' +
-        (highlight ? 'py-4' : '')
-      }
-    >
-      <span className={`text-sm font-light ${highlight ? 'text-white font-bold text-base' : 'text-white/60'}`}>
-        {label}
-      </span>
-      <span className={`font-bold tabular-nums ${highlight ? 'text-wdd-yellow text-xl' : 'text-white/90 text-sm'}`}>
-        {value}
-      </span>
-    </div>
-  )
-}
-
-function GeoScheme({t}: {t: UiT}) {
-  const [phase, setPhase] = useState(0)
-  // 0=off | 1=sol | 2=pipe1 | 3=pac | 4=pipe2 | 5=maison | 6=hold → restart
-  const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
-  useEffect(() => {
-    const t = setTimeout(() => setPhase(p => (p + 1) % 7), durations[phase] ?? 1400)
-    return () => clearTimeout(t)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase])
-
-  const solLit    = phase >= 1
-  const pipe1Lit  = phase >= 2
-  const pacLit    = phase >= 3
-  const pipe2Lit  = phase >= 4
-  const maisonLit = phase >= 5
-
-  const NODE_DUR = 'duration-[1100ms]'
-
-  const SchemeNode = ({lit, icon, label, sub, stat}: {lit: boolean; icon: React.ReactNode; label: string; sub: string; stat: string}) => (
-    <div className="flex-1 flex flex-col items-center text-center gap-3">
-      <div className={`w-14 h-14 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out ${lit ? 'bg-wdd-yellow' : 'bg-black/6'} rounded-sm`}>
-        <div className={`transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{icon}</div>
-      </div>
-      <div>
-        <div className={`text-sm font-bold leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{label}</div>
-        <div className={`text-xs font-light mt-0.5 leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-black/50' : 'text-black/10'}`}>{sub}</div>
-        <div className={`text-xs font-black mt-1.5 tabular-nums transition-colors ${NODE_DUR} ${lit ? 'text-wdd-mud' : 'text-black/10'}`}>{stat}</div>
-      </div>
-    </div>
-  )
-
-  const SchemePipe = ({lit}: {lit: boolean}) => (
-    <div className="flex flex-col items-center pt-7 w-14 shrink-0">
-      <div className="flex items-center w-full">
-        <div className="flex-1 h-px bg-black/8 relative overflow-hidden">
-          <div
-            className="absolute inset-0 bg-wdd-yellow origin-left"
-            style={{
-              transform: lit ? 'scaleX(1)' : 'scaleX(0)',
-              transition: lit ? 'transform 1000ms cubic-bezier(0.4,0,0.2,1)' : 'transform 500ms ease-in-out',
-            }}
-          />
-        </div>
-        <div style={{fontSize: 7, lineHeight: 1, color: lit ? '#FFD94F' : 'rgba(0,0,0,0.08)', transition: 'color 900ms ease-in-out'}}>▶</div>
-      </div>
-    </div>
-  )
-
-  return (
-    <div className="flex items-start">
-      <SchemeNode lit={solLit}
-        label={t.geoSol}
-        sub={t.geoSolSub}
-        stat="15 °C"
-        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>}
-      />
-      <SchemePipe lit={pipe1Lit} />
-      <SchemeNode lit={pacLit}
-        label={t.geoPac}
-        sub={t.geoPacSub}
-        stat="COP 4–5"
-        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>}
-      />
-      <SchemePipe lit={pipe2Lit} />
-      <SchemeNode lit={maisonLit}
-        label={t.geoMaison}
-        sub={t.geoMaisonSub}
-        stat="−70 %"
-        icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>}
-      />
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{height: 0, opacity: 0}}
+            animate={{height: 'auto', opacity: 1}}
+            exit={{height: 0, opacity: 0}}
+            transition={{duration: 0.35, ease: EASE}}
+            className="overflow-hidden"
+          >
+            <p className="text-base font-light text-black/70 leading-8 pb-7 pr-12 whitespace-pre-line">
+              {answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
@@ -486,6 +608,158 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
   )
 }
 
+/* Ground cross-section driven by scroll: the probe goes down to 150 m,
+   the ground hands back 15 °C, the heat pump lifts it into the house. */
+const GROUND_Y = 130
+const PROBE_BOTTOM = 490
+
+function DepthSection({n, v}: {n: string; v: V2T}) {
+  const ref = useRef<HTMLElement>(null)
+  const reduce = useReducedMotion()
+  const {scrollYProgress} = useScroll({target: ref, offset: ['start start', 'end end']})
+  const progress = useSpring(scrollYProgress, {stiffness: 140, damping: 30, mass: 0.3})
+  const [active, setActive] = useState(0)
+
+  useMotionValueEvent(scrollYProgress, 'change', p => {
+    setActive(Math.min(3, Math.max(0, Math.floor((p - 0.04) * 4.4))))
+  })
+
+  const probe = useTransform(progress, [0.04, 0.32], [0, 1])
+  const tipY = useTransform(probe, [0, 1], [GROUND_Y, PROBE_BOTTOM])
+  const depthText = useTransform(probe, p => `${Math.round(p * 150)} m`)
+  const tempOpacity = useTransform(progress, [0.26, 0.36], [0, 1])
+  const heat = useTransform(progress, [0.3, 0.6], [0, 1])
+  const pipe = useTransform(progress, [0.5, 0.68], [0, 1])
+  const house = useTransform(progress, [0.66, 0.82], [0, 1])
+  const tipOpacity = useTransform(probe, [0, 0.98, 1], [1, 1, 0])
+
+  const steps = v.principleSteps
+  const shownStep = reduce ? -1 : active
+
+  return (
+    <section ref={ref} className={`relative bg-wdd-clay ${reduce ? '' : 'h-[300vh]'}`}>
+      <div className={`${reduce ? 'py-28' : 'sticky top-16 h-[calc(100svh-4rem)] pb-20 lg:pb-0'} overflow-hidden px-8 md:px-16 flex items-center`}>
+        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
+
+          <div>
+            <SectionLabel n={n} label={v.secPrinciple} />
+            <h2 className="text-3xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.principleTitle}</h2>
+            <p className="hidden md:block mt-6 text-lg font-light text-black/60 leading-8 max-w-xl">{v.principleIntro}</p>
+            <ol className="mt-6 md:mt-10 space-y-1">
+              {steps.map((s, i) => {
+                const on = shownStep === -1 || i <= shownStep
+                const current = shownStep === -1 || i === shownStep
+                return (
+                  <li
+                    key={s.title}
+                    className={`gap-5 py-3 border-t border-black/10 transition-opacity duration-500 ${current ? 'flex' : 'hidden lg:flex'} ${on ? 'opacity-100' : 'opacity-30'}`}
+                  >
+                    <span className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-colors duration-500 ${current && on ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/50'}`}>
+                      {i + 1}
+                    </span>
+                    <div>
+                      <div className="font-bold leading-snug">{s.title}</div>
+                      <div className="text-sm font-light text-black/60 leading-6 mt-1">{s.body}</div>
+                    </div>
+                  </li>
+                )
+              })}
+            </ol>
+          </div>
+
+          <div className="relative">
+            <svg viewBox="0 0 400 520" className="w-full max-h-[34svh] lg:max-h-[72svh]" role="img" aria-label={v.principleTitle}>
+              <defs>
+                <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stopColor="#B0A18F" />
+                  <stop offset="0.45" stopColor="#8E7B66" />
+                  <stop offset="1" stopColor="#5E4E3F" />
+                </linearGradient>
+              </defs>
+
+              {/* Ground and strata */}
+              <rect x="0" y={GROUND_Y} width="400" height={520 - GROUND_Y} fill="url(#wdd-ground)" />
+              <path d={`M0 ${GROUND_Y} H400`} stroke="#42754F" strokeWidth="6" />
+              <path d="M0 250 C 90 238, 180 262, 270 248 S 400 252, 400 252" stroke="#1A1A1A" strokeOpacity="0.12" fill="none" />
+              <path d="M0 370 C 110 382, 200 356, 300 372 S 400 366, 400 366" stroke="#1A1A1A" strokeOpacity="0.12" fill="none" />
+
+              {/* Depth scale */}
+              {[0, 50, 100, 150].map(d => {
+                const y = GROUND_Y + (d / 150) * (PROBE_BOTTOM - GROUND_Y)
+                return (
+                  <g key={d}>
+                    <line x1="24" x2="40" y1={y} y2={y} stroke="#FFFFFF" strokeOpacity="0.7" />
+                    <text x="46" y={d === 0 ? y + 16 : y + 4} fontSize="12" fill="#FFFFFF" fillOpacity="0.85">{d} m</text>
+                  </g>
+                )
+              })}
+
+              {/* Heat rising along the probe */}
+              <motion.g style={{opacity: reduce ? 1 : heat}} stroke="#FFD94F" strokeWidth="2.5" fill="none" strokeLinecap="round">
+                {[440, 360, 280, 200].map(y => (
+                  <g key={y}>
+                    <path d={`M160 ${y + 8} L168 ${y} L176 ${y + 8}`} />
+                    <path d={`M224 ${y + 8} L232 ${y} L240 ${y + 8}`} />
+                  </g>
+                ))}
+              </motion.g>
+
+              {/* Closed probe loop */}
+              <g stroke="#FFD94F" strokeWidth="4" fill="none">
+                <motion.path d={`M196 ${GROUND_Y} V${PROBE_BOTTOM}`} style={{pathLength: reduce ? 1 : probe}} />
+                <motion.path d={`M204 ${GROUND_Y} V${PROBE_BOTTOM}`} style={{pathLength: reduce ? 1 : probe}} />
+                <motion.path d={`M196 ${PROBE_BOTTOM} Q200 ${PROBE_BOTTOM + 10} 204 ${PROBE_BOTTOM}`} style={{opacity: reduce ? 1 : tempOpacity}} />
+              </g>
+              {!reduce && <motion.rect x="190" width="20" height="12" rx="2" fill="#1A1A1A" y={tipY} style={{opacity: tipOpacity}} />}
+
+              {/* Pipe up to the heat pump */}
+              <motion.path
+                d={`M200 ${GROUND_Y} V112 H262`}
+                stroke="#FFD94F"
+                strokeWidth="4"
+                fill="none"
+                style={{pathLength: reduce ? 1 : pipe}}
+              />
+
+              {/* House + heat pump */}
+              <g>
+                <motion.path
+                  d="M108 128 V82 L160 44 L212 82 V128 Z"
+                  stroke="#1A1A1A"
+                  strokeWidth="3"
+                  strokeLinejoin="round"
+                  fill="#FFD94F"
+                  style={{fillOpacity: reduce ? 1 : house}}
+                />
+                <rect x="148" y="98" width="24" height="30" fill="none" stroke="#1A1A1A" strokeWidth="3" />
+                <rect x="262" y="96" width="40" height="32" rx="3" fill="#FFFFFF" stroke="#1A1A1A" strokeWidth="3" />
+                <text x="282" y="117" fontSize="11" fontWeight="700" textAnchor="middle" fill="#1A1A1A">PAC</text>
+                <motion.path
+                  d="M262 112 H212"
+                  stroke="#FFD94F"
+                  strokeWidth="4"
+                  style={{pathLength: reduce ? 1 : house}}
+                />
+              </g>
+            </svg>
+
+            {/* Live readout */}
+            <div className="absolute bottom-0 lg:bottom-auto lg:top-0 right-0 bg-wdd-black text-white rounded-sm px-3 py-2 lg:px-4 lg:py-3 text-right min-w-[7rem] lg:min-w-[9rem]">
+              <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">{v.depthLabel}</div>
+              <motion.div className="text-lg lg:text-2xl font-bold tabular-nums text-wdd-yellow">{reduce ? '150 m' : depthText}</motion.div>
+              <motion.div style={{opacity: reduce ? 1 : tempOpacity}} className="mt-2 pt-2 border-t border-white/15">
+                <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">{v.tempLabel}</div>
+                <div className="text-base lg:text-xl font-bold tabular-nums">15 °C</div>
+              </motion.div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+
 /* ─────────────────────────────────────────────
    PAGE COMPONENT
 ───────────────────────────────────────────── */
@@ -502,6 +776,7 @@ export default function ParticuliersPage({
   settings?: GlobalSettingsData | null
 }) {
   const t = UI[locale]
+  const v = V2[LANG[locale]]
 
   const whyItems =
     page.whyItems && page.whyItems.length > 0 ? page.whyItems : DEFAULT_WHY_ITEMS
@@ -511,7 +786,14 @@ export default function ParticuliersPage({
       ? page.faqs.map((f) => ({question: f.question ?? '', answer: f.answer ?? ''}))
       : DEFAULT_FAQS
 
-  const primes = DEFAULT_PRIMES
+  // Homes first: this page speaks to homeowners
+  const residentialCount = chantiers.filter(c => c.sector === 'residentiel').length
+  const sortedChantiers = [...chantiers].sort(
+    (a, b) => Number(b.sector === 'residentiel') - Number(a.sector === 'residentiel'),
+  )
+
+  const order = ['problem', 'principle', 'site', 'benefits', ...(t.showMap ? ['projects'] : []), 'calc', 'faq']
+  const num = (key: string) => String(order.indexOf(key) + 1).padStart(2, '0')
 
   // Calculateur d'économies d'énergie
   const [ecoMode, setEcoMode] = useState<'surface' | 'conso'>('surface')
@@ -579,236 +861,285 @@ export default function ParticuliersPage({
 
   const stats = page.stats && page.stats.length > 0 ? page.stats : []
 
+  const heroImage = page.heroRightImage
+    ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp'
+    : '/images/WDD-particuliers.webp'
+
+  const heroPanel =
+    page.heroPanelItems && page.heroPanelItems.length > 0
+      ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
+      : [
+          {label: 'Économies annuelles moyennes', value: '~1 200 €', sub: 'par foyer converti'},
+          {label: 'Coefficient de performance',  value: 'COP 4–5',   sub: '4× plus efficace que le gaz'},
+          {label: 'Réduction de facture',        value: '–70 %',     sub: 'sur vos coûts de chauffage'},
+        ]
+
+  const trust = [
+    v.trustStudy,
+    v.trustReply,
+    ...(residentialCount > 0 ? [v.trustHomes.replace('{n}', String(residentialCount))] : []),
+  ]
+
+  const videoUrl = page.contextVideo?.asset?.url ?? null
+
   return (
     <div className="flex flex-col bg-white">
 
       {/* ══════════════════════════════════════
-          1. HERO
-          Objectif : capter l'attention, poser
-          le bénéfice #1, lancer vers l'action
+          HERO — la promesse, puis la preuve
       ══════════════════════════════════════ */}
-      <section className="h-[90vh] relative overflow-hidden px-8 md:px-16">
-
-        {/* Couche 1 : fond-terre-2 sur la moitié gauche */}
-        <div className="absolute left-0 top-0 bottom-0 w-1/2 hidden lg:block">
+      <section className="relative min-h-[calc(100svh-4rem)] flex items-end overflow-hidden bg-wdd-black">
+        <motion.div
+          className="absolute inset-0"
+          initial={{scale: 1.08}}
+          animate={{scale: 1}}
+          transition={{duration: 1.8, ease: EASE}}
+        >
           <Image
-            src={page.heroLeftBgImage ? urlFor(page.heroLeftBgImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp' : '/images/wdd-geothermie_fermee-terre.webp'}
-            alt=""
-            fill
-            className="object-cover object-center scale-[1.04]"
-            style={{filter: 'saturate(1.5) blur(0.8px)'}}
-            priority
-          />
-          <div className="absolute inset-0 bg-wdd-black/30" />
-        </div>
-        {/* Couche 1b : image de fond plein écran sur mobile */}
-        <div className="absolute inset-0 lg:hidden">
-          <Image
-            src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
-            alt=""
-            fill
-            className="object-cover object-center"
-            priority
-          />
-          <div className="absolute inset-0 bg-wdd-black/60" />
-        </div>
-
-        {/* Couche 3 : photo foreuse sur la moitié droite */}
-        <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
-          <Image
-            src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
+            src={heroImage}
             alt="Foreuse WellDoneDrill sur chantier"
             fill
             className="object-cover object-center"
             priority
           />
-          {/* Floating info panels — 3 arguments en cycle */}
-          <div className="absolute bottom-8 right-8 z-10">
-            <FloatingInfoPanel
-              items={
-                page.heroPanelItems && page.heroPanelItems.length > 0
-                  ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
-                  : [
-                      {label: 'Économies annuelles moyennes', value: '~1 200 €', sub: 'par foyer converti'},
-                      {label: 'Coefficient de performance',  value: 'COP 4–5',   sub: '4× plus efficace que le gaz'},
-                      {label: 'Réduction de facture',        value: '–70 %',     sub: 'sur vos coûts de chauffage'},
-                    ]
-              }
-            />
-          </div>
-        </div>
+        </motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-wdd-black via-wdd-black/60 to-wdd-black/10" />
+        <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-wdd-black/70 via-wdd-black/10 to-transparent" />
 
-        {/* Logo centré sur la séparation gauche / droite */}
-        <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-[4] pointer-events-none">
-          <Image
-            src="/images/small-white-logo-droit.png"
-            alt="WellDoneDrill"
-            width={144}
-            height={144}
-            className="object-contain"
-          />
-        </div>
-
-        {/* Couche 4 : contenu — même conteneur que toutes les sections */}
-        <div className="relative z-[3] max-w-screen-2xl mx-auto h-[90vh] flex items-center">
-          <div className="w-full lg:w-1/2 lg:pr-12 py-24">
-
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-[1.08] mb-6">
-              {page.heroTitle ?? (
-                <>
-                  Chauffez et climatisez<br />
-                  sans gaz, sans mazout.
-                </>
-              )}
-            </h1>
-
-            <p className="text-base font-normal text-white leading-relaxed max-w-lg mb-10">
-              {page.heroSubtitle ??
-                "WellDoneDrill fore vos sondes géothermiques. Votre maison se chauffe et se rafraîchit avec l'énergie du sol — jusqu'à 70 % d'économies sur vos factures."}
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap items-center gap-3 mb-10">
-              <Link
-                href={getLocalizedPath(locale, 'contact')}
-                className="bg-white text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-white hover:bg-transparent hover:text-white transition-colors rounded-sm"
-              >
-                {page.heroCtaDevisLabel ?? "Recevoir un devis immédiatement"}
-              </Link>
-              <a
-                href="#calculateur"
-                className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors rounded-sm"
-              >
-                {page.heroCtaCalculLabel ?? "Calculer mes économies"}
-              </a>
+        <div className="relative z-10 w-full px-8 md:px-16 pt-32 pb-10">
+          <div className="max-w-screen-2xl mx-auto">
+            <Reveal>
+              <span className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-wdd-yellow">
+                <span className="w-8 h-px bg-wdd-yellow" />
+                {v.eyebrow}
+              </span>
+            </Reveal>
+            <div>
+              <h1 className="mt-6 max-w-4xl text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.02] tracking-tight">
+                {page.heroTitle?.trim() ?? (
+                  <>
+                    Chauffez et climatisez<br />
+                    sans gaz, sans mazout.
+                  </>
+                )}
+              </h1>
+              <p className="mt-6 max-w-xl text-base md:text-lg text-white/80 leading-relaxed">
+                {page.heroSubtitle?.trim() ??
+                  "WellDoneDrill fore vos sondes géothermiques. Votre maison se chauffe et se rafraîchit avec l'énergie du sol — jusqu'à 70 % d'économies sur vos factures."}
+              </p>
             </div>
+            <Reveal delay={0.12}>
+              <div className="mt-10 flex flex-wrap items-center gap-3">
+                <a
+                  href="#calculateur"
+                  className="bg-wdd-yellow text-wdd-black px-7 py-4 text-sm font-bold border-2 border-wdd-yellow hover:bg-white hover:border-white transition-colors rounded-sm"
+                >
+                  {page.heroCtaCalculLabel?.trim().replace(/\.$/, '') ?? t.mobileCta1}
+                </a>
+                <Link
+                  href={getLocalizedPath(locale, 'contact')}
+                  className="px-7 py-4 text-sm font-bold border-2 border-white/40 text-white hover:border-white transition-colors rounded-sm"
+                >
+                  {page.heroCtaDevisLabel?.trim().replace(/\.$/, '') ?? t.mobileCta2}
+                </Link>
+              </div>
+              <ul className="mt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-white/75">
+                {trust.map(item => (
+                  <li key={item} className="flex items-center gap-2">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFD94F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
 
+            <Reveal delay={0.32}>
+              <div className="mt-14 pt-8 border-t border-white/15 grid grid-cols-3 gap-4 md:gap-10 max-w-4xl">
+                {heroPanel.map(item => (
+                  <div key={item.label}>
+                    <div className="text-xl sm:text-2xl md:text-4xl font-bold text-wdd-yellow tabular-nums leading-none">{item.value}</div>
+                    <div className="mt-2 text-xs md:text-sm text-white/80 leading-snug">{item.label}</div>
+                    {item.sub && <div className="hidden md:block mt-1 text-xs text-white/45 leading-snug">{item.sub}</div>}
+                  </div>
+                ))}
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          2. CONTEXTE + VIDÉO
+          01. LE PROBLÈME
       ══════════════════════════════════════ */}
-      <section className="bg-white py-[7.5rem] px-8 md:px-16">
+      <section className="bg-wdd-black text-white py-28 md:py-36 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="flex flex-col lg:flex-row lg:gap-12">
-
-            {/* Left — text + schematic */}
-            <div className="w-full lg:w-1/2 flex flex-col">
-              <h2 className="text-4xl font-bold leading-tight mb-6">
+          <Reveal>
+            <SectionLabel n={num('problem')} label={v.secProblem} dark />
+          </Reveal>
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16">
+            <Reveal className="lg:col-span-7">
+              <h2 className="text-4xl md:text-6xl font-bold leading-[1.05] tracking-tight">
                 {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
               </h2>
-              <p className="text-base font-light text-black/60 leading-8 mb-12">
+            </Reveal>
+            <Reveal delay={0.1} className="lg:col-span-5 lg:self-end">
+              <p className="text-lg font-light text-white/65 leading-8">
                 {page.problemBody ??
-                  "Le prix du gaz a bondi de 180 % depuis 2021. L'Union européenne interdit les chaudières fossiles neuves dès 2026. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
+                  "Le prix du gaz a bondi de 180 % depuis 2021. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
-              {stats.length > 0 && (
-                <div className="flex items-start mt-auto mb-6">
-                  <div className="flex-1 flex flex-col items-center text-center">
-                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[0]?.value}</div>
-                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[0]?.label}</div>
+            </Reveal>
+          </div>
+          {stats.length > 0 && (
+            <div className="mt-20 grid sm:grid-cols-3 gap-10 sm:gap-8">
+              {stats.slice(0, 3).map((s, i) => (
+                <Reveal key={s._key ?? i} delay={i * 0.1} className="border-t border-white/15 pt-8">
+                  <div className="text-6xl md:text-7xl font-bold text-wdd-yellow tabular-nums leading-none tracking-tight">
+                    <CountUp value={s.value ?? ''} />
                   </div>
-                  <div className="w-14 shrink-0" />
-                  <div className="flex-1 flex flex-col items-center text-center">
-                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[1]?.value}</div>
-                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[1]?.label}</div>
-                  </div>
-                  <div className="w-14 shrink-0" />
-                  <div className="flex-1 flex flex-col items-center text-center">
-                    <div className="text-2xl font-bold text-wdd-mud tabular-nums">{stats[2]?.value}</div>
-                    <div className="text-xs font-light text-black/50 mt-1 leading-snug">{stats[2]?.label}</div>
-                  </div>
+                  <div className="mt-4 text-sm font-light text-white/60 leading-6 max-w-[18rem]">{s.label}</div>
+                </Reveal>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════
+          02. LE PRINCIPE — coupe de terrain au scroll
+      ══════════════════════════════════════ */}
+      <DepthSection n={num('principle')} v={v} />
+
+      {/* ══════════════════════════════════════
+          03. LE CHANTIER CHEZ VOUS
+      ══════════════════════════════════════ */}
+      <section className="bg-white py-28 md:py-36 px-8 md:px-16">
+        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <Reveal>
+              <SectionLabel n={num('site')} label={v.secSite} />
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.siteTitle}</h2>
+              <p className="mt-6 text-lg font-light text-black/60 leading-8">{v.siteIntro}</p>
+            </Reveal>
+            <ol className="relative mt-12 space-y-8 before:absolute before:left-4 before:top-4 before:bottom-4 before:w-px before:bg-black/10">
+              {v.siteSteps.map((s, i) => (
+                <Reveal key={s.title} delay={i * 0.06}>
+                  <li className="relative flex gap-5">
+                    <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">
+                      {i + 1}
+                    </span>
+                    <div className="pt-1">
+                      <div className="font-bold leading-snug">{s.title}</div>
+                      <div className="mt-1 text-sm font-light text-black/60 leading-6">{s.body}</div>
+                    </div>
+                  </li>
+                </Reveal>
+              ))}
+            </ol>
+          </div>
+
+          <div className="lg:col-span-7">
+            <Reveal className="lg:sticky lg:top-28">
+              <figure>
+                <div className={`relative overflow-hidden rounded-sm bg-wdd-clay ${videoUrl ? '' : 'aspect-video'}`}>
+                  <ContextMedia
+                    videoUrl={videoUrl}
+                    imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
+                  />
                 </div>
-              )}
-              <div className="border-t border-black/8 pt-10">
-                <GeoScheme t={t} />
-              </div>
-            </div>
-
-            {/* Right — video or image */}
-            <div className={`w-full mt-8 lg:mt-0 lg:flex-1 relative overflow-hidden rounded-sm ${
-              page.contextVideo?.asset?.url ? 'lg:self-center' : 'h-64 sm:h-80 lg:h-auto lg:min-h-[400px]'
-            }`}>
-              <ContextMedia
-                videoUrl={page.contextVideo?.asset?.url ?? null}
-                imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
-              />
-            </div>
-
+                {videoUrl && (
+                  <figcaption className="mt-3 text-sm font-light text-black/50">{v.videoCaption}</figcaption>
+                )}
+              </figure>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          3. POURQUOI LA GÉOTHERMIE
+          04. VOS BÉNÉFICES — grille bento
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-clay py-[7.5rem] px-8 md:px-16">
+      <section className="bg-wdd-clay py-28 md:py-36 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <h2 className="text-4xl font-bold leading-tight mb-10">
-            {page.whyTitle ?? "Six raisons de passer à la géothermie cette année."}
-          </h2>
+          <Reveal>
+            <SectionLabel n={num('benefits')} label={v.secBenefits} />
+            <h2 className="max-w-3xl text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
+              {page.whyTitle ?? "Six raisons de passer à la géothermie cette année."}
+            </h2>
+          </Reveal>
 
-          {(() => {
-            const ICONS = [
-              <svg key="eco" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
-              <svg key="leaf" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
-              <svg key="temp" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
-              <svg key="house" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M15 21V12H9v9"/><path d="M16 5l3 3"/></svg>,
-              <svg key="shield" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
-              <svg key="clock" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>,
-            ]
-            const ICON_BGS = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud', 'bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'] as const
-            return (
-              <>
-                <div className="grid lg:grid-cols-2 gap-2">
-                  {whyItems.map((item, i) => (
-                    <div
-                      key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
-                      className="grid grid-cols-[5rem_1fr] bg-white rounded-sm overflow-hidden"
-                    >
-                      <div className={`flex items-center justify-center self-stretch ${ICON_BGS[i % 3]}`}>
-                        <div className="text-wdd-black">{ICONS[i] ?? ICONS[0]}</div>
-                      </div>
-                      <div className="grid sm:grid-cols-[1fr_2fr]">
-                        <h3 className="text-sm font-bold leading-snug px-5 pt-6 pb-1 sm:py-7 sm:pr-3 self-start">{item.title}</h3>
-                        <p className="text-sm font-light text-black/50 leading-relaxed px-5 pb-6 sm:py-7 sm:pl-0 sm:pr-5 self-start">{item.body}</p>
+          <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+            {whyItems.map((item, i) => {
+              const key = ('_key' in item ? (item._key as string | undefined) : undefined) ?? i
+              if (i === 0) {
+                return (
+                  <Reveal key={key} className="md:col-span-2 lg:row-span-2">
+                    <div className="h-full min-h-[22rem] bg-wdd-yellow rounded-sm p-8 md:p-10 flex flex-col justify-between">
+                      <div className="text-wdd-black">{WHY_ICONS[0]}</div>
+                      <div>
+                        <h3 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">{item.title}</h3>
+                        <p className="mt-4 text-base text-black/70 leading-7 max-w-md">{item.body}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
-                <div className="mt-10">
-                  <Link
-                    href={getLocalizedPath(locale, 'contact')}
-                    className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
-                  >
-                    {t.startProject}
-                  </Link>
-                </div>
-              </>
-            )
-          })()}
+                  </Reveal>
+                )
+              }
+              return (
+                <Reveal key={key} delay={(i % 4) * 0.06} className={i === 5 ? 'lg:col-span-2' : ''}>
+                  <div className="h-full bg-white rounded-sm p-7 flex flex-col gap-6">
+                    <div className="text-wdd-mud">{WHY_ICONS[i] ?? WHY_ICONS[0]}</div>
+                    <div>
+                      <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
+                      <p className="mt-2 text-sm font-light text-black/55 leading-6">{item.body}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              )
+            })}
+            <Reveal className="md:col-span-2">
+              <Link
+                href={getLocalizedPath(locale, 'contact')}
+                className="group h-full min-h-[10rem] bg-wdd-black text-white rounded-sm p-7 flex items-end justify-between gap-6 hover:bg-wdd-black/90 transition-colors"
+              >
+                <span className="text-2xl font-bold leading-tight max-w-xs">{t.startProject.replace(/\s*→\s*$/, '')}</span>
+                <span className="shrink-0 w-12 h-12 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-xl font-bold group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          4. NOS PROJETS EN BELGIQUE
+          05. NOS RÉALISATIONS (résidentiel d'abord)
       ══════════════════════════════════════ */}
-      {t.showMap && <ProjetsSection locale={locale} chantiers={chantiers} t={t} />}
+      {t.showMap && (
+        <ProjetsSection
+          locale={locale}
+          chantiers={sortedChantiers}
+          t={t}
+          label={<SectionLabel n={num('projects')} label={v.secProjects} />}
+        />
+      )}
 
       {/* ══════════════════════════════════════
-          5. CALCULATEUR D'ÉCONOMIES
+          06. CALCULATEUR D'ÉCONOMIES
       ══════════════════════════════════════ */}
-      <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0`}>
+      <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16 py-28`}>
         <div className="max-w-screen-2xl mx-auto w-full">
 
+          <Reveal>
+            <SectionLabel n={num('calc')} label={v.secCalc} />
+          </Reveal>
           <div className="grid lg:grid-cols-2 gap-12 mb-14">
-            <h2 className="text-4xl font-bold leading-tight">
-              {t.calcTitle}
-            </h2>
-            <p className="text-base font-light text-black/55 leading-8 self-end">
-              {t.calcIntro}
-            </p>
+            <Reveal>
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
+                {t.calcTitle}
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1} className="self-end">
+              <p className="text-base font-light text-black/55 leading-8">
+                {t.calcIntro}
+              </p>
+            </Reveal>
           </div>
 
           {/* Configurateur + Résultats */}
@@ -898,18 +1229,18 @@ export default function ParticuliersPage({
             </div>
 
             {/* ── Résultats ── */}
-            <div className="bg-white border border-black/8 p-8 flex flex-col rounded-sm">
-              <div className="text-[10px] font-bold uppercase tracking-widest text-black/35 mb-6">
+            <div className="bg-wdd-black text-white p-8 flex flex-col rounded-sm lg:sticky lg:top-24 self-start">
+              <div className="text-[10px] font-bold uppercase tracking-widest text-white/45 mb-6">
                 {t.savingsTitle}
               </div>
 
               {/* Total mis en avant */}
-              <div className="mb-6 pb-6 border-b border-black/8">
-                <div className="text-[10px] uppercase tracking-widest text-black/35 mb-2">{t.totalLabel}</div>
-                <div className="text-4xl font-bold text-wdd-black tabular-nums leading-none">
+              <div className="mb-6 pb-6 border-b border-white/10">
+                <div className="text-[10px] uppercase tracking-widest text-white/45 mb-2">{t.totalLabel}</div>
+                <div className="text-4xl font-bold text-wdd-yellow tabular-nums leading-none">
                   {fmt(ecoCalc.totalEurLow)} – {fmt(ecoCalc.totalEurHigh)} €
                 </div>
-                <div className="text-sm font-light text-black/45 mt-2">
+                <div className="text-sm font-light text-white/55 mt-2">
                   {t.totalSub.replace('{mwh}', String(ecoCalc.totalMWh)).replace('{co2}', fmt(ecoCalc.co2))}
                 </div>
               </div>
@@ -925,31 +1256,31 @@ export default function ParticuliersPage({
                     mwhBase: ecoCalc.piscMWh },
                 ].map(p => (
                   <div key={p.label}
-                    className={`flex items-center justify-between py-4 border-b border-black/8 last:border-b-0 transition-opacity ${p.active ? 'opacity-100' : 'opacity-25'}`}>
+                    className={`flex items-center justify-between py-4 border-b border-white/10 last:border-b-0 transition-opacity ${p.active ? 'opacity-100' : 'opacity-30'}`}>
                     <div>
                       <div className="text-sm font-bold">{p.label}</div>
-                      <div className="text-xs text-black/40 mt-0.5">
+                      <div className="text-xs text-white/45 mt-0.5">
                         {p.active ? `${p.data?.mwh ?? 0} MWh / ${p.mwhBase} MWh` : t.notSelected}
                       </div>
                     </div>
                     <div className="text-right">
                       {p.active && p.data ? (
                         <>
-                          <div className="text-base font-bold text-wdd-black tabular-nums">
-                            {fmt(p.data.eurLow ?? (p.data as {eur?: number}).eur ?? 0)} – {fmt(p.data.eurHigh ?? (p.data as {eur?: number}).eur ?? 0)} €
+                          <div className="text-base font-bold tabular-nums">
+                            {fmt(p.data.eurLow)} – {fmt(p.data.eurHigh)} €
                           </div>
-                          <div className="text-[10px] text-black/30 mt-0.5">/an</div>
+                          <div className="text-[10px] text-white/40 mt-0.5">/an</div>
                         </>
                       ) : (
-                        <div className="text-sm text-black/20">—</div>
+                        <div className="text-sm text-white/30">—</div>
                       )}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-5 pt-5 border-t border-black/8">
-                <div className="text-xs font-light text-black/35 leading-5">
+              <div className="mt-5 pt-5 border-t border-white/10">
+                <div className="text-xs font-light text-white/40 leading-5">
                   {t.disclaimer}
                 </div>
               </div>
@@ -960,36 +1291,35 @@ export default function ParticuliersPage({
       </section>
 
       {/* ══════════════════════════════════════
-          6. CTA DÉMARRER
+          CTA DÉMARRER
       ══════════════════════════════════════ */}
       <DemarrerCTA locale={locale} settings={settings} />
 
       {/* ══════════════════════════════════════
-          7. FAQ
-          Objectif : lever les derniers freins
-          avant la conversion finale
+          07. FAQ — lever les derniers freins
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-clay py-24 px-8 md:px-16">
+      <section className="bg-wdd-clay py-28 md:py-32 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-3 gap-16">
-          <div>
-            <h2 className="text-3xl font-bold mb-4 leading-tight">
+          <Reveal>
+            <SectionLabel n={num('faq')} label={v.secFaq} />
+            <h2 className="text-4xl font-bold mb-4 leading-[1.05] tracking-tight">
               {page.faqTitle ?? "Vos questions, nos réponses."}
             </h2>
-            <p className="text-sm font-light text-black/50 leading-7 mb-8">
+            <p className="text-base font-light text-black/55 leading-7 mb-8">
               {t.faqSub}
             </p>
             <Link
               href={getLocalizedPath(locale, 'contact')}
-              className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+              className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
               {t.faqCta}
             </Link>
-          </div>
-          <div className="lg:col-span-2">
+          </Reveal>
+          <Reveal delay={0.1} className="lg:col-span-2 bg-white rounded-sm px-6 md:px-10">
             {faqs.map((faq, i) => (
-              <FaqItem key={i} question={faq.question} answer={faq.answer} />
+              <FaqItem key={i} question={faq.question} answer={faq.answer} defaultOpen={i === 0} />
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -1031,7 +1361,7 @@ function matchesProvince(c: Chantier, p: Province): boolean {
   return cp.includes(p.nameFr.toLowerCase()) || cp.includes(p.nameNl.toLowerCase())
 }
 
-function ProjetsSection({locale, chantiers, t}: {locale: AppLocale; chantiers: Chantier[]; t: UiT}) {
+function ProjetsSection({locale, chantiers, t, label}: {locale: AppLocale; chantiers: Chantier[]; t: UiT; label?: React.ReactNode}) {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [hovered, setHovered] = useState<string | null>(null)
   const [page, setPage] = useState(0)
@@ -1059,12 +1389,13 @@ function ProjetsSection({locale, chantiers, t}: {locale: AppLocale; chantiers: C
     : t.mapAllRealisations
 
   return (
-    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0">
+    <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16 py-28">
       <div className="max-w-screen-2xl mx-auto w-full">
+        {label}
 
         <div className="flex items-end justify-between mb-8 gap-4">
           <div>
-            <h2 className="text-3xl font-bold leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
               {t.mapTitle} <span className="text-wdd-mud">{t.mapCountry}</span>
             </h2>
           </div>
