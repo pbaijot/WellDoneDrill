@@ -754,12 +754,6 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
               strokeLinejoin="round"
             />
             <motion.rect
-              x="166" y="146" width="28" height="28" rx="2"
-              initial={false}
-              animate={{fill: phase >= 4 ? C.warm : C.houseDim}}
-              transition={{duration: 1.2}}
-            />
-            <motion.rect
               x={PROBE_X - 10} y="178" width="20" height="16" rx="2"
               initial={false}
               animate={{fill: phase >= 3 ? C.warm : C.houseDim}}
