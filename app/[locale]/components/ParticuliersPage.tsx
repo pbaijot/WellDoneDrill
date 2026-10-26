@@ -12,6 +12,7 @@ import {
   useReducedMotion,
   useTransform,
 } from 'framer-motion'
+import {Hourglass, PiggyBank, TrendingUp} from 'lucide-react'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ParticuliersPageData} from '@/src/lib/particuliersPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
@@ -345,12 +346,12 @@ const V2: Record<Lang, {
 }> = {
   fr: {
     eyebrow: 'Géothermie pour particuliers',
-    ctaStudy: 'Demander mon étude gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
+    ctaStudy: 'Demander mon analyse gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
     principleTitle: "L'énergie est déjà sous votre jardin.",
     principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
     depthLabel: 'Profondeur', tempLabel: 'Température du sol',
     principleSteps: [
-      {title: 'La sonde descend', body: 'Nous forons entre 80 et 200 m et y plaçons une boucle fermée de sondes.'},
+      {title: 'WellDoneDrill fore', body: 'Nous forons entre 80 et 200 m et y plaçons une boucle fermée de sondes.'},
       {title: 'Le sol fournit 15 °C', body: 'Été comme hiver, le sous-sol reste à température constante. Cette énergie est gratuite.'},
       {title: 'La pompe à chaleur amplifie', body: "Pour 1 kWh d'électricité, elle restitue 4 à 5 kWh de chaleur."},
       {title: 'Votre maison en profite', body: 'Chauffage, eau chaude et fraîcheur en été, avec une seule installation.'},
@@ -368,12 +369,12 @@ const V2: Record<Lang, {
   },
   nl: {
     eyebrow: 'Geothermie voor particulieren',
-    ctaStudy: 'Mijn gratis studie aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
+    ctaStudy: 'Mijn gratis analyse aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
     principleTitle: 'De energie zit al onder uw tuin.',
     principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
     depthLabel: 'Diepte', tempLabel: 'Bodemtemperatuur',
     principleSteps: [
-      {title: 'De sonde gaat de diepte in', body: 'We boren tussen 80 en 200 m en plaatsen er een gesloten lus van sondes.'},
+      {title: 'WellDoneDrill boort', body: 'We boren tussen 80 en 200 m en plaatsen er een gesloten lus van sondes.'},
       {title: 'De bodem levert 15 °C', body: 'Zomer en winter blijft de ondergrond op constante temperatuur. Die energie is gratis.'},
       {title: 'De warmtepomp versterkt', body: 'Voor 1 kWh elektriciteit levert ze 4 tot 5 kWh warmte.'},
       {title: 'Uw woning geniet ervan', body: 'Verwarming, warm water en koeling in de zomer, met één installatie.'},
@@ -391,12 +392,12 @@ const V2: Record<Lang, {
   },
   en: {
     eyebrow: 'Geothermal for homeowners',
-    ctaStudy: 'Request my free study', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
+    ctaStudy: 'Request my free analysis', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
     principleTitle: 'The energy is already under your garden.',
     principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
     depthLabel: 'Depth', tempLabel: 'Ground temperature',
     principleSteps: [
-      {title: 'The probe goes down', body: 'We drill between 80 and 200 m and install a closed loop of probes.'},
+      {title: 'WellDoneDrill drills', body: 'We drill between 80 and 200 m and install a closed loop of probes.'},
       {title: 'The ground supplies 15 °C', body: 'Summer and winter, the subsoil stays at a constant temperature. That energy is free.'},
       {title: 'The heat pump boosts it', body: 'For 1 kWh of electricity, it delivers 4 to 5 kWh of heat.'},
       {title: 'Your home benefits', body: 'Heating, hot water and cooling in summer, with a single system.'},
@@ -414,12 +415,12 @@ const V2: Record<Lang, {
   },
   de: {
     eyebrow: 'Geothermie für Privatkunden',
-    ctaStudy: 'Kostenlose Studie anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
+    ctaStudy: 'Kostenlose Analyse anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
     principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
     principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
     depthLabel: 'Tiefe', tempLabel: 'Bodentemperatur',
     principleSteps: [
-      {title: 'Die Sonde geht in die Tiefe', body: 'Wir bohren zwischen 80 und 200 m und setzen einen geschlossenen Sondenkreislauf ein.'},
+      {title: 'WellDoneDrill bohrt', body: 'Wir bohren zwischen 80 und 200 m und setzen einen geschlossenen Sondenkreislauf ein.'},
       {title: 'Der Boden liefert 15 °C', body: 'Sommer wie Winter bleibt der Untergrund konstant temperiert. Diese Energie ist kostenlos.'},
       {title: 'Die Wärmepumpe verstärkt', body: 'Aus 1 kWh Strom macht sie 4 bis 5 kWh Wärme.'},
       {title: 'Ihr Zuhause profitiert', body: 'Heizung, Warmwasser und Kühlung im Sommer, mit einer einzigen Anlage.'},
@@ -438,6 +439,9 @@ const V2: Record<Lang, {
 }
 
 type V2T = typeof V2[Lang]
+
+// Savings · payback · lifetime, in the order of the hero panel items
+const STAT_ICONS = [PiggyBank, TrendingUp, Hourglass]
 
 const WHY_ICONS = [
   <svg key="eco" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
@@ -1046,11 +1050,41 @@ export default function ParticuliersPage({
 
 
       {/* ══════════════════════════════════════
-          01. LE PROBLÈME — vidéo à gauche, accroche et chiffres clés à droite
+          01. LE PROBLÈME — accroche et chiffres clés à gauche, vidéo à droite
       ══════════════════════════════════════ */}
       <section className="bg-white py-24 md:py-32 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <Reveal>
+          <div>
+            <Reveal>
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
+                {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
+              </h2>
+              <p className="mt-6 text-lg font-light text-black/60 leading-8">
+                {page.problemBody ??
+                  "Le prix du gaz a bondi de 180 % depuis 2021. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
+              </p>
+            </Reveal>
+            <div className="mt-12 grid sm:grid-cols-3 gap-6 md:gap-8">
+              {heroPanel.slice(0, 3).map((item, i) => {
+                const Icon = STAT_ICONS[i] ?? STAT_ICONS[0]
+                return (
+                  <Reveal key={item.label} delay={i * 0.1} className="flex items-start gap-3">
+                    <span className="shrink-0 w-10 h-10 rounded-sm bg-wdd-yellow text-wdd-black flex items-center justify-center">
+                      <Icon size={20} strokeWidth={1.75} />
+                    </span>
+                    <div>
+                      <div className="text-2xl font-bold text-wdd-black tabular-nums leading-none whitespace-nowrap">
+                        <CountUp value={item.value} />
+                      </div>
+                      <div className="mt-2 text-sm font-light text-black/60 leading-snug">{item.label}</div>
+                    </div>
+                  </Reveal>
+                )
+              })}
+            </div>
+          </div>
+
+          <Reveal delay={0.1}>
             <figure>
               <div className={`relative overflow-hidden rounded-sm bg-wdd-clay ${videoUrl ? '' : 'aspect-video'}`}>
                 <ContextMedia
@@ -1062,33 +1096,8 @@ export default function ParticuliersPage({
                 <figcaption className="mt-3 text-sm font-light text-black/50">{v.videoCaption}</figcaption>
               )}
             </figure>
+            <ContactCta href={contactHref} label={v.ctaStudy} className="mt-8" />
           </Reveal>
-
-          <div>
-            <Reveal>
-              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
-                {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
-              </h2>
-              <p className="mt-6 text-lg font-light text-black/60 leading-8">
-                {page.problemBody ??
-                  "Le prix du gaz a bondi de 180 % depuis 2021. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
-              </p>
-            </Reveal>
-            <div className="mt-12 grid grid-cols-3 gap-4 md:gap-8">
-              {heroPanel.slice(0, 3).map((item, i) => (
-                <Reveal key={item.label} delay={i * 0.1} className="border-t-2 border-wdd-yellow pt-5">
-                  <div className="text-2xl md:text-3xl font-bold text-wdd-black tabular-nums leading-none">
-                    <CountUp value={item.value} />
-                  </div>
-                  <div className="mt-3 text-sm font-bold leading-snug">{item.label}</div>
-                  {item.sub && <div className="mt-1 text-xs font-light text-black/50 leading-snug">{item.sub}</div>}
-                </Reveal>
-              ))}
-            </div>
-            <Reveal delay={0.2}>
-              <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
-            </Reveal>
-          </div>
         </div>
       </section>
 
@@ -1100,44 +1109,41 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           03. LE CHANTIER CHEZ VOUS
       ══════════════════════════════════════ */}
-      <section className="bg-white py-28 md:py-36 px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-16">
-          <div className="lg:col-span-5">
-            <Reveal>
-              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.siteTitle}</h2>
-              <p className="mt-6 text-lg font-light text-black/60 leading-8">{v.siteIntro}</p>
-            </Reveal>
-            <ol className="relative mt-12 space-y-8 before:absolute before:left-4 before:top-4 before:bottom-4 before:w-px before:bg-black/10">
-              {v.siteSteps.map((s, i) => (
-                <Reveal key={s.title} delay={i * 0.06}>
-                  <li className="relative flex gap-5">
-                    <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">
-                      {i + 1}
-                    </span>
-                    <div className="pt-1">
-                      <div className="font-bold leading-snug">{s.title}</div>
-                      <div className="mt-1 text-sm font-light text-black/60 leading-6">{s.body}</div>
-                    </div>
-                  </li>
-                </Reveal>
-              ))}
-            </ol>
-            <Reveal>
-              <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
-            </Reveal>
+      <section className="relative bg-white overflow-hidden">
+        <div className="relative px-8 md:px-16 py-28 md:py-36">
+          <div className="max-w-screen-2xl mx-auto w-full">
+            <div className="lg:w-1/2 lg:pr-16">
+              <Reveal>
+                <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.siteTitle}</h2>
+                <p className="mt-6 text-lg font-light text-black/60 leading-8">{v.siteIntro}</p>
+              </Reveal>
+              <ol className="relative mt-12 space-y-8 before:absolute before:left-4 before:top-4 before:bottom-4 before:w-px before:bg-black/10">
+                {v.siteSteps.map((s, i) => (
+                  <Reveal key={s.title} delay={i * 0.06}>
+                    <li className="relative flex gap-5">
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">
+                        {i + 1}
+                      </span>
+                      <div className="pt-1">
+                        <div className="font-bold leading-snug">{s.title}</div>
+                        <div className="mt-1 text-sm font-light text-black/60 leading-6">{s.body}</div>
+                      </div>
+                    </li>
+                  </Reveal>
+                ))}
+              </ol>
+              <Reveal>
+                <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
+              </Reveal>
+            </div>
           </div>
-
-          <div className="lg:col-span-7">
-            <Reveal className="lg:sticky lg:top-28">
-              <div className="relative overflow-hidden rounded-sm bg-wdd-clay">
-                <video
-                  src="/videos/mrly-comp.mp4"
-                  autoPlay loop muted playsInline
-                  className="block w-full h-auto"
-                />
-              </div>
-            </Reveal>
-          </div>
+        </div>
+        <div className="relative aspect-square lg:aspect-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
+          <video
+            src="/videos/mrly-comp.mp4"
+            autoPlay loop muted playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       </section>
 
