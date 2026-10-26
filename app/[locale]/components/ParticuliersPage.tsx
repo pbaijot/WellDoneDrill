@@ -650,7 +650,8 @@ const PHASE_AT = [0, 400, 3000, 4400, 5600]
 
 const C = {
   ink: '#1A1A1A', line: 'rgba(26,26,26,0.45)', faint: 'rgba(26,26,26,0.1)',
-  house: '#4A3B2B', houseDim: '#5E4D3B', warm: '#FFD94F', probe: '#E8B90F',
+  // WDD palette: grass for the house, mud (orange) for the heat pump, yellow for the probe
+  house: '#42754F', houseDim: '#35603F', pac: '#AB572E', probe: '#FFD94F',
 }
 
 function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
@@ -799,7 +800,7 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
             <motion.rect
               x={PROBE_X - 10} y="178" width="20" height="16" rx="2"
               initial={false}
-              animate={{fill: phase >= 3 ? C.warm : C.houseDim}}
+              animate={{fill: phase >= 3 ? C.pac : C.houseDim}}
               transition={{duration: 0.8}}
             />
 
