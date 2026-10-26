@@ -697,7 +697,7 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
 
         <div>
           <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.principleTitle}</h2>
-          <p className="mt-6 text-lg font-light text-black/60 leading-8 max-w-xl">{v.principleIntro}</p>
+          <p className="mt-6 text-base font-light text-black/60 leading-8 max-w-xl">{v.principleIntro}</p>
           <ol className="mt-10">
             {steps.map((s, i) => {
               const on = phase >= i + 1
@@ -1042,7 +1042,7 @@ export default function ParticuliersPage({
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
                 {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
               </h2>
-              <p className="mt-6 text-lg font-light text-black/60 leading-8">
+              <p className="mt-6 text-base font-light text-black/60 leading-8">
                 {page.problemBody ??
                   "Le prix du gaz a bondi de 180 % depuis 2021. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
@@ -1095,7 +1095,7 @@ export default function ParticuliersPage({
             <div className="lg:w-1/2 lg:pr-16">
               <Reveal>
                 <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.siteTitle}</h2>
-                <p className="mt-6 text-lg font-light text-black/60 leading-8">{v.siteIntro}</p>
+                <p className="mt-6 text-base font-light text-black/60 leading-8">{v.siteIntro}</p>
               </Reveal>
               <ol className="relative mt-12 space-y-8 before:absolute before:left-4 before:top-4 before:bottom-4 before:w-px before:bg-black/10">
                 {v.siteSteps.map((s, i) => (
