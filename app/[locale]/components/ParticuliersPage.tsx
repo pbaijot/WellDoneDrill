@@ -454,7 +454,7 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
           ref={videoRef}
           src={videoUrl}
           autoPlay loop muted playsInline
-          className="absolute inset-0 w-full h-full object-cover scale-125"
+          className="block w-full h-auto"
         />
         <button
           onClick={toggleMute}
@@ -727,7 +727,9 @@ export default function ParticuliersPage({
             </div>
 
             {/* Right — video or image */}
-            <div className="w-full h-64 sm:h-80 mt-8 lg:mt-0 lg:h-auto lg:flex-1 relative overflow-hidden rounded-sm lg:min-h-[400px]">
+            <div className={`w-full mt-8 lg:mt-0 lg:flex-1 relative overflow-hidden rounded-sm ${
+              page.contextVideo?.asset?.url ? 'lg:self-center' : 'h-64 sm:h-80 lg:h-auto lg:min-h-[400px]'
+            }`}>
               <ContextMedia
                 videoUrl={page.contextVideo?.asset?.url ?? null}
                 imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
