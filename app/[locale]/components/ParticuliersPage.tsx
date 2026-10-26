@@ -631,11 +631,11 @@ function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; im
 
 /* Ground cross-section, played once when it scrolls into view: the probe goes
    down to 150 m, the ground hands back 15 °C, the heat pump inside the house
-   lifts it, and the house warms up. Drawn as a quiet technical section. */
-const GROUND_Y = 200
-const PROBE_BOTTOM = 520
-const PROBE_X = 268
-const PAC_BOTTOM = 194
+   lifts it, and the house warms up. Drawn as a quiet technical section.
+   The drawing is laid out in real pixels: the ground spans the full column
+   width, the overall height follows the text column, the house keeps its
+   proportions. House coordinates below are in its own 400-wide design space. */
+const HOUSE = {top: 72, ground: 200, centerX: 210, probeX: 268, pacY: 178, pacH: 16}
 
 // Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 house warm
 const PHASE_AT = [0, 400, 3000, 4400, 5600]
@@ -660,6 +660,30 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
     return () => timers.forEach(clearTimeout)
   }, [inView, reduce])
 
+  // Track the drawing box so the ground fills the column and the height matches the text
+  const boxRef = useRef<HTMLDivElement>(null)
+  const [box, setBox] = useState({w: 400, h: 540})
+  useEffect(() => {
+    const el = boxRef.current
+    if (!el) return
+    const ro = new ResizeObserver(([entry]) => {
+      const {width, height} = entry.contentRect
+      if (width > 0 && height > 0) setBox({w: Math.round(width), h: Math.round(height)})
+    })
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+
+  const {w: W, h: H} = box
+  const scale = Math.max(0.6, Math.min(W / 400, (H * 0.3) / (HOUSE.ground - HOUSE.top)))
+  const groundY = 8 + (HOUSE.ground - HOUSE.top) * scale
+  const houseX = W / 2 - HOUSE.centerX * scale
+  const probeX = houseX + HOUSE.probeX * scale
+  const probeBottom = H - 24
+  const pacBottom = groundY - (HOUSE.ground - HOUSE.pacY - HOUSE.pacH) * scale
+  const depthY = (d: number) => groundY + (d / 150) * (probeBottom - groundY)
+  const stratum = (y: number) => `M0 ${y} C ${W * 0.25} ${y - 8}, ${W * 0.5} ${y + 10}, ${W * 0.75} ${y - 2} S ${W} ${y + 2}, ${W} ${y + 2}`
+
   const steps = v.principleSteps
   const draw = (on: boolean, duration: number) => ({
     initial: {pathLength: 0},
@@ -669,7 +693,7 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
 
   return (
     <section ref={ref} className="bg-wdd-clay py-28 md:py-36 px-8 md:px-16">
-      <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16">
 
         <div>
           <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.principleTitle}</h2>
@@ -697,8 +721,8 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
           <ContactCta href={contactHref} label={v.ctaSoil} className="mt-8" />
         </div>
 
-        <div className="relative w-full">
-          <svg viewBox="0 0 400 540" className="block w-full h-auto" role="img" aria-label={v.principleTitle}>
+        <div ref={boxRef} className="relative w-full aspect-[400/540] lg:aspect-auto">
+          <svg viewBox={`0 0 ${W} ${H}`} className="absolute inset-0 w-full h-full" role="img" aria-label={v.principleTitle}>
             <defs>
               <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0" stopColor="#D3CBBC" />
@@ -710,15 +734,15 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
               </filter>
             </defs>
 
-            {/* Ground and strata */}
-            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} fill="url(#wdd-ground)" fillOpacity="0.55" />
-            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} filter="url(#wdd-grain)" opacity="0.12" style={{mixBlendMode: 'multiply'}} />
-            <path d="M0 312 C 100 304, 200 322, 300 310 S 400 314, 400 314" stroke={C.faint} fill="none" />
-            <path d="M0 420 C 110 428, 210 410, 310 422 S 400 418, 400 418" stroke={C.faint} fill="none" />
+            {/* Ground and strata, full column width */}
+            <rect x="0" y={groundY} width={W} height={H - groundY} fill="url(#wdd-ground)" fillOpacity="0.55" />
+            <rect x="0" y={groundY} width={W} height={H - groundY} filter="url(#wdd-grain)" opacity="0.12" style={{mixBlendMode: 'multiply'}} />
+            <path d={stratum(depthY(52))} stroke={C.faint} fill="none" />
+            <path d={stratum(depthY(105))} stroke={C.faint} fill="none" />
 
             {/* Depth scale */}
             {[0, 50, 100, 150].map(d => {
-              const y = GROUND_Y + (d / 150) * (PROBE_BOTTOM - GROUND_Y)
+              const y = depthY(d)
               return (
                 <g key={d}>
                   <line x1="0" x2="12" y1={y} y2={y} stroke={C.line} />
@@ -729,10 +753,10 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
 
             {/* Closed probe loop */}
             <g stroke={C.probe} strokeWidth="2" fill="none">
-              <motion.path d={`M${PROBE_X - 5} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
-              <motion.path d={`M${PROBE_X + 5} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
+              <motion.path d={`M${probeX - 5} ${groundY} V${probeBottom}`} {...draw(phase >= 1, 2.4)} />
+              <motion.path d={`M${probeX + 5} ${groundY} V${probeBottom}`} {...draw(phase >= 1, 2.4)} />
               <motion.path
-                d={`M${PROBE_X - 5} ${PROBE_BOTTOM} Q${PROBE_X} ${PROBE_BOTTOM + 10} ${PROBE_X + 5} ${PROBE_BOTTOM}`}
+                d={`M${probeX - 5} ${probeBottom} Q${probeX} ${probeBottom + 10} ${probeX + 5} ${probeBottom}`}
                 initial={{opacity: 0}}
                 animate={{opacity: phase >= 2 ? 1 : 0}}
               />
@@ -742,43 +766,45 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
             {phase >= 2 && [0, 1, 2].map(i => (
               <g key={i}>
                 <motion.circle
-                  cx={PROBE_X - 5}
+                  cx={probeX - 5}
                   r="2.5"
                   fill={C.probe}
-                  initial={{cy: GROUND_Y, opacity: 0}}
-                  animate={reduce ? {cy: 300, opacity: 1} : {cy: [GROUND_Y, PROBE_BOTTOM], opacity: [0, 1, 1, 0]}}
+                  initial={{cy: groundY, opacity: 0}}
+                  animate={reduce ? {cy: depthY(50), opacity: 1} : {cy: [groundY, probeBottom], opacity: [0, 1, 1, 0]}}
                   transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
                 />
                 <motion.circle
-                  cx={PROBE_X + 5}
+                  cx={probeX + 5}
                   r="2.5"
                   fill={C.probe}
-                  initial={{cy: PROBE_BOTTOM, opacity: 0}}
-                  animate={reduce ? {cy: 420, opacity: 1} : {cy: [PROBE_BOTTOM, GROUND_Y], opacity: [0, 1, 1, 0]}}
+                  initial={{cy: probeBottom, opacity: 0}}
+                  animate={reduce ? {cy: depthY(100), opacity: 1} : {cy: [probeBottom, groundY], opacity: [0, 1, 1, 0]}}
                   transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
                 />
               </g>
             ))}
 
-            {/* House silhouette: main gable + lower annex holding the heat pump */}
-            <path
-              d={`M120 ${GROUND_Y} V128 L180 72 L240 128 V152 L300 178 V${GROUND_Y} Z`}
-              fill={C.house}
-              stroke={C.house}
-              strokeWidth="8"
-              strokeLinejoin="round"
-            />
-            <motion.rect
-              x={PROBE_X - 10} y="178" width="20" height="16" rx="2"
-              initial={false}
-              animate={{fill: phase >= 3 ? C.pac : C.houseDim}}
-              transition={{duration: 0.8}}
-            />
+            {/* House silhouette (main gable + lower annex holding the heat pump), kept in proportion */}
+            <g transform={`translate(${houseX} ${groundY - HOUSE.ground * scale}) scale(${scale})`}>
+              <path
+                d={`M120 ${HOUSE.ground} V128 L180 72 L240 128 V152 L300 178 V${HOUSE.ground} Z`}
+                fill={C.house}
+                stroke={C.house}
+                strokeWidth="8"
+                strokeLinejoin="round"
+              />
+              <motion.rect
+                x={HOUSE.probeX - 10} y={HOUSE.pacY} width="20" height={HOUSE.pacH} rx="2"
+                initial={false}
+                animate={{fill: phase >= 3 ? C.pac : C.houseDim}}
+                transition={{duration: 0.8}}
+              />
+            </g>
 
             {/* Probe rises through the slab into the heat pump */}
             <g stroke={C.probe} strokeWidth="2" fill="none">
-              <motion.path d={`M${PROBE_X - 5} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
-              <motion.path d={`M${PROBE_X + 5} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
+              <motion.path d={`M${probeX - 5} ${groundY} V${pacBottom}`} {...draw(phase >= 3, 0.6)} />
+              <motion.path d={`M${probeX + 5} ${groundY} V${pacBottom}`} {...draw(phase >= 3, 0.6)} />
             </g>
           </svg>
         </div>
