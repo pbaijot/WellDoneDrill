@@ -1,0 +1,643 @@
+{
+ "_id": "blog-legacy-be-fr-4384",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Réussir son projet de géothermie : les clés du succès",
+ "slug": {
+  "_type": "slug",
+  "current": "reussir-son-projet-de-geothermie-les-cles-du-succes"
+ },
+ "legacyPath": "/be-fr/reussir-son-projet-de-geothermie-les-cles-du-succes",
+ "publishedAt": "2025-12-02T10:51:10Z",
+ "excerpt": "Une installation géothermique bien conçue est simple, fiable et très confortable. Pourtant, comme pour tout projet technique, certaines étapes sont décisives pour garantir le résultat final. De la définition du besoin au choix des…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e11cab7b3266",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b9d79cb7900",
+     "text": "Une installation géothermique bien conçue est simple, fiable et très confortable. Pourtant, comme pour tout projet technique, certaines étapes sont décisives pour garantir le résultat final. De la définition du besoin au choix des partenaires, voici les principaux points à maîtriser.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8c492ff6fde2",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4340b8628245",
+     "text": "1. Clarifier le besoin : chauffage, rafraîchissement, eau chaude",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d0274ce85e10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a6d3a2ee7c0",
+     "text": "La première étape est de définir clairement ce que l’on attend de l’installation :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1808b266c7d4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31a190dfb738",
+     "text": "chauffage seul",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "06b0f61de6fe",
+     "text": " ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eb5bec5453b4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1cc9f71b8621",
+     "text": "chauffage + rafraîchissement",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2fa1d388a5bc",
+     "text": " (geocooling) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8b3a1cb3ba5a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2faea0d34f5",
+     "text": "chauffage + eau chaude sanitaire",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2508c6a11985",
+     "text": " ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d751dd59e5e2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98644d78c0a8",
+     "text": "ou les trois",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cbeef9fc9a85",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e35b190f6be6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14ca0fa14e83",
+     "text": "Cette clarification permet de dimensionner correctement la puissance de la pompe à chaleur, le volume de stockage (ballon tampon, ballon ECS) et le champ de sondes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "673fdf30a2e5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d1db0ab17da",
+     "text": "2. Un dimensionnement adapté, sans surdimensionner la PAC",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "48da2d133269",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "789174782552",
+     "text": "Une pompe à chaleur surdimensionnée entraîne souvent des problèmes à l’usage : cycles courts, arrêts/démarrages fréquents, rendement dégradé, usure prématurée. À l’inverse, une pompe correctement dimensionnée fonctionne plus longtemps à puissance partielle, avec un meilleur COP et un confort plus stable.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0f5532c37832",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05798a60d565",
+     "text": "Le couple “PAC + ballon de stockage” est essentiel : la PAC fournit la puissance, le ballon absorbe les variations de demande et permet de faire tourner l’installation au moment le plus opportun (notamment lorsqu’il y a une production photovoltaïque).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "678f80a861a4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f0e6cba1590b",
+     "text": "Dans la plupart des projets résidentiels et tertiaires standard, une géothermie bien dimensionnée couvre entièrement les besoins de chauffage, sans nécessité de doublage systématique avec un système fossile.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c1b512287fb7",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d7b8bc8d94f",
+     "text": "3. Penser le local technique de manière simple",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c6e768cd8ec8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be3d70699472",
+     "text": "Les pompes à chaleur géothermiques eau/eau modernes sont des unités compactes, souvent tout intégrées (pompes, échangeurs, régulation, etc.), qui prennent à peine plus de place qu’un grand réfrigérateur. Dans beaucoup de cas, le local technique nécessaire est plus simple et plus propre qu’une chaufferie traditionnelle : pas de cheminée, pas de brûleur, pas de stockage de combustible.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1109fd0b5d85",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfea52b39690",
+     "text": "Même dans les bâtiments existants, la géothermie s’intègre généralement bien : on remplace la chaudière par une PAC, on installe un ballon tampon, et on adapte si nécessaire la régulation et les émetteurs.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1e8a962844c0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f715e08466a1",
+     "text": "4. Intégrer le ballon de stockage dès la conception",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c30df4326eba",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54842dcecec6",
+     "text": "Ajouter un ballon de stockage dans le système est souvent une excellente idée. Il permet :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4d370bbccc0b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d450a4c1fd46",
+     "text": "d’optimiser le fonctionnement de la PAC (moins de démarrages, meilleur rendement) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fed72bf4ced",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe045df08494",
+     "text": "de lisser les appels de puissance du bâtiment ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3a6d9c75a45c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2fae2f0dcd2f",
+     "text": "de profiter pleinement du couplage avec le photovoltaïque, en chauffant l’eau lorsque la production électrique est maximale.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d18e28977b0d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44f6a8f342d4",
+     "text": "Ce ballon est un élément central d’une installation simple, robuste et efficace.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "90dde5e7a680",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a17a5a177c57",
+     "text": "5. Coupler la géothermie au photovoltaïque",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "86a52ae6df96",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b781b07b334e",
+     "text": "La géothermie est un système 100 % électrique. Couplée à une production photovoltaïque, elle permet de réduire très fortement la facture d’énergie. En pratique, une partie importante de l’électricité consommée par la PAC peut être couverte par la production solaire, en particulier si l’on adapte la régulation pour privilégier le fonctionnement aux heures d’ensoleillement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "162ef04ac0a9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9ed87fbf59e",
+     "text": "Le ballon de stockage joue ici encore un rôle clé : il permet de “stocker” sous forme de chaleur l’électricité excédentaire produite à midi, pour la restituer le soir ou le lendemain.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0882ac15a523",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "640d70d9a245",
+     "text": "6. Géothermie, radiateurs et rénovation : une bonne combinaison",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "aeb8e0366c49",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4bd4f6cbdcc3",
+     "text": "Une idée reçue tenace veut que la géothermie ne fonctionne qu’avec des planchers chauffants basse température. En réalité, dans de nombreux bâtiments existants, les radiateurs sont surdimensionnés par rapport aux besoins actuels (isolation améliorée, changement des châssis, etc.).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cb21d36fee80",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34cb50011451",
+     "text": "En adaptant la régulation et en travaillant avec des régimes de température un peu plus bas, il est souvent possible d’alimenter un réseau de radiateurs existant avec une PAC géothermique, tout en conservant un bon rendement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c0b428ff4946",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6cab483b5f59",
+     "text": "En rénovation, la géothermie s’adapte donc très bien, sans nécessiter forcément de tout refaire de zéro.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "78bc52c88490",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+   "alt": "forage géothermique pour particulier en Belgique"
+  },
+  {
+   "_type": "block",
+   "_key": "654b952fd180",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2a9fac81cff4",
+     "text": "7. Un potentiel géothermique très large en Belgique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0d00458124af",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1fc83fc17c0",
+     "text": "Les sous-sols belges présentent un excellent potentiel géothermique sur une très grande majorité du territoire. Dans la plupart des projets, des sondes verticales peuvent être forées à des profondeurs suffisantes pour alimenter une PAC performante.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "830ddc5ddda2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2be1ca1f38e",
+     "text": "WellDoneDrill analyse à chaque fois la faisabilité du projet et vous indique de manière transparente si la géothermie est techniquement réalisable sur votre site.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1b33adf0ea09",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fdfc910c72e",
+     "text": "8. S’entourer des bons partenaires",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a081402e03cf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4d7c7ae696e",
+     "text": "La réussite d’un projet de géothermie repose sur une bonne coordination entre :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "80d399945b6d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5a0762f33b56",
+     "text": "le foreur (sondes et forages) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3a749ee3a3f4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06fce73df6ec",
+     "text": "l’installateur de la PAC et des équipements hydrauliques ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "20cdafeab9f6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa98db2242ee",
+     "text": "le bureau d’études ou l’ingénieur en charge du dimensionnement global ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "325639b7ca55",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1fa27d42b923",
+     "text": "l’architecte ou le maître d’ouvrage.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3786996991e2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e7f95e56f9a",
+     "text": "WellDoneDrill se positionne comme partenaire spécialisé sur la partie forage et sondes, en coordination étroite avec les autres intervenants. L’objectif est que, pour le client final, la géothermie soit une solution simple, lisible et performante, sans complexité inutile.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "33cd68196f16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7938aee629c6",
+     "text": "En résumé, une installation géothermique réussie est avant tout une installation ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0b4fd8b9169a",
+     "text": "bien préparée",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "274d27fc82be",
+     "text": " : besoin clairement défini, dimensionnement adapté, intégration intelligente dans le bâtiment, couplage possible avec le photovoltaïque et choix de partenaires expérimentés. Sur cette base, la géothermie devient une technologie simple à exploiter au quotidien, tout en offrant un confort et une performance difficilement égalables.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Réussir son projet de géothermie : les clés du succès",
+ "seoDescription": "Une installation géothermique bien conçue est simple, fiable et très confortable. Pourtant, comme pour tout projet technique, certaines étapes sont…",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "foreur geothermie belgique"
+}

@@ -1,0 +1,819 @@
+{
+ "_id": "blog-legacy-be-fr-4382",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Combien coûte une installation géothermique en 2025 ? Le guide clair et complet sur le prix de la géothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "combien-coute-une-installation-geothermique-en-2025-le-guide-clair-et-complet"
+ },
+ "legacyPath": "/be-fr/combien-coute-une-installation-geothermique-en-2025-le-guide-clair-et-complet",
+ "publishedAt": "2025-12-02T10:50:33Z",
+ "excerpt": "La question du prix de la géothermie revient toujours en premier lorsque l’on parle de géothermie. Combien coûte une installation ? Comment se situe-t-elle par rapport aux autres systèmes ? Et surtout, à partir de quand devient-elle…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "73d821770421",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0efdf8545093",
+     "text": "La question du prix de la géothermie revient toujours en premier lorsque l’on parle de géothermie. Combien coûte une installation ? Comment se situe-t-elle par rapport aux autres systèmes ? Et surtout, à partir de quand devient-elle rentable ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "122410524367",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "293dd30731da",
+     "text": "En 2025, la géothermie a beaucoup évolué en Belgique : les techniques de forage se sont améliorées, les coûts ont baissé et les régimes de TVA se sont clarifiés. Résultat : sur la durée de vie de l’installation, la géothermie est devenue l’une des solutions les plus économiques pour chauffer et rafraîchir un bâtiment.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "13bbadf499af",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4308ac6e9b0",
+     "text": "1. Les principaux postes de coût d’une installation géothermique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d2993d9723e2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ac4edaedd88",
+     "text": "Le prix d’un système géothermique se compose de plusieurs éléments :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "14cca9c0c848",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64b33623b335",
+     "text": "les forages géothermiques",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5488a6887318",
+     "text": " : réalisation des sondes verticales, fourniture et pose des sondes, coulis géothermique ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b48f0c07429d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bf5a94a70a82",
+     "text": "la pompe à chaleur géothermique",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "019fa06d1206",
+     "text": " (PAC eau/eau) : souvent un module compact, de la taille d’un grand réfrigérateur ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29718bc9e1e5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25d5309f2add",
+     "text": "le ballon de stockage",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6e4ef398052f",
+     "text": " (tampon chauffage et/ou eau chaude sanitaire) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "aae4322199d1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9ce37ce9ec7",
+     "text": "les liaisons hydrauliques",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "14fb0550eb43",
+     "text": " entre sondes, local technique et réseau intérieur ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f915212084e4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ce4f40c3a2e",
+     "text": "la régulation et les accessoires",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e6104d6f3bb5",
+     "text": " (circulateurs, vannes, capteurs, automates) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "87afb54885a3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e47ceb8f3278",
+     "text": "éventuellement des émetteurs",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "69fc004d84a8",
+     "text": " (plancher chauffant, adaptation du réseau existant, etc.).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f9f02b069482",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "238096445efb",
+     "text": "Selon les projets, certains postes sont déjà présents (par exemple le réseau de radiateurs en rénovation) ou mutualisés (bâtiment collectif, immeuble à appartements…).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e4031a106a0d",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46d88149e955",
+     "text": "2. Ordres de grandeur pour une maison unifamiliale",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "be294e36c34b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47673467d663",
+     "text": "Pour une maison unifamiliale bien dimensionnée en géothermie en Belgique, on observe généralement des ordres de grandeur suivants (TVAC, après application de la TVA à 6 % en résidentiel) :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "03b34b9a363d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7535be9b1c8",
+     "text": "maison unifamiliale standard",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cb1fdbb8c056",
+     "text": " (PAC de 8 à 12 kW, 2 à 4 sondes de 80 à 120 m) : ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7d8bf0dd11ef",
+     "text": "de l’ordre de 25 000 à 35 000 € TVAC",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "75588aae667d",
+     "text": " pour la partie géothermie (forages + PAC + ballon + liaisons) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dd96a72bbc45",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29641a7b442e",
+     "text": "maison plus grande ou très haut niveau de confort",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9cd538d3a3cc",
+     "text": " : budget pouvant monter à 40 000 – 45 000 € TVAC, selon la puissance et les besoins de rafraîchissement ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c34d912d59dd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f307d93ed68b",
+     "text": "en rénovation",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5815eedfe28a",
+     "text": ", si le réseau de radiateurs est conservé et adapté à la basse température, le coût global reste dans des ordres de grandeur comparables.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "250c9b787dd5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d6469c5ef80",
+     "text": "Ces montants sont indicatifs et varient selon la région, la nature du sol, l’accessibilité du terrain, le nombre de sondes, la marque de PAC, etc. Ils permettent toutefois de se situer.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d4da6b7e9e41",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "57e994e7e0d9",
+     "text": "3. Comparaison avec d’autres systèmes sur 20 ans",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d151bacb45b9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64d41d49a6f0",
+     "text": "Comparer la géothermie à une autre solution uniquement sur le coût d’investissement est trompeur. Ce qui importe réellement, ce sont les coûts totaux sur 15 à 20 ans :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d09f6cc5961c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c081150a8165",
+     "text": "coût d’investissement",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e4341ee61b64",
+     "text": " (achat et installation) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "726f7dfe526d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e23c9a517118",
+     "text": "coût d’exploitation",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a4f2203c7717",
+     "text": " (énergie) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "648b0027fd0c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a59793438ae7",
+     "text": "coût de maintenance",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "43c8c2fb0a4a",
+     "text": " ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5ef72651e9d0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c83d170b0985",
+     "text": "durée de vie",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2d018121709d",
+     "text": " de chaque composant.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1876e7dae8a0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b3818b335e45",
+     "text": "Une chaudière gaz coûte moins cher à l’installation, mais :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "803f4385dac9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "941e160f89c1",
+     "text": "elle doit être remplacée plus souvent ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "320aa6e527f1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c485aa45ffa3",
+     "text": "le gaz présente une forte volatilité de prix ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7cf106763f16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d652fa73212d",
+     "text": "l’empreinte carbone reste élevée ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f8f42113b78",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "237f7aa942b9",
+     "text": "les contraintes réglementaires vont croissant.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "92046b0b2dc0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cf381fdae2e1",
+     "text": "La géothermie, elle, présente un investissement initial plus élevé, mais :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bda29e73961e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93f3b61ccb45",
+     "text": "les sondes durent plus de 50 ans ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f6e1bfd194bc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3d8f11cfd4b",
+     "text": "la PAC a une durée de vie de 15 à 20 ans ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "98838e413f4f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4085fe071664",
+     "text": "la consommation électrique est fortement réduite grâce au COP élevé ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "903b7c8c14f1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1034b49d278",
+     "text": "la facture énergétique est prévisible et moins exposée aux hausses de prix des combustibles fossiles.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8bad7708ebce",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64be3d7ca457",
+     "text": "Sur un horizon de 20 ans, la géothermie devient généralement la solution la moins chère en coût total, en particulier lorsque le bâtiment reste occupé longtemps (maison familiale, immeuble à appartements, bâtiment public, etc.).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "4340f002cb4c",
+   "_file": "uploads/2025/12/20231102_101248.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "d20a3762d8f2",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "476da3191cf8",
+     "text": "4. Le rôle décisif de la baisse des coûts de forage",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "be8b96a7c363",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "992dd1edab92",
+     "text": "Ces dernières années, les techniques de forage ont fortement progressé, notamment avec l’usage généralisé du forage PDC (Polycrystalline Diamond Compact) et l’optimisation des méthodes importées d’Allemagne. WellDoneDrill a joué un rôle actif dans cette évolution.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5086be17f40f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "897abd748b32",
+     "text": "Résultat : la productivité par jour de forage a augmenté, les risques ont diminué, les coûts unitaires par mètre ont baissé. Là où la géothermie était autrefois perçue comme une solution chère, elle s’est rapprochée, voire placée en dessous, des autres systèmes performants en coût global.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fa0809cdef64",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd302fdf79e3",
+     "text": "5. TVA, aides et fiscalité : un levier important en Belgique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c4aeff5d6476",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d65364f4220",
+     "text": "En résidentiel, la TVA sur les pompes à chaleur et sur les forages géothermiques est de 6 % lorsque le bâtiment remplit les conditions d’éligibilité (occupation principalement résidentielle, critères d’âge en rénovation, etc.).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3cdf17102c74",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c781df7fee4",
+     "text": "À partir de 2026, cette TVA de 6 % sera étendue à l’installation de pompes à chaleur dans le neuf, et les forages géothermiques suivront le même régime. Pour les particuliers, cela représente un avantage financier significatif.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cef6fe3a9b82",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c884e64cdd1b",
+     "text": "À cela peuvent s’ajouter, selon les régions et les périodes, des dispositifs d’aides ou de primes, en particulier pour les bâtiments performants ou les projets collectifs.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9526b4af0b16",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "700bf9f9b5a5",
+     "text": "6. Une précision essentielle sur les prix de la géothermie",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a8f994061893",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25279fba1b3b",
+     "text": "Les prix de la géothermie et ordres de grandeur mentionnés dans cet article sont indicatifs et non contractuels. Ils servent à donner une vue d’ensemble des budgets à prévoir, mais chaque projet est unique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "85db82828ece",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "012d9579eb01",
+     "text": "WellDoneDrill propose des devis personnalisés, détaillés et sans coûts cachés, généralement en moins de 48 heures sur base des informations de projet. C’est à partir de ce chiffrage précis qu’une comparaison pertinente peut être faite avec d’autres solutions.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "74832b714379",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9ea6fc63206",
+     "text": "Ce qu’il faut retenir, c’est que la géothermie n’est plus la solution “hors de prix” qu’on imaginait il y a quelques années. Grâce à la baisse des coûts de forage, aux régimes de TVA favorables et à ses coûts d’exploitation très bas, elle est devenue, sur le long terme, l’une des technologies les plus économiques et les plus confortables pour chauffer et rafraîchir un bâtiment.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Combien coûte une installation géothermique en 2025 ? Le guide clair et complet sur le prix de la géothermie",
+ "seoDescription": "La question du prix de la géothermie revient toujours en premier lorsque l’on parle de géothermie. Combien coûte une installation ? Comment se…",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+ "_mainImageAlt": "forage géothermique pour particulier en Belgique"
+}

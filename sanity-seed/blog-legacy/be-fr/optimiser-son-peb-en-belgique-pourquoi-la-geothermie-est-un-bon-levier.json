@@ -1,0 +1,391 @@
+{
+ "_id": "blog-legacy-be-fr-5432",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Optimiser son PEB en Belgique : Pourquoi la géothermie est un bon levier ?",
+ "slug": {
+  "_type": "slug",
+  "current": "optimiser-son-peb-en-belgique-pourquoi-la-geothermie-est-un-bon-levier"
+ },
+ "legacyPath": "/be-fr/optimiser-son-peb-en-belgique-pourquoi-la-geothermie-est-un-bon-levier",
+ "publishedAt": "2026-03-20T12:38:35Z",
+ "excerpt": "En Belgique, que ce soit à Bruxelles, en Wallonie ou en Flandre, le certificat de Performance Énergétique des Bâtiments (PEB) est devenu le document le plus important d'une transaction immobilière. Un mauvais score (F ou G) peut faire…",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "a83a1a6ddfee",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9d85f129c6e",
+     "text": "En Belgique, que ce soit à Bruxelles, en Wallonie ou en Flandre, le certificat de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ffaaa03f3764",
+     "text": "Performance Énergétique des Bâtiments (PEB)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "86a3097c1c90",
+     "text": " est devenu le document le plus important d'une transaction immobilière. Un mauvais score (F ou G) peut faire chuter le prix d'une maison de 20 % ou 30 %. À l'inverse, un score A ou B garantit une plus-value immédiate. Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4e7a8f180d9b",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0096b6f03bcc",
+     "text": ", nous aidons nos clients à transformer radicalement leur certificat grâce au forage vertical.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "26b531012ba8",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "781184ab1d32",
+     "text": "1. Comprendre le calcul du PEB : L'énergie primaire",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e5645e8a5ac2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "628c1567014f",
+     "text": "Le score PEB ne mesure pas uniquement votre consommation réelle, mais votre consommation d'",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "015e2182923f",
+     "text": "énergie primaire",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "211cc6c75b05",
+     "text": ". Pour le chauffage électrique (pompe à chaleur), la Belgique applique un facteur de conversion.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8c2fe833628c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9e4f16a6fadf",
+     "text": "Le Gaz/Mazout :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1a8cbea78f1b",
+     "text": " Pour 1 kWh consommé, le PEB compte 1 kWh d'énergie primaire.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2634b89e7d1e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4701045ae40",
+     "text": "La Géothermie :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "addd4e95e052",
+     "text": " Grâce à un COP (Coefficient de Performance) élevé, souvent supérieur à 5, votre système produit 5 kWh de chaleur pour seulement 1 kWh d'électricité consommé.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bbb4e9b7e943",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "342bd626b1a0",
+     "text": "Le logiciel PEB reconnaît cette efficacité exceptionnelle. Installer une sonde à 150 mètres permet de diviser la part \"chauffage\" de votre certificat par 4 ou 5 par rapport à une chaudière à condensation moderne.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "de81d1b5409f",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcb34a1e0cd7",
+     "text": "2. Géothermie vs Aérothermie dans le logiciel PEB",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5d1d3d6af0a0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f845a110561a",
+     "text": "Beaucoup de certificateurs PEB et d'architectes vous le confirmeront : à isolation égale, une maison avec une pompe à chaleur géothermique (sol-eau) obtient systématiquement un meilleur score qu'une maison avec une pompe à chaleur aérothermique (air-eau).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "44e7a1e150ed",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1f26c1df44c",
+     "text": "Température de source stable :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "00dce70514bf",
+     "text": " Le logiciel PEB pénalise l'aérothermie car son rendement chute quand il gèle. La géothermie, avec sa source stable à 12°C à 150 mètres de profondeur, bénéficie d'un bonus de performance dans le calcul.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dc47a043cc33",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "545a286f230b",
+     "text": "Consommation auxiliaire :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "679fd1b2939c",
+     "text": " L'absence de ventilateurs extérieurs gourmands et de cycles de dégivrage énergivores réduit la consommation \"cachée\" prise en compte par le certificateur.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f57d43664a70",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7516a68f2e51",
+     "text": "3. Le \"Géocooling\" : Du confort sans pénalité",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3aa4730f7258",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ad1e0804700",
+     "text": "L'un des pièges du PEB est la climatisation. Si vous installez une climatisation classique pour l'été, le logiciel PEB considère cela comme une dépense énergétique supplémentaire et dégrade votre score (risque de surchauffe).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b3be73edbb28",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef457cfd9dd4",
+     "text": "La faille positive :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e5ec4bd815c6",
+     "text": " Le géocooling passif utilise si peu d'énergie que le logiciel PEB le considère comme une consommation négligeable. Vous profitez d'une maison fraîche tout l'été sans voir votre certificat passer du vert à l'orange.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6fe260006bc4",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c08997a5c99",
+     "text": "4. Atteindre le label \"A\" ou \"A+\"",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "495ac099dbd0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed655d7dc3be",
+     "text": "Pour les nouvelles constructions ou les rénovations lourdes, atteindre le label A est l'objectif ultime. C'est presque impossible avec du gaz, et difficile avec une simple PAC Air/Eau sans une quantité massive de panneaux photovoltaïques. Avec ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "5886208c6b68",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b246ca083d56",
+     "text": ", la géothermie fait le plus gros du travail. Elle réduit tellement le besoin en énergie primaire qu'une petite installation solaire suffit souvent pour faire basculer la maison dans la catégorie des bâtiments à énergie positive.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "513662f23779",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "088e60746033",
+     "text": "5. Un investissement rentable dès le jour du certificat",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bb0f214ef633",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dec85c60d6f7",
+     "text": "Imaginez une maison de 200 m². Passer d'un PEB C à un PEB A peut représenter une différence de valeur sur le marché de 40 000 € à 60 000 €. Le coût de votre forage (environ 15 000 € à 20 000 €) est donc ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0ed35bd773f4",
+     "text": "immédiatement rentabilisé",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dbe58e8296c5",
+     "text": "par la prise de valeur du bien, avant même d'avoir économisé un seul euro sur votre première facture de chauffage.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Optimiser son PEB en Belgique : Pourquoi la géothermie est un bon levier ?",
+ "seoDescription": "En Belgique, que ce soit à Bruxelles, en Wallonie ou en Flandre, le certificat de Performance Énergétique des Bâtiments (PEB) est devenu le document le…",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Géothermie dans un espace réduit"
+}

@@ -1,0 +1,465 @@
+{
+ "_id": "blog-legacy-be-fr-5418",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "La géothermie pour les copropriétés : Performance, silence et économies partagées",
+ "slug": {
+  "_type": "slug",
+  "current": "la-geothermie-pour-les-coproprietes-performance-silence-et-economies-partagees"
+ },
+ "legacyPath": "/be-fr/la-geothermie-pour-les-coproprietes-performance-silence-et-economies-partagees",
+ "publishedAt": "2026-03-20T11:12:53Z",
+ "excerpt": "La transition énergétique des immeubles à appartements est un défi majeur en Belgique. Entre les normes PEB de plus en plus strictes et l’explosion des prix des énergies fossiles, les copropriétés cherchent des alternatives durables. Chez…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "7c03d640e481",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4f5c20871ef8",
+     "text": "La transition énergétique des immeubles à appartements est un défi majeur en Belgique. Entre les normes PEB de plus en plus strictes et l’explosion des prix des énergies fossiles, les copropriétés cherchent des alternatives durables. Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2adb83e754c8",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6e549fd3c2f9",
+     "text": ", nous installons des systèmes de forage vertical capables de chauffer et de rafraîchir des immeubles entiers. Voici pourquoi la géothermie est la solution la plus pertinente pour l’habitat collectif.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b1203336e0dd",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5e5c37b65c1",
+     "text": "1. En finir avec les nuisances sonores et visuelles",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "14702a3ddad0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0721da0e238d",
+     "text": "C'est le problème n°1 des pompes à chaleur \"Air/Eau\" en milieu urbain dense : le bruit. Installer des dizaines d'unités extérieures sur les balcons ou sur le toit génère une pollution sonore insupportable pour le voisinage et défigure la façade de l'immeuble.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f4b511f9cf5a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b72988f65bb6",
+     "text": "La discrétion absolue :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bf8b12c971fb",
+     "text": " Avec la géothermie, tout se passe sous terre et dans la cave. Il n'y a aucun ventilateur extérieur, aucune vibration, et rien n'est visible depuis la rue.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c88dadfe45ed",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aabb6c00f52e",
+     "text": "Respect de l'urbanisme :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7ff2ae0c9e22",
+     "text": " À Bruxelles ou dans les centres historiques wallons, les règlements d'urbanisme interdisent souvent les blocs de clim en façade. La géothermie contourne cette contrainte avec élégance.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e3ed7d9943c1",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1fbdf13072a7",
+     "text": "2. Le \"Géocooling\" : Un confort d'été sans surcoût de charges",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d88ee7d8b52c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92bed2f2a0dd",
+     "text": "Le réchauffement climatique rend les appartements (surtout sous les toits) étouffants en été. Installer une climatisation classique dans chaque lot fait exploser les charges communes d'électricité.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "12aba1623ac2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd5020f7b860",
+     "text": "Le froid passif :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7f9bcf9a7034",
+     "text": " Le réseau de sondes à 150 mètres permet de faire circuler de l'eau à 12°C dans les planchers chauffants des appartements.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "87b31197d679",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cf701b5d6c0",
+     "text": "Économies d'échelle :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f9d49ca06b7c",
+     "text": " Cette fraîcheur est quasi gratuite (seul le circulateur consomme un peu d'énergie). C'est un argument de vente massif pour les propriétaires-bailleurs et un confort inégalé pour les occupants.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fcb5e9e55b3c",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92e71a70e413",
+     "text": "3. Mutualiser le forage pour réduire les coûts",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2e4ea98a973c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17ff2959eee3",
+     "text": "L'un des grands avantages de la copropriété est la ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3b54a2a8f182",
+     "text": "mutualisation de l'investissement",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a2cc9ff85a1a",
+     "text": ". Plutôt que chaque propriétaire installe son propre système, un champ de sondes géothermiques commun est créé.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c2ae6a0e37a1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "842dee4aa367",
+     "text": "Optimisation de l'espace :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b723d92de193",
+     "text": " On fore plusieurs puits à 150 mètres (champ de sondes) sous le parking ou le jardin commun de la résidence.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "32b85c444322",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc7d80bfdf93",
+     "text": "Puissance sur mesure :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2fad1b0f160c",
+     "text": " La centrale géothermique en cave distribue la chaleur selon les besoins réels de chaque appartement, optimisant ainsi le rendement global de l'immeuble.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "27ed4650dccc",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4fde564ea6a",
+     "text": "4. Une valorisation immédiate du patrimoine immobilier",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bef174da33fc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7da6aa101f4f",
+     "text": "Un immeuble chauffé par géothermie bénéficie d'un ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "29d2ded643ca",
+     "text": "score PEB exceptionnel",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4d205d318b2e",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7b9e4da0557b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe8bdd665ecc",
+     "text": "À la revente :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "452448cff99c",
+     "text": " Un appartement avec un PEB A ou B se vend plus vite et plus cher qu'un bien chauffé au gaz ou au mazout.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3952224b2a22",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be797d78c00a",
+     "text": "Indépendance énergétique :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "22eada4214db",
+     "text": " La copropriété s'affranchit des quotas de livraison de combustible et des fluctuations géopolitiques du prix du gaz. Le \"carburant\" (la chaleur de la terre) appartient à la copropriété.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "389c7148eaab",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4bdcf0ce8f9f",
+     "text": "5. Une installation qui dure (littéralement) une vie",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d1715b1f7188",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "443c5785f11c",
+     "text": "Alors qu'une chaudière collective doit être remplacée tous les 15 ans, le champ de sondes réalisé par ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "bf056b99936d",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "66d67a721a33",
+     "text": " est garanti pour plus de 50 ans. C'est un investissement structurel pour l'immeuble. Seule la pompe à chaleur en chaufferie devra être entretenue ou remplacée à long terme, mais l'infrastructure de captage, elle, reste valorisée dans le sol pour des générations.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5105f0ea1269",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4031ba7a0116",
+     "text": "Conclusion",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ceec6d519a57",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1af76418ed4a",
+     "text": "Pour une copropriété, la géothermie n'est pas une dépense, c'est une stratégie de sauvegarde de la valeur du bâtiment. Elle offre un confort premium (chaud/froid), élimine les conflits de voisinage liés au bruit et divise les factures énergétiques par quatre. Chez WellDoneDrill, nous accompagnons les syndics et conseils de copropriété de l'étude de faisabilité à la mise en service.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "La géothermie pour les copropriétés : Performance, silence et économies partagées",
+ "seoDescription": "La transition énergétique des immeubles à appartements est un défi majeur en Belgique. Entre les normes PEB de plus en plus strictes et l’explosion des…",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "foreur geothermie belgique"
+}

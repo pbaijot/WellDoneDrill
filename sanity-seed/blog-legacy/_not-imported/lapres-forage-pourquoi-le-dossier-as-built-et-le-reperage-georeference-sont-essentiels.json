@@ -1,0 +1,461 @@
+{
+ "_id": "blog-legacy-be-fr-5534",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "L'après-forage : Pourquoi le dossier « As-Built » et le repérage géoréférencé sont essentiels ?",
+ "slug": {
+  "_type": "slug",
+  "current": "lapres-forage-pourquoi-le-dossier-as-built-et-le-reperage-georeference-sont-essentiels"
+ },
+ "legacyPath": "/be-fr/lapres-forage-pourquoi-le-dossier-as-built-et-le-reperage-georeference-sont-essentiels",
+ "publishedAt": "2026-03-20T14:33:25Z",
+ "excerpt": "Une fois que les machines de WellDoneDrill ont quitté votre propriété, le travail n'est pas tout à fait terminé. Pour qu'une installation géothermique soit une réussite totale, elle doit être parfaitement documentée. C’est ici…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c99d5d5d24a1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec6d4694657e",
+     "text": "Une fois que les machines de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "47a060dd798e",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cc9e3748f7f9",
+     "text": " ont quitté votre propriété, le travail n'est pas tout à fait terminé. Pour qu'une installation géothermique soit une réussite totale, elle doit être parfaitement documentée. C’est ici qu’intervient le ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "472a4566a027",
+     "text": "dossier « As-Built »",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1fa6c79ed798",
+     "text": " (tel que construit). Ce document est la \"carte d'identité\" de votre installation, garantissant que vous (ou les futurs propriétaires) saurez exactement ce qui se trouve sous vos pieds dans 10, 20 ou 50 ans.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cac06dfa6b06",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51131e4f3f01",
+     "text": "1. Le repérage géoréférencé : Ne perdez jamais vos sondes",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "49bdb691b1e8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18ec66c47660",
+     "text": "Contrairement à une citerne apparente, les têtes de forage sont enterrées et deviennent invisibles une fois le jardin remis en état ou la terrasse posée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "aebfb0970c5a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24db3f9edeeb",
+     "text": "La précision du plan :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "46222d4dad0f",
+     "text": " Nous fournissons un plan précis indiquant l'emplacement exact de chaque forage.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39b72ea0dd00",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a563cf94906c",
+     "text": "Coordonnées GPS :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9a77934e5e61",
+     "text": " Grâce au repérage géoréférencé, même si vous modifiez totalement l'aménagement de votre jardin dans quinze ans, vous pourrez retrouver l'emplacement des sondes au centimètre près. C'est une sécurité indispensable pour éviter de percer ou de construire par erreur au-dessus d'une tête de forage lors de futurs travaux.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b3bff902ee79",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b1f752a4591",
+     "text": "2. La coupe géologique : Comprendre votre sous-sol",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9d4a59580893",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76267d41b871",
+     "text": "Lors du forage avec la Hütte 205 GT, nos techniciens consignent la nature des sols traversés mètre après mètre.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "eba054e697ba",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ef284b6e71c",
+     "text": "Rapport de forage :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3fa2a1d3b682",
+     "text": " Ce document précise à quelle profondeur nous avons rencontré de l'eau, du schiste, du grès ou de l'argile.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f0d10bf0fa8a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7dc3599036f4",
+     "text": "Utilité :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "acf48b0abd50",
+     "text": " Ces données sont précieuses pour l'administration (SPW/Bruxelles Environnement) mais aussi pour toute future étude de sol sur votre terrain.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3c5dff709dc0",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "057025a891cf",
+     "text": "3. Les fiches techniques et certificats de conformité",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ab7b0dbd08af",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f79fb915ad0",
+     "text": "Le dossier As-Built regroupe toutes les preuves de qualité de votre installation :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e15f549c1af3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b76ddd27b7c0",
+     "text": "Certificats des sondes :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "08368ae95c97",
+     "text": " La preuve que les tubes en PEHD installés sont conformes aux normes de pression et de résistance.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cc5eee3c93c3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e66a7e3e2548",
+     "text": "Fiche du ciment géothermique :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "786df8465b13",
+     "text": " La preuve que le scellement a été réalisé avec un mélange à haute conductivité thermique.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "11be3a7a60b5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29db159df81d",
+     "text": "Test de pression :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "da5a0c1d784c",
+     "text": " Le rapport prouvant que le circuit est parfaitement étanche avant la mise en service.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e4b5f9cbb216",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ecc5e62f25d",
+     "text": "4. Un atout majeur pour la revente (Le \"Log-book\" de la maison)",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5f437b842229",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e08a2d10590e",
+     "text": "Aujourd'hui, les acheteurs et les notaires sont de plus en plus exigeants sur la traçabilité des équipements techniques.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c09ee611c604",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "acb4b41321d2",
+     "text": "Transparence :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ed89e9b97fbf",
+     "text": " Présenter un dossier As-Built complet et professionnel signé par WellDoneDrill rassure immédiatement l'acquéreur sur le sérieux des travaux.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1a563be89b2e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2480275951fd",
+     "text": "Valorisation :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9a4662ec001a",
+     "text": " Cela transforme une installation \"cachée\" en un actif tangible et documenté, facilitant grandement l'expertise immobilière.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c89b74ba07fa",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "394643a52229",
+     "text": "5. Faciliter la maintenance future",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5569c024d105",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1cb497850176",
+     "text": "Si, dans 25 ans, vous décidez de remplacer votre pompe à chaleur par un modèle de nouvelle génération, le technicien aura besoin de connaître les caractéristiques de vos sondes (longueur, volume de fluide, débit). Avec votre dossier complet, la transition se fera en un clin d'œil, sans nouvelles études coûteuses.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "96dfdb95ac1c",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a63092c7d75c",
+     "text": "Conclusion",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bf91da3907c4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "008699762e00",
+     "text": "Chez WellDoneDrill, nous pensons que la qualité d'un forage se juge aussi à la qualité des documents qui l'accompagnent. En vous remettant un dossier technique complet et géoréférencé, nous vous offrons bien plus qu'un système de chauffage : nous vous offrons la maîtrise totale et durable de votre patrimoine énergétique souterrain.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "L'après-forage : Pourquoi le dossier « As-Built » et le repérage géoréférencé sont essentiels ?",
+ "seoDescription": "Une fois que les machines de WellDoneDrill ont quitté votre propriété, le travail n'est pas tout à fait terminé. Pour qu'une installation géothermique…",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige-7.jpg",
+ "_mainImageAlt": "L'après-forage : Pourquoi le dossier « As-Built » et le repérage géoréférencé sont essentiels ?"
+}

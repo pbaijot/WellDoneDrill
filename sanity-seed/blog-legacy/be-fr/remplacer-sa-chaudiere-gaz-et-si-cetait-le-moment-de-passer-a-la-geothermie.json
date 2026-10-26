@@ -1,0 +1,725 @@
+{
+ "_id": "blog-legacy-be-fr-4409",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Remplacer sa chaudière gaz : et si c’était le moment de passer à la géothermie ?",
+ "slug": {
+  "_type": "slug",
+  "current": "remplacer-sa-chaudiere-gaz-et-si-cetait-le-moment-de-passer-a-la-geothermie"
+ },
+ "legacyPath": "/be-fr/remplacer-sa-chaudiere-gaz-et-si-cetait-le-moment-de-passer-a-la-geothermie",
+ "publishedAt": "2025-12-02T11:02:47Z",
+ "excerpt": "La question “comment remplacer ma chaudière gaz ?” revient de plus en plus souvent chez les propriétaires et les copropriétés. Fin de vie de la chaudière, inquiétudes sur le prix du gaz, contraintes PEB, volonté de décarboner… Les raisons…",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "adb52040674c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f33d869eacb",
+     "text": "La question “comment remplacer ma chaudière gaz ?” revient de plus en plus souvent chez les propriétaires et les copropriétés. Fin de vie de la chaudière, inquiétudes sur le prix du gaz, contraintes PEB, volonté de décarboner… Les raisons ne manquent pas. Parmi les solutions possibles, la pompe à chaleur géothermique devient l’option la plus confortable et la plus pérenne. Surtout en Belgique, où le sous-sol offre un excellent potentiel.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "923f64edb714",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f0e109a968e4",
+     "text": "Pourquoi remplacer sa chaudière gaz maintenant ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0412e01bedb7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6eb08f6bfaf8",
+     "text": "Une chaudière gaz qui a 15 ou 20 ans arrive en fin de parcours. Le rendement diminue, les pannes se multiplient, les pièces deviennent plus difficiles à trouver. Dans le même temps, le contexte énergétique a changé : le prix du gaz est devenu plus volatil, les réglementations se durcissent et les objectifs climatiques poussent à sortir progressivement des combustibles fossiles.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e8fab229d107",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85a7fcfaef77",
+     "text": "Remplacer simplement une ancienne chaudière gaz par une nouvelle chaudière gaz revient à prolonger cette dépendance pour 15 ou 20 ans supplémentaires. Techniquement, c’est possible. Stratégiquement, cela devient de moins en moins cohérent pour un bâtiment résidentiel ou un immeuble qui veut conserver sa valeur à long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c8b05147b63b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e0277803619",
+     "text": "C’est là que la question “remplacer chaudière gaz” rejoint naturellement celle de la pompe à chaleur, et en particulier de la géothermie.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "740a70fb1478",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98f5dd4ff453",
+     "text": "Remplacer une chaudière gaz par une pompe à chaleur : pourquoi la géothermie se démarque",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "26b40cdc952e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41bfb3742cc8",
+     "text": "Quand on envisage de remplacer une chaudière gaz, deux grandes familles de pompes à chaleur apparaissent sur la table : les PAC air/eau et les PAC géothermiques (sol/eau).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0ed11c04d91c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ae82d8aa67b",
+     "text": "Les deux permettent d’alimenter un réseau de radiateurs ou un plancher chauffant, mais leur comportement diffère fortement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3d31fabacc76",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71f37409ce1c",
+     "text": "PAC air/eau",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4f84d5871843",
+     "text": " : capte des calories dans l’air extérieur. Plus il fait froid, plus sa performance baisse, alors que les besoins de chauffage augmentent. Elle nécessite une unité extérieure, visible et audible, à placer en façade, en toiture ou dans le jardin.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a469db7e93f1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d35a55ee6699",
+     "text": "PAC géothermique",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f736ad438f1e",
+     "text": " : puise la chaleur dans le sol via des sondes verticales. La température du sous-sol reste stable toute l’année, ce qui donne un rendement très élevé, même quand il gèle. Il n’y a pas de groupe extérieur : tout le système est à l’intérieur du bâtiment et dans le terrain.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97abde197d4a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9afaec7a284",
+     "text": "En rénovation, remplacer une chaudière gaz par un chauffage géothermique, c’est donc passer :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "82d364d965a6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "731a88fd6752",
+     "text": "d’une combustion à un système électrique à très haut rendement ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f5ff5c7b99bd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "614c7237d4c6",
+     "text": "d’une énergie importée et volatile à une ressource locale et stable ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c9cb42791449",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e70b6133565",
+     "text": "d’une flamme dans une chaufferie à un échange de chaleur avec le sol.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "22b2a7041487",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "020f77d8332b",
+     "text": "Géothermie et radiateurs : oui, la rénovation est possible",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3ebc2b602cc2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bf9989e501c",
+     "text": "Beaucoup de bâtiments existants sont équipés de radiateurs dimensionnés pour des régimes de température relativement élevés. Cependant, dans la pratique, ces radiateurs sont souvent surdimensionnés par rapport aux besoins actuels (amélioration de l’isolation, remplacement des châssis, évolution des usages, etc.).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0915d592779b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a114ec0e668",
+     "text": "En travaillant sur la régulation (loi d’eau, régulation pièce par pièce, équilibrage), il est souvent possible d’abaisser les températures de départ tout en conservant un bon confort. La PAC géothermique peut ainsi alimenter un réseau de radiateurs existant, à des températures plus basses mais suffisantes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e03692c336a1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb045bbdf184",
+     "text": "Dans certains cas, des adaptations ponctuelles sont réalisées (remplacement de quelques radiateurs, ajout de ventilo-convecteurs dans certaines zones), mais il n’est pas nécessaire de tout refaire de zéro.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b2873fcb0c4e",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0448774b884e",
+     "text": "Comment se déroule concrètement un remplacement chaudière gaz → géothermie ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "988ea3f18c78",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9372b967b6e8",
+     "text": "Un projet type se déroule en plusieurs étapes :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2baa81dd4b67",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "adb28eb143d4",
+     "text": "audit de l’installation existante (puissance, réseau de distribution, espace disponible) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "139676ced9ab",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30ee968b18b5",
+     "text": "analyse de la faisabilité géothermique (espace pour les sondes, type de sol, accès pour la foreuse) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b42f1ea3537",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6a275d7d4768",
+     "text": "dimensionnement du champ de sondes et de la PAC ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b93edb086933",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76bac888f109",
+     "text": "réalisation des forages et installation des sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "05c326fbf85c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9064cc1e83cb",
+     "text": "installation de la PAC, du ballon tampon et des adaptations hydrauliques ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f241da5865b3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0006473a1234",
+     "text": "mise en service, réglages de régulation, optimisation.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "426d8f8f9555",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27b27c2986ee",
+     "text": "Dans un immeuble collectif, cette démarche s’inscrit généralement dans un projet plus global de rénovation énergétique et peut être phasée pour limiter les interruptions de service.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6c336ec944ef",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b77f9dbee87",
+     "text": "Remplacer chaudière gaz : quel impact sur la facture à long terme ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "43b713fb64b6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c498ec1dfe6",
+     "text": "Le passage du gaz à la géothermie représente un investissement initial plus élevé, mais il transforme radicalement le profil de dépenses :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f976c5a262a9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2015f20c184",
+     "text": "au lieu d’acheter du gaz, on achète de l’électricité, mais en quantité beaucoup plus faible, grâce au COP élevé de la PAC ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a7af4c9d30ff",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "531432090ebd",
+     "text": "la facture énergétique est moins sensible aux variations du prix du gaz ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7c7a1033968e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b12d2468436f",
+     "text": "les systèmes de taxation du carbone (ETS, etc.) rendent progressivement les combustibles fossiles plus coûteux.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "50b981a545cc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "906ed8fe0156",
+     "text": "En ajoutant :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "04052b8c611d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3009a9df076",
+     "text": "la durée de vie des sondes (plus de 50 ans) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "57767c5c0885",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f68060b989e0",
+     "text": "la possibilité de coupler la PAC au photovoltaïque ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fc3d7ccb1aad",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b3a38a6cd74",
+     "text": "les régimes de TVA avantageux en résidentiel ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2281b59a50a0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8864099e7009",
+     "text": "on obtient un temps de retour qui rend le remplacement de la chaudière gaz par la géothermie très compétitif sur 15 à 20 ans, surtout pour les bâtiments qui resteront occupés longtemps.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "91f7a8d8e268",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4f9c1e4c8a3",
+     "text": "Le rôle de WellDoneDrill dans un projet de remplacement de chaudière gaz",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "51bec7da39a0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2eb16a8d7a4f",
+     "text": "WellDoneDrill n’installe pas de chaudières gaz : son métier, ce sont les forages et les sondes pour la géothermie. Mais justement, dans un projet de remplacement de chaudière gaz, c’est là que tout commence.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0ad61e28a3d4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "484cbfa9adeb",
+     "text": "WDD peut :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fd48b476d9f0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5d7de31817be",
+     "text": "analyser la faisabilité géothermique du site lorsqu’une chaudière arrive en fin de vie ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f58013662d53",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcbf706ef0f8",
+     "text": "dimensionner et réaliser le champ de sondes adapté au bâtiment ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f80d12bb8e20",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b69dbb1cfea",
+     "text": "travailler avec l’installateur de pompes à chaleur choisi par le client ou proposer des partenaires habitués à ce type de remplacement ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1c3110fe37a7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6ec2ab74fd4a",
+     "text": "aider à structurer le projet pour bénéficier des bons régimes de TVA et des dispositifs de soutien disponibles.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2586ebc02580",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d85ddbb49685",
+     "text": "Pour un propriétaire privé, un syndic ou un promoteur, la question devient alors simple : plutôt que de remplacer une chaudière gaz par une autre chaudière gaz, pourquoi ne pas transformer ce moment-clé en opportunité pour sortir du gaz définitivement et passer à un chauffage géothermique, performant, silencieux et durable ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5b9f5766d310",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eba2740c0d92",
+     "text": "Remplacer une chaudière gaz, ce n’est plus seulement une question d’appareil. C’est l’occasion de décider comment on veut se chauffer pour les vingt prochaines années.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Remplacer sa chaudière gaz : et si c’était le moment de passer à la géothermie ?",
+ "seoDescription": "La question “comment remplacer ma chaudière gaz ?” revient de plus en plus souvent chez les propriétaires et les copropriétés. Fin de vie de la chaudière…",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Pompe a chaleur well done drill"
+}

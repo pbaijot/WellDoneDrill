@@ -1,0 +1,663 @@
+{
+ "_id": "blog-legacy-be-fr-4376",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "La géothermie : l’énergie renouvelable et compétitive qui s’impose en Belgique",
+ "slug": {
+  "_type": "slug",
+  "current": "la-geothermie-lenergie-renouvelable-et-competitive-qui-simpose-en-belgique"
+ },
+ "legacyPath": "/be-fr/la-geothermie-lenergie-renouvelable-et-competitive-qui-simpose-en-belgique",
+ "publishedAt": "2025-12-02T10:48:10Z",
+ "excerpt": "Alors que le chauffage représente une part importante de la consommation énergétique des bâtiments, la géothermie s’affirme comme une solution à la fois performante, stable et décarbonée. En Belgique, où le sous-sol offre un excellent…",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "df6a2ca55da4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "927400a42ea6",
+     "text": "Alors que le chauffage représente une part importante de la consommation énergétique des bâtiments, la géothermie s’affirme comme une solution à la fois performante, stable et décarbonée. En Belgique, où le sous-sol offre un excellent potentiel, elle devient progressivement une évidence pour qui cherche un système de chauffage et de rafraîchissement durable.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "44fd21c0c5a5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd85fb3d0dc5",
+     "text": "La géothermie tire parti de la chaleur naturellement présente dans le sol. À partir d’une dizaine de mètres de profondeur, la température de la terre devient stable tout au long de l’année. Cette caractéristique permet aux pompes à chaleur géothermiques de fonctionner avec une performance constante, quelles que soient les conditions extérieures. Dans un pays au climat tempéré comme la Belgique, cette stabilité représente un avantage majeur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e48924307ec7",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d23c287d88e9",
+     "text": "Une énergie renouvelable naturellement stable et disponible toute l’année",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bbcde62dff10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "103c852541c1",
+     "text": "À partir d’une dizaine de mètres de profondeur, la température du sol devient stable, généralement entre 10 et 14 °C selon les régions. Les sondes géothermiques plongées dans ce volume de sol exploitent cette chaleur de manière continue.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b67c48d27334",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de0e025b41a1",
+     "text": "L’énergie puisée dans le sol se renouvelle naturellement. Bien dimensionnée, une installation géothermique ne “vide” pas le gisement : la chaleur se reconstitue entre les saisons, notamment grâce à la chaleur restituée en été lors du rafraîchissement. La géothermie est donc une énergie renouvelable, disponible 24h/24, 365 jours par an, indépendamment du vent, du soleil ou des températures extérieures.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1fbf946f7cb5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d89121b037d",
+     "text": "Une empreinte carbone parmi les plus faibles du marché",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9d2788068f04",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f0adc9c3f33",
+     "text": "Une pompe à chaleur géothermique (PAC eau/eau) produit en moyenne 4 kWh de chaleur pour 1 kWh d’électricité consommé. Autrement dit, près de 75 % de la chaleur produite est 100 % renouvelable.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fe031f64f95f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3262c23566f",
+     "text": "Ses émissions de CO₂ sont ainsi très largement inférieures à celles d’une chaudière gaz ou fioul, même en tenant compte de l’empreinte carbone de l’électricité. Pour une collectivité, un promoteur ou un propriétaire privé, la géothermie permet donc de réduire fortement l’empreinte carbone du bâtiment, en logement, en tertiaire ou dans les immeubles collectifs.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4f41577d4fa8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "184de165ad9b",
+     "text": "Une solution efficace même lors des hivers les plus froids",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d38c58a33305",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "477caeb1995d",
+     "text": "Parce qu’elle utilise la chaleur du sol et non celle de l’air, la géothermie garde un excellent rendement, même par températures négatives. Là où une pompe à chaleur air/eau voit ses performances baisser en plein hiver, une PAC géothermique reste stable, car la température du sol varie très peu.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2a49df0637f4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1904831f726c",
+     "text": "La géothermie offre ainsi un confort constant, une consommation électrique maîtrisée et une excellente prévisibilité des dépenses énergétiques, y compris lors des jours les plus froids de l’année, précisément au moment où le bâtiment a le plus besoin de chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9349bc1313cf",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f8d406c587d",
+     "text": "Une énergie locale et indépendante des aléas des marchés",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2cd357066e04",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f431ffaaad5",
+     "text": "La géothermie est produite directement sur place. Pas d’importation de combustible, pas de livraison, pas de stockage. La chaleur est puisée dans le terrain, sous le bâtiment ou à proximité immédiate. Cette énergie locale est indépendante des fluctuations des prix du gaz, du mazout ou des certificats d’émission de CO₂. Elle réduit la dépendance à des marchés internationaux, pas d’aléa géopolitique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "17edfe424f87",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79cae1f9a02c",
+     "text": "Pour un particulier comme pour un bâtiment public ou tertiaire, la géothermie est un moyen concret de stabiliser les coûts d’exploitation sur le long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c42f2a0b0b28",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc8393867c6c",
+     "text": "Un rafraîchissement naturel quasiment gratuit : le geocooling",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0570cfd88e14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e24fdd793294",
+     "text": "En été, la géothermie offre un avantage unique : le rafraîchissement passif du bâtiment. Ce principe, souvent appelé geocooling ou freecooling, consiste à utiliser directement la fraîcheur du sol pour maintenir le bâtiment à une température très confortable.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8db28f27608f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7fe371b94c5b",
+     "text": "Ce système permet de remplacer ou de réduire fortement le besoin en climatisation classique, tout en réduisant la facture énergétique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ae44281eb05e",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c277dec9861d",
+     "text": "Une durée de vie exceptionnellement longue",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e73df0d9b61a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0dcc2236270d",
+     "text": "Les sondes géothermiques enterrées dans le sol ont une durée de vie estimée à plus de 50 ans. La pompe à chaleur, quant à elle, a une durée de vie comparable aux autres équipements thermiques (15 à 20 ans), mais elle fonctionne dans des conditions très stables, ce qui favorise sa longévité.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5effd62063d0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eedc284be749",
+     "text": "Lorsque le bâtiment évolue, les sondes restent en place, prêtes à alimenter une nouvelle PAC.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "22d9a124bc34",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "02ef36229ddd",
+     "text": "Des coûts d’exploitation parmi les plus faibles",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "18c47f3e412b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff1868126b9c",
+     "text": "Grâce à son excellent rendement, une installation géothermique permet de réduire fortement les coûts d’exploitation. Pour 1 kWh électrique consommé, la PAC géothermique restitue environ 4 kWh de chaleur. La facture de chauffage peut ainsi être réduite d’un facteur 2 à 4 par rapport à une solution fossile, selon les projets.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4bc94b919eb8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f33091fe3736",
+     "text": "Les coûts de maintenance sont également faibles : pas de chaudière à ramoner, pas de brûleur, pas de cheminée. L’installation est propre, entièrement électrique, avec peu de pièces d’usure.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4ef0da01eb83",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9de646d87ba0",
+     "text": "Une solution adaptée à presque tous les bâtiments",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "07bd77ff1509",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a598afaae467",
+     "text": "Contrairement à certaines idées reçues, la géothermie ne se limite pas aux grandes maisons isolées avec grand jardin. Elle est adaptée à un large éventail de bâtiments :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2f83a00bbee2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b1eb7627ad5",
+     "text": "maisons individuelles",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dd04e87b1466",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04838d843c4c",
+     "text": "immeubles à appartements",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "62b43eaa41ab",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "458cfe931bd2",
+     "text": "bureaux",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2fb96457fcac",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b3704790d51",
+     "text": "écoles et crèches",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8ab9646a67b4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30366382bd11",
+     "text": "bâtiments publics",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e14b471d8462",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08ba28b3d298",
+     "text": "petits et moyens bâtiments industriels",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf48f4e02a05",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6564c75a43e3",
+     "text": "En Belgique, le sous-sol offre un excellent potentiel dans la grande majorité des régions. Les sondes verticales permettent de s’affranchir des contraintes de surface, ce qui rend la géothermie possible même en milieu urbain dense ou sur de petites parcelles.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fa24268a19d0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4eb4d242e5f2",
+     "text": "Une énergie d’avenir, simple et extrêmement performante",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2021c1331cda",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2da0ce53b26",
+     "text": "La géothermie combine toutes les qualités recherchées aujourd’hui :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0eddb5234bce",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4c550ebfca4",
+     "text": "performance élevée toute l’année,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "608f173ee15c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea08501f2267",
+     "text": "silence absolu,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec1126d66d73",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "135fe2865cc8",
+     "text": "rafraîchissement naturel,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0b07bfa065d4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e236615383ee",
+     "text": "coûts d’exploitation très bas,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f98f4fbdffa0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c26046860103",
+     "text": "indépendance énergétique,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ff8e26ae7f85",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e18e244cf420",
+     "text": "durabilité exceptionnelle,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d3abcb4249c3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1387e576f28",
+     "text": "compatibilité avec la rénovation et le neuf.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eea08d653427",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c54653459c97",
+     "text": "C’est l’une des rares solutions capables d’offrir un chauffage, une climatisation douce et une production d’eau chaude sanitaire, avec une seule technologie, tout en respectant les objectifs climatiques.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "04e9915f73bf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8045a87dc5e4",
+     "text": "En Belgique, la géothermie n’est plus une technologie de niche : c’est une réponse fiable, mature et compétitive pour tout projet de construction ou de rénovation qui vise la performance énergétique et la stabilité à long terme.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "La géothermie : l’énergie renouvelable et compétitive qui s’impose en Belgique",
+ "seoDescription": "Alors que le chauffage représente une part importante de la consommation énergétique des bâtiments, la géothermie s’affirme comme une solution à la fois…",
+ "_mainImageFile": "uploads/2025/05/Novacity2-header.webp",
+ "_mainImageAlt": "Chantier forage géothermique novacity en Belgique"
+}

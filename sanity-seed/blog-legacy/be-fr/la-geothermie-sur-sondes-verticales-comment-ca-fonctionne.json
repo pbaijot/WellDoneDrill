@@ -1,0 +1,279 @@
+{
+ "_id": "blog-legacy-be-fr-4374",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "La géothermie sur sondes verticales : comment ça fonctionne ?",
+ "slug": {
+  "_type": "slug",
+  "current": "la-geothermie-sur-sondes-verticales-comment-ca-fonctionne"
+ },
+ "legacyPath": "/be-fr/la-geothermie-sur-sondes-verticales-comment-ca-fonctionne",
+ "publishedAt": "2025-12-02T10:46:55Z",
+ "excerpt": "La géothermie sur sondes verticales repose sur la circulation, en circuit fermé, d’un liquide caloporteur (de qualité alimentaire) dans plusieurs sondes géothermiques plongées dans le sol. Chaque sonde est constituée de deux boucles en U…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 2,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "5894f74416b0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc8390552865",
+     "text": "La géothermie sur sondes verticales repose sur la circulation, en circuit fermé, d’un liquide caloporteur (de qualité alimentaire) dans plusieurs sondes géothermiques plongées dans le sol. Chaque sonde est constituée de deux boucles en U réalisées en polyéthylène haute densité (PEHD). Ces boucles sont positionnées dans un forage vertical.Une fois les tubes installés, l’espace entre la paroi du forage et les sondes est rempli avec un coulis géothermique — un mélange de bentonite et de ciment conducteur — afin d’assurer un excellent contact thermique avec le terrain. Le liquide circulant dans les sondes capte ou restitue la chaleur du sol et la transporte jusqu’à la pompe à chaleur.En surface, une ou plusieurs pompes à chaleur (PAC) assurent le transfert d’énergie :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1f9e2796adff",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f00c4ed24f8c",
+     "text": "soit depuis le sol vers le bâtiment (chauffage),",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28a7e88f36da",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c311e7a4e0c",
+     "text": "soit du bâtiment vers le sol (refroidissement).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ea2c474f0fd3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2778dd838c4e",
+     "text": "Dans certains cas, l’installation peut même offrir un rafraîchissement naturel sans utiliser les pompes à chaleur : c’est le geocooling ou freecooling, particulièrement intéressant pour les bâtiments souhaitant une climatisation à très faible consommation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "86566508b47a",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "80f8529c63f7",
+     "text": "Les avantages d’un système géothermique sur sondes verticales",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "be73ebe4bf17",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af69f76899f8",
+     "text": "Très faible emprise au sol",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "88c51583f083",
+     "text": " Idéal pour les terrains restreints ou les projets où chaque mètre carré compte.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a8c4ba85338c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9eb9ac5d1ba3",
+     "text": "Aucune contrainte d’aménagement",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1975889311c9",
+     "text": " Contrairement à un captage horizontal, le terrain reste totalement disponible après les travaux (jardin, parking, terrasse, constructions…).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7cfe93a88e45",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c93691577da",
+     "text": "Rendement énergétique élevé et stable",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b362f6c5bc28",
+     "text": " La température du sol reste quasi constante toute l’année, ce qui rend le système plus performant que les solutions aérothermiques dépendantes de la température de l’air.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "42f137b08879",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "224420127407",
+     "text": "Faibles pertes thermiques",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "32a62174f4ac",
+     "text": " Le fonctionnement en basse température limite les déperditions dans le réseau hydraulique.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a3f0d7ea230b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b23bac6e870",
+     "text": "Solution écologique et décarbonée",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fdfaacd00235",
+     "text": " L’installation valorise une énergie renouvelable locale et propre.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f52f04c07bc5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bddb9e1f27e6",
+     "text": "Rafraîchissement gratuit",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "edd4ed517e67",
+     "text": " Grâce au freecooling, il est possible de refroidir le bâtiment via la fraîcheur naturelle du sol, avec une consommation d’énergie minimale.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "57b86b4ad165",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c2c8b9008f41",
+     "text": "Maintenance réduite",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8f94acf441a0",
+     "text": " Un système simple, sans pièces mécaniques enterrées, et dont la durée de vie est très longue.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "05ad54a47742",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cad605065ee3",
+     "text": "Avec les techniques de forage actuelles, elle est réalisable dans la grande majorité des situations, y compris sur des parcelles urbaines étroites ou des projets avec peu d’espace disponible.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "La géothermie sur sondes verticales : comment ça fonctionne ?",
+ "seoDescription": "La géothermie sur sondes verticales repose sur la circulation, en circuit fermé, d’un liquide caloporteur (de qualité alimentaire) dans plusieurs sondes…",
+ "_mainImageFile": "uploads/2025/05/Jodoigne-header.webp",
+ "_mainImageAlt": "forage geothermique à Jodoigne"
+}

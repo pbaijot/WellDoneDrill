@@ -1,0 +1,417 @@
+{
+ "_id": "blog-legacy-be-fr-5510",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Géothermie vs Climatisation : Lutter contre les îlots de chaleur urbains",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-vs-climatisation-lutter-contre-les-ilots-de-chaleur-urbains"
+ },
+ "legacyPath": "/be-fr/geothermie-vs-climatisation-lutter-contre-les-ilots-de-chaleur-urbains",
+ "publishedAt": "2026-03-20T13:52:58Z",
+ "excerpt": "En été, les centres-villes belges deviennent de véritables fournaises. C’est le phénomène des îlots de chaleur urbains : le béton et l’asphalte emmagasinent la chaleur la journée et la rejettent la nuit, empêchant les habitations de…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "f27b7ec459c4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41ce49d04bea",
+     "text": "En été, les centres-villes belges deviennent de véritables fournaises. C’est le phénomène des ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9f97f4ebf180",
+     "text": "îlots de chaleur urbains",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "979c20c05eba",
+     "text": " : le béton et l’asphalte emmagasinent la chaleur la journée et la rejettent la nuit, empêchant les habitations de refroidir. Face à cela, la climatisation classique semble être la solution de facilité, mais elle aggrave le problème. Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b172e6560e23",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "926961b8b947",
+     "text": ", nous proposons une alternative écologique et citoyenne : le géocooling.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7c566f361c1b",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "49ad3c7dd3a3",
+     "text": "1. Le cercle vicieux de la climatisation classique",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "dedcda19f3d9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed2c501ec39f",
+     "text": "Une climatisation traditionnelle (ou une pompe à chaleur Air/Air) fonctionne sur un principe simple : elle extrait la chaleur de votre intérieur pour la rejeter à l’extérieur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "26153b2f9dde",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e6b3df146529",
+     "text": "Surchauffe des rues :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5d4fd9967cf8",
+     "text": " En multipliant les unités de clim en façade, on augmente la température de la rue de plusieurs degrés. Votre voisin est alors obligé d'allumer sa propre clim, créant une spirale infernale.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b58a64d8c713",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e3199d0b735",
+     "text": "Pollution sonore :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "972c7a86badf",
+     "text": " Les ventilateurs extérieurs bourdonnent jour et nuit, empêchant les habitants d'ouvrir les fenêtres pour profiter de la fraîcheur nocturne.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1da7cc6eba4e",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68fadef915f1",
+     "text": "2. Le Géocooling : Le rafraîchissement invisible",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "72926cf6656f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "140ca21bf3f9",
+     "text": "La géothermie verticale change radicalement la donne. Au lieu de rejeter la chaleur dans l'air ambiant, nous la renvoyons là d'où elle vient : ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "bcab238248d1",
+     "text": "dans le sol",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "69a7aed25996",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9e9201b85caf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d68b131ba325",
+     "text": "Transfert thermique souterrain :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b3d3773092bd",
+     "text": " En été, le sol à 150 mètres de profondeur reste à environ 12°C. Le système de WellDoneDrill capte la chaleur de votre maison et l'injecte dans la terre via les sondes géothermiques.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "00da421d9df8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41de4299c1f6",
+     "text": "Silence total :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "87d16cc78401",
+     "text": " Aucun ventilateur ne tourne à l'extérieur. Vos façades restent nettes, vos balcons sont silencieux, et vous respectez le calme de votre quartier.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a7d79ebff160",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c71cc09c6e2",
+     "text": "3. Une efficacité énergétique imbattable",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "540e3f30340b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0cf94b4423f",
+     "text": "La climatisation est l'un des plus gros postes de dépense électrique en été. Le compresseur doit travailler énormément pour évacuer les calories dans un air extérieur déjà brûlant.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "25bc02b9bb56",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75555c96db3f",
+     "text": "Le froid passif :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d922104c84a5",
+     "text": " Le géocooling est dit \"passif\". Le compresseur de votre pompe à chaleur reste éteint. Seule une petite pompe de circulation (consommant autant qu'une ampoule LED) fait voyager le fluide entre le sol frais et votre plancher chauffant.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e644712edcd1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e47af9f7575",
+     "text": "Résultat :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a42e4068817d",
+     "text": " Vous rafraîchissez votre habitation pour un coût divisé par 20 par rapport à un climatiseur classique.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "477af06f2881",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "934ad772842b",
+     "text": "4. Régénérer le sol pour l'hiver",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "52f08699b638",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "991f55bb9663",
+     "text": "L'un des aspects les plus fascinants de cette technologie est la ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0586b0239bd7",
+     "text": "recharge thermique du sol",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ab0febcebf5f",
+     "text": ". En injectant la chaleur de votre maison dans le forage durant l'été, vous réchauffez légèrement la roche autour de vos sondes. Cela crée un réservoir de calories qui sera bien utile dès l'automne : votre pompe à chaleur démarrera sa saison de chauffage avec un sol plus \"tiède\", ce qui boostera son rendement (COP) durant les premiers mois d'hiver. C'est une économie circulaire de l'énergie.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ae9ad835ada6",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c5fb7b70968",
+     "text": "5. Un choix responsable pour l'urbanisme de demain",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "42cf761241de",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc58da464faf",
+     "text": "À Bruxelles et dans les grandes villes wallonnes, les autorités sont de plus en plus sensibles à l'impact environnemental des bâtiments. La géothermie est activement encouragée car elle ne contribue pas au réchauffement des rues. Choisir WellDoneDrill pour votre projet urbain, c'est opter pour un confort haut de gamme tout en étant un voisin exemplaire.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e4266f9cd939",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0cff952c5ab",
+     "text": "Conclusion",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c14c34eae8da",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5055072eecc1",
+     "text": "La climatisation classique est une solution du passé, coûteuse et égoïste. Le géocooling par forage vertical est la réponse moderne aux défis climatiques urbains. Il offre une fraîcheur saine, silencieuse et gratuite, tout en protégeant l'écosystème de votre quartier.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Géothermie vs Climatisation : Lutter contre les îlots de chaleur urbains",
+ "seoDescription": "En été, les centres-villes belges deviennent de véritables fournaises. C’est le phénomène des îlots de chaleur urbains : le béton et l’asphalte…",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "Géothermie vs Climatisation : Lutter contre les îlots de chaleur urbains"
+}

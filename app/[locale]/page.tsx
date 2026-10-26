@@ -6,7 +6,7 @@ import { getSeoDefaults } from '@/src/i18n/seo'
 import { buildAlternates } from '@/src/lib/seoAlternates'
 import { getTranslations } from 'next-intl/server'
 import { getHomePage } from '@/src/lib/homePage'
-import { getLatestBlogPosts } from '@/src/lib/blog'
+import { getLatestBlogPosts, blogPostHref } from '@/src/lib/blog'
 import { getChantiers } from '@/src/lib/referencesPage'
 import { getGlobalSettings } from '@/src/lib/globalSettings'
 import { urlFor } from '@/src/lib/sanityImage'
@@ -155,6 +155,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       ? latestPosts.map((post, index) => ({
           _id: post._id,
           slug: post.slug,
+          href: blogPostHref(locale, post),
           tone: ['bg-wdd-ground/50', 'bg-wdd-grass/40', 'bg-wdd-mud/50'][index] ?? 'bg-wdd-ground/50',
           title: post.title,
           date: post.publishedAt
@@ -578,7 +579,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {blogPosts.map((post) => (
               <div key={'_id' in post ? post._id : post.title} className="group">
-                <Link href={'slug' in post && post.slug ? `/${locale}/blog/${post.slug}` : getLocalizedPath(loc, 'blog')} className="block">
+                <Link href={'href' in post && post.href ? post.href : getLocalizedPath(loc, 'blog')} className="block">
                   <div className={'relative h-48 overflow-hidden rounded-sm ' + ('imageUrl' in post && post.imageUrl ? '' : post.tone ?? 'bg-wdd-ground/50')}>
                     {'imageUrl' in post && post.imageUrl
                       ? <Image src={post.imageUrl} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />

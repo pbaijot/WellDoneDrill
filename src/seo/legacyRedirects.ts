@@ -107,18 +107,22 @@ const projectRedirects: Redirect[] = [
   r('/en/project_category/:path*', EN_REF),
 ]
 
-/* ─── Old blog articles (be-fr, served at the site root of the locale) ── */
+/* ─── Old blog articles ───────────────────────────────────────── */
 
-// Articles that exist again in the new blog
-const BLOG_RESTORED: Record<string, string> = {
+// 36 WordPress articles are restored in Sanity (sanity-seed/blog-legacy)
+// with `legacyPath`, so they are served again at their original URL
+// /be-fr/<slug> — no redirect needed. Only the archive pages go.
+// Safety net while a restored article is missing from Sanity (not imported
+// yet, or deleted): the catch-all route sends its old URL to the closest
+// topical page instead of a 404.
+export const LEGACY_BLOG_FALLBACK: Record<string, string> = {
+  // Rewritten in the new blog — not re-imported, to avoid duplicate content
   'focus-technique-la-hutte-205-gt-lexcellence-du-forage-geothermique-vertical': '/be-fr/blog/hutte-205-gt-forage-geothermique',
   'lapres-forage-pourquoi-le-dossier-as-built-et-le-reperage-georeference-sont-essentiels': '/be-fr/blog/apres-forage-dossier-as-built',
-}
-
-// Articles not (yet) migrated → closest topical page. Republishing them in
-// Sanity and pointing these entries at the new article URL recovers far more
-// ranking than a topical redirect, which Google may treat as a soft 404.
-const BLOG_TOPICAL: Record<string, string> = {
+  // Published in March 2026, not in the Wayback index
+  'limportance-cruciale-du-ciment-geothermique-dans-la-performance-de-votre-forage': '/be-fr/geothermie/geothermie-fermee',
+  'forage-vertical-pourquoi-viser-150-metres-de-profondeur': '/be-fr/geothermie/geothermie-fermee',
+  'le-role-du-ballon-tampon-le-gardien-de-votre-pompe-a-chaleur-geothermique': '/be-fr/particuliers',
   // Homeowner / cost / heat pump topics
   'chauffage-et-si-la-solution-la-plus-confortable-etait-sous-vos-pieds': '/be-fr/particuliers',
   'combien-coute-une-installation-geothermique-en-2025-le-guide-clair-et-complet': '/be-fr/particuliers',
@@ -157,8 +161,8 @@ const BLOG_TOPICAL: Record<string, string> = {
   'transformer-la-chaleur-du-sol-en-energie-geothermie': '/be-fr/geothermie',
 }
 
+
 const blogRedirects: Redirect[] = [
-  ...Object.entries({ ...BLOG_RESTORED, ...BLOG_TOPICAL }).map(([o, n]) => r(`/be-fr/${o}`, n)),
   r('/be-fr/categorie/:path*', '/be-fr/blog'),
   r('/be-fr/blog/page/:n', '/be-fr/blog'),
 ]

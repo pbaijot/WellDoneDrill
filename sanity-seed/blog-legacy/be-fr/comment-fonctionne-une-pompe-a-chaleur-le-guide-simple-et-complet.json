@@ -1,0 +1,885 @@
+{
+ "_id": "blog-legacy-be-fr-4380",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Comment fonctionne une pompe à chaleur ? Le guide simple et complet",
+ "slug": {
+  "_type": "slug",
+  "current": "comment-fonctionne-une-pompe-a-chaleur-le-guide-simple-et-complet"
+ },
+ "legacyPath": "/be-fr/comment-fonctionne-une-pompe-a-chaleur-le-guide-simple-et-complet",
+ "publishedAt": "2025-12-02T10:49:52Z",
+ "excerpt": "La pompe à chaleur (PAC) est devenue la pièce centrale des systèmes de chauffage modernes, en particulier lorsqu’elle est couplée à la géothermie. Mais comment fonctionne-t-elle concrètement ? Pourquoi est-elle si efficace ? Et quelles…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 6,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9fb0f8be471e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d5a534cf7ea",
+     "text": "La pompe à chaleur (PAC) est devenue la pièce centrale des systèmes de chauffage modernes, en particulier lorsqu’elle est couplée à la géothermie. Mais comment fonctionne-t-elle concrètement ? Pourquoi est-elle si efficace ? Et quelles sont les différences entre les différents types de PAC ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "91e9c812fde4",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e3e3d0719fa",
+     "text": "1. Le principe : capter l’énergie gratuite autour de nous",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "eeff2af57cc0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d9c85e48ce5",
+     "text": "Une pompe à chaleur ne “crée” pas de chaleur : elle déplace l’énergie présente dans l’environnement (air, sol, eau) vers le bâtiment à chauffer. Elle fonctionne sur le même principe qu’un réfrigérateur, mais à l’envers :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2541120d561e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc4cdd2bada1",
+     "text": "à l’extérieur, elle capte des calories à basse température ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0f226c9c9523",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46115f039181",
+     "text": "à l’intérieur, elle transfère ces calories à une température plus élevée vers le circuit de chauffage.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0d329e0d7907",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "66417756c558",
+     "text": "Cette opération est rendue possible grâce à un fluide frigorigène et à un cycle thermodynamique en quatre étapes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c0f1fa3f480c",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "153f6ba81ff7",
+     "text": "2. Quels sont les types de pompes à chaleur et leurs différents noms ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6b32fe4f12cd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e5de0211076",
+     "text": "On distingue principalement les pompes à chaleur en fonction de leur source d’énergie (air, sol, eau) et de leur mode de distribution (air ou eau). Les appellations courantes sont les suivantes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "28a09746005b",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9543f6edac5",
+     "text": "PAC aérothermiques",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2eb87c1fe5f2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb4dc236407f",
+     "text": "PAC air/air",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "75aa73ddd4d0",
+     "text": " : elle capte les calories dans l’air extérieur et les restitue sous forme d’air chaud à l’intérieur (via des unités intérieures type “splits”). Elle est surtout utilisée pour le résidentiel individuel.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "db22adc8598e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a27aa85e1d74",
+     "text": "PAC air/eau",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c01fc6f17096",
+     "text": " : elle capte les calories de l’air extérieur et les transfère vers un circuit d’eau de chauffage (radiateurs, planchers chauffants, ventilo-convecteurs). C’est la version la plus répandue en rénovation lorsqu’on remplace une chaudière gaz ou fioul.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0fb86b10397e",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "90570916b335",
+     "text": "PAC géothermiques",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8d71162d1fcb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b827b96a85c",
+     "text": "PAC sol/eau",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7ecb8e3dbba4",
+     "text": " : elle puise la chaleur dans le sol via des sondes géothermiques verticales ou un captage horizontal, et la restitue vers le circuit d’eau de chauffage. C’est la solution la plus stable et la plus performante sur le long terme.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca4aa97c19fb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fc170142395",
+     "text": "PAC eau/eau",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "247ceb5505a4",
+     "text": " : elle exploite la chaleur d’une nappe phréatique ou d’une eau de surface (géothermie ouverte ou aquathermie). Elle reste réservée aux sites présentant une ressource en eau adaptée et des autorisations spécifiques.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "016736d440d8",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a570635b110e",
+     "text": "PAC hybrides",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "18431d43790d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "80fdbbe3bf5d",
+     "text": "On parle parfois de systèmes hybrides lorsqu’une pompe à chaleur est couplée à une chaudière ou à une autre source de chaleur. Par exemple, une PAC air/eau combinée à une chaudière gaz pour les jours de grand froid, ou une PAC géothermique couplée à une autre source (aquathermie, riothermie, etc.) sur des projets de grande puissance.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5999f7d85eb5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fac17f11429",
+     "text": "3. Les quatre étapes du cycle thermodynamique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7e4b7d016d38",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fab9d611ab03",
+     "text": "Au cœur de la pompe à chaleur, un fluide frigorigène circule en boucle fermée et change d’état (liquide/gaz) pour transporter l’énergie.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "266e4492cf18",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bf38b5bd5b26",
+     "text": "L’évaporateur : capter la chaleur naturelle",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5b86330ea164",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7355aa3c21f6",
+     "text": "Le fluide frigorigène arrive à l’évaporateur à l’état liquide, à basse pression et basse température. Il y absorbe la chaleur de la source extérieure (air, sol, eau) et s’évapore (il devient gaz).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "338a64ac80ce",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f7d82026c416",
+     "text": "Le compresseur : augmenter la température",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "09a20812d154",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcab3d31b1d0",
+     "text": "Le gaz froid et à basse pression est aspiré par le compresseur. En le comprimant, on augmente sa pression et sa température : il devient un gaz chaud.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "11d711d91d2f",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5374c75d61b6",
+     "text": "Le condenseur : chauffer le bâtiment",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8419ff2ef2f4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "58cbddb2ed79",
+     "text": "Le gaz chaud arrive au condenseur, où il cède sa chaleur au circuit d’eau de chauffage (radiateurs, plancher chauffant, ballon tampon…). En se refroidissant, il se condense et redevient liquide.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fe090961373b",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f7c024d089c",
+     "text": "Le détendeur : recommencer le cycle",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6b4a614e0162",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc2b245ef49f",
+     "text": "Le fluide, désormais liquide mais à haute pression, passe ensuite par un détendeur. Sa pression et sa température chutent, il revient à son état de départ : liquide froid à basse pression. Le cycle peut recommencer.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d5c46e4f7272",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f303e085c0df",
+     "text": "4. Pourquoi une pompe à chaleur est-elle si efficace ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cd95f487f223",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ff71630ef45",
+     "text": "La performance d’une PAC se mesure par son coefficient de performance (COP), qui exprime le rapport entre l’énergie thermique produite et l’électricité consommée. Un COP de 4 signifie que pour 1 kWh d’électricité consommé, la PAC restitue 4 kWh de chaleur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "48028d0499f7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "565410a71a86",
+     "text": "Cette efficacité tient au fait que la PAC ne produit pas la chaleur : elle la transfère. L’électricité sert à faire fonctionner le compresseur et les auxiliaires, pas à générer la chaleur elle-même.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "782147f41c03",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15bf44f8081b",
+     "text": "5. Pourquoi la PAC géothermique est la version la plus performante",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "de4e39ee3304",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9db45d9ecfea",
+     "text": "La performance d’une PAC dépend en grande partie de la stabilité de la source :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7c8a7ab57d11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3b07def8f203",
+     "text": "l’air extérieur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "66e72f31e9a1",
+     "text": " peut varier de -10 °C à +35 °C au cours de l’année ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76ba78dd31c7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd9a7161ae6a",
+     "text": "le sol",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "383109ac5351",
+     "text": ", à partir de quelques mètres de profondeur, reste dans une plage beaucoup plus stable (10 à 14 °C environ).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6d4e535faa36",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d55b47f757c",
+     "text": "Une PAC géothermique travaille donc avec des conditions d’entrée quasi constantes. Le compresseur est moins sollicité, le COP est plus élevé et plus stable dans le temps, surtout en hiver. C’est ce qui fait de la PAC géothermique la solution la plus performante pour le chauffage et le rafraîchissement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "792e2d23a917",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26b8a808b126",
+     "text": "6. Une pompe à chaleur produit aussi du froid et l’eau chaude",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "862e05e6689b",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "daf2ab621f75",
+     "text": "Refroidir le bâtiment",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "af87a27a5149",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9afcaf13fd7f",
+     "text": "En inversant son cycle ou en utilisant un by-pass hydraulique (geocooling), la PAC peut également assurer le rafraîchissement du bâtiment. Dans le cas de la géothermie, ce rafraîchissement est particulièrement sobre, car il utilise directement la fraîcheur du sol.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0674a79749b4",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1dfe3aa3d2af",
+     "text": "Produire l’eau chaude sanitaire",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2b75c373e5db",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54aab532b161",
+     "text": "La plupart des PAC modernes peuvent également chauffer l’eau chaude sanitaire via un ballon intégré ou déporté. La température de consigne est adaptée pour garantir le confort tout en maîtrisant la consommation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9cd75b2fbf42",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "97eab8fec077",
+     "text": "Assurer un confort homogène",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a4f75b45ba4f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "413089d7f831",
+     "text": "La pompe à chaleur, surtout en version géothermique, permet un chauffage homogène, sans grandes variations de température, avec un fonctionnement continu en basse température. Le confort ressenti est supérieur à celui des systèmes qui fonctionnent en marche/arrêt fréquents.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d0b7d24f49c0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "214dfc43d82e",
+     "text": "7. Pompe à chaleur air/eau vs pompe à chaleur eau/eau : le match",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3fe365ec4e0a",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa206e700801",
+     "text": "1. Performance en hiver",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "12e47bee56c1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c68da01e887a",
+     "text": "La PAC air/eau voit ses performances diminuer quand il fait très froid, alors que les besoins augmentent. La PAC géothermique, elle, continue à travailler avec une source stable, ce qui lui permet de garder un très bon COP.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d5ce0805dac4",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7630c2a8ddbf",
+     "text": "2. Bruit et esthétique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1a508a9ea9e1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2d1b6ce8d5c",
+     "text": "La PAC air/eau nécessite une unité extérieure, visible et audible. La géothermie, elle, est entièrement enterrée et la PAC est installée à l’intérieur : aucune unité extérieure bruyante ou visible.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "517ced8b0ec8",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6049190f018",
+     "text": "3. Consommation électrique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b379424972cf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7151ba6e35e7",
+     "text": "À confort équivalent, une PAC géothermique consomme généralement moins d’électricité sur l’année qu’une PAC air/eau, notamment grâce à son rendement stable en hiver.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c98a496f81e9",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "390721780f17",
+     "text": "4. Durée de vie",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "26e3451003db",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c13b41d8ea5",
+     "text": "Moins exposée aux intempéries et aux variations de température, la PAC géothermique est généralement moins sollicitée et peut afficher une durée de vie plus longue. Les sondes, elles, restent en place pour plusieurs décennies.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "33de9dbcdabd",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d49474141c9",
+     "text": "5. Coût d’exploitation",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8c7df8879595",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5d24f2ccda4",
+     "text": "Le coût d’exploitation d’une PAC géothermique est particulièrement faible, en raison de son excellente efficacité saisonnière. L’investissement initial est plus élevé, principalement à cause des forages, mais il est compensé par des coûts de fonctionnement plus bas sur la durée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b569fb8f4782",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52a08a2bde7d",
+     "text": "6. Pour quel type de bâtiment ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "807f0477cb98",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2e852cc579e",
+     "text": "La PAC air/eau est souvent choisie pour des rénovations simples, lorsque l’on ne souhaite pas réaliser de forage. La PAC géothermique est idéale pour les projets qui visent la performance maximale, le confort et la durabilité : maisons neuves, rénovations lourdes, immeubles à appartements, bâtiments publics, etc.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "111b80baeb58",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2cb7cc4c6439",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1a317b1d5a0b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e5543f3bd7a1",
+     "text": "La pompe à chaleur est aujourd’hui la technologie clé pour sortir des énergies fossiles dans le chauffage des bâtiments. Parmi les différentes versions, la PAC géothermique se distingue par sa stabilité, sa performance et son confort.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "33de848449a2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ade63ca96843",
+     "text": "Associée à des sondes géothermiques bien dimensionnées et à une bonne régulation, elle permet d’assurer chauffage, rafraîchissement et eau chaude sanitaire avec une empreinte carbone minimale et des coûts d’exploitation très faibles, pour des décennies.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Comment fonctionne une pompe à chaleur ? Le guide simple et complet",
+ "seoDescription": "La pompe à chaleur (PAC) est devenue la pièce centrale des systèmes de chauffage modernes, en particulier lorsqu’elle est couplée à la géothermie. Mais…",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Pompe a chaleur well done drill"
+}

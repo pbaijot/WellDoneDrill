@@ -29,13 +29,13 @@ const PRIORITY: Record<RouteKey, number> = {
   cookies: 0.2,
 }
 
-type Doc = { _type: string; locale: string; slug?: string; routeKey?: string; _updatedAt: string }
+type Doc = { _type: string; locale: string; slug?: string; legacyPath?: string; routeKey?: string; _updatedAt: string }
 
 // Everything the sitemap needs from Sanity in one request: blog posts,
 // chantiers, and which CMS-backed pages actually exist (pages without a
 // document render the "coming soon" placeholder and are noindexed).
 const SITEMAP_QUERY = `*[_type in ["blogPost", "chantier", "pacPage", "geoPage"]]{
-  _type, locale, "slug": slug.current, routeKey, _updatedAt
+  _type, locale, "slug": slug.current, legacyPath, routeKey, _updatedAt
 }`
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -81,7 +81,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const locale = d.locale as AppLocale
     if (d._type === 'blogPost') {
       entries.push({
-        url: `${BASE_URL}/${locale}/${routeMap[locale].blog}/${d.slug}`,
+        url: d.legacyPath ? `${BASE_URL}${d.legacyPath}` : `${BASE_URL}/${locale}/${routeMap[locale].blog}/${d.slug}`,
         lastModified: new Date(d._updatedAt),
         changeFrequency: 'monthly',
         priority: 0.6,

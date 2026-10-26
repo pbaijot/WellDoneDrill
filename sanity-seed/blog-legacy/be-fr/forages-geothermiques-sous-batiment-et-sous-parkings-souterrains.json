@@ -1,0 +1,557 @@
+{
+ "_id": "blog-legacy-be-fr-4401",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Forages géothermiques sous bâtiment et sous parkings souterrains",
+ "slug": {
+  "_type": "slug",
+  "current": "forages-geothermiques-sous-batiment-et-sous-parkings-souterrains"
+ },
+ "legacyPath": "/be-fr/forages-geothermiques-sous-batiment-et-sous-parkings-souterrains",
+ "publishedAt": "2025-12-02T10:59:35Z",
+ "excerpt": "Lorsque l’espace disponible en surface est limité, les sondes géothermiques peuvent être implantées directement sous les bâtiments ou sous les parkings souterrains. Cette approche permet d’intégrer la géothermie dans des projets très…",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "299d097346f1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b9755f80592",
+     "text": "Lorsque l’espace disponible en surface est limité, les sondes géothermiques peuvent être implantées directement sous les bâtiments ou sous les parkings souterrains. Cette approche permet d’intégrer la géothermie dans des projets très denses, en neuf comme en rénovation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "461590afba0c",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "36fec1ae6034",
+     "text": "Deux grands scénarios d’implantation",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "00ac71b4a48b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "32803ce4345a",
+     "text": "L’implantation de sondes géothermiques sous un bâtiment ou un parking peut se faire selon deux configurations principales.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "30522a68031f",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f51efb0e962a",
+     "text": "1. Forage avant construction",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "32647878aa50",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55b203b7e9ce",
+     "text": "Dans le cas d’un projet neuf, la solution la plus simple consiste à réaliser les forages avant la construction du bâtiment :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9ffd2b5baf0d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bf0a7f15e7e",
+     "text": "les sondes sont forées sur le terrain nu ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a2142857b5e0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25d33bca8f3f",
+     "text": "elles sont positionnées en fonction du futur plan des fondations et des sous-sols ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c3789ac436b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63f4eb2e2c77",
+     "text": "une fois les sondes installées et raccordées, le bâtiment est construit par-dessus.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5dff512127ca",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6c8aff6f3b0",
+     "text": "Cette approche permet de travailler avec une grande liberté d’implantation, tout en garantissant que les sondes ne gêneront pas les fondations. La coordination avec l’ingénieur stabilité est essentielle pour définir les zones de forage et les espacements par rapport aux pieux ou aux semelles.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c4cae5d8dd31",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10f9ce7218aa",
+     "text": "2. Forage depuis l’intérieur, sous bâtiment existant ou en cours de construction",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a263396cb02e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd60954bf811",
+     "text": "Dans le second scénario, le forage se fait depuis l’intérieur, une fois qu’un ou plusieurs niveaux de sous-sol sont construits. La foreuse est alors installée sur une dalle de parking ou dans un local technique, et les sondes sont forées à travers le sol sous-jacent. Cette approche est particulièrement utile lorsqu’aucun espace extérieur n’est disponible ou lorsque le projet est déjà partiellement construit. Elle nécessite des foreuses compactes, capables de travailler dans une hauteur limitée, et une organisation spécifique pour l’évacuation des déblais.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c23aba12cae4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3f67e19f726",
+     "text": "C’est également le cas en rénovation : dans le bâti existant, il est possible d’insérer les foreuses à l’intérieur des bâtiments et de forer à travers les dalles de sol, les radiers ou entre les pieux de fondation, en fonction de la configuration. Cela ouvre la possibilité d’installer de la géothermie dans des immeubles où tout le foncier extérieur est déjà utilisé ou construit.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "da3908a6648f",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c1c6addb02ad",
+     "text": "Coordination avec la structure et les fondations",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5d09ac00bb95",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8200c561a95c",
+     "text": "Forer sous un bâtiment implique une coordination étroite avec l’ingénieur stabilité :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d86fbccb9433",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4876b80d67e",
+     "text": "localisation des pieux ou semelles ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e271d887629d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e023b46e0465",
+     "text": "profondeur des fondations ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c578fb7a6aaf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbf02ba2b343",
+     "text": "zones à éviter pour ne pas fragiliser la structure ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca1ce49808c1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f9a9fb787a2",
+     "text": "éventuels recouvrements minimum à respecter.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f8538f09312e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b200673b0f34",
+     "text": "Les sondes géothermiques étant de simples tubes en PEHD noyés dans un coulis, elles n’exercent pas de pression significative sur le sol. L’enjeu n’est pas structurel, mais géométrique : il s’agit de positionner les sondes de manière à ne pas interférer avec les éléments porteurs.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "560237f50dd4",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cfd4554e92c",
+     "text": "Avantages de l’implantation sous bâtiment ou parking",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f8e5c6862c62",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea770084f9e0",
+     "text": "Implanter les sondes sous le bâtiment ou le parking présente plusieurs avantages :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c92b1b530475",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8064280bc066",
+     "text": "utilisation optimale du foncier : aucune emprise supplémentaire en surface ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2743dfd91e3a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4696d5be3806",
+     "text": "protection des têtes de sondes : elles se trouvent dans des locaux techniques ou des zones protégées ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4053e87bc99a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2923952ce216",
+     "text": "réduction des distances de liaisons entre sondes et local technique ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "66f98f4617a4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72b110ba0a91",
+     "text": "possibilité d’intégrer la géothermie dans des projets très denses, en centre-ville.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "04ae54131f0a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f792d573e665",
+     "text": "Pour les promoteurs et les concepteurs, cette solution permet de proposer un chauffage et un rafraîchissement géothermiques même lorsqu’aucun jardin ou terrain libre n’est disponible.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f7896a5db226",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c091727dd4f1",
+     "text": "Organisation du chantier et contraintes pratiques",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d33b6ee3992f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "676ab678f10e",
+     "text": "Forer sous bâtiment ou sous parking implique une logistique particulière :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "75c05ed0b3b5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a2ff6e2d625",
+     "text": "accès de la foreuse à l’intérieur du bâtiment ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8b3f42e8e10f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "247c66c2bff5",
+     "text": "protection des dalles et des finitions existantes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "778ae8215236",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e2f66cfb9fa",
+     "text": "gestion des déblais en milieu confiné ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c68dd84770ed",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51ca322d564b",
+     "text": "respect des contraintes de hauteur et de ventilation.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a25b9c8f3c5e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74900efe8520",
+     "text": "WellDoneDrill dispose de foreuses compactes et de procédures adaptées pour ce type de chantier, tant en neuf qu’en rénovation. L’objectif est de réaliser les forages avec un impact minimal sur le bâtiment et sur le planning global.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ab809f650aae",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "779abd7f7921",
+     "text": "Conclusion : un levier pour la géothermie en milieu dense",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2c8e7da98c10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d79d89dbd47c",
+     "text": "La possibilité d’implanter des sondes géothermiques sous les bâtiments ou sous les parkings souterrains est un atout majeur pour la géothermie dans les projets urbains denses. Elle permet de concilier performance énergétique, confort et contraintes foncières.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d8e02f1980f4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cddcd5ba5e99",
+     "text": "Grâce à son expertise en forage urbain et en travaux sous bâtiment, WellDoneDrill accompagne les maîtres d’ouvrage, architectes et bureaux d’études pour intégrer cette solution dans leurs projets, du stade de la conception jusqu’à la réalisation.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Forages géothermiques sous bâtiment et sous parkings souterrains",
+ "seoDescription": "Lorsque l’espace disponible en surface est limité, les sondes géothermiques peuvent être implantées directement sous les bâtiments ou sous les parkings…",
+ "_mainImageFile": "uploads/2025/12/parking-sous-terrain.webp",
+ "_mainImageAlt": "Forages géothermiques sous bâtiment et sous parkings souterrains"
+}

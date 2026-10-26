@@ -13,6 +13,14 @@ const blogPost = defineType({
       options: { source: 'title' }
     },
 
+    {
+      name: 'legacyPath',
+      title: 'Ancienne URL (WordPress)',
+      type: 'string',
+      description: "Articles repris de l'ancien site : l'article est servi à cette adresse exacte (ex. /be-fr/mon-article). Ne pas modifier.",
+      readOnly: true,
+    },
+
     { name: 'publishedAt', title: 'Date de publication', type: 'datetime' },
 
     {
@@ -51,7 +59,7 @@ const blogPost = defineType({
       title: 'Langue',
       type: 'string',
       options: {
-        list: ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de']
+        list: ['be-fr', 'be-nl', 'be-en', 'fr-fr', 'fr-en', 'lu-fr', 'lu-de', 'lu-en']
       }
     },
 

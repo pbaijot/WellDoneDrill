@@ -1,0 +1,573 @@
+{
+ "_id": "blog-legacy-be-fr-4399",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Gérer les déblais et la propreté du chantier en environnement urbain",
+ "slug": {
+  "_type": "slug",
+  "current": "gerer-les-deblais-et-la-proprete-du-chantier-en-environnement-urbain"
+ },
+ "legacyPath": "/be-fr/gerer-les-deblais-et-la-proprete-du-chantier-en-environnement-urbain",
+ "publishedAt": "2025-12-02T10:58:56Z",
+ "excerpt": "Forer en ville ne se résume pas à faire un trou dans le sol. La gestion des déblais, des boues de forage, de l’eau et de la propreté générale du chantier est un enjeu majeur pour le voisinage, les autorités locales et le maître d’ouvrage.…",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "afc7f98947c0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "df0aa1e6c468",
+     "text": "Forer en ville ne se résume pas à faire un trou dans le sol. La gestion des déblais, des boues de forage, de l’eau et de la propreté générale du chantier est un enjeu majeur pour le voisinage, les autorités locales et le maître d’ouvrage. WellDoneDrill intègre ces contraintes au cœur de son organisation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "be17bc8a2ba3",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4c7de43018d",
+     "text": "Quels types de déblais produit un forage géothermique ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "61aa9bda63a5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "db2203d78363",
+     "text": "Un forage géothermique produit :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "bbfd08c58b3d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "918126b260a7",
+     "text": "des matériaux solides : sables, graviers, fragments de roche ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "459f104c33d2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f6e048f6c97",
+     "text": "des boues de forage lorsqu’on travaille à la boue ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fcc0f47fcb41",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4972b52eac02",
+     "text": "des eaux de circulation, éventuellement chargées en particules.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "250c1bf74a01",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "60d53a0e2f53",
+     "text": "En milieu rural, la gestion de ces déblais est plus simple : possibilités d’épandage, zones de stockage temporaires, accès camions aisés. En ville, chaque mètre carré compte et les contraintes environnementales sont plus strictes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "781c7e49cc52",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab024e810ce5",
+     "text": "Limiter l’impact sur l’espace public",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6cfbcb1aa49d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b64cfc0af528",
+     "text": "En environnement urbain, il est essentiel de :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d6d2e1ec3745",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4522527e46f9",
+     "text": "réduire la zone de chantier au strict minimum ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "701c05b75168",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "307288056e7a",
+     "text": "protéger les trottoirs et chaussées ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e239ee10dded",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0ff0609e193",
+     "text": "éviter les écoulements de boues ou d’eaux chargées vers les avaloirs ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7f5c70446c58",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "890e3887666f",
+     "text": "organiser l’évacuation des déblais de manière régulière.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6159cbbb439d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "766546d5f857",
+     "text": "WellDoneDrill met en place des dispositifs de rétention, de décantation et de protection adaptés à chaque contexte : bacs de rétention, bâches, protections de voirie, circuits d’évacuation clairement définis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ef3be950f048",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e38ac6127db4",
+     "text": "Évacuation et traitement des déblais",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "335a595e25f5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8606df29f08c",
+     "text": "Les déblais de forage sont évacués au fur et à mesure ou en fin de journée, selon les contraintes du chantier et les volumes générés. Plusieurs solutions sont envisageables :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "537e614abfdb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "147f9b0936d5",
+     "text": "évacuation vers des centres agréés pour les déblais et boues de forage ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dcf58fe2623e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "697d3089de46",
+     "text": "évacuation vers des sites de remblaiement lorsque la réglementation le permet ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf49ba2b6d0f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5944774ba6a2",
+     "text": "gestion spécifique en cas de pollution identifiée.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3ae8694a8187",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0381f83427e4",
+     "text": "Le maître d’ouvrage doit pouvoir compter sur un foreur qui prend en charge cette dimension et ne laisse pas les déblais s’accumuler sur site. WellDoneDrill inclut systématiquement la gestion des déblais dans sa préparation de chantier.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "07d019794eea",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa676a239368",
+     "text": "Propreté et image du projet",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "122c44021d6a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "760528f31a2b",
+     "text": "Un chantier propre est un facteur clé d’acceptation par le voisinage et les autorités. À l’inverse, des boues sur la voirie, des flaques, des poussières ou des déchets mal gérés peuvent rapidement créer des tensions.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4153e13d3996",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81dbf98d7bce",
+     "text": "WellDoneDrill met l’accent sur :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "617a7db82b22",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ece34511374",
+     "text": "le nettoyage régulier des zones de passage ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e799f9420663",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10848f0fcf25",
+     "text": "la limitation des projections et poussières ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8c1adbfb3869",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9b4763738c6",
+     "text": "la remise en état de la zone de chantier en fin d’intervention.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cce16bd0026a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1137d021904d",
+     "text": "Pour le maître d’ouvrage, cela signifie moins de plaintes, moins de friction avec le voisinage et une meilleure image globale du projet.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "316bc7568eb0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "070fde44b415",
+     "text": "Coordination avec les autres corps de métier",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "863068059b0b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9a9252f07bc",
+     "text": "La gestion des déblais et de la propreté ne concerne pas que le foreur : elle doit être coordonnée avec les autres intervenants du chantier (terrassiers, entreprises de gros œuvre, installateurs techniques…).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1dea499ce744",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18f39817b0ed",
+     "text": "WellDoneDrill travaille en lien étroit avec ces acteurs pour :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1f56ee4bb4c7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6eea0ab0de56",
+     "text": "préciser les zones de stockage temporaires ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b0e869c18e5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "349c30aa31bd",
+     "text": "définir les circuits de circulation ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33cf35927348",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbb5451bff09",
+     "text": "planifier les interventions de manière à limiter les interférences.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "603dd113a5f7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b8bb501a4eb",
+     "text": "En milieu urbain, cette coordination est indispensable pour éviter l’encombrement, les retards et les surcoûts.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f063d7097e3b",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "313b7033483a",
+     "text": "Conclusion : la propreté, un critère de qualité du forage urbain",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ebfec73b69af",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45b088222f5f",
+     "text": "Dans un contexte urbain, un bon forage ne se juge pas uniquement à la profondeur atteinte ou à la vitesse d’exécution. La manière dont le chantier est organisé, dont les déblais sont gérés et dont le site est rendu en fin d’intervention est tout aussi importante.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ecf1b1f77763",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f9c20d360a3",
+     "text": "En intégrant la gestion des déblais et de la propreté au cœur de sa méthode, WellDoneDrill permet aux maîtres d’ouvrage de bénéficier des avantages de la géothermie en ville sans subir les inconvénients d’un chantier mal maîtrisé.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Gérer les déblais et la propreté du chantier en environnement urbain",
+ "seoDescription": "Forer en ville ne se résume pas à faire un trou dans le sol. La gestion des déblais, des boues de forage, de l’eau et de la propreté générale du chantier…",
+ "_mainImageFile": "uploads/2025/05/Suarlee-header.webp",
+ "_mainImageAlt": "Forage geothermique a sualee"
+}

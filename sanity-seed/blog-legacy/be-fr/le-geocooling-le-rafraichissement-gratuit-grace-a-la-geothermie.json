@@ -1,0 +1,417 @@
+{
+ "_id": "blog-legacy-be-fr-4378",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Le géocooling : le rafraîchissement gratuit grâce à la géothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "le-geocooling-le-rafraichissement-gratuit-grace-a-la-geothermie"
+ },
+ "legacyPath": "/be-fr/le-geocooling-le-rafraichissement-gratuit-grace-a-la-geothermie",
+ "publishedAt": "2025-12-02T10:49:01Z",
+ "excerpt": "Le geocooling, ou freecooling, permet de rafraîchir un bâtiment en utilisant directement la fraîcheur du sol, sans faire fonctionner le compresseur de la pompe à chaleur. Résultat : un confort d’été élevé, une consommation électrique…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "3faab2f3660f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b8a083536f7",
+     "text": "Le geocooling, ou freecooling, permet de rafraîchir un bâtiment en utilisant directement la fraîcheur du sol, sans faire fonctionner le compresseur de la pompe à chaleur. Résultat : un confort d’été élevé, une consommation électrique minimale et une solution parfaitement silencieuse.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6e332fad319b",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfb169927d67",
+     "text": "Comment fonctionne le géocooling ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "99f039208a47",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7dae2c815b2",
+     "text": "Dans une installation géothermique sur sondes verticales, le sol à plusieurs dizaines de mètres de profondeur reste à une température presque constante, souvent autour de 10 à 14 °C. Cette température est plus basse que celle que l’on souhaite maintenir dans le bâtiment en été.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "adcc56b373f9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d50b9e0727f8",
+     "text": "Le principe du geocooling est simple :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d5451963172b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2f085d951ee",
+     "text": "on fait circuler",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2727f311afcc",
+     "text": " le fluide caloporteur dans les sondes pour capter la fraîcheur naturelle du sol,",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d7a0b36e3931",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30d4184e8251",
+     "text": "cette fraîcheur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "63b4751b6a38",
+     "text": " est transmise à un ballon ou directement au réseau de rafraîchissement (plancher, plafonds, ventilo-convecteurs),",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4c00b25a4475",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b526b6400c0",
+     "text": "le compresseur de la PAC",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d62e9e34d3d6",
+     "text": " est arrêté ou ne fonctionne que très peu : on utilise surtout des circulateurs, peu énergivores.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "51fc2faf5d62",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "476db2a538c1",
+     "text": "Le bâtiment est ainsi rafraîchi en douceur, sans souffler de l’air froid, simplement en abaissant légèrement la température intérieure.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3145b900abb1",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d67830e0dd69",
+     "text": "Les avantages majeurs du géocooling",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "832c889108d4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc0723c2990b",
+     "text": "Par rapport à une climatisation classique, le geocooling présente plusieurs atouts décisifs.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f1096a81a533",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65ebbf2ced81",
+     "text": "Un confort d’été exceptionnel",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e41716f3be69",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48dbf7f677f5",
+     "text": "Le geocooling n’est pas une climatisation agressive : il n’abaisse pas la température à 20 °C en plein été, mais il évite les surchauffes en maintenant le bâtiment dans une plage de confort. Le ressenti est très agréable, sans courant d’air, sans bruit, sans sensation de froid localisé.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9bda691ecfc3",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ea3282ad513",
+     "text": "Une consommation énergétique ultra-faible",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0d3bc09dfc7b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "335d3be927dd",
+     "text": "Comme le compresseur de la pompe à chaleur est peu ou pas sollicité, la consommation électrique se limite essentiellement à celle des circulateurs. Le coût de fonctionnement est donc très faible, souvent sans commune mesure avec celui d’une climatisation traditionnelle.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "69a5392b6a12",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "69cfee11751d",
+     "text": "Une installation silencieuse",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "71529d0e5376",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2120f0e09a38",
+     "text": "Le geocooling ne nécessite aucune unité extérieure ni groupe de condensation bruyant. Tout se passe dans le local technique et dans le sol. Pour les bâtiments résidentiels, les écoles, les bureaux ou les crèches, c’est un avantage majeur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "996b684391c6",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c4fc8950dfa",
+     "text": "Zéro surchauffe mécanique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a50afdb64667",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92d7345f1611",
+     "text": "Les systèmes de climatisation classiques fonctionnent avec des compresseurs soumis à des cycles répétés et à des températures parfois extrêmes. En geocooling, les contraintes mécaniques sont beaucoup plus faibles, ce qui limite l’usure des équipements.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "925925e41253",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0f5caced016",
+     "text": "Une solution décarbonée",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3a25b4059938",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fdd1c152768d",
+     "text": "Le geocooling valorise une source de fraîcheur 100 % renouvelable : le sol. Couplé à de l’électricité d’origine renouvelable (photovoltaïque, contrats verts, etc.), il permet de rafraîchir un bâtiment avec une empreinte carbone très réduite.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5396b98abacf",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "972d0610776c",
+     "text": "Compatible avec les immeubles modernes",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "45a76fa5cc9f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8d6991b8d80",
+     "text": "Le geocooling s’intègre particulièrement bien dans les bâtiments récents ou rénovés : immeubles à appartements, bureaux, bâtiments publics performants, etc. Dès lors que les émetteurs (planchers, plafonds, ventilo-convecteurs) sont adaptés au fonctionnement en basse puissance, le système est très efficace.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "379c70f8c1fb",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4506c019dd81",
+     "text": "Freecooling vs climatisation classique : le match",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3e67ac48314e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee77ad6d7a22",
+     "text": "Une climatisation classique repose sur un cycle frigorifique complet, avec compresseur, détendeur, condenseur et évaporateur. Elle permet de produire du froid même lorsque l’air extérieur est chaud, mais au prix d’une consommation électrique significative et d’une machinerie plus complexe.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c7edcf5159a7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a24f53385a55",
+     "text": "Le freecooling géothermique, lui, fait appel à la fraîcheur déjà disponible dans le sol. Il ne “fabrique” pas du froid, il le transfère. Dans la plupart des cas, on obtient un confort d’été satisfaisant pour une fraction de la consommation électrique d’une climatisation classique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7ced0c67a98d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cb4d07e90c3",
+     "text": "Pour les bâtiments qui souhaitent conjuguer confort, sobriété énergétique et discrétion, le geocooling est une solution particulièrement attrayante.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Le géocooling : le rafraîchissement gratuit grâce à la géothermie",
+ "seoDescription": "Le geocooling, ou freecooling, permet de rafraîchir un bâtiment en utilisant directement la fraîcheur du sol, sans faire fonctionner le compresseur de la…",
+ "_mainImageFile": "uploads/2025/05/Capture-decran-2025-05-16-a-10.26.01.jpg",
+ "_mainImageAlt": "forage geothermique au coeur de novacity avec well done drill"
+}

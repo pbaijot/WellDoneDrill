@@ -1,0 +1,691 @@
+{
+ "_id": "blog-legacy-be-fr-4407",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Chauffage : et si la solution la plus confortable était sous vos pieds ?",
+ "slug": {
+  "_type": "slug",
+  "current": "chauffage-et-si-la-solution-la-plus-confortable-etait-sous-vos-pieds"
+ },
+ "legacyPath": "/be-fr/chauffage-et-si-la-solution-la-plus-confortable-etait-sous-vos-pieds",
+ "publishedAt": "2025-12-02T11:01:54Z",
+ "excerpt": "Le chauffage reste, de loin, le premier poste de consommation énergétique dans les bâtiments. Pourtant, les solutions les plus répandues (chaudières gaz, chaudières mazout, convecteurs…) sont aussi celles qui reposent encore largement sur…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "228843821625",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b700447a3b80",
+     "text": "Le chauffage reste, de loin, le premier poste de consommation énergétique dans les bâtiments. Pourtant, les solutions les plus répandues (chaudières gaz, chaudières mazout, convecteurs…) sont aussi celles qui reposent encore largement sur des énergies fossiles. La géothermie propose une autre voie : un chauffage entièrement électrique, performant et discret, qui puise sa chaleur dans le sol.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "247fbbd9c1f5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fab2101bfc4f",
+     "text": "Le chauffage, premier poste énergétique du bâtiment",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "46fe038c0355",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f68faaf251a",
+     "text": "Dans une maison, un immeuble à appartements ou un bâtiment tertiaire, le chauffage représente généralement la plus grande part de la consommation d’énergie. Réduire cette consommation et la décarboner est donc un levier majeur pour atteindre les objectifs climatiques et maîtriser les coûts à long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f56ad12aa338",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3668049b771",
+     "text": "Les solutions traditionnelles (chaudière gaz, mazout) ont permis pendant des décennies de chauffer efficacement les bâtiments, mais elles présentent aujourd’hui plusieurs limites :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "882464bf6160",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a609f83ba854",
+     "text": "dépendance aux prix des combustibles fossiles ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9cd7242a175b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee76de923972",
+     "text": "émissions importantes de CO₂ ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "698f4702e1c2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a374cf57ec3a",
+     "text": "perspective réglementaire de plus en plus contraignante.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "af9c1f5ea777",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5237b9d580a0",
+     "text": "Chauffage et pompe à chaleur : le principe de base",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7d9cde6046e2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f05b21cd0f7d",
+     "text": "La pompe à chaleur (PAC) s’est imposée comme une alternative crédible à la chaudière. Elle ne produit pas la chaleur en brûlant un combustible, mais la capte dans l’environnement (air, sol, eau) et l’élève à une température utile pour le chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "33bcded873bf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c52e13b1a02d",
+     "text": "Le principe :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "73add8956ce5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "053875552591",
+     "text": "à l’extérieur : capter les calories ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "38f0ef351b5c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c570260e21c",
+     "text": "à l’intérieur : transmettre ces calories au circuit de chauffage (radiateurs, planchers, ventilo-convecteurs) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "66f94c480d51",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "604f1bafbb08",
+     "text": "avec une consommation électrique beaucoup plus faible que la chaleur produite.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39a4ebee70fd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f2997a05a91",
+     "text": "Pour le chauffage, la PAC permet donc d’assurer le confort tout en réduisant fortement la consommation d’énergie finale.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "795f32200572",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16a57e747f50",
+     "text": "Chauffage géothermique : utiliser le sol comme source de chaleur",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d3ec421f4c0d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c929b154729",
+     "text": "La pompe à chaleur géothermique (PAC eau/eau) se distingue par sa source : le sol. Grâce à des sondes verticales, elle puise la chaleur dans les couches profondes de la terre, où la température reste stable toute l’année.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4e1536ef47b6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6e2c8f6747f",
+     "text": "En chauffage, cela apporte plusieurs bénéfices :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "18e90efe3c43",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4bfb54ffda26",
+     "text": "une performance élevée même par grand froid ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e5572a3f34d3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ebe4aa45b9e",
+     "text": "une stabilité de fonctionnement qui améliore le confort ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "889b37b0d7e7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa31c8f64640",
+     "text": "une absence de groupe extérieur bruyant.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "396e3decd545",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d40562060c8",
+     "text": "Le chauffage se fait à basse température, ce qui est idéal pour les planchers chauffants et les émetteurs modernes. Dans de nombreux cas, les réseaux de radiateurs existants peuvent être adaptés pour fonctionner avec la géothermie, en ajustant les régimes de température et la régulation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "807e3a842755",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5dcf2b51a6c7",
+     "text": "Chauffage par géothermie vs chauffage classique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "65dec01fe1a3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "753223969546",
+     "text": "Par rapport à une chaudière gaz, le chauffage géothermique offre :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ad8fe327750f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7eb4c75cf498",
+     "text": "une réduction importante des émissions de CO₂ ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "de72e1f5cfc9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89a02125c42b",
+     "text": "une indépendance vis-à-vis des fluctuations de prix des combustibles ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3527d358810d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9327d66e152",
+     "text": "une amélioration du confort (températures plus stables, chaleur douce) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7412a7000752",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7187d523a412",
+     "text": "une possibilité de rafraîchissement passif en été (geocooling).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "32f77770c785",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c88c0d2f1329",
+     "text": "Le coût d’investissement est plus élevé, mais :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1ec287ccc06d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c98dafc1da77",
+     "text": "les sondes durent plus de 50 ans ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ad9009ffb9a5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10f3e427aa3c",
+     "text": "la PAC a une durée de vie de 15 à 20 ans ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9685ba890af5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54eb3e2b3409",
+     "text": "les coûts de fonctionnement sont parmi les plus faibles du marché.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9d83a9256bbd",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c57df0585edc",
+     "text": "Chauffage, rafraîchissement et geocooling",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "dab4188c3f88",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "df0d76920da2",
+     "text": "Un système de chauffage géothermique bien conçu permet :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "32aa85f53026",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0845f95e402f",
+     "text": "le chauffage en hiver ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ef5613b7d0ad",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e4fcaecaeb9",
+     "text": "le rafraîchissement passif (geocooling) en été ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "14897720c18b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b2067685273",
+     "text": "la production d’eau chaude sanitaire.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "14188a078059",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a07f71e78f1",
+     "text": "Le sol devient alors une source de chaleur en hiver et un réservoir de fraîcheur en été. Cette double utilisation améliore l’équilibre thermique du champ de sondes et contribue à la durabilité globale du système.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ecfc3c1d7a34",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71c9e7dc93ca",
+     "text": "Chauffage géothermique en Belgique : un contexte particulièrement favorable",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4e456d0753d9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ef502173d1f",
+     "text": "La Belgique dispose d’un potentiel géothermique remarquable, en particulier pour la géothermie de surface sur sondes verticales. Dans de nombreuses régions, les caractéristiques du sous-sol permettent de dimensionner des installations performantes, même sur des parcelles de taille modeste.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "dc50cb2c1473",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27351b061ca5",
+     "text": "Pour les maisons individuelles, les immeubles à appartements, les bureaux ou les bâtiments publics, la géothermie représente une solution de chauffage particulièrement cohérente avec les objectifs climatiques et la recherche de stabilité à long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4abbaedb8767",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1106089bc54d",
+     "text": "Comment WellDoneDrill accompagne un projet de chauffage géothermique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "609cd659865e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3093756e77e7",
+     "text": "Pour un propriétaire ou un promoteur, le point de départ reste toujours le même : “Je cherche une solution de chauffage performante, durable et maîtrisable dans le temps.” La réponse géothermique se construit ensuite par étapes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "810e9f83d24e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "516daa3d6e8d",
+     "text": "WellDoneDrill analyse d’abord le projet : type de bâtiment, besoins de chauffage et de rafraîchissement, contraintes de terrain, accès pour les forages. Sur cette base, le champ de sondes est dimensionné : nombre de forages, profondeur, disposition des sondes, capacité de chauffage et de geocooling.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ae7c4583d452",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bba4544fc89c",
+     "text": "En parallèle, WDD travaille en coordination avec les bureaux d’études et les installateurs de pompes à chaleur pour s’assurer que l’ensemble du système de chauffage est cohérent : puissance de la PAC, ballon de stockage, régulation, émetteurs, éventuellement couplage avec le photovoltaïque.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "48e55602cfe3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3298697cc9d",
+     "text": "L’objectif est simple : faire en sorte que, pour l’utilisateur, le mot “chauffage” rime avec confort, discrétion, facture maîtrisée et technologie alignée avec les objectifs climatiques. La géothermie devient alors non pas une option exotique, mais la réponse logique à la question que tout le monde se pose : “Comment vais-je chauffer mon bâtiment pour les 20 prochaines années ?”",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Chauffage : et si la solution la plus confortable était sous vos pieds ?",
+ "seoDescription": "Le chauffage reste, de loin, le premier poste de consommation énergétique dans les bâtiments. Pourtant, les solutions les plus répandues (chaudières gaz…",
+ "_mainImageFile": "uploads/2025/12/chauffage-sol.webp",
+ "_mainImageAlt": "Chauffage : et si la solution la plus confortable était sous vos pieds ?"
+}

@@ -1,0 +1,711 @@
+{
+ "_id": "blog-legacy-be-fr-4405",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Forage d’eau et forage géothermique : mêmes machines, métiers différents",
+ "slug": {
+  "_type": "slug",
+  "current": "forage-deau-et-forage-geothermique-memes-machines-metiers-differents"
+ },
+ "legacyPath": "/be-fr/forage-deau-et-forage-geothermique-memes-machines-metiers-differents",
+ "publishedAt": "2025-12-02T11:01:11Z",
+ "excerpt": "En Belgique, le mot “forage” renvoie autant aux puits d’eau qu’aux sondes géothermiques. Vu de l’extérieur, on a l’impression qu’il s’agit du même chantier : une foreuse, des tubes, un trou profond dans le sol. Pourtant, un forage d’eau et…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "ab3f90fa9ec4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2aef99293697",
+     "text": "En Belgique, le mot “forage” renvoie autant aux puits d’eau qu’aux sondes géothermiques. Vu de l’extérieur, on a l’impression qu’il s’agit du même chantier : une foreuse, des tubes, un trou profond dans le sol. Pourtant, un forage d’eau et un forage géothermique n’ont ni le même objectif, ni les mêmes contraintes, ni le même dimensionnement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5c15c8540c30",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e3ea2863057",
+     "text": "Deux types de forages, deux usages du sous-sol",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "555c73353844",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec63fef68a86",
+     "text": "Un forage d’eau a pour but de capter une ressource : une nappe souterraine. On cherche un débit, une qualité et une régularité d’alimentation pour alimenter une maison, une exploitation agricole, un arrosage ou une petite industrie. Le forage est équipé d’un tubage, d’une crépine et d’une pompe immergée. L’eau remonte à la surface, circule dans le réseau de distribution, puis est utilisée ou rejetée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "90d70b5e2693",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e5716f7e1064",
+     "text": "Un forage géothermique fonctionne à l’inverse : on ne “prend” rien au sous-sol, on y échange de la chaleur. Dans le cas des sondes verticales, le forage est entièrement rempli par une sonde en PEHD et un coulis géothermique. Le fluide circule dans la sonde en boucle fermée, prélève la chaleur du sol ou y rejette des calories, mais ne met jamais en communication directe l’eau du sous-sol et le circuit de chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c2c7ff4b73d2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f8e9734b8b1",
+     "text": "Dans un cas, le sous-sol est un réservoir d’eau que l’on exploite. Dans l’autre, il devient un échangeur de chaleur sur lequel on s’appuie pour alimenter une pompe à chaleur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3c32abfe19ee",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb2d079fdc66",
+     "text": "Deux mots-clés à retenir",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fbae22ca707f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4243a51f729",
+     "text": "Forage d’eau : captage, débit, qualité d’eau, pompe immergée. Forage géothermique : sonde, échange thermique, boucle fermée, pompe à chaleur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5394a77223fe",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ddd2591919b7",
+     "text": "Forage d’eau : rechercher la nappe phréatique",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b58b5e1c9572",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25ec26778f9d",
+     "text": "Dans un forage d’eau, l’objectif est de localiser et d’exploiter une nappe aquifère :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cfbff2b95efa",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72c66be4805c",
+     "text": "on dimensionne le forage en fonction du débit souhaité ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca1efd31b675",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a7be081ba20",
+     "text": "on choisit les crépines et filtres en fonction de la granulométrie ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7512aa9e03ef",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ba1b286c417",
+     "text": "on installe une pompe immergée pour remonter l’eau ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "883ac14acb49",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "575afea7399e",
+     "text": "on contrôle la qualité de l’eau selon l’usage (arrosage, eau technique, etc.).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2390029399df",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2718e2490dc3",
+     "text": "La performance se mesure en m³/h, en stabilité de niveau, en qualité d’eau. La gestion de la ressource (recharge de la nappe, impact sur les voisins, etc.) devient un enjeu lorsque les débits sont importants.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "45cf93e19556",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af0dbdf67057",
+     "text": "Forage géothermique sur sondes : pas besoin d’eau souterraine",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f26da81feb0a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "925795afdfa3",
+     "text": "Dans un forage géothermique sur sondes, la présence d’une nappe aquifère n’est pas une condition nécessaire. Ce qui compte, c’est la capacité globale du sous-sol à transmettre la chaleur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c320db4dcbd7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "994559a5562f",
+     "text": "Le forage est entièrement occupé par :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8f375efea3cb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e696d80865e0",
+     "text": "une ou plusieurs boucles de sonde en PEHD ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "833535bd08d3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "badf61b06500",
+     "text": "un coulis géothermique assurant le contact thermique avec le terrain.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "35579a95f397",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7770ac81930c",
+     "text": "Le dimensionnement porte sur :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9866880acaf4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e042b23e3007",
+     "text": "la puissance thermique à fournir ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3be16d10a852",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a52f1c9a6587",
+     "text": "la longueur totale de sondes (mètres forés) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a4446000db2d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68ad3f728cdd",
+     "text": "l’espacement entre sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6ef099dd7ac",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e1939283351",
+     "text": "l’équilibre saisonnier entre chaleur prélevée et chaleur restituée.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eb3798dd892a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "010ca143ea30",
+     "text": "L’eau du sous-sol, si elle est présente, reste isolée par le coulis et le tubage éventuel. L’installation fonctionne en boucle fermée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "efe4dc8c0f92",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81bf988215b0",
+     "text": "Géothermie ouverte : quand le forage d’eau devient source de chaleur",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d3353b847bcf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "39e7aa880f1d",
+     "text": "Il existe un cas particulier où le forage d’eau et la géothermie se rejoignent : la géothermie ouverte. Dans ce schéma, on exploite directement l’eau de la nappe phréatique comme source de chaleur pour une pompe à chaleur.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "19a84bf4118c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9f4c334d876a",
+     "text": "Le principe :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "943f313add3d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6849a108e926",
+     "text": "un forage de captage puise l’eau de la nappe ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "727daf3fa066",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7df102f80689",
+     "text": "l’eau traverse un échangeur ou la PAC, qui récupère les calories ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9646afa73ec5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc9574a6ce32",
+     "text": "l’eau est ensuite réinjectée dans la nappe via un forage de rejet.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8f1a0e8ab7cc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "efd48a01dbd5",
+     "text": "Ce type de système est particulièrement adapté aux gros projets : bâtiments tertiaires importants, réseaux de chaleur, sites industriels, etc. Il nécessite :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e9157f579555",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7878a09ce71",
+     "text": "une nappe présentant un débit suffisant ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "db50bb6c5e7d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dad5e2f86fe0",
+     "text": "des études hydrogéologiques poussées ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "61b38705ec87",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8fd22cbf470a",
+     "text": "un encadrement réglementaire strict.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "17e36ed1b928",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3175975b8ded",
+     "text": "Dans ce contexte, le forage d’eau devient effectivement la “source” de la géothermie. Mais il ne s’agit plus d’un simple puits : c’est un ensemble conçu pour fonctionner en boucle et respecter l’équilibre de la nappe.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ebf22016f2a0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eba9e70054d2",
+     "text": "Comment WellDoneDrill accompagne les porteurs de projets",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ed432f3a55fd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ea82b1bf8e2",
+     "text": "En pratique, un même maître d’ouvrage peut avoir besoin :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "17cff1fdfed0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3490f90ffb47",
+     "text": "d’un forage d’eau pour l’arrosage, l’usage technique ou une ressource spécifique ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d11031eaf5ac",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b3609d4a62cd",
+     "text": "d’un champ de sondes pour alimenter une pompe à chaleur géothermique ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4a09b8562445",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bccbc057b24c",
+     "text": "éventuellement d’une solution de géothermie ouverte pour un grand projet.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bbb7fbd420e2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d3b7cf7962e6",
+     "text": "WellDoneDrill analyse chaque situation pour proposer la configuration la plus adaptée :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4b7880854aa4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d3649e9ce79",
+     "text": "forage d’eau simple lorsqu’il s’agit uniquement d’un besoin en eau ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "923c1aa1a296",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "055cb9834fda",
+     "text": "forage géothermique sur sondes lorsque le besoin principal est le chauffage et le rafraîchissement ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b957f3063dc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd29c475c205",
+     "text": "géothermie ouverte pour les projets de grande puissance lorsque les conditions de nappe le permettent.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4cab7961868e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e7e8ae02bbc",
+     "text": "Plutôt que de considérer tous les forages comme équivalents, WellDoneDrill accompagne les porteurs de projets pour faire des choix éclairés : type de forage, dimensionnement, combinaison éventuelle entre eau et géothermie. L’objectif est de tirer le meilleur parti du sous-sol, en cohérence avec les besoins réels du bâtiment ou du site.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Forage d’eau et forage géothermique : mêmes machines, métiers différents",
+ "seoDescription": "En Belgique, le mot “forage” renvoie autant aux puits d’eau qu’aux sondes géothermiques. Vu de l’extérieur, on a l’impression qu’il s’agit du même…",
+ "_mainImageFile": "uploads/2025/12/forage-eau-geothermique.webp",
+ "_mainImageAlt": "Forage d’eau et forage géothermique : mêmes machines, métiers différents"
+}

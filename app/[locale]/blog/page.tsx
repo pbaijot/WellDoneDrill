@@ -1,7 +1,7 @@
 import type {Metadata} from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import {getBlogPosts} from '@/src/lib/blog'
+import {getBlogPosts, blogPostHref} from '@/src/lib/blog'
 import type {AppLocale} from '@/src/i18n/routes'
 import {getSeoDefaults} from '@/src/i18n/seo'
 import {buildAlternates} from '@/src/lib/seoAlternates'
@@ -144,7 +144,7 @@ export default async function BlogPage({params}: {params: Promise<{locale: strin
             <div className="text-sm text-black/60">{copy.empty}</div>
           ) : (
             <>
-              <Link href={`/${locale}/blog/${featured.slug}`} className="block border border-black/10 hover:border-wdd-yellow transition-colors mb-14">
+              <Link href={blogPostHref(locale, featured)} className="block border border-black/10 hover:border-wdd-yellow transition-colors mb-14">
                 <div className="grid lg:grid-cols-2">
                   <div className="bg-wdd-clay min-h-[320px] flex items-center justify-center overflow-hidden">
                     {featured.mainImage?.asset?.url ? (
@@ -177,7 +177,7 @@ export default async function BlogPage({params}: {params: Promise<{locale: strin
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {rest.map((post) => (
                   <article key={post._id} className="border border-black/10 hover:border-wdd-yellow transition-colors overflow-hidden">
-                    <Link href={`/${locale}/blog/${post.slug}`} className="block">
+                    <Link href={blogPostHref(locale, post)} className="block">
                       <div className="bg-wdd-clay h-52 flex items-center justify-center overflow-hidden">
                         {post.mainImage?.asset?.url ? (
                           <Image

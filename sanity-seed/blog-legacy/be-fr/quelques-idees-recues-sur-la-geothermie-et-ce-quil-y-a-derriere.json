@@ -1,0 +1,509 @@
+{
+ "_id": "blog-legacy-be-fr-4411",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Quelques idées reçues sur la géothermie… et ce qu’il y a derrière",
+ "slug": {
+  "_type": "slug",
+  "current": "quelques-idees-recues-sur-la-geothermie-et-ce-quil-y-a-derriere"
+ },
+ "legacyPath": "/be-fr/quelques-idees-recues-sur-la-geothermie-et-ce-quil-y-a-derriere",
+ "publishedAt": "2025-12-02T11:03:32Z",
+ "excerpt": "La géothermie attire de plus en plus de maîtres d’ouvrage, d’architectes et de bureaux d’études. Mais presque à chaque discussion, les mêmes questions reviennent : “Il faudra un appoint en hiver”, “On n’a plus le temps d’étudier ça”, “On…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "5ac318880d0f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "987b8eb8c047",
+     "text": "La géothermie attire de plus en plus de maîtres d’ouvrage, d’architectes et de bureaux d’études. Mais presque à chaque discussion, les mêmes questions reviennent : “Il faudra un appoint en hiver”, “On n’a plus le temps d’étudier ça”, “On n’a pas de local technique”, “Le budget va exploser à cause des forages”. Cet article reprend ces idées reçues une par une et explique ce qu’il en est vraiment.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "08947447b36d",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c54dc85cd91",
+     "text": "1. « On aura besoin d’un appoint en hiver, la géothermie ne suffira pas »",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "77916bda3bff",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5c317669d5c",
+     "text": "Pour les petites installations – maisons, petits immeubles, petits bâtiments tertiaires – une installation géothermique bien dimensionnée est pratiquement toujours suffisante à elle seule pour couvrir les besoins de chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d0b2c0efc68f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "031eb6d288c6",
+     "text": "La clé, c’est le couple pompe à chaleur géothermique + ballon de stockage. La pompe à chaleur est dimensionnée pour assurer la puissance nécessaire, et le ballon joue le rôle de tampon thermique : il permet de faire tourner la PAC au meilleur moment (bon rendement, disponibilité de l’électricité, production photovoltaïque) tout en couvrant les pointes de consommation sur le réseau de chauffage. Autrement dit, on charge le ballon quand la PAC fonctionne dans ses meilleures conditions, et on décharge ce ballon lors des pics de demande. Dans ce schéma, la géothermie reste le système principal, pas un appoint.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "368ea6320600",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e494faa4d08",
+     "text": "Pour les installations de plus grande puissance (immeubles, bâtiments tertiaires importants, réseaux de chaleur locaux), il est souvent intéressant de coupler la géothermie avec d’autres technologies de pompes à chaleur : aquathermie, riothermie, voire aérothermie. Ces combinaisons permettent d’optimiser la production en fonction des saisons et des besoins.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a1c05236be3e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e06b0d1734c",
+     "text": "Coupler la géothermie et le gaz est souvent la première idée qui vient à l’esprit, mais pratiquement toujours la moins pertinente : on perd une partie des avantages de décarbonation, on complexifie la chaufferie et on reste dépendant d’un combustible fossile sur le long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "38ab2cd23955",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3788df80c9f",
+     "text": "2. « Notre planning est serré, on n’a plus le temps d’étudier la géothermie »",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cc66e1c2d2c7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9ea13a00089",
+     "text": "On imagine parfois que la géothermie nécessite des mois d’études supplémentaires et qu’elle est incompatible avec un planning tendu. En réalité, pour la majorité des projets résidentiels et tertiaires “classiques”, le dimensionnement d’un champ de sondes et d’une pompe à chaleur géothermique peut être réalisé dans des délais comparables aux autres lots techniques, à condition de décider à temps d’examiner cette option.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3673acc799fd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ceb2180d6808",
+     "text": "L’essentiel, pour lancer l’étude, ce sont quelques informations de base :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5924ad68453f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ec20f5cbe74",
+     "text": "surface du bâtiment ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "603a3da6bf10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9eab2fd62f8",
+     "text": "type d’usage (logement, bureaux, école, mixte…) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fe4acbae1ba4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5d50aef72e44",
+     "text": "niveau de performance visé ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "df340b6d6e28",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b1949f16dad",
+     "text": "besoins en chauffage, rafraîchissement et eau chaude sanitaire ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0d5bd3f0cf5f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef6bf2cc7106",
+     "text": "contraintes de parcelle et d’accès.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ccc69c72f77a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45222d3447e9",
+     "text": "À partir de là, il est déjà possible d’estimer la puissance à installer, le nombre de sondes, les profondeurs et l’implantation possible.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c2a6a439891f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ae027e0bf36",
+     "text": "WellDoneDrill travaille justement dans cet environnement de planning réel : intégration de la géothermie dans des projets déjà bien avancés, coordination avec les architectes et les bureaux d’études, phasage du chantier de forage avec les autres corps de métier.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "73add5f59d57",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b0c55bcd7b3d",
+     "text": "Du point de vue administratif, les délais de permis sont généralement courts. Dans la plupart des cas, il s’agit d’une simple déclaration environnementale, qui, selon les régions, est traitée en quelques jours ou semaines. Le blocage ne vient donc pas d’un délai technique incompressible, mais plutôt du moment où l’on accepte de mettre la géothermie sérieusement sur la table.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "91f6a4c599f8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2be8764cf761",
+     "text": "3. « On a très peu d’espace dans le local technique, la géothermie ne rentrera jamais »",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "57b0e7c16c84",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "416bb30f1e21",
+     "text": "L’image d’une chaufferie géothermique encombrante est largement dépassée. Les pompes à chaleur géothermiques “tout intégrées” modernes ne sont pas plus grandes qu’un grand réfrigérateur : elles regroupent en un seul module la plupart des composants (pompes, échangeurs, régulation, etc.).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f63f6c171654",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af7c2b9b9169",
+     "text": "Dans de nombreux projets, la PAC géothermique prend moins de place qu’une ancienne chaudière, surtout si l’on tient compte :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "52f8b2cdaea8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "461b3a869986",
+     "text": "de la suppression de la cheminée ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e19e4836aabe",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86eafb4b2bc3",
+     "text": "de l’absence de stockage de combustible ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90549aec6b16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b4b9b8c80277",
+     "text": "de la simplification du local (pas de brûleur, pas de cuve, moins de ventilation spécifique).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2740162875de",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bb771c49082",
+     "text": "Le ballon de stockage, lorsqu’il est nécessaire, peut être positionné de manière compacte (verticalement, en local technique, en sous-sol, etc.). Il s’agit donc plus d’une question d’organisation que d’une impossibilité technique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "59a53fa7db57",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "485c28d0d8ae",
+     "text": "4. « Le budget pourrait exploser à cause de la géothermie »",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5473438a2a59",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed546d08f6e5",
+     "text": "La crainte d’une dérive budgétaire liée aux forages est fréquente, notamment lorsqu’on a déjà entendu parler de surcoûts sur des projets mal cadrés. Pourtant, une offre bien structurée, avec des quantités maîtrisées et des prix unitaires clairs, permet de sécuriser le budget.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "816a261a6b16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0152e663fb4d",
+     "text": "Quelques points clés pour éviter les mauvaises surprises :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "05c98029abfd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6260139559bd",
+     "text": "un métrage de sondes cohérent avec la puissance à installer et les caractéristiques du terrain ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "02caf2ce39f9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d605af33b570",
+     "text": "un prix par mètre ou par sonde clairement défini ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8a3160bf25bb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48777725e206",
+     "text": "une politique transparente sur les éventuels aléas de forage (tubage, terrains particuliers, etc.) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5256a1996c75",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "50d4999e0633",
+     "text": "des liaisons horizontales et collecteurs inclus dans l’offre.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf28068972c6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "430871c7ca55",
+     "text": "WellDoneDrill a structuré ses offres pour éviter les coûts cachés et limiter le recours aux suppléments. Les sondes sont dimensionnées de manière réaliste, les prix par forage sont fixes, et les éléments susceptibles de générer des surcoûts sont identifiés à l’avance.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e3b3b5f32211",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d2a1570fdc3",
+     "text": "Au final, lorsque l’on considère le coût total sur la durée de vie de l’installation (investissement + exploitation), la géothermie se révèle généralement très compétitive par rapport aux solutions fossiles ou aux systèmes air/eau, tout en offrant un niveau de confort supérieur.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Quelques idées reçues sur la géothermie… et ce qu’il y a derrière",
+ "seoDescription": "La géothermie attire de plus en plus de maîtres d’ouvrage, d’architectes et de bureaux d’études. Mais presque à chaque discussion, les mêmes questions…",
+ "_mainImageFile": "uploads/2025/12/geothermie-idee-recue.webp",
+ "_mainImageAlt": "Quelques idées reçues sur la géothermie… et ce qu’il y a derrière"
+}

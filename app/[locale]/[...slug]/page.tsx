@@ -1,5 +1,5 @@
 import type {Metadata} from 'next'
-import {notFound} from 'next/navigation'
+import {notFound, permanentRedirect} from 'next/navigation'
 import Link from 'next/link'
 import {findRouteKeyBySlug, getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import {getSeoDefaults} from '@/src/i18n/seo'
@@ -26,6 +26,9 @@ import {getAProposPage} from '@/src/lib/aProposPage'
 import {getDemarrerPage} from '@/src/lib/demarrerPage'
 import {getGlobalSettings} from '@/src/lib/globalSettings'
 import {routeMap} from '@/src/i18n/routes'
+import {getBlogPostByLegacyPath} from '@/src/lib/blog'
+import {LEGACY_BLOG_FALLBACK} from '@/src/seo/legacyRedirects'
+import BlogArticle, {blogPostMetadata} from '../components/BlogArticle'
 
 type PageProps = {
   params: Promise<{
@@ -38,6 +41,13 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
   const {locale, slug} = await params
   const slugPath = slug.join('/')
   const routeKey = findRouteKeyBySlug(locale, slugPath) ?? ''
+
+  // Blog articles restored from the old WordPress site, at their original URL
+  if (!routeKey && slug.length === 1) {
+    const post = await getBlogPostByLegacyPath(locale, `/${locale}/${slugPath}`).catch(() => null)
+    if (post) return blogPostMetadata(post, `${BASE_URL}/${locale}/${slugPath}`)
+  }
+
   const defaults = getSeoDefaults(locale, routeKey)
 
   let cmsTitle: string | undefined
@@ -208,6 +218,13 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
     if (chantier) {
       return <ChantierPage locale={locale} chantier={chantier} />
     }
+  }
+
+  if (!routeKey && slug.length === 1) {
+    const post = await getBlogPostByLegacyPath(locale, `/${locale}/${slugPath}`).catch(() => null)
+    if (post) return <BlogArticle locale={locale} post={post} />
+    const fallback = locale === 'be-fr' ? LEGACY_BLOG_FALLBACK[slugPath] : undefined
+    if (fallback) permanentRedirect(fallback)
   }
 
   if (!routeKey || routeKey === 'home' || routeKey === 'blog') {

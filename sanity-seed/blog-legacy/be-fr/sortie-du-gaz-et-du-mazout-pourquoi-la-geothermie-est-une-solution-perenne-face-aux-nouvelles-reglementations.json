@@ -1,0 +1,355 @@
+{
+ "_id": "blog-legacy-be-fr-5434",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Sortie du Gaz et du Mazout : Pourquoi la géothermie est une solution pérenne face aux nouvelles réglementations",
+ "slug": {
+  "_type": "slug",
+  "current": "sortie-du-gaz-et-du-mazout-pourquoi-la-geothermie-est-une-solution-perenne-face-aux-nouvelles-reglementations"
+ },
+ "legacyPath": "/be-fr/sortie-du-gaz-et-du-mazout-pourquoi-la-geothermie-est-une-solution-perenne-face-aux-nouvelles-reglementations",
+ "publishedAt": "2026-03-20T13:21:21Z",
+ "excerpt": "En 2026, le paysage énergétique belge a radicalement changé. Entre les interdictions progressives d'installation de nouvelles chaudières à mazout et les restrictions sévères sur le gaz dans les nouvelles constructions à Bruxelles et en…",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1fa435e025db",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "826a6942ca5c",
+     "text": "En 2026, le paysage énergétique belge a radicalement changé. Entre les interdictions progressives d'installation de nouvelles chaudières à mazout et les restrictions sévères sur le gaz dans les nouvelles constructions à Bruxelles et en Wallonie, les propriétaires se retrouvent face à un choix crucial. Remplacer une ancienne chaudière n'est plus une simple question de budget, c'est une question de conformité légale et de survie de la valeur de votre bien. Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "57ad0424e598",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c56e2e62bae3",
+     "text": ", nous vous expliquons pourquoi la géothermie est le seul \"port d'attache\" sécurisé.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b320752d8c68",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d01c5e3c29c6",
+     "text": "1. La fin de l'ère fossile en Belgique",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c3645291f09f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2516958c930",
+     "text": "Les réglementations régionales sont claires : l'objectif est la décarbonation totale du parc immobilier.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7b4a5e3dfce6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc0c71195e5b",
+     "text": "Le Mazout :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8d01d700fee1",
+     "text": " Son installation est désormais interdite dans la quasi-totalité des cas de remplacement ou de construction neuve.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "37e0d85ad34b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3b607bfaf8d6",
+     "text": "Le Gaz :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1c89f73d47ec",
+     "text": " Les réseaux de distribution commencent à être perçus comme des infrastructures en fin de vie. Les taxes sur le carbone (ETS 2) augmentent chaque année, rendant le prix du kWh fossile de moins en moins compétitif par rapport à l'électricité renouvelable.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "84e2ae57b3fe",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42beace05fa9",
+     "text": "2. Pourquoi ne pas simplement passer à l'électrique direct ?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "008686fc7a73",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47dbd5c5396d",
+     "text": "Face à l'interdiction du gaz, certains pourraient être tentés par des radiateurs électriques ou des systèmes d'appoint. C'est une erreur financière majeure. Le coût du chauffage électrique direct est 4 à 5 fois plus élevé que celui d'une pompe à chaleur géothermique. La géothermie, en utilisant l'énergie gratuite contenue à 150 mètres sous votre jardin, transforme 1 kWh d'électricité en 5 kWh de chaleur. C'est le seul système capable de maintenir une facture énergétique basse dans un monde \"tout électrique\".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3ceab01fd126",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4fd987f38ba6",
+     "text": "3. La géothermie : Le bouclier contre les taxes carbone",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c82977b711af",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c29aaa096e4",
+     "text": "L'Europe a mis en place un système de quotas d'émission (ETS) qui s'applique désormais au chauffage des bâtiments. Chaque mètre cube de gaz brûlé vous coûtera de plus en plus cher en \"droits de polluer\". En choisissant le forage vertical avec ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "18569bb3d725",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fc823ba1ab60",
+     "text": ", vous sortez définitivement de ce système de taxation. Vous ne brûlez rien, vous n'émettez pas de CO2​ sur site. Vous devenez un citoyen énergétiquement responsable et, surtout, protégé fiscalement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "51addbb3f0b0",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8982fd6dd31b",
+     "text": "4. La résilience du réseau électrique",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "23f65018f3c9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bcecaa74be4",
+     "text": "On craint souvent la surcharge du réseau électrique si tout le monde passe à la pompe à chaleur. Ici encore, la géothermie est la solution préférée des gestionnaires de réseau (comme Elia ou ORES/Sibelga).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "71e03b3dbefc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "029df440f882",
+     "text": "Moins de puissance appelée :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "622e7ba4fb67",
+     "text": " Comme son rendement (COP) est stable même par -10°C, une PAC géothermique ne demande pas de pic de puissance au réseau lors des vagues de froid, contrairement aux PAC Air/Eau qui doivent activer des résistances électriques d'appoint.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2a3ea95b0d9d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d3fe2645f76",
+     "text": "Stabilité :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e4c592d83872",
+     "text": " Votre installation est prévisible et efficace, ce qui facilite l'équilibre énergétique du pays.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6026d117411",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "552b51d38bf4",
+     "text": "5. Préparer la valeur de revente \"Post-Fossile\"",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "747df196c499",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6301003ee945",
+     "text": "Imaginez vendre votre maison en 2030 ou 2035. Un acheteur refusera un bien encore équipé d'une chaudière fossile, sachant qu'il devra payer des taxes carbone élevées et réaliser des travaux coûteux. Installer un forage à 150 mètres aujourd'hui, c'est garantir que votre maison sera classée \"A\" et qu'elle restera désirable sur un marché immobilier qui ne jure plus que par l'autonomie et la décarbonation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "60206eec7bf0",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd5416cd7985",
+     "text": "Conclusion",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "60d18b07ce57",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14cf506a2b41",
+     "text": "Le temps des énergies fossiles est révolu. Les réglementations de 2026 ne sont que le début d'une pression croissante sur les propriétaires. Anticiper ce changement avec ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "254b93293059",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3550431bb44a",
+     "text": ", c'est transformer une contrainte légale en une opportunité de confort et d'économie. La géothermie n'est pas une alternative, c'est la destination finale du chauffage moderne.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Sortie du Gaz et du Mazout : Pourquoi la géothermie est une solution pérenne face aux nouvelles réglementations",
+ "seoDescription": "En 2026, le paysage énergétique belge a radicalement changé. Entre les interdictions progressives d'installation de nouvelles chaudières à mazout et les…",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige-2.jpg",
+ "_mainImageAlt": "Sortie du Gaz et du Mazout : Pourquoi la géothermie est une solution pérenne face aux nouvelles réglementations"
+}

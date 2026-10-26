@@ -1,0 +1,631 @@
+{
+ "_id": "blog-legacy-be-fr-5430",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Comparatif financier sur 25 ans : Géothermie vs Pompe à Chaleur Air/Eau",
+ "slug": {
+  "_type": "slug",
+  "current": "comparatif-financier-sur-25-ans-geothermie-vs-pompe-a-chaleur-air-eau"
+ },
+ "legacyPath": "/be-fr/comparatif-financier-sur-25-ans-geothermie-vs-pompe-a-chaleur-air-eau",
+ "publishedAt": "2026-03-20T12:27:56Z",
+ "excerpt": "Lorsqu’un propriétaire hésite entre la géothermie (sol-eau) et l’aérothermie (air-eau), le premier réflexe est souvent de comparer le prix d’installation immédiat. Pourtant, pour un investissement immobilier, la seule vision pertinente est…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "4ce257e52cee",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e8fcc1d40ff3",
+     "text": "Lorsqu’un propriétaire hésite entre la géothermie (sol-eau) et l’aérothermie (air-eau), le premier réflexe est souvent de comparer le prix d’installation immédiat. Pourtant, pour un investissement immobilier, la seule vision pertinente est celle du ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "82e5c07d887b",
+     "text": "Coût Total de Possession (TCO)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "40048f2317d8",
+     "text": " sur 25 ans. Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "128ef9c1d0b2",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "546198276d92",
+     "text": ", nous avons analysé les chiffres. Voici pourquoi la géothermie gagne le match économique sur la durée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "74b87e38510e",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "56f031ff90ab",
+     "text": "1. L’investissement initial : Le forage est un actif, pas une dépense",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2b0ffaa95c91",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e661b2a666f",
+     "text": "Il est vrai que l’installation d’une pompe à chaleur (PAC) géothermique coûte plus cher au départ, principalement à cause du forage à 150 mètres.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "34e78a33ba33",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a759bf7a231c",
+     "text": "PAC Air/Eau :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2018fbbc710c",
+     "text": " Environ 12 000 € à 18 000 €.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "366fa3979b9d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5239dc52606d",
+     "text": "Géothermie :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c674b662b360",
+     "text": " Environ 25 000 € à 35 000 € (selon le forage). Cependant, il y a une différence majeure : le groupe extérieur d'une PAC Air/Eau est une machine qui s'use, tandis que le forage réalisé par WellDoneDrill est une ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9b5f4a6da612",
+     "text": "infrastructure immobilière",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5ce9de78f7ac",
+     "text": " qui dure plus de 50 ans.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "aa4dfb107fca",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9e809ae80523",
+     "text": "2. La consommation électrique : Le poids du SCOP",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "386badd00853",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa1285623077",
+     "text": "Le rendement d'une PAC Air/Eau chute quand il fait froid dehors (juste au moment où vous en avez le plus besoin). La géothermie, elle, puise dans une source à 12°C constante.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "317dd7f49f65",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34d712d3c125",
+     "text": "PAC Air/Eau :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1d2c86532b98",
+     "text": " COP moyen annuel (SCOP) d'environ 3 à 3,5.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28ad9e0d5294",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e00d87c46bb",
+     "text": "Géothermie :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "23587c9fcdf8",
+     "text": " SCOP d'environ 4,5 à 5,5. Sur 25 ans, pour une maison moyenne, la géothermie consomme environ ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8cd28c104983",
+     "text": "30 % à 40 % d'électricité en moins",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c24b576ce801",
+     "text": ". Avec l'augmentation prévisible des tarifs de l'énergie, cette économie représente des dizaines de milliers d'euros sur deux décennies.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1ed0e6ef1ef3",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f0a0f674947c",
+     "text": "3. Durée de vie et renouvellement du matériel",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3f770c2c931a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e03d753fe25",
+     "text": "C'est ici que la différence devient flagrante.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "42c21816827e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d25d47db5fe",
+     "text": "PAC Air/Eau :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "154b30460187",
+     "text": " Exposée aux intempéries, au gel et aux cycles de dégivrage intensifs, sa durée de vie moyenne est de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "897b4da4e43f",
+     "text": "12 à 15 ans",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f5f536dce9ed",
+     "text": ". Sur 25 ans, vous devrez la remplacer ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "793fb7171b3a",
+     "text": "deux fois",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8dec97300eb2",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bcc3ea31063f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c5830470674",
+     "text": "Géothermie :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "df29e20eeb1c",
+     "text": " La PAC est installée à l'intérieur, dans un environnement sec et stable. Elle travaille moins dur car la source est constante. Sa durée de vie est de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "e90e6a32781c",
+     "text": "20 à 25 ans",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1c65a55ac196",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fd940e9040d5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "428f00b3cfd0",
+     "text": "Le Forage :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "48073b25bca7",
+     "text": " Il ne se remplace jamais. Dans 25 ans, si vous changez de machine, vous vous rebranchez simplement sur vos sondes existantes.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "684e3313b0d7",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b30c78447c3a",
+     "text": "4. Coûts de maintenance et réparations",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ea236ab90e4f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a59a27767186",
+     "text": "Une unité extérieure (Air/Eau) nécessite un nettoyage régulier des ailettes, subit la corrosion et possède des pièces mobiles (ventilateur) exposées. La géothermie est un circuit fermé, passif sous terre, et une machine simple en cave. Les frais de réparation sont statistiquement beaucoup plus bas sur les systèmes sol-eau.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "eac6b9fcff01",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7aadd70d9fb3",
+     "text": "5. Le \"Géocooling\" : La climatisation gratuite",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "664b66299c6e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6b0e5c616b4",
+     "text": "En été, la PAC Air/Eau doit inverser son cycle pour faire du froid, ce qui consomme beaucoup d'électricité. La géothermie utilise le ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0f1199dd55a8",
+     "text": "géocooling passif",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "776dfd174426",
+     "text": " (seul un petit circulateur de 50W tourne). Sur 25 étés, le confort de fraîcheur est quasiment offert en géothermie, alors qu'il coûte cher en aérothermie.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cd3091ef7838",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b727d78a40e9",
+     "text": "Bilan sur 25 ans (Estimation pour une maison de 200 m²)",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "76b127178d4e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d64f2f06ffee",
+     "text": "Installation initiale : ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "32129182a180",
+     "text": "PAC Air/Eau (2 machines sur 25 ans) 15 000 € · Géothermie (1 machine + forage) 30 000 €",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "939eefe00a5f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "489b8565035f",
+     "text": "Remplacement à l'an 13 : ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5b4e1f2a24df",
+     "text": "PAC Air/Eau (2 machines sur 25 ans) + 12 000 € · Géothermie (1 machine + forage) 0 €",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f4fa09427923",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff5d55b29802",
+     "text": "Consommation élec. (estim.) : ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2cb985516205",
+     "text": "PAC Air/Eau (2 machines sur 25 ans) 45 000 € · Géothermie (1 machine + forage) 28 000 €",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f57b7da92217",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "142a02f4f1be",
+     "text": "Maintenance & Réparations : ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "74af6e8965c6",
+     "text": "PAC Air/Eau (2 machines sur 25 ans) 4 000 € · Géothermie (1 machine + forage) 1 500 €",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4a62fd60889b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4c6efed476f",
+     "text": "TOTAL SUR 25 ANS : ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0c81ce3c431d",
+     "text": "PAC Air/Eau (2 machines sur 25 ans) 76 000 € · Géothermie (1 machine + forage) 59 500 €",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "198ded75bb0b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b865630a822",
+     "text": "Bien que le ticket d'entrée soit plus élevé, la géothermie permet une économie nette de plus de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "c46d24a60430",
+     "text": "15 000 €",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c3aa7901beda",
+     "text": " sur 25 ans, tout en offrant un confort supérieur (silence et géocooling). Choisir WellDoneDrill, c'est choisir la rentabilité réelle et la valorisation de votre patrimoine.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Comparatif financier sur 25 ans : Géothermie vs Pompe à Chaleur Air/Eau",
+ "seoDescription": "Lorsqu’un propriétaire hésite entre la géothermie (sol-eau) et l’aérothermie (air-eau), le premier réflexe est souvent de comparer le prix d’installation…",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Pompe a chaleur well done drill"
+}

@@ -1,0 +1,461 @@
+{
+ "_id": "blog-legacy-be-fr-5392",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Forage vertical : Pourquoi viser 150 mètres de profondeur ?",
+ "slug": {
+  "_type": "slug",
+  "current": "forage-vertical-pourquoi-viser-150-metres-de-profondeur"
+ },
+ "legacyPath": "/be-fr/forage-vertical-pourquoi-viser-150-metres-de-profondeur",
+ "publishedAt": "2026-03-20T10:11:10Z",
+ "excerpt": "Chez WellDoneDrill, nous réalisons régulièrement des forages qui atteignent environ 150 mètres de profondeur, mais la profondeur exacte est toujours adaptée à la géologie spécifique de votre site. Ce choix est une véritable stratégie pour…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "d2d41d666648",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38a34e93f627",
+     "text": "Chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6f6b0c861b7e",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fb345889f118",
+     "text": ", nous réalisons régulièrement des forages qui atteignent ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "fd7cc5a3756e",
+     "text": "environ 150 mètres de profondeur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "65bd5db4fa5a",
+     "text": ", mais la profondeur exacte est toujours adaptée à la géologie spécifique de votre site. Ce choix est une véritable stratégie pour garantir le meilleur rendement énergétique et la longévité de votre installation. Descendre à cette profondeur n'est pas un détail, c'est ce qui fait la différence.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "24e51bb40ddb",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fda66e730476",
+     "text": "1. La règle du gradient géothermique : plus chaud, plus stable",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b6377ae24ab8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78223c43c28d",
+     "text": "La Terre possède une chaleur naturelle qui augmente à mesure que l'on s'enfonce dans la croûte terrestre. C’est ce qu’on appelle le ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "247ef0ea3b27",
+     "text": "gradient géothermique",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "630e63917340",
+     "text": ". En moyenne, la température augmente de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b4a7601964d1",
+     "text": "3°C tous les 100 mètres",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c6372ee170ec",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1e4ee08751df",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5109049740cd",
+     "text": "À 10 mètres de profondeur, le sol subit encore l'influence des saisons.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eabf236203c5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "933c6cba9b97",
+     "text": "À 100 mètres, la température est stable, aux alentours de 12°C à 13°C en Belgique.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a5dac4c8610c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "355bd620f2f7",
+     "text": "À 150 mètres, nous captons une source d'énergie encore plus constante et légèrement plus chaude.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "94e4430df970",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64a28d0e4a4d",
+     "text": "Cette différence de quelques degrés semble minime, mais pour une pompe à chaleur (PAC), elle est cruciale. Moins l'écart de température entre la source (le sol) et l'émetteur (votre chauffage) est élevé, moins le compresseur de la PAC doit travailler. Résultat : un ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f38d4c06204f",
+     "text": "COP (Coefficient de Performance)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "00e33dc08e15",
+     "text": " bien plus élevé et une facture d'électricité réduite.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8e504b9e2262",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "50eb692e95e5",
+     "text": "2. Une puissance thermique démultipliée",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "def857652ec8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a55f9f15029d",
+     "text": "La capacité d'extraction de chaleur d'une sonde géothermique dépend directement de sa surface d'échange avec le terrain. En passant de 100m à 150m, vous n'augmentez pas seulement la profondeur de 50%, vous augmentez la capacité de captage de manière exponentielle grâce à la pression lithostatique et à la rencontre de couches géologiques souvent plus denses et conductrices.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c496635963d8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "310ed4154d49",
+     "text": "Un forage de 150 mètres peut offrir jusqu'à ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8b5ca4a79914",
+     "text": "50 % à 70 % de puissance calorifique supplémentaire",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f96e6c55b44d",
+     "text": " par rapport à un forage de 80 mètres. Cela permet souvent de couvrir l'intégralité des besoins d'une grande villa ou d'un bâtiment de bureau avec un seul forage profond, là où la concurrence devrait en réaliser deux ou trois plus superficiels.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "911e32adedec",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e9ce5e743fd",
+     "text": "3. L'optimisation foncière : la solution pour les petits terrains",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fcb0d7927ce1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "011cb5e772ea",
+     "text": "C'est l'argument numéro un pour nos clients à Bruxelles ou dans les centres urbains wallons. Lorsque l'espace de jardin est limité, multiplier les points de forage est impossible en respectant les distances de sécurité entre les sondes (généralement 10 mètres pour éviter qu'elles ne se \"volent\" de la chaleur).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "30a3c90df60a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70e7a8a08615",
+     "text": "Le forage à 150 mètres permet de :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6b009cb99c98",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4b072dff1f9",
+     "text": "Concentrer la puissance",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "87e870a80f0f",
+     "text": " sur un seul point d'entrée.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "10f61c04075f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7163b98e8c05",
+     "text": "Réduire l'emprise au sol",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9bb3eb4f4a2b",
+     "text": " du chantier.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f3de3d0ce315",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b52ee52430f",
+     "text": "Préserver vos aménagements extérieurs",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "749a7d992072",
+     "text": " (moins de tranchées de raccordement, moins de collecteurs).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ae3e88afa373",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c80d819ec066",
+     "text": "4. Une barrière contre l'épuisement thermique du sol",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "eb91c7328ad5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14fd0720edb1",
+     "text": "Un sol dont on extrait trop de chaleur sans lui laisser le temps de se régénérer peut finir par \"geler\" (perte de rendement sur le long terme). En allant chercher les calories à 150 mètres, on puise dans un volume de roche bien plus vaste.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ba06cab327ca",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8a5b656690c0",
+     "text": "De plus, cette profondeur est idéale pour le ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ce889b4e0978",
+     "text": "géocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "290ab4a8a25b",
+     "text": " (rafraîchissement passif en été). Le réservoir de fraîcheur à 150 mètres est plus vaste et plus stable, garantissant une climatisation naturelle performante même lors des canicules prolongées, sans jamais épuiser la capacité thermique du puits.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0d0c1b563a53",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6371873a17e3",
+     "text": "5. L'expertise WellDoneDrill : la maîtrise du forage",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3a53b37fe6b8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9b9646144ea",
+     "text": "Forer à 150 mètres demande un matériel spécifique et une expertise technique accrue. Les pressions rencontrées et la gestion des sédiments diffèrent totalement d'un forage de surface. Grâce à notre flotte de foreuses compactes mais ultra-puissantes, nous maîtrisons cette verticalité pour offrir à nos clients la solution la plus compacte et la plus rentable du marché.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Forage vertical : Pourquoi viser 150 mètres de profondeur ?",
+ "seoDescription": "Chez WellDoneDrill, nous réalisons régulièrement des forages qui atteignent environ 150 mètres de profondeur, mais la profondeur exacte est toujours…",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-11.09.54.jpg",
+ "_mainImageAlt": "Forage vertical : Pourquoi viser 150 mètres de profondeur ?"
+}

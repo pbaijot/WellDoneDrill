@@ -1,0 +1,817 @@
+{
+ "_id": "blog-legacy-be-fr-4415",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Comment comparer des devis de foreur pour de la géothermie ?",
+ "slug": {
+  "_type": "slug",
+  "current": "comment-comparer-des-devis-de-foreur-pour-de-la-geothermie"
+ },
+ "legacyPath": "/be-fr/comment-comparer-des-devis-de-foreur-pour-de-la-geothermie",
+ "publishedAt": "2025-12-02T11:05:02Z",
+ "excerpt": "Quand on commence à consulter plusieurs foreurs pour un projet géothermique, les devis ont parfois l’air difficilement comparables : prix au mètre, prix à la sonde, frais de chantier, aléas de tubage… Cet article propose quelques repères…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "80d370b5d42f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c25cb07a2c46",
+     "text": "Quand on commence à consulter plusieurs foreurs pour un projet géothermique, les devis ont parfois l’air difficilement comparables : prix au mètre, prix à la sonde, frais de chantier, aléas de tubage… Cet article propose quelques repères pour analyser ces offres et éviter les mauvaises surprises.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8dd129905bf7",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d42baab57a56",
+     "text": "1. Frais d’installation de chantier : qui prend en charge quoi ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "dac3507c5ca6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b3a3b90df7e",
+     "text": "Avant même de regarder le prix du mètre foré, il faut examiner les frais d’installation de chantier. Un devis sérieux doit préciser clairement :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "05a4f04e9d9c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d2844077044",
+     "text": "les éventuels frais administratifs : le foreur s’occupe-t-il des démarches environnementales, des déclarations, des demandes d’occupation de voirie ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bccfb9941dff",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "902c0beded6d",
+     "text": "la mise à disposition de l’eau et de l’électricité : qui fournit quoi, à quelle distance, avec quelles caractéristiques ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "519ac2de06d3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c7749d5c82e",
+     "text": "les frais liés à la réservation d’emplacements en voirie, si nécessaire ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "239fb196e404",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "02a592eeb9d2",
+     "text": "les moyens d’accès : nécessité de grue, de portique, de démontage de clôture…",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8ca078652fad",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1397f7485548",
+     "text": "Un devis “moins cher” qui ne reprend pas ces éléments peut, in fine, s’avérer plus coûteux si le maître d’ouvrage doit assumer lui-même ces postes ou gérer des imprévus en cours de chantier.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "89c61d9d64c8",
+   "_file": "uploads/2025/12/expert-geothermie-belgique.jpg",
+   "alt": "Forage géothermique en Belgique"
+  },
+  {
+   "_type": "block",
+   "_key": "63e7a90ddf1c",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62fb3ef21322",
+     "text": "2. Coût de forage : prix au mètre… ou prix global ?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "89141508143a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2a2410ce2ce5",
+     "text": "La plupart des devis de forage géothermique s’expriment en prix par mètre de forage ou en prix par sonde (avec une profondeur maximale). L’essentiel est de comprendre ce qui est inclus et ce qui ne l’est pas.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c2f27572aa36",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9dfd20874acd",
+     "text": "Quelques questions clés :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e5bfe67a020b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c74639d1569e",
+     "text": "le prix annoncé couvre-t-il l’intégralité de la profondeur prévue ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "18cf28a8530b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76c89062d1ef",
+     "text": "y a-t-il des paliers de prix selon la nature du sol (ex. surcharge en cas de terrain difficile) ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "15ea0f61c17c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "211a089c6781",
+     "text": "les sondes, le coulis géothermique et les tests de pression sont-ils inclus ?",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "25cbaa24c4f6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78267f9cdef4",
+     "text": "Un point de vigilance important : tous les foreurs ne partent pas du même rendement par mètre de sonde. Certains vont annoncer des puissances de 60 W/m, d’autres de 40 W/m ou 45 W/m.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2ada78e78ad3",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad759ee2868c",
+     "text": "Attention aux puissances “par mètre”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e76cf0db2f35",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "404acbee6fe1",
+     "text": "Pour comparer des devis, il faut toujours ramener les offres à un même nombre de mètres linéaires de forage. Si un foreur propose moins de mètres en supposant un rendement plus élevé par mètre, demandez un recalcul sur base d’un même métrage pour tous les intervenants.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f8cc7c0c44a7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3abdfef29ebe",
+     "text": "Par ailleurs, certains foreurs proposeront des forages plus profonds avec moins de sondes, d’autres des forages plus courts avec plus de sondes. À métrage cumulé équivalent, privilégier des forages plus profonds permet souvent d’optimiser le rendement et de réduire l’emprise foncière.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f69f298ba264",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9e286ee24a6",
+     "text": "Enfin, il est essentiel de vérifier s’il existe des coûts cachés pour les imprévus de forage, notamment en matière de tubage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6ab9c98037c1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9239a7d35328",
+     "text": "Certains devis prévoient un prix attractif en conditions “normales”, mais ajoutent des suppléments importants dès qu’un tubage supplémentaire est nécessaire. Or, dans de nombreux terrains, le tubage est fréquent. Il peut alors faire exploser le budget initial.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e38abebb970c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bdce515d3a8",
+     "text": "Privilégiez les devis qui proposent un prix fixe par mètre de forage, tubage inclus ou clairement encadré, afin d’éviter les mauvaises surprises.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "734fe48ec5aa",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "28731029d708",
+     "text": "3. Liaisons horizontales et collecteurs : qualité et contrôles",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d6899a95ec6f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9886aed365e4",
+     "text": "Les forages ne sont qu’une partie de l’installation. Les liaisons horizontales entre les sondes et le local technique, ainsi que les collecteurs, représentent un poste important, tant en coût qu’en fiabilité à long terme.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2b82c7fbf6bf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3afdd97d8059",
+     "text": "Lors de la comparaison des devis, il est utile de vérifier :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5af4f130b770",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f385bb815ef2",
+     "text": "si la fourniture et la pose des liaisons horizontales sont incluses ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "012fa909c780",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be9e062d3ef0",
+     "text": "le type de PEHD utilisé (diamètre, classe de pression) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "420c1201aa9d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "788918b9ce78",
+     "text": "la nature des collecteurs (préfabriqués, isolés, accessibles) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "333c205fe852",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad130fcf2eef",
+     "text": "la réalisation de tests de pression sur l’ensemble des circuits avant remblayage des tranchées.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3520fb30ce2a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34f1f2d418cd",
+     "text": "Un devis qui intègre des tests de pression systématiques et une bonne accessibilité des collecteurs est un gage de sérieux et de durabilité.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0748a7e7cc47",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d34792dbb36a",
+     "text": "4. Déblais, environnement et fin de chantier",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fc83ea46e53a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12a688f0c795",
+     "text": "Un projet de forage géothermique génère des déblais (sables, boues, roches) et des eaux de forage. La manière dont ceux-ci sont gérés peut avoir un impact important sur le chantier, en particulier en milieu urbain.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "3272d7928272",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5532f0f3e3e",
+     "text": "Quelques questions à poser :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a6e09ffb14d9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0df99478498",
+     "text": "qui prend en charge l’évacuation des déblais ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "405c26a8a6db",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62cb0e1daa67",
+     "text": "vers quel type de site (centre de traitement, site de remblai, etc.) ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b9c8e49916e4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d58a6566595",
+     "text": "le nettoyage de la zone de chantier en fin d’intervention est-il compris ? ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "36bed1cb1d18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95e45188ef54",
+     "text": "comment sont gérées les boues de forage et les éventuels écoulements ?",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d04c16fac7f5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42d0a9ab436f",
+     "text": "Un devis qui prévoit clairement ces aspects permettra d’éviter des discussions en fin de chantier et de sécuriser à la fois l’image du projet et les relations avec le voisinage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "db8e0b7d5009",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae7e1a90ad4c",
+     "text": "5. Autres critères à analyser dans un devis de foreur",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5971110a562f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51e78dfec164",
+     "text": "Au-delà des aspects purement financiers, plusieurs critères qualitatifs méritent attention :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "a39ef34ce947",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a7bf6c79e08",
+     "text": "l’expérience du foreur en géothermie (références, types de projets réalisés) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c9fe91f59ad1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "541a92f4fc92",
+     "text": "la maîtrise des différentes techniques de forage (air, boue, PDC) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb1a3b49f0f3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5061b3e8303b",
+     "text": "la capacité à travailler en milieu urbain contraint ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "09c68578480b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f139f17ec520",
+     "text": "la qualité de la documentation fournie (plans, schémas, rapports de tests) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a744aeb90551",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ab5bacb3b97",
+     "text": "la coordination avec les autres intervenants (installateur, bureau d’études, architecte).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5be31d369403",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26a4f5c75fea",
+     "text": "Ces éléments ne se chiffrent pas toujours directement, mais ils font souvent la différence en termes de sérénité pour le maître d’ouvrage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4309a2a58dd3",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b17498eb2eaf",
+     "text": "6. Conclusion : sécuriser la comparaison… et le choix",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e4961099ad5b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "19ba91170ceb",
+     "text": "Comparer des devis de foreur ne se limite pas à regarder le prix global en bas de page. Il s’agit de comprendre ce qui est inclus, ce qui ne l’est pas, et comment sont gérés les aléas potentiels.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c7294913e927",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89aad6eab288",
+     "text": "Pour sécuriser la comparaison, il est souvent utile de :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "69a2470b7635",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9081de6658cc",
+     "text": "demander à tous les foreurs de chiffrer un même métrage de sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "132e49b5bacb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec93b962aaa3",
+     "text": "clarifier les conditions de tubage et les éventuels suppléments ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "333f6f295e9a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27c5c221b74d",
+     "text": "vérifier la prise en charge des liaisons, des tests de pression et des déblais.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a2f40f57ce6a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce8a04c96bd6",
+     "text": "Lorsque deux foreurs indiquent des métrages très différents pour une même puissance, il peut être pertinent de leur demander de remettre un prix sur base d’une quantité de forage identique (par exemple, un même nombre de mètres linéaires de sondes), afin d’avoir une comparaison objective.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f0cf91b11c02",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f62020a5cde",
+     "text": "WellDoneDrill s’est spécialisé exclusivement dans le forage de sondes géothermiques. Ses machines et ses équipes sont optimisés pour ce métier, ce qui permet à WDD d’être très souvent le foreur le plus compétitif du marché, avec des prix sans coûts cachés, lisibles, comparables et sans mauvaises surprises.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Comment comparer des devis de foreur pour de la géothermie ?",
+ "seoDescription": "Quand on commence à consulter plusieurs foreurs pour un projet géothermique, les devis ont parfois l’air difficilement comparables : prix au mètre, prix à…",
+ "_mainImageFile": "uploads/2025/05/Woluwe-Saint-Lambert-Greenwoo-header.webp",
+ "_mainImageAlt": "entreprise de géothermie à woluwe saint lambert"
+}

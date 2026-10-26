@@ -1,0 +1,819 @@
+{
+ "_id": "blog-legacy-be-fr-4393",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Les techniques de forage géothermique : air, boue, PDC… et ce qui distingue WellDoneDrill",
+ "slug": {
+  "_type": "slug",
+  "current": "les-techniques-de-forage-geothermique-air-boue-pdc-et-ce-qui-distingue-welldonedrill"
+ },
+ "legacyPath": "/be-fr/les-techniques-de-forage-geothermique-air-boue-pdc-et-ce-qui-distingue-welldonedrill",
+ "publishedAt": "2025-12-02T10:56:41Z",
+ "excerpt": "Derrière chaque installation géothermique performante, il y a un chantier de forage bien maîtrisé. Forer dans tous types de terrains — des sables meubles aux roches les plus dures — nécessite des techniques adaptées. WellDoneDrill s’appuie…",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c721a4e023d9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "960fe3c0c2de",
+     "text": "Derrière chaque installation géothermique performante, il y a un chantier de forage bien maîtrisé. Forer dans tous types de terrains — des sables meubles aux roches les plus dures — nécessite des techniques adaptées. WellDoneDrill s’appuie sur trois grandes méthodes : le forage à l’air comprimé avec marteau fond de trou, le forage à la boue et le forage PDC (Polycrystalline Diamond Compact), une technique importée d’Allemagne qui a profondément amélioré les rendements et les coûts.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e09650c6a1a4",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9516c8b3e8db",
+     "text": "Forage à l’air comprimé avec marteau fond de trou",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "aa080ee4cbb2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c20892d0d586",
+     "text": "Le forage à l’air comprimé avec marteau fond de trou (Down-The-Hole Hammer) est une technique largement utilisée pour traverser des formations rocheuses dures ou très compactes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "221c4bf549ce",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fc4ab1e6498",
+     "text": "Le principe :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "75bee784ccea",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1971faa8bbd",
+     "text": "un marteau pneumatique est positionné au fond du trou ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "56090203eef2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a1dfc9ac535",
+     "text": "de l’air comprimé est injecté dans la tige de forage, actionnant le marteau ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c628455099c5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "597427e0099c",
+     "text": "la roche est fragmentée mécaniquement par percussion ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fae42497775a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f5e6b5e9d4d",
+     "text": "les déblais sont remontés par l’air comprimé qui remonte le long de l’outil.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f37b56ea9ac7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "289586152ef7",
+     "text": "Cette méthode est très efficace dans les roches dures, mais elle présente certaines limites :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b2a5e584d898",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99ba0f3225d0",
+     "text": "sensibilité aux venues d’eau importantes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64086cc11f4a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eab833e802df",
+     "text": "gestion plus complexe des déblais en milieu urbain ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e3123a2d6613",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc4725d2e31b",
+     "text": "bruit et vibrations plus élevés.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6cb6179fe847",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da16b43d6693",
+     "text": "Forage à la boue",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "681b3bb1019c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b75b1cdc55fd",
+     "text": "Le forage à la boue (mud drilling) consiste à utiliser un fluide de forage — un mélange d’eau et d’argiles/bentonite — pour stabiliser les parois, remonter les déblais et refroidir l’outil.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "fbb4b15584ba",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f25b8f009de",
+     "text": "Le principe :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0e7a2444ee15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94f4b35a079f",
+     "text": "la boue circule dans les tiges de forage jusqu’à l’outil ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9c1fb4c754c4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "660cf722afef",
+     "text": "elle remonte par l’espace annulaire en entraînant les déblais ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ad952c49c518",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f4bcab01bee",
+     "text": "elle forme un cake sur les parois du trou, ce qui les stabilise.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a780cc43989a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e828b2aba82c",
+     "text": "Cette méthode est particulièrement adaptée :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "31f48600fc83",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b43843f9469",
+     "text": "dans les formations meubles (sables, graviers…) ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c1290b09e09b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81f81fc23e4c",
+     "text": "lorsqu’il y a des venues d’eau ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0ad78a0f6e9e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac33a711d449",
+     "text": "dans les terrains où la stabilité des parois est un enjeu.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f686242d0143",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8504f4326a7",
+     "text": "Le forage à la boue est une technique polyvalente, mais elle nécessite une bonne gestion des boues et des déblais, en particulier sur les chantiers contraints et en ville.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5c16d81861e0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cf95b608c3e7",
+     "text": "Forage PDC : la technique qui change la donne",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "84a9c10db63a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e774fd11e54b",
+     "text": "Le forage PDC (Polycrystalline Diamond Compact) utilise une tête de forage équipée de pastilles de diamant synthétique extrêmement résistantes. Plutôt que de percuter la roche, l’outil la “racle” en continu, avec une rotation rapide.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "822a3530c4d7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "716e1c589f79",
+     "text": "Les avantages du forage PDC :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ac4192ea2b64",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "708054ded571",
+     "text": "un très bon rendement dans une large gamme de terrains, des sédiments aux roches dures ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ed10445f7b23",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d155b7ba2c9",
+     "text": "une usure contrôlée de l’outil grâce aux pastilles diamant ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "36fed9b6779e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "57ccd5b02636",
+     "text": "une meilleure continuité de forage, avec moins de changements d’outil ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb544c331eb5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbf58695bbca",
+     "text": "une vitesse d’avancement élevée, donc des durées de chantier réduites.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca94263e220d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eac429782855",
+     "text": "WellDoneDrill a importé et développé cette technique en Belgique en s’inspirant des pratiques déjà bien établies en Allemagne. Aujourd’hui, le PDC est au cœur de sa stratégie de forage géothermique.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1b4cd910a812",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a4ecfc9d617",
+     "text": "Concrètement, le forage PDC permet à WDD :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f45b963146f0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88165afb01d1",
+     "text": "de travailler plus vite ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3590404ed4da",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a446eb1ec31f",
+     "text": "de diminuer les coûts par forage ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1f5e8c04f7c4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9e8dcb4b3459",
+     "text": "de maîtriser les terrains les plus complexes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f4f2a3ef2b0e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "752fed0e21ee",
+     "text": "d’intervenir sans changement d’outil dans les couches successives.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3fe4f431b04e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9eea12ac6eb7",
+     "text": "Avec le PDC, les pastilles de diamant traversent tous types de terrains — sédimentaires, rocheux, hétérogènes — tandis que l’eau de forage refroidit en continu la tête de forage et évacue les déblais.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "069036f90f20",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af1252c80eee",
+     "text": "À Bruxelles, par exemple, WellDoneDrill est capable de forer à travers le socle situé aux alentours de -90 m et d’atteindre des profondeurs de 120 à 150 m, là où de nombreux concurrents s’arrêtent à 80–90 m. Cela représente 50 % à 70 % de puissance disponible en plus par forage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "f546ba082219",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18d061b55188",
+     "text": "Pour le maître d’ouvrage ou le concepteur, cela signifie :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0132f624f888",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac673f7b93f2",
+     "text": "moins de sondes pour une même puissance totale ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "898cc99d44a0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d245ea4774de",
+     "text": "moins de surface nécessaire pour le champ de sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "75ce79f24ad1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89581a1a4251",
+     "text": "une meilleure valorisation du foncier, en particulier sur les parcelles urbaines contraintes.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5639d821372f",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3ae41e8d468",
+     "text": "L’avantage WDD",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "92478c811303",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c46590f2845",
+     "text": "Grâce au forage PDC, WellDoneDrill est aujourd’hui le foreur géothermique le plus efficace de Wallonie, capable de forer dans tous les terrains, d’atteindre des profondeurs supérieures à celles de ses concurrents et d’optimiser les coûts pour les clients.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d5dbc67d6a90",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d5b177316ba",
+     "text": "Adapter la technique de forage à chaque terrain",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1921784dc3f6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4a174dfb662",
+     "text": "Un point clé de la stratégie de WellDoneDrill est de ne pas se limiter à une seule méthode. Selon les projets, les contraintes de terrain et l’environnement (urbain, rural, accès, nappe, etc.), WDD choisit la combinaison la plus efficace :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b38a4b2a4654",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62c3ddc4b4b6",
+     "text": "air comprimé pour certaines roches dures ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d71e2c02f5f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c4a1ac90411",
+     "text": "boue de forage pour les terrains meubles ou instables ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "57ea37be0cd9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bffecfa80979",
+     "text": "PDC pour tirer le meilleur parti des terrains variés et optimiser la productivité.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4df47295f335",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "edfb954ae2cf",
+     "text": "Cette flexibilité permet de garantir un résultat fiable, même lorsque le sous-sol est complexe ou mal connu, et de limiter les aléas en cours de chantier.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6c41fd3f6f06",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78c6ccfe27fa",
+     "text": "Conclusion : une maîtrise technique qui fait la différence",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "8391e96a4034",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b0a9da15f97",
+     "text": "Le forage est l’étape invisible mais déterminante d’une installation géothermique. En choisissant des technologies avancées, en important le PDC en Belgique et en adaptant ses méthodes à chaque terrain, WellDoneDrill a significativement amélioré la performance et la compétitivité de la géothermie.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c62d1b9f7c84",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64049e5d00f8",
+     "text": "Cette approche technique, combinée à une expertise de terrain, permet d’offrir des chantiers plus rapides, plus propres et plus sûrs — tout en réduisant les coûts pour les clients. WellDoneDrill est aujourd’hui capable de forer dans tous les types de sols, des plus meubles aux plus rocheux, et de garantir un résultat fiable, durable et performant.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Les techniques de forage géothermique : air, boue, PDC… et ce qui distingue WellDoneDrill",
+ "seoDescription": "Derrière chaque installation géothermique performante, il y a un chantier de forage bien maîtrisé. Forer dans tous types de terrains — des sables meubles…",
+ "_mainImageFile": "uploads/2025/12/technique-forage.webp",
+ "_mainImageAlt": "Les techniques de forage géothermique : air, boue, PDC… et ce qui distingue WellDoneDrill"
+}

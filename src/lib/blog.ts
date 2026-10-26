@@ -4,6 +4,9 @@ export type BlogPostCard = {
   _id: string
   title: string
   slug: string
+  // Set on posts restored from the old WordPress site: the post is served at
+  // this exact path (e.g. /be-fr/<slug>) instead of /<locale>/blog/<slug>.
+  legacyPath?: string
   excerpt?: string
   publishedAt?: string
   category?: string
@@ -53,6 +56,7 @@ const listQuery = `
   _id,
   title,
   "slug": slug.current,
+  legacyPath,
   excerpt,
   publishedAt,
   category,
@@ -76,6 +80,7 @@ const latestQuery = `
   _id,
   title,
   "slug": slug.current,
+  legacyPath,
   excerpt,
   publishedAt,
   category,
@@ -94,10 +99,11 @@ const latestQuery = `
 `
 
 const bySlugQuery = `
-*[_type == "blogPost" && locale == $locale && slug.current == $slug][0]{
+*[_type == "blogPost" && locale == $locale && $filter][0]{
   _id,
   title,
   "slug": slug.current,
+  legacyPath,
   excerpt,
   publishedAt,
   category,
@@ -133,5 +139,14 @@ export async function getLatestBlogPosts(locale: string, limit = 3): Promise<Blo
 
 export async function getBlogPostBySlug(locale: string, slug: string): Promise<BlogPostFull | null> {
   if (!sanity) return null
-  return sanity.fetch(bySlugQuery, {locale, slug})
+  return sanity.fetch(bySlugQuery.replace('$filter', 'slug.current == $slug'), {locale, slug})
+}
+
+export async function getBlogPostByLegacyPath(locale: string, legacyPath: string): Promise<BlogPostFull | null> {
+  if (!sanity) return null
+  return sanity.fetch(bySlugQuery.replace('$filter', 'legacyPath == $legacyPath'), {locale, legacyPath})
+}
+
+export function blogPostHref(locale: string, post: {slug: string; legacyPath?: string}): string {
+  return post.legacyPath || `/${locale}/blog/${post.slug}`
 }

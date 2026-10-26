@@ -1,0 +1,557 @@
+{
+ "_id": "blog-legacy-be-fr-4413",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "La TVA à 6 % sur les pompes à chaleur et les forages géothermiques : un levier pour la décarbonation",
+ "slug": {
+  "_type": "slug",
+  "current": "la-tva-a-6-sur-les-pompes-a-chaleur-et-les-forages-geothermiques-un-levier-pour-la-decarbonation"
+ },
+ "legacyPath": "/be-fr/la-tva-a-6-sur-les-pompes-a-chaleur-et-les-forages-geothermiques-un-levier-pour-la-decarbonation",
+ "publishedAt": "2025-12-02T11:04:15Z",
+ "excerpt": "La fiscalité joue un rôle clé dans le choix des systèmes de chauffage. En Belgique, l’évolution des règles de TVA en faveur des pompes à chaleur et des forages géothermiques représente un signal fort en faveur des solutions décarbonées.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "2b4f009b3e82",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c2367f71dba",
+     "text": "La fiscalité joue un rôle clé dans le choix des systèmes de chauffage. En Belgique, l’évolution des règles de TVA en faveur des pompes à chaleur et des forages géothermiques représente un signal fort en faveur des solutions décarbonées.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4211f2f96d39",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0be356a8e615",
+     "text": "Rénovation de bâtiments de plus de 10 ans : TVA à 6 %",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2b2abe58b42f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "58dfccb98f33",
+     "text": "Dans le cadre de la rénovation de bâtiments résidentiels de plus de 10 ans, la TVA sur les travaux est de 6 %. Cela vaut pour :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b78853611814",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f05a11e3b497",
+     "text": "l’installation de pompes à chaleur ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d943415126f0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "261b303e2019",
+     "text": "les travaux liés aux forages géothermiques ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "143d1466a17a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "279cf3897c1c",
+     "text": "les autres travaux de rénovation répondant aux critères légaux.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "31c579f2898c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7492154ca1f5",
+     "text": "Concrètement, pour un projet de géothermie résidentielle dans un bâtiment de plus de 10 ans, la TVA est donc de 6 % sur l’ensemble de l’installation, forages compris.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "1ef2d1a9d007",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7be5745ea3b9",
+     "text": "À partir de 2026 : TVA à 6 % aussi dans le neuf",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c230b8a32070",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70a698482cc4",
+     "text": "À partir de 2026, une évolution importante est prévue pour le résidentiel neuf ou de moins de 10 ans : la TVA sur l’installation de pompes à chaleur passera de 21 % à 6 %. L’objectif du gouvernement est clair : encourager fortement l’installation de systèmes de chauffage alternatifs aux énergies fossiles.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "cd3fe28fae49",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "466f36ff220d",
+     "text": "Les forages géothermiques sont soumis au même régime et passent eux aussi de 21 % à 6 % pour ces projets. Cela représente un gain substantiel pour les clients et un message fort en faveur de la décarbonation du chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "5a41363520f3",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed938bf21223",
+     "text": "Conditions liées à l’occupation résidentielle",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "146993d8333a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa8fee0863b5",
+     "text": "Pour bénéficier des régimes de TVA à 6 % en résidentiel, une condition importante doit être remplie : au moins 50 % de la surface du bâtiment doit être dédiée à une occupation résidentielle (logement). Cette règle s’applique aussi bien en rénovation qu’en neuf pour les dispositifs prévus.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "0c39158966f0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91b73230822d",
+     "text": "Dans le cas des rénovations de bâtiments de plus de 10 ans, la TVA est dans tous les cas de 6 % pour les travaux éligibles, y compris les installations géothermiques, dès lors que les critères résidentiels sont remplis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "b03656da030f",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse-contreplongee.webp",
+   "alt": "une foreuse géothermique de chez well done drill en Belgique"
+  },
+  {
+   "_type": "block",
+   "_key": "f3f9744c747d",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cef7f2adfb78",
+     "text": "Un levier économique pour la géothermie",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "930b9c839b6e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a2096822f26",
+     "text": "La combinaison de ces éléments — TVA réduite en rénovation et extension de la TVA à 6 % aux pompes à chaleur et forages géothermiques dans le neuf à partir de 2026 — améliore sensiblement l’équation économique de la géothermie :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9dc3a943c100",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5de38f73d533",
+     "text": "l’investissement initial est allégé par rapport à une situation à 21 % ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d2b3d14a2010",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b23046d80bc",
+     "text": "le coût d’une installation performante devient plus accessible ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "590260a09368",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a53269efcf02",
+     "text": "le temps de retour sur investissement se réduit.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "31eeb7116fc7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb7187bc92c8",
+     "text": "Pour les ménages, les copropriétés et les promoteurs, ces mesures fiscales renforcent l’intérêt de basculer vers des systèmes de chauffage décarbonés, d’autant plus que la géothermie présente des coûts d’exploitation parmi les plus faibles sur la durée.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7e25799cf4b5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7bc60ec3809a",
+     "text": "Les forages géothermiques : même régime, même avantage",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "46ab127c5661",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "405a753661b7",
+     "text": "Un point essentiel est que les forages géothermiques suivent le même régime de TVA que les pompes à chaleur dans ces configurations. Ils ne sont pas considérés comme un poste “à part” fiscalement, mais bien comme une composante intégrée du système de chauffage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "66ea33a54cdf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "088ed886a9ba",
+     "text": "En pratique, cela signifie que :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c5de0e6e8317",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6039dad3595d",
+     "text": "les sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c019a434c8f3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1000b6978a0",
+     "text": "les forages ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4052ce21cd73",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92f18d0f13f1",
+     "text": "les liaisons hydrauliques extérieures liées au champ de sondes ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e17b4d38f0ba",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d62febce7f83",
+     "text": "bénéficient des mêmes taux de TVA réduits, ce qui renforce la compétitivité globale de la solution.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "52daedfde8da",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bc72edf7ce2",
+     "text": "Un levier décisif pour la géothermie résidentielle",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d509e30f971b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb321353c1a2",
+     "text": "Pour les projets résidentiels, ces règles de TVA jouent un rôle décisif. Elles permettent de réduire l’écart de coût initial entre une solution fossile et une solution géothermique, alors que cette dernière est déjà largement plus compétitive sur le long terme en termes de coûts d’exploitation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "7a8ccc735433",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6c0802d77e4",
+     "text": "En combinant :",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "2498dac87701",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb98b04ce58f",
+     "text": "la TVA réduite ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "34440356dff9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "235ebcf2f467",
+     "text": "la faible consommation électrique grâce au COP élevé ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "91bc98c0e61e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7774aec3c537",
+     "text": "la possibilité de coupler la PAC au photovoltaïque ;",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "11f2c0266089",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7201019291f9",
+     "text": "la géothermie devient une solution particulièrement attractive, tant pour les constructions neuves que pour les rénovations lourdes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "d5f5818971b8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d27333302783",
+     "text": "Note importante",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "219f78d25a7b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c11a81d30ab",
+     "text": "Les règles de TVA sont définies par la législation fiscale et peuvent évoluer. Il est important de vérifier, pour chaque projet, les conditions d’éligibilité précises et les textes en vigueur au moment de la commande.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "00df48104047",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f029c95dcec1",
+     "text": "WellDoneDrill travaille en collaboration avec les installateurs et les conseillers spécialisés pour structurer les offres de manière à bénéficier des régimes de TVA adaptés. L’objectif est de permettre aux clients de profiter pleinement des avantages fiscaux liés à la géothermie, tout en sécurisant l’aspect administratif.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "La TVA à 6 % sur les pompes à chaleur et les forages géothermiques : un levier pour la décarbonation",
+ "seoDescription": "La fiscalité joue un rôle clé dans le choix des systèmes de chauffage. En Belgique, l’évolution des règles de TVA en faveur des pompes à chaleur et des…",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "La TVA à 6 % sur les pompes à chaleur et les forages géothermiques : un levier pour la décarbonation"
+}

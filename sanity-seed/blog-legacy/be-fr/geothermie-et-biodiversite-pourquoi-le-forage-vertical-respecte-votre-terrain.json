@@ -1,0 +1,375 @@
+{
+ "_id": "blog-legacy-be-fr-5529",
+ "_type": "blogPost",
+ "locale": "be-fr",
+ "title": "Géothermie et biodiversité : Pourquoi le forage vertical respecte votre terrain ?",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-et-biodiversite-pourquoi-le-forage-vertical-respecte-votre-terrain"
+ },
+ "legacyPath": "/be-fr/geothermie-et-biodiversite-pourquoi-le-forage-vertical-respecte-votre-terrain",
+ "publishedAt": "2026-03-20T14:25:02Z",
+ "excerpt": "L'une des craintes majeures des propriétaires avant de passer à la géothermie est l'impact des travaux sur leur jardin. Si vous avez passé des années à entretenir vos parterres, vos haies et vos arbres, l'idée d'une machine de chantier…",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "2f0a2e35591a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "999b9714ac1c",
+     "text": "L'une des craintes majeures des propriétaires avant de passer à la géothermie est l'impact des travaux sur leur jardin. Si vous avez passé des années à entretenir vos parterres, vos haies et vos arbres, l'idée d'une machine de chantier peut être stressante. Pourtant, chez ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "c04ad90e5b32",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f2ba659d0e88",
+     "text": ", nous affirmons que le forage vertical est la solution de chauffage la plus respectueuse de la biodiversité et de la santé de votre sol. Voici pourquoi.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "80f632bedefe",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9e41978b28b",
+     "text": "1. Forage vertical vs Captage horizontal : Le match écologique",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b12729f65cb9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "120641e52906",
+     "text": "Il existe deux types de géothermie de surface. Le captage horizontal nécessite de décaper toute la surface de votre jardin sur environ 1 mètre de profondeur pour y poser des serpentins de tuyaux.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4b952d5fefd9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c68d53395df0",
+     "text": "Destruction du sol :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7f8d924d8673",
+     "text": " Cette méthode tue la microfaune (vers de terre, micro-organismes) et rend impossible la plantation d'arbres (les racines endommageraient les tuyaux).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b1b38494bded",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e887cd8f71b",
+     "text": "La solution WellDoneDrill :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ca803834809a",
+     "text": " Le forage vertical ne nécessite qu'un trou de 15 à 20 cm de diamètre. L'emprise au sol est minuscule. Une fois le forage terminé, la vie souterraine reprend son cours normal tout autour.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6405bba00e04",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98f063f74580",
+     "text": "2. Préservation du système racinaire de vos arbres",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "38bc2f93eea1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb35b55c802e",
+     "text": "Contrairement aux tranchées de gaz ou aux réseaux de chaleur classiques, le forage vertical peut être réalisé à une distance respectueuse de vos arbres remarquables.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9af7aaf49369",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "339692d7d386",
+     "text": "Verticalité :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "197947f4da16",
+     "text": " Comme nous descendons à 150 mètres, nous n'entrons pas en concurrence avec les racines qui se situent majoritairement dans les 2 à 5 premiers mètres de profondeur.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a9dae931a628",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46dfbcb4500f",
+     "text": "Conseil d'expert :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6840c6440ff7",
+     "text": " Lors de notre visite technique, nous identifions avec vous les zones sensibles de votre jardin pour positionner la foreuse là où l'impact sur le système racinaire sera nul.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3858f77533de",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "554801db73ff",
+     "text": "3. Absence de pollution chimique et sonore",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "160de51f3d44",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74a7dddc8159",
+     "text": "Un jardin est un écosystème vivant. Introduire des nuisances peut perturber la faune locale (oiseaux, insectes pollinisateurs).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "92de0917bc11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b00c9baeb726",
+     "text": "Zéro émission :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8379119c3fc9",
+     "text": " Une fois installée, la géothermie n'émet aucune fumée, aucune odeur et aucun gaz à effet de serre. Votre jardin reste un espace d'air pur.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "005d5b12ea79",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd95b2b60f11",
+     "text": "Le silence est d'or :",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cb0215c4a6da",
+     "text": " L'absence d'unité extérieure (contrairement aux PAC Air/Eau) garantit un silence total. Les oiseaux et la petite faune ne sont pas chassés par le bourdonnement permanent d'un ventilateur.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "65531ea36c4f",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f9d24ce4cea",
+     "text": "4. Le sol : Un isolant naturel et protecteur",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "75d44bd2ebb3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ff4dee2874c",
+     "text": "En injectant notre ciment géothermique haute performance, nous créons une barrière étanche qui protège la structure du sol. Il n'y a aucun risque de fuite thermique qui viendrait \"chauffer\" la terre en surface et perturber la dormance hivernale de vos plantes. Le transfert d'énergie se passe bien trop profondément pour que vos fleurs ou votre gazon n'en ressentent le moindre effet.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "9927f30f76a9",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77a4be662e06",
+     "text": "5. Un chantier \"Low Impact\" avec WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "edcf94c09dde",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0f34ec97da8",
+     "text": "Nous utilisons des plaques de protection pour circuler sur votre gazon et minimiser le compactage du sol. Notre objectif est simple : une semaine après notre départ, la nature doit avoir repris ses droits, et seul un regard de visite discret doit témoigner de la présence d'une technologie révolutionnaire sous vos pieds.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "90d90653887a",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95242e1741d3",
+     "text": "Conclusion",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "6efb347a2b68",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6161a10b5fa4",
+     "text": "Choisir la géothermie verticale, c'est protéger l'écosystème au-dessus du sol en puisant l'énergie bien en dessous. C'est la solution idéale pour les propriétaires qui refusent de choisir entre le confort moderne et la préservation de leur coin de verdure.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Géothermie et biodiversité : Pourquoi le forage vertical respecte votre terrain ?",
+ "seoDescription": "L'une des craintes majeures des propriétaires avant de passer à la géothermie est l'impact des travaux sur leur jardin. Si vous avez passé des années à…",
+ "_mainImageFile": "uploads/2026/01/1.jpg",
+ "_mainImageAlt": "Géothermie et biodiversité : Pourquoi le forage vertical respecte votre terrain ?"
+}
