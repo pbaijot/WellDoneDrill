@@ -560,7 +560,7 @@ function FaqItem({question, answer, defaultOpen}: {question: string; answer: str
   )
 }
 
-function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?: string | null}) {
+function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; imageUrl?: string | null; cover?: boolean}) {
   const [muted, setMuted] = useState(true)
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -576,7 +576,7 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
           ref={videoRef}
           src={videoUrl}
           autoPlay loop muted playsInline
-          className="block w-full h-auto"
+          className={cover ? 'absolute inset-0 w-full h-full object-cover' : 'block w-full h-auto'}
         />
         <button
           onClick={toggleMute}
@@ -610,34 +610,29 @@ function ContextMedia({videoUrl, imageUrl}: {videoUrl?: string | null; imageUrl?
 
 /* Ground cross-section, played once when it scrolls into view: the probe goes
    down to 150 m, the ground hands back 15 °C, the heat pump inside the house
-   lifts it, and the house warms up. */
-const GROUND_Y = 236
-const PROBE_BOTTOM = 556
-const PROBE_X = 252
-const PAC_BOTTOM = 222
+   lifts it, and the house warms up. Drawn as a quiet technical section. */
+const GROUND_Y = 200
+const PROBE_BOTTOM = 520
+const PROBE_X = 236
+const PAC_BOTTOM = 188
 
 // Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 house warm
 const PHASE_AT = [0, 400, 3000, 4400, 5600]
 
 const C = {
-  wall: '#F6EBCF', wallShade: '#E9D9B2', roof: '#B98A6A', roofEdge: '#6B4F3A',
-  glass: '#7D93A3', frame: '#FFFFFF', door: '#A8704F', tree: '#B7C95A', bush: '#A3B548',
-  warm: '#FFD94F', ink: '#1A1A1A',
+  ink: '#1A1A1A', line: 'rgba(26,26,26,0.55)', faint: 'rgba(26,26,26,0.14)',
+  house: '#FFFFFF', warm: '#FFF1BF', probe: '#E8B90F', grass: '#42754F',
 }
 
-function HouseWindow({x, y, w = 30, h = 28, warm}: {x: number; y: number; w?: number; h?: number; warm: boolean}) {
+function HouseWindow({x, y, w = 22, h = 22, warm}: {x: number; y: number; w?: number; h?: number; warm: boolean}) {
   return (
-    <g>
-      <motion.rect
-        x={x} y={y} width={w} height={h}
-        stroke={C.frame} strokeWidth="3"
-        initial={false}
-        animate={{fill: warm ? C.warm : C.glass}}
-        transition={{duration: 0.9}}
-      />
-      <line x1={x + w / 2} x2={x + w / 2} y1={y} y2={y + h} stroke={C.frame} strokeWidth="2" />
-      <line x1={x} x2={x + w} y1={y + h / 2} y2={y + h / 2} stroke={C.frame} strokeWidth="2" />
-    </g>
+    <motion.rect
+      x={x} y={y} width={w} height={h}
+      stroke={C.line} strokeWidth="1.25"
+      initial={false}
+      animate={{fill: warm ? C.warm : C.house}}
+      transition={{duration: 1.2}}
+    />
   )
 }
 
@@ -701,129 +696,95 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
           <ContactCta href={contactHref} label={v.ctaSoil} className="mt-8" />
         </div>
 
-        <div className="relative">
-          <svg viewBox="0 0 400 590" className="w-full max-h-[80svh]" role="img" aria-label={v.principleTitle}>
+        <div className="relative max-w-md w-full mx-auto">
+          {/* Readout */}
+          <div className="flex justify-end gap-8 mb-4 text-right">
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-black/40">{v.depthLabel}</div>
+              <motion.div className="text-lg font-bold tabular-nums">{depthText}</motion.div>
+            </div>
+            <motion.div initial={{opacity: 0}} animate={{opacity: phase >= 2 ? 1 : 0}} transition={{duration: 0.6}}>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-black/40">{v.tempLabel}</div>
+              <div className="text-lg font-bold tabular-nums">15 °C</div>
+            </motion.div>
+          </div>
+
+          <svg viewBox="0 0 400 540" className="w-full max-h-[64svh]" role="img" aria-label={v.principleTitle}>
             <defs>
               <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stopColor="#B0A18F" />
-                <stop offset="0.45" stopColor="#8E7B66" />
-                <stop offset="1" stopColor="#5E4E3F" />
+                <stop offset="0" stopColor="#D9D2C4" />
+                <stop offset="1" stopColor="#BFB4A2" />
               </linearGradient>
             </defs>
 
             {/* Ground and strata */}
-            <rect x="0" y={GROUND_Y} width="400" height={590 - GROUND_Y} fill="url(#wdd-ground)" />
-            <path d={`M0 ${GROUND_Y} H400`} stroke="#42754F" strokeWidth="6" />
-            <path d="M0 350 C 90 338, 180 362, 270 348 S 400 352, 400 352" stroke="#1A1A1A" strokeOpacity="0.12" fill="none" />
-            <path d="M0 460 C 110 472, 200 446, 300 462 S 400 456, 400 456" stroke="#1A1A1A" strokeOpacity="0.12" fill="none" />
+            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} fill="url(#wdd-ground)" />
+            <line x1="0" x2="400" y1={GROUND_Y} y2={GROUND_Y} stroke={C.grass} strokeOpacity="0.7" strokeWidth="2" />
+            <path d="M0 312 C 100 304, 200 322, 300 310 S 400 314, 400 314" stroke={C.faint} fill="none" />
+            <path d="M0 420 C 110 428, 210 410, 310 422 S 400 418, 400 418" stroke={C.faint} fill="none" />
 
             {/* Depth scale */}
             {[0, 50, 100, 150].map(d => {
               const y = GROUND_Y + (d / 150) * (PROBE_BOTTOM - GROUND_Y)
               return (
                 <g key={d}>
-                  <line x1="16" x2="30" y1={y} y2={y} stroke="#FFFFFF" strokeOpacity="0.7" />
-                  <text x="36" y={d === 0 ? y + 16 : y + 4} fontSize="12" fill="#FFFFFF" fillOpacity="0.85">{d} m</text>
+                  <line x1="0" x2="12" y1={y} y2={y} stroke={C.line} />
+                  <text x="18" y={d === 0 ? y + 14 : y + 4} fontSize="11" fill={C.ink} fillOpacity="0.5">{d} m</text>
                 </g>
               )
             })}
 
-            {/* Heat rising along the probe, looping once the ground is reached */}
-            {phase >= 2 && (
-              <g stroke={C.warm} strokeWidth="2.5" fill="none" strokeLinecap="round">
-                {[500, 430, 360, 290].map((y, i) => (
-                  <motion.g
-                    key={y}
-                    initial={{opacity: 0, y: 0}}
-                    animate={reduce ? {opacity: 1} : {opacity: [0, 1, 0], y: -40}}
-                    transition={reduce ? {duration: 0} : {duration: 2.2, delay: i * 0.35, repeat: Infinity, ease: 'easeOut'}}
-                  >
-                    <path d={`M${PROBE_X - 34} ${y + 8} L${PROBE_X - 26} ${y} L${PROBE_X - 18} ${y + 8}`} />
-                    <path d={`M${PROBE_X + 18} ${y + 8} L${PROBE_X + 26} ${y} L${PROBE_X + 34} ${y + 8}`} />
-                  </motion.g>
-                ))}
-              </g>
-            )}
+            {/* Heat rising along the probe */}
+            {phase >= 2 && [0, 1, 2].map(i => (
+              <motion.circle
+                key={i}
+                cx={PROBE_X}
+                r="2.5"
+                fill={C.probe}
+                initial={{cy: PROBE_BOTTOM, opacity: 0}}
+                animate={reduce ? {cy: 360, opacity: 1} : {cy: [PROBE_BOTTOM, GROUND_Y], opacity: [0, 1, 1, 0]}}
+                transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
+              />
+            ))}
 
-            {/* Closed probe loop, drilled from the ground down */}
-            <g stroke={C.warm} strokeWidth="4" fill="none">
-              <motion.path d={`M${PROBE_X - 4} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
-              <motion.path d={`M${PROBE_X + 4} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
+            {/* Closed probe loop */}
+            <g stroke={C.probe} strokeWidth="2" fill="none">
+              <motion.path d={`M${PROBE_X - 5} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
+              <motion.path d={`M${PROBE_X + 5} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
               <motion.path
-                d={`M${PROBE_X - 4} ${PROBE_BOTTOM} Q${PROBE_X} ${PROBE_BOTTOM + 10} ${PROBE_X + 4} ${PROBE_BOTTOM}`}
+                d={`M${PROBE_X - 5} ${PROBE_BOTTOM} Q${PROBE_X} ${PROBE_BOTTOM + 10} ${PROBE_X + 5} ${PROBE_BOTTOM}`}
                 initial={{opacity: 0}}
                 animate={{opacity: phase >= 2 ? 1 : 0}}
               />
             </g>
 
-            {/* House (flat illustration), heat pump in the technical room */}
-            <g>
-              {/* tree */}
-              <rect x="70" y="182" width="7" height="54" fill={C.roofEdge} />
-              <ellipse cx="73" cy="168" rx="26" ry="30" fill={C.tree} />
-              <ellipse cx="60" cy="186" rx="16" ry="13" fill={C.tree} />
-
-              {/* back roof + chimney */}
-              <polygon points="122,128 140,92 260,92 278,128" fill={C.roof} />
-              <rect x="246" y="58" width="16" height="48" fill={C.wall} />
-              <rect x="242" y="53" width="24" height="7" fill={C.roofEdge} />
-
-              {/* walls + gable */}
-              <rect x="116" y="122" width="168" height={GROUND_Y - 122} fill={C.wall} />
-              <polygon points="116,128 200,58 284,128" fill={C.wall} />
-              <polygon points="200,70 270,128 248,128 200,88" fill={C.wallShade} />
-              <polyline points="102,136 200,52 298,136" fill="none" stroke={C.roofEdge} strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" />
-
-              {/* windows */}
-              <HouseWindow x={191} y={92} w={18} h={14} warm={phase >= 4} />
-              <HouseWindow x={132} y={140} warm={phase >= 4} />
-              <HouseWindow x={238} y={140} warm={phase >= 4} />
-              <HouseWindow x={132} y={190} warm={phase >= 4} />
-
-              {/* porch + door */}
-              <polygon points="174,184 200,164 226,184" fill={C.wall} stroke={C.roofEdge} strokeWidth="4" strokeLinejoin="round" />
-              <rect x="178" y="184" width="44" height="8" fill={C.wallShade} />
-              <rect x="188" y="192" width="24" height={GROUND_Y - 192} fill={C.door} />
-              <circle cx="207" cy="216" r="1.6" fill={C.wall} />
-              <rect x="182" y={GROUND_Y - 4} width="36" height="4" fill="#FFFFFF" />
-
-              {/* technical room cut-away with the heat pump */}
-              <rect x="230" y="186" width="44" height={GROUND_Y - 186} fill="#E2D3AE" stroke={C.roofEdge} strokeWidth="1.5" strokeDasharray="3 3" />
+            {/* House, line drawing, heat pump in the technical room */}
+            <g stroke={C.line} strokeWidth="1.25" strokeLinejoin="round">
+              <rect x="252" y="62" width="14" height="36" fill={C.house} />
+              <path d={`M128 ${GROUND_Y} V112 L200 58 L272 112 V${GROUND_Y} Z`} fill={C.house} />
+              <path d="M116 120 L200 52 L284 120" fill="none" stroke={C.ink} strokeWidth="1.75" strokeLinecap="round" />
+              <HouseWindow x={189} y={84} w={22} h={18} warm={phase >= 4} />
+              <HouseWindow x={146} y={124} warm={phase >= 4} />
+              <HouseWindow x={232} y={124} warm={phase >= 4} />
+              <HouseWindow x={146} y={160} warm={phase >= 4} />
+              <rect x="188" y="156" width="22" height={GROUND_Y - 156} fill={C.house} />
+              <rect x="220" y="154" width="38" height={GROUND_Y - 154} fill="none" strokeDasharray="2 3" />
               <motion.rect
-                x="236" y="192" width="32" height="30" rx="3"
-                stroke={C.ink} strokeWidth="2"
+                x={PROBE_X - 12} y="164" width="24" height="24" rx="2"
+                stroke={C.ink}
                 initial={false}
-                animate={{fill: phase >= 3 ? C.warm : '#FFFFFF'}}
+                animate={{fill: phase >= 3 ? '#FFD94F' : C.house}}
                 transition={{duration: 0.8}}
               />
-              <text x={PROBE_X} y="211" fontSize="9" fontWeight="700" textAnchor="middle" fill={C.ink}>PAC</text>
-
-              {/* bush */}
-              <ellipse cx="300" cy="226" rx="16" ry="12" fill={C.bush} />
-              <ellipse cx="318" cy="229" rx="11" ry="9" fill={C.tree} />
             </g>
+            <text x={PROBE_X} y="179" fontSize="8" fontWeight="700" textAnchor="middle" fill={C.ink}>PAC</text>
 
             {/* Probe rises through the slab into the heat pump */}
-            <g stroke={C.warm} strokeWidth="4" fill="none">
-              <motion.path d={`M${PROBE_X - 4} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
-              <motion.path d={`M${PROBE_X + 4} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
+            <g stroke={C.probe} strokeWidth="2" fill="none">
+              <motion.path d={`M${PROBE_X - 5} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
+              <motion.path d={`M${PROBE_X + 5} ${GROUND_Y} V${PAC_BOTTOM}`} {...draw(phase >= 3, 0.6)} />
             </g>
           </svg>
-
-          {/* Live readout */}
-          <div className="absolute bottom-2 right-0 bg-wdd-black text-white rounded-sm px-3 py-2 lg:px-4 lg:py-3 text-right min-w-[7rem] lg:min-w-[9rem]">
-            <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">{v.depthLabel}</div>
-            <motion.div className="text-lg lg:text-2xl font-bold tabular-nums text-wdd-yellow">{depthText}</motion.div>
-            <motion.div
-              initial={{opacity: 0}}
-              animate={{opacity: phase >= 2 ? 1 : 0}}
-              transition={{duration: 0.6}}
-              className="mt-2 pt-2 border-t border-white/15"
-            >
-              <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">{v.tempLabel}</div>
-              <div className="text-base lg:text-xl font-bold tabular-nums">15 °C</div>
-            </motion.div>
-          </div>
         </div>
 
       </div>
@@ -1053,7 +1014,7 @@ export default function ParticuliersPage({
           01. LE PROBLÈME — accroche et chiffres clés à gauche, vidéo à droite
       ══════════════════════════════════════ */}
       <section className="bg-white py-24 md:py-32 px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16">
           <div>
             <Reveal>
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
@@ -1082,21 +1043,18 @@ export default function ParticuliersPage({
                 )
               })}
             </div>
+            <Reveal delay={0.2}>
+              <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
+            </Reveal>
           </div>
 
-          <Reveal delay={0.1}>
-            <figure>
-              <div className={`relative overflow-hidden rounded-sm bg-wdd-clay ${videoUrl ? '' : 'aspect-video'}`}>
-                <ContextMedia
-                  videoUrl={videoUrl}
-                  imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
-                />
-              </div>
-              {videoUrl && (
-                <figcaption className="mt-3 text-sm font-light text-black/50">{v.videoCaption}</figcaption>
-              )}
-            </figure>
-            <ContactCta href={contactHref} label={v.ctaStudy} className="mt-8" />
+          {/* Same height as the text column: the video is cropped in width only */}
+          <Reveal delay={0.1} className="relative overflow-hidden rounded-sm bg-wdd-clay aspect-video lg:aspect-auto">
+            <ContextMedia
+              videoUrl={videoUrl}
+              imageUrl={page.contextImage ? urlFor(page.contextImage)?.url() ?? null : null}
+              cover
+            />
           </Reveal>
         </div>
       </section>
