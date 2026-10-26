@@ -5,13 +5,16 @@
 // Reads sanity-seed/blog-legacy/<locale>/*.json (generated from the WordPress
 // SQL backup), uploads the featured + inline images from <wp-content dir>
 // (the folder that holds uploads/), then createOrReplace each blogPost.
-// Needs SANITY_API_TOKEN (Editor) in .env.local. Safe to re-run: document
-// ids are stable and Sanity de-duplicates identical image uploads.
+// Auth: SANITY_API_TOKEN (Editor) in .env.local, or run through the Sanity
+// CLI with your own login instead of a token:
+//   npx sanity exec scripts/import-legacy-blog.mjs --with-user-token -- <wp-content dir>
+// Safe to re-run: document ids are stable and Sanity de-duplicates identical
+// image uploads.
 
 import {readFileSync, readdirSync, existsSync, createReadStream} from 'node:fs'
 import {join, basename, dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
-import {writeClient, env} from './_sanityClient.mjs'
+import {writeClient as tokenClient, env} from './_sanityClient.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const args = process.argv.slice(2)
@@ -23,9 +26,17 @@ if (!wpContent || !existsSync(join(wpContent, 'uploads'))) {
   console.error('Usage: node scripts/import-legacy-blog.mjs <wp-content dir> [--dry-run] [--locale be-fr]')
   process.exit(1)
 }
-if (!dryRun && !env.SANITY_API_TOKEN) {
-  console.error('SANITY_API_TOKEN (Editor) missing from .env.local')
-  process.exit(1)
+let writeClient = tokenClient
+if (!env.SANITY_API_TOKEN) {
+  try {
+    const {getCliClient} = await import('sanity/cli')
+    writeClient = getCliClient({apiVersion: '2026-04-22'})
+  } catch {
+    if (!dryRun) {
+      console.error('No SANITY_API_TOKEN in .env.local — run via `npx sanity exec … --with-user-token`')
+      process.exit(1)
+    }
+  }
 }
 
 const seedDir = join(__dirname, '..', 'sanity-seed', 'blog-legacy')
