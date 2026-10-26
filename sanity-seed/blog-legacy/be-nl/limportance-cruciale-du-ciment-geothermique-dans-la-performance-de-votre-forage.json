@@ -1,0 +1,346 @@
+{
+ "_id": "blog-legacy-be-nl-5383",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Het belang van geothermisch cement voor de prestaties van uw boring",
+ "slug": {
+  "_type": "slug",
+  "current": "belang-van-geothermisch-cement-voor-uw-boring"
+ },
+ "publishedAt": "2026-03-20T10:04:12Z",
+ "excerpt": "Een geothermische boring is meer dan een gat in de grond met sondes erin. De meest technische en minst bekende stap is het afdichten. Bij WellDoneDrill hechten we groot belang aan de keuze en de injectie van geothermisch cement.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "d0e1f3b4a82d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8f85f65098c",
+     "text": "Een geothermische boring is meer dan een gat in de grond graven en er sondes in steken. De meest technische, en voor het grote publiek vaak minst bekende stap is het ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8fc1cd33e387",
+     "text": "afdichten",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5725b60e5ea2",
+     "text": ". Bij WellDoneDrill hechten we het grootste belang aan de keuze en de injectie van ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f18131679b63",
+     "text": "geothermisch cement",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "de1eecb514e5",
+     "text": " (ook wel hoogwaardige grout genoemd). Hierom is dit materiaal het echte \"zenuwstelsel\" van uw installatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1004f1b488d0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a35cd3bf02bb",
+     "text": "1. Een optimale warmtegeleiding garanderen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f886dea72518",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb543b2f1ff5",
+     "text": "Verticale geothermie haalt de warmte uit de bodem en draagt ze over aan de warmtedragende vloeistof in de HDPE-sondes (hogedichtheidspolyethyleen). Tussen de boorgatwand en de sonde zelf zit echter een holte. Omdat lucht een uitstekende isolator is, daalt het rendement drastisch als die holte niet goed wordt opgevuld.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6fd981d71d4a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0da3b94f9c75",
+     "text": "Het geothermische cement dat wij gebruiken heeft een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4a6cb0fa3b9d",
+     "text": "hoge warmtegeleidbaarheid",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "07edc0edfd55",
+     "text": " (uitgedrukt in W/m·K). Dankzij zijn specifieke samenstelling ontstaat een doorlopende thermische brug tussen het gesteente en de sonde. Zonder kwaliteitscement moet uw warmtepomp harder werken om dezelfde hoeveelheid warmte te onttrekken, wat uw elektriciteitsfactuur verhoogt en de levensduur van de machine verkort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f4bd0a895fa2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bde5c4699539",
+     "text": "2. Onmisbare bescherming van het grondwater",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3514f58434d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f6bf655d23d",
+     "text": "Boren tot 100 of 150 meter diepte betekent verschillende geologische lagen doorkruisen, waarvan sommige water bevatten (watervoerende lagen). In België is de milieuregelgeving streng: het is verboden twee afzonderlijke grondwaterlagen met elkaar in verbinding te brengen of vervuild oppervlaktewater in de diepte te laten doordringen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "08e235b02ed1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e7e75e39e9b",
+     "text": "Het cement vormt hier een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "1321738340e0",
+     "text": "waterdichte barrière",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a4640eb15ab5",
+     "text": ". Door toevoeging van bentoniet (een natuurlijke zwellende klei) wordt het mengsel ondoorlatend. Het dicht de boring over de volledige hoogte hermetisch af, zodat uw installatie het ondergrondse ecosysteem de komende decennia respecteert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ed04aafc88d0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6381d58840e",
+     "text": "3. Mechanische bescherming en levensduur van de sondes",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c2f59fea3ae0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "11a7b28ed781",
+     "text": "De bodem is geen inerte structuur: hij ondergaat drukken, vochtschommelingen en soms lichte bewegingen. Geothermisch cement beschermt de sondes fysiek:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9d13a70bf77a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd375787ae74",
+     "text": "Tegen indrukking:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2d1e52fb7082",
+     "text": " Het verdeelt de zijdelingse gronddruk.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ff4787398b1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "305b48c1e1f4",
+     "text": "Tegen corrosie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f85015115156",
+     "text": " Het beschermt de buizen tegen agressieve chemische stoffen die van nature in sommige grondwaterlagen voorkomen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9916dacbbe1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "279685396887",
+     "text": "Stabiliteit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f2b98f19d190",
+     "text": " Het houdt de sondes perfect op hun plaats en voorkomt wrijving die op termijn een lek kan veroorzaken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29b2eaf87869",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e50b58cae0b0",
+     "text": "4. De injectiemethode: van onder naar boven",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6042f7af2200",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b408d340d35a",
+     "text": "De kwaliteit van het materiaal is niet alles, ook de injectiemethode is cruciaal. Bij WellDoneDrill injecteren we via een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "52da3246beb2",
+     "text": "verloren injectiebuis",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "05fb2c936d1a",
+     "text": " of dompelbuis. We injecteren het cement van de bodem van het boorgat naar het oppervlak. Zo worden lucht en water naar boven verdreven en is de opvulling volledig, zonder luchtbellen of holtes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d880dc235ff",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a946b64eedff",
+     "text": "Conclusie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "888f9c9809c2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25aad79a691f",
+     "text": "Investeren in een diepe boring en een hoogwaardige warmtepomp heeft weinig zin als de thermische verbinding tussen beide verwaarloosd wordt. De keuze voor een gecertificeerd geothermisch cement is de garantie op een stabiel rendement gedurende 50 jaar. Het is het kenmerk van degelijk werk en van een installatie die zowel uw portemonnee als het milieu respecteert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Het belang van geothermisch cement | WellDoneDrill",
+ "seoDescription": "Waarom geothermisch cement (grout) zo belangrijk is: warmtegeleiding, bescherming van het grondwater, levensduur van de sondes en injectie van onder naar boven.",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige.jpg",
+ "_mainImageAlt": "Geothermisch cement bij een boring"
+}

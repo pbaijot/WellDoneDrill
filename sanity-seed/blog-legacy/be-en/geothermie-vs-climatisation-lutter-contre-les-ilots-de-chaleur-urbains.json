@@ -1,0 +1,404 @@
+{
+ "_id": "blog-legacy-be-en-5510",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal vs air conditioning: fighting urban heat islands",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-vs-air-conditioning-urban-heat-islands"
+ },
+ "publishedAt": "2026-03-20T13:52:58Z",
+ "excerpt": "In summer, Belgian city centres turn into ovens. This is the urban heat island effect: concrete and asphalt store heat during the day and release it at night, stopping homes from cooling down.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "7c6a470d02a8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d5ed9622e8f",
+     "text": "In summer, Belgian city centres become real ovens. This is the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "fc1ab78a6451",
+     "text": "urban heat island",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f544a73c3062",
+     "text": " effect: concrete and asphalt store heat during the day and release it at night, preventing homes from cooling down. Conventional air conditioning seems the easy answer, but it makes the problem worse. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4c4bd604911e",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e5d4cac5a1de",
+     "text": ", we offer an ecological, neighbour-friendly alternative: geocooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b6aed5ed60f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f7f4688a0069",
+     "text": "1. The vicious circle of conventional air conditioning",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a4f94bb2a29c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03e0ef9e7a27",
+     "text": "Traditional air conditioning (or an air-to-air heat pump) works on a simple principle: it extracts heat from inside your home and releases it outside.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "44a57dfc93af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72b9ecad5f17",
+     "text": "Overheated streets:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "118176eb0979",
+     "text": " As air-conditioning units multiply on façades, the street temperature rises by several degrees. Your neighbour then has to switch on their own unit, creating a vicious spiral.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7f9025351e08",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7633271f1f1",
+     "text": "Noise pollution:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e8207d4ec133",
+     "text": " Outdoor fans hum day and night, preventing residents from opening their windows to enjoy the cool night air.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "615602cb0a1a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f531bee68b4e",
+     "text": "2. Geocooling: invisible cooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6676d62c8d14",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8a3492244ae4",
+     "text": "Vertical geothermal changes everything. Instead of releasing heat into the surrounding air, we send it back where it came from: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "25fded55d352",
+     "text": "into the ground",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7f57d41b792e",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5b401aae32d5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0b8064dbe0c",
+     "text": "Underground heat transfer:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "82063b5ed46b",
+     "text": " In summer, the ground at 150 metres stays at about 12 °C. The WellDoneDrill system captures heat from your home and injects it into the earth through the geothermal probes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec4af715253d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c6593299509",
+     "text": "Complete silence:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "71dfb4ed76f7",
+     "text": " No fan runs outside. Your façades stay clean, your balconies quiet, and you respect the peace of your neighbourhood.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d1cdf8abb915",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbe6a86a9b85",
+     "text": "3. Unbeatable energy efficiency",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0719bbfc8107",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c79dd1a237e",
+     "text": "Air conditioning is one of the biggest electricity costs in summer. The compressor has to work very hard to push heat into outdoor air that is already scorching.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c4649587fe98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0874317ae41f",
+     "text": "Passive cooling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9d60c2815801",
+     "text": " Geocooling is called \"passive\". Your heat pump's compressor stays off. Only a small circulation pump (using about as much as an LED bulb) moves the fluid between the cool ground and your underfloor heating.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2ecfca43a45c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb2ff57840f4",
+     "text": "The result:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9cecbe9e21b1",
+     "text": " You cool your home for one twentieth of the cost of a conventional air conditioner.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "80e280ad1a0e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9164bca3572d",
+     "text": "4. Recharging the ground for winter",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a367db6b3349",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ce844f61813",
+     "text": "One of the most fascinating aspects of this technology is the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ab458cd40ca1",
+     "text": "thermal recharge of the ground",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5164cf96eb2a",
+     "text": ". By injecting your home's heat into the borehole in summer, you slightly warm the rock around your probes. This creates a reservoir of heat that comes in handy in autumn: your heat pump starts the heating season with \"warmer\" ground, which boosts its efficiency (COP) during the first months of winter. It is a circular energy economy.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e8b7a94de04",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac6a4ed9df98",
+     "text": "5. A responsible choice for tomorrow's cities",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee9677b9d0cf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "195caecdf980",
+     "text": "In Brussels and Wallonia's major cities, authorities are increasingly attentive to the environmental impact of buildings. Geothermal is actively encouraged because it does not contribute to heating up the streets. Choosing WellDoneDrill for your urban project means opting for premium comfort while being an exemplary neighbour.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f32f0b4aa609",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e187d70738ca",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1718fc73f27",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4844165b14d3",
+     "text": "Conventional air conditioning is a solution of the past: costly and selfish. Geocooling through vertical drilling is the modern response to urban climate challenges. It provides healthy, silent and free cooling while protecting your neighbourhood's ecosystem.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal vs air conditioning: urban heat islands | WellDoneDrill",
+ "seoDescription": "Why geocooling beats conventional air conditioning in the city: no heat dumped in the street, no noise, 20 times cheaper and a ground recharged for winter.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "Geothermal against urban heat islands"
+}

@@ -1,0 +1,416 @@
+{
+ "_id": "blog-legacy-lu-de-4378",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Geocooling: kostenlose Kühlung dank Geothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "geocooling-kostenlose-kuehlung-dank-geothermie"
+ },
+ "publishedAt": "2025-12-02T10:49:01Z",
+ "excerpt": "Geocooling oder Freecooling kühlt ein Gebäude direkt mit der Kühle des Bodens, ohne den Verdichter der Wärmepumpe laufen zu lassen. Das Ergebnis: hoher Sommerkomfort, minimaler Stromverbrauch und eine völlig geräuschlose Lösung.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "71ae82aaf893",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd4e4268fca1",
+     "text": "Geocooling oder Freecooling kühlt ein Gebäude direkt mit der Kühle des Bodens, ohne den Verdichter der Wärmepumpe laufen zu lassen. Das Ergebnis: hoher Sommerkomfort, minimaler Stromverbrauch und eine völlig geräuschlose Lösung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "94e17dbab791",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "127c958c158e",
+     "text": "Wie funktioniert Geocooling?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ac1ad4574821",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4cd2c8cbd67e",
+     "text": "Bei einer Erdwärmeanlage mit vertikalen Sonden bleibt der Boden in einigen Dutzend Metern Tiefe auf einer nahezu konstanten Temperatur, oft um 10 bis 14 °C. Diese Temperatur liegt unter der, die man im Sommer im Gebäude halten möchte.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1abb9e566e4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "50e10fcdf041",
+     "text": "Das Prinzip des Geocoolings ist einfach:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d3e8f7062712",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e928998d35b",
+     "text": "die Wärmeträgerflüssigkeit zirkuliert",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "26ec1f804249",
+     "text": " durch die Sonden, um die natürliche Kühle des Bodens aufzunehmen,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a2ce379d4702",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76a5d4457d32",
+     "text": "diese Kühle",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c283eb06264a",
+     "text": " wird an einen Pufferspeicher oder direkt an das Kühlnetz (Fußboden, Decken, Gebläsekonvektoren) übertragen,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29fe2ed2f66c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e8eb682c0383",
+     "text": "der Verdichter der Wärmepumpe",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d72fb9926473",
+     "text": " ist aus oder läuft nur sehr wenig: Es arbeiten vor allem Umwälzpumpen, die wenig Energie verbrauchen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "387bcf3d6d96",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3d8842fe6fa",
+     "text": "Das Gebäude wird so sanft gekühlt, ohne kalte Luft zu blasen, einfach indem die Innentemperatur leicht gesenkt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5d9a49480e67",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8cf5dd66daa",
+     "text": "Die großen Vorteile des Geocoolings",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e05cd24e660d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3384c9815a08",
+     "text": "Gegenüber einer klassischen Klimaanlage hat das Geocooling mehrere entscheidende Vorteile.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de8e6add8916",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "69265f98f44e",
+     "text": "Außergewöhnlicher Sommerkomfort",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "40a164957453",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3fe1c7dd60ba",
+     "text": "Geocooling ist keine aggressive Klimatisierung: Es senkt die Temperatur im Hochsommer nicht auf 20 °C, verhindert aber Überhitzung, indem es das Gebäude im Komfortbereich hält. Das Empfinden ist sehr angenehm, ohne Zugluft, ohne Lärm und ohne punktuelles Kältegefühl.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4ee8755653f4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa35fb74d575",
+     "text": "Ein äußerst geringer Energieverbrauch",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3593b40bd9f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d9cef6746ef",
+     "text": "Da der Verdichter der Wärmepumpe kaum oder gar nicht beansprucht wird, beschränkt sich der Stromverbrauch im Wesentlichen auf die Umwälzpumpen. Die Betriebskosten sind daher sehr niedrig und oft nicht mit denen einer herkömmlichen Klimaanlage vergleichbar.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "85df4162c225",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e0706c5a541",
+     "text": "Eine geräuschlose Anlage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "99ef9a362987",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1072f3bb4b06",
+     "text": "Geocooling benötigt kein Außengerät und kein lautes Kondensatorgerät. Alles spielt sich im Technikraum und im Boden ab. Für Wohngebäude, Schulen, Büros oder Kitas ist das ein großer Vorteil.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ace944884b3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f8bc831078e",
+     "text": "Keine mechanische Überlastung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c8cf53b9d389",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45eabd04ef16",
+     "text": "Klassische Klimasysteme arbeiten mit Verdichtern, die wiederholten Zyklen und teils extremen Temperaturen ausgesetzt sind. Beim Geocooling sind die mechanischen Belastungen viel geringer, was den Verschleiß der Geräte begrenzt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1405294c2306",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1787df71ee21",
+     "text": "Eine CO₂-arme Lösung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "270cd55f5ac9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "669b6275846e",
+     "text": "Geocooling nutzt eine zu 100 % erneuerbare Kältequelle: den Boden. In Verbindung mit erneuerbarem Strom (Photovoltaik, Ökostromverträge usw.) lässt sich ein Gebäude mit einem sehr kleinen CO₂-Fußabdruck kühlen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d5b48884c493",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "33bf5186b16b",
+     "text": "Geeignet für moderne Gebäude",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e6b0546e180",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4ad36f539a2",
+     "text": "Geocooling fügt sich besonders gut in neue oder sanierte Gebäude ein: Mehrfamilienhäuser, Büros, energieeffiziente öffentliche Gebäude usw. Sobald die Wärmeübergabe (Fußböden, Decken, Gebläsekonvektoren) für den Betrieb mit geringer Leistung ausgelegt ist, ist das System sehr effizient.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2487617999bd",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "501bba4cfd4e",
+     "text": "Freecooling vs. klassische Klimaanlage: der Vergleich",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0649082ed3ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "356a54dfb882",
+     "text": "Eine klassische Klimaanlage beruht auf einem vollständigen Kältekreislauf mit Verdichter, Expansionsventil, Verflüssiger und Verdampfer. Sie kann Kälte erzeugen, selbst wenn die Außenluft warm ist, allerdings mit erheblichem Stromverbrauch und komplexerer Technik.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6b9d831b81a9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1220ea1c6cdf",
+     "text": "Das geothermische Freecooling nutzt dagegen die Kühle, die bereits im Boden vorhanden ist. Es „erzeugt“ keine Kälte, es überträgt sie. In den meisten Fällen erreicht man einen zufriedenstellenden Sommerkomfort für einen Bruchteil des Stromverbrauchs einer klassischen Klimaanlage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "476e30916f3e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6961fce0c9d1",
+     "text": "Für Gebäude, die Komfort, Energiesparsamkeit und Diskretion verbinden wollen, ist Geocooling eine besonders attraktive Lösung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geocooling: kostenlose Kühlung mit Geothermie | WellDoneDrill",
+ "seoDescription": "Wie funktioniert Geocooling? Passive Kühlung über Erdwärmesonden: Sommerkomfort, minimaler Verbrauch, kein Lärm und CO₂-arm, im Vergleich zur Klimaanlage.",
+ "_mainImageFile": "uploads/2025/05/Capture-decran-2025-05-16-a-10.26.01.jpg",
+ "_mainImageAlt": "Erdwärmebohrung im Herzen von Novacity mit WellDoneDrill"
+}

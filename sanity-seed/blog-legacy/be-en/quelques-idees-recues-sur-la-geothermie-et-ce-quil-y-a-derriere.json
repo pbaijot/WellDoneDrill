@@ -1,0 +1,508 @@
+{
+ "_id": "blog-legacy-be-en-4411",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Some common misconceptions about geothermal… and the reality behind them",
+ "slug": {
+  "_type": "slug",
+  "current": "common-misconceptions-about-geothermal"
+ },
+ "publishedAt": "2025-12-02T11:03:32Z",
+ "excerpt": "Geothermal is attracting more and more project owners, architects and engineering firms. But almost every discussion brings up the same questions. This article takes those misconceptions one by one and explains what is really true.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "48167c2ed26f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5d07974f572d",
+     "text": "Geothermal is attracting more and more project owners, architects and engineering firms. But in almost every discussion, the same objections come up: \"We'll need back-up heating in winter\", \"We no longer have time to study it\", \"We don't have a plant room\", \"The budget will spiral because of the drilling\". This article takes these misconceptions one by one and explains what is really the case.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d5f83d2beeab",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b91f143fae56",
+     "text": "1. \"We'll need back-up heating in winter; geothermal won't be enough\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c84a9d0e5d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b81d1fb1136c",
+     "text": "For small installations (houses, small apartment buildings, small commercial buildings), a properly sized geothermal installation is almost always enough on its own to cover heating needs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eddc0df46da0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f3226592058",
+     "text": "The key is the pairing of a geothermal heat pump with a storage tank. The heat pump is sized to deliver the required output, and the tank acts as a thermal buffer: it lets the heat pump run at the best moment (good efficiency, electricity availability, solar production) while still covering peak demand on the heating network. In other words, you charge the tank when the heat pump is working in its best conditions and discharge it during demand peaks. In this setup, geothermal remains the main system, not a back-up.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b4fb947bcc4e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51c03afce55e",
+     "text": "For higher-output installations (apartment blocks, large commercial buildings, local heat networks), it is often worth combining geothermal with other heat pump technologies: aquathermal, sewer heat recovery or even air-source. These combinations optimise production according to the season and the needs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c3a6424ae230",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30b650e721f0",
+     "text": "Combining geothermal with gas is often the first idea that comes to mind, but it is almost always the least relevant: you lose part of the decarbonisation benefit, the plant room becomes more complex and you remain dependent on a fossil fuel in the long term.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4501997aa197",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b2a1978f0ea",
+     "text": "2. \"Our schedule is tight; we no longer have time to study geothermal\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "76afb4fbe755",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f77497b0c0a",
+     "text": "People sometimes imagine that geothermal requires months of extra studies and doesn't fit a tight schedule. In reality, for most \"standard\" residential and commercial projects, sizing a borehole field and a geothermal heat pump can be done within timeframes comparable to the other technical packages, as long as the decision to look into this option is made in time.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0f4f7653b1e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3026935bae6d",
+     "text": "To launch the study, a few basic details are all that's needed:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aaa0133d5a26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "438d6fc1b3b7",
+     "text": "building floor area;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "53f1293d2d0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c31d76dd40b",
+     "text": "type of use (housing, offices, school, mixed…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3159fc7f2e04",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c04471ff07a1",
+     "text": "target performance level;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "16f2f6820e2f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c1572e930036",
+     "text": "heating, cooling and domestic hot water needs;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76e1fe23a850",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "876aca370e81",
+     "text": "plot and access constraints.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9647cebdbc5f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2edb65056209",
+     "text": "From there, it is already possible to estimate the output to install, the number of probes, the depths and the possible layout.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "64054e752599",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "efbd5b11ea3c",
+     "text": "WellDoneDrill works precisely within real-world schedules: bringing geothermal into projects that are already well advanced, coordinating with architects and engineering firms, and phasing the drilling works with the other trades.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c9076bd21880",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8d86143cfbb",
+     "text": "On the administrative side, permit timeframes are generally short. In most cases, a simple environmental declaration is required, which, depending on the region, is processed within a few days or weeks. The bottleneck is therefore not an unavoidable technical delay, but rather the moment when people agree to put geothermal seriously on the table.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d80f4d31313f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "731ba126d5ec",
+     "text": "3. \"We have very little space in the plant room; geothermal will never fit\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f96b4beaf84",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b07e5f2bce4",
+     "text": "The image of a bulky geothermal plant room is largely outdated. Modern \"all-in-one\" geothermal heat pumps are no bigger than a large fridge: they combine most of the components (pumps, heat exchangers, controls, etc.) in a single unit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "888c9c20480b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4b81aee1d7b",
+     "text": "On many projects, the geothermal heat pump takes up less space than an old boiler, especially when you take into account:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "55f05ba5cd7d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2441b3b571a",
+     "text": "the removal of the chimney;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fd1e55373863",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b6ce68bc7688",
+     "text": "no fuel storage;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fd447094861",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15d7b3a71b95",
+     "text": "a simpler room (no burner, no tank, less specific ventilation).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "feb89a351e49",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81e70ac987e1",
+     "text": "The storage tank, when needed, can be positioned compactly (vertically, in the plant room, in the basement, etc.). It is therefore more a question of organisation than a technical impossibility.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a8893603a572",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd8c98741b8c",
+     "text": "4. \"The budget could spiral because of geothermal\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "419e85455210",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c198ebcdd629",
+     "text": "The fear of a budget overrun due to drilling is common, especially when people have heard of extra costs on poorly scoped projects. Yet a well-structured quote, with controlled quantities and clear unit prices, makes it possible to secure the budget.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b39a1d42a3f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "320a08596be2",
+     "text": "A few key points to avoid nasty surprises:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6a5ecc193c58",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c5d956080e4",
+     "text": "a probe length consistent with the output to be installed and the ground characteristics;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "733f8bda58ad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "643e0b9f631c",
+     "text": "a clearly defined price per metre or per probe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ca127808d49",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "895061db2738",
+     "text": "a transparent policy on possible drilling contingencies (casing, special ground, etc.);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ee9c027b5f47",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5d9f664eccf",
+     "text": "horizontal connections and manifolds included in the quote.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f1c09d68b472",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f0765f17395",
+     "text": "WellDoneDrill has structured its quotes to avoid hidden costs and limit extras. Probes are sized realistically, prices per borehole are fixed, and anything likely to generate extra costs is identified in advance.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f17d3de5a47",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6dea1206fa39",
+     "text": "Ultimately, when you consider the total cost over the life of the installation (investment + running costs), geothermal generally proves very competitive compared with fossil-fuel solutions or air-to-water systems, while offering a higher level of comfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal misconceptions debunked | WellDoneDrill",
+ "seoDescription": "Need back-up heating in winter? No time to study it? No plant room? A budget that spirals? Four common misconceptions about geothermal, debunked.",
+ "_mainImageFile": "uploads/2025/12/geothermie-idee-recue.webp",
+ "_mainImageAlt": "Common misconceptions about geothermal"
+}

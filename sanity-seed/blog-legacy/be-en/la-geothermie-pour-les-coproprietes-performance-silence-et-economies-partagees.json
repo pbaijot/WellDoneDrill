@@ -1,0 +1,452 @@
+{
+ "_id": "blog-legacy-be-en-5418",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal for apartment buildings: performance, silence and shared savings",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-for-apartment-buildings"
+ },
+ "publishedAt": "2026-03-20T11:12:53Z",
+ "excerpt": "The energy transition of apartment buildings is a major challenge in Belgium. With ever stricter EPC standards and soaring fossil fuel prices, co-owned buildings are looking for sustainable alternatives.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "38f3a0395037",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e40558af0143",
+     "text": "The energy transition of apartment buildings is a major challenge in Belgium. Between ever stricter EPC (PEB) standards and soaring fossil fuel prices, co-owned buildings are looking for sustainable alternatives. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "02a95ad9ef83",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7c7cc9de0787",
+     "text": ", we install vertical drilling systems capable of heating and cooling entire buildings. Here is why geothermal is the most relevant solution for multi-unit housing.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "91bf4e9aa7f3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d92901d1d367",
+     "text": "1. No more noise and visual clutter",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c2ffbc6744c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9fdf5168ca81",
+     "text": "This is the number one problem with air-to-water heat pumps in dense urban areas: noise. Installing dozens of outdoor units on balconies or the roof creates unbearable noise for the neighbours and spoils the building's façade.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b367a32b0c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3eaf2f68441b",
+     "text": "Complete discretion:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "63841846a29f",
+     "text": " With geothermal, everything happens underground and in the basement. There is no outdoor fan, no vibration and nothing visible from the street.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7c69690d0425",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2bca26825427",
+     "text": "Respecting planning rules:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0086649fae9e",
+     "text": " In Brussels or historic town centres in Wallonia, planning regulations often ban air-conditioning units on façades. Geothermal elegantly avoids this constraint.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f3c58af5d0f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "49cb383364a0",
+     "text": "2. Geocooling: summer comfort without higher service charges",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7d12d238e6c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ea8eb06df03",
+     "text": "Global warming makes apartments (especially top-floor ones) stifling in summer. Installing conventional air conditioning in every unit sends shared electricity costs through the roof.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b2499c0a03bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a202430b6b82",
+     "text": "Passive cooling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "eddaeb1ce287",
+     "text": " The network of probes at 150 metres circulates 12 °C water through the apartments' underfloor heating.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6024275ca8ab",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bc146f0a956",
+     "text": "Economies of scale:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ee6389cbb446",
+     "text": " This cooling is almost free (only the circulator uses a little energy). It is a strong selling point for landlords and unrivalled comfort for residents.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a4b7c644928a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10d48e96d770",
+     "text": "3. Sharing the borehole field to cut costs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe1b88a0f9aa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bff0e951d91",
+     "text": "A big advantage of co-ownership is ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "eca4e8217c98",
+     "text": "pooling the investment",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f092b9564014",
+     "text": ". Instead of each owner installing their own system, a shared geothermal borehole field is created.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6bf90b62399",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c051e2f637be",
+     "text": "Optimised space:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a110a26a92d6",
+     "text": " Several 150-metre boreholes (a borehole field) are drilled under the car park or the shared garden of the residence.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6c9adcdaa815",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c44a39e146f8",
+     "text": "Tailored output:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6402a74194d5",
+     "text": " The geothermal plant in the basement distributes heat according to the actual needs of each apartment, optimising the building's overall efficiency.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7acbdf94b2c2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e7825e7b33e",
+     "text": "4. An immediate boost to property value",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9c91c86b0565",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "137e3d8548b0",
+     "text": "A building heated by geothermal energy benefits from an ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0f26573cfb2b",
+     "text": "outstanding EPC rating",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d809b783d8e5",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0c450323c808",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f89ab517fce1",
+     "text": "On resale:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "874985fbcb06",
+     "text": " An apartment rated A or B sells faster and for more than one heated by gas or oil.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5fc15bdb21a1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "955c19212271",
+     "text": "Energy independence:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2a70d6df3350",
+     "text": " The co-ownership is freed from fuel deliveries and geopolitical swings in gas prices. The \"fuel\" (the Earth's heat) belongs to the co-ownership.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b4ddd4d406eb",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6530b6c22773",
+     "text": "5. An installation that (literally) lasts a lifetime",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c97837214eaf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16d61691ca76",
+     "text": "While a communal boiler must be replaced every 15 years, the borehole field built by ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "aab85fe9e096",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "554ddd0ef83c",
+     "text": " is guaranteed for more than 50 years. It is a structural investment in the building. Only the heat pump in the plant room will need servicing or replacement in the long run; the ground loop infrastructure stays in the ground for generations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b94b4d32beb5",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e121249dcd1",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6569a6867910",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfe4c4e62255",
+     "text": "For a co-owned building, geothermal is not an expense but a strategy to protect the building's value. It offers premium comfort (heating and cooling), ends neighbour disputes over noise and cuts energy bills by a factor of four. At WellDoneDrill, we support property managers and owners' associations from the feasibility study to commissioning.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal for apartment buildings | WellDoneDrill",
+ "seoDescription": "Why geothermal suits co-owned buildings: no noise, free cooling, a shared borehole field, a better EPC rating and an installation built for 50 years.",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "Geothermal drilling in Belgium"
+}

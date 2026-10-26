@@ -1,0 +1,450 @@
+{
+ "_id": "blog-legacy-be-nl-5392",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Verticaal boren: waarom mikken op 150 meter diepte?",
+ "slug": {
+  "_type": "slug",
+  "current": "verticaal-boren-waarom-150-meter-diepte"
+ },
+ "publishedAt": "2026-03-20T10:11:10Z",
+ "excerpt": "Bij WellDoneDrill boren we geregeld tot ongeveer 150 meter diep, maar de exacte diepte wordt altijd afgestemd op de geologie van uw terrein. Die keuze garandeert het beste rendement en een lange levensduur van uw installatie.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "3fd0be81a420",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16d22420f10a",
+     "text": "Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b26f040ce8ef",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "93297e621766",
+     "text": " voeren we geregeld boringen uit tot ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7c1989ca5e84",
+     "text": "ongeveer 150 meter diepte",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e55393ac1559",
+     "text": ", maar de exacte diepte wordt altijd afgestemd op de specifieke geologie van uw terrein. Die keuze is een echte strategie om het beste energierendement en de levensduur van uw installatie te garanderen. Zo diep gaan is geen detail: het maakt het verschil.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0d78ae70e2d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d206a5416e39",
+     "text": "1. De regel van de geothermische gradiënt: warmer en stabieler",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "77d6dcb68a37",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af5c409341c3",
+     "text": "De aarde heeft een natuurlijke warmte die toeneemt naarmate men dieper in de aardkorst gaat. Dat noemen we de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "1751eecb72e9",
+     "text": "geothermische gradiënt",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a9280c33c29b",
+     "text": ". Gemiddeld stijgt de temperatuur met ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "52b317b0dcd3",
+     "text": "3 °C per 100 meter",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d19b437a5afa",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b123ca58eeb8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cd23438ab63",
+     "text": "Op 10 meter diepte ondergaat de bodem nog de invloed van de seizoenen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d0339f53d637",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ba9bf8878ca",
+     "text": "Op 100 meter is de temperatuur stabiel, rond 12 °C tot 13 °C in België.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fe4e7611d1f4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "033ee627c801",
+     "text": "Op 150 meter vangen we een nog constantere en iets warmere energiebron op.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1b69ba1f1123",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d1b9728f942",
+     "text": "Dat verschil van enkele graden lijkt klein, maar voor een warmtepomp is het cruciaal. Hoe kleiner het temperatuurverschil tussen de bron (de bodem) en de afgifte (uw verwarming), hoe minder de compressor moet werken. Resultaat: een veel hogere ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "173ad0e4ef5e",
+     "text": "COP (prestatiecoëfficiënt)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5bc7d81ba80d",
+     "text": " en een lagere elektriciteitsfactuur.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ecfb098ed39",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "977a23eaaccc",
+     "text": "2. Een veel groter thermisch vermogen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ba2a3e25993f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16bc77b990e6",
+     "text": "Hoeveel warmte een geothermische sonde kan onttrekken, hangt rechtstreeks af van het uitwisselingsoppervlak met de bodem. Door van 100 m naar 150 m te gaan, verhoogt u niet alleen de diepte met 50 %: u vergroot de opnamecapaciteit nog sterker, dankzij de lithostatische druk en de vaak dichtere en beter geleidende geologische lagen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3d06ae676131",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba72aca216f4",
+     "text": "Een boring van 150 meter kan tot ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f26e1295aa64",
+     "text": "50 à 70 % meer verwarmingsvermogen",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "736a195b36ed",
+     "text": " leveren dan een boring van 80 meter. Daardoor kan vaak de volledige behoefte van een grote villa of een kantoorgebouw gedekt worden met één diepe boring, waar anderen er twee of drie ondiepere zouden moeten uitvoeren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "179ed199092f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ce683323f7c",
+     "text": "3. Optimaal ruimtegebruik: de oplossing voor kleine percelen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6d185e5ba654",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af4c69bb6db4",
+     "text": "Dat is het belangrijkste argument voor onze klanten in Brussel of in de Waalse stadskernen. Wanneer de tuin klein is, is het onmogelijk om meerdere boorpunten te voorzien met inachtneming van de veiligheidsafstanden tussen sondes (meestal 10 meter, zodat ze elkaar geen warmte \"afnemen\").",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "89e83d9d45f0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16bb9a3d776f",
+     "text": "Een boring tot 150 meter maakt het mogelijk om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "993ef5848144",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c52cd6c5fca",
+     "text": "Het vermogen te concentreren",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c11aefcf37fe",
+     "text": " op één enkel boorpunt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "23a97e3a47ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0459ec882f5",
+     "text": "De ruimte-inname",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a02f8c08c08c",
+     "text": " van de werf te beperken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d7651e8cfbbe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b26c89d55c64",
+     "text": "Uw buitenaanleg te sparen",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7817afadc752",
+     "text": " (minder aansluitsleuven, minder collectoren).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5213a51be1bd",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "234396bbdb6c",
+     "text": "4. Een buffer tegen thermische uitputting van de bodem",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "93d3e8b38e69",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b1ea6934ef5",
+     "text": "Een bodem waaruit te veel warmte wordt onttrokken zonder dat hij de tijd krijgt om zich te herstellen, kan uiteindelijk \"bevriezen\" (rendementsverlies op lange termijn). Door de warmte op 150 meter te halen, put men uit een veel groter volume gesteente.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5e55781c7538",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "495dad6ffd72",
+     "text": "Bovendien is deze diepte ideaal voor ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3a9a0f0d3fec",
+     "text": "geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fb8d645886c0",
+     "text": " (passieve koeling in de zomer). Het koelreservoir op 150 meter is groter en stabieler, wat zorgt voor een performante natuurlijke koeling, zelfs tijdens langdurige hittegolven, zonder de thermische capaciteit van het boorgat uit te putten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d560510b7c69",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "327ad03d1970",
+     "text": "5. De expertise van WellDoneDrill: boren onder controle",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "62aa739d83d3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4960bd62208c",
+     "text": "Boren tot 150 meter vraagt specifiek materiaal en meer technische expertise. De drukken en het beheer van sedimenten verschillen volledig van een ondiepe boring. Dankzij onze vloot van compacte maar zeer krachtige boormachines beheersen we die verticaliteit en bieden we onze klanten de meest compacte en rendabele oplossing op de markt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Verticaal boren: waarom 150 meter diep? | WellDoneDrill",
+ "seoDescription": "Waarom een geothermische boring tot 150 meter? Geothermische gradiënt, meer vermogen, minder ruimte: de voordelen van een diepe verticale boring.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-11.09.54.jpg",
+ "_mainImageAlt": "Verticale geothermische boring tot 150 meter diepte"
+}

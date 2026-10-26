@@ -1,0 +1,380 @@
+{
+ "_id": "blog-legacy-lu-de-5432",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Den Energieausweis verbessern: Warum Geothermie ein starker Hebel ist",
+ "slug": {
+  "_type": "slug",
+  "current": "energieausweis-verbessern-mit-geothermie"
+ },
+ "publishedAt": "2026-03-20T12:38:35Z",
+ "excerpt": "Ob in Brüssel, der Wallonie oder Flandern: In Belgien ist der Energieausweis (PEB/EPC) zum wichtigsten Dokument eines Immobiliengeschäfts geworden. Eine schlechte Klasse (F oder G) kann den Preis eines Hauses um 20 bis 30 % senken.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1dc55cf542ae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18218ac077cf",
+     "text": "Ob in Brüssel, der Wallonie oder Flandern: In Belgien ist der ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9e5f84f677a3",
+     "text": "Energieausweis (PEB bzw. EPC)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cba2818e81d1",
+     "text": " zum wichtigsten Dokument eines Immobiliengeschäfts geworden. Eine schlechte Klasse (F oder G) kann den Preis eines Hauses um 20 oder 30 % senken. Umgekehrt garantiert eine Klasse A oder B einen sofortigen Mehrwert. Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6a0a532e661d",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6e56496d1239",
+     "text": " helfen wir unseren Kunden, ihren Energieausweis durch Vertikalbohrungen grundlegend zu verbessern.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "33a6375b7e63",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c0ddcaa3cf8",
+     "text": "1. Die Berechnung verstehen: die Primärenergie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "834135dc251b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac12af8fca25",
+     "text": "Der Energieausweis misst nicht nur Ihren tatsächlichen Verbrauch, sondern Ihren ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "d1e8992bc934",
+     "text": "Primärenergieverbrauch",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4ce906acba12",
+     "text": ". Für elektrische Heizung (Wärmepumpe) wendet Belgien einen Umrechnungsfaktor an.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e71c5a577804",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c7ba2be624f",
+     "text": "Gas oder Heizöl:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f5437556c58b",
+     "text": " Für 1 verbrauchte kWh zählt der Ausweis 1 kWh Primärenergie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8bd88d57ba7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89b52dadbfcd",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7a6151168ff1",
+     "text": " Dank einer hohen Leistungszahl (COP), oft über 5, erzeugt Ihr System 5 kWh Wärme aus nur 1 kWh Strom.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "51636de0b40e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8cd2d2a97bae",
+     "text": "Die Berechnungssoftware erkennt diese außergewöhnliche Effizienz an. Eine Sonde bis 150 Meter kann den Anteil „Heizung“ in Ihrem Ausweis gegenüber einem modernen Brennwertkessel auf ein Viertel bis ein Fünftel senken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "404f12d55120",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86674a50f2c0",
+     "text": "2. Geothermie vs. Luftwärmepumpe in der Berechnung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "725c57c6e01f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41cfa548e857",
+     "text": "Viele Energieberater und Architekten werden es bestätigen: Bei gleicher Dämmung erreicht ein Haus mit Erdwärmepumpe (Sole-Wasser) systematisch eine bessere Einstufung als eines mit Luftwärmepumpe (Luft-Wasser).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c097d6fe93af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c9695bcba2f",
+     "text": "Stabile Quellentemperatur:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cb641f6db6e3",
+     "text": " Die Software benachteiligt Luftwärmepumpen, weil ihre Effizienz bei Frost sinkt. Die Geothermie mit ihrer stabilen Quelle von 12 °C in 150 Metern Tiefe erhält einen Leistungsbonus.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "42b4e3c1eadd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab6a629c6ffc",
+     "text": "Hilfsenergie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fea856cd5360",
+     "text": " Ohne stromhungrige Außenventilatoren und energieintensive Abtauzyklen sinkt der „versteckte“ Verbrauch, den der Energieberater berücksichtigt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5b729825e926",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "115076ecbd8d",
+     "text": "3. Geocooling: Komfort ohne Abzug",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c92229863a55",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad11c480efb2",
+     "text": "Eine der Fallen des Energieausweises ist die Klimatisierung. Installieren Sie eine klassische Klimaanlage für den Sommer, wertet die Software das als zusätzlichen Energieverbrauch und verschlechtert Ihre Einstufung (Überhitzungsrisiko).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "42c68f5e7435",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "acbf5ccc73d3",
+     "text": "Die positive Lücke:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4b4d88eae19b",
+     "text": " Passives Geocooling verbraucht so wenig Energie, dass die Software es als vernachlässigbar betrachtet. Sie genießen den ganzen Sommer ein kühles Haus, ohne dass Ihr Ausweis von Grün auf Orange springt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8128923f11ef",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9626ced1f0e",
+     "text": "4. Klasse „A“ oder „A+“ erreichen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8cb902f02b2e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "183842a86fe6",
+     "text": "Für Neubauten oder umfassende Sanierungen ist Klasse A das höchste Ziel. Mit Gas ist das fast unmöglich und mit einer einfachen Luft-Wasser-Wärmepumpe ohne sehr viele Solarmodule schwierig. Mit ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "db827cb7dc87",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c793b3dc58a2",
+     "text": " übernimmt die Geothermie den Großteil der Arbeit. Sie senkt den Primärenergiebedarf so stark, dass oft eine kleine Photovoltaikanlage genügt, um das Haus in die Kategorie der Plusenergiegebäude zu bringen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c3e4ffe173fc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f1a62d14393",
+     "text": "5. Eine Investition, die sich ab dem Tag des Ausweises rechnet",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f98c9473041",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d0043033a46",
+     "text": "Stellen Sie sich ein Haus mit 200 m² vor. Der Sprung von Klasse C auf Klasse A kann am Markt einen Wertunterschied von 40.000 € bis 60.000 € bedeuten. Die Kosten Ihrer Bohrung (etwa 15.000 € bis 20.000 €) sind also durch die Wertsteigerung ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "90da10868a5b",
+     "text": "sofort amortisiert",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "19a61d03843f",
+     "text": ", noch bevor Sie einen einzigen Euro bei Ihrer ersten Heizkostenabrechnung gespart haben.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Den Energieausweis mit Geothermie verbessern | WellDoneDrill",
+ "seoDescription": "Warum eine Erdwärmepumpe die Energieklasse deutlich verbessert: Primärenergie, besser als Luftwärmepumpen, Geocooling ohne Abzug und Klasse A in Reichweite.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermie auf kleinem Raum"
+}

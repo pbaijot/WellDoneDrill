@@ -1,0 +1,274 @@
+{
+ "_id": "blog-legacy-be-en-5408",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal and solar PV: the winning pair for full energy independence",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-and-solar-pv-the-winning-pair"
+ },
+ "publishedAt": "2026-03-20T11:03:41Z",
+ "excerpt": "With the energy transition and volatile electricity prices, the question is no longer just how to heat your home cleanly, but how to do it at the lowest possible cost. Pairing geothermal with solar panels is the smartest answer.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "6a5086532eec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0891d0d3cea7",
+     "text": "With the current energy transition and volatile electricity prices, the question is no longer just how to heat your home cleanly, but how to do it at the lowest possible cost. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0dc2b4a2f82f",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "823482d67b2b",
+     "text": ", we see a strong trend: pairing a geothermal borehole with solar panels. This combination is without doubt the smartest solution for anyone aiming for energy independence.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c024c3d3f449",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e815c5901423",
+     "text": "1. The heat pump: a lever for converting energy",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1dbffa4d6f36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3335c6cd0a97",
+     "text": "A geothermal heat pump is already extremely efficient by nature. For every 1 kWh of electricity it uses, it typically delivers 4 to 5 kWh of heat (its COP). It still needs that \"little electrical boost\", though, to run the compressor and circulators.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "09c0c395ef8f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2fdcedbd2ae",
+     "text": "This is where solar PV comes in. By producing your own electricity on your roof, you power your heat pump's compressor directly. You are no longer just converting a clean energy (the Earth's heat), you are doing it with a free, renewable power source (the sun).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1ce5075976c2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85f3882ec9a8",
+     "text": "2. Geocooling: free air conditioning all summer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bbc468b86c45",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2ae1bae920f",
+     "text": "A major advantage of vertical geothermal, especially with our 150-metre boreholes, is the ability to cool your home passively in summer (",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "fe6fee1e1934",
+     "text": "geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5286ed9d23db",
+     "text": "). This uses very little energy, since it simply circulates cool water from the ground through your underfloor heating without starting the heat pump's compressor.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "466506d7b0ef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "db2e21e32c4f",
+     "text": "As summer is when your solar panels produce the most electricity, the running cost of your cooling literally falls to ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6ccfbe06cca8",
+     "text": "zero",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6a438752ce6f",
+     "text": ". Unlike conventional air conditioning, which sends electricity bills soaring in heatwaves, the geothermal–solar pair turns your home into a completely free haven of cool.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6d4a65ca44cd",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b6c4d853fa8f",
+     "text": "3. Maximising self-consumption",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c8ac39de6b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca9296b09797",
+     "text": "With net metering (\"meters running backwards\") being phased out in Belgium, what matters now is ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b1403a43591f",
+     "text": "self-consumption",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "240cd4d9bc68",
+     "text": ": using electricity at the very moment you produce it.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "416ebc2b0f24",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84bd89a9640e",
+     "text": "Geothermal is perfect for this. Thanks to the thermal inertia of your floor slab (underfloor heating) and your buffer tank, you can programme your heat pump to produce heat or cooling during peak sunshine hours. Your home then works like a giant thermal battery, storing solar energy as heat in the concrete or in water.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cbc32bb9b3bc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5528e3d3b60",
+     "text": "4. Exceptional added value for your property (EPC rating)",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b628c41d4703",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8a1fdd0e325",
+     "text": "Combining a geothermal borehole with solar panels pushes your EPC (energy performance certificate) to the top (A or A+). For a future buyer, a home that doesn't depend on the gas grid and produces its own energy for heating and cooling is extremely valuable. It means a quick sale at the best price.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "58e47587e98c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5212b5376f73",
+     "text": "5. Resilience against energy crises",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b70fe2460952",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "771c52f5e497",
+     "text": "By choosing this pair, you protect yourself from geopolitical swings that affect gas and electricity prices. Even if grid electricity prices rise, your share of solar self-consumption keeps you sheltered. You become your own energy producer, drawing on both the sky and the earth.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal and solar PV: the winning pair | WellDoneDrill",
+ "seoDescription": "Why a geothermal heat pump and solar panels work so well together: free summer cooling, more self-consumption, a better EPC rating and energy independence.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-12.03.15.jpg",
+ "_mainImageAlt": "Geothermal combined with solar panels"
+}

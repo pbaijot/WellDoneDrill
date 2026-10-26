@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-nl-4413",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "6 % btw op warmtepompen en geothermische boringen: een hefboom voor koolstofreductie",
+ "slug": {
+  "_type": "slug",
+  "current": "6-procent-btw-op-warmtepompen-en-geothermische-boringen"
+ },
+ "publishedAt": "2025-12-02T11:04:15Z",
+ "excerpt": "Fiscaliteit speelt een sleutelrol bij de keuze van een verwarmingssysteem. In België is de evolutie van de btw-regels ten gunste van warmtepompen en geothermische boringen een sterk signaal voor koolstofarme oplossingen.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "5467d58beb03",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f913dfaa6e6c",
+     "text": "Fiscaliteit speelt een sleutelrol bij de keuze van een verwarmingssysteem. In België is de evolutie van de btw-regels ten gunste van warmtepompen en geothermische boringen een sterk signaal voor koolstofarme oplossingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3da73e2d390c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aca310ae7a60",
+     "text": "Renovatie van gebouwen ouder dan 10 jaar: 6 % btw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "207163b9c5c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "507d3c6fed38",
+     "text": "Bij de renovatie van woongebouwen ouder dan 10 jaar bedraagt de btw op de werken 6 %. Dat geldt voor:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b7dfc14a049b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bf6299184c7e",
+     "text": "de installatie van warmtepompen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b252282b918a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e3824bf655f0",
+     "text": "werken in verband met geothermische boringen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "016242802055",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b02dbe147ca",
+     "text": "andere renovatiewerken die aan de wettelijke criteria voldoen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b47a248419b0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bf2dd72a5f13",
+     "text": "Concreet bedraagt de btw voor een residentieel geothermisch project in een gebouw ouder dan 10 jaar dus 6 % op de hele installatie, boringen inbegrepen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6a2c4fe9faf",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f93caf58f08d",
+     "text": "Vanaf 2026: 6 % btw ook in nieuwbouw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "233984421e43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e5575330c6df",
+     "text": "Vanaf 2026 is een belangrijke wijziging gepland voor nieuwe woningen of woningen jonger dan 10 jaar: de btw op de installatie van warmtepompen daalt van 21 % naar 6 %. Het doel van de regering is duidelijk: de installatie van verwarmingssystemen die een alternatief vormen voor fossiele energie sterk aanmoedigen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "03d07aa9ba1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7cf251eeb228",
+     "text": "Geothermische boringen vallen onder hetzelfde regime en gaan voor die projecten eveneens van 21 % naar 6 %. Dat is een aanzienlijke winst voor klanten en een sterk signaal voor koolstofarme verwarming.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0b77bc0a0f2c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a16f15008f04",
+     "text": "Voorwaarden in verband met residentieel gebruik",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63d0b240239a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "267f11bcc3fa",
+     "text": "Om in de woningbouw van de 6 %-tarieven te genieten, moet aan een belangrijke voorwaarde worden voldaan: minstens 50 % van de oppervlakte van het gebouw moet bestemd zijn voor bewoning. Die regel geldt zowel bij renovatie als bij nieuwbouw voor de voorziene maatregelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "991346c1e776",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc7d8747c931",
+     "text": "Bij renovaties van gebouwen ouder dan 10 jaar bedraagt de btw voor de in aanmerking komende werken, inclusief geothermische installaties, hoe dan ook 6 %, zodra aan de residentiële criteria is voldaan.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "75b15f178b76",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse-contreplongee.webp",
+   "alt": "een geothermische boormachine van WellDoneDrill in België"
+  },
+  {
+   "_type": "block",
+   "_key": "2cfad6851e6c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6375547d5391",
+     "text": "Een economische hefboom voor geothermie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f489dfd139c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c5cd96d5f51",
+     "text": "De combinatie van deze elementen (verlaagde btw bij renovatie en de uitbreiding van 6 % btw naar warmtepompen en geothermische boringen in nieuwbouw vanaf 2026) verbetert de economische balans van geothermie aanzienlijk:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b79894776fbc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45c1c07e36cf",
+     "text": "de initiële investering is lichter dan bij 21 %;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ac887f54a29",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a5284c856bd",
+     "text": "een performante installatie wordt betaalbaarder;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39ca1de9adf7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2786343629c0",
+     "text": "de terugverdientijd wordt korter.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a43f530f3ab6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b30048ceabbc",
+     "text": "Voor gezinnen, mede-eigendommen en projectontwikkelaars maken deze fiscale maatregelen de overstap naar koolstofarme verwarming nog interessanter, temeer omdat geothermie op termijn een van de laagste werkingskosten heeft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "254ca0f3b180",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cf110d50a93",
+     "text": "Geothermische boringen: hetzelfde regime, hetzelfde voordeel",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ecab9fa07ea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fafd92c39c1a",
+     "text": "Een essentieel punt is dat geothermische boringen in deze configuraties hetzelfde btw-regime volgen als warmtepompen. Fiscaal worden ze niet als een \"aparte\" post beschouwd, maar als een geïntegreerd onderdeel van het verwarmingssysteem.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f664269a68a6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54edb53902d3",
+     "text": "In de praktijk betekent dit dat:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a4636836bc2a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c78caa82cf07",
+     "text": "de sondes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4daa77dec60f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d14d008844f",
+     "text": "de boringen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "269105c4e74c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f5e4eb6a474",
+     "text": "de externe hydraulische verbindingen van het sondeveld;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6926ad8293e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b4efa61f776",
+     "text": "van dezelfde verlaagde btw-tarieven genieten, wat de algemene concurrentiekracht van de oplossing versterkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8149a7067437",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "018c2aca62c3",
+     "text": "Een doorslaggevende hefboom voor residentiële geothermie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e491ee15e75",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2456391134a",
+     "text": "Voor residentiële projecten spelen deze btw-regels een doorslaggevende rol. Ze verkleinen het verschil in initiële kost tussen een fossiele en een geothermische oplossing, terwijl die laatste op lange termijn al veel concurrerender is qua werkingskosten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34adbd4801c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c1c84d204c7",
+     "text": "Door de combinatie van:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "55b2a5bf676f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfa226accf2c",
+     "text": "de verlaagde btw;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "527ad5440fdb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "040b0d092baa",
+     "text": "het lage stroomverbruik dankzij de hoge COP;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c76768fefe82",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f1b53ed35cf",
+     "text": "de mogelijkheid om de warmtepomp aan zonnepanelen te koppelen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "65568ebfc659",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "90e3dbc14909",
+     "text": "wordt geothermie een bijzonder aantrekkelijke oplossing, zowel voor nieuwbouw als voor ingrijpende renovaties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b8ac50e576e5",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45205c257676",
+     "text": "Belangrijke opmerking",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d92e34a0590c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2fb3403e800",
+     "text": "De btw-regels worden bepaald door de fiscale wetgeving en kunnen veranderen. Het is belangrijk om voor elk project de precieze voorwaarden en de geldende teksten op het moment van de bestelling na te gaan.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0b8698c2db55",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c0eba8be874",
+     "text": "WellDoneDrill werkt samen met installateurs en gespecialiseerde adviseurs om de offertes zo op te stellen dat de juiste btw-regimes van toepassing zijn. Het doel is klanten ten volle te laten profiteren van de fiscale voordelen van geothermie, met een veilige administratieve afhandeling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "6 % btw op warmtepompen en geothermie | WellDoneDrill",
+ "seoDescription": "Wanneer geldt 6 % btw op warmtepompen en geothermische boringen in België? Renovatie van woningen ouder dan 10 jaar, nieuwbouw vanaf 2026 en de voorwaarden.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "6 % btw op warmtepompen en geothermische boringen"
+}

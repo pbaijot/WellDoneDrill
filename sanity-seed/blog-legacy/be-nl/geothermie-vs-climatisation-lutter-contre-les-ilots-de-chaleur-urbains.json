@@ -1,0 +1,404 @@
+{
+ "_id": "blog-legacy-be-nl-5510",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermie vs airco: hitte-eilanden in de stad tegengaan",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-vs-airco-hitte-eilanden-in-de-stad"
+ },
+ "publishedAt": "2026-03-20T13:52:58Z",
+ "excerpt": "In de zomer veranderen Belgische stadscentra in ware ovens. Dat is het fenomeen van de stedelijke hitte-eilanden: beton en asfalt slaan overdag warmte op en geven die 's nachts weer af, waardoor woningen niet afkoelen.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "ca03a3e17639",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "412369b432e0",
+     "text": "In de zomer veranderen Belgische stadscentra in ware ovens. Dat is het fenomeen van de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "e9ba84a99c13",
+     "text": "stedelijke hitte-eilanden",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8080dd4eb33c",
+     "text": ": beton en asfalt slaan overdag warmte op en geven die 's nachts weer af, waardoor woningen niet kunnen afkoelen. Een klassieke airco lijkt dan de makkelijke oplossing, maar ze verergert het probleem. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "5d6ebb3f911d",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "38d97b4c1614",
+     "text": " stellen we een ecologisch en burgerlijk alternatief voor: geocooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "70e6921802ea",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c2bbdd0a21c4",
+     "text": "1. De vicieuze cirkel van de klassieke airco",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bb793b6038e8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "284581fd2fd2",
+     "text": "Een traditionele airco (of lucht-luchtwarmtepomp) werkt volgens een eenvoudig principe: ze haalt de warmte uit uw woning en blaast die naar buiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9d3be1a41150",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46ab99971ccf",
+     "text": "Oververhitte straten:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f0c61ab49737",
+     "text": " Met steeds meer airco-units aan de gevels stijgt de temperatuur in de straat met meerdere graden. Uw buur moet dan ook zijn airco aanzetten, en zo ontstaat een helse spiraal.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "71d30fbb3d2c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99e57be794c7",
+     "text": "Geluidshinder:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e0426d430984",
+     "text": " Buitenventilatoren zoemen dag en nacht, waardoor bewoners hun ramen niet kunnen openen om van de nachtelijke koelte te genieten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9161486d5158",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ad2bbbc6f69",
+     "text": "2. Geocooling: onzichtbare koeling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9a701871ba50",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5d9162020c0e",
+     "text": "Verticale geothermie verandert de situatie ingrijpend. In plaats van de warmte in de buitenlucht te blazen, sturen we ze terug naar waar ze vandaan komt: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "032c42ecda93",
+     "text": "in de bodem",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4f8b85468b72",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "187efb24e7c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d3555d42a9b4",
+     "text": "Ondergrondse warmteoverdracht:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "deb5f8a00434",
+     "text": " In de zomer blijft de bodem op 150 meter diepte rond 12 °C. Het systeem van WellDoneDrill haalt de warmte uit uw woning en brengt ze via de geothermische sondes in de grond.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "32061ba765db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99b054aafa97",
+     "text": "Volledige stilte:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cd2ab2b8c341",
+     "text": " Buiten draait geen enkele ventilator. Uw gevels blijven strak, uw balkons stil, en u respecteert de rust in uw buurt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "07cf4246e91c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dbf47a028e64",
+     "text": "3. Een onverslaanbare energie-efficiëntie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d113f334489e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "370d4e2afc5b",
+     "text": "Airco is in de zomer een van de grootste elektriciteitsverbruikers. De compressor moet hard werken om warmte af te voeren naar een buitenlucht die al gloeiend heet is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "77600ba06957",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c6fefd70ddf",
+     "text": "Passieve koeling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "582be242010c",
+     "text": " Geocooling is \"passief\". De compressor van uw warmtepomp blijft uit. Alleen een kleine circulatiepomp (die evenveel verbruikt als een ledlamp) laat de vloeistof circuleren tussen de koele bodem en uw vloerverwarming.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fae0132a5b8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41b5540e655c",
+     "text": "Resultaat:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e3cdd5162035",
+     "text": " U koelt uw woning voor een twintigste van de kostprijs van een klassieke airco.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e8d617b5f531",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b1e2ffc380a",
+     "text": "4. De bodem herladen voor de winter",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa135b73283b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcc54e90e99c",
+     "text": "Een van de meest fascinerende aspecten van deze technologie is de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "43b23595fc0f",
+     "text": "thermische herlading van de bodem",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6c3600754f28",
+     "text": ". Door in de zomer de warmte van uw woning in de boring te brengen, warmt u het gesteente rond uw sondes licht op. Zo ontstaat een warmtereservoir dat in de herfst goed van pas komt: uw warmtepomp begint het stookseizoen met een \"lauwere\" bodem, wat haar rendement (COP) in de eerste wintermaanden verhoogt. Het is een circulaire energie-economie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "27307b68fa6e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a774ae32a377",
+     "text": "5. Een verantwoorde keuze voor de stad van morgen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ffb283b09ae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cda3dee58e04",
+     "text": "In Brussel en in de grote Waalse steden hebben de overheden steeds meer aandacht voor de milieu-impact van gebouwen. Geothermie wordt actief aangemoedigd omdat ze niet bijdraagt aan de opwarming van de straten. Kiezen voor WellDoneDrill voor uw stadsproject betekent kiezen voor topcomfort en tegelijk een voorbeeldige buur zijn.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e02e47340886",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9d857b7b31e",
+     "text": "Conclusie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5a70e296943d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dedee81a65a9",
+     "text": "De klassieke airco is een oplossing uit het verleden: duur en egoïstisch. Geocooling via een verticale boring is het moderne antwoord op de klimaatuitdagingen in de stad. Het biedt een gezonde, stille en gratis koelte en beschermt tegelijk het ecosysteem van uw buurt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie vs airco: hitte-eilanden tegengaan | WellDoneDrill",
+ "seoDescription": "Waarom geocooling beter is dan een klassieke airco in de stad: geen warmte op straat, geen lawaai, 20 keer goedkoper en een bodem die zich herlaadt voor de winter.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "Geothermie tegen stedelijke hitte-eilanden"
+}

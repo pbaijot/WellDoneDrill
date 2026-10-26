@@ -1,0 +1,884 @@
+{
+ "_id": "blog-legacy-be-nl-4380",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Hoe werkt een warmtepomp? De eenvoudige en volledige gids",
+ "slug": {
+  "_type": "slug",
+  "current": "hoe-werkt-een-warmtepomp-eenvoudige-volledige-gids"
+ },
+ "publishedAt": "2025-12-02T10:49:52Z",
+ "excerpt": "De warmtepomp is het hart van moderne verwarmingssystemen geworden, zeker in combinatie met geothermie. Maar hoe werkt ze concreet? Waarom is ze zo efficiënt? En wat zijn de verschillen tussen de types warmtepompen?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 6,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "5230100f8998",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ced1c6289914",
+     "text": "De warmtepomp is het hart van moderne verwarmingssystemen geworden, zeker in combinatie met geothermie. Maar hoe werkt ze concreet? Waarom is ze zo efficiënt? En wat zijn de verschillen tussen de types warmtepompen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "632d726d49c7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "729f4a4ddd66",
+     "text": "1. Het principe: de gratis energie om ons heen opvangen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f14cc13de0c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d1d24736437",
+     "text": "Een warmtepomp \"maakt\" geen warmte: ze verplaatst de energie die in de omgeving aanwezig is (lucht, bodem, water) naar het gebouw dat verwarmd moet worden. Ze werkt volgens hetzelfde principe als een koelkast, maar omgekeerd:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "91022bbeafa8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6922aeb5b9a",
+     "text": "buiten vangt ze warmte op bij lage temperatuur;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "015e4342f91b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2169e9acc2f",
+     "text": "binnen geeft ze die warmte bij een hogere temperatuur af aan het verwarmingscircuit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d6275ffd2c98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "754d04a6860d",
+     "text": "Dat is mogelijk dankzij een koelmiddel en een thermodynamische cyclus in vier stappen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3b308502ec3e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "511bc0347d8e",
+     "text": "2. Welke types warmtepompen bestaan er en hoe heten ze?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "503a02ef5c4f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4d8e72933b6",
+     "text": "Warmtepompen worden vooral ingedeeld volgens hun energiebron (lucht, bodem, water) en hun afgifte (lucht of water). Dit zijn de gangbare benamingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b7ac9cf24a3e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "36b255ddc45e",
+     "text": "Luchtwarmtepompen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "29e99d04cbd5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8654fc0908dd",
+     "text": "Lucht-luchtwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8495bbc212ab",
+     "text": " ze haalt warmte uit de buitenlucht en geeft die binnen af als warme lucht (via binnenunits of \"splits\"). Ze wordt vooral gebruikt in eengezinswoningen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "327f3536e77a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59c6b037b82b",
+     "text": "Lucht-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "04b5cae332bd",
+     "text": " ze haalt warmte uit de buitenlucht en brengt die over naar een watercircuit (radiatoren, vloerverwarming, ventiloconvectoren). Het is de meest verspreide versie bij renovaties waarbij een gas- of stookolieketel wordt vervangen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "df0fe714d24b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd30f6b84856",
+     "text": "Geothermische warmtepompen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7815d1ce9044",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0dc8f1bc7a90",
+     "text": "Bodem-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5509ff265358",
+     "text": " ze haalt warmte uit de bodem via verticale geothermische sondes of een horizontale collector en geeft die af aan het watercircuit van de verwarming. Het is de meest stabiele en performante oplossing op lange termijn.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b878574b1cf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3818c3af9187",
+     "text": "Water-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ffcc0942a9d0",
+     "text": " ze benut de warmte van grondwater of oppervlaktewater (open geothermie of aquathermie). Ze blijft voorbehouden aan sites met een geschikte waterbron en specifieke vergunningen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cd6884076129",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74f2a69df1e9",
+     "text": "Hybride warmtepompen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9397428834a9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "234a679e5231",
+     "text": "Men spreekt soms van hybride systemen wanneer een warmtepomp gekoppeld is aan een ketel of een andere warmtebron. Bijvoorbeeld een lucht-waterwarmtepomp gecombineerd met een gasketel voor zeer koude dagen, of een geothermische warmtepomp gekoppeld aan een andere bron (aquathermie, riothermie, enz.) bij projecten met een groot vermogen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "64cbe3262e4d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e49efa1fa6c5",
+     "text": "3. De vier stappen van de thermodynamische cyclus",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "22ae51e3ae16",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e36b36d55c31",
+     "text": "In het hart van de warmtepomp circuleert een koelmiddel in een gesloten kring dat van toestand verandert (vloeibaar/gas) om energie te transporteren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f11dd2efd3f7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "030dde4a7d7b",
+     "text": "De verdamper: natuurlijke warmte opvangen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "30340ee1a361",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03eb2ea255c6",
+     "text": "Het koelmiddel komt vloeibaar, onder lage druk en op lage temperatuur in de verdamper. Daar neemt het de warmte van de externe bron (lucht, bodem, water) op en verdampt het (het wordt gas).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b213ed51a18",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88dda6dbae99",
+     "text": "De compressor: de temperatuur verhogen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e7d0b5371135",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c95c556116cd",
+     "text": "Het koude gas onder lage druk wordt door de compressor aangezogen. Door het samen te persen stijgen de druk en de temperatuur: het wordt een warm gas.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6ca29ec1fe9",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "00b3ff58712e",
+     "text": "De condensor: het gebouw verwarmen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7d9c8b2bb736",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f29ea3048d0e",
+     "text": "Het warme gas komt in de condensor, waar het zijn warmte afgeeft aan het watercircuit van de verwarming (radiatoren, vloerverwarming, buffervat…). Bij het afkoelen condenseert het en wordt het weer vloeibaar.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7a8fbebb6a93",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e28208dc46c7",
+     "text": "Het expansieventiel: de cyclus opnieuw starten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90614bad22b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b84d7034cc4b",
+     "text": "Het koelmiddel, nu vloeibaar maar onder hoge druk, gaat vervolgens door een expansieventiel. Druk en temperatuur dalen en het keert terug naar zijn begintoestand: koude vloeistof onder lage druk. De cyclus kan opnieuw beginnen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "355b91317a6b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc8e88b79031",
+     "text": "4. Waarom is een warmtepomp zo efficiënt?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e95943bd7494",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9428f9925c07",
+     "text": "De prestatie van een warmtepomp wordt gemeten met haar prestatiecoëfficiënt (COP), de verhouding tussen de geproduceerde warmte en de verbruikte elektriciteit. Een COP van 4 betekent dat de warmtepomp voor 1 kWh verbruikte elektriciteit 4 kWh warmte levert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e7b5f8442e43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f70974af7d31",
+     "text": "Die efficiëntie komt doordat de warmtepomp de warmte niet produceert, maar verplaatst. De elektriciteit dient om de compressor en de hulpapparatuur te laten werken, niet om de warmte zelf op te wekken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "74ce5b5faff8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a7bc4bc79d4",
+     "text": "5. Waarom de geothermische warmtepomp de meest performante versie is",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cca3cdb33a83",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4c727151475",
+     "text": "De prestatie van een warmtepomp hangt grotendeels af van de stabiliteit van de bron:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d59c50f63c72",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f856a64de116",
+     "text": "de buitenlucht",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b742e5831ca0",
+     "text": " kan in de loop van het jaar schommelen van -10 °C tot +35 °C;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e01fec6c92c8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "162bba3d6bbc",
+     "text": "de bodem",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "473969083149",
+     "text": " blijft vanaf enkele meters diepte binnen een veel stabieler bereik (ongeveer 10 tot 14 °C).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8c0895a1fb09",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a8199612d26",
+     "text": "Een geothermische warmtepomp werkt dus met nagenoeg constante ingangsvoorwaarden. De compressor wordt minder belast en de COP is hoger en stabieler, vooral in de winter. Daardoor is de geothermische warmtepomp de meest performante oplossing voor verwarming en koeling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c6f9ae1af90",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d87bfa696b27",
+     "text": "6. Een warmtepomp levert ook koeling en warm water",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c98c65957aa8",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d63473e9c828",
+     "text": "Het gebouw koelen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "350017b1fa41",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "faf9994af873",
+     "text": "Door haar cyclus om te keren of een hydraulische bypass te gebruiken (geocooling) kan de warmtepomp het gebouw ook koelen. Bij geothermie is die koeling bijzonder zuinig, omdat ze rechtstreeks de koelte van de bodem gebruikt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ab0de315e8bb",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "849b0e8796d6",
+     "text": "Sanitair warm water produceren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b10fb2c0b24f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a761aeb6e86",
+     "text": "De meeste moderne warmtepompen kunnen ook sanitair warm water verwarmen via een geïntegreerd of apart boilervat. De streeftemperatuur wordt zo ingesteld dat comfort gegarandeerd is en het verbruik beheerst blijft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "214c321085e8",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "19612c2c119d",
+     "text": "Een gelijkmatig comfort bieden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "53a99fc1c8dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "119fcdd6de87",
+     "text": "De warmtepomp, zeker in geothermische versie, zorgt voor een gelijkmatige verwarming zonder grote temperatuurschommelingen, met een continue werking op lage temperatuur. Het comfort is groter dan bij systemen die vaak aan- en uitslaan.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f8a46bce36c5",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e28acacd618",
+     "text": "7. Lucht-waterwarmtepomp vs water-waterwarmtepomp: de vergelijking",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0f6866c24861",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be866a6d2bc7",
+     "text": "1. Prestaties in de winter",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "310349680f05",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d2160e39ca7",
+     "text": "De prestaties van een lucht-waterwarmtepomp dalen wanneer het erg koud is, net wanneer de behoeften stijgen. De geothermische warmtepomp blijft werken met een stabiele bron en behoudt zo een zeer goede COP.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "31d04b94187e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ba961b40c09",
+     "text": "2. Lawaai en esthetiek",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ba6891d612d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb833967fc63",
+     "text": "Een lucht-waterwarmtepomp heeft een buitenunit nodig, die zichtbaar en hoorbaar is. Geothermie zit volledig onder de grond en de warmtepomp staat binnen: geen lawaaierige of zichtbare buitenunit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "13ab3d732511",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9c1095c9e02",
+     "text": "3. Stroomverbruik",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8bc2b68273f0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f379012b2668",
+     "text": "Bij gelijk comfort verbruikt een geothermische warmtepomp op jaarbasis doorgaans minder elektriciteit dan een lucht-waterwarmtepomp, vooral dankzij haar stabiele rendement in de winter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "27298b4f5e49",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37667413215c",
+     "text": "4. Levensduur",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "832113a24b3e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e85122e7dbc3",
+     "text": "Minder blootgesteld aan weer en temperatuurschommelingen wordt de geothermische warmtepomp meestal minder belast en kan ze langer meegaan. De sondes blijven tientallen jaren op hun plaats.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8e3b0a6026f6",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "efbe4aa8d2be",
+     "text": "5. Werkingskosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "66fa222b3374",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b175e3b0d00",
+     "text": "De werkingskosten van een geothermische warmtepomp zijn bijzonder laag dankzij haar uitstekende seizoensrendement. De initiële investering ligt hoger, vooral door de boringen, maar wordt op termijn gecompenseerd door lagere werkingskosten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "caff7f3333d6",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "afa8d03d1488",
+     "text": "6. Voor welk type gebouw?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "369214e66a26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f6bcb045d48",
+     "text": "Een lucht-waterwarmtepomp wordt vaak gekozen bij eenvoudige renovaties, wanneer men niet wil boren. De geothermische warmtepomp is ideaal voor projecten die maximale prestaties, comfort en duurzaamheid nastreven: nieuwbouwwoningen, ingrijpende renovaties, appartementsgebouwen, openbare gebouwen, enz.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6076f6c3374e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b92f6d92990",
+     "text": "Conclusie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "585da3f8d086",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9db0a6545014",
+     "text": "De warmtepomp is vandaag de sleuteltechnologie om fossiele brandstoffen in de verwarming van gebouwen achter ons te laten. Van alle versies onderscheidt de geothermische warmtepomp zich door haar stabiliteit, haar prestaties en haar comfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "072dca983a2d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f51a71fb38dd",
+     "text": "Gecombineerd met goed gedimensioneerde geothermische sondes en een goede regeling zorgt ze decennialang voor verwarming, koeling en sanitair warm water, met een minimale koolstofvoetafdruk en zeer lage werkingskosten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Hoe werkt een warmtepomp? Volledige gids | WellDoneDrill",
+ "seoDescription": "Alles over de warmtepomp: het principe, de types (lucht-water, bodem-water, water-water), de thermodynamische cyclus, de COP en waarom geothermie het meest presteert.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Warmtepomp van WellDoneDrill"
+}

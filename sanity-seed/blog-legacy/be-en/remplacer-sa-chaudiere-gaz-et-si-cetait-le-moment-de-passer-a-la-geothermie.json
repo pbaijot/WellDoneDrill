@@ -1,0 +1,724 @@
+{
+ "_id": "blog-legacy-be-en-4409",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Replacing your gas boiler: is now the time to switch to geothermal?",
+ "slug": {
+  "_type": "slug",
+  "current": "replacing-your-gas-boiler-switch-to-geothermal"
+ },
+ "publishedAt": "2025-12-02T11:02:47Z",
+ "excerpt": "\"How should I replace my gas boiler?\" is a question owners and co-owned buildings ask more and more often. An ageing boiler, worries about gas prices, EPC requirements, the wish to decarbonise… There is no shortage of reasons.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c71ee8f14a26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67ecd5b4a45b",
+     "text": "\"How should I replace my gas boiler?\" is a question owners and co-owned buildings ask more and more often. An ageing boiler, worries about gas prices, EPC requirements, the wish to decarbonise… There is no shortage of reasons. Among the possible solutions, the geothermal heat pump is becoming the most comfortable and lasting option. Especially in Belgium, where the subsurface offers excellent potential.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d9b749b2462",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b22e426929a8",
+     "text": "Why replace your gas boiler now?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c8d3b753a8f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e09dd7a08130",
+     "text": "A gas boiler that is 15 or 20 years old is nearing the end of its life. Efficiency drops, breakdowns multiply and parts become harder to find. At the same time, the energy context has changed: gas prices have become more volatile, regulations are tightening and climate targets are pushing a gradual exit from fossil fuels.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "046fb8202cd2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e1d94d0a98b",
+     "text": "Simply replacing an old gas boiler with a new gas boiler extends that dependence for another 15 or 20 years. Technically, it's possible. Strategically, it makes less and less sense for a home or building that wants to keep its value in the long term.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0c6855687789",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "659d8042b44f",
+     "text": "That is where \"replacing a gas boiler\" naturally leads to the heat pump, and to geothermal in particular.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e2aea11b6169",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4dda7a3a6873",
+     "text": "Replacing a gas boiler with a heat pump: why geothermal stands out",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b31345f36b73",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "96f0627678bb",
+     "text": "When you consider replacing a gas boiler, two main families of heat pump come up: air-to-water heat pumps and geothermal (ground-to-water) heat pumps.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4d4ef83d1313",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfd4de087316",
+     "text": "Both can supply a radiator network or underfloor heating, but they behave very differently.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a79925387f7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0aec1434fdb7",
+     "text": "Air-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f92997c2d5e3",
+     "text": " captures heat from the outdoor air. The colder it gets, the more its performance drops, just as heating needs rise. It requires a visible, audible outdoor unit on the façade, the roof or in the garden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "884cc78e14d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd6821189716",
+     "text": "Geothermal heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "88cb252dcf25",
+     "text": " draws heat from the ground through vertical probes. The subsurface temperature stays stable all year, giving very high efficiency even when it is freezing. There is no outdoor unit: the whole system sits inside the building and in the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e1d04b36286d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f8cf38fcd0a1",
+     "text": "In renovation, replacing a gas boiler with geothermal heating therefore means moving:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6afd03c080b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c74ae7d9856",
+     "text": "from combustion to a very high-efficiency electric system;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "87f8c71cc19e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dea8b51f115d",
+     "text": "from an imported, volatile energy to a local, stable resource;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca50151fcbe2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b2947ff4626",
+     "text": "from a flame in a boiler room to heat exchange with the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "67081d4d0af2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82ce912af3be",
+     "text": "Geothermal and radiators: yes, renovation is possible",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "84998f5f26b0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f13532450711",
+     "text": "Many existing buildings have radiators sized for relatively high temperatures. In practice, however, these radiators are often oversized for today's needs (better insulation, new windows, changes in use, etc.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5714de656941",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a47df2eecca0",
+     "text": "By working on the controls (weather compensation, room-by-room control, balancing), flow temperatures can often be lowered while keeping good comfort. The geothermal heat pump can then supply an existing radiator network at lower but sufficient temperatures.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3eedde87704d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "907eceb7df2a",
+     "text": "In some cases, targeted changes are made (replacing a few radiators, adding fan coil units in certain areas), but there is no need to start from scratch.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "811e1a6deb45",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ba06bc28b04",
+     "text": "How does a gas boiler-to-geothermal replacement work in practice?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c649befb49d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "284764ac21da",
+     "text": "A typical project goes through several stages:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f6f7f4755b03",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f43ed81df8df",
+     "text": "survey of the existing installation (output, distribution network, available space);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b8e68110a8f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b38867363f49",
+     "text": "geothermal feasibility study (space for probes, type of ground, access for the rig);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "34377a911724",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b5b8390bd81",
+     "text": "sizing of the borehole field and heat pump;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a0d34cf0a4de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "678771a75334",
+     "text": "drilling and probe installation;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d154c270d2e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d606c6f0ae1f",
+     "text": "installation of the heat pump, buffer tank and hydraulic adjustments;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ac961034b63f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4eba5f4f8b6",
+     "text": "commissioning, control settings and optimisation.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3372bda4746b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95acb691d085",
+     "text": "In a multi-unit building, this process is usually part of a wider energy renovation project and can be phased to limit service interruptions.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "877d6c38021d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f811646c34de",
+     "text": "Replacing a gas boiler: what is the long-term impact on your bills?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "48e7a09414de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e673099bc28",
+     "text": "Switching from gas to geothermal means a higher upfront investment, but it radically changes the spending profile:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a1638108b8ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cae7725a16be",
+     "text": "instead of buying gas, you buy electricity, but much less of it, thanks to the heat pump's high COP;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e8420a04fa13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f06d8b2a3a65",
+     "text": "the energy bill is less sensitive to gas price swings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "abdea4cf9e31",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "136b6db5f959",
+     "text": "carbon pricing schemes (ETS, etc.) are steadily making fossil fuels more expensive.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "beababc143c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c143c540c13",
+     "text": "Add to that:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "939db5e0eaae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dab2a8d0bd62",
+     "text": "the lifespan of the probes (more than 50 years);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ea2c67d77198",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41beb43d310c",
+     "text": "the option of pairing the heat pump with solar PV;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0529bd88d099",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ceb141d7007c",
+     "text": "favourable VAT rates in residential buildings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b0f49ec2c6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84f0e8739511",
+     "text": "and the payback period makes replacing a gas boiler with geothermal very competitive over 15 to 20 years, especially for buildings that will be occupied for a long time.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90e65625b7ab",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "250c53c6c1fd",
+     "text": "WellDoneDrill's role in replacing a gas boiler",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e0e4a76d4f04",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52cbcd9e5d31",
+     "text": "WellDoneDrill doesn't install gas boilers: our trade is drilling and probes for geothermal. But that is exactly where a gas boiler replacement project begins.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e29618e13c8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "109a5ec80939",
+     "text": "WDD can:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5cd8283e86fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a69e0b3e045a",
+     "text": "assess the site's geothermal feasibility when a boiler is reaching the end of its life;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "280496a1cf3f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b97473052f58",
+     "text": "size and build the borehole field suited to the building;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64499a1c83c1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a97c623a85dd",
+     "text": "work with the client's chosen heat pump installer or suggest partners experienced in this kind of replacement;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b120207e1c71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "df8c85bdf72b",
+     "text": "help structure the project to benefit from the right VAT rates and available support schemes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5536e154c38d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1524a10a438c",
+     "text": "For a private owner, a property manager or a developer, the question then becomes simple: rather than replacing one gas boiler with another, why not turn this key moment into an opportunity to leave gas for good and switch to efficient, silent and durable geothermal heating?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "35b2537c32cc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cce4e0b3fd07",
+     "text": "Replacing a gas boiler is no longer just a question of equipment. It is the chance to decide how you want to heat your home for the next twenty years.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Replacing a gas boiler with geothermal | WellDoneDrill",
+ "seoDescription": "Replacing your gas boiler? Why a geothermal heat pump beats an air-source one, even with radiators, how the switch works and what it means for your bills.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "WellDoneDrill heat pump"
+}

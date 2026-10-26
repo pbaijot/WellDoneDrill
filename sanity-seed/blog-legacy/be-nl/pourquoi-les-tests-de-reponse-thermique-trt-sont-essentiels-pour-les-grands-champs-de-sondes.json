@@ -1,0 +1,662 @@
+{
+ "_id": "blog-legacy-be-nl-4386",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Waarom thermische responstesten (TRT) essentieel zijn voor grote sondevelden",
+ "slug": {
+  "_type": "slug",
+  "current": "waarom-thermische-responstesten-trt-essentieel-zijn"
+ },
+ "publishedAt": "2025-12-02T10:52:07Z",
+ "excerpt": "Bij grote geothermische projecten, zoals appartementsgebouwen, kantoren of lokale warmtenetten, is de juiste dimensionering van het sondeveld doorslaggevend. De thermische responstest (TRT) is het referentie-instrument om de ondergrond nauwkeurig in kaart te brengen.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "4227f0d3d563",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c5eb8268550",
+     "text": "Bij grote geothermische projecten, zoals appartementsgebouwen, kantoren of lokale warmtenetten, is de juiste dimensionering van het sondeveld doorslaggevend. De thermische responstest (TRT) is het referentie-instrument om de ondergrond nauwkeurig in kaart te brengen en de dimensionering van installaties boven 50 kW te optimaliseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "75790926b75c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b2873b6d1d3",
+     "text": "Wat is een thermische responstest?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1660fb65e9a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7fb5c2c3fdd1",
+     "text": "Bij een thermische responstest wordt gedurende een bepaalde periode (meestal 48 tot 72 uur) warmte in een geothermische sonde geïnjecteerd, waarna men meet hoe de ondergrond reageert. Concreet laat men een verwarmde vloeistof door de sonde circuleren en registreert men:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b65b13dacf51",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f9941504973",
+     "text": "het geïnjecteerde vermogen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b248eb6333fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af52a127136e",
+     "text": "de aanvoer- en retourtemperatuur van de vloeistof;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1205fede51c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5d379f46d608",
+     "text": "de evolutie in de tijd.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "694dcedc1fa0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "183c74d3a25b",
+     "text": "Die gegevens worden vervolgens geanalyseerd om twee essentiële parameters te bepalen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8b1043211745",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85997e2e8f70",
+     "text": "de warmtegeleidbaarheid van de bodem (het vermogen om warmte door te geven);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "185cd84cc300",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d180611dddef",
+     "text": "de thermische weerstand van de sonde (het vermogen van de sonde om warmte met de bodem uit te wisselen).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "60493129db61",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7adfed40588",
+     "text": "Op basis daarvan kunnen het aantal sondes, hun diepte en hun inplanting worden bepaald, rekening houdend met de verwarmings- en koelbehoeften en de gewenste levensduur van het veld.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7b6ccd0b7122",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7636f1fb7bbd",
+     "text": "Waarom de TRT onmisbaar wordt boven 1000 m boring in totaal",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ad1c2e10805",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc158d80ec9e",
+     "text": "Voor kleine installaties (eengezinswoning, klein gebouw) werkt men meestal met standaardwaarden uit de literatuur en uit de praktijk. De vermogens blijven bescheiden, de sondelengtes beperkt en de veiligheidsmarges voldoende.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3457f2f34ed6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb5cc866a162",
+     "text": "Boven ongeveer 50 kW geïnstalleerd vermogen en 1000 m boring in totaal veranderen de belangen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "06d66574a00b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7721e2ab5df9",
+     "text": "het sondeveld is een aanzienlijke investering;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a306329a6175",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25c5cd90a7e3",
+     "text": "de wisselwerking tussen sondes wordt groter;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "56e24953a982",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2df3d1a5d564",
+     "text": "de verwarmings- en koelbehoeften zijn hoger en gevoeliger voor onder- of overdimensionering;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4bf10ab1ec53",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcf5ca7c5057",
+     "text": "de duurzaamheid over meerdere decennia wordt een grote uitdaging.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e8ea88d39cd9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d46a21d6cda",
+     "text": "In die context vervangt de TRT algemene aannames door waarden die ter plaatse, op het eigenlijke terrein van het project, zijn gemeten. Hij verkleint de onzekerheden en voorkomt de twee klassieke ontsporingen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "048b52da4548",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68676c2c0c72",
+     "text": "een ondergedimensioneerd sondeveld: geleidelijke afkoeling van de bodem, dalende prestaties en risico op discomfort op lange termijn;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b8d8c18137fc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55d581d83e2c",
+     "text": "een overgedimensioneerd sondeveld: onnodig hoge boorkosten en vastgelegd kapitaal zonder echt voordeel.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d52d1ecba10c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c86c2586fa50",
+     "text": "Voor welke projecten?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b7adcee716e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cae2a453175",
+     "text": "De TRT is alleen nuttig voor grote sondevelden, doorgaans boven 1000 m boring in totaal of een vermogen van ongeveer 50 kW. Voor kleine residentiële installaties of standaardprojecten volstaat de praktijkervaring om correct te dimensioneren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "798e1eaa8f4f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "520755c0f47d",
+     "text": "Een precisie-instrument om de investering te optimaliseren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ad8b37353fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "708d96bc510e",
+     "text": "Dankzij de TRT kan de ontwerper de dimensionering zo nauwkeurig mogelijk afstellen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7fc20ef285ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c30b6e744f65",
+     "text": "de diepte van de sondes aanpassen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6d99dbada21",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6722978b323b",
+     "text": "de afstand tussen de sondes optimaliseren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "36bb93af3a34",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64f7fe9e2ddf",
+     "text": "de thermische regeneratie van het veld tussen de seizoenen controleren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f7e7e6e1875b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd3d1ca97a95",
+     "text": "de koelbehoeften en hun invloed op het seizoensevenwicht voorzien.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0de438bb25d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4babc83e6958",
+     "text": "De TRT voorkomt de twee grote klassieke risico's van installaties met een groot vermogen: \"te weinig\" boren (en de prestaties op lange termijn verzwakken) of \"te veel\" boren (en het budget onnodig verzwaren). Goed gebruikt, beveiligt hij de investering en optimaliseert hij de prestaties op de schaal van een gebouw, een school of een kantoorgebouw.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4ca86d274a1f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b8061009261",
+     "text": "Daarom doen projectontwikkelaars, studiebureaus en publieke bouwheren steeds vaker een beroep op deze test voor structurerende projecten. De TRT wordt dan een sleutelelement van het technische dossier en een argument om aan te tonen dat de installatie op basis van metingen en niet van loutere aannames werd gedimensioneerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8178efcb770a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "371c0e1ed41a",
+     "text": "De uitvoering van de test is eenvoudig: er wordt één pilootsonde geboord, uitgerust met meetapparatuur en aangesloten op een mobiele testunit. Zodra de meetcampagne is afgerond en de resultaten zijn geanalyseerd, wordt de definitieve dimensionering van het veld voor het hele project vastgelegd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c7212412734",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30b586f83be9",
+     "text": "Een instrument voor duurzaamheid",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "800be71799e8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e20c56d2986",
+     "text": "Een correct gedimensioneerd sondeveld garandeert de thermische regeneratie van de bodem en stabiele prestaties gedurende meer dan vijftig jaar.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1af2b3ac206c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e76fbcd2d29",
+     "text": "De TRT biedt ook een garantie op de duurzaamheid van de installatie: hij controleert of de warmte die in de winter wordt onttrokken, gecompenseerd wordt door de warmte die in de zomer wordt teruggebracht, onder meer via geocooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63cc352a87be",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99ac19be7b51",
+     "text": "Dat evenwicht garandeert dat het veld na verloop van tijd niet afkoelt en dat de warmtepomp gedurende decennia goed blijft presteren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6007479d5ea2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3834488751b",
+     "text": "De rol van WellDoneDrill bij projecten met een TRT",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "89abd2dfb6e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6baefecb443b",
+     "text": "WellDoneDrill werkt mee aan projecten met een groot vermogen, in samenwerking met studiebureaus en bouwheren. Onze expertise omvat:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da87d57f37a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41eb0a132594",
+     "text": "het uitvoeren van de pilootboring;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f30689da81a8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7d630344f45",
+     "text": "het uitvoeren van de thermische responstest;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3428852b7eba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e73c5628a77a",
+     "text": "de interpretatie van de terreinparameters in functie van de behoeften van het project;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "83fe52df5919",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc59c0f06ba4",
+     "text": "de dimensionering van het sondeveld en de economische optimalisatie ervan.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "647b42944aad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "efc107632d58",
+     "text": "Het doel is eenvoudig: van de TRT een instrument ten dienste van het project maken, geen extra beperking. De resultaten maken het mogelijk een performant, duurzaam en juist gedimensioneerd sondeveld te ontwerpen, met minder risico voor de bouwheer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3167371131e8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c80bd2a40e7c",
+     "text": "Vanaf een bepaalde drempel van vermogen en sondelengte is de thermische responstest geen luxe: het is een investering die het project beveiligt, de kosten optimaliseert en de prestaties van geothermie op lange termijn garandeert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Thermische responstest (TRT) voor sondevelden | WellDoneDrill",
+ "seoDescription": "Wat is een thermische responstest, waarom is hij onmisbaar boven 50 kW of 1000 m boring, en hoe helpt hij een sondeveld juist en duurzaam te dimensioneren?",
+ "_mainImageFile": "uploads/2025/12/well-done-drill-belgique.jpg",
+ "_mainImageAlt": "Geothermische boorexpert in België"
+}

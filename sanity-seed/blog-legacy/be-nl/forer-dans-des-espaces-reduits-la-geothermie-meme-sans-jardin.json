@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-nl-4397",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Boren op kleine ruimtes: geothermie, zelfs zonder tuin",
+ "slug": {
+  "_type": "slug",
+  "current": "boren-op-kleine-ruimtes-geothermie-zonder-tuin"
+ },
+ "publishedAt": "2025-12-02T10:58:10Z",
+ "excerpt": "In de Belgische steden hebben veel gebouwen alleen een kleine koer, een tuintje of een smalle toegang. Lang dacht men dat geothermie met verticale sondes voorbehouden was aan grote percelen. Compacte boormachines en moderne technieken veranderen dat grondig.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "b4f5b23a15a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37177b827c78",
+     "text": "In de Belgische steden hebben veel gebouwen alleen een kleine koer, een tuintje of een smalle toegang. Lang dacht men dat geothermie met verticale sondes voorbehouden was aan grote percelen. Compacte boormachines en moderne technieken veranderen dat grondig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "074a362ac5d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46da221d1856",
+     "text": "De vraag \"Kan ik bij mij geothermie laten installeren?\" komt vaak terug zodra het terrein klein is. Het antwoord is veel vaker \"ja\" dan men denkt, op voorwaarde dat men met aangepaste boormachines en een werforganisatie op maat van de stad werkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a43bce2aeea8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "803c567c8a49",
+     "text": "De beperkingen van de toegang begrijpen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f36c126fb695",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b0553f32085",
+     "text": "In de stad bereikt men het boorpunt zelden via een grote poort naar een open terrein. Veel vaker gaat het om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "79ee397ef290",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfc86e3eeb24",
+     "text": "smalle zijdoorgangen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7217c43d80db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9206b0251222",
+     "text": "garagepoorten met een beperkte hoogte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2dd53315527e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51052fe4e1d9",
+     "text": "lange, smalle gangen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f84a47f97e8a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd3d70c844c8",
+     "text": "ingesloten binnenkoeren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "99de981d054f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d5433618ea6",
+     "text": "tuinen achteraan op het perceel, zonder rechtstreekse toegang vanaf de straat.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "648c4ebc02a0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "33625d1bf7d5",
+     "text": "In die situaties wordt de grootte van de boormachine een doorslaggevend criterium. Een te grote machine kan de boorzone gewoon niet bereiken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2fa1fc9d0e86",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2bd6b90eeb4",
+     "text": "Compacte boormachines die passeren waar andere niet passeren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f839fb977e3f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f8a1d21ad60",
+     "text": "WellDoneDrill heeft zich gespecialiseerd in compacte boormachines, speciaal aangepast aan stedelijke werven en kleine ruimtes. Deze boormachines:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a52f2ba7869c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23e561897b59",
+     "text": "passen door beperkte openingen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2614bea74055",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "13b029ef6157",
+     "text": "kunnen in binnenkoeren of kleine parkings worden opgesteld;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "12e7612c9832",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15b816893966",
+     "text": "kunnen manoeuvreren in drukke omgevingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "92db7bd201e7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "177c2a93a756",
+     "text": "Eenmaal op hun plaats behouden ze een boorcapaciteit die vergelijkbaar is met die van grotere machines, vooral dankzij PDC-boren, waarmee grote dieptes zeer efficiënt worden bereikt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2057f049baf7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3fa3d21f1637",
+     "text": "Gemiddeld één sonde per dag",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "52f66233860c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9187e0eaf859",
+     "text": "In de praktijk boort WellDoneDrill op de meeste werven gemiddeld 100 tot 150 m per dag, wat doorgaans neerkomt op één volledige verticale sonde per werkdag. Bij een veld met meerdere sondes duurt de werf enkele dagen, afhankelijk van de diepte en de bodemomstandigheden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c8c9de5c064f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74a1fd3dc77e",
+     "text": "Een sonde boren gebeurt niet altijd in één dag: bepaalde bodemomstandigheden, werkuren of werfvereisten kunnen een gefaseerde aanpak opleggen. Belangrijk voor de klant is dat de prijs onder controle blijft: WellDoneDrill werkt met vaste prijzen per boring, ongeacht het aantal dagen dat nodig is om de geplande diepte te bereiken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e12237162d85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17805ed525a1",
+     "text": "Voor de buren betekent dat een korte, afgebakende werf, met een ploeg die gewend is in gevoelige omgevingen te werken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f5f8023edc9d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "db1de3886578",
+     "text": "Boren vanuit het gebouw: een oplossing voor bestaande panden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "47b230f270c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a55511ca62f0",
+     "text": "Bij sommige projecten, vooral bij renovatie of stedelijke verdichting, is er gewoonweg geen buitenruimte beschikbaar. De oplossing is dan boren vanuit het gebouw zelf:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f3ee925ff5df",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbdf79c09802",
+     "text": "in een ondergrondse parking;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b64b5906b8b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d682c346ddde",
+     "text": "in een technische ruimte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "23644a2f1afc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e49e6f6e9ac6",
+     "text": "in een tijdelijk vrijgemaakte circulatiezone.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33976a82574d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0d59bb3b59f",
+     "text": "De boormachine wordt in het gebouw gebracht en de sondes worden, afhankelijk van de structuur, door de vloerplaten, de funderingsplaat of tussen de funderingspalen geboord. Dat vraagt een nauwkeurige voorbereiding, maar maakt geothermie mogelijk in gebouwen die op het eerste gezicht geen bruikbare grond hadden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ec73269e8232",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "00a16e42b3c6",
+     "text": "Organisatie, veiligheid en netheid",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7caef303e22a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be03d64c2de5",
+     "text": "Werken op kleine ruimtes vraagt een strikte discipline:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57b8e8a01c36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "20c12dc5bb08",
+     "text": "bescherming van vloeren en wanden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6bea664bdeea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be450f4b8519",
+     "text": "beheersing van het traject van boorgruis en spoeling;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "77284c818e59",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ab03053b9e9",
+     "text": "beheer van de toegang voor andere vakmensen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b0cf29a839c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b00581ffe19a",
+     "text": "beveiliging van de werkzones.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c61a936cd3ce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27e7c6fcb12b",
+     "text": "WellDoneDrill heeft specifieke procedures ontwikkeld voor dit soort werven, om de impact op het gebouw en de bewoners te beperken. Het doel is dat het boren een beheerste, kortstondige episode in het project is, en geen bron van complicaties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d230316eccf",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c49b80066f2",
+     "text": "Conclusie: geothermie, ook zonder grote tuin",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7a507d54fc01",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9504d1513793",
+     "text": "De combinatie van compacte boormachines, aangepaste boortechnieken en een organisatie op maat van de stad maakt het vandaag mogelijk geothermische sondes te plaatsen op plekken die enkele jaren geleden uitgesloten waren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6fe7d6fd8576",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3ef68df567c",
+     "text": "Of u nu een kleine koer, een smalle toegang of alleen een ondergrondse parking hebt: het loont de moeite om de haalbaarheid te laten onderzoeken. In veel gevallen kan WellDoneDrill een oplossing voorstellen die geothermie mogelijk maakt, met een korte, goed omkaderde werf die verenigbaar is met de stedelijke beperkingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie zonder tuin: boren op kleine ruimtes | WellDoneDrill",
+ "seoDescription": "Geothermie op een klein perceel of zonder tuin? Compacte boormachines, één sonde per dag, vaste prijzen en boren vanuit een parking of technische ruimte.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermie op een kleine ruimte"
+}

@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-en-4413",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "6 % VAT on heat pumps and geothermal boreholes: a lever for decarbonisation",
+ "slug": {
+  "_type": "slug",
+  "current": "6-percent-vat-on-heat-pumps-and-geothermal-boreholes"
+ },
+ "publishedAt": "2025-12-02T11:04:15Z",
+ "excerpt": "Taxation plays a key role in the choice of heating system. In Belgium, changes to VAT rules in favour of heat pumps and geothermal boreholes send a strong signal in favour of low-carbon solutions.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "eb6bb963015b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae699d75e008",
+     "text": "Taxation plays a key role in the choice of heating system. In Belgium, changes to VAT rules in favour of heat pumps and geothermal boreholes send a strong signal in favour of low-carbon solutions.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d5ee14316220",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ee72851b679",
+     "text": "Renovating buildings over 10 years old: 6 % VAT",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7f0ec72fc64c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7efc458f7ff1",
+     "text": "When renovating residential buildings over 10 years old, VAT on the works is 6 %. This applies to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "df6ec59c844c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8695ff0ca147",
+     "text": "installing heat pumps;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5af187a9f200",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a69e401b57a8",
+     "text": "works related to geothermal boreholes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4931aafa1886",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12ae32b9cbe9",
+     "text": "other renovation works meeting the legal criteria.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2f9d75911bb0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "843acb4fa7b2",
+     "text": "In practice, for a residential geothermal project in a building over 10 years old, VAT is therefore 6 % on the whole installation, boreholes included.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2d423e98b68d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d0bebf88804",
+     "text": "From 2026: 6 % VAT for new builds too",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a6ea556884b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79839873714a",
+     "text": "From 2026, a major change is planned for new homes or homes under 10 years old: VAT on heat pump installations will drop from 21 % to 6 %. The government's aim is clear: to strongly encourage heating systems that are alternatives to fossil fuels.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "183e1ec98cec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "513b5562fc68",
+     "text": "Geothermal boreholes are subject to the same regime and will also drop from 21 % to 6 % for these projects. This is a substantial gain for clients and a strong message in favour of decarbonising heating.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2195c675e7b5",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e6c3d49b4046",
+     "text": "Conditions linked to residential use",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c0b2a438da4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "979f7f8eaa72",
+     "text": "To benefit from the 6 % VAT rates in residential buildings, one important condition must be met: at least 50 % of the building's floor area must be used as housing. This rule applies to both renovation and new builds under the planned schemes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "03fc864f575f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f14ed31ee7ab",
+     "text": "For renovations of buildings over 10 years old, VAT is 6 % in all cases for eligible works, including geothermal installations, as long as the residential criteria are met.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "b9297ab8f4ba",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse-contreplongee.webp",
+   "alt": "a WellDoneDrill geothermal drilling rig in Belgium"
+  },
+  {
+   "_type": "block",
+   "_key": "b1a42652302b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9756963aef8",
+     "text": "An economic lever for geothermal",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c17d9e31ad8e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b80f7ec11c9",
+     "text": "The combination of these measures (reduced VAT for renovations and the extension of 6 % VAT to heat pumps and geothermal boreholes in new builds from 2026) significantly improves the economics of geothermal:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "418ff585672c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05000c190d44",
+     "text": "the initial investment is lighter than at 21 %;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "805146d44f7c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c2ce39f19380",
+     "text": "a high-performance installation becomes more affordable;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "436ae6a2e355",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9e42fd4c66b",
+     "text": "the payback period is shorter.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0ca2096d63c8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "240f0e2b07da",
+     "text": "For households, co-owned buildings and developers, these tax measures make the switch to low-carbon heating even more attractive, all the more so since geothermal has some of the lowest running costs over time.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f48a0fa39813",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e660b780b504",
+     "text": "Geothermal boreholes: same regime, same advantage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1feb21fa9180",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "944f4fd4ed4a",
+     "text": "A key point is that geothermal boreholes follow the same VAT regime as heat pumps in these configurations. For tax purposes, they are not treated as a \"separate\" item but as an integral part of the heating system.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4127e1971e6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "97e054be8626",
+     "text": "In practice, this means that:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "918d20118781",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c4ed2371891",
+     "text": "the probes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "96d030cc5309",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a7149cb8336",
+     "text": "the boreholes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7ff9803eadcd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79d66763b59b",
+     "text": "the external hydraulic connections of the borehole field;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dfe69c14929d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "691da5f213ed",
+     "text": "all benefit from the same reduced VAT rates, which strengthens the overall competitiveness of the solution.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c435869b6a1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1042638f517",
+     "text": "A decisive lever for residential geothermal",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7abfd0aa45dd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2617d51369f",
+     "text": "For residential projects, these VAT rules play a decisive role. They narrow the gap in upfront cost between a fossil-fuel solution and a geothermal one, even though geothermal is already far more competitive over the long term in running costs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d3c319a92f4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "742130453948",
+     "text": "By combining:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "00839bda6155",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b788bf02b49",
+     "text": "reduced VAT;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28ed4b940121",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b23584ecf83a",
+     "text": "low electricity use thanks to the high COP;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb679e7529ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cdb2e284e042",
+     "text": "the option of pairing the heat pump with solar PV;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "67776c4cbed9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "921e903074c7",
+     "text": "geothermal becomes a particularly attractive solution for both new builds and deep renovations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f42fedd84fb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03c504d512ad",
+     "text": "Important note",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5030d4d3ac5a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7cb01c64f2e5",
+     "text": "VAT rules are set by tax legislation and may change. It is important to check, for each project, the precise eligibility conditions and the legislation in force at the time of ordering.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9785f1647067",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82379715347e",
+     "text": "WellDoneDrill works with installers and specialist advisers to structure quotes so that the appropriate VAT regimes apply. The aim is to let clients take full advantage of the tax benefits of geothermal while keeping the paperwork secure.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "6 % VAT on heat pumps and geothermal in Belgium | WellDoneDrill",
+ "seoDescription": "When does 6 % VAT apply to heat pumps and geothermal boreholes in Belgium? Renovation of homes over 10 years old, new builds from 2026 and the conditions.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "6 % VAT on heat pumps and geothermal boreholes"
+}

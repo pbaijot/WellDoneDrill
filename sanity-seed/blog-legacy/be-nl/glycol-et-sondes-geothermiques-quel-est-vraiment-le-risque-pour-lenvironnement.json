@@ -1,0 +1,590 @@
+{
+ "_id": "blog-legacy-be-nl-4403",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Glycol en geothermische sondes: wat is het echte risico voor het milieu?",
+ "slug": {
+  "_type": "slug",
+  "current": "glycol-en-geothermische-sondes-risico-voor-het-milieu"
+ },
+ "publishedAt": "2025-12-02T11:00:19Z",
+ "excerpt": "In geothermische sondes circuleert vaak een mengsel van water en glycol. Voor sommigen roept dat woord meteen een risico op vervuiling bij een lek op. Hoe zit het echt?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "15c54c2eca25",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "01108243ec5b",
+     "text": "In geothermische sondes circuleert vaak een mengsel van water en glycol. Voor sommigen roept dat woord meteen een risico op vervuiling bij een lek op. Hoe zit het echt?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ba1c641778f5",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed65b04b402d",
+     "text": "Waarvoor dient glycol in een geothermische installatie?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8913898eb859",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26082db4fb77",
+     "text": "Glycol is een antivriesmiddel. Gemengd met water in een bepaalde verhouding zorgt het ervoor dat:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4782302e5a13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c8bdc2451ec",
+     "text": "het vriespunt van de vloeistof in de sondes daalt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "851de7a789d5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "419d691900df",
+     "text": "er geen ijs ontstaat in de sonde en de toestellen wanneer de temperatuur onder 0 °C zakt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ff129f5ebf6d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7af7fb26dab7",
+     "text": "de installatie veilig en ononderbroken blijft werken, ook tijdens koude periodes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bba81bc66513",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0501bae4d6e7",
+     "text": "In een geothermische installatie blijft de vloeistof voortdurend in een gesloten circuit: ze circuleert tussen de sondes en de technische ruimte, zonder rechtstreeks contact met de bodem of het grondwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1d5a235f6e9",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "182a8dc43146",
+     "text": "Welk type glycol wordt gebruikt?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a183e2e1c7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d4dc332151d",
+     "text": "In moderne installaties gebruikt men glycol dat geschikt is voor thermische toepassingen, meestal technisch glycol dat speciaal is samengesteld voor verwarmings- en koelcircuits. De gekozen producten zijn:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a4467d66f83d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1141b67abf05",
+     "text": "ontworpen om hun milieu-impact te beperken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c8c8af64d9ce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d709dbd1b537",
+     "text": "stabiel in de tijd;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b4e889f29d03",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6375d34b5ac1",
+     "text": "verenigbaar met de materialen van de sondes en de toestellen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0e648dec890a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee6cdb828e8e",
+     "text": "WellDoneDrill werkt met erkende producten, gekozen op basis van de voorschriften van de warmtepompfabrikanten en de wettelijke vereisten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c9f29d3d543",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3cf1ffc6710",
+     "text": "Waar circuleert het glycol: in de bodem of in een gesloten circuit?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1eb8809def3b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "764584299a32",
+     "text": "Het is belangrijk eraan te herinneren dat het glycol niet \"in de bodem\" circuleert. Het circuleert in de sondes, die bestaan uit HDPE-buizen ingebed in een geothermische grout.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1891d44bace7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5df14806e12",
+     "text": "Het circuit is als volgt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2b7a89391fe9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed29dca237ff",
+     "text": "de vloeistof vertrekt vanuit de collector in de technische ruimte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f7b90608812",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c49ac72ec94",
+     "text": "ze daalt af in de geothermische sonde;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3d514773e5fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7bd0589f3037",
+     "text": "ze stijgt weer op via de tweede streng van de sonde;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b0532894abc4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1285be6e6f4f",
+     "text": "ze keert terug naar de collector en vervolgens naar de warmtepomp.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5280cc81b56e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91fb8b4dec3f",
+     "text": "Bij normale werking is er dus geen enkel rechtstreeks contact tussen het glycol en de bodem of het grondwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4969d6c14a3e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "212c29be989f",
+     "text": "Wat gebeurt er bij een lek?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3ca6cb6f8cd9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9e7b8e23a2ed",
+     "text": "Zoals bij elk hydraulisch circuit kan het risico op een lek nooit als nul worden beschouwd. Verschillende elementen beperken de mogelijke impact echter sterk:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d3f11cdf8d9f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64dac6a76681",
+     "text": "de HDPE-sondes bestaan uit één stuk, zonder ondergrondse koppelingen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4aed71dcc051",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99d3d1b88df9",
+     "text": "collectoren en verbindingen zijn gegroepeerd in toegankelijke zones (putten, technische ruimtes);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "94df0af9e41f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "333aee4cfef5",
+     "text": "er worden systematisch druktesten uitgevoerd vóór de ingebruikname en na de werken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c211fc69a269",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9a4dd6421e1",
+     "text": "een drukdaling in het circuit is tijdens de werking detecteerbaar.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f12c46ab3d21",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93b20855f5cc",
+     "text": "Als er toch een lek optreedt, gebeurt dat meestal in een toegankelijke zone (technische ruimte, put), zodat snel kan worden ingegrepen om het circuit te herstellen en bij te vullen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b59ad7d668ee",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "263e02de34d5",
+     "text": "Hoe WellDoneDrill dit risico in de praktijk beperkt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "88228d2b69dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b892ce8405d",
+     "text": "WellDoneDrill past verschillende voorzorgsprincipes toe:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "033a9197a8f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "daaa2fb45383",
+     "text": "gebruik van HDPE-sondes uit één stuk, met 50 jaar garantie;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ab568e9f3b77",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7fd82d1d15fe",
+     "text": "lassen en koppelingen uitvoeren in toegankelijke zones;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ef8fa8bd870e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9852ee3a0cee",
+     "text": "systematische druktesten van sondes en collectoren vóór het opvullen van de sleuven;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f672f34506bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "964e179ff24c",
+     "text": "documentatie van de circuits om latere ingrepen te vergemakkelijken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b7b1aea5a14",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4885f132965a",
+     "text": "Deze goede praktijken verkleinen de kans op een lek aanzienlijk en maken een snelle detectie mogelijk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "080336125002",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "40323e1199ff",
+     "text": "Conclusie: moet u bang zijn voor glycol bij geothermie?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af65d0627626",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05e8d265770b",
+     "text": "In een correct ontworpen en uitgevoerde geothermische installatie circuleert het glycol in een gesloten circuit, vergelijkbaar met een klassiek verwarmingscircuit. Het is geen vloeistof die in de bodem of het grondwater wordt geïnjecteerd, maar een warmtedragende vloeistof die in de sondes blijft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "401622886a2a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d8086a88c55",
+     "text": "Het risico op accidentele vervuiling is zeer klein en wordt beheerst door de kwaliteit van de materialen, de druktesten en het ontwerp van de circuits. Voor een bouwheer is het vooral belangrijk dat de installatie wordt uitgevoerd door professionals die deze goede praktijken respecteren, en dat staat centraal in de aanpak van WellDoneDrill.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Glycol in geothermische sondes: welk risico? | WellDoneDrill",
+ "seoDescription": "Waarom zit er glycol in geothermische sondes, waar circuleert het, wat gebeurt er bij een lek en hoe beperkt WellDoneDrill het risico voor bodem en grondwater?",
+ "_mainImageFile": "uploads/2025/12/wdd-geothermie-hero.webp",
+ "_mainImageAlt": "Geothermische sonde in België"
+}

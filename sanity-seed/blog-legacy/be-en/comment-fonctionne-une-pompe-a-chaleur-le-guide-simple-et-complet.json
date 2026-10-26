@@ -1,0 +1,884 @@
+{
+ "_id": "blog-legacy-be-en-4380",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "How does a heat pump work? The simple, complete guide",
+ "slug": {
+  "_type": "slug",
+  "current": "how-does-a-heat-pump-work-simple-complete-guide"
+ },
+ "publishedAt": "2025-12-02T10:49:52Z",
+ "excerpt": "The heat pump has become the centrepiece of modern heating systems, especially when paired with geothermal. But how does it actually work? Why is it so efficient? And what are the differences between the types of heat pump?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 6,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "bef091fee877",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b813050d01fb",
+     "text": "The heat pump has become the centrepiece of modern heating systems, especially when paired with geothermal energy. But how does it actually work? Why is it so efficient? And what are the differences between the various types of heat pump?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f04281cc4940",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10875cc69b54",
+     "text": "1. The principle: capturing the free energy around us",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c7a0adf17c4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6152d1497ab4",
+     "text": "A heat pump doesn't \"create\" heat: it moves energy present in the environment (air, ground, water) into the building to be heated. It works on the same principle as a refrigerator, but in reverse:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "28f6e44fb33f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5b9d624bf48",
+     "text": "outside, it captures heat at low temperature;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6b61333cb741",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91d8a2ce3e6d",
+     "text": "inside, it transfers that heat at a higher temperature to the heating circuit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0481beb5fbeb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03c0df0580a4",
+     "text": "This is made possible by a refrigerant and a four-step thermodynamic cycle.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "31e61b48a053",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ce743b0f046",
+     "text": "2. What types of heat pump are there, and what are they called?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "467af998ff9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18247c7c06b9",
+     "text": "Heat pumps are mainly classified by their energy source (air, ground, water) and their distribution method (air or water). These are the common names.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2b3d547762af",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cde6e2bc1f42",
+     "text": "Air-source heat pumps",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3df073ab547d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7bedf3b12193",
+     "text": "Air-to-air heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4b6eee4da188",
+     "text": " it captures heat from the outdoor air and releases it indoors as warm air (through indoor \"split\" units). It is mainly used in single-family homes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d2da65fa1b8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42fb3f9bdffa",
+     "text": "Air-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5f86ae3c70fc",
+     "text": " it captures heat from the outdoor air and transfers it to a water heating circuit (radiators, underfloor heating, fan coil units). It is the most common version in renovations replacing a gas or oil boiler.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "082f5a0369d2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc2218812cab",
+     "text": "Geothermal heat pumps",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fccf188a635b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b24abfc937bb",
+     "text": "Ground-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1d7bdef1015b",
+     "text": " it draws heat from the ground through vertical geothermal probes or a horizontal collector and releases it into the water heating circuit. It is the most stable and efficient long-term solution.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c324e079131",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "afdcced9fd11",
+     "text": "Water-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4855e1973c2e",
+     "text": " it uses heat from groundwater or surface water (open-loop geothermal or aquathermal). It is reserved for sites with a suitable water resource and specific permits.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "016d2125d8c7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4105cd9b7371",
+     "text": "Hybrid heat pumps",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1aeb83752d78",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f719e4bb960",
+     "text": "We sometimes speak of hybrid systems when a heat pump is combined with a boiler or another heat source. For example, an air-to-water heat pump combined with a gas boiler for very cold days, or a geothermal heat pump combined with another source (aquathermal, sewer heat recovery, etc.) on high-output projects.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "538cf624cc52",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f70e8817b859",
+     "text": "3. The four steps of the thermodynamic cycle",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ba9384d9c9ed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3208e8dfb9c6",
+     "text": "At the heart of the heat pump, a refrigerant circulates in a closed loop and changes state (liquid/gas) to carry energy.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "138475236e84",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d85b590fb786",
+     "text": "The evaporator: capturing natural heat",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e9b755552ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8ea63a32347",
+     "text": "The refrigerant enters the evaporator as a liquid at low pressure and low temperature. There it absorbs heat from the outside source (air, ground, water) and evaporates (becomes a gas).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c0fed3e2f9e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b26435025514",
+     "text": "The compressor: raising the temperature",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7bf7a36b8333",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52e3b58493ce",
+     "text": "The cold, low-pressure gas is drawn in by the compressor. Compressing it raises its pressure and temperature: it becomes a hot gas.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6e15c325484",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c3722380038",
+     "text": "The condenser: heating the building",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bf5de5fd97fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9609ee60de72",
+     "text": "The hot gas reaches the condenser, where it gives up its heat to the water heating circuit (radiators, underfloor heating, buffer tank…). As it cools, it condenses back into a liquid.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f7529c79e833",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4aeab77286e5",
+     "text": "The expansion valve: starting the cycle again",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8095b7de3023",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c784d12f4ec",
+     "text": "The refrigerant, now liquid but at high pressure, then passes through an expansion valve. Its pressure and temperature drop and it returns to its initial state: a cold liquid at low pressure. The cycle can begin again.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "41305b03fc01",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "699ba0dcc41c",
+     "text": "4. Why is a heat pump so efficient?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d9edb9bcf29d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd87ac64d9de",
+     "text": "A heat pump's performance is measured by its coefficient of performance (COP), the ratio between the heat produced and the electricity used. A COP of 4 means that for 1 kWh of electricity, the heat pump delivers 4 kWh of heat.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "05c3df72cfbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4649e6495c92",
+     "text": "This efficiency comes from the fact that the heat pump doesn't produce heat: it transfers it. The electricity powers the compressor and auxiliaries, not the generation of heat itself.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26565509695f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c73cd78b2a2",
+     "text": "5. Why the geothermal heat pump performs best",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2834dc7c9de1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab3b43826045",
+     "text": "A heat pump's performance depends largely on how stable its source is:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26bd047dfaac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bb6349a4458",
+     "text": "outdoor air",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2a6f08eed3ef",
+     "text": " can vary from -10 °C to +35 °C over the year;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b984c6f1f990",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c04576e61a9",
+     "text": "the ground",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f5218fc96c05",
+     "text": ", from a few metres down, stays within a much more stable range (about 10 to 14 °C).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c09cbdd7ee86",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16a94bed01ab",
+     "text": "A geothermal heat pump therefore works with almost constant input conditions. The compressor is under less strain, and the COP is higher and more stable over time, especially in winter. That is what makes the geothermal heat pump the best-performing solution for heating and cooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "95cbeec034c6",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bafe11d4cc06",
+     "text": "6. A heat pump also provides cooling and hot water",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d11ad4cffccc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ab1939794fe",
+     "text": "Cooling the building",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aa7c995f0bcc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4753630da17",
+     "text": "By reversing its cycle or using a hydraulic bypass (geocooling), the heat pump can also cool the building. With geothermal, this cooling is especially frugal, as it uses the coolness of the ground directly.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee10152653c9",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bfb7de6f172",
+     "text": "Producing domestic hot water",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f74a310f637c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a914d8864e8c",
+     "text": "Most modern heat pumps can also heat domestic hot water through a built-in or separate cylinder. The set temperature is adjusted to guarantee comfort while keeping consumption under control.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a3a3b6e6c111",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b889fd613980",
+     "text": "Delivering even comfort",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d184b1279300",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb6df25167d2",
+     "text": "A heat pump, especially a geothermal one, provides even heating without large temperature swings, running continuously at low temperature. The comfort is greater than with systems that switch on and off frequently.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c46d4697de9e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fcd0b4c62665",
+     "text": "7. Air-to-water vs water-to-water heat pump: the comparison",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a45e19130fbc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c26de60b4e14",
+     "text": "1. Winter performance",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd834177ff7f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c94cf8cc976",
+     "text": "An air-to-water heat pump loses performance when it is very cold, just as needs increase. A geothermal heat pump keeps working with a stable source, which lets it maintain a very good COP.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dcb3bb10f974",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3011157d754",
+     "text": "2. Noise and appearance",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a2e17646b26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48ee2e6b420c",
+     "text": "An air-to-water heat pump needs an outdoor unit, which is visible and audible. Geothermal is entirely underground and the heat pump sits indoors: no noisy or visible outdoor unit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d23beb9e7c8b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e6bb9b9aa90d",
+     "text": "3. Electricity consumption",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c88732224960",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca62185e252c",
+     "text": "For the same comfort, a geothermal heat pump generally uses less electricity over the year than an air-to-water one, mainly thanks to its stable winter efficiency.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5bacea6c3e05",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3b8ba5e75fa0",
+     "text": "4. Lifespan",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "efad1280b249",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca527d3d171a",
+     "text": "Less exposed to the weather and temperature changes, a geothermal heat pump is generally under less strain and can last longer. The probes stay in place for decades.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2f0cfbbab0a8",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f323641e8b82",
+     "text": "5. Running costs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6badca64350f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b0a75176afe",
+     "text": "The running costs of a geothermal heat pump are particularly low, thanks to its excellent seasonal efficiency. The initial investment is higher, mainly because of the boreholes, but it is offset by lower running costs over time.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5dca654bb562",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c921f3390d97",
+     "text": "6. For which type of building?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "70a4da9d2534",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f7afaaa028e8",
+     "text": "An air-to-water heat pump is often chosen for simple renovations where drilling is not wanted. A geothermal heat pump is ideal for projects aiming for maximum performance, comfort and durability: new houses, deep renovations, apartment buildings, public buildings and more.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6a0cac9dd03f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "254682898da2",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e7841188ac20",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14cf5b9ec40e",
+     "text": "The heat pump is today the key technology for moving away from fossil fuels in building heating. Among the various versions, the geothermal heat pump stands out for its stability, performance and comfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "754cae6a3610",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "648202bb5d0f",
+     "text": "Combined with properly sized geothermal probes and good controls, it provides heating, cooling and domestic hot water with a minimal carbon footprint and very low running costs, for decades.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "How does a heat pump work? The complete guide | WellDoneDrill",
+ "seoDescription": "Everything about heat pumps: the principle, the types (air-to-water, ground-to-water, water-to-water), the thermodynamic cycle, COP and why geothermal performs best.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "WellDoneDrill heat pump"
+}

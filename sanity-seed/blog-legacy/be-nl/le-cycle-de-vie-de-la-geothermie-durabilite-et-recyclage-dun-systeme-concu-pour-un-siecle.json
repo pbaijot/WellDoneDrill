@@ -1,0 +1,452 @@
+{
+ "_id": "blog-legacy-be-nl-5526",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "De levenscyclus van geothermie: duurzaamheid en recyclage van een systeem gebouwd voor een eeuw",
+ "slug": {
+  "_type": "slug",
+  "current": "levenscyclus-van-geothermie-duurzaamheid-en-recyclage"
+ },
+ "publishedAt": "2026-03-20T14:17:52Z",
+ "excerpt": "Wie in een energieoplossing investeert, moet zich even goed afvragen hoe ze haar levensduur afsluit als hoe ze presteert. Welke milieu-impact hebben de materialen? Wat gebeurt er met de onderdelen na 30 of 50 jaar?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e8dab8bcf1ae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2630a70bcd5b",
+     "text": "Wie in een energieoplossing investeert, moet zich even goed afvragen hoe ze haar levensduur afsluit als hoe ze presteert. Welke milieu-impact hebben de gebruikte materialen? Wat gebeurt er met de onderdelen na 30 of 50 jaar? Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "912e15a81a38",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4fd202711b12",
+     "text": " kiezen we voor een langetermijnvisie: geothermie is per definitie het meest circulaire en duurzame verwarmingssysteem dat er bestaat. Hier is de levenscyclusanalyse van uw installatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "68b5efdb8a00",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9bda14b9530f",
+     "text": "1. HDPE-sondes: bestand tegen de tand des tijds",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "03ca2f177aed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "835f15f98616",
+     "text": "Het hart van onze installatie bestaat uit sondes in ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "a68b37417c31",
+     "text": "hogedichtheidspolyethyleen (HDPE)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b7e160b5051d",
+     "text": ". Dit materiaal werd gekozen om zijn uitzonderlijke fysisch-chemische eigenschappen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2b45c18cdada",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a82d3a986057",
+     "text": "Volledig inert:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e8050d1d9774",
+     "text": " HDPE corrodeert niet, oxideert niet en reageert niet met de mineralen in de bodem of het grondwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3acab4dfab79",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "346e08deee22",
+     "text": "Recordlevensduur:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3f3d8de32f4d",
+     "text": " Versnelde verouderingstests tonen aan dat ingegraven sondes, beschermd door ons geothermisch cement, hun mechanische eigenschappen ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6f1df20a4a27",
+     "text": "meer dan 100 jaar",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7a8a38ea356c",
+     "text": " behouden. Anders dan een stookolietank die geneutraliseerd moet worden of gasleidingen die oxideren, zijn uw sondes een blijvend bezit. Over 50 jaar zullen ze nog altijd werken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bc9f504aabba",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c43f9f569c19",
+     "text": "2. Recyclage van de onderdelen op het einde van hun levensduur",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1d5d18fe8b03",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed2be18d7651",
+     "text": "Hoewel de boring nagenoeg eeuwig meegaat, heeft het mechanische deel (de warmtepomp) een gemiddelde levensduur van 20 tot 25 jaar. In 2026 heeft de sector reuzenstappen gezet op vlak van recyclage:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "98c725f59381",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e94fb427276",
+     "text": "De warmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "21980bc8c085",
+     "text": " Ze bestaat voor meer dan 90 % uit recyclebare metalen (koper, staal, aluminium) en elektronische onderdelen die via gespecialiseerde kanalen worden verwerkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "79073a07c413",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27848a240add",
+     "text": "De warmtedragende vloeistof:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d67fa90f2e27",
+     "text": " Het water-glycolmengsel in onze circuits wordt bij een eventuele vervanging van het toestel weggepompt. Die vloeistof wordt vervolgens behandeld en gerecycleerd voor hergebruik, zodat niets in de natuur terechtkomt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f9d6b9467414",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b73455f05086",
+     "text": "3. Hergebruik van de boring: het ultieme voordeel",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "079cf6b979e6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4a34d183a57",
+     "text": "Hier overtreft geothermie alle andere technologieën. Stel dat er over 30 jaar een nog efficiëntere technologie verschijnt om warmte om te zetten in verwarming.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9495b1b4aebd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1be405114151",
+     "text": "Plug & play:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a19707c81356",
+     "text": " U zult nooit opnieuw moeten boren. De ondergrondse infrastructuur die WellDoneDrill vandaag aanlegt, kan de volgende generatie toestellen ontvangen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f63d085575e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e790a5d5d422",
+     "text": "Minder grondstoffen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6ed4c32c84b3",
+     "text": " Geen nieuw grondwerk, geen nieuwe grondstoffen voor de opname. U hergebruikt gewoon de \"energieput\" die in 2026 werd aangelegd.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "709bb22a04fd",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b36f3b1096c6",
+     "text": "4. Een koolstofbalans die op enkele jaren \"terugbetaald\" is",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0dc77deacf01",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a2989d750a0",
+     "text": "De productie van de sondes en de energie voor het boren (brandstof van de boormachine) veroorzaken een initiële koolstofvoetafdruk. Dankzij de efficiëntie van het systeem (hoge COP) is die \"koolstofschuld\" doorgaans in ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "1d8d49a58c7b",
+     "text": "minder dan 3 tot 5 jaar",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ba5e96838257",
+     "text": " werking gecompenseerd ten opzichte van een gasverwarming. Over een levensduur van 50 jaar is de milieubalans een van de laagste van alle bouwtechnologieën.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "297ddba99a92",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cbceeceb72b",
+     "text": "5. Het engagement van WellDoneDrill voor een propere werf",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7b5bb1d7ff9b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62ee08a8bf55",
+     "text": "Onze kijk op de levenscyclus begint vanaf de eerste boordag.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8deec76ac096",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d99724d05754",
+     "text": "We beheren de recyclage van het boorslib.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "779851d11b71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d36eae9f9cdc",
+     "text": "We gebruiken gecertificeerde, traceerbare materialen die voldoen aan de strengste Europese normen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64feac9cacc2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f8478ef4334",
+     "text": "We dimensioneren onze systemen om overdimensionering en verspilling van grondstoffen te vermijden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a36ace7e3d94",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7510ae2c73df",
+     "text": "Conclusie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1927184827f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c155ea93e8b3",
+     "text": "Kiezen voor geothermie met WellDoneDrill betekent uit de cyclus van wegwerpconsumptie stappen. U installeert een infrastructuur die nooit afval wordt. Het is een schone, duurzame en recyclebare technologische erfenis die u nalaat aan uw gebouw en aan toekomstige generaties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "De levenscyclus van geothermie | WellDoneDrill",
+ "seoDescription": "HDPE-sondes voor meer dan 100 jaar, recyclebare warmtepomp, herbruikbare boring en een koolstofschuld die in 3 tot 5 jaar terugverdiend is: de levenscyclus van geothermie.",
+ "_mainImageFile": "uploads/2026/01/Capture-decran-2026-01-23-a-12.45.31.jpg",
+ "_mainImageAlt": "Levenscyclus van een geothermische installatie"
+}

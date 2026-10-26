@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-en-4401",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal boreholes under buildings and underground car parks",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-boreholes-under-buildings-and-car-parks"
+ },
+ "publishedAt": "2025-12-02T10:59:35Z",
+ "excerpt": "When surface space is limited, geothermal probes can be placed directly under buildings or underground car parks. This makes it possible to include geothermal in very dense projects, in new builds as well as renovations.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e2fda5596317",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f81422f7e00e",
+     "text": "When the space available on the surface is limited, geothermal probes can be placed directly under buildings or underground car parks. This approach makes it possible to include geothermal in very dense projects, in new builds as well as renovations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2feb9600108d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23499444a8a6",
+     "text": "Two main layout scenarios",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3f43a7571e99",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "819a1d6133bf",
+     "text": "Geothermal probes can be installed under a building or car park in two main configurations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "80e6cf9f0918",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a89256ffc60a",
+     "text": "1. Drilling before construction",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ddf128e943e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c2022f9c2aa",
+     "text": "For a new-build project, the simplest solution is to drill before the building is constructed:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "54ace75edf1c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "293cbffd14a5",
+     "text": "the probes are drilled on the bare site;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d383f8f8ca85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e743cb5d03f3",
+     "text": "they are positioned according to the future plan of the foundations and basements;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cf39f3111eee",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "453eb38a0e5d",
+     "text": "once the probes are installed and connected, the building is constructed on top.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9d2fdc6994db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3de76aa212f3",
+     "text": "This allows great freedom in the layout, while ensuring the probes won't get in the way of the foundations. Coordination with the structural engineer is essential to define drilling zones and clearances from piles or footings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "88a82ec545f6",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5eded63dc901",
+     "text": "2. Drilling from inside, under an existing building or one under construction",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ccb94a4bd45",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b345e549eb98",
+     "text": "In the second scenario, drilling is done from inside, once one or more basement levels have been built. The rig is set up on a car park slab or in a plant room, and the probes are drilled into the ground beneath. This approach is particularly useful when no outdoor space is available or when the project is already partly built. It requires compact rigs that can work with limited headroom, and specific organisation for removing cuttings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6735bfa9302a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "051d218d628b",
+     "text": "The same applies to renovation: in existing buildings, rigs can be brought inside to drill through floor slabs, rafts or between foundation piles, depending on the configuration. This opens up geothermal for buildings where all the outdoor land is already used or built on.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "36bd627423c8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b24ca0eaa092",
+     "text": "Coordination with the structure and foundations",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "715e1a619310",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f54c25f3e02",
+     "text": "Drilling under a building requires close coordination with the structural engineer:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5eaeb641aa6f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f6d37bda593",
+     "text": "location of piles or footings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "85cf869b9d72",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "959699603ab0",
+     "text": "depth of the foundations;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b03c310bedb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccf5ff03b4e8",
+     "text": "zones to avoid so as not to weaken the structure;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f2d8832f279",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bddbb1aa98e3",
+     "text": "any minimum clearances to respect.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a52435bdac92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30d4270951e0",
+     "text": "Since geothermal probes are simple HDPE pipes embedded in grout, they exert no significant pressure on the ground. The issue is not structural but geometric: the probes must be positioned so they don't interfere with load-bearing elements.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0b82146a600e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d60be7db8db1",
+     "text": "Benefits of placing probes under a building or car park",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e0641b30e7d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "922c83e69c17",
+     "text": "Placing the probes under the building or car park has several benefits:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "54eb1b001eec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a06cbf05d47",
+     "text": "optimal use of land: no extra surface footprint;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dc9c1c2223c9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18f69b361986",
+     "text": "protected probe heads: they sit in plant rooms or protected areas;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "06ee884615d0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81f356e973fa",
+     "text": "shorter connections between the probes and the plant room;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "47dc37b8fbc6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e3793fc22d8",
+     "text": "geothermal becomes possible in very dense city-centre projects.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "682f717658da",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46c84ea6f921",
+     "text": "For developers and designers, this solution makes it possible to offer geothermal heating and cooling even when no garden or open land is available.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "590c34bac4dd",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63a51ecfe367",
+     "text": "Site organisation and practical constraints",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ff2ffcb377fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a6a1d959435b",
+     "text": "Drilling under a building or car park requires special logistics:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0dda4a25b383",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be62a64b5ecc",
+     "text": "getting the rig into the building;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "841aad5794cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e23757a6dbb6",
+     "text": "protecting slabs and existing finishes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f9cc95e98de0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2138391ab0ec",
+     "text": "managing cuttings in a confined space;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0a9679471f8a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ddaad6476b6",
+     "text": "respecting headroom and ventilation constraints.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28c939f2bab7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b894be8afef",
+     "text": "WellDoneDrill has compact rigs and suitable procedures for this type of site, in both new builds and renovations. The aim is to carry out the drilling with minimal impact on the building and the overall schedule.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d6cd5abe63a8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c92b12bdfe1c",
+     "text": "Conclusion: a lever for geothermal in dense areas",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "75497efc76c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "df0b10198270",
+     "text": "The ability to place geothermal probes under buildings or underground car parks is a major asset for geothermal in dense urban projects. It reconciles energy performance, comfort and land constraints.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ef8ad1d95c72",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b0084f5d3fcb",
+     "text": "Thanks to its expertise in urban drilling and work under buildings, WellDoneDrill supports project owners, architects and engineering firms in building this solution into their projects, from design to delivery.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal boreholes under buildings and car parks | WellDoneDrill",
+ "seoDescription": "Probes under a building or car park: drilling before construction or from the basement, coordination with the structural engineer, benefits and site logistics.",
+ "_mainImageFile": "uploads/2025/12/parking-sous-terrain.webp",
+ "_mainImageAlt": "Geothermal boreholes under a building or underground car park"
+}

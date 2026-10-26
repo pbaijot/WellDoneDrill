@@ -1,0 +1,168 @@
+{
+ "_id": "blog-legacy-lu-de-4855",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Bodenwärme in Energie verwandeln: Geothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "bodenwaerme-in-energie-verwandeln-geothermie"
+ },
+ "publishedAt": "2025-12-04T13:58:11Z",
+ "excerpt": "Da die Dekarbonisierung von Gebäuden zur Priorität wird, bietet die Erdwärmebohrung eine nachhaltige Lösung, um die natürliche Wärme des Bodens zu nutzen.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "image",
+   "_key": "66766846e883",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+   "alt": "Erdwärmebohrung für Privatkunden in Belgien"
+  },
+  {
+   "_type": "block",
+   "_key": "c81fa3876313",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91bf9ead8326",
+     "text": "Da die Dekarbonisierung von Gebäuden zur Priorität wird, bietet die Erdwärmebohrung eine nachhaltige Lösung, um die natürliche Wärme des Bodens zu nutzen. Diese präzise und kontrollierte Technik versorgt Heiz- und Kühlsysteme effizient und verringert die Abhängigkeit von fossilen Energien.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a9c36219e6d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e29cd2fba11",
+     "text": "Bei einer Erdwärmebohrung wird in den Boden gebohrt, um die natürliche Wärme der Erde zu erschließen. So lassen sich Erdwärmesonden einbauen, die diese Wärme anschließend zurückgewinnen, um Heiz- oder Kühlsysteme zu versorgen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34e3f7bde4d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2bf6f85be766",
+     "text": "Die Bohrung schreitet mit einer Reihe von Stahlgestängen von jeweils etwa drei Metern voran, die mit zunehmender Tiefe miteinander verschraubt werden. Dank des Bohrfutters können unsere Bohrmeister die Gestänge beim Bohren und Ziehen schnell an- und abschrauben, was eine optimale Produktivität auf der Baustelle sichert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9e75fc943e82",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7b148cfc97c",
+     "text": "Ist die gewünschte Tiefe erreicht, wird das Bohrloch vollständig gespült, um Sedimente und Partikel zu entfernen, die die Qualität der Bohrung beeinträchtigen könnten. Dann wird das Gestänge gezogen, damit die Erdwärmesonde abgelassen werden kann. Sie wird von einem Gewicht von etwa 42 kg bis zum Grund des Bohrlochs gezogen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "22b19c6ba642",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af4774c55571",
+     "text": "Der Bohrkopf ist mit Hartmetallstiften bestückt, die den Boden abtragen. Wasser wird in das Gestänge gepresst und tritt durch kleine Öffnungen wieder aus. Dieser Wasserstrom kühlt den Bohrkopf und fördert das Bohrklein als Schlamm nach oben. Der Schlamm gelangt in einen Absetzcontainer, in dem das Wasser von den Feststoffen getrennt und im Kreislauf wiederverwendet wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ff694b7a8e2d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2ff2968bd97",
+     "text": "Das Spülwasser erfüllt also eine doppelte Aufgabe: Es regelt die Temperatur des Bohrkopfs, der in felsigem Untergrund sehr heiß werden kann, und es transportiert die Sedimente an die Oberfläche. In der Region Brüssel oder in Wallonisch-Brabant zum Beispiel erzeugen die Tonböden besonders feinen Schlamm, typisch für diese Formationen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d596ffd1eda8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c3491d40e37",
+     "text": "Sobald die Verrohrung teilweise entfernt ist, verpressen wir eine geothermische Verfüllung. Sie besitzt eine ausgezeichnete Wärmeleitfähigkeit und fördert den Wärmeaustausch zwischen Boden und Sonde. Außerdem sichert sie das Bohrloch, indem sie die verschiedenen geologischen Schichten und Grundwasserleiter voneinander abdichtet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a5e08bb6c54a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67d8e343e739",
+     "text": "Eine Erdwärmebohrung ist Präzisionsarbeit, die fortschrittliche Technik, fundierte Kenntnis des Untergrunds und ein sorgfältiges Management der Flüssigkeiten vereint. Sie ist ein Schlüsselschritt für nachhaltige Heiz- und Kühllösungen auf Basis erneuerbarer Bodenenergie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f726ddf93b5e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5708f27c10c4",
+     "text": "Das vollständige Video der Bohrung finden Sie hier: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7dd72cfae139",
+     "text": "https://www.youtube.com/watch?v=9lDoSbhm3uo",
+     "marks": [
+      "c7db4dbab35d"
+     ]
+    }
+   ],
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "c7db4dbab35d",
+     "href": "https://www.youtube.com/watch?v=9lDoSbhm3uo"
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Bodenwärme in Energie verwandeln: Geothermie | WellDoneDrill",
+ "seoDescription": "Wie läuft eine Erdwärmebohrung ab? Bohrgestänge, Spülung, Sonde und Verfüllung: So machen wir die Wärme des Bodens zu Energie.",
+ "_mainImageFile": "uploads/2025/12/chaleur-sol-geothermie.webp",
+ "_mainImageAlt": "Bodenwärme mit Geothermie in Energie verwandeln"
+}

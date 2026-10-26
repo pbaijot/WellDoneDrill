@@ -1,0 +1,346 @@
+{
+ "_id": "blog-legacy-be-en-5383",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Why geothermal grout matters for the performance of your borehole",
+ "slug": {
+  "_type": "slug",
+  "current": "why-geothermal-grout-matters-for-your-borehole"
+ },
+ "publishedAt": "2026-03-20T10:04:12Z",
+ "excerpt": "Geothermal drilling is more than digging a hole and inserting probes. The most technical and least-known step is sealing. At WellDoneDrill we pay close attention to the choice and injection of geothermal grout.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "31c2d3824f19",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84f8cdd7d59a",
+     "text": "Geothermal drilling is not just about digging a hole in the ground and inserting probes. The most technical step, and often the least known to the public, is ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9393a74115d2",
+     "text": "sealing",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a25f9593f081",
+     "text": ". At WellDoneDrill, we attach great importance to the choice and injection of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "592f22586a38",
+     "text": "geothermal grout",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e5ec75a26bc2",
+     "text": " (sometimes called high-performance grout). Here is why this material is the real \"nervous system\" of your installation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f20bf4cf862d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f89e77ee1ba",
+     "text": "1. Ensuring optimal thermal conductivity",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e135877bf7a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "80e0ba3d7865",
+     "text": "Vertical geothermal energy captures heat from the ground and transfers it to the heat-transfer fluid circulating in the HDPE (high-density polyethylene) probes. Between the borehole wall and the probe itself, however, there is a gap. Since air is an excellent insulator, efficiency drops dramatically if this gap is not filled properly.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a635cd7ec339",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7aada7203cd2",
+     "text": "The geothermal grout we use has a ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "dcd28373cedf",
+     "text": "high thermal conductivity",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ee273f3bfad3",
+     "text": " (expressed in W/m·K). Its specific composition creates a continuous thermal bridge between the rock and the probe. Without good grout, your heat pump has to work harder to extract the same amount of heat, which increases your electricity bill and shortens the machine's life.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6b1ecab1108c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab6e076aebc6",
+     "text": "2. Essential protection of groundwater",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a2632df93e35",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d00d3f6120f",
+     "text": "Drilling to 100 or 150 metres means crossing different geological layers, some of which contain water (aquifers). In Belgium, environmental regulations are strict: it is forbidden to connect two separate aquifers or to let polluted surface water seep into the depths.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6fa780d20763",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "981637ffa143",
+     "text": "Here the grout acts as a ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "90b44c8779f3",
+     "text": "watertight barrier",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5116a82b283a",
+     "text": ". With the addition of bentonite (a natural swelling clay), the mix becomes impermeable. It seals the borehole hermetically over its full height, ensuring your installation respects the underground ecosystem for decades to come.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "acbb2f5344e4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "02d5a0d44c17",
+     "text": "3. Mechanical protection and probe longevity",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2bcc672cbc25",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e4febf3ba45",
+     "text": "The ground is not an inert structure: it is subject to pressure, changes in moisture and sometimes slight movement. Geothermal grout physically protects the probes:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4799c9b218d0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "747d50240358",
+     "text": "Against crushing:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dc75324562fc",
+     "text": " It spreads the lateral pressure of the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29e81eecbeb8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8142cb1db1e4",
+     "text": "Against corrosion:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "130b50c00a9b",
+     "text": " It protects the pipes from aggressive chemicals naturally present in some aquifers.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b93317407f98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "73d8ea04b53d",
+     "text": "Stability:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "90c9ab64025f",
+     "text": " It holds the probes firmly in place, preventing friction that could eventually cause a leak.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec226213cb7a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "39c7bedf5e62",
+     "text": "4. The injection method: from the bottom up",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5e74a0736d76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04191c30f9fe",
+     "text": "The quality of the material is not everything; the injection method is crucial too. At WellDoneDrill, we inject through a ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "d019496bcb49",
+     "text": "sacrificial tremie pipe",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d443de68504b",
+     "text": ". We inject the grout from the bottom of the borehole up to the surface. This pushes air and water upwards and guarantees complete filling, with no air bubbles or voids.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "910b8c4cfa34",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f8915df59b4",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d29854437441",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "572e0d63ec46",
+     "text": "Investing in a deep borehole and a high-end heat pump makes little sense if the thermal link between them is neglected. Choosing a certified geothermal grout guarantees stable performance over 50 years. It is the signature of good workmanship and of an installation that respects both your wallet and the environment.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Why geothermal grout matters | WellDoneDrill",
+ "seoDescription": "Why geothermal grout is so important: thermal conductivity, groundwater protection, probe longevity and bottom-up injection explained.",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige.jpg",
+ "_mainImageAlt": "Geothermal grout in a borehole"
+}

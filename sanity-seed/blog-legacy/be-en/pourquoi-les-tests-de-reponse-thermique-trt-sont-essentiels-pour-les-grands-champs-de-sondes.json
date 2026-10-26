@@ -1,0 +1,662 @@
+{
+ "_id": "blog-legacy-be-en-4386",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Why thermal response tests (TRT) are essential for large borehole fields",
+ "slug": {
+  "_type": "slug",
+  "current": "why-thermal-response-tests-trt-are-essential"
+ },
+ "publishedAt": "2025-12-02T10:52:07Z",
+ "excerpt": "For large geothermal projects such as apartment buildings, offices or local heat networks, sizing the borehole field correctly is decisive. The thermal response test (TRT) is the reference tool for characterising the subsurface precisely.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "a7edfd845ae9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "61b3723e04da",
+     "text": "For large geothermal projects such as apartment buildings, offices or local heat networks, sizing the borehole field correctly is decisive. The thermal response test (TRT) is the reference tool for precisely characterising the subsurface and optimising the design of installations above 50 kW.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "41e3fee35855",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c341b093445",
+     "text": "What is a thermal response test?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a9d321a04d54",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd73e074430b",
+     "text": "A thermal response test consists of injecting heat into a geothermal probe for a given period (usually 48 to 72 hours), then measuring how the subsurface responds. In practice, a heated fluid is circulated through the probe and the following are recorded:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3fce302fa152",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38e2f0d32d51",
+     "text": "the power injected;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a0306b2d6822",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5a0e88893c9c",
+     "text": "the flow and return temperatures of the fluid;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6481ec6b181d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7d5900812c2",
+     "text": "how they change over time.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f5442033945",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72e1c3dbf323",
+     "text": "This data is then analysed to determine two essential parameters:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ff1cd16a248d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcdfa6a36a91",
+     "text": "the thermal conductivity of the ground (its ability to transmit heat);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf9f72bedfa6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0622b8136d2",
+     "text": "the borehole thermal resistance (the probe's ability to exchange heat with the ground).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "10654ea3ca8b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c30107b5114",
+     "text": "On this basis, the number of probes, their depth and layout can be sized, taking into account heating and cooling needs and the desired lifespan of the field.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c373dc0f0f1a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bd0e0e0486e",
+     "text": "Why the TRT becomes essential above 1,000 m of total drilling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1a185a38c04",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0d2c5a49b26",
+     "text": "For small installations (a single-family house, a small building), standard values from the literature and field experience are generally used. Outputs remain modest, probe lengths limited and safety margins sufficient.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "575c37b6836b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd8284eee8ce",
+     "text": "Above roughly 50 kW of installed output and 1,000 m of total drilling, the stakes change:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "beb3bc71945a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c9bd0ea77fd",
+     "text": "the borehole field represents a significant investment;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4e3c5df5747f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc16632094ea",
+     "text": "interactions between probes become more important;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e456283f200a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "01060fd70f17",
+     "text": "heating and cooling needs are higher and more sensitive to under- or oversizing;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0f06eb065524",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1d91aa90151",
+     "text": "durability over several decades becomes a major issue.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e49b9c507620",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55d69d80405e",
+     "text": "In this context, the TRT replaces generic assumptions with values measured on site, on the project's actual ground. It reduces uncertainty and avoids the two classic pitfalls:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "37c8b27ef5f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5007a66d1a9",
+     "text": "an undersized borehole field: gradual cooling of the ground, falling performance and a risk of discomfort in the long term;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "94629c759b53",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0a8053ea2fa",
+     "text": "an oversized borehole field: unnecessarily high drilling costs and capital tied up with no real benefit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b46c81c95817",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f86fc0ffc160",
+     "text": "Which projects need it?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dcb7cc963e74",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "01309f0a4d2c",
+     "text": "A TRT is only useful for large borehole fields, generally above 1,000 m of total drilling or an output of about 50 kW. For small residential installations or standard projects, field experience is enough to size correctly.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "657fa2666ac7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef8ef4648dca",
+     "text": "A precision tool to optimise the investment",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "23efc085d8f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08d9b3a26ab4",
+     "text": "With a TRT, the designer can fine-tune the sizing:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bc08f33f746d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54b56fb9ff11",
+     "text": "adjust the depth of the probes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf0f5e18c089",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2530244e67c",
+     "text": "optimise the spacing between probes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5b238cd8c6d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bb76047ad7d",
+     "text": "check the field's thermal regeneration between seasons;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f184e2147f8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ce4cedc0f4a",
+     "text": "anticipate cooling needs and their impact on the seasonal balance.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6da7b3d3eb5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08e0d555b335",
+     "text": "The TRT avoids the two big classic risks of high-output installations: drilling \"too little\" (and weakening long-term performance) or drilling \"too much\" (and inflating the budget for nothing). Used well, it secures the investment and optimises performance at the scale of a building, a school or an office block.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4723dcb9f408",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa3efe4a17d4",
+     "text": "That is why property developers, engineering firms and public clients increasingly use this test for major projects. The TRT then becomes a key part of the technical file and evidence that the installation was sized on measurements rather than mere assumptions.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "465e1264f457",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ae7fda0f5bf",
+     "text": "Carrying out the test is simple: a single pilot borehole is drilled, instrumented and connected to a mobile test unit. Once the measurement campaign is complete and the results analysed, the final sizing of the field is established for the whole project.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ca6e635eea1d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6ceffa5a957e",
+     "text": "A tool for durability",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "37b627c153f0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93f86c3a5efd",
+     "text": "A correctly sized borehole field guarantees the thermal regeneration of the ground and stable performance for more than fifty years.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "767ab4ffa565",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12254f816134",
+     "text": "The TRT also provides assurance about the installation's durability, by checking that the heat extracted in winter is offset by the heat reinjected in summer, notably through geocooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e671a193f2fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "077e9e4e78c2",
+     "text": "That balance ensures the field will not cool down over time and that the heat pump will keep performing well for decades.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b53ae4322a64",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8238ccff174",
+     "text": "WellDoneDrill's role in projects with a TRT",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9fb8bbd44c3d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b659493299ab",
+     "text": "WellDoneDrill works on high-output projects alongside engineering firms and project owners. Our expertise covers:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "14541c7b2782",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7ac0c74074c",
+     "text": "drilling the pilot borehole;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2a17e67ca646",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae472937c46d",
+     "text": "carrying out the thermal response test;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ee0b44436168",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e083641ec61",
+     "text": "interpreting the ground parameters in light of the project's needs;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "53f5332a4569",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7058e7405011",
+     "text": "sizing the borehole field and optimising it economically.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d5feceb32d83",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de62804e865e",
+     "text": "The goal is simple: to make the TRT a tool that serves the project, not an extra constraint. The results make it possible to design a borehole field that is efficient, durable and correctly sized, while reducing the risk for the project owner.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "79d17271d404",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4760df5e63e1",
+     "text": "Above a certain threshold of output and probe length, the thermal response test is not a luxury: it is an investment that secures the project, optimises costs and guarantees the long-term performance of geothermal energy.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Thermal response tests (TRT) for borehole fields | WellDoneDrill",
+ "seoDescription": "What is a thermal response test, why is it essential above 50 kW or 1,000 m of drilling, and how does it help size a borehole field accurately and sustainably?",
+ "_mainImageFile": "uploads/2025/12/well-done-drill-belgique.jpg",
+ "_mainImageAlt": "Geothermal drilling expert in Belgium"
+}

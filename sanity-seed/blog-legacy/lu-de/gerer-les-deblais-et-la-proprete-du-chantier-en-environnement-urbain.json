@@ -1,0 +1,572 @@
+{
+ "_id": "blog-legacy-lu-de-4399",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Bohrklein und Sauberkeit der Baustelle im städtischen Umfeld",
+ "slug": {
+  "_type": "slug",
+  "current": "bohrklein-und-sauberkeit-der-baustelle-in-der-stadt"
+ },
+ "publishedAt": "2025-12-02T10:58:56Z",
+ "excerpt": "Bohren in der Stadt bedeutet mehr, als ein Loch in den Boden zu machen. Der Umgang mit Bohrklein, Spülung, Wasser und der allgemeinen Sauberkeit der Baustelle ist für Nachbarn, Behörden und Bauherrn ein zentrales Thema.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "4e7c6a620258",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2aa2d07c200",
+     "text": "Bohren in der Stadt bedeutet mehr, als ein Loch in den Boden zu machen. Der Umgang mit Bohrklein, Bohrspülung, Wasser und der allgemeinen Sauberkeit der Baustelle ist für die Nachbarschaft, die lokalen Behörden und den Bauherrn ein zentrales Thema. WellDoneDrill stellt diese Anforderungen in den Mittelpunkt seiner Organisation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "52bb494b6652",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f493b1307c0",
+     "text": "Welche Arten von Bohrklein entstehen bei einer Erdwärmebohrung?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "367eec7fde79",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "777990f67cc8",
+     "text": "Eine Erdwärmebohrung erzeugt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7cc2d472e43e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29a44d748837",
+     "text": "feste Stoffe: Sand, Kies, Gesteinsbruchstücke;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5674d7070e00",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9de194ed87f0",
+     "text": "Bohrspülung, wenn mit Spülung gebohrt wird;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4754bea13e97",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "13514415090d",
+     "text": "Spülwasser, gegebenenfalls mit Partikeln belastet.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "834689af2939",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f271db276a1f",
+     "text": "Auf dem Land ist der Umgang damit einfacher: Möglichkeiten zum Ausbringen, Flächen für die Zwischenlagerung, problemlose Zufahrt für Lkw. In der Stadt zählt jeder Quadratmeter, und die Umweltauflagen sind strenger.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "62ec9e282800",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7245b51a43f4",
+     "text": "Die Auswirkungen auf den öffentlichen Raum begrenzen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "799d803593bf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4cb5b49f5b9c",
+     "text": "Im städtischen Umfeld ist es entscheidend:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1466ee540776",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7428de07066a",
+     "text": "die Baustellenfläche auf das absolute Minimum zu beschränken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5212fdccd4d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46c3321fe765",
+     "text": "Gehwege und Fahrbahnen zu schützen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "994fb5e6f4f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "088bb2a7f041",
+     "text": "zu verhindern, dass Schlamm oder belastetes Wasser in die Straßenabläufe gelangt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a45ab8a07a1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "245f02615a6a",
+     "text": "die Abfuhr des Bohrkleins regelmäßig zu organisieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a05b65d63666",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "440704b854f3",
+     "text": "WellDoneDrill setzt je nach Situation passende Rückhalte-, Absetz- und Schutzmaßnahmen ein: Auffangwannen, Planen, Fahrbahnschutz und klar festgelegte Abfuhrwege.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "be0207d1975c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c20d7b35595",
+     "text": "Abfuhr und Behandlung des Bohrkleins",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a036d0927961",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06532f85af5e",
+     "text": "Das Bohrklein wird je nach Baustellenbedingungen und Mengen laufend oder am Ende des Tages abgefahren. Mehrere Lösungen sind möglich:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "06bb4bf64638",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a99a24795728",
+     "text": "Entsorgung über zugelassene Annahmestellen für Bohrklein und Bohrspülung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1b83bb3decfc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e32f54b8bbe0",
+     "text": "Verwertung auf Verfüllstandorten, sofern die Vorschriften es erlauben;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3373b72579c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2117124be1c",
+     "text": "gesonderte Behandlung bei festgestellter Verunreinigung.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6206fd4b395b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "36f3ed0e4514",
+     "text": "Der Bauherr muss sich auf ein Bohrunternehmen verlassen können, das diese Aufgabe übernimmt und kein Bohrklein auf der Baustelle ansammeln lässt. WellDoneDrill bezieht das Bohrkleinmanagement systematisch in die Baustellenvorbereitung ein.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "61b768e421da",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e0d7ebe9625",
+     "text": "Sauberkeit und Image des Projekts",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6802a8a99a92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcc6eeea9379",
+     "text": "Eine saubere Baustelle ist ein Schlüsselfaktor für die Akzeptanz durch Nachbarn und Behörden. Schlamm auf der Straße, Pfützen, Staub oder schlecht entsorgter Abfall können dagegen schnell zu Spannungen führen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5582de210c79",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7228219de80d",
+     "text": "WellDoneDrill legt Wert auf:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e972185aa19b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b24445cd6f5b",
+     "text": "die regelmäßige Reinigung der Verkehrswege;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e594495f831d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1ef25d9646d",
+     "text": "die Begrenzung von Spritzern und Staub;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33fe94f1d8ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e5632de6b71",
+     "text": "die Wiederherstellung des Baustellenbereichs nach Abschluss der Arbeiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64f83b860539",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3c4b1272bde",
+     "text": "Für den Bauherrn bedeutet das weniger Beschwerden, weniger Reibung mit der Nachbarschaft und ein besseres Gesamtbild des Projekts.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "79eeba1057d2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b92eeef6ec91",
+     "text": "Abstimmung mit den anderen Gewerken",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ceb53a733561",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cd7d456a54a",
+     "text": "Der Umgang mit Bohrklein und Sauberkeit betrifft nicht nur das Bohrunternehmen: Er muss mit den anderen Beteiligten der Baustelle abgestimmt werden (Erdbauer, Rohbauunternehmen, technische Installateure…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "10496bee5127",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "661f7c2f48e4",
+     "text": "WellDoneDrill arbeitet eng mit ihnen zusammen, um:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eb4e52209b0f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51dd6cc682b4",
+     "text": "die Flächen für die Zwischenlagerung festzulegen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7491156fe266",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae30b7fad3ba",
+     "text": "die Verkehrswege zu bestimmen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "018c38cd19b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ef5b2d08f3d",
+     "text": "die Arbeiten so zu planen, dass sie sich möglichst wenig behindern.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29be9fc89d78",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4854e89fd1fa",
+     "text": "Im städtischen Umfeld ist diese Abstimmung unverzichtbar, um Engpässe, Verzögerungen und Mehrkosten zu vermeiden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd7df8404a54",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51dc7e3f89df",
+     "text": "Fazit: Sauberkeit als Qualitätsmerkmal städtischer Bohrungen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe69aa656484",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71c87cb80bc6",
+     "text": "In der Stadt wird eine gute Bohrung nicht nur an der erreichten Tiefe oder der Ausführungsgeschwindigkeit gemessen. Wie die Baustelle organisiert ist, wie das Bohrklein entsorgt wird und in welchem Zustand das Gelände zurückgegeben wird, ist ebenso wichtig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c9337b545077",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e3a85890fc6e",
+     "text": "Indem WellDoneDrill Bohrkleinmanagement und Sauberkeit in den Mittelpunkt seiner Arbeitsweise stellt, können Bauherren die Vorteile der Geothermie in der Stadt nutzen, ohne die Nachteile einer schlecht geführten Baustelle zu erleben.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Bohrklein und saubere Baustelle in der Stadt | WellDoneDrill",
+ "seoDescription": "Wie WellDoneDrill Bohrklein, Spülung und Wasser auf städtischen Baustellen managt: Schutz des öffentlichen Raums, Entsorgung über zugelassene Stellen, saubere Übergabe.",
+ "_mainImageFile": "uploads/2025/05/Suarlee-header.webp",
+ "_mainImageAlt": "Erdwärmebohrung in Suarlée"
+}

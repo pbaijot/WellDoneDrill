@@ -1,0 +1,452 @@
+{
+ "_id": "blog-legacy-be-en-5526",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "The life cycle of geothermal: durability and recycling of a system built for a century",
+ "slug": {
+  "_type": "slug",
+  "current": "life-cycle-of-geothermal-durability-and-recycling"
+ },
+ "publishedAt": "2026-03-20T14:17:52Z",
+ "excerpt": "When you invest in an energy solution, its end of life matters as much as its performance. What is the environmental impact of the materials? What happens to the components after 30 or 50 years?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9bde56d40da9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "256d031bf63f",
+     "text": "When you invest in an energy solution, the question of its \"end of life\" is as crucial as its performance. What is the environmental impact of the materials used? What happens to the components after 30 or 50 years? At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "dcf0be13969e",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "812b8a2d249a",
+     "text": ", we take a long-term view: geothermal is, by definition, the most circular and durable heating system there is. Here is the life-cycle analysis of your installation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ad8707223fd",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25f5298e5e60",
+     "text": "1. HDPE probes: built to stand the test of time",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4650f7c89387",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "215903617e9f",
+     "text": "The heart of our installation is a set of probes made of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b39cecc7460d",
+     "text": "high-density polyethylene (HDPE)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c7cd8aae72af",
+     "text": ". This material was chosen for its exceptional physical and chemical properties:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ed09f745e73b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "edd83826cb2b",
+     "text": "Completely inert:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d7d885fd9216",
+     "text": " HDPE does not corrode, does not oxidise and does not react with minerals in the ground or groundwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca72bae74412",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7ca954aad38",
+     "text": "Record lifespan:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "cfdbd4779b2a",
+     "text": " Accelerated ageing tests show that buried probes protected by our geothermal grout keep their mechanical properties for ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8de2edd57c9d",
+     "text": "more than 100 years",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "61fef2d99556",
+     "text": ". Unlike an oil tank that must be decommissioned or gas pipes that oxidise, your probes are a permanent asset. In 50 years, they will still be working.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "31bef2466d5b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94589f9cb66c",
+     "text": "2. Recycling components at end of life",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ba8a1cd5c97c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b1956672c7d",
+     "text": "Although the borehole is practically eternal, the mechanical part (the heat pump) lasts 20 to 25 years on average. By 2026, the industry has made huge strides in recyclability:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6c3e8a7ff71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2d46dd16327",
+     "text": "The heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "579979eabfdb",
+     "text": " More than 90 % of it is made of recyclable metals (copper, steel, aluminium) and electronic components processed through specialised channels.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "70ada3ac7ccb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42881abb3a86",
+     "text": "The heat-transfer fluid:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "268d11725758",
+     "text": " The water–glycol mix in our circuits is pumped out if the machine is ever replaced. The fluid is then treated and recycled for reuse, so nothing is released into nature.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8c8460a3aff9",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "61a028244aef",
+     "text": "3. Reusing the borehole: the ultimate advantage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e096dd0e4ed4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1b473a419bc",
+     "text": "This is where geothermal outclasses every other technology. Imagine that in 30 years an even more efficient technology for turning heat into heating appears.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3a93ca293f27",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c2e19888a17",
+     "text": "Plug and play:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "123724723dc9",
+     "text": " You will never need to drill again. The underground infrastructure WellDoneDrill builds today can host the next generation of machines.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "363e5d4417b2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ce415ad2f21",
+     "text": "Saving resources:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6a96b88e7b36",
+     "text": " No new earthworks and no new raw materials for the ground loop. You simply reuse the \"energy well\" created in 2026.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f2e312b1e97c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7fa30b85582",
+     "text": "4. A carbon footprint \"repaid\" within a few years",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a3e34cf57e57",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65388f351c94",
+     "text": "Manufacturing the probes and the energy used for drilling (rig fuel) create an initial carbon footprint. However, thanks to the system's efficiency (high COP), this \"carbon debt\" is usually offset within ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7921e6ddbd1d",
+     "text": "3 to 5 years",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c77d4e40d5e6",
+     "text": " of operation compared with gas heating. Over a 50-year lifespan, its environmental balance is one of the lowest of any building technology.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7c9967291324",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88cb1bd88114",
+     "text": "5. WellDoneDrill's commitment to a clean site",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6464bee58494",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70fef8638b81",
+     "text": "Our life-cycle approach starts on the first day of drilling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c85fc00916e1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6049b529337c",
+     "text": "We manage the recycling of drilling mud.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ce4833ac3bb9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "faa9aea2a6f3",
+     "text": "We use certified, traceable materials that meet the strictest European standards.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f993b47dc83b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d4f4d2b53bf",
+     "text": "We size our systems to avoid over-specification and wasted resources.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1aecdfafdfbd",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e61bbb7ce75",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f35a3fc67e57",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c509359a00fe",
+     "text": "Choosing geothermal with WellDoneDrill means stepping out of the \"throwaway\" cycle. You install infrastructure that will never become waste. It is a clean, durable and recyclable technological legacy that you leave to your building and to future generations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "The life cycle of geothermal energy | WellDoneDrill",
+ "seoDescription": "HDPE probes lasting over 100 years, a recyclable heat pump, a reusable borehole and a carbon debt repaid in 3 to 5 years: the life cycle of geothermal.",
+ "_mainImageFile": "uploads/2026/01/Capture-decran-2026-01-23-a-12.45.31.jpg",
+ "_mainImageAlt": "Life cycle of a geothermal installation"
+}

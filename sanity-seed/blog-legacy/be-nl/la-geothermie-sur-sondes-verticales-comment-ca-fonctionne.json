@@ -1,0 +1,292 @@
+{
+ "_id": "blog-legacy-be-nl-4374",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermie met verticale sondes: hoe werkt het?",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-met-verticale-sondes-hoe-werkt-het"
+ },
+ "publishedAt": "2025-12-02T10:46:55Z",
+ "excerpt": "Geothermie met verticale sondes werkt met een vloeistof die in een gesloten circuit door meerdere geothermische sondes in de bodem circuleert.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 2,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "bbc1104a2488",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "90d3d763ea36",
+     "text": "Geothermie met verticale sondes werkt met een warmtedragende vloeistof (van voedingskwaliteit) die in een gesloten circuit door meerdere geothermische sondes in de bodem circuleert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e95c054efa0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4dc86d010f95",
+     "text": "Elke sonde bestaat uit twee U-lussen in hogedichtheidspolyethyleen (HDPE). Die lussen worden in een verticaal boorgat geplaatst. Zodra de buizen geïnstalleerd zijn, wordt de ruimte tussen de boorgatwand en de sondes opgevuld met een geothermische grout, een mengsel van bentoniet en geleidend cement. Zo ontstaat een uitstekend thermisch contact met de bodem. De vloeistof in de sondes neemt warmte op uit de bodem of geeft ze eraan af, en brengt ze naar de warmtepomp. Bovengronds zorgen een of meer warmtepompen voor de energieoverdracht:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6e090cea1ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4fca62dad4ed",
+     "text": "van de bodem naar het gebouw (verwarming),",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0534b35017eb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5867721c8b8f",
+     "text": "of van het gebouw naar de bodem (koeling).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0bbf6033e05e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c0a609fa7e8",
+     "text": "In sommige gevallen kan de installatie zelfs natuurlijke koeling leveren zonder de warmtepompen te gebruiken: dat heet geocooling of freecooling. Dat is bijzonder interessant voor gebouwen die koeling willen met een zeer laag verbruik.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "95698c12e972",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3364c2168d43",
+     "text": "De voordelen van een geothermisch systeem met verticale sondes",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de191b3fd9cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "112db5842560",
+     "text": "Zeer kleine ruimte-inname:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4e58f97e2939",
+     "text": " Ideaal voor kleine percelen of projecten waar elke vierkante meter telt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "be9f1542c132",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bec58155c383",
+     "text": "Geen beperkingen voor de inrichting:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b18b556c17ac",
+     "text": " Anders dan bij een horizontale collector blijft het terrein na de werken volledig bruikbaar (tuin, parking, terras, gebouwen…).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9d66dbee1ef2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "abd27e776c3c",
+     "text": "Hoog en stabiel rendement:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7b4303b888bc",
+     "text": " De bodemtemperatuur blijft het hele jaar nagenoeg constant. Daardoor presteert het systeem beter dan luchtwarmtepompen, die afhangen van de buitentemperatuur.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4e8ed259234c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f54fe816b900",
+     "text": "Weinig warmteverlies:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "023dc96a6cc7",
+     "text": " De werking op lage temperatuur beperkt de verliezen in het hydraulische net.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4675253cc2ff",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de187cc6e9a5",
+     "text": "Ecologisch en koolstofarm:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5a690a4837e2",
+     "text": " De installatie benut een lokale, schone en hernieuwbare energiebron.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fcec1afaab12",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6444462c0611",
+     "text": "Gratis koeling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2ba899679fc0",
+     "text": " Dankzij freecooling kan het gebouw gekoeld worden met de natuurlijke koelte van de bodem, met een minimaal energieverbruik.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "560f5a511c8c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2d4e80238e9",
+     "text": "Weinig onderhoud:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "06189d9f300a",
+     "text": " Een eenvoudig systeem, zonder bewegende delen in de grond en met een zeer lange levensduur.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4cbee6a91bbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2bd2e3df4bfe",
+     "text": "Met de huidige boortechnieken is dit in de overgrote meerderheid van de situaties haalbaar, ook op smalle stedelijke percelen of bij projecten met weinig beschikbare ruimte.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie met verticale sondes: hoe werkt het? | WellDoneDrill",
+ "seoDescription": "Hoe werkt geothermie met verticale sondes? Uitleg over de sondes, het boorgat, de warmtepomp en de voordelen van een gesloten bodemsysteem.",
+ "_mainImageFile": "uploads/2025/05/Jodoigne-header.webp",
+ "_mainImageAlt": "Geothermische boring in Jodoigne"
+}

@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-be-en-4382",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "How much does a geothermal installation cost? A clear, complete guide to geothermal prices",
+ "slug": {
+  "_type": "slug",
+  "current": "how-much-does-a-geothermal-installation-cost"
+ },
+ "publishedAt": "2025-12-02T10:50:33Z",
+ "excerpt": "Price is always the first question when people talk about geothermal. How much does an installation cost? How does it compare with other systems? And above all, when does it start to pay off?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "0aab7b9f43bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9e1dd3b46d1",
+     "text": "Price is always the first question that comes up when people talk about geothermal. How much does an installation cost? How does it compare with other systems? And above all, when does it start to pay off?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d23b954edb0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9f30afcf1237",
+     "text": "In 2025, geothermal has evolved a great deal in Belgium: drilling techniques have improved, costs have fallen and VAT rules have become clearer. The result: over the lifetime of the installation, geothermal has become one of the most economical ways to heat and cool a building.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d054c0c06c2c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9828862640f6",
+     "text": "1. The main cost items of a geothermal installation",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e8ce2434cd85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5678240437d3",
+     "text": "The price of a geothermal system is made up of several elements:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "298d598ebdcc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62c6b09a8d28",
+     "text": "the geothermal boreholes:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dbfbcd7554ef",
+     "text": " drilling the vertical boreholes, supplying and installing the probes, geothermal grout;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "beb47a8846ab",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "734eb40fa580",
+     "text": "the geothermal heat pump",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "09093dd3b49c",
+     "text": " (water-to-water): often a compact unit, about the size of a large fridge;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f5a7a40f0c30",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ec3f86fe4dd",
+     "text": "the storage tank",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "012ef68bc344",
+     "text": " (heating buffer and/or domestic hot water);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "54f09b188f1f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "063fb2c2a06d",
+     "text": "the hydraulic connections",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0ce786581c23",
+     "text": " between the probes, the plant room and the indoor network;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a6f3a5b79cd1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cfec99771f7",
+     "text": "controls and accessories",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "30bbde4fc3b2",
+     "text": " (circulators, valves, sensors, controllers);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0774f85c703b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd0f29db4aa0",
+     "text": "possibly the emitters",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "63fb7b93383a",
+     "text": " (underfloor heating, adapting the existing system, etc.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b9e683c34505",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c2204bcc840d",
+     "text": "Depending on the project, some items are already in place (for example the radiator network in a renovation) or shared (collective building, apartment block…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f00a9147d994",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe3aa09ecc3a",
+     "text": "2. Typical budgets for a single-family house",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bdd235669332",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88af4d77a9ce",
+     "text": "For a properly sized geothermal installation in a single-family house in Belgium, the following orders of magnitude are typical (VAT included, after applying 6 % VAT in residential):",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2f913733893c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30cd502ad7a4",
+     "text": "standard single-family house",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "27dc08076ff4",
+     "text": " (8 to 12 kW heat pump, 2 to 4 probes of 80 to 120 m): ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ff60cae30b26",
+     "text": "around €25,000 to €35,000 incl. VAT",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ebb545cc567c",
+     "text": " for the geothermal part (boreholes + heat pump + tank + connections);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5baf4cdeb880",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad1d330bb3de",
+     "text": "larger house or very high comfort level:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "59d3789f3dfb",
+     "text": " the budget can reach €40,000–45,000 incl. VAT, depending on output and cooling needs;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3481d6641c8b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ebd13f8e043",
+     "text": "in renovation",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1f7a75ea6646",
+     "text": ", if the radiator network is kept and adapted to low temperature, the overall cost stays in a comparable range.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5e736e306931",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e703ea00c8cc",
+     "text": "These amounts are indicative and vary with the region, the type of ground, site access, the number of probes, the heat pump brand and so on. They do, however, give you a reference point.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ef88496cc232",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38bf84f8bc2c",
+     "text": "3. Comparison with other systems over 20 years",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da71ea0582f5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dad3ca8b98ed",
+     "text": "Comparing geothermal with another solution on investment cost alone is misleading. What really matters is the total cost over 15 to 20 years:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9b5b289c9a52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84505addba0f",
+     "text": "investment cost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a8152f4727c8",
+     "text": " (purchase and installation);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5c4b984f076e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "218459d5d86a",
+     "text": "running cost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d8b606acf962",
+     "text": " (energy);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "08545e968f86",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e1aa2e4df26",
+     "text": "maintenance cost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "701b3a641f2a",
+     "text": ";",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "56c6a90c5698",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f9627be5fb1",
+     "text": "lifespan",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "feee5189e14c",
+     "text": " of each component.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "17e86b886954",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad45791401c4",
+     "text": "A gas boiler is cheaper to install, but:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f3ca63b9344c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f8125d4d4fa",
+     "text": "it has to be replaced more often;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e37f4bd5ed13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "864256f18157",
+     "text": "gas prices are highly volatile;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "587998fc9561",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b537187519b2",
+     "text": "its carbon footprint remains high;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8a0d1a9e2b18",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cff5d6675a2a",
+     "text": "regulatory constraints keep growing.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6121914bf4aa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88756f97a920",
+     "text": "Geothermal requires a higher initial investment, but:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9afd28a22bc2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1578df3007c2",
+     "text": "the probes last more than 50 years;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "039e2a25fef0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c90502a782f",
+     "text": "the heat pump lasts 15 to 20 years;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6c2cd82da75b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0181008e6df",
+     "text": "electricity use is sharply reduced thanks to the high COP;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "794eaf9e9baf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b79ed99bb3f",
+     "text": "the energy bill is predictable and less exposed to rising fossil fuel prices.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a6c42e454d86",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85714d5c9d6d",
+     "text": "Over 20 years, geothermal generally becomes the cheapest solution in total cost, especially when the building is occupied for a long time (family home, apartment building, public building, etc.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "f71b851b0553",
+   "_file": "uploads/2025/12/20231102_101248.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "e220af588bb1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f093243a2202",
+     "text": "4. The decisive role of falling drilling costs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c52c2ea27523",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc51e050c33a",
+     "text": "In recent years, drilling techniques have made major progress, notably with the widespread use of PDC (polycrystalline diamond compact) bits and optimised methods imported from Germany. WellDoneDrill played an active part in this evolution.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "31d7c6614603",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c68c33a2890",
+     "text": "The result: productivity per drilling day has increased, risks have decreased and unit costs per metre have fallen. Where geothermal was once seen as expensive, it has come close to, or even below, other high-performance systems in total cost.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5f2e80dd7b5e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5b9c678bf1d",
+     "text": "5. VAT, grants and taxation: an important lever in Belgium",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2bff5b4cd7a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7006ab1394fb",
+     "text": "In residential buildings, VAT on heat pumps and geothermal boreholes is 6 % when the building meets the eligibility conditions (mainly residential use, age criteria for renovations, etc.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bfab1861c5c9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46d024bc9289",
+     "text": "From 2026, this 6 % VAT will be extended to heat pump installations in new builds, and geothermal boreholes will follow the same regime. For homeowners, this is a significant financial advantage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "abe31aa1847e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "735162bd820f",
+     "text": "Depending on the region and period, grants or subsidies may also apply, especially for high-performance buildings or collective projects.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "286560962292",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ecfcecb8753f",
+     "text": "6. An essential note on geothermal prices",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e032223c93bc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b1dc8ae7380",
+     "text": "The prices and orders of magnitude in this article are indicative and not contractual. They give an overview of the budgets to plan for, but every project is unique.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3eaa063822d0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8331771f60dd",
+     "text": "WellDoneDrill provides personalised, detailed quotes with no hidden costs, usually within 48 hours based on the project information. That precise estimate is the basis for a meaningful comparison with other solutions.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "197bbd0e3383",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1b170b8764e",
+     "text": "The key point is that geothermal is no longer the \"unaffordable\" solution people imagined a few years ago. Thanks to lower drilling costs, favourable VAT rates and very low running costs, it has become, in the long run, one of the most economical and comfortable technologies for heating and cooling a building.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "How much does geothermal cost? Price guide | WellDoneDrill",
+ "seoDescription": "The price of a geothermal installation in Belgium: cost items, typical budgets for a house, a 20-year comparison, falling drilling costs and 6 % VAT.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+ "_mainImageAlt": "Geothermal drilling for homeowners in Belgium"
+}

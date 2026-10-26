@@ -1,0 +1,758 @@
+{
+ "_id": "blog-legacy-be-nl-4405",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Waterput en geothermische boring: dezelfde machines, verschillende vakken",
+ "slug": {
+  "_type": "slug",
+  "current": "waterput-en-geothermische-boring-verschillende-vakken"
+ },
+ "publishedAt": "2025-12-02T11:01:11Z",
+ "excerpt": "In België verwijst het woord \"boring\" zowel naar waterputten als naar geothermische sondes. Van buitenaf lijkt het dezelfde werf: een boormachine, buizen, een diep gat in de grond. Toch hebben ze niet hetzelfde doel, dezelfde beperkingen of dezelfde dimensionering.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "cb018312e3d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "516a282d99ae",
+     "text": "In België verwijst het woord \"boring\" zowel naar waterputten als naar geothermische sondes. Van buitenaf lijkt het dezelfde werf: een boormachine, buizen, een diep gat in de grond. Toch hebben een waterput en een geothermische boring niet hetzelfde doel, niet dezelfde beperkingen en niet dezelfde dimensionering.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "967fdab54364",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "969c409f7361",
+     "text": "Twee soorten boringen, twee manieren om de ondergrond te gebruiken",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e23eb4a0ab16",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99e7f1bcd895",
+     "text": "Een waterput dient om een bron aan te boren: een grondwaterlaag. Men zoekt een debiet, een kwaliteit en een regelmatige toevoer om een woning, een landbouwbedrijf, een besproeiing of een kleine industrie te bevoorraden. De put wordt uitgerust met een verbuizing, een filter en een dompelpomp. Het water wordt naar boven gepompt, circuleert in het distributienet en wordt vervolgens gebruikt of geloosd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "721099707982",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7670f8d83a3f",
+     "text": "Een geothermische boring werkt omgekeerd: men \"neemt\" niets uit de ondergrond, men wisselt er warmte mee uit. Bij verticale sondes wordt het boorgat volledig opgevuld met een HDPE-sonde en een geothermische grout. De vloeistof circuleert in een gesloten lus door de sonde, onttrekt warmte aan de bodem of geeft ze eraan af, maar brengt het grondwater nooit rechtstreeks in contact met het verwarmingscircuit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "08875fa0229e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c38130a761a",
+     "text": "In het ene geval is de ondergrond een waterreservoir dat men exploiteert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1a5d73a9ae14",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3dba2fffddbd",
+     "text": "In het andere wordt hij een warmtewisselaar waarop men steunt om een warmtepomp te voeden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b33d70980c9a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f6a21066ff6",
+     "text": "Twee sleutelwoorden om te onthouden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b8810d96a1fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98d160306d44",
+     "text": "Waterput:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0611f1ee3cf7",
+     "text": " wateronttrekking, debiet, waterkwaliteit, dompelpomp.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "388c020f5398",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "60ee7e83bc1f",
+     "text": "Geothermische boring:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "74bad2b19f44",
+     "text": " sonde, warmte-uitwisseling, gesloten lus, warmtepomp.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "104e3494a686",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10158f0a0ea6",
+     "text": "Waterput: op zoek naar het grondwater",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "03872529b84c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e13a58f5f06a",
+     "text": "Bij een waterput is het doel een watervoerende laag te lokaliseren en te benutten:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "97d533691872",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e01313aa983",
+     "text": "men dimensioneert de put volgens het gewenste debiet;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5bc056f2c1bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccff3d9c6a01",
+     "text": "men kiest filters volgens de korrelgrootte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "93631b1c51ef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "774b552f5326",
+     "text": "men installeert een dompelpomp om het water op te pompen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "870e5571f7fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d810a13ab4e",
+     "text": "men controleert de waterkwaliteit naargelang het gebruik (besproeiing, technisch water, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "25abfad68c8a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b65e2e4fe5bb",
+     "text": "De prestatie wordt gemeten in m³/u, in de stabiliteit van het waterpeil en in de waterkwaliteit. Het beheer van de bron (aanvulling van de laag, impact op de buren, enz.) wordt een aandachtspunt bij grote debieten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "82e8c089e7e2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18cc9156bc8e",
+     "text": "Geothermische boring met sondes: geen grondwater nodig",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0a2ef113bfb8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "149294d9946b",
+     "text": "Bij een geothermische boring met sondes is de aanwezigheid van een watervoerende laag geen voorwaarde. Wat telt, is het globale vermogen van de ondergrond om warmte door te geven.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ea9c5a3d573b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fea8df8d9a50",
+     "text": "Het boorgat wordt volledig ingenomen door:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "50074247b5fc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2526200e7974",
+     "text": "een of meer HDPE-sondelussen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c2072db80c0a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0192ac7ad911",
+     "text": "een geothermische grout die het thermische contact met de bodem verzekert.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a19f40004b2e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cddfdb62b9a",
+     "text": "De dimensionering heeft betrekking op:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f9f3a05fd728",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92130c6642f9",
+     "text": "het te leveren thermisch vermogen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97139a0ca558",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59b1c85f4287",
+     "text": "de totale sondelengte (geboorde meters);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "91eadb3fa681",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f24e3b3022d4",
+     "text": "de afstand tussen de sondes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4cd8a65a1a56",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "712fa785a392",
+     "text": "het seizoensevenwicht tussen onttrokken en teruggegeven warmte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "77bdbdf7551d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb1571bf80e6",
+     "text": "Het grondwater, als het aanwezig is, blijft afgeschermd door de grout en eventuele verbuizing. De installatie werkt in een gesloten lus.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "33cde44c2df3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59cd74a5e3dc",
+     "text": "Open geothermie: wanneer de waterput een warmtebron wordt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0945e2e5c5b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "604996a6f257",
+     "text": "Er is één bijzonder geval waarin waterput en geothermie samenkomen: open geothermie. Daarbij gebruikt men het grondwater rechtstreeks als warmtebron voor een warmtepomp.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e72f480ca68c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b90782dd31b8",
+     "text": "Het principe:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "469d24ddb7a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1ac0afc5d18",
+     "text": "een onttrekkingsput pompt water uit de grondwaterlaag;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "75d4c7dbd9a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "897a1d37e29b",
+     "text": "het water stroomt door een warmtewisselaar of de warmtepomp, die er de warmte uit haalt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ac5e02303ca9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e8031233821f",
+     "text": "het water wordt vervolgens via een injectieput teruggebracht in de laag.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5b8b6b00ca8a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7516d01cdc3c",
+     "text": "Dit type systeem is bijzonder geschikt voor grote projecten: grote kantoorgebouwen, warmtenetten, industriële sites, enz. Het vraagt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d7e8eb28c12",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "964e50390603",
+     "text": "een grondwaterlaag met een voldoende debiet;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a3a3de5aa0d5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3fadd9013bcb",
+     "text": "grondige hydrogeologische studies;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5051fb55c6bc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05e24fd65873",
+     "text": "een strikt wettelijk kader.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3904a0550123",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9b31510f9ee",
+     "text": "In die context wordt de waterput effectief de \"bron\" van de geothermie. Maar het gaat niet meer om een gewone put: het is een geheel dat ontworpen is om in een lus te werken en het evenwicht van de grondwaterlaag te respecteren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4f3dec91d6ac",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "21c19456dd46",
+     "text": "Hoe WellDoneDrill projectontwikkelaars begeleidt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ebc2165dbd5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa9c39f5661e",
+     "text": "In de praktijk kan eenzelfde bouwheer nood hebben aan:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4cc2827a2cba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7036dbbed73",
+     "text": "een waterput voor besproeiing, technisch gebruik of een specifieke bron;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f179c63690ef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae675c3a43df",
+     "text": "een sondeveld om een geothermische warmtepomp te voeden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7d2ef3f005d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9112e4febfe9",
+     "text": "eventueel een open geothermische oplossing voor een groot project.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "225528146e63",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "903bed21bd5d",
+     "text": "WellDoneDrill analyseert elke situatie om de meest geschikte configuratie voor te stellen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6392da7442ed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c900d8e10a38",
+     "text": "een eenvoudige waterput wanneer het enkel om een waterbehoefte gaat;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "36c00aecd087",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cbc9d6f2948",
+     "text": "een geothermische boring met sondes wanneer verwarming en koeling de hoofdbehoefte zijn;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "373a6f3c5897",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea4f6b36432b",
+     "text": "open geothermie voor projecten met een groot vermogen wanneer de grondwatercondities het toelaten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a5d5aa2f8709",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a6a46394594",
+     "text": "In plaats van alle boringen als gelijkwaardig te beschouwen, helpt WellDoneDrill projectontwikkelaars om weloverwogen keuzes te maken: type boring, dimensionering, eventuele combinatie van water en geothermie. Het doel is het beste uit de ondergrond te halen, in lijn met de werkelijke behoeften van het gebouw of de site.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Waterput vs geothermische boring | WellDoneDrill",
+ "seoDescription": "Wat is het verschil tussen een waterput en een geothermische boring? Grondwater oppompen versus warmte uitwisselen in een gesloten circuit, en open geothermie.",
+ "_mainImageFile": "uploads/2025/12/forage-eau-geothermique.webp",
+ "_mainImageAlt": "Waterput en geothermische boring"
+}

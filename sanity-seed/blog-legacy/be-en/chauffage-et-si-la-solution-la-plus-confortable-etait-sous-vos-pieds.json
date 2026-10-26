@@ -1,0 +1,690 @@
+{
+ "_id": "blog-legacy-be-en-4407",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Heating: what if the most comfortable solution was right beneath your feet?",
+ "slug": {
+  "_type": "slug",
+  "current": "heating-the-most-comfortable-solution-beneath-your-feet"
+ },
+ "publishedAt": "2025-12-02T11:01:54Z",
+ "excerpt": "Heating is by far the biggest energy item in buildings. Yet the most common solutions (gas boilers, oil boilers, convector heaters…) still rely largely on fossil fuels. Geothermal offers another way.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "f2c408f99474",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14dae704fcb0",
+     "text": "Heating is by far the biggest energy item in buildings. Yet the most widespread solutions (gas boilers, oil boilers, convector heaters…) are also those that still rely largely on fossil fuels. Geothermal offers another way: fully electric, efficient and discreet heating that draws its heat from the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e83f6e78b572",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45a9550c00ea",
+     "text": "Heating, a building's biggest energy item",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "676e439010d3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81243f90abfe",
+     "text": "In a house, an apartment building or an office building, heating usually accounts for the largest share of energy use. Reducing and decarbonising that consumption is therefore a major lever for meeting climate targets and controlling long-term costs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c7469e6bc46c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a61815b6926",
+     "text": "Traditional solutions (gas or oil boilers) heated buildings efficiently for decades, but today they have several limitations:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "42ac5d6e8a88",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1680790fd55d",
+     "text": "dependence on fossil fuel prices;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6fbbf5082c7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b2138b6f142",
+     "text": "high CO₂ emissions;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "94140f434bcd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7acfd3f8019f",
+     "text": "increasingly restrictive regulation.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a2ec125aa02f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3776dc2aab03",
+     "text": "Heating with a heat pump: the basic principle",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "91e10972c302",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46d02e6be232",
+     "text": "The heat pump has become a credible alternative to the boiler. It doesn't produce heat by burning fuel; it captures it from the environment (air, ground, water) and raises it to a temperature that is useful for heating.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "81d23cbac990",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3ff938458f2",
+     "text": "The principle:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a9253602caf0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67e4a8f8e0b7",
+     "text": "outside: capture heat;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ca1f0eeec259",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3669b22c2f46",
+     "text": "inside: transfer that heat to the heating circuit (radiators, floors, fan coil units);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "74a00f88f38b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c84875d51b35",
+     "text": "using far less electricity than the heat it produces.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "876de04063e5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e296ba8e642f",
+     "text": "For heating, the heat pump therefore provides comfort while sharply reducing final energy use.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b72a84df2825",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d52e52e5598",
+     "text": "Geothermal heating: the ground as a heat source",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6c809274de6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98f5eae1f321",
+     "text": "The geothermal (water-to-water) heat pump stands out for its source: the ground. Through vertical probes, it draws heat from the deeper layers of the earth, where the temperature stays stable all year.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "590922cbdda5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d0eb7f6f5e2",
+     "text": "For heating, this brings several benefits:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cbb496602d0f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ceafd01d9c17",
+     "text": "high performance even in severe cold;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "49893df12286",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef3c9012eead",
+     "text": "stable operation that improves comfort;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4018fdc935d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f8641369b6b",
+     "text": "no noisy outdoor unit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b8168abb7b43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88377fc91768",
+     "text": "Heating takes place at low temperature, which is ideal for underfloor heating and modern emitters. In many cases, existing radiator networks can be adapted to work with geothermal by adjusting temperature settings and controls.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a8290f14f0f4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bbb68840931",
+     "text": "Geothermal heating vs conventional heating",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d8be5b8e25d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7be849703bf1",
+     "text": "Compared with a gas boiler, geothermal heating offers:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5b625a9add9b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d1f45e10153",
+     "text": "a major reduction in CO₂ emissions;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fb722783b62a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "270c10d867f5",
+     "text": "independence from fuel price swings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e89f157a626c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccede195daaf",
+     "text": "improved comfort (more stable temperatures, gentle heat);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e7a0e790c4bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "342730ecb783",
+     "text": "the option of passive cooling in summer (geocooling).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fa3b3e40ad1f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7133b6ccbba",
+     "text": "The investment cost is higher, but:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f95edda62c22",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "edddd8166c0c",
+     "text": "the probes last more than 50 years;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "880dd1b45df2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3923cd77c8f8",
+     "text": "the heat pump lasts 15 to 20 years;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f0773e129035",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b661a554ca13",
+     "text": "running costs are among the lowest on the market.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1c899d334289",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e31227ef7e3c",
+     "text": "Heating, cooling and geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a174dd2a5087",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbaeea9d4357",
+     "text": "A well-designed geothermal heating system provides:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dff86a2c95da",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad6d12f2a34d",
+     "text": "heating in winter;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c866b3d21fc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7adebf2f7482",
+     "text": "passive cooling (geocooling) in summer;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f89f665ea2e9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "230466bb6948",
+     "text": "domestic hot water.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "364115b6438d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03a29d1d12eb",
+     "text": "The ground then becomes a heat source in winter and a cool reservoir in summer. This dual use improves the thermal balance of the borehole field and contributes to the durability of the whole system.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3c4583bc1da8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7baa6999a975",
+     "text": "Geothermal heating in Belgium: a particularly favourable context",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0e81d469a31c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8af13a59a33",
+     "text": "Belgium has remarkable geothermal potential, especially for shallow geothermal with vertical probes. In many regions, the characteristics of the subsurface make it possible to design efficient installations, even on modest plots.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63093325265d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bb2078237fc",
+     "text": "For single-family homes, apartment buildings, offices or public buildings, geothermal is a heating solution that fits particularly well with climate targets and the search for long-term stability.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9bf02e4e2b5e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fae92fd47d58",
+     "text": "How WellDoneDrill supports a geothermal heating project",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "778c7bdb5aee",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51a0fb70c5e0",
+     "text": "For an owner or developer, the starting point is always the same: \"I'm looking for a heating solution that is efficient, durable and manageable over time.\" The geothermal answer is then built step by step.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d45f2b177dd0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9308dcce1281",
+     "text": "WellDoneDrill first analyses the project: type of building, heating and cooling needs, site constraints and access for drilling. On this basis, the borehole field is sized: number of boreholes, depth, probe layout, heating and geocooling capacity.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1d49d2787861",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f6a0e46874a",
+     "text": "At the same time, WDD works with engineering firms and heat pump installers to make sure the whole heating system is coherent: heat pump output, storage tank, controls, emitters and possibly pairing with solar PV.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b80c87bc1667",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbfa81e9746c",
+     "text": "The goal is simple: to make \"heating\" mean comfort, discretion, a controlled bill and technology aligned with climate goals. Geothermal then becomes not an exotic option but the logical answer to the question everyone asks: \"How am I going to heat my building for the next 20 years?\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal heating: comfort beneath your feet | WellDoneDrill",
+ "seoDescription": "Why geothermal heating is the most comfortable choice: how heat pumps work, the ground as a heat source, a comparison with gas and summer geocooling.",
+ "_mainImageFile": "uploads/2025/12/chauffage-sol.webp",
+ "_mainImageAlt": "Geothermal heating"
+}

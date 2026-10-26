@@ -1,0 +1,288 @@
+{
+ "_id": "blog-legacy-be-en-5420",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal drilling 2.0: 10 years of innovation that change everything on site",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-drilling-2-0-10-years-of-innovation-on-site"
+ },
+ "publishedAt": "2026-03-20T11:23:43Z",
+ "excerpt": "In ten years, geothermal drilling has taken a technological leap: better tools, real-time sensors, smart control. The result: deeper, more accurate and cheaper boreholes, even in complex settings.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "3efaa42bece5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2782afd8542f",
+     "text": "In ten years, geothermal drilling has taken a technological leap: better tools, real-time sensors, smart control… The result: deeper, more accurate and cheaper boreholes, even in complex settings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0ccebff6dcbf",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e4ec875a9e1",
+     "text": "1. More powerful down-the-hole hammers, built for hard rock",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ed39bd364738",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cbac935a7b71",
+     "text": "New down-the-hole (DTH) hammers transmit impact energy directly to the bit, which greatly speeds up penetration in rocky ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6b9aad594b52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4463c8e6159f",
+     "text": "Recent projects show that this new generation of hammers can increase drilling speed by a factor of 2 to 10 compared with conventional solutions, mechanically reducing the cost per metre.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "07e125119c4e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f482a40518cd",
+     "text": "2. Optimised drill bits and tools: precision and durability",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0bcb44ec18ee",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8d08b7f7d22",
+     "text": "Drill bits now feature optimised cutting geometries and more abrasion-resistant materials, which reduces stoppages to change tools.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c74be1b761dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc945a523a1a",
+     "text": "Combined with sturdier hammers and better cuttings management, these advances make it possible to reach greater depths in shorter time, without sacrificing verticality or borehole quality.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "428f9ac3af7c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4f720f6d955",
+     "text": "3. On-board sensors and real-time monitoring: drilling gets smart",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9996991406b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5ac38bc62f3",
+     "text": "Rugged sensors, sometimes 3D-printed, continuously measure bit–rock interaction, impact energy and fluid circulation, giving crews real-time feedback.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0099dcf24f99",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "813dc7bcc139",
+     "text": "Coupled with decision-support algorithms or AI, these systems can anticipate incidents (loss of circulation, abnormal wear, jamming) and instantly adjust drilling parameters to maintain performance and reduce risk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a41518ae69ed",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de867bfeb95d",
+     "text": "4. Automation and drilling robots: deeper, with fewer people",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "24419a1f07bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88cb40f37c78",
+     "text": "New machine concepts that work directly inside the borehole, similar to small vertical tunnel boring machines, are emerging to reduce the site footprint and automate part of the work.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ddf75bc70eb6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c088872b7720",
+     "text": "These highly automated systems with advanced sensors can run with small crews (sometimes just two operators) while keeping tight control of the trajectory, cuttings removal and safety.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "51f3317fb414",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98c2a362b9cf",
+     "text": "5. Real impact: lower costs, more geothermal potential",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "32d4375d2ab7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8367ec30ccac",
+     "text": "Faster drilling, fewer stoppages and better real-time knowledge of the subsurface translate into a significant drop in cost per metre for geothermal projects.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5b9bd7de1291",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "121694b915c7",
+     "text": "At the same time, the ability to drill deeper, more precisely and on smaller footprints opens up new projects: geothermal in dense urban areas, deeper boreholes for higher outputs, and more \"next-generation\" projects that were once considered too risky or too expensive.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9306bb31f956",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0d22cf34af6b",
+     "text": "6. What this means for a WellDoneDrill client",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ba3c0d4ab92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d3442b8352a",
+     "text": "For the end client, these innovations mean faster, better-controlled sites with more predictable costs, and a borehole sized precisely for the output actually needed.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "feb4036ccd24",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15c3719f0706",
+     "text": "They also make geothermal solutions possible where they seemed out of reach only a few years ago (tight plots, urban settings, mixed ground), backed by state-of-the-art drilling expertise.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal drilling 2.0: 10 years of innovation | WellDoneDrill",
+ "seoDescription": "DTH hammers, sensors, automation: how ten years of innovation have made geothermal drilling faster, more accurate and cheaper.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-12.22.15.jpg",
+ "_mainImageAlt": "Geothermal drilling 2.0: innovation on site"
+}

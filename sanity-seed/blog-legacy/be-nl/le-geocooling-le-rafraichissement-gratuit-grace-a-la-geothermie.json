@@ -1,0 +1,416 @@
+{
+ "_id": "blog-legacy-be-nl-4378",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geocooling: gratis koeling dankzij geothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "geocooling-gratis-koeling-dankzij-geothermie"
+ },
+ "publishedAt": "2025-12-02T10:49:01Z",
+ "excerpt": "Geocooling, of freecooling, koelt een gebouw rechtstreeks met de koelte van de bodem, zonder de compressor van de warmtepomp te laten draaien. Het resultaat: veel zomercomfort, een minimaal stroomverbruik en een volledig stille oplossing.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "0d4716b89d80",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c1b2e8c682b",
+     "text": "Geocooling, of freecooling, koelt een gebouw rechtstreeks met de koelte van de bodem, zonder de compressor van de warmtepomp te laten draaien. Het resultaat: veel zomercomfort, een minimaal stroomverbruik en een volledig stille oplossing.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e70f26718901",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffe4f10bcdd3",
+     "text": "Hoe werkt geocooling?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1824bfe02532",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85f1d3198670",
+     "text": "Bij een geothermische installatie met verticale sondes blijft de bodem op enkele tientallen meters diepte op een nagenoeg constante temperatuur, vaak rond 10 à 14 °C. Die temperatuur ligt lager dan wat men in de zomer in het gebouw wil aanhouden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1ade4a5ccd2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8037f1e2d556",
+     "text": "Het principe van geocooling is eenvoudig:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d9c83a131c52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "931efe43f98f",
+     "text": "men laat de warmtedragende vloeistof",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bce4a65b09cb",
+     "text": " door de sondes circuleren om de natuurlijke koelte van de bodem op te vangen,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1fb048caed6e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c002901369e9",
+     "text": "die koelte",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "27fa2d61d9aa",
+     "text": " wordt overgedragen aan een buffervat of rechtstreeks aan het koelnet (vloer, plafonds, ventiloconvectoren),",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6a0bcc25824d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ec860e90b0d",
+     "text": "de compressor van de warmtepomp",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "167236a7ae47",
+     "text": " staat uit of draait slechts heel weinig: men gebruikt vooral circulatiepompen, die weinig energie verbruiken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1ff286e21d2b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f4b007fff64",
+     "text": "Het gebouw wordt zo zacht gekoeld, zonder koude lucht te blazen, gewoon door de binnentemperatuur licht te verlagen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c7e2b8fff11",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e973cb0a65fe",
+     "text": "De grote voordelen van geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6f2f8b252e5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e01dcd84921",
+     "text": "Tegenover een klassieke airco heeft geocooling meerdere doorslaggevende troeven.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b0b2b3f7fb80",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5a413f79a96b",
+     "text": "Uitzonderlijk zomercomfort",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5f54cc70a57c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb8a5ec5de7f",
+     "text": "Geocooling is geen agressieve airco: ze brengt de temperatuur in volle zomer niet naar 20 °C, maar voorkomt oververhitting door het gebouw binnen een comfortzone te houden. Het voelt zeer aangenaam aan, zonder tocht, zonder lawaai en zonder plaatselijk koudegevoel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9cce201284ec",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a546612ddb8a",
+     "text": "Een ultralaag energieverbruik",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bab2560ab500",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "171b002b6d8f",
+     "text": "Omdat de compressor van de warmtepomp weinig of niet wordt gebruikt, beperkt het stroomverbruik zich hoofdzakelijk tot dat van de circulatiepompen. De werkingskost is dus zeer laag, vaak niet te vergelijken met die van een klassieke airco.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d65aec04c6ab",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "399627f02c83",
+     "text": "Een stille installatie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7c9564a099b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff6643a47b37",
+     "text": "Geocooling heeft geen buitenunit of lawaaierige condensatiegroep nodig. Alles gebeurt in de technische ruimte en in de bodem. Voor woningen, scholen, kantoren of kinderdagverblijven is dat een groot voordeel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f5f6f35c760",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3df1621739e6",
+     "text": "Geen mechanische overbelasting",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c1bc64c43fd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5583d4f04f10",
+     "text": "Klassieke koelsystemen werken met compressoren die herhaalde cycli en soms extreme temperaturen ondergaan. Bij geocooling zijn de mechanische belastingen veel kleiner, wat de slijtage van de toestellen beperkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1e6d47e2116e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12363585a54f",
+     "text": "Een koolstofarme oplossing",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b493838eeac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0dd95c8550ad",
+     "text": "Geocooling benut een 100 % hernieuwbare koudebron: de bodem. Gecombineerd met hernieuwbare elektriciteit (zonnepanelen, groene contracten, enz.) kunt u een gebouw koelen met een zeer kleine koolstofvoetafdruk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f3500f3735b1",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "998ed743eb83",
+     "text": "Geschikt voor moderne gebouwen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "072af6390c69",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd3ba2708947",
+     "text": "Geocooling past bijzonder goed in recente of gerenoveerde gebouwen: appartementsgebouwen, kantoren, energiezuinige openbare gebouwen, enz. Zodra het afgiftesysteem (vloeren, plafonds, ventiloconvectoren) geschikt is voor werking op laag vermogen, is het systeem zeer efficiënt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5a58664776c3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2baba562f23",
+     "text": "Freecooling vs klassieke airco: de vergelijking",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1a79b6767d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37d307c3fd83",
+     "text": "Een klassieke airco steunt op een volledige koelcyclus met compressor, expansieventiel, condensor en verdamper. Ze kan koude produceren, zelfs wanneer de buitenlucht warm is, maar ten koste van een aanzienlijk stroomverbruik en een complexere installatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "46720bbd3795",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5250d4c104be",
+     "text": "Geothermische freecooling gebruikt de koelte die al in de bodem aanwezig is. Ze \"maakt\" geen koude, ze verplaatst ze. In de meeste gevallen haalt u een behoorlijk zomercomfort voor een fractie van het stroomverbruik van een klassieke airco.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2380bf225314",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e1de41cc8e7",
+     "text": "Voor gebouwen die comfort, energiezuinigheid en discretie willen combineren, is geocooling een bijzonder aantrekkelijke oplossing.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geocooling: gratis koeling met geothermie | WellDoneDrill",
+ "seoDescription": "Hoe werkt geocooling? Passieve koeling via geothermische sondes: zomercomfort, ultralaag verbruik, geen lawaai en koolstofarm. De vergelijking met een klassieke airco.",
+ "_mainImageFile": "uploads/2025/05/Capture-decran-2025-05-16-a-10.26.01.jpg",
+ "_mainImageAlt": "Geothermische boring in het hart van Novacity met WellDoneDrill"
+}

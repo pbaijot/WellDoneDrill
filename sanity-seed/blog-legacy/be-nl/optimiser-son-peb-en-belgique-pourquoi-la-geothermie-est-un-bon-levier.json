@@ -1,0 +1,380 @@
+{
+ "_id": "blog-legacy-be-nl-5432",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Uw EPC-label verbeteren in België: waarom geothermie een sterke hefboom is",
+ "slug": {
+  "_type": "slug",
+  "current": "epc-label-verbeteren-met-geothermie"
+ },
+ "publishedAt": "2026-03-20T12:38:35Z",
+ "excerpt": "In België, of het nu in Brussel, Wallonië of Vlaanderen is, is het energieprestatiecertificaat het belangrijkste document bij een vastgoedtransactie geworden. Een slecht label (F of G) kan de prijs van een woning met 20 à 30 % doen dalen.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c9eea5bc23b8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e63b8c52bedf",
+     "text": "In België, of het nu in Brussel, Wallonië of Vlaanderen is, is het ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2ddb6b915d17",
+     "text": "energieprestatiecertificaat (EPC of EPB)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "94954944bdf0",
+     "text": " het belangrijkste document bij een vastgoedtransactie geworden. Een slecht label (F of G) kan de prijs van een woning met 20 à 30 % doen dalen. Omgekeerd garandeert een label A of B een onmiddellijke meerwaarde. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "36c085945bc2",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0c1e0562e1d2",
+     "text": " helpen we onze klanten hun certificaat ingrijpend te verbeteren dankzij verticale boringen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a83d9a36e054",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fded47a7114",
+     "text": "1. De EPC-berekening begrijpen: primaire energie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7933a62ffe23",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d6b45f9b117",
+     "text": "Het EPC meet niet alleen uw werkelijke verbruik, maar uw verbruik aan ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f71572c7d5f3",
+     "text": "primaire energie",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fb306a982e4a",
+     "text": ". Voor elektrische verwarming (warmtepomp) past België een omrekeningsfactor toe.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f0baaa72897e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30d2c4fe2117",
+     "text": "Gas of stookolie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b4e1c58c0476",
+     "text": " Voor 1 verbruikte kWh telt het EPC 1 kWh primaire energie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8b62cde43064",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f48e13dc85e",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4276abfbe86f",
+     "text": " Dankzij een hoge COP (prestatiecoëfficiënt), vaak hoger dan 5, produceert uw systeem 5 kWh warmte voor slechts 1 kWh verbruikte elektriciteit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bd1084c63b9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5c7eb5ab534",
+     "text": "De EPC-software erkent dat uitzonderlijke rendement. Een sonde tot 150 meter deelt het aandeel \"verwarming\" in uw certificaat door 4 à 5 ten opzichte van een moderne condensatieketel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "46710dd941c5",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86700bbf30c1",
+     "text": "2. Geothermie vs luchtwarmtepomp in de EPC-software",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1961deef444a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "427b6f17aa7a",
+     "text": "Veel energiedeskundigen en architecten zullen het bevestigen: bij gelijke isolatie haalt een woning met een geothermische warmtepomp (bodem-water) systematisch een betere score dan een woning met een luchtwarmtepomp (lucht-water).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "408cf6ebcb6e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8acb34223e83",
+     "text": "Stabiele brontemperatuur:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6855a93e76f7",
+     "text": " De software benadeelt luchtwarmtepompen omdat hun rendement daalt bij vorst. Geothermie, met haar stabiele bron van 12 °C op 150 meter diepte, krijgt een prestatiebonus in de berekening.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9bc7e0cb13fb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0dc17019726",
+     "text": "Hulpverbruik:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8b966a4d3161",
+     "text": " Geen energieverslindende buitenventilatoren en geen ontdooicycli: dat verlaagt het \"verborgen\" verbruik dat de energiedeskundige meetelt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "845515687f94",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82574c4c4cec",
+     "text": "3. Geocooling: comfort zonder strafpunten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4488ba5df33c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78d4e7854f95",
+     "text": "Een van de valkuilen van het EPC is koeling. Installeert u een klassieke airco voor de zomer, dan beschouwt de software dat als extra energieverbruik en daalt uw score (oververhittingsrisico).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "182203b8c061",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7985f399978",
+     "text": "Het positieve achterpoortje:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c2a86da7adc3",
+     "text": " Passieve geocooling verbruikt zo weinig energie dat de software het als verwaarloosbaar beschouwt. U geniet de hele zomer van een koele woning zonder dat uw certificaat van groen naar oranje gaat.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76e63783f22e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b95c0dc06622",
+     "text": "4. Label \"A\" of \"A+\" halen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ebc134ad6e76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74518339dde3",
+     "text": "Voor nieuwbouw of ingrijpende renovaties is label A het ultieme doel. Met gas is dat bijna onmogelijk, en met een gewone lucht-waterwarmtepomp moeilijk zonder enorm veel zonnepanelen. Met ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f0ec31bb5332",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "90e85fa8ae2c",
+     "text": " doet geothermie het meeste werk. Ze verlaagt de behoefte aan primaire energie zo sterk dat een kleine zonne-installatie vaak volstaat om de woning in de categorie energiepositieve gebouwen te brengen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e287fdf0f6a1",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b0a055f140d",
+     "text": "5. Een rendabele investering vanaf de dag van het certificaat",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "16de68cba1b5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5425f68c6e3",
+     "text": "Neem een woning van 200 m². Van een label C naar een label A gaan kan op de markt een waardeverschil van € 40.000 tot € 60.000 betekenen. De kostprijs van uw boring (ongeveer € 15.000 tot € 20.000) is dus ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7eefb0b9decd",
+     "text": "meteen terugverdiend",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a352d7ee00b4",
+     "text": " door de waardestijging van uw woning, nog voor u één euro op uw eerste verwarmingsfactuur hebt bespaard.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Uw EPC-label verbeteren met geothermie | WellDoneDrill",
+ "seoDescription": "Waarom een geothermische warmtepomp uw EPC-score sterk verbetert: primaire energie, beter dan een luchtwarmtepomp, geocooling zonder straf en label A binnen bereik.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermie op een kleine ruimte"
+}

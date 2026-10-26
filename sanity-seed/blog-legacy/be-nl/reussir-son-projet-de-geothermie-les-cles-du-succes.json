@@ -1,0 +1,674 @@
+{
+ "_id": "blog-legacy-be-nl-4384",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Een geslaagd geothermisch project: de sleutels tot succes",
+ "slug": {
+  "_type": "slug",
+  "current": "geslaagd-geothermisch-project-sleutels-tot-succes"
+ },
+ "publishedAt": "2025-12-02T10:51:10Z",
+ "excerpt": "Een goed ontworpen geothermische installatie is eenvoudig, betrouwbaar en zeer comfortabel. Zoals bij elk technisch project zijn bepaalde stappen echter doorslaggevend voor het eindresultaat.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "dff8e2cdd2ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d699724f750",
+     "text": "Een goed ontworpen geothermische installatie is eenvoudig, betrouwbaar en zeer comfortabel. Zoals bij elk technisch project zijn bepaalde stappen echter doorslaggevend voor het eindresultaat. Van het bepalen van de behoefte tot de keuze van de partners: dit zijn de belangrijkste aandachtspunten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b23532c475c9",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9cb32e8c2e9",
+     "text": "1. De behoefte verduidelijken: verwarming, koeling, warm water",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "568a10b8d57c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d504648833d",
+     "text": "De eerste stap is duidelijk bepalen wat u van de installatie verwacht:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dab093bd7064",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c3b8abffc25",
+     "text": "alleen verwarming",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b1f87e5dce9f",
+     "text": ";",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5bde1925e489",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a1d48eb6cf3",
+     "text": "verwarming + koeling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6e80e0f31b1b",
+     "text": " (geocooling);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "849fd47a8bb3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4604dff84bed",
+     "text": "verwarming + sanitair warm water",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b53625f28b43",
+     "text": ";",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a17906cc54ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17d7d1c04270",
+     "text": "of alle drie",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "599b046fecfd",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5ee5f75b38dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c28f342094b",
+     "text": "Zo kunnen het vermogen van de warmtepomp, het opslagvolume (buffervat, boiler) en het sondeveld correct worden gedimensioneerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "18f71d77779c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e8b8972ff8c",
+     "text": "2. Een aangepaste dimensionering, zonder de warmtepomp te overdimensioneren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3d448ccf7aa3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a259dde27be2",
+     "text": "Een overgedimensioneerde warmtepomp veroorzaakt in de praktijk vaak problemen: korte cycli, frequent aan- en uitslaan, een lager rendement en vroegtijdige slijtage. Een correct gedimensioneerde warmtepomp werkt daarentegen langer op deellast, met een betere COP en een stabieler comfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5461f51fa80d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70a485e5a8ea",
+     "text": "Het duo \"warmtepomp + opslagvat\" is essentieel:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "61457143464b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7fd501643634",
+     "text": "de warmtepomp levert het vermogen,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0d67d473f61f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95ce850d940f",
+     "text": "het vat vangt schommelingen in de vraag op en laat de installatie draaien op het gunstigste moment (bijvoorbeeld wanneer de zonnepanelen produceren).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "397422a79986",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "311eed87858b",
+     "text": "In de meeste standaardprojecten in de woning- en kantoorbouw dekt een goed gedimensioneerde geothermische installatie de volledige verwarmingsbehoefte, zonder systematische aanvulling met een fossiel systeem.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "79d401e86789",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8a692ec25b5",
+     "text": "3. De technische ruimte eenvoudig houden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a425e34f7448",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06f1e619a9e6",
+     "text": "Moderne geothermische water-waterwarmtepompen zijn compacte, vaak volledig geïntegreerde units (pompen, warmtewisselaars, regeling, enz.) die nauwelijks meer plaats innemen dan een grote koelkast. In veel gevallen is de nodige technische ruimte eenvoudiger en properder dan een klassieke stookruimte: geen schoorsteen, geen brander, geen brandstofopslag.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "817379ed53a8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16a42f071bd5",
+     "text": "Ook in bestaande gebouwen laat geothermie zich doorgaans goed integreren: de ketel wordt vervangen door een warmtepomp, er komt een buffervat bij en indien nodig worden de regeling en het afgiftesysteem aangepast.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f9f6906ce6ca",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4a1cd1d206a",
+     "text": "4. Het opslagvat al in de ontwerpfase voorzien",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8cfa244ab76b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c33cadd61a45",
+     "text": "Een opslagvat in het systeem opnemen is vaak een uitstekend idee. Het maakt het mogelijk om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fcef63bfa067",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1b8c563dca1",
+     "text": "de werking van de warmtepomp te optimaliseren (minder starts, beter rendement);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "095fb696ce4b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c32f5c9ea85f",
+     "text": "de vermogenspieken van het gebouw af te vlakken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "efa5f8429075",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cfb35b70278",
+     "text": "ten volle te profiteren van de koppeling met zonnepanelen, door water op te warmen wanneer de stroomproductie maximaal is.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1df085e34004",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68c4f849810c",
+     "text": "Dit vat is een centraal onderdeel van een eenvoudige, robuuste en efficiënte installatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "09f7907b7d1d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "494b92795233",
+     "text": "5. Geothermie koppelen aan zonnepanelen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2fcf2fb5f34e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16a2914fc0f2",
+     "text": "Geothermie is een 100 % elektrisch systeem. Gekoppeld aan zonnepanelen verlaagt het de energiefactuur zeer sterk. In de praktijk kan een groot deel van de elektriciteit die de warmtepomp verbruikt door de zonneproductie worden gedekt, zeker als de regeling wordt aangepast om bij voorkeur tijdens de zonnige uren te werken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ebfd26ef4983",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e3532eb77b5",
+     "text": "Ook hier speelt het opslagvat een sleutelrol: het \"slaat\" de overtollige elektriciteit van het middaguur op in de vorm van warmte, om die 's avonds of de volgende dag weer af te geven.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9bff71de3a6f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "638bcdb8c048",
+     "text": "6. Geothermie, radiatoren en renovatie: een goede combinatie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d526deb5adcb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fab3035d645",
+     "text": "Een hardnekkige misvatting is dat geothermie alleen werkt met vloerverwarming op lage temperatuur. In werkelijkheid zijn de radiatoren in veel bestaande gebouwen overgedimensioneerd ten opzichte van de huidige behoeften (betere isolatie, nieuwe ramen, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ddf5888a205",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d52e23bebf0e",
+     "text": "Door de regeling aan te passen en met iets lagere temperaturen te werken, kan een bestaand radiatorennet vaak gevoed worden met een geothermische warmtepomp, met behoud van een goed rendement.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "89d8f0ad2383",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e893a423c721",
+     "text": "Bij renovatie past geothermie zich dus heel goed aan, zonder dat alles noodzakelijk van nul af aan opnieuw moet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "1da157b042fd",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+   "alt": "geothermische boring voor particulieren in België"
+  },
+  {
+   "_type": "block",
+   "_key": "9801eab57bc7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e6097a7df12a",
+     "text": "7. Een zeer groot geothermisch potentieel in België",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "53b1d7a230b2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29d8492e502e",
+     "text": "De Belgische ondergrond biedt op het overgrote deel van het grondgebied een uitstekend geothermisch potentieel. Bij de meeste projecten kunnen verticale sondes diep genoeg worden geboord om een performante warmtepomp te voeden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9a21c64b745e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9be23764053",
+     "text": "WellDoneDrill analyseert telkens de haalbaarheid van het project en vertelt u transparant of geothermie op uw terrein technisch mogelijk is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7ef70e563fc0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7e70dc4db25",
+     "text": "8. Omring u met de juiste partners",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "14dbc9a72b7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae3f20356232",
+     "text": "Het succes van een geothermisch project steunt op een goede coördinatie tussen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ca50c6241d7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e19d77889a0c",
+     "text": "de boorder (sondes en boringen);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "95cbaf3d61a4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8295afd5cfd6",
+     "text": "de installateur van de warmtepomp en de hydraulische uitrusting;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "099ab76ca371",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5f650075612",
+     "text": "het studiebureau of de ingenieur die de globale dimensionering doet;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f32f382933f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "856cb06334a6",
+     "text": "de architect of de bouwheer.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4ebe9529d348",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5876825e7024",
+     "text": "WellDoneDrill positioneert zich als gespecialiseerde partner voor het boren en de sondes, in nauwe samenwerking met de andere betrokkenen. Het doel is dat geothermie voor de eindklant een eenvoudige, overzichtelijke en performante oplossing is, zonder onnodige complexiteit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "43ecdf7cd313",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12ad394ca715",
+     "text": "Kortom: een geslaagde geothermische installatie is vooral een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "729a76ef63f9",
+     "text": "goed voorbereide",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "89ae6e9bcc1a",
+     "text": " installatie: een duidelijk bepaalde behoefte, een aangepaste dimensionering, een slimme integratie in het gebouw, een mogelijke koppeling met zonnepanelen en de keuze voor ervaren partners. Op die basis wordt geothermie een technologie die dagelijks eenvoudig te gebruiken is en een moeilijk te evenaren comfort en prestatie biedt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Een geslaagd geothermisch project | WellDoneDrill",
+ "seoDescription": "De sleutels tot een geslaagd geothermisch project: de behoefte bepalen, correct dimensioneren, buffervat, zonnepanelen, radiatoren bij renovatie en de juiste partners.",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "Geothermische boring in België"
+}

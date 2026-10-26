@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-nl-4401",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermische boringen onder gebouwen en ondergrondse parkings",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermische-boringen-onder-gebouwen-en-parkings"
+ },
+ "publishedAt": "2025-12-02T10:59:35Z",
+ "excerpt": "Wanneer de beschikbare ruimte aan het oppervlak beperkt is, kunnen geothermische sondes rechtstreeks onder gebouwen of ondergrondse parkings worden geplaatst. Zo kan geothermie geïntegreerd worden in zeer dichte projecten, zowel in nieuwbouw als bij renovatie.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "eb78f7575383",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9265d422400f",
+     "text": "Wanneer de beschikbare ruimte aan het oppervlak beperkt is, kunnen geothermische sondes rechtstreeks onder gebouwen of ondergrondse parkings worden geplaatst. Zo kan geothermie geïntegreerd worden in zeer dichte projecten, zowel in nieuwbouw als bij renovatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1179b65549fb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53daf8f117c1",
+     "text": "Twee grote inplantingsscenario's",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dbb33677f864",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6296e703c77b",
+     "text": "Geothermische sondes onder een gebouw of parking plaatsen kan volgens twee hoofdconfiguraties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "94dd87077155",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e16683142dec",
+     "text": "1. Boren vóór de bouw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e768b5f330f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "db9eadaa74d6",
+     "text": "Bij een nieuwbouwproject is de eenvoudigste oplossing de boringen uit te voeren vóór de bouw van het gebouw:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f6e1549ecf3a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e1412b555b6",
+     "text": "de sondes worden op het lege terrein geboord;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d846ec8b5b66",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1eb4c8fcf661",
+     "text": "ze worden geplaatst in functie van het toekomstige plan van de funderingen en kelders;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f23fbe62021b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5af8c5962ac7",
+     "text": "zodra de sondes geïnstalleerd en aangesloten zijn, wordt het gebouw erbovenop gebouwd.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64ccaa4af573",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ddede4ab8907",
+     "text": "Zo is er veel vrijheid bij de inplanting en is gegarandeerd dat de sondes de funderingen niet hinderen. De coördinatie met de stabiliteitsingenieur is essentieel om de boorzones en de afstanden tot palen of funderingszolen te bepalen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e50f0f1c03aa",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a28356cd0788",
+     "text": "2. Boren vanuit het gebouw, onder een bestaand gebouw of tijdens de bouw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9cbdcc9c210a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "733133196cd8",
+     "text": "In het tweede scenario wordt geboord vanuit het gebouw, zodra een of meer kelderverdiepingen gebouwd zijn. De boormachine wordt dan op een parkeervloer of in een technische ruimte geplaatst en de sondes worden in de onderliggende grond geboord. Die aanpak is bijzonder nuttig wanneer er geen buitenruimte beschikbaar is of het project al gedeeltelijk gebouwd is. Ze vraagt compacte boormachines die met een beperkte hoogte overweg kunnen, en een specifieke organisatie voor de afvoer van boorgruis.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a00f25ceb1b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70769da428ca",
+     "text": "Hetzelfde geldt bij renovatie: in bestaande gebouwen kunnen de boormachines binnen worden gebracht om, afhankelijk van de configuratie, door vloerplaten, funderingsplaten of tussen funderingspalen te boren. Zo wordt geothermie mogelijk in gebouwen waar alle buitenruimte al gebruikt of bebouwd is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1df738568bb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30bac6705154",
+     "text": "Coördinatie met de structuur en de funderingen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f0e0e2f213a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75970e3e7dee",
+     "text": "Onder een gebouw boren vraagt een nauwe samenwerking met de stabiliteitsingenieur:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3e5506613f7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "234dfbb29824",
+     "text": "ligging van de palen of funderingszolen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bcfe175df658",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1abf827cfaf9",
+     "text": "diepte van de funderingen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "871dd39d9c51",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "731ed729ab3f",
+     "text": "te vermijden zones om de structuur niet te verzwakken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "aad6db83365b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9323dda0db30",
+     "text": "eventuele minimale tussenafstanden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "82103957240d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9ae8d05431b",
+     "text": "Geothermische sondes zijn eenvoudige HDPE-buizen ingebed in grout en oefenen geen noemenswaardige druk uit op de grond. Het vraagstuk is dus niet structureel maar geometrisch: de sondes moeten zo geplaatst worden dat ze de dragende elementen niet hinderen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0a49ed2d853",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8f48bdd7e39",
+     "text": "Voordelen van sondes onder een gebouw of parking",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b3e3c86d1d92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c8214a1bbcd",
+     "text": "Sondes onder het gebouw of de parking plaatsen biedt meerdere voordelen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6f213756f89c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "13086096859f",
+     "text": "optimaal grondgebruik: geen extra ruimte-inname aan het oppervlak;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ce9360923320",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "141a2d83769f",
+     "text": "bescherming van de sondekoppen: ze bevinden zich in technische ruimtes of beschermde zones;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "67d266d3327e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a2c20e4d93a",
+     "text": "kortere verbindingen tussen sondes en technische ruimte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "34c82f1eb90a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ff40411dc2c",
+     "text": "geothermie wordt mogelijk in zeer dichte projecten in het stadscentrum.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e3dd15650f44",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b85f9adf189a",
+     "text": "Voor projectontwikkelaars en ontwerpers maakt deze oplossing geothermische verwarming en koeling mogelijk, zelfs wanneer er geen tuin of vrij terrein beschikbaar is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3a9857aa67fb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "28b5048bacd9",
+     "text": "Werforganisatie en praktische beperkingen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "653a872693e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1cce264d12ef",
+     "text": "Boren onder een gebouw of parking vraagt een bijzondere logistiek:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6cf9c67b64b0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b90b1f0d834",
+     "text": "toegang van de boormachine in het gebouw;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6d0f939293a3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f60393951ad1",
+     "text": "bescherming van vloerplaten en bestaande afwerking;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7e07447217a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29f0b3734ef3",
+     "text": "beheer van boorgruis in een besloten ruimte;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "507964965407",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b66eb1a4e77",
+     "text": "naleving van beperkingen op het vlak van hoogte en ventilatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b015df0584a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8b000a8da87",
+     "text": "WellDoneDrill beschikt over compacte boormachines en aangepaste procedures voor dit soort werven, zowel in nieuwbouw als bij renovatie. Het doel is de boringen uit te voeren met een minimale impact op het gebouw en op de algemene planning.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f156ae807110",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1bd4838338f",
+     "text": "Conclusie: een hefboom voor geothermie in dichtbebouwde omgevingen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3d12c8a583ae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f8902223721",
+     "text": "De mogelijkheid om geothermische sondes onder gebouwen of ondergrondse parkings te plaatsen, is een grote troef voor geothermie in dichte stedelijke projecten. Ze verzoent energieprestatie, comfort en beperkingen van de beschikbare grond.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dd97b05d62a3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3a16958e7e0",
+     "text": "Dankzij zijn expertise in stedelijk boren en werken onder gebouwen begeleidt WellDoneDrill bouwheren, architecten en studiebureaus bij de integratie van deze oplossing in hun projecten, van het ontwerp tot de uitvoering.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermische boringen onder gebouwen en parkings | WellDoneDrill",
+ "seoDescription": "Sondes onder een gebouw of parking: boren vóór de bouw of vanuit de kelder, coördinatie met de stabiliteitsingenieur, voordelen en praktische organisatie.",
+ "_mainImageFile": "uploads/2025/12/parking-sous-terrain.webp",
+ "_mainImageAlt": "Geothermische boringen onder een gebouw of ondergrondse parking"
+}

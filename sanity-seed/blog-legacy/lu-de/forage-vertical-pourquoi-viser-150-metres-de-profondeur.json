@@ -1,0 +1,444 @@
+{
+ "_id": "blog-legacy-lu-de-5392",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Vertikalbohrung: Warum 150 Meter Tiefe anstreben?",
+ "slug": {
+  "_type": "slug",
+  "current": "vertikalbohrung-warum-150-meter-tiefe"
+ },
+ "publishedAt": "2026-03-20T10:11:10Z",
+ "excerpt": "Bei WellDoneDrill bohren wir regelmäßig bis etwa 150 Meter Tiefe, doch die genaue Tiefe richtet sich immer nach der Geologie Ihres Grundstücks. Diese Wahl sichert die beste Effizienz und eine lange Lebensdauer Ihrer Anlage.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1d676bb9fe84",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "73766290ca84",
+     "text": "Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "43d20d0d2a7e",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "09767ad424c3",
+     "text": " führen wir regelmäßig Bohrungen bis ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "1a69d76da1ee",
+     "text": "etwa 150 Meter Tiefe",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a5752ab0416c",
+     "text": " aus, doch die genaue Tiefe wird immer an die spezifische Geologie Ihres Grundstücks angepasst. Diese Wahl ist eine echte Strategie, um die beste Energieeffizienz und die Langlebigkeit Ihrer Anlage zu sichern. So tief zu bohren ist kein Detail: Es macht den Unterschied.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d5ced857d84e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc7b090a55ff",
+     "text": "1. Der geothermische Gradient: wärmer und stabiler",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2497a480ed30",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e95fabcc1da",
+     "text": "Die Erde besitzt eine natürliche Wärme, die mit zunehmender Tiefe in der Erdkruste steigt. Man spricht vom ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ff76ff99d846",
+     "text": "geothermischen Gradienten",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ec203cf015e5",
+     "text": ". Im Durchschnitt steigt die Temperatur um ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "220028ee0cff",
+     "text": "3 °C pro 100 Meter",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b2c5a89e0fa4",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b4c9f6395da",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91af9741fd7f",
+     "text": "In 10 Metern Tiefe unterliegt der Boden noch dem Einfluss der Jahreszeiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "606c78e0e14d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad62129246fa",
+     "text": "In 100 Metern ist die Temperatur stabil, in Belgien bei etwa 12 °C bis 13 °C.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ac4c2502b064",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b1e8b1dc807",
+     "text": "In 150 Metern erschließen wir eine noch konstantere und etwas wärmere Energiequelle.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "54163edbf810",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e15c19721f30",
+     "text": "Ein Unterschied von wenigen Grad erscheint gering, ist für eine Wärmepumpe aber entscheidend. Je kleiner der Temperaturunterschied zwischen Quelle (Boden) und Wärmeabgabe (Ihrer Heizung), desto weniger muss der Verdichter arbeiten. Das Ergebnis: eine deutlich höhere ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7bd9983081a3",
+     "text": "Leistungszahl (COP)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "84a5ddb56ecf",
+     "text": " und eine niedrigere Stromrechnung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f3130c327396",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "13724d066302",
+     "text": "2. Eine vervielfachte thermische Leistung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "caf4603472f8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a6f3da5f5ce",
+     "text": "Wie viel Wärme eine Erdwärmesonde entziehen kann, hängt direkt von ihrer Austauschfläche mit dem Boden ab. Von 100 m auf 150 m zu gehen erhöht nicht nur die Tiefe um 50 %: Die Entzugsleistung steigt noch stärker, dank des lithostatischen Drucks und der oft dichteren, besser leitenden Gesteinsschichten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ebabb098dfa0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "086a7b2ce145",
+     "text": "Eine 150-Meter-Bohrung kann bis zu ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3f2f33cad1a9",
+     "text": "50 bis 70 % mehr Heizleistung",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5d9b90bff767",
+     "text": " liefern als eine 80-Meter-Bohrung. So lässt sich der gesamte Bedarf einer großen Villa oder eines Bürogebäudes oft mit einer einzigen tiefen Bohrung decken, wo andere zwei oder drei flachere bräuchten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "89d31f9c34dc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e18b11ae5c5c",
+     "text": "3. Optimale Flächennutzung: die Lösung für kleine Grundstücke",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a83c81f77e09",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "897b2be9c97c",
+     "text": "Das ist das wichtigste Argument für unsere Kunden in Brüssel und in den wallonischen Innenstädten. Ist der Garten klein, lassen sich nicht mehrere Bohrpunkte unter Einhaltung der Sicherheitsabstände zwischen den Sonden (meist 10 Meter, damit sie sich nicht gegenseitig Wärme „stehlen“) unterbringen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6f4c61c53611",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34f811ae8bd3",
+     "text": "Eine Bohrung bis 150 Meter ermöglicht es:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5287f16adc9c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98238a4d7aeb",
+     "text": "Die Leistung zu bündeln",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e785ea73dd7a",
+     "text": " auf einen einzigen Bohrpunkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d2ed1e12156e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e011366c2eb5",
+     "text": "Die Baustellenfläche zu verringern.",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5b3c265f40b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "97d92b9497ea",
+     "text": "Ihre Außenanlagen zu schonen",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5efbca33b650",
+     "text": " (weniger Anschlussgräben, weniger Verteiler).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3b70c82d672b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce49b8f0b3c2",
+     "text": "4. Schutz vor thermischer Erschöpfung des Bodens",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6c638b79f5d5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4249e33aefd1",
+     "text": "Ein Boden, dem zu viel Wärme entzogen wird, ohne dass er sich regenerieren kann, kann schließlich „einfrieren“ (langfristiger Effizienzverlust). Wer die Wärme in 150 Metern holt, nutzt ein viel größeres Gesteinsvolumen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4ef16460b0e6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccc0e4547441",
+     "text": "Außerdem ist diese Tiefe ideal für ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2536468ea2f9",
+     "text": "Geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ade6ee768aa8",
+     "text": " (passive Kühlung im Sommer). Das Kältereservoir in 150 Metern ist größer und stabiler und sorgt auch bei langen Hitzewellen für eine leistungsfähige natürliche Kühlung, ohne die thermische Kapazität der Bohrung zu erschöpfen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "51f627c2e3ef",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa91fb3ef1c6",
+     "text": "5. Die Kompetenz von WellDoneDrill: Bohren unter Kontrolle",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d301a294ea50",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "49ffcfb3dea6",
+     "text": "Eine Bohrung bis 150 Meter erfordert spezielles Gerät und mehr technisches Know-how. Drücke und Sedimentmanagement unterscheiden sich völlig von einer flachen Bohrung. Mit unserer Flotte kompakter, aber sehr leistungsstarker Bohrgeräte beherrschen wir diese Vertikalität und bieten unseren Kunden die kompakteste und wirtschaftlichste Lösung am Markt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Vertikalbohrung: Warum 150 Meter tief? | WellDoneDrill",
+ "seoDescription": "Warum eine Erdwärmebohrung bis 150 Meter? Geothermischer Gradient, mehr Leistung, weniger Platz: die Vorteile einer tiefen Vertikalbohrung.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-11.09.54.jpg",
+ "_mainImageAlt": "Vertikale Erdwärmebohrung bis 150 Meter Tiefe"
+}

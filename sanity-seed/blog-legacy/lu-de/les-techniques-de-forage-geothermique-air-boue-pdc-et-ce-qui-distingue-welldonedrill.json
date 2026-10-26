@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-lu-de-4393",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Bohrtechniken für Geothermie: Luft, Spülung, PDC… und was WellDoneDrill auszeichnet",
+ "slug": {
+  "_type": "slug",
+  "current": "bohrtechniken-fuer-geothermie-luft-spuelung-pdc"
+ },
+ "publishedAt": "2025-12-02T10:56:41Z",
+ "excerpt": "Hinter jeder leistungsfähigen Erdwärmeanlage steht eine gut beherrschte Bohrbaustelle. In allen Böden zu bohren, vom lockeren Sand bis zum härtesten Fels, erfordert angepasste Techniken. WellDoneDrill setzt auf drei große Methoden.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "82ea09f9bda1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31e6580f7d02",
+     "text": "Hinter jeder leistungsfähigen Erdwärmeanlage steht eine gut beherrschte Bohrbaustelle. In allen Bodenarten zu bohren, vom lockeren Sand bis zum härtesten Fels, erfordert angepasste Techniken. WellDoneDrill setzt auf drei große Methoden: Druckluftbohren mit Imlochhammer, Spülbohren und PDC-Bohren (Polycrystalline Diamond Compact), eine aus Deutschland übernommene Technik, die Leistung und Kosten deutlich verbessert hat.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1c37e4d7100c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08b43b361ee5",
+     "text": "Druckluftbohren mit Imlochhammer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2db09ce4d946",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fc4f81fad053",
+     "text": "Das Druckluftbohren mit Imlochhammer (Down-The-Hole Hammer) ist eine weit verbreitete Technik, um harte oder sehr kompakte Gesteinsformationen zu durchbohren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c3663c2d3bac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "054b149bd4ea",
+     "text": "Das Prinzip:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0683bda0095",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aaa8fd00b1d3",
+     "text": "ein pneumatischer Hammer befindet sich am Grund des Bohrlochs;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "df07af1533e8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "651b26774a56",
+     "text": "Druckluft wird in das Bohrgestänge geleitet und treibt den Hammer an;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1170ff02aaec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9b67f18cfb2",
+     "text": "das Gestein wird durch Schlagwirkung mechanisch zertrümmert;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d6dcb89d6f7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "40dfc80d92b9",
+     "text": "das Bohrklein wird von der entlang des Werkzeugs aufsteigenden Druckluft nach oben gefördert.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1cf8ddbf6245",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab00f7e29533",
+     "text": "Diese Methode ist im Hartgestein sehr effizient, hat aber einige Grenzen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "baf5c6bb487e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f34b3fea470d",
+     "text": "Empfindlichkeit gegenüber starken Wasserzuflüssen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "699e5bd6b0f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92d2548b6430",
+     "text": "aufwendigere Bohrkleinentsorgung in städtischen Gebieten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2633f30347de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "765e7e3c8845",
+     "text": "mehr Lärm und Vibrationen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5f19f9da734b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2d3b4aec220",
+     "text": "Spülbohren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "133487d5b49e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e45ede316dbd",
+     "text": "Beim Spülbohren (Mud Drilling) wird eine Bohrspülung aus Wasser und Ton/Bentonit verwendet, um die Bohrlochwände zu stabilisieren, das Bohrklein zu fördern und das Werkzeug zu kühlen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b95556edce4e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfaebf1dc208",
+     "text": "Das Prinzip:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4281880e2991",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "087a7a3ba1b3",
+     "text": "die Spülung fließt durch das Bohrgestänge bis zum Werkzeug;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "21ea423f1fe5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7daf5812174",
+     "text": "sie steigt im Ringraum wieder auf und nimmt das Bohrklein mit;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0fd804a416cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5972d2e2059a",
+     "text": "sie bildet einen Filterkuchen an den Bohrlochwänden, der diese stabilisiert.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b483910d0d94",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7cdd181a271c",
+     "text": "Diese Methode eignet sich besonders:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7114475e0be2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e64b4561a4b",
+     "text": "in Lockergestein (Sand, Kies…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fc6fe9560177",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2df064e1cbf6",
+     "text": "bei Wasserzuflüssen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4769e091a3c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "705c7c5f20bd",
+     "text": "in Böden, in denen die Standfestigkeit der Wände eine Herausforderung ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "de413f18e929",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1339f0aa9ec7",
+     "text": "Das Spülbohren ist vielseitig, erfordert aber ein gutes Management von Spülung und Bohrklein, besonders auf beengten Baustellen und in der Stadt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "32a4b6262bf1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99d5ddbab6f5",
+     "text": "PDC-Bohren: die Technik, die alles verändert",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c82eaaa15769",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "361f6c9a7123",
+     "text": "Beim PDC-Bohren (Polycrystalline Diamond Compact) wird ein Bohrkopf mit äußerst widerstandsfähigen Schneiden aus synthetischem Diamant verwendet. Statt auf das Gestein zu schlagen, „schabt“ das Werkzeug es mit schneller Drehung kontinuierlich ab.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7af5923859f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aaa70fca551b",
+     "text": "Die Vorteile des PDC-Bohrens:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "83768eb27686",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e54a1c56795",
+     "text": "sehr gute Leistung in einem breiten Spektrum von Böden, von Sedimenten bis Hartgestein;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "61dafacd11f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b10dda131f14",
+     "text": "kontrollierter Werkzeugverschleiß dank der Diamantschneiden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "66ac3185883b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ceef52a5b660",
+     "text": "bessere Kontinuität beim Bohren mit weniger Werkzeugwechseln;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "257f80a84a41",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3defe33c0559",
+     "text": "hohe Vortriebsgeschwindigkeit und damit kürzere Bauzeiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b487b43436a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4301dcf3623f",
+     "text": "WellDoneDrill hat diese Technik nach Belgien gebracht und weiterentwickelt, nach dem Vorbild der in Deutschland bereits etablierten Praxis. Heute steht PDC im Zentrum unserer Bohrstrategie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "65417eae8d11",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4c6d59c2c53",
+     "text": "Konkret ermöglicht das PDC-Bohren WDD:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "72df1ac5fdc2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b1daa2cf76d",
+     "text": "schneller zu arbeiten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "837057eec0ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "58a6293a13f3",
+     "text": "die Kosten pro Bohrung zu senken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8e072d4bbac0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "040400be1685",
+     "text": "auch die schwierigsten Böden zu beherrschen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4307c3a85f94",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c02d01b8398",
+     "text": "ohne Werkzeugwechsel durch aufeinanderfolgende Schichten zu bohren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fcb5320b92ce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "11a5b18404ab",
+     "text": "Mit PDC durchdringen die Diamantschneiden alle Bodenarten (sedimentär, felsig, heterogen), während das Spülwasser den Bohrkopf fortlaufend kühlt und das Bohrklein abführt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9bd251ee771",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cacb76dc6321",
+     "text": "In Brüssel zum Beispiel kann WellDoneDrill durch das Grundgebirge in etwa -90 m bohren und Tiefen von 120 bis 150 m erreichen, wo viele Wettbewerber bei 80 bis 90 m aufhören. Das bedeutet 50 bis 70 % mehr verfügbare Leistung pro Bohrung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9c66b92aa343",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89cd39104d7d",
+     "text": "Für Bauherren und Planer heißt das:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0fd007b45cb4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc6e0d8eb94f",
+     "text": "weniger Sonden für dieselbe Gesamtleistung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "83a81e3e76bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c1e2a98a4c5",
+     "text": "weniger Fläche für das Sondenfeld;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "55a051472d02",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c5775c1f7d9",
+     "text": "eine bessere Nutzung des Grundstücks, besonders auf beengten städtischen Parzellen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9a805c5ebdb4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e4222ce3c7e",
+     "text": "Der Vorteil von WDD",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4ed7e6a0cbcb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "113cec2ef23a",
+     "text": "Dank des PDC-Bohrens ist WellDoneDrill heute das effizienteste Bohrunternehmen für Geothermie in der Wallonie: Wir bohren in allen Böden, erreichen größere Tiefen als unsere Wettbewerber und optimieren die Kosten für unsere Kunden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f0cb19e2f9a3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "569e1774fbaf",
+     "text": "Die Bohrtechnik an jedes Grundstück anpassen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9d0358879ec3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d41d1efc954",
+     "text": "Ein Kernpunkt der Strategie von WellDoneDrill ist, sich nicht auf eine einzige Methode zu beschränken. Je nach Projekt, Bodenverhältnissen und Umgebung (städtisch, ländlich, Zufahrt, Grundwasser usw.) wählt WDD die effizienteste Kombination:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "95b5dde32b69",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "587b7e07130e",
+     "text": "Druckluft für bestimmte Hartgesteine;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bf2a657c724a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48e5d295f73a",
+     "text": "Bohrspülung für lockere oder instabile Böden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3954a6ae267a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2ea7b3441c0",
+     "text": "PDC, um vielfältige Böden optimal zu nutzen und die Produktivität zu steigern.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "352b6e5e313b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c58af3b82d3e",
+     "text": "Diese Flexibilität garantiert ein zuverlässiges Ergebnis, auch wenn der Untergrund komplex oder wenig bekannt ist, und begrenzt Überraschungen während der Arbeiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "864805cd3721",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bf3c8547cf6",
+     "text": "Fazit: technisches Können, das den Unterschied macht",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e234484dd1c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "448bcf74494e",
+     "text": "Die Bohrung ist der unsichtbare, aber entscheidende Schritt einer Erdwärmeanlage. Durch fortschrittliche Technologien, die Einführung von PDC in Belgien und die Anpassung seiner Methoden an jedes Grundstück hat WellDoneDrill die Leistung und Wettbewerbsfähigkeit der Geothermie deutlich verbessert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "83ff0a6109c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fef76b01b178",
+     "text": "Dieser technische Ansatz, verbunden mit Praxiserfahrung, ermöglicht schnellere, sauberere und sicherere Baustellen bei geringeren Kosten für die Kunden. WellDoneDrill kann heute in allen Bodenarten bohren, von den lockersten bis zu den felsigsten, und ein zuverlässiges, dauerhaftes und leistungsfähiges Ergebnis garantieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Bohrtechniken für Geothermie: Luft, Spülung, PDC | WellDoneDrill",
+ "seoDescription": "Druckluftbohren mit Imlochhammer, Spülbohren und PDC-Bohren: wie jede Technik funktioniert, wann sie passt und wie WellDoneDrill tiefer und günstiger bohrt.",
+ "_mainImageFile": "uploads/2025/12/technique-forage.webp",
+ "_mainImageAlt": "Bohrtechniken für Geothermie: Luft, Spülung und PDC"
+}

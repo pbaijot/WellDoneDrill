@@ -1,0 +1,274 @@
+{
+ "_id": "blog-legacy-be-nl-5408",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermie en zonnepanelen: het winnende duo voor volledige energieautonomie",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-en-zonnepanelen-het-winnende-duo"
+ },
+ "publishedAt": "2026-03-20T11:03:41Z",
+ "excerpt": "Met de energietransitie en schommelende elektriciteitsprijzen is de vraag niet langer alleen hoe u uw woning schoon verwarmt, maar hoe u dat zo goedkoop mogelijk doet. De combinatie van geothermie en zonnepanelen is daarop het slimste antwoord.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "71805182694a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc432e72a24d",
+     "text": "Met de huidige energietransitie en de schommelende elektriciteitsprijzen is de vraag niet langer alleen hoe u uw woning schoon verwarmt, maar hoe u dat aan de laagst mogelijke kostprijs doet. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3b0ed95bf938",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fd7f9335a4be",
+     "text": " zien we een duidelijke trend: de combinatie van een geothermische boring met zonnepanelen. Dit technologische huwelijk is zonder twijfel de slimste oplossing voor wie naar energieonafhankelijkheid streeft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "371e846f2c24",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ed3e2e12475",
+     "text": "1. De warmtepomp: een hefboom om energie om te zetten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d065a1378f6e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "060e95f293f7",
+     "text": "Een geothermische warmtepomp is van nature al uiterst efficiënt. Voor 1 kWh verbruikte elektriciteit levert ze doorgaans 4 à 5 kWh warmte (de zogenaamde COP). Ze heeft echter altijd dat \"kleine elektrische duwtje\" nodig om de compressor en de circulatiepompen te laten draaien.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "897c89a6257d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac012bb9fd0c",
+     "text": "Daar komen de zonnepanelen in beeld. Door uw eigen elektriciteit op uw dak op te wekken, voedt u de compressor van uw warmtepomp rechtstreeks. U zet dan niet alleen een schone energie (de warmte van de aarde) om, u doet het ook met een gratis en hernieuwbare stroombron (de zon).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bd5041f61eb2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "644670da07d0",
+     "text": "2. Geocooling: gratis koeling de hele zomer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5870518aee55",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5f7fa153423",
+     "text": "Een groot voordeel van verticale geothermie, zeker met onze boringen van 150 meter, is dat uw woning in de zomer passief gekoeld kan worden (",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "448181f8b480",
+     "text": "geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e7fa551748e5",
+     "text": "). Die techniek verbruikt zeer weinig energie: ze laat gewoon het koele water uit de bodem door uw vloerverwarming circuleren, zonder de compressor van de warmtepomp in te schakelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3e8b12e8dfbd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c238271e147",
+     "text": "Omdat uw zonnepanelen net in de zomer het meest produceren, daalt de werkingskost van uw koeling letterlijk tot ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "985a31f0e9ee",
+     "text": "nul",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "14ddc926fbd2",
+     "text": ". Anders dan een klassieke airco, die de elektriciteitsfactuur tijdens hittegolven doet ontploffen, maakt het duo geothermie-zon van uw woning een volledig gratis oase van koelte.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a6e890d6e29a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d65755c95898",
+     "text": "3. Het eigenverbruik maximaliseren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "895eb94809a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af842b814d3a",
+     "text": "Nu de terugdraaiende teller in België verdwijnt, draait alles om ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8f0313f4d173",
+     "text": "eigenverbruik",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "53ceee7f0520",
+     "text": ": de elektriciteit gebruiken op het moment dat u ze produceert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "04efee7efe5d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1b1dfd50101",
+     "text": "Geothermie is daar perfect voor. Dankzij de thermische inertie van uw vloerplaat (vloerverwarming) en uw buffervat kunt u uw warmtepomp zo programmeren dat ze warmte of koelte produceert tijdens de zonnigste uren. Uw woning werkt dan als een reusachtige thermische batterij die zonne-energie opslaat als warmte in het beton of in het water.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "129a70ff424d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab2fce8c41c6",
+     "text": "4. Een uitzonderlijke meerwaarde voor uw woning (EPC-score)",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ff43d43dde94",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "028308cd23e6",
+     "text": "De combinatie van een geothermische boring en zonnepanelen tilt uw EPC-certificaat (energieprestatiecertificaat) naar de top (A of A+). Voor een toekomstige koper is een woning die niet afhangt van het gasnet en haar eigen energie produceert voor verwarming en koeling bijzonder waardevol. Het is de garantie op een snelle verkoop aan de beste prijs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ba1e21129cc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cf302fbfdb12",
+     "text": "5. Weerbaar tegen energiecrisissen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1a0232ed0503",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26b7164b785b",
+     "text": "Met dit duo beschermt u zich tegen geopolitieke schommelingen die de gas- en elektriciteitsprijzen beïnvloeden. Zelfs als de prijs van netstroom stijgt, beschermt uw eigen zonneverbruik u. U wordt uw eigen energieproducent, met de kracht van zowel de hemel als de aarde.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie en zonnepanelen: het winnende duo | WellDoneDrill",
+ "seoDescription": "Waarom een geothermische warmtepomp en zonnepanelen samen werken: gratis koeling in de zomer, meer eigenverbruik, een beter EPC-label en energieonafhankelijkheid.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-12.03.15.jpg",
+ "_mainImageAlt": "Geothermie gecombineerd met zonnepanelen"
+}

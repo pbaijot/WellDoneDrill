@@ -1,0 +1,884 @@
+{
+ "_id": "blog-legacy-lu-de-4380",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Wie funktioniert eine Wärmepumpe? Der einfache und vollständige Leitfaden",
+ "slug": {
+  "_type": "slug",
+  "current": "wie-funktioniert-eine-waermepumpe-leitfaden"
+ },
+ "publishedAt": "2025-12-02T10:49:52Z",
+ "excerpt": "Die Wärmepumpe ist zum Herzstück moderner Heizsysteme geworden, besonders in Verbindung mit Geothermie. Doch wie funktioniert sie konkret? Warum ist sie so effizient? Und worin unterscheiden sich die verschiedenen Typen?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 6,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "6bfb6b449e89",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "60345f014ef4",
+     "text": "Die Wärmepumpe ist zum Herzstück moderner Heizsysteme geworden, besonders in Verbindung mit Geothermie. Doch wie funktioniert sie konkret? Warum ist sie so effizient? Und worin unterscheiden sich die verschiedenen Wärmepumpentypen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a7c8f3c2b17f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cfd8d9275d95",
+     "text": "1. Das Prinzip: die kostenlose Energie um uns herum nutzen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "493f1205fae6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eea6c810e3e9",
+     "text": "Eine Wärmepumpe „erzeugt“ keine Wärme: Sie befördert die in der Umgebung vorhandene Energie (Luft, Boden, Wasser) in das zu beheizende Gebäude. Sie funktioniert nach demselben Prinzip wie ein Kühlschrank, nur umgekehrt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f71bd49ba40b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9e5e3ac9d51",
+     "text": "draußen nimmt sie Wärme auf niedrigem Temperaturniveau auf;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3497c83f92d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4077fca81d96",
+     "text": "drinnen gibt sie diese Wärme auf höherem Temperaturniveau an den Heizkreis ab.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "db5c7035f2a0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "563fda998dec",
+     "text": "Möglich wird das durch ein Kältemittel und einen thermodynamischen Kreislauf in vier Schritten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da32bb6c78c9",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3b79809a31ef",
+     "text": "2. Welche Wärmepumpentypen gibt es und wie heißen sie?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3ce89f793561",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d463ea73589",
+     "text": "Wärmepumpen werden vor allem nach ihrer Energiequelle (Luft, Boden, Wasser) und ihrer Wärmeverteilung (Luft oder Wasser) unterschieden. Das sind die gängigen Bezeichnungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "abf0db2b06e6",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b83c78d0d776",
+     "text": "Luftwärmepumpen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6361a2ece339",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed9d04cf2ad2",
+     "text": "Luft-Luft-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "eeeac1ba52ad",
+     "text": " Sie entzieht der Außenluft Wärme und gibt sie innen als Warmluft ab (über Innengeräte, sogenannte „Splits“). Sie wird vor allem in Einfamilienhäusern eingesetzt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "acd53113333d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0186ac0b9ca3",
+     "text": "Luft-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d475fa72d62a",
+     "text": " Sie entzieht der Außenluft Wärme und überträgt sie auf einen Heizwasserkreis (Heizkörper, Fußbodenheizung, Gebläsekonvektoren). Sie ist die verbreitetste Variante bei Sanierungen, wenn ein Gas- oder Ölkessel ersetzt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "38a430549018",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08a8f2844b53",
+     "text": "Erdwärmepumpen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "baf1a912b9ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f55dd60cc35",
+     "text": "Sole-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2743e3b2330e",
+     "text": " Sie nutzt die Bodenwärme über vertikale Erdwärmesonden oder einen Flächenkollektor und gibt sie an den Heizwasserkreis ab. Sie ist langfristig die stabilste und leistungsfähigste Lösung.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "88f6e81c28f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89d41366e7bb",
+     "text": "Wasser-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "66bec8b15f5d",
+     "text": " Sie nutzt die Wärme von Grundwasser oder Oberflächenwasser (offene Geothermie oder Aquathermie). Sie bleibt Standorten mit geeigneter Wasserressource und besonderen Genehmigungen vorbehalten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9eb98af90ac2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e7412df8566",
+     "text": "Hybridwärmepumpen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d7168330cf2d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bad6f31bf3f4",
+     "text": "Von Hybridsystemen spricht man, wenn eine Wärmepumpe mit einem Kessel oder einer anderen Wärmequelle kombiniert wird. Zum Beispiel eine Luft-Wasser-Wärmepumpe mit einem Gaskessel für sehr kalte Tage oder eine Erdwärmepumpe mit einer weiteren Quelle (Aquathermie, Abwasserwärme usw.) bei Projekten mit großer Leistung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5fb41bacf802",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6194000f649e",
+     "text": "3. Die vier Schritte des thermodynamischen Kreislaufs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b9aa5226f05d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8becfd3d737d",
+     "text": "Im Herzen der Wärmepumpe zirkuliert ein Kältemittel in einem geschlossenen Kreislauf und wechselt seinen Aggregatzustand (flüssig/gasförmig), um Energie zu transportieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "33124eb41287",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f67328d79f09",
+     "text": "Der Verdampfer: natürliche Wärme aufnehmen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0afe07814cd4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cba5d2f0ce8f",
+     "text": "Das Kältemittel gelangt flüssig, mit niedrigem Druck und niedriger Temperatur in den Verdampfer. Dort nimmt es die Wärme der äußeren Quelle (Luft, Boden, Wasser) auf und verdampft (es wird gasförmig).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "794e980eaec2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1896655bbb60",
+     "text": "Der Verdichter: die Temperatur erhöhen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7cd6bccb36c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5077447b5aac",
+     "text": "Das kalte Gas mit niedrigem Druck wird vom Verdichter angesaugt. Durch die Verdichtung steigen Druck und Temperatur: Es wird zu heißem Gas.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f6f4ea7ce100",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e3afdc8a8fc",
+     "text": "Der Verflüssiger: das Gebäude heizen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "87ac14b08f17",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8089fccce4f2",
+     "text": "Das heiße Gas gelangt in den Verflüssiger, wo es seine Wärme an den Heizwasserkreis abgibt (Heizkörper, Fußbodenheizung, Pufferspeicher…). Beim Abkühlen kondensiert es und wird wieder flüssig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0ff27de75037",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a460c196cf61",
+     "text": "Das Expansionsventil: den Kreislauf neu starten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1e9a6d310c4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76b0eed4b016",
+     "text": "Das Kältemittel, nun flüssig, aber unter hohem Druck, passiert anschließend ein Expansionsventil. Druck und Temperatur sinken, und es kehrt in seinen Ausgangszustand zurück: kalte Flüssigkeit mit niedrigem Druck. Der Kreislauf beginnt von Neuem.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "98c223736301",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a538d11b9e69",
+     "text": "4. Warum ist eine Wärmepumpe so effizient?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d459bc0a208e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e72950c5a950",
+     "text": "Die Leistung einer Wärmepumpe wird mit der Leistungszahl (COP) gemessen, dem Verhältnis zwischen erzeugter Wärme und verbrauchtem Strom. Ein COP von 4 bedeutet, dass die Wärmepumpe aus 1 kWh Strom 4 kWh Wärme liefert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "333aee480473",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccb8c39827a8",
+     "text": "Diese Effizienz rührt daher, dass die Wärmepumpe die Wärme nicht erzeugt, sondern überträgt. Der Strom dient dem Betrieb von Verdichter und Hilfsaggregaten, nicht der Wärmeerzeugung selbst.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "abe7f6662ac7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e12b8d31a01b",
+     "text": "5. Warum die Erdwärmepumpe die leistungsfähigste Variante ist",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "86420a5d5a17",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4bdb18a84a2",
+     "text": "Die Leistung einer Wärmepumpe hängt stark von der Stabilität ihrer Quelle ab:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ebed84ba707b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2842d6655ad",
+     "text": "die Außenluft",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f0ee58f9f95d",
+     "text": " kann im Jahresverlauf zwischen -10 °C und +35 °C schwanken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "48d1ec024915",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7311fb822dc0",
+     "text": "der Boden",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "54a76aca5a02",
+     "text": " bleibt ab wenigen Metern Tiefe in einem viel stabileren Bereich (etwa 10 bis 14 °C).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e9707bf2b70f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b3f2a7d2ccf4",
+     "text": "Eine Erdwärmepumpe arbeitet also mit nahezu konstanten Eingangsbedingungen. Der Verdichter wird weniger belastet, und die Leistungszahl ist höher und über die Zeit stabiler, vor allem im Winter. Das macht die Erdwärmepumpe zur leistungsfähigsten Lösung für Heizen und Kühlen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7bf402245de1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0ecf751ea05",
+     "text": "6. Eine Wärmepumpe liefert auch Kühlung und Warmwasser",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63b3fdd242da",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d41c01ba9552",
+     "text": "Das Gebäude kühlen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c25395e14f1c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3a7f732a6d4",
+     "text": "Durch Umkehr des Kreislaufs oder einen hydraulischen Bypass (Geocooling) kann die Wärmepumpe das Gebäude auch kühlen. Bei der Geothermie ist diese Kühlung besonders sparsam, da sie direkt die Kühle des Bodens nutzt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "694e18c42b4b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ba63774bc97",
+     "text": "Warmwasser bereiten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1e8f19d2490c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e14eece6cf7",
+     "text": "Die meisten modernen Wärmepumpen können über einen integrierten oder separaten Speicher auch Trinkwasser erwärmen. Die Solltemperatur wird so eingestellt, dass Komfort und sparsamer Verbrauch gewährleistet sind.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "41bae03d3f97",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cec51b21c467",
+     "text": "Gleichmäßigen Komfort sichern",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "40805759b1b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4438f7ccb408",
+     "text": "Die Wärmepumpe, besonders in der geothermischen Variante, sorgt für eine gleichmäßige Beheizung ohne große Temperaturschwankungen, im Dauerbetrieb bei niedriger Temperatur. Der Komfort ist höher als bei Systemen, die häufig ein- und ausschalten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f1fb05091312",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9fd081fd20b",
+     "text": "7. Luft-Wasser- vs. Wasser-Wasser-Wärmepumpe: der Vergleich",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe5ba8b7bb6b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9195320961ce",
+     "text": "1. Leistung im Winter",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "422e876d07bc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0ce12609d1f",
+     "text": "Die Leistung einer Luft-Wasser-Wärmepumpe sinkt bei großer Kälte, genau dann, wenn der Bedarf steigt. Die Erdwärmepumpe arbeitet dagegen mit einer stabilen Quelle weiter und behält so eine sehr gute Leistungszahl.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4e1fbc2f3416",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7aff86b1864",
+     "text": "2. Lärm und Optik",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "680a556b732a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "11ff6fa5de75",
+     "text": "Eine Luft-Wasser-Wärmepumpe benötigt ein Außengerät, das sichtbar und hörbar ist. Die Geothermie liegt vollständig unter der Erde, und die Wärmepumpe steht im Haus: kein lautes oder sichtbares Außengerät.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "77b577e8435a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "371f395fb502",
+     "text": "3. Stromverbrauch",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57607e9b7e79",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c981640ba84",
+     "text": "Bei gleichem Komfort verbraucht eine Erdwärmepumpe übers Jahr in der Regel weniger Strom als eine Luft-Wasser-Wärmepumpe, vor allem dank ihrer stabilen Effizienz im Winter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fbaca683d53b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e05f89fbd972",
+     "text": "4. Lebensdauer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5e6c23ef3d80",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e1e6405b2ee",
+     "text": "Weniger Witterung und Temperaturschwankungen ausgesetzt, wird die Erdwärmepumpe meist weniger beansprucht und kann länger halten. Die Sonden bleiben jahrzehntelang an Ort und Stelle.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c5660635ea92",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e84127c1ca5",
+     "text": "5. Betriebskosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4ea4b4574d10",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b50e675e7caf",
+     "text": "Die Betriebskosten einer Erdwärmepumpe sind dank ihrer hervorragenden Jahreseffizienz besonders niedrig. Die Anfangsinvestition ist höher, vor allem wegen der Bohrungen, wird aber durch niedrigere Betriebskosten auf Dauer ausgeglichen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "493c54ef0a80",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f4eb9c254a0",
+     "text": "6. Für welchen Gebäudetyp?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6c815ea751f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b64e428547c7",
+     "text": "Die Luft-Wasser-Wärmepumpe wird oft bei einfachen Sanierungen gewählt, wenn nicht gebohrt werden soll. Die Erdwärmepumpe ist ideal für Projekte, die maximale Leistung, Komfort und Langlebigkeit anstreben: Neubauten, umfassende Sanierungen, Mehrfamilienhäuser, öffentliche Gebäude usw.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f172187d0e09",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "503869444a7a",
+     "text": "Fazit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7bf74eb5a08e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc9f7320d069",
+     "text": "Die Wärmepumpe ist heute die Schlüsseltechnologie, um beim Heizen von Gebäuden aus den fossilen Energien auszusteigen. Unter den verschiedenen Varianten zeichnet sich die Erdwärmepumpe durch Stabilität, Leistung und Komfort aus.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9c88f5f94ab2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "07d37c5c41d4",
+     "text": "In Verbindung mit richtig dimensionierten Erdwärmesonden und einer guten Regelung liefert sie über Jahrzehnte Heizung, Kühlung und Warmwasser bei minimalem CO₂-Fußabdruck und sehr niedrigen Betriebskosten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Wie funktioniert eine Wärmepumpe? Leitfaden | WellDoneDrill",
+ "seoDescription": "Alles zur Wärmepumpe: das Prinzip, die Typen (Luft-Wasser, Sole-Wasser, Wasser-Wasser), der Kältekreislauf, die Leistungszahl und warum Geothermie am effizientesten ist.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Wärmepumpe von WellDoneDrill"
+}

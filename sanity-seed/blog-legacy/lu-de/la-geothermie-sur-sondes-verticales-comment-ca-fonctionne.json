@@ -1,0 +1,292 @@
+{
+ "_id": "blog-legacy-lu-de-4374",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Geothermie mit Erdwärmesonden: Wie funktioniert das?",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-mit-erdwaermesonden-wie-funktioniert-das"
+ },
+ "publishedAt": "2025-12-02T10:46:55Z",
+ "excerpt": "Geothermie mit vertikalen Erdwärmesonden beruht auf einer Flüssigkeit, die in einem geschlossenen Kreislauf durch mehrere Sonden im Boden zirkuliert.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 2,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9290413ef8a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c72ae625f2e",
+     "text": "Geothermie mit vertikalen Erdwärmesonden beruht auf einer Wärmeträgerflüssigkeit (in Lebensmittelqualität), die in einem geschlossenen Kreislauf durch mehrere Erdwärmesonden im Boden zirkuliert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ccec8bfbc2e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1c6be81595d",
+     "text": "Jede Sonde besteht aus zwei U-förmigen Schleifen aus Polyethylen hoher Dichte (PE-HD). Diese Schleifen werden in eine vertikale Bohrung eingebracht. Sobald die Rohre eingebaut sind, wird der Raum zwischen Bohrlochwand und Sonden mit einer geothermischen Verfüllung aus Bentonit und wärmeleitendem Zement ausgefüllt. So entsteht ein hervorragender thermischer Kontakt zum Erdreich. Die Flüssigkeit in den Sonden nimmt Wärme aus dem Boden auf oder gibt sie an ihn ab und transportiert sie zur Wärmepumpe. Oberirdisch übernehmen eine oder mehrere Wärmepumpen die Energieübertragung:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd36b002cda0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b0a4deb03f5f",
+     "text": "entweder vom Boden ins Gebäude (Heizen),",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28052c0c37c2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15352bd4356e",
+     "text": "oder vom Gebäude in den Boden (Kühlen).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "79fa138a1e1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd426f4ff9a6",
+     "text": "In manchen Fällen kann die Anlage sogar natürlich kühlen, ohne die Wärmepumpen zu nutzen: Das nennt man Geocooling oder Freecooling. Es ist besonders interessant für Gebäude, die eine Kühlung mit sehr geringem Verbrauch wünschen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bed903692e9d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d5062adcfef",
+     "text": "Die Vorteile eines Systems mit vertikalen Erdwärmesonden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d5957a72fcc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f7c2f6a859d",
+     "text": "Sehr geringer Platzbedarf:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ec4e10e3397e",
+     "text": " Ideal für kleine Grundstücke oder Projekte, bei denen jeder Quadratmeter zählt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d635d198ae52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b0a30cca7c0",
+     "text": "Keine Einschränkungen bei der Nutzung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7097f51cd42c",
+     "text": " Anders als bei einem Flächenkollektor bleibt das Grundstück nach den Arbeiten voll nutzbar (Garten, Parkplatz, Terrasse, Bebauung…).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "24f4426aef7c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd39738dbedf",
+     "text": "Hohe und stabile Effizienz:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dfd36c530437",
+     "text": " Die Bodentemperatur bleibt das ganze Jahr über nahezu konstant. Dadurch ist das System leistungsfähiger als Luftwärmepumpen, die von der Außentemperatur abhängen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "80ec1b945e1e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d86ca4e91c4f",
+     "text": "Geringe Wärmeverluste:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9d0887d8983a",
+     "text": " Der Betrieb bei niedriger Temperatur begrenzt die Verluste im Hydrauliknetz.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28a8ba49b5a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fa79a024159",
+     "text": "Ökologisch und CO₂-arm:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f85b8759a0b3",
+     "text": " Die Anlage nutzt eine lokale, saubere und erneuerbare Energiequelle.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6ac982afab4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9b6ba2f1069",
+     "text": "Kostenlose Kühlung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d0d78f095857",
+     "text": " Dank Freecooling lässt sich das Gebäude mit der natürlichen Kühle des Bodens bei minimalem Energieverbrauch kühlen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e02e66c7b8c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0895af884b1c",
+     "text": "Geringer Wartungsaufwand:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c98037c19c1d",
+     "text": " Ein einfaches System ohne bewegliche Teile im Boden und mit sehr langer Lebensdauer.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e84ec5e7f711",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f8af2a7960fe",
+     "text": "Mit den heutigen Bohrtechniken ist dies in den allermeisten Situationen machbar, auch auf schmalen städtischen Grundstücken oder bei Projekten mit wenig verfügbarem Platz.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Erdwärmesonden: Wie funktioniert Geothermie? | WellDoneDrill",
+ "seoDescription": "Wie funktionieren vertikale Erdwärmesonden? Sonden, Bohrung, Wärmepumpe und die Vorteile eines geschlossenen Erdwärmesystems einfach erklärt.",
+ "_mainImageFile": "uploads/2025/05/Jodoigne-header.webp",
+ "_mainImageAlt": "Erdwärmebohrung in Jodoigne"
+}

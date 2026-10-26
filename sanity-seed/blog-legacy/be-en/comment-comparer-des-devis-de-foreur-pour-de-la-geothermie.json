@@ -1,0 +1,816 @@
+{
+ "_id": "blog-legacy-be-en-4415",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "How to compare geothermal drilling quotes",
+ "slug": {
+  "_type": "slug",
+  "current": "how-to-compare-geothermal-drilling-quotes"
+ },
+ "publishedAt": "2025-12-02T11:05:02Z",
+ "excerpt": "When you consult several drillers for a geothermal project, the quotes can look hard to compare: price per metre, price per probe, site costs, casing contingencies… This article gives a few pointers.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "45ea4451f09e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eab013208bf2",
+     "text": "When you start consulting several drillers for a geothermal project, their quotes can look hard to compare: price per metre, price per probe, site costs, casing contingencies… This article offers a few pointers for analysing these offers and avoiding nasty surprises.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "38b93b5eb5ed",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a16e1c7ab054",
+     "text": "1. Site set-up costs: who covers what?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f13a5d62284a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "339a56deaf5e",
+     "text": "Before even looking at the price per metre drilled, examine the site set-up costs. A serious quote should state clearly:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "49c8f2ad703c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab8b2267d3d2",
+     "text": "any administrative costs: does the driller handle environmental formalities, declarations and road-occupation requests?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "77e393b96f88",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9db327aea533",
+     "text": "the provision of water and electricity: who supplies what, at what distance and with what characteristics?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6c179f194116",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d73875364db",
+     "text": "costs of reserving space on the public road, if needed;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e379789ff20a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce66b60dc98c",
+     "text": "means of access: is a crane or gantry needed, does a fence have to be removed…",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7d19552a2f50",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "583c5e144c2a",
+     "text": "A \"cheaper\" quote that leaves these items out can end up costing more if the project owner has to cover them or deal with surprises during the works.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "e5212582af94",
+   "_file": "uploads/2025/12/expert-geothermie-belgique.jpg",
+   "alt": "Geothermal drilling in Belgium"
+  },
+  {
+   "_type": "block",
+   "_key": "10d19fac1bfe",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "562475dbd6eb",
+     "text": "2. Drilling cost: price per metre… or overall price?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1eedbf07e55c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "607e30becb20",
+     "text": "Most geothermal drilling quotes are expressed as a price per metre drilled or a price per probe (up to a maximum depth). The key is to understand what is included and what isn't.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f69256afd607",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "618178a444bb",
+     "text": "A few key questions:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "363b45270e81",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1b90b78ee8d",
+     "text": "does the stated price cover the full planned depth?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1918e76831a8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a5257b1eb9d",
+     "text": "are there price tiers depending on the type of ground (e.g. a surcharge for difficult ground)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4d57507fb1eb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4661f5259a91",
+     "text": "are the probes, the geothermal grout and the pressure tests included?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b35da416163",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "76b33b64e4ef",
+     "text": "An important point to watch: not all drillers assume the same output per metre of probe. Some will quote 60 W/m, others 40 or 45 W/m.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ec037a2ef107",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "22aaefd8c0a1",
+     "text": "Beware of \"per metre\" outputs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "58e031a16c96",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2695bade8574",
+     "text": "To compare quotes, always bring them back to the same number of linear metres drilled. If a driller proposes fewer metres by assuming a higher output per metre, ask for a recalculation based on the same length for everyone.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c9103e5772dd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae33d181175e",
+     "text": "In addition, some drillers will propose deeper boreholes with fewer probes, others shorter boreholes with more probes. For the same total length, deeper boreholes often optimise performance and reduce the land footprint.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4980fc55e889",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6aed1675d3a7",
+     "text": "Finally, it is essential to check whether there are hidden costs for drilling contingencies, especially casing.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "91f92626aa53",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47df00fb6f9a",
+     "text": "Some quotes offer an attractive price in \"normal\" conditions, but add hefty extras as soon as additional casing is needed. Yet in many types of ground, casing is common. It can then blow the original budget.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34236096415a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fb6e0859411",
+     "text": "Favour quotes with a fixed price per metre drilled, with casing included or clearly defined, to avoid nasty surprises.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1567ea1c49a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4f7f290964b2",
+     "text": "3. Horizontal connections and manifolds: quality and testing",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4d05c6d3d9cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bd7526372e75",
+     "text": "The boreholes are only part of the installation. The horizontal connections between the probes and the plant room, and the manifolds, are a major item, both in cost and in long-term reliability.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2dedf863ae00",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e9b4770a16e",
+     "text": "When comparing quotes, check:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3be582329d0f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74a5951cca8f",
+     "text": "whether supply and installation of the horizontal connections are included;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8e9721dd1900",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5c5185d50f1",
+     "text": "the type of HDPE used (diameter, pressure rating);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "91acae92b984",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c53c49ce9c88",
+     "text": "the type of manifolds (prefabricated, insulated, accessible);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "965d4835dd76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "39ff5839bc2a",
+     "text": "whether pressure tests are carried out on all circuits before the trenches are backfilled.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "18c4da44416c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "570b286408c8",
+     "text": "A quote that includes systematic pressure testing and good access to the manifolds is a sign of seriousness and durability.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f9e528f12786",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7339afaf0f2",
+     "text": "4. Cuttings, environment and site completion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fb3d0097864a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12c5617ad59d",
+     "text": "A geothermal drilling project generates cuttings (sand, mud, rock) and drilling water. How these are managed can have a big impact on the site, especially in urban areas.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f4a2559df202",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ce57270dcc7",
+     "text": "A few questions to ask:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af83cc369ada",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1070277f0c23",
+     "text": "who is responsible for removing the cuttings?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9e6431054428",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d3468c615bcb",
+     "text": "to what type of site (treatment centre, backfill site, etc.)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6cb38d4c3204",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba7deba0e8ef",
+     "text": "is cleaning the site area at the end of the works included?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d9617449b5ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5f54891097a",
+     "text": "how are drilling mud and any run-off handled?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "349a455cb4f8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63b112324f54",
+     "text": "A quote that clearly covers these points avoids disputes at the end of the job and protects both the project's image and relations with the neighbours.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d4bc956eaf0d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e3909dc1056",
+     "text": "5. Other criteria to look at in a drilling quote",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e8e4837fc915",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffe667634195",
+     "text": "Beyond the purely financial aspects, several qualitative criteria deserve attention:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0ed1a8528357",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6fabe127990e",
+     "text": "the driller's geothermal experience (references, types of projects completed);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0c8c6002654",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6831d1008569",
+     "text": "mastery of the different drilling techniques (air, mud, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ffdfc4e7dede",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14cba1760525",
+     "text": "the ability to work in tight urban settings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0b9d4008d685",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53391bfb600f",
+     "text": "the quality of the documentation provided (plans, diagrams, test reports);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "50d46351956f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65bd1e206580",
+     "text": "coordination with the other parties (installer, engineering firm, architect).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7f9cca65520b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb57a640c755",
+     "text": "These factors can't always be priced directly, but they often make the difference in peace of mind for the project owner.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2743171f778a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ab7010bafc9",
+     "text": "6. Conclusion: making the comparison, and the choice, secure",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c51bcceb13c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bff3f0345a0d",
+     "text": "Comparing drilling quotes isn't just about looking at the total at the bottom of the page. It is about understanding what is included, what isn't and how potential contingencies are handled.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "24c867de696a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e47909317cfa",
+     "text": "To secure the comparison, it is often useful to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8dd9fc1fdf06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "154483bfbaca",
+     "text": "ask all drillers to price the same probe length;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "71a3416e50f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b09c1d7faae",
+     "text": "clarify the casing conditions and any extras;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "79df7d25ff9c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e18197d35147",
+     "text": "check that connections, pressure tests and cuttings are covered.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c65a2ec8f473",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e25d9308f76",
+     "text": "When two drillers quote very different lengths for the same output, it can make sense to ask them to re-price on the basis of an identical drilling quantity (for example, the same number of linear metres of probe), for an objective comparison.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6ddedb4ad2bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f0cb8720ac4",
+     "text": "WellDoneDrill specialises exclusively in drilling geothermal probes. Our machines and teams are optimised for this trade, which very often makes WDD the most competitive driller on the market, with clear, comparable prices, no hidden costs and no nasty surprises.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "How to compare geothermal drilling quotes | WellDoneDrill",
+ "seoDescription": "How to compare geothermal drilling quotes: site set-up costs, price per metre or per probe, W/m assumptions, casing, horizontal connections, cuttings and experience.",
+ "_mainImageFile": "uploads/2025/05/Woluwe-Saint-Lambert-Greenwoo-header.webp",
+ "_mainImageAlt": "Geothermal company in Woluwe-Saint-Lambert"
+}

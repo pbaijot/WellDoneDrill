@@ -1,0 +1,572 @@
+{
+ "_id": "blog-legacy-be-en-4399",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Managing cuttings and site cleanliness in urban areas",
+ "slug": {
+  "_type": "slug",
+  "current": "managing-cuttings-and-site-cleanliness-in-urban-areas"
+ },
+ "publishedAt": "2025-12-02T10:58:56Z",
+ "excerpt": "Drilling in the city is not just about making a hole in the ground. Managing cuttings, drilling mud, water and general site cleanliness is a major issue for neighbours, local authorities and the project owner.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "907d5ba26cbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc53f759e32d",
+     "text": "Drilling in the city is not just about making a hole in the ground. Managing cuttings, drilling mud, water and the general cleanliness of the site is a major issue for neighbours, local authorities and the project owner. WellDoneDrill puts these constraints at the heart of its organisation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa6170498fef",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7174693a3c16",
+     "text": "What kind of cuttings does a geothermal borehole produce?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2a00748a0bdd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b2be1904db9",
+     "text": "A geothermal borehole produces:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2cd46f81aeea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9016c448033f",
+     "text": "solid materials: sand, gravel, rock fragments;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8f39de6f8cd1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4be7c37ac8d",
+     "text": "drilling mud when mud drilling is used;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eeddf3a6fac1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fdbb57e0ad96",
+     "text": "circulation water, possibly carrying particles.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "68ec676138cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e2727138d38",
+     "text": "In rural areas, managing these cuttings is simpler: they can be spread, there is room for temporary storage and lorry access is easy. In the city, every square metre counts and environmental rules are stricter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cfc52c5e7a7a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "882784c9160b",
+     "text": "Limiting the impact on public space",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "960516497a6a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "752e689afd61",
+     "text": "In an urban environment, it is essential to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bcd4fbde1eac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fdb14d95ff7e",
+     "text": "keep the site area to a strict minimum;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ae346b91df19",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce65322cfb3c",
+     "text": "protect pavements and roads;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c43bad5e0dbe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5de051e15817",
+     "text": "prevent mud or dirty water from running into street drains;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e56007097db4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc389de18b7c",
+     "text": "organise regular removal of cuttings.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c818ae814db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "407c6d28d93a",
+     "text": "WellDoneDrill sets up containment, settling and protection measures suited to each context: containment trays, tarpaulins, road protection and clearly defined removal routes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6171594c258",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c7d1c13271a",
+     "text": "Removal and treatment of cuttings",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1399100cafa2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f04d670d958",
+     "text": "Drilling cuttings are removed progressively or at the end of the day, depending on site constraints and the volumes produced. Several solutions are possible:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a803f12eebba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "28fc6a8a1832",
+     "text": "disposal at approved centres for drilling cuttings and mud;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c15e8288f938",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6e6104dc6ff",
+     "text": "disposal at backfill sites where regulations allow;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f5431965e403",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b3b25b863221",
+     "text": "specific handling if contamination is found.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "831c9b3a8e76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6a5b3f90ae6a",
+     "text": "The project owner must be able to rely on a driller who takes charge of this and doesn't let cuttings pile up on site. WellDoneDrill systematically includes cuttings management in its site preparation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "826aa04c804e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31b9a4a77516",
+     "text": "Cleanliness and the project's image",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d7bc6ec7c559",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2c6f3a7de19",
+     "text": "A clean site is a key factor in acceptance by neighbours and authorities. Conversely, mud on the road, puddles, dust or poorly managed waste can quickly create tension.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8e764e110259",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd45ba2301ac",
+     "text": "WellDoneDrill focuses on:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5c83f279ae3a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4f3663a70fff",
+     "text": "regular cleaning of access routes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c985d38d9f72",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "914b2c3b2719",
+     "text": "limiting splashes and dust;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6acec04ca18a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f6d5bfb6601",
+     "text": "restoring the site area at the end of the works.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e5322434fb51",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25dbb4cc3b0d",
+     "text": "For the project owner, that means fewer complaints, less friction with neighbours and a better overall image for the project.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1aa9c486db09",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "49dbc12d5092",
+     "text": "Coordination with other trades",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0ae4491effd7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a64c90874c1",
+     "text": "Managing cuttings and cleanliness isn't just the driller's job: it has to be coordinated with the other parties on site (groundworkers, main contractors, technical installers…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cf57991a98c4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "347fde06afb5",
+     "text": "WellDoneDrill works closely with them to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c65049a8687",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb8363fc7556",
+     "text": "agree on temporary storage areas;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb56ebba0c00",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b1314de0ec0",
+     "text": "define circulation routes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ecbcac905215",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88cee86f3df9",
+     "text": "plan the work so as to limit interference.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97833f6e09e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "83bbed4b8150",
+     "text": "In an urban setting, this coordination is essential to avoid congestion, delays and extra costs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f90e322faaab",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "adabe50b0a1d",
+     "text": "Conclusion: cleanliness as a quality criterion for urban drilling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e4eaad7d90b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77f3d606445e",
+     "text": "In an urban context, a good borehole isn't judged only by the depth reached or the speed of execution. How the site is organised, how cuttings are managed and how the site is left at the end matter just as much.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0f3d7fdcc6e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24f018ccfb2f",
+     "text": "By making cuttings management and cleanliness central to its method, WellDoneDrill lets project owners enjoy the benefits of urban geothermal without the drawbacks of a poorly run site.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Cuttings and a clean site in the city | WellDoneDrill",
+ "seoDescription": "How WellDoneDrill manages cuttings, mud and water on an urban drilling site: protecting public space, disposal to approved centres and a clean handover.",
+ "_mainImageFile": "uploads/2025/05/Suarlee-header.webp",
+ "_mainImageAlt": "Geothermal drilling in Suarlée"
+}

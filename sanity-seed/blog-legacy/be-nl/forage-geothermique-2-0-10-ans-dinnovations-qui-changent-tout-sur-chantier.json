@@ -1,0 +1,288 @@
+{
+ "_id": "blog-legacy-be-nl-5420",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermisch boren 2.0: 10 jaar innovaties die alles veranderen op de werf",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermisch-boren-2-0-10-jaar-innovaties-op-de-werf"
+ },
+ "publishedAt": "2026-03-20T11:23:43Z",
+ "excerpt": "In tien jaar tijd heeft geothermisch boren een technologische sprong gemaakt: betere werktuigen, realtime sensoren, slimme sturing. Het resultaat: diepere, nauwkeurigere en goedkopere boringen, ook in complexe situaties.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e92dda3e07e7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1c69bf1127d",
+     "text": "In tien jaar tijd heeft geothermisch boren een technologische sprong gemaakt: betere werktuigen, realtime sensoren, slimme sturing… Het resultaat: diepere, nauwkeurigere en goedkopere boringen, ook in complexe situaties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f80e4c10a68",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70c45d4a936a",
+     "text": "1. Krachtigere imloophamers, gemaakt voor harde rots",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5b1046daf71a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "836b40c8f8f0",
+     "text": "De nieuwe imloophamers (DTH) brengen de slagenergie rechtstreeks over op de boorbeitel, wat de penetratie in rotsachtige grond sterk versnelt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f2049d4ab613",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cfb6c5d34ad9",
+     "text": "Recente projecten tonen aan dat deze nieuwe generatie hamers de boorsnelheid met een factor 2 tot 10 kan verhogen ten opzichte van klassieke oplossingen, waardoor de kostprijs per meter automatisch daalt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ec529589b618",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05e9e54e3b86",
+     "text": "2. Geoptimaliseerde boorkoppen en werktuigen: precisie en levensduur",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "845a3d76e9aa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa85363f4e17",
+     "text": "Boorkoppen hebben voortaan geoptimaliseerde snijgeometrieën en materialen die beter bestand zijn tegen slijtage, waardoor er minder stilstand is om werktuigen te vervangen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "be61581f5fed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95e8b76f791c",
+     "text": "Samen met robuustere hamers en een beter beheer van het boorgruis maken deze vooruitgangen het mogelijk om grotere diepten te bereiken in kortere tijd, zonder in te boeten op verticaliteit of kwaliteit van het boorgat.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7599cff09f0b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5767c0be5326",
+     "text": "3. Ingebouwde sensoren en realtime monitoring: het boren wordt slim",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ae8a2d9f6f24",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4232b797b4ad",
+     "text": "Robuuste sensoren, soms 3D-geprint, meten continu de interactie tussen beitel en rots, de slagenergie en de circulatie van de vloeistoffen, en geven de ploegen realtime feedback.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ae161c09762a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a725cd28398",
+     "text": "Gekoppeld aan beslissingsondersteunende algoritmes of AI kunnen deze systemen incidenten voorzien (circulatieverlies, abnormale slijtage, vastlopen) en de boorparameters meteen bijsturen om de prestaties te behouden en de risico's te verkleinen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5a0bc7640849",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "846e424f7a27",
+     "text": "4. Automatisering en boorrobots: dieper, met minder mankracht",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "432f2552edf1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9da0f3e34c4",
+     "text": "Er verschijnen nieuwe machineconcepten die rechtstreeks in het boorgat werken, vergelijkbaar met kleine verticale tunnelboormachines, om de werfinname te verkleinen en een deel van de handelingen te automatiseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eb5df99cdf3a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da0c8f06a5d1",
+     "text": "Deze sterk geautomatiseerde systemen met geavanceerde sensoren werken met kleinere ploegen (soms slechts twee operatoren), met behoud van een nauwkeurige controle over het traject, de afvoer van boorgruis en de veiligheid.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b69a46b9620c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b81e1967fd27",
+     "text": "5. Concrete impact: lagere kosten en meer geothermisch potentieel",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26eddb1a2c4c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53b978ff34de",
+     "text": "Een hogere boorsnelheid, minder stilstand en een betere realtime kennis van de ondergrond zorgen voor een duidelijke daling van de kostprijs per meter bij geothermische projecten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3c8174a6d401",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cd031df0755",
+     "text": "Tegelijk opent de mogelijkheid om dieper, nauwkeuriger en op kleinere oppervlakken te boren nieuwe projecten: geothermie in dichtbebouwd stedelijk gebied, diepere boringen voor grotere vermogens en steeds meer projecten van de \"nieuwe generatie\" die vroeger als te riskant of te duur werden beschouwd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "540afb7e5f3e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c162a8f6a42",
+     "text": "6. Wat dit betekent voor een klant van WellDoneDrill",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "95a14e2585c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a933fe0ccc1",
+     "text": "Voor de eindklant betekenen deze innovaties snellere werven, beter beheerst en met een voorspelbaardere kostprijs, met een boring die precies is afgestemd op het vermogen dat echt nodig is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b0b53313e4d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "35d23336ac0e",
+     "text": "Ze maken het ook mogelijk geothermische oplossingen te overwegen waar dat enkele jaren geleden onmogelijk leek (klein perceel, stedelijke omgeving, heterogene bodem), dankzij de boorexpertise van een team dat de nieuwste technieken beheerst.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermisch boren 2.0: 10 jaar innovaties | WellDoneDrill",
+ "seoDescription": "Imlooghamers, sensoren, automatisering: hoe tien jaar innovatie geothermische boringen sneller, nauwkeuriger en goedkoper heeft gemaakt.",
+ "_mainImageFile": "uploads/2026/03/Capture-decran-2026-03-20-a-12.22.15.jpg",
+ "_mainImageAlt": "Geothermisch boren 2.0: innovaties op de werf"
+}

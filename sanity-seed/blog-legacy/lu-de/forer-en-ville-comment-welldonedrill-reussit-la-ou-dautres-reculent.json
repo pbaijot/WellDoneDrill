@@ -1,0 +1,658 @@
+{
+ "_id": "blog-legacy-lu-de-4395",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Bohren in der Stadt: Wie WellDoneDrill dort erfolgreich ist, wo andere aufgeben",
+ "slug": {
+  "_type": "slug",
+  "current": "bohren-in-der-stadt-wo-andere-aufgeben"
+ },
+ "publishedAt": "2025-12-02T10:57:27Z",
+ "excerpt": "Eine Erdwärmesonde mitten in der Stadt, in einer engen Straße oder einem winzigen Hof zu bohren, erfordert weit mehr als ein Bohrgerät. Schwieriger Zugang, empfindliche Nachbarschaft, Leitungen im Boden, Verkehr und Sauberkeit: Bohren in der Stadt ist ein eigenes Handwerk.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "421be74648b4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51bc9ee85686",
+     "text": "Eine Erdwärmesonde mitten in der Stadt, in einer engen Straße oder einem winzigen Hof zu bohren, erfordert weit mehr als ein Bohrgerät. Schwierige Zufahrten, empfindliche Nachbarschaft, Leitungen im Boden, Verkehrs- und Sauberkeitsauflagen: Bohren in der Stadt ist ein eigenes Handwerk. WellDoneDrill hat daraus eine Spezialität gemacht, mit Techniken aus Deutschland, kompakten Bohrgeräten und einer strengen Organisation. So gelingen uns Baustellen, bei denen andere lieber absagen, und wir erreichen Tiefen, die unsere Wettbewerber nicht schaffen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "75c4ef8c27cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe7f0f97e9ee",
+     "text": "Geothermie wird oft mit großen Häusern mit Garten oder Grundstücken am Stadtrand verbunden. Dabei ist das Potenzial in der Stadt enorm: Reihenhäuser, Mehrfamilienhäuser, Büros, Schulen, Kitas, kleine gemischt genutzte Gebäude… Sie alle können von Geothermie mit Vertikalsonden profitieren, sofern ein kritischer Punkt beherrscht wird: das Bohren in dicht bebauter städtischer Umgebung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "42e172b9f5b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "552fef18e047",
+     "text": "Bohren in der Stadt hat nichts mit einer Baustelle auf freiem Feld zu tun. Jeder Quadratmeter zählt, jeder Lkw muss gerechtfertigt sein, jede Stunde Lärm ist geregelt. Genau in diesem anspruchsvollen Umfeld hat WellDoneDrill seine Kompetenz aufgebaut.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1693f94a0f02",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d7993f2ebe8",
+     "text": "Ein stark eingeschränktes städtisches Umfeld",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "09ffbce2978c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc15fc3325e6",
+     "text": "In der Stadt ist die erste Einschränkung physisch: Es fehlt an Platz. Straßen sind eng, Gehwege zugestellt, Innenhöfe klein. Ein klassisches Bohrgerät in ein solches Umfeld zu bringen, ist oft unmöglich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d91ce6ce7e23",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ffc9aecb8b4",
+     "text": "Bei vielen Projekten erreicht man den Bohrpunkt über einen seitlichen Durchgang, einen Flur, eine Garagenrampe oder eine Gartentür. Ohne kompaktes Bohrgerät lässt sich das Projekt schlicht nicht umsetzen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "429b9b70eb6c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b03739f07be5",
+     "text": "Hinzu kommen die Anforderungen der Nachbarschaft: Wohnungen, Schulen und Büros verlangen, dass Lärm, Staub, Verkehr und die Nutzung der Straße im Griff bleiben. Auch Leitungen im Boden müssen berücksichtigt werden: Wasser, Gas, Strom, Telekommunikation, Kanalisation. Der städtische Untergrund ist voller Versorgungsleitungen, was eine sorgfältige Vorbereitung erfordert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ae2f4aab201",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "681a6087e0ed",
+     "text": "Schließlich gibt es die rechtliche Seite: lokale Genehmigungen, eventuelle Umweltmeldungen, Arbeitszeiten, Bohrkleinentsorgung, Einhaltung von Polizei- und Straßenvorschriften. Ein gutes Bohrunternehmen in der Stadt ist nicht nur Techniker, sondern versteht diese Regeln und plant sie ein.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "243441fca689",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b3c05828e1f2",
+     "text": "Kompakte Bohrgeräte für die Stadt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d92324dfdcd9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "32aa16b940dc",
+     "text": "WellDoneDrill hat bewusst in kompakte Bohrgeräte investiert, die auf engem Raum arbeiten und dennoch eine hohe Bohrleistung bieten. Das Ziel ist klar: Das Bohrgerät dorthin bringen, wo schon ein Lieferwagen kaum manövrieren kann.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "474a99a2b3be",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d94b44f5fd8",
+     "text": "Diese Maschinen lassen sich aufstellen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5f5edf8ef848",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94238391c7f0",
+     "text": "in engen Innenhöfen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "01ce534ea525",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2cc49076623e",
+     "text": "am hinteren Ende eines Grundstücks;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "51da2f13e40c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bde79f84e7ed",
+     "text": "auf Gehwegen oder Parkplätzen, mit vorübergehender Nutzung der Straße.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76fc5cbce26d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54a926d907ae",
+     "text": "Ihre geringe Größe verhindert keine hohe Leistung: Dank Techniken wie dem PDC-Bohren bohrt WellDoneDrill häufig 120 bis 150 m tief, wo andere Bohrunternehmen bei 80 bis 90 m aufhören. In Brüssel lässt sich so das Grundgebirge bei etwa -90 m durchbohren und das geothermische Potenzial in größerer Tiefe erschließen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "36242736e6d9",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8337d2a78b1c",
+     "text": "Tiefe und Leistung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ea6149bd4d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "346c3a3dc1ad",
+     "text": "In Brüssel bohrt WellDoneDrill bis 150 m, wo Wettbewerber oft bei 80 bis 90 m aufhören. Das Ergebnis: 50 bis 70 % mehr Leistung pro Bohrung und deutlich weniger benötigte Fläche.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5f9b7c742138",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4f5ad8e5bb5",
+     "text": "Belastungen begrenzen und die Baustelle organisieren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fab27cb0035b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9f030c40b27f",
+     "text": "Im städtischen Umfeld zählt jedes Detail: Arbeitszeiten, Standort der Lkw, Zugänge für Fußgänger, Sauberkeit der Straße… WellDoneDrill arbeitet mit spezifischen Abläufen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c7d0d56fa6d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce9abbb34c59",
+     "text": "ein an das Viertel angepasster Verkehrs- und Zufahrtsplan;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "deb3dd6ee116",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b934480c7cd",
+     "text": "Schutz der Straße und der Umgebung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e2b72902f305",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e49d8f6a34b9",
+     "text": "möglichst geringe Lärmbelastung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e0af649b65c4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0557c7fa21b",
+     "text": "systematische Reinigung des Baustellenbereichs.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5a58e5efce6e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0db7c9616638",
+     "text": "Das Bohrklein wird so entsorgt, dass die Auswirkungen auf den öffentlichen Raum und die Nachbarn begrenzt bleiben. Dank dieses Ansatzes können wir Projekte in sehr sensiblen Umgebungen umsetzen: Einkaufsstraßen, dicht bebaute Wohnviertel, Schulumfelder usw.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6577d2b16a41",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c9a49b8c310",
+     "text": "Grundstücke dank tiefer Bohrungen optimal nutzen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d288231bca6f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d3f7a595349",
+     "text": "In der Stadt ist Fläche knapp und wertvoll. Tiefer bohren zu können, verändert die Lage konkret:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e379ac82d820",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d447ba534d9",
+     "text": "für dieselbe Leistung braucht es weniger Sonden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6e64012cccec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "02d8b2f710e0",
+     "text": "das Sondenfeld nimmt weniger Fläche ein;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "48b0aa141848",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec40e4ccc250",
+     "text": "manchmal lassen sich alle Bohrungen in einem Hof oder kleinen Garten bündeln.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "53543213c4e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "464b4db47966",
+     "text": "Diese optimale Flächennutzung ist besonders interessant für Bauträger, Eigentümergemeinschaften und öffentliche Bauherren, die Geothermie auf sehr beengten Grundstücken einsetzen wollen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9de056b92894",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7bf98f95bdd2",
+     "text": "Sonden unter Gebäuden oder Parkplätzen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9b09fd5a83d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "948acabb1ab6",
+     "text": "Bei vielen städtischen Projekten können Erdwärmesonden unter Gebäuden, unter Parkplätzen oder zwischen Gründungspfählen angeordnet werden. Zwei Szenarien sind möglich:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "20ac0c56faf0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "965ed4f70c75",
+     "text": "Bohren vor dem Bau auf dem freien Grundstück, danach wird darüber gebaut;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "96f510580e36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac44b88172ad",
+     "text": "Bohren aus einem bestehenden Gebäude oder einem Untergeschoss heraus, durch Bodenplatte oder Fundamentplatte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5f1cf6ec6432",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7651dc3cb447",
+     "text": "Im zweiten Fall wird das Bohrgerät ins Gebäude gebracht (Technikraum, Stellplatz, Verkehrsfläche) und bohrt durch die Platten oder zwischen den Pfählen. Dieser Ansatz ist besonders bei Sanierungen interessant, wenn keine Außenfläche verfügbar ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f0163b5e8b7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcb2a7f779e1",
+     "text": "Die Vorgehensweise von WellDoneDrill",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e82f0bbe9d9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98c34ee9cda9",
+     "text": "WellDoneDrill organisiert jede städtische Baustelle genau:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bd371680efb3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "854a326d8ec6",
+     "text": "Analyse von Zugänglichkeit und Machbarkeit;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "322149efd74f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23a5ab4cabc5",
+     "text": "Wahl der am besten geeigneten Bohrtechnik (Luft, Spülung, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8628a10b5810",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd25cd9d0aa1",
+     "text": "Abstimmung mit den lokalen Behörden für eine eventuelle Straßennutzung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "19b355644365",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3de6595a8722",
+     "text": "Planung der Bohrungen, um die Anwesenheit vor Ort kurz zu halten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "da82b51fed73",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce00fe643241",
+     "text": "Bohrkleinentsorgung und systematische Reinigung zum Abschluss.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "564df2ac4ed5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a49c08bc9043",
+     "text": "So lassen sich Geothermieprojekte in der Stadt sicher umsetzen, die vor einigen Jahren noch als zu komplex oder zu riskant galten. Für den Bauherrn ist der Nutzen klar: Zugang zur Geothermie in anspruchsvollen städtischen Lagen, mit einem Partner, der sowohl die Bohrtechnik als auch die Baustellenorganisation beherrscht.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Erdwärmebohrung in der Stadt | WellDoneDrill",
+ "seoDescription": "Wie WellDoneDrill in dicht bebauten Städten bohrt: kompakte Bohrgeräte, bis 150 m Tiefe in Brüssel, wenig Belastung, Sonden unter Gebäuden oder Parkplätzen.",
+ "_mainImageFile": "uploads/2025/12/forer-en-ville.webp",
+ "_mainImageAlt": "Erdwärmebohrung in der Stadt"
+}

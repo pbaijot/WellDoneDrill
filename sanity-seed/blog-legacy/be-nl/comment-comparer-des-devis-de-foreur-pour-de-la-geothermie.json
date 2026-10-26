@@ -1,0 +1,816 @@
+{
+ "_id": "blog-legacy-be-nl-4415",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Hoe vergelijkt u offertes van boorbedrijven voor geothermie?",
+ "slug": {
+  "_type": "slug",
+  "current": "offertes-van-boorbedrijven-voor-geothermie-vergelijken"
+ },
+ "publishedAt": "2025-12-02T11:05:02Z",
+ "excerpt": "Wie meerdere boorbedrijven raadpleegt voor een geothermisch project, krijgt vaak offertes die moeilijk te vergelijken lijken: prijs per meter, prijs per sonde, werfkosten, risico's bij verbuizing… Dit artikel biedt enkele houvasten.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "05cd184a7251",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8759b6adde77",
+     "text": "Wie meerdere boorbedrijven raadpleegt voor een geothermisch project, krijgt vaak offertes die moeilijk te vergelijken lijken: prijs per meter, prijs per sonde, werfkosten, risico's bij verbuizing… Dit artikel biedt enkele houvasten om die offertes te analyseren en onaangename verrassingen te vermijden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dc6967f75e96",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "80afbd0b4f0d",
+     "text": "1. Werfinstallatiekosten: wie neemt wat voor zijn rekening?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c2518a66200",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "90ec9310e7e0",
+     "text": "Nog voor u naar de prijs per geboorde meter kijkt, moet u de kosten voor de werfinstallatie bekijken. Een ernstige offerte vermeldt duidelijk:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "083947f8ffb5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb995c0dc709",
+     "text": "eventuele administratieve kosten: regelt het boorbedrijf de milieuformaliteiten, meldingen en aanvragen voor inname van de openbare weg?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "de04c2b2496c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51804a594d2b",
+     "text": "de beschikbaarheid van water en elektriciteit: wie levert wat, op welke afstand en met welke kenmerken?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ee4c885f1bf0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd6b0af73a56",
+     "text": "de kosten voor het reserveren van plaatsen op de openbare weg, indien nodig;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "623ed38d3fae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e44574f47bdf",
+     "text": "de toegangsmiddelen: is er een kraan of portiek nodig, moet een omheining worden gedemonteerd…",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ff0a9c51e6ab",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d59fb04ce39",
+     "text": "Een \"goedkopere\" offerte die deze elementen niet vermeldt, kan uiteindelijk duurder uitvallen als de bouwheer die posten zelf moet dragen of onvoorziene omstandigheden tijdens de werf moet oplossen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "61baca391627",
+   "_file": "uploads/2025/12/expert-geothermie-belgique.jpg",
+   "alt": "Geothermische boring in België"
+  },
+  {
+   "_type": "block",
+   "_key": "5723b9d0bb19",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cf820a8a046",
+     "text": "2. Boorkosten: prijs per meter… of globale prijs?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "599764515fe0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c606a034befb",
+     "text": "De meeste offertes voor geothermische boringen worden uitgedrukt als prijs per geboorde meter of als prijs per sonde (met een maximale diepte). Het belangrijkste is te begrijpen wat inbegrepen is en wat niet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1c62cd8996cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec8a4f658862",
+     "text": "Enkele sleutelvragen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "44d25f65a34e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f3c79648a17",
+     "text": "dekt de opgegeven prijs de volledige geplande diepte?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "96d525b2706c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3097f7d7771b",
+     "text": "zijn er prijsniveaus naargelang de bodemsoort (bijvoorbeeld een toeslag bij moeilijke grond)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "558e3bfae573",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8cc41accef0f",
+     "text": "zijn de sondes, de geothermische grout en de druktesten inbegrepen?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7643fe1405d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ada38b2745af",
+     "text": "Een belangrijk aandachtspunt: niet alle boorbedrijven vertrekken van hetzelfde rendement per meter sonde. Sommigen rekenen met 60 W/m, anderen met 40 of 45 W/m.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6dd8aad46855",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55df218229c6",
+     "text": "Let op de vermogens \"per meter\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ef06672d380d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc5c90572a6c",
+     "text": "Om offertes te vergelijken, moet u ze altijd herleiden tot hetzelfde aantal lopende meter boring. Als een boorbedrijf minder meters voorstelt omdat het uitgaat van een hoger rendement per meter, vraag dan een herberekening op basis van eenzelfde lengte voor alle partijen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57f0efa0c9dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4698070a9ad",
+     "text": "Bovendien zullen sommige boorbedrijven diepere boringen met minder sondes voorstellen, en andere kortere boringen met meer sondes. Bij een gelijke totale lengte zijn diepere boringen vaak gunstiger voor het rendement en voor de ruimte-inname.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "62ec3cde6e22",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1f7936f6d75",
+     "text": "Ten slotte is het essentieel na te gaan of er verborgen kosten zijn voor onvoorziene omstandigheden bij het boren, vooral wat verbuizing betreft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "953334d69dbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "743c5ee2f749",
+     "text": "Sommige offertes bieden een aantrekkelijke prijs in \"normale\" omstandigheden, maar rekenen forse supplementen aan zodra extra verbuizing nodig is. In veel bodems is verbuizing echter gebruikelijk. Het kan het oorspronkelijke budget dan doen ontsporen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "186f5a2e080b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb8c2be948da",
+     "text": "Kies bij voorkeur offertes met een vaste prijs per geboorde meter, met verbuizing inbegrepen of duidelijk omkaderd, om onaangename verrassingen te vermijden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8216def13acc",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53d0bbf3c0a6",
+     "text": "3. Horizontale verbindingen en collectoren: kwaliteit en controles",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "35ffa905966e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65e24dc202ef",
+     "text": "De boringen zijn slechts een deel van de installatie. De horizontale verbindingen tussen de sondes en de technische ruimte, en de collectoren, zijn een belangrijke post, zowel in kosten als in betrouwbaarheid op lange termijn.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7f838d7e8a63",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6cbb59f0859",
+     "text": "Bij het vergelijken van offertes is het nuttig na te gaan:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "110154adfbd5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f768a6338fd",
+     "text": "of de levering en plaatsing van de horizontale verbindingen inbegrepen zijn;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cbcd80564a63",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06b9a137e0b3",
+     "text": "welk type HDPE wordt gebruikt (diameter, drukklasse);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "211c7947be12",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f916498051bf",
+     "text": "welke collectoren worden gebruikt (geprefabriceerd, geïsoleerd, toegankelijk);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f3c7b5936c9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c47bd7aa58e",
+     "text": "of er druktesten worden uitgevoerd op alle circuits vóór het dichten van de sleuven.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7a6f9b201899",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b02af43551d",
+     "text": "Een offerte met systematische druktesten en goed toegankelijke collectoren is een garantie op ernst en duurzaamheid.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "14a579da7f27",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c9bfc64a1e8",
+     "text": "4. Boorgruis, milieu en het einde van de werf",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3a2bb4baa690",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c561b845b871",
+     "text": "Een geothermische boring levert boorgruis (zand, slib, gesteente) en boorwater op. Hoe dat beheerd wordt, kan een grote impact hebben op de werf, vooral in de stad.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f332ab88078a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1404195e3dc3",
+     "text": "Enkele vragen om te stellen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26f02ff6736d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59c1f3ba2e8e",
+     "text": "wie zorgt voor de afvoer van het boorgruis?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4130d0a36b3a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4295ded57a13",
+     "text": "naar welk type site (verwerkingscentrum, ophogingsterrein, enz.)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "835f91725564",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "73a3fda53bb3",
+     "text": "is de reiniging van de werfzone na afloop inbegrepen?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e9d356d85677",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9644aaa1889",
+     "text": "hoe worden boorspoeling en eventuele afvloeiing beheerd?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "730f3d308e77",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5624d80d2912",
+     "text": "Een offerte die deze aspecten duidelijk voorziet, voorkomt discussies op het einde van de werf en beschermt zowel het imago van het project als de relatie met de buren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6868e0b13ce2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee6b2416daf3",
+     "text": "5. Andere criteria om te bekijken in een offerte",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "86d88c1c42e6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea7e0c2d0f62",
+     "text": "Naast de zuiver financiële aspecten verdienen meerdere kwalitatieve criteria aandacht:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3b0b97cdd8bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15883083bd85",
+     "text": "de ervaring van het boorbedrijf in geothermie (referenties, soorten uitgevoerde projecten);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4dc850860d42",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c41ee35d0ea9",
+     "text": "de beheersing van de verschillende boortechnieken (lucht, spoeling, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0444a7d8c3e1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1ffa62128af",
+     "text": "het vermogen om in een krappe stedelijke omgeving te werken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f4d40d9bdb01",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "270ac7391b2f",
+     "text": "de kwaliteit van de geleverde documentatie (plannen, schema's, testverslagen);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e285c6bf4661",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "681ba99b2ae4",
+     "text": "de coördinatie met de andere partijen (installateur, studiebureau, architect).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0bdb1adfed3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f9c600f88db",
+     "text": "Die elementen zijn niet altijd rechtstreeks in cijfers te vatten, maar ze maken vaak het verschil in gemoedsrust voor de bouwheer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "54578eab7911",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fba0d3d2d2d5",
+     "text": "6. Conclusie: de vergelijking… en de keuze veilig stellen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90a93ed6cd1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "080a7e57a2bf",
+     "text": "Offertes van boorbedrijven vergelijken is meer dan naar de totaalprijs onderaan kijken. Het gaat erom te begrijpen wat inbegrepen is, wat niet, en hoe mogelijke risico's worden beheerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "13f071b0f6cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95da98d3c8df",
+     "text": "Om de vergelijking veilig te stellen, is het vaak nuttig om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "52f50a9d7a21",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04aada547e5e",
+     "text": "alle boorbedrijven te vragen eenzelfde sondelengte te prijzen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b0c91859c0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c4034a686de",
+     "text": "de voorwaarden voor verbuizing en eventuele supplementen te verduidelijken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b99d6cd88bd7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18bb61c1a667",
+     "text": "na te gaan of verbindingen, druktesten en boorgruis inbegrepen zijn.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f96c7ebd530",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "abc2cc75efbd",
+     "text": "Wanneer twee boorbedrijven voor hetzelfde vermogen zeer verschillende lengtes opgeven, kan het zinvol zijn hen te vragen een prijs te geven op basis van een identieke boorhoeveelheid (bijvoorbeeld hetzelfde aantal lopende meter sonde), voor een objectieve vergelijking.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "95a9de07b649",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb52a14a18e6",
+     "text": "WellDoneDrill heeft zich uitsluitend toegelegd op het boren van geothermische sondes. Onze machines en ploegen zijn geoptimaliseerd voor dit vak, waardoor WDD heel vaak het meest concurrerende boorbedrijf op de markt is, met prijzen zonder verborgen kosten, duidelijk, vergelijkbaar en zonder onaangename verrassingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Offertes voor een geothermische boring vergelijken | WellDoneDrill",
+ "seoDescription": "Zo vergelijkt u offertes voor geothermische boringen: werfkosten, prijs per meter of per sonde, W/m, verbuizing, horizontale verbindingen, boorgruis en ervaring.",
+ "_mainImageFile": "uploads/2025/05/Woluwe-Saint-Lambert-Greenwoo-header.webp",
+ "_mainImageAlt": "Geothermiebedrijf in Sint-Lambrechts-Woluwe"
+}

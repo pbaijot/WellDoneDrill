@@ -1,0 +1,508 @@
+{
+ "_id": "blog-legacy-lu-de-4411",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Einige Vorurteile über Geothermie… und was dahintersteckt",
+ "slug": {
+  "_type": "slug",
+  "current": "vorurteile-ueber-geothermie-und-was-dahintersteckt"
+ },
+ "publishedAt": "2025-12-02T11:03:32Z",
+ "excerpt": "Die Geothermie zieht immer mehr Bauherren, Architekten und Planungsbüros an. Doch fast in jedem Gespräch tauchen dieselben Einwände auf. Dieser Artikel nimmt diese Vorurteile einzeln unter die Lupe und erklärt, was wirklich stimmt.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "87421e656ad8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71690f777328",
+     "text": "Die Geothermie zieht immer mehr Bauherren, Architekten und Planungsbüros an. Doch fast in jedem Gespräch tauchen dieselben Einwände auf: „Im Winter braucht es eine Zusatzheizung“, „Wir haben keine Zeit mehr, das zu prüfen“, „Wir haben keinen Technikraum“, „Das Budget wird wegen der Bohrungen explodieren“. Dieser Artikel nimmt diese Vorurteile einzeln unter die Lupe und erklärt, was wirklich dran ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d72fdc2e8a17",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c87bb359ecb2",
+     "text": "1. „Im Winter braucht es eine Zusatzheizung, die Geothermie reicht nicht“",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e6dff353b04a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1aace94ff3e9",
+     "text": "Bei kleinen Anlagen (Einfamilienhäuser, kleine Mehrfamilienhäuser, kleine Bürogebäude) reicht eine gut dimensionierte Erdwärmeanlage praktisch immer allein aus, um den Heizbedarf zu decken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7970682fd57d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd63eeb910c3",
+     "text": "Der Schlüssel ist das Duo aus Erdwärmepumpe und Speicher. Die Wärmepumpe wird auf die benötigte Leistung ausgelegt, und der Speicher dient als thermischer Puffer: Er erlaubt es, die Wärmepumpe zum besten Zeitpunkt laufen zu lassen (gute Effizienz, verfügbarer Strom, Photovoltaikerzeugung) und trotzdem Verbrauchsspitzen im Heiznetz abzudecken. Anders gesagt: Man lädt den Speicher, wenn die Wärmepumpe unter optimalen Bedingungen arbeitet, und entlädt ihn bei Bedarfsspitzen. In diesem Schema bleibt die Geothermie das Hauptsystem, nicht eine Zusatzheizung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "22a8543e6fb5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "833ce3db5c04",
+     "text": "Bei Anlagen mit größerer Leistung (Mehrfamilienhäuser, große Bürogebäude, lokale Wärmenetze) lohnt es sich oft, die Geothermie mit anderen Wärmepumpentechnologien zu kombinieren: Aquathermie, Abwasserwärme oder sogar Luftwärme. Diese Kombinationen optimieren die Erzeugung je nach Jahreszeit und Bedarf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dfc62347a81c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "038d15ef1a4f",
+     "text": "Geothermie mit Gas zu kombinieren ist oft die erste Idee, aber fast immer die am wenigsten sinnvolle: Man verliert einen Teil der Dekarbonisierungsvorteile, der Heizraum wird komplexer, und man bleibt langfristig von einem fossilen Brennstoff abhängig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1bb5db13e9e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0d9e46cea7a",
+     "text": "2. „Unser Zeitplan ist eng, wir haben keine Zeit mehr, Geothermie zu prüfen“",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "11f5961a1724",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8cb4cda42a4c",
+     "text": "Manche glauben, die Geothermie erfordere monatelange zusätzliche Planung und sei mit einem engen Zeitplan unvereinbar. Tatsächlich lässt sich bei den meisten „klassischen“ Wohn- und Büroprojekten die Dimensionierung eines Sondenfelds und einer Erdwärmepumpe in ähnlichen Fristen wie bei den anderen technischen Gewerken erledigen, sofern man rechtzeitig beschließt, diese Option zu prüfen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a91b481c43e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93b82b8e4f11",
+     "text": "Für den Start der Planung genügen einige Grunddaten:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "569ec43c48a1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6f79848d3c4",
+     "text": "Fläche des Gebäudes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1095a4934dc7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af9923c46d53",
+     "text": "Nutzungsart (Wohnen, Büro, Schule, gemischt…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c05d540170c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55a725338d93",
+     "text": "angestrebtes Effizienzniveau;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "098229811093",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a191518e378",
+     "text": "Bedarf an Heizung, Kühlung und Warmwasser;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5d36a6f9df59",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8912551817bf",
+     "text": "Einschränkungen von Grundstück und Zufahrt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0e119bd608a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aaed618f8714",
+     "text": "Damit lassen sich bereits die zu installierende Leistung, die Anzahl der Sonden, die Tiefen und die mögliche Anordnung abschätzen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f1f2c6733bf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0bacff40d2a",
+     "text": "WellDoneDrill arbeitet genau in dieser Realität echter Zeitpläne: Geothermie in bereits weit fortgeschrittene Projekte einbinden, mit Architekten und Planungsbüros zusammenarbeiten und die Bohrarbeiten mit den anderen Gewerken abstimmen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4368cafb75ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef845abf5d01",
+     "text": "Verwaltungstechnisch sind die Genehmigungsfristen in der Regel kurz. Meist handelt es sich um eine einfache Umweltanzeige, die je nach Region innerhalb weniger Tage oder Wochen bearbeitet wird. Das Hindernis ist also keine unvermeidbare technische Frist, sondern eher der Zeitpunkt, an dem man die Geothermie ernsthaft in Betracht zieht.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7e8167a7a4e1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b325601af75",
+     "text": "3. „Wir haben sehr wenig Platz im Technikraum, die Geothermie passt dort nie hinein“",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3f56ccbbafca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99acfe8b542f",
+     "text": "Das Bild eines sperrigen geothermischen Heizraums ist weitgehend überholt. Moderne „All-in-one“-Erdwärmepumpen sind nicht größer als ein großer Kühlschrank: Sie vereinen die meisten Komponenten (Pumpen, Wärmetauscher, Regelung usw.) in einem einzigen Modul.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f7c79c0e4581",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "664bea9d1a68",
+     "text": "Bei vielen Projekten benötigt die Erdwärmepumpe weniger Platz als ein alter Kessel, besonders wenn man Folgendes berücksichtigt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "10f904e91646",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "567fd8f941e2",
+     "text": "den Wegfall des Schornsteins;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64012d072b4c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "206593ea01c4",
+     "text": "kein Brennstofflager;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a7e6d3f5a987",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8ec8a664b0d",
+     "text": "einen einfacheren Raum (kein Brenner, kein Tank, weniger spezielle Lüftung).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb7c8da02d64",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "518b992d1ca3",
+     "text": "Der Speicher lässt sich bei Bedarf kompakt unterbringen (stehend, im Technikraum, im Keller usw.). Es ist also eher eine Frage der Organisation als eine technische Unmöglichkeit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d943029af33f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "30e20a567744",
+     "text": "4. „Das Budget könnte wegen der Geothermie explodieren“",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "56743056a27f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cb224ce52ae",
+     "text": "Die Angst vor Kostenüberschreitungen durch die Bohrungen ist verbreitet, vor allem wenn man schon von Mehrkosten bei schlecht geplanten Projekten gehört hat. Ein gut strukturiertes Angebot mit klaren Mengen und eindeutigen Einheitspreisen sichert das Budget jedoch ab.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c97f6baf463d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "40e2ca254fa1",
+     "text": "Einige Schlüsselpunkte, um böse Überraschungen zu vermeiden:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "754645afd05e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d67ee5c2791",
+     "text": "eine Sondenlänge, die zur geplanten Leistung und zu den Bodeneigenschaften passt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5e3b13410eda",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff57ff6b8136",
+     "text": "ein klar festgelegter Preis pro Meter oder pro Sonde;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "364d27c36b8f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c553de9f0d8e",
+     "text": "eine transparente Regelung für mögliche Bohrrisiken (Verrohrung, besondere Böden usw.);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c2ccbbcf9853",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0bbadf4f6114",
+     "text": "horizontale Anbindungen und Verteiler im Angebot enthalten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "666cc4a1a68c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9fcf01ba5c0",
+     "text": "WellDoneDrill hat seine Angebote so aufgebaut, dass versteckte Kosten vermieden und Zuschläge begrenzt werden. Die Sonden werden realistisch dimensioniert, die Preise pro Bohrung sind fest, und mögliche Kostentreiber werden im Voraus benannt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "59f1396efc06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "876378307451",
+     "text": "Betrachtet man die Gesamtkosten über die Lebensdauer der Anlage (Investition + Betrieb), erweist sich die Geothermie letztlich meist als sehr wettbewerbsfähig gegenüber fossilen Lösungen oder Luft-Wasser-Systemen und bietet zugleich mehr Komfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Vorurteile über Geothermie widerlegt | WellDoneDrill",
+ "seoDescription": "Zusatzheizung im Winter nötig? Keine Zeit für eine Studie? Kein Technikraum? Ein Budget, das aus dem Ruder läuft? Vier verbreitete Vorurteile über Geothermie widerlegt.",
+ "_mainImageFile": "uploads/2025/12/geothermie-idee-recue.webp",
+ "_mainImageAlt": "Vorurteile über Geothermie"
+}

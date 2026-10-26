@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-lu-de-4397",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Bohren auf engem Raum: Geothermie auch ohne Garten",
+ "slug": {
+  "_type": "slug",
+  "current": "bohren-auf-engem-raum-geothermie-ohne-garten"
+ },
+ "publishedAt": "2025-12-02T10:58:10Z",
+ "excerpt": "In belgischen Städten haben viele Gebäude nur einen kleinen Hof, einen Vorgarten oder eine schmale Zufahrt. Lange glaubte man, Geothermie mit Vertikalsonden sei großen Grundstücken vorbehalten. Kompakte Bohrgeräte und moderne Techniken ändern das grundlegend.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "3d255df07185",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1cc7a97fd36",
+     "text": "In belgischen Städten haben viele Gebäude nur einen kleinen Hof, einen Vorgarten oder eine schmale Zufahrt. Lange glaubte man, Geothermie mit Vertikalsonden sei großen Grundstücken vorbehalten. Kompakte Bohrgeräte und moderne Techniken ändern das grundlegend.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "01ad43638d6c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79485c2bac91",
+     "text": "Die Frage „Ist Geothermie bei mir möglich?“ taucht oft auf, sobald das Grundstück klein ist. Die Antwort lautet viel häufiger „Ja“ als gedacht, sofern man mit geeigneten Bohrgeräten und einer auf die Stadt zugeschnittenen Baustellenorganisation arbeitet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa44e2e0564c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "40c0a7c940cf",
+     "text": "Die Zugangsbeschränkungen verstehen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1fb10d582860",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "182afd81ac87",
+     "text": "In der Stadt erreicht man den Bohrpunkt selten über ein großes Tor auf ein freies Grundstück. Häufiger trifft man auf:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa8752f3e816",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "859eb3e1ce4b",
+     "text": "schmale seitliche Durchgänge;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3de5011679d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25ae8475bdf5",
+     "text": "Garagentore mit begrenzter Höhe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97839d45def1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3beff1aa989d",
+     "text": "lange, enge Flure;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "328fe36457c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c269249d123e",
+     "text": "eingeschlossene Innenhöfe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "61d990f5a33e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63ff8a1d2f88",
+     "text": "Gärten am hinteren Ende des Grundstücks ohne direkten Zugang von der Straße.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e6cf99ca60ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe03899d682f",
+     "text": "In diesen Fällen wird die Größe des Bohrgeräts zum entscheidenden Kriterium. Eine zu große Maschine kann den Bohrbereich schlicht nicht erreichen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9443c0f67aa0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "acb04b6af6ed",
+     "text": "Kompakte Bohrgeräte, die passen, wo andere nicht durchkommen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "01093771e7f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17f45a1a7893",
+     "text": "WellDoneDrill hat sich auf kompakte Bohrgeräte spezialisiert, die eigens für städtische Baustellen und enge Räume ausgelegt sind. Diese Bohrgeräte:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "702026b4183c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2e6f90f8def",
+     "text": "passen durch kleine Öffnungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4e3b28662b06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcbb0282d8a0",
+     "text": "lassen sich in Innenhöfen oder kleinen Parkplätzen aufstellen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "47a3489bcf8c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f03d6741e7ea",
+     "text": "können in vollgestellten Umgebungen manövrieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8934a7beae99",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7424be862e7a",
+     "text": "Einmal aufgestellt, bieten sie eine Bohrleistung, die mit größeren Maschinen vergleichbar ist, vor allem dank des PDC-Bohrens, mit dem sich große Tiefen sehr effizient erreichen lassen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ec3bdfe86bb3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9fe3893715c",
+     "text": "Im Durchschnitt eine Sonde pro Tag",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3b73697b2760",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4fe8877dd67",
+     "text": "In der Praxis bohrt WellDoneDrill auf den meisten Baustellen durchschnittlich 100 bis 150 m pro Tag, also in der Regel eine vollständige Vertikalsonde pro Arbeitstag. Bei einem Feld mit mehreren Sonden dauert die Baustelle je nach Tiefe und Bodenverhältnissen einige Tage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "146e9e3b6f44",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e8128ad10f7",
+     "text": "Eine Sonde wird nicht immer an einem einzigen Tag gebohrt: Bestimmte Bodenverhältnisse, Arbeitszeitvorgaben oder Baustellenanforderungen können ein schrittweises Vorgehen erfordern. Wichtig für den Kunden ist, dass der Preis kalkulierbar bleibt: WellDoneDrill arbeitet mit Festpreisen pro Bohrung, unabhängig davon, wie viele Tage bis zur geplanten Tiefe nötig sind.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "04ada6c7992e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d660ac3153b9",
+     "text": "Für die Nachbarschaft bedeutet das eine kurze, zeitlich begrenzte Baustelle mit einem Team, das an sensible Umgebungen gewöhnt ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8568abaaa865",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53182d3bd704",
+     "text": "Von innen bohren: eine Lösung für Bestandsgebäude",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "39a2fd1713db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b1dee11d7fa",
+     "text": "Bei manchen Projekten, besonders bei Sanierungen oder Nachverdichtung, gibt es schlicht keine Außenfläche. Die Lösung besteht dann darin, aus dem Gebäude heraus zu bohren:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e3f40374aa30",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5786ea1fa1a3",
+     "text": "in einer Tiefgarage;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7716675789ad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "00c5222f9e06",
+     "text": "in einem Technikraum;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "963ab759119a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af83167ad5fb",
+     "text": "in einer vorübergehend freigeräumten Verkehrsfläche.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33f74e9b7bc7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac218d9293ee",
+     "text": "Das Bohrgerät wird ins Gebäude gebracht, und die Sonden werden je nach Tragwerk durch die Bodenplatten, die Fundamentplatte oder zwischen den Gründungspfählen gebohrt. Das erfordert eine genaue Vorbereitung, macht aber Geothermie in Gebäuden möglich, die auf den ersten Blick keine nutzbare Fläche hatten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3791480607d4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0069a9ecc785",
+     "text": "Organisation, Sicherheit und Sauberkeit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "159c7c79aaa3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b20c4bf1edfc",
+     "text": "Arbeiten auf engem Raum erfordert strenge Disziplin:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e0b32aab4d3c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2bfce8c3d620",
+     "text": "Schutz von Böden und Wänden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "db3c9f9154e5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "018c8b2b1cdb",
+     "text": "Kontrolle der Wege von Bohrklein und Spülung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "08398a9db246",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9a000eebcd44",
+     "text": "Koordination der Zugänge für andere Gewerke;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6379dbc2bceb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9f2b80c1dcd",
+     "text": "Absicherung der Arbeitsbereiche.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9b6318598e50",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d505a38c638",
+     "text": "WellDoneDrill hat für solche Baustellen eigene Abläufe entwickelt, um die Auswirkungen auf Gebäude und Bewohner zu begrenzen. Ziel ist, dass die Bohrung eine kontrollierte, kurze Episode im Projekt bleibt und keine Quelle von Komplikationen wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4beb08d95a5d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a96c0fbaf19",
+     "text": "Fazit: Geothermie, auch ohne großen Garten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1a764e9545e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8c8c1382ba3",
+     "text": "Die Kombination aus kompakten Bohrgeräten, angepassten Bohrtechniken und einer auf die Stadt zugeschnittenen Organisation ermöglicht es heute, Erdwärmesonden an Orten zu installieren, die vor einigen Jahren noch ausgeschlossen gewesen wären.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a6c3f9e15e71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a836575814e5",
+     "text": "Ob Sie einen kleinen Hof, eine schmale Zufahrt oder nur eine Tiefgarage haben: Eine Machbarkeitsprüfung lohnt sich. In vielen Fällen kann WellDoneDrill eine Lösung anbieten, die Geothermie möglich macht, mit einer kurzen, gut organisierten Baustelle, die sich mit den städtischen Rahmenbedingungen verträgt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie ohne Garten: Bohren auf engem Raum | WellDoneDrill",
+ "seoDescription": "Geothermie auf kleinem Grundstück oder ohne Garten? Kompakte Bohrgeräte, eine Sonde pro Tag, Festpreise pro Bohrung und Bohren aus Tiefgarage oder Technikraum.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermie auf kleinem Raum"
+}

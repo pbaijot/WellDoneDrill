@@ -1,0 +1,690 @@
+{
+ "_id": "blog-legacy-be-nl-4407",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Verwarming: wat als de comfortabelste oplossing onder uw voeten ligt?",
+ "slug": {
+  "_type": "slug",
+  "current": "verwarming-de-comfortabelste-oplossing-onder-uw-voeten"
+ },
+ "publishedAt": "2025-12-02T11:01:54Z",
+ "excerpt": "Verwarming is veruit de grootste energiepost in gebouwen. Toch steunen de meest verspreide oplossingen (gasketels, stookolieketels, convectoren…) nog grotendeels op fossiele energie. Geothermie biedt een andere weg.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "55fb7c553c92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5c18e890543",
+     "text": "Verwarming is veruit de grootste energiepost in gebouwen. Toch steunen de meest verspreide oplossingen (gasketels, stookolieketels, convectoren…) nog grotendeels op fossiele energie. Geothermie biedt een andere weg: een volledig elektrische, performante en discrete verwarming die haar warmte uit de bodem haalt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c2d0941b0b4b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8a601e15b0b",
+     "text": "Verwarming, de grootste energiepost van een gebouw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c828f370d40b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "134f00d1ba0a",
+     "text": "In een woning, een appartementsgebouw of een kantoorgebouw is verwarming doorgaans goed voor het grootste deel van het energieverbruik. Dat verbruik verminderen en koolstofvrij maken is dus een belangrijke hefboom om de klimaatdoelstellingen te halen en de kosten op lange termijn te beheersen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0b3ac3d3b76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81c203d8855f",
+     "text": "Traditionele oplossingen (gas- of stookolieketel) hebben gebouwen decennialang efficiënt verwarmd, maar ze hebben vandaag verschillende beperkingen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6c6a12a9fc3b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c842534fab76",
+     "text": "afhankelijkheid van de prijzen van fossiele brandstoffen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d5e9e3339d16",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc42ac8aea22",
+     "text": "een hoge CO₂-uitstoot;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97a0af5954b7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d006faf9adeb",
+     "text": "een steeds strenger wettelijk kader.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ab195418234d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "28fdff22fe75",
+     "text": "Verwarming en warmtepomp: het basisprincipe",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "faaf6d59e2b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3208e8d48b0c",
+     "text": "De warmtepomp is een geloofwaardig alternatief voor de ketel geworden. Ze maakt geen warmte door brandstof te verbranden, maar haalt ze uit de omgeving (lucht, bodem, water) en brengt ze op een temperatuur die bruikbaar is voor verwarming.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "957e90d05487",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5a35fa8042e",
+     "text": "Het principe:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "670de3d2a2ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "937ed4b91e7c",
+     "text": "buiten: warmte opvangen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "22c0e442ced7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8154db5d8e75",
+     "text": "binnen: die warmte doorgeven aan het verwarmingscircuit (radiatoren, vloeren, ventiloconvectoren);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d15b20127c7c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c8f542ebfab",
+     "text": "met een stroomverbruik dat veel lager is dan de geproduceerde warmte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "94ac1f6c162a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8569edcb1dd",
+     "text": "Voor verwarming zorgt de warmtepomp dus voor comfort en verlaagt ze tegelijk sterk het eindenergieverbruik.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "017da3b3b329",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0465d8ad298e",
+     "text": "Geothermische verwarming: de bodem als warmtebron",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d5bc59d1b612",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38129ac5de7e",
+     "text": "De geothermische warmtepomp (water-water) onderscheidt zich door haar bron: de bodem. Via verticale sondes haalt ze warmte uit de diepere lagen van de aarde, waar de temperatuur het hele jaar stabiel blijft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d89114b4d221",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "545a86696583",
+     "text": "Voor verwarming levert dat meerdere voordelen op:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d692d673802",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0becfadfc540",
+     "text": "hoge prestaties, zelfs bij strenge vorst;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f042bfe5bc6f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5b008796a1b",
+     "text": "een stabiele werking die het comfort verbetert;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3b15eb8659ed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15b0e1c7b366",
+     "text": "geen lawaaierige buitenunit.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "860f77e9ef4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92133ddcf9a7",
+     "text": "Er wordt verwarmd op lage temperatuur, wat ideaal is voor vloerverwarming en moderne afgiftesystemen. In veel gevallen kunnen bestaande radiatorennetten worden aangepast aan geothermie, door de temperatuurregimes en de regeling bij te stellen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "84ea7153f442",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46b4633ae704",
+     "text": "Geothermische verwarming vs klassieke verwarming",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "711c20da27cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "910c057857eb",
+     "text": "Tegenover een gasketel biedt geothermische verwarming:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a1e6b9e8aa05",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75a5a714cca9",
+     "text": "een sterke daling van de CO₂-uitstoot;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dc381bd6939b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "146096f87d89",
+     "text": "onafhankelijkheid van de prijsschommelingen van brandstoffen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "30782d0df483",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d792e8845b9",
+     "text": "meer comfort (stabielere temperaturen, zachte warmte);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97b883ac759d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0abf60ae12cc",
+     "text": "de mogelijkheid van passieve koeling in de zomer (geocooling).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c90f885ad1c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e75b59316a3",
+     "text": "De investeringskost ligt hoger, maar:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f5f51e048b18",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b47b428228f0",
+     "text": "de sondes gaan meer dan 50 jaar mee;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a00fd7672787",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea13f40ca82f",
+     "text": "de warmtepomp heeft een levensduur van 15 tot 20 jaar;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "966c43c5fca8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d5a843c8a54",
+     "text": "de werkingskosten behoren tot de laagste op de markt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "42606a4fb382",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2a3a3ad7ac8a",
+     "text": "Verwarming, koeling en geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34f5927fd097",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24d0ca837cc3",
+     "text": "Een goed ontworpen geothermisch verwarmingssysteem zorgt voor:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9c1e3bce5d37",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a958e67a0e2a",
+     "text": "verwarming in de winter;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e98ae2115029",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c8e709afe25",
+     "text": "passieve koeling (geocooling) in de zomer;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0235e98de2fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d6ae69369891",
+     "text": "productie van sanitair warm water.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ae366ff2b71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1030a72909a",
+     "text": "De bodem wordt zo een warmtebron in de winter en een koelreservoir in de zomer. Dat dubbele gebruik verbetert het thermische evenwicht van het sondeveld en draagt bij aan de duurzaamheid van het hele systeem.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1e09450b4cd4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1b2f3cae6e9",
+     "text": "Geothermische verwarming in België: een bijzonder gunstige context",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f3afc58d126",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1c9a5c569e9",
+     "text": "België heeft een opmerkelijk geothermisch potentieel, vooral voor ondiepe geothermie met verticale sondes. In veel regio's laten de eigenschappen van de ondergrond toe performante installaties te dimensioneren, zelfs op kleinere percelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "29a53f463ca2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4801d06470d1",
+     "text": "Voor eengezinswoningen, appartementsgebouwen, kantoren of openbare gebouwen is geothermie een verwarmingsoplossing die bijzonder goed aansluit bij de klimaatdoelstellingen en de zoektocht naar stabiliteit op lange termijn.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cdc081da7461",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c18440ab01f",
+     "text": "Hoe WellDoneDrill een project met geothermische verwarming begeleidt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4abad9789547",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "409dc4a784e0",
+     "text": "Voor een eigenaar of projectontwikkelaar is het vertrekpunt altijd hetzelfde: \"Ik zoek een verwarmingsoplossing die performant, duurzaam en op termijn beheersbaar is.\" Het geothermische antwoord wordt vervolgens stap voor stap opgebouwd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3662a4aa4add",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84b99a9edc15",
+     "text": "WellDoneDrill analyseert eerst het project: type gebouw, verwarmings- en koelbehoeften, terreinbeperkingen en toegang voor de boringen. Op basis daarvan wordt het sondeveld gedimensioneerd: aantal boringen, diepte, opstelling van de sondes, verwarmings- en geocoolingcapaciteit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0800867d5d68",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc74d1d7aded",
+     "text": "Tegelijk werkt WDD samen met studiebureaus en warmtepompinstallateurs om ervoor te zorgen dat het hele verwarmingssysteem coherent is: vermogen van de warmtepomp, opslagvat, regeling, afgiftesysteem en eventueel de koppeling met zonnepanelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "28e6f80539cc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "743a88d7340b",
+     "text": "Het doel is eenvoudig: ervoor zorgen dat \"verwarming\" voor de gebruiker staat voor comfort, discretie, een beheerste factuur en een technologie die strookt met de klimaatdoelstellingen. Geothermie wordt dan geen exotische optie, maar het logische antwoord op de vraag die iedereen zich stelt: \"Hoe ga ik mijn gebouw de komende 20 jaar verwarmen?\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermische verwarming: comfort onder uw voeten | WellDoneDrill",
+ "seoDescription": "Waarom geothermische verwarming de comfortabelste keuze is: het principe van de warmtepomp, de bodem als warmtebron, vergelijking met gas en geocooling in de zomer.",
+ "_mainImageFile": "uploads/2025/12/chauffage-sol.webp",
+ "_mainImageAlt": "Geothermische verwarming"
+}

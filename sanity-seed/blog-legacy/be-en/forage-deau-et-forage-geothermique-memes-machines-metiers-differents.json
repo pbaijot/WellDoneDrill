@@ -1,0 +1,758 @@
+{
+ "_id": "blog-legacy-be-en-4405",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Water wells and geothermal boreholes: same machines, different trades",
+ "slug": {
+  "_type": "slug",
+  "current": "water-wells-and-geothermal-boreholes-different-trades"
+ },
+ "publishedAt": "2025-12-02T11:01:11Z",
+ "excerpt": "In Belgium, the word \"drilling\" covers both water wells and geothermal probes. From the outside it looks like the same job: a rig, pipes, a deep hole in the ground. Yet they don't share the same purpose, constraints or sizing.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "09604f82ac7f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b78d64429ec2",
+     "text": "In Belgium, the word \"drilling\" refers as much to water wells as to geothermal probes. From the outside, it looks like the same kind of site: a rig, pipes, a deep hole in the ground. Yet a water well and a geothermal borehole have neither the same purpose, nor the same constraints, nor the same sizing.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3b3bc49596fa",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "720c0b25e064",
+     "text": "Two types of borehole, two uses of the subsurface",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2a3fe18bf6ef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0dd2876d0444",
+     "text": "A water well is meant to tap a resource: an aquifer. The aim is a flow rate, a quality and a reliable supply for a house, a farm, irrigation or a small industry. The well is fitted with casing, a screen and a submersible pump. The water comes up to the surface, flows through the distribution network and is then used or discharged.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "09bb3cc6d432",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9775fe13f257",
+     "text": "A geothermal borehole works the other way round: nothing is \"taken\" from the subsurface; heat is exchanged with it. With vertical probes, the borehole is completely filled with an HDPE probe and geothermal grout. The fluid circulates through the probe in a closed loop, drawing heat from the ground or releasing it, but never bringing groundwater into direct contact with the heating circuit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9d67ea33a43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce1f69bea14b",
+     "text": "In one case, the subsurface is a water reservoir to be exploited.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "708851587ebd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7a9ffa9881c",
+     "text": "In the other, it becomes a heat exchanger used to supply a heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "133787e5db4d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da41d6fe59b1",
+     "text": "Two key terms to remember",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c92ddfe671a4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b894b7fba787",
+     "text": "Water well:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "15f090a9e3b4",
+     "text": " abstraction, flow rate, water quality, submersible pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4ebf7e2e0ff6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5094e5c3ce4d",
+     "text": "Geothermal borehole:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8db65d1f3473",
+     "text": " probe, heat exchange, closed loop, heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7f0a5ef10342",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7842d75ff92f",
+     "text": "Water wells: looking for the aquifer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0218d78d280b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b0bcfedf9a10",
+     "text": "With a water well, the goal is to locate and exploit an aquifer:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5bdcef77dfd1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4755aace244e",
+     "text": "the well is sized according to the required flow rate;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a45bd3abf683",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0beb70fad00f",
+     "text": "screens and filters are chosen according to grain size;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bc1e84e1ec85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f568ee1ba12",
+     "text": "a submersible pump is installed to bring the water up;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb078d99cadc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7e93c385008",
+     "text": "water quality is checked according to its use (irrigation, process water, etc.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d4090cef417e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e2efce2832a",
+     "text": "Performance is measured in m³/h, in water-level stability and in water quality. Managing the resource (aquifer recharge, impact on neighbours, etc.) becomes an issue when flow rates are high.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6203eb692ff",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b82d2cdcc14a",
+     "text": "Geothermal probe boreholes: no groundwater required",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b2c6ed2807ea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3bd6f3108cdd",
+     "text": "With a geothermal probe borehole, the presence of an aquifer is not a requirement. What matters is the overall ability of the subsurface to transmit heat.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ac89ecd142c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48e73363ff90",
+     "text": "The borehole is fully occupied by:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a5f46a4be3f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4934187392cb",
+     "text": "one or more HDPE probe loops;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9d8d6d61584e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ff9aebe96fb",
+     "text": "geothermal grout ensuring thermal contact with the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "469496b15562",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "271ebe9cc5cf",
+     "text": "The sizing concerns:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5420c8f754c1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "496577932ad3",
+     "text": "the thermal output to be supplied;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4c91a9541ba8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6a619b2083d1",
+     "text": "the total probe length (metres drilled);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9ed717860107",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e12e216dfb0",
+     "text": "the spacing between probes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a10feb560921",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cb599d55617",
+     "text": "the seasonal balance between heat extracted and heat returned.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ce8114bd5e94",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfee635a7d50",
+     "text": "Groundwater, if present, remains isolated by the grout and any casing. The installation runs as a closed loop.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "562c1cf19cd1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b61cdd2c2ca9",
+     "text": "Open-loop geothermal: when a water well becomes a heat source",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1460c2f1ec90",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82e555a55c03",
+     "text": "There is one special case where water wells and geothermal meet: open-loop geothermal. Here, groundwater is used directly as the heat source for a heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fb1c48d2cd52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51d28bce2564",
+     "text": "The principle:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bdd948417ef3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ce463191fab",
+     "text": "an abstraction well draws water from the aquifer;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a21612c55876",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51d668505da4",
+     "text": "the water passes through a heat exchanger or the heat pump, which recovers the heat;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a036e8c35228",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44237bfe1d52",
+     "text": "the water is then returned to the aquifer through an injection well.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6644aa748aa7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0bf3e054d64",
+     "text": "This type of system is especially suited to large projects: big commercial buildings, heat networks, industrial sites and so on. It requires:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "82773b569920",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1dd409a450b1",
+     "text": "an aquifer with sufficient flow;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "645284141e7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2f2eb3eb177c",
+     "text": "in-depth hydrogeological studies;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6fb1e4d68b41",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f81a5f8e3e0b",
+     "text": "a strict regulatory framework.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "782da0c83e81",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b39655ede24f",
+     "text": "In this context, the water well truly becomes the \"source\" of the geothermal system. But it is no longer a simple well: it is a system designed to work as a loop while respecting the balance of the aquifer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2bf91f1bfdb6",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "252c3aa1af0d",
+     "text": "How WellDoneDrill supports project owners",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "60f6bde3697b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65e0591c4e43",
+     "text": "In practice, the same project owner may need:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0431ba0a15f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42f5ccc97594",
+     "text": "a water well for irrigation, process use or a specific supply;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "479459ce665d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7911ae602411",
+     "text": "a borehole field to supply a geothermal heat pump;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "87bc2655c150",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9486216f3d1f",
+     "text": "possibly an open-loop geothermal solution for a large project.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec09cf25fb1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9cbf6b24c607",
+     "text": "WellDoneDrill analyses each situation to propose the most suitable configuration:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "19f2ad959350",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c843ed27755",
+     "text": "a simple water well when the need is only for water;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ac5d4579e13e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e212eb6c5f59",
+     "text": "a geothermal probe borehole when the main need is heating and cooling;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f9e5478a4157",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99d4c00cd43b",
+     "text": "open-loop geothermal for high-output projects when aquifer conditions allow.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "69c7355dd6ae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c16bdbd8bb4",
+     "text": "Rather than treating all boreholes as equivalent, WellDoneDrill helps project owners make informed choices: type of borehole, sizing, possible combination of water and geothermal. The aim is to make the most of the subsurface, in line with the real needs of the building or site.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Water well vs geothermal borehole | WellDoneDrill",
+ "seoDescription": "What is the difference between a water well and a geothermal borehole? Pumping groundwater versus exchanging heat in a closed loop, plus open-loop geothermal.",
+ "_mainImageFile": "uploads/2025/12/forage-eau-geothermique.webp",
+ "_mainImageAlt": "Water well and geothermal borehole"
+}

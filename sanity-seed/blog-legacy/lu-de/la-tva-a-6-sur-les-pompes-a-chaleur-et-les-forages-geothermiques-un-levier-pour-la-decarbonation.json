@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-lu-de-4413",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "6 % Mehrwertsteuer auf Wärmepumpen und Erdwärmebohrungen: ein Hebel für die Dekarbonisierung",
+ "slug": {
+  "_type": "slug",
+  "current": "6-prozent-mehrwertsteuer-auf-waermepumpen-und-erdwaermebohrungen"
+ },
+ "publishedAt": "2025-12-02T11:04:15Z",
+ "excerpt": "Steuern spielen bei der Wahl eines Heizsystems eine Schlüsselrolle. In Belgien ist die Entwicklung der Mehrwertsteuerregeln zugunsten von Wärmepumpen und Erdwärmebohrungen ein starkes Signal für CO₂-arme Lösungen.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "23d0a9a41783",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e25e1c8bbb24",
+     "text": "Steuern spielen bei der Wahl eines Heizsystems eine Schlüsselrolle. In Belgien ist die Entwicklung der Mehrwertsteuerregeln zugunsten von Wärmepumpen und Erdwärmebohrungen ein starkes Signal für CO₂-arme Lösungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "714c9f445bbc",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67cd2f971f00",
+     "text": "Sanierung von Gebäuden, die älter als 10 Jahre sind: 6 % MwSt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "50b3706213a3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94888c79557e",
+     "text": "Bei der Sanierung von Wohngebäuden, die älter als 10 Jahre sind, beträgt die Mehrwertsteuer auf die Arbeiten 6 %. Das gilt für:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e67c74d0527e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4e42112854a",
+     "text": "die Installation von Wärmepumpen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5a4b6d56be9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8226849d172d",
+     "text": "Arbeiten im Zusammenhang mit Erdwärmebohrungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "323a9fb37284",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcff6d7c7ba5",
+     "text": "andere Sanierungsarbeiten, die die gesetzlichen Kriterien erfüllen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c3689ae8231a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "978dedc938c3",
+     "text": "Konkret beträgt die Mehrwertsteuer für ein geothermisches Wohnprojekt in einem Gebäude, das älter als 10 Jahre ist, also 6 % auf die gesamte Anlage, Bohrungen inklusive.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9a6c968ecaf3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "008c586bca74",
+     "text": "Ab 2026: 6 % MwSt. auch im Neubau",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4217f553c672",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7cc3578420b6",
+     "text": "Ab 2026 ist eine wichtige Änderung für neue Wohngebäude oder solche unter 10 Jahren vorgesehen: Die Mehrwertsteuer auf die Installation von Wärmepumpen sinkt von 21 % auf 6 %. Das Ziel der Regierung ist klar: Heizsysteme als Alternative zu fossilen Energien stark zu fördern.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e7d3237f7e85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d000e5b2b92",
+     "text": "Erdwärmebohrungen unterliegen derselben Regelung und sinken für diese Projekte ebenfalls von 21 % auf 6 %. Das ist ein erheblicher Vorteil für die Kunden und ein starkes Signal für eine CO₂-arme Wärmeversorgung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6ad08012bc7c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bde908181c9",
+     "text": "Bedingungen in Verbindung mit der Wohnnutzung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f0db83000449",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a649bc823a2b",
+     "text": "Um im Wohnbau vom Satz von 6 % zu profitieren, muss eine wichtige Bedingung erfüllt sein: Mindestens 50 % der Gebäudefläche müssen dem Wohnen dienen. Diese Regel gilt für die vorgesehenen Maßnahmen sowohl bei Sanierung als auch im Neubau.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "897df7aacfb4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24b3ddc0f404",
+     "text": "Bei der Sanierung von Gebäuden, die älter als 10 Jahre sind, beträgt die Mehrwertsteuer für förderfähige Arbeiten, einschließlich Erdwärmeanlagen, in jedem Fall 6 %, sofern die Wohnkriterien erfüllt sind.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "35fb7379ec79",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse-contreplongee.webp",
+   "alt": "ein Erdwärmebohrgerät von WellDoneDrill in Belgien"
+  },
+  {
+   "_type": "block",
+   "_key": "1723e5185942",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f39453c9bd6a",
+     "text": "Ein wirtschaftlicher Hebel für die Geothermie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5e0afaed7d19",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ad56178618d",
+     "text": "Die Kombination dieser Maßnahmen (reduzierte Mehrwertsteuer bei Sanierung und die Ausweitung des Satzes von 6 % auf Wärmepumpen und Erdwärmebohrungen im Neubau ab 2026) verbessert die Wirtschaftlichkeit der Geothermie deutlich:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a550acb3e4f8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d92d555a6bb4",
+     "text": "die Anfangsinvestition ist geringer als bei 21 %;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9445d4ed95c3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b76dbaa49275",
+     "text": "eine leistungsfähige Anlage wird erschwinglicher;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "15632baff365",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dcafaee82b24",
+     "text": "die Amortisationszeit verkürzt sich.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "089967e4fac5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7eecfa245a7",
+     "text": "Für Haushalte, Eigentümergemeinschaften und Bauträger machen diese steuerlichen Maßnahmen den Umstieg auf CO₂-arme Heizsysteme noch attraktiver, zumal die Geothermie auf Dauer zu den niedrigsten Betriebskosten führt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c22471b28e36",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77cd68c26b9d",
+     "text": "Erdwärmebohrungen: gleiche Regelung, gleicher Vorteil",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a8d31dc7dcad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a89ee2cefbb",
+     "text": "Ein wesentlicher Punkt ist, dass Erdwärmebohrungen in diesen Konstellationen derselben Mehrwertsteuerregelung folgen wie Wärmepumpen. Steuerlich gelten sie nicht als „gesonderter“ Posten, sondern als fester Bestandteil des Heizsystems.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "82b537f50830",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "394361ab8aea",
+     "text": "In der Praxis bedeutet das, dass:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4b5834863e12",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f971952b7e10",
+     "text": "die Sonden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d38e494411aa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e44ccad4ddfe",
+     "text": "die Bohrungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3acd0900fbea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f088a7a8a145",
+     "text": "die äußeren hydraulischen Anbindungen des Sondenfelds;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1243caf0b89a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e30b4a2ea635",
+     "text": "von denselben reduzierten Sätzen profitieren, was die Gesamtwettbewerbsfähigkeit der Lösung stärkt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0fa82946fcd2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78afc4c7ffe4",
+     "text": "Ein entscheidender Hebel für die Geothermie im Wohnbau",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0101a1d554ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8259df9b91a",
+     "text": "Für Wohnprojekte spielen diese Mehrwertsteuerregeln eine entscheidende Rolle. Sie verringern den Unterschied bei den Anfangskosten zwischen einer fossilen und einer geothermischen Lösung, obwohl Letztere bei den Betriebskosten langfristig bereits deutlich wettbewerbsfähiger ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f2e81be93d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4746baf707f4",
+     "text": "Durch die Kombination von:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "915bc75d8c87",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04570f371422",
+     "text": "reduzierter Mehrwertsteuer;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a1ec63553531",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f93c075edeed",
+     "text": "geringem Stromverbrauch dank hoher Leistungszahl;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5bbf069dabe8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "11ef73092d79",
+     "text": "der Möglichkeit, die Wärmepumpe mit Photovoltaik zu koppeln;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e8790425edd1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c63fde585ec",
+     "text": "wird die Geothermie zu einer besonders attraktiven Lösung, im Neubau ebenso wie bei umfassenden Sanierungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57d9c7f25bd7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b08fd0101477",
+     "text": "Wichtiger Hinweis",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f01a8f7e0d86",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1e2f048a329",
+     "text": "Die Mehrwertsteuerregeln werden durch die Steuergesetzgebung festgelegt und können sich ändern. Für jedes Projekt sollten die genauen Voraussetzungen und die zum Zeitpunkt der Bestellung geltenden Bestimmungen geprüft werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6a160bc97b1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5d9ead0ed55",
+     "text": "WellDoneDrill arbeitet mit Installateuren und spezialisierten Beratern zusammen, um die Angebote so zu gestalten, dass die passenden Mehrwertsteuerregelungen angewendet werden. Ziel ist, dass die Kunden die steuerlichen Vorteile der Geothermie voll nutzen und der administrative Teil sicher abgewickelt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "6 % MwSt. auf Wärmepumpen und Geothermie in Belgien | WellDoneDrill",
+ "seoDescription": "Wann gilt in Belgien der Satz von 6 % auf Wärmepumpen und Erdwärmebohrungen? Sanierung von Wohngebäuden über 10 Jahre, Neubau ab 2026 und die Bedingungen.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-clim.webp",
+ "_mainImageAlt": "6 % Mehrwertsteuer auf Wärmepumpen und Erdwärmebohrungen"
+}

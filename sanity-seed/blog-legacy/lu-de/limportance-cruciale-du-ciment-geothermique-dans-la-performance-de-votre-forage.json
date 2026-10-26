@@ -1,0 +1,346 @@
+{
+ "_id": "blog-legacy-lu-de-5383",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Warum die geothermische Verfüllung über die Leistung Ihrer Bohrung entscheidet",
+ "slug": {
+  "_type": "slug",
+  "current": "warum-die-geothermische-verfuellung-entscheidend-ist"
+ },
+ "publishedAt": "2026-03-20T10:04:12Z",
+ "excerpt": "Eine Erdwärmebohrung ist mehr als ein Loch im Boden mit Sonden darin. Der technischste und am wenigsten bekannte Schritt ist die Abdichtung. Bei WellDoneDrill legen wir großen Wert auf Auswahl und Einbringung der geothermischen Verfüllung.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "aa2dba5d80e5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "61c276e0b9b0",
+     "text": "Eine Erdwärmebohrung bedeutet nicht nur, ein Loch in den Boden zu bohren und Sonden hineinzustecken. Der technischste und in der Öffentlichkeit oft am wenigsten bekannte Schritt ist die ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b6e885f16409",
+     "text": "Abdichtung",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d594ce092be5",
+     "text": ". Bei WellDoneDrill legen wir größten Wert auf die Auswahl und Verpressung der ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "31461654f885",
+     "text": "geothermischen Verfüllung",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "42fb72d289e5",
+     "text": " (auch Hochleistungs-Verfüllbaustoff genannt). Darum ist dieses Material das eigentliche „Nervensystem“ Ihrer Anlage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7edf14e9249f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77a9b803f719",
+     "text": "1. Eine optimale Wärmeleitfähigkeit sichern",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "49ac715fe492",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5a2e366e036",
+     "text": "Bei der vertikalen Geothermie wird die Wärme des Bodens auf die Wärmeträgerflüssigkeit in den Sonden aus PE-HD (Polyethylen hoher Dichte) übertragen. Zwischen Bohrlochwand und Sonde besteht jedoch ein Hohlraum. Da Luft ein hervorragender Isolator ist, sinkt die Effizienz drastisch, wenn dieser Hohlraum nicht richtig verfüllt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b5c0f0e1b443",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd294d2176e7",
+     "text": "Die von uns verwendete Verfüllung besitzt eine ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b650b5e1c930",
+     "text": "hohe Wärmeleitfähigkeit",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "474a7084e401",
+     "text": " (in W/m·K). Ihre spezielle Zusammensetzung schafft eine durchgehende Wärmebrücke zwischen Gestein und Sonde. Ohne hochwertige Verfüllung muss Ihre Wärmepumpe stärker arbeiten, um dieselbe Wärmemenge zu entziehen. Das erhöht Ihre Stromrechnung und verkürzt die Lebensdauer des Geräts.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2541e6b16cbb",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c57eebb1ba0",
+     "text": "2. Unverzichtbarer Schutz des Grundwassers",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "60538eab81b2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfc22824bd4a",
+     "text": "Wer 100 oder 150 Meter tief bohrt, durchquert verschiedene geologische Schichten, von denen manche Wasser führen (Grundwasserleiter). In Belgien sind die Umweltvorschriften streng: Es ist verboten, zwei getrennte Grundwasserleiter miteinander zu verbinden oder verschmutztes Oberflächenwasser in die Tiefe sickern zu lassen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "373e36b23f08",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a15c69c278c",
+     "text": "Die Verfüllung wirkt hier als ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "1dabeaf69a4d",
+     "text": "dichte Barriere",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "34501b544d97",
+     "text": ". Durch die Zugabe von Bentonit (einem natürlich quellenden Ton) wird die Mischung undurchlässig. Sie dichtet die Bohrung über die gesamte Länge hermetisch ab und stellt sicher, dass Ihre Anlage das unterirdische Ökosystem für Jahrzehnte respektiert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6241505046f0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9aa332e0699",
+     "text": "3. Mechanischer Schutz und Lebensdauer der Sonden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "382114d1a94e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "081403e5e5fc",
+     "text": "Der Boden ist keine träge Struktur: Er unterliegt Drücken, Feuchtigkeitsschwankungen und manchmal leichten Bewegungen. Die geothermische Verfüllung schützt die Sonden physisch:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "13f3d6e82535",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12a55ba54d16",
+     "text": "Gegen Quetschung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "afb8dde00659",
+     "text": " Sie verteilt den seitlichen Erddruck.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ca9b8987ad8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1309544dc57d",
+     "text": "Gegen Korrosion:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a0e9c40d999f",
+     "text": " Sie schützt die Rohre vor aggressiven Stoffen, die in manchen Grundwasserleitern natürlich vorkommen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5fafe405e10c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d80d8876d6dd",
+     "text": "Stabilität:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5f0be2de7322",
+     "text": " Sie hält die Sonden fest in Position und verhindert Reibung, die langfristig ein Leck verursachen könnte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "151259c03dbb",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec2e5d70427d",
+     "text": "4. Die Verpressmethode: von unten nach oben",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "410fae586887",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e04b96628e3",
+     "text": "Nicht nur das Material zählt, auch die Verpressmethode ist entscheidend. Bei WellDoneDrill verpressen wir über ein ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "76de72549161",
+     "text": "verlorenes Verfüllrohr",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fe8088cc968a",
+     "text": ". Die Verfüllung wird vom Grund der Bohrung bis zur Oberfläche eingebracht. So werden Luft und Wasser nach oben verdrängt, und die Verfüllung ist vollständig, ohne Luftblasen oder Hohlräume.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a7a691b2df88",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75195d472128",
+     "text": "Fazit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "920b738d30e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72e48ae1d195",
+     "text": "In eine tiefe Bohrung und eine hochwertige Wärmepumpe zu investieren, ergibt wenig Sinn, wenn die thermische Verbindung zwischen beiden vernachlässigt wird. Eine zertifizierte geothermische Verfüllung ist die Garantie für eine stabile Leistung über 50 Jahre. Sie ist das Kennzeichen sauberer Arbeit und einer Anlage, die Ihren Geldbeutel ebenso schont wie die Umwelt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Warum die geothermische Verfüllung zählt | WellDoneDrill",
+ "seoDescription": "Warum die Verfüllung einer Erdwärmebohrung so wichtig ist: Wärmeleitfähigkeit, Grundwasserschutz, Lebensdauer der Sonden und Verpressung von unten nach oben.",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige.jpg",
+ "_mainImageAlt": "Geothermische Verfüllung einer Bohrung"
+}

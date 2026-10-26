@@ -1,0 +1,618 @@
+{
+ "_id": "blog-legacy-be-nl-5430",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Financiële vergelijking over 25 jaar: geothermie vs lucht-waterwarmtepomp",
+ "slug": {
+  "_type": "slug",
+  "current": "financiele-vergelijking-25-jaar-geothermie-vs-lucht-waterwarmtepomp"
+ },
+ "publishedAt": "2026-03-20T12:27:56Z",
+ "excerpt": "Wie twijfelt tussen geothermie (bodem-water) en een luchtwarmtepomp (lucht-water), vergelijkt vaak eerst de installatieprijs. Voor een vastgoedinvestering telt echter alleen de totale eigendomskost over 25 jaar.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e962bc4e4fe8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba1faee6dcec",
+     "text": "Wie twijfelt tussen geothermie (bodem-water) en een luchtwarmtepomp (lucht-water), vergelijkt vaak eerst de onmiddellijke installatieprijs. Voor een vastgoedinvestering is echter alleen de ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "a1ecd66e7a98",
+     "text": "totale eigendomskost (TCO)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e060826b202a",
+     "text": " over 25 jaar relevant. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "cb330498e0df",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bea572a543d6",
+     "text": " hebben we de cijfers geanalyseerd. Hierom wint geothermie op lange termijn de economische strijd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a8c9c5cad1d2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "acf6603720dc",
+     "text": "1. De initiële investering: de boring is een bezit, geen uitgave",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "daab72350bbd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "20780a2f25e7",
+     "text": "Het klopt dat een geothermische warmtepomp bij aanvang meer kost, vooral door de boring tot 150 meter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e345095a43a0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9eebd3404d7",
+     "text": "Lucht-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7b914a9a7989",
+     "text": " Ongeveer € 12.000 tot € 18.000.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a6a2e92a0f3f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f38759ed6e5",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c7f543d890dd",
+     "text": " Ongeveer € 25.000 tot € 35.000 (afhankelijk van de boring). Er is echter een groot verschil: de buitenunit van een lucht-waterwarmtepomp is een machine die slijt, terwijl de boring van WellDoneDrill een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "43caa0f7d427",
+     "text": "vastgoedinfrastructuur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "64111e9f7e94",
+     "text": " is die meer dan 50 jaar meegaat.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d1e69f1a4739",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "110ccc4ac8c9",
+     "text": "2. Het stroomverbruik: het gewicht van de SCOP",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c375a5f13654",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5a8ea5f0202d",
+     "text": "Het rendement van een lucht-waterwarmtepomp daalt wanneer het buiten koud is (net wanneer u ze het meest nodig hebt). Geothermie put daarentegen uit een bron met een constante temperatuur van 12 °C.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7e692c0fd20e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75c44db23c7a",
+     "text": "Lucht-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "17c0681aa032",
+     "text": " Gemiddelde seizoens-COP (SCOP) van ongeveer 3 tot 3,5.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6782bbcd2c23",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44579396e077",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "50f1416df694",
+     "text": " SCOP van ongeveer 4,5 tot 5,5. Over 25 jaar verbruikt geothermie voor een gemiddelde woning zo'n ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "012b26b0b7ae",
+     "text": "30 à 40 % minder elektriciteit",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ea26ed8a925d",
+     "text": ". Met de te verwachten stijging van de energieprijzen gaat het over twee decennia om tienduizenden euro's.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "35fbf3c8497c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e97adb09dbb4",
+     "text": "3. Levensduur en vervanging van het materiaal",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ad3ad0153509",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47c298538a4a",
+     "text": "Hier wordt het verschil pas echt duidelijk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de952471d262",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a92d72c545f",
+     "text": "Lucht-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ad6bc0ee5fa0",
+     "text": " Blootgesteld aan weer, vorst en intensieve ontdooicycli heeft ze een gemiddelde levensduur van ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "d822e94ce0a5",
+     "text": "12 tot 15 jaar",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "03901951a818",
+     "text": ". Over 25 jaar moet u ze dus ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "817a91fb3d89",
+     "text": "twee keer",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1d7fa126a9f6",
+     "text": " vervangen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ddfe327de309",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6c970681637",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ced6ff1cda54",
+     "text": " De warmtepomp staat binnen, in een droge en stabiele omgeving. Ze werkt minder hard omdat de bron constant is. Haar levensduur bedraagt ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3bedfaf0448e",
+     "text": "20 tot 25 jaar",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f5ce590c0bce",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "93188ebdac0e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee1ec838a32f",
+     "text": "De boring:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5e16159db0e4",
+     "text": " Die wordt nooit vervangen. Als u over 25 jaar van toestel wisselt, sluit u het nieuwe gewoon aan op uw bestaande sondes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1ffe5d026ad0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cab5b997fbb1",
+     "text": "4. Onderhouds- en herstellingskosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0c912bf05bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87cf4e41eabe",
+     "text": "Een buitenunit (lucht-water) moet regelmatig gereinigd worden, corrodeert en heeft blootgestelde bewegende delen (ventilator). Geothermie is een gesloten, passief circuit onder de grond met een eenvoudig toestel in de kelder. Herstellingskosten liggen statistisch veel lager bij bodem-watersystemen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57a8c48763b3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e8385d7533d0",
+     "text": "5. Geocooling: gratis koeling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "81172f494267",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59d47e4ba241",
+     "text": "In de zomer moet een lucht-waterwarmtepomp haar cyclus omkeren om te koelen, wat veel elektriciteit verbruikt. Geothermie gebruikt ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2a9e833a67d7",
+     "text": "passieve geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d7d8395c426c",
+     "text": " (alleen een kleine circulatiepomp van 50 W draait). Over 25 zomers krijgt u met geothermie het koelcomfort nagenoeg gratis, terwijl het met een luchtwarmtepomp veel kost.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ad0b88bd6112",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4f6d80f95d6",
+     "text": "Balans over 25 jaar (raming voor een woning van 200 m²)",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2d2930468635",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f03811a90e6",
+     "text": "Initiële installatie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "56de330bf8de",
+     "text": " Lucht-water € 15.000 · Geothermie (toestel + boring) € 30.000",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d1c4ba38eefd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a63408fd08d6",
+     "text": "Vervanging in jaar 13:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2028663ee293",
+     "text": " Lucht-water + € 12.000 · Geothermie € 0",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f3a74d789b55",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "227009396d82",
+     "text": "Stroomverbruik (raming):",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2f9704230707",
+     "text": " Lucht-water € 45.000 · Geothermie € 28.000",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cb442a6693c4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38f4585966bc",
+     "text": "Onderhoud en herstellingen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a5a4af73bb3d",
+     "text": " Lucht-water € 4.000 · Geothermie € 1.500",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "70030176f490",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "051703097215",
+     "text": "TOTAAL OVER 25 JAAR:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a4fa3e8ab003",
+     "text": " Lucht-water (2 toestellen) € 76.000 · Geothermie (1 toestel + boring) € 59.500",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5f92bc581904",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b756a6f4bd6",
+     "text": "Hoewel de instapkost hoger ligt, levert geothermie over 25 jaar een nettobesparing van meer dan ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4b1e61c11359",
+     "text": "€ 15.000",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "97939d8b1bca",
+     "text": " op, met daarbovenop meer comfort (stilte en geocooling). Kiezen voor WellDoneDrill is kiezen voor echte rendabiliteit en voor de meerwaarde van uw vastgoed.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie vs lucht-waterwarmtepomp over 25 jaar | WellDoneDrill",
+ "seoDescription": "Wat kost geothermie echt over 25 jaar tegenover een lucht-waterwarmtepomp? Investering, verbruik, levensduur, onderhoud en geocooling naast elkaar gelegd.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Warmtepomp van WellDoneDrill"
+}

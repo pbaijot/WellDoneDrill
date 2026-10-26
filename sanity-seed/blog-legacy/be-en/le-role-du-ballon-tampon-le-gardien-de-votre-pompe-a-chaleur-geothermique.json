@@ -1,0 +1,350 @@
+{
+ "_id": "blog-legacy-be-en-5400",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "The role of the buffer tank: the guardian of your geothermal heat pump",
+ "slug": {
+  "_type": "slug",
+  "current": "the-role-of-the-buffer-tank-geothermal-heat-pump"
+ },
+ "publishedAt": "2026-03-20T10:54:33Z",
+ "excerpt": "In a geothermal heating system, attention often goes to the borehole and the heat pump. Yet one discreet component is vital to the longevity and efficiency of your system: the buffer tank.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "639a7be8600e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c713eb620b5a",
+     "text": "In a geothermal heating system, all the attention often goes to the borehole and the heat pump. Yet there is a discreet but absolutely vital component for the longevity and efficiency of your system: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "67eb81a648a0",
+     "text": "the buffer tank",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d633097bfc5a",
+     "text": ". At WellDoneDrill, we consider it an essential safety and comfort device. Here is why it is your installation's best ally.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "97a64239cd63",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ddcfd76a1ff4",
+     "text": "1. Avoiding \"short cycling\": the secret to longevity",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1467d2f5a733",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "21c75bf7fa85",
+     "text": "The compressor is the heart of your heat pump. It is the most heavily used and most expensive part. Like a car engine, a compressor wears mainly during start-ups.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1c5a09118387",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77432695fe8a",
+     "text": "If your heat pump is connected directly to your emitters (underfloor heating or radiators), it may switch on and off erratically as soon as a small temperature change is detected. This is called ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b091c428d899",
+     "text": "short cycling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fb82a487667e",
+     "text": ". The buffer tank acts as an intermediate \"energy reservoir\":",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5451a236e67b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ac6ad94f667",
+     "text": "The heat pump heats the water in the buffer tank in one go.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d8b826b912fd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de2ef14cdbef",
+     "text": "The heating system then draws from this reserve as the house needs it.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90c7c44b3f36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef3eded6af2f",
+     "text": "The result: compressor start-ups are cut by a factor of three or four, extending the life of your machine by several years.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2e4f90c59158",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "69b78d247793",
+     "text": "2. Thermal inertia for steady comfort",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dff1252972e4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2754c0425265",
+     "text": "Geothermal energy excels in stability. However, a home's heating needs vary from room to room and hour to hour. Without a buffer tank, the heat pump has to react instantly every time a thermostatic valve opens, causing uncomfortable temperature swings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9309e74d3084",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15a412ea1aaa",
+     "text": "The buffer tank smooths out these variations. It provides ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "3820fcc8576f",
+     "text": "hydraulic inertia",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4cf31274e61f",
+     "text": " that spreads gentle, even heat throughout the building. It guarantees thermal comfort without sudden hot or cold spells, which is especially appreciated in passive and low-energy houses.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2467578bef26",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc051e4712a9",
+     "text": "3. Ensuring flow rate and circulation",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0181dc0499be",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9825437c4244",
+     "text": "All modern hydraulic systems need a minimum water flow rate to work properly. The buffer tank ensures this flow is always maintained, regardless of how many radiators or floor circuits are open or closed.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8206f096c2ea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2686265bde7d",
+     "text": "It also acts as a ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b9a1ae84ec1b",
+     "text": "low-loss header",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a31e4ef16c06",
+     "text": ", separating the production circuit (the heat pump) from the distribution circuit (your house). This avoids pressure conflicts and lets each circulator be optimised separately for minimal electricity use.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7c36dcdf0b7b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7aa30bbcf862",
+     "text": "4. An asset for domestic hot water",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "155d38a6bd78",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fdcb345d8adf",
+     "text": "In many configurations, the buffer tank can be coupled with domestic hot water production. By storing hot technical water, it can preheat your shower water or keep it at temperature very economically, using the free energy drawn from your 150-metre borehole.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c016f58eb247",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3f97ddd17003",
+     "text": "5. WellDoneDrill expertise in the plant room",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c8e26f8e4910",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4695d829dcc",
+     "text": "A quality installation does not stop at the borehole head. At WellDoneDrill, we size the buffer tank precisely according to the water volume of your circuit and the output of your heat pump. A tank that is too small does not protect the compressor enough; one that is too large causes unnecessary heat losses. The right balance is the key to an efficient system.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6fb2e99e3cb7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05354cfd23e4",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c5e78c6ce9e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb32f8ab8288",
+     "text": "Often left out to save money up front, the buffer tank is actually the most cost-effective investment for your geothermal installation. It turns a complex machine into a robust, smooth and durable system. It is the guarantee of complete peace of mind for the next twenty years.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "The role of the buffer tank in a heat pump | WellDoneDrill",
+ "seoDescription": "Why a buffer tank is essential for a geothermal heat pump: fewer short cycles, steady comfort, guaranteed flow rate and a longer service life.",
+ "_mainImageFile": "uploads/2026/03/20260227-Verification-temperature-in_out-PAC-geo-2-1.jpg",
+ "_mainImageAlt": "Buffer tank of a geothermal heat pump in the plant room"
+}

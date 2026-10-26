@@ -1,0 +1,168 @@
+{
+ "_id": "blog-legacy-be-nl-4855",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Bodemwarmte omzetten in energie: geothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "bodemwarmte-omzetten-in-energie-geothermie"
+ },
+ "publishedAt": "2025-12-04T13:58:11Z",
+ "excerpt": "Nu het koolstofvrij maken van gebouwen een prioriteit wordt, biedt een geothermische boring een duurzame oplossing om de natuurlijke warmte van de bodem te benutten.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "image",
+   "_key": "caa82c4b1520",
+   "_file": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+   "alt": "geothermische boring voor particulieren in België"
+  },
+  {
+   "_type": "block",
+   "_key": "0a8520d05497",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2084d65ae26b",
+     "text": "Nu het koolstofvrij maken van gebouwen een prioriteit wordt, biedt een geothermische boring een duurzame oplossing om de natuurlijke warmte van de bodem te benutten. Deze nauwkeurige en beheerste techniek voedt verwarmings- en koelsystemen op een efficiënte manier en vermindert de afhankelijkheid van fossiele brandstoffen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "32840eb7e8d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18c0d857fc54",
+     "text": "Bij een geothermische boring wordt in de bodem geboord om de natuurlijke warmte van de aarde op te vangen. Zo kunnen geothermische sondes worden geïnstalleerd, die die warmte vervolgens recupereren om verwarmings- of koelsystemen te voeden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de5fcf203941",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d46549cdf249",
+     "text": "De boring vordert met een reeks metalen boorstangen van ongeveer drie meter lang, die naargelang de vordering aan elkaar worden gekoppeld. Dankzij de klauwplaat kunnen onze boormeesters de stangen snel vast- en losschroeven tijdens het boren en het optrekken, wat een optimale productiviteit op de werf garandeert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6d11b8ec523",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff1c79aa93cf",
+     "text": "Zodra de gewenste diepte bereikt is, wordt het boorgat volledig gespoeld om sedimenten en deeltjes te verwijderen die de kwaliteit van de boring kunnen verstoren. Vervolgens wordt de boorstreng uitgetrokken zodat de geothermische sonde kan zakken. Die wordt met een gewicht van ongeveer 42 kg naar de bodem van het boorgat getrokken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2f6f8ad03741",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "027f4f932faf",
+     "text": "De boorkop is uitgerust met hardmetalen inzetstukken die de bodem afschrapen. Er wordt water in de stangen geïnjecteerd dat via openingen weer naar buiten komt. Die waterstroom koelt de boorkop en voert het boorgruis als slib naar boven. Dat slib gaat naar een bezinkcontainer waar het water van de vaste deeltjes wordt gescheiden, zodat het opnieuw in het circuit kan worden gebruikt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "003c5d06dd4e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4003fccba77",
+     "text": "Het spoelwater speelt dus een dubbele, essentiële rol: het regelt de temperatuur van de boorkop, die in rotsachtige grond zeer heet kan worden, en het brengt de sedimenten naar het oppervlak. In de regio's Brussel en Waals-Brabant bijvoorbeeld leveren de kleibodems bijzonder fijn slib op, typisch voor die formaties.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "493db2fe2891",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84123853b190",
+     "text": "Wanneer de casing gedeeltelijk verwijderd is, injecteren we geothermisch cement. Dat heeft een uitstekende warmtegeleidingscoëfficiënt, wat de warmte-uitwisseling tussen bodem en sonde bevordert. Het zorgt ook voor de veiligheid van het boorgat door de verschillende geologische lagen en grondwaterlagen van elkaar te isoleren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6234234e0648",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d32f2551105f",
+     "text": "Een geothermische boring is een precisiewerk dat geavanceerde engineering, een grondige kennis van de ondergrond en een strikt beheer van de vloeistoffen combineert. Het is een sleutelstap bij de uitrol van duurzame verwarmings- en koeloplossingen op basis van hernieuwbare bodemenergie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d86012e28b4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e8bead9bdc4",
+     "text": "Bekijk de volledige video van de boring hier: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6f6f72f13cff",
+     "text": "https://www.youtube.com/watch?v=9lDoSbhm3uo",
+     "marks": [
+      "1f6dd8916a18"
+     ]
+    }
+   ],
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "1f6dd8916a18",
+     "href": "https://www.youtube.com/watch?v=9lDoSbhm3uo"
+    }
+   ]
+  }
+ ],
+ "seoTitle": "Bodemwarmte omzetten in energie: geothermie | WellDoneDrill",
+ "seoDescription": "Hoe verloopt een geothermische boring? Boorstangen, spoeling, sonde en geothermisch cement: zo zetten we de warmte van de bodem om in energie.",
+ "_mainImageFile": "uploads/2025/12/chaleur-sol-geothermie.webp",
+ "_mainImageAlt": "Bodemwarmte omzetten in energie met geothermie"
+}

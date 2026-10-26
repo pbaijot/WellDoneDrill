@@ -1,0 +1,292 @@
+{
+ "_id": "blog-legacy-be-en-4374",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Vertical borehole geothermal energy: how does it work?",
+ "slug": {
+  "_type": "slug",
+  "current": "vertical-borehole-geothermal-energy-how-does-it-work"
+ },
+ "publishedAt": "2025-12-02T10:46:55Z",
+ "excerpt": "Vertical borehole geothermal energy relies on a fluid circulating in a closed loop through several geothermal probes placed deep in the ground.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 2,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "b90f6fb44190",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2772b03f2bab",
+     "text": "Vertical borehole geothermal energy relies on a heat-transfer fluid (food grade) circulating in a closed loop through several geothermal probes placed in the ground.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3d265eb6bfb1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee0a3747ce29",
+     "text": "Each probe is made of two U-shaped loops in high-density polyethylene (HDPE). These loops are installed in a vertical borehole. Once the pipes are in place, the space between the borehole wall and the probes is filled with a geothermal grout, a mix of bentonite and thermally conductive cement, to ensure excellent thermal contact with the ground. The fluid circulating in the probes extracts heat from the ground or returns it, and carries it to the heat pump. Above ground, one or more heat pumps transfer the energy:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9e435cb2e3a4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "284a940c8157",
+     "text": "either from the ground to the building (heating),",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dc89b4741063",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fab639f90e4d",
+     "text": "or from the building to the ground (cooling).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec29d5e7f402",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98ac7405523c",
+     "text": "In some cases, the installation can even provide natural cooling without running the heat pumps: this is called geocooling or free cooling, which is especially valuable for buildings that want very low-consumption cooling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "edff787b0b28",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ef4545a51d6",
+     "text": "The benefits of a vertical borehole geothermal system",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da798ecaff98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "750b3db0c983",
+     "text": "Very small footprint:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6f09a637ecc4",
+     "text": " Ideal for small plots or projects where every square metre counts.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b1f2ce7c467",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d439ee6425d8",
+     "text": "No constraints on land use:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b7fb2dfb5ab3",
+     "text": " Unlike a horizontal collector, the land remains fully usable after the works (garden, car park, terrace, buildings…).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eb4d135447ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08f10aed950d",
+     "text": "High and stable efficiency:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c8f98219b7b3",
+     "text": " Ground temperature stays almost constant all year round, which makes the system more efficient than air-source solutions that depend on outdoor air temperature.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e53de0fa7f64",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ee85e0a2862",
+     "text": "Low heat losses:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "50a477bb8488",
+     "text": " Low-temperature operation limits losses in the hydraulic network.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33427d3873e9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb3513c87a1e",
+     "text": "Clean, low-carbon solution:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7840543c37e1",
+     "text": " The installation uses a local, clean and renewable energy source.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1bb920214853",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad4a0ab0942f",
+     "text": "Free cooling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fdd914962d34",
+     "text": " Thanks to free cooling, the building can be cooled using the natural coolness of the ground, with minimal energy use.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "af439c35d335",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c3b66b81346",
+     "text": "Little maintenance:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0351e90b3346",
+     "text": " A simple system, with no moving parts underground and a very long service life.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "35325d245d13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "62d035fd0de8",
+     "text": "With today's drilling techniques, it is feasible in the vast majority of situations, including narrow urban plots and projects with little available space.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Vertical borehole geothermal: how does it work? | WellDoneDrill",
+ "seoDescription": "How do vertical geothermal boreholes work? The probes, the borehole, the heat pump and the benefits of a closed-loop ground source system, explained.",
+ "_mainImageFile": "uploads/2025/05/Jodoigne-header.webp",
+ "_mainImageAlt": "Geothermal drilling in Jodoigne"
+}

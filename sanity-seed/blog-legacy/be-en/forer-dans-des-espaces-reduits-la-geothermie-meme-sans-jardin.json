@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-be-en-4397",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Drilling in tight spaces: geothermal even without a garden",
+ "slug": {
+  "_type": "slug",
+  "current": "drilling-in-tight-spaces-geothermal-without-a-garden"
+ },
+ "publishedAt": "2025-12-02T10:58:10Z",
+ "excerpt": "In Belgian cities, many buildings only have a small courtyard, a tiny garden or a narrow access. For a long time, vertical borehole geothermal was thought to be reserved for large plots. Compact rigs and modern techniques have changed that completely.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c0b53093d50e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "770a280d012a",
+     "text": "In Belgian cities, many buildings only have a small courtyard, a tiny garden or a narrow access. For a long time, people thought vertical borehole geothermal was reserved for large plots. Compact rigs and modern techniques have changed that radically.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "176a9b8b1466",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "579cfb4800b7",
+     "text": "The question \"Can I have geothermal at my place?\" comes up often as soon as the land is small. The answer is \"yes\" much more often than people think, provided you work with suitable rigs and site organisation designed for urban settings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b0734a183df6",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "16c1371b88a8",
+     "text": "Understanding access constraints",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6cc7c6b34f67",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da6a8a6e2fbf",
+     "text": "In town, the drilling point is rarely reached through a big gate onto open ground. More often you find:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "930682e48822",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6cf5a6718595",
+     "text": "narrow side passages;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3ca9031c03f0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cb3146016bc",
+     "text": "garage doors with limited headroom;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "11cfad5f968c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "815d561e9a1d",
+     "text": "long, narrow corridors;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a31a8808e963",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31b004b71ae0",
+     "text": "enclosed inner courtyards;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d332a8532353",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b765291e29db",
+     "text": "gardens at the back of the plot, with no direct access from the street.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "55032a930650",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a878c6cbab6f",
+     "text": "In these situations, the size of the rig becomes a key criterion. A machine that is too big simply cannot reach the drilling area.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c3d325af1805",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f4cd7da3252",
+     "text": "Compact rigs that get through where others can't",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1d005565ba9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2aaefdceb546",
+     "text": "WellDoneDrill specialises in compact rigs, specially suited to urban sites and confined spaces. These rigs:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ab273dcea64b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c6499aea8dc",
+     "text": "fit through small openings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e757386de845",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "56c0d577944e",
+     "text": "can be set up in inner courtyards or small car parks;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3281574accf2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8958b66d4d24",
+     "text": "can manoeuvre in cluttered environments.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a3157d639b48",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "39cede56e34c",
+     "text": "Once in place, they offer drilling capacity comparable to larger machines, especially thanks to PDC drilling, which reaches great depths very efficiently.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d054ce9801b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67f4f5ce7649",
+     "text": "One probe a day on average",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e012444c9781",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d7eb10641f5",
+     "text": "In practice, on most sites WellDoneDrill drills an average of 100 to 150 m a day, which usually means one complete vertical probe per working day. For a field of several probes, the works last a few days, depending on depth and ground conditions.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e2e80b8c0b58",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bfb7e52a08cf",
+     "text": "A probe is not always drilled in a single day: some ground conditions, working-hour restrictions or site requirements may call for a phased approach. What matters for the client is that the price stays under control: WellDoneDrill charges fixed prices per borehole, regardless of how many days it takes to reach the planned depth.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "070ae515b10f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff4142fb33d3",
+     "text": "For the neighbours, that means a short, time-limited site with a team used to working in sensitive surroundings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "729010fdd658",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "36f8d81f3c94",
+     "text": "Drilling from inside: a solution for existing buildings",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d4b01904de7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4ee4a2efdb0",
+     "text": "On some projects, especially renovations or urban densification, there is simply no outdoor space available. The solution is then to drill from inside the building:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ae7b2b030f19",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8708bd94069a",
+     "text": "in an underground car park;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a47f0016aeca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ab8fb84c984",
+     "text": "in a plant room;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "913f8e2ff659",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4c2dfa1aa02",
+     "text": "in a circulation area that has been temporarily cleared.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fa2cfbf1d66c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a522f59dee5b",
+     "text": "The rig is brought into the building and the probes are drilled through the floor slabs, the raft or between the foundation piles, depending on the structure. This requires careful preparation, but it makes geothermal possible in buildings that at first sight seemed to have no usable land.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "903f9385cf0b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "323794474917",
+     "text": "Organisation, safety and cleanliness",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6f47088af15e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7c7137caa13",
+     "text": "Working in tight spaces demands strict discipline:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0d39cf4883bf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6759cecdbbcc",
+     "text": "protecting floors and walls;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d4ca2b4eb9e8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68e6b9860bdb",
+     "text": "controlling the routes of cuttings and mud;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "31f9c5ddf209",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75b215a999f1",
+     "text": "managing access for other trades;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0fd64e53ed1e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ca7089d7481",
+     "text": "securing work areas.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "62ee8a3738bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0ea0853c57b0",
+     "text": "WellDoneDrill has developed specific procedures for this type of site to limit the impact on the building and its occupants. The goal is for drilling to be a controlled, short episode in the life of the project, not a source of complications.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ab858fc82887",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a161c3935548",
+     "text": "Conclusion: geothermal, even without a big garden",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3b20d61fb355",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c93ab70982df",
+     "text": "The combination of compact rigs, suitable drilling techniques and organisation designed for the city now makes it possible to install geothermal probes in places that would have been ruled out a few years ago.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0072c9de75fb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "661edf7472a2",
+     "text": "Whether you have a small courtyard, a narrow access or only an underground car park, it is worth looking into feasibility. In many cases, WellDoneDrill can offer a solution that makes geothermal possible, with a short, well-managed site that fits urban constraints.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal without a garden: drilling in tight spaces | WellDoneDrill",
+ "seoDescription": "Geothermal on a small plot or with no garden? Compact rigs, one probe a day, fixed prices per borehole and drilling from a car park or plant room.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermal in a small space"
+}

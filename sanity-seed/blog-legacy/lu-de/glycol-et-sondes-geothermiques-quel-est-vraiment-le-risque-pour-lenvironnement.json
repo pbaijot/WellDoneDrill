@@ -1,0 +1,590 @@
+{
+ "_id": "blog-legacy-lu-de-4403",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Glykol und Erdwärmesonden: Wie groß ist das Risiko für die Umwelt wirklich?",
+ "slug": {
+  "_type": "slug",
+  "current": "glykol-und-erdwaermesonden-risiko-fuer-die-umwelt"
+ },
+ "publishedAt": "2025-12-02T11:00:19Z",
+ "excerpt": "In Erdwärmesonden zirkuliert oft ein Gemisch aus Wasser und Glykol. Bei manchen weckt das Wort sofort die Sorge vor Verschmutzung bei einem Leck. Was ist tatsächlich dran?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "c1f9b551124b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd0a126bf79c",
+     "text": "In Erdwärmesonden zirkuliert oft ein Gemisch aus Wasser und Glykol. Bei manchen weckt das Wort sofort die Sorge vor einer Verschmutzung bei einem Leck. Was ist tatsächlich dran?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0289fb22765b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d894209b0b93",
+     "text": "Wozu dient Glykol in einer Erdwärmeanlage?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "200029b4c651",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c35e631d1a87",
+     "text": "Glykol ist ein Frostschutzmittel. In einem bestimmten Verhältnis mit Wasser gemischt, sorgt es dafür, dass:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bb751a17825e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1693bfd0b53a",
+     "text": "der Gefrierpunkt der Flüssigkeit in den Sonden sinkt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bd809c32a021",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87d21c1af4bb",
+     "text": "sich in Sonde und Geräten kein Eis bildet, wenn die Temperatur unter 0 °C fällt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "513f2d911276",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff11b9c78fe4",
+     "text": "die Anlage auch bei Kälteperioden sicher und ununterbrochen arbeitet.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c48767be11eb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8415b5acf2ac",
+     "text": "In einer Erdwärmeanlage bleibt die Flüssigkeit ständig in einem geschlossenen Kreislauf: Sie zirkuliert zwischen den Sonden und dem Technikraum, ohne direkten Kontakt mit dem Boden oder dem Grundwasser.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d7684d6bb07a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbe36d66e55c",
+     "text": "Welche Art Glykol wird verwendet?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d16efb851459",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f77095e670f",
+     "text": "Moderne Anlagen verwenden für thermische Anwendungen geeignetes Glykol, in der Regel technisches Glykol, das speziell für Heiz- und Kühlkreisläufe formuliert ist. Die ausgewählten Produkte sind:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bdf5cfa3c63c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "72afa7dc7b03",
+     "text": "so entwickelt, dass ihre Umweltwirkung begrenzt ist;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b6e4cd2f6c2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06059d9807ba",
+     "text": "langzeitstabil;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0bc283a894f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "727d1ed39a5a",
+     "text": "mit den Werkstoffen der Sonden und Geräte verträglich.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f835f59c3250",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bd5fdc8df0b",
+     "text": "WellDoneDrill arbeitet mit anerkannten Produkten, ausgewählt nach den Vorgaben der Wärmepumpenhersteller und den gesetzlichen Anforderungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b7a457d301bd",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f0dd1a3c3bb",
+     "text": "Wo zirkuliert das Glykol: im Boden oder in einem geschlossenen Kreislauf?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "304e48c49e29",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8a0a604e0ab7",
+     "text": "Wichtig ist: Das Glykol zirkuliert nicht „im Boden“. Es zirkuliert in den Sonden, die aus PE-HD-Rohren bestehen, eingebettet in eine geothermische Verfüllung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7999cb1229d9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e04a7c6bd5cc",
+     "text": "Der Kreislauf sieht so aus:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f437d4876db6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b616e38ad326",
+     "text": "die Flüssigkeit verlässt den Verteiler im Technikraum;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c9e09034145",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb5457dfd9cd",
+     "text": "sie fließt in die Erdwärmesonde hinab;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "959164026af1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd024c8a20d6",
+     "text": "sie steigt über den zweiten Strang der Sonde wieder auf;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "59023681bad8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4bbaf89572f3",
+     "text": "sie kehrt zum Verteiler und dann zur Wärmepumpe zurück.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cefaa992dbad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "10dd0136d42b",
+     "text": "Im Normalbetrieb gibt es also keinerlei direkten Kontakt zwischen dem Glykol und dem Boden oder dem Grundwasser.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9b293ec0f2a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ecff0c2eb7ee",
+     "text": "Was passiert bei einem Leck?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c7e90fff84c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "faf3175ade27",
+     "text": "Wie bei jedem hydraulischen Kreislauf kann das Risiko eines Lecks nie als null betrachtet werden. Mehrere Faktoren begrenzen die mögliche Auswirkung jedoch stark:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4cf74ec6dbd2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfd80ec63fa2",
+     "text": "die PE-HD-Sonden bestehen aus einem Stück, ohne erdverlegte Verbindungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "61d809028aef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc5dda0a66fb",
+     "text": "Verteiler und Anschlüsse sind in zugänglichen Bereichen zusammengefasst (Schächte, Technikräume);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "33cf6d4d6175",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "275f4633199c",
+     "text": "vor der Inbetriebnahme und nach den Arbeiten werden systematisch Druckprüfungen durchgeführt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6fa81187bc54",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b90e47b4670",
+     "text": "ein Druckabfall im Kreislauf ist im Betrieb erkennbar.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a72e72e46551",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f12a5b44a4c4",
+     "text": "Tritt dennoch ein Leck auf, dann meist in einem zugänglichen Bereich (Technikraum, Schacht), sodass schnell repariert und der Kreislauf wieder befüllt werden kann.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "57f177dae3f1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a6bdde6021f1",
+     "text": "Wie WellDoneDrill dieses Risiko in der Praxis begrenzt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "847a9f5669cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78852e3fefb1",
+     "text": "WellDoneDrill wendet mehrere Vorsorgeprinzipien an:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "19712a7638e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3ac938f6e39",
+     "text": "Verwendung einteiliger PE-HD-Sonden mit 50 Jahren Garantie;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d1821426ede3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d56f7dcfa44d",
+     "text": "Schweißungen und Verbindungen nur in zugänglichen Bereichen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ed39c5383b5a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55fdef499c12",
+     "text": "systematische Druckprüfungen von Sonden und Verteilern vor dem Verfüllen der Gräben;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0019351a00d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f362d4db863",
+     "text": "Dokumentation der Kreisläufe, um spätere Eingriffe zu erleichtern.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "005163e59666",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1184942e3e90",
+     "text": "Diese bewährten Praktiken verringern die Wahrscheinlichkeit eines Lecks erheblich und erleichtern seine frühzeitige Erkennung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "84ea44470d8f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e37b71d3ea8e",
+     "text": "Fazit: Muss man Glykol in der Geothermie fürchten?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b5b9f19491c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27d847ac5da6",
+     "text": "In einer richtig geplanten und ausgeführten Erdwärmeanlage zirkuliert das Glykol in einem geschlossenen Kreislauf, vergleichbar mit einem klassischen Heizkreis. Es ist keine Flüssigkeit, die in den Boden oder das Grundwasser eingebracht wird, sondern eine Wärmeträgerflüssigkeit, die in den Sonden bleibt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fba491df9886",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4205d82143c0",
+     "text": "Das Risiko einer unbeabsichtigten Verschmutzung ist sehr gering und wird durch Materialqualität, Druckprüfungen und die Planung der Kreisläufe beherrscht. Für einen Bauherrn kommt es vor allem darauf an, dass die Anlage von Fachleuten ausgeführt wird, die diese bewährten Praktiken einhalten, und genau das steht im Mittelpunkt der Arbeitsweise von WellDoneDrill.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Glykol in Erdwärmesonden: Welches Risiko? | WellDoneDrill",
+ "seoDescription": "Warum Erdwärmesonden Glykol enthalten, wo es zirkuliert, was bei einem Leck passiert und wie WellDoneDrill das Risiko für Boden und Grundwasser begrenzt.",
+ "_mainImageFile": "uploads/2025/12/wdd-geothermie-hero.webp",
+ "_mainImageAlt": "Erdwärmesonde in Belgien"
+}

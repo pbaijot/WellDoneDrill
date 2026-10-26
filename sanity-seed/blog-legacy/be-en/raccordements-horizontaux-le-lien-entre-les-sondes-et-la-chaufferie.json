@@ -1,0 +1,190 @@
+{
+ "_id": "blog-legacy-be-en-5428",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Horizontal connections: the link between the probes and the plant room",
+ "slug": {
+  "_type": "slug",
+  "current": "horizontal-connections-probes-and-plant-room"
+ },
+ "publishedAt": "2026-03-20T11:30:17Z",
+ "excerpt": "Between the probe head and the plant room, horizontal connections are often the least visible part of a geothermal project, yet they play a decisive role in the overall performance of the system.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "915db38424c6",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64d73056851e",
+     "text": "A discreet but decisive network",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a2b0e3927751",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04581bb27250",
+     "text": "Between the probe head and the plant room, horizontal connections are often the least visible part of a geothermal project, yet they play a decisive role in the overall performance of the system. This buried network ensures proper fluid circulation between the borehole field and the heat pump, the hydraulic balance of the field and the long-term reliability of the installation. A poorly designed connection can lead to high pressure losses, imbalances between probes, venting problems and even long-term leak risks, whereas rigorous design makes the system practically invisible to the user.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6df47a08fc62",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "96de62080f58",
+     "text": "Thinking of the circuit as one continuous whole",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3fa2a09b04fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e31d63595092",
+     "text": "The first key is to see the circuit as one continuous whole, from the bottom of the borehole to the manifolds in the plant room. Probe layout, trench routes, the position of the manifold chamber and the entry into the plant room should all be drawn together, not treated as separate steps. From the design stage, it pays to plan wall penetrations, openings in foundations or technical walls, and the ducts needed to bring the pipes to the right place without later rework. This avoids unnecessary detours, awkward crossings and last-minute improvisation on site, which can hurt both performance and appearance.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d61e9c6821a0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ede39a9c43b",
+     "text": "Routing the trenches intelligently",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1fc79f55c9a1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d9eb5b354ca",
+     "text": "The route of the horizontal trenches deserves particular attention, as it affects both hydraulic performance and the future use of the garden. The aim is to connect the probes to the manifold chamber with as little unnecessary length, as few changes of direction and as few risk areas as possible. In practice, that means avoiding trees with extensive roots, unstable banks and areas that might later host a pool, an extension, a carport or a rainwater tank. Once the route is approved, a serious driller adds value by documenting it precisely with plans and georeferenced surveying. The client never loses track of the pipes and can plan future works without fear of hitting a pipe when digging.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "207e75eaf253",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "22ae438c5fc7",
+     "text": "Optimising pressure losses and field balance",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "68550bf352fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3967e6088fe8",
+     "text": "To guarantee good fluid circulation, pipe diameters, manifold configuration and section lengths are essential. Pipes that are too narrow or too long, or poorly organised around the manifold chamber, force the heat pump's circulator to work harder, which increases electricity use and can lower overall efficiency. Conversely, a well-designed network, with sections suited to the flow rates and a coherent loop layout, shares the flow evenly between probes and keeps pressure losses low. The field then runs in balance naturally, without complex adjustments or regular changes to the controls, which makes life easier for the operator and the end client.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "871d77730144",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c453070b6f64",
+     "text": "Taking care of joints, chambers and protection",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c51a9035a179",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa625587a2b4",
+     "text": "How joints, chambers and the insulation of sensitive sections are built directly determines the longevity of the installation. The manifold chamber should be placed somewhere accessible, away from heavy vehicles and areas likely to settle, while remaining discreet in the garden. Inside, the quality of the joints, whether butt-fused or electrofused, is paramount for long-term watertightness. In some areas, such as under a building, a garage or a driveway, it is wise to add reinforced thermal and mechanical insulation to protect the pipes and limit heat losses. The idea is to treat this buried network as a structural part of the house, designed to last as long as the borehole field itself.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "748ae39f61dc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6703010f0416",
+     "text": "Coordinating the works to avoid nasty surprises",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "578cae702e72",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a23b2b8eb0e",
+     "text": "Finally, successful horizontal connections depend on good site coordination. Ideally, this work should be done before the final outdoor finishes, such as driveways, terraces and landscaping. That limits demolition, costly rework and frustration for the client. By coordinating the driller, groundworker, heating engineer and, where relevant, landscaper, it is possible to reduce the number of interventions, share some trenches and limit the overall impact on the land. A partner like WellDoneDrill can act as conductor on the garden side, from defining the route to the final as-built file, so that the link between the subsurface and the plant room is as robust and durable as the vertical borehole itself.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Horizontal connections for geothermal probes | WellDoneDrill",
+ "seoDescription": "How to design the horizontal pipework between the borehole field and the heat pump: trench routes, pressure losses, manifold chamber, insulation and site coordination.",
+ "_mainImageFile": "uploads/2026/01/IMG_4156.jpg",
+ "_mainImageAlt": "Horizontal connections between geothermal probes and the plant room"
+}

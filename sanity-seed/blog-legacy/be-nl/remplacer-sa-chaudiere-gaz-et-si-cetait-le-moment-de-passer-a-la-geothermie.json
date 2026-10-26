@@ -1,0 +1,724 @@
+{
+ "_id": "blog-legacy-be-nl-4409",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Uw gasketel vervangen: is dit het moment om over te stappen op geothermie?",
+ "slug": {
+  "_type": "slug",
+  "current": "gasketel-vervangen-overstappen-op-geothermie"
+ },
+ "publishedAt": "2025-12-02T11:02:47Z",
+ "excerpt": "De vraag \"hoe vervang ik mijn gasketel?\" komt steeds vaker terug bij eigenaars en mede-eigendommen. Een ketel op het einde van zijn levensduur, zorgen over de gasprijs, EPB-eisen, de wil om koolstofvrij te worden… Redenen genoeg.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "09858ca47125",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4150ca1f7e0e",
+     "text": "De vraag \"hoe vervang ik mijn gasketel?\" komt steeds vaker terug bij eigenaars en mede-eigendommen. Een ketel op het einde van zijn levensduur, zorgen over de gasprijs, EPB-eisen, de wil om koolstofvrij te worden… Redenen genoeg. Van alle mogelijke oplossingen wordt de geothermische warmtepomp de comfortabelste en meest duurzame optie. Zeker in België, waar de ondergrond een uitstekend potentieel biedt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "930b98298384",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06ef04a8dc7f",
+     "text": "Waarom uw gasketel nu vervangen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f49df692a436",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba47c0ecfea0",
+     "text": "Een gasketel van 15 of 20 jaar oud nadert het einde van zijn levensduur. Het rendement daalt, de pannes nemen toe en onderdelen worden moeilijker te vinden. Tegelijk is de energiecontext veranderd: de gasprijs is volatieler geworden, de regelgeving wordt strenger en de klimaatdoelstellingen dwingen ons geleidelijk af te stappen van fossiele brandstoffen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e8fa5588adbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "05d02cbdcc72",
+     "text": "Een oude gasketel gewoon vervangen door een nieuwe gasketel betekent die afhankelijkheid met nog eens 15 of 20 jaar verlengen. Technisch kan dat. Strategisch is het steeds minder logisch voor een woning of een gebouw dat zijn waarde op lange termijn wil behouden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "233b021228cf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ae9f8a27c65",
+     "text": "Daar sluit de vraag \"gasketel vervangen\" vanzelf aan bij de warmtepomp, en in het bijzonder bij geothermie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d9cc7116dd78",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d13bf7b0ec5",
+     "text": "Een gasketel vervangen door een warmtepomp: waarom geothermie eruit springt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8bdb9c8c7f7d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "245225352e00",
+     "text": "Wie een gasketel wil vervangen, krijgt twee grote families warmtepompen voorgeschoteld: lucht-waterwarmtepompen en geothermische warmtepompen (bodem-water).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "911d9ec964b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "256db6dd1444",
+     "text": "Beide kunnen een radiatorennet of vloerverwarming voeden, maar hun gedrag verschilt sterk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2b1783252e3a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f3171608a34",
+     "text": "Lucht-waterwarmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "015b7375c9be",
+     "text": " haalt warmte uit de buitenlucht. Hoe kouder het is, hoe meer haar prestaties dalen, terwijl de warmtevraag stijgt. Ze heeft een zichtbare en hoorbare buitenunit nodig, op de gevel, het dak of in de tuin.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90eaa091f915",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a91c17c500c",
+     "text": "Geothermische warmtepomp:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ec7f155cb810",
+     "text": " haalt warmte uit de bodem via verticale sondes. De temperatuur van de ondergrond blijft het hele jaar stabiel, wat een zeer hoog rendement oplevert, ook bij vorst. Er is geen buitenunit: het hele systeem zit in het gebouw en in de grond.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4e83e39b8965",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1906c8bd6af",
+     "text": "Bij renovatie betekent een gasketel vervangen door geothermische verwarming dus de overstap:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6af9a8a68a3b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "20f9dff17056",
+     "text": "van verbranding naar een elektrisch systeem met een zeer hoog rendement;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f2d8a8be0bab",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa15f24c1c8f",
+     "text": "van een ingevoerde, volatiele energie naar een lokale, stabiele bron;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1b031dab2c89",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4525bdbce08",
+     "text": "van een vlam in een stookruimte naar warmte-uitwisseling met de bodem.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "922b19e3fb9a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ac489e41fb7",
+     "text": "Geothermie en radiatoren: ja, renovatie is mogelijk",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26460de68b82",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d5f83f5e3d6",
+     "text": "Veel bestaande gebouwen hebben radiatoren die gedimensioneerd zijn voor relatief hoge temperaturen. In de praktijk zijn die radiatoren echter vaak overgedimensioneerd ten opzichte van de huidige behoeften (betere isolatie, nieuw schrijnwerk, ander gebruik, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "36414fc77e29",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29f468961a01",
+     "text": "Door aan de regeling te werken (stooklijn, regeling per ruimte, inregeling) kan de aanvoertemperatuur vaak worden verlaagd met behoud van een goed comfort. De geothermische warmtepomp kan zo een bestaand radiatorennet voeden, op lagere maar voldoende temperaturen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a00da0c10fa6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "935253dcf8bc",
+     "text": "Soms zijn plaatselijke aanpassingen nodig (enkele radiatoren vervangen, ventiloconvectoren toevoegen in bepaalde zones), maar alles van nul af aan opnieuw doen is niet nodig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f540eb67465f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45fba23fc25b",
+     "text": "Hoe verloopt de overstap van gasketel naar geothermie concreet?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90531e219159",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14e169eeeef5",
+     "text": "Een typisch project verloopt in verschillende stappen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "93a31f3cd587",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2af787f383c",
+     "text": "audit van de bestaande installatie (vermogen, distributienet, beschikbare ruimte);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "63ebfb16c490",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e32baae27eb9",
+     "text": "analyse van de geothermische haalbaarheid (ruimte voor de sondes, bodemtype, toegang voor de boormachine);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3b6659325e1f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d40d5301a2c",
+     "text": "dimensionering van het sondeveld en de warmtepomp;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "241ee2617964",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51537431a8ed",
+     "text": "uitvoering van de boringen en plaatsing van de sondes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "043bc6723cca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53fe09838c07",
+     "text": "installatie van de warmtepomp, het buffervat en de hydraulische aanpassingen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "364cfb4954ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "83b1a89b4906",
+     "text": "ingebruikname, afstelling van de regeling en optimalisatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fb7071171bf0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f095d7d7c147",
+     "text": "In een collectief gebouw maakt deze aanpak doorgaans deel uit van een ruimer energierenovatieproject en kan ze gefaseerd worden om onderbrekingen te beperken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "854548f4f3ec",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88e24b5d800c",
+     "text": "Gasketel vervangen: wat is de impact op de factuur op lange termijn?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "512f16e27288",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99e859fb0eea",
+     "text": "De overstap van gas naar geothermie vraagt een hogere initiële investering, maar verandert het uitgavenprofiel grondig:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "58eb2c2ab628",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b14a9b99a794",
+     "text": "in plaats van gas koopt u elektriciteit, maar in veel kleinere hoeveelheden dankzij de hoge COP van de warmtepomp;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "77b8de24db8c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac88b0476f2e",
+     "text": "de energiefactuur is minder gevoelig voor schommelingen van de gasprijs;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "696122211e7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3757222533d2",
+     "text": "koolstofheffingen (ETS, enz.) maken fossiele brandstoffen geleidelijk duurder.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0fc7ec8df6b8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c6b45bb3d01",
+     "text": "Tel daarbij:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "292185f3b13c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3b8f4a2dee5",
+     "text": "de levensduur van de sondes (meer dan 50 jaar);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c2ba3a512322",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "490989c06868",
+     "text": "de mogelijkheid om de warmtepomp te koppelen aan zonnepanelen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "07b0b9d18029",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2129d1fcfa6",
+     "text": "de voordelige btw-tarieven in de woningbouw;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "59f26789f17b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be56e0e46993",
+     "text": "en u krijgt een terugverdientijd die het vervangen van een gasketel door geothermie zeer concurrerend maakt over 15 tot 20 jaar, zeker voor gebouwen die lang bewoond blijven.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0fc5d159eda2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "428726a9c184",
+     "text": "De rol van WellDoneDrill bij het vervangen van een gasketel",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0354819aad88",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f8c4724b8fda",
+     "text": "WellDoneDrill installeert geen gasketels: ons vak zijn boringen en sondes voor geothermie. Maar net bij het vervangen van een gasketel begint daar alles.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6ab8cbbfb1b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b2213b8452c",
+     "text": "WDD kan:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f707d9221084",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1abf0bfc44c2",
+     "text": "de geothermische haalbaarheid van de site analyseren wanneer een ketel het einde van zijn levensduur nadert;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7158e77d286b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4724fe0c6e6",
+     "text": "het sondeveld op maat van het gebouw dimensioneren en uitvoeren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5a4689b3fe3e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c479657add57",
+     "text": "samenwerken met de warmtepompinstallateur van de klant of partners voorstellen die met dit soort vervangingen vertrouwd zijn;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9263c928e8b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7a3f41aca656",
+     "text": "helpen het project zo op te zetten dat het de juiste btw-tarieven en beschikbare steunmaatregelen krijgt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4861ef14cdd3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6ea7b294384d",
+     "text": "Voor een particuliere eigenaar, een syndicus of een projectontwikkelaar wordt de vraag dan eenvoudig: waarom een gasketel vervangen door een andere gasketel, in plaats van dit sleutelmoment te gebruiken om definitief van het gas af te stappen en over te schakelen op een performante, stille en duurzame geothermische verwarming?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3f3b339be0ac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "893a5ca02efc",
+     "text": "Een gasketel vervangen is niet langer alleen een kwestie van een toestel. Het is de kans om te beslissen hoe u de komende twintig jaar wilt verwarmen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Gasketel vervangen door geothermie | WellDoneDrill",
+ "seoDescription": "Uw gasketel vervangen? Waarom een geothermische warmtepomp beter scoort dan een luchtwarmtepomp, ook met radiatoren, hoe de overstap verloopt en wat het oplevert.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Warmtepomp van WellDoneDrill"
+}

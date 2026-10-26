@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-be-nl-4393",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermische boortechnieken: lucht, spoeling, PDC… en wat WellDoneDrill onderscheidt",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermische-boortechnieken-lucht-spoeling-pdc"
+ },
+ "publishedAt": "2025-12-02T10:56:41Z",
+ "excerpt": "Achter elke performante geothermische installatie zit een goed beheerste boorwerf. In alle bodemtypes boren, van losse zanden tot het hardste gesteente, vraagt aangepaste technieken. WellDoneDrill steunt op drie grote methodes.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "144b3d1cbf5b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da22cb1720ec",
+     "text": "Achter elke performante geothermische installatie zit een goed beheerste boorwerf. In alle bodemtypes boren, van losse zanden tot het hardste gesteente, vraagt aangepaste technieken. WellDoneDrill steunt op drie grote methodes: boren met perslucht en een imloophamer, spoelboren en PDC-boren (Polycrystalline Diamond Compact), een techniek uit Duitsland die de rendementen en kosten sterk heeft verbeterd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "38104d148600",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e06deff3e4c5",
+     "text": "Boren met perslucht en imloophamer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0329355d2113",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12c43b873cdc",
+     "text": "Boren met perslucht en een imloophamer (Down-The-Hole Hammer) is een veelgebruikte techniek om harde of zeer compacte rotsformaties te doorboren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bf32a5495af0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb903ba4485f",
+     "text": "Het principe:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fb4d6c23d182",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "43f185eb1f65",
+     "text": "een pneumatische hamer bevindt zich onderaan in het boorgat;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28a8a330cb0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c13b05480f4e",
+     "text": "perslucht wordt in de boorstang geblazen en drijft de hamer aan;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7c93c48ba1e4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "714ce3b13239",
+     "text": "het gesteente wordt mechanisch verbrijzeld door slagwerking;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d3eafa6e82ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04a8f6ffe7c4",
+     "text": "het boorgruis wordt door de perslucht langs het werktuig naar boven gebracht.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "81d1881fa5cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "748d8895cbc5",
+     "text": "Deze methode is zeer efficiënt in hard gesteente, maar heeft enkele beperkingen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "19a3090f44b2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffc75a058d2d",
+     "text": "gevoelig voor grote waterinstroom;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d3fc3078a006",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2a4f4e569fa",
+     "text": "complexer beheer van het boorgruis in stedelijk gebied;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ed128993a31c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "48261ffe8bc3",
+     "text": "meer lawaai en trillingen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e109a1599329",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e3ba7281b74c",
+     "text": "Spoelboren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f8742abd68f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ae83439d1ab",
+     "text": "Bij spoelboren (mud drilling) gebruikt men een boorvloeistof, een mengsel van water en klei/bentoniet, om de wanden te stabiliseren, het boorgruis naar boven te brengen en het werktuig te koelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a814464cf75",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4d768c76a33",
+     "text": "Het principe:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "747a15c3f62b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "333253feb197",
+     "text": "de spoeling circuleert door de boorstangen tot aan het werktuig;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d86f7dfdbad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70a2483444d9",
+     "text": "ze stijgt via de ringruimte weer op en neemt het boorgruis mee;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cdc7ec5e96d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94e91620cc32",
+     "text": "ze vormt een filterkoek op de wanden van het boorgat, die ze stabiliseert.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c13a29cebc48",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88104c40d760",
+     "text": "Deze methode is bijzonder geschikt:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3806f48c6c6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbbe0333e6e8",
+     "text": "in losse formaties (zand, grind…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6f3af65f24b7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab38001018b7",
+     "text": "wanneer er water instroomt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b638e1d56231",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bdcffb20c4a",
+     "text": "in bodems waar de stabiliteit van de wanden een uitdaging is.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "21aa60d535a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb282ad990f2",
+     "text": "Spoelboren is een veelzijdige techniek, maar vraagt een goed beheer van spoeling en boorgruis, zeker op krappe werven en in de stad.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "62d56c7cc30c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6fb093bd71a9",
+     "text": "PDC-boren: de techniek die alles verandert",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7fc17e8e4105",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "afc39dede69c",
+     "text": "Bij PDC-boren (Polycrystalline Diamond Compact) wordt een boorkop gebruikt met uiterst resistente inzetstukken in synthetische diamant. In plaats van op het gesteente te slaan, \"schraapt\" het werktuig het continu weg, met een snelle rotatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b802d100e768",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "df55db3a9607",
+     "text": "De voordelen van PDC-boren:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d13fbc762348",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d12b478e9e87",
+     "text": "een zeer goed rendement in een breed gamma aan bodems, van sedimenten tot hard gesteente;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "dd0b8f0117bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cf95312c71e6",
+     "text": "een beheerste slijtage van het werktuig dankzij de diamantinzetstukken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ecce76dda26c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0ba6b404342",
+     "text": "een betere continuïteit van het boren, met minder werktuigwissels;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a97e79ed39bc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ba6fbb39282",
+     "text": "een hoge boorsnelheid en dus kortere werfduur.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "780123e72796",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68c637929d1b",
+     "text": "WellDoneDrill heeft deze techniek naar België gebracht en verder ontwikkeld, naar het voorbeeld van wat in Duitsland al goed ingeburgerd was. Vandaag staat PDC centraal in onze strategie voor geothermisch boren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee2fe5a1bdea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4f86934758ba",
+     "text": "Concreet maakt PDC-boren het voor WDD mogelijk om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4adbe4f3870f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84ca1ccb9909",
+     "text": "sneller te werken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "46b1ad80c0fd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "287bdbf7f9f7",
+     "text": "de kosten per boring te verlagen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a2e86f5633b5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "32a4e7a5bfcd",
+     "text": "de meest complexe bodems te beheersen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fda11f6fe0e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1a8a2ccd32c",
+     "text": "zonder werktuigwissel door opeenvolgende lagen te boren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bd19fdc28dab",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aaaa507a5553",
+     "text": "Met PDC gaan de diamantinzetstukken door alle bodemtypes (sedimentair, rotsachtig, heterogeen), terwijl het spoelwater de boorkop continu koelt en het boorgruis afvoert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f43e57793b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "da7e8088bdba",
+     "text": "In Brussel bijvoorbeeld kan WellDoneDrill door de sokkel rond -90 m boren en dieptes van 120 tot 150 m bereiken, waar veel concurrenten op 80 à 90 m stoppen. Dat betekent 50 à 70 % meer beschikbaar vermogen per boring.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a725f307891e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e02cf5660662",
+     "text": "Voor de bouwheer of de ontwerper betekent dat:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b5c188e33468",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5ac27ea71eb",
+     "text": "minder sondes voor hetzelfde totale vermogen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b7af0ccbb73",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4997509a901",
+     "text": "minder oppervlakte nodig voor het sondeveld;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c78d0bdf3cad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ccb879a66dc",
+     "text": "een betere benutting van de grond, zeker op krappe stedelijke percelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b855967931bf",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec25f53d01ca",
+     "text": "Het voordeel van WDD",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3f535f288b5c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c3430332186",
+     "text": "Dankzij PDC-boren is WellDoneDrill vandaag de meest efficiënte geothermische boorder van Wallonië: we boren in alle bodems, bereiken grotere dieptes dan onze concurrenten en optimaliseren de kosten voor onze klanten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f386f49c1c7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed37549a38d4",
+     "text": "De boortechniek aanpassen aan elk terrein",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a91b8f7f2eae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ba4fbd56b68",
+     "text": "Een sleutelelement in de strategie van WellDoneDrill is zich niet tot één methode te beperken. Naargelang het project, de terreinomstandigheden en de omgeving (stedelijk, landelijk, bereikbaarheid, grondwater, enz.) kiest WDD de meest efficiënte combinatie:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c1f9f917bbd3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87f1763eb694",
+     "text": "perslucht voor bepaalde harde gesteenten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "151cae6e8842",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c3d4354bfd8",
+     "text": "spoeling voor losse of instabiele bodems;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8434a5dc796b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4dd4c08f806b",
+     "text": "PDC om het beste uit gevarieerde bodems te halen en de productiviteit te optimaliseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4117d984b0bc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d805ed5850cb",
+     "text": "Die flexibiliteit garandeert een betrouwbaar resultaat, ook wanneer de ondergrond complex of slecht gekend is, en beperkt de onvoorziene omstandigheden tijdens de werf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3ffebaf046fb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7e5bfbc99474",
+     "text": "Conclusie: technisch meesterschap dat het verschil maakt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d1d57f732982",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4202ecda7fa5",
+     "text": "Het boren is de onzichtbare maar doorslaggevende stap van een geothermische installatie. Door voor geavanceerde technologieën te kiezen, PDC naar België te brengen en zijn methodes aan elk terrein aan te passen, heeft WellDoneDrill de prestaties en de concurrentiekracht van geothermie aanzienlijk verbeterd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4b1ae3813afc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51b42b9b52bf",
+     "text": "Deze technische aanpak, gecombineerd met terreinexpertise, levert snellere, propere en veiligere werven op, met lagere kosten voor de klanten. WellDoneDrill kan vandaag in alle bodemtypes boren, van de losste tot de meest rotsachtige, en een betrouwbaar, duurzaam en performant resultaat garanderen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermische boortechnieken: lucht, spoeling, PDC | WellDoneDrill",
+ "seoDescription": "Imloophamer met perslucht, spoelboren en PDC-boren: hoe elke techniek werkt, wanneer ze geschikt is en hoe WellDoneDrill dieper en goedkoper boort.",
+ "_mainImageFile": "uploads/2025/12/technique-forage.webp",
+ "_mainImageAlt": "Geothermische boortechnieken: lucht, spoeling en PDC"
+}

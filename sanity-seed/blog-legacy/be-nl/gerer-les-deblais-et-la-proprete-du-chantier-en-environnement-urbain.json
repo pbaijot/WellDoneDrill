@@ -1,0 +1,572 @@
+{
+ "_id": "blog-legacy-be-nl-4399",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Boorgruis en netheid van de werf beheren in een stedelijke omgeving",
+ "slug": {
+  "_type": "slug",
+  "current": "boorgruis-en-netheid-van-de-werf-in-de-stad"
+ },
+ "publishedAt": "2025-12-02T10:58:56Z",
+ "excerpt": "Boren in de stad is meer dan een gat in de grond maken. Het beheer van boorgruis, spoeling, water en de algemene netheid van de werf is een grote uitdaging voor de buren, de lokale overheden en de bouwheer.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "77353fe88f4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "91f6a53244f8",
+     "text": "Boren in de stad is meer dan een gat in de grond maken. Het beheer van boorgruis, spoeling, water en de algemene netheid van de werf is een grote uitdaging voor de buren, de lokale overheden en de bouwheer. WellDoneDrill plaatst die beperkingen centraal in zijn organisatie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b861b78c7c34",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3fab45c3fea5",
+     "text": "Welk boorgruis levert een geothermische boring op?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "edb7b3bb722a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "276b33787abc",
+     "text": "Een geothermische boring levert:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9d6096950c24",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "22366393ce39",
+     "text": "vaste materialen: zand, grind, rotsfragmenten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "354512ae5a0d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b77343d0eef",
+     "text": "boorspoeling wanneer met spoeling wordt geboord;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "044c52c7140a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6633f08e0b3a",
+     "text": "circulatiewater, eventueel beladen met deeltjes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b9c6c24208a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b353e289cc45",
+     "text": "Op het platteland is het beheer van dat boorgruis eenvoudiger: mogelijkheden om te spreiden, zones voor tijdelijke opslag, vlotte toegang voor vrachtwagens. In de stad telt elke vierkante meter en zijn de milieuregels strenger.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "16efc4ff0abb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24fad3f288b8",
+     "text": "De impact op de openbare ruimte beperken",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b4d727bb4c15",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2842e549ba46",
+     "text": "In een stedelijke omgeving is het essentieel om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a1e324e6a814",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d810f33a6ca",
+     "text": "de werfzone tot het strikte minimum te beperken;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d4373a600cb5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "292ee664d708",
+     "text": "voetpaden en rijbanen te beschermen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "81907f922462",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0010d7136b1",
+     "text": "te voorkomen dat slib of beladen water naar de straatkolken loopt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f50742c49d6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c67275b338b",
+     "text": "de afvoer van boorgruis regelmatig te organiseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8c814463a5f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1d5b18ab11c",
+     "text": "WellDoneDrill zet per situatie aangepaste voorzieningen in voor opvang, bezinking en bescherming: opvangbakken, zeilen, wegbescherming en duidelijk vastgelegde afvoerroutes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0c71908dcd2a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4464eafc163",
+     "text": "Afvoer en verwerking van boorgruis",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "552af435e5ed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37d53fc34b4c",
+     "text": "Het boorgruis wordt naargelang de werfomstandigheden en de volumes gaandeweg of op het einde van de dag afgevoerd. Er zijn verschillende oplossingen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4769758110ed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ee9671a8bd4",
+     "text": "afvoer naar erkende centra voor boorgruis en boorspoeling;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec9a2a6465d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e51d10d1be56",
+     "text": "afvoer naar ophogingsterreinen wanneer de regelgeving dat toelaat;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b192ca25ae9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f2294c9314b",
+     "text": "een specifieke aanpak bij vastgestelde vervuiling.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0cebbcb84c1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "baeae4a25a60",
+     "text": "De bouwheer moet kunnen rekenen op een boorder die dit aspect opneemt en het boorgruis niet laat ophopen op de werf. WellDoneDrill neemt het beheer van boorgruis systematisch op in de voorbereiding van de werf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e20a29cb4c6b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "135d67200e31",
+     "text": "Netheid en imago van het project",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c82972927c6b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "210d30c2c939",
+     "text": "Een propere werf is een sleutelfactor voor de aanvaarding door de buren en de overheden. Slib op de straat, plassen, stof of slecht beheerd afval kunnen daarentegen snel voor spanningen zorgen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3d9d85011ea0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "846c5041d606",
+     "text": "WellDoneDrill legt de nadruk op:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "50eac56d2be2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca7334fa1197",
+     "text": "het regelmatig reinigen van de doorgangszones;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "897d68d81882",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8fea6e429f7d",
+     "text": "het beperken van spatten en stof;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fceddd05249",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2794361fc8e1",
+     "text": "het herstellen van de werfzone na afloop van de werken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5289f8b197b5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2dfb6177b87",
+     "text": "Voor de bouwheer betekent dat minder klachten, minder wrijving met de buren en een beter imago van het hele project.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6bd5ffd0aaaf",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5ffd2bacaccf",
+     "text": "Coördinatie met de andere vakmensen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "915e551ae6ff",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc3d3e70e31a",
+     "text": "Het beheer van boorgruis en netheid is niet alleen een zaak van de boorder: het moet worden afgestemd met de andere partijen op de werf (grondwerkers, ruwbouwaannemers, technische installateurs…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa17c2861b64",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "09c7924c906d",
+     "text": "WellDoneDrill werkt nauw samen met die partijen om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5775c10d7149",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2cafdae7a11",
+     "text": "de zones voor tijdelijke opslag vast te leggen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c761b83c091",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d79f273407d8",
+     "text": "de circulatieroutes te bepalen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3539b5d8e689",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fb8cbcaf3cb0",
+     "text": "de werkzaamheden zo te plannen dat ze elkaar zo weinig mogelijk hinderen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "025e42705d98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "908a08c7cada",
+     "text": "In een stedelijke omgeving is die coördinatie onmisbaar om opstoppingen, vertragingen en meerkosten te vermijden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0f2084e18f9",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9cb158f8e137",
+     "text": "Conclusie: netheid als kwaliteitscriterium van stedelijk boren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e71c016bb60c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82e83ee3531c",
+     "text": "In een stedelijke context wordt een goede boring niet alleen beoordeeld op de bereikte diepte of de uitvoeringssnelheid. Hoe de werf georganiseerd is, hoe het boorgruis beheerd wordt en hoe de site na afloop wordt achtergelaten, is minstens even belangrijk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bc10100ef683",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee235afdb5a9",
+     "text": "Door het beheer van boorgruis en netheid centraal te stellen in zijn werkwijze, laat WellDoneDrill bouwheren genieten van de voordelen van geothermie in de stad, zonder de nadelen van een slecht beheerste werf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Boorgruis en een propere werf in de stad | WellDoneDrill",
+ "seoDescription": "Hoe beheert WellDoneDrill boorgruis, spoeling en water op een stedelijke werf? Bescherming van de openbare weg, afvoer naar erkende centra en een propere oplevering.",
+ "_mainImageFile": "uploads/2025/05/Suarlee-header.webp",
+ "_mainImageAlt": "Geothermische boring in Suarlée"
+}

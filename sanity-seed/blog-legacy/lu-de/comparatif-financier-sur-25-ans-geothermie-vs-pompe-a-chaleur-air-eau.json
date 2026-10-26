@@ -1,0 +1,618 @@
+{
+ "_id": "blog-legacy-lu-de-5430",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Kostenvergleich über 25 Jahre: Geothermie vs. Luft-Wasser-Wärmepumpe",
+ "slug": {
+  "_type": "slug",
+  "current": "kostenvergleich-25-jahre-geothermie-vs-luft-wasser-waermepumpe"
+ },
+ "publishedAt": "2026-03-20T12:27:56Z",
+ "excerpt": "Wer zwischen Geothermie (Sole-Wasser) und Luftwärmepumpe (Luft-Wasser) schwankt, vergleicht oft zuerst den Installationspreis. Für eine Immobilieninvestition zählen jedoch nur die Gesamtkosten über 25 Jahre.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "10d525491d01",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c91a25869f81",
+     "text": "Wer zwischen Geothermie (Sole-Wasser) und einer Luftwärmepumpe (Luft-Wasser) schwankt, vergleicht oft zuerst den sofortigen Installationspreis. Für eine Immobilieninvestition ist jedoch nur die Betrachtung der ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "d1257600e201",
+     "text": "Gesamtbetriebskosten (TCO)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "12c45743983d",
+     "text": " über 25 Jahre sinnvoll. Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "8c8cf3860904",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8b122dd14a2f",
+     "text": " haben wir die Zahlen analysiert. Darum gewinnt die Geothermie auf Dauer das wirtschaftliche Duell.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f395c14c2b44",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41e55c5a32d7",
+     "text": "1. Die Anfangsinvestition: Die Bohrung ist ein Vermögenswert, keine Ausgabe",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "21cbe8926bc5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbff5ce90a41",
+     "text": "Es stimmt, dass eine Erdwärmepumpe anfangs teurer ist, vor allem wegen der Bohrung bis 150 Meter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "288f9a643ad6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c34908923910",
+     "text": "Luft-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a3da500c4368",
+     "text": " Etwa 12.000 € bis 18.000 €.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "edb3691786aa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad855d521adc",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4319b51a781e",
+     "text": " Etwa 25.000 € bis 35.000 € (je nach Bohrung). Es gibt jedoch einen großen Unterschied: Das Außengerät einer Luft-Wasser-Wärmepumpe ist eine Maschine, die verschleißt, während die von WellDoneDrill erstellte Bohrung eine ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "399fad4f327f",
+     "text": "Immobilieninfrastruktur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "42895678184b",
+     "text": " ist, die über 50 Jahre hält.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "792655b1a270",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6462e7641197",
+     "text": "2. Der Stromverbrauch: das Gewicht der JAZ",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "494d859d6627",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0388e60c4682",
+     "text": "Die Effizienz einer Luft-Wasser-Wärmepumpe sinkt, wenn es draußen kalt ist (genau dann, wenn Sie sie am meisten brauchen). Die Geothermie nutzt dagegen eine Quelle mit konstant 12 °C.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c999752095d0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "905364bf765e",
+     "text": "Luft-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "49e6901c27f9",
+     "text": " Jahresarbeitszahl (SCOP) von etwa 3 bis 3,5.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1a91bfb02dea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b55fb763be2",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a13820fdefcd",
+     "text": " SCOP von etwa 4,5 bis 5,5. Über 25 Jahre verbraucht die Geothermie bei einem durchschnittlichen Haus etwa ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "091fec781f26",
+     "text": "30 bis 40 % weniger Strom",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c1ce213cbc2a",
+     "text": ". Bei absehbar steigenden Energiepreisen sind das über zwei Jahrzehnte Zehntausende Euro.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6397196a70b0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bbaa75c76a3c",
+     "text": "3. Lebensdauer und Ersatz der Geräte",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bb7600847482",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a38bdde6865",
+     "text": "Hier wird der Unterschied offensichtlich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f3adfc11f9c1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "abe6258a9124",
+     "text": "Luft-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "35a7f12e4e70",
+     "text": " Wind und Wetter, Frost und intensiven Abtauzyklen ausgesetzt, hat sie eine durchschnittliche Lebensdauer von ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2fb29aa2bc84",
+     "text": "12 bis 15 Jahren",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a7a90f8bfafc",
+     "text": ". Über 25 Jahre müssen Sie sie ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7abc9c271a17",
+     "text": "zweimal",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b87228ac19b1",
+     "text": " ersetzen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a8589b2b473b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8e5b956c1ad",
+     "text": "Geothermie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2f6bebd53acf",
+     "text": " Die Wärmepumpe steht im Haus, in einer trockenen und stabilen Umgebung. Sie arbeitet weniger hart, weil die Quelle konstant ist. Ihre Lebensdauer beträgt ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "175e039b8b14",
+     "text": "20 bis 25 Jahre",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "082357758cd9",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f33541d770a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "83d3896ca3d0",
+     "text": "Die Bohrung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "23b845814740",
+     "text": " Sie wird nie ersetzt. Wenn Sie in 25 Jahren das Gerät tauschen, schließen Sie es einfach an Ihre vorhandenen Sonden an.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c12ee86782e5",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5becd5452f6a",
+     "text": "4. Wartungs- und Reparaturkosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "febcd04dc44c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86b2eb129d99",
+     "text": "Ein Außengerät (Luft-Wasser) muss regelmäßig gereinigt werden, korrodiert und hat exponierte bewegliche Teile (Ventilator). Die Geothermie ist ein geschlossener, passiver Kreislauf unter der Erde mit einem einfachen Gerät im Keller. Reparaturkosten sind bei Sole-Wasser-Systemen statistisch deutlich niedriger.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7cb35769520b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e6d6fabb9b1",
+     "text": "5. Geocooling: die kostenlose Kühlung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b1c129964710",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a93c0877fde5",
+     "text": "Im Sommer muss eine Luft-Wasser-Wärmepumpe ihren Kreislauf umkehren, um zu kühlen, was viel Strom verbraucht. Die Geothermie nutzt ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "346fc16d685f",
+     "text": "passives Geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e48836f1e69d",
+     "text": " (nur eine kleine Umwälzpumpe mit 50 W läuft). Über 25 Sommer ist der Kühlkomfort mit Geothermie nahezu geschenkt, mit einer Luftwärmepumpe dagegen teuer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b6de30f0dca8",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6aed6563a1a1",
+     "text": "Bilanz über 25 Jahre (Schätzung für ein Haus mit 200 m²)",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c8730d09b4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c228e067800",
+     "text": "Erstinstallation:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f0863ca92c56",
+     "text": " Luft-Wasser 15.000 € · Geothermie (Gerät + Bohrung) 30.000 €",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c56c45a02265",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd2f35f5a78b",
+     "text": "Ersatz im 13. Jahr:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e0564e5fc047",
+     "text": " Luft-Wasser + 12.000 € · Geothermie 0 €",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8363c33b7274",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee82368b7316",
+     "text": "Stromverbrauch (geschätzt):",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a13926d3f08b",
+     "text": " Luft-Wasser 45.000 € · Geothermie 28.000 €",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5a2733008997",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37ed6966fc2c",
+     "text": "Wartung und Reparaturen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "71a27261c71f",
+     "text": " Luft-Wasser 4.000 € · Geothermie 1.500 €",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "00d143ec93cb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d69186b2b73",
+     "text": "SUMME ÜBER 25 JAHRE:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a121849ded33",
+     "text": " Luft-Wasser (2 Geräte) 76.000 € · Geothermie (1 Gerät + Bohrung) 59.500 €",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6829bc675dac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6010685c3b2b",
+     "text": "Auch wenn die Einstiegskosten höher sind, ermöglicht die Geothermie über 25 Jahre eine Nettoersparnis von mehr als ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "a9ec1db3be06",
+     "text": "15.000 €",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fa56217d960c",
+     "text": " und bietet zugleich mehr Komfort (Ruhe und Geocooling). Wer WellDoneDrill wählt, entscheidet sich für echte Wirtschaftlichkeit und den Werterhalt seiner Immobilie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie vs. Luft-Wasser-Wärmepumpe über 25 Jahre | WellDoneDrill",
+ "seoDescription": "Was kostet Geothermie über 25 Jahre wirklich im Vergleich zur Luft-Wasser-Wärmepumpe? Investition, Verbrauch, Lebensdauer, Wartung und Geocooling im Überblick.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Wärmepumpe von WellDoneDrill"
+}

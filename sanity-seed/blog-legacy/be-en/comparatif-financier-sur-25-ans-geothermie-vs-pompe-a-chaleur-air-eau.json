@@ -1,0 +1,618 @@
+{
+ "_id": "blog-legacy-be-en-5430",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "25-year cost comparison: geothermal vs air-to-water heat pump",
+ "slug": {
+  "_type": "slug",
+  "current": "25-year-cost-comparison-geothermal-vs-air-to-water-heat-pump"
+ },
+ "publishedAt": "2026-03-20T12:27:56Z",
+ "excerpt": "When owners hesitate between geothermal (ground-to-water) and an air-source heat pump (air-to-water), they often compare the installation price first. For a property investment, though, only the total cost of ownership over 25 years matters.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "d8a4afd6894c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7777a86c9e69",
+     "text": "When owners hesitate between geothermal (ground-to-water) and an air-source heat pump (air-to-water), their first reflex is often to compare the upfront installation price. For a property investment, however, the only relevant view is the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "e94bef2d397d",
+     "text": "total cost of ownership (TCO)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "306e8123617b",
+     "text": " over 25 years. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "99fddb3f82d0",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f5edf631eb31",
+     "text": ", we have analysed the figures. Here is why geothermal wins the economic match over time.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7733b2667586",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c532cac5342",
+     "text": "1. The initial investment: the borehole is an asset, not an expense",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0f848cd6b37b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e62b225b04d3",
+     "text": "It is true that a geothermal heat pump costs more at the start, mainly because of the 150-metre borehole.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6b2dbd016c13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e57119931ed",
+     "text": "Air-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c45e0c29863c",
+     "text": " About €12,000 to €18,000.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7d2629d8661e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe15dabec4d1",
+     "text": "Geothermal:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ed847bde4a21",
+     "text": " About €25,000 to €35,000 (depending on the borehole). But there is a major difference: the outdoor unit of an air-to-water heat pump is a machine that wears out, while the borehole drilled by WellDoneDrill is ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "cd6943c759c6",
+     "text": "property infrastructure",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9e2090f830b3",
+     "text": " that lasts more than 50 years.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e3cb9de3c75c",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5fb7ad7b07e",
+     "text": "2. Electricity consumption: the weight of the SCOP",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1355407c6cc9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "855ede5f9aad",
+     "text": "The efficiency of an air-to-water heat pump drops when it is cold outside (exactly when you need it most). Geothermal, by contrast, draws on a source at a constant 12 °C.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "91cedfe37a5d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c2b67c699a59",
+     "text": "Air-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0ad553028d73",
+     "text": " Seasonal COP (SCOP) of about 3 to 3.5.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "225ca7282f7f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2435a545b05c",
+     "text": "Geothermal:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "be5fce7fd939",
+     "text": " SCOP of about 4.5 to 5.5. Over 25 years, for an average house, geothermal uses around ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2f39f0a4dc35",
+     "text": "30 % to 40 % less electricity",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "83dd8a1ed814",
+     "text": ". With energy prices expected to rise, this saving adds up to tens of thousands of euros over two decades.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76f51a5c76ca",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2d3dc00130d",
+     "text": "3. Lifespan and equipment replacement",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e26706c3b73f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7c6a5307d665",
+     "text": "This is where the difference becomes striking.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b405f74581ce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "743ff18574f5",
+     "text": "Air-to-water heat pump:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8a0c321387c0",
+     "text": " Exposed to the weather, frost and intensive defrost cycles, it lasts ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "c56c96058d45",
+     "text": "12 to 15 years",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fd5a680e7cd0",
+     "text": " on average. Over 25 years, you will have to replace it ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9d977f0f2faf",
+     "text": "twice",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a0487ae26108",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3348c6d8aed0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cce982947b6",
+     "text": "Geothermal:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a2fede9be0ef",
+     "text": " The heat pump sits indoors, in a dry and stable environment. It works less hard because the source is constant. It lasts ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "5c3627cf23af",
+     "text": "20 to 25 years",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8073104a6a2e",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "878e791393c2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "935900eb7e7e",
+     "text": "The borehole:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0ea257d5d37a",
+     "text": " It is never replaced. In 25 years, if you change the machine, you simply reconnect to your existing probes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "189892897d8a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75a9afd3d286",
+     "text": "4. Maintenance and repair costs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f40a4d6cb0a3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "575860a9b5df",
+     "text": "An outdoor unit (air-to-water) needs regular fin cleaning, suffers from corrosion and has exposed moving parts (the fan). Geothermal is a sealed, passive circuit underground with a simple machine in the basement. Repair costs are statistically much lower for ground-source systems.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2ebbe4b319ee",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac5294cfe10f",
+     "text": "5. Geocooling: free air conditioning",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f5eb9f25f73e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8afc04128cd4",
+     "text": "In summer, an air-to-water heat pump has to reverse its cycle to cool, which uses a lot of electricity. Geothermal uses ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "84389b41bd8d",
+     "text": "passive geocooling",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "58b2dff18dc5",
+     "text": " (only a small 50 W circulator runs). Over 25 summers, cooling comfort is almost free with geothermal, while it is expensive with an air-source system.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "729aad75dd14",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0c2235a831d6",
+     "text": "25-year balance (estimate for a 200 m² house)",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d85b59f59607",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b20442131ecc",
+     "text": "Initial installation:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bacbf22c4637",
+     "text": " Air-to-water €15,000 · Geothermal (machine + borehole) €30,000",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ff11493640bf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "258f5530f62f",
+     "text": "Replacement in year 13:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e0771dd4eb61",
+     "text": " Air-to-water + €12,000 · Geothermal €0",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4fdaff0afb36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9333bc2e1009",
+     "text": "Electricity (estimate):",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bfbafce0afdb",
+     "text": " Air-to-water €45,000 · Geothermal €28,000",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cc8a77c025ee",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a65a853f20f5",
+     "text": "Maintenance and repairs:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a16145f2ce81",
+     "text": " Air-to-water €4,000 · Geothermal €1,500",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b5ef6c0f7761",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c565156e965a",
+     "text": "TOTAL OVER 25 YEARS:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8f5c6568c2c2",
+     "text": " Air-to-water (2 machines) €76,000 · Geothermal (1 machine + borehole) €59,500",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5aa72e93cd1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3a47992e2b38",
+     "text": "Although the entry ticket is higher, geothermal delivers a net saving of more than ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "05086ca59d56",
+     "text": "€15,000",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "78e80bdc7605",
+     "text": " over 25 years, while offering greater comfort (silence and geocooling). Choosing WellDoneDrill means choosing real profitability and added value for your property.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal vs air-to-water heat pump over 25 years | WellDoneDrill",
+ "seoDescription": "What does geothermal really cost over 25 years compared with an air-to-water heat pump? Investment, consumption, lifespan, maintenance and geocooling side by side.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "WellDoneDrill heat pump"
+}

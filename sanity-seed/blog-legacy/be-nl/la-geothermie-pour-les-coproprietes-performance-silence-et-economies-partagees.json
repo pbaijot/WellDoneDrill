@@ -1,0 +1,452 @@
+{
+ "_id": "blog-legacy-be-nl-5418",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermie voor appartementsgebouwen: prestaties, stilte en gedeelde besparingen",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-voor-appartementsgebouwen"
+ },
+ "publishedAt": "2026-03-20T11:12:53Z",
+ "excerpt": "De energietransitie van appartementsgebouwen is een grote uitdaging in België. Tussen steeds strengere EPB-normen en stijgende prijzen van fossiele energie zoeken mede-eigendommen naar duurzame alternatieven.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "4a398d3eb758",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a765a9dbeacb",
+     "text": "De energietransitie van appartementsgebouwen is een grote uitdaging in België. Tussen steeds strengere EPB-normen en de explosie van de prijzen van fossiele energie zoeken mede-eigendommen naar duurzame alternatieven. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "eda22f06ac58",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "55871fbc51f8",
+     "text": " installeren we verticale boorsystemen die volledige gebouwen kunnen verwarmen en koelen. Hierom is geothermie de meest relevante oplossing voor collectieve woningbouw.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "992a8612bf59",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c25563386fc0",
+     "text": "1. Gedaan met geluids- en visuele hinder",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a59c5a20f74b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b00116e5712",
+     "text": "Dat is het grootste probleem van lucht-waterwarmtepompen in dichtbebouwd stedelijk gebied: het lawaai. Tientallen buitenunits op balkons of op het dak zorgen voor ondraaglijke geluidshinder voor de buren en ontsieren de gevel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1df1056ddf13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0cb25e42629d",
+     "text": "Volledige discretie:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "533b5d1b8372",
+     "text": " Met geothermie gebeurt alles ondergronds en in de kelder. Er is geen buitenventilator, geen trilling, en niets is zichtbaar vanaf de straat.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5884dc7e4167",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d74ad8f3b9c",
+     "text": "Respect voor de stedenbouw:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a36d4119a2c6",
+     "text": " In Brussel of in historische stadskernen verbieden stedenbouwkundige voorschriften vaak airco-units op de gevel. Geothermie omzeilt die beperking op elegante wijze.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "be88a8facd1a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f88d1fa3388e",
+     "text": "2. Geocooling: zomercomfort zonder extra lasten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f650eb624c52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "96a77e325395",
+     "text": "Door de klimaatopwarming worden appartementen (zeker onder het dak) in de zomer verstikkend. Een klassieke airco in elke kavel doet de gemeenschappelijke elektriciteitskosten exploderen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "72e9690c9135",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "969896cacea9",
+     "text": "Passieve koeling:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6ef9b600ac08",
+     "text": " Het netwerk van sondes op 150 meter laat water van 12 °C door de vloerverwarming van de appartementen circuleren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "96eba5556515",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9cc1b2fb10f",
+     "text": "Schaalvoordelen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f64327166546",
+     "text": " Die koelte is nagenoeg gratis (alleen de circulatiepomp verbruikt wat energie). Het is een sterk verkoopargument voor verhuurders en een ongeëvenaard comfort voor de bewoners.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f0a5caec57f9",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e226eb8ca872",
+     "text": "3. De boring delen om de kosten te verlagen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f0d20bce4400",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "015509acb26b",
+     "text": "Een groot voordeel van mede-eigendom is het ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b198b7fb2a83",
+     "text": "delen van de investering",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f00bc0ffb2d8",
+     "text": ". In plaats van dat elke eigenaar een eigen systeem installeert, wordt een gemeenschappelijk geothermisch sondeveld aangelegd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd8e1d3ec8b3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8321b32d1679",
+     "text": "Optimaal ruimtegebruik:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d23b5871cc36",
+     "text": " Er worden meerdere boringen tot 150 meter (een sondeveld) uitgevoerd onder de parking of de gemeenschappelijke tuin van de residentie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "96f975da91f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fbec78042e9",
+     "text": "Vermogen op maat:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b35779b00db2",
+     "text": " De geothermische centrale in de kelder verdeelt de warmte volgens de werkelijke behoeften van elk appartement en optimaliseert zo het totale rendement van het gebouw.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bd83f836f2a4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "22306dd7e63c",
+     "text": "4. Een onmiddellijke meerwaarde voor het vastgoed",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "571d503a5853",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4289dfdc59ed",
+     "text": "Een gebouw dat met geothermie wordt verwarmd, krijgt een ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f0b293f0424f",
+     "text": "uitzonderlijke EPC-score",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1cd5c2b97665",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7d8d9dfa65f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06c10fa8f2a7",
+     "text": "Bij verkoop:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a303e37b7d8b",
+     "text": " Een appartement met EPC-label A of B verkoopt sneller en duurder dan een woning op gas of stookolie.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bff1706a3be3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44a8f37c4572",
+     "text": "Energieonafhankelijkheid:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b595d056ca8b",
+     "text": " De mede-eigendom is niet langer afhankelijk van brandstofleveringen en van geopolitieke schommelingen van de gasprijs. De \"brandstof\" (de warmte van de aarde) is eigendom van de mede-eigendom.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3d48b070d245",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d78b68c0759a",
+     "text": "5. Een installatie die (letterlijk) een leven lang meegaat",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a38f6a5c9f98",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "626ec4ff5958",
+     "text": "Terwijl een collectieve ketel om de 15 jaar vervangen moet worden, wordt het sondeveld van ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "df9e9df286b6",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f45cb410093a",
+     "text": " gegarandeerd voor meer dan 50 jaar. Het is een structurele investering in het gebouw. Alleen de warmtepomp in de stookruimte moet op lange termijn onderhouden of vervangen worden; de opname-infrastructuur blijft generaties lang in de grond.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da89042d59d3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0733db8b0f86",
+     "text": "Conclusie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b70cc9a3c91a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffc029873583",
+     "text": "Voor een mede-eigendom is geothermie geen uitgave, maar een strategie om de waarde van het gebouw te vrijwaren. Ze biedt premium comfort (warm en koel), voorkomt burenruzies over lawaai en deelt de energiefacturen door vier. Bij WellDoneDrill begeleiden we syndici en raden van mede-eigendom van de haalbaarheidsstudie tot de ingebruikname.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie voor appartementsgebouwen | WellDoneDrill",
+ "seoDescription": "Waarom geothermie ideaal is voor mede-eigendommen: geen lawaai, gratis koeling, een gedeeld sondeveld, een beter EPC-label en een installatie voor 50 jaar.",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "Geothermische boring in België"
+}

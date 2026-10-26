@@ -1,0 +1,690 @@
+{
+ "_id": "blog-legacy-be-nl-4376",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Geothermie: de hernieuwbare en concurrerende energie die doorbreekt in België",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-hernieuwbare-concurrerende-energie-in-belgie"
+ },
+ "publishedAt": "2025-12-02T10:48:10Z",
+ "excerpt": "Verwarming is goed voor een groot deel van het energieverbruik van gebouwen. Geothermie bewijst zich als een performante, stabiele en koolstofarme oplossing, en in België, waar de ondergrond een uitstekend potentieel biedt, wordt ze stilaan vanzelfsprekend.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1898b50308fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6107f60f03b7",
+     "text": "Verwarming is goed voor een groot deel van het energieverbruik van gebouwen, en geothermie bewijst zich als een oplossing die tegelijk performant, stabiel en koolstofarm is. In België, waar de ondergrond een uitstekend potentieel biedt, wordt ze stilaan vanzelfsprekend voor wie een duurzaam verwarmings- en koelsysteem zoekt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4797111b91e7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b019d965785e",
+     "text": "Geothermie benut de warmte die van nature in de bodem aanwezig is. Vanaf een tiental meter diepte blijft de temperatuur van de aarde het hele jaar stabiel. Daardoor kunnen geothermische warmtepompen met een constante prestatie werken, ongeacht de buitenomstandigheden. In een land met een gematigd klimaat zoals België is die stabiliteit een groot voordeel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e25122969323",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b40dd92f591",
+     "text": "Een hernieuwbare energie die van nature stabiel en het hele jaar beschikbaar is",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f23242ec392",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "69a2a9429d4d",
+     "text": "Vanaf een tiental meter diepte wordt de bodemtemperatuur stabiel, doorgaans tussen 10 en 14 °C naargelang de regio. Geothermische sondes in dat bodemvolume benutten die warmte voortdurend.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e2c3303aec10",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92ccde718d61",
+     "text": "De energie uit de bodem vernieuwt zich op natuurlijke wijze. Een goed gedimensioneerde geothermische installatie \"put\" de bron niet uit: de warmte herstelt zich tussen de seizoenen, onder meer dankzij de warmte die in de zomer bij het koelen wordt teruggegeven. Geothermie is dus een hernieuwbare energie, 24 uur op 24 en 365 dagen per jaar beschikbaar, onafhankelijk van wind, zon of buitentemperatuur.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "72174e0a72fa",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "366e90cd5e27",
+     "text": "Een van de laagste koolstofvoetafdrukken op de markt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "20afd8744586",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17c05aab4164",
+     "text": "Een geothermische warmtepomp produceert gemiddeld 4 kWh warmte voor 1 kWh verbruikte elektriciteit. Met andere woorden: bijna 75 % van de geproduceerde warmte is 100 % hernieuwbaar.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a20e36cc3194",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6fed0a3c5bc3",
+     "text": "Haar CO₂-uitstoot ligt daardoor veel lager dan die van een gas- of stookolieketel, zelfs rekening houdend met de koolstofvoetafdruk van elektriciteit. Voor een lokaal bestuur, een projectontwikkelaar of een particuliere eigenaar maakt geothermie het dus mogelijk de koolstofvoetafdruk van een gebouw sterk te verlagen, in woningen, kantoren of appartementsgebouwen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "70ea318bcc92",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "315462df86b9",
+     "text": "Een efficiënte oplossing, zelfs tijdens de koudste winters",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ddd58e3d0cb9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26fc72fbca73",
+     "text": "Omdat geothermie de warmte van de bodem gebruikt en niet die van de lucht, behoudt ze een uitstekend rendement, zelfs bij temperaturen onder nul. Waar een lucht-waterwarmtepomp in volle winter minder presteert, blijft een geothermische warmtepomp stabiel, omdat de bodemtemperatuur nauwelijks schommelt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c5cbb16fac60",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34c70f4ab3b6",
+     "text": "Geothermie biedt zo een constant comfort, een beheerst stroomverbruik en zeer voorspelbare energie-uitgaven, ook op de koudste dagen van het jaar, net wanneer het gebouw het meeste verwarming nodig heeft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f860850ec8a0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64e10ed47ea8",
+     "text": "Een lokale energie, onafhankelijk van de grillen van de markt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d62b9f9fe353",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee6da7ca10c0",
+     "text": "Geothermie wordt rechtstreeks ter plaatse geproduceerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7c6cae2ceed2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c4c77ae37fe",
+     "text": "Geen invoer van brandstof, geen levering, geen opslag. De warmte wordt uit het terrein gehaald, onder het gebouw of vlak ernaast.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2eb4b9552df8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ad1cd09985f",
+     "text": "Deze lokale energie is onafhankelijk van de schommelingen van de prijzen van gas, stookolie of CO₂-emissierechten. Ze vermindert de afhankelijkheid van internationale markten en kent geen geopolitieke risico's.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4f4f708b5bae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95043edec324",
+     "text": "Voor een particulier, een openbaar gebouw of een kantoorgebouw is geothermie een concreet middel om de werkingskosten op lange termijn te stabiliseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "70ab3bb30bb0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9acec0c7a0a7",
+     "text": "Een bijna gratis natuurlijke koeling: geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c73ff74256d3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "339d8204a2f0",
+     "text": "In de zomer biedt geothermie een uniek voordeel: passieve koeling van het gebouw. Dit principe, vaak geocooling of freecooling genoemd, gebruikt rechtstreeks de koelte van de bodem om het gebouw op een zeer aangename temperatuur te houden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "03c28748fe12",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f353d61c5863",
+     "text": "Het systeem kan een klassieke airco vervangen of de behoefte eraan sterk verminderen, en verlaagt tegelijk de energiefactuur.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "64f9d5928e51",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4b69c8bede1",
+     "text": "Een uitzonderlijk lange levensduur",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a18ec8022bcd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03de5d486c01",
+     "text": "Geothermische sondes in de bodem hebben een geschatte levensduur van meer dan 50 jaar. De warmtepomp heeft een levensduur die vergelijkbaar is met die van andere verwarmingstoestellen (15 tot 20 jaar), maar werkt in zeer stabiele omstandigheden, wat haar levensduur ten goede komt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cd25a850420f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52843aef2090",
+     "text": "Wanneer het gebouw evolueert, blijven de sondes op hun plaats, klaar om een nieuwe warmtepomp te voeden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a2defe85f9e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0939db5d8a27",
+     "text": "Een van de laagste werkingskosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c88f28118db3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95b83a1369e6",
+     "text": "Dankzij het uitstekende rendement verlaagt een geothermische installatie de werkingskosten sterk. Voor 1 kWh verbruikte elektriciteit levert de geothermische warmtepomp ongeveer 4 kWh warmte. De verwarmingsfactuur kan zo met een factor 2 tot 4 dalen ten opzichte van een fossiele oplossing, afhankelijk van het project.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dd3b00217972",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b6428a59080",
+     "text": "Ook de onderhoudskosten zijn laag: geen ketel om te laten vegen, geen brander, geen schoorsteen. De installatie is proper, volledig elektrisch en heeft weinig slijtagedelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "32727513abe3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6e2d2643aaf",
+     "text": "Een oplossing voor bijna elk gebouw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63d89bbd4706",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "440bee8a25bf",
+     "text": "Anders dan vaak wordt gedacht, is geothermie niet beperkt tot grote vrijstaande woningen met een grote tuin. Ze is geschikt voor een breed gamma aan gebouwen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a8140b20110d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a6ca8e2f87d5",
+     "text": "eengezinswoningen",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "557accb482eb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e4619733259",
+     "text": "appartementsgebouwen",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6272d1c15147",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de360b7cae2d",
+     "text": "kantoren",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9baabbdf4db7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9eb2a3493f20",
+     "text": "scholen en kinderdagverblijven",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c46950d334fd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0a3a060638c6",
+     "text": "openbare gebouwen",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1e1470ea188a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2e20eb177d3e",
+     "text": "kleine en middelgrote industriële gebouwen",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bdb86dff00f4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7812d87a6168",
+     "text": "In België biedt de ondergrond in de overgrote meerderheid van de regio's een uitstekend potentieel. Met verticale sondes ontsnapt u aan beperkingen aan de oppervlakte, waardoor geothermie zelfs mogelijk is in dichtbebouwd stedelijk gebied of op kleine percelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1471f4c83857",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c4a4ceda9fd7",
+     "text": "Een energie van de toekomst, eenvoudig en uiterst performant",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5a1d047b7b9b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "225516c3b84e",
+     "text": "Geothermie combineert alle eigenschappen die vandaag gezocht worden:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fb0a2edb62a1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f65e9cc9762f",
+     "text": "hoge prestaties het hele jaar door,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "47bf6413d04d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2705c2c941d7",
+     "text": "absolute stilte,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d7b040fa2d5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c7979e5bbaa",
+     "text": "natuurlijke koeling,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "257767e0f1a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b43dc5ef6639",
+     "text": "zeer lage werkingskosten,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7e2aaff0e01b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d09fe1a89f51",
+     "text": "energieonafhankelijkheid,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4158018ea7f1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "128f075f898b",
+     "text": "uitzonderlijke duurzaamheid,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ba63dd3431c0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c0685ac592bb",
+     "text": "geschikt voor renovatie en nieuwbouw.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ecadb45c09f2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2aa7d593745",
+     "text": "Het is een van de weinige oplossingen die verwarming, zachte koeling en sanitair warm water levert met één technologie, en daarbij de klimaatdoelstellingen respecteert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3110b195c0d8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ab0685702922",
+     "text": "In België is geothermie geen nichetechnologie meer: het is een betrouwbaar, volwassen en concurrerend antwoord voor elk bouw- of renovatieproject dat energieprestatie en stabiliteit op lange termijn nastreeft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie: hernieuwbare energie in België | WellDoneDrill",
+ "seoDescription": "Waarom geothermie in België doorbreekt: stabiele bodemtemperatuur, lage CO₂-uitstoot, rendement in de winter, lokale energie, gratis koeling en lage werkingskosten.",
+ "_mainImageFile": "uploads/2025/05/Novacity2-header.webp",
+ "_mainImageAlt": "Geothermische boring op de werf van Novacity in België"
+}

@@ -1,0 +1,758 @@
+{
+ "_id": "blog-legacy-lu-de-4405",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Brunnenbohrung und Erdwärmebohrung: gleiche Maschinen, verschiedene Berufe",
+ "slug": {
+  "_type": "slug",
+  "current": "brunnenbohrung-und-erdwaermebohrung-verschiedene-berufe"
+ },
+ "publishedAt": "2025-12-02T11:01:11Z",
+ "excerpt": "Das Wort „Bohrung“ steht sowohl für Brunnen als auch für Erdwärmesonden. Von außen wirkt es wie dieselbe Baustelle: ein Bohrgerät, Rohre, ein tiefes Loch im Boden. Doch Ziel, Anforderungen und Dimensionierung sind völlig verschieden.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "e6c58e019d3c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "573017006546",
+     "text": "Das Wort „Bohrung“ steht sowohl für Brunnen als auch für Erdwärmesonden. Von außen wirkt es wie dieselbe Baustelle: ein Bohrgerät, Rohre, ein tiefes Loch im Boden. Doch eine Brunnenbohrung und eine Erdwärmebohrung haben weder dasselbe Ziel noch dieselben Anforderungen noch dieselbe Dimensionierung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cd7245af17b0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5dd70f9780b7",
+     "text": "Zwei Arten von Bohrungen, zwei Nutzungen des Untergrunds",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f74a90d9d731",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cddfbf001f2f",
+     "text": "Eine Brunnenbohrung dient dazu, eine Ressource zu erschließen: einen Grundwasserleiter. Gesucht werden ein Volumenstrom, eine Qualität und eine verlässliche Versorgung für ein Haus, einen landwirtschaftlichen Betrieb, eine Bewässerung oder einen kleinen Gewerbebetrieb. Der Brunnen wird mit Verrohrung, Filter und Unterwasserpumpe ausgestattet. Das Wasser wird gefördert, fließt durch das Verteilnetz und wird genutzt oder abgeleitet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6b7adac812cd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f085069a6205",
+     "text": "Eine Erdwärmebohrung funktioniert umgekehrt: Man „entnimmt“ dem Untergrund nichts, man tauscht mit ihm Wärme. Bei Vertikalsonden wird das Bohrloch vollständig mit einer PE-HD-Sonde und einer geothermischen Verfüllung ausgefüllt. Die Flüssigkeit zirkuliert in einem geschlossenen Kreislauf durch die Sonde, entzieht dem Boden Wärme oder gibt sie ab, bringt das Grundwasser aber nie in direkten Kontakt mit dem Heizkreis.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "47032cc9b0de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67a48cb25b79",
+     "text": "Im einen Fall ist der Untergrund ein Wasserreservoir, das genutzt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fc8a41b04095",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa7e81f4bee9",
+     "text": "Im anderen wird er zu einem Wärmetauscher, der eine Wärmepumpe versorgt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ad9f15447815",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c89f11abf4ea",
+     "text": "Zwei Schlüsselbegriffe",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cfb431823eca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9bf87e8b3bcc",
+     "text": "Brunnenbohrung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bcd3cb897100",
+     "text": " Wasserentnahme, Volumenstrom, Wasserqualität, Unterwasserpumpe.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "141015f99359",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "095c43c939e5",
+     "text": "Erdwärmebohrung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0a521e6af38f",
+     "text": " Sonde, Wärmeaustausch, geschlossener Kreislauf, Wärmepumpe.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b2c7f8798268",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9462408c8a17",
+     "text": "Brunnenbohrung: auf der Suche nach dem Grundwasser",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "98fbdba1130f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "916ae9145c8a",
+     "text": "Bei einer Brunnenbohrung geht es darum, einen Grundwasserleiter zu finden und zu nutzen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7fe6052ea676",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1c5284644f9",
+     "text": "der Brunnen wird nach dem gewünschten Volumenstrom dimensioniert;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "01af2ba40e06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3159848723d5",
+     "text": "Filter werden nach der Korngröße gewählt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "74a8cd91a5f2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b872a091c6f",
+     "text": "eine Unterwasserpumpe fördert das Wasser;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "50857af5a5fe",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68cf2d936916",
+     "text": "die Wasserqualität wird je nach Nutzung geprüft (Bewässerung, Brauchwasser usw.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "34cc4ad62447",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1eb794d337f3",
+     "text": "Die Leistung wird in m³/h, in der Stabilität des Wasserspiegels und in der Wasserqualität gemessen. Das Management der Ressource (Neubildung des Grundwassers, Auswirkungen auf Nachbarn usw.) wird bei großen Fördermengen zum Thema.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aa7b89f87f70",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f80b85ea93d9",
+     "text": "Erdwärmebohrung mit Sonden: kein Grundwasser nötig",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5c6798a1dd9a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "131ce43dc59f",
+     "text": "Bei einer Erdwärmebohrung mit Sonden ist ein Grundwasserleiter keine Voraussetzung. Entscheidend ist die Fähigkeit des Untergrunds insgesamt, Wärme zu leiten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee9b7f5916b5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e997ff08fddb",
+     "text": "Das Bohrloch wird vollständig ausgefüllt von:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7e2955609a8f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7c7996ee578",
+     "text": "einer oder mehreren PE-HD-Sondenschleifen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6b177feb0290",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94afcc4fe03b",
+     "text": "einer geothermischen Verfüllung, die den thermischen Kontakt zum Boden sicherstellt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bb75b0dc8349",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9cd27c1ad4d",
+     "text": "Die Dimensionierung betrifft:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd7964521c13",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70690ab77139",
+     "text": "die zu liefernde Wärmeleistung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b880af308d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c9b97ed2ca6",
+     "text": "die gesamte Sondenlänge (gebohrte Meter);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ea2d523d2938",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eba25ebe99c6",
+     "text": "den Abstand zwischen den Sonden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "61829e29c7e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7bdc6fcb478a",
+     "text": "das saisonale Gleichgewicht zwischen entzogener und zurückgeführter Wärme.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2c98384b095a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea251b14da29",
+     "text": "Vorhandenes Grundwasser bleibt durch die Verfüllung und eine eventuelle Verrohrung abgeschirmt. Die Anlage arbeitet im geschlossenen Kreislauf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b32676f0a236",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2585df992d3c",
+     "text": "Offene Geothermie: wenn der Brunnen zur Wärmequelle wird",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6a66bdab73f4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "969f9da18c00",
+     "text": "Es gibt einen Sonderfall, in dem Brunnenbohrung und Geothermie zusammenkommen: die offene Geothermie. Dabei wird das Grundwasser direkt als Wärmequelle für eine Wärmepumpe genutzt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a535d54862de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "37f24fd78b4a",
+     "text": "Das Prinzip:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a04db914d9f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff18db4db0aa",
+     "text": "ein Förderbrunnen entnimmt Wasser aus dem Grundwasserleiter;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "72e9230ae8d3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68d90dd23fc8",
+     "text": "das Wasser durchströmt einen Wärmetauscher oder die Wärmepumpe, die ihm Wärme entzieht;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8951db719572",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8995192711f9",
+     "text": "anschließend wird das Wasser über einen Schluckbrunnen in den Grundwasserleiter zurückgeführt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cc36d04b9af8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a636073a7d5d",
+     "text": "Diese Systeme eignen sich besonders für große Projekte: große Bürogebäude, Wärmenetze, Industriestandorte usw. Sie erfordern:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34b389d5c058",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6355b31a446",
+     "text": "einen Grundwasserleiter mit ausreichender Ergiebigkeit;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d296da59694d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67e2f9b7c289",
+     "text": "eingehende hydrogeologische Untersuchungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9bfa92619746",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e6e7384d73f9",
+     "text": "einen strengen rechtlichen Rahmen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ffffb7f53028",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd623213aa66",
+     "text": "In diesem Fall wird der Brunnen tatsächlich zur „Quelle“ der Geothermie. Doch es handelt sich nicht mehr um einen einfachen Brunnen, sondern um ein System, das als Kreislauf arbeitet und das Gleichgewicht des Grundwassers respektiert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "19ffb5251fd2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1581eb5a8cfa",
+     "text": "Wie WellDoneDrill Bauherren begleitet",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d290674dde2a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89a542c4f46c",
+     "text": "In der Praxis kann ein und derselbe Bauherr Folgendes benötigen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "04d2d8526898",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e86b135fd987",
+     "text": "einen Brunnen für Bewässerung, Brauchwasser oder eine bestimmte Versorgung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1a681927f967",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a438573d57a6",
+     "text": "ein Sondenfeld zur Versorgung einer Erdwärmepumpe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2711224db0f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8ce21eab8ee6",
+     "text": "gegebenenfalls eine Lösung mit offener Geothermie für ein Großprojekt.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "69824313d50d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "73fe851b3772",
+     "text": "WellDoneDrill analysiert jede Situation, um die passendste Konfiguration vorzuschlagen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a1d42bcbc2d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "61e5bd1a2f65",
+     "text": "eine einfache Brunnenbohrung, wenn es nur um Wasserbedarf geht;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "22e427fcbd9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27dbde7cb59d",
+     "text": "eine Erdwärmebohrung mit Sonden, wenn Heizen und Kühlen im Vordergrund stehen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8c6e69b00700",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e6f775c4371",
+     "text": "offene Geothermie für leistungsstarke Projekte, wenn die Grundwasserverhältnisse es erlauben.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "28bfa1fb9d4a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "35131840dfeb",
+     "text": "Statt alle Bohrungen als gleichwertig zu betrachten, hilft WellDoneDrill Bauherren, fundierte Entscheidungen zu treffen: Art der Bohrung, Dimensionierung, mögliche Kombination von Wasser und Geothermie. Ziel ist es, das Beste aus dem Untergrund herauszuholen, im Einklang mit dem tatsächlichen Bedarf des Gebäudes oder Standorts.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Brunnenbohrung vs. Erdwärmebohrung | WellDoneDrill",
+ "seoDescription": "Was unterscheidet eine Brunnenbohrung von einer Erdwärmebohrung? Grundwasser fördern oder Wärme im geschlossenen Kreislauf tauschen, dazu die offene Geothermie.",
+ "_mainImageFile": "uploads/2025/12/forage-eau-geothermique.webp",
+ "_mainImageAlt": "Brunnenbohrung und Erdwärmebohrung"
+}

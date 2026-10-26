@@ -1,0 +1,452 @@
+{
+ "_id": "blog-legacy-lu-de-5418",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Geothermie für Mehrfamilienhäuser: Leistung, Ruhe und geteilte Einsparungen",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-fuer-mehrfamilienhaeuser"
+ },
+ "publishedAt": "2026-03-20T11:12:53Z",
+ "excerpt": "Die Energiewende von Mehrfamilienhäusern ist eine große Herausforderung. Zwischen immer strengeren Energievorschriften und steigenden Preisen fossiler Energien suchen Eigentümergemeinschaften nach nachhaltigen Alternativen.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9991159ec0bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e2441b007d15",
+     "text": "Die Energiewende von Mehrfamilienhäusern ist eine große Herausforderung. Zwischen immer strengeren Energievorschriften und der Explosion der Preise fossiler Energien suchen Eigentümergemeinschaften nach nachhaltigen Alternativen. Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7262088a1ae1",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3035ff6540a3",
+     "text": " installieren wir vertikale Bohrsysteme, die ganze Gebäude heizen und kühlen können. Darum ist Geothermie die sinnvollste Lösung für den gemeinschaftlichen Wohnungsbau.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "04ae792fd664",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "92f85e669890",
+     "text": "1. Schluss mit Lärm und optischer Belastung",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8260ca6d79af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d51dc8fd8e0c",
+     "text": "Das ist das größte Problem von Luft-Wasser-Wärmepumpen in dicht bebauten Städten: der Lärm. Dutzende Außengeräte auf Balkonen oder dem Dach erzeugen unerträglichen Lärm für die Nachbarschaft und verunstalten die Fassade.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "44897fe202b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1bc526b49e40",
+     "text": "Völlige Diskretion:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8aa3341660ea",
+     "text": " Bei der Geothermie spielt sich alles unter der Erde und im Keller ab. Es gibt keinen Außenventilator, keine Vibrationen, und nichts ist von der Straße aus sichtbar.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6dc969e81679",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7a6253d16bd",
+     "text": "Einhaltung des Baurechts:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fbdaf269d2e2",
+     "text": " In Brüssel oder in historischen Innenstädten verbieten Bauvorschriften oft Klimageräte an der Fassade. Die Geothermie umgeht diese Einschränkung elegant.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "68b0e83f0ad0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "785e6802c2a3",
+     "text": "2. Geocooling: Sommerkomfort ohne höhere Nebenkosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "43f7448f7222",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c224dcc3d766",
+     "text": "Durch die Klimaerwärmung werden Wohnungen (vor allem unter dem Dach) im Sommer stickig. Eine klassische Klimaanlage in jeder Einheit lässt die gemeinsamen Stromkosten explodieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "98d1cf5ee85b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac168681ba07",
+     "text": "Passive Kühlung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "33dbc73dd00a",
+     "text": " Das Sondennetz in 150 Metern lässt 12 °C kaltes Wasser durch die Fußbodenheizungen der Wohnungen zirkulieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0d15c9f6751",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8cbb022bd24a",
+     "text": "Skaleneffekte:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5d02ff232290",
+     "text": " Diese Kühle ist nahezu kostenlos (nur die Umwälzpumpe verbraucht etwas Energie). Ein starkes Verkaufsargument für Vermieter und ein unvergleichlicher Komfort für die Bewohner.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ed4823aca3e2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bf608c3a1bc8",
+     "text": "3. Die Bohrung gemeinsam nutzen, um Kosten zu senken",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6d93ad3d8cbd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c74ba3a07b2",
+     "text": "Ein großer Vorteil der Eigentümergemeinschaft ist die ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "a720a7c021e5",
+     "text": "gemeinsame Investition",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bd3f5f2c9348",
+     "text": ". Statt dass jeder Eigentümer ein eigenes System installiert, wird ein gemeinsames Erdwärmesondenfeld angelegt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4095d1a18a36",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14deff92243e",
+     "text": "Optimale Flächennutzung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e2425410d2de",
+     "text": " Unter dem Parkplatz oder dem Gemeinschaftsgarten werden mehrere 150-Meter-Bohrungen (ein Sondenfeld) niedergebracht.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b87b43b1bdf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bce668d40a59",
+     "text": "Leistung nach Maß:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e940b8ba4394",
+     "text": " Die geothermische Zentrale im Keller verteilt die Wärme nach dem tatsächlichen Bedarf jeder Wohnung und optimiert so die Gesamteffizienz des Gebäudes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ae1132bc406b",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "766130833323",
+     "text": "4. Eine sofortige Wertsteigerung der Immobilie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ae3a88a6cc16",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c5657e381f14",
+     "text": "Ein mit Geothermie beheiztes Gebäude erhält eine ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "7d1b8c20e12b",
+     "text": "hervorragende Energieklasse",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "af3c548b7438",
+     "text": ".",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ebc871e8c89",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4073b6409126",
+     "text": "Beim Verkauf:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "22ea9126d896",
+     "text": " Eine Wohnung der Klasse A oder B verkauft sich schneller und teurer als eine mit Gas- oder Ölheizung.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8e6e4f40fa7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7ce24e8ba94d",
+     "text": "Energieunabhängigkeit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "addea87447d4",
+     "text": " Die Eigentümergemeinschaft ist nicht mehr von Brennstofflieferungen und geopolitischen Gaspreisschwankungen abhängig. Der „Brennstoff“ (die Erdwärme) gehört der Gemeinschaft.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4c48d444dda0",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0ecc87d825d",
+     "text": "5. Eine Anlage, die (buchstäblich) ein Leben lang hält",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "60f2bda50dde",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0751c02056c0",
+     "text": "Während ein Gemeinschaftskessel alle 15 Jahre ersetzt werden muss, ist das von ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "df325b0aed99",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7947b6016d06",
+     "text": " erstellte Sondenfeld für über 50 Jahre ausgelegt. Es ist eine strukturelle Investition in das Gebäude. Nur die Wärmepumpe im Heizraum muss langfristig gewartet oder ersetzt werden; die Erschließungsinfrastruktur bleibt über Generationen im Boden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "272d89462a80",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c923ff3abd1e",
+     "text": "Fazit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "32b005710805",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1dff99b04f4",
+     "text": "Für eine Eigentümergemeinschaft ist Geothermie keine Ausgabe, sondern eine Strategie zum Werterhalt des Gebäudes. Sie bietet Premium-Komfort (Wärme und Kühle), beendet Nachbarschaftsstreit wegen Lärm und viertelt die Energiekosten. Bei WellDoneDrill begleiten wir Hausverwaltungen und Eigentümerbeiräte von der Machbarkeitsstudie bis zur Inbetriebnahme.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie für Mehrfamilienhäuser | WellDoneDrill",
+ "seoDescription": "Warum Geothermie ideal für Eigentümergemeinschaften ist: kein Lärm, kostenlose Kühlung, gemeinsames Sondenfeld, bessere Energieklasse und 50 Jahre Lebensdauer.",
+ "_mainImageFile": "uploads/2025/12/foreur-geothermie-belgique.jpeg",
+ "_mainImageAlt": "Erdwärmebohrung in Belgien"
+}

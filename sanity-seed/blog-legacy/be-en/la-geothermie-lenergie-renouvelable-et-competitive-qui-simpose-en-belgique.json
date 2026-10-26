@@ -1,0 +1,690 @@
+{
+ "_id": "blog-legacy-be-en-4376",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal: the renewable, competitive energy gaining ground in Belgium",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-renewable-competitive-energy-in-belgium"
+ },
+ "publishedAt": "2025-12-02T10:48:10Z",
+ "excerpt": "Heating accounts for a large share of buildings' energy use, and geothermal is proving to be an efficient, stable and low-carbon solution. In Belgium, where the subsurface offers excellent potential, it is becoming the obvious choice.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "ba97d9b9cce9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7918ca08e39",
+     "text": "Heating accounts for a large share of buildings' energy consumption, and geothermal is establishing itself as a solution that is efficient, stable and low-carbon. In Belgium, where the subsurface offers excellent potential, it is gradually becoming the obvious choice for anyone looking for a sustainable heating and cooling system.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a601bb0f3ba8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ae88514dc3ff",
+     "text": "Geothermal energy uses the heat naturally present in the ground. From around ten metres down, the Earth's temperature stays stable all year round. This allows geothermal heat pumps to operate at constant performance, whatever the outdoor conditions. In a country with a temperate climate like Belgium, that stability is a major advantage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5fe4fd805c1f",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e224473008ac",
+     "text": "A renewable energy that is naturally stable and available all year",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5022cde3903c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd1638f1d5dc",
+     "text": "From around ten metres down, ground temperature becomes stable, usually between 10 and 14 °C depending on the region. Geothermal probes placed in this volume of ground draw on that heat continuously.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9f17286f1480",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0a2a3510e006",
+     "text": "The energy taken from the ground renews itself naturally. A properly sized geothermal installation does not \"empty\" the resource: heat recovers between seasons, notably thanks to the heat returned in summer during cooling. Geothermal is therefore a renewable energy, available 24/7, 365 days a year, regardless of wind, sun or outdoor temperature.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3e10a83f7b82",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd1dbe24f067",
+     "text": "One of the lowest carbon footprints on the market",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "13861fe9a0c7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0b6aacf5dff4",
+     "text": "A geothermal heat pump produces on average 4 kWh of heat for every 1 kWh of electricity it uses. In other words, almost 75 % of the heat produced is 100 % renewable.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7833b5f96a5d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aac361c1207f",
+     "text": "Its CO₂ emissions are therefore far lower than those of a gas or oil boiler, even taking into account the carbon footprint of electricity. For a local authority, a developer or a private owner, geothermal makes it possible to sharply reduce a building's carbon footprint, whether in housing, offices or apartment buildings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4f175f0ce1af",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4cb211756ff5",
+     "text": "Efficient even in the coldest winters",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90cd58af543b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "70ed6e176ed2",
+     "text": "Because it uses the heat of the ground rather than the air, geothermal keeps excellent efficiency even in sub-zero temperatures. While an air-to-water heat pump loses performance in the depths of winter, a geothermal heat pump stays stable, because ground temperature barely changes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f1ccfea5087f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f278307f35b9",
+     "text": "Geothermal thus offers constant comfort, controlled electricity use and highly predictable energy costs, including on the coldest days of the year, exactly when the building needs heating most.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7e0e1e4a8594",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4e48b3a9e1f3",
+     "text": "Local energy, independent of market swings",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "49e5d2c708f5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6efc155ed154",
+     "text": "Geothermal energy is produced directly on site.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "530b860fcbb0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78e9f5e1281d",
+     "text": "No fuel imports, no deliveries, no storage. The heat is drawn from the land, under the building or right next to it.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "96a05b1cdcba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f62ab29ebd46",
+     "text": "This local energy is independent of fluctuations in the prices of gas, heating oil or CO₂ emission allowances. It reduces dependence on international markets and is free of geopolitical risk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f72dd5c8bc15",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "34fcf07d615c",
+     "text": "For a homeowner as for a public or commercial building, geothermal is a practical way to stabilise running costs over the long term.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d8c019a560b",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47c173dd6066",
+     "text": "Almost free natural cooling: geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e83298577ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "22a624ec8bec",
+     "text": "In summer, geothermal offers a unique advantage: passive cooling of the building. This principle, often called geocooling or free cooling, uses the coolness of the ground directly to keep the building at a very comfortable temperature.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63fddaf89188",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "308d22f5a2c1",
+     "text": "It can replace or greatly reduce the need for conventional air conditioning, while lowering the energy bill.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fc29fad255cf",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3581ca11d9f6",
+     "text": "An exceptionally long lifespan",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e59f7dc1c751",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2a3dff99857f",
+     "text": "Geothermal probes buried in the ground have an estimated lifespan of more than 50 years. The heat pump lasts about as long as other heating equipment (15 to 20 years), but it runs in very stable conditions, which helps it last longer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "63615f7c572d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9eda9416e8be",
+     "text": "When the building changes, the probes stay in place, ready to supply a new heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ede00c453e4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0e0c8cf8e076",
+     "text": "Some of the lowest running costs",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2f9488d9da04",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1e35380662c",
+     "text": "Thanks to its excellent efficiency, a geothermal installation greatly reduces running costs. For 1 kWh of electricity used, a geothermal heat pump delivers about 4 kWh of heat. Heating bills can be cut by a factor of 2 to 4 compared with a fossil-fuel solution, depending on the project.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "743f5f19d53d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8e46c1b25360",
+     "text": "Maintenance costs are also low: no boiler to sweep, no burner, no chimney. The installation is clean, fully electric and has few wearing parts.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4b2fe01103b8",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f6bce7b1501",
+     "text": "A solution for almost every building",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0917158beb5c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d043dc0eb58",
+     "text": "Contrary to some preconceptions, geothermal is not limited to large detached houses with big gardens. It suits a wide range of buildings:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "12219054cb54",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0118fda37dff",
+     "text": "single-family homes",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "899c72952e1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3858862b7889",
+     "text": "apartment buildings",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "02fc90818f63",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d663014bad15",
+     "text": "offices",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b78b0dd17629",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5223203fe8fa",
+     "text": "schools and nurseries",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b9be07c9016f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f36dc0eb4c2b",
+     "text": "public buildings",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "427aebedf8bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee51cf96be2c",
+     "text": "small and medium-sized industrial buildings",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "720d8ad7e83d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f35143aedece",
+     "text": "In Belgium, the subsurface offers excellent potential in the vast majority of regions. Vertical probes avoid surface constraints, making geothermal possible even in dense urban areas or on small plots.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "988d6d29cda1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a33b9d9dba98",
+     "text": "An energy for the future, simple and highly efficient",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6f5261feb880",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24ee04ca993c",
+     "text": "Geothermal combines all the qualities people are looking for today:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2badbc87d741",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "948e91faaa96",
+     "text": "high performance all year round,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f7192fd88880",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6cc37f92e42f",
+     "text": "complete silence,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "58823940b60c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "524d59d02cde",
+     "text": "natural cooling,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1a631e75530b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23e67ec5f3ad",
+     "text": "very low running costs,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7a82ff2dcb97",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "397f04ec2680",
+     "text": "energy independence,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c8b225577f83",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe62cd63a592",
+     "text": "exceptional durability,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5ce8e6d3ee40",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "395756baa1dd",
+     "text": "suitable for renovation and new builds.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5d43c2fee3c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dbc00a07d08e",
+     "text": "It is one of the few solutions that can provide heating, gentle cooling and domestic hot water with a single technology, while meeting climate targets.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b0acf8ae2349",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8707caa88d13",
+     "text": "In Belgium, geothermal is no longer a niche technology: it is a reliable, mature and competitive answer for any construction or renovation project aiming for energy performance and long-term stability.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal: renewable energy in Belgium | WellDoneDrill",
+ "seoDescription": "Why geothermal is taking off in Belgium: stable ground temperature, low CO₂, winter efficiency, local energy, free cooling and low running costs.",
+ "_mainImageFile": "uploads/2025/05/Novacity2-header.webp",
+ "_mainImageAlt": "Geothermal drilling on the Novacity site in Belgium"
+}

@@ -1,0 +1,380 @@
+{
+ "_id": "blog-legacy-be-en-5432",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Improving your EPC rating in Belgium: why geothermal is a strong lever",
+ "slug": {
+  "_type": "slug",
+  "current": "improving-your-epc-rating-with-geothermal"
+ },
+ "publishedAt": "2026-03-20T12:38:35Z",
+ "excerpt": "In Belgium, whether in Brussels, Wallonia or Flanders, the energy performance certificate has become the most important document in a property sale. A poor rating (F or G) can cut the price of a house by 20 % to 30 %.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "dab3688f9f2c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42b691ac94b5",
+     "text": "In Belgium, whether in Brussels, Wallonia or Flanders, the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "0508fc213fa7",
+     "text": "energy performance certificate (EPC, or PEB/EPB)",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8cf2b5fa2ee7",
+     "text": " has become the most important document in a property transaction. A poor rating (F or G) can cut the price of a house by 20 % or 30 %. Conversely, an A or B rating guarantees immediate added value. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "f58b5581a957",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f7c790f0f432",
+     "text": ", we help our clients transform their certificate thanks to vertical drilling.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c207b0df45d7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9841ffbd6c35",
+     "text": "1. Understanding the EPC calculation: primary energy",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f9c61fa8444b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "219a73101701",
+     "text": "The EPC score does not just measure your actual consumption, but your consumption of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "9c1288132328",
+     "text": "primary energy",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2be72bd96b33",
+     "text": ". For electric heating (heat pumps), Belgium applies a conversion factor.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1248029e3936",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a97803aca4e4",
+     "text": "Gas or heating oil:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "01c657ecf4e9",
+     "text": " For 1 kWh consumed, the EPC counts 1 kWh of primary energy.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9ce0dbe68e29",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7ae71be7e4c",
+     "text": "Geothermal:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d031e753bd03",
+     "text": " Thanks to a high COP (coefficient of performance), often above 5, your system produces 5 kWh of heat for just 1 kWh of electricity.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c6d64ae7a4f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5f7278a1278",
+     "text": "The EPC software recognises this exceptional efficiency. Installing a 150-metre probe can cut the \"heating\" share of your certificate by a factor of 4 or 5 compared with a modern condensing boiler.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d94c24801f3f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8c91e021c9b8",
+     "text": "2. Geothermal vs air-source in the EPC software",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "efe97ef9e9a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4cccd7651ddd",
+     "text": "Many energy assessors and architects will confirm it: with the same insulation, a house with a geothermal (ground-to-water) heat pump systematically scores better than one with an air-source (air-to-water) heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f5cb9a6364f0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94eddc7c7d5c",
+     "text": "Stable source temperature:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "15e70ff6c074",
+     "text": " The software penalises air-source systems because their efficiency drops in freezing weather. Geothermal, with its stable 12 °C source at 150 metres, gets a performance bonus in the calculation.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ba8577bcd92",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1877b781c599",
+     "text": "Auxiliary consumption:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e6298f6dc76b",
+     "text": " No power-hungry outdoor fans and no energy-intensive defrost cycles reduce the \"hidden\" consumption the assessor takes into account.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d6f35e78639a",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f80474342b1c",
+     "text": "3. Geocooling: comfort without a penalty",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bbaf1541cd52",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "83a690a32250",
+     "text": "One of the EPC's pitfalls is air conditioning. If you install conventional air conditioning for summer, the software treats it as extra energy use and lowers your score (overheating risk).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b2d79b8aaded",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9de1a97fcb3",
+     "text": "The positive loophole:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0de6d9f97231",
+     "text": " Passive geocooling uses so little energy that the software considers it negligible. You enjoy a cool house all summer without your certificate turning from green to orange.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9f13b86ea266",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "451fa8bfa82d",
+     "text": "4. Reaching an \"A\" or \"A+\" rating",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7bf2117a3e9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98de030b9333",
+     "text": "For new builds or deep renovations, an A rating is the ultimate goal. It is almost impossible with gas, and difficult with a simple air-to-water heat pump without a massive number of solar panels. With ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "17cc42d01fd3",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9736093bbdd8",
+     "text": ", geothermal does most of the work. It reduces primary energy needs so much that a small solar installation is often enough to tip the house into the energy-positive category.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4f6bf4875e26",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b7174a0e90a",
+     "text": "5. An investment that pays off on certificate day",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0cb29c789c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "43336142a01c",
+     "text": "Picture a 200 m² house. Going from a C to an A rating can mean a market value difference of €40,000 to €60,000. The cost of your borehole (about €15,000 to €20,000) is therefore ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "2cf356b8fe4a",
+     "text": "paid back immediately",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8b7dcfb70dae",
+     "text": " by the increase in property value, before you have even saved a single euro on your first heating bill.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Improving your EPC rating with geothermal | WellDoneDrill",
+ "seoDescription": "Why a geothermal heat pump boosts your Belgian EPC (PEB) rating: primary energy, a better score than air-source, penalty-free geocooling and an A label within reach.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-famille.webp",
+ "_mainImageAlt": "Geothermal in a small space"
+}

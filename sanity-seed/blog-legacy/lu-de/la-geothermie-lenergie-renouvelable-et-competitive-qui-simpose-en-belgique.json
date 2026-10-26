@@ -1,0 +1,690 @@
+{
+ "_id": "blog-legacy-lu-de-4376",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Geothermie: die erneuerbare und wettbewerbsfähige Energie, die sich in Belgien durchsetzt",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-erneuerbare-wettbewerbsfaehige-energie-in-belgien"
+ },
+ "publishedAt": "2025-12-02T10:48:10Z",
+ "excerpt": "Heizen macht einen großen Teil des Energieverbrauchs von Gebäuden aus, und die Geothermie erweist sich als leistungsfähige, stabile und CO₂-arme Lösung. In Belgien, wo der Untergrund ein hervorragendes Potenzial bietet, wird sie zunehmend selbstverständlich.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9a5a1826e182",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "adc36122a29c",
+     "text": "Heizen macht einen großen Teil des Energieverbrauchs von Gebäuden aus, und die Geothermie etabliert sich als Lösung, die zugleich leistungsfähig, stabil und CO₂-arm ist. In Belgien, wo der Untergrund ein hervorragendes Potenzial bietet, wird sie für alle, die ein nachhaltiges Heiz- und Kühlsystem suchen, zunehmend selbstverständlich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ef2264051280",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f1579b63bb0",
+     "text": "Die Geothermie nutzt die Wärme, die natürlich im Boden vorhanden ist. Ab etwa zehn Metern Tiefe bleibt die Temperatur der Erde das ganze Jahr über stabil. Dadurch arbeiten Erdwärmepumpen unabhängig von den Außenbedingungen mit gleichbleibender Leistung. In einem Land mit gemäßigtem Klima wie Belgien ist diese Stabilität ein großer Vorteil.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f35f45377880",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec7d30dc3cca",
+     "text": "Eine erneuerbare Energie, von Natur aus stabil und das ganze Jahr verfügbar",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a0bc9cfa7243",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e15393dd19dd",
+     "text": "Ab etwa zehn Metern Tiefe wird die Bodentemperatur stabil, je nach Region meist zwischen 10 und 14 °C. Erdwärmesonden in diesem Bodenvolumen nutzen diese Wärme kontinuierlich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "baafce52330b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff87f02b5853",
+     "text": "Die dem Boden entzogene Energie erneuert sich auf natürliche Weise. Eine richtig dimensionierte Erdwärmeanlage „leert“ die Lagerstätte nicht: Die Wärme regeneriert sich zwischen den Jahreszeiten, unter anderem durch die im Sommer beim Kühlen zurückgegebene Wärme. Die Geothermie ist also eine erneuerbare Energie, rund um die Uhr an 365 Tagen im Jahr verfügbar, unabhängig von Wind, Sonne oder Außentemperatur.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "14098372cdd1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7b7e28961de",
+     "text": "Einer der niedrigsten CO₂-Fußabdrücke am Markt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "88c11e933a4a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6abd043fba07",
+     "text": "Eine Erdwärmepumpe erzeugt im Durchschnitt 4 kWh Wärme aus 1 kWh Strom. Mit anderen Worten: Fast 75 % der erzeugten Wärme sind zu 100 % erneuerbar.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dee28559604c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "497f3c214919",
+     "text": "Ihre CO₂-Emissionen liegen damit weit unter denen eines Gas- oder Ölkessels, selbst wenn man den CO₂-Fußabdruck des Stroms berücksichtigt. Für eine Gemeinde, einen Bauträger oder einen privaten Eigentümer ermöglicht die Geothermie also eine starke Senkung des CO₂-Fußabdrucks eines Gebäudes, ob Wohnhaus, Bürogebäude oder Mehrfamilienhaus.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f4b1c7917eb5",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ea36a2057ce",
+     "text": "Eine effiziente Lösung, selbst in den kältesten Wintern",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "147bf89c1cea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8737048eaa7",
+     "text": "Da sie die Wärme des Bodens und nicht der Luft nutzt, behält die Geothermie auch bei Minustemperaturen eine hervorragende Effizienz. Während eine Luft-Wasser-Wärmepumpe im tiefsten Winter an Leistung verliert, bleibt eine Erdwärmepumpe stabil, weil die Bodentemperatur kaum schwankt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "06f735926034",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c07af3d8057",
+     "text": "Die Geothermie bietet so gleichbleibenden Komfort, einen beherrschten Stromverbrauch und sehr gut planbare Energiekosten, auch an den kältesten Tagen des Jahres, genau dann, wenn das Gebäude am meisten Wärme braucht.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6d72ddb5e46c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f2373553991",
+     "text": "Eine lokale Energie, unabhängig von Marktschwankungen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "97321e06a353",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9428f297bda1",
+     "text": "Geothermie wird direkt vor Ort erzeugt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e008fee9e31f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c753f0310bc3",
+     "text": "Kein Brennstoffimport, keine Lieferung, keine Lagerung. Die Wärme wird dem Grundstück entnommen, unter dem Gebäude oder in unmittelbarer Nähe.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "34b3a1fece71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8d17eef5bbce",
+     "text": "Diese lokale Energie ist unabhängig von Preisschwankungen bei Gas, Heizöl oder CO₂-Zertifikaten. Sie verringert die Abhängigkeit von internationalen Märkten und kennt keine geopolitischen Risiken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "18d01b22cfa2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "50b392c27247",
+     "text": "Für Privatpersonen ebenso wie für öffentliche Gebäude oder Bürogebäude ist die Geothermie ein konkretes Mittel, die Betriebskosten langfristig zu stabilisieren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "05b09d8bafb1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7720aade0b0d",
+     "text": "Eine nahezu kostenlose natürliche Kühlung: Geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "592f166c425f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b7e374856253",
+     "text": "Im Sommer bietet die Geothermie einen einzigartigen Vorteil: die passive Kühlung des Gebäudes. Dieses Prinzip, oft Geocooling oder Freecooling genannt, nutzt die Kühle des Bodens direkt, um das Gebäude auf einer sehr angenehmen Temperatur zu halten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "383ec6795a4d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c6b6bf03008",
+     "text": "Das System kann eine klassische Klimaanlage ersetzen oder ihren Bedarf stark verringern und senkt zugleich die Energierechnung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "14b197f19b90",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "550b3f575fb2",
+     "text": "Eine außergewöhnlich lange Lebensdauer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dd738ff3bf0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c8e86c2a218",
+     "text": "Erdwärmesonden im Boden haben eine geschätzte Lebensdauer von über 50 Jahren. Die Wärmepumpe hält etwa so lange wie andere Heizgeräte (15 bis 20 Jahre), arbeitet aber unter sehr stabilen Bedingungen, was ihrer Langlebigkeit zugutekommt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ca3064c25101",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d9919923b756",
+     "text": "Wenn sich das Gebäude verändert, bleiben die Sonden an Ort und Stelle, bereit, eine neue Wärmepumpe zu versorgen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "639245bcb2a4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b31b8a3ae00d",
+     "text": "Mit die niedrigsten Betriebskosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7453ed83053b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b4890a38db17",
+     "text": "Dank ihrer hervorragenden Effizienz senkt eine Erdwärmeanlage die Betriebskosten erheblich. Aus 1 kWh Strom liefert die Erdwärmepumpe etwa 4 kWh Wärme. Die Heizkosten können je nach Projekt gegenüber einer fossilen Lösung auf die Hälfte bis ein Viertel sinken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a4d43367ce15",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f0e4b9ac84f9",
+     "text": "Auch die Wartungskosten sind gering: kein Kessel zum Kehren, kein Brenner, kein Schornstein. Die Anlage ist sauber, vollelektrisch und hat wenige Verschleißteile.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4b73ba9b2472",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bd242d18ccc",
+     "text": "Eine Lösung für fast jedes Gebäude",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ea8717b703b7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3c7511d46bba",
+     "text": "Entgegen manchen Vorurteilen ist die Geothermie nicht auf große freistehende Häuser mit großem Garten beschränkt. Sie eignet sich für eine Vielzahl von Gebäuden:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3c26018791c3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3db87debecb",
+     "text": "Einfamilienhäuser",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4a6bab6b20df",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd15ee0eccb4",
+     "text": "Mehrfamilienhäuser",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3ff64d9cef5e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "06d90c54b93e",
+     "text": "Büros",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ec60a864079",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "577e4d9c359b",
+     "text": "Schulen und Kitas",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "082bdf5aac88",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbf83ba86e8a",
+     "text": "öffentliche Gebäude",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f9619223b7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af8847876224",
+     "text": "kleine und mittlere Industriegebäude",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c0dcca463017",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5bf7a74476e",
+     "text": "In Belgien bietet der Untergrund in den allermeisten Regionen ein hervorragendes Potenzial. Mit vertikalen Sonden entfallen Einschränkungen an der Oberfläche, sodass Geothermie selbst in dicht bebauten Städten oder auf kleinen Grundstücken möglich ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ef6733acdea0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f49242bd910",
+     "text": "Eine Energie der Zukunft, einfach und äußerst leistungsfähig",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "abe1f5c40600",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ebce1908eef0",
+     "text": "Die Geothermie vereint alle heute gefragten Eigenschaften:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8a9e2b842608",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9d202e95fa80",
+     "text": "hohe Leistung das ganze Jahr,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8ffa4591206a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c7976eacf74",
+     "text": "absolute Ruhe,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b868e8189b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7de73cfa744d",
+     "text": "natürliche Kühlung,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "14799772cbe1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9948ec6d5084",
+     "text": "sehr niedrige Betriebskosten,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7ab3b3846b7d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e49e286dd548",
+     "text": "Energieunabhängigkeit,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76c767f201e2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b88d5d5f8001",
+     "text": "außergewöhnliche Langlebigkeit,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "25b3f1f85a0b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad00b5928425",
+     "text": "geeignet für Sanierung und Neubau.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cee5e2edc197",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9bc92b12d2ad",
+     "text": "Sie ist eine der wenigen Lösungen, die Heizung, sanfte Kühlung und Warmwasser mit einer einzigen Technologie liefert und dabei die Klimaziele einhält.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eecdb9dc5b81",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1f95082a8b8",
+     "text": "In Belgien ist die Geothermie keine Nischentechnologie mehr: Sie ist eine zuverlässige, ausgereifte und wettbewerbsfähige Antwort für jedes Bau- oder Sanierungsprojekt, das Energieeffizienz und langfristige Stabilität anstrebt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie: erneuerbare Energie in Belgien | WellDoneDrill",
+ "seoDescription": "Warum sich Geothermie durchsetzt: stabile Bodentemperatur, wenig CO₂, Effizienz im Winter, lokale Energie, kostenlose Kühlung und niedrige Betriebskosten.",
+ "_mainImageFile": "uploads/2025/05/Novacity2-header.webp",
+ "_mainImageAlt": "Erdwärmebohrung auf der Baustelle Novacity in Belgien"
+}

@@ -1,0 +1,724 @@
+{
+ "_id": "blog-legacy-lu-de-4409",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Den Gaskessel ersetzen: Ist jetzt der Moment für Geothermie?",
+ "slug": {
+  "_type": "slug",
+  "current": "gaskessel-ersetzen-umstieg-auf-geothermie"
+ },
+ "publishedAt": "2025-12-02T11:02:47Z",
+ "excerpt": "Die Frage „Wie ersetze ich meinen Gaskessel?“ stellen sich Eigentümer und Eigentümergemeinschaften immer häufiger. Ein alternder Kessel, Sorgen um den Gaspreis, Energievorschriften, der Wunsch nach Dekarbonisierung… An Gründen fehlt es nicht.",
+ "category": "pac",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "9c04fc9a9692",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e099f06b91ae",
+     "text": "Die Frage „Wie ersetze ich meinen Gaskessel?“ stellen sich Eigentümer und Eigentümergemeinschaften immer häufiger. Ein Kessel am Ende seiner Lebensdauer, Sorgen um den Gaspreis, Energievorschriften, der Wunsch nach Dekarbonisierung… An Gründen fehlt es nicht. Unter den möglichen Lösungen wird die Erdwärmepumpe zur komfortabelsten und zukunftssichersten Option. Besonders in Belgien, wo der Untergrund ein hervorragendes Potenzial bietet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8df7f94ddaa1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1670f41be2fa",
+     "text": "Warum den Gaskessel jetzt ersetzen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d6161835aa43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0871b6ceb88",
+     "text": "Ein Gaskessel, der 15 oder 20 Jahre alt ist, nähert sich dem Ende seiner Lebensdauer. Der Wirkungsgrad sinkt, die Pannen häufen sich, Ersatzteile werden schwerer zu bekommen. Gleichzeitig hat sich der energetische Kontext verändert: Der Gaspreis ist volatiler geworden, die Vorschriften werden strenger, und die Klimaziele drängen zum schrittweisen Ausstieg aus fossilen Brennstoffen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0879db12b826",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e612a8d93015",
+     "text": "Einen alten Gaskessel einfach durch einen neuen zu ersetzen, verlängert diese Abhängigkeit um weitere 15 oder 20 Jahre. Technisch ist das möglich. Strategisch ergibt es für ein Wohnhaus oder Gebäude, das seinen Wert langfristig erhalten will, immer weniger Sinn.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "989f1177224c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7a7cb386363",
+     "text": "Hier verbindet sich die Frage „Gaskessel ersetzen“ ganz natürlich mit der Wärmepumpe, insbesondere mit der Geothermie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7075fcb8ab43",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d02ee1d58ea9",
+     "text": "Einen Gaskessel durch eine Wärmepumpe ersetzen: Warum die Geothermie herausragt",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f316c566d0a3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c7749b2fc88",
+     "text": "Wer einen Gaskessel ersetzen will, hat zwei große Wärmepumpenfamilien zur Auswahl: Luft-Wasser-Wärmepumpen und Erdwärmepumpen (Sole-Wasser).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e8be51965c28",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fa867a9cad9",
+     "text": "Beide können ein Heizkörpernetz oder eine Fußbodenheizung versorgen, verhalten sich aber sehr unterschiedlich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "73191e58b6b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "234b7ee82090",
+     "text": "Luft-Wasser-Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "102c1355795f",
+     "text": " entzieht der Außenluft Wärme. Je kälter es ist, desto mehr sinkt ihre Leistung, während der Heizbedarf steigt. Sie benötigt ein sichtbares und hörbares Außengerät an der Fassade, auf dem Dach oder im Garten.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b1db01f4b07c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f8c86135de3f",
+     "text": "Erdwärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "55adcda6ac1b",
+     "text": " entzieht dem Boden über vertikale Sonden Wärme. Die Temperatur des Untergrunds bleibt das ganze Jahr stabil, was auch bei Frost eine sehr hohe Effizienz ergibt. Es gibt kein Außengerät: Das gesamte System befindet sich im Gebäude und im Boden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b6da39c8eb07",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8496c3f53d7",
+     "text": "Bei einer Sanierung bedeutet der Ersatz eines Gaskessels durch eine geothermische Heizung also den Wechsel:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a36411ce84b6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b5d395e3237",
+     "text": "von der Verbrennung zu einem elektrischen System mit sehr hohem Wirkungsgrad;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b17ea6187b25",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cf8773af6d35",
+     "text": "von einer importierten, volatilen Energie zu einer lokalen, stabilen Ressource;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "97e330df6ef8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cffd53b81163",
+     "text": "von einer Flamme im Heizraum zum Wärmeaustausch mit dem Boden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5e92faaabe67",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f4fc27c40009",
+     "text": "Geothermie und Heizkörper: Ja, Sanierung ist möglich",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "047f65dc52b3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "490267fa0450",
+     "text": "Viele Bestandsgebäude haben Heizkörper, die für relativ hohe Temperaturen ausgelegt sind. In der Praxis sind diese Heizkörper jedoch oft für den heutigen Bedarf überdimensioniert (bessere Dämmung, neue Fenster, veränderte Nutzung usw.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e88d3f89bc7f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd7b58fdc80f",
+     "text": "Durch Arbeit an der Regelung (Heizkurve, Einzelraumregelung, hydraulischer Abgleich) lassen sich die Vorlauftemperaturen oft senken, ohne Komfort einzubüßen. Die Erdwärmepumpe kann so ein bestehendes Heizkörpernetz mit niedrigeren, aber ausreichenden Temperaturen versorgen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "61da85e79b7c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4c0fbc10421e",
+     "text": "In manchen Fällen sind punktuelle Anpassungen nötig (einige Heizkörper ersetzen, in bestimmten Bereichen Gebläsekonvektoren ergänzen), doch alles neu zu machen ist nicht erforderlich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "40b3b1bb8902",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ad98eccfba7d",
+     "text": "Wie läuft der Wechsel vom Gaskessel zur Geothermie konkret ab?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ebe2c6247a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d744c7d4477",
+     "text": "Ein typisches Projekt umfasst mehrere Schritte:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6ee26b457417",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d3f57e70ebe4",
+     "text": "Bestandsaufnahme der vorhandenen Anlage (Leistung, Verteilnetz, verfügbarer Platz);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c99f806a0e03",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bc5d4f9987f8",
+     "text": "Prüfung der geothermischen Machbarkeit (Platz für die Sonden, Bodenart, Zugang für das Bohrgerät);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "62fe4f3c5b06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8bceddcbdfbd",
+     "text": "Dimensionierung von Sondenfeld und Wärmepumpe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "80123dd6605c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "289bf4ba03cb",
+     "text": "Ausführung der Bohrungen und Einbau der Sonden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e193a77dc9e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78a6ea329471",
+     "text": "Installation von Wärmepumpe, Pufferspeicher und hydraulischen Anpassungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ebc84fb1629d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d96726125b95",
+     "text": "Inbetriebnahme, Einstellung der Regelung und Optimierung.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "77d9d83753ef",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6ce355db281",
+     "text": "In einem Mehrfamilienhaus ist dieses Vorgehen meist Teil eines umfassenderen energetischen Sanierungsprojekts und kann in Etappen erfolgen, um Unterbrechungen zu begrenzen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3bc39416e74e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45a4e4b99038",
+     "text": "Gaskessel ersetzen: Welche Wirkung auf die Kosten auf lange Sicht?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b8800f500dde",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "573cc7d5b2b8",
+     "text": "Der Wechsel von Gas zur Geothermie erfordert eine höhere Anfangsinvestition, verändert das Ausgabenprofil aber grundlegend:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c66d0b2b1c91",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f08d7c61087",
+     "text": "statt Gas kaufen Sie Strom, dank der hohen Leistungszahl der Wärmepumpe aber in viel geringerer Menge;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "651ed18f1dca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c02c1aa8f589",
+     "text": "die Energierechnung reagiert weniger empfindlich auf Gaspreisschwankungen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "45e374e1adfa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b804f6e5231",
+     "text": "CO₂-Bepreisungssysteme (ETS usw.) verteuern fossile Brennstoffe nach und nach.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c36a6fc0af06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3445fda8e2f",
+     "text": "Rechnet man hinzu:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "07e6cb21d292",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f78d84a36e55",
+     "text": "die Lebensdauer der Sonden (über 50 Jahre);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0bed5cddb12d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "77c70ed7103e",
+     "text": "die Möglichkeit, die Wärmepumpe mit Photovoltaik zu koppeln;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d3e6f193d8e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23630e7992ae",
+     "text": "die günstigen Mehrwertsteuersätze im Wohnbau;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d9edb2b3b35d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17b2d70162a9",
+     "text": "ergibt sich eine Amortisationszeit, die den Ersatz eines Gaskessels durch Geothermie über 15 bis 20 Jahre sehr wettbewerbsfähig macht, vor allem bei Gebäuden, die lange genutzt werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b409181ce2b0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec1d70b249e7",
+     "text": "Die Rolle von WellDoneDrill beim Ersatz eines Gaskessels",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ec40185d7864",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3645482267c2",
+     "text": "WellDoneDrill installiert keine Gaskessel: Unser Beruf sind Bohrungen und Sonden für die Geothermie. Doch genau dort beginnt alles, wenn ein Gaskessel ersetzt werden soll.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9ff13a796fd7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7711688631c4",
+     "text": "WDD kann:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "297a5b65e3e7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e138bc2db2a6",
+     "text": "die geothermische Machbarkeit des Standorts prüfen, wenn ein Kessel das Ende seiner Lebensdauer erreicht;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "46ac155b56e1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d1c008fdb898",
+     "text": "das passende Sondenfeld für das Gebäude dimensionieren und ausführen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "be4ab912c131",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fa01a2f8f90e",
+     "text": "mit dem vom Kunden gewählten Wärmepumpeninstallateur zusammenarbeiten oder Partner vorschlagen, die mit solchen Umstellungen vertraut sind;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "141ed26b7289",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79033f7b95c9",
+     "text": "helfen, das Projekt so aufzusetzen, dass die richtigen Steuersätze und verfügbaren Förderungen genutzt werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b7ae5b9b7b75",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "618f198f7d74",
+     "text": "Für private Eigentümer, Hausverwaltungen oder Bauträger wird die Frage dann einfach: Warum einen Gaskessel durch einen anderen ersetzen, statt diesen Schlüsselmoment zu nutzen, um endgültig aus dem Gas auszusteigen und auf eine leistungsfähige, leise und langlebige geothermische Heizung umzusteigen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de2e256fce94",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5dd197e9771",
+     "text": "Einen Gaskessel zu ersetzen ist keine reine Gerätefrage mehr. Es ist die Gelegenheit zu entscheiden, wie Sie in den nächsten zwanzig Jahren heizen wollen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Gaskessel durch Geothermie ersetzen | WellDoneDrill",
+ "seoDescription": "Gaskessel ersetzen? Warum eine Erdwärmepumpe besser abschneidet als eine Luftwärmepumpe, auch mit Heizkörpern, wie der Umstieg abläuft und was er bringt.",
+ "_mainImageFile": "uploads/2025/12/chaudiere-gaz-geothermie.webp",
+ "_mainImageAlt": "Wärmepumpe von WellDoneDrill"
+}

@@ -1,0 +1,508 @@
+{
+ "_id": "blog-legacy-be-nl-4411",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Enkele misvattingen over geothermie… en wat erachter zit",
+ "slug": {
+  "_type": "slug",
+  "current": "misvattingen-over-geothermie-en-wat-erachter-zit"
+ },
+ "publishedAt": "2025-12-02T11:03:32Z",
+ "excerpt": "Geothermie trekt steeds meer bouwheren, architecten en studiebureaus aan. Maar bijna bij elk gesprek komen dezelfde vragen terug. Dit artikel overloopt die misvattingen een voor een en legt uit hoe het echt zit.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "f929f7773ec5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "612b80df2a60",
+     "text": "Geothermie trekt steeds meer bouwheren, architecten en studiebureaus aan. Maar bijna bij elk gesprek komen dezelfde vragen terug: \"We zullen in de winter bijverwarming nodig hebben\", \"We hebben geen tijd meer om dat te bestuderen\", \"We hebben geen technische ruimte\", \"Het budget gaat ontsporen door de boringen\". Dit artikel overloopt die misvattingen een voor een en legt uit hoe het echt zit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "06c3ee3198f3",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2de100e89bdd",
+     "text": "1. \"We zullen in de winter bijverwarming nodig hebben, geothermie volstaat niet\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2e62306712da",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d58132e62586",
+     "text": "Voor kleine installaties (woningen, kleine appartementsgebouwen, kleine kantoorgebouwen) volstaat een goed gedimensioneerde geothermische installatie bijna altijd op zichzelf om de volledige verwarmingsbehoefte te dekken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "39454910ec58",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6257db40a35a",
+     "text": "De sleutel is het duo geothermische warmtepomp + opslagvat. De warmtepomp wordt gedimensioneerd om het nodige vermogen te leveren, en het vat dient als thermische buffer: de warmtepomp kan op het beste moment draaien (goed rendement, beschikbare elektriciteit, productie van zonnepanelen) terwijl de verbruikspieken in het verwarmingsnet toch gedekt worden. Met andere woorden: men laadt het vat wanneer de warmtepomp in de beste omstandigheden werkt, en ontlaadt het tijdens vraagpieken. In dat schema blijft geothermie het hoofdsysteem, geen bijverwarming.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1de1bed92eb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "546ea99369ee",
+     "text": "Voor installaties met een groter vermogen (appartementsgebouwen, grote kantoorgebouwen, lokale warmtenetten) is het vaak interessant geothermie te combineren met andere warmtepomptechnologieën: aquathermie, riothermie of zelfs luchtwarmte. Die combinaties optimaliseren de productie volgens de seizoenen en de behoeften.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "134df315a968",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a79341411bba",
+     "text": "Geothermie combineren met gas is vaak het eerste idee dat opkomt, maar bijna altijd het minst zinvolle: men verliest een deel van de voordelen op vlak van koolstofreductie, de stookruimte wordt complexer en men blijft op lange termijn afhankelijk van een fossiele brandstof.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da708771b6cf",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9c10d4342009",
+     "text": "2. \"Onze planning is krap, we hebben geen tijd meer om geothermie te bestuderen\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee4a1e0e7a7e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3fa448f3d3e0",
+     "text": "Men denkt soms dat geothermie maandenlang extra studiewerk vraagt en niet te verenigen is met een strakke planning. In werkelijkheid kan voor de meeste \"klassieke\" woon- en kantoorprojecten de dimensionering van een sondeveld en een geothermische warmtepomp gebeuren binnen termijnen die vergelijkbaar zijn met de andere technische loten, op voorwaarde dat men tijdig beslist die optie te onderzoeken.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8a5000e6b3af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a9ecdf23ef51",
+     "text": "Om de studie op te starten volstaan enkele basisgegevens:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b5fb25041364",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4556a6312594",
+     "text": "oppervlakte van het gebouw;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0cdf6b645218",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24fcded7bc01",
+     "text": "type gebruik (woning, kantoren, school, gemengd…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9277c6af1902",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "730bba4291d1",
+     "text": "beoogd prestatieniveau;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90235a617ca4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b55fe82b794",
+     "text": "behoeften aan verwarming, koeling en sanitair warm water;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "25583168f449",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b2156dac3ab",
+     "text": "beperkingen van het perceel en de toegang.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e4cea9b8e08f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89d2d5babb71",
+     "text": "Op basis daarvan kan men het te installeren vermogen, het aantal sondes, de dieptes en de mogelijke inplanting al ramen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f5ba0c12380b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74c737037faf",
+     "text": "WellDoneDrill werkt net in die realiteit van echte planningen: geothermie integreren in projecten die al ver gevorderd zijn, samenwerken met architecten en studiebureaus, en de boorwerf afstemmen op de andere vakmensen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9fb81c93f9d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c6d86ce91061",
+     "text": "Administratief zijn de vergunningstermijnen doorgaans kort. In de meeste gevallen gaat het om een eenvoudige milieumelding die, afhankelijk van het gewest, binnen enkele dagen of weken wordt behandeld. De blokkering komt dus niet van een onvermijdelijke technische termijn, maar eerder van het moment waarop men geothermie ernstig op tafel durft te leggen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bbdfaf42d5ed",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1aa516ae08f",
+     "text": "3. \"We hebben heel weinig plaats in de technische ruimte, geothermie past daar nooit\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9796d4cdb97f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7805393c7ef2",
+     "text": "Het beeld van een volumineuze geothermische stookruimte is grotendeels achterhaald. Moderne \"alles-in-één\" geothermische warmtepompen zijn niet groter dan een grote koelkast: ze bundelen de meeste onderdelen (pompen, warmtewisselaars, regeling, enz.) in één module.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe9641cae459",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8b100998f3a",
+     "text": "Bij veel projecten neemt de geothermische warmtepomp minder plaats in dan een oude ketel, zeker als men rekening houdt met:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "13cd8b63f7a6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "35ac38c69216",
+     "text": "het wegvallen van de schoorsteen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "34b5d2266e1f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d4f7da38712f",
+     "text": "het ontbreken van brandstofopslag;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90ea06df7fa8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fdf10b96a84a",
+     "text": "een eenvoudigere ruimte (geen brander, geen tank, minder specifieke ventilatie).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bc2b253db679",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "557c95abd513",
+     "text": "Het opslagvat kan, wanneer het nodig is, compact worden geplaatst (verticaal, in de technische ruimte, in de kelder, enz.). Het is dus eerder een kwestie van organisatie dan een technische onmogelijkheid.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6170a4de9900",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1464bdf36267",
+     "text": "4. \"Het budget kan ontsporen door de geothermie\"",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a571fd816549",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c420d9bb0312",
+     "text": "De vrees voor budgetoverschrijdingen door de boringen komt vaak voor, zeker wanneer men al heeft gehoord van meerkosten bij slecht omkaderde projecten. Een goed gestructureerde offerte, met beheerste hoeveelheden en duidelijke eenheidsprijzen, maakt het budget echter veilig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da0a6717993f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78f15b38a36c",
+     "text": "Enkele sleutelpunten om onaangename verrassingen te vermijden:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ae94e07c93d6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5a990d01074",
+     "text": "een sondelengte die strookt met het te installeren vermogen en de eigenschappen van het terrein;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "49aa75864c66",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a50177f20693",
+     "text": "een duidelijk vastgelegde prijs per meter of per sonde;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "47bcf768d9a6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8a794a1a8e9",
+     "text": "een transparant beleid voor eventuele onvoorziene omstandigheden bij het boren (verbuizing, bijzondere bodems, enz.);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6c333b71de40",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "38a5e1289051",
+     "text": "horizontale verbindingen en collectoren inbegrepen in de offerte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "12a4f57850fd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ff01fa805bd",
+     "text": "WellDoneDrill heeft zijn offertes zo opgebouwd dat verborgen kosten vermeden worden en supplementen beperkt blijven. De sondes worden realistisch gedimensioneerd, de prijzen per boring zijn vast, en de elementen die meerkosten kunnen veroorzaken, worden vooraf geïdentificeerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d594b2e412e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7777046077f2",
+     "text": "Uiteindelijk blijkt geothermie, wanneer men de totale kosten over de levensduur van de installatie bekijkt (investering + werking), doorgaans zeer concurrerend tegenover fossiele oplossingen of lucht-watersystemen, en biedt ze bovendien meer comfort.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Misvattingen over geothermie ontkracht | WellDoneDrill",
+ "seoDescription": "Bijverwarming nodig in de winter? Geen tijd voor een studie? Geen technische ruimte? Een budget dat ontspoort? Vier misvattingen over geothermie ontkracht.",
+ "_mainImageFile": "uploads/2025/12/geothermie-idee-recue.webp",
+ "_mainImageAlt": "Misvattingen over geothermie"
+}

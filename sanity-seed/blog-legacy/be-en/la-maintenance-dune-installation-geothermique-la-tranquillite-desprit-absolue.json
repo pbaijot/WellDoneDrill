@@ -1,0 +1,420 @@
+{
+ "_id": "blog-legacy-be-en-5416",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Maintaining a geothermal installation: complete peace of mind",
+ "slug": {
+  "_type": "slug",
+  "current": "maintaining-a-geothermal-installation"
+ },
+ "publishedAt": "2026-03-20T11:10:57Z",
+ "excerpt": "One of the main concerns when choosing a new heating system is the fear of breakdowns and the cost of annual servicing. Geothermal stands apart from gas or oil boilers thanks to its mechanical simplicity.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "2153241b7beb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dee71b358a69",
+     "text": "One of the main obstacles when choosing a new heating system is the fear of breakdowns and the cost of annual servicing. Yet geothermal stands out radically from gas or oil boilers thanks to its mechanical simplicity. At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "bc67cf706bd5",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1f7f57886d53",
+     "text": ", we like to say that a well-designed geothermal installation is a system you end up forgetting, it is so unobtrusive. Here is why geothermal needs the least maintenance on the market.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6174e6d916d8",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d485d618c4f9",
+     "text": "1. An investment for a century",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "45bd92ae561d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7761b1b2df9e",
+     "text": "The most impressive part of vertical geothermal lies beneath your feet. Once our teams have injected the geothermal grout and sealed the HDPE (high-density polyethylene) probes at 150 metres, the system is protected from any outside damage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "784b12419eeb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c25d3d80b0f9",
+     "text": "Zero maintenance:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c56106b8a87f",
+     "text": " The probes require no human intervention at all. They don't clog, don't corrode and never need cleaning.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ede932d65842",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9f8307b68e9",
+     "text": "Exceptional lifespan:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3ff9a97dcf3c",
+     "text": " HDPE is an incredibly stable material. The lifespan of the probes is estimated at over 50, even 100 years. It is a property asset that will probably serve several generations of owners.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bc105693c7ad",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "617d0ce925ae",
+     "text": "2. Inside the house: the reliability of a sealed circuit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9eb7d8d9e1dc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c1b7108f7a7b",
+     "text": "Unlike a combustion boiler, a geothermal heat pump involves no flame, no soot and no flue gases. That changes everything for maintenance:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "191fc2573d4a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4ed6a75cd1a1",
+     "text": "No chimney sweeping:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "90246a88fd2c",
+     "text": " With no flue, this chore and the risks of carbon monoxide disappear.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "eadb1adc95c8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "be6a651ba2e2",
+     "text": "A sealed circuit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2bd69333205d",
+     "text": " The heat-transfer fluid circulates in a closed loop between the borehole and the heat pump. A simple pressure check (once a year, like a car tyre) is usually enough to confirm it is working properly.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8164801b35b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e43d009906db",
+     "text": "Accessible filters:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6d83e7f6c02a",
+     "text": " The only regular task is cleaning or replacing the dirt filters on the hydraulic circuit to keep the water flow optimal. It is a simple job any owner can learn in a few minutes.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "76954ce69fea",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fead5d056c0c",
+     "text": "3. Why is it simpler than an air-to-water heat pump?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "71590c2a910e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af8b9424e56e",
+     "text": "Geothermal is often compared with air-to-water heat pumps. When it comes to maintenance, geothermal wins hands down:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f979248742a8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "658d440c6084",
+     "text": "No exposed outdoor unit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f37e60a969c6",
+     "text": " An air-to-water heat pump has an outdoor fan exposed to frost, rain, dead leaves and dust.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1856d596d648",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27968ab67ea6",
+     "text": "No intensive defrost cycle:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e98f5579b1da",
+     "text": " In winter, an air-to-water heat pump has to stop to defrost its fins, which puts heavy strain on the compressor. With geothermal, the heat source (the ground at 12–13 °C) never freezes. The compressor works in stable conditions, which greatly reduces the risk of mechanical failure.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "07e2e6e50089",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a7b606c77a64",
+     "text": "4. Professional follow-up: the inspection visit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "12e8f2779655",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "33ec0abb0d83",
+     "text": "Although the system is robust, an annual or two-yearly inspection by a specialist technician is still recommended. This quick check-up makes it possible to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ca07105eed99",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "639c81cae86d",
+     "text": "Check the settings to optimise consumption.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0b49cd242555",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53ee4592f948",
+     "text": "Test the quality of the heat-transfer fluid (antifreeze protection).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fd30a83c612a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b0831d9db4d",
+     "text": "Make sure the circulators are running at peak efficiency.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "356922646543",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9478f8c4650",
+     "text": "5. The WellDoneDrill commitment: a flawless design",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cb230b7e3a31",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dbeca265b261",
+     "text": "The key to low maintenance is the quality of the original installation. By using top-quality components, robust manifolds and rigorous drilling work, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4484d07f10c9",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e84f0767f680",
+     "text": " minimises future points of failure. We deliver turnkey installations designed to last, not to be repaired.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Maintaining a geothermal installation | WellDoneDrill",
+ "seoDescription": "How much maintenance does geothermal need? Maintenance-free probes, a sealed circuit, no chimney and an annual check: this is how simple it is.",
+ "_mainImageFile": "uploads/2025/12/chauffage-sol.webp",
+ "_mainImageAlt": "Maintenance of a geothermal installation"
+}

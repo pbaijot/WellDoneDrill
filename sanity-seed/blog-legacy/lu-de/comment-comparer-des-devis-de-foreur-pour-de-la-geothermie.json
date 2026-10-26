@@ -1,0 +1,816 @@
+{
+ "_id": "blog-legacy-lu-de-4415",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Wie vergleicht man Angebote von Bohrunternehmen für Geothermie?",
+ "slug": {
+  "_type": "slug",
+  "current": "angebote-von-bohrunternehmen-fuer-geothermie-vergleichen"
+ },
+ "publishedAt": "2025-12-02T11:05:02Z",
+ "excerpt": "Wer mehrere Bohrunternehmen für ein Geothermieprojekt anfragt, erhält oft Angebote, die schwer vergleichbar wirken: Preis pro Meter, Preis pro Sonde, Baustellenkosten, Risiken bei der Verrohrung… Dieser Artikel gibt einige Orientierungspunkte.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "cfde68dc3a71",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3ceb17a33c83",
+     "text": "Wer mehrere Bohrunternehmen für ein Geothermieprojekt anfragt, erhält oft Angebote, die schwer vergleichbar wirken: Preis pro Meter, Preis pro Sonde, Baustellenkosten, Risiken bei der Verrohrung… Dieser Artikel gibt einige Orientierungspunkte, um diese Angebote zu analysieren und böse Überraschungen zu vermeiden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4e4d7598a3a2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec61bf60c32c",
+     "text": "1. Kosten der Baustelleneinrichtung: Wer übernimmt was?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7b99f8eb2145",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a396e0856b3c",
+     "text": "Noch bevor Sie auf den Preis pro gebohrtem Meter schauen, sollten Sie die Kosten der Baustelleneinrichtung prüfen. Ein seriöses Angebot gibt klar an:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c430ea660148",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89f0342912a7",
+     "text": "eventuelle Verwaltungskosten: Übernimmt das Bohrunternehmen die Umweltformalitäten, Anzeigen und Anträge auf Nutzung der Straße?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b6458c264a4f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "274bf4bdfbfe",
+     "text": "die Bereitstellung von Wasser und Strom: Wer liefert was, in welcher Entfernung und mit welchen Eigenschaften?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "be3078982faa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cdcf3c9c75b2",
+     "text": "Kosten für die Reservierung von Flächen auf der Straße, falls nötig;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "64c93dbf5ad6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dfc6a71bd2f7",
+     "text": "die Zugangsmittel: Sind ein Kran oder ein Portal nötig, muss ein Zaun abgebaut werden…",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0a4d8ce51908",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71ece2b18fd2",
+     "text": "Ein „günstigeres“ Angebot, das diese Punkte nicht aufführt, kann am Ende teurer werden, wenn der Bauherr diese Posten selbst tragen oder unvorhergesehene Probleme während der Arbeiten lösen muss.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "01d098a6ee4d",
+   "_file": "uploads/2025/12/expert-geothermie-belgique.jpg",
+   "alt": "Erdwärmebohrung in Belgien"
+  },
+  {
+   "_type": "block",
+   "_key": "7792326ada19",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8b0ceb2d1792",
+     "text": "2. Bohrkosten: Preis pro Meter… oder Pauschalpreis?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af8e5fb94ca9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6498f49088d",
+     "text": "Die meisten Angebote für Erdwärmebohrungen werden als Preis pro gebohrtem Meter oder als Preis pro Sonde (mit einer Höchsttiefe) angegeben. Entscheidend ist zu verstehen, was enthalten ist und was nicht.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ada88d590cbc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6892ebbd9195",
+     "text": "Einige Schlüsselfragen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fac40ce86fe3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6805d38fe2af",
+     "text": "deckt der angegebene Preis die gesamte geplante Tiefe ab?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ec7fb3464246",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c883ce118d15",
+     "text": "gibt es Preisstufen je nach Bodenart (z. B. einen Zuschlag bei schwierigem Untergrund)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d61773bb671a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86d5b60f630f",
+     "text": "sind Sonden, geothermische Verfüllung und Druckprüfungen enthalten?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1b9f217d7013",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e8f2830a5773",
+     "text": "Ein wichtiger Punkt: Nicht alle Bohrunternehmen gehen von derselben Entzugsleistung pro Sondenmeter aus. Manche rechnen mit 60 W/m, andere mit 40 oder 45 W/m.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "75bbcd09e3d1",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b38aaf20c61",
+     "text": "Vorsicht bei Leistungsangaben „pro Meter“",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eda9bfa66621",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "78e948a7d718",
+     "text": "Um Angebote zu vergleichen, sollten Sie sie immer auf dieselbe Anzahl gebohrter Laufmeter umrechnen. Schlägt ein Bohrunternehmen weniger Meter vor, weil es eine höhere Leistung pro Meter annimmt, verlangen Sie eine Neuberechnung auf Basis derselben Länge für alle Anbieter.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "26f9ce03aa8f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e5ce67b359e1",
+     "text": "Außerdem schlagen manche Bohrunternehmen tiefere Bohrungen mit weniger Sonden vor, andere kürzere Bohrungen mit mehr Sonden. Bei gleicher Gesamtlänge verbessern tiefere Bohrungen oft die Effizienz und verringern den Flächenbedarf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "953c50f50451",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6082fc10683a",
+     "text": "Schließlich sollten Sie unbedingt prüfen, ob es versteckte Kosten für unvorhergesehene Bohrrisiken gibt, insbesondere bei der Verrohrung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "80eae2337272",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b5e95a583839",
+     "text": "Manche Angebote nennen einen attraktiven Preis unter „normalen“ Bedingungen, verlangen aber hohe Zuschläge, sobald eine zusätzliche Verrohrung nötig ist. In vielen Böden ist eine Verrohrung jedoch üblich. Das kann das ursprüngliche Budget sprengen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d617fece671a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a99344f42f57",
+     "text": "Bevorzugen Sie Angebote mit einem Festpreis pro gebohrtem Meter, mit enthaltener oder klar geregelter Verrohrung, um böse Überraschungen zu vermeiden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe9b53329e38",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0619b9d7ca1d",
+     "text": "3. Horizontale Anbindung und Verteiler: Qualität und Prüfungen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cb70f0edf9ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b59d150dfa4",
+     "text": "Die Bohrungen sind nur ein Teil der Anlage. Die horizontale Anbindung zwischen den Sonden und dem Technikraum sowie die Verteiler sind ein wichtiger Posten, sowohl bei den Kosten als auch für die langfristige Zuverlässigkeit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9efddc50ebd8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea42dab42f38",
+     "text": "Beim Vergleich der Angebote lohnt es sich zu prüfen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0aae794ab840",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a52bb829d9c2",
+     "text": "ob Lieferung und Verlegung der horizontalen Anbindung enthalten sind;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "30553ae1ca11",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "40c3dfc47301",
+     "text": "welches PE-HD verwendet wird (Durchmesser, Druckstufe);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3c34d4c93223",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b87c5bbff323",
+     "text": "welche Verteiler eingesetzt werden (vorgefertigt, gedämmt, zugänglich);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ae3ed2b485c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "323767e20703",
+     "text": "ob vor dem Verfüllen der Gräben Druckprüfungen an allen Kreisen durchgeführt werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a5b87377a41a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d6197c4e6925",
+     "text": "Ein Angebot mit systematischen Druckprüfungen und gut zugänglichen Verteilern ist ein Zeichen für Seriosität und Langlebigkeit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5abb840c8231",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dc026322e34b",
+     "text": "4. Bohrklein, Umwelt und Abschluss der Baustelle",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e9f61e3b9045",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c53da1d6e191",
+     "text": "Eine Erdwärmebohrung erzeugt Bohrklein (Sand, Schlamm, Gestein) und Bohrwasser. Wie damit umgegangen wird, kann die Baustelle stark beeinflussen, besonders in der Stadt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8ad0621e361a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8945e6bb927",
+     "text": "Einige Fragen, die Sie stellen sollten:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f475ecf9f2f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a38451a183d1",
+     "text": "wer übernimmt die Abfuhr des Bohrkleins?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f4d171a33165",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f0e362a7f7cd",
+     "text": "zu welcher Art von Standort (Aufbereitungsanlage, Verfüllstandort usw.)?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c1878283b8a5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc2bb36f72ce",
+     "text": "ist die Reinigung des Baustellenbereichs zum Abschluss enthalten?;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "afc554701290",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7fa9349e776",
+     "text": "wie werden Bohrspülung und eventuelle Abflüsse gehandhabt?",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f5e4c778064e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "81e29b0f53af",
+     "text": "Ein Angebot, das diese Punkte klar regelt, vermeidet Diskussionen am Ende der Arbeiten und schützt sowohl das Image des Projekts als auch das Verhältnis zur Nachbarschaft.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0b6865eb8639",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4f7e5862472d",
+     "text": "5. Weitere Kriterien bei einem Bohrangebot",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ded3def43dd2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fbf0baecc2f",
+     "text": "Über die rein finanziellen Aspekte hinaus verdienen mehrere qualitative Kriterien Beachtung:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e4c3110db861",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3e9e451786a3",
+     "text": "die Erfahrung des Bohrunternehmens in der Geothermie (Referenzen, Art der ausgeführten Projekte);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fac6a8fb646b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1089dbb811e8",
+     "text": "die Beherrschung der verschiedenen Bohrtechniken (Luft, Spülung, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0d99ab4b783c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "51632c005c29",
+     "text": "die Fähigkeit, in beengter städtischer Umgebung zu arbeiten;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2de208adefbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a3f68c36afe1",
+     "text": "die Qualität der gelieferten Dokumentation (Pläne, Schemata, Prüfberichte);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6d8e3100aee0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "778811983981",
+     "text": "die Abstimmung mit den anderen Beteiligten (Installateur, Planungsbüro, Architekt).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "19faf9c8a0a9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e96c342435c1",
+     "text": "Diese Punkte lassen sich nicht immer direkt beziffern, machen für den Bauherrn aber oft den Unterschied bei der Sicherheit aus.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "454d4b49b7c1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1b48b05541f3",
+     "text": "6. Fazit: den Vergleich und die Wahl absichern",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "392919f6a5db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1110ba523363",
+     "text": "Angebote von Bohrunternehmen zu vergleichen heißt mehr, als auf den Gesamtpreis unten auf der Seite zu schauen. Es geht darum zu verstehen, was enthalten ist, was nicht, und wie mögliche Risiken gehandhabt werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8f9b4ed383d7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d106c5b79c5",
+     "text": "Um den Vergleich abzusichern, ist es oft sinnvoll:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "817974639e02",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "976e9356765f",
+     "text": "alle Bohrunternehmen dieselbe Sondenlänge anbieten zu lassen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0b0a7eeb1599",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12a6000ea495",
+     "text": "die Bedingungen für die Verrohrung und mögliche Zuschläge zu klären;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1cac3ed551b1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "056dbcd9ff62",
+     "text": "zu prüfen, ob Anbindung, Druckprüfungen und Bohrklein abgedeckt sind.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2016ddf6b5fa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2530eb95500",
+     "text": "Wenn zwei Bohrunternehmen für dieselbe Leistung sehr unterschiedliche Längen angeben, kann es sinnvoll sein, sie um ein Angebot auf Basis einer identischen Bohrmenge zu bitten (zum Beispiel derselben Anzahl Sondenlaufmeter), um objektiv vergleichen zu können.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e8df78400cda",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "518332ee8ebc",
+     "text": "WellDoneDrill hat sich ausschließlich auf das Bohren von Erdwärmesonden spezialisiert. Unsere Maschinen und Teams sind für diese Aufgabe optimiert, wodurch WDD sehr oft das wettbewerbsfähigste Bohrunternehmen am Markt ist, mit klaren, vergleichbaren Preisen ohne versteckte Kosten und ohne böse Überraschungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Angebote für Erdwärmebohrungen vergleichen | WellDoneDrill",
+ "seoDescription": "So vergleichen Sie Angebote für Erdwärmebohrungen: Baustelleneinrichtung, Preis pro Meter oder Sonde, W/m-Annahmen, Verrohrung, horizontale Anbindung, Bohrklein, Erfahrung.",
+ "_mainImageFile": "uploads/2025/05/Woluwe-Saint-Lambert-Greenwoo-header.webp",
+ "_mainImageAlt": "Geothermie-Unternehmen in Woluwe-Saint-Lambert"
+}

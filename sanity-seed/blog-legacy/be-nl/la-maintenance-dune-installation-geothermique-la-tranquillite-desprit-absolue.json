@@ -1,0 +1,420 @@
+{
+ "_id": "blog-legacy-be-nl-5416",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Het onderhoud van een geothermische installatie: totale gemoedsrust",
+ "slug": {
+  "_type": "slug",
+  "current": "onderhoud-van-een-geothermische-installatie"
+ },
+ "publishedAt": "2026-03-20T11:10:57Z",
+ "excerpt": "Een van de grootste drempels bij de keuze van een nieuw verwarmingssysteem is de angst voor pannes en de kostprijs van het jaarlijkse onderhoud. Geothermie onderscheidt zich echter radicaal van gas- of stookolieketels door haar mechanische eenvoud.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "a447801bdd26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a52d64570ae4",
+     "text": "Een van de grootste drempels bij de keuze van een nieuw verwarmingssysteem is de angst voor pannes en de kostprijs van het jaarlijkse onderhoud. Geothermie onderscheidt zich echter radicaal van gas- of stookolieketels door haar mechanische eenvoud. Bij ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "54f35647b6fd",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b542ba6bf80f",
+     "text": " zeggen we graag dat een goed ontworpen geothermische installatie een systeem is dat u uiteindelijk vergeet, zo onopvallend werkt het. Hierom vraagt geothermie het minste onderhoud op de markt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4c5bdf4ee9aa",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "019fb1741d11",
+     "text": "1. Een investering voor een eeuw",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "85e5c90f2160",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7eabcc5fd22d",
+     "text": "Het meest indrukwekkende deel van verticale geothermie zit onder uw voeten. Zodra onze ploegen het geothermische cement hebben geïnjecteerd en de HDPE-sondes (hogedichtheidspolyethyleen) op 150 meter diepte hebben afgedicht, is het systeem beschermd tegen elke invloed van buitenaf.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fd14b793551f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a69873f8e82c",
+     "text": "Nul onderhoud:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "39c87d75899f",
+     "text": " De sondes vragen absoluut geen menselijke tussenkomst. Ze vervuilen niet, corroderen niet en hoeven niet gereinigd te worden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f3bec872687c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c878903105f6",
+     "text": "Uitzonderlijke levensduur:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d743f845b482",
+     "text": " HDPE is een ongelooflijk stabiel materiaal. De levensduur van de sondes wordt op meer dan 50, zelfs 100 jaar geschat. Het is een vastgoedwaarde die waarschijnlijk meerdere generaties eigenaars zal dienen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f7db9856b8b2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "120211418c58",
+     "text": "2. In de woning: de betrouwbaarheid van een gesloten circuit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0775efc85573",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "27729788a9d1",
+     "text": "Anders dan een verbrandingsketel werkt een geothermische warmtepomp zonder vlam, zonder roet en zonder uitstoot van rookgassen. Dat verandert alles voor het onderhoud:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e5d9583590f6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "23b52251dbc0",
+     "text": "Geen schoorsteenveger:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8f93930d4569",
+     "text": " Zonder rookkanaal verdwijnen die klus en de risico's van koolstofmonoxide meteen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8d976ac4900f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "906a5d7ac9d9",
+     "text": "Een afgesloten circuit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6d7d64da979d",
+     "text": " De warmtedragende vloeistof circuleert in een gesloten circuit tussen de boring en de warmtepomp. Een eenvoudige controle van de druk (eenmaal per jaar, zoals bij een autoband) volstaat meestal om de goede werking na te gaan.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fbbb0f500aac",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "35ef992591a2",
+     "text": "Toegankelijke filters:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "6079958ecd30",
+     "text": " De enige regelmatige handeling is het reinigen of vervangen van de vuilfilters in het hydraulische circuit, voor een optimaal waterdebiet. Een eenvoudige ingreep die elke eigenaar in enkele minuten kan leren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90662d947c44",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "01cff6adcd4a",
+     "text": "3. Waarom is het eenvoudiger dan een lucht-waterwarmtepomp?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0f78f7b9f51",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffbc02646e18",
+     "text": "Geothermie wordt vaak vergeleken met een lucht-waterwarmtepomp. Op vlak van onderhoud wint geothermie echter met glans:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "562804b118d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5bafb2ba3733",
+     "text": "Geen blootgestelde buitenunit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "92718635ca60",
+     "text": " Een lucht-waterwarmtepomp heeft een buitenventilator die blootstaat aan vorst, regen, dode bladeren en stof.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d514097e31a4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f24210aa950c",
+     "text": "Geen intensieve ontdooicyclus:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "733226b5e938",
+     "text": " In de winter moet een lucht-waterwarmtepomp stoppen om haar lamellen te ontdooien, wat de compressor zwaar belast. Bij geothermie bevriest de warmtebron (de bodem op 12 à 13 °C) nooit. De compressor werkt in stabiele omstandigheden, wat het risico op mechanische pannes drastisch verkleint.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "264233182759",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6eb8bff6db9f",
+     "text": "4. Professionele opvolging: het controlebezoek",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "139275fd4a78",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d786a44f0412",
+     "text": "Hoewel het systeem robuust is, blijft een jaarlijks of tweejaarlijks controlebezoek door een gespecialiseerde technicus aangeraden. Deze snelle check-up maakt het mogelijk om:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "72c05316722f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4bac3dfda897",
+     "text": "De instellingen na te kijken om het verbruik te optimaliseren.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "708c5e0ab42d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2aaac4ece04",
+     "text": "De kwaliteit van de warmtedragende vloeistof te controleren (antivriesbescherming).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d0cc316d7b63",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f29d57405d70",
+     "text": "Na te gaan of de circulatiepompen op hun maximale rendement werken.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "394f90f82a4f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6dd32a46ebff",
+     "text": "5. Het engagement van WellDoneDrill: een foutloos ontwerp",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "754e6f30b2f4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fcf2d3df64b",
+     "text": "De sleutel tot weinig onderhoud ligt in de kwaliteit van de oorspronkelijke installatie. Door eersteklas componenten, robuuste collectoren en een nauwgezette uitvoering van de boring te gebruiken, beperkt ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "11da06150ee6",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f996828571e5",
+     "text": " toekomstige zwakke punten tot een minimum. We leveren sleutel-op-de-deur-installaties die gemaakt zijn om lang mee te gaan, niet om hersteld te worden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Onderhoud van een geothermische installatie | WellDoneDrill",
+ "seoDescription": "Hoeveel onderhoud vraagt geothermie? Sondes zonder onderhoud, een gesloten circuit, geen schoorsteen en een jaarlijkse controle: zo eenvoudig is het.",
+ "_mainImageFile": "uploads/2025/12/chauffage-sol.webp",
+ "_mainImageAlt": "Onderhoud van een geothermische installatie"
+}

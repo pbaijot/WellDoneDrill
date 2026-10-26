@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-be-en-4393",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal drilling techniques: air, mud, PDC… and what sets WellDoneDrill apart",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-drilling-techniques-air-mud-pdc"
+ },
+ "publishedAt": "2025-12-02T10:56:41Z",
+ "excerpt": "Behind every high-performing geothermal installation is a well-run drilling site. Drilling through every kind of ground, from loose sand to the hardest rock, requires suitable techniques. WellDoneDrill relies on three main methods.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 4,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1929f4d1c868",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65fae7f7d52c",
+     "text": "Behind every high-performing geothermal installation is a well-run drilling site. Drilling through every type of ground, from loose sand to the hardest rock, requires suitable techniques. WellDoneDrill relies on three main methods: compressed-air drilling with a down-the-hole hammer, mud drilling and PDC (polycrystalline diamond compact) drilling, a technique imported from Germany that has greatly improved output and costs.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d92cfc671e66",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "21cc12ae3861",
+     "text": "Compressed-air drilling with a down-the-hole hammer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f383eeb4dcd5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "034230be2476",
+     "text": "Compressed-air drilling with a down-the-hole (DTH) hammer is widely used to get through hard or very compact rock formations.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "474d6cf9404d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce06c430c8e2",
+     "text": "The principle:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9704f128a53c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44df0c144d06",
+     "text": "a pneumatic hammer sits at the bottom of the hole;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "08143c531744",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "099efd82365d",
+     "text": "compressed air is injected into the drill rod, driving the hammer;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "147eb9285f78",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "12a1f9c5750e",
+     "text": "the rock is broken up mechanically by percussion;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c595a5119522",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "911b76567c24",
+     "text": "the cuttings are carried up by the compressed air rising along the tool.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a7392ea07016",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b21713f16e1a",
+     "text": "This method is very effective in hard rock, but it has some limitations:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "591331f85836",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a4b8a8631cc",
+     "text": "sensitivity to large water inflows;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9a31f9d38124",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cddfba5be17b",
+     "text": "more complex cuttings management in urban areas;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "66936ba9a369",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "45857e45904c",
+     "text": "more noise and vibration.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "91a0e6bb9572",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd4928b2e8b7",
+     "text": "Mud drilling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7dc79ec0c3fb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "29e129b9dc17",
+     "text": "Mud drilling uses a drilling fluid, a mix of water and clay/bentonite, to stabilise the walls, bring up the cuttings and cool the tool.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a2aaedab7d7d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93b90598c010",
+     "text": "The principle:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "901ab06ab668",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cdeb39464bc4",
+     "text": "the mud circulates down the drill rods to the bit;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fb45797e74ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb63d300392f",
+     "text": "it rises back up through the annulus, carrying the cuttings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2955551a90ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "190b10e4cdd7",
+     "text": "it forms a filter cake on the borehole walls, which stabilises them.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "327ca739086f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d5ff9a0bc767",
+     "text": "This method is especially suited to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f51e4d818cf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "551270626a32",
+     "text": "loose formations (sand, gravel…);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "21c7e410aad8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3d5ccafd6468",
+     "text": "situations with water inflows;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1c0d734acefa",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "94dd3055be0d",
+     "text": "ground where wall stability is an issue.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7b78d1ce0bb4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d61024f2335",
+     "text": "Mud drilling is a versatile technique, but it requires careful management of mud and cuttings, especially on tight sites and in town.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fafc7b5608b7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "122e14294f9d",
+     "text": "PDC drilling: the game-changer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e31818195066",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "770e9b58326d",
+     "text": "PDC (polycrystalline diamond compact) drilling uses a bit fitted with extremely tough synthetic diamond inserts. Instead of hammering the rock, the tool continuously \"shaves\" it away with fast rotation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "716ee524bddb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5cfa1648bc0",
+     "text": "The advantages of PDC drilling:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b69886e5a9e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee374943a683",
+     "text": "very good performance in a wide range of ground, from sediments to hard rock;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3ccaf92770db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a360ad68dcde",
+     "text": "controlled tool wear thanks to the diamond inserts;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6ad4eaed3c76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93422c5e5d8e",
+     "text": "better drilling continuity, with fewer tool changes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2739fd5df43c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b50901b796e5",
+     "text": "a high rate of penetration, so shorter site durations.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1e682040b3ce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3eb5319da3bb",
+     "text": "WellDoneDrill brought this technique to Belgium and developed it, drawing on practices already well established in Germany. Today, PDC is at the heart of our geothermal drilling strategy.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8e00a1348ef0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "39a633c2aecf",
+     "text": "In practice, PDC drilling allows WDD to:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "70d8890dc5ad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c5fc43630c2",
+     "text": "work faster;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9e9df3fc8aaf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b323b5f252ab",
+     "text": "reduce the cost per borehole;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6a2ecc28cdae",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "febbfb186b4a",
+     "text": "handle the most complex ground;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1e6b32dad941",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a2a27499b9ec",
+     "text": "drill through successive layers without changing tools.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "13e6cdb22feb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03cac8a47adb",
+     "text": "With PDC, the diamond inserts cut through every type of ground (sedimentary, rocky, mixed) while the drilling water continuously cools the bit and removes the cuttings.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "83a637271f25",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "891cd6f3eed3",
+     "text": "In Brussels, for example, WellDoneDrill can drill through the bedrock at around -90 m and reach depths of 120 to 150 m, where many competitors stop at 80–90 m. That means 50 % to 70 % more output available per borehole.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c60400dfb7f3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff5d6d5ed94e",
+     "text": "For the project owner or designer, this means:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3663bdd65471",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9f7dbe73eda1",
+     "text": "fewer probes for the same total output;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "87580dd4349f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f387f7e6851",
+     "text": "less space needed for the borehole field;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "fee8264ff325",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ef657e026585",
+     "text": "better use of the land, especially on tight urban plots.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b5bbae68984d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8e5c4828f60",
+     "text": "The WDD advantage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ab9ed120905d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9a5d06bf131",
+     "text": "Thanks to PDC drilling, WellDoneDrill is today the most efficient geothermal driller in Wallonia, able to drill in all ground types, reach greater depths than its competitors and optimise costs for its clients.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "54772051aae9",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "046ff62dd29f",
+     "text": "Adapting the drilling technique to each site",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "795238f5fda4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d966f46c47bd",
+     "text": "A key part of WellDoneDrill's strategy is not limiting itself to a single method. Depending on the project, ground conditions and setting (urban, rural, access, groundwater, etc.), WDD picks the most effective combination:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "990ce129c2db",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0fbad00818e2",
+     "text": "compressed air for certain hard rocks;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7177dba18390",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dbdae7b4686d",
+     "text": "drilling mud for loose or unstable ground;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2066cf135fee",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6bbb3448463f",
+     "text": "PDC to make the most of varied ground and optimise productivity.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ade1f1b8e215",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "995e8431da06",
+     "text": "This flexibility guarantees a reliable result even when the subsurface is complex or poorly known, and limits surprises during the works.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2634172850d1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5c579ab49e61",
+     "text": "Conclusion: technical mastery that makes the difference",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b161b2767687",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26d03bc4a7d0",
+     "text": "Drilling is the invisible but decisive step of a geothermal installation. By choosing advanced technologies, bringing PDC to Belgium and adapting its methods to each site, WellDoneDrill has significantly improved the performance and competitiveness of geothermal energy.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "777778611646",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ece21d32ce52",
+     "text": "This technical approach, combined with field expertise, delivers faster, cleaner and safer sites while reducing costs for clients. WellDoneDrill can now drill in every type of ground, from the loosest to the rockiest, and guarantee a reliable, durable and high-performing result.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal drilling techniques: air, mud, PDC | WellDoneDrill",
+ "seoDescription": "Air drilling with a DTH hammer, mud drilling and PDC drilling: how each technique works, when it fits, and how WellDoneDrill drills deeper for less.",
+ "_mainImageFile": "uploads/2025/12/technique-forage.webp",
+ "_mainImageAlt": "Geothermal drilling techniques: air, mud and PDC"
+}

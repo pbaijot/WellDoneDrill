@@ -1,0 +1,424 @@
+{
+ "_id": "blog-legacy-lu-de-5518",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Energieunabhängigkeit: der Leitfaden für den Gasausstieg bis 2027",
+ "slug": {
+  "_type": "slug",
+  "current": "energieunabhaengigkeit-gasausstieg-bis-2027"
+ },
+ "publishedAt": "2026-03-20T14:09:53Z",
+ "excerpt": "2026 ist Unabhängigkeit kein Luxus mehr, sondern eine Strategie der Vermögensverwaltung. Schwankende Energiemärkte und steigende CO₂-Abgaben bewegen immer mehr Haushalte dazu, endgültig aus dem Erdgas auszusteigen.",
+ "category": "reglementation",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "8696b2f4c4f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0c71c85b1bc",
+     "text": "2026 ist Unabhängigkeit kein Luxus mehr, sondern eine Strategie der Vermögensverwaltung. Die schwankenden weltweiten Energiemärkte und steigende CO₂-Abgaben auf fossile Brennstoffe bewegen immer mehr Haushalte dazu, endgültig aus dem Erdgas auszusteigen. Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "4d91e5b07455",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bdd64afa2c8e",
+     "text": " begleiten wir diesen historischen Wandel. So machen Sie Ihr Haus zu einer autarken Energiefestung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f56cb168a37d",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6ec13e223739",
+     "text": "1. Warum ist der Gasausstieg zur Priorität geworden?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "480cf7fb5264",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46c662c0718f",
+     "text": "Erdgas, einst als „saubere“ Übergangsenergie betrachtet, steht heute im Visier der europäischen Regulierer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c55e3ed44fbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9bed2c4ccd4d",
+     "text": "Unsichere Preise:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c4cf75c81a56",
+     "text": " Anders als die Sonne oder die Erdwärme, die Ihnen gehören, hängt der Gaspreis von unvorhersehbaren geopolitischen Entwicklungen ab.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bccf7ee9aba1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "54f4eecb8186",
+     "text": "Grundgebühren:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a405a26c4ab2",
+     "text": " Ein Gasanschluss verursacht Fixkosten (Zählermiete, Prüfbescheinigungen), die Ihre Rechnung belasten, selbst wenn Sie wenig verbrauchen. Die Abmeldung streicht eine feste Ausgabe für immer.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "db05a32f0e2f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cee559d854c",
+     "text": "2. Geothermie: der Motor Ihrer Autarkie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "518ce94113a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63574dcd71c1",
+     "text": "Um ohne Gas und ohne Komfortverlust auszukommen, brauchen Sie eine Alternative, die selbst bei -10 °C eine konstante Leistung liefert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7f8a97ee3130",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ed94f12633a2",
+     "text": "Volle Zuverlässigkeit:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bd7b16111bd8",
+     "text": " Anders als Luftwärmepumpen, die in strengen Wintern an ihre Grenzen stoßen, erschließt die Vertikalbohrung von WellDoneDrill in 150 Metern eine Energie, die nie schwankt. Sie ist Ihr persönlicher „natürlicher Heizkessel“.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1f238e131e5b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "44a8cad4c471",
+     "text": "Unschlagbare Effizienz (COP):",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dfa2196c2ec5",
+     "text": " Für jede Einheit Strom, die Sie kaufen (oder selbst erzeugen), liefert Ihnen die Geothermie vier weitere kostenlos aus dem Boden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5596aa5c4696",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "715838a44506",
+     "text": "3. Die Schritte zum erfolgreichen Ausstieg",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4139b09828e0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f1666fec3b80",
+     "text": "Der Wechsel von einem Gaskessel zu einem System von WellDoneDrill erfordert ein sorgfältiges Vorgehen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bc0088279002",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1e1629b43018",
+     "text": "Bestandsaufnahme:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "b0c7993d2c96",
+     "text": " Wir prüfen, ob Ihre vorhandenen Heizflächen (Niedertemperaturheizkörper oder Fußbodenheizung) geeignet sind. Oft genügt ein einfacher hydraulischer Abgleich.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "06ddf3eb96ff",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "add09c712604",
+     "text": "Die strategische Bohrung:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9bafd4e96485",
+     "text": " Wir bohren bis 150 Meter, dank unserer kompakten Bohrgeräte oft an einem einzigen Tag und ohne Ihren Alltag zu stören.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "75dea65c9722",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4b924a81f8ab",
+     "text": "Die Installation der Wärmepumpe:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "09b02336441d",
+     "text": " Die Wärmepumpe ersetzt Ihren Gaskessel physisch in Hauswirtschaftsraum oder Keller.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8a7377335d35",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cd36d38dadaf",
+     "text": "Die Verplombung des Zählers:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "9de82d7edd1b",
+     "text": " Sobald das System getestet ist, können Sie Ihren Netzbetreiber bitten, Ihren Gasanschluss endgültig stillzulegen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0ffb6928afc4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "882176bdb88e",
+     "text": "4. Mit Photovoltaik kombinieren: der Todesstoß für Ihre Rechnungen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e041f153409f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52721dcc09fe",
+     "text": "Gas dient nicht nur zum Heizen, sondern auch zur Warmwasserbereitung. Mit der Geothermie verlagern Sie 100 % Ihres Energiebedarfs auf Strom. Mit Solarmodulen erzeugen Sie den „Treibstoff“ Ihrer Wärmepumpe selbst. So erreichen Sie den ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "cbbc0873a7ca",
+     "text": "maximalen Eigenverbrauch",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0f902f0e6092",
+     "text": ". Im Sommer sind Ihr Warmwasser und Ihr Geocooling zu 100 % kostenlos. Im Winter sinkt Ihre Netzstromrechnung auf das absolute Minimum.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aabca36741c7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "42769b5d7219",
+     "text": "5. Ein zukunftssicheres Haus",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5ef52c024309",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26c1e061a1be",
+     "text": "Ein Haus ohne Gas ist bereit für die nächsten 30 Jahre. Es erfüllt die Dekarbonisierungsziele für 2050 schon 25 Jahre im Voraus. Für einen möglichen Käufer ist das die Garantie für eine Immobilie ohne „Energieschulden“ und ohne anstehende Nachrüstungen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "243287cb87c3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a86c3fce4ce7",
+     "text": "Fazit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fa2084ca8e85",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5106e33df46",
+     "text": "Der Gasausstieg ist ein Akt der Freiheit. Er bedeutet, die Kontrolle über Ihr Budget und Ihre Umweltwirkung zurückzugewinnen. Mit der Kompetenz von WellDoneDrill bei Tiefbohrungen wird dieser Wechsel einfach, sauber und erstaunlich rentabel. Bereit, den Hahn zuzudrehen?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Gasausstieg bis 2027: der Leitfaden | WellDoneDrill",
+ "seoDescription": "So steigen Sie endgültig aus dem Erdgas aus: warum es sich lohnt, Geothermie als Motor Ihrer Autarkie, die Schritte zur Abmeldung und die Kombination mit Photovoltaik.",
+ "_mainImageFile": "uploads/2026/03/Post-Instagram-Merci-Minimaliste-Rouge-et-Beige-6.jpg",
+ "_mainImageAlt": "Energieunabhängigkeit ohne Gas"
+}

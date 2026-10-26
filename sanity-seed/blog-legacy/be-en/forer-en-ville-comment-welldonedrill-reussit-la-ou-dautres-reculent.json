@@ -1,0 +1,658 @@
+{
+ "_id": "blog-legacy-be-en-4395",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Drilling in the city: how WellDoneDrill succeeds where others back off",
+ "slug": {
+  "_type": "slug",
+  "current": "drilling-in-the-city-where-others-back-off"
+ },
+ "publishedAt": "2025-12-02T10:57:27Z",
+ "excerpt": "Drilling a geothermal probe in a city centre, a narrow street or a tiny courtyard takes far more than a drilling rig. Difficult access, sensitive neighbours, buried utilities, traffic and cleanliness: urban drilling is a trade of its own.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "157e0ba6b2b5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aad6cf775490",
+     "text": "Drilling a geothermal probe in the middle of a city, in a narrow street or a tiny courtyard, takes far more than a drilling rig. Difficult access, sensitive neighbours, buried utilities, traffic and cleanliness requirements: urban drilling is a trade in its own right. WellDoneDrill has made it a speciality, with techniques imported from Germany, compact rigs and rigorous organisation. That lets us succeed on sites where others prefer to say no, and reach depths our competitors can't match.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "016022d7025e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8234af84cbad",
+     "text": "Geothermal is often associated with large houses with gardens or plots on the outskirts. Yet the potential in cities is huge: terraced houses, apartment buildings, offices, schools, nurseries, small mixed-use buildings… All of them can benefit from vertical borehole geothermal, provided one critical point is mastered: drilling in a dense urban environment.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1fdb559dd1d0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "544d70ccb730",
+     "text": "Drilling in town has nothing to do with a site in open countryside. Every square metre counts, every lorry must be justified, every hour of noise is regulated. It is precisely in this demanding context that WellDoneDrill has built its expertise.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b8945f17650c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "482f66e086a4",
+     "text": "A highly constrained urban environment",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "847f65467eed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eda50f374711",
+     "text": "In the city, the first constraint is physical: there isn't enough room. Streets are narrow, pavements cluttered, courtyards cramped. Getting a conventional rig into such an environment is often impossible.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c8d0bc64471a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c822060f42ad",
+     "text": "On many projects, the drilling point is reached through a side passage, a corridor, a garage ramp or a garden gate. Without a compact rig, the project simply cannot go ahead.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2177dfce14b3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba44a155b564",
+     "text": "On top of space constraints come those of the neighbourhood: homes, schools and offices mean noise, dust, traffic and use of the road must be controlled. Buried networks also have to be taken into account: water, gas, electricity, telecoms and sewers. The urban subsurface is packed with utilities, which calls for meticulous preparation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5a6c7765512b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "719feda9873d",
+     "text": "Finally, there is the regulatory side: local permits, possible environmental declarations, working hours, cuttings management, and compliance with police and highway rules. A good urban driller is not just a technician but someone who understands and anticipates these rules.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "478128798b33",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a15d3beb510",
+     "text": "Compact rigs designed for the city",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e01b883b4ceb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f290b00de4d1",
+     "text": "WellDoneDrill chose to invest in compact rigs that can work in confined spaces while keeping high drilling capacity. The aim is clear: get the rig where a van already struggles to manoeuvre.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8d8062b4745f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5ad2bcadc9f",
+     "text": "These machines can be set up:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1df5c73dc187",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4eacb7c009f9",
+     "text": "in narrow inner courtyards;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "edaadbe1a4d3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "03a8a910b9c8",
+     "text": "at the far end of a plot;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e87344ec3712",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7924c124cd5",
+     "text": "on pavements or parking spaces, with temporary use of the road.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7362a33e446b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "967bcf4ed7a6",
+     "text": "Their small size doesn't stop them performing: thanks to techniques such as PDC drilling, WellDoneDrill often drills to 120–150 m where other drillers stop at 80–90 m. In Brussels, this makes it possible to drill through the bedrock at around -90 m and tap the geothermal potential further down.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c663b707027f",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0f4c7feadab",
+     "text": "Depth and output",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bfa6cf90e5bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d7efad85cbaf",
+     "text": "In Brussels, WellDoneDrill drills down to 150 m where competitors often stop at 80–90 m. The result: 50 % to 70 % more output per borehole and much less land needed.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ed84e38b8180",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "26fcebf5d7bd",
+     "text": "Controlling disruption and organising the site",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2592261ce546",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4404e7d9f222",
+     "text": "In an urban setting, every detail counts: working hours, where lorries are parked, pedestrian access, street cleanliness… WellDoneDrill uses specific procedures:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d28b11055ea2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7293dcce87a1",
+     "text": "a traffic and access plan suited to the neighbourhood;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "932caf016680",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "db753a3344b8",
+     "text": "protection of the road and surroundings;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8cd859b62b61",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c80a6378ef91",
+     "text": "limiting noise as much as possible;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "14bbfd32251a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "917b35d25fa2",
+     "text": "systematic cleaning of the site area.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "b7835fe9243b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "901e69b73269",
+     "text": "Drilling cuttings are managed to limit the impact on public space and neighbours. This approach allows us to complete projects in very sensitive settings: shopping streets, dense residential areas, near schools and so on.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f679854fd6df",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d6b0e6af51aa",
+     "text": "Making the most of the land with deep boreholes",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8a65e2aabdfd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c05fbc050244",
+     "text": "In an urban context, land is scarce and valuable. Being able to drill deeper makes a real difference:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cdaac166d02b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e92841bb7fc",
+     "text": "fewer probes are needed for the same output;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "41c7e957cbbb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a046d7fe8a57",
+     "text": "the borehole field takes up less space;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "aa81d7e7e071",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1e843adcad9",
+     "text": "sometimes all the boreholes can be concentrated in a courtyard or a small garden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1b03f987a63e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e70a0df06a5b",
+     "text": "This ability to make the most of the land is particularly attractive for property developers, co-owned buildings and public clients who want to include geothermal on very tight plots.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aef9ef6d0cdd",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "69ac2d1f9b4e",
+     "text": "Probes under buildings or car parks",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "aef923751805",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b4a86e543df",
+     "text": "On many urban projects, geothermal probes can be placed under buildings, under car parks or between foundation piles. Two scenarios are possible:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1f54ff3c32ad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "46f3704615e0",
+     "text": "drilling before construction, from the bare site, then building on top;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9f82a2a7f1d4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "795ff3a940bd",
+     "text": "drilling from inside an existing building or a basement level, through the floor slab or raft.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9377f5300e37",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ce0c1843fcd3",
+     "text": "In the second case, the rig is brought into the building (plant room, parking space, circulation area) and drills through the slabs or between the piles. This approach is particularly useful in renovation, when no outdoor space is available.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b596ae0a85e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a1a795f5a6f",
+     "text": "The WellDoneDrill approach",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2eaeaf0ebd18",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2de45dd989e",
+     "text": "WellDoneDrill organises every urban site precisely:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1bcc9e95e463",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ec642c28d7f",
+     "text": "analysis of access and feasibility;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8a2aef0bfa0d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e093a93630d0",
+     "text": "choice of the most suitable drilling technique (air, mud, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4c23d360efc4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9910b571d02d",
+     "text": "coordination with local authorities for any use of the road;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ba53187231f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88d9613cbbad",
+     "text": "planning the boreholes to keep time on site to a minimum;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "99e98e8f00a4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0204daf85b30",
+     "text": "cuttings management and systematic cleaning at the end of the works.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "0191424a4824",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d0774472b51e",
+     "text": "This makes it possible to secure urban geothermal projects that would have been considered too complex or too risky a few years ago. For the project owner, the benefit is clear: access to geothermal in demanding urban settings, with a partner who masters both drilling technique and site organisation.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal drilling in the city | WellDoneDrill",
+ "seoDescription": "How WellDoneDrill drills in dense urban areas: compact rigs, down to 150 m in Brussels, minimal disruption, probes under buildings or car parks.",
+ "_mainImageFile": "uploads/2025/12/forer-en-ville.webp",
+ "_mainImageAlt": "Geothermal drilling in the city"
+}

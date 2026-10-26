@@ -1,0 +1,658 @@
+{
+ "_id": "blog-legacy-be-nl-4395",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Boren in de stad: hoe WellDoneDrill slaagt waar anderen afhaken",
+ "slug": {
+  "_type": "slug",
+  "current": "boren-in-de-stad-waar-anderen-afhaken"
+ },
+ "publishedAt": "2025-12-02T10:57:27Z",
+ "excerpt": "Een geothermische sonde boren in hartje stad, in een smalle straat of een piepkleine koer, vraagt veel meer dan een boormachine. Moeilijke toegang, gevoelige buren, ondergrondse leidingen, verkeer en netheid: stedelijk boren is een vak apart.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "17364806cfa7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "14220f52fac8",
+     "text": "Een geothermische sonde boren in hartje stad, in een smalle straat of een piepkleine koer, vraagt veel meer dan een boormachine. Moeilijke toegang, gevoelige buren, ondergrondse leidingen, verkeers- en netheidsvereisten: stedelijk boren is een vak apart. WellDoneDrill heeft er een specialiteit van gemaakt, met technieken uit Duitsland, compacte boormachines en een strikte organisatie. Zo slagen we op werven waar anderen liever nee zeggen, en bereiken we dieptes die onze concurrenten niet halen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2077114721ea",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4436e87c2a7c",
+     "text": "Geothermie wordt vaak geassocieerd met grote woningen met tuin of terreinen aan de rand van de stad. Toch is het potentieel in de stad enorm: rijwoningen, appartementsgebouwen, kantoren, scholen, kinderdagverblijven, kleine gemengde gebouwen… Al die gebouwen kunnen geothermie met verticale sondes krijgen, op voorwaarde dat één kritisch punt beheerst wordt: boren in een dichtbebouwde stedelijke omgeving.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "10fd76026e16",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a08920d5fff",
+     "text": "Boren in de stad heeft niets te maken met een werf op het platteland. Elke vierkante meter telt, elke vrachtwagen moet verantwoord worden, elk uur lawaai is gereglementeerd. Net in die veeleisende context heeft WellDoneDrill zijn expertise opgebouwd.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "97137b843f42",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b17f3f5959bc",
+     "text": "Een sterk beperkte stedelijke omgeving",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d844a5532783",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "95f0df986296",
+     "text": "In de stad is de eerste beperking fysiek: er is te weinig plaats. Straten zijn smal, voetpaden vol, binnenkoeren krap. Een klassieke boormachine in zo'n omgeving krijgen is vaak onmogelijk.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b9d62da06dbd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1a78ae977b62",
+     "text": "Bij veel projecten bereikt men het boorpunt via een zijdoorgang, een gang, een garagehelling of een tuinpoortje. Zonder compacte boormachine kan het project gewoonweg niet doorgaan.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "37d2771d68bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31a88546b8ab",
+     "text": "Daarbij komen de beperkingen van de buurt: woningen, scholen en kantoren vragen dat lawaai, stof, verkeer en de inname van de openbare weg beheerst worden. Ook moet rekening gehouden worden met ondergrondse leidingen: water, gas, elektriciteit, telecom, riolering. De stedelijke ondergrond zit vol nutsleidingen, wat een nauwgezette voorbereiding vraagt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c181fe296fb0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b33773b8f7b1",
+     "text": "Ten slotte is er de reglementaire kant: lokale vergunningen, eventuele milieumeldingen, werkuren, beheer van boorgruis, naleving van politie- en wegreglementen. Een goede stedelijke boorder is niet alleen een technicus, maar ook iemand die die regels begrijpt en anticipeert.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e70f8318013d",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b0c4545740a0",
+     "text": "Compacte boormachines gemaakt voor de stad",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "43cf9ebf06df",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4235f5241d7",
+     "text": "WellDoneDrill heeft bewust geïnvesteerd in compacte boormachines die in kleine ruimtes kunnen werken en toch een grote boorcapaciteit behouden. Het doel is duidelijk: de boormachine krijgen waar een bestelwagen al moeite heeft om te manoeuvreren.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "96671dcf69bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "769aa663aacf",
+     "text": "Deze machines kunnen worden opgesteld:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "721b14366317",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a71cf2aac1bf",
+     "text": "in smalle binnenkoeren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "73e7315abff0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "405eddff2e6a",
+     "text": "achteraan op een perceel;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a482c4f59545",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cb452cb761bb",
+     "text": "op voetpaden of parkeerplaatsen, met een tijdelijke inname van de openbare weg.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "85abd3508ea9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a347ccfc7a96",
+     "text": "Hun kleine afmetingen beletten geen hoge prestaties: dankzij technieken zoals PDC-boren boort WellDoneDrill vaak tot 120 à 150 m diep, waar andere boorders op 80 à 90 m stoppen. In Brussel kunnen we zo de rotssokkel rond -90 m doorboren en het geothermische potentieel dieper gaan halen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ddf249393dad",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a86644651ad4",
+     "text": "Diepte en vermogen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "24c33dd7158d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6745d2916805",
+     "text": "In Brussel boort WellDoneDrill tot 150 m diep, waar concurrenten vaak op 80 à 90 m stoppen. Het resultaat: 50 à 70 % meer vermogen per boring en veel minder terrein nodig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ea38dfbbf6a1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "312166788708",
+     "text": "Hinder beheersen en de werf organiseren",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5eb93fd0ca1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "838b4ea2e0ee",
+     "text": "In een stedelijke omgeving telt elk detail: de werkuren, de plaats van de vrachtwagens, de toegang voor voetgangers, de netheid van de straat… WellDoneDrill werkt met specifieke procedures:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0a6fafb7c15",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d36ae4bce1f2",
+     "text": "een verkeers- en toegangsplan aangepast aan de wijk;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "474d0e43cc7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d2681acd450b",
+     "text": "bescherming van de straat en de omgeving;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4116d395692f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "88bd473bf5ff",
+     "text": "zoveel mogelijk beperking van geluidshinder;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f12735ea7d02",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca6382298dab",
+     "text": "systematische reiniging van de werfzone.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cedb3c6a843a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87f7a452fa72",
+     "text": "Het boorgruis wordt zo beheerd dat de impact op de openbare ruimte en de buren beperkt blijft. Dankzij die aanpak kunnen we projecten uitvoeren in zeer gevoelige omgevingen: winkelstraten, dichtbebouwde woonwijken, schoolomgevingen, enz.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "82662c1acb70",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e4c632eac45",
+     "text": "De grond optimaal benutten dankzij diepe boringen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "652a54d54427",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "65c7d7a1e080",
+     "text": "In een stedelijke context is grond schaars en kostbaar. Dieper kunnen boren verandert concreet de situatie:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "687aaa755fa6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "795e675b3fbc",
+     "text": "voor hetzelfde vermogen zijn minder sondes nodig;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e550953b8982",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98e12d7fa0f1",
+     "text": "het sondeveld neemt minder oppervlakte in;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "35fecf8c221b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c183b5142d8a",
+     "text": "soms kunnen alle boringen in een koer of een kleine tuin worden geconcentreerd.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "316b20a70b1a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "759907ff597b",
+     "text": "Die mogelijkheid om de grond optimaal te benutten, is bijzonder interessant voor projectontwikkelaars, mede-eigendommen en publieke bouwheren die geothermie willen integreren op zeer krappe percelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "406c7b7a0775",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c8ca3e52413b",
+     "text": "Sondes onder een gebouw of parking",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f6395f6cff30",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe1fb056a575",
+     "text": "Bij veel stedelijke projecten kunnen geothermische sondes onder gebouwen, onder parkings of tussen funderingspalen worden geplaatst. Twee scenario's zijn mogelijk:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "abbdf290f0c4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e021a4fc82f6",
+     "text": "boren vóór de bouw, vanaf het lege terrein, en er daarna op bouwen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "865ccfba234c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9afff520ac73",
+     "text": "boren vanuit een bestaand gebouw of een kelderverdieping, door een vloerplaat of funderingsplaat heen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9241640a21ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d6187098fea",
+     "text": "In het tweede geval wordt de boormachine in het gebouw gebracht (technische ruimte, parkeerplaats, circulatiezone) en boort ze door de vloerplaten of tussen de palen. Die aanpak is bijzonder interessant bij renovatie, wanneer er geen buitenruimte beschikbaar is.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9c9c52975de4",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59f95345ab23",
+     "text": "De aanpak van WellDoneDrill",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "84e6ef7721e7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e1a3a7d60fa3",
+     "text": "WellDoneDrill zorgt voor een nauwkeurige organisatie van elke stedelijke werf:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "638bf4d1d712",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6f84b193ba82",
+     "text": "analyse van de bereikbaarheid en de haalbaarheid;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6a8bb7966326",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "15279c5cffbc",
+     "text": "keuze van de meest geschikte boortechniek (lucht, spoeling, PDC);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cc0a65a17efb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "57f65baa0feb",
+     "text": "coördinatie met de lokale overheden voor een eventuele inname van de openbare weg;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "377ff19fab4b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b1101a0ff451",
+     "text": "planning van de boringen om de aanwezigheid op de werf zo kort mogelijk te houden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "49db6816b57d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f4d470eab53",
+     "text": "beheer van het boorgruis en systematische reiniging na afloop.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39cb635d4417",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9fd8e53d063b",
+     "text": "Zo kunnen geothermische projecten in de stad veilig worden uitgevoerd die enkele jaren geleden als te complex of te riskant werden beschouwd. Voor de bouwheer is het voordeel duidelijk: toegang tot geothermie in veeleisende stedelijke omstandigheden, met een partner die zowel de boortechniek als de werforganisatie beheerst.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermisch boren in de stad | WellDoneDrill",
+ "seoDescription": "Hoe boort WellDoneDrill in dichtbebouwd stedelijk gebied? Compacte boormachines, tot 150 m diep in Brussel, minder hinder, sondes onder gebouwen of parkings.",
+ "_mainImageFile": "uploads/2025/12/forer-en-ville.webp",
+ "_mainImageAlt": "Geothermische boring in de stad"
+}

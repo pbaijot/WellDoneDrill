@@ -1,0 +1,362 @@
+{
+ "_id": "blog-legacy-lu-de-5529",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Geothermie und Biodiversität: Warum die Vertikalbohrung Ihr Grundstück schont",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermie-und-biodiversitaet-vertikalbohrung"
+ },
+ "publishedAt": "2026-03-20T14:25:02Z",
+ "excerpt": "Eine der größten Sorgen von Eigentümern vor dem Umstieg auf Geothermie ist die Wirkung der Arbeiten auf ihren Garten. Wer jahrelang Beete, Hecken und Bäume gepflegt hat, sieht eine Baumaschine nicht gern kommen.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "cbce3c4634af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "684d341c29ed",
+     "text": "Eine der größten Sorgen von Eigentümern vor dem Umstieg auf Geothermie ist die Wirkung der Arbeiten auf ihren Garten. Wenn Sie jahrelang Ihre Beete, Hecken und Bäume gepflegt haben, kann der Gedanke an eine Baumaschine Stress auslösen. Bei ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "6239703926fd",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "07dd54027b37",
+     "text": " sind wir jedoch überzeugt, dass die Vertikalbohrung die Heizlösung ist, die Biodiversität und Bodengesundheit am meisten respektiert. Hier ist der Grund.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7a65b421a746",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53bd81bed905",
+     "text": "1. Vertikalbohrung vs. Flächenkollektor: der ökologische Vergleich",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0946a7497a2b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "71a0de852a59",
+     "text": "Es gibt zwei Arten oberflächennaher Geothermie. Ein Flächenkollektor erfordert, die gesamte Gartenfläche etwa 1 Meter tief abzutragen, um Rohrschlangen zu verlegen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e0186a4fad4a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eb50ad2be26b",
+     "text": "Zerstörung des Bodens:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "872d91566ccf",
+     "text": " Diese Methode tötet das Bodenleben (Regenwürmer, Mikroorganismen) und macht das Pflanzen von Bäumen unmöglich (die Wurzeln würden die Rohre beschädigen).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "82d162c990c6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "25a9ef34b385",
+     "text": "Die Lösung von WellDoneDrill:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "180c4e095b9f",
+     "text": " Eine Vertikalbohrung benötigt nur ein Loch mit 15 bis 20 cm Durchmesser. Der Flächenbedarf ist winzig. Nach der Bohrung nimmt das unterirdische Leben ringsum wieder seinen normalen Lauf.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4f3a9ec9ffa2",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "237d000496ef",
+     "text": "2. Das Wurzelwerk Ihrer Bäume schonen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "40272ab51636",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "836cfdfca36f",
+     "text": "Anders als Gasgräben oder klassische Wärmenetze kann eine Vertikalbohrung in respektvollem Abstand zu Ihren besonderen Bäumen ausgeführt werden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "246672efda06",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a5d49e36b27a",
+     "text": "Vertikalität:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "4ab4c4d447d3",
+     "text": " Da wir bis 150 Meter tief gehen, konkurrieren wir nicht mit den Wurzeln, die sich überwiegend in den ersten 2 bis 5 Metern befinden.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "407c1a5ba3be",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87358d160bde",
+     "text": "Expertenrat:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "64b6b217c07f",
+     "text": " Bei unserem technischen Besuch bestimmen wir mit Ihnen die empfindlichen Bereiche Ihres Gartens, um das Bohrgerät dort aufzustellen, wo das Wurzelwerk nicht beeinträchtigt wird.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "de302ec6a025",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ee1556dda930",
+     "text": "3. Keine chemische Verschmutzung und kein Lärm",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "768be3dc2397",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "83fc39b806b6",
+     "text": "Ein Garten ist ein lebendiges Ökosystem. Störungen können die heimische Tierwelt (Vögel, bestäubende Insekten) beeinträchtigen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90eddf50d401",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "529f78aedf4f",
+     "text": "Null Emissionen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0f37a1adc031",
+     "text": " Einmal installiert, erzeugt die Geothermie keinen Rauch, keinen Geruch und keine Treibhausgase. Ihr Garten bleibt ein Ort reiner Luft.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ce2f8a2efc01",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6cc1657ae386",
+     "text": "Stille ist Gold:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bab29b4ad833",
+     "text": " Ohne Außengerät (anders als bei Luft-Wasser-Wärmepumpen) herrscht völlige Ruhe. Vögel und Kleintiere werden nicht durch das ständige Brummen eines Ventilators vertrieben.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a1736c1034b1",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba055fd00084",
+     "text": "4. Der Boden: ein natürlicher Isolator und Beschützer",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "60ea9a9ca1d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ffc6dc607f6e",
+     "text": "Mit unserer hochwertigen geothermischen Verfüllung schaffen wir eine dichte Barriere, die die Bodenstruktur schützt. Es besteht keine Gefahr, dass ein Wärmeleck die Erde an der Oberfläche „aufheizt“ und die Winterruhe Ihrer Pflanzen stört. Der Energieaustausch findet viel zu tief statt, als dass Ihre Blumen oder Ihr Rasen etwas davon spüren würden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe3bcefba718",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "00f71bbf7c03",
+     "text": "5. Eine schonende Baustelle mit WellDoneDrill",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bf9f9d5562b7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53da3597f95d",
+     "text": "Wir verwenden Fahrplatten, um über Ihren Rasen zu fahren und die Bodenverdichtung zu minimieren. Unser Ziel ist einfach: Eine Woche nach unserem Abzug soll die Natur wieder ihren Platz eingenommen haben, und nur ein unauffälliger Revisionsschacht soll von der revolutionären Technik unter Ihren Füßen zeugen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d39a4a905604",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f073ca2df18",
+     "text": "Fazit",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3908739fae1d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5fece94df3d2",
+     "text": "Wer sich für vertikale Geothermie entscheidet, schützt das Ökosystem über dem Boden, indem er die Energie tief darunter gewinnt. Die ideale Lösung für Eigentümer, die nicht zwischen modernem Komfort und dem Erhalt ihres grünen Fleckchens wählen wollen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermie und Biodiversität im Garten | WellDoneDrill",
+ "seoDescription": "Warum eine vertikale Erdwärmebohrung Ihren Garten schont: ein Loch von 15 bis 20 cm, keine Schäden an Baumwurzeln, kein Lärm, keine Emissionen und eine schonende Baustelle.",
+ "_mainImageFile": "uploads/2026/01/1.jpg",
+ "_mainImageAlt": "Geothermie und Biodiversität im Garten"
+}

@@ -1,0 +1,362 @@
+{
+ "_id": "blog-legacy-be-en-5529",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geothermal and biodiversity: why vertical drilling respects your land",
+ "slug": {
+  "_type": "slug",
+  "current": "geothermal-and-biodiversity-vertical-drilling"
+ },
+ "publishedAt": "2026-03-20T14:25:02Z",
+ "excerpt": "One of homeowners' biggest worries before switching to geothermal is the impact of the works on their garden. If you have spent years tending your borders, hedges and trees, the idea of a site machine can be stressful.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "16e2aff2eecf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de3b5e725d5a",
+     "text": "One of homeowners' biggest worries before switching to geothermal is the impact of the works on their garden. If you have spent years tending your flower beds, hedges and trees, the idea of a site machine can be stressful. Yet at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "090ac00f0a39",
+     "text": "WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1928b1906ac8",
+     "text": ", we maintain that vertical drilling is the heating solution that best respects biodiversity and the health of your soil. Here is why.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "10542ab3b8ce",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "35af4f2d0210",
+     "text": "1. Vertical borehole vs horizontal collector: the ecological match",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f53ba63ae254",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba09676b6afa",
+     "text": "There are two types of shallow geothermal. A horizontal collector requires stripping the whole surface of your garden to a depth of about 1 metre to lay coils of pipe.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "7b61d70a9625",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a86bab50b868",
+     "text": "Soil destruction:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "515349320049",
+     "text": " This method kills soil life (earthworms, micro-organisms) and makes it impossible to plant trees (roots would damage the pipes).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d342e8368037",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b28d9a21ded",
+     "text": "The WellDoneDrill solution:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "bcc5baddedcf",
+     "text": " A vertical borehole needs only a hole 15 to 20 cm in diameter. The footprint is tiny. Once drilling is finished, underground life carries on as normal all around it.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "bbc2f56b24a3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74c08e5bac39",
+     "text": "2. Protecting your trees' root systems",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "167a54d6e146",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47490cd6cd6f",
+     "text": "Unlike gas trenches or conventional heat networks, a vertical borehole can be drilled at a respectful distance from your finest trees.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "30d6ef116afc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b46b22c2f0f1",
+     "text": "Verticality:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "eb0c97d05273",
+     "text": " Since we go down to 150 metres, we don't compete with roots, which are mostly found in the first 2 to 5 metres.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1d27a18eb4d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b8dec574c26",
+     "text": "Expert advice:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0ddf6a5be43c",
+     "text": " During our technical visit, we identify the sensitive areas of your garden with you, so the rig is positioned where it will have no impact on the roots.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f8a927310fa7",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d4779eb0162",
+     "text": "3. No chemical or noise pollution",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5b06d9ffa66b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "89b2a624391b",
+     "text": "A garden is a living ecosystem. Introducing nuisances can disturb local wildlife (birds, pollinating insects).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2d0d77693406",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8dab49e847e",
+     "text": "Zero emissions:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2062bdc2670a",
+     "text": " Once installed, geothermal produces no smoke, no smell and no greenhouse gases. Your garden remains a place of clean air.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1aa840c8a864",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4058c91cdc69",
+     "text": "Silence is golden:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "642326cb1edc",
+     "text": " With no outdoor unit (unlike air-to-water heat pumps), it is completely quiet. Birds and small wildlife are not driven away by the constant hum of a fan.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "987959a96de5",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a1c5db8f2502",
+     "text": "4. The ground: a natural insulator and protector",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ee891c18e2bf",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f708f87b9073",
+     "text": "By injecting our high-performance geothermal grout, we create a watertight barrier that protects the soil structure. There is no risk of a heat leak \"warming\" the topsoil and disturbing your plants' winter dormancy. The energy transfer happens far too deep for your flowers or lawn to feel any effect.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "90b2a451d628",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0946907a99df",
+     "text": "5. A low-impact worksite with WellDoneDrill",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9af77921a83e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa97bbd6781a",
+     "text": "We use ground protection mats to drive over your lawn and minimise soil compaction. Our goal is simple: a week after we leave, nature should have taken over again, and only a discreet inspection cover should reveal the revolutionary technology beneath your feet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a83bacae70a3",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a6f9638c64db",
+     "text": "Conclusion",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "00fe13a5429f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f3c14927c68",
+     "text": "Choosing vertical geothermal means protecting the ecosystem above ground by drawing energy from far below. It is the ideal solution for owners who refuse to choose between modern comfort and preserving their patch of green.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geothermal and biodiversity in your garden | WellDoneDrill",
+ "seoDescription": "Why a vertical geothermal borehole spares your garden: a 15–20 cm hole, no damage to tree roots, no noise or emissions and a low-impact worksite.",
+ "_mainImageFile": "uploads/2026/01/1.jpg",
+ "_mainImageAlt": "Geothermal and biodiversity in the garden"
+}

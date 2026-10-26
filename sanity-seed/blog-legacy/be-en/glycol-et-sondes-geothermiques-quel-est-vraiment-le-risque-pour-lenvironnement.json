@@ -1,0 +1,590 @@
+{
+ "_id": "blog-legacy-be-en-4403",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Glycol and geothermal probes: what is the real risk to the environment?",
+ "slug": {
+  "_type": "slug",
+  "current": "glycol-and-geothermal-probes-real-environmental-risk"
+ },
+ "publishedAt": "2025-12-02T11:00:19Z",
+ "excerpt": "The fluid circulating in geothermal probes is often a mix of water and glycol. For some people, the word immediately suggests a pollution risk if there is a leak. What is the reality?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "33ab04a4e76b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2de287ab3f3",
+     "text": "The fluid circulating in geothermal probes is often a mixture of water and glycol. For some people, the word immediately suggests a risk of pollution if there is a leak. What is the reality?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af5660594456",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b2bae764ed51",
+     "text": "What is glycol used for in a geothermal installation?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "77bde6bb76af",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "579045dba5b7",
+     "text": "Glycol is an antifreeze. Mixed with water in a given proportion, it:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a189043f985f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9b565a43afbc",
+     "text": "lowers the freezing point of the fluid circulating in the probes;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "90d91a5dfd39",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f3df12759741",
+     "text": "prevents ice forming in the probe and equipment when temperatures drop below 0 °C;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "106b37246cec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4254837e9124",
+     "text": "ensures safe, continuous operation of the installation, even during cold spells.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4daf809e84e4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4938664fa04f",
+     "text": "In a geothermal installation, the fluid always stays in a closed circuit: it circulates between the probes and the plant room, with no direct contact with the ground or groundwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d4ed617da709",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca92eca6f2d2",
+     "text": "What type of glycol is used?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8c68f65e0cf2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6add79b9d64d",
+     "text": "Modern installations use glycol suited to thermal applications, generally technical-grade glycol specifically formulated for heating and cooling circuits. The products selected are:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e64ced9ce197",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ff364f049452",
+     "text": "designed to limit their environmental impact;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "29c2a916d6a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "53bd34976969",
+     "text": "stable over time;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8eaed64d10c9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f7acb23e7eae",
+     "text": "compatible with the materials of the probes and equipment.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "229642bba870",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4d33c8079a05",
+     "text": "WellDoneDrill works with recognised products, chosen according to heat pump manufacturers' specifications and regulatory requirements.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "be85d55d5090",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9f767a3bd48",
+     "text": "Where does the glycol circulate: in the ground or in a closed circuit?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "16bb33a56008",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c64173ebbc37",
+     "text": "It is important to remember that glycol does not circulate \"in the ground\". It circulates in the probes, which are made of HDPE pipes embedded in geothermal grout.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1bdad9807d4c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b6f3cb896a20",
+     "text": "The circuit works like this:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ab5ce18d2df9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ac35ba41af41",
+     "text": "the fluid leaves the manifold in the plant room;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "82830de1d593",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8131ed689fb1",
+     "text": "it travels down the geothermal probe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9cb0fe3a7f95",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ba79456a4538",
+     "text": "it comes back up through the second leg of the probe;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c95d378ce4fc",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a0b190073538",
+     "text": "it returns to the manifold, then to the heat pump.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c2695bad942b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cc3b56ac0001",
+     "text": "In normal operation, there is therefore no direct contact between the glycol and the ground or groundwater.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "56db329df83a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de623ff43ecf",
+     "text": "What happens if there is a leak?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "71a2ee832ee4",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b35eba295cf8",
+     "text": "As with any hydraulic circuit, the risk of a leak can never be considered zero. However, several factors greatly limit the potential impact:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "df95e2b963ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "efa4a34f1b67",
+     "text": "the HDPE probes are made in one piece, with no buried joints;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2fbe1413ef89",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4dbd1ac292e3",
+     "text": "manifolds and connections are grouped in accessible areas (chambers, plant rooms);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a637ede2deed",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "85854be62d20",
+     "text": "pressure tests are carried out systematically before commissioning and after the works;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e3c32df5453c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bb031e1fde38",
+     "text": "any drop in circuit pressure can be detected during operation.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e55a2af4d5c1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5723f459cdee",
+     "text": "If a leak does occur, it is usually in an accessible area (plant room, chamber), so it can be repaired quickly and the circuit topped up.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "64af238a3630",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "cbde7498fb33",
+     "text": "How WellDoneDrill limits this risk in practice",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1983624d4d0f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f25466844fcb",
+     "text": "WellDoneDrill applies several precautionary principles:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "be020e0da66a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bea1cbc7232c",
+     "text": "use of one-piece HDPE probes guaranteed for 50 years;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39d6dd7ae78d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6294153d0dea",
+     "text": "welds and joints made only in accessible areas;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a43c572aea6e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aa3d7ed936c6",
+     "text": "systematic pressure tests of probes and manifolds before trenches are backfilled;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ebd4ef4fc502",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1d019f1722fa",
+     "text": "documentation of the circuits to make later interventions easier.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "640bcfd5a760",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4327ec3a6ac8",
+     "text": "These good practices considerably reduce the likelihood of a leak and make early detection easier.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "16b717e8bca0",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "436ddb5fca45",
+     "text": "Conclusion: should you worry about glycol in geothermal systems?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4b8ff8c62c7b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b25d4886e827",
+     "text": "In a properly designed and built geothermal installation, glycol circulates in a closed circuit, much like a conventional heating circuit. It is not a fluid injected into the ground or the aquifer, but a heat-transfer fluid contained in the probes.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "71ba2c6d8d4e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b752be243602",
+     "text": "The risk of accidental pollution is very low and is controlled through the quality of the materials, pressure testing and circuit design. For a project owner, the main thing is to make sure the installation is carried out by professionals who follow these good practices, which is at the heart of WellDoneDrill's approach.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Glycol in geothermal probes: what risk? | WellDoneDrill",
+ "seoDescription": "Why geothermal probes contain glycol, where it circulates, what happens if there is a leak, and how WellDoneDrill limits the risk to soil and groundwater.",
+ "_mainImageFile": "uploads/2025/12/wdd-geothermie-hero.webp",
+ "_mainImageAlt": "Geothermal probe in Belgium"
+}

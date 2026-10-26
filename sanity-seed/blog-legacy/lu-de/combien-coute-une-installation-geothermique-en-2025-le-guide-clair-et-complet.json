@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-lu-de-4382",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Was kostet eine Erdwärmeanlage? Der klare und vollständige Preisleitfaden",
+ "slug": {
+  "_type": "slug",
+  "current": "was-kostet-eine-erdwaermeanlage-preisleitfaden"
+ },
+ "publishedAt": "2025-12-02T10:50:33Z",
+ "excerpt": "Die Frage nach dem Preis kommt immer zuerst, wenn es um Geothermie geht. Was kostet eine Anlage? Wie schneidet sie im Vergleich zu anderen Systemen ab? Und vor allem: Ab wann lohnt sie sich?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "1cbeddabc18c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3622d2a64a74",
+     "text": "Die Frage nach dem Preis kommt immer zuerst, wenn es um Geothermie geht. Was kostet eine Anlage? Wie schneidet sie im Vergleich zu anderen Systemen ab? Und vor allem: Ab wann lohnt sie sich?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "000f46238108",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8a7b8328d1a",
+     "text": "2025 hat sich die Geothermie in Belgien stark weiterentwickelt: Die Bohrtechniken wurden besser, die Kosten sind gesunken und die Mehrwertsteuerregeln klarer geworden. Das Ergebnis: Über die Lebensdauer der Anlage ist die Geothermie zu einer der wirtschaftlichsten Lösungen geworden, um ein Gebäude zu heizen und zu kühlen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "41f50a51a27c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1ac3c6d7486a",
+     "text": "1. Die wichtigsten Kostenpositionen einer Erdwärmeanlage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f01f4838fcb7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c295b0f8385",
+     "text": "Der Preis eines geothermischen Systems setzt sich aus mehreren Elementen zusammen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1a9b3e2196e3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "415f8f6d59b0",
+     "text": "die Erdwärmebohrungen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ceabd9223ae2",
+     "text": " Ausführung der Vertikalbohrungen, Lieferung und Einbau der Sonden, geothermische Verfüllung;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "20bfa464536b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d677d86d43c1",
+     "text": "die Erdwärmepumpe",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d99376d5bdd9",
+     "text": " (Wasser-Wasser): oft ein kompaktes Modul in der Größe eines großen Kühlschranks;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c635f0383a91",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd1eb8c9bf34",
+     "text": "der Speicher",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c88978bfb902",
+     "text": " (Heizungspuffer und/oder Warmwasser);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f172590e69f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d6c54a660c37",
+     "text": "die hydraulischen Verbindungen",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7a954daa8e6e",
+     "text": " zwischen Sonden, Technikraum und Hausnetz;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4e5f4a77dd67",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "bcbc269736b0",
+     "text": "Regelung und Zubehör",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8b8f76246db0",
+     "text": " (Umwälzpumpen, Ventile, Fühler, Steuerung);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c9be67c00fc2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "49558e408704",
+     "text": "gegebenenfalls die Wärmeübergabe",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "e4a51a0f42b2",
+     "text": " (Fußbodenheizung, Anpassung des bestehenden Netzes usw.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "40c90884705e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "98a15a40ab66",
+     "text": "Je nach Projekt sind manche Positionen bereits vorhanden (zum Beispiel das Heizkörpernetz bei einer Sanierung) oder werden geteilt (Gemeinschaftsgebäude, Mehrfamilienhaus…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ad8bbe9ed040",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7da190540d12",
+     "text": "2. Richtwerte für ein Einfamilienhaus",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "36c8b2eed4fb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "74fdb7b2af31",
+     "text": "Für eine richtig dimensionierte Erdwärmeanlage in einem Einfamilienhaus in Belgien gelten in der Regel folgende Größenordnungen (inkl. MwSt., nach Anwendung des reduzierten Satzes von 6 % im Wohnbau):",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dbca7d61845e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "31788b227108",
+     "text": "Standard-Einfamilienhaus",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "faaef56b34c4",
+     "text": " (Wärmepumpe mit 8 bis 12 kW, 2 bis 4 Sonden mit 80 bis 120 m): ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "421476d2a313",
+     "text": "etwa 25.000 bis 35.000 € inkl. MwSt.",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "8422c01667bb",
+     "text": " für den geothermischen Teil (Bohrungen + Wärmepumpe + Speicher + Verbindungen);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d5a7939778bb",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c62df46d9900",
+     "text": "größeres Haus oder sehr hoher Komfort:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "87d8f6c486fc",
+     "text": " Das Budget kann je nach Leistung und Kühlbedarf auf 40.000 bis 45.000 € inkl. MwSt. steigen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "869634876956",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4a6a7a7cbb31",
+     "text": "bei einer Sanierung",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "c847935db4b6",
+     "text": ", wenn das Heizkörpernetz erhalten und auf Niedertemperatur angepasst wird, bleiben die Gesamtkosten in einer vergleichbaren Größenordnung.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6e7a498c32a2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "00d31823d6dc",
+     "text": "Diese Beträge sind Richtwerte und hängen von Region, Bodenbeschaffenheit, Zugänglichkeit des Grundstücks, Anzahl der Sonden, Wärmepumpenmarke usw. ab. Sie helfen jedoch bei der Einordnung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3fd0e610c36c",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "63632c803af9",
+     "text": "3. Vergleich mit anderen Systemen über 20 Jahre",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "4a11545d7582",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6b2cd9898cba",
+     "text": "Geothermie nur über die Investitionskosten mit einer anderen Lösung zu vergleichen, führt in die Irre. Entscheidend sind die Gesamtkosten über 15 bis 20 Jahre:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6ebf98073f65",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fbb85508b917",
+     "text": "Investitionskosten",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "2528c0360279",
+     "text": " (Kauf und Installation);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5c1ac7044555",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d89b34d20914",
+     "text": "Betriebskosten",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "04e8aae470d6",
+     "text": " (Energie);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f6a8e4023f76",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08e230c0fd74",
+     "text": "Wartungskosten",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ee472abdd526",
+     "text": ";",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7f2b00ecd417",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2d03fce3fab5",
+     "text": "Lebensdauer",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "04a39cec831c",
+     "text": " jeder Komponente.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "71591f0ea6ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d62021d5f67f",
+     "text": "Ein Gaskessel ist in der Anschaffung günstiger, aber:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2640836ee1dd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e7a6134ddcc2",
+     "text": "er muss häufiger ersetzt werden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "aec177c0bfd0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fe328db6392e",
+     "text": "der Gaspreis ist sehr volatil;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "57be03441b4f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "47d55c32acf5",
+     "text": "der CO₂-Fußabdruck bleibt hoch;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "74269799c507",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "441ecfd1f8b6",
+     "text": "die gesetzlichen Auflagen nehmen zu.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4b74eb064464",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e862444afcc",
+     "text": "Die Geothermie erfordert eine höhere Anfangsinvestition, aber:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "5c6c3ea16249",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f3d87c062ea",
+     "text": "die Sonden halten über 50 Jahre;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "85da1c6b32ec",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "80c06b95c1d0",
+     "text": "die Wärmepumpe hat eine Lebensdauer von 15 bis 20 Jahren;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "d13df5f98414",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "28e9f561d82b",
+     "text": "der Stromverbrauch sinkt dank der hohen Leistungszahl deutlich;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "17b5c42c2612",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "99a4239e096b",
+     "text": "die Energierechnung ist planbar und weniger anfällig für steigende Preise fossiler Brennstoffe.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c9097309ede8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b45b8ed9dd11",
+     "text": "Über 20 Jahre wird die Geothermie in der Regel zur günstigsten Lösung bei den Gesamtkosten, besonders wenn das Gebäude lange genutzt wird (Familienhaus, Mehrfamilienhaus, öffentliches Gebäude usw.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "16df5818ecbd",
+   "_file": "uploads/2025/12/20231102_101248.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "481991f35c84",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b605790261d2",
+     "text": "4. Die entscheidende Rolle sinkender Bohrkosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dafffef27ab2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f502f99205f2",
+     "text": "In den letzten Jahren haben die Bohrtechniken große Fortschritte gemacht, unter anderem durch den breiten Einsatz von PDC-Bohrkronen (Polycrystalline Diamond Compact) und die Optimierung von Methoden aus Deutschland. WellDoneDrill hat diese Entwicklung aktiv mitgestaltet.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0048d9bbd30a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3cfd169cddbe",
+     "text": "Das Ergebnis: Die Produktivität pro Bohrtag ist gestiegen, die Risiken sind gesunken und die Kosten pro Meter gefallen. Wo die Geothermie früher als teuer galt, liegt sie bei den Gesamtkosten heute nah an oder sogar unter anderen leistungsfähigen Systemen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "903d9b403c1e",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7f313e6ba3da",
+     "text": "5. Mehrwertsteuer, Förderungen und Steuern: ein wichtiger Hebel",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a24059953cd0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e0be5bd0cde4",
+     "text": "Im belgischen Wohnbau beträgt die Mehrwertsteuer auf Wärmepumpen und Erdwärmebohrungen 6 %, wenn das Gebäude die Voraussetzungen erfüllt (überwiegende Wohnnutzung, Altersgrenzen bei Sanierungen usw.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2c8c8ff1d8a1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e561e9174b9b",
+     "text": "Ab 2026 wird dieser Satz von 6 % auf die Installation von Wärmepumpen im Neubau ausgeweitet, und Erdwärmebohrungen folgen derselben Regelung. Für Privatpersonen ist das ein erheblicher finanzieller Vorteil.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1496fa1fc363",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "82742d14ef3b",
+     "text": "Hinzu kommen je nach Region und Zeitraum Förderprogramme oder Prämien, insbesondere für energieeffiziente Gebäude oder Gemeinschaftsprojekte.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "337e5343c8ee",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "af04263cef78",
+     "text": "6. Ein wichtiger Hinweis zu den Preisen der Geothermie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bcf57c3cb858",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e9099523dec5",
+     "text": "Die in diesem Artikel genannten Preise und Größenordnungen sind unverbindliche Richtwerte. Sie geben einen Überblick über die einzuplanenden Budgets, doch jedes Projekt ist einzigartig.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d59e14df0461",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca3da5d6fdf7",
+     "text": "WellDoneDrill erstellt individuelle, detaillierte Angebote ohne versteckte Kosten, meist innerhalb von 48 Stunden auf Basis der Projektdaten. Erst auf Grundlage dieser genauen Kalkulation ist ein sinnvoller Vergleich mit anderen Lösungen möglich.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3dbeb03dc375",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5b409b08d0c9",
+     "text": "Wichtig ist: Die Geothermie ist nicht mehr die „unbezahlbare“ Lösung, die man sich vor einigen Jahren vorstellte. Dank sinkender Bohrkosten, günstiger Steuersätze und sehr niedriger Betriebskosten ist sie langfristig zu einer der wirtschaftlichsten und komfortabelsten Technologien zum Heizen und Kühlen von Gebäuden geworden.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Was kostet Geothermie? Preisleitfaden | WellDoneDrill",
+ "seoDescription": "Preis einer Erdwärmeanlage: Kostenpositionen, Richtwerte für ein Einfamilienhaus, Vergleich über 20 Jahre, sinkende Bohrkosten und steuerliche Vorteile.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+ "_mainImageAlt": "Erdwärmebohrung für Privatkunden in Belgien"
+}

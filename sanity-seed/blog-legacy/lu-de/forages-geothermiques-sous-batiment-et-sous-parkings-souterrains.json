@@ -1,0 +1,556 @@
+{
+ "_id": "blog-legacy-lu-de-4401",
+ "_type": "blogPost",
+ "locale": "lu-de",
+ "title": "Erdwärmebohrungen unter Gebäuden und Tiefgaragen",
+ "slug": {
+  "_type": "slug",
+  "current": "erdwaermebohrungen-unter-gebaeuden-und-tiefgaragen"
+ },
+ "publishedAt": "2025-12-02T10:59:35Z",
+ "excerpt": "Wenn die verfügbare Fläche an der Oberfläche begrenzt ist, können Erdwärmesonden direkt unter Gebäuden oder Tiefgaragen eingebaut werden. So lässt sich Geothermie in sehr dichte Projekte integrieren, im Neubau wie in der Sanierung.",
+ "category": "chantier",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "ef21f00d0090",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5f1aea96e051",
+     "text": "Wenn die verfügbare Fläche an der Oberfläche begrenzt ist, können Erdwärmesonden direkt unter Gebäuden oder Tiefgaragen eingebaut werden. Dieser Ansatz ermöglicht es, Geothermie in sehr dichte Projekte zu integrieren, im Neubau wie in der Sanierung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e1aaedf8de78",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f5597bd58bfe",
+     "text": "Zwei große Anordnungsszenarien",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6a64b0596051",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5266932d56bd",
+     "text": "Erdwärmesonden lassen sich in zwei Hauptkonfigurationen unter einem Gebäude oder einer Tiefgarage anordnen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bfef409f689e",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "3bf70a894bb0",
+     "text": "1. Bohren vor dem Bau",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0fcd43d63ee9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b6cb44eeb184",
+     "text": "Bei einem Neubauprojekt besteht die einfachste Lösung darin, die Bohrungen vor dem Bau des Gebäudes auszuführen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3ddeb29f9b26",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0147d3d695f1",
+     "text": "die Sonden werden auf dem freien Grundstück gebohrt;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "78bb314364a7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "833105795f7b",
+     "text": "sie werden entsprechend dem künftigen Plan der Fundamente und Untergeschosse angeordnet;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e47686752e5a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6e3ed8dd68da",
+     "text": "sind die Sonden eingebaut und angeschlossen, wird das Gebäude darüber errichtet.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "7ed90c7505d1",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a8008844b4e5",
+     "text": "So besteht große Freiheit bei der Anordnung, und es ist sichergestellt, dass die Sonden die Fundamente nicht behindern. Die Abstimmung mit dem Statiker ist entscheidend, um Bohrbereiche und Abstände zu Pfählen oder Streifenfundamenten festzulegen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c0272c3a42d4",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "010e8ff5dc0d",
+     "text": "2. Bohren von innen, unter einem bestehenden oder im Bau befindlichen Gebäude",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "65dff072e9b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a4a2f15e05e0",
+     "text": "Im zweiten Szenario wird von innen gebohrt, sobald ein oder mehrere Untergeschosse gebaut sind. Das Bohrgerät wird dann auf einer Garagenplatte oder in einem Technikraum aufgestellt, und die Sonden werden in den darunterliegenden Boden gebohrt. Dieser Ansatz ist besonders nützlich, wenn keine Außenfläche zur Verfügung steht oder das Projekt bereits teilweise gebaut ist. Er erfordert kompakte Bohrgeräte, die mit begrenzter Höhe auskommen, und eine besondere Organisation für die Bohrkleinabfuhr.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "a6c487fc3da8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ca4c1e615f5f",
+     "text": "Dasselbe gilt für Sanierungen: In Bestandsgebäuden lassen sich die Bohrgeräte ins Innere bringen, um je nach Konfiguration durch Bodenplatten, Fundamentplatten oder zwischen Gründungspfählen zu bohren. Das macht Geothermie auch in Gebäuden möglich, deren gesamte Außenfläche bereits genutzt oder bebaut ist.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af9a300462dd",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c3d6e5a12c41",
+     "text": "Abstimmung mit Tragwerk und Fundamenten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "cf1a4ef8474c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5cba6e85b983",
+     "text": "Bohren unter einem Gebäude erfordert eine enge Abstimmung mit dem Statiker:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "af80fb816602",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b43db1738761",
+     "text": "Lage der Pfähle oder Fundamente;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8970c8cf7a11",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b8228ea37df7",
+     "text": "Tiefe der Fundamente;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c712c5a06678",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "905fbb64aadb",
+     "text": "zu meidende Bereiche, um das Tragwerk nicht zu schwächen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ed5d508b4b87",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f351c0b49b0f",
+     "text": "eventuelle Mindestabstände.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "82c4ce580bb0",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9101ddedaae",
+     "text": "Da Erdwärmesonden einfache PE-HD-Rohre in einer Verfüllung sind, üben sie keinen nennenswerten Druck auf den Boden aus. Die Frage ist also nicht statisch, sondern geometrisch: Die Sonden müssen so angeordnet werden, dass sie die tragenden Bauteile nicht stören.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ecd0f7f54f04",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "64240ea36a55",
+     "text": "Vorteile von Sonden unter Gebäude oder Tiefgarage",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "404567287234",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "313b68c6156b",
+     "text": "Sonden unter dem Gebäude oder der Tiefgarage anzuordnen, bietet mehrere Vorteile:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "10cd8b5d0b89",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7b86bde2f0a2",
+     "text": "optimale Flächennutzung: kein zusätzlicher Platzbedarf an der Oberfläche;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "3e9871f694b3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2c71d0ac9961",
+     "text": "geschützte Sondenköpfe: Sie liegen in Technikräumen oder geschützten Bereichen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "50ae72d6d994",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d6fddbfa3515",
+     "text": "kürzere Verbindungen zwischen Sonden und Technikraum;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c42cb593ef43",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a704b5890d92",
+     "text": "Geothermie wird auch in sehr dichten Innenstadtprojekten möglich.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e52338de3f64",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8a87ead3fd6",
+     "text": "Für Bauträger und Planer ermöglicht diese Lösung geothermisches Heizen und Kühlen, selbst wenn kein Garten und keine freie Fläche vorhanden sind.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6643ec774020",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "60742583057d",
+     "text": "Baustellenorganisation und praktische Anforderungen",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e42abbdf95f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ccf9a3d2c429",
+     "text": "Bohren unter einem Gebäude oder einer Tiefgarage erfordert eine besondere Logistik:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9fc274c2c5b9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "030b5b5bbaef",
+     "text": "Zugang des Bohrgeräts ins Gebäude;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "824b9d50cb49",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a19ad20cdece",
+     "text": "Schutz der Bodenplatten und bestehenden Oberflächen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4415c58520c3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "eba875b2e558",
+     "text": "Bohrkleinmanagement in geschlossenen Räumen;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "4d651639b250",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de5af005e8ad",
+     "text": "Einhaltung von Höhen- und Lüftungsvorgaben.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "5c5ed3e84542",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9003be8562b1",
+     "text": "WellDoneDrill verfügt über kompakte Bohrgeräte und angepasste Abläufe für solche Baustellen, im Neubau wie in der Sanierung. Ziel ist es, die Bohrungen mit minimalen Auswirkungen auf das Gebäude und den Gesamtzeitplan auszuführen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "e268c4ee3bfc",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fad2236bdb9b",
+     "text": "Fazit: ein Hebel für Geothermie in dicht bebauten Gebieten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "914b953a9176",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "723028def6ac",
+     "text": "Die Möglichkeit, Erdwärmesonden unter Gebäuden oder Tiefgaragen einzubauen, ist ein großer Vorteil für die Geothermie in dichten städtischen Projekten. Sie verbindet Energieeffizienz, Komfort und Flächenknappheit.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9d55cd6abb23",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2ca008a5c248",
+     "text": "Dank seiner Erfahrung mit städtischen Bohrungen und Arbeiten unter Gebäuden begleitet WellDoneDrill Bauherren, Architekten und Planungsbüros dabei, diese Lösung in ihre Projekte zu integrieren, von der Planung bis zur Ausführung.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Erdwärmebohrungen unter Gebäuden und Tiefgaragen | WellDoneDrill",
+ "seoDescription": "Sonden unter Gebäude oder Tiefgarage: Bohren vor dem Bau oder aus dem Untergeschoss, Abstimmung mit dem Statiker, Vorteile und praktische Organisation.",
+ "_mainImageFile": "uploads/2025/12/parking-sous-terrain.webp",
+ "_mainImageAlt": "Erdwärmebohrungen unter einem Gebäude oder einer Tiefgarage"
+}

@@ -1,0 +1,818 @@
+{
+ "_id": "blog-legacy-be-nl-4382",
+ "_type": "blogPost",
+ "locale": "be-nl",
+ "title": "Wat kost een geothermische installatie? De duidelijke en volledige gids over de prijs van geothermie",
+ "slug": {
+  "_type": "slug",
+  "current": "wat-kost-een-geothermische-installatie-prijsgids"
+ },
+ "publishedAt": "2025-12-02T10:50:33Z",
+ "excerpt": "De vraag naar de prijs komt altijd als eerste wanneer het over geothermie gaat. Wat kost een installatie? Hoe verhoudt ze zich tot andere systemen? En vooral: vanaf wanneer wordt ze rendabel?",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 5,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "919454ecdbe3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "75cd787cf6cb",
+     "text": "De vraag naar de prijs komt altijd als eerste wanneer het over geothermie gaat. Wat kost een installatie? Hoe verhoudt ze zich tot andere systemen? En vooral: vanaf wanneer wordt ze rendabel?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6273d803a7f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d96c7230354a",
+     "text": "In 2025 is geothermie in België sterk geëvolueerd: de boortechnieken zijn verbeterd, de kosten gedaald en de btw-regels duidelijker geworden. Het resultaat: over de levensduur van de installatie is geothermie een van de voordeligste oplossingen geworden om een gebouw te verwarmen en te koelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "2fd62800a6d2",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "063c5c28c179",
+     "text": "1. De belangrijkste kostenposten van een geothermische installatie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9143a046c67d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d8cce6914403",
+     "text": "De prijs van een geothermisch systeem bestaat uit verschillende onderdelen:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dde9c42d9b99",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "696b816098c0",
+     "text": "de geothermische boringen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1c4df6e427b9",
+     "text": " uitvoering van de verticale boringen, levering en plaatsing van de sondes, geothermische grout;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "6980affd1fc3",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "de163d35faec",
+     "text": "de geothermische warmtepomp",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a38dba030c98",
+     "text": " (water-water): vaak een compacte module, zo groot als een grote koelkast;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "39b72145c843",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d01bda25ccd9",
+     "text": "het opslagvat",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "479eca48f2ba",
+     "text": " (buffervat voor verwarming en/of sanitair warm water);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a7208fe1c820",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b12a58257e36",
+     "text": "de hydraulische verbindingen",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "0bb3c1003336",
+     "text": " tussen sondes, technische ruimte en binnennet;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "784ca1672572",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "dd76cf1f3ba3",
+     "text": "de regeling en toebehoren",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "043f0860213e",
+     "text": " (circulatiepompen, kranen, sensoren, sturing);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "43b521131638",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "713e7e4fe84f",
+     "text": "eventueel het afgiftesysteem",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f7f5a90c9f4c",
+     "text": " (vloerverwarming, aanpassing van het bestaande net, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ddfe340bf31c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "84264688559f",
+     "text": "Afhankelijk van het project zijn sommige posten al aanwezig (bijvoorbeeld het radiatorennet bij renovatie) of worden ze gedeeld (collectief gebouw, appartementsgebouw…).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "58fb4a713a06",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5e9c9aec6c9b",
+     "text": "2. Richtbedragen voor een eengezinswoning",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c7a729076f60",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "73aeb8830857",
+     "text": "Voor een goed gedimensioneerde geothermische installatie in een eengezinswoning in België ziet men doorgaans de volgende richtbedragen (incl. btw, na toepassing van 6 % btw in de woningbouw):",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f45a682cbdff",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "587fc56f8daf",
+     "text": "standaard eengezinswoning",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "f8585cd69253",
+     "text": " (warmtepomp van 8 tot 12 kW, 2 tot 4 sondes van 80 tot 120 m): ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "b4826b8d01b1",
+     "text": "ongeveer € 25.000 tot € 35.000 incl. btw",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "5ea3879d2a74",
+     "text": " voor het geothermische deel (boringen + warmtepomp + vat + verbindingen);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "f20bf9047cc8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d1a1d13c8d5",
+     "text": "grotere woning of zeer hoog comfortniveau:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a9c0bb647f98",
+     "text": " het budget kan oplopen tot € 40.000 à € 45.000 incl. btw, afhankelijk van het vermogen en de koelbehoeften;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "c19d6611457b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1c0629191f7b",
+     "text": "bij renovatie",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "1bd451382001",
+     "text": ", als het radiatorennet behouden en aangepast wordt aan lage temperatuur, blijven de totale kosten in een vergelijkbare orde van grootte.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "539b8c1c1ebd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8790bae340f8",
+     "text": "Deze bedragen zijn indicatief en variëren volgens de regio, de bodemsoort, de bereikbaarheid van het terrein, het aantal sondes, het merk van de warmtepomp, enz. Ze geven wel een idee van waar u staat.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "de6b090d8f6a",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a648f30c6c2c",
+     "text": "3. Vergelijking met andere systemen over 20 jaar",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f33bcac4e6bd",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0f41a49f5a31",
+     "text": "Geothermie enkel op investeringskost vergelijken met een andere oplossing is misleidend. Wat echt telt, zijn de totale kosten over 15 tot 20 jaar:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9b5d23727331",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ea7e97ce105b",
+     "text": "investeringskost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "fcf63dad0508",
+     "text": " (aankoop en installatie);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "9d9e3aafec08",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "55d4764ec1fb",
+     "text": "werkingskost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "7b9caea676b7",
+     "text": " (energie);",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "8f3e80ceb40a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2b5bead58cea",
+     "text": "onderhoudskost",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "3934671f5f7a",
+     "text": ";",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ce7ebebad3f7",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b9e17dc46d3b",
+     "text": "levensduur",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ebe535e8f3bb",
+     "text": " van elk onderdeel.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ef958523501d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "101c0a2cdb79",
+     "text": "Een gasketel is goedkoper om te installeren, maar:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d7d164e26d7d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "336dbc78eb06",
+     "text": "hij moet vaker vervangen worden;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "17533c61e177",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "382c59c04ea3",
+     "text": "de gasprijs is zeer volatiel;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "1a70a8f6fcce",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f6d2467cf0c6",
+     "text": "de koolstofvoetafdruk blijft hoog;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "cf4b5c757245",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6fc562ac4a57",
+     "text": "de wettelijke beperkingen nemen toe.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "2b80a7fcbf09",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "93d298876d85",
+     "text": "Geothermie vraagt een hogere initiële investering, maar:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "0eb2c0a40174",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "4942b6e9ff39",
+     "text": "de sondes gaan meer dan 50 jaar mee;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "134aeaf931ba",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5a714e03b411",
+     "text": "de warmtepomp heeft een levensduur van 15 tot 20 jaar;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "604000d05251",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1022bb6cadbb",
+     "text": "het stroomverbruik daalt sterk dankzij de hoge COP;",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "e32bf11972d2",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f9f317148eff",
+     "text": "de energiefactuur is voorspelbaar en minder gevoelig voor prijsstijgingen van fossiele brandstoffen.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "62d09243f020",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "59d884e361e9",
+     "text": "Over een periode van 20 jaar wordt geothermie doorgaans de goedkoopste oplossing in totale kosten, zeker wanneer het gebouw lang bewoond blijft (gezinswoning, appartementsgebouw, openbaar gebouw, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "image",
+   "_key": "9a5ef89385cf",
+   "_file": "uploads/2025/12/20231102_101248.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "9e5edcb7ac23",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "a756efc78dd0",
+     "text": "4. De doorslaggevende rol van dalende boorkosten",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1be80c32ba00",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "f2ce09857cd3",
+     "text": "De voorbije jaren zijn de boortechnieken sterk vooruitgegaan, onder meer door het algemeen gebruik van PDC-boren (Polycrystalline Diamond Compact) en de optimalisatie van methodes uit Duitsland. WellDoneDrill speelde een actieve rol in die evolutie.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "afdd50664fb8",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6d5249084af0",
+     "text": "Het resultaat: de productiviteit per boordag is gestegen, de risico's zijn gedaald en de kostprijs per meter is gezakt. Waar geothermie vroeger als een dure oplossing werd gezien, is ze in totale kosten dicht bij of zelfs onder andere performante systemen beland.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "660626bdeecb",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c9671cb14da6",
+     "text": "5. Btw, premies en fiscaliteit: een belangrijke hefboom in België",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "da46c961e41d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7d91c8253ca8",
+     "text": "In de woningbouw bedraagt de btw op warmtepompen en geothermische boringen 6 % wanneer het gebouw aan de voorwaarden voldoet (hoofdzakelijk bewoning, leeftijdscriteria bij renovatie, enz.).",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c57989dec29d",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "297e2b9d1c57",
+     "text": "Vanaf 2026 wordt die btw van 6 % uitgebreid tot de installatie van warmtepompen in nieuwbouw, en volgen geothermische boringen hetzelfde regime. Voor particulieren is dat een aanzienlijk financieel voordeel.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1a60eb18d55a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "0111e15fa266",
+     "text": "Daarbovenop kunnen, afhankelijk van het gewest en de periode, steunmaatregelen of premies gelden, vooral voor energiezuinige gebouwen of collectieve projecten.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "6c2af87d51d7",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "312616222507",
+     "text": "6. Een essentiële kanttekening bij de prijzen van geothermie",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fe25f86fd3e6",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "17845fb84279",
+     "text": "De prijzen en richtbedragen in dit artikel zijn indicatief en niet bindend. Ze geven een overzicht van de te voorziene budgetten, maar elk project is uniek.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3a0a1004801a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c15c1739d603",
+     "text": "WellDoneDrill maakt gepersonaliseerde, gedetailleerde offertes zonder verborgen kosten, meestal binnen 48 uur op basis van de projectgegevens. Op basis van die nauwkeurige berekening kan een zinvolle vergelijking met andere oplossingen worden gemaakt.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ac539076eb50",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "1f301639ef5e",
+     "text": "Onthoud vooral dat geothermie niet langer de \"onbetaalbare\" oplossing is die men zich enkele jaren geleden voorstelde. Dankzij dalende boorkosten, gunstige btw-tarieven en zeer lage werkingskosten is ze op lange termijn een van de voordeligste en comfortabelste technologieën geworden om een gebouw te verwarmen en te koelen.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Wat kost geothermie? Prijsgids | WellDoneDrill",
+ "seoDescription": "Prijs van een geothermische installatie in België: kostenposten, richtbedragen voor een woning, vergelijking over 20 jaar, dalende boorkosten en btw van 6 %.",
+ "_mainImageFile": "uploads/2025/12/wdd-A_propos-Grid-foreuse.webp",
+ "_mainImageAlt": "Geothermische boring voor particulieren in België"
+}

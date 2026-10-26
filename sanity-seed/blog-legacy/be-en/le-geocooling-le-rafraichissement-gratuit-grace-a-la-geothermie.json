@@ -1,0 +1,416 @@
+{
+ "_id": "blog-legacy-be-en-4378",
+ "_type": "blogPost",
+ "locale": "be-en",
+ "title": "Geocooling: free cooling thanks to geothermal energy",
+ "slug": {
+  "_type": "slug",
+  "current": "geocooling-free-cooling-with-geothermal"
+ },
+ "publishedAt": "2025-12-02T10:49:01Z",
+ "excerpt": "Geocooling, or free cooling, cools a building directly with the coolness of the ground, without running the heat pump's compressor. The result: great summer comfort, minimal electricity use and a completely silent solution.",
+ "category": "geothermie",
+ "author": "WellDoneDrill",
+ "readingTime": 3,
+ "featured": false,
+ "body": [
+  {
+   "_type": "block",
+   "_key": "f58d9af1c5c5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "960da724a7d3",
+     "text": "Geocooling, or free cooling, cools a building using the coolness of the ground directly, without running the heat pump's compressor. The result: high summer comfort, minimal electricity use and a perfectly silent solution.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d91de4ea5394",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "04281bf9610d",
+     "text": "How does geocooling work?",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "79cd7824c2f9",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "822bcd59812f",
+     "text": "In a vertical borehole geothermal installation, the ground several dozen metres down stays at an almost constant temperature, often around 10 to 14 °C. That is lower than the temperature you want to maintain in the building in summer.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "1b2261845dd5",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "666d0d9dbb93",
+     "text": "The principle of geocooling is simple:",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c65c47c6c97b",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7de5f880f7fa",
+     "text": "the heat-transfer fluid circulates",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "dd725d861155",
+     "text": " through the probes to capture the natural coolness of the ground,",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "a874bc41de7a",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "52bb048eeb8c",
+     "text": "this coolness",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "a9d8e6e6fdc6",
+     "text": " is passed to a buffer tank or directly to the cooling network (floors, ceilings, fan coil units),",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "274908fab7ca",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "444490f46275",
+     "text": "the heat pump's compressor",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "d726b2af8c90",
+     "text": " is off or runs very little: mostly low-energy circulators are used.",
+     "marks": []
+    }
+   ],
+   "markDefs": [],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "de67624b0931",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "6c54b76117d4",
+     "text": "The building is cooled gently, without blowing cold air, simply by lowering the indoor temperature slightly.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "3021006b42d1",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5743adb352ec",
+     "text": "The main benefits of geocooling",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "eca7b08f3e42",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "c7a897f9e8b6",
+     "text": "Compared with conventional air conditioning, geocooling has several decisive advantages.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "c523699ff104",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "d97f8203896b",
+     "text": "Exceptional summer comfort",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "b85e65085010",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24e90ed22263",
+     "text": "Geocooling is not aggressive air conditioning: it doesn't bring the temperature down to 20 °C in midsummer, but it prevents overheating by keeping the building within a comfort range. It feels very pleasant, with no draughts, no noise and no localised cold.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d4d3e769afcc",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "41d90c240ada",
+     "text": "Ultra-low energy consumption",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f9e6a905869f",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "9998f494bcce",
+     "text": "Because the heat pump's compressor is barely used, if at all, electricity consumption is essentially limited to the circulators. Running costs are therefore very low, often nothing like those of conventional air conditioning.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "591a04a5c560",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "477aafb6a71b",
+     "text": "A silent installation",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "d88625925a5e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "aecff4c0ee60",
+     "text": "Geocooling needs no outdoor unit or noisy condensing unit. Everything happens in the plant room and in the ground. For homes, schools, offices or nurseries, that is a major advantage.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "385d9d3291c1",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "b935cf0caafe",
+     "text": "No mechanical overheating",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "bfee4d4694de",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87ce8ee4ad40",
+     "text": "Conventional air-conditioning systems use compressors subjected to repeated cycles and sometimes extreme temperatures. With geocooling, mechanical stresses are much lower, which limits equipment wear.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "45ac87164a43",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "67d65d8b018f",
+     "text": "A low-carbon solution",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8386943be4ad",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "50aac9406ff5",
+     "text": "Geocooling uses a 100 % renewable source of coolness: the ground. Combined with renewable electricity (solar PV, green contracts, etc.), it cools a building with a very small carbon footprint.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "f2f4904754bf",
+   "style": "h3",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "8f1c67fae4c1",
+     "text": "Suited to modern buildings",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "ba4018663336",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "7cec3e7d1747",
+     "text": "Geocooling fits particularly well in recent or renovated buildings: apartment blocks, offices, high-performance public buildings and so on. As long as the emitters (floors, ceilings, fan coil units) are suited to low-power operation, the system is very effective.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "9aa0bc715eca",
+   "style": "h2",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "18af1a5de8db",
+     "text": "Free cooling vs conventional air conditioning",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "8a2594fb2b0c",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "2a80aabebcb5",
+     "text": "Conventional air conditioning relies on a complete refrigeration cycle, with a compressor, expansion valve, condenser and evaporator. It can produce cold even when the outdoor air is hot, but at the cost of significant electricity use and more complex machinery.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "dc156906cd4e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "79812ce00ab2",
+     "text": "Geothermal free cooling uses the coolness already present in the ground. It doesn't \"make\" cold; it transfers it. In most cases, you get satisfactory summer comfort for a fraction of the electricity used by conventional air conditioning.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  },
+  {
+   "_type": "block",
+   "_key": "fdf5c0dae57e",
+   "style": "normal",
+   "children": [
+    {
+     "_type": "span",
+     "_key": "68cdec355a1b",
+     "text": "For buildings that want to combine comfort, energy efficiency and discretion, geocooling is a particularly attractive solution.",
+     "marks": []
+    }
+   ],
+   "markDefs": []
+  }
+ ],
+ "seoTitle": "Geocooling: free cooling with geothermal | WellDoneDrill",
+ "seoDescription": "How does geocooling work? Passive cooling through geothermal probes: summer comfort, ultra-low consumption, no noise and low carbon, compared with air conditioning.",
+ "_mainImageFile": "uploads/2025/05/Capture-decran-2025-05-16-a-10.26.01.jpg",
+ "_mainImageAlt": "Geothermal drilling at the heart of Novacity with WellDoneDrill"
+}
