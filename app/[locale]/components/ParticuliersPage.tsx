@@ -335,8 +335,7 @@ type Step = {title: string; body: string}
 
 const V2: Record<Lang, {
   eyebrow: string
-  secProblem: string; secPrinciple: string; secSite: string; secBenefits: string
-  secProjects: string; secCalc: string; secFaq: string
+  ctaStudy: string; ctaSoil: string; ctaQuote: string
   principleTitle: string; principleIntro: string
   depthLabel: string; tempLabel: string
   principleSteps: Step[]
@@ -346,8 +345,7 @@ const V2: Record<Lang, {
 }> = {
   fr: {
     eyebrow: 'Géothermie pour particuliers',
-    secProblem: 'Le problème', secPrinciple: 'Le principe', secSite: 'Le chantier', secBenefits: 'Vos bénéfices',
-    secProjects: 'Nos réalisations', secCalc: 'Vos économies', secFaq: 'Questions fréquentes',
+    ctaStudy: 'Demander mon étude gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
     principleTitle: "L'énergie est déjà sous votre jardin.",
     principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
     depthLabel: 'Profondeur', tempLabel: 'Température du sol',
@@ -370,8 +368,7 @@ const V2: Record<Lang, {
   },
   nl: {
     eyebrow: 'Geothermie voor particulieren',
-    secProblem: 'Het probleem', secPrinciple: 'Het principe', secSite: 'De werf', secBenefits: 'Uw voordelen',
-    secProjects: 'Onze realisaties', secCalc: 'Uw besparing', secFaq: 'Veelgestelde vragen',
+    ctaStudy: 'Mijn gratis studie aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
     principleTitle: 'De energie zit al onder uw tuin.',
     principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
     depthLabel: 'Diepte', tempLabel: 'Bodemtemperatuur',
@@ -394,8 +391,7 @@ const V2: Record<Lang, {
   },
   en: {
     eyebrow: 'Geothermal for homeowners',
-    secProblem: 'The problem', secPrinciple: 'The principle', secSite: 'The works', secBenefits: 'Your benefits',
-    secProjects: 'Our projects', secCalc: 'Your savings', secFaq: 'FAQ',
+    ctaStudy: 'Request my free study', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
     principleTitle: 'The energy is already under your garden.',
     principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
     depthLabel: 'Depth', tempLabel: 'Ground temperature',
@@ -418,8 +414,7 @@ const V2: Record<Lang, {
   },
   de: {
     eyebrow: 'Geothermie für Privatkunden',
-    secProblem: 'Das Problem', secPrinciple: 'Das Prinzip', secSite: 'Die Baustelle', secBenefits: 'Ihre Vorteile',
-    secProjects: 'Unsere Projekte', secCalc: 'Ihre Ersparnis', secFaq: 'Häufige Fragen',
+    ctaStudy: 'Kostenlose Studie anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
     principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
     principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
     depthLabel: 'Tiefe', tempLabel: 'Bodentemperatur',
@@ -474,13 +469,19 @@ function Reveal({children, delay = 0, className}: {children: React.ReactNode; de
   )
 }
 
-function SectionLabel({n, label, dark}: {n: string; label: string; dark?: boolean}) {
+function ContactCta({href, label, variant = 'dark', className = ''}: {href: string; label: string; variant?: 'dark' | 'yellow'; className?: string}) {
   return (
-    <div className="flex items-center gap-3 mb-8 text-xs font-bold uppercase tracking-[0.2em]">
-      <span className={dark ? 'text-wdd-yellow' : 'text-wdd-mud'}>{n}</span>
-      <span className={`w-10 h-px ${dark ? 'bg-white/30' : 'bg-black/20'}`} />
-      <span className={dark ? 'text-white/60' : 'text-black/50'}>{label}</span>
-    </div>
+    <Link
+      href={href}
+      className={`group inline-flex items-center gap-3 px-6 py-3.5 text-sm font-bold rounded-sm transition-colors ${
+        variant === 'yellow'
+          ? 'bg-wdd-yellow text-wdd-black hover:bg-white'
+          : 'bg-wdd-black text-white hover:bg-wdd-black/85'
+      } ${className}`}
+    >
+      {label}
+      <span className={`transition-transform group-hover:translate-x-1 ${variant === 'yellow' ? '' : 'text-wdd-yellow'}`}>→</span>
+    </Link>
   )
 }
 
@@ -636,7 +637,7 @@ function HouseWindow({x, y, w = 30, h = 28, warm}: {x: number; y: number; w?: nu
   )
 }
 
-function DepthSection({n, v}: {n: string; v: V2T}) {
+function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
   const ref = useRef<HTMLElement>(null)
   const inView = useInView(ref, {once: true, amount: 0.35})
   const reduce = useReducedMotion()
@@ -671,7 +672,6 @@ function DepthSection({n, v}: {n: string; v: V2T}) {
       <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
         <div>
-          <SectionLabel n={n} label={v.secPrinciple} />
           <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.principleTitle}</h2>
           <p className="mt-6 text-lg font-light text-black/60 leading-8 max-w-xl">{v.principleIntro}</p>
           <ol className="mt-10">
@@ -694,6 +694,7 @@ function DepthSection({n, v}: {n: string; v: V2T}) {
               )
             })}
           </ol>
+          <ContactCta href={contactHref} label={v.ctaSoil} className="mt-8" />
         </div>
 
         <div className="relative">
@@ -857,8 +858,7 @@ export default function ParticuliersPage({
     (a, b) => Number(b.sector === 'residentiel') - Number(a.sector === 'residentiel'),
   )
 
-  const order = ['problem', 'principle', 'site', 'benefits', ...(t.showMap ? ['projects'] : []), 'calc', 'faq']
-  const num = (key: string) => String(order.indexOf(key) + 1).padStart(2, '0')
+  const contactHref = getLocalizedPath(locale, 'contact')
 
   // Calculateur d'économies d'énergie
   const [ecoMode, setEcoMode] = useState<'surface' | 'conso'>('surface')
@@ -1066,7 +1066,6 @@ export default function ParticuliersPage({
 
           <div>
             <Reveal>
-              <SectionLabel n={num('problem')} label={v.secProblem} />
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
                 {page.problemTitle ?? "Optez pour l'efficacité et l'indépendance énergétique."}
               </h2>
@@ -1086,6 +1085,9 @@ export default function ParticuliersPage({
                 </Reveal>
               ))}
             </div>
+            <Reveal delay={0.2}>
+              <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
+            </Reveal>
           </div>
         </div>
       </section>
@@ -1093,7 +1095,7 @@ export default function ParticuliersPage({
       {/* ══════════════════════════════════════
           02. LE PRINCIPE — coupe de terrain animée
       ══════════════════════════════════════ */}
-      <DepthSection n={num('principle')} v={v} />
+      <DepthSection v={v} contactHref={contactHref} />
 
       {/* ══════════════════════════════════════
           03. LE CHANTIER CHEZ VOUS
@@ -1102,7 +1104,6 @@ export default function ParticuliersPage({
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-5">
             <Reveal>
-              <SectionLabel n={num('site')} label={v.secSite} />
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.siteTitle}</h2>
               <p className="mt-6 text-lg font-light text-black/60 leading-8">{v.siteIntro}</p>
             </Reveal>
@@ -1121,6 +1122,9 @@ export default function ParticuliersPage({
                 </Reveal>
               ))}
             </ol>
+            <Reveal>
+              <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
+            </Reveal>
           </div>
 
           <div className="lg:col-span-7">
@@ -1143,7 +1147,6 @@ export default function ParticuliersPage({
       <section className="bg-wdd-clay py-28 md:py-36 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
           <Reveal>
-            <SectionLabel n={num('benefits')} label={v.secBenefits} />
             <h2 className="max-w-3xl text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
               {page.whyTitle ?? "Six raisons de passer à la géothermie cette année."}
             </h2>
@@ -1198,7 +1201,6 @@ export default function ParticuliersPage({
           locale={locale}
           chantiers={sortedChantiers}
           t={t}
-          label={<SectionLabel n={num('projects')} label={v.secProjects} />}
         />
       )}
 
@@ -1208,9 +1210,6 @@ export default function ParticuliersPage({
       <section id="calculateur" className={`${t.calcBg} min-h-screen flex flex-col justify-center px-8 md:px-16 py-28`}>
         <div className="max-w-screen-2xl mx-auto w-full">
 
-          <Reveal>
-            <SectionLabel n={num('calc')} label={v.secCalc} />
-          </Reveal>
           <div className="grid lg:grid-cols-2 gap-12 mb-14">
             <Reveal>
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
@@ -1366,6 +1365,8 @@ export default function ParticuliersPage({
                   {t.disclaimer}
                 </div>
               </div>
+
+              <ContactCta href={contactHref} label={v.ctaQuote} variant="yellow" className="mt-6 justify-center" />
             </div>
           </div>
 
@@ -1383,7 +1384,6 @@ export default function ParticuliersPage({
       <section className="bg-wdd-clay py-28 md:py-32 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-3 gap-16">
           <Reveal>
-            <SectionLabel n={num('faq')} label={v.secFaq} />
             <h2 className="text-4xl font-bold mb-4 leading-[1.05] tracking-tight">
               {page.faqTitle ?? "Vos questions, nos réponses."}
             </h2>
@@ -1443,7 +1443,7 @@ function matchesProvince(c: Chantier, p: Province): boolean {
   return cp.includes(p.nameFr.toLowerCase()) || cp.includes(p.nameNl.toLowerCase())
 }
 
-function ProjetsSection({locale, chantiers, t, label}: {locale: AppLocale; chantiers: Chantier[]; t: UiT; label?: React.ReactNode}) {
+function ProjetsSection({locale, chantiers, t}: {locale: AppLocale; chantiers: Chantier[]; t: UiT}) {
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [hovered, setHovered] = useState<string | null>(null)
   const [page, setPage] = useState(0)
@@ -1473,7 +1473,6 @@ function ProjetsSection({locale, chantiers, t, label}: {locale: AppLocale; chant
   return (
     <section className="bg-white min-h-screen flex flex-col justify-center px-8 md:px-16 py-28">
       <div className="max-w-screen-2xl mx-auto w-full">
-        {label}
 
         <div className="flex items-end justify-between mb-8 gap-4">
           <div>
