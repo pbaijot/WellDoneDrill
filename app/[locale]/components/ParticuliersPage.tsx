@@ -1139,10 +1139,12 @@ export default function ParticuliersPage({
           </div>
         </div>
         <div className="relative aspect-square lg:aspect-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
-          <video
-            src="/videos/mrly-comp.mp4"
-            autoPlay loop muted playsInline
-            className="absolute inset-0 w-full h-full object-cover"
+          <Image
+            src="/images/wdd-chantier-drone.jpg"
+            alt="Foreuse WellDoneDrill en action dans le jardin d'une maison"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-[62%_center]"
           />
         </div>
       </section>
