@@ -613,27 +613,15 @@ function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; im
    lifts it, and the house warms up. Drawn as a quiet technical section. */
 const GROUND_Y = 200
 const PROBE_BOTTOM = 520
-const PROBE_X = 236
-const PAC_BOTTOM = 188
+const PROBE_X = 268
+const PAC_BOTTOM = 194
 
 // Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 house warm
 const PHASE_AT = [0, 400, 3000, 4400, 5600]
 
 const C = {
-  ink: '#1A1A1A', line: 'rgba(26,26,26,0.55)', faint: 'rgba(26,26,26,0.14)',
-  house: '#FFFFFF', warm: '#FFF1BF', probe: '#E8B90F', grass: '#42754F',
-}
-
-function HouseWindow({x, y, w = 22, h = 22, warm}: {x: number; y: number; w?: number; h?: number; warm: boolean}) {
-  return (
-    <motion.rect
-      x={x} y={y} width={w} height={h}
-      stroke={C.line} strokeWidth="1.25"
-      initial={false}
-      animate={{fill: warm ? C.warm : C.house}}
-      transition={{duration: 1.2}}
-    />
-  )
+  ink: '#1A1A1A', line: 'rgba(26,26,26,0.45)', faint: 'rgba(26,26,26,0.1)',
+  house: '#4A3B2B', houseDim: '#5E4D3B', warm: '#FFD94F', probe: '#E8B90F',
 }
 
 function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
@@ -712,14 +700,13 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
           <svg viewBox="0 0 400 540" className="w-full max-h-[64svh]" role="img" aria-label={v.principleTitle}>
             <defs>
               <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stopColor="#D9D2C4" />
-                <stop offset="1" stopColor="#BFB4A2" />
+                <stop offset="0" stopColor="#D3CBBC" />
+                <stop offset="1" stopColor="#C2B8A6" />
               </linearGradient>
             </defs>
 
             {/* Ground and strata */}
             <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} fill="url(#wdd-ground)" />
-            <line x1="0" x2="400" y1={GROUND_Y} y2={GROUND_Y} stroke={C.grass} strokeOpacity="0.7" strokeWidth="2" />
             <path d="M0 312 C 100 304, 200 322, 300 310 S 400 314, 400 314" stroke={C.faint} fill="none" />
             <path d="M0 420 C 110 428, 210 410, 310 422 S 400 418, 400 418" stroke={C.faint} fill="none" />
 
@@ -758,26 +745,26 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
               />
             </g>
 
-            {/* House, line drawing, heat pump in the technical room */}
-            <g stroke={C.line} strokeWidth="1.25" strokeLinejoin="round">
-              <rect x="252" y="62" width="14" height="36" fill={C.house} />
-              <path d={`M128 ${GROUND_Y} V112 L200 58 L272 112 V${GROUND_Y} Z`} fill={C.house} />
-              <path d="M116 120 L200 52 L284 120" fill="none" stroke={C.ink} strokeWidth="1.75" strokeLinecap="round" />
-              <HouseWindow x={189} y={84} w={22} h={18} warm={phase >= 4} />
-              <HouseWindow x={146} y={124} warm={phase >= 4} />
-              <HouseWindow x={232} y={124} warm={phase >= 4} />
-              <HouseWindow x={146} y={160} warm={phase >= 4} />
-              <rect x="188" y="156" width="22" height={GROUND_Y - 156} fill={C.house} />
-              <rect x="220" y="154" width="38" height={GROUND_Y - 154} fill="none" strokeDasharray="2 3" />
-              <motion.rect
-                x={PROBE_X - 12} y="164" width="24" height="24" rx="2"
-                stroke={C.ink}
-                initial={false}
-                animate={{fill: phase >= 3 ? '#FFD94F' : C.house}}
-                transition={{duration: 0.8}}
-              />
-            </g>
-            <text x={PROBE_X} y="179" fontSize="8" fontWeight="700" textAnchor="middle" fill={C.ink}>PAC</text>
+            {/* House silhouette: main gable + lower annex holding the heat pump */}
+            <path
+              d={`M120 ${GROUND_Y} V128 L180 72 L240 128 V152 L300 178 V${GROUND_Y} Z`}
+              fill={C.house}
+              stroke={C.house}
+              strokeWidth="8"
+              strokeLinejoin="round"
+            />
+            <motion.rect
+              x="166" y="146" width="28" height="28" rx="2"
+              initial={false}
+              animate={{fill: phase >= 4 ? C.warm : C.houseDim}}
+              transition={{duration: 1.2}}
+            />
+            <motion.rect
+              x={PROBE_X - 10} y="178" width="20" height="16" rx="2"
+              initial={false}
+              animate={{fill: phase >= 3 ? C.warm : C.houseDim}}
+              transition={{duration: 0.8}}
+            />
 
             {/* Probe rises through the slab into the heat pump */}
             <g stroke={C.probe} strokeWidth="2" fill="none">
