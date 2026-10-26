@@ -732,10 +732,15 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
                 <stop offset="0" stopColor="#D3CBBC" />
                 <stop offset="1" stopColor="#C2B8A6" />
               </linearGradient>
+              <filter id="wdd-grain" x="0" y="0" width="100%" height="100%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
+                <feColorMatrix type="saturate" values="0" />
+              </filter>
             </defs>
 
             {/* Ground and strata */}
-            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} fill="url(#wdd-ground)" />
+            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} fill="url(#wdd-ground)" fillOpacity="0.55" />
+            <rect x="0" y={GROUND_Y} width="400" height={540 - GROUND_Y} filter="url(#wdd-grain)" opacity="0.12" style={{mixBlendMode: 'multiply'}} />
             <path d="M0 312 C 100 304, 200 322, 300 310 S 400 314, 400 314" stroke={C.faint} fill="none" />
             <path d="M0 420 C 110 428, 210 410, 310 422 S 400 418, 400 418" stroke={C.faint} fill="none" />
 
@@ -750,19 +755,6 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
               )
             })}
 
-            {/* Heat rising along the probe */}
-            {phase >= 2 && [0, 1, 2].map(i => (
-              <motion.circle
-                key={i}
-                cx={PROBE_X}
-                r="2.5"
-                fill={C.probe}
-                initial={{cy: PROBE_BOTTOM, opacity: 0}}
-                animate={reduce ? {cy: 360, opacity: 1} : {cy: [PROBE_BOTTOM, GROUND_Y], opacity: [0, 1, 1, 0]}}
-                transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
-              />
-            ))}
-
             {/* Closed probe loop */}
             <g stroke={C.probe} strokeWidth="2" fill="none">
               <motion.path d={`M${PROBE_X - 5} ${GROUND_Y} V${PROBE_BOTTOM}`} {...draw(phase >= 1, 2.4)} />
@@ -773,6 +765,28 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
                 animate={{opacity: phase >= 2 ? 1 : 0}}
               />
             </g>
+
+            {/* Fluid circulating in the loop: down one leg, back up the other */}
+            {phase >= 2 && [0, 1, 2].map(i => (
+              <g key={i}>
+                <motion.circle
+                  cx={PROBE_X - 5}
+                  r="2.5"
+                  fill={C.probe}
+                  initial={{cy: GROUND_Y, opacity: 0}}
+                  animate={reduce ? {cy: 300, opacity: 1} : {cy: [GROUND_Y, PROBE_BOTTOM], opacity: [0, 1, 1, 0]}}
+                  transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
+                />
+                <motion.circle
+                  cx={PROBE_X + 5}
+                  r="2.5"
+                  fill={C.probe}
+                  initial={{cy: PROBE_BOTTOM, opacity: 0}}
+                  animate={reduce ? {cy: 420, opacity: 1} : {cy: [PROBE_BOTTOM, GROUND_Y], opacity: [0, 1, 1, 0]}}
+                  transition={reduce ? {duration: 0} : {duration: 3.6, delay: i * 1.2, repeat: Infinity, ease: 'linear'}}
+                />
+              </g>
+            ))}
 
             {/* House silhouette: main gable + lower annex holding the heat pump */}
             <path
