@@ -1,8 +1,8 @@
 import type {Metadata} from 'next'
 import {notFound, permanentRedirect} from 'next/navigation'
-import {getBlogPostBySlug} from '@/src/lib/blog'
+import {getBlogPostBySlug, getBlogTranslations} from '@/src/lib/blog'
 import {type AppLocale} from '@/src/i18n/routes'
-import {buildBlogAlternates} from '@/src/lib/seoAlternates'
+import {buildBlogAlternates, buildBlogLanguages} from '@/src/lib/seoAlternates'
 import BlogArticle, {blogPostMetadata} from '../../components/BlogArticle'
 
 export async function generateMetadata({
@@ -12,8 +12,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const {locale, slug} = await params
   const post = await getBlogPostBySlug(locale, slug).catch(() => null)
-  const {canonical, languages} = buildBlogAlternates(locale as AppLocale, slug)
-  return blogPostMetadata(post, canonical, languages)
+  const {canonical} = buildBlogAlternates(locale as AppLocale, slug)
+  const versions = await getBlogTranslations(post?.translationKey).catch(() => [])
+  return blogPostMetadata(post, canonical, buildBlogLanguages(versions))
 }
 
 export default async function BlogPostPage({

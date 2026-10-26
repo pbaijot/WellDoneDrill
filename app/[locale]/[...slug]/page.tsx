@@ -3,7 +3,7 @@ import {notFound, permanentRedirect} from 'next/navigation'
 import Link from 'next/link'
 import {findRouteKeyBySlug, getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import {getSeoDefaults} from '@/src/i18n/seo'
-import {buildAlternates, buildCanonical, BASE_URL} from '@/src/lib/seoAlternates'
+import {buildAlternates, buildCanonical, buildBlogLanguages, BASE_URL} from '@/src/lib/seoAlternates'
 import {getSitePage} from '@/src/lib/sitePage'
 import EditorialPage from '../components/EditorialPage'
 import {getGeoPage} from '@/src/lib/geoPage'
@@ -26,7 +26,7 @@ import {getAProposPage} from '@/src/lib/aProposPage'
 import {getDemarrerPage} from '@/src/lib/demarrerPage'
 import {getGlobalSettings} from '@/src/lib/globalSettings'
 import {routeMap} from '@/src/i18n/routes'
-import {getBlogPostByLegacyPath} from '@/src/lib/blog'
+import {getBlogPostByLegacyPath, getBlogTranslations} from '@/src/lib/blog'
 import {LEGACY_BLOG_FALLBACK} from '@/src/seo/legacyRedirects'
 import BlogArticle, {blogPostMetadata} from '../components/BlogArticle'
 
@@ -45,7 +45,10 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
   // Blog articles restored from the old WordPress site, at their original URL
   if (!routeKey && slug.length === 1) {
     const post = await getBlogPostByLegacyPath(locale, `/${locale}/${slugPath}`).catch(() => null)
-    if (post) return blogPostMetadata(post, `${BASE_URL}/${locale}/${slugPath}`)
+    if (post) {
+      const versions = await getBlogTranslations(post.translationKey).catch(() => [])
+      return blogPostMetadata(post, `${BASE_URL}/${locale}/${slugPath}`, buildBlogLanguages(versions))
+    }
   }
 
   const defaults = getSeoDefaults(locale, routeKey)

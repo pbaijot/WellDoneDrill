@@ -1,0 +1,30 @@
+---
+title: "Transformer la chaleur du sol en énergie - Géothermie"
+slug: "transformer-la-chaleur-du-sol-en-energie-geothermie"
+excerpt: "Dans un contexte où la décarbonation des bâtiments devient une priorité, le forage géothermique offre une solution durable pour exploiter la chaleur naturelle du sol. Cette technique précise et maîtrisée permet d’alimenter efficacement…"
+seoTitle: "Transformer la chaleur du sol en énergie - Géothermie"
+seoDescription: "Dans un contexte où la décarbonation des bâtiments devient une priorité, le forage géothermique offre une solution durable pour exploiter la chaleur…"
+mainImageAlt: "Transformer la chaleur du sol en énergie - Géothermie"
+---
+
+![forage géothermique pour particulier en Belgique](uploads/2025/12/wdd-A_propos-Grid-foreuse.webp)
+
+Dans un contexte où la décarbonation des bâtiments devient une priorité, le forage géothermique offre une solution durable pour exploiter la chaleur naturelle du sol. Cette technique précise et maîtrisée permet d’alimenter efficacement systèmes de chauffage et de refroidissement, tout en réduisant la dépendance aux énergies fossiles.
+
+Le forage géothermique consiste à creuser dans le sol pour capter la chaleur naturelle de la Terre. Cette opération technique permet d’installer des sondes géothermiques, qui vont ensuite servir à récupérer cette chaleur, afin d’alimenter des systèmes de chauffage ou de refroidissement.
+
+Le forage progresse grâce à une série de tiges métalliques d’environ trois mètres chacune, assemblées entre elles au fur et à mesure de l’avancement.  Grâce au mandrin,  nos foreurs peuvent visser et dévisser rapidement les tiges lors des phases de forage ou de remontée, ce qui garantit une productivité optimale sur le chantier.
+
+Une fois la profondeur souhaitée atteinte, le trou est entièrement rincé pour éliminer les sédiments et particules qui pourraient perturber la qualité du forage. Le train de tiges est alors retiré afin de laisser descendre la sonde géothermique. Celle-ci est entraînée vers le fond du puits par un poids d’environ 42 kg.
+
+La tête de forage est équipée de pastilles de carbure qui raclent le sol. De l’eau est injectée à l’intérieur des tiges et ressort par des interstices. Ce flux d’eau refroidit la tête de forage et permet aussi de remonter les déblais sous forme de boues. Ces boues sont ensuite envoyées vers un container de décantation où l’eau est séparée des particules solides, pour être réutilisée dans le circuit.
+
+Ainsi, l’eau de forage joue un double rôle essentiel : elle régule la température de la tête de forage, qui peut chauffer très fortement dans des terrains rocheux, et elle assure le transport des sédiments vers la surface. Par exemple, dans les régions de Bruxelles ou du Brabant wallon, les sols argileux produisent des boues particulièrement fines, typiques de ces formations.
+
+Lorsque le casing est partiellement enlevé, nous procédons à l’injection d’un ciment géothermique. Ce dernier possède un excellent coefficient de transfert thermique, favorisant les échanges de chaleur entre le sol et la sonde. Il assure également la sécurité du puits en isolant les différentes couches géologiques et les nappes d’eau souterraines.
+
+Le forage géothermique est une opération précise, qui conjugue ingénierie avancée, connaissance approfondie du sous-sol et gestion rigoureuse des fluides. C’est une étape clé pour déployer des solutions durables de chauffage et de refroidissement basées sur l’énergie renouvelable issue du sol.
+
+Retrouvez la vidéo complète du forage ici :  [https://www.youtube.com/watch?v=9lDoSbhm3uo](https://www.youtube.com/watch?v=9lDoSbhm3uo)
+
+https://www.youtube.com/watch?v=9lDoSbhm3uo

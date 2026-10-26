@@ -46,6 +46,7 @@ export type BlogPostFull = BlogPostCard & {
   }>
   ctaTitle?: string
   ctaText?: string
+  translationKey?: string
   seoTitle?: string
   seoDescription?: string
 }
@@ -123,7 +124,8 @@ const bySlugQuery = `
   ctaTitle,
   ctaText,
   seoTitle,
-  seoDescription
+  seoDescription,
+  translationKey
 }
 `
 
@@ -145,6 +147,15 @@ export async function getBlogPostBySlug(locale: string, slug: string): Promise<B
 export async function getBlogPostByLegacyPath(locale: string, legacyPath: string): Promise<BlogPostFull | null> {
   if (!sanity) return null
   return sanity.fetch(bySlugQuery.replace('$filter', 'legacyPath == $legacyPath'), {locale, legacyPath})
+}
+
+// hreflang tag → URL for every language version of an article
+export async function getBlogTranslations(translationKey?: string): Promise<{locale: string; slug: string; legacyPath?: string}[]> {
+  if (!sanity || !translationKey) return []
+  return sanity.fetch(
+    `*[_type == "blogPost" && translationKey == $translationKey]{locale, "slug": slug.current, legacyPath}`,
+    {translationKey},
+  )
 }
 
 export function blogPostHref(locale: string, post: {slug: string; legacyPath?: string}): string {

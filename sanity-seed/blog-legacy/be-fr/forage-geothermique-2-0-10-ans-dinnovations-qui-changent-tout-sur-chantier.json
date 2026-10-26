@@ -54,7 +54,7 @@
     {
      "_type": "span",
      "_key": "de0425657d7e",
-     "text": "Les nouveaux marteaux fond de trou (DTH) transmettent l’énergie d’impact directement au trépan, ce qui accélère fortement la pénétration en terrains rocheux.​\r Des projets récents montrent que ces marteaux de nouvelle génération peuvent multiplier par 2 à 10 la vitesse de forage par rapport aux solutions conventionnelles, réduisant mécaniquement le coût par mètre.",
+     "text": "Les nouveaux marteaux fond de trou (DTH) transmettent l’énergie d’impact directement au trépan, ce qui accélère fortement la pénétration en terrains rocheux.​",
      "marks": []
     }
    ]
@@ -62,12 +62,26 @@
   {
    "_type": "block",
    "_key": "cb99382e1ff1",
-   "style": "h3",
+   "style": "normal",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
      "_key": "0a0af3fbece7",
+     "text": "Des projets récents montrent que ces marteaux de nouvelle génération peuvent multiplier par 2 à 10 la vitesse de forage par rapport aux solutions conventionnelles, réduisant mécaniquement le coût par mètre.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "b03b635cfd50",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "5dd3ef9e2916",
      "text": "2. Têtes de forage et outils optimisés : précision et longévité",
      "marks": [
       "strong"
@@ -77,31 +91,15 @@
   },
   {
    "_type": "block",
-   "_key": "b03b635cfd50",
+   "_key": "7606698139ba",
    "style": "normal",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
-     "_key": "5dd3ef9e2916",
-     "text": "Les têtes de forage bénéficient désormais de géométries de taillant optimisées et de matériaux plus résistants à l’abrasion, ce qui limite les arrêts pour changement d’outil.​\r Combinés à des marteaux plus robustes et à une meilleure gestion des débris, ces progrès permettent d’atteindre des profondeurs plus importantes dans des fenêtres de temps plus courtes, sans sacrifier la verticalité ni la qualité du trou.​",
-     "marks": []
-    }
-   ]
-  },
-  {
-   "_type": "block",
-   "_key": "7606698139ba",
-   "style": "h3",
-   "markDefs": [],
-   "children": [
-    {
-     "_type": "span",
      "_key": "72120b47794e",
-     "text": "3. Capteurs embarqués et monitoring en temps réel : le forage devient intelligent",
-     "marks": [
-      "strong"
-     ]
+     "text": "Les têtes de forage bénéficient désormais de géométries de taillant optimisées et de matériaux plus résistants à l’abrasion, ce qui limite les arrêts pour changement d’outil.​",
+     "marks": []
     }
    ]
   },
@@ -114,7 +112,7 @@
     {
      "_type": "span",
      "_key": "7e4f30993837",
-     "text": "Des capteurs robustes, parfois imprimés en 3D, mesurent en continu les interactions trépan/roche, l’énergie des coups et la circulation des fluides, fournissant un retour d’information en temps réel aux équipes.​\r Couplés à des algorithmes d’aide à la décision ou d’IA, ces systèmes permettent d’anticiper les incidents (pertes de circulation, usure anormale, blocages) et d’ajuster instantanément les paramètres de forage pour maintenir la performance et réduire les risques.",
+     "text": "Combinés à des marteaux plus robustes et à une meilleure gestion des débris, ces progrès permettent d’atteindre des profondeurs plus importantes dans des fenêtres de temps plus courtes, sans sacrifier la verticalité ni la qualité du trou.​",
      "marks": []
     }
    ]
@@ -128,7 +126,7 @@
     {
      "_type": "span",
      "_key": "52bcd01cdeb7",
-     "text": "4. Automatisation et robots de forage : plus profond, avec moins de main-d’œuvre",
+     "text": "3. Capteurs embarqués et monitoring en temps réel : le forage devient intelligent",
      "marks": [
       "strong"
      ]
@@ -144,7 +142,7 @@
     {
      "_type": "span",
      "_key": "7766fad64443",
-     "text": "De nouveaux concepts de machines placées directement dans le forage, proches de mini tunneliers verticaux, apparaissent pour réduire l’emprise de chantier et automatiser une partie des opérations.​\r Ces systèmes très automatisés, dotés de capteurs avancés, permettent de travailler avec des équipes réduites (parfois seulement deux opérateurs), tout en maintenant un contrôle fin de la trajectoire, de l’évacuation des déblais et de la sécurité",
+     "text": "Des capteurs robustes, parfois imprimés en 3D, mesurent en continu les interactions trépan/roche, l’énergie des coups et la circulation des fluides, fournissant un retour d’information en temps réel aux équipes.​",
      "marks": []
     }
    ]
@@ -152,46 +150,44 @@
   {
    "_type": "block",
    "_key": "cb78c70f2309",
-   "style": "h3",
-   "markDefs": [],
-   "children": [
-    {
-     "_type": "span",
-     "_key": "761d119a3a0b",
-     "text": "5. Impact concret : coûts en baisse et potentiel géothermique en hausse",
-     "marks": [
-      "strong"
-     ]
-    }
-   ]
-  },
-  {
-   "_type": "block",
-   "_key": "00dd16f7a32b",
    "style": "normal",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
-     "_key": "86b6b3e0f2b3",
-     "text": "L’augmentation de la vitesse de forage, la réduction des arrêts et une meilleure connaissance en temps réel du sous-sol se traduisent par une baisse sensible du coût par mètre pour les projets géothermiques.\r Dans le même temps, la possibilité de forer plus profond, plus précisément et sur des emprises réduites ouvre de nouveaux projets : géothermie en milieu urbain dense, forages plus profonds pour des puissances plus élevées, et multiplication de projets “nouvelle génération” auparavant jugés trop risqués ou trop chers.",
+     "_key": "761d119a3a0b",
+     "text": "Couplés à des algorithmes d’aide à la décision ou d’IA, ces systèmes permettent d’anticiper les incidents (pertes de circulation, usure anormale, blocages) et d’ajuster instantanément les paramètres de forage pour maintenir la performance et réduire les risques.",
      "marks": []
     }
    ]
   },
   {
    "_type": "block",
-   "_key": "071564d83868",
+   "_key": "00dd16f7a32b",
    "style": "h3",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
-     "_key": "86c6ce7b2d3e",
-     "text": "6. Ce que cela signifie pour un client WellDoneDrill",
+     "_key": "86b6b3e0f2b3",
+     "text": "4. Automatisation et robots de forage : plus profond, avec moins de main-d’œuvre",
      "marks": [
       "strong"
      ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "071564d83868",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "86c6ce7b2d3e",
+     "text": "De nouveaux concepts de machines placées directement dans le forage, proches de mini tunneliers verticaux, apparaissent pour réduire l’emprise de chantier et automatiser une partie des opérations.​",
+     "marks": []
     }
    ]
   },
@@ -204,7 +200,95 @@
     {
      "_type": "span",
      "_key": "fe91732c026b",
-     "text": "Pour le client final, ces innovations se traduisent par des chantiers plus rapides, mieux maîtrisés et plus prédictibles en coût, avec un forage dimensionné au plus juste pour la puissance réellement nécessaire.\r Elles permettent aussi d’envisager des solutions géothermiques là où cela semblait impossible il y a encore quelques années (parcelle exiguë, milieu urbain, terrains hétérogènes), en s’appuyant sur une expertise de forage à la pointe",
+     "text": "Ces systèmes très automatisés, dotés de capteurs avancés, permettent de travailler avec des équipes réduites (parfois seulement deux opérateurs), tout en maintenant un contrôle fin de la trajectoire, de l’évacuation des déblais et de la sécurité",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ba6034e50db9",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "87c355bb7ac0",
+     "text": "5. Impact concret : coûts en baisse et potentiel géothermique en hausse",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "19923e3dc9ae",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "e4a0bc1fe5e6",
+     "text": "L’augmentation de la vitesse de forage, la réduction des arrêts et une meilleure connaissance en temps réel du sous-sol se traduisent par une baisse sensible du coût par mètre pour les projets géothermiques.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e27901ecda7b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "24541e663932",
+     "text": "Dans le même temps, la possibilité de forer plus profond, plus précisément et sur des emprises réduites ouvre de nouveaux projets : géothermie en milieu urbain dense, forages plus profonds pour des puissances plus élevées, et multiplication de projets “nouvelle génération” auparavant jugés trop risqués ou trop chers.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "113c4611b128",
+   "style": "h3",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ec7ab3f05f0e",
+     "text": "6. Ce que cela signifie pour un client WellDoneDrill",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "c518a33cae19",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "08567f11b802",
+     "text": "Pour le client final, ces innovations se traduisent par des chantiers plus rapides, mieux maîtrisés et plus prédictibles en coût, avec un forage dimensionné au plus juste pour la puissance réellement nécessaire.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "4d964a8065e4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "fd769b0f9af4",
+     "text": "Elles permettent aussi d’envisager des solutions géothermiques là où cela semblait impossible il y a encore quelques années (parcelle exiguë, milieu urbain, terrains hétérogènes), en s’appuyant sur une expertise de forage à la pointe",
      "marks": []
     }
    ]

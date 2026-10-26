@@ -72,6 +72,8 @@ for (const locale of locales) {
     }
     rest.body = body
     if (rest.readingTime == null) delete rest.readingTime
+    // Shared by an article and its translations → hreflang between them
+    rest.translationKey = `wp-${rest._id.match(/-(\d+)$/)[1]}`
 
     if (!dryRun) await writeClient.createOrReplace(rest)
     count++

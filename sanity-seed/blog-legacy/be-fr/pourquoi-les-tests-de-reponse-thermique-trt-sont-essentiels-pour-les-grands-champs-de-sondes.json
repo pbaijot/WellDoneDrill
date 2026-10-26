@@ -516,7 +516,7 @@
     {
      "_type": "span",
      "_key": "ac2b5ed9fb94",
-     "text": "Le TRT apporte également une garantie sur la durabilité de l’installation : en vérifiant que la chaleur extraite en hiver est compensée par celle réinjectée en été, notamment via le geocooling. Cet équilibre garantit que le champ ne se refroidira pas avec le temps et que la pompe à chaleur conservera de bonnes performances sur plusieurs décennies.",
+     "text": "Le TRT apporte également une garantie sur la durabilité de l’installation : en vérifiant que la chaleur extraite en hiver est compensée par celle réinjectée en été, notamment via le geocooling.",
      "marks": []
     }
    ]
@@ -524,13 +524,13 @@
   {
    "_type": "block",
    "_key": "0b6391fd10ea",
-   "style": "h2",
+   "style": "normal",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
      "_key": "a320f9749d4e",
-     "text": "Le rôle de WellDoneDrill dans les projets avec TRT",
+     "text": "Cet équilibre garantit que le champ ne se refroidira pas avec le temps et que la pompe à chaleur conservera de bonnes performances sur plusieurs décennies.",
      "marks": []
     }
    ]
@@ -538,13 +538,13 @@
   {
    "_type": "block",
    "_key": "24d549571cbb",
-   "style": "normal",
+   "style": "h2",
    "markDefs": [],
    "children": [
     {
      "_type": "span",
      "_key": "b551a5ef94da",
-     "text": "WellDoneDrill intervient sur les projets de grande puissance en collaboration avec les bureaux d’études et les maîtres d’ouvrage. Son expertise porte à la fois sur :",
+     "text": "Le rôle de WellDoneDrill dans les projets avec TRT",
      "marks": []
     }
    ]
@@ -558,12 +558,10 @@
     {
      "_type": "span",
      "_key": "06d7b1bbe20f",
-     "text": "la réalisation du forage pilote ;",
+     "text": "WellDoneDrill intervient sur les projets de grande puissance en collaboration avec les bureaux d’études et les maîtres d’ouvrage. Son expertise porte à la fois sur :",
      "marks": []
     }
-   ],
-   "listItem": "bullet",
-   "level": 1
+   ]
   },
   {
    "_type": "block",
@@ -574,7 +572,7 @@
     {
      "_type": "span",
      "_key": "f55a588ab7b6",
-     "text": "la mise en œuvre du test de réponse thermique ;",
+     "text": "la réalisation du forage pilote ;",
      "marks": []
     }
    ],
@@ -590,7 +588,7 @@
     {
      "_type": "span",
      "_key": "1e5fa4e8065e",
-     "text": "l’interprétation des paramètres de terrain en lien avec les besoins du projet ;",
+     "text": "la mise en œuvre du test de réponse thermique ;",
      "marks": []
     }
    ],
@@ -606,7 +604,7 @@
     {
      "_type": "span",
      "_key": "51c4f228eba7",
-     "text": "le dimensionnement du champ de sondes et son optimisation économique.",
+     "text": "l’interprétation des paramètres de terrain en lien avec les besoins du projet ;",
      "marks": []
     }
    ],
@@ -622,10 +620,12 @@
     {
      "_type": "span",
      "_key": "2840d069da7b",
-     "text": "L’objectif est simple : transformer le TRT en un outil au service du projet, pas en une contrainte supplémentaire. Les résultats permettent de concevoir un champ de sondes performant, durable et justement dimensionné, en réduisant le risque pour le maître d’ouvrage.",
+     "text": "le dimensionnement du champ de sondes et son optimisation économique.",
      "marks": []
     }
-   ]
+   ],
+   "listItem": "bullet",
+   "level": 1
   },
   {
    "_type": "block",
@@ -636,6 +636,20 @@
     {
      "_type": "span",
      "_key": "82cb2a972ce2",
+     "text": "L’objectif est simple : transformer le TRT en un outil au service du projet, pas en une contrainte supplémentaire. Les résultats permettent de concevoir un champ de sondes performant, durable et justement dimensionné, en réduisant le risque pour le maître d’ouvrage.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "e96344e1ab62",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "556783e35bb7",
      "text": "À partir d’un certain seuil de puissance et de métrage de sondes, le test de réponse thermique n’est pas un luxe : c’est un investissement qui sécurise le projet, optimise les coûts et garantit la performance de la géothermie sur le long terme.",
      "marks": []
     }

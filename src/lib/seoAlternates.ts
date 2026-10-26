@@ -51,3 +51,19 @@ export function buildBlogAlternates(locale: AppLocale, slug: string) {
 export function buildCanonical(locale: AppLocale, path: string) {
   return { canonical: `${BASE_URL}/${locale}/${path}` }
 }
+
+/**
+ * hreflang map for a blog article and its translations (same translationKey).
+ */
+export function buildBlogLanguages(versions: {locale: string; slug: string; legacyPath?: string}[]) {
+  const languages: Record<string, string> = {}
+  for (const v of versions) {
+    const tag = HREFLANG[v.locale as AppLocale]
+    if (!tag) continue
+    languages[tag] = v.legacyPath
+      ? `${BASE_URL}${v.legacyPath}`
+      : `${BASE_URL}/${v.locale}/${routeMap[v.locale as AppLocale].blog}/${v.slug}`
+  }
+  // a lone version needs no hreflang
+  return Object.keys(languages).length > 1 ? languages : {}
+}

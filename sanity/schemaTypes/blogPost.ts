@@ -21,6 +21,13 @@ const blogPost = defineType({
       readOnly: true,
     },
 
+    {
+      name: 'translationKey',
+      title: 'Clé de traduction',
+      type: 'string',
+      description: 'Identique pour un article et ses traductions (sert aux balises hreflang).',
+    },
+
     { name: 'publishedAt', title: 'Date de publication', type: 'datetime' },
 
     {
