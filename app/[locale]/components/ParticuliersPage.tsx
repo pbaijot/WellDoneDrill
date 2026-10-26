@@ -562,12 +562,29 @@ function FaqItem({question, answer, defaultOpen}: {question: string; answer: str
 
 function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; imageUrl?: string | null; cover?: boolean}) {
   const [muted, setMuted] = useState(true)
+  const [paused, setPaused] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const toggleMute = () => {
     if (videoRef.current) videoRef.current.muted = !muted
     setMuted(m => !m)
   }
+
+  const togglePause = () => {
+    const el = videoRef.current
+    if (!el) return
+    if (el.paused) el.play()
+    else el.pause()
+  }
+
+  const restart = () => {
+    const el = videoRef.current
+    if (!el) return
+    el.currentTime = 0
+    el.play()
+  }
+
+  const btn = 'bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors'
 
   if (videoUrl) {
     return (
@@ -576,25 +593,37 @@ function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; im
           ref={videoRef}
           src={videoUrl}
           autoPlay loop muted playsInline
+          onPlay={() => setPaused(false)}
+          onPause={() => setPaused(true)}
           className={cover ? 'absolute inset-0 w-full h-full object-cover' : 'block w-full h-auto'}
         />
-        <button
-          onClick={toggleMute}
-          className="absolute bottom-4 right-4 z-10 bg-black/50 hover:bg-black/75 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
-          aria-label={muted ? 'Activer le son' : 'Couper le son'}
-        >
-          {muted ? (
+        <div className="absolute bottom-4 right-4 z-10 flex gap-2">
+          <button onClick={restart} className={btn} aria-label="Recommencer la vidéo">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-              <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+              <path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 3v6h6"/>
             </svg>
-          ) : (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
-            </svg>
-          )}
-        </button>
+          </button>
+          <button onClick={togglePause} className={btn} aria-label={paused ? 'Lire la vidéo' : 'Mettre en pause'}>
+            {paused ? (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></svg>
+            )}
+          </button>
+          <button onClick={toggleMute} className={btn} aria-label={muted ? 'Activer le son' : 'Couper le son'}>
+            {muted ? (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+              </svg>
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              </svg>
+            )}
+          </button>
+        </div>
       </>
     )
   }
