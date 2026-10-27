@@ -168,8 +168,8 @@ export function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | n
 const HOUSE = {top: 72, ground: 200, centerX: 210, probeX: 268, pacY: 178, pacH: 16}
 
 // Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 heating, hot water, radiator
-// Underfloor heating loop on the ground floor, in house design space
-const FLOOR_HEATING = 'M130 195 V189 H137 V195 H144 V189 H151 V195 H158 V189 H165 V195 H172 V189 H179 V195 H186 V189 H193 V195 H200 V189 H207 V195 H214 V189 H221 V195 H228 V189'
+// Underfloor heating pipe between the screed lines (ground floor), in house design space
+const FLOOR_PIPE = 'M128 192 q3.25 -3.2 6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0 t6.5 0'
 
 export const LOOP_PHASE_AT = [0, 400, 3000, 4400, 5600]
 
@@ -308,25 +308,49 @@ export function GroundLoopDiagram({phase, reduce, label, className = 'aspect-[40
           transition={{duration: 0.8}}
         />
 
-        {/* Inside, once the heat pump runs: floor between levels, then underfloor heating
-            (ground floor), hot water at the shower, radiator upstairs */}
+        {/* Inside, once the heat pump runs: underfloor heating on the ground floor
+            (screed lines, heating pipe, rising heat), shower hot water and radiator upstairs */}
         <line x1="126" x2="236" y1="158" y2="158" stroke={C.houseDim} strokeWidth="2" />
-        <path d={FLOOR_HEATING} fill="none" stroke={C.houseDim} strokeWidth="1.5" strokeLinejoin="round" />
-        <motion.path d={FLOOR_HEATING} fill="none" stroke={C.probe} strokeWidth="1.5" strokeLinejoin="round" {...draw(phase >= 4, 1.2)} />
-        <g stroke={C.houseDim} strokeWidth="2" strokeLinecap="round" fill="none">
-          <path d="M132 164 H150 V170" />
+
+        <g stroke={C.houseDim} strokeWidth="1.5" strokeLinecap="round" fill="none">
+          <line x1="128" x2="232" y1="187" y2="187" />
+          <line x1="128" x2="232" y1="197" y2="197" />
+          <path d={FLOOR_PIPE} />
         </g>
-        <motion.rect x="143" y="170" width="14" height="3" rx="1" initial={false} animate={{fill: phase >= 4 ? C.probe : C.houseDim}} transition={{duration: 0.6, delay: reduce ? 0 : 0.4}} />
+        <g stroke={C.probe} strokeWidth="1.5" strokeLinecap="round" fill="none">
+          <motion.line x1="128" x2="232" y1="187" y2="187" {...draw(phase >= 4, 0.8)} />
+          <motion.line x1="128" x2="232" y1="197" y2="197" {...draw(phase >= 4, 0.8)} />
+          <motion.path d={FLOOR_PIPE} {...draw(phase >= 4, 1.2)} />
+        </g>
+        {phase >= 4 && [155, 180, 205].map((x, i) => (
+          <motion.g
+            key={x}
+            stroke={C.probe} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"
+            initial={{opacity: 0, y: 4}}
+            animate={reduce ? {opacity: 1, y: 0} : {opacity: [0, 1, 1, 0], y: [4, 0, -3, -6]}}
+            transition={reduce ? {duration: 0} : {duration: 2.4, delay: 0.8 + i * 0.3, repeat: Infinity, ease: 'easeOut'}}
+          >
+            <path d={`M${x} 183 c -2.5 -3.5 2.5 -5 0 -8.5 c -2.5 -3.5 2.5 -5 0 -8.5`} />
+            <path d={`M${x - 3} 169 L${x} 165.5 L${x + 3} 169`} />
+          </motion.g>
+        ))}
+
+        {/* Shower, upstairs */}
+        <g stroke={C.houseDim} strokeWidth="2" strokeLinecap="round" fill="none">
+          <path d="M134 131 H152 V136" />
+        </g>
+        <motion.rect x="145" y="136" width="14" height="3" rx="1" initial={false} animate={{fill: phase >= 4 ? C.probe : C.houseDim}} transition={{duration: 0.6, delay: reduce ? 0 : 0.4}} />
         {phase >= 4 && [0, 1, 2].map(i => (
           <motion.line
             key={i}
-            x1={145 + i * 5} x2={145 + i * 5}
+            x1={147 + i * 5} x2={147 + i * 5}
             stroke={C.probe} strokeWidth="1.5" strokeLinecap="round"
-            initial={{y1: 176, y2: 180, opacity: 0}}
-            animate={reduce ? {y1: 178, y2: 182, opacity: 1} : {y1: [176, 184], y2: [180, 188], opacity: [0, 1, 0]}}
+            initial={{y1: 142, y2: 146, opacity: 0}}
+            animate={reduce ? {y1: 144, y2: 148, opacity: 1} : {y1: [142, 150], y2: [146, 154], opacity: [0, 1, 0]}}
             transition={reduce ? {duration: 0} : {duration: 0.9, delay: 0.5 + i * 0.25, repeat: Infinity, ease: 'linear'}}
           />
         ))}
+
         <motion.rect
           x="206" y="136" width="22" height="15" rx="1.5"
           initial={false}
