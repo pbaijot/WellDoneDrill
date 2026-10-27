@@ -1,15 +1,20 @@
 'use client'
 
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import {motion, AnimatePresence} from 'framer-motion'
 import {getLocalizedPath, type AppLocale, PHONE_BY_LOCALE} from '@/src/i18n/routes'
-import type {ProPageData, ProSchemeNode} from '@/src/lib/proPage'
+import type {ProPageData} from '@/src/lib/proPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
+import {Reveal, ContactCta, FaqItem, ContextMedia} from './V2Blocks'
+import {
+  CalendarCheck, EyeOff, FileCheck, FileSignature, Gauge, Handshake, ScanSearch, ShieldCheck, TrendingUp,
+  type LucideIcon,
+} from 'lucide-react'
 import {
   BELGIUM_PROVINCES,
   getProvinceName,
@@ -373,140 +378,146 @@ const WHY_ICONS = [
   <svg key="5" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>,
 ]
 
-const WHY_STATS = ['×2–3', '0 admin', 'Priorité', 'Kit incl.', '2026', 'Réseau']
-
 /* ─────────────────────────────────────────────
-   PRO SCHEME
+   V2 COPY — written around each segment's primary need
+   HVAC installers: their business runs (more jobs, no friction, client stays theirs)
+   Architects & engineers: a high-performance, innovative solution for their projects
+   Contractors & developers: a reliable drilling partner
+   French only for now; other languages fall back to the CMS / segment defaults.
 ───────────────────────────────────────────── */
 
-type SchemeNode = {label: string; sub: string; stat: string; icon: React.ReactNode}
+type Lang = 'fr' | 'nl' | 'en' | 'de'
 
-const SCHEME_NODES: Record<SegmentKey, [SchemeNode, SchemeNode, SchemeNode]> = {
-  pro_chauffagistes: [
-    {
-      label: 'Votre client',
-      sub: 'Demande une solution géothermique',
-      stat: '×2–3',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>,
-    },
-    {
-      label: 'WDD fore',
-      sub: 'Forage géothermique clé en main',
-      stat: '0 admin',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
-    },
-    {
-      label: 'Vous installez',
-      sub: 'Pompe à chaleur & mise en service',
-      stat: '48 h',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
-    },
-  ],
-  pro_architectes: [
-    {
-      label: 'Votre esquisse',
-      sub: 'Intégration dès la conception',
-      stat: 'Jour 1',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 20h20M6 20V10l6-6 6 6v10M10 20v-5h4v5"/></svg>,
-    },
-    {
-      label: 'Étude géologique',
-      sub: 'Rapport préliminaire livré en 72 h',
-      stat: '72 h',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>,
-    },
-    {
-      label: 'PEB A garanti',
-      sub: 'Sans compromis architecturaux',
-      stat: 'PEB A',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
-    },
-  ],
-  pro_entrepreneurs: [
-    {
-      label: 'Votre programme',
-      sub: 'Résidentiel, tertiaire ou lotissement',
-      stat: '1 contrat',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/></svg>,
-    },
-    {
-      label: 'WDD clé en main',
-      sub: 'Permis, forage, documentation as-built',
-      stat: '4–8 sem.',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>,
-    },
-    {
-      label: 'Livraison valorisée',
-      sub: 'PEB A + plus-value de revente',
-      stat: '+8–12 %',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 100 7h5a3.5 3.5 0 110 7H6"/></svg>,
-    },
-  ],
+const LANG: Record<AppLocale, Lang> = {
+  'be-fr': 'fr', 'fr-fr': 'fr', 'lu-fr': 'fr',
+  'be-nl': 'nl', 'lu-de': 'de',
+  'be-en': 'en', 'fr-en': 'en', 'lu-en': 'en',
 }
 
-function ProScheme({segment, cmsNodes}: {segment: SegmentKey; cmsNodes?: {label?: string; sub?: string; stat?: string}[]}) {
-  const [phase, setPhase] = useState(0)
-  const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
-  useEffect(() => {
-    const t = setTimeout(() => setPhase(p => (p + 1) % 7), durations[phase] ?? 1400)
-    return () => clearTimeout(t)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase])
+const UI_V2: Record<Lang, {ctaAnalysis: string; understandGeo: string; startProject: string}> = {
+  fr: {ctaAnalysis: 'Demander une analyse gratuite', understandGeo: 'Comprendre la géothermie', startProject: 'Démarrer un projet'},
+  nl: {ctaAnalysis: 'Gratis analyse aanvragen', understandGeo: 'Geothermie begrijpen', startProject: 'Een project starten'},
+  en: {ctaAnalysis: 'Request a free analysis', understandGeo: 'Understand geothermal energy', startProject: 'Start a project'},
+  de: {ctaAnalysis: 'Kostenlose Analyse anfragen', understandGeo: 'Geothermie verstehen', startProject: 'Projekt starten'},
+}
 
-  const n0Lit    = phase >= 1
-  const pipe1Lit = phase >= 2
-  const n1Lit    = phase >= 3
-  const pipe2Lit = phase >= 4
-  const n2Lit    = phase >= 5
+type Item = {title: string; body: string}
 
-  const defaults = SCHEME_NODES[segment]
-  const nodes: [SchemeNode, SchemeNode, SchemeNode] = [0, 1, 2].map((i) => ({
-    ...defaults[i],
-    label: cmsNodes?.[i]?.label ?? defaults[i].label,
-    sub:   cmsNodes?.[i]?.sub   ?? defaults[i].sub,
-    stat:  cmsNodes?.[i]?.stat  ?? defaults[i].stat,
-  })) as [SchemeNode, SchemeNode, SchemeNode]
-  const NODE_DUR = 'duration-[1100ms]'
+type ProCopy = {
+  heroCtaPrimary?: string
+  heroCtaSecondary?: string
+  heroSubtitle?: string
+  heroPanelItems?: {label: string; value: string; sub?: string}[]
+  contextTitle: string
+  contextIntro: string
+  usps: Item[]
+  whyTitle: string
+  whyItems: Item[]
+  processTitle: string
+  processIntro: string
+  processSteps: Item[]
+}
 
-  const SchemeNode = ({lit, node}: {lit: boolean; node: SchemeNode}) => (
-    <div className="flex-1 flex flex-col items-center text-center gap-3">
-      <div className={`w-14 h-14 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out rounded-sm ${lit ? 'bg-wdd-yellow' : 'bg-black/6'}`}>
-        <div className={`transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{node.icon}</div>
-      </div>
-      <div>
-        <div className={`text-sm font-bold leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-wdd-black' : 'text-black/20'}`}>{node.label}</div>
-        <div className={`text-xs font-light mt-0.5 leading-snug transition-colors ${NODE_DUR} ${lit ? 'text-black/50' : 'text-black/10'}`}>{node.sub}</div>
-        <div className={`text-xs font-black mt-1.5 tabular-nums transition-colors ${NODE_DUR} ${lit ? 'text-wdd-mud' : 'text-black/10'}`}>{node.stat}</div>
-      </div>
-    </div>
-  )
+const USP_ICONS: Record<SegmentKey, LucideIcon[]> = {
+  pro_chauffagistes: [TrendingUp, FileCheck, Handshake],
+  pro_architectes: [Gauge, EyeOff, ScanSearch],
+  pro_entrepreneurs: [CalendarCheck, FileSignature, ShieldCheck],
+}
 
-  const SchemePipe = ({lit}: {lit: boolean}) => (
-    <div className="flex flex-col items-center pt-7 w-14 shrink-0">
-      <div className="flex items-center w-full">
-        <div className="flex-1 h-px bg-black/8 relative overflow-hidden">
-          <div
-            className="absolute inset-0 bg-wdd-yellow origin-left"
-            style={{
-              transform: lit ? 'scaleX(1)' : 'scaleX(0)',
-              transition: lit ? 'transform 1000ms cubic-bezier(0.4,0,0.2,1)' : 'transform 500ms ease-in-out',
-            }}
-          />
-        </div>
-        <div style={{fontSize: 7, lineHeight: 1, color: lit ? '#FFD94F' : 'rgba(0,0,0,0.08)', transition: 'color 900ms ease-in-out'}}>▶</div>
-      </div>
-    </div>
-  )
+const PRO_COPY_FR: Record<SegmentKey, ProCopy> = {
+  pro_chauffagistes: {
+    contextTitle: 'Vos clients demandent la géothermie. Soyez prêts à leur répondre.',
+    contextIntro:
+      "Des prix de l'énergie instables et la sortie progressive des chaudières fossiles poussent vos clients vers la géothermie. Avec un partenaire forage fiable, vous pouvez leur dire oui sans changer de métier.",
+    usps: [
+      {title: 'Plus de chantiers', body: 'Une offre que vos concurrents sans foreur ne peuvent pas proposer.'},
+      {title: 'Zéro charge administrative', body: 'Permis, analyse du sous-sol et déclarations sont gérés par WDD.'},
+      {title: 'Votre client reste le vôtre', body: 'Vous restez son unique interlocuteur, WDD fore en sous-traitance.'},
+    ],
+    whyTitle: "Six raisons d'ajouter la géothermie à votre offre.",
+    whyItems: [
+      {title: 'Des chantiers à plus forte valeur', body: "Pour un même client, un projet géothermique représente un chantier plus important qu'une pompe à chaleur air-eau."},
+      {title: 'Zéro friction administrative', body: "WellDoneDrill gère les permis de forage, l'analyse du sous-sol et les déclarations officielles. Vous restez concentré sur votre métier."},
+      {title: 'Un planning sur lequel compter', body: 'Le délai de forage est communiqué dès la signature de votre client, pour que vous planifiiez la pose de la PAC sans attente.'},
+      {title: 'Votre client, votre contrat', body: "Vous restez l'unique interlocuteur de votre client. WellDoneDrill intervient en sous-traitance, en toute discrétion."},
+      {title: 'Des outils pour vendre', body: 'Fiches techniques, supports commerciaux et calculateur d’économies pour présenter la géothermie avec confiance.'},
+      {title: 'Des clients qui viennent à vous', body: 'Les particuliers qui contactent WellDoneDrill cherchent un installateur PAC dans leur région. Nos partenaires sont recommandés en premier.'},
+    ],
+    processTitle: 'Comment fonctionne le partenariat.',
+    processIntro: 'Un fonctionnement simple, pensé pour que votre activité tourne sans accroc.',
+    processSteps: [
+      {title: 'Prise de contact', body: 'Parlez-nous de votre activité et de votre zone d’intervention. Réponse sous 48 h.'},
+      {title: 'Analyse gratuite', body: "Envoyez l'adresse de votre client : nous analysons gratuitement la faisabilité du forage."},
+      {title: 'Forage', body: 'WellDoneDrill fore en 1 à 3 jours, permis et déclarations compris, et remet le terrain en état.'},
+      {title: 'Pose de la PAC', body: "Vous installez la pompe à chaleur dans la foulée et restez l'interlocuteur de votre client."},
+    ],
+  },
 
-  return (
-    <div className="flex items-start">
-      <SchemeNode lit={n0Lit} node={nodes[0]} />
-      <SchemePipe lit={pipe1Lit} />
-      <SchemeNode lit={n1Lit} node={nodes[1]} />
-      <SchemePipe lit={pipe2Lit} />
-      <SchemeNode lit={n2Lit} node={nodes[2]} />
-    </div>
-  )
+  pro_architectes: {
+    heroCtaPrimary: 'Demander une analyse gratuite',
+    heroPanelItems: [
+      {label: 'Résultat PEB standard', value: 'PEB A', sub: 'géothermie fermée, tous projets'},
+      {label: 'Délai analyse préliminaire', value: '72 h', sub: 'rapport PDF livré par email'},
+      {label: 'Impact visuel extérieur', value: 'Zéro', sub: 'pas de groupe, pas de contrainte'},
+    ],
+    heroSubtitle:
+      "WellDoneDrill analyse gratuitement le sous-sol de vos projets dès l'esquisse et vous fournit les pièces techniques pour votre dossier de permis. Sans risque de promesse non tenue.",
+    contextTitle: 'Une solution performante et innovante, sans compromis architectural.',
+    contextIntro:
+      "Vos maîtres d'ouvrage attendent des bâtiments sobres, confortables et durables. La géothermie fermée chauffe et rafraîchit sans groupe extérieur ni nuisance, et s'intègre au projet dès l'esquisse.",
+    usps: [
+      {title: 'Performante', body: 'Chauffage et rafraîchissement à haut rendement, toute l’année.'},
+      {title: 'Invisible', body: 'Aucun groupe extérieur, aucun bruit, aucune contrainte de façade.'},
+      {title: 'Sécurisée dès l’esquisse', body: 'Analyse gratuite du sous-sol avant d’engager le projet.'},
+    ],
+    whyTitle: "Six raisons d'intégrer la géothermie dans vos projets.",
+    whyItems: [
+      {title: 'Une performance énergétique de haut niveau', body: 'La géothermie fermée vise les meilleurs niveaux PEB, en chauffage comme en rafraîchissement.'},
+      {title: 'Aucun compromis architectural', body: "Pas de groupe extérieur, pas d'impact thermique en façade. Vos partis pris architecturaux restent intacts."},
+      {title: "Analyse gratuite dès l'esquisse", body: "Nous analysons le sous-sol de vos projets dès l'esquisse. Vous savez si c'est faisable avant de l'intégrer au programme."},
+      {title: 'Les pièces pour vos dossiers', body: 'Pièces techniques au format attendu par les services urbanistiques, intégrables dans votre note de calcul PEB.'},
+      {title: 'Un dimensionnement précis', body: 'Profondeur et nombre de forages déterminés au plus juste. Empreinte au sol minimisée, planning maîtrisé.'},
+      {title: 'Un ingénieur à vos côtés', body: "Un ingénieur WellDoneDrill suit votre dossier de l'esquisse à la réception, en lien avec votre bureau d'études fluides."},
+    ],
+    processTitle: "De l'esquisse à la réception.",
+    processIntro: 'Quatre étapes pour intégrer la géothermie à votre projet, techniquement et administrativement.',
+    processSteps: [
+      {title: 'Transmission du projet', body: 'Adresse, programme, surfaces et phase du projet. Retour de faisabilité sous 72 h.'},
+      {title: 'Analyse gratuite du sous-sol', body: 'Rapport préliminaire au format PDF, rédigé pour être intégré à votre dossier.'},
+      {title: 'Dimensionnement', body: 'Champ de sondes dimensionné selon le projet, note de calcul pour votre dossier PEB.'},
+      {title: 'Permis et forage', body: 'WellDoneDrill dépose les demandes de permis de forage et réalise les travaux dans le calendrier du chantier.'},
+    ],
+  },
+
+  pro_entrepreneurs: {
+    heroCtaSecondary: 'Voir nos réalisations',
+    contextTitle: 'Un partenaire forage sur qui vous pouvez compter.',
+    contextIntro:
+      'Sur un chantier, le forage ne doit jamais devenir le lot qui bloque les autres. WellDoneDrill s’engage sur un planning, gère ses permis et livre des sondes testées, prêtes à raccorder.',
+    usps: [
+      {title: 'Fiable', body: 'Un planning engagé et respecté, intégré à votre calendrier.'},
+      {title: 'Un seul contrat', body: 'Permis, analyse, forage et remise en état : un seul interlocuteur.'},
+      {title: 'Responsable', body: 'WellDoneDrill assume ses travaux, responsabilité civile comprise.'},
+    ],
+    whyTitle: 'Six raisons de confier vos forages à WellDoneDrill.',
+    whyItems: [
+      {title: 'Des délais tenus', body: 'Intervention en phase gros œuvre, avant les dallages, sans perturber les autres corps de métier.'},
+      {title: 'Un seul contrat, un seul interlocuteur', body: 'Permis, analyse, forage et remise en état du terrain : tout le lot géothermie chez un seul partenaire.'},
+      {title: 'Zéro démarche administrative', body: "WellDoneDrill dépose et suit toutes les demandes d'autorisation de forage."},
+      {title: 'Des sondes prêtes à raccorder', body: 'Sondes livrées testées, terrain remis en état dès la fin du forage.'},
+      {title: 'Un dossier as-built complet', body: "Documentation de réception et certificats pour votre dossier et pour l'acquéreur."},
+      {title: "Des économies d'échelle", body: 'Pour les projets multi-unités, un champ de sondes partagé réduit le coût par logement.'},
+    ],
+    processTitle: "De l'analyse à la remise des clés.",
+    processIntro: "Cinq étapes gérées par WellDoneDrill. Vous nous transmettez l'adresse et le programme, nous faisons le reste.",
+    processSteps: [
+      {title: 'Analyse gratuite', body: "Transmettez l'adresse et le programme : analyse du sous-sol et budget prévisionnel sous 5 jours."},
+      {title: 'Offre et planning', body: 'Offre clé en main, planning intégré à votre calendrier de chantier.'},
+      {title: 'Permis de forage', body: "WellDoneDrill dépose et suit les demandes d'autorisation."},
+      {title: 'Forage', body: 'Intervention en phase gros œuvre, sondes testées, terrain remis en état.'},
+      {title: 'Dossier as-built', body: 'Documentation de réception et certificats remis à la livraison.'},
+    ],
+  },
 }
 
 /* ─────────────────────────────────────────────
@@ -695,42 +706,37 @@ function ProProjetsSection({locale, chantiers, d}: {locale: AppLocale; chantiers
 }
 
 /* ─────────────────────────────────────────────
-   FAQ ITEM
-───────────────────────────────────────────── */
-
-function FaqItem({question, answer}: {question: string; answer: string}) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="border-b border-black/10 last:border-b-0">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-start justify-between gap-6 py-5 text-left group"
-      >
-        <span className="text-base font-bold leading-snug group-hover:text-wdd-mud transition-colors">{question}</span>
-        <span className={`flex-shrink-0 w-6 h-6 border flex items-center justify-center text-sm font-bold transition-all duration-200 mt-0.5 ${open ? 'bg-wdd-yellow border-wdd-yellow text-wdd-black rotate-45' : 'border-black/20 text-black/40'}`}>+</span>
-      </button>
-      {open && (
-        <p className="text-sm font-light text-black/70 leading-7 pb-6 pr-12 whitespace-pre-line">{answer}</p>
-      )}
-    </div>
-  )
-}
-
-/* ─────────────────────────────────────────────
    PAGE COMPONENT
 ───────────────────────────────────────────── */
 
 export default function ProPage({page, locale, chantiers = [], settings}: {page: ProPageData; locale: AppLocale; chantiers?: Chantier[]; settings?: GlobalSettingsData | null}) {
   const segment = (page.routeKey ?? 'pro_chauffagistes') as SegmentKey
   const d = {...SEGMENT_DEFAULTS[segment], ...LOCALE_OVERRIDES[locale]}
+  const lang = LANG[locale]
+  const ui = UI_V2[lang]
+  const fr = lang === 'fr' ? PRO_COPY_FR[segment] : null
+
+  const contactHref = getLocalizedPath(locale, 'contact')
 
   const faqs = page.faqs && page.faqs.length > 0
     ? page.faqs.map(f => ({question: f.question ?? '', answer: f.answer ?? ''}))
     : d.faqs
 
-  const whyItems = page.valueItems && page.valueItems.length > 0 ? page.valueItems : d.whyItems
+  // French uses the V2 copy; other languages keep the CMS content until it is translated
+  const contextTitle = fr?.contextTitle ?? page.valueTitle ?? d.contextTitle
+  const contextIntro = fr?.contextIntro ?? page.valueIntro ?? d.contextBody
+  const usps = fr?.usps ?? []
+  const whyTitle = fr?.whyTitle ?? page.whyTitle ?? d.whyTitle
+  const whyItems: {title?: string; body?: string}[] = fr?.whyItems
+    ?? (page.valueItems && page.valueItems.length > 0 ? page.valueItems : d.whyItems)
+  const processTitle = fr?.processTitle ?? page.partnershipTitle ?? d.etapesTitle
+  const processIntro = fr?.processIntro ?? page.partnershipIntro ?? d.etapesIntro
+  const processSteps: {title?: string; body?: string}[] = fr?.processSteps
+    ?? (page.partnershipSteps && page.partnershipSteps.length > 0 ? page.partnershipSteps : d.etapes)
 
   const contextVideoUrl = page.contextVideo?.asset?.url ?? d.contextVideo ?? null
+  const contextImage = page.contextImage ? urlFor(page.contextImage)?.url() ?? d.contextImage : d.contextImage
+  const uspIcons = USP_ICONS[segment]
 
   return (
     <div className="flex flex-col bg-white">
@@ -768,9 +774,9 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           <div className="hidden lg:block absolute bottom-8 right-8 z-10">
             <FloatingInfoPanel
               items={
-                page.heroPanelItems && page.heroPanelItems.length > 0
+                fr?.heroPanelItems ?? (page.heroPanelItems && page.heroPanelItems.length > 0
                   ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
-                  : d.heroPanelItems
+                  : d.heroPanelItems)
               }
             />
           </div>
@@ -790,21 +796,21 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
             </h1>
 
             <p className="text-base font-normal text-white leading-relaxed max-w-lg mb-10">
-              {page.heroSubtitle ?? d.heroSubtitle}
+              {fr?.heroSubtitle ?? page.heroSubtitle ?? d.heroSubtitle}
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
               <Link
-                href={getLocalizedPath(locale, 'contact')}
+                href={contactHref}
                 className="bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
               >
-                {page.heroCtaLabel ?? d.heroCtaPrimary}
+                {fr?.heroCtaPrimary ?? page.heroCtaLabel ?? d.heroCtaPrimary}
               </Link>
               <Link
                 href={getLocalizedPath(locale, 'references')}
                 className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors rounded-sm"
               >
-                {page.heroCtaSecondary ?? d.heroCtaSecondary}
+                {fr?.heroCtaSecondary ?? page.heroCtaSecondary ?? d.heroCtaSecondary}
               </Link>
             </div>
 
@@ -813,94 +819,146 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       </section>
 
       {/* ══════════════════════════════════════
-          2. CONTEXTE + IMAGE
+          2. LE BESOIN — texte, USP et CTA à gauche, média à droite (même hauteur)
       ══════════════════════════════════════ */}
-      <section className="bg-white py-[7.5rem] px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full">
-          <div className="flex flex-col lg:flex-row lg:gap-12">
-
-            {/* Left — text + markers */}
-            <div className="w-full lg:w-1/2 flex flex-col">
-              <h2 className="text-4xl font-bold leading-tight mb-6">
-                {page.valueTitle ?? d.contextTitle}
-              </h2>
-              <p className="text-base font-light text-black/60 leading-8 mb-12">
-                {page.valueIntro ?? d.contextBody}
-              </p>
-              <div className="border-t border-black/8 pt-10 mt-auto">
-                <ProScheme segment={segment} cmsNodes={page.schemeNodes as ProSchemeNode[] | undefined} />
+      <section className="bg-white py-24 md:py-32 px-8 md:px-16">
+        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div>
+            <Reveal>
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{contextTitle}</h2>
+              <p className="mt-6 text-base font-light text-black/60 leading-8">{contextIntro}</p>
+            </Reveal>
+            {usps.length > 0 && (
+              <div className="mt-10 grid gap-5 max-w-xl">
+                {usps.map((usp, i) => {
+                  const Icon = uspIcons[i] ?? uspIcons[0]
+                  return (
+                    <Reveal key={usp.title} delay={i * 0.1} className="flex items-center gap-4">
+                      <span className="shrink-0 w-10 h-10 rounded-sm bg-wdd-yellow text-wdd-black flex items-center justify-center">
+                        <Icon size={20} strokeWidth={1.75} />
+                      </span>
+                      <div>
+                        <div className="text-base font-bold leading-snug">{usp.title}</div>
+                        <div className="mt-1 text-sm font-light text-black/60 leading-snug">{usp.body}</div>
+                      </div>
+                    </Reveal>
+                  )
+                })}
               </div>
-            </div>
+            )}
+            <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
+              <ContactCta href={contactHref} label={ui.ctaAnalysis} />
+              <Link
+                href={getLocalizedPath(locale, 'geo_fermee')}
+                className="group inline-flex items-center gap-2 text-sm font-bold text-wdd-black underline underline-offset-4 decoration-wdd-yellow decoration-2 hover:text-wdd-mud transition-colors"
+              >
+                {ui.understandGeo}
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </Reveal>
+          </div>
 
-            {/* Right — video if available, image otherwise */}
-            {(() => {
-              const ctxImage = page.contextImage
-                ? urlFor(page.contextImage)?.url() ?? d.contextImage
-                : d.contextImage
-              const ctxVideo = contextVideoUrl
+          {/* Same height as the text column: the media is cropped in width only */}
+          <Reveal delay={0.1} className="relative overflow-hidden rounded-sm bg-wdd-clay aspect-video lg:aspect-auto">
+            <ContextMedia videoUrl={contextVideoUrl} imageUrl={contextImage} cover />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════
+          3. SIX RAISONS — grille bento
+      ══════════════════════════════════════ */}
+      <section className="bg-wdd-clay py-28 md:py-36 px-8 md:px-16">
+        <div className="max-w-screen-2xl mx-auto w-full">
+          <Reveal>
+            <h2 className="max-w-3xl text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{whyTitle}</h2>
+          </Reveal>
+
+          <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+            {whyItems.map((item, i) => {
+              if (i === 0) {
+                return (
+                  <Reveal key={i} className="md:col-span-2 lg:row-span-2">
+                    <div className="h-full min-h-[22rem] bg-wdd-yellow rounded-sm p-8 md:p-10 flex flex-col justify-between">
+                      <div className="text-wdd-black">{WHY_ICONS[0]}</div>
+                      <div>
+                        <h3 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">{item.title}</h3>
+                        <p className="mt-4 text-base text-black/70 leading-7 max-w-md">{item.body}</p>
+                      </div>
+                    </div>
+                  </Reveal>
+                )
+              }
               return (
-                <div className={`w-full h-64 sm:h-80 mt-8 lg:mt-0 lg:flex-1 lg:h-auto relative overflow-hidden rounded-sm ${segment === 'pro_architectes' ? 'lg:aspect-video' : 'lg:min-h-[320px]'}`}>
-                  <Image src={ctxImage} alt="" fill sizes="50vw" className="object-cover object-center" />
-                  {ctxVideo && (
-                    <video
-                      src={ctxVideo}
-                      autoPlay loop muted playsInline
-                      className="absolute inset-0 w-full h-full object-cover scale-125 z-10"
-                    />
-                  )}
-                </div>
+                <Reveal key={i} delay={(i % 4) * 0.06} className={i === 5 ? 'lg:col-span-2' : ''}>
+                  <div className="h-full bg-white rounded-sm p-7 flex flex-col gap-6">
+                    <div className="text-wdd-mud">{WHY_ICONS[i] ?? WHY_ICONS[0]}</div>
+                    <div>
+                      <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
+                      <p className="mt-2 text-sm font-light text-black/55 leading-6">{item.body}</p>
+                    </div>
+                  </div>
+                </Reveal>
               )
-            })()}
-
+            })}
+            <Reveal className="md:col-span-2">
+              <Link
+                href={contactHref}
+                className="group h-full min-h-[10rem] bg-wdd-black text-white rounded-sm p-7 flex items-end justify-between gap-6 hover:bg-wdd-black/90 transition-colors"
+              >
+                <span className="text-2xl font-bold leading-tight max-w-xs">{ui.startProject}</span>
+                <span className="shrink-0 w-12 h-12 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-xl font-bold group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          3. SIX RAISONS
+          4. LE PROCESS — étapes à gauche, photo pleine demi-page à droite
       ══════════════════════════════════════ */}
-      <section className="bg-wdd-clay py-[7.5rem] px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full">
-          <h2 className="text-4xl font-bold leading-tight mb-10">
-            {page.whyTitle ?? d.whyTitle}
-          </h2>
-
-          {(() => {
-            const ICON_BGS = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud', 'bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'] as const
-            return (
-              <>
-                <div className="grid lg:grid-cols-2 gap-2">
-                  {whyItems.map((item, i) => (
-                    <div
-                      key={('_key' in item ? (item._key as string | undefined) : undefined) ?? i}
-                      className="grid grid-cols-[5rem_1fr] bg-white rounded-sm overflow-hidden"
-                    >
-                      <div className={`flex items-center justify-center self-stretch ${ICON_BGS[i % 3]}`}>
-                        <div className="text-wdd-black">{WHY_ICONS[i] ?? WHY_ICONS[0]}</div>
+      <section className="relative bg-white overflow-hidden">
+        <div className="relative px-8 md:px-16 py-28 md:py-36">
+          <div className="max-w-screen-2xl mx-auto w-full">
+            <div className="lg:w-1/2 lg:pr-16">
+              <Reveal>
+                <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{processTitle}</h2>
+                <p className="mt-6 text-base font-light text-black/60 leading-8">{processIntro}</p>
+              </Reveal>
+              <ol className="relative mt-12 space-y-8 before:absolute before:left-4 before:top-4 before:bottom-4 before:w-px before:bg-black/10">
+                {processSteps.map((s, i) => (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <li className="relative flex gap-5">
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">
+                        {i + 1}
+                      </span>
+                      <div className="pt-1">
+                        <div className="font-bold leading-snug">{s.title}</div>
+                        <div className="mt-1 text-sm font-light text-black/60 leading-6">{s.body}</div>
                       </div>
-                      <div className="grid sm:grid-cols-[1fr_2fr]">
-                        <h3 className="text-sm font-bold leading-snug px-5 pt-6 pb-1 sm:py-7 sm:pr-3 self-start">{item.title}</h3>
-                        <p className="text-sm font-light text-black/50 leading-relaxed px-5 pb-6 sm:py-7 sm:pl-0 sm:pr-5 self-start">{item.body}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-10">
-                  <Link
-                    href={getLocalizedPath(locale, 'contact')}
-                    className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold hover:bg-wdd-black/80 transition-colors rounded-sm"
-                  >
-                    {page.whyCtaLabel ?? d.whyCtaLabel} <span>→</span>
-                  </Link>
-                </div>
-              </>
-            )
-          })()}
+                    </li>
+                  </Reveal>
+                ))}
+              </ol>
+              <Reveal>
+                <ContactCta href={contactHref} label={ui.ctaAnalysis} className="mt-10" />
+              </Reveal>
+            </div>
+          </div>
+        </div>
+        <div className="relative aspect-square lg:aspect-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
+          <Image
+            src="/images/wdd-chantier-drone.jpg"
+            alt="Foreuse WellDoneDrill en action sur un chantier"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-[62%_center]"
+          />
         </div>
       </section>
 
       {/* ══════════════════════════════════════
-          4. RÉALISATIONS
+          5. RÉALISATIONS
       ══════════════════════════════════════ */}
       <ProProjetsSection locale={locale} chantiers={chantiers} d={d} />
 
@@ -909,27 +967,27 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       {/* ══════════════════════════════════════
           6. FAQ
       ══════════════════════════════════════ */}
-      <section className="bg-white py-24 px-8 md:px-16">
+      <section className="bg-wdd-clay py-28 md:py-32 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-3 gap-16">
-          <div>
-            <h2 className="text-3xl font-bold mb-4 leading-tight">
+          <Reveal>
+            <h2 className="text-4xl font-bold mb-4 leading-[1.05] tracking-tight">
               {page.faqTitle ?? d.faqTitle}
             </h2>
-            <p className="text-sm font-light text-black/50 leading-7 mb-8">
+            <p className="text-base font-light text-black/55 leading-7 mb-8">
               {page.faqSubtitle ?? d.faqSubtitle}
             </p>
             <Link
-              href={getLocalizedPath(locale, 'contact')}
-              className="inline-block bg-wdd-black text-wdd-yellow px-5 py-2.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+              href={contactHref}
+              className="inline-block bg-wdd-black text-wdd-yellow px-6 py-3 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
             >
               {page.faqCtaLabel ?? d.faqCtaLabel}
             </Link>
-          </div>
-          <div className="lg:col-span-2">
+          </Reveal>
+          <Reveal delay={0.1} className="lg:col-span-2 bg-white rounded-sm px-6 md:px-10">
             {faqs.map((faq, i) => (
-              <FaqItem key={i} question={faq.question} answer={faq.answer} />
+              <FaqItem key={i} question={faq.question} answer={faq.answer} defaultOpen={i === 0} />
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -938,7 +996,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
       ══════════════════════════════════════ */}
       <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-wdd-black border-t border-white/10 px-4 py-3 flex items-center gap-3 shadow-2xl">
         <Link
-          href={getLocalizedPath(locale, 'contact')}
+          href={contactHref}
           className="flex-1 text-center py-3 text-sm font-bold text-wdd-black bg-wdd-yellow border-2 border-wdd-yellow rounded-sm"
         >
           {d.stickyStart}
