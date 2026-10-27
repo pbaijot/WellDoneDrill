@@ -9,7 +9,7 @@ import {
   useInView,
   useReducedMotion,
 } from 'framer-motion'
-import {Hourglass, PiggyBank, TrendingUp} from 'lucide-react'
+import {Leaf, PiggyBank, SunSnow} from 'lucide-react'
 import {getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import type {ParticuliersPageData} from '@/src/lib/particuliersPage'
 import type {GlobalSettingsData} from '@/src/lib/globalSettings'
@@ -334,6 +334,7 @@ type Step = {title: string; body: string}
 const V2: Record<Lang, {
   eyebrow: string
   ctaStudy: string; ctaSoil: string; ctaQuote: string
+  usps: Step[]
   principleTitle: string; principleIntro: string
   principleSteps: Step[]
   siteTitle: string; siteIntro: string
@@ -342,6 +343,11 @@ const V2: Record<Lang, {
 }> = {
   fr: {
     eyebrow: 'Géothermie pour particuliers',
+    usps: [
+      {title: 'Chaud & froid', body: "Une seule installation chauffe l'hiver et rafraîchit l'été."},
+      {title: 'Économique', body: 'Une énergie gratuite sous vos pieds, un coût de chauffage prévisible.'},
+      {title: 'Écologique', body: 'Aucun combustible fossile, aucune émission sur place.'},
+    ],
     ctaStudy: 'Demander mon analyse gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
     principleTitle: "L'énergie est déjà sous votre jardin.",
     principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
@@ -364,6 +370,11 @@ const V2: Record<Lang, {
   },
   nl: {
     eyebrow: 'Geothermie voor particulieren',
+    usps: [
+      {title: 'Warm & koel', body: 'Eén installatie verwarmt in de winter en koelt in de zomer.'},
+      {title: 'Voordelig', body: 'Gratis energie onder uw voeten, voorspelbare verwarmingskosten.'},
+      {title: 'Ecologisch', body: 'Geen fossiele brandstof, geen uitstoot ter plaatse.'},
+    ],
     ctaStudy: 'Mijn gratis analyse aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
     principleTitle: 'De energie zit al onder uw tuin.',
     principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
@@ -386,6 +397,11 @@ const V2: Record<Lang, {
   },
   en: {
     eyebrow: 'Geothermal for homeowners',
+    usps: [
+      {title: 'Heating & cooling', body: 'One system heats in winter and cools in summer.'},
+      {title: 'Economical', body: 'Free energy under your feet, predictable heating costs.'},
+      {title: 'Ecological', body: 'No fossil fuel, no emissions on site.'},
+    ],
     ctaStudy: 'Request my free analysis', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
     principleTitle: 'The energy is already under your garden.',
     principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
@@ -408,6 +424,11 @@ const V2: Record<Lang, {
   },
   de: {
     eyebrow: 'Geothermie für Privatkunden',
+    usps: [
+      {title: 'Wärme & Kühlung', body: 'Eine Anlage heizt im Winter und kühlt im Sommer.'},
+      {title: 'Wirtschaftlich', body: 'Kostenlose Energie unter Ihren Füßen, planbare Heizkosten.'},
+      {title: 'Ökologisch', body: 'Kein fossiler Brennstoff, keine Emissionen vor Ort.'},
+    ],
     ctaStudy: 'Kostenlose Analyse anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
     principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
     principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
@@ -432,8 +453,8 @@ const V2: Record<Lang, {
 
 type V2T = typeof V2[Lang]
 
-// Savings · payback · lifetime, in the order of the hero panel items
-const STAT_ICONS = [PiggyBank, TrendingUp, Hourglass]
+// Heating & cooling · economical · ecological, in the order of v.usps
+const USP_ICONS = [SunSnow, PiggyBank, Leaf]
 
 const WHY_ICONS = [
   <svg key="eco" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 10-3 5h3a3 3 0 010 6H9M12 7v1m0 8v1"/></svg>,
@@ -479,35 +500,6 @@ function ContactCta({href, label, variant = 'dark', className = ''}: {href: stri
       <span className={`transition-transform group-hover:translate-x-1 ${variant === 'yellow' ? '' : 'text-wdd-yellow'}`}>→</span>
     </Link>
   )
-}
-
-// Counts up to the number in a CMS stat ("+180 %", "1 200 €", "50 ans") when it scrolls into view.
-// Server render and ranges ("7–10 ans") keep the literal value.
-function CountUp({value}: {value: string}) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const inView = useInView(ref, {once: true, margin: '-60px'})
-  const reduce = useReducedMotion()
-  const m = value.match(/^([^\d]*)(\d(?:[\d\s  ]*\d)?)(.*)$/)
-  const target = m && !/^\s*[–-]\s*\d/.test(m[3]) ? Number(m[2].replace(/\D/g, '')) : null
-  const [n, setN] = useState<number | null>(null)
-
-  useEffect(() => {
-    if (!inView || target === null || reduce) return
-    let raf = 0
-    const start = performance.now()
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - start) / 1400)
-      setN(Math.round(target * (1 - Math.pow(1 - p, 3))))
-      if (p < 1) raf = requestAnimationFrame(tick)
-    }
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [inView, target, reduce])
-
-  if (!m || n === null) return <span ref={ref}>{value}</span>
-  const sep = m[2].match(/[\s  ]/)?.[0]
-  const shown = sep ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, sep) : String(n)
-  return <span ref={ref}>{m[1]}{shown}{m[3]}</span>
 }
 
 function FaqItem({question, answer, defaultOpen}: {question: string; answer: string; defaultOpen?: boolean}) {
@@ -911,16 +903,6 @@ export default function ParticuliersPage({
 
   const fmt = (n: number) => Math.round(n).toLocaleString(t.fmtLocale)
 
-  const heroPanel =
-    page.heroPanelItems && page.heroPanelItems.length > 0
-      ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
-      : [
-          {label: 'Économies annuelles moyennes', value: '~1 200 €', sub: 'par foyer converti'},
-          {label: 'Coefficient de performance',  value: 'COP 4–5',   sub: '4× plus efficace que le gaz'},
-          {label: 'Réduction de facture',        value: '–70 %',     sub: 'sur vos coûts de chauffage'},
-        ]
-
-
   const videoUrl = page.contextVideo?.asset?.url ?? null
 
   return (
@@ -1047,19 +1029,17 @@ export default function ParticuliersPage({
                   "Le prix du gaz a bondi de 180 % depuis 2021. Chaque année sans action coûte en factures, en entretien, et en valeur PEB perdue."}
               </p>
             </Reveal>
-            <div className="mt-12 grid sm:grid-cols-3 gap-6 md:gap-8">
-              {heroPanel.slice(0, 3).map((item, i) => {
-                const Icon = STAT_ICONS[i] ?? STAT_ICONS[0]
+            <div className="mt-10 grid gap-5 max-w-xl">
+              {v.usps.map((usp, i) => {
+                const Icon = USP_ICONS[i] ?? USP_ICONS[0]
                 return (
-                  <Reveal key={item.label} delay={i * 0.1} className="flex items-start gap-3">
+                  <Reveal key={usp.title} delay={i * 0.1} className="flex items-center gap-4">
                     <span className="shrink-0 w-10 h-10 rounded-sm bg-wdd-yellow text-wdd-black flex items-center justify-center">
                       <Icon size={20} strokeWidth={1.75} />
                     </span>
                     <div>
-                      <div className="text-2xl font-bold text-wdd-black tabular-nums leading-none whitespace-nowrap">
-                        <CountUp value={item.value} />
-                      </div>
-                      <div className="mt-2 text-sm font-light text-black/60 leading-snug">{item.label}</div>
+                      <div className="text-base font-bold leading-snug">{usp.title}</div>
+                      <div className="mt-1 text-sm font-light text-black/60 leading-snug">{usp.body}</div>
                     </div>
                   </Reveal>
                 )
