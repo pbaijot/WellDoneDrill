@@ -1,21 +1,14 @@
 'use client'
 
-import {useState, useEffect} from 'react'
+import {useState, useRef} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {getLocalizedPath, type AppLocale, type RouteKey} from '@/src/i18n/routes'
 import type {GeoPageData} from '@/src/lib/geoPage'
 import {urlFor} from '@/src/lib/sanityImage'
+import {Reveal, ContactCta, GroundLoopDiagram, useLoopPhase} from './V2Blocks'
 
 /* ── Defaults ───────────────────────────────────────────────── */
-
-const DEFAULT_ETAPES = [
-  {title: 'Devis gratuit', body: 'Premier contact, analyse de vos besoins. Réponse sous 48h.'},
-  {title: 'Étude de faisabilité', body: 'Analyse géologique de votre terrain. Gratuite. Sans engagement.'},
-  {title: 'Permis & démarches', body: 'WellDoneDrill s\'occupe de toutes les autorisations à votre place.'},
-  {title: 'Forage', body: '1 à 3 jours d\'intervention. Impact minimal, terrain remis en état.'},
-  {title: 'Mise en service', body: 'Votre chauffagiste connecte la PAC. Vous basculez sur la géothermie.'},
-]
 
 const DEFAULT_FAQS_OUVERTE = [
   {
@@ -71,222 +64,6 @@ const DEFAULT_FAQS_FERMEE = [
   },
 ]
 
-/* ── Step icons for how-it-works ────────────────────────────── */
-
-const STEP_ICONS = [
-  /* analyse terrain */
-  <svg key="analyse" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/>
-    <path d="M8 15h8M6 18h12"/>
-  </svg>,
-  /* forage */
-  <svg key="forage" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2v16M8 6l4-4 4 4M9 18h6l1 4H8l1-4z"/>
-    <path d="M7 14h10"/>
-  </svg>,
-  /* sonde/circuit */
-  <svg key="sonde" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 12h4l3-9 4 18 3-9h4"/>
-  </svg>,
-  /* pompe à chaleur */
-  <svg key="pac" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-  </svg>,
-  /* mise en service */
-  <svg key="mise" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/>
-    <path d="M9 12l2 2 4-4"/>
-  </svg>,
-  /* check/confort */
-  <svg key="check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
-    <path d="M9 21V12h6v9"/>
-  </svg>,
-]
-
-/* ── Animated scheme locale labels ─────────────────────────── */
-
-const SCHEME_TEXT: Record<string, {
-  fermee: {label: string; sub: string}[]
-  ouverte: {label: string; sub: string}[]
-}> = {
-  'be-nl': {
-    fermee: [
-      {label: 'De bodem',     sub: 'Constante energie op 80–200 m'},
-      {label: 'Warmtepomp',   sub: 'Versterkt de gewonnen energie'},
-      {label: 'Uw woning',    sub: 'Verwarming · Water · Koeling'},
-    ],
-    ouverte: [
-      {label: 'De waterlaag', sub: 'Warmtebron op 10–14 °C'},
-      {label: 'Warmtepomp',   sub: 'Versterkt de gewonnen energie'},
-      {label: 'Uw gebouw',    sub: 'Verwarming · Water · Koeling'},
-    ],
-  },
-  'lu-de': {
-    fermee: [
-      {label: 'Der Boden',       sub: 'Konstante Energie bei 80–200 m'},
-      {label: 'Wärmepumpe',      sub: 'Verstärkt die gewonnene Energie'},
-      {label: 'Ihr Zuhause',     sub: 'Heizung · Wasser · Kühlung'},
-    ],
-    ouverte: [
-      {label: 'Das Grundwasser', sub: 'Wärmequelle bei 10–14 °C'},
-      {label: 'Wärmepumpe',      sub: 'Verstärkt die gewonnene Energie'},
-      {label: 'Ihr Gebäude',     sub: 'Heizung · Wasser · Kühlung'},
-    ],
-  },
-  'be-en': {
-    fermee: [
-      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
-    ],
-    ouverte: [
-      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your building', sub: 'Heating · Water · Cooling'},
-    ],
-  },
-  'fr-en': {
-    fermee: [
-      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
-    ],
-    ouverte: [
-      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your building', sub: 'Heating · Water · Cooling'},
-    ],
-  },
-  'lu-en': {
-    fermee: [
-      {label: 'The ground',  sub: 'Constant energy at 80–200 m'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your home',   sub: 'Heating · Water · Cooling'},
-    ],
-    ouverte: [
-      {label: 'The aquifer', sub: 'Heat source at 10–14 °C'},
-      {label: 'Heat pump',   sub: 'Boosts the captured energy'},
-      {label: 'Your building', sub: 'Heating · Water · Cooling'},
-    ],
-  },
-}
-
-const FR_SCHEME = {
-  fermee: [
-    {label: 'Le sol',           sub: 'Énergie constante à 80–200 m'},
-    {label: 'Pompe à chaleur',  sub: "Amplifie l'énergie captée"},
-    {label: 'Votre maison',     sub: 'Chauffage · Eau · Froid'},
-  ],
-  ouverte: [
-    {label: 'La nappe',         sub: 'Source thermique à 10–14 °C'},
-    {label: 'Pompe à chaleur',  sub: "Amplifie l'énergie captée"},
-    {label: 'Votre bâtiment',   sub: 'Chauffage · Eau · Froid'},
-  ],
-}
-
-/* ── Vertical animated scheme ───────────────────────────────── */
-
-function GeoSchemeVertical({isOpen, locale}: {isOpen: boolean; locale: AppLocale}) {
-  const [phase, setPhase] = useState(0)
-  const durations = [600, 1600, 1200, 1600, 1200, 1600, 2800]
-  useEffect(() => {
-    const t = setTimeout(() => setPhase(p => (p + 1) % 7), durations[phase] ?? 1400)
-    return () => clearTimeout(t)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase])
-
-  const solLit    = phase >= 1
-  const pipe1Lit  = phase >= 2
-  const pacLit    = phase >= 3
-  const pipe2Lit  = phase >= 4
-  const maisonLit = phase >= 5
-  const NODE_DUR  = 'duration-[1100ms]'
-
-  const schemeText = (SCHEME_TEXT[locale] ?? FR_SCHEME) as typeof FR_SCHEME
-  const labels = isOpen ? schemeText.ouverte : schemeText.fermee
-
-  const NODES = isOpen ? [
-    {
-      ...labels[0],
-      stat: 'COP 5–7',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 7c3-2 6-2 9 0s6 2 9 0M3 12c3-2 6-2 9 0s6 2 9 0M3 17c3-2 6-2 9 0s6 2 9 0"/></svg>,
-    },
-    {
-      ...labels[1],
-      stat: 'COP 5–7',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
-    },
-    {
-      ...labels[2],
-      stat: '−70 %',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>,
-    },
-  ] : [
-    {
-      ...labels[0],
-      stat: '15 °C',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22V12M12 12C12 12 7 9 7 5a5 5 0 0110 0c0 4-5 7-5 7z"/><path d="M8 15h8M6 18h12"/></svg>,
-    },
-    {
-      ...labels[1],
-      stat: 'COP 4–5',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
-    },
-    {
-      ...labels[2],
-      stat: '−70 %',
-      icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>,
-    },
-  ]
-
-  const lits    = [solLit, pacLit, maisonLit]
-  const pipeLits = [pipe1Lit, pipe2Lit]
-
-  // Render top → bottom: index 2 (Maison/top), pipe, index 1 (PAC), pipe, index 0 (Sol/bottom)
-  // Each pipe sits between the node above it and the node below, animates origin-bottom (from lower node upward)
-  return (
-    <div className="flex flex-col w-full py-8 lg:pr-12">
-      {([2, 1, 0] as const).map((i) => (
-        <div key={NODES[i].label}>
-          {/* Node */}
-          <div className="flex items-center gap-6">
-            <div className={`w-12 h-12 flex-shrink-0 flex items-center justify-center transition-all ${NODE_DUR} ease-in-out rounded-sm ${lits[i] ? 'bg-wdd-yellow' : 'bg-black/6'}`}>
-              <div className={`transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-black' : 'text-black/20'}`}>{NODES[i].icon}</div>
-            </div>
-            <div>
-              <div className={`text-base font-bold leading-snug transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-black' : 'text-black/20'}`}>{NODES[i].label}</div>
-              <div className={`text-sm font-light mt-1 leading-snug transition-colors ${NODE_DUR} ${lits[i] ? 'text-black/50' : 'text-black/10'}`}>{NODES[i].sub}</div>
-              <div className={`text-sm font-black mt-2 tabular-nums transition-colors ${NODE_DUR} ${lits[i] ? 'text-wdd-mud' : 'text-black/10'}`}>{NODES[i].stat}</div>
-            </div>
-          </div>
-          {/* Pipe below this node (omitted for bottom node) */}
-          {i > 0 && (
-            <div className="flex items-start h-16">
-              <div className="w-12 flex flex-col items-center h-full">
-                {/* Arrow at top, pointing toward current (upper) node */}
-                <div style={{fontSize: 8, lineHeight: 1, color: pipeLits[i - 1] ? '#FFD94F' : 'rgba(0,0,0,0.08)', transition: 'color 900ms ease-in-out'}}>▲</div>
-                {/* Line fills from bottom (lower node) upward */}
-                <div className="flex-1 w-px bg-black/8 relative overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-wdd-yellow origin-bottom"
-                    style={{
-                      transform: pipeLits[i - 1] ? 'scaleY(1)' : 'scaleY(0)',
-                      transition: pipeLits[i - 1] ? 'transform 1000ms cubic-bezier(0.4,0,0.2,1)' : 'transform 500ms ease-in-out',
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  )
-}
-
-/* ── FAQ item (accordion) ───────────────────────────────────── */
-
 function FaqItem({question, answer, dark = false}: {question: string; answer: string; dark?: boolean}) {
   const [open, setOpen] = useState(true)
   return (
@@ -306,6 +83,63 @@ function FaqItem({question, answer, dark = false}: {question: string; answer: st
     </div>
   )
 }
+
+const CTA_SPAN = {1: 'lg:col-span-1', 2: 'lg:col-span-2', 3: 'lg:col-span-3', 4: 'lg:col-span-4'} as const
+
+function stripArrow(label?: string) {
+  return label?.replace(/\s*→\s*$/, '')
+}
+
+const FALLBACK_ADVANTAGES = [
+  {
+    title: 'Investissement rentable',
+    body: "Une facture énergétique en baisse grâce à une source de chaleur gratuite et renouvelable.",
+    icon: <svg key="icon0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
+  },
+  {
+    title: 'Installation responsable',
+    body: "Une solution respectueuse de l'environnement qui réduit votre empreinte carbone.",
+    icon: <svg key="icon1" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
+  },
+  {
+    title: 'Faible encombrement',
+    body: "Fini les citernes de fioul, les stockages de granulés ou les groupes extérieurs, la géothermie fonctionne sans vous encombrer.",
+    icon: <svg key="icon2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>,
+  },
+  {
+    title: 'Système silencieux',
+    body: "Pas de bruit de combustion ni de ventilation intense, pour un confort acoustique optimal.",
+    icon: <svg key="icon3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>,
+  },
+  {
+    title: 'Équipements durables',
+    body: "Des composants inaltérables conçus pour durer des décennies sans perte d'efficacité.",
+    icon: <svg key="icon4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/></svg>,
+  },
+  {
+    title: 'Entretien minimal',
+    body: "Une solution clé en main pour le chauffage et la climatisation qui nécessite très peu de maintenance.",
+    icon: <svg key="icon5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>,
+  },
+  {
+    title: 'Rendement imbattable',
+    body: "Avec un COP deux fois plus élevé que celui d'une PAC aérothermique, votre système produit jusqu'à 5× plus d'énergie qu'il n'en consomme.",
+    icon: <svg key="icon6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
+  },
+  {
+    title: 'Du chaud, et aussi du froid',
+    body: "La chaleur extraite du sol en hiver refroidit le sol. Ce froid naturel est réutilisé en été pour rafraîchir votre bâtiment, sans frais de climatisation.",
+    icon: <svg key="icon7" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M19.07 4.93L4.93 19.07"/></svg>,
+  },
+]
+
+const ADVANTAGE_ICONS = [
+  ...FALLBACK_ADVANTAGES.map(a => a.icon),
+  /* 8 · house value */
+  <svg key="icon8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg>,
+  /* 9 · emitters (thermometer) */
+  <svg key="icon9" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v10.5M12 22a4 4 0 100-8 4 4 0 000 8z"/><path d="M8 6H6M8 10H5M8 14H6"/></svg>,
+]
 
 // Images come from Sanity, or as a plain public path for pages whose content lives in code (heat pump page)
 function imageUrl(img: unknown): string | undefined {
@@ -330,6 +164,20 @@ export default function GeoPage({
   const heroRightImg = page.heroRightImage
     ? imageUrl(page.heroRightImage) ?? (isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png')
     : isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png'
+
+  const howRef = useRef<HTMLElement>(null)
+  const {phase, reduce} = useLoopPhase(howRef)
+
+  // "1. …" lines become numbered steps; plain text stays as paragraphs
+  const howLines = (page.howBody ?? '').split(/\n+/).map(l => l.trim()).filter(Boolean)
+  const howSteps = howLines.every(l => /^\d+\.\s/.test(l)) ? howLines.map(l => l.replace(/^\d+\.\s+/, '')) : []
+  const howParagraphs = howSteps.length > 0 ? [] : howLines
+
+  const advantageItems = page.advantages && page.advantages.length > 0
+    ? page.advantages.map((a, i) => ({title: a.title ?? '', body: a.body ?? '', icon: ADVANTAGE_ICONS[a.icon ?? i % FALLBACK_ADVANTAGES.length]}))
+    : FALLBACK_ADVANTAGES
+  // The CTA card closes the last row of the 4-column grid (the first item takes a 2×2 block)
+  const ctaSpan = (4 - (Math.max(0, advantageItems.length - 5) % 4)) as 1 | 2 | 3 | 4
 
   const faqs = page.faqs?.length
     ? page.faqs.map((f) => ({question: f.question ?? '', answer: f.answer ?? ''}))
@@ -427,137 +275,106 @@ export default function GeoPage({
         </div>
       </section>
 
-      {/* ══ 3. COMMENT ÇA FONCTIONNE ═════════════════════════════ */}
-      <section className="bg-wdd-clay py-24 px-8 md:px-16">
-        <div className="max-w-screen-2xl mx-auto w-full">
-
-          {/* Scheme (left) + SVG frame (right) */}
-          <div className="grid lg:grid-cols-2 gap-0 items-stretch">
-
-            {/* Left: title (desktop) + vertical animated scheme + CTA */}
-            <div className="flex flex-col order-last lg:order-first">
-              {/* Title visible on desktop only — mobile version is below */}
-              <div className="hidden lg:block mb-12 lg:pr-24">
-                <h2 className="text-4xl font-bold leading-tight">{page.howTitle}</h2>
-              </div>
-              <div className="bg-wdd-clay flex items-center flex-1">
-                <GeoSchemeVertical isOpen={isOpen} locale={locale} />
-              </div>
-              <div className="py-8">
-                <Link
-                  href={getLocalizedPath(locale, 'contact')}
-                  className="flex justify-between w-full lg:w-auto lg:inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
-                >
-                  {page.howCtaLabel ?? 'Démarrer mon projet →'}
-                </Link>
-              </div>
-            </div>
-
-            {/* Right: SVG illustration + technical body */}
-            <div className="bg-wdd-clay flex flex-col py-8 lg:px-8 lg:pb-8 gap-8 order-first lg:order-last">
-              {/* Title visible on mobile only — desktop version is in left column */}
-              <h2 className="lg:hidden text-4xl font-bold leading-tight">{page.howTitle}</h2>
-              <Image
-                src={
-                  page.howIllustration
-                    ? imageUrl(page.howIllustration) ?? (isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg')
-                    : isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg'
-                }
-                alt={isOpen ? 'Illustration géothermie sur nappe' : 'Illustration géothermie fermée'}
-                width={380}
-                height={520}
-                className="w-full lg:w-3/5 h-auto mx-auto"
+      {/* ══ 3. COMMENT ÇA FONCTIONNE — texte et CTA à gauche, schéma à droite (même hauteur) ══ */}
+      <section ref={howRef} className="bg-wdd-clay py-28 md:py-36 px-8 md:px-16">
+        <div className="max-w-screen-2xl mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div>
+            <Reveal>
+              <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-balance">{page.howTitle}</h2>
+            </Reveal>
+            {howSteps.length > 0 ? (
+              <ol className="mt-10">
+                {howSteps.map((step, i) => {
+                  const on = isOpen || phase >= i + 1
+                  return (
+                    <li
+                      key={i}
+                      className={`flex gap-5 py-4 border-t border-black/10 transition-opacity duration-700 ${on ? 'opacity-100' : 'opacity-35'}`}
+                    >
+                      <span className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-colors duration-700 ${on ? 'bg-wdd-yellow text-wdd-black' : 'bg-black/8 text-black/50'}`}>
+                        {i + 1}
+                      </span>
+                      <p className="pt-1 text-base font-light text-black/70 leading-7">{step}</p>
+                    </li>
+                  )
+                })}
+              </ol>
+            ) : (
+              <Reveal delay={0.1} className="mt-8 space-y-5">
+                {howParagraphs.map((para, i) => (
+                  <p key={i} className="text-base font-light text-black/60 leading-8">{para}</p>
+                ))}
+              </Reveal>
+            )}
+            <Reveal delay={0.15}>
+              <ContactCta
+                href={getLocalizedPath(locale, 'contact')}
+                label={stripArrow(page.howCtaLabel) ?? 'Démarrer mon projet'}
+                className="mt-10"
               />
-              {page.howBody && (
-                <p className="w-full text-base font-light text-black/70 leading-8 whitespace-pre-line">
-                  {page.howBody}
-                </p>
-              )}
-            </div>
+            </Reveal>
           </div>
 
+          {isOpen ? (
+            <div className="relative w-full aspect-[380/520] lg:aspect-auto">
+              <Image
+                src={imageUrl(page.howIllustration) ?? '/images/wdd-illustration-geo-ouverte.svg'}
+                alt="Illustration géothermie sur nappe"
+                fill
+                className="object-contain"
+              />
+            </div>
+          ) : (
+            <GroundLoopDiagram phase={phase} reduce={reduce} label={page.howTitle ?? ''} />
+          )}
         </div>
       </section>
 
-      {/* ══ 5. AVANTAGES ════════════════════════════════════════ */}
-      <section className="bg-white py-24 px-8 md:px-16">
+      {/* ══ 5. AVANTAGES — grille bento ═════════════════════════ */}
+      <section className="bg-white py-28 md:py-36 px-8 md:px-16">
         <div className="max-w-screen-2xl mx-auto w-full">
-          <h2 className="text-4xl font-bold leading-tight mb-14">
-            {page.advantagesTitle ?? 'Les avantages de la géothermie'}
-          </h2>
-          {(() => {
-            const FALLBACK_ADVANTAGES = [
-              {
-                title: 'Investissement rentable',
-                body: "Une facture énergétique en baisse grâce à une source de chaleur gratuite et renouvelable.",
-                icon: <svg key="icon0" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>,
-              },
-              {
-                title: 'Installation responsable',
-                body: "Une solution respectueuse de l'environnement qui réduit votre empreinte carbone.",
-                icon: <svg key="icon1" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22s4-8 10-10c4-1.5 8-1 10-1-1 4-3 8-8 10-3.5 1.3-7 1-12 1z"/><path d="M12 12L2 22"/></svg>,
-              },
-              {
-                title: 'Faible encombrement',
-                body: "Fini les citernes de fioul, les stockages de granulés ou les groupes extérieurs, la géothermie fonctionne sans vous encombrer.",
-                icon: <svg key="icon2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>,
-              },
-              {
-                title: 'Système silencieux',
-                body: "Pas de bruit de combustion ni de ventilation intense, pour un confort acoustique optimal.",
-                icon: <svg key="icon3" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>,
-              },
-              {
-                title: 'Équipements durables',
-                body: "Des composants inaltérables conçus pour durer des décennies sans perte d'efficacité.",
-                icon: <svg key="icon4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-4 9-8 10C8 21 4 17 4 12V6l8-4z"/></svg>,
-              },
-              {
-                title: 'Entretien minimal',
-                body: "Une solution clé en main pour le chauffage et la climatisation qui nécessite très peu de maintenance.",
-                icon: <svg key="icon5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>,
-              },
-              {
-                title: 'Rendement imbattable',
-                body: "Avec un COP deux fois plus élevé que celui d'une PAC aérothermique, votre système produit jusqu'à 5× plus d'énergie qu'il n'en consomme.",
-                icon: <svg key="icon6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>,
-              },
-              {
-                title: 'Du chaud, et aussi du froid',
-                body: "La chaleur extraite du sol en hiver refroidit le sol. Ce froid naturel est réutilisé en été pour rafraîchir votre bâtiment, sans frais de climatisation.",
-                icon: <svg key="icon7" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M19.07 4.93L4.93 19.07"/></svg>,
-              },
-            ]
-            const advantageItems = page.advantages && page.advantages.length > 0
-              ? page.advantages.map((a, i) => ({title: a.title ?? '', body: a.body ?? '', icon: FALLBACK_ADVANTAGES[i % FALLBACK_ADVANTAGES.length]?.icon}))
-              : FALLBACK_ADVANTAGES
-            return (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
-                {advantageItems.map(({title, body, icon}, i) => {
-                  const BG = ['bg-wdd-yellow', 'bg-wdd-grass', 'bg-wdd-mud'][i % 3]
-                  return (
-                    <div key={title || i} className="flex flex-col gap-4">
-                      <div className={`w-12 h-12 flex items-center justify-center rounded-sm text-wdd-black shrink-0 ${BG}`}>
-                        {icon}
+          <Reveal>
+            <h2 className="max-w-3xl text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">
+              {page.advantagesTitle ?? 'Les avantages de la géothermie'}
+            </h2>
+          </Reveal>
+          <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-3">
+            {advantageItems.map(({title, body, icon}, i) => {
+              if (i === 0) {
+                return (
+                  <Reveal key={title || i} className="md:col-span-2 lg:row-span-2">
+                    <div className="h-full min-h-[22rem] bg-wdd-yellow rounded-sm p-8 md:p-10 flex flex-col justify-between">
+                      <div className="text-wdd-black [&_svg]:w-8 [&_svg]:h-8">{icon}</div>
+                      <div>
+                        <h3 className="text-3xl md:text-4xl font-bold leading-tight tracking-tight">{title}</h3>
+                        <p className="mt-4 text-base text-black/70 leading-7 max-w-md">{body}</p>
                       </div>
-                      <h3 className="text-base font-bold leading-snug">{title}</h3>
-                      <p className="text-sm font-light text-black/55 leading-relaxed">{body}</p>
                     </div>
-                  )
-                })}
-              </div>
-            )
-          })()}
-          {page.advantagesCtaLabel && (
-            <div className="mt-14">
+                  </Reveal>
+                )
+              }
+              return (
+                <Reveal key={title || i} delay={(i % 4) * 0.06}>
+                  <div className="h-full bg-wdd-clay rounded-sm p-7 flex flex-col gap-6">
+                    <div className="text-wdd-mud [&_svg]:w-7 [&_svg]:h-7">{icon}</div>
+                    <div>
+                      <h3 className="text-lg font-bold leading-snug">{title}</h3>
+                      <p className="mt-2 text-sm font-light text-black/60 leading-6">{body}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              )
+            })}
+            <Reveal className={`md:col-span-2 ${CTA_SPAN[ctaSpan]}`}>
               <Link
                 href={getLocalizedPath(locale, ctaRoute)}
-                className="inline-flex items-center gap-2 bg-wdd-black text-white px-7 py-3.5 text-sm font-bold border-2 border-wdd-black hover:bg-transparent hover:text-wdd-black transition-colors rounded-sm"
+                className="group h-full min-h-[10rem] bg-wdd-black text-white rounded-sm p-7 flex items-end justify-between gap-6 hover:bg-wdd-black/90 transition-colors"
               >
-                {page.advantagesCtaLabel}
+                <span className="text-2xl font-bold leading-tight max-w-xs">{stripArrow(page.advantagesCtaLabel) ?? 'Démarrer mon projet'}</span>
+                <span className="shrink-0 w-12 h-12 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-xl font-bold group-hover:translate-x-1 transition-transform">→</span>
               </Link>
-            </div>
-          )}
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -587,7 +404,7 @@ export default function GeoPage({
       </section>
 
       {/* ══ 6. SEGMENT SELECTION ════════════════════════════════ */}
-      <section className="relative grid grid-cols-2 grid-rows-2" style={{minHeight: '90vh'}}>
+      <section className="relative grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 md:min-h-[90vh]">
 
         {/* Top-left — photo particuliers */}
         <div className="relative overflow-hidden min-h-[45vh]">
@@ -650,7 +467,7 @@ export default function GeoPage({
         </div>
 
         {/* WDD logo centered */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
+        <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none">
           <Image src="/images/wdd_logo_icon_jaune.svg" alt="WDD" width={52} height={52} className="brightness-0 invert" />
         </div>
       </section>

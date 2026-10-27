@@ -6,7 +6,7 @@ export type GeoFaq = {
   answer?: string
 }
 
-export type GeoAdvantage = {_key?: string; title?: string; body?: string}
+export type GeoAdvantage = {_key?: string; title?: string; body?: string; /** index into GeoPage's ADVANTAGE_ICONS, for content written in code */ icon?: number}
 
 export type GeoPageData = {
   _id: string
