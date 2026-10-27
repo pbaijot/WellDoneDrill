@@ -167,7 +167,10 @@ export function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | n
    proportions. House coordinates below are in its own 400-wide design space. */
 const HOUSE = {top: 72, ground: 200, centerX: 210, probeX: 268, pacY: 178, pacH: 16}
 
-// Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 house warm
+// Phase timings (ms): 1 probe down · 2 ground heat · 3 up to the PAC · 4 heating, hot water, radiator
+// Underfloor heating loop on the ground floor, in house design space
+const FLOOR_HEATING = 'M130 195 V189 H137 V195 H144 V189 H151 V195 H158 V189 H165 V195 H172 V189 H179 V195 H186 V189 H193 V195 H200 V189 H207 V195 H214 V189 H221 V195 H228 V189'
+
 export const LOOP_PHASE_AT = [0, 400, 3000, 4400, 5600]
 
 const C = {
@@ -304,6 +307,37 @@ export function GroundLoopDiagram({phase, reduce, label, className = 'aspect-[40
           animate={{fill: phase >= 3 ? C.pac : C.houseDim}}
           transition={{duration: 0.8}}
         />
+
+        {/* Inside, once the heat pump runs: floor between levels, then underfloor heating
+            (ground floor), hot water at the shower, radiator upstairs */}
+        <line x1="126" x2="236" y1="158" y2="158" stroke={C.houseDim} strokeWidth="2" />
+        <path d={FLOOR_HEATING} fill="none" stroke={C.houseDim} strokeWidth="1.5" strokeLinejoin="round" />
+        <motion.path d={FLOOR_HEATING} fill="none" stroke={C.probe} strokeWidth="1.5" strokeLinejoin="round" {...draw(phase >= 4, 1.2)} />
+        <g stroke={C.houseDim} strokeWidth="2" strokeLinecap="round" fill="none">
+          <path d="M132 164 H150 V170" />
+        </g>
+        <motion.rect x="143" y="170" width="14" height="3" rx="1" initial={false} animate={{fill: phase >= 4 ? C.probe : C.houseDim}} transition={{duration: 0.6, delay: reduce ? 0 : 0.4}} />
+        {phase >= 4 && [0, 1, 2].map(i => (
+          <motion.line
+            key={i}
+            x1={145 + i * 5} x2={145 + i * 5}
+            stroke={C.probe} strokeWidth="1.5" strokeLinecap="round"
+            initial={{y1: 176, y2: 180, opacity: 0}}
+            animate={reduce ? {y1: 178, y2: 182, opacity: 1} : {y1: [176, 184], y2: [180, 188], opacity: [0, 1, 0]}}
+            transition={reduce ? {duration: 0} : {duration: 0.9, delay: 0.5 + i * 0.25, repeat: Infinity, ease: 'linear'}}
+          />
+        ))}
+        <motion.rect
+          x="206" y="136" width="22" height="15" rx="1.5"
+          initial={false}
+          animate={{fill: phase >= 4 ? C.probe : C.houseDim}}
+          transition={{duration: 0.8, delay: reduce ? 0 : 0.9}}
+        />
+        <g stroke={C.house} strokeWidth="1">
+          <line x1="211.5" x2="211.5" y1="138" y2="149" />
+          <line x1="217" x2="217" y1="138" y2="149" />
+          <line x1="222.5" x2="222.5" y1="138" y2="149" />
+        </g>
       </g>
 
       {/* Probe rises through the slab into the heat pump */}
