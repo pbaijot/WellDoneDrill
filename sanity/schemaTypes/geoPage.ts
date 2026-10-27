@@ -9,14 +9,20 @@ const geoPage = defineType({
       name: 'locale',
       title: 'Locale',
       type: 'string',
-      options: {list: ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de']},
+      options: {list: ['be-fr', 'be-nl', 'be-en', 'fr-fr', 'fr-en', 'lu-fr', 'lu-de', 'lu-en']},
       validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'routeKey',
       title: 'Route key',
       type: 'string',
-      options: {list: ['geo_fermee', 'geo_ouverte']},
+      options: {
+        list: [
+          {title: 'Géothermie fermée', value: 'geo_fermee'},
+          {title: 'Géothermie ouverte', value: 'geo_ouverte'},
+          {title: 'Pompe à chaleur géothermique', value: 'pac'},
+        ],
+      },
       validation: (rule) => rule.required(),
     }),
 
@@ -67,9 +73,9 @@ const geoPage = defineType({
     }),
 
     defineField({name: 'heroLeftBgImage', title: 'Hero — image fond gauche', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'introImage', title: 'Intro — image', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'howIllustration', title: 'Fonctionnement — illustration', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
+    defineField({name: 'introImage', title: 'Intro — image', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
+    defineField({name: 'howIllustration', title: 'Fonctionnement — illustration', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
     defineField({
       name: 'advantages',
       title: 'Avantages (8 max)',
@@ -81,13 +87,32 @@ const geoPage = defineType({
           fields: [
             defineField({name: 'title', title: 'Titre', type: 'string'}),
             defineField({name: 'body', title: 'Texte', type: 'text', rows: 3}),
+            defineField({
+              name: 'icon',
+              title: 'Icône',
+              type: 'string',
+              options: {
+                list: [
+                  {title: 'Euro (économies)', value: 'euro'},
+                  {title: 'Feuille (écologie)', value: 'leaf'},
+                  {title: 'Encombrement', value: 'compact'},
+                  {title: 'Silence', value: 'silent'},
+                  {title: 'Bouclier (durabilité)', value: 'shield'},
+                  {title: 'Clé (entretien)', value: 'wrench'},
+                  {title: 'Éclair (rendement)', value: 'bolt'},
+                  {title: 'Chaud et froid', value: 'hotcold'},
+                  {title: 'Maison (valeur du bien)', value: 'house'},
+                  {title: 'Thermomètre (émetteurs)', value: 'thermometer'},
+                ],
+              },
+            }),
           ],
         }),
       ],
       validation: (rule) => rule.max(8),
     }),
-    defineField({name: 'particularImage', title: 'Audience particuliers — image', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'proImage', title: 'Audience pro — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'particularImage', title: 'Audience particuliers — image', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
+    defineField({name: 'proImage', title: 'Audience pro — image', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
 
     defineField({name: 'seoTitle', title: 'SEO title', type: 'string'}),
     defineField({name: 'seoDescription', title: 'SEO description', type: 'text', rows: 3}),

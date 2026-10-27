@@ -24,7 +24,7 @@ const proPage = defineType({
       name: 'locale',
       title: 'Locale',
       type: 'string',
-      options: {list: ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de']},
+      options: {list: ['be-fr', 'be-nl', 'be-en', 'fr-fr', 'fr-en', 'lu-fr', 'lu-de', 'lu-en']},
       validation: (r) => r.required(),
       group: 'meta',
     }),
@@ -49,7 +49,7 @@ const proPage = defineType({
     defineField({name: 'heroSubtitle', title: 'Hero — sous-titre', type: 'text', rows: 3, group: 'hero'}),
     defineField({name: 'heroCtaLabel', title: 'Hero — CTA principal', type: 'string', group: 'hero'}),
     defineField({name: 'heroCtaSecondary', title: 'Hero — CTA secondaire', type: 'string', group: 'hero'}),
-    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}, group: 'hero'}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}, group: 'hero', fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
     defineField({
       name: 'heroPanelItems',
       title: 'Hero — panneau flottant (3 stats)',
@@ -69,7 +69,17 @@ const proPage = defineType({
     // ── CONTEXTE ──────────────────────────────────────────────
     defineField({name: 'valueTitle', title: 'Contexte — titre', type: 'string', group: 'context'}),
     defineField({name: 'valueIntro', title: 'Contexte — texte', type: 'text', rows: 4, group: 'context'}),
-    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}, group: 'context'}),
+    defineField({
+      name: 'valueUsps',
+      title: 'Contexte — 3 atouts (icône, titre, une ligne)',
+      type: 'array',
+      of: [{type: 'object', fields: itemFields}],
+      validation: (r) => r.max(3),
+      group: 'context',
+    }),
+    defineField({name: 'valueCtaLabel', title: 'Contexte — bouton', type: 'string', group: 'context'}),
+    defineField({name: 'understandGeoLabel', title: 'Contexte — lien « Comprendre la géothermie »', type: 'string', group: 'context'}),
+    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}, group: 'context', fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
     defineField({
       name: 'contextVideo',
       title: 'Contexte — vidéo (remplace l\'image si présente)',
@@ -115,6 +125,8 @@ const proPage = defineType({
       of: [{type: 'object', fields: itemFields}],
       group: 'partnership',
     }),
+    defineField({name: 'processCtaLabel', title: 'Partenariat — bouton', type: 'string', group: 'partnership'}),
+    defineField({name: 'processImage', title: 'Partenariat — photo (moitié droite)', type: 'image', options: {hotspot: true}, group: 'partnership', fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
 
     // ── FAQ ───────────────────────────────────────────────────
     defineField({name: 'faqTitle', title: 'FAQ — titre', type: 'string', group: 'faq'}),

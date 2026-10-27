@@ -133,6 +133,9 @@ const FALLBACK_ADVANTAGES = [
   },
 ]
 
+// Keys editors pick in Sanity (geoPage.advantages[].icon), in ADVANTAGE_ICONS order
+const ADVANTAGE_ICON_KEYS = ['euro', 'leaf', 'compact', 'silent', 'shield', 'wrench', 'bolt', 'hotcold', 'house', 'thermometer']
+
 const ADVANTAGE_ICONS = [
   ...FALLBACK_ADVANTAGES.map(a => a.icon),
   /* 8 · house value */
@@ -146,6 +149,18 @@ function imageUrl(img: unknown): string | undefined {
   return typeof img === 'string' ? img : urlFor(img)?.url()
 }
 
+function imageAlt(img: unknown): string | undefined {
+  return img && typeof img === 'object' && 'alt' in img && typeof img.alt === 'string' && img.alt ? img.alt : undefined
+}
+
+const ALTS: Record<string, {heroFermee: string; heroOuverte: string; heroPac: string; intro: string; illustration: string; particular: string; pro: string}> = {
+  fr: {heroFermee: 'Forage de géothermie fermée par WellDoneDrill', heroOuverte: 'Géothermie ouverte sur nappe phréatique', heroPac: 'Forage pour une pompe à chaleur géothermique', intro: 'Expert WellDoneDrill sur chantier', illustration: 'Schéma de la géothermie sur nappe : puits de pompage et de réinjection', particular: 'Maison chauffée par géothermie', pro: 'Projet géothermique pour entreprises'},
+  nl: {heroFermee: 'Boring voor gesloten geothermie door WellDoneDrill', heroOuverte: 'Open geothermie op grondwater', heroPac: 'Boring voor een geothermische warmtepomp', intro: 'Expert van WellDoneDrill op de werf', illustration: 'Schema van open geothermie: pomp- en injectieput', particular: 'Woning verwarmd met geothermie', pro: 'Geothermisch project voor bedrijven'},
+  en: {heroFermee: 'Closed-loop geothermal drilling by WellDoneDrill', heroOuverte: 'Open-loop geothermal energy from groundwater', heroPac: 'Drilling for a geothermal heat pump', intro: 'WellDoneDrill expert on site', illustration: 'Open-loop geothermal diagram: pumping and reinjection wells', particular: 'Home heated by geothermal energy', pro: 'Geothermal project for businesses'},
+  de: {heroFermee: 'Bohrung für geschlossene Geothermie von WellDoneDrill', heroOuverte: 'Offene Geothermie mit Grundwasser', heroPac: 'Bohrung für eine Erdwärmepumpe', intro: 'WellDoneDrill-Experte auf der Baustelle', illustration: 'Schema der offenen Geothermie: Förder- und Schluckbrunnen', particular: 'Mit Erdwärme beheiztes Haus', pro: 'Geothermieprojekt für Unternehmen'},
+}
+const LANG_OF: Record<string, string> = {'be-nl': 'nl', 'lu-de': 'de', 'be-en': 'en', 'fr-en': 'en', 'lu-en': 'en'}
+
 /* ── Main page ──────────────────────────────────────────────── */
 
 export default function GeoPage({
@@ -156,6 +171,7 @@ export default function GeoPage({
   locale: AppLocale
 }) {
   const isOpen = page.routeKey === 'geo_ouverte'
+  const alts = ALTS[LANG_OF[locale] ?? 'fr']
   const ctaRoute: RouteKey = isOpen ? 'pro_chauffagistes' : 'contact'
 
   const heroLeftBg = page.heroLeftBgImage
@@ -174,7 +190,7 @@ export default function GeoPage({
   const howParagraphs = howSteps.length > 0 ? [] : howLines
 
   const advantageItems = page.advantages && page.advantages.length > 0
-    ? page.advantages.map((a, i) => ({title: a.title ?? '', body: a.body ?? '', icon: ADVANTAGE_ICONS[a.icon ?? i % FALLBACK_ADVANTAGES.length]}))
+    ? page.advantages.map((a, i) => ({title: a.title ?? '', body: a.body ?? '', icon: ADVANTAGE_ICONS[a.icon && ADVANTAGE_ICON_KEYS.includes(a.icon) ? ADVANTAGE_ICON_KEYS.indexOf(a.icon) : i % FALLBACK_ADVANTAGES.length]}))
     : FALLBACK_ADVANTAGES
   // The CTA card closes the last row of the 4-column grid (the first item takes a 2×2 block)
   const ctaSpan = (4 - (Math.max(0, advantageItems.length - 5) % 4)) as 1 | 2 | 3 | 4
@@ -197,7 +213,7 @@ export default function GeoPage({
 
         {/* Right photo */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
-          <Image src={heroRightImg} alt={isOpen ? 'Géothermie ouverte' : 'Géothermie fermée WellDoneDrill'} fill className="object-cover object-center" priority />
+          <Image src={heroRightImg} alt={imageAlt(page.heroRightImage) ?? (page.routeKey === 'pac' ? alts.heroPac : isOpen ? alts.heroOuverte : alts.heroFermee)} fill className="object-cover object-center" priority />
         </div>
 
         {/* WDD logo divider */}
@@ -266,7 +282,7 @@ export default function GeoPage({
           <div className="relative min-h-[420px] overflow-hidden rounded-sm">
             <Image
               src={page.introImage ? imageUrl(page.introImage) ?? '/images/wdd-expert-forage.webp' : '/images/wdd-expert-forage.webp'}
-              alt="Expert WellDoneDrill sur chantier"
+              alt={imageAlt(page.introImage) ?? alts.intro}
               fill
               className="object-cover object-center"
             />
@@ -329,7 +345,7 @@ export default function GeoPage({
             <div className="relative w-full aspect-[380/520] lg:aspect-auto">
               <Image
                 src={imageUrl(page.howIllustration) ?? '/images/wdd-illustration-geo-ouverte.svg'}
-                alt="Illustration géothermie sur nappe"
+                alt={imageAlt(page.howIllustration) ?? alts.illustration}
                 fill
                 className="object-contain"
               />
@@ -420,7 +436,7 @@ export default function GeoPage({
         <div className="relative overflow-hidden min-h-[45vh]">
           <Image
             src={page.particularImage ? imageUrl(page.particularImage) ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
-            alt="Solutions géothermiques pour particuliers"
+            alt={imageAlt(page.particularImage) ?? alts.particular}
             fill
             className="object-cover object-center"
           />
@@ -469,7 +485,7 @@ export default function GeoPage({
         <div className="relative overflow-hidden min-h-[45vh]">
           <Image
             src={page.proImage ? imageUrl(page.proImage) ?? '/images/wdd-entreprises.webp' : '/images/wdd-entreprises.webp'}
-            alt="Solutions géothermiques pour entreprises"
+            alt={imageAlt(page.proImage) ?? alts.pro}
             fill
             className="object-cover object-center"
           />

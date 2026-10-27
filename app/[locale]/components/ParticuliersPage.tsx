@@ -11,6 +11,7 @@ import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
+import {LANG, V2, type V2T} from '@/src/content/particuliersV2'
 import {Reveal, ContactCta, FaqItem, ContextMedia, GroundLoopDiagram, useLoopPhase, MobileScrollSteps} from './V2Blocks'
 import {
   BELGIUM_PROVINCES,
@@ -313,142 +314,6 @@ const UI = {
 
 type UiT = typeof UI[keyof typeof UI]
 
-/* ─────────────────────────────────────────────
-   V2 COPY (new chrome strings, per language)
-───────────────────────────────────────────── */
-
-type Lang = 'fr' | 'nl' | 'en' | 'de'
-
-const LANG: Record<AppLocale, Lang> = {
-  'be-fr': 'fr', 'fr-fr': 'fr', 'lu-fr': 'fr',
-  'be-nl': 'nl', 'lu-de': 'de',
-  'be-en': 'en', 'fr-en': 'en', 'lu-en': 'en',
-}
-
-type Step = {title: string; body: string}
-
-const V2: Record<Lang, {
-  eyebrow: string
-  ctaStudy: string; ctaSoil: string; ctaQuote: string
-  usps: Step[]
-  principleTitle: string; principleIntro: string
-  principleSteps: Step[]
-  siteTitle: string; siteIntro: string
-  siteSteps: Step[]
-  videoCaption: string
-}> = {
-  fr: {
-    eyebrow: 'Géothermie pour particuliers',
-    usps: [
-      {title: 'Chaud & froid', body: "Une seule installation chauffe l'hiver et rafraîchit l'été."},
-      {title: 'Économique', body: 'Une énergie gratuite sous vos pieds, un coût de chauffage prévisible.'},
-      {title: 'Écologique', body: 'Aucun combustible fossile, aucune émission sur place.'},
-    ],
-    ctaStudy: 'Demander mon analyse gratuite', ctaSoil: 'Vérifier si mon terrain convient', ctaQuote: 'Recevoir mon devis personnalisé',
-    principleTitle: "L'énergie est déjà sous votre jardin.",
-    principleIntro: "À quelques dizaines de mètres de profondeur, le sol garde une température stable toute l'année. Nous allons la chercher.",
-    principleSteps: [
-      {title: 'WellDoneDrill fore', body: 'Nous forons entre 80 et 200 m et y plaçons une boucle fermée de sondes.'},
-      {title: 'Le sol fournit 15 °C', body: 'Été comme hiver, le sous-sol reste à température constante. Cette énergie est gratuite.'},
-      {title: 'La pompe à chaleur amplifie', body: "Pour 1 kWh d'électricité, elle restitue 4 à 5 kWh de chaleur."},
-      {title: 'Votre maison en profite', body: 'Chauffage, eau chaude et fraîcheur en été, avec une seule installation.'},
-    ],
-    siteTitle: 'Comment se passe le chantier chez vous.',
-    siteIntro: "Moins d'une semaine de travaux, une seule équipe pour tout coordonner.",
-    siteSteps: [
-      {title: 'Analyse gratuite', body: "Nous vérifions la faisabilité géologique de votre terrain et dimensionnons l'installation, sans engagement."},
-      {title: 'Permis et primes', body: 'Nous gérons les démarches administratives et vous aidons à monter vos dossiers de primes.'},
-      {title: 'Forage', body: "1 à 2 jours chez vous. La machine a besoin d'un accès de 2,5 m de large, et le terrain est remis en état."},
-      {title: 'Pompe à chaleur', body: 'Un chauffagiste partenaire installe la PAC en 1 à 2 jours. Nous coordonnons les deux équipes.'},
-      {title: 'Mise en service', body: "Moins d'une semaine après le début des travaux, votre maison se chauffe avec l'énergie du sol."},
-    ],
-    videoCaption: 'Forage de sondes géothermiques dans un jardin',
-  },
-  nl: {
-    eyebrow: 'Geothermie voor particulieren',
-    usps: [
-      {title: 'Warm & koel', body: 'Eén installatie verwarmt in de winter en koelt in de zomer.'},
-      {title: 'Voordelig', body: 'Gratis energie onder uw voeten, voorspelbare verwarmingskosten.'},
-      {title: 'Ecologisch', body: 'Geen fossiele brandstof, geen uitstoot ter plaatse.'},
-    ],
-    ctaStudy: 'Mijn gratis analyse aanvragen', ctaSoil: 'Nagaan of mijn terrein geschikt is', ctaQuote: 'Mijn offerte op maat ontvangen',
-    principleTitle: 'De energie zit al onder uw tuin.',
-    principleIntro: 'Op enkele tientallen meters diepte houdt de bodem het hele jaar een stabiele temperatuur. Wij gaan ze halen.',
-    principleSteps: [
-      {title: 'WellDoneDrill boort', body: 'We boren tussen 80 en 200 m en plaatsen er een gesloten lus van sondes.'},
-      {title: 'De bodem levert 15 °C', body: 'Zomer en winter blijft de ondergrond op constante temperatuur. Die energie is gratis.'},
-      {title: 'De warmtepomp versterkt', body: 'Voor 1 kWh elektriciteit levert ze 4 tot 5 kWh warmte.'},
-      {title: 'Uw woning geniet ervan', body: 'Verwarming, warm water en koeling in de zomer, met één installatie.'},
-    ],
-    siteTitle: 'Zo verloopt de werf bij u thuis.',
-    siteIntro: 'Minder dan een week werken, één team dat alles coördineert.',
-    siteSteps: [
-      {title: 'Gratis analyse', body: 'We controleren de geologische haalbaarheid van uw terrein en dimensioneren de installatie, zonder verbintenis.'},
-      {title: 'Vergunning en premies', body: 'We regelen de administratieve stappen en helpen u met uw premiedossiers.'},
-      {title: 'Boring', body: '1 à 2 dagen bij u thuis. De machine heeft een toegang van 2,5 m breed nodig en het terrein wordt hersteld.'},
-      {title: 'Warmtepomp', body: 'Een partner-installateur plaatst de warmtepomp in 1 à 2 dagen. Wij coördineren beide teams.'},
-      {title: 'Ingebruikname', body: 'Minder dan een week na de start van de werken verwarmt uw woning zich met energie uit de bodem.'},
-    ],
-    videoCaption: 'Boring van geothermische sondes in een tuin',
-  },
-  en: {
-    eyebrow: 'Geothermal for homeowners',
-    usps: [
-      {title: 'Heating & cooling', body: 'One system heats in winter and cools in summer.'},
-      {title: 'Economical', body: 'Free energy under your feet, predictable heating costs.'},
-      {title: 'Ecological', body: 'No fossil fuel, no emissions on site.'},
-    ],
-    ctaStudy: 'Request my free analysis', ctaSoil: 'Check if my plot is suitable', ctaQuote: 'Get my personalised quote',
-    principleTitle: 'The energy is already under your garden.',
-    principleIntro: 'A few dozen metres down, the ground keeps a stable temperature all year round. We go and get it.',
-    principleSteps: [
-      {title: 'WellDoneDrill drills', body: 'We drill between 80 and 200 m and install a closed loop of probes.'},
-      {title: 'The ground supplies 15 °C', body: 'Summer and winter, the subsoil stays at a constant temperature. That energy is free.'},
-      {title: 'The heat pump boosts it', body: 'For 1 kWh of electricity, it delivers 4 to 5 kWh of heat.'},
-      {title: 'Your home benefits', body: 'Heating, hot water and cooling in summer, with a single system.'},
-    ],
-    siteTitle: 'How the works go at your home.',
-    siteIntro: 'Less than a week of works, one team coordinating everything.',
-    siteSteps: [
-      {title: 'Free analysis', body: 'We check the geological feasibility of your plot and size the system, with no obligation.'},
-      {title: 'Permits and grants', body: 'We handle the paperwork and help you put together your grant applications.'},
-      {title: 'Drilling', body: '1 to 2 days at your home. The rig needs 2.5 m wide access, and the ground is restored afterwards.'},
-      {title: 'Heat pump', body: 'A partner installer fits the heat pump in 1 to 2 days. We coordinate both teams.'},
-      {title: 'Commissioning', body: 'Less than a week after works begin, your home is heated by energy from the ground.'},
-    ],
-    videoCaption: 'Drilling geothermal probes in a garden',
-  },
-  de: {
-    eyebrow: 'Geothermie für Privatkunden',
-    usps: [
-      {title: 'Wärme & Kühlung', body: 'Eine Anlage heizt im Winter und kühlt im Sommer.'},
-      {title: 'Wirtschaftlich', body: 'Kostenlose Energie unter Ihren Füßen, planbare Heizkosten.'},
-      {title: 'Ökologisch', body: 'Kein fossiler Brennstoff, keine Emissionen vor Ort.'},
-    ],
-    ctaStudy: 'Kostenlose Analyse anfragen', ctaSoil: 'Prüfen, ob mein Grundstück geeignet ist', ctaQuote: 'Mein persönliches Angebot erhalten',
-    principleTitle: 'Die Energie liegt schon unter Ihrem Garten.',
-    principleIntro: 'In einigen Dutzend Metern Tiefe hat der Boden das ganze Jahr über eine stabile Temperatur. Wir holen sie nach oben.',
-    principleSteps: [
-      {title: 'WellDoneDrill bohrt', body: 'Wir bohren zwischen 80 und 200 m und setzen einen geschlossenen Sondenkreislauf ein.'},
-      {title: 'Der Boden liefert 15 °C', body: 'Sommer wie Winter bleibt der Untergrund konstant temperiert. Diese Energie ist kostenlos.'},
-      {title: 'Die Wärmepumpe verstärkt', body: 'Aus 1 kWh Strom macht sie 4 bis 5 kWh Wärme.'},
-      {title: 'Ihr Zuhause profitiert', body: 'Heizung, Warmwasser und Kühlung im Sommer, mit einer einzigen Anlage.'},
-    ],
-    siteTitle: 'So läuft die Baustelle bei Ihnen ab.',
-    siteIntro: 'Weniger als eine Woche Arbeiten, ein Team, das alles koordiniert.',
-    siteSteps: [
-      {title: 'Kostenlose Analyse', body: 'Wir prüfen die geologische Machbarkeit Ihres Grundstücks und dimensionieren die Anlage, unverbindlich.'},
-      {title: 'Genehmigung und Förderung', body: 'Wir erledigen die Formalitäten und helfen Ihnen bei den Förderanträgen.'},
-      {title: 'Bohrung', body: '1 bis 2 Tage bei Ihnen. Die Maschine braucht eine 2,5 m breite Zufahrt, und das Gelände wird wiederhergestellt.'},
-      {title: 'Wärmepumpe', body: 'Ein Partner-Installateur setzt die Wärmepumpe in 1 bis 2 Tagen. Wir koordinieren beide Teams.'},
-      {title: 'Inbetriebnahme', body: 'Weniger als eine Woche nach Baubeginn heizt sich Ihr Zuhause mit Energie aus dem Boden.'},
-    ],
-    videoCaption: 'Bohrung von Erdwärmesonden in einem Garten',
-  },
-}
-
-type V2T = typeof V2[Lang]
-
 // Heating & cooling · economical · ecological, in the order of v.usps
 const USP_ICONS = [SunSnow, PiggyBank, Leaf]
 
@@ -465,7 +330,7 @@ const WHY_ICONS = [
    SUB-COMPONENTS
 ───────────────────────────────────────────── */
 
-function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
+function DepthSection({v, contactHref}: {v: Pick<V2T, 'principleTitle' | 'principleIntro' | 'principleSteps' | 'ctaSoil'>; contactHref: string}) {
   const ref = useRef<HTMLElement>(null)
   const {phase, reduce} = useLoopPhase(ref)
   const steps = v.principleSteps
@@ -525,7 +390,24 @@ export default function ParticuliersPage({
   settings?: GlobalSettingsData | null
 }) {
   const t = UI[locale]
-  const v = V2[LANG[locale]]
+  // Sanity first, the V2 copy in src/content/particuliersV2.ts as fallback
+  const base = V2[LANG[locale]]
+  const items = (list: {title?: string; body?: string}[] | undefined, fallback: {title: string; body: string}[]) =>
+    list && list.length > 0 ? list.map(i => ({title: i.title ?? '', body: i.body ?? ''})) : fallback
+  const v = {
+    ...base,
+    usps: items(page.contextUsps, base.usps),
+    ctaStudy: page.contextCtaLabel ?? base.ctaStudy,
+    principleTitle: page.principleTitle ?? base.principleTitle,
+    principleIntro: page.principleIntro ?? base.principleIntro,
+    principleSteps: items(page.principleSteps, base.principleSteps),
+    ctaSoil: page.principleCtaLabel ?? base.ctaSoil,
+    siteTitle: page.siteTitle ?? base.siteTitle,
+    siteIntro: page.siteIntro ?? base.siteIntro,
+    siteSteps: items(page.siteSteps, base.siteSteps),
+    ctaSite: page.siteCtaLabel ?? base.ctaStudy,
+    ctaQuote: page.calcCtaLabel ?? base.ctaQuote,
+  }
 
   const whyItems =
     page.whyItems && page.whyItems.length > 0 ? page.whyItems : DEFAULT_WHY_ITEMS
@@ -646,7 +528,7 @@ export default function ParticuliersPage({
         <div className="absolute right-0 top-0 bottom-0 w-1/2 z-[2] hidden lg:block">
           <Image
             src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
-            alt="Foreuse WellDoneDrill sur chantier"
+            alt={page.heroRightImage?.alt ?? v.heroImageAlt}
             fill
             className="object-cover object-center"
             priority
@@ -796,15 +678,15 @@ export default function ParticuliersPage({
                 ))}
               </ol>
               <Reveal>
-                <ContactCta href={contactHref} label={v.ctaStudy} className="mt-10" />
+                <ContactCta href={contactHref} label={v.ctaSite} className="mt-10" />
               </Reveal>
             </div>
           </div>
         </div>
         <div className="relative aspect-square lg:aspect-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
           <Image
-            src="/images/wdd-chantier-drone.jpg"
-            alt="Foreuse WellDoneDrill en action dans le jardin d'une maison"
+            src={page.siteImage?.asset ? urlFor(page.siteImage)?.url() ?? '/images/wdd-chantier-drone.jpg' : '/images/wdd-chantier-drone.jpg'}
+            alt={page.siteImage?.alt ?? v.siteImageAlt}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover object-[62%_center]"

@@ -6,29 +6,32 @@ export type GeoFaq = {
   answer?: string
 }
 
-export type GeoAdvantage = {_key?: string; title?: string; body?: string; /** index into GeoPage's ADVANTAGE_ICONS, for content written in code */ icon?: number}
+export type GeoAdvantage = {_key?: string; title?: string; body?: string; /** icon key, see ADVANTAGE_ICON_KEYS in GeoPage */ icon?: string}
+
+/** A Sanity image (with its alt) or, for content written in code, a public path. */
+export type GeoImage = string | {asset?: unknown; alt?: string; hotspot?: unknown; crop?: unknown}
 
 export type GeoPageData = {
   _id: string
   locale: string
-  routeKey: 'geo_fermee' | 'geo_ouverte'
+  routeKey: 'geo_fermee' | 'geo_ouverte' | 'pac'
   heroLine1?: string
   heroLine2?: string
   heroLine3?: string
   heroSubtitle?: string
   heroCtaLabel?: string
   heroSecondaryLabel?: string
-  heroLeftBgImage?: unknown
-  heroRightImage?: unknown
+  heroLeftBgImage?: GeoImage
+  heroRightImage?: GeoImage
   introTitle?: string
   introBody1?: string
   introBody2?: string
   introCtaLabel?: string
-  introImage?: unknown
+  introImage?: GeoImage
   howTitle?: string
   howBody?: string
   howCtaLabel?: string
-  howIllustration?: unknown
+  howIllustration?: GeoImage
   advantagesTitle?: string
   advantagesCtaLabel?: string
   advantages?: GeoAdvantage[]
@@ -40,18 +43,18 @@ export type GeoPageData = {
   particularTitle?: string
   particularBody?: string
   particularCta?: string
-  particularImage?: unknown
+  particularImage?: GeoImage
   proEyebrow?: string
   proTitle?: string
   proBody?: string
   proCta?: string
-  proImage?: unknown
+  proImage?: GeoImage
   seoTitle?: string
   seoDescription?: string
 }
 
 const query = `
-*[_type == "geoPage" && locale == $locale && routeKey == $routeKey][0]{
+*[_type == "geoPage" && locale == $locale && routeKey == $routeKey] | order(_id asc)[0]{
   _id, locale, routeKey,
   heroLine1, heroLine2, heroLine3, heroSubtitle, heroCtaLabel, heroSecondaryLabel,
   heroLeftBgImage, heroRightImage,

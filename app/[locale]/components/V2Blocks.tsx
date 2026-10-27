@@ -82,7 +82,7 @@ export function FaqItem({question, answer, defaultOpen}: {question: string; answ
   )
 }
 
-export function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | null; imageUrl?: string | null; cover?: boolean}) {
+export function ContextMedia({videoUrl, imageUrl, cover, alt = ''}: {videoUrl?: string | null; imageUrl?: string | null; cover?: boolean; alt?: string}) {
   const [muted, setMuted] = useState(true)
   const [paused, setPaused] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -152,7 +152,7 @@ export function ContextMedia({videoUrl, imageUrl, cover}: {videoUrl?: string | n
   return (
     <Image
       src={imageUrl ?? '/images/foreuse-wide.jpg'}
-      alt=""
+      alt={alt}
       fill
       className="object-cover object-center"
     />

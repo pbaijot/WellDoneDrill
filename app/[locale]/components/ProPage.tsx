@@ -10,6 +10,7 @@ import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
+import {LANG, UI_V2, PRO_COPY_FR} from '@/src/content/proV2'
 import {Reveal, ContactCta, FaqItem, ContextMedia} from './V2Blocks'
 import {
   CalendarCheck, EyeOff, FileCheck, FileSignature, Gauge, Handshake, ScanSearch, ShieldCheck, TrendingUp,
@@ -378,147 +379,12 @@ const WHY_ICONS = [
   <svg key="5" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>,
 ]
 
-/* ─────────────────────────────────────────────
-   V2 COPY — written around each segment's primary need
-   HVAC installers: their business runs (more jobs, no friction, client stays theirs)
-   Architects & engineers: a high-performance, innovative solution for their projects
-   Contractors & developers: a reliable drilling partner
-   French only for now; other languages fall back to the CMS / segment defaults.
-───────────────────────────────────────────── */
-
-type Lang = 'fr' | 'nl' | 'en' | 'de'
-
-const LANG: Record<AppLocale, Lang> = {
-  'be-fr': 'fr', 'fr-fr': 'fr', 'lu-fr': 'fr',
-  'be-nl': 'nl', 'lu-de': 'de',
-  'be-en': 'en', 'fr-en': 'en', 'lu-en': 'en',
-}
-
-const UI_V2: Record<Lang, {ctaAnalysis: string; understandGeo: string; startProject: string}> = {
-  fr: {ctaAnalysis: 'Demander une analyse gratuite', understandGeo: 'Comprendre la géothermie', startProject: 'Démarrer un projet'},
-  nl: {ctaAnalysis: 'Gratis analyse aanvragen', understandGeo: 'Geothermie begrijpen', startProject: 'Een project starten'},
-  en: {ctaAnalysis: 'Request a free analysis', understandGeo: 'Understand geothermal energy', startProject: 'Start a project'},
-  de: {ctaAnalysis: 'Kostenlose Analyse anfragen', understandGeo: 'Geothermie verstehen', startProject: 'Projekt starten'},
-}
-
-type Item = {title: string; body: string}
-
-type ProCopy = {
-  heroCtaPrimary?: string
-  heroCtaSecondary?: string
-  heroSubtitle?: string
-  heroPanelItems?: {label: string; value: string; sub?: string}[]
-  contextTitle: string
-  contextIntro: string
-  usps: Item[]
-  whyTitle: string
-  whyItems: Item[]
-  processTitle: string
-  processIntro: string
-  processSteps: Item[]
-}
-
 const USP_ICONS: Record<SegmentKey, LucideIcon[]> = {
   pro_chauffagistes: [TrendingUp, FileCheck, Handshake],
   pro_architectes: [Gauge, EyeOff, ScanSearch],
   pro_entrepreneurs: [CalendarCheck, FileSignature, ShieldCheck],
 }
 
-const PRO_COPY_FR: Record<SegmentKey, ProCopy> = {
-  pro_chauffagistes: {
-    contextTitle: 'Vos clients demandent la géothermie. Soyez prêts à leur répondre.',
-    contextIntro:
-      "Des prix de l'énergie instables et la sortie progressive des chaudières fossiles poussent vos clients vers la géothermie. Avec un partenaire forage fiable, vous pouvez leur dire oui sans changer de métier.",
-    usps: [
-      {title: 'Plus de chantiers', body: 'Une offre que vos concurrents sans foreur ne peuvent pas proposer.'},
-      {title: 'Zéro charge administrative', body: 'Permis, analyse du sous-sol et déclarations sont gérés par WDD.'},
-      {title: 'Votre client reste le vôtre', body: 'Vous restez son unique interlocuteur, WDD fore en sous-traitance.'},
-    ],
-    whyTitle: "Six raisons d'ajouter la géothermie à votre offre.",
-    whyItems: [
-      {title: 'Des chantiers à plus forte valeur', body: "Pour un même client, un projet géothermique représente un chantier plus important qu'une pompe à chaleur air-eau."},
-      {title: 'Zéro friction administrative', body: "WellDoneDrill gère les permis de forage, l'analyse du sous-sol et les déclarations officielles. Vous restez concentré sur votre métier."},
-      {title: 'Un planning sur lequel compter', body: 'Le délai de forage est communiqué dès la signature de votre client, pour que vous planifiiez la pose de la PAC sans attente.'},
-      {title: 'Votre client, votre contrat', body: "Vous restez l'unique interlocuteur de votre client. WellDoneDrill intervient en sous-traitance, en toute discrétion."},
-      {title: 'Des outils pour vendre', body: 'Fiches techniques, supports commerciaux et calculateur d’économies pour présenter la géothermie avec confiance.'},
-      {title: 'Des clients qui viennent à vous', body: 'Les particuliers qui contactent WellDoneDrill cherchent un installateur PAC dans leur région. Nos partenaires sont recommandés en premier.'},
-    ],
-    processTitle: 'Comment fonctionne le partenariat.',
-    processIntro: 'Un fonctionnement simple, pensé pour que votre activité tourne sans accroc.',
-    processSteps: [
-      {title: 'Prise de contact', body: 'Parlez-nous de votre activité et de votre zone d’intervention. Réponse sous 48 h.'},
-      {title: 'Analyse gratuite', body: "Envoyez l'adresse de votre client : nous analysons gratuitement la faisabilité du forage."},
-      {title: 'Forage', body: 'WellDoneDrill fore en 1 à 3 jours, permis et déclarations compris, et remet le terrain en état.'},
-      {title: 'Pose de la PAC', body: "Vous installez la pompe à chaleur dans la foulée et restez l'interlocuteur de votre client."},
-    ],
-  },
-
-  pro_architectes: {
-    heroCtaPrimary: 'Demander une analyse gratuite',
-    heroPanelItems: [
-      {label: 'Résultat PEB standard', value: 'PEB A', sub: 'géothermie fermée, tous projets'},
-      {label: 'Délai analyse préliminaire', value: '72 h', sub: 'rapport PDF livré par email'},
-      {label: 'Impact visuel extérieur', value: 'Zéro', sub: 'pas de groupe, pas de contrainte'},
-    ],
-    heroSubtitle:
-      "WellDoneDrill analyse gratuitement le sous-sol de vos projets dès l'esquisse et vous fournit les pièces techniques pour votre dossier de permis. Sans risque de promesse non tenue.",
-    contextTitle: 'Une solution performante et innovante, sans compromis architectural.',
-    contextIntro:
-      "Vos maîtres d'ouvrage attendent des bâtiments sobres, confortables et durables. La géothermie fermée chauffe et rafraîchit sans groupe extérieur ni nuisance, et s'intègre au projet dès l'esquisse.",
-    usps: [
-      {title: 'Performante', body: 'Chauffage et rafraîchissement à haut rendement, toute l’année.'},
-      {title: 'Invisible', body: 'Aucun groupe extérieur, aucun bruit, aucune contrainte de façade.'},
-      {title: 'Sécurisée dès l’esquisse', body: 'Analyse gratuite du sous-sol avant d’engager le projet.'},
-    ],
-    whyTitle: "Six raisons d'intégrer la géothermie dans vos projets.",
-    whyItems: [
-      {title: 'Une performance énergétique de haut niveau', body: 'La géothermie fermée vise les meilleurs niveaux PEB, en chauffage comme en rafraîchissement.'},
-      {title: 'Aucun compromis architectural', body: "Pas de groupe extérieur, pas d'impact thermique en façade. Vos partis pris architecturaux restent intacts."},
-      {title: "Analyse gratuite dès l'esquisse", body: "Nous analysons le sous-sol de vos projets dès l'esquisse. Vous savez si c'est faisable avant de l'intégrer au programme."},
-      {title: 'Les pièces pour vos dossiers', body: 'Pièces techniques au format attendu par les services urbanistiques, intégrables dans votre note de calcul PEB.'},
-      {title: 'Un dimensionnement précis', body: 'Profondeur et nombre de forages déterminés au plus juste. Empreinte au sol minimisée, planning maîtrisé.'},
-      {title: 'Un ingénieur à vos côtés', body: "Un ingénieur WellDoneDrill suit votre dossier de l'esquisse à la réception, en lien avec votre bureau d'études fluides."},
-    ],
-    processTitle: "De l'esquisse à la réception.",
-    processIntro: 'Quatre étapes pour intégrer la géothermie à votre projet, techniquement et administrativement.',
-    processSteps: [
-      {title: 'Transmission du projet', body: 'Adresse, programme, surfaces et phase du projet. Retour de faisabilité sous 72 h.'},
-      {title: 'Analyse gratuite du sous-sol', body: 'Rapport préliminaire au format PDF, rédigé pour être intégré à votre dossier.'},
-      {title: 'Dimensionnement', body: 'Champ de sondes dimensionné selon le projet, note de calcul pour votre dossier PEB.'},
-      {title: 'Permis et forage', body: 'WellDoneDrill dépose les demandes de permis de forage et réalise les travaux dans le calendrier du chantier.'},
-    ],
-  },
-
-  pro_entrepreneurs: {
-    heroCtaSecondary: 'Voir nos réalisations',
-    contextTitle: 'Un partenaire forage sur qui vous pouvez compter.',
-    contextIntro:
-      'Sur un chantier, le forage ne doit jamais devenir le lot qui bloque les autres. WellDoneDrill s’engage sur un planning, gère ses permis et livre des sondes testées, prêtes à raccorder.',
-    usps: [
-      {title: 'Fiable', body: 'Un planning engagé et respecté, intégré à votre calendrier.'},
-      {title: 'Un seul contrat', body: 'Permis, analyse, forage et remise en état : un seul interlocuteur.'},
-      {title: 'Responsable', body: 'WellDoneDrill assume ses travaux, responsabilité civile comprise.'},
-    ],
-    whyTitle: 'Six raisons de confier vos forages à WellDoneDrill.',
-    whyItems: [
-      {title: 'Des délais tenus', body: 'Intervention en phase gros œuvre, avant les dallages, sans perturber les autres corps de métier.'},
-      {title: 'Un seul contrat, un seul interlocuteur', body: 'Permis, analyse, forage et remise en état du terrain : tout le lot géothermie chez un seul partenaire.'},
-      {title: 'Zéro démarche administrative', body: "WellDoneDrill dépose et suit toutes les demandes d'autorisation de forage."},
-      {title: 'Des sondes prêtes à raccorder', body: 'Sondes livrées testées, terrain remis en état dès la fin du forage.'},
-      {title: 'Un dossier as-built complet', body: "Documentation de réception et certificats pour votre dossier et pour l'acquéreur."},
-      {title: "Des économies d'échelle", body: 'Pour les projets multi-unités, un champ de sondes partagé réduit le coût par logement.'},
-    ],
-    processTitle: "De l'analyse à la remise des clés.",
-    processIntro: "Cinq étapes gérées par WellDoneDrill. Vous nous transmettez l'adresse et le programme, nous faisons le reste.",
-    processSteps: [
-      {title: 'Analyse gratuite', body: "Transmettez l'adresse et le programme : analyse du sous-sol et budget prévisionnel sous 5 jours."},
-      {title: 'Offre et planning', body: 'Offre clé en main, planning intégré à votre calendrier de chantier.'},
-      {title: 'Permis de forage', body: "WellDoneDrill dépose et suit les demandes d'autorisation."},
-      {title: 'Forage', body: 'Intervention en phase gros œuvre, sondes testées, terrain remis en état.'},
-      {title: 'Dossier as-built', body: 'Documentation de réception et certificats remis à la livraison.'},
-    ],
-  },
-}
 
 /* ─────────────────────────────────────────────
    MAP SECTION
@@ -722,17 +588,18 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
     ? page.faqs.map(f => ({question: f.question ?? '', answer: f.answer ?? ''}))
     : d.faqs
 
-  // French uses the V2 copy; other languages keep the CMS content until it is translated
-  const contextTitle = fr?.contextTitle ?? page.valueTitle ?? d.contextTitle
-  const contextIntro = fr?.contextIntro ?? page.valueIntro ?? d.contextBody
-  const usps = fr?.usps ?? []
-  const whyTitle = fr?.whyTitle ?? page.whyTitle ?? d.whyTitle
-  const whyItems: {title?: string; body?: string}[] = fr?.whyItems
-    ?? (page.valueItems && page.valueItems.length > 0 ? page.valueItems : d.whyItems)
-  const processTitle = fr?.processTitle ?? page.partnershipTitle ?? d.etapesTitle
-  const processIntro = fr?.processIntro ?? page.partnershipIntro ?? d.etapesIntro
-  const processSteps: {title?: string; body?: string}[] = fr?.processSteps
-    ?? (page.partnershipSteps && page.partnershipSteps.length > 0 ? page.partnershipSteps : d.etapes)
+  // Sanity first; the V2 copy (src/content/proV2.ts, French) and the segment defaults as fallback
+  const has = <T,>(list?: T[]) => (list && list.length > 0 ? list : undefined)
+  const contextTitle = page.valueTitle ?? fr?.contextTitle ?? d.contextTitle
+  const contextIntro = page.valueIntro ?? fr?.contextIntro ?? d.contextBody
+  const usps: {title?: string; body?: string}[] = has(page.valueUsps) ?? fr?.usps ?? []
+  const whyTitle = page.whyTitle ?? fr?.whyTitle ?? d.whyTitle
+  const whyItems: {title?: string; body?: string}[] = has(page.valueItems) ?? fr?.whyItems ?? d.whyItems
+  const processTitle = page.partnershipTitle ?? fr?.processTitle ?? d.etapesTitle
+  const processIntro = page.partnershipIntro ?? fr?.processIntro ?? d.etapesIntro
+  const processSteps: {title?: string; body?: string}[] = has(page.partnershipSteps) ?? fr?.processSteps ?? d.etapes
+  const ctaAnalysis = page.valueCtaLabel ?? ui.ctaAnalysis
+  const processCta = page.processCtaLabel ?? ui.ctaAnalysis
 
   const contextVideoUrl = page.contextVideo?.asset?.url ?? d.contextVideo ?? null
   const contextImage = page.contextImage ? urlFor(page.contextImage)?.url() ?? d.contextImage : d.contextImage
@@ -764,7 +631,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
         <div className="absolute inset-0 lg:left-auto lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 z-[2]">
           <Image
             src={page.heroRightImage ? urlFor(page.heroRightImage)?.url() ?? d.heroImage : d.heroImage}
-            alt="WellDoneDrill"
+            alt={page.heroRightImage?.alt ?? ui.heroAlt[segment]}
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover object-center"
@@ -774,9 +641,9 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
           <div className="hidden lg:block absolute bottom-8 right-8 z-10">
             <FloatingInfoPanel
               items={
-                fr?.heroPanelItems ?? (page.heroPanelItems && page.heroPanelItems.length > 0
+                (page.heroPanelItems && page.heroPanelItems.length > 0
                   ? page.heroPanelItems.map(i => ({label: i.label ?? '', value: i.value ?? '', sub: i.sub}))
-                  : d.heroPanelItems)
+                  : fr?.heroPanelItems ?? d.heroPanelItems)
               }
             />
           </div>
@@ -796,7 +663,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
             </h1>
 
             <p className="text-base font-normal text-white leading-relaxed max-w-lg mb-10">
-              {fr?.heroSubtitle ?? page.heroSubtitle ?? d.heroSubtitle}
+              {page.heroSubtitle ?? fr?.heroSubtitle ?? d.heroSubtitle}
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -804,13 +671,13 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 href={contactHref}
                 className="bg-wdd-yellow text-wdd-black px-7 py-3.5 text-sm font-bold border-2 border-wdd-yellow hover:bg-transparent hover:text-wdd-yellow transition-colors rounded-sm"
               >
-                {fr?.heroCtaPrimary ?? page.heroCtaLabel ?? d.heroCtaPrimary}
+                {page.heroCtaLabel ?? fr?.heroCtaPrimary ?? d.heroCtaPrimary}
               </Link>
               <Link
                 href={getLocalizedPath(locale, 'references')}
                 className="px-7 py-3.5 text-sm font-semibold border-2 border-white/30 text-white/80 hover:border-white hover:text-white transition-colors rounded-sm"
               >
-                {fr?.heroCtaSecondary ?? page.heroCtaSecondary ?? d.heroCtaSecondary}
+                {page.heroCtaSecondary ?? fr?.heroCtaSecondary ?? d.heroCtaSecondary}
               </Link>
             </div>
 
@@ -847,12 +714,12 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
               </div>
             )}
             <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-              <ContactCta href={contactHref} label={ui.ctaAnalysis} />
+              <ContactCta href={contactHref} label={ctaAnalysis} />
               <Link
                 href={getLocalizedPath(locale, 'geo_fermee')}
                 className="group inline-flex items-center gap-2 text-sm font-bold text-wdd-black underline underline-offset-4 decoration-wdd-yellow decoration-2 hover:text-wdd-mud transition-colors"
               >
-                {ui.understandGeo}
+                {page.understandGeoLabel ?? ui.understandGeo}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </Link>
             </Reveal>
@@ -860,7 +727,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
 
           {/* Same height as the text column: the media is cropped in width only */}
           <Reveal delay={0.1} className="relative overflow-hidden rounded-sm bg-wdd-clay aspect-video lg:aspect-auto">
-            <ContextMedia videoUrl={contextVideoUrl} imageUrl={contextImage} cover />
+            <ContextMedia videoUrl={contextVideoUrl} imageUrl={contextImage} cover alt={page.contextImage?.alt ?? ui.processAlt} />
           </Reveal>
         </div>
       </section>
@@ -906,7 +773,7 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 href={contactHref}
                 className="group h-full min-h-[10rem] bg-wdd-black text-white rounded-sm p-7 flex items-end justify-between gap-6 hover:bg-wdd-black/90 transition-colors"
               >
-                <span className="text-2xl font-bold leading-tight max-w-xs">{ui.startProject}</span>
+                <span className="text-2xl font-bold leading-tight max-w-xs">{page.whyCtaLabel ?? ui.startProject}</span>
                 <span className="shrink-0 w-12 h-12 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-xl font-bold group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </Reveal>
@@ -941,15 +808,15 @@ export default function ProPage({page, locale, chantiers = [], settings}: {page:
                 ))}
               </ol>
               <Reveal>
-                <ContactCta href={contactHref} label={ui.ctaAnalysis} className="mt-10" />
+                <ContactCta href={contactHref} label={processCta} className="mt-10" />
               </Reveal>
             </div>
           </div>
         </div>
         <div className="relative aspect-square lg:aspect-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2">
           <Image
-            src="/images/wdd-chantier-drone.jpg"
-            alt="Foreuse WellDoneDrill en action sur un chantier"
+            src={page.processImage?.asset ? urlFor(page.processImage)?.url() ?? '/images/wdd-chantier-drone.jpg' : '/images/wdd-chantier-drone.jpg'}
+            alt={page.processImage?.alt ?? ui.processAlt}
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover object-[62%_center]"

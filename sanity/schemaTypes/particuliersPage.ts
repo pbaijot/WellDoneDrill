@@ -14,7 +14,7 @@ const particuliersPage = defineType({
       name: 'locale',
       title: 'Locale',
       type: 'string',
-      options: {list: ['be-fr', 'be-nl', 'fr-fr', 'lu-fr', 'lu-de']},
+      options: {list: ['be-fr', 'be-nl', 'be-en', 'fr-fr', 'fr-en', 'lu-fr', 'lu-de', 'lu-en']},
       validation: (r) => r.required(),
     }),
 
@@ -23,7 +23,7 @@ const particuliersPage = defineType({
     defineField({name: 'heroCtaDevisLabel', title: 'Hero — CTA devis', type: 'string'}),
     defineField({name: 'heroCtaCalculLabel', title: 'Hero — CTA calculateur', type: 'string'}),
     defineField({name: 'heroLeftBgImage', title: 'Hero — image fond gauche', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'heroRightImage', title: 'Hero — image droite', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
     defineField({
       name: 'heroPanelItems',
       title: 'Hero — panneau flottant (3 items)',
@@ -39,7 +39,7 @@ const particuliersPage = defineType({
       validation: (r) => r.max(3),
     }),
 
-    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}}),
+    defineField({name: 'contextImage', title: 'Contexte — image', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
     defineField({
       name: 'contextVideo',
       title: 'Contexte — vidéo (remplace l\'image si présente)',
@@ -63,6 +63,39 @@ const particuliersPage = defineType({
       ],
       validation: (r) => r.max(3),
     }),
+
+    defineField({
+      name: 'contextUsps',
+      title: 'Contexte — 3 atouts (icône, titre, une ligne)',
+      type: 'array',
+      of: [defineField({name: 'usp', type: 'object', fields: itemFields})],
+      validation: (r) => r.max(3),
+    }),
+    defineField({name: 'contextCtaLabel', title: 'Contexte — bouton', type: 'string'}),
+
+    defineField({name: 'principleTitle', title: 'Principe — titre', type: 'string'}),
+    defineField({name: 'principleIntro', title: 'Principe — intro', type: 'text', rows: 3}),
+    defineField({
+      name: 'principleSteps',
+      title: 'Principe — 4 étapes (synchronisées avec le schéma animé)',
+      type: 'array',
+      of: [defineField({name: 'step', type: 'object', fields: itemFields})],
+      validation: (r) => r.max(4),
+    }),
+    defineField({name: 'principleCtaLabel', title: 'Principe — bouton', type: 'string'}),
+
+    defineField({name: 'siteTitle', title: 'Chantier — titre', type: 'string'}),
+    defineField({name: 'siteIntro', title: 'Chantier — intro', type: 'text', rows: 3}),
+    defineField({
+      name: 'siteSteps',
+      title: 'Chantier — étapes',
+      type: 'array',
+      of: [defineField({name: 'step', type: 'object', fields: itemFields})],
+    }),
+    defineField({name: 'siteCtaLabel', title: 'Chantier — bouton', type: 'string'}),
+    defineField({name: 'siteImage', title: 'Chantier — photo (moitié droite)', type: 'image', options: {hotspot: true}, fields: [defineField({name: 'alt', title: 'Texte alternatif (SEO, accessibilité)', type: 'string'})]}),
+
+    defineField({name: 'calcCtaLabel', title: 'Calculateur — bouton sous le résultat', type: 'string'}),
 
     defineField({name: 'whyTitle', title: 'Pourquoi — titre', type: 'string'}),
     defineField({name: 'whyIntro', title: 'Pourquoi — intro', type: 'text', rows: 4}),

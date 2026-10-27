@@ -64,9 +64,9 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
       hasContent = !!p
     } else if (routeKey === 'pac') {
-      // Heat pump page: content lives in code (src/content/pacGeoContent.ts)
-      const p = getPacGeoContent(locale)
-      cmsTitle = p.seoTitle; cmsDesc = p.seoDescription
+      // Heat pump page: geoPage document (routeKey 'pac'), code content as fallback
+      const p = (await getGeoPage(locale, 'pac')) ?? getPacGeoContent(locale)
+      cmsTitle = p.seoTitle || undefined; cmsDesc = p.seoDescription || undefined
     } else if (routeKey === 'particuliers') {
       const p = await getParticuliersPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
@@ -261,7 +261,8 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'pac') {
-    return <GeoPage page={getPacGeoContent(locale)} locale={locale} />
+    const page = await getGeoPage(locale, 'pac').catch(() => null)
+    return <GeoPage page={page ?? getPacGeoContent(locale)} locale={locale} />
   }
 
   if (routeKey === 'particuliers') {

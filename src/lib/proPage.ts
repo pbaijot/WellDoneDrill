@@ -3,6 +3,7 @@ import {sanity} from './sanity'
 export type ProItem = {_key?: string; title?: string; body?: string}
 export type ProFaq = {_key?: string; question?: string; answer?: string}
 export type ProPanelItem = {_key?: string; label?: string; value?: string; sub?: string}
+export type ProImage = {asset?: unknown; alt?: string; hotspot?: unknown; crop?: unknown}
 export type ProSchemeNode = {_key?: string; label?: string; sub?: string; stat?: string}
 
 export type ProPageData = {
@@ -14,11 +15,14 @@ export type ProPageData = {
   heroSubtitle?: string
   heroCtaLabel?: string
   heroCtaSecondary?: string
-  heroRightImage?: unknown
+  heroRightImage?: ProImage
   heroPanelItems?: ProPanelItem[]
   valueTitle?: string
   valueIntro?: string
-  contextImage?: unknown
+  valueUsps?: ProItem[]
+  valueCtaLabel?: string
+  understandGeoLabel?: string
+  contextImage?: ProImage
   contextVideo?: {asset?: {url?: string}}
   schemeNodes?: ProSchemeNode[]
   whyTitle?: string
@@ -27,6 +31,8 @@ export type ProPageData = {
   partnershipTitle?: string
   partnershipIntro?: string
   partnershipSteps?: ProItem[]
+  processCtaLabel?: string
+  processImage?: ProImage
   faqTitle?: string
   faqSubtitle?: string
   faqCtaLabel?: string
@@ -36,16 +42,16 @@ export type ProPageData = {
 }
 
 const query = `
-*[_type == "proPage" && locale == $locale && routeKey == $routeKey][0]{
+*[_type == "proPage" && locale == $locale && routeKey == $routeKey] | order(_id asc)[0]{
   _id, locale, routeKey,
   heroEyebrow, heroTitle, heroSubtitle, heroCtaLabel, heroCtaSecondary,
   heroRightImage, heroPanelItems,
-  valueTitle, valueIntro,
+  valueTitle, valueIntro, valueUsps, valueCtaLabel, understandGeoLabel,
   contextImage,
   contextVideo { asset-> { url } },
   schemeNodes,
   whyTitle, valueItems, whyCtaLabel,
-  partnershipTitle, partnershipIntro, partnershipSteps,
+  partnershipTitle, partnershipIntro, partnershipSteps, processCtaLabel, processImage,
   faqTitle, faqSubtitle, faqCtaLabel, faqs,
   seoTitle, seoDescription
 }
