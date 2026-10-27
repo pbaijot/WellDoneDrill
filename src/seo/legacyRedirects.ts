@@ -36,6 +36,8 @@ const EN_REF = '/be-en/geothermal-projects-belgium'
 const provinceRedirects: Redirect[] = PROVINCES.flatMap(([fr, nl, oldFr, oldNl, oldEn]) => [
   r(`/be-fr/:base(references|realisations-geothermie-belgique)/nos-references-${oldFr}`, `${FR_REF}/${fr}`),
   r(`/be-nl/:base(referenties|referenties-2)/onze-referenties-in-${oldNl}`, `${NL_REF}/${nl}`),
+  // NL province pages also lived at the root of /be-nl
+  r(`/be-nl/onze-referenties-in-${oldNl}`, `${NL_REF}/${nl}`),
   r(`/en/:base(references|references-2)/our-references-in-${oldEn}`, `${EN_REF}/${fr}`),
 ])
 
@@ -171,6 +173,9 @@ const blogRedirects: Redirect[] = [
 
 const pageRedirects: Redirect[] = [
   // be-fr
+  r('/be-fr/accueil', '/be-fr'),
+  r('/be-fr/confirmation', '/be-fr/contact'),
+  r('/be-fr/confirmation-job-business-developer-geothermie', '/be-fr/a-propos'),
   r('/be-fr/references', FR_REF),
   r('/be-fr/references-avec-carte-interactive', FR_REF),
   r('/be-fr/politique-de-confidentialite', '/be-fr/politique-confidentialite'),
@@ -179,6 +184,8 @@ const pageRedirects: Redirect[] = [
   r('/be-nl/:base(referenties|referenties-2)/referenties-2', NL_REF),
   r('/be-nl/referenties-2', NL_REF),
   r('/be-nl/neem-contact-op-met', '/be-nl/contact'),
+  r('/be-nl/accueil-nederlands', '/be-nl'),
+  r('/be-nl/bevestiging-job-geothermische-business-developer', '/be-nl/over-ons'),
   r('/be-nl/:p(jobs|jobpost)/:path*', '/be-nl/over-ons'),
 
   // Older language-only prefixes (/nl, /de, /en, /lu) → country-locale routes
