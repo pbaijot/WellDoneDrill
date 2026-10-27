@@ -22,8 +22,9 @@ const COUNTRY: Record<AppLocale, string> = {
   'be-en': 'in Belgium', 'fr-en': 'in France', 'lu-en': 'in Luxembourg',
 }
 
-type Copy = Omit<GeoPageData, '_id' | 'locale' | 'routeKey' | 'seoTitle'> & {
+type Copy = Omit<GeoPageData, '_id' | 'locale' | 'routeKey' | 'seoTitle' | 'seoDescription'> & {
   seoTitle: (country: string) => string
+  seoDescription: (country: string) => string
 }
 
 const IMAGES = {
@@ -33,8 +34,8 @@ const IMAGES = {
 const COPY: Record<Lang, Copy> = {
   fr: {
     seoTitle: (c) => `Pompe à chaleur géothermique ${c} | WellDoneDrill`,
-    seoDescription:
-      "Pompe à chaleur géothermique : chauffez et rafraîchissez avec l'énergie du sol, sans groupe extérieur. Forage et analyse gratuite par WellDoneDrill.",
+    seoDescription: (c) =>
+      `Pompe à chaleur géothermique ${c} : chauffez et rafraîchissez avec l'énergie du sol, sans groupe extérieur. Forage et analyse gratuite.`,
     heroLine1: 'Pompe à chaleur géothermique :',
     heroLine2: "l'énergie du sol, été comme hiver.",
     heroSubtitle:
@@ -86,8 +87,8 @@ const COPY: Record<Lang, Copy> = {
 
   nl: {
     seoTitle: (c) => `Geothermische warmtepomp ${c} | WellDoneDrill`,
-    seoDescription:
-      'Geothermische warmtepomp: verwarmen en koelen met energie uit de bodem, zonder buitenunit. Boring en gratis analyse door WellDoneDrill.',
+    seoDescription: (c) =>
+      `Geothermische warmtepomp ${c}: verwarmen en koelen met energie uit de bodem, zonder buitenunit. Boring en gratis analyse.`,
     heroLine1: 'Geothermische warmtepomp:',
     heroLine2: 'energie uit de bodem, zomer en winter.',
     heroSubtitle:
@@ -139,8 +140,8 @@ const COPY: Record<Lang, Copy> = {
 
   en: {
     seoTitle: (c) => `Geothermal heat pump ${c} | WellDoneDrill`,
-    seoDescription:
-      'Geothermal heat pump: heat and cool with energy from the ground, with no outdoor unit. Drilling and free analysis by WellDoneDrill.',
+    seoDescription: (c) =>
+      `Geothermal heat pump ${c}: heat and cool with energy from the ground, with no outdoor unit. Drilling and free analysis.`,
     heroLine1: 'Geothermal heat pump:',
     heroLine2: 'energy from the ground, all year round.',
     heroSubtitle:
@@ -192,8 +193,8 @@ const COPY: Record<Lang, Copy> = {
 
   de: {
     seoTitle: (c) => `Erdwärmepumpe ${c} | WellDoneDrill`,
-    seoDescription:
-      'Erdwärmepumpe: heizen und kühlen mit Energie aus dem Boden, ohne Außengerät. Bohrung und kostenlose Analyse durch WellDoneDrill.',
+    seoDescription: (c) =>
+      `Erdwärmepumpe ${c}: heizen und kühlen mit Energie aus dem Boden, ohne Außengerät. Bohrung und kostenlose Analyse.`,
     heroLine1: 'Erdwärmepumpe:',
     heroLine2: 'Energie aus dem Boden, das ganze Jahr.',
     heroSubtitle:
@@ -245,7 +246,7 @@ const COPY: Record<Lang, Copy> = {
 }
 
 export function getPacGeoContent(locale: AppLocale): GeoPageData {
-  const {seoTitle, ...copy} = COPY[LANG[locale]]
+  const {seoTitle, seoDescription, ...copy} = COPY[LANG[locale]]
   return {
     ...copy,
     ...IMAGES,
@@ -253,5 +254,6 @@ export function getPacGeoContent(locale: AppLocale): GeoPageData {
     locale,
     routeKey: 'pac',
     seoTitle: seoTitle(COUNTRY[locale]),
+    seoDescription: seoDescription(COUNTRY[locale]),
   }
 }

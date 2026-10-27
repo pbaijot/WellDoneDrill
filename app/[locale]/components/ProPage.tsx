@@ -102,7 +102,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     whyCtaLabel: "Démarrer mon projet",
     whyItems: [
       {title: "Revenu par projet multiplié", body: "Un chantier géothermique génère en moyenne 2 à 3 fois plus qu'une installation PAC air-air. Même client, même surface — plus de valeur créée, plus de marge pour vous."},
-      {title: "Zéro friction administrative", body: "WellDoneDrill gère les permis de forage, les études de sol et les déclarations officielles. Vous restez concentré sur votre cœur de métier."},
+      {title: "Zéro friction administrative", body: "WellDoneDrill gère les permis de forage, les analyses de sol et les déclarations officielles. Vous restez concentré sur votre cœur de métier."},
       {title: "Planning prioritaire garanti", body: "Nos partenaires installateurs sont prioritaires dans notre carnet de chantiers. Le délai de forage est communiqué et contractuellement respecté dès la signature de votre client."},
       {title: "Kit commercial clé en main", body: "Brochures, fiches techniques, calculateurs d'économies adaptés à vos clients : tout pour que vous puissiez présenter et vendre la géothermie avec confiance."},
       {title: "La législation dans votre sens", body: "L'interdiction des chaudières gaz dès 2026 crée une demande que vos concurrents sans partenaire forage ne peuvent pas satisfaire. Prenez de l'avance maintenant."},
@@ -142,13 +142,13 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     heroEyebrow: "Architectes & bureaux d'études",
     heroTitle: "Dimensionnez la géothermie\ndès la conception.",
     heroSubtitle:
-      "WellDoneDrill fournit l'étude géologique préliminaire dont vous avez besoin pour intégrer la géothermie dans vos projets dès l'esquisse — sans risque de promesse non tenue, avec les pièces techniques pour votre dossier de permis.",
-    heroCtaPrimary: "Demander une étude préliminaire",
+      "WellDoneDrill fournit l'analyse géologique préliminaire dont vous avez besoin pour intégrer la géothermie dans vos projets dès l'esquisse — sans risque de promesse non tenue, avec les pièces techniques pour votre dossier de permis.",
+    heroCtaPrimary: "Demander une analyse préliminaire",
     heroCtaSecondary: "Voir nos réalisations",
     heroImage: '/images/abricotiers-2.jpg',
     heroPanelItems: [
       {label: 'Résultat PEB standard', value: 'PEB A', sub: 'géothermie fermée, tous projets'},
-      {label: 'Délai étude préliminaire', value: '72 h', sub: 'rapport PDF livré par email'},
+      {label: 'Délai analyse préliminaire', value: '72 h', sub: 'rapport PDF livré par email'},
       {label: 'Impact visuel extérieur', value: 'Zéro', sub: 'pas de groupe, pas de contrainte'},
     ],
     contextEyebrow: 'Contexte réglementaire',
@@ -163,10 +163,10 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     contextImage: '/images/abricotiers-2.jpg',
     contextVideo: '/videos/abricotiers.mp4',
     whyTitle: "Six bonnes raisons d'intégrer la géothermie dans vos projets.",
-    whyCtaLabel: "Demander une étude",
+    whyCtaLabel: "Demander une analyse",
     whyItems: [
       {title: "PEB A sans compromis architecturaux", body: "La géothermie fermée ne génère aucune contrainte visuelle. Pas de groupe extérieur, pas d'impact thermique en façade. Vos partis pris architecturaux restent intacts."},
-      {title: "Étude préliminaire gratuite à l'esquisse", body: "WDD réalise l'analyse du sous-sol de vos projets dès l'esquisse. Vous savez si c'est faisable avant de l'intégrer dans votre programme."},
+      {title: "Analyse préliminaire gratuite à l'esquisse", body: "WDD réalise l'analyse du sous-sol de vos projets dès l'esquisse. Vous savez si c'est faisable avant de l'intégrer dans votre programme."},
       {title: "Documentation pour permis et PEB", body: "Nous fournissons les pièces techniques au format attendu par les services urbanistiques belges et luxembourgeois — intégrables directement dans votre note de calcul PEB."},
       {title: "Dimensionnement précis, pas de surprises", body: "Notre modélisation géologique détermine la profondeur et le nombre de forages exactement nécessaires. Empreinte au sol minimisée, planning maîtrisé."},
       {title: "Interlocuteur technique dédié", body: "Un ingénieur WDD suit votre dossier de l'esquisse à la réception. Disponible pour vos questions, vos coordinateurs de sécurité et vos BE fluides."},
@@ -176,7 +176,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     etapesIntro: "Quatre étapes claires pour intégrer la géothermie dans votre projet architecturalement et administrativement.",
     etapes: [
       {title: "Soumission du projet", body: "Transmettez l'adresse et les données de base : type de projet, surface, nombre d'unités, phase. Retour de faisabilité sous 72h."},
-      {title: "Étude géologique préliminaire", body: "Analyse des données géologiques belges et luxembourgeoises. Rapport préliminaire livré au format PDF, rédigé pour être intégré à votre dossier."},
+      {title: "Analyse géologique préliminaire", body: "Analyse des données géologiques belges et luxembourgeoises. Rapport préliminaire livré au format PDF, rédigé pour être intégré à votre dossier."},
       {title: "Dimensionnement intégré", body: "WDD dimensionne le champ de sondes en fonction du projet architectural. Note de calcul intégrée à votre dossier PEB et à votre plan de masse."},
       {title: "Permis & réalisation", body: "WDD dépose et suit les demandes de permis de forage. Réalisation dans le calendrier de chantier, coordination directe avec votre maître d'œuvre."},
     ],
@@ -208,7 +208,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     heroSubtitle:
       "WellDoneDrill prend en charge le forage géothermique de vos chantiers résidentiels et tertiaires — permis, géologie, réalisation, documentation as-built. Vous bâtissez, nous forons.",
     heroCtaPrimary: "Démarrer un projet géothermique",
-    heroCtaSecondary: "Demander une étude",
+    heroCtaSecondary: "Demander une analyse",
     heroImage: '/images/abricotiers.jpg',
     heroPanelItems: [
       {label: 'Valorisation vente avec géothermie', value: '+8–12 %', sub: 'vs logement PAC air-air'},
@@ -230,7 +230,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     whyItems: [
       {title: "Premium de valeur mesurable", body: "En Belgique, un logement géothermique se revend en moyenne 8 à 12 % plus cher qu'un équivalent PAC air-air. Le surcoût de forage est généralement amorti dès la première transaction."},
       {title: "PEB A — l'argument qui ferme", body: "Un certificat PEB A est devenu un critère de décision pour les acheteurs et locataires premium. La géothermie y conduit systématiquement, sans exception ni aléa."},
-      {title: "Sous-traitant responsable, un contrat", body: "WDD prend en charge les permis, études, forage et remise en état du terrain. Un seul contrat, une seule garantie, un seul interlocuteur pour tout le volet géothermique."},
+      {title: "Sous-traitant responsable, un contrat", body: "WDD prend en charge les permis, analyses, forage et remise en état du terrain. Un seul contrat, une seule garantie, un seul interlocuteur pour tout le volet géothermique."},
       {title: "Planning intégré à votre chantier", body: "Nous intervenons en phase gros œuvre, avant les dallages, sans perturber les autres corps de métier. Les délais sont contractuellement engagés."},
       {title: "Économies d'échelle pour les lotissements", body: "Pour les projets multi-unités, WDD optimise un champ de sondes partagé : même puissance, moins de mètres forés. Le coût par unité diminue significativement avec le volume."},
       {title: "Matériel marketing inclus", body: "WDD fournit les données chiffrées, certifications et labels pour intégrer la géothermie dans votre communication promotionnelle. Un argument de vente documenté et crédible."},
@@ -238,7 +238,7 @@ const SEGMENT_DEFAULTS: Record<SegmentKey, SegmentDefaults> = {
     etapesTitle: "De la faisabilité à la remise des clés.",
     etapesIntro: "Cinq étapes entièrement gérées par WDD. Votre seul travail : nous transmettre l'adresse et le programme.",
     etapes: [
-      {title: "Étude de faisabilité", body: "Transmettez l'adresse et le programme. WDD analyse la géologie et remet une étude avec budget prévisionnel sous 5 jours."},
+      {title: "Analyse de faisabilité", body: "Transmettez l'adresse et le programme. WDD analyse la géologie et remet une analyse avec budget prévisionnel sous 5 jours."},
       {title: "Devis & planning", body: "Offre clé en main (forage + permis + coordination). Planning intégré à votre calendrier de chantier."},
       {title: "Permis de forage", body: "WDD dépose et suit toutes les demandes d'autorisation. Zéro démarche administrative de votre côté."},
       {title: "Forage & mise en service", body: "Intervention en phase gros œuvre. Remise en état du terrain immédiate. Sondes livrées testées et prêtes à raccorder."},

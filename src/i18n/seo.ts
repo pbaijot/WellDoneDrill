@@ -6,15 +6,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'be-fr': {
     home: {
       title: 'WellDoneDrill — Forage géothermique & Pompes à chaleur en Belgique',
-      description: "Spécialiste belge du forage géothermique. Étude de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique. Réponse sous 48h.",
+      description: "Spécialiste belge du forage géothermique. Analyse de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique. Réponse sous 48h.",
     },
     particuliers: {
       title: 'Géothermie pour particuliers en Belgique — WellDoneDrill | Chauffage −70%',
-      description: "Chauffez votre maison à −70% de coût avec la géothermie. Étude gratuite, permis inclus, installation clé en main. Votre spécialiste belge du forage géothermique.",
+      description: "Chauffez votre maison à −70% de coût avec la géothermie. Analyse gratuite, permis inclus, installation clé en main. Votre spécialiste belge du forage géothermique.",
     },
     pro: {
       title: 'Solutions géothermiques pour professionnels en Belgique — WellDoneDrill',
-      description: "Partenaire géothermique des installateurs, architectes et promoteurs belges. Sous-traitance forage, études techniques, certifications — développez votre activité géothermie.",
+      description: "Partenaire géothermique des installateurs, architectes et promoteurs belges. Sous-traitance forage, analyses techniques, certifications — développez votre activité géothermie.",
     },
     pro_chauffagistes: {
       title: 'Géothermie pour chauffagistes en Belgique — WellDoneDrill | Sous-traitance',
@@ -22,11 +22,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: "Géothermie pour architectes & bureaux d'études en Belgique — WellDoneDrill",
-      description: "Intégrez la géothermie dans vos projets dès la conception. Dimensionnement, études techniques et certifications — WellDoneDrill, votre partenaire géothermie.",
+      description: "Intégrez la géothermie dans vos projets dès la conception. Dimensionnement, analyses techniques et certifications — WellDoneDrill, votre partenaire géothermie.",
     },
     pro_entrepreneurs: {
       title: 'Géothermie pour promoteurs immobiliers en Belgique — WellDoneDrill',
-      description: "Valorisez vos projets avec la géothermie. De A à Z : étude, permis, forage, raccordement. ROI optimisé et labels énergétiques garantis.",
+      description: "Valorisez vos projets avec la géothermie. De A à Z : analyse, permis, forage, raccordement. ROI optimisé et labels énergétiques garantis.",
     },
     geo_fermee: {
       title: 'Géothermie fermée (sondes verticales) en Belgique — WellDoneDrill | Forage PAC',
@@ -46,7 +46,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill Belgique',
-      description: "Obtenez votre étude de faisabilité gratuite et sans engagement. Forage géothermique en Belgique — réponse sous 48h. WellDoneDrill, de l'étude au raccordement.",
+      description: "Obtenez votre analyse de faisabilité gratuite et sans engagement. Forage géothermique en Belgique — réponse sous 48h. WellDoneDrill, de l'analyse au raccordement.",
     },
     references: {
       title: 'Nos réalisations géothermiques en Belgique — WellDoneDrill | Références',
@@ -54,7 +54,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Géothermie en Belgique — Forage fermé & ouvert | WellDoneDrill',
-      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) en Belgique. WellDoneDrill fore vos sondes — étude gratuite, permis, installation PAC clé en main.",
+      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) en Belgique. WellDoneDrill fore vos sondes — analyse gratuite, permis, installation PAC clé en main.",
     },
     blog: {
       title: 'Blog géothermie & forage géothermique en Belgique — WellDoneDrill',
@@ -77,15 +77,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'be-nl': {
     home: {
       title: 'WellDoneDrill — Geothermische boring & Warmtepompen in België',
-      description: "Belgische specialist in geothermische boringen. Gratis haalbaarheidstudie, vergunning, warmtepomp installatie van A tot Z. Bespaar tot 70% op uw energiefactuur.",
+      description: "Belgische specialist in geothermische boringen. Gratis haalbaarheidsanalyse, vergunning, warmtepomp installatie van A tot Z. Bespaar tot 70% op uw energiefactuur.",
     },
     particuliers: {
       title: 'Geothermie voor particulieren in België — WellDoneDrill | Verwarming −70%',
-      description: "Verwarm uw woning met 70% minder kosten dankzij geothermie. Gratis haalbaarheidstudie, vergunning inbegrepen, sleutel-op-de-deur installatie door Belgische experts.",
+      description: "Verwarm uw woning met 70% minder kosten dankzij geothermie. Gratis haalbaarheidsanalyse, vergunning inbegrepen, sleutel-op-de-deur installatie door Belgische experts.",
     },
     pro: {
       title: 'Geothermische oplossingen voor professionals in België — WellDoneDrill',
-      description: "Geothermiepartner van installateurs, architecten en projectontwikkelaars in België. Onderaanneming boringen, technische studies en certificeringen.",
+      description: "Geothermiepartner van installateurs, architecten en projectontwikkelaars in België. Onderaanneming boringen, technische analyses en certificeringen.",
     },
     pro_chauffagistes: {
       title: 'Geothermie voor verwarmingsinstallateurs in België — WellDoneDrill',
@@ -93,11 +93,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: "Geothermische oplossingen voor architecten & studiebureaus in België — WellDoneDrill",
-      description: "Integreer geothermie in uw projecten vanaf de ontwerpfase. Dimensionering, technische studies en certificeringen — WellDoneDrill, uw geothermiepartner.",
+      description: "Integreer geothermie in uw projecten vanaf de ontwerpfase. Dimensionering, technische analyses en certificeringen — WellDoneDrill, uw geothermiepartner.",
     },
     pro_entrepreneurs: {
       title: 'Geothermie voor projectontwikkelaars in België — WellDoneDrill',
-      description: "Verhoog de waarde van uw vastgoedprojecten met geothermie. Van A tot Z: studie, vergunning, boring, aansluiting. Geoptimaliseerd rendement en energielabels.",
+      description: "Verhoog de waarde van uw vastgoedprojecten met geothermie. Van A tot Z: analyse, vergunning, boring, aansluiting. Geoptimaliseerd rendement en energielabels.",
     },
     geo_fermee: {
       title: 'Gesloten geothermie (verticale sondes) in België — WellDoneDrill | PAC boring',
@@ -117,7 +117,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Start uw geothermisch project — Gratis offerte | WellDoneDrill België',
-      description: "Ontvang uw gratis en vrijblijvende haalbaarheidstudie. Geothermische boring in België — antwoord binnen 48u. WellDoneDrill, van studie tot aansluiting.",
+      description: "Ontvang uw gratis en vrijblijvende haalbaarheidsanalyse. Geothermische boring in België — antwoord binnen 48u. WellDoneDrill, van analyse tot aansluiting.",
     },
     references: {
       title: 'Onze geothermische realisaties in België — WellDoneDrill | Referenties',
@@ -125,7 +125,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Geothermie in België — Gesloten & open boring | WellDoneDrill',
-      description: "Gesloten (verticale sondes) en open geothermie (grondwater) in België. WellDoneDrill boort uw sondes — gratis studie, vergunning, sleutel-op-de-deur warmtepomp.",
+      description: "Gesloten (verticale sondes) en open geothermie (grondwater) in België. WellDoneDrill boort uw sondes — gratis analyse, vergunning, sleutel-op-de-deur warmtepomp.",
     },
     blog: {
       title: 'Blog geothermie & boring in België — WellDoneDrill',
@@ -148,15 +148,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'fr-fr': {
     home: {
       title: 'WellDoneDrill — Forage géothermique & Pompes à chaleur en France',
-      description: "Expert du forage géothermique en France. Étude de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique.",
+      description: "Expert du forage géothermique en France. Analyse de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique.",
     },
     particuliers: {
       title: 'Géothermie pour particuliers en France — WellDoneDrill | Chauffage −70%',
-      description: "Chauffez votre maison en France à −70% de coût avec la géothermie. Étude gratuite, permis inclus, installation clé en main.",
+      description: "Chauffez votre maison en France à −70% de coût avec la géothermie. Analyse gratuite, permis inclus, installation clé en main.",
     },
     pro: {
       title: 'Solutions géothermiques pour professionnels en France — WellDoneDrill',
-      description: "Partenaire géothermique des installateurs, architectes et promoteurs en France. Sous-traitance forage, études techniques, certifications.",
+      description: "Partenaire géothermique des installateurs, architectes et promoteurs en France. Sous-traitance forage, analyses techniques, certifications.",
     },
     pro_chauffagistes: {
       title: 'Géothermie pour chauffagistes en France — WellDoneDrill | Sous-traitance',
@@ -164,11 +164,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: "Géothermie pour architectes & bureaux d'études en France — WellDoneDrill",
-      description: "Intégrez la géothermie dans vos projets français dès la conception. Dimensionnement, études techniques et certifications inclus.",
+      description: "Intégrez la géothermie dans vos projets français dès la conception. Dimensionnement, analyses techniques et certifications inclus.",
     },
     pro_entrepreneurs: {
       title: 'Géothermie pour promoteurs immobiliers en France — WellDoneDrill',
-      description: "Valorisez vos projets immobiliers en France avec la géothermie. Étude, permis, forage, raccordement — labels énergétiques et ROI optimisés.",
+      description: "Valorisez vos projets immobiliers en France avec la géothermie. Analyse, permis, forage, raccordement — labels énergétiques et ROI optimisés.",
     },
     geo_fermee: {
       title: 'Géothermie fermée (sondes verticales) en France — WellDoneDrill | Forage PAC',
@@ -188,7 +188,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill France',
-      description: "Obtenez votre étude de faisabilité gratuite et sans engagement en France. Réponse sous 48h. WellDoneDrill, de l'étude au raccordement.",
+      description: "Obtenez votre analyse de faisabilité gratuite et sans engagement en France. Réponse sous 48h. WellDoneDrill, de l'analyse au raccordement.",
     },
     references: {
       title: 'Nos réalisations géothermiques en France — WellDoneDrill | Références',
@@ -196,7 +196,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Géothermie en France — Forage fermé & ouvert | WellDoneDrill',
-      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) en France. WellDoneDrill fore vos sondes — étude gratuite, permis, installation PAC clé en main.",
+      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) en France. WellDoneDrill fore vos sondes — analyse gratuite, permis, installation PAC clé en main.",
     },
     blog: {
       title: 'Blog géothermie & forage géothermique en France — WellDoneDrill',
@@ -219,15 +219,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'lu-fr': {
     home: {
       title: 'WellDoneDrill — Forage géothermique & Pompes à chaleur au Luxembourg',
-      description: "Spécialiste du forage géothermique au Luxembourg. Étude de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique.",
+      description: "Spécialiste du forage géothermique au Luxembourg. Analyse de faisabilité gratuite, permis, installation pompe à chaleur de A à Z. Économisez jusqu'à −70% sur votre facture énergétique.",
     },
     particuliers: {
       title: 'Géothermie pour particuliers au Luxembourg — WellDoneDrill | Chauffage −70%',
-      description: "Chauffez votre maison au Luxembourg à −70% de coût avec la géothermie. Étude gratuite, permis inclus, installation clé en main.",
+      description: "Chauffez votre maison au Luxembourg à −70% de coût avec la géothermie. Analyse gratuite, permis inclus, installation clé en main.",
     },
     pro: {
       title: 'Solutions géothermiques pour professionnels au Luxembourg — WellDoneDrill',
-      description: "Partenaire géothermique des installateurs, architectes et promoteurs au Luxembourg. Sous-traitance forage, études techniques, certifications.",
+      description: "Partenaire géothermique des installateurs, architectes et promoteurs au Luxembourg. Sous-traitance forage, analyses techniques, certifications.",
     },
     pro_chauffagistes: {
       title: 'Géothermie pour chauffagistes au Luxembourg — WellDoneDrill | Partenariat',
@@ -235,11 +235,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: "Géothermie pour architectes & bureaux d'études au Luxembourg — WellDoneDrill",
-      description: "Intégrez la géothermie dans vos projets luxembourgeois dès la conception. Dimensionnement, études techniques et certifications inclus.",
+      description: "Intégrez la géothermie dans vos projets luxembourgeois dès la conception. Dimensionnement, analyses techniques et certifications inclus.",
     },
     pro_entrepreneurs: {
       title: 'Géothermie pour promoteurs immobiliers au Luxembourg — WellDoneDrill',
-      description: "Valorisez vos projets au Luxembourg avec la géothermie. Étude, permis, forage, raccordement — WellDoneDrill, partenaire clé en main.",
+      description: "Valorisez vos projets au Luxembourg avec la géothermie. Analyse, permis, forage, raccordement — WellDoneDrill, partenaire clé en main.",
     },
     geo_fermee: {
       title: 'Géothermie fermée (sondes verticales) au Luxembourg — WellDoneDrill',
@@ -259,7 +259,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Démarrer votre projet géothermique — Devis gratuit | WellDoneDrill Luxembourg',
-      description: "Obtenez votre étude de faisabilité gratuite au Luxembourg. Réponse sous 48h, sans engagement. WellDoneDrill, votre spécialiste géothermie.",
+      description: "Obtenez votre analyse de faisabilité gratuite au Luxembourg. Réponse sous 48h, sans engagement. WellDoneDrill, votre spécialiste géothermie.",
     },
     references: {
       title: 'Nos réalisations géothermiques au Luxembourg — WellDoneDrill | Références',
@@ -267,7 +267,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Géothermie au Luxembourg — Forage fermé & ouvert | WellDoneDrill',
-      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) au Luxembourg. WellDoneDrill fore vos sondes — étude gratuite, permis, installation PAC.",
+      description: "Géothermie fermée (sondes verticales) et ouverte (nappe phréatique) au Luxembourg. WellDoneDrill fore vos sondes — analyse gratuite, permis, installation PAC.",
     },
     blog: {
       title: 'Blog géothermie & forage géothermique au Luxembourg — WellDoneDrill',
@@ -290,15 +290,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'lu-de': {
     home: {
       title: 'WellDoneDrill — Geothermische Bohrung & Wärmepumpen in Luxemburg',
-      description: "Spezialist für Erdwärmebohrungen in Luxemburg. Kostenlose Machbarkeitsstudie, Genehmigung, Wärmepumpeninstallation von A bis Z. Bis zu 70% Energiekostenersparnis.",
+      description: "Spezialist für Erdwärmebohrungen in Luxemburg. Kostenlose Machbarkeitsanalyse, Genehmigung, Wärmepumpeninstallation von A bis Z. Bis zu 70% Energiekostenersparnis.",
     },
     particuliers: {
       title: 'Geothermie für Privatpersonen in Luxemburg — WellDoneDrill | Heizung −70%',
-      description: "Heizen Sie Ihr Haus in Luxemburg mit 70% weniger Kosten dank Erdwärme. Kostenlose Machbarkeitsstudie, Genehmigung inklusive, schlüsselfertige Installation.",
+      description: "Heizen Sie Ihr Haus in Luxemburg mit 70% weniger Kosten dank Erdwärme. Kostenlose Machbarkeitsanalyse, Genehmigung inklusive, schlüsselfertige Installation.",
     },
     pro: {
       title: 'Geothermische Lösungen für Fachleute in Luxemburg — WellDoneDrill',
-      description: "Geothermiepartner von Heizungsinstallateuren, Architekten und Immobilienentwicklern in Luxemburg. Bohrungsunterauftragsvergabe, technische Studien und Zertifizierungen.",
+      description: "Geothermiepartner von Heizungsinstallateuren, Architekten und Immobilienentwicklern in Luxemburg. Bohrungsunterauftragsvergabe, technische Analysen und Zertifizierungen.",
     },
     pro_chauffagistes: {
       title: 'Geothermie für Heizungsinstallateure in Luxemburg — WellDoneDrill',
@@ -306,11 +306,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: 'Geothermische Lösungen für Architekten in Luxemburg — WellDoneDrill',
-      description: "Integrieren Sie Erdwärme von Anfang an in Ihre Projekte in Luxemburg. Dimensionierung, technische Studien und Zertifizierungen inklusive.",
+      description: "Integrieren Sie Erdwärme von Anfang an in Ihre Projekte in Luxemburg. Dimensionierung, technische Analysen und Zertifizierungen inklusive.",
     },
     pro_entrepreneurs: {
       title: 'Geothermie für Immobilienentwickler in Luxemburg — WellDoneDrill',
-      description: "Steigern Sie den Wert Ihrer Immobilienprojekte in Luxemburg mit Erdwärme. Von der Studie bis zur Anbindung — schlüsselfertige Geothermieprojekte.",
+      description: "Steigern Sie den Wert Ihrer Immobilienprojekte in Luxemburg mit Erdwärme. Von der Analyse bis zur Anbindung — schlüsselfertige Geothermieprojekte.",
     },
     geo_fermee: {
       title: 'Geschlossene Geothermie (Vertikalsonden) in Luxemburg — WellDoneDrill',
@@ -330,7 +330,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Ihr Geothermieprojekt starten — Kostenloses Angebot | WellDoneDrill Luxemburg',
-      description: "Kostenlose und unverbindliche Machbarkeitsstudie in Luxemburg. Antwort innerhalb von 48 Stunden. WellDoneDrill, Ihr Geothermie-Spezialist.",
+      description: "Kostenlose und unverbindliche Machbarkeitsanalyse in Luxemburg. Antwort innerhalb von 48 Stunden. WellDoneDrill, Ihr Geothermie-Spezialist.",
     },
     references: {
       title: 'Unsere Geothermieprojekte in Luxemburg — WellDoneDrill | Referenzen',
@@ -338,7 +338,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Geothermie in Luxemburg — Geschlossene & offene Bohrung | WellDoneDrill',
-      description: "Geschlossene (Vertikalsonden) und offene Geothermie (Grundwasser) in Luxemburg. WellDoneDrill bohrt Ihre Sonden — kostenlose Studie, Genehmigung, Wärmepumpe.",
+      description: "Geschlossene (Vertikalsonden) und offene Geothermie (Grundwasser) in Luxemburg. WellDoneDrill bohrt Ihre Sonden — kostenlose Analyse, Genehmigung, Wärmepumpe.",
     },
     blog: {
       title: 'Blog Geothermie & Erdwärmebohrung in Luxemburg — WellDoneDrill',
@@ -361,15 +361,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'be-en': {
     home: {
       title: 'WellDoneDrill — Geothermal drilling & Heat pumps in Belgium',
-      description: "Belgian geothermal drilling specialist. Free feasibility study, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
+      description: "Belgian geothermal drilling specialist. Free feasibility analysis, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
     },
     particuliers: {
       title: 'Geothermal energy for homeowners in Belgium — WellDoneDrill | Heating −70%',
-      description: "Heat your home at −70% cost with geothermal energy. Free study, permits included, turnkey installation. Your Belgian geothermal drilling specialist.",
+      description: "Heat your home at −70% cost with geothermal energy. Free analysis, permits included, turnkey installation. Your Belgian geothermal drilling specialist.",
     },
     pro: {
       title: 'Geothermal solutions for professionals in Belgium — WellDoneDrill',
-      description: "Geothermal partner for Belgian installers, architects and developers. Drilling subcontracting, technical studies, certifications — grow your geothermal business.",
+      description: "Geothermal partner for Belgian installers, architects and developers. Drilling subcontracting, technical analyses, certifications — grow your geothermal business.",
     },
     pro_chauffagistes: {
       title: 'Geothermal energy for HVAC installers in Belgium — WellDoneDrill',
@@ -377,11 +377,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: 'Geothermal energy for architects & engineering firms in Belgium — WellDoneDrill',
-      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical studies and certifications — WellDoneDrill, your geothermal partner.",
+      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical analyses and certifications — WellDoneDrill, your geothermal partner.",
     },
     pro_entrepreneurs: {
       title: 'Geothermal energy for property developers in Belgium — WellDoneDrill',
-      description: "Add value to your projects with geothermal energy. From A to Z: study, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
+      description: "Add value to your projects with geothermal energy. From A to Z: analysis, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
     },
     geo_fermee: {
       title: 'Closed-loop geothermal (vertical boreholes) in Belgium — WellDoneDrill',
@@ -401,7 +401,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Start your geothermal project — Free quote | WellDoneDrill Belgium',
-      description: "Get your free, no-obligation feasibility study. Geothermal drilling in Belgium — reply within 48h. WellDoneDrill, from study to connection.",
+      description: "Get your free, no-obligation feasibility analysis. Geothermal drilling in Belgium — reply within 48h. WellDoneDrill, from analysis to connection.",
     },
     references: {
       title: 'Our geothermal projects in Belgium — WellDoneDrill | Projects',
@@ -409,7 +409,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Geothermal energy in Belgium — Closed & open loop | WellDoneDrill',
-      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in Belgium. WellDoneDrill drills your boreholes — free study, permits, turnkey heat pump install.",
+      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in Belgium. WellDoneDrill drills your boreholes — free analysis, permits, turnkey heat pump install.",
     },
     blog: {
       title: 'Geothermal energy & drilling blog in Belgium — WellDoneDrill',
@@ -432,15 +432,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'fr-en': {
     home: {
       title: 'WellDoneDrill — Geothermal drilling & Heat pumps in France',
-      description: "Geothermal drilling specialist in France. Free feasibility study, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
+      description: "Geothermal drilling specialist in France. Free feasibility analysis, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
     },
     particuliers: {
       title: 'Geothermal energy for homeowners in France — WellDoneDrill | Heating −70%',
-      description: "Heat your home at −70% cost with geothermal energy. Free study, permits included, turnkey installation. Your geothermal drilling specialist in France.",
+      description: "Heat your home at −70% cost with geothermal energy. Free analysis, permits included, turnkey installation. Your geothermal drilling specialist in France.",
     },
     pro: {
       title: 'Geothermal solutions for professionals in France — WellDoneDrill',
-      description: "Geothermal partner for French installers, architects and developers. Drilling subcontracting, technical studies, certifications — grow your geothermal business.",
+      description: "Geothermal partner for French installers, architects and developers. Drilling subcontracting, technical analyses, certifications — grow your geothermal business.",
     },
     pro_chauffagistes: {
       title: 'Geothermal energy for HVAC installers in France — WellDoneDrill',
@@ -448,11 +448,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: 'Geothermal energy for architects & engineering firms in France — WellDoneDrill',
-      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical studies and certifications — WellDoneDrill, your geothermal partner.",
+      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical analyses and certifications — WellDoneDrill, your geothermal partner.",
     },
     pro_entrepreneurs: {
       title: 'Geothermal energy for property developers in France — WellDoneDrill',
-      description: "Add value to your projects with geothermal energy. From A to Z: study, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
+      description: "Add value to your projects with geothermal energy. From A to Z: analysis, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
     },
     geo_fermee: {
       title: 'Closed-loop geothermal (vertical boreholes) in France — WellDoneDrill',
@@ -472,7 +472,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Start your geothermal project — Free quote | WellDoneDrill France',
-      description: "Get your free, no-obligation feasibility study. Geothermal drilling in France — reply within 48h. WellDoneDrill, from study to connection.",
+      description: "Get your free, no-obligation feasibility analysis. Geothermal drilling in France — reply within 48h. WellDoneDrill, from analysis to connection.",
     },
     references: {
       title: 'Our geothermal projects in France — WellDoneDrill | Projects',
@@ -480,7 +480,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Geothermal energy in France — Closed & open loop | WellDoneDrill',
-      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in France. WellDoneDrill drills your boreholes — free study, permits, turnkey heat pump install.",
+      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in France. WellDoneDrill drills your boreholes — free analysis, permits, turnkey heat pump install.",
     },
     blog: {
       title: 'Geothermal energy & drilling blog in France — WellDoneDrill',
@@ -503,15 +503,15 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
   'lu-en': {
     home: {
       title: 'WellDoneDrill — Geothermal drilling & Heat pumps in Luxembourg',
-      description: "Geothermal drilling specialist in Luxembourg. Free feasibility study, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
+      description: "Geothermal drilling specialist in Luxembourg. Free feasibility analysis, permits, turnkey heat pump installation. Save up to 70% on your energy bill. Reply within 48h.",
     },
     particuliers: {
       title: 'Geothermal energy for homeowners in Luxembourg — WellDoneDrill | Heating −70%',
-      description: "Heat your home at −70% cost with geothermal energy. Free study, permits included, turnkey installation. Your geothermal drilling specialist in Luxembourg.",
+      description: "Heat your home at −70% cost with geothermal energy. Free analysis, permits included, turnkey installation. Your geothermal drilling specialist in Luxembourg.",
     },
     pro: {
       title: 'Geothermal solutions for professionals in Luxembourg — WellDoneDrill',
-      description: "Geothermal partner for installers, architects and developers in Luxembourg. Drilling subcontracting, technical studies, certifications — grow your geothermal business.",
+      description: "Geothermal partner for installers, architects and developers in Luxembourg. Drilling subcontracting, technical analyses, certifications — grow your geothermal business.",
     },
     pro_chauffagistes: {
       title: 'Geothermal energy for HVAC installers in Luxembourg — WellDoneDrill',
@@ -519,11 +519,11 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     pro_architectes: {
       title: 'Geothermal energy for architects & engineering firms in Luxembourg — WellDoneDrill',
-      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical studies and certifications — WellDoneDrill, your geothermal partner.",
+      description: "Integrate geothermal energy into your projects from the design stage. Sizing, technical analyses and certifications — WellDoneDrill, your geothermal partner.",
     },
     pro_entrepreneurs: {
       title: 'Geothermal energy for property developers in Luxembourg — WellDoneDrill',
-      description: "Add value to your projects with geothermal energy. From A to Z: study, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
+      description: "Add value to your projects with geothermal energy. From A to Z: analysis, permits, drilling, connection. Optimised ROI and guaranteed energy labels.",
     },
     geo_fermee: {
       title: 'Closed-loop geothermal (vertical boreholes) in Luxembourg — WellDoneDrill',
@@ -543,7 +543,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     contact: {
       title: 'Start your geothermal project — Free quote | WellDoneDrill Luxembourg',
-      description: "Get your free, no-obligation feasibility study. Geothermal drilling in Luxembourg — reply within 48h. WellDoneDrill, from study to connection.",
+      description: "Get your free, no-obligation feasibility analysis. Geothermal drilling in Luxembourg — reply within 48h. WellDoneDrill, from analysis to connection.",
     },
     references: {
       title: 'Our geothermal projects in Luxembourg — WellDoneDrill | Projects',
@@ -551,7 +551,7 @@ export const SEO_DEFAULTS: Record<AppLocale, Record<string, SeoEntry>> = {
     },
     geo: {
       title: 'Geothermal energy in Luxembourg — Closed & open loop | WellDoneDrill',
-      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in Luxembourg. WellDoneDrill drills your boreholes — free study, permits, turnkey heat pump install.",
+      description: "Closed-loop (vertical boreholes) and open-loop (groundwater) geothermal in Luxembourg. WellDoneDrill drills your boreholes — free analysis, permits, turnkey heat pump install.",
     },
     blog: {
       title: 'Geothermal energy & drilling blog in Luxembourg — WellDoneDrill',

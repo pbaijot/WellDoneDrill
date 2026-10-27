@@ -53,6 +53,18 @@ export function buildCanonical(locale: AppLocale, path: string) {
 }
 
 /**
+ * hreflang map for a Belgian province page ("géothermie <province>"): the same province
+ * in every Belgian locale. Province pages only exist for Belgium.
+ */
+export function buildProvinceLanguages(slugFor: (locale: AppLocale) => string) {
+  const languages: Record<string, string> = {}
+  for (const loc of ['be-fr', 'be-nl', 'be-en'] as AppLocale[]) {
+    languages[HREFLANG[loc]] = `${BASE_URL}/${loc}/${routeMap[loc].references}/${slugFor(loc)}`
+  }
+  return languages
+}
+
+/**
  * hreflang map for a blog article and its translations (same translationKey).
  */
 export function buildBlogLanguages(versions: {locale: string; slug: string; legacyPath?: string}[]) {

@@ -38,7 +38,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'be-fr': {
     heroEyebrow: 'Démarrer votre projet',
     heroTitle: 'Votre projet géothermique commence ici.',
-    heroSubtitle: 'Étude de faisabilité gratuite · Réponse sous 48h · Sans engagement',
+    heroSubtitle: 'Analyse de faisabilité gratuite · Réponse sous 48h · Sans engagement',
     formHeading: 'Vous êtes…',
     segments: [
       {label: 'Particulier',    sub: 'Maison individuelle, appartement, villa'},
@@ -46,7 +46,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: "Architecte & Bureau d'études", sub: 'Conception, prescription technique'},
       {label: 'Entrepreneur',                sub: 'Promoteur, développeur, investisseur'},
     ],
-    statFree: 'Gratuit', statFreeLabel: 'Étude de faisabilité',
+    statFree: 'Gratuit', statFreeLabel: 'Analyse de faisabilité',
     statDelay: '48h',    statDelayLabel: 'Délai de réponse',
     statFee: '0 €',      statFeeLabel: 'Sans engagement',
     selectPrompt: 'Sélectionnez votre profil à gauche pour accéder au formulaire.',
@@ -54,7 +54,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'be-nl': {
     heroEyebrow: 'Uw project starten',
     heroTitle: 'Uw geothermisch project begint hier.',
-    heroSubtitle: 'Gratis haalbaarheidsstudie · Antwoord binnen 48u · Vrijblijvend',
+    heroSubtitle: 'Gratis haalbaarheidsanalyse · Antwoord binnen 48u · Vrijblijvend',
     formHeading: 'U bent…',
     segments: [
       {label: 'Particulier',             sub: 'Eengezinswoning, appartement, villa'},
@@ -62,7 +62,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: 'Architect & Studiebureau', sub: 'Ontwerp, technische voorschriften'},
       {label: 'Aannemer',                sub: 'Projectontwikkelaar, investeerder'},
     ],
-    statFree: 'Gratis', statFreeLabel: 'Haalbaarheidsstudie',
+    statFree: 'Gratis', statFreeLabel: 'Haalbaarheidsanalyse',
     statDelay: '48u',   statDelayLabel: 'Reactietermijn',
     statFee: '0 €',     statFeeLabel: 'Vrijblijvend',
     selectPrompt: 'Selecteer uw profiel links om het formulier te openen.',
@@ -70,7 +70,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'fr-fr': {
     heroEyebrow: 'Démarrer votre projet',
     heroTitle: 'Votre projet géothermique commence ici.',
-    heroSubtitle: 'Étude de faisabilité gratuite · Réponse sous 48h · Sans engagement',
+    heroSubtitle: 'Analyse de faisabilité gratuite · Réponse sous 48h · Sans engagement',
     formHeading: 'Vous êtes…',
     segments: [
       {label: 'Particulier',        sub: 'Maison individuelle, appartement, villa'},
@@ -78,7 +78,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: "Architecte & Bureau d'études", sub: 'Conception, prescription technique'},
       {label: 'Promoteur',          sub: 'Promoteur, développeur, investisseur'},
     ],
-    statFree: 'Gratuit', statFreeLabel: 'Étude de faisabilité',
+    statFree: 'Gratuit', statFreeLabel: 'Analyse de faisabilité',
     statDelay: '48h',    statDelayLabel: 'Délai de réponse',
     statFee: '0 €',      statFeeLabel: 'Sans engagement',
     selectPrompt: 'Sélectionnez votre profil à gauche pour accéder au formulaire.',
@@ -86,7 +86,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'lu-fr': {
     heroEyebrow: 'Démarrer votre projet',
     heroTitle: 'Votre projet géothermique commence ici.',
-    heroSubtitle: 'Étude de faisabilité gratuite · Réponse sous 48h · Sans engagement',
+    heroSubtitle: 'Analyse de faisabilité gratuite · Réponse sous 48h · Sans engagement',
     formHeading: 'Vous êtes…',
     segments: [
       {label: 'Particulier',    sub: 'Maison individuelle, appartement, villa'},
@@ -94,7 +94,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: "Architecte & Bureau d'études", sub: 'Conception, prescription technique'},
       {label: 'Entrepreneur',                sub: 'Promoteur, développeur, investisseur'},
     ],
-    statFree: 'Gratuit', statFreeLabel: 'Étude de faisabilité',
+    statFree: 'Gratuit', statFreeLabel: 'Analyse de faisabilité',
     statDelay: '48h',    statDelayLabel: 'Délai de réponse',
     statFee: '0 €',      statFeeLabel: 'Sans engagement',
     selectPrompt: 'Sélectionnez votre profil à gauche pour accéder au formulaire.',
@@ -102,7 +102,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'lu-de': {
     heroEyebrow: 'Ihr Projekt starten',
     heroTitle: 'Ihr Geothermie-Projekt beginnt hier.',
-    heroSubtitle: 'Kostenlose Machbarkeitsstudie · Antwort innerhalb 48 Std. · Unverbindlich',
+    heroSubtitle: 'Kostenlose Machbarkeitsanalyse · Antwort innerhalb 48 Std. · Unverbindlich',
     formHeading: 'Sie sind…',
     segments: [
       {label: 'Privatperson',           sub: 'Einfamilienhaus, Wohnung, Villa'},
@@ -110,7 +110,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: 'Architekt & Planungsbüro',   sub: 'Planung, technische Fachplanung'},
       {label: 'Unternehmer',            sub: 'Projektentwickler, Investor'},
     ],
-    statFree: 'Kostenlos', statFreeLabel: 'Machbarkeitsstudie',
+    statFree: 'Kostenlos', statFreeLabel: 'Machbarkeitsanalyse',
     statDelay: '48 Std.',  statDelayLabel: 'Antwortzeit',
     statFee: '0 €',        statFeeLabel: 'Unverbindlich',
     selectPrompt: 'Wählen Sie links Ihr Profil aus, um das Formular zu öffnen.',
@@ -118,7 +118,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'be-en': {
     heroEyebrow: 'Start your project',
     heroTitle: 'Your geothermal project starts here.',
-    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    heroSubtitle: 'Free feasibility analysis · Reply within 48h · No obligation',
     formHeading: 'You are…',
     segments: [
       {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
@@ -126,7 +126,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
       {label: 'Developer',              sub: 'Property developer, investor'},
     ],
-    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statFree: 'Free', statFreeLabel: 'Feasibility analysis',
     statDelay: '48h', statDelayLabel: 'Response time',
     statFee: '€0',    statFeeLabel: 'No obligation',
     selectPrompt: 'Select your profile on the left to open the form.',
@@ -134,7 +134,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'fr-en': {
     heroEyebrow: 'Start your project',
     heroTitle: 'Your geothermal project starts here.',
-    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    heroSubtitle: 'Free feasibility analysis · Reply within 48h · No obligation',
     formHeading: 'You are…',
     segments: [
       {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
@@ -142,7 +142,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
       {label: 'Developer',              sub: 'Property developer, investor'},
     ],
-    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statFree: 'Free', statFreeLabel: 'Feasibility analysis',
     statDelay: '48h', statDelayLabel: 'Response time',
     statFee: '€0',    statFeeLabel: 'No obligation',
     selectPrompt: 'Select your profile on the left to open the form.',
@@ -150,7 +150,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
   'lu-en': {
     heroEyebrow: 'Start your project',
     heroTitle: 'Your geothermal project starts here.',
-    heroSubtitle: 'Free feasibility study · Reply within 48h · No obligation',
+    heroSubtitle: 'Free feasibility analysis · Reply within 48h · No obligation',
     formHeading: 'You are…',
     segments: [
       {label: 'Homeowner',              sub: 'Detached house, apartment, villa'},
@@ -158,7 +158,7 @@ const COPY: Record<AppLocale, LocaleCopy> = {
       {label: 'Architect & engineering firm', sub: 'Design, technical specification'},
       {label: 'Developer',              sub: 'Property developer, investor'},
     ],
-    statFree: 'Free', statFreeLabel: 'Feasibility study',
+    statFree: 'Free', statFreeLabel: 'Feasibility analysis',
     statDelay: '48h', statDelayLabel: 'Response time',
     statFee: '€0',    statFeeLabel: 'No obligation',
     selectPrompt: 'Select your profile on the left to open the form.',

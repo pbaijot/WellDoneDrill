@@ -17,7 +17,7 @@ const DEFAULT_FAQS_OUVERTE = [
   },
   {
     question: 'Quelles sont les conditions requises pour une nappe ?',
-    answer: 'Il faut une nappe phréatique accessible (généralement entre 5 et 30 m de profondeur), avec un débit suffisant (au moins 3 à 5 m³/h pour une maison individuelle). WellDoneDrill réalise une étude hydrogéologique préalable pour valider la faisabilité de votre site.',
+    answer: 'Il faut une nappe phréatique accessible (généralement entre 5 et 30 m de profondeur), avec un débit suffisant (au moins 3 à 5 m³/h pour une maison individuelle). WellDoneDrill réalise une analyse hydrogéologique préalable pour valider la faisabilité de votre site.',
   },
   {
     question: 'La géothermie sur nappe est-elle plus efficace que la fermée ?',
@@ -44,7 +44,7 @@ const DEFAULT_FAQS_FERMEE = [
   },
   {
     question: 'Quelle profondeur de forage est nécessaire ?',
-    answer: 'Pour une maison standard, les sondes verticales descendent à 80–150 m. La profondeur exacte dépend de votre géologie locale et de vos besoins énergétiques. WellDoneDrill réalise une étude préalable pour dimensionner correctement votre installation.',
+    answer: 'Pour une maison standard, les sondes verticales descendent à 80–150 m. La profondeur exacte dépend de votre géologie locale et de vos besoins énergétiques. WellDoneDrill réalise une analyse préalable pour dimensionner correctement votre installation.',
   },
   {
     question: 'La géothermie fermée fonctionne-t-elle aussi comme climatisation ?',
@@ -56,7 +56,7 @@ const DEFAULT_FAQS_FERMEE = [
   },
   {
     question: 'Mon terrain est-il compatible ?',
-    answer: 'Plus de 90 % des propriétés en Belgique sont géologiquement compatibles avec la géothermie fermée. WellDoneDrill réalise une étude préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.',
+    answer: 'Plus de 90 % des propriétés en Belgique sont géologiquement compatibles avec la géothermie fermée. WellDoneDrill réalise une analyse préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.',
   },
   {
     question: 'Quelle différence entre géothermie fermée et ouverte ?',

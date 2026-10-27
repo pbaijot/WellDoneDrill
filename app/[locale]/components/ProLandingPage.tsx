@@ -38,7 +38,7 @@ const SEGMENTS_FR = [
   {
     routeKey: 'pro_architectes' as const,
     title: "Architectes & Bureaux d'études",
-    description: "Intégrez la géothermie dès l'esquisse. Étude géologique préliminaire en 72h, rapport technique livré clé en main pour vos dossiers PEB et permis.",
+    description: "Intégrez la géothermie dès l'esquisse. Analyse géologique préliminaire en 72h, rapport technique livré clé en main pour vos dossiers PEB et permis.",
     image: '/images/abricotiers-2.jpg',
     icon: IconCompass,
     cta: "Découvrir le partenariat architecte",
@@ -65,7 +65,7 @@ const SEGMENTS_EN = [
   {
     routeKey: 'pro_architectes' as const,
     title: 'Architects & engineering firms',
-    description: "Integrate geothermal energy from the first sketch. Preliminary geological study in 72h, turnkey technical report for your energy-performance and permit files.",
+    description: "Integrate geothermal energy from the first sketch. Preliminary geological analysis in 72h, turnkey technical report for your energy-performance and permit files.",
     image: '/images/abricotiers-2.jpg',
     icon: IconCompass,
     cta: 'Discover the architect partnership',

@@ -68,7 +68,7 @@ const DEFAULT_FAQS = [
   {
     question: "Mon terrain est-il compatible avec la géothermie ?",
     answer:
-      "Plus de 90 % des propriétés résidentielles en Belgique et au Luxembourg sont géologiquement compatibles. WellDoneDrill réalise une étude préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.",
+      "Plus de 90 % des propriétés résidentielles en Belgique et au Luxembourg sont géologiquement compatibles. WellDoneDrill réalise une analyse préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.",
   },
   {
     question: "Quels travaux sont réalisés chez moi et combien de temps cela prend-il ?",

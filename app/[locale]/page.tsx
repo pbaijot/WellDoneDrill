@@ -477,7 +477,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         // English literal, otherwise use the shared value then the FR literal.
         const gs = <T,>(v: T | undefined, en: T, fr: T): T => (isEn ? en : (v ?? fr))
         const ctaTitle = home?.contactCta?.title ?? gs(globalSettings?.ctaTitle, 'Your project starts here.', 'Votre projet commence ici.')
-        const ctaSubtitle = home?.contactCta?.subtitle ?? gs(globalSettings?.ctaBody, "Free geological study, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.", "Étude géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.")
+        const ctaSubtitle = home?.contactCta?.subtitle ?? gs(globalSettings?.ctaBody, "Free ground analysis, permits, drilling — one team from A to Z.\nReply within 48h, no obligation.", "Analyse géologique gratuite, permis, forage — une seule équipe de A à Z.\nRéponse sous 48h, sans engagement.")
         const ctaButtonLabel = home?.contactCta?.buttonLabel ?? gs(globalSettings?.ctaButtonLabel, 'Start your project →', 'Démarrer votre projet →')
         const ctaPhone = PHONE_BY_LOCALE[locale as AppLocale] ?? home?.contactCta?.phone ?? globalSettings?.phone
         const ctaImageSrc = home?.contactCta?.image
@@ -486,7 +486,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             ? urlFor(globalSettings.ctaImage)?.url() ?? '/images/team.jpg'
             : '/images/team.jpg'
         const stat1Value = home?.contactCta?.stat1Value ?? gs(globalSettings?.stat1Value, 'Free', 'Gratuit')
-        const stat1Label = home?.contactCta?.stat1Label ?? gs(globalSettings?.stat1Label, 'Feasibility study', 'Étude de faisabilité')
+        const stat1Label = home?.contactCta?.stat1Label ?? gs(globalSettings?.stat1Label, 'Feasibility analysis', 'Analyse de faisabilité')
         const stat2Value = home?.contactCta?.stat2Value ?? globalSettings?.stat2Value ?? '48h'
         const stat2Label = home?.contactCta?.stat2Label ?? gs(globalSettings?.stat2Label, 'Response time', 'Délai de réponse')
         return (

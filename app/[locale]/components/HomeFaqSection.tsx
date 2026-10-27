@@ -11,7 +11,7 @@ const DEFAULT_FAQS = [
   },
   {
     question: "Mon terrain est-il compatible avec la géothermie ?",
-    answer: "Plus de 90 % des propriétés en Belgique sont géologiquement compatibles. WellDoneDrill réalise une étude préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.",
+    answer: "Plus de 90 % des propriétés en Belgique sont géologiquement compatibles. WellDoneDrill réalise une analyse préalable gratuite pour confirmer la faisabilité sur votre parcelle, avant tout engagement de votre part.",
   },
   {
     question: "Quels travaux sont réalisés chez moi et combien de temps cela prend-il ?",
@@ -34,7 +34,7 @@ const DEFAULT_FAQS_EN = [
   },
   {
     question: "Is my property suitable for geothermal energy?",
-    answer: "More than 90% of properties in Belgium are geologically suitable. WellDoneDrill carries out a free preliminary study to confirm feasibility on your plot, before any commitment on your part.",
+    answer: "More than 90% of properties in Belgium are geologically suitable. WellDoneDrill carries out a free preliminary analysis to confirm feasibility on your plot, before any commitment on your part.",
   },
   {
     question: "What work is done at my home and how long does it take?",

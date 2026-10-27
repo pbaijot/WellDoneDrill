@@ -3,7 +3,7 @@ import {notFound, permanentRedirect} from 'next/navigation'
 import Link from 'next/link'
 import {findRouteKeyBySlug, getLocalizedPath, type AppLocale} from '@/src/i18n/routes'
 import {getSeoDefaults} from '@/src/i18n/seo'
-import {buildAlternates, buildCanonical, buildBlogLanguages, BASE_URL} from '@/src/lib/seoAlternates'
+import {buildAlternates, buildCanonical, buildBlogLanguages, buildProvinceLanguages, BASE_URL} from '@/src/lib/seoAlternates'
 import {getSitePage} from '@/src/lib/sitePage'
 import EditorialPage from '../components/EditorialPage'
 import {getGeoPage} from '@/src/lib/geoPage'
@@ -101,17 +101,17 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
         const name = getProvinceName(province, locale)
         if (locale === 'be-nl') {
           cmsTitle = `Geothermie ${name} — Geothermische boring | WellDoneDrill`
-          cmsDesc = `Geothermische boorprojecten in ${name}. WellDoneDrill boort uw sondes: gratis studie, vergunning en installatie. Ontdek onze realisaties in ${name}.`
+          cmsDesc = `Geothermische boorprojecten in ${name}. WellDoneDrill boort uw sondes: gratis analyse, vergunning en installatie. Ontdek onze realisaties in ${name}.`
         } else if (locale === 'lu-de') {
           cmsTitle = `Geothermie ${name} — Erdwärmebohrung | WellDoneDrill`
-          cmsDesc = `Geothermische Bohrprojekte in ${name}. WellDoneDrill bohrt Ihre Sonden: kostenlose Studie, Genehmigung und Installation. Entdecken Sie unsere Projekte.`
+          cmsDesc = `Geothermische Bohrprojekte in ${name}. WellDoneDrill bohrt Ihre Sonden: kostenlose Analyse, Genehmigung und Installation. Entdecken Sie unsere Projekte.`
         } else if (locale.endsWith('-en')) {
           cmsTitle = `Geothermal energy ${name} — Geothermal drilling | WellDoneDrill`
-          cmsDesc = `Geothermal drilling projects in ${name}. WellDoneDrill drills your boreholes: free study, permit and installation. Discover our projects in ${name}.`
+          cmsDesc = `Geothermal drilling projects in ${name}. WellDoneDrill drills your boreholes: free analysis, permit and installation. Discover our projects in ${name}.`
         } else {
           const prep = province.prepFr.endsWith("'") ? province.prepFr + name : `${province.prepFr} ${name}`
           cmsTitle = `Géothermie ${name} — Forage géothermique | WellDoneDrill`
-          cmsDesc = `Réalisations de forage géothermique ${prep}. WellDoneDrill fore vos sondes géothermiques : étude gratuite, permis et installation. Découvrez nos chantiers.`
+          cmsDesc = `Réalisations de forage géothermique ${prep}. WellDoneDrill fore vos sondes géothermiques : analyse gratuite, permis et installation. Découvrez nos chantiers.`
         }
       } else {
         const chantier = await getChantierBySlug(subSlug, locale)
@@ -137,6 +137,13 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
   } else {
     // Province, chantier, or other sub-pages — canonical only
     alternates = buildCanonical(locale, slugPath)
+    // Province pages exist in every Belgian locale: link them with hreflang
+    const referencesBase = routeMap[locale]?.references
+    if (referencesBase && slugPath.startsWith(referencesBase + '/') && locale.startsWith('be-')) {
+      const {findProvinceBySlug, getProvinceSlug} = await import('@/src/lib/referencesPage')
+      const province = findProvinceBySlug(slugPath.slice(referencesBase.length + 1))
+      if (province) alternates.languages = buildProvinceLanguages(l => getProvinceSlug(province, l))
+    }
   }
 
   return {
