@@ -14,6 +14,8 @@
     "geo_fermee_sub": "Sondes verticales",
     "geo_ouverte": "Geothermie ouverte",
     "geo_ouverte_sub": "Nappe phreatique",
+    "pac_geo": "Pompe à chaleur géothermique",
+    "pac_geo_sub": "Chauffage et rafraîchissement",
     "geo_fonctionnement": "Comment ca fonctionne",
     "geo_fonctionnement_sub": "Le principe explique",
     "geo_references": "Nos references",

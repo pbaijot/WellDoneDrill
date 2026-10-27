@@ -8,8 +8,7 @@ import {getSitePage} from '@/src/lib/sitePage'
 import EditorialPage from '../components/EditorialPage'
 import {getGeoPage} from '@/src/lib/geoPage'
 import GeoPage from '../components/GeoPage'
-import {getPacPage} from '@/src/lib/pacPage'
-import PacPage from '../components/PacPage'
+import {getPacGeoContent} from '@/src/content/pacGeoContent'
 import {getParticuliersPage} from '@/src/lib/particuliersPage'
 import ParticuliersPage from '../components/ParticuliersPage'
 import {getProPage} from '@/src/lib/proPage'
@@ -65,9 +64,9 @@ export async function generateMetadata({params}: PageProps): Promise<Metadata> {
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
       hasContent = !!p
     } else if (routeKey === 'pac') {
-      const p = await getPacPage(locale)
-      cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
-      hasContent = !!p
+      // Heat pump page: content lives in code (src/content/pacGeoContent.ts)
+      const p = getPacGeoContent(locale)
+      cmsTitle = p.seoTitle; cmsDesc = p.seoDescription
     } else if (routeKey === 'particuliers') {
       const p = await getParticuliersPage(locale)
       cmsTitle = p?.seoTitle || undefined; cmsDesc = p?.seoDescription || undefined
@@ -262,11 +261,7 @@ export default async function LocalizedCatchAllPage({params}: PageProps) {
   }
 
   if (routeKey === 'pac') {
-    try {
-      const page = await getPacPage(locale)
-      if (page) return <PacPage page={page} locale={locale} />
-    } catch {}
-    return <ComingSoon locale={locale} routeKey={routeKey} />
+    return <GeoPage page={getPacGeoContent(locale)} locale={locale} />
   }
 
   if (routeKey === 'particuliers') {

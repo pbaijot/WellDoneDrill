@@ -14,6 +14,8 @@
     "geo_fermee_sub": "Vertikale Sonden",
     "geo_ouverte": "Offene Geothermie",
     "geo_ouverte_sub": "Grundwasser",
+    "pac_geo": "Erdwärmepumpe",
+    "pac_geo_sub": "Heizen und kühlen",
     "geo_fonctionnement": "Wie es funktioniert",
     "geo_fonctionnement_sub": "Das Prinzip erklaert",
     "geo_references": "Unsere Referenzen",

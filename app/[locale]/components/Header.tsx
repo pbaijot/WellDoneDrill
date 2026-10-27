@@ -64,6 +64,7 @@ export default function Header() {
       items: [
         { label: t('geo_fermee'), sub: t('geo_fermee_sub'), routeKey: 'geo_fermee' },
         { label: t('geo_ouverte'), sub: t('geo_ouverte_sub'), routeKey: 'geo_ouverte' },
+        { label: t('pac_geo'), sub: t('pac_geo_sub'), routeKey: 'pac' },
       ],
     },
     {

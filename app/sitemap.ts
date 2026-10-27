@@ -34,7 +34,7 @@ type Doc = { _type: string; locale: string; slug?: string; legacyPath?: string; 
 // Everything the sitemap needs from Sanity in one request: blog posts,
 // chantiers, and which CMS-backed pages actually exist (pages without a
 // document render the "coming soon" placeholder and are noindexed).
-const SITEMAP_QUERY = `*[_type in ["blogPost", "chantier", "pacPage", "geoPage"]]{
+const SITEMAP_QUERY = `*[_type in ["blogPost", "chantier", "geoPage"]]{
   _type, locale, "slug": slug.current, legacyPath, routeKey, _updatedAt
 }`
 
@@ -51,7 +51,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     for (const [key, slug] of Object.entries(routes) as [RouteKey, string][]) {
       // Skip placeholder pages (no CMS content yet). If Sanity is unreachable
       // (docs empty), keep everything rather than emptying the sitemap.
-      if (docs.length && key === 'pac' && !has('pacPage', locale)) continue
       if (docs.length && (key === 'geo_fermee' || key === 'geo_ouverte') && !has('geoPage', locale, key)) continue
 
       const url = slug ? `${BASE_URL}/${locale}/${slug}` : `${BASE_URL}/${locale}`

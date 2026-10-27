@@ -14,6 +14,8 @@
     "geo_fermee_sub": "Vertical boreholes",
     "geo_ouverte": "Open-loop geothermal",
     "geo_ouverte_sub": "Groundwater",
+    "pac_geo": "Geothermal heat pump",
+    "pac_geo_sub": "Heating and cooling",
     "geo_fonctionnement": "How it works",
     "geo_fonctionnement_sub": "The principle explained",
     "geo_references": "Our projects",

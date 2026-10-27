@@ -307,6 +307,11 @@ function FaqItem({question, answer, dark = false}: {question: string; answer: st
   )
 }
 
+// Images come from Sanity, or as a plain public path for pages whose content lives in code (heat pump page)
+function imageUrl(img: unknown): string | undefined {
+  return typeof img === 'string' ? img : urlFor(img)?.url()
+}
+
 /* ── Main page ──────────────────────────────────────────────── */
 
 export default function GeoPage({
@@ -320,10 +325,10 @@ export default function GeoPage({
   const ctaRoute: RouteKey = isOpen ? 'pro_chauffagistes' : 'contact'
 
   const heroLeftBg = page.heroLeftBgImage
-    ? urlFor(page.heroLeftBgImage)?.url() ?? '/images/wdd-geothermie_fermee-terre.webp'
+    ? imageUrl(page.heroLeftBgImage) ?? '/images/wdd-geothermie_fermee-terre.webp'
     : '/images/wdd-geothermie_fermee-terre.webp'
   const heroRightImg = page.heroRightImage
-    ? urlFor(page.heroRightImage)?.url() ?? (isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png')
+    ? imageUrl(page.heroRightImage) ?? (isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png')
     : isOpen ? '/images/pexels-peter-holmelin.jpg' : '/images/MRLY-screen-2.png'
 
   const faqs = page.faqs?.length
@@ -412,7 +417,7 @@ export default function GeoPage({
 
           <div className="relative min-h-[420px] overflow-hidden rounded-sm">
             <Image
-              src={page.introImage ? urlFor(page.introImage)?.url() ?? '/images/wdd-expert-forage.webp' : '/images/wdd-expert-forage.webp'}
+              src={page.introImage ? imageUrl(page.introImage) ?? '/images/wdd-expert-forage.webp' : '/images/wdd-expert-forage.webp'}
               alt="Expert WellDoneDrill sur chantier"
               fill
               className="object-cover object-center"
@@ -455,7 +460,7 @@ export default function GeoPage({
               <Image
                 src={
                   page.howIllustration
-                    ? urlFor(page.howIllustration)?.url() ?? (isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg')
+                    ? imageUrl(page.howIllustration) ?? (isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg')
                     : isOpen ? '/images/wdd-illustration-geo-ouverte.svg' : '/images/wdd-illustration-geo-fermee.svg'
                 }
                 alt={isOpen ? 'Illustration géothermie sur nappe' : 'Illustration géothermie fermée'}
@@ -587,7 +592,7 @@ export default function GeoPage({
         {/* Top-left — photo particuliers */}
         <div className="relative overflow-hidden min-h-[45vh]">
           <Image
-            src={page.particularImage ? urlFor(page.particularImage)?.url() ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
+            src={page.particularImage ? imageUrl(page.particularImage) ?? '/images/WDD-particuliers.webp' : '/images/WDD-particuliers.webp'}
             alt="Solutions géothermiques pour particuliers"
             fill
             className="object-cover object-center"
@@ -636,7 +641,7 @@ export default function GeoPage({
         {/* Bottom-right — photo entreprises */}
         <div className="relative overflow-hidden min-h-[45vh]">
           <Image
-            src={page.proImage ? urlFor(page.proImage)?.url() ?? '/images/wdd-entreprises.webp' : '/images/wdd-entreprises.webp'}
+            src={page.proImage ? imageUrl(page.proImage) ?? '/images/wdd-entreprises.webp' : '/images/wdd-entreprises.webp'}
             alt="Solutions géothermiques pour entreprises"
             fill
             className="object-cover object-center"
