@@ -2,10 +2,10 @@
 
 /* Building blocks shared by the V2 page layouts (Particuliers, Pro). */
 
-import {useState, useRef, useEffect} from 'react'
+import {useState, useRef, useEffect, useId} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import {motion, AnimatePresence, useReducedMotion, useInView} from 'framer-motion'
+import {motion, AnimatePresence, useReducedMotion, useInView, useScroll, useMotionValueEvent} from 'framer-motion'
 
 export const EASE = [0.22, 1, 0.36, 1] as const
 
@@ -198,6 +198,8 @@ export function useLoopPhase(ref: React.RefObject<Element | null>) {
 
 /** The closed-loop cross-section. Fills its box: give it a height (stretch in a grid) or keep the default aspect ratio. */
 export function GroundLoopDiagram({phase, reduce, label, className = 'aspect-[400/540] lg:aspect-auto'}: {phase: number; reduce: boolean; label: string; className?: string}) {
+  // Unique ids: a page can hold two diagrams (desktop + phone), one of them hidden
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '')
   // Track the drawing box so the ground fills the column and the height matches the text
   const boxRef = useRef<HTMLDivElement>(null)
   const [box, setBox] = useState({w: 400, h: 540})
@@ -232,19 +234,19 @@ export function GroundLoopDiagram({phase, reduce, label, className = 'aspect-[40
   <div ref={boxRef} className={`relative w-full ${className}`}>
     <svg viewBox={`0 0 ${W} ${H}`} className="absolute inset-0 w-full h-full" role="img" aria-label={label}>
       <defs>
-        <linearGradient id="wdd-ground" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={`${uid}-ground`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#D3CBBC" />
           <stop offset="1" stopColor="#C2B8A6" />
         </linearGradient>
-        <filter id="wdd-grain" x="0" y="0" width="100%" height="100%">
+        <filter id={`${uid}-grain`} x="0" y="0" width="100%" height="100%">
           <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" />
           <feColorMatrix type="saturate" values="0" />
         </filter>
       </defs>
 
       {/* Ground and strata, full column width */}
-      <rect x="0" y={groundY} width={W} height={H - groundY} fill="url(#wdd-ground)" fillOpacity="0.55" />
-      <rect x="0" y={groundY} width={W} height={H - groundY} filter="url(#wdd-grain)" opacity="0.12" style={{mixBlendMode: 'multiply'}} />
+      <rect x="0" y={groundY} width={W} height={H - groundY} fill={`url(#${uid}-ground)`} fillOpacity="0.55" />
+      <rect x="0" y={groundY} width={W} height={H - groundY} filter={`url(#${uid}-grain)`} opacity="0.12" style={{mixBlendMode: 'multiply'}} />
       <path d={stratum(depthY(52))} stroke={C.faint} fill="none" />
       <path d={stratum(depthY(105))} stroke={C.faint} fill="none" />
 
@@ -371,5 +373,79 @@ export function GroundLoopDiagram({phase, reduce, label, className = 'aspect-[40
       </g>
     </svg>
   </div>
+  )
+}
+
+/**
+ * Phones only: the steps play over four screens of scroll. The diagram stays pinned and
+ * builds one phase per step, the current step reads above it, the CTA stays visible.
+ */
+export function MobileScrollSteps({steps, label, ctaHref, ctaLabel}: {
+  steps: {title?: string; body?: string}[]
+  label: string
+  ctaHref: string
+  ctaLabel: string
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+  const reduce = !!useReducedMotion()
+  const {scrollYProgress} = useScroll({target: ref, offset: ['start start', 'end end']})
+  const [step, setStep] = useState(0)
+  useMotionValueEvent(scrollYProgress, 'change', p => {
+    setStep(Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length))))
+  })
+
+  if (reduce) {
+    return (
+      <div className="lg:hidden mt-10">
+        <ol className="space-y-4">
+          {steps.map((s, i) => (
+            <li key={i} className="flex gap-4">
+              <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">{i + 1}</span>
+              <div>
+                {s.title && <div className="font-bold leading-snug">{s.title}</div>}
+                {s.body && <div className="text-sm font-light text-black/60 leading-6 mt-1">{s.body}</div>}
+              </div>
+            </li>
+          ))}
+        </ol>
+        <GroundLoopDiagram phase={4} reduce label={label} className="mt-8 aspect-[400/540]" />
+        <ContactCta href={ctaHref} label={ctaLabel} className="mt-8" />
+      </div>
+    )
+  }
+
+  const current = steps[step]
+  return (
+    <div ref={ref} className="lg:hidden relative mt-6" style={{height: `${steps.length * 100}svh`}}>
+      <div className="sticky top-16 h-[calc(100svh-4rem)] flex flex-col pt-4 pb-24">
+        <div className="flex items-center gap-2 mb-3">
+          {steps.map((_, i) => (
+            <span key={i} className={`h-1.5 rounded-full transition-all duration-500 ${i === step ? 'w-6 bg-wdd-black' : i < step ? 'w-1.5 bg-wdd-black/60' : 'w-1.5 bg-black/15'}`} />
+          ))}
+        </div>
+        <div className="min-h-[7.5rem]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={step}
+              initial={{opacity: 0, y: 12}}
+              animate={{opacity: 1, y: 0}}
+              exit={{opacity: 0, y: -12}}
+              transition={{duration: 0.3, ease: EASE}}
+              className="flex gap-4"
+            >
+              <span className="shrink-0 w-8 h-8 rounded-full bg-wdd-yellow text-wdd-black flex items-center justify-center text-sm font-bold">{step + 1}</span>
+              <div>
+                {current?.title && <div className="font-bold leading-snug">{current.title}</div>}
+                {current?.body && <div className="text-sm font-light text-black/65 leading-6 mt-1">{current.body}</div>}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+        <div className="flex-1 min-h-0 mt-3">
+          <GroundLoopDiagram phase={step + 1} reduce={false} label={label} className="h-full" />
+        </div>
+        <ContactCta href={ctaHref} label={ctaLabel} className="mt-4 self-start" />
+      </div>
+    </div>
   )
 }

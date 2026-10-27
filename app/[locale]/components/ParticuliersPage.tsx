@@ -11,7 +11,7 @@ import type {GlobalSettingsData} from '@/src/lib/globalSettings'
 import {FloatingInfoPanel} from './FloatingInfoPanel'
 import {urlFor} from '@/src/lib/sanityImage'
 import DemarrerCTA from './DemarrerCTA'
-import {Reveal, ContactCta, FaqItem, ContextMedia, GroundLoopDiagram, useLoopPhase} from './V2Blocks'
+import {Reveal, ContactCta, FaqItem, ContextMedia, GroundLoopDiagram, useLoopPhase, MobileScrollSteps} from './V2Blocks'
 import {
   BELGIUM_PROVINCES,
   SVG_W,
@@ -476,6 +476,8 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
         <div>
           <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight">{v.principleTitle}</h2>
           <p className="mt-6 text-base font-light text-black/60 leading-8 max-w-xl">{v.principleIntro}</p>
+          <MobileScrollSteps steps={steps} label={v.principleTitle} ctaHref={contactHref} ctaLabel={v.ctaSoil} />
+          <div className="hidden lg:block">
           <ol className="mt-10">
             {steps.map((s, i) => {
               const on = phase >= i + 1
@@ -497,9 +499,10 @@ function DepthSection({v, contactHref}: {v: V2T; contactHref: string}) {
             })}
           </ol>
           <ContactCta href={contactHref} label={v.ctaSoil} className="mt-8" />
+          </div>
         </div>
 
-        <GroundLoopDiagram phase={phase} reduce={reduce} label={v.principleTitle} />
+        <GroundLoopDiagram phase={phase} reduce={reduce} label={v.principleTitle} className="hidden lg:block" />
 
       </div>
     </section>

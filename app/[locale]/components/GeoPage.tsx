@@ -6,7 +6,7 @@ import Image from 'next/image'
 import {getLocalizedPath, type AppLocale, type RouteKey} from '@/src/i18n/routes'
 import type {GeoPageData} from '@/src/lib/geoPage'
 import {urlFor} from '@/src/lib/sanityImage'
-import {Reveal, ContactCta, GroundLoopDiagram, useLoopPhase} from './V2Blocks'
+import {Reveal, ContactCta, GroundLoopDiagram, useLoopPhase, MobileScrollSteps} from './V2Blocks'
 
 /* ── Defaults ───────────────────────────────────────────────── */
 
@@ -282,6 +282,15 @@ export default function GeoPage({
             <Reveal>
               <h2 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight text-balance">{page.howTitle}</h2>
             </Reveal>
+            {howSteps.length > 0 && !isOpen && (
+              <MobileScrollSteps
+                steps={howSteps.map(body => ({body}))}
+                label={page.howTitle ?? ''}
+                ctaHref={getLocalizedPath(locale, 'contact')}
+                ctaLabel={stripArrow(page.howCtaLabel) ?? 'Démarrer mon projet'}
+              />
+            )}
+            <div className={howSteps.length > 0 && !isOpen ? 'hidden lg:block' : ''}>
             {howSteps.length > 0 ? (
               <ol className="mt-10">
                 {howSteps.map((step, i) => {
@@ -313,6 +322,7 @@ export default function GeoPage({
                 className="mt-10"
               />
             </Reveal>
+            </div>
           </div>
 
           {isOpen ? (
@@ -325,7 +335,7 @@ export default function GeoPage({
               />
             </div>
           ) : (
-            <GroundLoopDiagram phase={phase} reduce={reduce} label={page.howTitle ?? ''} />
+            <GroundLoopDiagram phase={phase} reduce={reduce} label={page.howTitle ?? ''} className={howSteps.length > 0 ? 'hidden lg:block' : 'aspect-[400/540] lg:aspect-auto'} />
           )}
         </div>
       </section>
