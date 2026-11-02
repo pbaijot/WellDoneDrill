@@ -6,6 +6,7 @@ import Script from 'next/script'
 type Consent = {analytics: boolean; advertising: boolean}
 
 const COOKIE_NAME = 'wdd_consent'
+const GTM_ID = 'GTM-KP9FZWC6'
 
 const COPY: Record<string, {
   title: string; body: string
@@ -17,7 +18,7 @@ const COPY: Record<string, {
 }> = {
   'be-fr': {
     title: 'Nous utilisons des cookies',
-    body: "Certains cookies nous aident à mesurer l'audience du site (Google Analytics) et à diffuser des publicités pertinentes (Meta, LinkedIn). Ils ne sont déposés qu'avec votre consentement.",
+    body: "Nous mesurons l'audience du site avec Google Analytics : vous pouvez le refuser à tout moment. Les cookies publicitaires (Meta, LinkedIn) ne sont déposés qu'avec votre consentement.",
     acceptAll: 'Tout accepter', rejectAll: 'Tout refuser', customize: 'Personnaliser', save: 'Enregistrer mes choix',
     essential: 'Cookies essentiels', essentialDesc: 'Nécessaires au fonctionnement du site. Toujours actifs.',
     analytics: 'Cookies analytiques', analyticsDesc: 'Google Analytics 4 et Tag Manager — mesure d\'audience et amélioration du site.',
@@ -26,7 +27,7 @@ const COPY: Record<string, {
   },
   'be-nl': {
     title: 'Wij gebruiken cookies',
-    body: 'Bepaalde cookies helpen ons het websiteverkeer te meten (Google Analytics) en relevante advertenties te tonen (Meta, LinkedIn). Ze worden alleen geplaatst met uw toestemming.',
+    body: 'We meten het websiteverkeer met Google Analytics: u kunt dit op elk moment weigeren. Advertentiecookies (Meta, LinkedIn) worden alleen geplaatst met uw toestemming.',
     acceptAll: 'Alles accepteren', rejectAll: 'Alles weigeren', customize: 'Aanpassen', save: 'Mijn keuzes opslaan',
     essential: 'Essentiële cookies', essentialDesc: 'Noodzakelijk voor het functioneren van de website. Altijd actief.',
     analytics: 'Analytische cookies', analyticsDesc: 'Google Analytics 4 en Tag Manager — websitestatistieken en verbetering.',
@@ -35,7 +36,7 @@ const COPY: Record<string, {
   },
   'fr-fr': {
     title: 'Nous utilisons des cookies',
-    body: "Certains cookies nous aident à mesurer l'audience du site (Google Analytics) et à diffuser des publicités pertinentes (Meta, LinkedIn). Ils ne sont déposés qu'avec votre consentement.",
+    body: "Nous mesurons l'audience du site avec Google Analytics : vous pouvez le refuser à tout moment. Les cookies publicitaires (Meta, LinkedIn) ne sont déposés qu'avec votre consentement.",
     acceptAll: 'Tout accepter', rejectAll: 'Tout refuser', customize: 'Personnaliser', save: 'Enregistrer mes choix',
     essential: 'Cookies essentiels', essentialDesc: 'Nécessaires au fonctionnement du site. Toujours actifs.',
     analytics: 'Cookies analytiques', analyticsDesc: 'Google Analytics 4 et Tag Manager — mesure d\'audience et amélioration du site.',
@@ -44,7 +45,7 @@ const COPY: Record<string, {
   },
   'lu-fr': {
     title: 'Nous utilisons des cookies',
-    body: "Certains cookies nous aident à mesurer l'audience du site (Google Analytics) et à diffuser des publicités pertinentes (Meta, LinkedIn). Ils ne sont déposés qu'avec votre consentement.",
+    body: "Nous mesurons l'audience du site avec Google Analytics : vous pouvez le refuser à tout moment. Les cookies publicitaires (Meta, LinkedIn) ne sont déposés qu'avec votre consentement.",
     acceptAll: 'Tout accepter', rejectAll: 'Tout refuser', customize: 'Personnaliser', save: 'Enregistrer mes choix',
     essential: 'Cookies essentiels', essentialDesc: 'Nécessaires au fonctionnement du site. Toujours actifs.',
     analytics: 'Cookies analytiques', analyticsDesc: 'Google Analytics 4 et Tag Manager — mesure d\'audience et amélioration du site.',
@@ -53,7 +54,7 @@ const COPY: Record<string, {
   },
   'lu-de': {
     title: 'Wir verwenden Cookies',
-    body: 'Einige Cookies helfen uns, die Website-Reichweite zu messen (Google Analytics) und relevante Werbung zu schalten (Meta, LinkedIn). Sie werden nur mit Ihrer Einwilligung gesetzt.',
+    body: 'Wir messen die Website-Reichweite mit Google Analytics: Sie können dies jederzeit ablehnen. Werbe-Cookies (Meta, LinkedIn) werden nur mit Ihrer Einwilligung gesetzt.',
     acceptAll: 'Alle akzeptieren', rejectAll: 'Alle ablehnen', customize: 'Anpassen', save: 'Meine Auswahl speichern',
     essential: 'Notwendige Cookies', essentialDesc: 'Für das Funktionieren der Website erforderlich. Immer aktiv.',
     analytics: 'Analyse-Cookies', analyticsDesc: 'Google Analytics 4 und Tag Manager — Website-Statistiken und Verbesserung.',
@@ -62,7 +63,7 @@ const COPY: Record<string, {
   },
   'be-en': {
     title: 'We use cookies',
-    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    body: "We measure site traffic with Google Analytics: you can refuse this at any time. Advertising cookies (Meta, LinkedIn) are only set with your consent.",
     acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
     essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
     analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
@@ -71,7 +72,7 @@ const COPY: Record<string, {
   },
   'fr-en': {
     title: 'We use cookies',
-    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    body: "We measure site traffic with Google Analytics: you can refuse this at any time. Advertising cookies (Meta, LinkedIn) are only set with your consent.",
     acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
     essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
     analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
@@ -80,7 +81,7 @@ const COPY: Record<string, {
   },
   'lu-en': {
     title: 'We use cookies',
-    body: "Some cookies help us measure site traffic (Google Analytics) and serve relevant ads (Meta, LinkedIn). They are only set with your consent.",
+    body: "We measure site traffic with Google Analytics: you can refuse this at any time. Advertising cookies (Meta, LinkedIn) are only set with your consent.",
     acceptAll: 'Accept all', rejectAll: 'Reject all', customize: 'Customise', save: 'Save my choices',
     essential: 'Essential cookies', essentialDesc: 'Required for the website to function. Always active.',
     analytics: 'Analytics cookies', analyticsDesc: 'Google Analytics 4 and Tag Manager — audience measurement and site improvement.',
@@ -102,6 +103,17 @@ function writeConsent(c: Consent) {
   document.cookie = `${COOKIE_NAME}=${encodeURIComponent(JSON.stringify(c))}; expires=${exp.toUTCString()}; path=/; SameSite=Lax`
 }
 
+// After a refusal: remove what Google Analytics already set, on the host and the parent domain
+function clearAnalyticsCookies() {
+  const host = location.hostname
+  const domains = ['', `; domain=${host}`, `; domain=.${host.replace(/^www\./, '')}`]
+  for (const part of document.cookie.split('; ')) {
+    const name = part.split('=')[0]
+    if (!/^_(ga|gid|gat)/.test(name)) continue
+    for (const d of domains) document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/${d}`
+  }
+}
+
 function Toggle({on, onToggle}: {on: boolean; onToggle: () => void}) {
   return (
     <button
@@ -119,11 +131,14 @@ export default function CookieBanner({locale}: {locale: string}) {
   const [consent, setConsentState] = useState<Consent | null>(null)
   const [visible, setVisible] = useState(false)
   const [expanded, setExpanded] = useState(false)
-  const [analytics, setAnalytics] = useState(false)
+  const [ready, setReady] = useState(false)
+  // Opt-out: analytics is on by default, advertising stays opt-in
+  const [analytics, setAnalytics] = useState(true)
   const [advertising, setAdvertising] = useState(false)
 
   useEffect(() => {
     const saved = readConsent()
+    setReady(true)
     if (saved) {
       setConsentState(saved)
     } else {
@@ -136,7 +151,7 @@ export default function CookieBanner({locale}: {locale: string}) {
     // "Gérer les cookies" button in Footer dispatches this event
     const handler = () => {
       const cur = readConsent()
-      setAnalytics(cur?.analytics ?? false)
+      setAnalytics(cur?.analytics ?? true)
       setAdvertising(cur?.advertising ?? false)
       setExpanded(true)
       setVisible(true)
@@ -147,6 +162,12 @@ export default function CookieBanner({locale}: {locale: string}) {
 
   const apply = useCallback((c: Consent) => {
     writeConsent(c)
+    if (!c.analytics) clearAnalyticsCookies()
+    // Refusing after the tag has started: only a reload stops it on this page
+    if (!c.analytics && (window as Window & {google_tag_manager?: unknown}).google_tag_manager) {
+      location.reload()
+      return
+    }
     setConsentState(c)
     setVisible(false)
     setExpanded(false)
@@ -154,14 +175,14 @@ export default function CookieBanner({locale}: {locale: string}) {
 
   const c = COPY[locale] ?? COPY['be-fr']
   const GA4_ID  = process.env.NEXT_PUBLIC_GA4_ID
-  const GTM_ID  = process.env.NEXT_PUBLIC_GTM_ID
+  const analyticsOn = ready && (consent ? consent.analytics : true)
   const META_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID
   const LI_ID   = process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID
 
   return (
     <>
-      {/* ── Tracking scripts ── loaded only when consent is given ── */}
-      {consent?.analytics && GA4_ID && (
+      {/* ── Tracking scripts ── analytics unless refused, advertising only with consent ── */}
+      {analyticsOn && GA4_ID && (
         <>
           <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
           <Script id="ga4-init" strategy="afterInteractive">{`
@@ -172,8 +193,12 @@ export default function CookieBanner({locale}: {locale: string}) {
           `}</Script>
         </>
       )}
-      {consent?.analytics && GTM_ID && (
+      {analyticsOn && (
         <Script id="gtm-init" strategy="afterInteractive">{`
+          window.dataLayer=window.dataLayer||[];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent','default',{analytics_storage:'granted',ad_storage:'${consent?.advertising ? 'granted' : 'denied'}',ad_user_data:'${consent?.advertising ? 'granted' : 'denied'}',ad_personalization:'${consent?.advertising ? 'granted' : 'denied'}'});
+          gtag('js',new Date());
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
           var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
           j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
@@ -224,7 +249,7 @@ export default function CookieBanner({locale}: {locale: string}) {
                   <button
                     onClick={() => {
                       const cur = readConsent()
-                      setAnalytics(cur?.analytics ?? false)
+                      setAnalytics(cur?.analytics ?? true)
                       setAdvertising(cur?.advertising ?? false)
                       setExpanded(true)
                     }}
