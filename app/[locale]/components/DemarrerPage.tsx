@@ -5,6 +5,7 @@ import Image from 'next/image'
 import {type AppLocale, PHONE_BY_LOCALE} from '@/src/i18n/routes'
 import type {DemarrerPageData} from '@/src/lib/demarrerPage'
 import {urlFor} from '@/src/lib/sanityImage'
+import {trackLead} from '@/src/lib/analytics'
 
 const ODOO_FORM_URL: Record<AppLocale, string> = {
   'be-fr': 'https://welldonedrill.odoo.com/formulaire',
@@ -191,6 +192,14 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
   const [segment, setSegment] = useState<Segment>(null)
   const [iframeHeight, setIframeHeight] = useState(700)
   const iframeRef = useRef<HTMLIFrameElement>(null)
+  const iframeLoads = useRef(0)
+
+  // The form lives on Odoo, in another origin: we can't read it, but a successful
+  // submit redirects the iframe to Odoo's thank-you page, which fires a second load.
+  const onIframeLoad = () => {
+    iframeLoads.current += 1
+    if (iframeLoads.current === 2) trackLead('contact_form')
+  }
 
   useEffect(() => {
     const handler = (e: MessageEvent) => {
@@ -300,6 +309,7 @@ export default function DemarrerPage({locale, page}: {locale: AppLocale; page?: 
           ) : (
             <iframe
               ref={iframeRef}
+              onLoad={onIframeLoad}
               src={ODOO_FORM_URL[locale]}
               title="Formulaire de contact WellDoneDrill"
               width="100%"

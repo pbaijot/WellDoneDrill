@@ -2,6 +2,7 @@
 
 import {useState, useEffect, useCallback} from 'react'
 import Script from 'next/script'
+import {trackLead} from '@/src/lib/analytics'
 
 type Consent = {analytics: boolean; advertising: boolean}
 
@@ -158,6 +159,15 @@ export default function CookieBanner({locale}: {locale: string}) {
     }
     window.addEventListener('wdd:cookie-settings', handler)
     return () => window.removeEventListener('wdd:cookie-settings', handler)
+  }, [])
+
+  useEffect(() => {
+    // Every phone link on the site counts as a lead
+    const handler = (e: MouseEvent) => {
+      if ((e.target as Element).closest?.('a[href^="tel:"]')) trackLead('phone_click')
+    }
+    document.addEventListener('click', handler)
+    return () => document.removeEventListener('click', handler)
   }, [])
 
   const apply = useCallback((c: Consent) => {
